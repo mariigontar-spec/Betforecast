@@ -1,1 +1,1 @@
-
+console.log("BetForecast loaded");
