@@ -57,3 +57,14 @@ h2{
   margin-top:0;
   color:#555;
 }
+#news-list{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.news-card img{
+width:100%;
+border-radius:6px;
+margin-bottom:10px;
+}
