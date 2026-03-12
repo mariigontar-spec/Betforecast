@@ -20,3 +20,10 @@ nav a {
 main {
   padding: 20px;
 }
+#news div{
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
