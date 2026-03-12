@@ -10,10 +10,10 @@ fetch("data/news.json")
       card.className = "news-card";
 
       card.innerHTML = `
-        <img src="${article.image}">
+<img src="${article.image}">
 <h3>${article.title}</h3>
 <p>${article.text}</p>
-      `;
+`;
 
       newsList.appendChild(card);
 
