@@ -1,14 +1,17 @@
 [
   {
     "title": "Super Eagles prepare for the next international match",
-    "text": "The team is training ahead of an important football fixture."
+    "text": "The team is training ahead of an important football fixture.",
+    "image": "https://picsum.photos/400/200?1"
   },
   {
     "title": "NPFL clubs continue the race for top positions",
-    "text": "Several teams are fighting for better places in the league table."
+    "text": "Several teams are fighting for better places in the league table.",
+    "image": "https://picsum.photos/400/200?2"
   },
   {
     "title": "Nigeria football fans expect strong performances this month",
-    "text": "Attention is growing around local clubs and the national team."
+    "text": "Attention is growing around local clubs and the national team.",
+    "image": "https://picsum.photos/400/200?3"
   }
 ]
