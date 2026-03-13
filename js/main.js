@@ -20,3 +20,20 @@ fetch("data/news.json")
     });
 
   });
+fetch("data/matches.json")
+  .then(response => response.json())
+  .then(data => {
+    const matchesList = document.getElementById("matches-list");
+
+    data.forEach(match => {
+      const row = document.createElement("tr");
+
+      row.innerHTML = `
+        <td>${match.home} vs ${match.away}</td>
+        <td>${match.date}</td>
+        <td>${match.league}</td>
+      `;
+
+      matchesList.appendChild(row);
+    });
+  });
