@@ -177,3 +177,14 @@ transition:0.2s;
 transform:translateY(-4px);
 box-shadow:0 6px 14px rgba(0,0,0,0.15);
 }
+.view-all{
+  display:inline-block;
+  margin-bottom:15px;
+  text-decoration:none;
+  color:#0e2a4d;
+  font-weight:700;
+}
+
+.view-all:hover{
+  opacity:0.7;
+}
