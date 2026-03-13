@@ -18,3 +18,21 @@ header{
   text-decoration:none;
   font-weight:600;
 }
+.menu{
+display:flex;
+gap:30px;
+justify-content:center;
+background:#0e2a4d;
+padding:15px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:600;
+font-size:16px;
+}
+
+.menu a:hover{
+opacity:0.7;
+}
