@@ -1,11 +1,12 @@
 [
   {
-    "id": 1,
-    "home": "Enyimba",
-    "away": "Rangers",
-    "date": "24 May",
-    "league": "NPFL"
-  },
+  "id": 1,
+  "home": "Enyimba",
+  "away": "Rangers",
+  "date": "24 May",
+  "league": "NPFL",
+  "prediction": "Enyimba look slightly stronger at home."
+}
   {
     "id": 2,
     "home": "Kano Pillars",
