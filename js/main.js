@@ -4,7 +4,7 @@ fetch("data/news.json")
 
     const newsList = document.getElementById("news-list");
 
-    data.forEach(article => {
+    data.slice(0, 6).forEach(article => {
 
       const card = document.createElement("div");
       card.className = "news-card";
