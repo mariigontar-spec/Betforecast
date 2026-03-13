@@ -90,3 +90,16 @@ display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
 }
+.menu{
+display:flex;
+gap:25px;
+justify-content:center;
+padding:15px;
+background:#0e2a4d;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
