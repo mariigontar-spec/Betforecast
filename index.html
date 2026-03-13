@@ -1,71 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BetForecast</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<main class="layout">
 
-  <header>
-  <h1>BetForecast</h1>
-  <p>Football news and upcoming matches</p>
-</header>
-
-<nav class="menu">
-  <a href="#">Home</a>
-  <a href="#">News</a>
-  <a href="#">Matches</a>
-  <a href="#">Predictions</a>
-</nav>
-
-<main>
+  <div class="main-content">
     <section class="news">
-  <h2>Latest Football News</h2>
-  <div id="news-list"></div>
-</section>
+      <h2>Latest Football News</h2>
+      <div id="news-list"></div>
+    </section>
+
     <section class="matches">
+      <h2>Upcoming Matches</h2>
 
-<h2>Upcoming Matches</h2>
+      <table class="matches-table">
+        <tr>
+          <th>Match</th>
+          <th>Date</th>
+          <th>League</th>
+        </tr>
+        <tr>
+          <td>Enyimba vs Rangers</td>
+          <td>24 May</td>
+          <td>NPFL</td>
+        </tr>
+        <tr>
+          <td>Kano Pillars vs Remo Stars</td>
+          <td>25 May</td>
+          <td>NPFL</td>
+        </tr>
+        <tr>
+          <td>Nigeria vs Ghana</td>
+          <td>28 May</td>
+          <td>Friendly</td>
+        </tr>
+        <tr>
+          <td>Chelsea vs Arsenal</td>
+          <td>29 May</td>
+          <td>EPL</td>
+        </tr>
+      </table>
+    </section>
+  </div>
 
-<table class="matches-table">
+  <aside class="sidebar">
+    <section class="side-block">
+      <h3>Live Matches</h3>
+      <p>Enyimba 1 - 0 Rangers</p>
+      <p>Remo Stars 0 - 0 Kano Pillars</p>
+    </section>
 
-<tr>
-<th>Match</th>
-<th>Date</th>
-<th>League</th>
-</tr>
+    <section class="side-block">
+      <h3>Top Leagues</h3>
+      <p>NPFL</p>
+      <p>Premier League</p>
+      <p>La Liga</p>
+      <p>Serie A</p>
+    </section>
 
-<tr>
-<td>Enyimba vs Rangers</td>
-<td>24 May</td>
-<td>NPFL</td>
-</tr>
+    <section class="side-block">
+      <h3>Featured Match</h3>
+      <p><strong>Nigeria vs Ghana</strong></p>
+      <p>28 May • 20:00</p>
+    </section>
+  </aside>
 
-<tr>
-<td>Kano Pillars vs Remo Stars</td>
-<td>25 May</td>
-<td>NPFL</td>
-</tr>
-
-<tr>
-<td>Nigeria vs Ghana</td>
-<td>28 May</td>
-<td>Friendly</td>
-</tr>
-
-<tr>
-<td>Chelsea vs Arsenal</td>
-<td>29 May</td>
-<td>EPL</td>
-</tr>
-
-</table>
-
-</section>
-  </main>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+</main>
