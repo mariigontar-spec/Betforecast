@@ -31,23 +31,19 @@ fetch("data/news.json")
 fetch("data/matches.json")
   .then(response => response.json())
   .then(data => {
-
     const matchesList = document.getElementById("matches-list");
 
     if (!matchesList) return;
 
     data.forEach(match => {
-
       const row = document.createElement("tr");
 
       row.innerHTML = `
-        <td>${match.home} vs ${match.away}</td>
+        <td><a href="match.html?id=${match.id}">${match.home} vs ${match.away}</a></td>
         <td>${match.date}</td>
         <td>${match.league}</td>
       `;
 
       matchesList.appendChild(row);
-
     });
-
-});
+  });
