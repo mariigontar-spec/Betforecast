@@ -11,7 +11,7 @@ fetch("data/news.json")
 
     card.innerHTML = `
 <img src="${article.image}">
-<h3>${article.title}</h3>
+<h3><a href="#">${article.title}</a></h3>
 <p>${article.text}</p>
 `;
 
