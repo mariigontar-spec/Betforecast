@@ -5,7 +5,7 @@ fetch("data/matches.json")
   .then(response => response.json())
   .then(data => {
 
-    const match = data.find(m => m.id == matchId);
+    const match = data.find(m => m.id == Number(matchId));
 
     const container = document.getElementById("match-details");
 
