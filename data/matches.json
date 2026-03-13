@@ -1,1 +1,26 @@
-
+[
+  {
+    "home": "Enyimba",
+    "away": "Rangers",
+    "date": "24 May",
+    "league": "NPFL"
+  },
+  {
+    "home": "Kano Pillars",
+    "away": "Remo Stars",
+    "date": "25 May",
+    "league": "NPFL"
+  },
+  {
+    "home": "Nigeria",
+    "away": "Ghana",
+    "date": "28 May",
+    "league": "Friendly"
+  },
+  {
+    "home": "Chelsea",
+    "away": "Arsenal",
+    "date": "29 May",
+    "league": "EPL"
+  }
+]
