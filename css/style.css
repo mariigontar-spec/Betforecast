@@ -150,3 +150,14 @@ header p{
     flex-wrap:wrap;
   }
 }
+.live-score{
+display:flex;
+justify-content:space-between;
+padding:8px 0;
+border-bottom:1px solid #eee;
+font-size:14px;
+}
+
+.live-score strong{
+font-weight:700;
+}
