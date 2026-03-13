@@ -161,3 +161,19 @@ font-size:14px;
 .live-score strong{
 font-weight:700;
 }
+.news-card a{
+text-decoration:none;
+color:#111;
+}
+
+.news-card a:hover{
+color:#0e2a4d;
+}
+.news-card{
+transition:0.2s;
+}
+
+.news-card:hover{
+transform:translateY(-4px);
+box-shadow:0 6px 14px rgba(0,0,0,0.15);
+}
