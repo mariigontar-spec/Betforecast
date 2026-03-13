@@ -6,6 +6,19 @@ body{
 }
 
 header{
+.menu{
+display:flex;
+gap:25px;
+justify-content:center;
+padding:15px;
+background:#0e2a4d;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
   background: #0a1f44;
   color: white;
   padding: 24px;
@@ -96,10 +109,4 @@ gap:25px;
 justify-content:center;
 padding:15px;
 background:#0e2a4d;
-}
-
-.menu a{
-color:white;
-text-decoration:none;
-font-weight:600;
 }
