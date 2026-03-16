@@ -1,31 +1,34 @@
 [
   {
-  "id": 1,
-  "home": "Enyimba",
-  "away": "Rangers",
-  "date": "24 May",
-  "league": "NPFL",
-  "prediction": "Enyimba look slightly stronger at home."
-}
+    "id": 1,
+    "home": "Enyimba",
+    "away": "Rangers",
+    "date": "24 May",
+    "league": "NPFL",
+    "prediction": "Enyimba look slightly stronger at home."
+  },
   {
     "id": 2,
     "home": "Kano Pillars",
     "away": "Remo Stars",
     "date": "25 May",
-    "league": "NPFL"
+    "league": "NPFL",
+    "prediction": "This match looks balanced and could end in a draw."
   },
   {
     "id": 3,
     "home": "Nigeria",
     "away": "Ghana",
     "date": "28 May",
-    "league": "Friendly"
+    "league": "Friendly",
+    "prediction": "Nigeria may have a small edge thanks to attacking quality."
   },
   {
     "id": 4,
     "home": "Chelsea",
     "away": "Arsenal",
     "date": "29 May",
-    "league": "EPL"
+    "league": "EPL",
+    "prediction": "Arsenal may control more possession, but the game should be tight."
   }
 ]
