@@ -186,9 +186,11 @@ color:#0e2a4d;
 transition:0.2s;
 }
 
-.news-card:hover{
-transform:translateY(-4px);
-box-shadow:0 6px 14px rgba(0,0,0,0.15);
+.news-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 .view-all{
   display:inline-block;
