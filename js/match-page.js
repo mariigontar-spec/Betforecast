@@ -4,10 +4,13 @@ const matchId = params.get("id");
 fetch("data/matches.json")
   .then(response => response.json())
   .then(data => {
-
-    const match = data.find(m => m.id == Number(matchId));
-
+    const match = data.find(m => String(m.id) === String(matchId));
     const container = document.getElementById("match-details");
+
+    if (!container) {
+      console.log("match-details block not found");
+      return;
+    }
 
     if (!match) {
       container.innerHTML = "<h2>Match not found</h2>";
@@ -18,8 +21,14 @@ fetch("data/matches.json")
       <h2>${match.home} vs ${match.away}</h2>
       <p><strong>Date:</strong> ${match.date}</p>
       <p><strong>League:</strong> ${match.league}</p>
-
       <h3>Prediction</h3>
-      <p>${match.prediction}</p>
+      <p>${match.prediction || "No prediction available yet."}</p>
     `;
+  })
+  .catch(error => {
+    const container = document.getElementById("match-details");
+    if (container) {
+      container.innerHTML = "<h2>Error loading match data</h2>";
+    }
+    console.log("Error:", error);
   });
