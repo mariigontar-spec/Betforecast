@@ -1,23 +1,22 @@
 [
   {
-  "id": 1,
-  "home": "Enyimba",
-  "away": "Rangers",
-  "date": "24 May",
-  "league": "NPFL",
-  "prediction": "Enyimba look slightly stronger at home.",
-  "homeChance": 58,
-  "awayChance": 42,
-
-  "stats": {
-    "possessionHome": 61,
-    "possessionAway": 39,
-    "shotsHome": 12,
-    "shotsAway": 8,
-    "cornersHome": 6,
-    "cornersAway": 3
-  }
-},
+    "id": 1,
+    "home": "Enyimba",
+    "away": "Rangers",
+    "date": "24 May",
+    "league": "NPFL",
+    "prediction": "Enyimba look slightly stronger at home.",
+    "homeChance": 58,
+    "awayChance": 42,
+    "stats": {
+      "possessionHome": 61,
+      "possessionAway": 39,
+      "shotsHome": 12,
+      "shotsAway": 8,
+      "cornersHome": 6,
+      "cornersAway": 3
+    }
+  },
   {
     "id": 2,
     "home": "Kano Pillars",
@@ -26,7 +25,15 @@
     "league": "NPFL",
     "prediction": "This match looks balanced and could end in a draw.",
     "homeChance": 50,
-    "awayChance": 50
+    "awayChance": 50,
+    "stats": {
+      "possessionHome": 49,
+      "possessionAway": 51,
+      "shotsHome": 9,
+      "shotsAway": 10,
+      "cornersHome": 4,
+      "cornersAway": 5
+    }
   },
   {
     "id": 3,
@@ -36,7 +43,15 @@
     "league": "Friendly",
     "prediction": "Nigeria has a slight edge due to home advantage.",
     "homeChance": 62,
-    "awayChance": 38
+    "awayChance": 38,
+    "stats": {
+      "possessionHome": 57,
+      "possessionAway": 43,
+      "shotsHome": 14,
+      "shotsAway": 9,
+      "cornersHome": 7,
+      "cornersAway": 4
+    }
   },
   {
     "id": 4,
@@ -46,6 +61,14 @@
     "league": "EPL",
     "prediction": "Arsenal may control more possession, but the game should be tight.",
     "homeChance": 48,
-    "awayChance": 52
+    "awayChance": 52,
+    "stats": {
+      "possessionHome": 46,
+      "possessionAway": 54,
+      "shotsHome": 11,
+      "shotsAway": 13,
+      "cornersHome": 5,
+      "cornersAway": 6
+    }
   }
 ]
