@@ -1,14 +1,23 @@
 [
   {
-    "id": 1,
-    "home": "Enyimba",
-    "away": "Rangers",
-    "date": "24 May",
-    "league": "NPFL",
-    "prediction": "Enyimba look slightly stronger at home.",
-    "homeChance": 58,
-    "awayChance": 42
-  },
+  "id": 1,
+  "home": "Enyimba",
+  "away": "Rangers",
+  "date": "24 May",
+  "league": "NPFL",
+  "prediction": "Enyimba look slightly stronger at home.",
+  "homeChance": 58,
+  "awayChance": 42,
+
+  "stats": {
+    "possessionHome": 61,
+    "possessionAway": 39,
+    "shotsHome": 12,
+    "shotsAway": 8,
+    "cornersHome": 6,
+    "cornersAway": 3
+  }
+},
   {
     "id": 2,
     "home": "Kano Pillars",
