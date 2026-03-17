@@ -1,12 +1,14 @@
 [
   {
-    "id": 1,
-    "home": "Enyimba",
-    "away": "Rangers",
-    "date": "24 May",
-    "league": "NPFL",
-    "prediction": "Enyimba look slightly stronger at home."
-  },
+  "id": 1,
+  "home": "Enyimba",
+  "away": "Rangers",
+  "date": "24 May",
+  "league": "NPFL",
+  "prediction": "Enyimba look slightly stronger at home.",
+  "homeChance": 58,
+  "awayChance": 42
+}
   {
     "id": 2,
     "home": "Kano Pillars",
@@ -16,13 +18,15 @@
     "prediction": "This match looks balanced and could end in a draw."
   },
   {
-    "id": 3,
-    "home": "Nigeria",
-    "away": "Ghana",
-    "date": "28 May",
-    "league": "Friendly",
-    "prediction": "Nigeria may have a small edge thanks to attacking quality."
-  },
+  "id": 3,
+  "home": "Nigeria",
+  "away": "Ghana",
+  "date": "28 May",
+  "league": "Friendly",
+  "prediction": "Nigeria has a slight edge due to home advantage.",
+  "homeChance": 62,
+  "awayChance": 38
+}
   {
     "id": 4,
     "home": "Chelsea",
