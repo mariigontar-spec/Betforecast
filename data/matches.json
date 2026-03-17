@@ -1,38 +1,42 @@
 [
   {
-  "id": 1,
-  "home": "Enyimba",
-  "away": "Rangers",
-  "date": "24 May",
-  "league": "NPFL",
-  "prediction": "Enyimba look slightly stronger at home.",
-  "homeChance": 58,
-  "awayChance": 42
-}
+    "id": 1,
+    "home": "Enyimba",
+    "away": "Rangers",
+    "date": "24 May",
+    "league": "NPFL",
+    "prediction": "Enyimba look slightly stronger at home.",
+    "homeChance": 58,
+    "awayChance": 42
+  },
   {
     "id": 2,
     "home": "Kano Pillars",
     "away": "Remo Stars",
     "date": "25 May",
     "league": "NPFL",
-    "prediction": "This match looks balanced and could end in a draw."
+    "prediction": "This match looks balanced and could end in a draw.",
+    "homeChance": 50,
+    "awayChance": 50
   },
   {
-  "id": 3,
-  "home": "Nigeria",
-  "away": "Ghana",
-  "date": "28 May",
-  "league": "Friendly",
-  "prediction": "Nigeria has a slight edge due to home advantage.",
-  "homeChance": 62,
-  "awayChance": 38
-}
+    "id": 3,
+    "home": "Nigeria",
+    "away": "Ghana",
+    "date": "28 May",
+    "league": "Friendly",
+    "prediction": "Nigeria has a slight edge due to home advantage.",
+    "homeChance": 62,
+    "awayChance": 38
+  },
   {
     "id": 4,
     "home": "Chelsea",
     "away": "Arsenal",
     "date": "29 May",
     "league": "EPL",
-    "prediction": "Arsenal may control more possession, but the game should be tight."
+    "prediction": "Arsenal may control more possession, but the game should be tight.",
+    "homeChance": 48,
+    "awayChance": 52
   }
 ]
