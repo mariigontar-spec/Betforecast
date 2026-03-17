@@ -3,72 +3,36 @@
     "id": 1,
     "home": "Enyimba",
     "away": "Rangers",
+    "logoHome": "https://upload.wikimedia.org/wikipedia/en/7/7a/Enyimba_FC_logo.png",
+    "logoAway": "https://upload.wikimedia.org/wikipedia/en/3/33/Rangers_Intl_FC_logo.png",
     "date": "24 May",
-    "league": "NPFL",
-    "prediction": "Enyimba look slightly stronger at home.",
-    "homeChance": 58,
-    "awayChance": 42,
-    "stats": {
-      "possessionHome": 61,
-      "possessionAway": 39,
-      "shotsHome": 12,
-      "shotsAway": 8,
-      "cornersHome": 6,
-      "cornersAway": 3
-    }
+    "league": "NPFL"
   },
   {
     "id": 2,
     "home": "Kano Pillars",
     "away": "Remo Stars",
+    "logoHome": "https://upload.wikimedia.org/wikipedia/en/3/31/Kano_Pillars_FC_logo.png",
+    "logoAway": "https://upload.wikimedia.org/wikipedia/en/f/f0/Remo_Stars_FC_logo.png",
     "date": "25 May",
-    "league": "NPFL",
-    "prediction": "This match looks balanced and could end in a draw.",
-    "homeChance": 50,
-    "awayChance": 50,
-    "stats": {
-      "possessionHome": 49,
-      "possessionAway": 51,
-      "shotsHome": 9,
-      "shotsAway": 10,
-      "cornersHome": 4,
-      "cornersAway": 5
-    }
+    "league": "NPFL"
   },
   {
     "id": 3,
     "home": "Nigeria",
     "away": "Ghana",
+    "logoHome": "https://upload.wikimedia.org/wikipedia/en/7/7f/Nigeria_national_football_team_logo.png",
+    "logoAway": "https://upload.wikimedia.org/wikipedia/en/1/19/Ghana_FA_logo.png",
     "date": "28 May",
-    "league": "Friendly",
-    "prediction": "Nigeria has a slight edge due to home advantage.",
-    "homeChance": 62,
-    "awayChance": 38,
-    "stats": {
-      "possessionHome": 57,
-      "possessionAway": 43,
-      "shotsHome": 14,
-      "shotsAway": 9,
-      "cornersHome": 7,
-      "cornersAway": 4
-    }
+    "league": "Friendly"
   },
   {
     "id": 4,
     "home": "Chelsea",
     "away": "Arsenal",
+    "logoHome": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg",
+    "logoAway": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
     "date": "29 May",
-    "league": "EPL",
-    "prediction": "Arsenal may control more possession, but the game should be tight.",
-    "homeChance": 48,
-    "awayChance": 52,
-    "stats": {
-      "possessionHome": 46,
-      "possessionAway": 54,
-      "shotsHome": 11,
-      "shotsAway": 13,
-      "cornersHome": 5,
-      "cornersAway": 6
-    }
+    "league": "EPL"
   }
 ]
