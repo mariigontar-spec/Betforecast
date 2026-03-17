@@ -1,4 +1,3 @@
-// LOAD NEWS
 fetch("data/news.json")
   .then(response => response.json())
   .then(data => {
@@ -10,7 +9,7 @@ fetch("data/news.json")
       card.className = "news-card";
 
       card.innerHTML = `
-        <img src="${article.image}">
+        <img src="${article.image}" alt="${article.title}">
         <h3><a href="article.html?id=${article.id}">${article.title}</a></h3>
         <p>${article.text}</p>
       `;
@@ -20,8 +19,6 @@ fetch("data/news.json")
   })
   .catch(error => console.log("News error:", error));
 
-
-// LOAD MATCHES
 fetch("data/matches.json")
   .then(response => response.json())
   .then(data => {
