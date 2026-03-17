@@ -30,10 +30,11 @@ fetch("data/matches.json")
         </div>
 
         <div class="bar">
-          <div class="home-bar" style="width:${match.homeChance}%"></div>
-          <div class="away-bar" style="width:${match.awayChance}%"></div>
-        </div>
-      </div>
+  <div class="home-bar" style="width:${match.homeChance}%">
+  </div>
+  <div class="away-bar" style="width:${match.awayChance}%">
+  </div>
+</div>
     `;
   })
   .catch(error => {
