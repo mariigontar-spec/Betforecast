@@ -15,32 +15,24 @@ fetch("data/matches.json")
     }
 
     container.innerHTML = `
-      <h2>${match.home} vs ${match.away}</h2>
+  <h2>${match.home} vs ${match.away}</h2>
 
-      <p><strong>Date:</strong> ${match.date}</p>
-      <p><strong>League:</strong> ${match.league}</p>
+  <p><strong>Date:</strong> ${match.date}</p>
+  <p><strong>League:</strong> ${match.league}</p>
 
-      <h3>AI Prediction</h3>
-      <p>${match.prediction}</p>
+  <h3>AI Prediction</h3>
+  <p>${match.prediction}</p>
 
-      <div class="probability">
-        <div class="teams">
-          <span>${match.home} ${match.homeChance}%</span>
-          <span>${match.away} ${match.awayChance}%</span>
-        </div>
+  <div class="probability">
+    <div class="teams">
+      <span>${match.home} ${match.homeChance}%</span>
+      <span>${match.away} ${match.awayChance}%</span>
+    </div>
 
-        <div class="bar">
-  <div class="home-bar" style="width:${match.homeChance}%">
+    <div class="bar">
+      <div class="home-bar" style="width:${match.homeChance}%"></div>
+      <div class="away-bar" style="width:${match.awayChance}%"></div>
+    </div>
   </div>
-  <div class="away-bar" style="width:${match.awayChance}%">
-  </div>
-</div>
-    `;
-  })
-  .catch(error => {
-    const container = document.getElementById("match-details");
-    if (container) {
-      container.innerHTML = "<h2>Error loading match data</h2>";
-    }
-    console.log("Error:", error);
+`;
   });
