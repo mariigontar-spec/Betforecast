@@ -384,3 +384,45 @@ grid-template-columns:1fr;
 }
 
 }
+/* MATCH TABLE STYLE */
+
+.matches-table{
+width:100%;
+border-collapse:separate;
+border-spacing:0;
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 6px 18px rgba(0,0,0,0.12);
+}
+
+.matches-table th{
+background:#162a54;
+color:white;
+text-align:left;
+padding:16px;
+font-size:15px;
+}
+
+.matches-table td{
+padding:16px;
+border-bottom:1px solid #e5e5e5;
+}
+
+.matches-table tr:last-child td{
+border-bottom:none;
+}
+
+.matches-table tr:hover{
+background:#eef3ff;
+}
+
+.matches-table a{
+color:#2a3f77;
+font-weight:700;
+text-decoration:none;
+}
+
+.matches-table a:hover{
+text-decoration:underline;
+}
