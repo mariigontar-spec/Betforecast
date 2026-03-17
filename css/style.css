@@ -197,6 +197,7 @@ border-collapse:separate;
 border-spacing:0;
 overflow:hidden;
 border-radius:16px;
+background:white;
 }
 
 .matches-table th{
@@ -205,12 +206,15 @@ color:white;
 text-align:left;
 padding:16px;
 font-size:15px;
+font-weight:700;
 }
 
 .matches-table td{
 background:white;
 padding:16px;
 border-bottom:1px solid #ececec;
+vertical-align:middle;
+font-size:15px;
 }
 
 .matches-table tr:last-child td{
@@ -222,12 +226,14 @@ background:#f5f8ff;
 }
 
 .matches-table a{
-color:#2c2f86;
+color:#243b7a;
 font-weight:700;
 text-decoration:none;
+transition:0.2s;
 }
 
 .matches-table a:hover{
+color:#102c5b;
 text-decoration:underline;
 }
 
