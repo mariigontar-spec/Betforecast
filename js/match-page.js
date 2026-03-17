@@ -38,7 +38,6 @@ fetch("data/matches.json")
       <h3>Match Stats</h3>
 
       <div class="stats-box">
-
         <div class="stat-card">
           <div class="stat-label">Possession</div>
           <div class="stat-values">
@@ -66,7 +65,6 @@ fetch("data/matches.json")
             <span>${match.stats.cornersAway}</span>
           </div>
         </div>
-
       </div>
     `;
   })
