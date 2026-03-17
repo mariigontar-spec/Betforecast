@@ -1,24 +1,21 @@
 [
   {
-  "id": 1,
-  "home": "Enyimba",
-  "away": "Rangers",
-  "logoHome": "https://upload.wikimedia.org/wikipedia/en/7/7a/Enyimba_FC_logo.png",
-  "logoAway": "https://upload.wikimedia.org/wikipedia/en/3/33/Rangers_Intl_FC_logo.png",
-  "date": "24 May",
-  "league": "NPFL",
-  "prediction": "Enyimba look slightly stronger at home.",
-  "homeChance": 58,
-  "awayChance": 42,
-  "stats": {
-    "possessionHome": 61,
-    "possessionAway": 39,
-    "shotsHome": 12,
-    "shotsAway": 8,
-    "cornersHome": 6,
-    "cornersAway": 3
-  }
-}
+    "id": 1,
+    "home": "Enyimba",
+    "away": "Rangers",
+    "date": "24 May",
+    "league": "NPFL",
+    "prediction": "Enyimba look slightly stronger at home.",
+    "homeChance": 58,
+    "awayChance": 42,
+    "stats": {
+      "possessionHome": 61,
+      "possessionAway": 39,
+      "shotsHome": 12,
+      "shotsAway": 8,
+      "cornersHome": 6,
+      "cornersAway": 3
+    }
   },
   {
     "id": 2,
