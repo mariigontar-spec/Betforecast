@@ -1,92 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BetForecast</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+// LOAD NEWS
+fetch("data/news.json")
+  .then(response => response.json())
+  .then(data => {
+    const newsList = document.getElementById("news-list");
+    if (!newsList) return;
 
-  <header>
-    <h1>BetForecast</h1>
-    <p>Football news and upcoming matches</p>
-  </header>
+    data.slice(0, 6).forEach(article => {
+      const card = document.createElement("div");
+      card.className = "news-card";
 
-  <nav class="menu">
-  <a href="index.html">Home</a>
-  <a href="news.html">News</a>
-  <a href="#">Matches</a>
-  <a href="#">Predictions</a>
-</nav>
-  
-<section class="hero-match">
-  <div class="hero-content">
-    <p class="hero-label">Featured Match</p>
-    <h2>Nigeria vs Ghana</h2>
-    <p>28 May • Friendly Match</p>
-    <a class="hero-button" href="match.html?id=3">View Match Preview</a>
-  </div>
-</section>
-  
-  <main class="layout">
+      card.innerHTML = `
+        <img src="${article.image}">
+        <h3><a href="article.html?id=${article.id}">${article.title}</a></h3>
+        <p>${article.text}</p>
+      `;
 
-    <div class="main-content">
-      <section class="news">
-        <h2>Latest Football News</h2>
-        <p><a class="view-all" href="news.html">View All News</a></p>
-        <div id="news-list"></div>
-      </section>
+      newsList.appendChild(card);
+    });
+  })
+  .catch(error => console.log("News error:", error));
 
-      <section class="matches">
-        <h2>Upcoming Matches</h2>
 
-      <table class="matches-table">
-  <thead>
-    <tr>
-      <th>Match</th>
-      <th>Date</th>
-      <th>League</th>
-    </tr>
-  </thead>
-  <tbody id="matches-list"></tbody>
-</table>
-      </section>
-    </div>
+// LOAD MATCHES
+fetch("data/matches.json")
+  .then(response => response.json())
+  .then(data => {
+    const matchesList = document.getElementById("matches-list");
+    if (!matchesList) return;
 
-    <aside class="sidebar">
-      <section class="side-block">
-        <h3>Live Matches</h3>
-<div class="live-score">
-<span>Enyimba</span>
-<strong>1 : 0</strong>
-<span>Rangers</span>
-</div>
+    data.forEach(match => {
+      const row = document.createElement("tr");
 
-<div class="live-score">
-<span>Remo Stars</span>
-<strong>0 : 0</strong>
-<span>Kano Pillars</span>
-</div>
-      </section>
+      row.innerHTML = `
+        <td><a href="match.html?id=${match.id}">${match.home} vs ${match.away}</a></td>
+        <td>${match.date}</td>
+        <td>${match.league}</td>
+      `;
 
-      <section class="side-block">
-        <h3>Top Leagues</h3>
-        <p>NPFL</p>
-        <p>Premier League</p>
-        <p>La Liga</p>
-        <p>Serie A</p>
-      </section>
-
-      <section class="side-block">
-        <h3>Featured Match</h3>
-        <p><strong>Nigeria vs Ghana</strong></p>
-        <p>28 May • 20:00</p>
-      </section>
-    </aside>
-
-  </main>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+      matchesList.appendChild(row);
+    });
+  })
+  .catch(error => console.log("Matches error:", error));
