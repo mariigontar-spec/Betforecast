@@ -28,23 +28,15 @@ fetch("data/matches.json")
     data.forEach(match => {
       const row = document.createElement("tr");
 
-     row.innerHTML = `
-<td>
-<a class="match-link" href="match.html?id=${match.id}">
-<img src="${match.logoHome}" class="team-logo">
-${match.home}
-
-<span class="vs">vs</span>
-
-<img src="${match.logoAway}" class="team-logo">
-${match.away}
-</a>
-</td>
-<td>${match.date}</td>
-<td>${match.league}</td>
-`;
+      row.innerHTML = `
+        <td><a href="match.html?id=${match.id}">${match.home} vs ${match.away}</a></td>
+        <td>${match.date}</td>
+        <td>${match.league}</td>
+      `;
 
       matchesList.appendChild(row);
     });
   })
   .catch(error => console.log("Matches error:", error));
+
+  
