@@ -1,15 +1,11 @@
 // LOAD NEWS
-
 fetch("data/news.json")
   .then(response => response.json())
   .then(data => {
-
     const newsList = document.getElementById("news-list");
-
     if (!newsList) return;
 
-    data.slice(0,6).forEach(article => {
-
+    data.slice(0, 6).forEach(article => {
       const card = document.createElement("div");
       card.className = "news-card";
 
@@ -20,19 +16,16 @@ fetch("data/news.json")
       `;
 
       newsList.appendChild(card);
-
     });
-
-});
+  })
+  .catch(error => console.log("News error:", error));
 
 
 // LOAD MATCHES
-
 fetch("data/matches.json")
   .then(response => response.json())
   .then(data => {
     const matchesList = document.getElementById("matches-list");
-
     if (!matchesList) return;
 
     data.forEach(match => {
@@ -46,4 +39,5 @@ fetch("data/matches.json")
 
       matchesList.appendChild(row);
     });
-  });
+  })
+  .catch(error => console.log("Matches error:", error));
