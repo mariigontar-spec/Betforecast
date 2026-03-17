@@ -426,3 +426,19 @@ text-decoration:none;
 .matches-table a:hover{
 text-decoration:underline;
 }
+.matches-table tr{
+transition:0.15s;
+}
+
+.matches-table tr:hover{
+background:#eef3ff;
+transform:scale(1.01);
+}
+.matches-table td:nth-child(2),
+.matches-table td:nth-child(3){
+color:#555;
+font-weight:500;
+}
+.matches-table td:first-child a{
+font-size:16px;
+}
