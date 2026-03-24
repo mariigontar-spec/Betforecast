@@ -442,3 +442,60 @@ font-weight:500;
 .matches-table td:first-child a{
 font-size:16px;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a1f2e;
+  padding: 20px 40px;
+  color: white;
+}
+
+.header nav a {
+  margin-left: 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background: #07131c;
+  color: white;
+}
+
+.hero-left h2 {
+  font-size: 42px;
+}
+
+.hero-card {
+  background: #0c1b27;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+}
+
+.probabilities {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.probabilities div {
+  font-size: 24px;
+  text-align: center;
+}
+
+.predictions {
+  padding: 40px;
+  background: #07131c;
+  color: white;
+}
+
+.prediction-card {
+  background: #0c1b27;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
