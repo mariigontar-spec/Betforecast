@@ -1,74 +1,61 @@
-const matchRows = [
-  {
+const urlParams = new URLSearchParams(window.location.search);
+const game = urlParams.get("game");
+
+// база матчей (как мини backend)
+const matches = {
+  ars_che: {
     league: "Premier League",
-    match: "Arsenal vs Chelsea",
-    ft: "2-1",
-    ht: "1-0",
-    tip: "Home Win",
-    odds: "2.1"
+    teams: ["Arsenal", "Chelsea"],
+    score: "2 - 1",
+    probs: [47, 28, 25],
+    summary: "Arsenal stronger in structure and chance creation. Chelsea dangerous in transitions."
   },
-  {
+
+  liv_tot: {
     league: "Premier League",
-    match: "Liverpool vs Tottenham",
-    ft: "2-1",
-    ht: "1-1",
-    tip: "BTTS",
-    odds: "2.7"
+    teams: ["Liverpool", "Tottenham"],
+    score: "2 - 1",
+    probs: [52, 24, 24],
+    summary: "Liverpool high press dominates. Tottenham relies on counter attacks."
   },
-  {
+
+  rm_bar: {
     league: "La Liga",
-    match: "Real Madrid vs Barcelona",
-    ft: "1-1",
-    ht: "0-1",
-    tip: "Draw Lean",
-    odds: "4.5"
-  },
-  {
-    league: "Serie A",
-    match: "Napoli vs AC Milan",
-    ft: "2-1",
-    ht: "1-0",
-    tip: "Home Win",
-    odds: "2.5"
-  },
-  {
-    league: "Bundesliga",
-    match: "Bayern vs Dortmund",
-    ft: "3-2",
-    ht: "2-1",
-    tip: "Over 2.5",
-    odds: "2.2"
+    teams: ["Real Madrid", "Barcelona"],
+    score: "1 - 1",
+    probs: [38, 34, 28],
+    summary: "Balanced game expected. Midfield battle defines tempo."
   }
-];
+};
 
-const matchTable = document.getElementById("match-table");
+// если матч не найден
+const match = matches[game] || matches["ars_che"];
 
-if (matchTable) {
-  const head = document.createElement("div");
-  head.className = "match-table-head";
-  head.innerHTML = `
-    <div>League</div>
-    <div>Match</div>
-    <div>FT</div>
-    <div>HT</div>
-    <div>Tip</div>
-    <div>Odds</div>
-  `;
-  matchTable.appendChild(head);
 
-  matchRows.forEach((item) => {
-    const row = document.createElement("div");
-    row.className = "match-table-row";
+// === ВСТАВКА В HTML ===
 
-    row.innerHTML = `
-      <div class="cell-league">${item.league}</div>
-      <div class="cell-match">${item.match}</div>
-      <div class="cell-ft">${item.ft}</div>
-      <div class="cell-ht">${item.ht}</div>
-      <div><span class="tip-badge">${item.tip}</span></div>
-      <div class="cell-odds">${item.odds}</div>
-    `;
+// заголовок
+document.querySelector(".match-feature-card h3").innerText =
+  `${match.teams[0]} vs ${match.teams[1]}`;
 
-    matchTable.appendChild(row);
-  });
-}
+// счет
+document.querySelector(".featured-scoreline").innerText =
+  match.score;
+
+// команды слева и справа
+document.querySelectorAll(".team-name")[0].innerText =
+  match.teams[0];
+
+document.querySelectorAll(".team-name")[1].innerText =
+  match.teams[1];
+
+// вероятности
+const probBoxes = document.querySelectorAll(".featured-prob-box strong");
+
+probBoxes[0].innerText = match.probs[0] + "%";
+probBoxes[1].innerText = match.probs[1] + "%";
+probBoxes[2].innerText = match.probs[2] + "%";
+
+// текст
+document.querySelector(".match-summary-text").innerText =
+  match.summary;
