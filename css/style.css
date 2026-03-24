@@ -1099,12 +1099,30 @@ main {
     grid-template-columns: 1fr;
   }
 }
-/* FIX: news images */
-
 .news-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 12px;
   display: block;
+}
+
+.news-card {
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  overflow: hidden;
+}
+
+.news-card h3 {
+  margin: 12px 0 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.news-card p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
 }
