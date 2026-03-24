@@ -3,39 +3,226 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Match Details</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Match Preview | BetForecast.ai</title>
+  <link rel="stylesheet" href="css/style.css?v=14">
 </head>
 <body>
 
-  <header>
-    <h1>BetForecast</h1>
-    <p>Football Match Preview</p>
-  </header>
-
-  <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="news.html">News</a>
-    <a href="match.html">Matches</a>
-  </nav>
-
-  <main class="layout">
-    <div class="main-content">
-      <section class="news">
-        <h2>Match Details</h2>
-        <div id="match-details"></div>
-      </section>
+  <header class="header">
+    <div class="logo-wrap">
+      <h1>BETFORECAST.ai</h1>
+      <div class="flag-box" aria-hidden="true">
+        <span class="flag-green"></span>
+        <span class="flag-white"></span>
+        <span class="flag-green"></span>
+      </div>
     </div>
 
-    <aside class="sidebar">
-      <section class="side-block">
-        <h3>Top Leagues</h3>
-        <p>NPFL</p>
-        <p>Premier League</p>
-        <p>La Liga</p>
-        <p>Serie A</p>
-      </section>
-    </aside>
+    <nav class="nav">
+      <a href="index.html">Predictions</a>
+      <a href="match.html">Matches</a>
+      <a href="#">Results</a>
+      <a href="news.html">News</a>
+      <a href="ai-insights.html">AI Insights</a>
+    </nav>
+
+    <a class="signin-btn" href="#">Sign In</a>
+  </header>
+
+  <main class="match-page-wrap">
+    <section class="match-top-hero">
+      <div class="match-top-hero-overlay"></div>
+
+      <div class="match-top-hero-left">
+        <div class="hero-badge">Match Preview</div>
+        <h2>Match Predictions, Key Stats & AI Breakdown</h2>
+        <p>
+          Explore upcoming fixtures with projected scorelines, form comparison,
+          xG signals, and the match context behind every BetForecast.ai prediction.
+        </p>
+      </div>
+
+      <div class="match-top-hero-card">
+        <div class="mini-label">Featured Match</div>
+        <h3>Arsenal vs Chelsea</h3>
+        <p>
+          Model leans Arsenal on form and territory, but Chelsea remains live in transition-heavy phases.
+        </p>
+        <div class="hero-match-mini">
+          <span>47% Home</span>
+          <span>28% Draw</span>
+          <span>25% Away</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="match-layout-v2">
+      <div class="match-main-column">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Featured Match Preview</h2>
+          </div>
+
+          <article class="match-feature-card">
+            <div class="match-feature-header">
+              <div>
+                <div class="news-category">Premier League</div>
+                <h3>Arsenal vs Chelsea</h3>
+                <p class="match-meta-line">Saturday • 18:30 • Emirates Stadium</p>
+              </div>
+              <div class="confidence-pill">Confidence 74%</div>
+            </div>
+
+            <div class="match-scoreline-preview">
+              <div class="team-side">
+                <div class="team-badge">ARS</div>
+                <div class="team-name">Arsenal</div>
+              </div>
+
+              <div class="match-center-stats">
+                <div class="featured-scoreline">2 - 1</div>
+                <div class="featured-score-caption">Projected score</div>
+              </div>
+
+              <div class="team-side">
+                <div class="team-badge">CHE</div>
+                <div class="team-name">Chelsea</div>
+              </div>
+            </div>
+
+            <div class="featured-prob-grid">
+              <div class="featured-prob-box">
+                <strong>47%</strong>
+                <span>Arsenal Win</span>
+              </div>
+              <div class="featured-prob-box">
+                <strong>28%</strong>
+                <span>Draw</span>
+              </div>
+              <div class="featured-prob-box">
+                <strong>25%</strong>
+                <span>Chelsea Win</span>
+              </div>
+            </div>
+
+            <div class="featured-long-bar">
+              <div class="bar-home"></div>
+              <div class="bar-draw"></div>
+              <div class="bar-away"></div>
+            </div>
+
+            <div class="match-summary-text">
+              Arsenal enters with stronger chance creation, steadier pressing sequences,
+              and better home control metrics. Chelsea still profiles as dangerous when the game stretches,
+              especially if they score first or force Arsenal into rushed transitions.
+            </div>
+          </article>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Upcoming Match Table</h2>
+          </div>
+
+          <div id="match-table" class="match-table-v2"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Team Form & Comparison</h2>
+          </div>
+
+          <div class="match-comparison-grid">
+            <div class="compare-card">
+              <h3>Arsenal</h3>
+              <div class="form-badges">
+                <span class="form-win">W</span>
+                <span class="form-win">W</span>
+                <span class="form-draw">D</span>
+                <span class="form-win">W</span>
+                <span class="form-loss">L</span>
+              </div>
+              <ul class="compare-list">
+                <li>xG trend: <strong>+0.41</strong></li>
+                <li>Goals last 5: <strong>10</strong></li>
+                <li>Conceded last 5: <strong>4</strong></li>
+                <li>Possession avg: <strong>58%</strong></li>
+              </ul>
+            </div>
+
+            <div class="compare-card">
+              <h3>Chelsea</h3>
+              <div class="form-badges">
+                <span class="form-draw">D</span>
+                <span class="form-win">W</span>
+                <span class="form-loss">L</span>
+                <span class="form-win">W</span>
+                <span class="form-draw">D</span>
+              </div>
+              <ul class="compare-list">
+                <li>xG trend: <strong>+0.08</strong></li>
+                <li>Goals last 5: <strong>7</strong></li>
+                <li>Conceded last 5: <strong>6</strong></li>
+                <li>Possession avg: <strong>49%</strong></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="match-sidebar-v2">
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Key Signals</h2>
+          </div>
+          <div class="key-signal-list">
+            <div class="key-signal-item">
+              <span>Best Tip</span>
+              <strong>Home Win</strong>
+            </div>
+            <div class="key-signal-item">
+              <span>Goals Lean</span>
+              <strong>Over 2.5</strong>
+            </div>
+            <div class="key-signal-item">
+              <span>BTTS</span>
+              <strong>Live</strong>
+            </div>
+            <div class="key-signal-item">
+              <span>Model Confidence</span>
+              <strong>74%</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Top Leagues</h2>
+          </div>
+          <div class="league-list">
+            <a href="#">NPFL</a>
+            <a href="#">Premier League</a>
+            <a href="#">La Liga</a>
+            <a href="#">Serie A</a>
+            <a href="#">Bundesliga</a>
+            <a href="#">Champions League</a>
+          </div>
+        </section>
+
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Quick Insight</h2>
+          </div>
+          <div class="news-focus-box">
+            <strong>What can flip this match?</strong>
+            <p>
+              An early Chelsea goal changes game-state structure fast. Without that, Arsenal’s
+              territorial control and repeatable chance creation likely tilt the forecast home.
+            </p>
+          </div>
+        </section>
+      </aside>
+    </section>
   </main>
 
   <script src="js/match-page.js"></script>
