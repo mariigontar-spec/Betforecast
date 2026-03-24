@@ -8,83 +8,46 @@
 </head>
 <body>
 
-  <header>
-    <h1>BetForecast</h1>
-    <p>Football news and upcoming matches</p>
-  </header>
-
-  <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="news.html">News</a>
-    <a href="#">Matches</a>
+<header class="header">
+  <h1>BETFORECAST.ai</h1>
+  <nav>
     <a href="#">Predictions</a>
+    <a href="#">Matches</a>
+    <a href="#">Results</a>
+    <a href="#">News</a>
+    <a href="#">Oracle</a>
   </nav>
+</header>
 
-  <section class="hero-match">
-    <div class="hero-content">
-      <p class="hero-label">Featured Match</p>
-      <h2>Nigeria vs Ghana</h2>
-      <p>28 May • Friendly Match</p>
-      <a class="hero-button" href="match.html?id=3">View Match Preview</a>
-    </div>
-  </section>
+<section class="hero">
+  <div class="hero-left">
+    <h2>AI Football Predictions</h2>
+    <p>Smart predictions, match results and AI-powered insights.</p>
+    <button>Open Predictions</button>
+  </div>
 
-  <main class="layout">
-    <div class="main-content">
-      <section class="news">
-        <h2>Latest Football News</h2>
-        <p><a class="view-all" href="news.html">View All News</a></p>
-        <div id="news-list"></div>
-      </section>
+  <div class="hero-card">
+    <h3>Arsenal vs Chelsea</h3>
 
-      <section class="matches">
-        <h2>Upcoming Matches</h2>
-        <table class="matches-table">
-          <thead>
-            <tr>
-              <th>Match</th>
-              <th>Date</th>
-              <th>League</th>
-            </tr>
-          </thead>
-          <tbody id="matches-list"></tbody>
-        </table>
-      </section>
+    <div class="probabilities">
+      <div>47%<span>Home</span></div>
+      <div>28%<span>Draw</span></div>
+      <div>25%<span>Away</span></div>
     </div>
 
-    <aside class="sidebar">
-      <section class="side-block">
-        <h3>Live Matches</h3>
+    <p class="ai-text">
+      Arsenal slightly ahead due to form and home advantage.
+    </p>
+  </div>
+</section>
 
-        <div class="live-score">
-          <span>Enyimba</span>
-          <strong>1 : 0</strong>
-          <span>Rangers</span>
-        </div>
+<section class="predictions">
+  <h2>🔥 Today’s Best Predictions</h2>
 
-        <div class="live-score">
-          <span>Remo Stars</span>
-          <strong>0 : 0</strong>
-          <span>Kano Pillars</span>
-        </div>
-      </section>
+  <div id="predictions-container"></div>
+</section>
 
-      <section class="side-block">
-        <h3>Top Leagues</h3>
-        <p>NPFL</p>
-        <p>Premier League</p>
-        <p>La Liga</p>
-        <p>Serie A</p>
-      </section>
+<script src="js/main.js"></script>
 
-      <section class="side-block">
-        <h3>Featured Match</h3>
-        <p><strong>Nigeria vs Ghana</strong></p>
-        <p>28 May • 20:00</p>
-      </section>
-    </aside>
-  </main>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
