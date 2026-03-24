@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All News | BetForecast.ai</title>
-  <link rel="stylesheet" href="css/style.css?v=12">
+  <title>News | BetForecast.ai</title>
+  <link rel="stylesheet" href="css/style.css?v=13">
 </head>
 <body>
 
@@ -29,28 +29,61 @@
     <a class="signin-btn" href="#">Sign In</a>
   </header>
 
-  <main>
-    <section class="news-hero">
-      <div class="hero-badge">News</div>
-      <h2>All Football News</h2>
-      <p>
-        Latest football headlines, transfer updates, club stories, and match-related coverage
-        collected into one clean BetForecast.ai news feed.
-      </p>
+  <main class="news-page-wrap">
+    <section class="news-top-hero">
+      <div class="news-top-hero-overlay"></div>
+
+      <div class="news-top-hero-left">
+        <div class="hero-badge">News</div>
+        <h2>Football News, Transfer Signals & Match Storylines</h2>
+        <p>
+          A curated BetForecast.ai news feed covering major football headlines,
+          transfer movement, title-race pressure, and the stories shaping the next fixtures.
+        </p>
+      </div>
+
+      <div class="news-top-hero-card">
+        <div class="mini-label">Editor Focus</div>
+        <h3>Arsenal injury update ahead of Chelsea clash</h3>
+        <p>
+          Availability, structure, and midfield control may shape both the pre-match narrative
+          and the model’s forecast edge.
+        </p>
+      </div>
     </section>
 
-    <main class="layout">
-      <div class="main-content">
-        <section class="news-feed panel">
+    <section class="news-layout-v2">
+      <div class="news-main-column">
+        <section class="panel news-featured-panel">
+          <div class="panel-head">
+            <h2>Featured Story</h2>
+          </div>
+
+          <article class="featured-news-card">
+            <div class="featured-news-image"></div>
+            <div class="featured-news-body">
+              <div class="news-category">Premier League</div>
+              <h3>Arsenal injury update ahead of Chelsea clash</h3>
+              <p>
+                Arsenal enters a critical phase of the title race with late selection calls
+                likely to affect shape, pressing rhythm, and the balance of the midfield battle.
+              </p>
+              <div class="featured-news-meta">8 min ago • 4 min read</div>
+            </div>
+          </article>
+        </section>
+
+        <section class="panel news-feed-panel">
           <div class="panel-head">
             <h2>Latest Stories</h2>
           </div>
-          <div id="news-list" class="news-grid"></div>
+
+          <div id="news-list" class="news-grid-v2"></div>
         </section>
       </div>
 
-      <aside class="sidebar">
-        <section class="side-block panel">
+      <aside class="news-sidebar-v2">
+        <section class="panel side-block">
           <div class="panel-head">
             <h2>Top Leagues</h2>
           </div>
@@ -64,7 +97,7 @@
           </div>
         </section>
 
-        <section class="side-block panel">
+        <section class="panel side-block">
           <div class="panel-head">
             <h2>Trending Topics</h2>
           </div>
@@ -75,8 +108,21 @@
             <a href="#">Champions League draw</a>
           </div>
         </section>
+
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>News Focus</h2>
+          </div>
+          <div class="news-focus-box">
+            <strong>What matters most today</strong>
+            <p>
+              Transfer movement, injury status, and late tactical changes are driving both
+              football coverage and forecast volatility.
+            </p>
+          </div>
+        </section>
       </aside>
-    </main>
+    </section>
   </main>
 
   <script src="js/news-page.js"></script>
