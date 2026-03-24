@@ -1896,3 +1896,19 @@ main {
   border-color: rgba(21,178,107,0.24);
   background: rgba(255,255,255,0.06);
 }
+.trending-list a {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+
+.trending-list a:hover {
+  border-color: rgba(21,178,107,0.25);
+  background: rgba(255,255,255,0.06);
+}
