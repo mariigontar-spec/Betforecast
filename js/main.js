@@ -207,3 +207,13 @@ if (resultsContainer) {
     resultsContainer.appendChild(row);
   });
 }
+const currentGame = new URLSearchParams(window.location.search).get("game");
+
+if (currentGame) {
+  document.querySelectorAll("a[href*='match.html']").forEach(link => {
+    if (link.href.includes(currentGame)) {
+      link.style.border = "1px solid rgba(21,178,107,0.5)";
+      link.style.background = "rgba(21,178,107,0.08)";
+    }
+  });
+}
