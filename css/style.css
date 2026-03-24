@@ -1880,6 +1880,19 @@ main {
 
 .match-row {
   display: grid;
+  grid-template-columns: 120px 1.6fr 90px 90px 120px 80px;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
   color: inherit;
   text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.match-row:hover {
+  border-color: rgba(21,178,107,0.24);
+  background: rgba(255,255,255,0.06);
 }
