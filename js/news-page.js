@@ -1,22 +1,65 @@
-fetch("data/news.json")
-  .then(response => response.json())
-  .then(data => {
+const newsItems = [
+  {
+    category: "Premier League",
+    title: "Arsenal injury update ahead of Chelsea clash",
+    excerpt: "Arsenal prepares for a high-pressure London meeting with late fitness checks shaping the final selection picture.",
+    image: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1200&q=80",
+    time: "8 min ago"
+  },
+  {
+    category: "Transfers",
+    title: "Man United step up pursuit of top striker",
+    excerpt: "United’s recruitment push intensifies as the club looks to add more attacking weight before the next window closes.",
+    image: "https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1200&q=80",
+    time: "1 hr ago"
+  },
+  {
+    category: "La Liga",
+    title: "Barcelona midfield reshuffle before El Clasico",
+    excerpt: "Tactical adjustments in the middle third could shape the rhythm, press resistance, and transition balance of the match.",
+    image: "https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?auto=format&fit=crop&w=1200&q=80",
+    time: "2 hrs ago"
+  },
+  {
+    category: "Title Race",
+    title: "Premier League pressure rises at the top",
+    excerpt: "Every dropped point now hits harder as the title race narrows into small margins, momentum swings, and schedule stress.",
+    image: "https://images.unsplash.com/photo-1570498839593-e565b39455fc?auto=format&fit=crop&w=1200&q=80",
+    time: "3 hrs ago"
+  },
+  {
+    category: "Serie A",
+    title: "Napoli rebuild attacking rhythm before Milan test",
+    excerpt: "Napoli’s final-third movement has sharpened again, but the Milan matchup still presents a more disciplined defensive puzzle.",
+    image: "https://images.unsplash.com/photo-1486286701208-1d58e9338013?auto=format&fit=crop&w=1200&q=80",
+    time: "4 hrs ago"
+  },
+  {
+    category: "Champions League",
+    title: "Knockout ties likely to turn on game-state control",
+    excerpt: "The biggest European ties this week may be decided less by volume and more by who controls panic after the first goal.",
+    image: "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1200&q=80",
+    time: "5 hrs ago"
+  }
+];
 
-    const newsList = document.getElementById("news-list");
+const newsList = document.getElementById("news-list");
 
-    data.forEach(article => {
+if (newsList) {
+  newsItems.forEach((item) => {
+    const card = document.createElement("article");
+    card.className = "news-card";
 
-      const card = document.createElement("div");
-      card.className = "news-card";
+    card.innerHTML = `
+      <img src="${item.image}" alt="${item.title}">
+      <div class="news-card-body">
+        <div class="news-category">${item.category}</div>
+        <h3>${item.title}</h3>
+        <p>${item.excerpt}</p>
+        <div class="news-meta">${item.time}</div>
+      </div>
+    `;
 
-      card.innerHTML = `
-        <img src="${article.image}">
-        <h3><a href="#">${article.title}</a></h3>
-        <p>${article.text}</p>
-      `;
-
-      newsList.appendChild(card);
-
-    });
-
-});
+    newsList.appendChild(card);
+  });
+}
