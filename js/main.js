@@ -1,5 +1,6 @@
 const predictions = [
   {
+    id: "mci_ars",
     league: "Premier League",
     home: "Man City",
     away: "Arsenal",
@@ -10,6 +11,7 @@ const predictions = [
     score: "2-2"
   },
   {
+    id: "mci_ars",
     league: "La Liga",
     home: "Real Madrid",
     away: "Barcelona",
@@ -20,6 +22,7 @@ const predictions = [
     score: "1-1"
   },
   {
+    id: "mci_ars",
     league: "Premier League",
     home: "Liverpool",
     away: "Tottenham",
@@ -30,6 +33,7 @@ const predictions = [
     score: "2-1"
   },
   {
+    id: "mci_ars",
     league: "Ligue 1",
     home: "PSG",
     away: "Lyon",
@@ -117,8 +121,9 @@ const resultsContainer = document.getElementById("results-container");
 
 if (predictionsContainer) {
   predictions.forEach((item) => {
-    const card = document.createElement("div");
-    card.className = "prediction-card";
+    const card = document.createElement("a");
+card.className = "prediction-card";
+    card.href = `match.html?game=${item.id}`;
 
     card.innerHTML = `
       <div class="prediction-card-cover"></div>
