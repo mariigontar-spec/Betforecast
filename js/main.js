@@ -11,7 +11,7 @@ const predictions = [
     score: "2-2"
   },
   {
-    id: "mci_ars",
+    id: "rm_bar",
     league: "La Liga",
     home: "Real Madrid",
     away: "Barcelona",
@@ -22,7 +22,7 @@ const predictions = [
     score: "1-1"
   },
   {
-    id: "mci_ars",
+    id: "liv_tot",
     league: "Premier League",
     home: "Liverpool",
     away: "Tottenham",
@@ -33,7 +33,7 @@ const predictions = [
     score: "2-1"
   },
   {
-    id: "mci_ars",
+    id: "psg_lyo",
     league: "Ligue 1",
     home: "PSG",
     away: "Lyon",
@@ -122,7 +122,7 @@ const resultsContainer = document.getElementById("results-container");
 if (predictionsContainer) {
   predictions.forEach((item) => {
     const card = document.createElement("a");
-card.className = "prediction-card";
+    card.className = "prediction-card";
     card.href = `match.html?game=${item.id}`;
 
     card.innerHTML = `
@@ -152,6 +152,10 @@ card.className = "prediction-card";
         </div>
       </div>
     `;
+
+    predictionsContainer.appendChild(card);
+  });
+}
 
     predictionsContainer.appendChild(card);
   });
