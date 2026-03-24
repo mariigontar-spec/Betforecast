@@ -3,51 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BetForecast</title>
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <title>BetForecast.ai</title>
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
-<header class="header">
-  <h1>BETFORECAST.ai</h1>
-  <nav>
-    <a href="#">Predictions</a>
-    <a href="#">Matches</a>
-    <a href="#">Results</a>
-    <a href="#">News</a>
-    <a href="#">Oracle</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="hero-left">
-    <h2>AI Football Predictions</h2>
-    <p>Smart predictions, match results and AI-powered insights.</p>
-    <button>Open Predictions</button>
-  </div>
-
-  <div class="hero-card">
-    <h3>Arsenal vs Chelsea</h3>
-
-    <div class="probabilities">
-      <div>47%<span>Home</span></div>
-      <div>28%<span>Draw</span></div>
-      <div>25%<span>Away</span></div>
+  <header class="header">
+    <div class="logo-wrap">
+      <h1>BETFORECAST.ai</h1>
+      <div class="flag-box" aria-hidden="true">
+        <span class="flag-green"></span>
+        <span class="flag-white"></span>
+        <span class="flag-green"></span>
+      </div>
     </div>
 
-    <p class="ai-text">
-      Arsenal slightly ahead due to form and home advantage.
-    </p>
-  </div>
-</section>
+    <nav class="nav">
+      <a href="#">Predictions</a>
+      <a href="match.html">Matches</a>
+      <a href="news.html">News</a>
+      <a href="#">Oracle</a>
+    </nav>
 
-<section class="predictions">
-  <h2>🔥 Today’s Best Predictions</h2>
+    <a class="signin-btn" href="#">Sign In</a>
+  </header>
 
-  <div id="predictions-container"></div>
-</section>
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
 
-<script src="js/main.js"></script>
+      <div class="hero-left">
+        <div class="hero-badge">AI Match Spotlight</div>
+        <h2>Football Predictions, Results & Oracle Insights</h2>
+        <p>
+          BetForecast.ai brings together smart match predictions, finished results,
+          football news, and AI-powered analysis in one clean dashboard.
+        </p>
 
+        <div class="hero-actions">
+          <a href="#predictions" class="primary-btn">Open Predictions</a>
+          <a href="#results" class="secondary-btn">View Results</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="card-top">
+          <span class="mini-label">Featured Match</span>
+          <span class="mini-tag">Oracle</span>
+        </div>
+
+        <h3>Arsenal vs Chelsea</h3>
+
+        <div class="probabilities">
+          <div>
+            47%
+            <span>Home</span>
+          </div>
+          <div>
+            28%
+            <span>Draw</span>
+          </div>
+          <div>
+            25%
+            <span>Away</span>
+          </div>
+        </div>
+
+        <div class="probability-bar">
+          <div class="bar-home"></div>
+          <div class="bar-draw"></div>
+          <div class="bar-away"></div>
+        </div>
+
+        <p class="ai-text">
+          Arsenal slightly ahead due to form, home pressure, and better recent chance creation.
+          Chelsea still carry enough transition threat to keep the draw alive.
+        </p>
+      </div>
+    </section>
+
+    <section class="predictions-section" id="predictions">
+      <div class="section-head">
+        <h2>🔥 Today’s Best Predictions</h2>
+        <a href="#" class="view-all-btn">View All</a>
+      </div>
+
+      <div id="predictions-container" class="predictions-grid"></div>
+    </section>
+
+    <section class="content-grid">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Upcoming Matches</h2>
+        </div>
+        <div id="matches-container" class="match-list"></div>
+      </section>
+
+      <section class="panel side-panel">
+        <div class="panel-head">
+          <h2>Trending Matches</h2>
+        </div>
+        <div class="trending-list">
+          <a href="#">Arsenal vs Chelsea</a>
+          <a href="#">Real Madrid vs Barcelona</a>
+          <a href="#">Liverpool vs Tottenham</a>
+          <a href="#">PSG vs Marseille</a>
+        </div>
+      </section>
+    </section>
+
+    <section class="content-grid bottom-grid" id="results">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Yesterday’s Results</h2>
+        </div>
+        <div id="results-container" class="results-list"></div>
+      </section>
+
+      <section class="panel side-panel">
+        <div class="panel-head">
+          <h2>League Standings</h2>
+        </div>
+        <div class="standings-list">
+          <div class="standing-row">
+            <span>1. Arsenal</span>
+            <strong>71</strong>
+          </div>
+          <div class="standing-row">
+            <span>2. Man City</span>
+            <strong>69</strong>
+          </div>
+          <div class="standing-row">
+            <span>3. Liverpool</span>
+            <strong>66</strong>
+          </div>
+          <div class="standing-row">
+            <span>4. PSG</span>
+            <strong>64</strong>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
