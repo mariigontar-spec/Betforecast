@@ -2,31 +2,60 @@ const urlParams = new URLSearchParams(window.location.search);
 const game = urlParams.get("game");
 
 // база матчей (как мини backend)
-const matches = {
-  ars_che: {
-    league: "Premier League",
-    teams: ["Arsenal", "Chelsea"],
-    score: "2 - 1",
-    probs: [47, 28, 25],
-    summary: "Arsenal stronger in structure and chance creation. Chelsea dangerous in transitions."
-  },
+const urlParams = new URLSearchParams(window.location.search);
+const game = urlParams.get("game");
 
-  liv_tot: {
-    league: "Premier League",
-    teams: ["Liverpool", "Tottenham"],
-    score: "2 - 1",
-    probs: [52, 24, 24],
-    summary: "Liverpool high press dominates. Tottenham relies on counter attacks."
+const matches = {
+  mci_ars: {
+    teams: ["Man City", "Arsenal"],
+    score: "2 - 2",
+    probs: [54, 24, 22],
+    summary: "Man City controls more territory, but Arsenal still carries enough quality to keep the match balanced."
   },
 
   rm_bar: {
-    league: "La Liga",
     teams: ["Real Madrid", "Barcelona"],
     score: "1 - 1",
-    probs: [38, 34, 28],
-    summary: "Balanced game expected. Midfield battle defines tempo."
+    probs: [32, 46, 22],
+    summary: "Balanced game expected. Midfield control and first-goal timing will shape the match."
+  },
+
+  liv_tot: {
+    teams: ["Liverpool", "Tottenham"],
+    score: "2 - 1",
+    probs: [48, 28, 24],
+    summary: "Liverpool projects stronger shot volume, while Tottenham remains dangerous in transition."
+  },
+
+  psg_lyo: {
+    teams: ["PSG", "Lyon"],
+    score: "3 - 1",
+    probs: [61, 21, 18],
+    summary: "PSG rates higher in possession control and expected goal output, especially at home."
   }
 };
+
+const match = matches[game] || matches["mci_ars"];
+
+document.querySelector(".match-feature-card h3").innerText =
+  `${match.teams[0]} vs ${match.teams[1]}`;
+
+document.querySelector(".featured-scoreline").innerText =
+  match.score;
+
+document.querySelectorAll(".team-name")[0].innerText =
+  match.teams[0];
+
+document.querySelectorAll(".team-name")[1].innerText =
+  match.teams[1];
+
+const probBoxes = document.querySelectorAll(".featured-prob-box strong");
+probBoxes[0].innerText = match.probs[0] + "%";
+probBoxes[1].innerText = match.probs[1] + "%";
+probBoxes[2].innerText = match.probs[2] + "%";
+
+document.querySelector(".match-summary-text").innerText =
+  match.summary;
 
 // если матч не найден
 const match = matches[game] || matches["ars_che"];
