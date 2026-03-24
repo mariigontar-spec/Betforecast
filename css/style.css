@@ -1872,3 +1872,9 @@ main {
     text-align: center;
   }
 }
+.prediction-card,
+.match-row {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
