@@ -47,8 +47,9 @@ const predictions = [
 
 const upcomingMatches = [
   {
+    id: "mci_ars",
     league: "Premier League",
-    match: "Man United vs Arsenal",
+    match: "Man City vs Arsenal",
     ft: "2-2",
     ht: "1-1",
     xg: "2.1 - 2.3",
@@ -56,36 +57,40 @@ const upcomingMatches = [
     odds: "6.6"
   },
   {
-    league: "Premier League",
-    match: "Aston Villa vs Brentford",
-    ft: "3-3",
-    ht: "0-2",
-    xg: "3.4 - 1.9",
-    tip: "BTTS +",
-    odds: "3.3"
-  },
-  {
+    id: "liv_tot",
     league: "Premier League",
     match: "Liverpool vs Tottenham",
-    ft: "2-4",
-    ht: "1-3",
-    xg: "1.1 - 1.9",
-    tip: "Away Win",
-    odds: "4.1"
+    ft: "2-1",
+    ht: "1-1",
+    xg: "1.8 - 1.2",
+    tip: "Home Win",
+    odds: "2.2"
   },
   {
-    league: "Premier League",
-    match: "Arsenal vs Chelsea",
-    ft: "1-0",
+    id: "rm_bar",
+    league: "La Liga",
+    match: "Real Madrid vs Barcelona",
+    ft: "1-1",
+    ht: "0-1",
+    xg: "1.4 - 1.3",
+    tip: "BTTS",
+    odds: "4.5"
+  },
+  {
+    id: "psg_lyo",
+    league: "Ligue 1",
+    match: "PSG vs Lyon",
+    ft: "3-1",
     ht: "1-0",
-    xg: "2.6 - 0.8",
-    tip: "Under 3.5",
-    odds: "2.1"
+    xg: "2.4 - 0.9",
+    tip: "Over 2.5",
+    odds: "1.9"
   }
 ];
 
 const yesterdayResults = [
   {
+    id: "che_whu",
     match: "Chelsea vs West Ham",
     ft: "1-0",
     ht: "1-0",
@@ -93,6 +98,7 @@ const yesterdayResults = [
     odds: "2.8"
   },
   {
+    id: "cry_mci",
     match: "Crystal Palace vs Man City",
     ft: "2-4",
     ht: "1-2",
@@ -100,6 +106,7 @@ const yesterdayResults = [
     odds: "4.1"
   },
   {
+    id: "rm_bar",
     match: "Real Madrid vs Barcelona",
     ft: "1-1",
     ht: "0-1",
@@ -107,6 +114,7 @@ const yesterdayResults = [
     odds: "4.5"
   },
   {
+    id: "nap_mil",
     match: "Napoli vs AC Milan",
     ft: "3-1",
     ht: "1-0",
@@ -157,14 +165,11 @@ if (predictionsContainer) {
   });
 }
 
-    predictionsContainer.appendChild(card);
-  });
-}
-
 if (matchesContainer) {
   upcomingMatches.forEach((item) => {
-    const row = document.createElement("div");
+    const row = document.createElement("a");
     row.className = "match-row";
+    row.href = `match.html?game=${item.id}`;
 
     row.innerHTML = `
       <div class="cell-league">${item.league}</div>
