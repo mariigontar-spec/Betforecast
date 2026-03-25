@@ -2,12 +2,20 @@ async function loadHomePage() {
   const predictionsContainer = document.getElementById("predictions-container");
   const matchesContainer = document.getElementById("matches-container");
   const resultsContainer = document.getElementById("results-container");
+  const homepageNewsList = document.getElementById("homepage-news-list");
 
   try {
-    const response = await fetch("data/matches.json");
-    const matches = await response.json();
+    const [matchesResponse, newsResponse] = await Promise.all([
+      fetch("data/matches.json"),
+      fetch("data/news.json")
+    ]);
+
+    const matches = await matchesResponse.json();
+    const newsItems = await newsResponse.json();
 
     if (predictionsContainer) {
+      predictionsContainer.innerHTML = "";
+
       matches.forEach((item) => {
         const card = document.createElement("a");
         card.className = "prediction-card";
@@ -46,6 +54,8 @@ async function loadHomePage() {
     }
 
     if (matchesContainer) {
+      matchesContainer.innerHTML = "";
+
       matches.forEach((item) => {
         const row = document.createElement("a");
         row.className = "match-row";
@@ -68,6 +78,8 @@ async function loadHomePage() {
     }
 
     if (resultsContainer) {
+      resultsContainer.innerHTML = "";
+
       matches.forEach((item) => {
         const row = document.createElement("a");
         row.className = "result-row";
@@ -88,8 +100,30 @@ async function loadHomePage() {
         resultsContainer.appendChild(row);
       });
     }
+
+    if (homepageNewsList) {
+      homepageNewsList.innerHTML = "";
+
+      newsItems.slice(0, 4).forEach((item) => {
+        const card = document.createElement("a");
+        card.className = "homepage-news-card";
+        card.href = `news-article.html?id=${item.id}`;
+
+        card.innerHTML = `
+          <img src="${item.image}" alt="${item.title}">
+          <div class="homepage-news-card-body">
+            <div class="news-category">${item.category}</div>
+            <h3>${item.title}</h3>
+            <div class="news-meta">${item.time} • ${item.readTime}</div>
+          </div>
+        `;
+
+        homepageNewsList.appendChild(card);
+      });
+    }
+
   } catch (error) {
-    console.error("Failed to load matches.json:", error);
+    console.error("Failed to load homepage data:", error);
   }
 }
 
