@@ -107,7 +107,7 @@ async function loadHomePage() {
       newsItems.slice(0, 4).forEach((item) => {
         const card = document.createElement("a");
         card.className = "homepage-news-card";
-        card.href = `news-article.html?id=${item.id}`;
+       card.href = `article.html?id=${item.id}`;
 
         card.innerHTML = `
   <img src="${item.image}" alt="${item.title}">
