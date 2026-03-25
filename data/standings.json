@@ -1,1 +1,97 @@
-
+{
+  "defaultLeague": "epl",
+  "leagues": [
+    {
+      "id": "epl",
+      "country": "England",
+      "name": "Premier League",
+      "season": "2025/26 season",
+      "insightTitle": "Title race pressure",
+      "insightText": "Top positions are separated by narrow margins, making every dropped point highly visible.",
+      "table": [
+        { "pos": 1, "team": "Arsenal", "played": 30, "wins": 21, "draws": 6, "losses": 3, "gf": 62, "ga": 27, "points": 69, "form": ["W","W","D","W","W"], "zone": "cl" },
+        { "pos": 2, "team": "Man City", "played": 30, "wins": 20, "draws": 7, "losses": 3, "gf": 66, "ga": 29, "points": 67, "form": ["W","W","W","D","W"], "zone": "cl" },
+        { "pos": 3, "team": "Liverpool", "played": 30, "wins": 19, "draws": 8, "losses": 3, "gf": 61, "ga": 31, "points": 65, "form": ["W","D","W","L","W"], "zone": "cl" },
+        { "pos": 4, "team": "Tottenham", "played": 30, "wins": 17, "draws": 7, "losses": 6, "gf": 55, "ga": 39, "points": 58, "form": ["W","L","W","W","D"], "zone": "cl" },
+        { "pos": 5, "team": "Chelsea", "played": 30, "wins": 16, "draws": 7, "losses": 7, "gf": 49, "ga": 34, "points": 55, "form": ["D","W","L","W","D"], "zone": "el" },
+        { "pos": 6, "team": "Man United", "played": 30, "wins": 15, "draws": 8, "losses": 7, "gf": 47, "ga": 35, "points": 53, "form": ["W","D","W","D","L"], "zone": "el" },
+        { "pos": 7, "team": "Aston Villa", "played": 30, "wins": 14, "draws": 7, "losses": 9, "gf": 45, "ga": 39, "points": 49, "form": ["W","L","W","L","W"], "zone": "safe" },
+        { "pos": 8, "team": "Newcastle", "played": 30, "wins": 13, "draws": 8, "losses": 9, "gf": 44, "ga": 40, "points": 47, "form": ["D","L","W","W","D"], "zone": "safe" },
+        { "pos": 9, "team": "West Ham", "played": 30, "wins": 12, "draws": 8, "losses": 10, "gf": 41, "ga": 41, "points": 44, "form": ["L","W","D","W","L"], "zone": "safe" },
+        { "pos": 10, "team": "Brighton", "played": 30, "wins": 11, "draws": 9, "losses": 10, "gf": 39, "ga": 38, "points": 42, "form": ["W","D","L","D","W"], "zone": "safe" },
+        { "pos": 11, "team": "Wolves", "played": 30, "wins": 10, "draws": 8, "losses": 12, "gf": 34, "ga": 40, "points": 38, "form": ["L","W","L","D","W"], "zone": "safe" },
+        { "pos": 12, "team": "Fulham", "played": 30, "wins": 10, "draws": 7, "losses": 13, "gf": 35, "ga": 42, "points": 37, "form": ["W","L","L","W","D"], "zone": "safe" },
+        { "pos": 13, "team": "Brentford", "played": 30, "wins": 9, "draws": 9, "losses": 12, "gf": 36, "ga": 43, "points": 36, "form": ["D","D","L","W","L"], "zone": "safe" },
+        { "pos": 14, "team": "Bournemouth", "played": 30, "wins": 9, "draws": 8, "losses": 13, "gf": 33, "ga": 44, "points": 35, "form": ["L","D","W","L","L"], "zone": "safe" },
+        { "pos": 15, "team": "Crystal Palace", "played": 30, "wins": 8, "draws": 9, "losses": 13, "gf": 31, "ga": 42, "points": 33, "form": ["D","L","L","W","D"], "zone": "safe" },
+        { "pos": 16, "team": "Everton", "played": 30, "wins": 8, "draws": 8, "losses": 14, "gf": 29, "ga": 41, "points": 32, "form": ["L","W","D","L","L"], "zone": "safe" },
+        { "pos": 17, "team": "Burnley", "played": 30, "wins": 7, "draws": 8, "losses": 15, "gf": 28, "ga": 45, "points": 29, "form": ["L","D","L","W","L"], "zone": "safe" },
+        { "pos": 18, "team": "Nottm Forest", "played": 30, "wins": 7, "draws": 7, "losses": 16, "gf": 27, "ga": 47, "points": 28, "form": ["L","L","W","L","D"], "zone": "rel" },
+        { "pos": 19, "team": "Luton", "played": 30, "wins": 6, "draws": 8, "losses": 16, "gf": 26, "ga": 49, "points": 26, "form": ["D","L","L","D","L"], "zone": "rel" },
+        { "pos": 20, "team": "Sheffield Utd", "played": 30, "wins": 5, "draws": 6, "losses": 19, "gf": 24, "ga": 56, "points": 21, "form": ["L","L","L","W","L"], "zone": "rel" }
+      ],
+      "lastMatches": [
+        { "time": "15:00", "match": "Arsenal vs Chelsea", "score": "2:1", "status": "finished" },
+        { "time": "17:30", "match": "Man City vs Liverpool", "score": "1:1", "status": "finished" },
+        { "time": "20:00", "match": "Tottenham vs Newcastle", "score": "3:2", "status": "finished" }
+      ],
+      "upcomingMatches": [
+        { "time": "13:30", "match": "Chelsea vs Tottenham", "status": "upcoming" },
+        { "time": "16:00", "match": "Liverpool vs Aston Villa", "status": "upcoming" },
+        { "time": "18:30", "match": "Arsenal vs Man United", "status": "upcoming" }
+      ]
+    },
+    {
+      "id": "laliga",
+      "country": "Spain",
+      "name": "La Liga",
+      "season": "2025/26 season",
+      "insightTitle": "Compressed top six",
+      "insightText": "Upper-table separation remains narrow, so direct meetings carry oversized weight.",
+      "table": [
+        { "pos": 1, "team": "Real Madrid", "played": 29, "wins": 20, "draws": 6, "losses": 3, "gf": 58, "ga": 24, "points": 66, "form": ["W","W","D","W","L"], "zone": "cl" },
+        { "pos": 2, "team": "Barcelona", "played": 29, "wins": 19, "draws": 7, "losses": 3, "gf": 56, "ga": 25, "points": 64, "form": ["W","D","W","W","D"], "zone": "cl" },
+        { "pos": 3, "team": "Atletico Madrid", "played": 29, "wins": 17, "draws": 8, "losses": 4, "gf": 49, "ga": 26, "points": 59, "form": ["W","L","W","D","W"], "zone": "cl" },
+        { "pos": 4, "team": "Athletic Club", "played": 29, "wins": 16, "draws": 8, "losses": 5, "gf": 45, "ga": 27, "points": 56, "form": ["D","W","W","L","W"], "zone": "cl" },
+        { "pos": 5, "team": "Real Sociedad", "played": 29, "wins": 14, "draws": 8, "losses": 7, "gf": 40, "ga": 31, "points": 50, "form": ["W","D","L","W","D"], "zone": "el" },
+        { "pos": 6, "team": "Betis", "played": 29, "wins": 13, "draws": 8, "losses": 8, "gf": 38, "ga": 33, "points": 47, "form": ["L","W","D","W","L"], "zone": "el" },
+        { "pos": 7, "team": "Valencia", "played": 29, "wins": 12, "draws": 8, "losses": 9, "gf": 35, "ga": 34, "points": 44, "form": ["W","L","W","D","L"], "zone": "safe" },
+        { "pos": 8, "team": "Villarreal", "played": 29, "wins": 11, "draws": 8, "losses": 10, "gf": 41, "ga": 39, "points": 41, "form": ["D","W","L","D","W"], "zone": "safe" }
+      ],
+      "lastMatches": [
+        { "time": "16:00", "match": "Real Madrid vs Sevilla", "score": "2:0", "status": "finished" },
+        { "time": "18:15", "match": "Barcelona vs Valencia", "score": "1:0", "status": "finished" }
+      ],
+      "upcomingMatches": [
+        { "time": "17:00", "match": "Atletico vs Betis", "status": "upcoming" },
+        { "time": "20:30", "match": "Real Sociedad vs Girona", "status": "upcoming" }
+      ]
+    },
+    {
+      "id": "seriea",
+      "country": "Italy",
+      "name": "Serie A",
+      "season": "2025/26 season",
+      "insightTitle": "Tight European race",
+      "insightText": "Mid-table and European positions are heavily compressed, making form swings decisive.",
+      "table": [
+        { "pos": 1, "team": "Inter", "played": 30, "wins": 21, "draws": 5, "losses": 4, "gf": 60, "ga": 26, "points": 68, "form": ["W","W","W","D","L"], "zone": "cl" },
+        { "pos": 2, "team": "Juventus", "played": 30, "wins": 19, "draws": 7, "losses": 4, "gf": 52, "ga": 25, "points": 64, "form": ["W","D","W","W","D"], "zone": "cl" },
+        { "pos": 3, "team": "Milan", "played": 30, "wins": 18, "draws": 6, "losses": 6, "gf": 50, "ga": 31, "points": 60, "form": ["L","W","W","D","W"], "zone": "cl" },
+        { "pos": 4, "team": "Napoli", "played": 30, "wins": 17, "draws": 7, "losses": 6, "gf": 49, "ga": 30, "points": 58, "form": ["W","W","L","W","D"], "zone": "cl" },
+        { "pos": 5, "team": "Roma", "played": 30, "wins": 15, "draws": 8, "losses": 7, "gf": 42, "ga": 33, "points": 53, "form": ["W","D","L","W","W"], "zone": "el" },
+        { "pos": 6, "team": "Atalanta", "played": 30, "wins": 15, "draws": 7, "losses": 8, "gf": 46, "ga": 35, "points": 52, "form": ["D","W","W","L","D"], "zone": "el" },
+        { "pos": 7, "team": "Lazio", "played": 30, "wins": 13, "draws": 8, "losses": 9, "gf": 39, "ga": 34, "points": 47, "form": ["L","W","D","W","L"], "zone": "safe" },
+        { "pos": 8, "team": "Bologna", "played": 30, "wins": 12, "draws": 9, "losses": 9, "gf": 37, "ga": 35, "points": 45, "form": ["W","L","D","D","W"], "zone": "safe" }
+      ],
+      "lastMatches": [
+        { "time": "17:00", "match": "Roma vs Lazio", "score": "2:1", "status": "finished" },
+        { "time": "20:45", "match": "Napoli vs Milan", "score": "3:1", "status": "finished" }
+      ],
+      "upcomingMatches": [
+        { "time": "15:00", "match": "Inter vs Fiorentina", "status": "upcoming" },
+        { "time": "18:00", "match": "Juventus vs Atalanta", "status": "upcoming" }
+      ]
+    }
+  ]
+}
