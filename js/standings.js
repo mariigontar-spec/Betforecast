@@ -1,132 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Standings | BetForecast.ai</title>
-  <link rel="stylesheet" href="css/style.css?v=18">
-</head>
-<body>
+async function loadStandingsPage() {
+  try {
+    const response = await fetch("data/standings.json");
+    const data = await response.json();
 
-  <header class="header">
-    <div class="logo-wrap">
-      <h1>BETFORECAST.ai</h1>
-      <div class="flag-box" aria-hidden="true">
-        <span class="flag-green"></span>
-        <span class="flag-white"></span>
-        <span class="flag-green"></span>
-      </div>
-    </div>
+    const leagueFilterList = document.getElementById("league-filter-list");
+    const tableWrap = document.getElementById("standings-table-wrap");
+    const lastWrap = document.getElementById("standings-last-wrap");
+    const upcomingWrap = document.getElementById("standings-upcoming-wrap");
 
-    <nav class="nav">
-      <a href="index.html">Predictions</a>
-      <a href="match.html">Matches</a>
-      <a href="standings.html">Standings</a>
-      <a href="news.html">News</a>
-      <a href="ai-insights.html">AI Insights</a>
-    </nav>
+    const leagueCountry = document.getElementById("league-country");
+    const leagueName = document.getElementById("league-name");
+    const leagueSeason = document.getElementById("league-season");
+    const leagueInsightTitle = document.getElementById("league-insight-title");
+    const leagueInsightText = document.getElementById("league-insight-text");
+    const panelTitle = document.getElementById("standings-panel-title");
 
-    <a class="signin-btn" href="#">Sign In</a>
-  </header>
+    const params = new URLSearchParams(window.location.search);
+    let currentLeagueId = params.get("league") || data.defaultLeague;
+    let currentView = "table";
 
-  <main class="standings-page-wrap">
-    <section class="standings-topbar">
-      <div class="standings-sport-nav">
-        <a href="#" class="active">Football</a>
-        <a href="#">Basketball</a>
-        <a href="#">Tennis</a>
-        <a href="#">Volleyball</a>
-        <a href="#">MMA</a>
-      </div>
-    </section>
+    function zoneClass(zone) {
+      if (zone === "cl") return "zone-cl";
+      if (zone === "el") return "zone-el";
+      if (zone === "rel") return "zone-rel";
+      return "zone-safe";
+    }
 
-    <section class="standings-league-bar panel">
-      <div class="standings-league-main">
-        <div class="standings-league-badge" id="league-country">England</div>
-        <h2 id="league-name">Premier League</h2>
-        <p id="league-season">2025/26 season</p>
-      </div>
+    function formBadgeClass(value) {
+      if (value === "W") return "form-win";
+      if (value === "D") return "form-draw";
+      return "form-loss";
+    }
 
-      <div class="standings-league-tabs">
-        <button class="standings-view-tab active" data-view="table">Table</button>
-        <button class="standings-view-tab" data-view="last">Last Matches</button>
-        <button class="standings-view-tab" data-view="upcoming">Upcoming Matches</button>
-      </div>
-    </section>
+    function renderLeagueFilters() {
+      leagueFilterList.innerHTML = "";
 
-    <section class="standings-filter-row">
-      <div id="league-filter-list" class="league-filter-list"></div>
-    </section>
+      data.leagues.forEach((league) => {
+        const btn = document.createElement("button");
+        btn.className = `league-filter-btn ${league.id === currentLeagueId ? "active" : ""}`;
+        btn.innerText = league.name;
+        btn.addEventListener("click", () => {
+          currentLeagueId = league.id;
+          const url = new URL(window.location);
+          url.searchParams.set("league", currentLeagueId);
+          window.history.replaceState({}, "", url);
+          renderAll();
+        });
+        leagueFilterList.appendChild(btn);
+      });
+    }
 
-    <section class="standings-layout">
-      <div class="standings-main">
-        <section class="panel standings-panel">
-          <div class="panel-head">
-            <h2 id="standings-panel-title">League Table</h2>
+    function renderTable(league) {
+      tableWrap.innerHTML = `
+        <div class="standings-table-head">
+          <div>#</div>
+          <div>Team</div>
+          <div>P</div>
+          <div>W</div>
+          <div>D</div>
+          <div>L</div>
+          <div>GF-GA</div>
+          <div>Pts</div>
+          <div>Form</div>
+        </div>
+      `;
+
+      league.table.forEach((row) => {
+        const item = document.createElement("div");
+        item.className = `standings-row ${zoneClass(row.zone)}`;
+
+        item.innerHTML = `
+          <div class="standings-cell standings-pos">${row.pos}</div>
+          <div class="standings-cell standings-team">
+            <span class="standings-zone-line ${zoneClass(row.zone)}"></span>
+            <span>${row.team}</span>
           </div>
+          <div class="standings-cell">${row.played}</div>
+          <div class="standings-cell">${row.wins}</div>
+          <div class="standings-cell">${row.draws}</div>
+          <div class="standings-cell">${row.losses}</div>
+          <div class="standings-cell">${row.gf}-${row.ga}</div>
+          <div class="standings-cell standings-points">${row.points}</div>
+          <div class="standings-cell standings-form">
+            ${row.form.map((f) => `<span class="${formBadgeClass(f)}">${f}</span>`).join("")}
+          </div>
+        `;
 
-          <div id="standings-table-wrap" class="standings-table-wrap">
-            <!-- JS -->
-          </div>
+        tableWrap.appendChild(item);
+      });
+    }
 
-          <div id="standings-last-wrap" class="standings-alt-wrap hidden-view">
-            <!-- JS -->
-          </div>
+    function renderAltMatches(target, items, emptyTitle) {
+      target.innerHTML = "";
 
-          <div id="standings-upcoming-wrap" class="standings-alt-wrap hidden-view">
-            <!-- JS -->
-          </div>
-        </section>
-      </div>
+      if (!items || !items.length) {
+        target.innerHTML = `<div class="standings-empty">${emptyTitle}</div>`;
+        return;
+      }
 
-      <aside class="standings-sidebar">
-        <section class="panel side-block">
-          <div class="panel-head">
-            <h2>League Insight</h2>
-          </div>
-          <div class="news-focus-box">
-            <strong id="league-insight-title">Title race pressure</strong>
-            <p id="league-insight-text">
-              Top positions are separated by narrow margins, making every dropped point highly visible.
-            </p>
-          </div>
-        </section>
+      items.forEach((item) => {
+        const row = document.createElement("div");
+        row.className = "standings-match-row";
+        row.innerHTML = `
+          <div class="standings-match-time">${item.time}</div>
+          <div class="standings-match-name">${item.match}</div>
+          <div class="standings-match-status">${item.score ? item.score : item.status}</div>
+        `;
+        target.appendChild(row);
+      });
+    }
 
-        <section class="panel side-block">
-          <div class="panel-head">
-            <h2>Legend</h2>
-          </div>
-          <div class="standings-legend">
-            <div><span class="legend-dot legend-cl"></span> Champions League</div>
-            <div><span class="legend-dot legend-el"></span> Europa zone</div>
-            <div><span class="legend-dot legend-safe"></span> Mid-table</div>
-            <div><span class="legend-dot legend-rel"></span> Relegation zone</div>
-          </div>
-        </section>
+    function updateViewVisibility() {
+      tableWrap.classList.toggle("hidden-view", currentView !== "table");
+      lastWrap.classList.toggle("hidden-view", currentView !== "last");
+      upcomingWrap.classList.toggle("hidden-view", currentView !== "upcoming");
 
-        <section class="panel side-block">
-          <div class="panel-head">
-            <h2>Quick Links</h2>
-          </div>
-          <div class="related-match-list">
-            <a class="related-match-item" href="match.html?game=mci_ars">
-              <strong>Man City vs Arsenal</strong>
-              <span>Match Preview</span>
-            </a>
-            <a class="related-match-item" href="match.html?game=liv_tot">
-              <strong>Liverpool vs Tottenham</strong>
-              <span>Match Preview</span>
-            </a>
-            <a class="related-match-item" href="news.html">
-              <strong>Latest Football News</strong>
-              <span>Open feed</span>
-            </a>
-          </div>
-        </section>
-      </aside>
-    </section>
-  </main>
+      if (currentView === "table") panelTitle.innerText = "League Table";
+      if (currentView === "last") panelTitle.innerText = "Last Matches";
+      if (currentView === "upcoming") panelTitle.innerText = "Upcoming Matches";
 
-  <script src="js/standings.js"></script>
-</body>
-</html>
+      document.querySelectorAll(".standings-view-tab").forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.view === currentView);
+      });
+    }
+
+    function renderAll() {
+      const league = data.leagues.find((l) => l.id === currentLeagueId) || data.leagues[0];
+
+      leagueCountry.innerText = league.country;
+      leagueName.innerText = league.name;
+      leagueSeason.innerText = league.season;
+      leagueInsightTitle.innerText = league.insightTitle;
+      leagueInsightText.innerText = league.insightText;
+
+      renderLeagueFilters();
+      renderTable(league);
+      renderAltMatches(lastWrap, league.lastMatches, "No recent matches");
+      renderAltMatches(upcomingWrap, league.upcomingMatches, "No upcoming matches");
+      updateViewVisibility();
+    }
+
+    document.querySelectorAll(".standings-view-tab").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        currentView = btn.dataset.view;
+        updateViewVisibility();
+      });
+    });
+
+    renderAll();
+  } catch (error) {
+    console.error("Failed to load standings:", error);
+  }
+}
+
+loadStandingsPage();
