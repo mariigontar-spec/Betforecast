@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Article | BetForecast.ai</title>
+  <link rel="stylesheet" href="css/style.css?v=16">
+</head>
+<body>
 
+  <header class="header">
+    <div class="logo-wrap">
+      <h1>BETFORECAST.ai</h1>
+      <div class="flag-box" aria-hidden="true">
+        <span class="flag-green"></span>
+        <span class="flag-white"></span>
+        <span class="flag-green"></span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Predictions</a>
+      <a href="match.html">Matches</a>
+      <a href="#">Results</a>
+      <a href="news.html">News</a>
+      <a href="ai-insights.html">AI Insights</a>
+    </nav>
+
+    <a class="signin-btn" href="#">Sign In</a>
+  </header>
+
+  <main class="article-page-wrap">
+    <section class="article-hero">
+      <div class="hero-badge" id="article-category">Premier League</div>
+      <h1 id="article-title">Article title</h1>
+      <p class="article-subtitle" id="article-excerpt">
+        Article excerpt goes here.
+      </p>
+      <div class="article-meta" id="article-meta">
+        8 min ago • 4 min read
+      </div>
+    </section>
+
+    <section class="article-layout">
+      <article class="panel article-main">
+        <img id="article-image" class="article-main-image" src="" alt="Article image">
+
+        <div class="article-content" id="article-content">
+          <!-- JS -->
+        </div>
+      </article>
+
+      <aside class="article-sidebar">
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Related News</h2>
+          </div>
+          <div id="related-news-list" class="related-news-list"></div>
+        </section>
+
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Back to News</h2>
+          </div>
+          <div class="news-focus-box">
+            <strong>Return to the full feed</strong>
+            <p>
+              Browse the latest football headlines, transfer movement, and match-related storylines.
+            </p>
+            <a href="news.html" class="primary-btn article-back-btn">Open News Feed</a>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <script src="js/news-article.js"></script>
+</body>
+</html>
