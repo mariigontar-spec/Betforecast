@@ -2236,3 +2236,147 @@ main {
   border-color: rgba(21,178,107,0.24);
   background: rgba(255,255,255,0.06);
 }
+/* ARTICLE PAGE */
+
+.article-page-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+
+.article-hero {
+  margin-bottom: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: linear-gradient(180deg, rgba(11,24,34,0.96), rgba(8,17,26,0.96));
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+.article-hero h1 {
+  margin: 14px 0 0;
+  font-size: 52px;
+  line-height: 1;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -1.5px;
+  max-width: 900px;
+}
+
+.article-subtitle {
+  margin: 16px 0 0;
+  max-width: 760px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.75);
+}
+
+.article-meta {
+  margin-top: 16px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+}
+
+.article-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 18px;
+}
+
+.article-main {
+  padding: 20px;
+}
+
+.article-main-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.article-content p {
+  margin: 0 0 18px;
+  color: rgba(255,255,255,0.78);
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.article-sidebar {
+  display: grid;
+  gap: 18px;
+  align-self: start;
+}
+
+.related-news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.related-news-item {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.related-news-item:hover {
+  border-color: rgba(21,178,107,0.24);
+  background: rgba(255,255,255,0.06);
+}
+
+.related-news-item strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.related-news-item span {
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.article-back-btn {
+  display: inline-block;
+  margin-top: 14px;
+}
+
+@media (max-width: 1100px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .article-hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 760px) {
+  .article-page-wrap {
+    padding: 18px 14px 50px;
+  }
+
+  .article-hero {
+    padding: 24px;
+  }
+
+  .article-hero h1 {
+    font-size: 32px;
+  }
+
+  .article-main-image {
+    height: 240px;
+  }
+
+  .article-content p {
+    font-size: 15px;
+  }
+}
