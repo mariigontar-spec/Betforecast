@@ -2427,3 +2427,9 @@ main {
     grid-template-columns: 1fr;
   }
 }
+.news-excerpt {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255,255,255,0.65);
+}
