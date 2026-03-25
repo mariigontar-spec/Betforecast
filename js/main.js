@@ -107,17 +107,17 @@ async function loadHomePage() {
       newsItems.slice(0, 4).forEach((item) => {
         const card = document.createElement("a");
         card.className = "homepage-news-card";
-       card.href = `article.html?id=${item.id}`;
+        card.href = `article.html?id=${item.id}`;
 
         card.innerHTML = `
-  <img src="${item.image}" alt="${item.title}">
-  <div class="homepage-news-card-body">
-    <div class="news-category">${item.category}</div>
-    <h3>${item.title}</h3>
-    <p class="news-excerpt">${item.excerpt}</p>
-    <div class="news-meta">${item.time} • ${item.readTime}</div>
-  </div>
-`;
+          <img src="${item.image}" alt="${item.title}">
+          <div class="homepage-news-card-body">
+            <div class="news-category">${item.category}</div>
+            <h3>${item.title}</h3>
+            <p class="news-excerpt">${item.excerpt}</p>
+            <div class="news-meta">${item.time} • ${item.readTime}</div>
+          </div>
+        `;
 
         homepageNewsList.appendChild(card);
       });
