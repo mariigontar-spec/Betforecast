@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standings | BetForecast.ai</title>
+  <link rel="stylesheet" href="css/style.css?v=18">
+</head>
+<body>
 
+  <header class="header">
+    <div class="logo-wrap">
+      <h1>BETFORECAST.ai</h1>
+      <div class="flag-box" aria-hidden="true">
+        <span class="flag-green"></span>
+        <span class="flag-white"></span>
+        <span class="flag-green"></span>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Predictions</a>
+      <a href="match.html">Matches</a>
+      <a href="standings.html">Standings</a>
+      <a href="news.html">News</a>
+      <a href="ai-insights.html">AI Insights</a>
+    </nav>
+
+    <a class="signin-btn" href="#">Sign In</a>
+  </header>
+
+  <main class="standings-page-wrap">
+    <section class="standings-topbar">
+      <div class="standings-sport-nav">
+        <a href="#" class="active">Football</a>
+        <a href="#">Basketball</a>
+        <a href="#">Tennis</a>
+        <a href="#">Volleyball</a>
+        <a href="#">MMA</a>
+      </div>
+    </section>
+
+    <section class="standings-league-bar panel">
+      <div class="standings-league-main">
+        <div class="standings-league-badge" id="league-country">England</div>
+        <h2 id="league-name">Premier League</h2>
+        <p id="league-season">2025/26 season</p>
+      </div>
+
+      <div class="standings-league-tabs">
+        <button class="standings-view-tab active" data-view="table">Table</button>
+        <button class="standings-view-tab" data-view="last">Last Matches</button>
+        <button class="standings-view-tab" data-view="upcoming">Upcoming Matches</button>
+      </div>
+    </section>
+
+    <section class="standings-filter-row">
+      <div id="league-filter-list" class="league-filter-list"></div>
+    </section>
+
+    <section class="standings-layout">
+      <div class="standings-main">
+        <section class="panel standings-panel">
+          <div class="panel-head">
+            <h2 id="standings-panel-title">League Table</h2>
+          </div>
+
+          <div id="standings-table-wrap" class="standings-table-wrap">
+            <!-- JS -->
+          </div>
+
+          <div id="standings-last-wrap" class="standings-alt-wrap hidden-view">
+            <!-- JS -->
+          </div>
+
+          <div id="standings-upcoming-wrap" class="standings-alt-wrap hidden-view">
+            <!-- JS -->
+          </div>
+        </section>
+      </div>
+
+      <aside class="standings-sidebar">
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>League Insight</h2>
+          </div>
+          <div class="news-focus-box">
+            <strong id="league-insight-title">Title race pressure</strong>
+            <p id="league-insight-text">
+              Top positions are separated by narrow margins, making every dropped point highly visible.
+            </p>
+          </div>
+        </section>
+
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Legend</h2>
+          </div>
+          <div class="standings-legend">
+            <div><span class="legend-dot legend-cl"></span> Champions League</div>
+            <div><span class="legend-dot legend-el"></span> Europa zone</div>
+            <div><span class="legend-dot legend-safe"></span> Mid-table</div>
+            <div><span class="legend-dot legend-rel"></span> Relegation zone</div>
+          </div>
+        </section>
+
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Quick Links</h2>
+          </div>
+          <div class="related-match-list">
+            <a class="related-match-item" href="match.html?game=mci_ars">
+              <strong>Man City vs Arsenal</strong>
+              <span>Match Preview</span>
+            </a>
+            <a class="related-match-item" href="match.html?game=liv_tot">
+              <strong>Liverpool vs Tottenham</strong>
+              <span>Match Preview</span>
+            </a>
+            <a class="related-match-item" href="news.html">
+              <strong>Latest Football News</strong>
+              <span>Open feed</span>
+            </a>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <script src="js/standings.js"></script>
+</body>
+</html>
