@@ -2433,3 +2433,233 @@ main {
   line-height: 1.4;
   color: rgba(255,255,255,0.65);
 }
+/* ARTICLE PAGE PRO */
+
+.article-pro-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+
+.article-pro-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  padding: 38px;
+  border-radius: 28px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background:
+    linear-gradient(to right, rgba(7,19,28,0.94), rgba(7,19,28,0.78)),
+    url("https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.24);
+}
+
+.article-pro-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at right, rgba(21,178,107,0.16), transparent 30%);
+  pointer-events: none;
+}
+
+.article-pro-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.article-pro-hero h1 {
+  margin: 16px 0 0;
+  font-size: 58px;
+  line-height: 0.96;
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: #fff;
+}
+
+.article-pro-subtitle {
+  margin: 18px 0 0;
+  max-width: 760px;
+  font-size: 19px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.78);
+}
+
+.article-pro-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.article-pro-meta span {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.82);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.article-pro-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.article-pro-main {
+  padding: 20px;
+}
+
+.article-pro-image {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  display: block;
+  border-radius: 22px;
+  margin-bottom: 22px;
+}
+
+.article-pro-body p {
+  margin: 0 0 18px;
+  color: rgba(255,255,255,0.79);
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.article-pro-quote {
+  margin: 26px 0;
+  padding: 20px 22px;
+  border-left: 4px solid #15b26b;
+  border-radius: 0 18px 18px 0;
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 800;
+}
+
+.article-insight-box {
+  margin-top: 28px;
+  padding: 22px;
+  border-radius: 22px;
+  border: 1px solid rgba(21,178,107,0.18);
+  background: linear-gradient(180deg, rgba(21,178,107,0.10), rgba(255,255,255,0.03));
+}
+
+.article-insight-kicker {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #6df0b3;
+}
+
+.article-insight-box h3 {
+  margin: 12px 0 0;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.article-insight-box p {
+  margin: 14px 0 0;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.76);
+}
+
+.article-pro-sidebar {
+  display: grid;
+  gap: 18px;
+  align-self: start;
+}
+
+.related-news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.related-news-item {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.related-news-item:hover {
+  border-color: rgba(21,178,107,0.24);
+  background: rgba(255,255,255,0.06);
+}
+
+.related-news-item strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.related-news-item span {
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.article-back-btn {
+  display: inline-block;
+  margin-top: 14px;
+}
+
+@media (max-width: 1100px) {
+  .article-pro-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .article-pro-hero h1 {
+    font-size: 42px;
+  }
+
+  .article-pro-image {
+    height: 320px;
+  }
+}
+
+@media (max-width: 760px) {
+  .article-pro-wrap {
+    padding: 18px 14px 50px;
+  }
+
+  .article-pro-hero {
+    padding: 24px;
+    min-height: auto;
+  }
+
+  .article-pro-hero h1 {
+    font-size: 32px;
+  }
+
+  .article-pro-subtitle {
+    font-size: 16px;
+  }
+
+  .article-pro-image {
+    height: 220px;
+  }
+
+  .article-pro-body p {
+    font-size: 15px;
+  }
+
+  .article-pro-quote {
+    font-size: 18px;
+    padding: 16px 18px;
+  }
+}
