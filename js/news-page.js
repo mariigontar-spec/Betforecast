@@ -12,7 +12,7 @@ async function loadNewsPage() {
     newsItems.forEach((item) => {
       const card = document.createElement("a");
       card.className = "news-card";
-      card.href = `news-article.html?id=${item.id}`;
+      card.href = `article.html?id=${item.id}`;
 
       card.innerHTML = `
         <img src="${item.image}" alt="${item.title}">
