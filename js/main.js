@@ -110,13 +110,14 @@ async function loadHomePage() {
         card.href = `news-article.html?id=${item.id}`;
 
         card.innerHTML = `
-          <img src="${item.image}" alt="${item.title}">
-          <div class="homepage-news-card-body">
-            <div class="news-category">${item.category}</div>
-            <h3>${item.title}</h3>
-            <div class="news-meta">${item.time} • ${item.readTime}</div>
-          </div>
-        `;
+  <img src="${item.image}" alt="${item.title}">
+  <div class="homepage-news-card-body">
+    <div class="news-category">${item.category}</div>
+    <h3>${item.title}</h3>
+    <p class="news-excerpt">${item.excerpt}</p>
+    <div class="news-meta">${item.time} • ${item.readTime}</div>
+  </div>
+`;
 
         homepageNewsList.appendChild(card);
       });
