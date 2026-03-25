@@ -1,37 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BetForecast Article</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article | BetForecast.ai</title>
+  <link rel="stylesheet" href="css/style.css?v=17">
 </head>
-
 <body>
 
-<header>
-<h1>BetForecast</h1>
-<p>Football News</p>
-</header>
+  <header class="header">
+    <div class="logo-wrap">
+      <h1>BETFORECAST.ai</h1>
+      <div class="flag-box" aria-hidden="true">
+        <span class="flag-green"></span>
+        <span class="flag-white"></span>
+        <span class="flag-green"></span>
+      </div>
+    </div>
 
-<nav class="menu">
-<a href="index.html">Home</a>
-<a href="news.html">News</a>
-</nav>
+    <nav class="nav">
+      <a href="index.html">Predictions</a>
+      <a href="match.html">Matches</a>
+      <a href="#">Results</a>
+      <a href="news.html">News</a>
+      <a href="ai-insights.html">AI Insights</a>
+    </nav>
 
-<main class="layout">
+    <a class="signin-btn" href="#">Sign In</a>
+  </header>
 
-<div class="main-content">
+  <main class="article-pro-wrap">
+    <section class="article-pro-hero">
+      <div class="article-pro-overlay"></div>
 
-<div id="article"></div>
+      <div class="article-pro-hero-content">
+        <div class="hero-badge" id="article-category">Premier League</div>
+        <h1 id="article-title">Article title</h1>
+        <p class="article-pro-subtitle" id="article-excerpt">
+          Article excerpt goes here.
+        </p>
 
-</div>
+        <div class="article-pro-meta">
+          <span id="article-time">8 min ago</span>
+          <span id="article-readtime">4 min read</span>
+        </div>
+      </div>
+    </section>
 
-</main>
+    <section class="article-pro-layout">
+      <article class="panel article-pro-main">
+        <img id="article-image" class="article-pro-image" src="" alt="Article image">
 
-<script src="js/article.js"></script>
+        <div class="article-pro-body" id="article-content">
+          <!-- JS -->
+        </div>
 
+        <section class="article-insight-box">
+          <div class="article-insight-kicker">BetForecast Insight</div>
+          <h3>Why this story matters for forecasting</h3>
+          <p id="article-insight-text">
+            Team news, tactical shifts, and selection changes can materially affect match probability, confidence, and scoring distribution.
+          </p>
+        </section>
+      </article>
+
+      <aside class="article-pro-sidebar">
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Related News</h2>
+          </div>
+          <div id="related-news-list" class="related-news-list"></div>
+        </section>
+
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Trending Matches</h2>
+          </div>
+          <div class="trending-list">
+            <a href="match.html?game=mci_ars">Man City vs Arsenal</a>
+            <a href="match.html?game=rm_bar">Real Madrid vs Barcelona</a>
+            <a href="match.html?game=liv_tot">Liverpool vs Tottenham</a>
+            <a href="match.html?game=psg_lyo">PSG vs Lyon</a>
+          </div>
+        </section>
+
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Back to News</h2>
+          </div>
+          <div class="news-focus-box">
+            <strong>Return to the full feed</strong>
+            <p>
+              Browse the latest football headlines, transfer movement, and match-related storylines.
+            </p>
+            <a href="news.html" class="primary-btn article-back-btn">Open News Feed</a>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <script src="js/article.js"></script>
 </body>
-
 </html>
