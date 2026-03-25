@@ -2226,3 +2226,13 @@ main {
     grid-template-columns: 1fr;
   }
 }
+.result-row {
+  display: grid;
+  color: inherit;
+  text-decoration: none;
+}
+
+.result-row:hover {
+  border-color: rgba(21,178,107,0.24);
+  background: rgba(255,255,255,0.06);
+}
