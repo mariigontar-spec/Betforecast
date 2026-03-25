@@ -6,7 +6,13 @@
     "excerpt": "Arsenal prepares for a high-pressure London meeting with late fitness checks shaping the final selection picture.",
     "image": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1200&q=80",
     "time": "8 min ago",
-    "readTime": "4 min read"
+    "readTime": "4 min read",
+    "content": [
+      "Arsenal enters the weekend with selection uncertainty hanging over key areas of the pitch, especially in midfield rotation and late defensive fitness checks.",
+      "The biggest question is not only who starts, but how those choices affect pressing intensity, control of second balls, and the ability to manage transitions against Chelsea.",
+      "From a forecasting perspective, availability changes can shift the model’s confidence even when the base probability stays relatively stable. That is especially true in matches where control and structure matter more than raw attacking volume.",
+      "If Arsenal preserves balance through the middle and keeps the ball progression clean, the home side still carries the stronger profile. If those pieces weaken, the draw path becomes much more active."
+    ]
   },
   {
     "id": "man-united-striker-pursuit",
@@ -15,7 +21,13 @@
     "excerpt": "United’s recruitment push intensifies as the club looks to add more attacking weight before the next window closes.",
     "image": "https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1200&q=80",
     "time": "1 hr ago",
-    "readTime": "5 min read"
+    "readTime": "5 min read",
+    "content": [
+      "Manchester United’s search for more reliable attacking output appears to be accelerating, with recruitment discussions increasingly focused on finishing efficiency and movement inside the box.",
+      "The club has struggled at times to convert control into clean shot quality, making the striker profile more urgent than simply adding another forward body.",
+      "A successful signing would not only change the transfer conversation but also influence future match projections, especially in tight games where one efficient finisher can swing expected scorelines.",
+      "In forecasting terms, high-value finishers often improve not just goal expectation but also game-state control once a team moves ahead."
+    ]
   },
   {
     "id": "barcelona-midfield-reshuffle",
@@ -24,7 +36,13 @@
     "excerpt": "Tactical adjustments in the middle third could shape the rhythm, press resistance, and transition balance of the match.",
     "image": "https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?auto=format&fit=crop&w=1200&q=80",
     "time": "2 hrs ago",
-    "readTime": "4 min read"
+    "readTime": "4 min read",
+    "content": [
+      "Barcelona’s potential midfield reshuffle may look like a simple personnel decision, but structurally it could alter the whole pace of El Clasico.",
+      "Control in the middle third determines not just possession share, but also how safely the team escapes pressure and how often it reaches the final third in stable shape.",
+      "For high-volatility matches, the midfield is often the hidden engine of the forecast. Teams that dominate there usually reduce variance and increase repeatable attacking sequences.",
+      "That makes this tactical change more than a lineup note. It is one of the biggest variables in how the model reads the game."
+    ]
   },
   {
     "id": "premier-league-title-pressure",
@@ -33,7 +51,13 @@
     "excerpt": "Every dropped point now hits harder as the title race narrows into small margins, momentum swings, and schedule stress.",
     "image": "https://images.unsplash.com/photo-1570498839593-e565b39455fc?auto=format&fit=crop&w=1200&q=80",
     "time": "3 hrs ago",
-    "readTime": "6 min read"
+    "readTime": "6 min read",
+    "content": [
+      "At this point in the season, the title race is less about broad quality gaps and more about how teams handle pressure, fatigue, and fragile scorelines.",
+      "A draw that looked acceptable in January can feel damaging now, especially when rivals keep stacking narrow wins.",
+      "Forecasting title-race matches becomes more sensitive to mentality and schedule pressure, because teams often behave differently when every point feels loaded.",
+      "That pressure changes tempo, substitutions, risk appetite, and how aggressively managers chase late goals."
+    ]
   },
   {
     "id": "napoli-attacking-rhythm",
@@ -42,7 +66,13 @@
     "excerpt": "Napoli’s final-third movement has sharpened again, but the Milan matchup still presents a more disciplined defensive puzzle.",
     "image": "https://images.unsplash.com/photo-1486286701208-1d58e9338013?auto=format&fit=crop&w=1200&q=80",
     "time": "4 hrs ago",
-    "readTime": "4 min read"
+    "readTime": "4 min read",
+    "content": [
+      "Napoli’s recent attacking phases have looked cleaner, with better spacing between creators and more consistent support around the penalty area.",
+      "That said, AC Milan represents a more disciplined test than some of Napoli’s recent opponents, especially in how they defend the half-spaces.",
+      "This is the kind of matchup where attacking rhythm alone is not enough. The model pays close attention to whether rhythm survives against a more structured defensive shape.",
+      "If it does, Napoli’s edge stays real. If not, the game could compress into a lower-event contest."
+    ]
   },
   {
     "id": "ucl-game-state-control",
@@ -51,6 +81,12 @@
     "excerpt": "The biggest European ties this week may be decided less by volume and more by who controls panic after the first goal.",
     "image": "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1200&q=80",
     "time": "5 hrs ago",
-    "readTime": "5 min read"
+    "readTime": "5 min read",
+    "content": [
+      "Champions League knockout ties often become less predictable after the first goal, not because the teams change quality, but because the emotional structure of the game shifts.",
+      "Some sides become calmer with a lead. Others retreat too early, invite pressure, and create a completely different match from the one the opening half suggested.",
+      "That is why game-state control matters so much in forecasting elite knockout football.",
+      "The best models do not just predict who is stronger. They also try to estimate who remains stable when the match stops following the original script."
+    ]
   }
 ]
