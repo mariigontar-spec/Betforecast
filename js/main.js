@@ -90,36 +90,36 @@ const upcomingMatches = [
 
 const yesterdayResults = [
   {
-    id: "che_whu",
-    match: "Chelsea vs West Ham",
-    ft: "1-0",
-    ht: "1-0",
-    tip: "1-1",
-    odds: "2.8"
+    id: "mci_ars",
+    match: "Man City vs Arsenal",
+    ft: "2-2",
+    ht: "1-1",
+    tip: "Over 2.5",
+    odds: "6.6"
   },
   {
-    id: "cry_mci",
-    match: "Crystal Palace vs Man City",
-    ft: "2-4",
-    ht: "1-2",
-    tip: "0-2",
-    odds: "4.1"
+    id: "liv_tot",
+    match: "Liverpool vs Tottenham",
+    ft: "2-1",
+    ht: "1-1",
+    tip: "Home Win",
+    odds: "2.2"
   },
   {
     id: "rm_bar",
     match: "Real Madrid vs Barcelona",
     ft: "1-1",
     ht: "0-1",
-    tip: "2-1",
+    tip: "BTTS",
     odds: "4.5"
   },
   {
-    id: "nap_mil",
-    match: "Napoli vs AC Milan",
+    id: "psg_lyo",
+    match: "PSG vs Lyon",
     ft: "3-1",
     ht: "1-0",
-    tip: "2-1",
-    odds: "2.5"
+    tip: "Over 2.5",
+    odds: "1.9"
   }
 ];
 
@@ -189,8 +189,9 @@ if (matchesContainer) {
 
 if (resultsContainer) {
   yesterdayResults.forEach((item) => {
-    const row = document.createElement("div");
+    const row = document.createElement("a");
     row.className = "result-row";
+    row.href = `match.html?game=${item.id}`;
 
     row.innerHTML = `
       <div class="cell-match">
@@ -205,15 +206,5 @@ if (resultsContainer) {
     `;
 
     resultsContainer.appendChild(row);
-  });
-}
-const currentGame = new URLSearchParams(window.location.search).get("game");
-
-if (currentGame) {
-  document.querySelectorAll("a[href*='match.html']").forEach(link => {
-    if (link.href.includes(currentGame)) {
-      link.style.border = "1px solid rgba(21,178,107,0.5)";
-      link.style.background = "rgba(21,178,107,0.08)";
-    }
   });
 }
