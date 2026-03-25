@@ -1,74 +1,56 @@
 [
   {
-    "id": 1,
-    "title": "Super Eagles prepare for the next international match",
-    "text": "The team is training ahead of an important football fixture.",
-    "image": "https://images.unsplash.com/photo-1551958219-acbc608c6377"
+    "id": "arsenal-chelsea-injury-update",
+    "category": "Premier League",
+    "title": "Arsenal injury update ahead of Chelsea clash",
+    "excerpt": "Arsenal prepares for a high-pressure London meeting with late fitness checks shaping the final selection picture.",
+    "image": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1200&q=80",
+    "time": "8 min ago",
+    "readTime": "4 min read"
   },
   {
-    "id": 2,
-    "title": "NPFL clubs continue the race for top positions",
-    "text": "Several teams are fighting for better places in the league table.",
-    "image": "https://images.unsplash.com/photo-1511886929837-354d827aae26"
+    "id": "man-united-striker-pursuit",
+    "category": "Transfers",
+    "title": "Man United step up pursuit of top striker",
+    "excerpt": "United’s recruitment push intensifies as the club looks to add more attacking weight before the next window closes.",
+    "image": "https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1200&q=80",
+    "time": "1 hr ago",
+    "readTime": "5 min read"
   },
   {
-    "id": 3,
-    "title": "Nigeria football fans expect strong performances this month",
-    "text": "Attention is growing around local clubs and the national team.",
-    "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018"
+    "id": "barcelona-midfield-reshuffle",
+    "category": "La Liga",
+    "title": "Barcelona midfield reshuffle before El Clasico",
+    "excerpt": "Tactical adjustments in the middle third could shape the rhythm, press resistance, and transition balance of the match.",
+    "image": "https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?auto=format&fit=crop&w=1200&q=80",
+    "time": "2 hrs ago",
+    "readTime": "4 min read"
   },
   {
-    "id": 4,
-    "title": "Enyimba aim to keep momentum before key fixture",
-    "text": "The team wants another strong performance as league pressure continues to build.",
-    "image": "https://images.unsplash.com/photo-1486286701208-1d58e9338013"
+    "id": "premier-league-title-pressure",
+    "category": "Title Race",
+    "title": "Premier League pressure rises at the top",
+    "excerpt": "Every dropped point now hits harder as the title race narrows into small margins, momentum swings, and schedule stress.",
+    "image": "https://images.unsplash.com/photo-1570498839593-e565b39455fc?auto=format&fit=crop&w=1200&q=80",
+    "time": "3 hrs ago",
+    "readTime": "6 min read"
   },
   {
-    "id": 5,
-    "title": "Rangers focus on defensive discipline ahead of big match",
-    "text": "Coaches are working on structure and balance before the next game.",
-    "image": "https://images.unsplash.com/photo-1518604666860-9ed391f76460"
+    "id": "napoli-attacking-rhythm",
+    "category": "Serie A",
+    "title": "Napoli rebuild attacking rhythm before Milan test",
+    "excerpt": "Napoli’s final-third movement has sharpened again, but the Milan matchup still presents a more disciplined defensive puzzle.",
+    "image": "https://images.unsplash.com/photo-1486286701208-1d58e9338013?auto=format&fit=crop&w=1200&q=80",
+    "time": "4 hrs ago",
+    "readTime": "4 min read"
   },
   {
-    "id": 6,
-    "title": "Kano Pillars push for consistency in the second half of the season",
-    "text": "The club hopes to collect important points in the coming rounds.",
-    "image": "https://images.unsplash.com/photo-1547347298-4074fc3086f0"
-  },
-  {
-    "id": 7,
-    "title": "Remo Stars continue building confidence after strong run",
-    "text": "Players and fans believe the team can stay in the race for top places.",
-    "image": "https://images.unsplash.com/photo-1508098682722-e99c643e7f0b"
-  },
-  {
-    "id": 8,
-    "title": "Nigeria youth football gains more attention from supporters",
-    "text": "Young talents are becoming an important part of the football conversation.",
-    "image": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d"
-  },
-  {
-    "id": 9,
-    "title": "Premier League weekend expected to bring major clashes",
-    "text": "Several high-profile matches could influence the league table.",
-    "image": "https://images.unsplash.com/photo-1522778119026-d647f0596c20"
-  },
-  {
-    "id": 10,
-    "title": "Coaches across NPFL speak about tighter competition this season",
-    "text": "Managers say every match now carries greater pressure and importance.",
-    "image": "https://images.unsplash.com/photo-1570498839593-e565b39455fc"
-  },
-  {
-    "id": 11,
-    "title": "Support grows for better football facilities and youth development",
-    "text": "Fans and clubs continue discussing long-term progress in the game.",
-    "image": "https://images.unsplash.com/photo-1517466787929-bc90951d0974"
-  },
-  {
-    "id": 12,
-    "title": "Nigeria vs Ghana remains one of the most anticipated fixtures",
-    "text": "Excitement is rising ahead of another classic football meeting.",
-    "image": "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a"
+    "id": "ucl-game-state-control",
+    "category": "Champions League",
+    "title": "Knockout ties likely to turn on game-state control",
+    "excerpt": "The biggest European ties this week may be decided less by volume and more by who controls panic after the first goal.",
+    "image": "https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1200&q=80",
+    "time": "5 hrs ago",
+    "readTime": "5 min read"
   }
 ]
