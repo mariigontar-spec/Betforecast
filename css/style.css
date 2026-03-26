@@ -3123,3 +3123,113 @@ main {
     min-width: 120px;
   }
 }
+/* ===== HEADER LOGO + NAV BUTTONS FIX ===== */
+
+/* Лого как стеклянная кнопка */
+.logo-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 18px;
+  text-decoration: none;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: 0.2s ease;
+}
+
+.logo-button:hover {
+  background: rgba(255,255,255,0.09);
+  border-color: rgba(255,255,255,0.16);
+  transform: translateY(-1px);
+}
+
+.logo-button h1 {
+  margin: 0;
+  color: #fff;
+}
+
+/* Верхнее меню как кнопки */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 108px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.88);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+  transition: 0.2s ease;
+}
+
+.nav a:hover {
+  background: rgba(255,255,255,0.09);
+  border-color: rgba(255,255,255,0.16);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Активную вкладку можно подсветить вручную классом .nav-active */
+.nav a.nav-active {
+  background: rgba(21,178,107,0.14);
+  border-color: rgba(21,178,107,0.26);
+  color: #6df0b3;
+}
+
+/* Чтобы хедер лучше держал геометрию */
+.header {
+  display: grid !important;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 18px;
+}
+
+@media (max-width: 1100px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav a {
+    min-width: 96px;
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav a {
+    min-width: auto;
+  }
+
+  .logo-button {
+    width: auto;
+  }
+}
