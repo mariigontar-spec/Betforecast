@@ -3472,3 +3472,6 @@ header nav a.nav-active {
     line-height: 1.7;
   }
 }
+.ai-focus-content {
+  max-width: 880px;
+}
