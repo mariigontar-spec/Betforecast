@@ -1,6 +1,10 @@
 async function loadStandingsPage() {
   try {
     const response = await fetch("data/standings.json");
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
     const data = await response.json();
 
     const leagueFilterList = document.getElementById("league-filter-list");
@@ -15,9 +19,18 @@ async function loadStandingsPage() {
     const leagueInsightText = document.getElementById("league-insight-text");
     const panelTitle = document.getElementById("standings-panel-title");
 
+    if (!tableWrap) {
+      console.error("standings-table-wrap not found");
+      return;
+    }
+
     const params = new URLSearchParams(window.location.search);
-    let currentLeagueId = params.get("league") || data.defaultLeague;
+    let currentLeagueId = params.get("league") || data.defaultLeague || data.leagues?.[0]?.id;
     let currentView = "table";
+
+    function getLeague() {
+      return data.leagues.find((l) => l.id === currentLeagueId) || data.leagues[0];
+    }
 
     function zoneClass(zone) {
       if (zone === "cl") return "zone-cl";
@@ -33,12 +46,16 @@ async function loadStandingsPage() {
     }
 
     function renderLeagueFilters() {
+      if (!leagueFilterList) return;
+
       leagueFilterList.innerHTML = "";
 
       data.leagues.forEach((league) => {
         const btn = document.createElement("button");
+        btn.type = "button";
         btn.className = `league-filter-btn ${league.id === currentLeagueId ? "active" : ""}`;
         btn.innerText = league.name;
+
         btn.addEventListener("click", () => {
           currentLeagueId = league.id;
           const url = new URL(window.location);
@@ -46,6 +63,7 @@ async function loadStandingsPage() {
           window.history.replaceState({}, "", url);
           renderAll();
         });
+
         leagueFilterList.appendChild(btn);
       });
     }
@@ -90,11 +108,13 @@ async function loadStandingsPage() {
       });
     }
 
-    function renderAltMatches(target, items, emptyTitle) {
+    function renderAltMatches(target, items, emptyText) {
+      if (!target) return;
+
       target.innerHTML = "";
 
       if (!items || !items.length) {
-        target.innerHTML = `<div class="standings-empty">${emptyTitle}</div>`;
+        target.innerHTML = `<div class="standings-empty">${emptyText}</div>`;
         return;
       }
 
@@ -111,13 +131,15 @@ async function loadStandingsPage() {
     }
 
     function updateViewVisibility() {
-      tableWrap.classList.toggle("hidden-view", currentView !== "table");
-      lastWrap.classList.toggle("hidden-view", currentView !== "last");
-      upcomingWrap.classList.toggle("hidden-view", currentView !== "upcoming");
+      if (tableWrap) tableWrap.classList.toggle("hidden-view", currentView !== "table");
+      if (lastWrap) lastWrap.classList.toggle("hidden-view", currentView !== "last");
+      if (upcomingWrap) upcomingWrap.classList.toggle("hidden-view", currentView !== "upcoming");
 
-      if (currentView === "table") panelTitle.innerText = "League Table";
-      if (currentView === "last") panelTitle.innerText = "Last Matches";
-      if (currentView === "upcoming") panelTitle.innerText = "Upcoming Matches";
+      if (panelTitle) {
+        if (currentView === "table") panelTitle.innerText = "League Table";
+        if (currentView === "last") panelTitle.innerText = "Recent Matches";
+        if (currentView === "upcoming") panelTitle.innerText = "Upcoming Matches";
+      }
 
       document.querySelectorAll(".standings-view-tab").forEach((btn) => {
         btn.classList.toggle("active", btn.dataset.view === currentView);
@@ -125,13 +147,14 @@ async function loadStandingsPage() {
     }
 
     function renderAll() {
-      const league = data.leagues.find((l) => l.id === currentLeagueId) || data.leagues[0];
+      const league = getLeague();
+      if (!league) return;
 
-      leagueCountry.innerText = league.country;
-      leagueName.innerText = league.name;
-      leagueSeason.innerText = league.season;
-      leagueInsightTitle.innerText = league.insightTitle;
-      leagueInsightText.innerText = league.insightText;
+      if (leagueCountry) leagueCountry.innerText = league.country;
+      if (leagueName) leagueName.innerText = league.name;
+      if (leagueSeason) leagueSeason.innerText = league.season;
+      if (leagueInsightTitle) leagueInsightTitle.innerText = league.insightTitle;
+      if (leagueInsightText) leagueInsightText.innerText = league.insightText;
 
       renderLeagueFilters();
       renderTable(league);
@@ -149,7 +172,16 @@ async function loadStandingsPage() {
 
     renderAll();
   } catch (error) {
-    console.error("Failed to load standings:", error);
+    console.error("Failed to load standings page:", error);
+
+    const tableWrap = document.getElementById("standings-table-wrap");
+    if (tableWrap) {
+      tableWrap.innerHTML = `
+        <div class="standings-empty">
+          Failed to load standings data. Check data/standings.json and browser console.
+        </div>
+      `;
+    }
   }
 }
 
