@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Standings | BetForecast.ai</title>
-  <link rel="stylesheet" href="css/style.css?v=18">
+  <link rel="stylesheet" href="css/style.css?v=19">
 </head>
 <body>
 
@@ -19,10 +19,10 @@
     </div>
 
     <nav class="nav">
-      <a href="index.html">Predictions</a>
-      <a href="match.html">Matches</a>
-      <a href="standings.html">Standings</a>
       <a href="news.html">News</a>
+      <a href="standings.html">Standings</a>
+      <a href="match.html">Matches</a>
+      <a href="index.html#results">Results</a>
       <a href="ai-insights.html">AI Insights</a>
     </nav>
 
@@ -30,21 +30,19 @@
   </header>
 
   <main class="standings-page-wrap">
- 
+    <section class="standings-league-bar panel">
+      <div class="standings-league-main">
+        <div class="standings-league-badge" id="league-country">England</div>
+        <h2 id="league-name">Premier League</h2>
+        <p id="league-season">2025/26 season</p>
+      </div>
 
-   <section class="standings-league-bar panel">
-  <div class="standings-league-main">
-    <div class="standings-league-badge" id="league-country">England</div>
-    <h2 id="league-name">Premier League</h2>
-    <p id="league-season">2025/26 season</p>
-  </div>
-
-  <div class="standings-league-tabs">
-    <button class="standings-view-tab active" data-view="table">Table</button>
-    <button class="standings-view-tab" data-view="last">Recent</button>
-    <button class="standings-view-tab" data-view="upcoming">Upcoming</button>
-  </div>
-</section>
+      <div class="standings-league-tabs">
+        <button type="button" class="standings-view-tab active" data-view="table">Table</button>
+        <button type="button" class="standings-view-tab" data-view="last">Recent</button>
+        <button type="button" class="standings-view-tab" data-view="upcoming">Upcoming</button>
+      </div>
+    </section>
 
     <section class="standings-filter-row">
       <div id="league-filter-list" class="league-filter-list"></div>
@@ -57,31 +55,21 @@
             <h2 id="standings-panel-title">League Table</h2>
           </div>
 
-          <div id="standings-table-wrap" class="standings-table-wrap">
-            <!-- JS -->
-          </div>
-
-          <div id="standings-last-wrap" class="standings-alt-wrap hidden-view">
-            <!-- JS -->
-          </div>
-
-          <div id="standings-upcoming-wrap" class="standings-alt-wrap hidden-view">
-            <!-- JS -->
-          </div>
+          <div id="standings-table-wrap" class="standings-table-wrap"></div>
+          <div id="standings-last-wrap" class="standings-alt-wrap hidden-view"></div>
+          <div id="standings-upcoming-wrap" class="standings-alt-wrap hidden-view"></div>
         </section>
       </div>
 
       <aside class="standings-sidebar">
         <section class="panel side-block">
           <div class="panel-head">
-           <h2>Insight</h2>
+            <h2>Insight</h2>
           </div>
           <div class="news-focus-box">
-           <p id="league-insight-text">
-  The title race remains tight, with minimal point gaps between top teams.
-</p>
+            <strong id="league-insight-title">Title race pressure</strong>
             <p id="league-insight-text">
-              Top positions are separated by narrow margins, making every dropped point highly visible.
+              The title race remains tight, with minimal point gaps between top teams.
             </p>
           </div>
         </section>
@@ -111,9 +99,13 @@
               <strong>Liverpool vs Tottenham</strong>
               <span>Match Preview</span>
             </a>
-            <a class="related-match-item" href="news.html">
-              <strong>Latest Football News</strong>
-              <span>Open feed</span>
+            <a class="related-match-item" href="match.html?game=rm_bar">
+              <strong>Real Madrid vs Barcelona</strong>
+              <span>Match Preview</span>
+            </a>
+            <a class="related-match-item" href="match.html?game=psg_lyo">
+              <strong>PSG vs Lyon</strong>
+              <span>Match Preview</span>
             </a>
           </div>
         </section>
