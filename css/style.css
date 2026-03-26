@@ -3233,3 +3233,142 @@ main {
     width: auto;
   }
 }
+/* ===== UNIVERSAL HEADER/NAV BUTTON FIX ===== */
+
+/* Лого-кнопка */
+a.logo-wrap,
+.logo-button,
+header .logo-wrap a,
+.header .logo-wrap,
+.header a.logo-wrap {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 10px 16px !important;
+  border-radius: 18px !important;
+  text-decoration: none !important;
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.10) !important;
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.08) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  transition: 0.2s ease !important;
+}
+
+a.logo-wrap:hover,
+.logo-button:hover,
+.header a.logo-wrap:hover {
+  background: rgba(255,255,255,0.09) !important;
+  border-color: rgba(255,255,255,0.16) !important;
+  transform: translateY(-1px) !important;
+}
+
+a.logo-wrap h1,
+.logo-button h1,
+.header a.logo-wrap h1 {
+  margin: 0 !important;
+  color: #fff !important;
+}
+
+/* Универсально для меню */
+.header nav,
+nav.nav,
+nav.menu,
+header nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  flex-wrap: nowrap !important;
+}
+
+/* Все ссылки в верхнем меню как кнопки */
+.header nav a,
+nav.nav a,
+nav.menu a,
+header nav a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 108px !important;
+  padding: 10px 16px !important;
+  border-radius: 14px !important;
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  color: rgba(255,255,255,0.88) !important;
+  text-decoration: none !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10) !important;
+  transition: 0.2s ease !important;
+}
+
+.header nav a:hover,
+nav.nav a:hover,
+nav.menu a:hover,
+header nav a:hover {
+  background: rgba(255,255,255,0.09) !important;
+  border-color: rgba(255,255,255,0.16) !important;
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Активная кнопка */
+.header nav a.nav-active,
+nav.nav a.nav-active,
+nav.menu a.nav-active,
+header nav a.nav-active {
+  background: rgba(21,178,107,0.14) !important;
+  border-color: rgba(21,178,107,0.26) !important;
+  color: #6df0b3 !important;
+}
+
+/* Геометрия header */
+.header {
+  display: grid !important;
+  grid-template-columns: auto 1fr auto !important;
+  align-items: center !important;
+  gap: 18px !important;
+}
+
+@media (max-width: 1100px) {
+  .header nav,
+  nav.nav,
+  nav.menu,
+  header nav {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .header nav a,
+  nav.nav a,
+  nav.menu a,
+  header nav a {
+    min-width: 96px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+    grid-template-columns: 1fr !important;
+    justify-items: start !important;
+  }
+
+  .header nav,
+  nav.nav,
+  nav.menu,
+  header nav {
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+
+  .header nav a,
+  nav.nav a,
+  nav.menu a,
+  header nav a {
+    min-width: auto !important;
+  }
+}
