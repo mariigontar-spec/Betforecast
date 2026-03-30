@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BetForecast.ai</title>
-  <link rel="stylesheet" href="css/style.css?v=25">
+  <link rel="stylesheet" href="css/style.css?v=26">
 </head>
 <body>
 
 <header class="header">
-
   <a href="index.html" class="logo-wrap logo-button">
     <h1>BETFORECAST.ai</h1>
     <div class="flag-box">
@@ -28,110 +27,117 @@
   </nav>
 
   <a class="signin-btn" href="#">Sign In</a>
-
 </header>
 
 <main>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-overlay"></div>
+  <!-- AI BLOCK -->
+  <section class="ai-focus-banner">
+    <div class="ai-focus-glow"></div>
+    <div class="ai-focus-shine"></div>
 
-  <div class="hero-left">
-    <div class="hero-badge">AI Predictions</div>
+    <div class="ai-focus-content">
+      <div class="ai-focus-text">
+        <span class="hero-ai-badge">AI Prediction Engine</span>
 
-    <h2>Football Predictions, Results & AI Insights</h2>
+        <h3>100+ match signals. One sharper forecast.</h3>
 
-    <p>
-      BetForecast.ai brings together smart match predictions, finished results,
-      football news, and AI insights in one clean dashboard.
-    </p>
+        <p>
+          Our in-house AI system tracks and evaluates more than 100 match variables
+          to improve win prediction accuracy and produce smarter result forecasts.
+        </p>
 
-    <div class="hero-actions">
-      <a href="#predictions" class="primary-btn">Open Predictions</a>
-      <a href="#results" class="secondary-btn">View Results</a>
-    </div>
-  </div>
-
-  <div class="hero-card">
-    <div class="card-top">
-      <span class="mini-label">Featured Match</span>
-      <span class="mini-tag">AI Insights</span>
-    </div>
-
-    <h3>Arsenal vs Chelsea</h3>
-
-    <div class="probabilities">
-      <div>47%<span>Home</span></div>
-      <div>28%<span>Draw</span></div>
-      <div>25%<span>Away</span></div>
-    </div>
-
-    <p class="ai-text">
-      Arsenal slightly ahead due to form and home advantage.
-    </p>
-  </div>
-</section>
-
-
-<!-- AI BLOCK -->
-<section class="ai-focus-banner">
-  <div class="ai-focus-glow"></div>
-  <div class="ai-focus-shine"></div>
-
-  <div class="ai-focus-content">
-    <div class="ai-focus-text">
-      <span class="hero-ai-badge">AI Prediction Engine</span>
-      <h3>100+ match signals. One sharper forecast.</h3>
-      <p>
-        Our in-house AI system tracks and evaluates more than 100 match variables
-        to improve win prediction accuracy and produce smarter result forecasts.
-      </p>
-
-      <div class="ai-metrics ai-metrics-featured">
-        <div class="ai-metric ai-metric-main">
-          <span class="metric-value metric-value-main" data-target="100" data-suffix="+">0</span>
-          <span class="metric-label metric-label-main">Signals tracked in every forecast</span>
-        </div>
-
-        <div class="ai-metrics-secondary">
-          <div class="ai-metric ai-metric-secondary">
-            <span class="metric-value" data-target="85" data-suffix="%">0</span>
-            <span class="metric-label">Prediction accuracy</span>
+        <div class="ai-metrics ai-metrics-featured ai-metrics-bottom">
+          <div class="ai-metric ai-metric-main">
+            <span class="metric-value metric-value-main" data-target="100" data-suffix="+">0</span>
+            <span class="metric-label metric-label-main">Signals tracked in every forecast</span>
           </div>
 
-          <div class="ai-metric ai-metric-secondary">
-            <span class="metric-value" data-target="24" data-suffix="/7">0</span>
-            <span class="metric-label">Live updates</span>
-          </div>
+          <div class="ai-metrics-secondary ai-metrics-secondary-row">
+            <div class="ai-metric ai-metric-secondary">
+              <span class="metric-value" data-target="85" data-suffix="%">0</span>
+              <span class="metric-label">Prediction accuracy</span>
+            </div>
 
-          <div class="ai-metric ai-metric-secondary">
-            <span class="metric-value">AI</span>
-            <span class="metric-label">Powered engine</span>
+            <div class="ai-metric ai-metric-secondary">
+              <span class="metric-value" data-target="24" data-suffix="/7">0</span>
+              <span class="metric-label">Live updates</span>
+            </div>
+
+            <div class="ai-metric ai-metric-secondary">
+              <span class="metric-value">AI</span>
+              <span class="metric-label">Powered engine</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
 
-<!-- PREDICTIONS -->
-<section class="predictions-section" id="predictions">
-  <h2>🔥 Today’s Best Predictions</h2>
-  <div id="predictions-container" class="predictions-grid"></div>
-</section>
+    <div class="hero-left">
+      <div class="hero-badge">AI Predictions</div>
 
+      <h2>Football Predictions, Results &amp; AI Insights</h2>
 
-<!-- RESULTS -->
-<section class="results-section" id="results">
-  <h2>Latest Results</h2>
-  <div id="results-container"></div>
-</section>
+      <p>
+        BetForecast.ai brings together smart match predictions, finished results,
+        football news, and AI insights in one clean dashboard.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#predictions" class="primary-btn">Open Predictions</a>
+        <a href="#results" class="secondary-btn">View Results</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="card-top">
+        <span class="mini-label">Featured Match</span>
+        <span class="mini-tag">AI Insights</span>
+      </div>
+
+      <h3>Arsenal vs Chelsea</h3>
+
+      <div class="probabilities">
+        <div>47%<span>Home</span></div>
+        <div>28%<span>Draw</span></div>
+        <div>25%<span>Away</span></div>
+      </div>
+
+      <div class="probability-bar">
+        <div class="bar-home"></div>
+        <div class="bar-draw"></div>
+        <div class="bar-away"></div>
+      </div>
+
+      <p class="ai-text">
+        Arsenal slightly ahead due to form and home advantage.
+      </p>
+    </div>
+  </section>
+
+  <!-- PREDICTIONS -->
+  <section class="predictions-section" id="predictions">
+    <div class="section-head">
+      <h2>🔥 Today’s Best Predictions</h2>
+    </div>
+    <div id="predictions-container" class="predictions-grid"></div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="panel" id="results">
+    <div class="panel-head">
+      <h2>Latest Results</h2>
+    </div>
+    <div id="results-container"></div>
+  </section>
 
 </main>
 
-<script src="js/main.js"></script>
 <script src="js/main.js"></script>
 <script src="js/home-animations.js"></script>
 </body>
