@@ -2890,13 +2890,22 @@ nav.menu a.nav-active {
   }
 
   .ai-focus-banner h3 {
-    font-size: 24px;
-  }
+  margin: 18px 0 0;
+  font-size: clamp(40px, 4.3vw, 64px);
+  line-height: 1.02;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  max-width: 980px;
+}
 
-  .ai-focus-banner p {
-    font-size: 15px;
-    line-height: 1.7;
-  }
+.ai-focus-banner p {
+  margin: 20px 0 0;
+  max-width: 860px;
+  font-size: 19px;
+  line-height: 1.72;
+  color: rgba(255,255,255,0.82);
+
 }
 
 @media (max-width: 640px) {
