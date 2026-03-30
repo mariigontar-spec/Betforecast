@@ -2932,3 +2932,118 @@ nav.menu a.nav-active {
     font-size: 24px;
   }
 }
+/* ============================= */
+/* AI BLOCK FINAL FIX (EMERALD) */
+/* ============================= */
+
+.ai-focus-banner {
+  position: relative;
+  overflow: visible;
+  margin: 0 auto 40px;
+  width: min(1360px, calc(100% - 24px));
+}
+
+/* внешний glow */
+.ai-focus-banner::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  border-radius: 40px;
+  background: radial-gradient(circle at 30% 20%, rgba(80,255,170,0.18), transparent 40%);
+  filter: blur(12px);
+  pointer-events: none;
+}
+
+/* основной стеклянный блок */
+.ai-focus-banner .ai-focus-text {
+  position: relative;
+  padding: 40px 36px;
+  border-radius: 32px;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(120,255,190,0.15), transparent 30%),
+    linear-gradient(145deg, rgba(15,60,40,0.9), rgba(5,20,12,0.96));
+
+  border: 1px solid rgba(120,255,190,0.25);
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.45),
+    0 0 60px rgba(60,255,170,0.18);
+
+  backdrop-filter: blur(18px);
+}
+
+/* заголовок */
+.ai-focus-banner h3 {
+  font-size: clamp(42px, 4vw, 64px);
+  font-weight: 900;
+  margin-top: 16px;
+}
+
+/* сетка */
+.ai-metrics-featured {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* правая колонка */
+.ai-metrics-secondary {
+  display: grid;
+  gap: 14px;
+}
+
+/* карточки */
+.ai-metric {
+  border-radius: 28px;
+}
+
+/* ГЛАВНАЯ карточка */
+.ai-metric-main {
+  padding: 34px;
+  min-height: 340px;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(150,255,210,0.12), transparent 30%),
+    linear-gradient(160deg, rgba(30,100,65,0.85), rgba(6,25,15,0.95));
+
+  border: 1px solid rgba(150,255,210,0.25);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.4),
+    0 0 50px rgba(80,255,170,0.2);
+}
+
+/* большая цифра */
+.metric-value-main {
+  font-size: clamp(80px, 9vw, 130px);
+  font-weight: 900;
+  color: #b8ffd9;
+}
+
+/* маленькие карточки */
+.ai-metric-secondary {
+  padding: 22px;
+
+  background:
+    linear-gradient(160deg, rgba(20,60,40,0.8), rgba(5,20,12,0.9));
+
+  border: 1px solid rgba(150,255,210,0.15);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* текст */
+.ai-metric-secondary .metric-value {
+  font-size: 38px;
+  color: #9affca;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .ai-metrics-featured {
+    grid-template-columns: 1fr;
+  }
+}
