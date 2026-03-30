@@ -3523,3 +3523,143 @@ header nav a.nav-active {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* AI METRICS ENHANCED */
+
+.ai-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.ai-metric {
+  position: relative;
+  overflow: hidden;
+  padding: 14px 12px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  text-align: center;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: 0.25s ease;
+}
+
+.ai-metric::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.10),
+    rgba(255,255,255,0.00) 45%
+  );
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.ai-metric:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.14);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+}
+
+.metric-value {
+  display: block;
+  font-size: 22px;
+  font-weight: 900;
+  color: #6df0b3;
+  letter-spacing: -0.5px;
+}
+
+.metric-label {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.65);
+}
+
+@media (max-width: 900px) {
+  .ai-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* PREDICTION CARDS ENHANCED */
+
+.prediction-card {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 22px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.prediction-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -35% auto;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(21,178,107,0.16), transparent 65%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.prediction-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(0,0,0,0.22);
+}
+
+.prediction-card:hover::after {
+  opacity: 1;
+}
+
+.prediction-card-cover {
+  position: relative;
+}
+
+.prediction-card-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(5,10,16,0.08), rgba(5,10,16,0.45));
+}
+
+.prediction-card-body {
+  position: relative;
+  z-index: 1;
+}
+
+.percent-box {
+  transition: 0.2s ease;
+}
+
+.prediction-card:hover .percent-box {
+  transform: translateY(-1px);
+}
+
+.tip-badge {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);
+}
+.predictions-section h2 {
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
+}
+.ai-focus-banner {
+  animation: aiBannerFade 0.8s ease both;
+}
+
+@keyframes aiBannerFade {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
