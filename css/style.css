@@ -3259,3 +3259,9 @@ nav.menu a.nav-active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.site-logo__icon {
+  width: 32px !important;
+  height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+}
