@@ -2955,3 +2955,23 @@ nav.menu a.nav-active {
     margin-top: 16px;
   }
 }
+/* TOP BLOCKS SAME WIDTH */
+
+.ai-focus-banner,
+.hero,
+.predictions-section,
+.panel {
+  width: 100%;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ai-focus-banner {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.hero {
+  margin-top: 18px;
+}
