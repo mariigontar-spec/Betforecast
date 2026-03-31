@@ -3265,3 +3265,21 @@ nav.menu a.nav-active {
   max-width: 32px !important;
   max-height: 32px !important;
 }
+.site-logo__icon {
+  width: 34px;
+  height: 34px;
+
+  filter:
+    drop-shadow(0 0 8px rgba(90, 255, 180, 0.25))
+    drop-shadow(0 0 18px rgba(30, 200, 140, 0.15));
+
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.site-logo:hover .site-logo__icon {
+  transform: scale(1.08);
+
+  filter:
+    drop-shadow(0 0 12px rgba(120, 255, 200, 0.35))
+    drop-shadow(0 0 22px rgba(30, 200, 140, 0.25));
+}
