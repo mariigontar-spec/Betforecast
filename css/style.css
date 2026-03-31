@@ -3232,3 +3232,30 @@ nav.menu a.nav-active {
     justify-content: center;
   }
 }
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.site-logo__icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  object-fit: contain;
+
+  /* мягкое свечение */
+  filter: drop-shadow(0 0 6px rgba(70, 230, 163, 0.25));
+}
+
+.site-logo__text {
+  font-family: Inter, Montserrat, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+
+  background: linear-gradient(180deg, #eafff4 0%, #5fe8ae 40%, #0f6a48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
