@@ -2975,3 +2975,19 @@ nav.menu a.nav-active {
 .hero {
   margin-top: 18px;
 }
+.hero {
+  min-height: 430px;
+  padding: 38px;
+  border-radius: 26px;
+}
+
+.hero-left h2 {
+  max-width: 680px;
+  font-size: clamp(38px, 4vw, 58px);
+}
+
+.hero-left p {
+  max-width: 560px;
+  font-size: 16px;
+  line-height: 1.65;
+}
