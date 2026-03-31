@@ -3247,3 +3247,65 @@ nav.menu a.nav-active {
     min-height: auto;
   }
 }
+/* ===== AI BLOCK FINAL COMPACT FIX ===== */
+
+.ai-focus-banner.ai-focus-banner-compact {
+  max-width: 980px;
+  margin: 0 auto 18px;
+}
+
+.ai-focus-banner.ai-focus-banner-compact .ai-focus-text {
+  padding: 18px 20px 16px;
+  border-radius: 20px;
+}
+
+/* заголовок компактнее */
+.ai-focus-banner.ai-focus-banner-compact h3 {
+  font-size: clamp(24px, 2.4vw, 34px);
+  margin-top: 10px;
+}
+
+.ai-focus-banner.ai-focus-banner-compact p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* главный блок меньше */
+.ai-metric-main-compact {
+  min-height: 140px;
+  padding: 18px;
+  border-radius: 18px;
+}
+
+/* 100+ меньше */
+.metric-value-main-compact {
+  font-size: clamp(40px, 5vw, 64px);
+}
+
+/* нижние карточки — ВАЖНО */
+.ai-metrics-bottom-row {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* превращаем в прямоугольники */
+.ai-metric-chip {
+  min-height: 60px;
+  padding: 12px 14px;
+  border-radius: 12px; /* было 22 — теперь строгие */
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* цифры компактные */
+.ai-metric-chip .metric-value {
+  font-size: 22px;
+}
+
+/* текст компактный */
+.ai-metric-chip .metric-label {
+  font-size: 12px;
+  margin-top: 0;
+}
