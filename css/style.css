@@ -3571,33 +3571,34 @@ nav.menu a.nav-active {
 }
 
 .site-logo__icon {
-  width: 40px !important;
-  height: 40px !important;
-  min-width: 40px !important;
-  min-height: 40px !important;
-  display: block;
-  object-fit: contain;
-  flex-shrink: 0;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
 
   filter:
-    drop-shadow(0 0 10px rgba(80, 255, 180, 0.25))
-    drop-shadow(0 0 22px rgba(30, 200, 140, 0.18));
+    drop-shadow(0 0 12px rgba(80,255,180,0.28))
+    drop-shadow(0 0 28px rgba(30,200,140,0.18));
 }
+
 
 .site-logo__text {
   font-family: Inter, Montserrat, Arial, sans-serif;
-  font-size: 21px !important;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-size: 20px !important;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   line-height: 1;
   white-space: nowrap;
 
-  background: linear-gradient(
-    180deg,
-    #f4fff9 0%,
-    #9ff7d0 35%,
-    #3bdc9a 60%,
-    #138b5e 100%
+  color: #c8f5e3;
+
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+
+  text-shadow: 0 0 8px rgba(80,255,180,0.12);
+
+
   );
 
   -webkit-background-clip: text;
