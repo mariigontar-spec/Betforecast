@@ -3460,3 +3460,103 @@ nav.menu a.nav-active {
   content: none !important;
   display: none !important;
 }
+/* ===== HEADER SYSTEM RESET ===== */
+
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  min-height: 56px;
+  padding: 0 10px 0 0;
+}
+
+.site-logo__icon {
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 10px rgba(70, 230, 163, 0.18));
+}
+
+.site-logo__text {
+  font-family: Inter, Montserrat, Arial, sans-serif;
+  font-size: 20px !important;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  white-space: nowrap;
+  position: static !important;
+  text-shadow: none !important;
+  background: linear-gradient(180deg, #f3fff9 0%, #89f3c7 48%, #169868 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.site-logo__text::before,
+.site-logo__text::after {
+  content: none !important;
+  display: none !important;
+}
+
+.topbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex: 1 1 auto;
+}
+
+.topbar-menu a,
+.btn-bf-ghost {
+  min-height: 56px;
+  padding: 0 28px;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter, Montserrat, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  color: #eefaf4;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.03));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.08),
+    0 0 0 rgba(0,0,0,0);
+  transition: 0.18s ease;
+}
+
+.topbar-menu a:hover,
+.btn-bf-ghost:hover {
+  border-color: rgba(120, 243, 199, 0.18);
+  box-shadow: 0 0 18px rgba(70, 230, 163, 0.08);
+}
+
+.topbar-menu a.active {
+  color: #e9fff6;
+  border-color: rgba(70, 230, 163, 0.18);
+  background: linear-gradient(180deg, rgba(26,160,109,0.22), rgba(9,92,61,0.16));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.10),
+    0 0 20px rgba(70, 230, 163, 0.10);
+}
+
+.topbar-actions .btn-bf-ghost {
+  min-width: 140px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 14px 24px;
+}
