@@ -3353,3 +3353,22 @@ nav.menu a.nav-active {
   justify-content: flex-end;
   flex: 0 0 auto;
 }
+.site-logo__text {
+  font-family: Inter, Montserrat, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+
+  background: linear-gradient(
+    180deg,
+    #eafff4 0%,
+    #6df0ba 45%,
+    #1c8f63 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 0 6px rgba(80, 255, 170, 0.12);
+}
