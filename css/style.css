@@ -3651,3 +3651,18 @@ nav.menu a.nav-active {
   box-shadow:
     0 0 24px rgba(80,255,180,0.15);
 }
+.site-logo__text {
+  font-family: Inter, Montserrat, Arial, sans-serif;
+  font-size: 20px !important;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+
+  color: #c8f5e3 !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: #c8f5e3 !important;
+
+  text-shadow: 0 0 8px rgba(80,255,180,0.12);
+}
