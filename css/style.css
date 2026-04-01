@@ -3409,3 +3409,40 @@ nav.menu a.nav-active {
   content: none !important;
   display: none !important;
 }
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.site-logo__icon {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 8px rgba(70, 230, 163, 0.18));
+}
+
+.site-logo__text {
+  font-family: Inter, Montserrat, Arial, sans-serif;
+  font-size: 18px !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+  position: static !important;
+  text-shadow: none !important;
+  background: linear-gradient(180deg, #f2fff8 0%, #7df0bc 45%, #168b5f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.site-logo__text::before,
+.site-logo__text::after {
+  content: none !important;
+  display: none !important;
+}
