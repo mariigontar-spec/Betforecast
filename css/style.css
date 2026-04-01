@@ -3417,16 +3417,16 @@ nav.menu a.nav-active {
 }
 
 .site-logo__icon {
-  width: 38px !important;
-  height: 38px !important;
-  min-width: 36px !important;
-  min-height: 36px !important;
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
   display: block;
   object-fit: contain;
   flex-shrink: 0;
-  filter: drop-shadow(0 0 8px rgba(70, 230, 163, 0.18));
-}
 
+  filter: drop-shadow(0 0 10px rgba(70, 230, 163, 0.2));
+}
 .site-logo__text {
   font-family: Inter, Montserrat, Arial, sans-serif;
   font-size: 18px !important;
@@ -3437,6 +3437,20 @@ nav.menu a.nav-active {
   position: static !important;
   text-shadow: none !important;
   background: linear-gradient(180deg, #f2fff8 0%, #7df0bc 45%, #168b5f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.site-logo__text {
+  font-size: 19px !important;
+  font-weight: 700;
+
+  background: linear-gradient(
+    180deg,
+    #f5fff9 0%,
+    #8ff5c8 40%,
+    #1fa36f 100%
+  );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
