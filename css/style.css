@@ -3333,3 +3333,36 @@ nav.menu a.nav-active {
   pointer-events: none;
   opacity: 0.85;
 }
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 20px;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex: 0 0 260px;
+  min-width: 260px;
+}
+
+.topbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex: 1 1 auto;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+}
