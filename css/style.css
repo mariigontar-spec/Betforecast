@@ -3666,3 +3666,47 @@ nav.menu a.nav-active {
 
   text-shadow: 0 0 8px rgba(80,255,180,0.12);
 }
+.matches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.match-card {
+  border-radius: 24px;
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 24px rgba(70,230,163,0.06);
+}
+
+.match-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  color: #9ed8be;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.match-card__teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #f4fff9;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.match-card__teams strong {
+  color: #7ef0bc;
+  font-size: 24px;
+}
+
+@media (max-width: 900px) {
+  .matches-grid {
+    grid-template-columns: 1fr;
+  }
+}
