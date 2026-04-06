@@ -25,7 +25,11 @@ async function loadResultsPage() {
         </div>
         <div class="match-card__teams">
           <div>${item.home}</div>
-          <strong>${item.projectedScore}</strong>
+          <strong>${item.finalScore}</strong>
+<br>
+<span style="font-size:12px; opacity:0.6;">
+  Predicted: ${item.predictedScore}
+</span>
           <div>${item.away}</div>
         </div>
       `;
