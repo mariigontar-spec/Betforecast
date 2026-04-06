@@ -268,3 +268,20 @@
     ]
   }
 ]
+{
+  "id": 1,
+  "league": "Premier League",
+  "home": "Arsenal",
+  "away": "Chelsea",
+  "predictedScore": "2-1",
+  "finalScore": "1-1",
+  "status": "finished"
+}
+{
+  "id": 2,
+  "league": "La Liga",
+  "home": "Barcelona",
+  "away": "Valencia",
+  "predictedScore": "3-0",
+  "status": "upcoming"
+}
