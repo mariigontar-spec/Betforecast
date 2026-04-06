@@ -4,106 +4,826 @@
     "league": "Premier League",
     "home": "Man City",
     "away": "Arsenal",
+    "homeShort": "MCI",
+    "awayShort": "ARS",
+    "date": "Sunday",
+    "time": "17:30",
+    "stadium": "Etihad Stadium",
+    "projectedScore": "2 - 2",
     "predictedScore": "2 - 2",
     "finalScore": "2 - 1",
-    "status": "finished"
+    "status": "finished",
+    "homePct": 47,
+    "drawPct": 28,
+    "awayPct": 25,
+    "confidence": 78,
+    "tip": "Over 2.5",
+    "goalsLean": "Over 2.5",
+    "btts": "Live",
+    "odds": "1.92",
+    "xg": "2.1 - 1.8",
+    "xgHome": 2.1,
+    "xgAway": 1.8,
+    "shotsHome": 16.2,
+    "shotsAway": 12.4,
+    "possessionHome": "59%",
+    "possessionAway": "41%",
+    "summary": "Man City carried stronger territorial control and chance volume, but Arsenal stayed alive through transition moments and set-piece pressure.",
+    "quickInsight": "Arsenal kept the game competitive whenever they broke the first pressing wave cleanly.",
+    "factors": [
+      "Home control",
+      "Transition threat",
+      "Set-piece danger"
+    ],
+    "formHome": ["W", "W", "D", "W", "W"],
+    "formAway": ["W", "D", "W", "L", "W"],
+    "homeStats": [
+      "xG trend: +0.52",
+      "Goals last 5: 11",
+      "Conceded last 5: 4",
+      "Possession avg: 59%"
+    ],
+    "awayStats": [
+      "xG trend: +0.21",
+      "Goals last 5: 8",
+      "Conceded last 5: 5",
+      "Possession avg: 53%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-15",
+        "text": "Man City started with control and pinned Arsenal into deeper defensive phases."
+      },
+      {
+        "minute": "15-35",
+        "text": "Arsenal found cleaner transition routes and threatened from second-ball moments."
+      },
+      {
+        "minute": "35-60",
+        "text": "Both sides generated their best xG stretch in the middle phase of the game."
+      },
+      {
+        "minute": "60-90",
+        "text": "City’s late territorial pressure proved decisive and tilted the result."
+      }
+    ]
   },
   {
     "id": "liv_che",
     "league": "Premier League",
     "home": "Liverpool",
     "away": "Chelsea",
+    "homeShort": "LIV",
+    "awayShort": "CHE",
+    "date": "Saturday",
+    "time": "18:30",
+    "stadium": "Anfield",
+    "projectedScore": "2 - 1",
     "predictedScore": "2 - 1",
     "finalScore": "1 - 1",
-    "status": "finished"
+    "status": "finished",
+    "homePct": 49,
+    "drawPct": 29,
+    "awayPct": 22,
+    "confidence": 74,
+    "tip": "Home Win",
+    "goalsLean": "Over 2.5",
+    "btts": "Live",
+    "odds": "2.10",
+    "xg": "1.9 - 1.3",
+    "xgHome": 1.9,
+    "xgAway": 1.3,
+    "shotsHome": 15.4,
+    "shotsAway": 10.1,
+    "possessionHome": "57%",
+    "possessionAway": "43%",
+    "summary": "Liverpool entered with a stronger attacking profile, but Chelsea managed the game state well and kept the scoreline compressed.",
+    "quickInsight": "Chelsea’s compact shape reduced Liverpool’s repeat shot quality in the second half.",
+    "factors": [
+      "Anfield pressure",
+      "Compact away block",
+      "BTTS path"
+    ],
+    "formHome": ["W", "W", "W", "D", "L"],
+    "formAway": ["D", "W", "L", "W", "D"],
+    "homeStats": [
+      "xG trend: +0.34",
+      "Goals last 5: 10",
+      "Conceded last 5: 5",
+      "Possession avg: 57%"
+    ],
+    "awayStats": [
+      "xG trend: +0.11",
+      "Goals last 5: 7",
+      "Conceded last 5: 6",
+      "Possession avg: 49%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-20",
+        "text": "Liverpool imposed early pressure and forced Chelsea into a lower block."
+      },
+      {
+        "minute": "20-45",
+        "text": "Chelsea began finding safer exits and stabilized the midfield battle."
+      },
+      {
+        "minute": "45-70",
+        "text": "The game stayed open enough for both teams to remain on the scoresheet path."
+      },
+      {
+        "minute": "70-90",
+        "text": "Chelsea protected the draw with better defensive spacing late on."
+      }
+    ]
   },
   {
     "id": "bar_val",
     "league": "La Liga",
     "home": "Barcelona",
     "away": "Valencia",
+    "homeShort": "BAR",
+    "awayShort": "VAL",
+    "date": "Sunday",
+    "time": "21:00",
+    "stadium": "Estadi Olímpic",
+    "projectedScore": "3 - 0",
     "predictedScore": "3 - 0",
     "finalScore": "2 - 0",
-    "status": "finished"
+    "status": "finished",
+    "homePct": 63,
+    "drawPct": 22,
+    "awayPct": 15,
+    "confidence": 82,
+    "tip": "Home Win",
+    "goalsLean": "Over 2.5",
+    "btts": "Weak",
+    "odds": "1.64",
+    "xg": "2.4 - 0.8",
+    "xgHome": 2.4,
+    "xgAway": 0.8,
+    "shotsHome": 17.1,
+    "shotsAway": 7.2,
+    "possessionHome": "64%",
+    "possessionAway": "36%",
+    "summary": "Barcelona dominated territory and possession, limiting Valencia’s clean attacking phases for most of the match.",
+    "quickInsight": "Valencia’s survival path depended on keeping the game scoreless deep into the second half.",
+    "factors": [
+      "Possession dominance",
+      "Final-third control",
+      "Low away xG"
+    ],
+    "formHome": ["W", "W", "D", "W", "W"],
+    "formAway": ["L", "D", "W", "L", "D"],
+    "homeStats": [
+      "xG trend: +0.61",
+      "Goals last 5: 12",
+      "Conceded last 5: 3",
+      "Possession avg: 62%"
+    ],
+    "awayStats": [
+      "xG trend: -0.07",
+      "Goals last 5: 5",
+      "Conceded last 5: 8",
+      "Possession avg: 45%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-15",
+        "text": "Barcelona quickly established field tilt and control of the central spaces."
+      },
+      {
+        "minute": "15-35",
+        "text": "Valencia defended deep and looked for isolated transition routes."
+      },
+      {
+        "minute": "35-60",
+        "text": "Barcelona’s sustained pressure increased expected-goal accumulation."
+      },
+      {
+        "minute": "60-90",
+        "text": "The home side closed the match with control rather than chaos."
+      }
+    ]
   },
   {
     "id": "psg_mon",
     "league": "Ligue 1",
     "home": "PSG",
     "away": "Monaco",
+    "homeShort": "PSG",
+    "awayShort": "MON",
+    "date": "Friday",
+    "time": "20:45",
+    "stadium": "Parc des Princes",
+    "projectedScore": "2 - 1",
     "predictedScore": "2 - 1",
     "finalScore": "3 - 1",
-    "status": "finished"
+    "status": "finished",
+    "homePct": 58,
+    "drawPct": 24,
+    "awayPct": 18,
+    "confidence": 79,
+    "tip": "Over 2.5",
+    "goalsLean": "Over 2.5",
+    "btts": "Live",
+    "odds": "1.78",
+    "xg": "2.3 - 1.1",
+    "xgHome": 2.3,
+    "xgAway": 1.1,
+    "shotsHome": 16.8,
+    "shotsAway": 9.0,
+    "possessionHome": "61%",
+    "possessionAway": "39%",
+    "summary": "PSG controlled most of the attacking rhythm and widened the quality gap as Monaco chased the match.",
+    "quickInsight": "Monaco needed a compact first half, but once the game opened PSG’s edge grew sharply.",
+    "factors": [
+      "Home quality",
+      "Transition punishment",
+      "Shot volume edge"
+    ],
+    "formHome": ["W", "W", "W", "W", "D"],
+    "formAway": ["W", "L", "W", "D", "L"],
+    "homeStats": [
+      "xG trend: +0.58",
+      "Goals last 5: 13",
+      "Conceded last 5: 4",
+      "Possession avg: 61%"
+    ],
+    "awayStats": [
+      "xG trend: +0.09",
+      "Goals last 5: 7",
+      "Conceded last 5: 7",
+      "Possession avg: 48%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-20",
+        "text": "PSG established pressure early and forced Monaco into reactive defending."
+      },
+      {
+        "minute": "20-45",
+        "text": "Monaco stayed in range through selective transition attacks."
+      },
+      {
+        "minute": "45-70",
+        "text": "The quality gap widened as PSG increased final-third control."
+      },
+      {
+        "minute": "70-90",
+        "text": "Monaco’s chase created more space and PSG punished it."
+      }
+    ]
   },
   {
     "id": "int_mil",
     "league": "Serie A",
     "home": "Inter",
     "away": "AC Milan",
+    "homeShort": "INT",
+    "awayShort": "MIL",
+    "date": "Sunday",
+    "time": "20:45",
+    "stadium": "San Siro",
+    "projectedScore": "1 - 1",
     "predictedScore": "1 - 1",
     "finalScore": "1 - 2",
-    "status": "finished"
+    "status": "finished",
+    "homePct": 36,
+    "drawPct": 38,
+    "awayPct": 26,
+    "confidence": 71,
+    "tip": "BTTS",
+    "goalsLean": "Under 3.5",
+    "btts": "Live",
+    "odds": "2.45",
+    "xg": "1.5 - 1.4",
+    "xgHome": 1.5,
+    "xgAway": 1.4,
+    "shotsHome": 12.6,
+    "shotsAway": 11.8,
+    "possessionHome": "52%",
+    "possessionAway": "48%",
+    "summary": "The model expected a tighter draw profile, but Milan edged the decisive moments and managed late phases more efficiently.",
+    "quickInsight": "First-goal timing carried extra weight in a low-separation derby like this one.",
+    "factors": [
+      "Balanced midfield",
+      "Draw-heavy model",
+      "Fine-margin finishing"
+    ],
+    "formHome": ["W", "D", "W", "W", "L"],
+    "formAway": ["W", "W", "D", "L", "W"],
+    "homeStats": [
+      "xG trend: +0.20",
+      "Goals last 5: 8",
+      "Conceded last 5: 5",
+      "Possession avg: 54%"
+    ],
+    "awayStats": [
+      "xG trend: +0.16",
+      "Goals last 5: 9",
+      "Conceded last 5: 5",
+      "Possession avg: 50%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-20",
+        "text": "Both sides started with caution and compact spacing through midfield."
+      },
+      {
+        "minute": "20-45",
+        "text": "The game became more open through turnovers and second-ball recovery."
+      },
+      {
+        "minute": "45-70",
+        "text": "The derby swung on sharper finishing rather than overwhelming control."
+      },
+      {
+        "minute": "70-90",
+        "text": "Milan handled the late game state with better clarity."
+      }
+    ]
   },
   {
     "id": "liv_tot_live",
     "league": "Premier League",
     "home": "Liverpool",
     "away": "Tottenham",
+    "homeShort": "LIV",
+    "awayShort": "TOT",
+    "date": "Live Today",
+    "time": "63'",
+    "minute": "63'",
+    "stadium": "Anfield",
+    "projectedScore": "2 - 1",
     "predictedScore": "2 - 1",
     "liveScore": "1 - 0",
-    "minute": "63'",
-    "status": "live"
+    "status": "live",
+    "homePct": 52,
+    "drawPct": 26,
+    "awayPct": 22,
+    "confidence": 76,
+    "tip": "Home Win",
+    "goalsLean": "Over 2.5",
+    "btts": "Live",
+    "odds": "2.05",
+    "xg": "1.6 - 0.9",
+    "xgHome": 1.6,
+    "xgAway": 0.9,
+    "shotsHome": 13.8,
+    "shotsAway": 8.4,
+    "possessionHome": "58%",
+    "possessionAway": "42%",
+    "summary": "Liverpool still controls the stronger live path through pressure and field position, but Tottenham remains dangerous if the match stretches.",
+    "quickInsight": "One Tottenham transition goal would completely reopen the probability balance.",
+    "factors": [
+      "Live momentum",
+      "Anfield pressure",
+      "Spurs transition threat"
+    ],
+    "formHome": ["W", "W", "W", "D", "L"],
+    "formAway": ["W", "L", "W", "D", "W"],
+    "homeStats": [
+      "xG trend: +0.36",
+      "Goals last 5: 10",
+      "Conceded last 5: 5",
+      "Possession avg: 57%"
+    ],
+    "awayStats": [
+      "xG trend: +0.09",
+      "Goals last 5: 8",
+      "Conceded last 5: 7",
+      "Possession avg: 47%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-20",
+        "text": "Liverpool imposed the early press and pinned Tottenham into rushed exits."
+      },
+      {
+        "minute": "20-45",
+        "text": "Tottenham survived through direct breaks and selective counter pressure."
+      },
+      {
+        "minute": "45-63",
+        "text": "Liverpool’s current lead reflects stronger territorial pressure and cleaner chances."
+      },
+      {
+        "minute": "63-90",
+        "text": "If the game opens, Tottenham’s speed keeps the comeback route alive."
+      }
+    ]
   },
   {
     "id": "rm_sev_live",
     "league": "La Liga",
     "home": "Real Madrid",
     "away": "Sevilla",
+    "homeShort": "RMA",
+    "awayShort": "SEV",
+    "date": "Live Today",
+    "time": "28'",
+    "minute": "28'",
+    "stadium": "Santiago Bernabéu",
+    "projectedScore": "2 - 0",
     "predictedScore": "2 - 0",
     "liveScore": "0 - 0",
-    "minute": "28'",
-    "status": "live"
+    "status": "live",
+    "homePct": 61,
+    "drawPct": 24,
+    "awayPct": 15,
+    "confidence": 80,
+    "tip": "Home Win",
+    "goalsLean": "Over 2.5",
+    "btts": "Weak",
+    "odds": "1.67",
+    "xg": "1.1 - 0.3",
+    "xgHome": 1.1,
+    "xgAway": 0.3,
+    "shotsHome": 9.2,
+    "shotsAway": 3.1,
+    "possessionHome": "62%",
+    "possessionAway": "38%",
+    "summary": "Real Madrid is controlling the early live script, but the scoreboard remains level and leaves the draw path open for now.",
+    "quickInsight": "If Sevilla survives this pressure phase, match volatility rises sharply after halftime.",
+    "factors": [
+      "Live pressure",
+      "Home possession dominance",
+      "Score still level"
+    ],
+    "formHome": ["W", "W", "D", "W", "W"],
+    "formAway": ["L", "D", "W", "L", "D"],
+    "homeStats": [
+      "xG trend: +0.47",
+      "Goals last 5: 11",
+      "Conceded last 5: 4",
+      "Possession avg: 60%"
+    ],
+    "awayStats": [
+      "xG trend: -0.03",
+      "Goals last 5: 5",
+      "Conceded last 5: 8",
+      "Possession avg: 44%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-15",
+        "text": "Madrid started with patient circulation and high field tilt."
+      },
+      {
+        "minute": "15-28",
+        "text": "Sevilla stayed compact but has struggled to create clean exits."
+      },
+      {
+        "minute": "28-60",
+        "text": "If Madrid converts first, the model widens strongly toward the home side."
+      },
+      {
+        "minute": "60-90",
+        "text": "A level score deep into the match would make the draw lane much more active."
+      }
+    ]
   },
   {
     "id": "juv_nap_live",
     "league": "Serie A",
     "home": "Juventus",
     "away": "Napoli",
+    "homeShort": "JUV",
+    "awayShort": "NAP",
+    "date": "Live Today",
+    "time": "79'",
+    "minute": "79'",
+    "stadium": "Allianz Stadium",
+    "projectedScore": "1 - 2",
     "predictedScore": "1 - 2",
     "liveScore": "2 - 2",
-    "minute": "79'",
-    "status": "live"
+    "status": "live",
+    "homePct": 31,
+    "drawPct": 39,
+    "awayPct": 30,
+    "confidence": 73,
+    "tip": "BTTS",
+    "goalsLean": "Over 2.5",
+    "btts": "Live",
+    "odds": "2.38",
+    "xg": "1.7 - 1.9",
+    "xgHome": 1.7,
+    "xgAway": 1.9,
+    "shotsHome": 11.9,
+    "shotsAway": 12.6,
+    "possessionHome": "49%",
+    "possessionAway": "51%",
+    "summary": "This is currently the most volatile live match on the board, with both teams still carrying a realistic winning route.",
+    "quickInsight": "The next high-value transition or set piece could decide everything in the closing stretch.",
+    "factors": [
+      "High volatility",
+      "BTTS confirmed",
+      "Late swing potential"
+    ],
+    "formHome": ["D", "W", "L", "W", "D"],
+    "formAway": ["W", "W", "D", "L", "W"],
+    "homeStats": [
+      "xG trend: +0.14",
+      "Goals last 5: 8",
+      "Conceded last 5: 6",
+      "Possession avg: 50%"
+    ],
+    "awayStats": [
+      "xG trend: +0.22",
+      "Goals last 5: 9",
+      "Conceded last 5: 5",
+      "Possession avg: 53%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-20",
+        "text": "Napoli started with cleaner progression and better attacking rhythm."
+      },
+      {
+        "minute": "20-45",
+        "text": "Juventus stabilized and turned the match into a more physical contest."
+      },
+      {
+        "minute": "45-79",
+        "text": "Both teams traded high-value moments and fully activated the BTTS route."
+      },
+      {
+        "minute": "79-90",
+        "text": "The final phase is wide open and highly sensitive to one defensive mistake."
+      }
+    ]
   },
   {
     "id": "ars_new",
     "league": "Premier League",
     "home": "Arsenal",
     "away": "Newcastle",
+    "homeShort": "ARS",
+    "awayShort": "NEW",
+    "date": "Saturday",
+    "time": "19:30",
+    "stadium": "Emirates Stadium",
+    "projectedScore": "3 - 1",
     "predictedScore": "3 - 1",
-    "status": "upcoming"
+    "status": "upcoming",
+    "homePct": 57,
+    "drawPct": 24,
+    "awayPct": 19,
+    "confidence": 81,
+    "tip": "Home Win",
+    "goalsLean": "Over 2.5",
+    "btts": "Watch",
+    "odds": "1.74",
+    "xg": "2.2 - 1.0",
+    "xgHome": 2.2,
+    "xgAway": 1.0,
+    "shotsHome": 15.7,
+    "shotsAway": 9.2,
+    "possessionHome": "60%",
+    "possessionAway": "40%",
+    "summary": "Arsenal profiles as the stronger favorite through possession stability, cleaner chance creation, and a more repeatable home attack.",
+    "quickInsight": "If Newcastle survives the opening pressure spell, the game could stay closer than the raw percentages suggest.",
+    "factors": [
+      "Home quality",
+      "Better shot volume",
+      "Newcastle counter route"
+    ],
+    "formHome": ["W", "W", "D", "W", "W"],
+    "formAway": ["L", "W", "D", "L", "W"],
+    "homeStats": [
+      "xG trend: +0.49",
+      "Goals last 5: 12",
+      "Conceded last 5: 4",
+      "Possession avg: 59%"
+    ],
+    "awayStats": [
+      "xG trend: +0.05",
+      "Goals last 5: 7",
+      "Conceded last 5: 8",
+      "Possession avg: 46%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-15",
+        "text": "Arsenal is likely to control territory and force Newcastle into deeper defensive phases."
+      },
+      {
+        "minute": "15-35",
+        "text": "Newcastle’s best path is through transition speed and isolated breaks."
+      },
+      {
+        "minute": "35-60",
+        "text": "If Arsenal sustains shot volume, the home win path strengthens materially."
+      },
+      {
+        "minute": "60-90",
+        "text": "If the score is still tight late, Newcastle’s counter route remains dangerous."
+      }
+    ]
   },
   {
     "id": "bvb_rbl",
     "league": "Bundesliga",
     "home": "Dortmund",
     "away": "RB Leipzig",
+    "homeShort": "BVB",
+    "awayShort": "RBL",
+    "date": "Sunday",
+    "time": "18:00",
+    "stadium": "Signal Iduna Park",
+    "projectedScore": "2 - 2",
     "predictedScore": "2 - 2",
-    "status": "upcoming"
+    "status": "upcoming",
+    "homePct": 34,
+    "drawPct": 35,
+    "awayPct": 31,
+    "confidence": 69,
+    "tip": "BTTS",
+    "goalsLean": "Over 2.5",
+    "btts": "Strong",
+    "odds": "2.52",
+    "xg": "1.8 - 1.7",
+    "xgHome": 1.8,
+    "xgAway": 1.7,
+    "shotsHome": 13.2,
+    "shotsAway": 12.7,
+    "possessionHome": "51%",
+    "possessionAway": "49%",
+    "summary": "The model sees this as a high-event match with both teams capable of creating enough chances to keep the scoreline moving.",
+    "quickInsight": "The more open the midfield becomes, the better the BTTS and over-goals profile gets.",
+    "factors": [
+      "Open midfield",
+      "BTTS strength",
+      "Balanced attack profiles"
+    ],
+    "formHome": ["W", "D", "W", "L", "W"],
+    "formAway": ["W", "W", "L", "D", "W"],
+    "homeStats": [
+      "xG trend: +0.22",
+      "Goals last 5: 9",
+      "Conceded last 5: 7",
+      "Possession avg: 53%"
+    ],
+    "awayStats": [
+      "xG trend: +0.25",
+      "Goals last 5: 10",
+      "Conceded last 5: 6",
+      "Possession avg: 51%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-20",
+        "text": "Both sides are likely to begin aggressively and test each other’s press resistance."
+      },
+      {
+        "minute": "20-45",
+        "text": "Leipzig’s direct attacking phases may increase the game’s volatility."
+      },
+      {
+        "minute": "45-70",
+        "text": "This is the phase most likely to decide whether over-goals becomes the central lane."
+      },
+      {
+        "minute": "70-90",
+        "text": "If level late, both sides may still chase the win rather than settle."
+      }
+    ]
   },
   {
     "id": "atl_bet",
     "league": "La Liga",
     "home": "Atletico Madrid",
     "away": "Real Betis",
+    "homeShort": "ATM",
+    "awayShort": "BET",
+    "date": "Saturday",
+    "time": "22:00",
+    "stadium": "Metropolitano",
+    "projectedScore": "2 - 0",
     "predictedScore": "2 - 0",
-    "status": "upcoming"
+    "status": "upcoming",
+    "homePct": 55,
+    "drawPct": 27,
+    "awayPct": 18,
+    "confidence": 77,
+    "tip": "Home Win",
+    "goalsLean": "Under 3.5",
+    "btts": "Weak",
+    "odds": "1.80",
+    "xg": "1.7 - 0.8",
+    "xgHome": 1.7,
+    "xgAway": 0.8,
+    "shotsHome": 12.8,
+    "shotsAway": 7.5,
+    "possessionHome": "54%",
+    "possessionAway": "46%",
+    "summary": "Atletico profiles as the stronger side in a slower, more controlled match script with fewer high-event sequences.",
+    "quickInsight": "If Betis scores first, the whole rhythm changes because Atletico prefers controlled pressure from stable game states.",
+    "factors": [
+      "Structured home edge",
+      "Lower-event profile",
+      "Defensive discipline"
+    ],
+    "formHome": ["W", "W", "D", "W", "L"],
+    "formAway": ["D", "W", "L", "W", "D"],
+    "homeStats": [
+      "xG trend: +0.28",
+      "Goals last 5: 8",
+      "Conceded last 5: 3",
+      "Possession avg: 55%"
+    ],
+    "awayStats": [
+      "xG trend: +0.06",
+      "Goals last 5: 6",
+      "Conceded last 5: 6",
+      "Possession avg: 50%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-20",
+        "text": "Atletico is likely to prioritize shape and control over pure attacking volume."
+      },
+      {
+        "minute": "20-45",
+        "text": "Betis may enjoy the ball in phases, but clean chance creation remains the challenge."
+      },
+      {
+        "minute": "45-70",
+        "text": "One goal could significantly narrow Betis’ margin for error."
+      },
+      {
+        "minute": "70-90",
+        "text": "Atletico’s control tendency becomes more valuable if leading late."
+      }
+    ]
   },
   {
     "id": "nap_rom",
     "league": "Serie A",
     "home": "Napoli",
     "away": "Roma",
+    "homeShort": "NAP",
+    "awayShort": "ROM",
+    "date": "Sunday",
+    "time": "21:45",
+    "stadium": "Stadio Diego Armando Maradona",
+    "projectedScore": "2 - 1",
     "predictedScore": "2 - 1",
-    "status": "upcoming"
+    "status": "upcoming",
+    "homePct": 46,
+    "drawPct": 30,
+    "awayPct": 24,
+    "confidence": 75,
+    "tip": "Home Win",
+    "goalsLean": "Over 2.5",
+    "btts": "Live",
+    "odds": "2.08",
+    "xg": "1.9 - 1.2",
+    "xgHome": 1.9,
+    "xgAway": 1.2,
+    "shotsHome": 14.1,
+    "shotsAway": 9.6,
+    "possessionHome": "56%",
+    "possessionAway": "44%",
+    "summary": "Napoli enters with the more fluid attacking rhythm, but Roma’s structure is good enough to keep the draw route meaningful.",
+    "quickInsight": "If Napoli’s early pressure does not translate into a first goal, Roma becomes more dangerous as the match matures.",
+    "factors": [
+      "Home attacking rhythm",
+      "Roma defensive structure",
+      "Late draw pressure"
+    ],
+    "formHome": ["W", "W", "D", "L", "W"],
+    "formAway": ["D", "W", "W", "L", "D"],
+    "homeStats": [
+      "xG trend: +0.31",
+      "Goals last 5: 9",
+      "Conceded last 5: 5",
+      "Possession avg: 56%"
+    ],
+    "awayStats": [
+      "xG trend: +0.08",
+      "Goals last 5: 7",
+      "Conceded last 5: 5",
+      "Possession avg: 48%"
+    ],
+    "timeline": [
+      {
+        "minute": "0-20",
+        "text": "Napoli is likely to begin with faster final-third circulation and more attacking initiative."
+      },
+      {
+        "minute": "20-45",
+        "text": "Roma’s compact shape may keep the game within one-score tension."
+      },
+      {
+        "minute": "45-70",
+        "text": "This is the phase where Napoli’s rhythm needs to become real output."
+      },
+      {
+        "minute": "70-90",
+        "text": "If the margin stays narrow, Roma’s draw path remains very alive."
+      }
+    ]
   }
 ]
