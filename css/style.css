@@ -3772,3 +3772,13 @@ nav.menu a.nav-active {
   background: #ff5a5a;
   box-shadow: 0 0 10px rgba(255,90,90,0.7);
 }
+.confidence-pill {
+  transition: all 0.2s ease;
+}
+
+.confidence-pill.live-pill {
+  background: rgba(255, 80, 80, 0.16);
+  color: #ff9c9c;
+  border: 1px solid rgba(255, 90, 90, 0.22);
+  box-shadow: 0 0 18px rgba(255, 90, 90, 0.10);
+}
