@@ -12,7 +12,9 @@ async function loadResultsPage() {
     const matches = await response.json();
     container.innerHTML = "";
 
-    matches.forEach((item) => {
+    matches
+  .filter(item => item.status === "finished")
+  .forEach((item) => {
       const card = document.createElement("article");
       card.className = "match-card";
 
