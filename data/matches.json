@@ -4,284 +4,85 @@
     "league": "Premier League",
     "home": "Man City",
     "away": "Arsenal",
-    "homeShort": "MCI",
-    "awayShort": "ARS",
-    "date": "Sunday",
-    "time": "17:30",
-    "stadium": "Etihad Stadium",
-    "projectedScore": "2 - 2",
-    "homePct": 54,
-    "drawPct": 24,
-    "awayPct": 22,
-    "tip": "Over 2.5",
-    "goalsLean": "Over 2.5",
-    "btts": "Live",
-    "odds": "6.6",
-    "xg": "2.1 - 2.3",
-    "xgHome": 2.1,
-    "xgAway": 2.3,
-    "shotsHome": 16.2,
-    "shotsAway": 12.4,
-    "possessionHome": "59%",
-    "possessionAway": "41%",
-    "confidence": 78,
-    "summary": "Man City projects stronger territorial control and sustained pressure phases, while Arsenal still carries enough quality in transition and set-piece moments to keep the match balanced.",
-    "factors": [
-      "Territory control",
-      "Shot volume edge",
-      "Arsenal transition threat",
-      "Draw remains live"
-    ],
-    "formHome": ["W", "W", "D", "W", "W"],
-    "formAway": ["W", "D", "W", "L", "W"],
-    "homeStats": [
-      "xG trend: +0.52",
-      "Goals last 5: 11",
-      "Conceded last 5: 4",
-      "Possession avg: 59%"
-    ],
-    "awayStats": [
-      "xG trend: +0.21",
-      "Goals last 5: 8",
-      "Conceded last 5: 5",
-      "Possession avg: 53%"
-    ],
-    "quickInsight": "If Arsenal survives the first pressure wave and keeps the score level into the second half, the draw path grows materially.",
-    "timeline": [
-      {
-        "minute": "0-15",
-        "text": "Man City likely dominates territory early with high possession and aggressive wing occupation."
-      },
-      {
-        "minute": "15-35",
-        "text": "Arsenal’s transition routes and second-ball moments start to become a real threat."
-      },
-      {
-        "minute": "35-60",
-        "text": "This is the most balanced phase, where xG accumulation could rise for both sides."
-      },
-      {
-        "minute": "60-90",
-        "text": "If level late, draw probability strengthens, but City still carries more closing pressure."
-      }
-    ]
+    "predictedScore": "2 - 2",
+    "finalScore": "2 - 1",
+    "status": "finished"
   },
   {
-    "id": "rm_bar",
-    "league": "La Liga",
-    "home": "Real Madrid",
-    "away": "Barcelona",
-    "homeShort": "RMA",
-    "awayShort": "BAR",
-    "date": "Saturday",
-    "time": "21:00",
-    "stadium": "Santiago Bernabéu",
-    "projectedScore": "1 - 1",
-    "homePct": 32,
-    "drawPct": 46,
-    "awayPct": 22,
-    "tip": "BTTS",
-    "goalsLean": "Under 3.5",
-    "btts": "Live",
-    "odds": "4.5",
-    "xg": "1.4 - 1.3",
-    "xgHome": 1.4,
-    "xgAway": 1.3,
-    "shotsHome": 11.1,
-    "shotsAway": 10.8,
-    "possessionHome": "51%",
-    "possessionAway": "49%",
-    "confidence": 71,
-    "summary": "The model sees a balanced match with neither side holding a decisive edge in chance repeatability. Midfield control and first-goal timing may define the entire rhythm.",
-    "factors": [
-      "Balanced midfield",
-      "Lower separation",
-      "Draw-heavy model",
-      "First-goal sensitivity"
-    ],
-    "formHome": ["W", "D", "W", "W", "L"],
-    "formAway": ["W", "W", "D", "L", "W"],
-    "homeStats": [
-      "xG trend: +0.18",
-      "Goals last 5: 7",
-      "Conceded last 5: 4",
-      "Possession avg: 54%"
-    ],
-    "awayStats": [
-      "xG trend: +0.12",
-      "Goals last 5: 8",
-      "Conceded last 5: 5",
-      "Possession avg: 58%"
-    ],
-    "quickInsight": "A first-half goal changes everything here. Without it, the model naturally drifts toward a lower-event draw profile.",
-    "timeline": [
-      {
-        "minute": "0-20",
-        "text": "Expect patient circulation and fewer defensive gambles from both sides."
-      },
-      {
-        "minute": "20-45",
-        "text": "Barcelona may edge possession, while Madrid remains dangerous in direct transitional moments."
-      },
-      {
-        "minute": "45-70",
-        "text": "This stretch likely determines whether the game opens or stays tactically compressed."
-      },
-      {
-        "minute": "70-90",
-        "text": "If still level, draw stability increases sharply."
-      }
-    ]
+    "id": "liv_che",
+    "league": "Premier League",
+    "home": "Liverpool",
+    "away": "Chelsea",
+    "predictedScore": "2 - 1",
+    "finalScore": "1 - 1",
+    "status": "finished"
   },
+  {
+    "id": "bar_val",
+    "league": "La Liga",
+    "home": "Barcelona",
+    "away": "Valencia",
+    "predictedScore": "3 - 0",
+    "finalScore": "2 - 0",
+    "status": "finished"
+  },
+  {
+    "id": "psg_mon",
+    "league": "Ligue 1",
+    "home": "PSG",
+    "away": "Monaco",
+    "predictedScore": "2 - 1",
+    "finalScore": "3 - 1",
+    "status": "finished"
+  },
+  {
+    "id": "int_mil",
+    "league": "Serie A",
+    "home": "Inter",
+    "away": "AC Milan",
+    "predictedScore": "1 - 1",
+    "finalScore": "1 - 2",
+    "status": "finished"
+  },
+
   {
     "id": "liv_tot",
     "league": "Premier League",
     "home": "Liverpool",
     "away": "Tottenham",
-    "homeShort": "LIV",
-    "awayShort": "TOT",
-    "date": "Sunday",
-    "time": "16:00",
-    "stadium": "Anfield",
-    "projectedScore": "2 - 1",
-    "homePct": 48,
-    "drawPct": 28,
-    "awayPct": 24,
-    "tip": "Home Win",
-    "goalsLean": "Over 2.5",
-    "btts": "Live",
-    "odds": "2.2",
-    "xg": "1.8 - 1.2",
-    "xgHome": 1.8,
-    "xgAway": 1.2,
-    "shotsHome": 15.1,
-    "shotsAway": 10.7,
-    "possessionHome": "57%",
-    "possessionAway": "43%",
-    "confidence": 76,
-    "summary": "Liverpool carries the better pressing profile and shot volume projection, but Tottenham remains dangerous whenever the game breaks into open spaces.",
-    "factors": [
-      "Press edge",
-      "Anfield factor",
-      "Spurs transition risk",
-      "Goals profile active"
-    ],
-    "formHome": ["W", "W", "W", "D", "L"],
-    "formAway": ["W", "L", "W", "D", "W"],
-    "homeStats": [
-      "xG trend: +0.36",
-      "Goals last 5: 10",
-      "Conceded last 5: 5",
-      "Possession avg: 57%"
-    ],
-    "awayStats": [
-      "xG trend: +0.09",
-      "Goals last 5: 8",
-      "Conceded last 5: 7",
-      "Possession avg: 47%"
-    ],
-    "quickInsight": "The more chaotic the game gets, the more Tottenham stays alive. Liverpool prefers repeat pressure and territory.",
-    "timeline": [
-      {
-        "minute": "0-15",
-        "text": "Liverpool likely starts fast with pressing and higher box occupation."
-      },
-      {
-        "minute": "15-35",
-        "text": "Tottenham’s best route is breaking first pressure and attacking the wide channels."
-      },
-      {
-        "minute": "35-65",
-        "text": "Game state may open here, increasing BTTS and Over 2.5 value."
-      },
-      {
-        "minute": "65-90",
-        "text": "Liverpool’s home pressure gives them the stronger late-game lean."
-      }
-    ]
+    "predictedScore": "2 - 1",
+    "status": "upcoming"
   },
   {
-    "id": "psg_lyo",
-    "league": "Ligue 1",
-    "home": "PSG",
-    "away": "Lyon",
-    "homeShort": "PSG",
-    "awayShort": "LYO",
-    "date": "Friday",
-    "time": "20:45",
-    "stadium": "Parc des Princes",
-    "projectedScore": "3 - 1",
-    "homePct": 61,
-    "drawPct": 21,
-    "awayPct": 18,
-    "tip": "Over 2.5",
-    "goalsLean": "Over 2.5",
-    "btts": "Weak",
-    "odds": "1.9",
-    "xg": "2.4 - 0.9",
-    "xgHome": 2.4,
-    "xgAway": 0.9,
-    "shotsHome": 17.4,
-    "shotsAway": 8.2,
-    "possessionHome": "63%",
-    "possessionAway": "37%",
-    "confidence": 82,
-    "summary": "PSG rates clearly higher in possession control, final-third quality, and expected goal output, especially in a home game with sustained pressure phases.",
-    "factors": [
-      "Possession dominance",
-      "Higher xG",
-      "Home quality gap",
-      "Lyon upset route is narrow"
-    ],
-    "formHome": ["W", "W", "W", "W", "D"],
-    "formAway": ["L", "W", "D", "L", "W"],
-    "homeStats": [
-      "xG trend: +0.63",
-      "Goals last 5: 13",
-      "Conceded last 5: 3",
-      "Possession avg: 62%"
-    ],
-    "awayStats": [
-      "xG trend: -0.04",
-      "Goals last 5: 6",
-      "Conceded last 5: 8",
-      "Possession avg: 46%"
-    ],
-    "quickInsight": "Unless Lyon scores first or turns the game transitional early, PSG should control the majority of the match script.",
-    "timeline": [
-      {
-        "minute": "0-20",
-        "text": "PSG likely establishes possession control and territorial pressure quickly."
-      },
-      {
-        "minute": "20-45",
-        "text": "Lyon’s best survival path is compact shape and limiting second-wave shots."
-      },
-      {
-        "minute": "45-70",
-        "text": "If PSG scores first, the model widens hard toward home win."
-      },
-      {
-        "minute": "70-90",
-        "text": "Late phases favor PSG even more if Lyon chases."
-      }
-    ]
+    "id": "ars_new",
+    "league": "Premier League",
+    "home": "Arsenal",
+    "away": "Newcastle",
+    "predictedScore": "3 - 1",
+    "status": "upcoming"
+  },
+  {
+    "id": "rm_sev",
+    "league": "La Liga",
+    "home": "Real Madrid",
+    "away": "Sevilla",
+    "predictedScore": "2 - 0",
+    "status": "upcoming"
+  },
+  {
+    "id": "juv_nap",
+    "league": "Serie A",
+    "home": "Juventus",
+    "away": "Napoli",
+    "predictedScore": "1 - 2",
+    "status": "upcoming"
+  },
+  {
+    "id": "bvb_rbl",
+    "league": "Bundesliga",
+    "home": "Dortmund",
+    "away": "RB Leipzig",
+    "predictedScore": "2 - 2",
+    "status": "upcoming"
   }
 ]
-{
-  "id": 1,
-  "league": "Premier League",
-  "home": "Arsenal",
-  "away": "Chelsea",
-  "predictedScore": "2-1",
-  "finalScore": "1-1",
-  "status": "finished"
-}
-{
-  "id": 2,
-  "league": "La Liga",
-  "home": "Barcelona",
-  "away": "Valencia",
-  "predictedScore": "3-0",
-  "status": "upcoming"
-}
