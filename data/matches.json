@@ -44,14 +44,35 @@
     "finalScore": "1 - 2",
     "status": "finished"
   },
-
   {
-    "id": "liv_tot",
+    "id": "liv_tot_live",
     "league": "Premier League",
     "home": "Liverpool",
     "away": "Tottenham",
     "predictedScore": "2 - 1",
-    "status": "upcoming"
+    "liveScore": "1 - 0",
+    "minute": "63'",
+    "status": "live"
+  },
+  {
+    "id": "rm_sev_live",
+    "league": "La Liga",
+    "home": "Real Madrid",
+    "away": "Sevilla",
+    "predictedScore": "2 - 0",
+    "liveScore": "0 - 0",
+    "minute": "28'",
+    "status": "live"
+  },
+  {
+    "id": "juv_nap_live",
+    "league": "Serie A",
+    "home": "Juventus",
+    "away": "Napoli",
+    "predictedScore": "1 - 2",
+    "liveScore": "2 - 2",
+    "minute": "79'",
+    "status": "live"
   },
   {
     "id": "ars_new",
@@ -62,27 +83,27 @@
     "status": "upcoming"
   },
   {
-    "id": "rm_sev",
-    "league": "La Liga",
-    "home": "Real Madrid",
-    "away": "Sevilla",
-    "predictedScore": "2 - 0",
-    "status": "upcoming"
-  },
-  {
-    "id": "juv_nap",
-    "league": "Serie A",
-    "home": "Juventus",
-    "away": "Napoli",
-    "predictedScore": "1 - 2",
-    "status": "upcoming"
-  },
-  {
     "id": "bvb_rbl",
     "league": "Bundesliga",
     "home": "Dortmund",
     "away": "RB Leipzig",
     "predictedScore": "2 - 2",
+    "status": "upcoming"
+  },
+  {
+    "id": "atl_bet",
+    "league": "La Liga",
+    "home": "Atletico Madrid",
+    "away": "Real Betis",
+    "predictedScore": "2 - 0",
+    "status": "upcoming"
+  },
+  {
+    "id": "nap_rom",
+    "league": "Serie A",
+    "home": "Napoli",
+    "away": "Roma",
+    "predictedScore": "2 - 1",
     "status": "upcoming"
   }
 ]
