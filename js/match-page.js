@@ -4,6 +4,7 @@ async function loadMatchPage() {
 
   try {
     const response = await fetch("data/matches.json");
+
     if (!response.ok) {
       throw new Error(`matches.json failed: ${response.status}`);
     }
@@ -23,11 +24,21 @@ async function loadMatchPage() {
 
     const homeShort =
       match.homeShort ||
-      homeName.split(" ").map(word => word[0]).join("").slice(0, 3).toUpperCase();
+      homeName
+        .split(" ")
+        .map((word) => word[0])
+        .join("")
+        .slice(0, 3)
+        .toUpperCase();
 
     const awayShort =
       match.awayShort ||
-      awayName.split(" ").map(word => word[0]).join("").slice(0, 3).toUpperCase();
+      awayName
+        .split(" ")
+        .map((word) => word[0])
+        .join("")
+        .slice(0, 3)
+        .toUpperCase();
 
     const projectedScore =
       match.projectedScore ||
@@ -37,9 +48,9 @@ async function loadMatchPage() {
       "-";
 
     const heroScore = isLive
-      ? (match.liveScore || projectedScore)
+      ? match.liveScore || projectedScore
       : isFinished
-      ? (match.finalScore || projectedScore)
+      ? match.finalScore || projectedScore
       : projectedScore;
 
     const confidence = typeof match.confidence === "number" ? match.confidence : 74;
@@ -67,67 +78,78 @@ async function loadMatchPage() {
     const possessionAway = match.possessionAway ?? "42%";
 
     const dateText = match.date || (isLive ? "Live Today" : isFinished ? "Finished" : "Matchday");
-    const timeText = isLive ? (match.minute || match.time || "Live") : (match.time || "18:30");
+    const timeText = isLive ? match.minute || match.time || "Live" : match.time || "18:30";
     const stadiumText = match.stadium || "Main Stadium";
 
-    const factors = Array.isArray(match.factors) && match.factors.length
-      ? match.factors
-      : [
-          isLive ? "Live momentum" : "Home control",
-          "Chance quality",
-          "Game-state pressure"
-        ];
+    const factors =
+      Array.isArray(match.factors) && match.factors.length
+        ? match.factors
+        : [isLive ? "Live momentum" : "Home control", "Chance quality", "Game-state pressure"];
 
-    const timeline = Array.isArray(match.timeline) && match.timeline.length
-      ? match.timeline
-      : [
-          { minute: isLive ? (match.minute || "Now") : "0-20", text: `${homeName} and ${awayName} enter the match with a cautious opening rhythm and structured shape.` },
-          { minute: "20-45", text: "The game may open through transitions, second balls, and set-piece pressure." },
-          { minute: "45-70", text: "This phase usually decides whether the match stays balanced or swings toward one side." },
-          { minute: "70-90", text: "Late pressure and score effects become the biggest variables." }
-        ];
+    const timeline =
+      Array.isArray(match.timeline) && match.timeline.length
+        ? match.timeline
+        : [
+            {
+              minute: isLive ? match.minute || "Now" : "0-20",
+              text: `${homeName} and ${awayName} enter the match with a cautious opening rhythm and structured shape.`
+            },
+            {
+              minute: "20-45",
+              text: "The game may open through transitions, second balls, and set-piece pressure."
+            },
+            {
+              minute: "45-70",
+              text: "This phase usually decides whether the match stays balanced or swings toward one side."
+            },
+            {
+              minute: "70-90",
+              text: "Late pressure and score effects become the biggest variables."
+            }
+          ];
 
-    const formHome = Array.isArray(match.formHome) && match.formHome.length
-      ? match.formHome
-      : ["W", "D", "W", "L", "W"];
+    const formHome =
+      Array.isArray(match.formHome) && match.formHome.length
+        ? match.formHome
+        : ["W", "D", "W", "L", "W"];
 
-    const formAway = Array.isArray(match.formAway) && match.formAway.length
-      ? match.formAway
-      : ["D", "W", "L", "W", "D"];
+    const formAway =
+      Array.isArray(match.formAway) && match.formAway.length
+        ? match.formAway
+        : ["D", "W", "L", "W", "D"];
 
-    const homeStats = Array.isArray(match.homeStats) && match.homeStats.length
-      ? match.homeStats
-      : [
-          `xG trend: ${xgHome}`,
-          `Projected shots: ${shotsHome}`,
-          `Possession lean: ${possessionHome}`,
-          `Status: ${match.status || "preview"}`
-        ];
+    const homeStats =
+      Array.isArray(match.homeStats) && match.homeStats.length
+        ? match.homeStats
+        : [
+            `xG trend: ${xgHome}`,
+            `Projected shots: ${shotsHome}`,
+            `Possession lean: ${possessionHome}`,
+            `Status: ${match.status || "preview"}`
+          ];
 
-    const awayStats = Array.isArray(match.awayStats) && match.awayStats.length
-      ? match.awayStats
-      : [
-          `xG trend: ${xgAway}`,
-          `Projected shots: ${shotsAway}`,
-          `Possession lean: ${possessionAway}`,
-          `Status: ${match.status || "preview"}`
-        ];
+    const awayStats =
+      Array.isArray(match.awayStats) && match.awayStats.length
+        ? match.awayStats
+        : [
+            `xG trend: ${xgAway}`,
+            `Projected shots: ${shotsAway}`,
+            `Possession lean: ${possessionAway}`,
+            `Status: ${match.status || "preview"}`
+          ];
 
-    // top hero
     document.getElementById("match-league-badge").innerText = match.league || "Top League";
     document.getElementById("match-title").innerText = `${homeName} vs ${awayName}`;
-    document.getElementById("match-subtitle").innerText =
-      isLive
-        ? `Live AI match view with current score, momentum cues, probability balance, and risk signals for ${homeName} vs ${awayName}.`
-        : isFinished
-        ? `Finished match view with result, projected score context, and model-based breakdown for ${homeName} vs ${awayName}.`
-        : `AI-powered preview with probability, projected score, xG lean, game-state risk, and form comparison for ${homeName} vs ${awayName}.`;
+    document.getElementById("match-subtitle").innerText = isLive
+      ? `Live AI match view with current score, momentum cues, probability balance, and risk signals for ${homeName} vs ${awayName}.`
+      : isFinished
+      ? `Finished match view with result, projected score context, and model-based breakdown for ${homeName} vs ${awayName}.`
+      : `AI-powered preview with probability, projected score, xG lean, game-state risk, and form comparison for ${homeName} vs ${awayName}.`;
 
     document.getElementById("match-date").innerText = dateText;
     document.getElementById("match-time").innerText = timeText;
     document.getElementById("match-stadium").innerText = stadiumText;
 
-    // right score card
     document.getElementById("match-confidence-pill").innerText = isLive
       ? `LIVE ${match.minute || ""}`.trim()
       : `Confidence ${confidence}%`;
@@ -148,13 +170,11 @@ async function loadMatchPage() {
     document.getElementById("hero-bar-draw").style.width = `${drawPct}%`;
     document.getElementById("hero-bar-away").style.width = `${awayPct}%`;
 
-    // core
     document.getElementById("match-summary").innerText = summary;
     document.getElementById("best-tip").innerText = bestTip;
     document.getElementById("goals-lean").innerText = goalsLean;
     document.getElementById("btts-signal").innerText = btts;
 
-    // factors
     const factorTags = document.getElementById("factor-tags");
     factorTags.innerHTML = "";
     factors.forEach((factor) => {
@@ -163,7 +183,6 @@ async function loadMatchPage() {
       factorTags.appendChild(span);
     });
 
-    // stats
     document.getElementById("xg-home-team").innerText = homeName;
     document.getElementById("xg-away-team").innerText = awayName;
     document.getElementById("shots-home-team").innerText = homeName;
@@ -181,7 +200,6 @@ async function loadMatchPage() {
     document.getElementById("confidence-fill").style.width = `${confidence}%`;
     document.getElementById("confidence-value").innerText = `${confidence}%`;
 
-    // form
     document.getElementById("form-home-title").innerText = homeName;
     document.getElementById("form-away-title").innerText = awayName;
 
@@ -219,10 +237,8 @@ async function loadMatchPage() {
       formAwayList.appendChild(li);
     });
 
-    // quick insight
     document.getElementById("quick-insight-text").innerText = quickInsight;
 
-    // timeline
     const timelineList = document.getElementById("timeline-list");
     timelineList.innerHTML = "";
     timeline.forEach((item) => {
@@ -235,7 +251,6 @@ async function loadMatchPage() {
       timelineList.appendChild(row);
     });
 
-    // key signals
     const keySignals = document.getElementById("key-signal-list");
     keySignals.innerHTML = "";
     [
@@ -251,7 +266,6 @@ async function loadMatchPage() {
       keySignals.appendChild(row);
     });
 
-    // related
     const relatedList = document.getElementById("related-match-list");
     relatedList.innerHTML = "";
     matches
@@ -264,7 +278,6 @@ async function loadMatchPage() {
         a.innerHTML = `<strong>${item.home || "Home"} vs ${item.away || "Away"}</strong><span>${item.league || "League"}</span>`;
         relatedList.appendChild(a);
       });
-
   } catch (error) {
     console.error("Failed to load match page:", error);
   }
