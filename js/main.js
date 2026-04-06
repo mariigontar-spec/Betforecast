@@ -30,7 +30,9 @@ async function loadHomePage() {
   if (predictionsContainer && matches.length) {
     predictionsContainer.innerHTML = "";
 
-    matches.forEach((item) => {
+   matches
+  .filter(item => item.status === "upcoming")
+  .forEach((item) => {
       const card = document.createElement("a");
       card.className = "prediction-card";
       card.href = `match.html?game=${item.id}`;
