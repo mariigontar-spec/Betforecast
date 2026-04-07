@@ -1,38 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<header class="header">
-  <div class="container header-inner">
-
-    <!-- LOGO -->
-    <div class="site-logo">
-      <div class="logo-mark"></div>
-      <span class="site-logo__text">Betforecast.ai</span>
-    </div>
-
-    <!-- NAV -->
-    <nav class="topbar-menu">
-      <a href="news.html">News</a>
-      <a href="standings.html">Standings</a>
-      <a href="index.html">Matches</a>
-      <a href="results.html">Results</a>
-      <a href="ai-insights.html">AI Insights</a>
-    </nav>
-
-    <!-- ACTIONS -->
-    <div class="topbar-actions">
-      
-      <button class="theme-switch" id="theme-toggle">
-        <span class="theme-switch-track">
-          <span class="theme-switch-thumb"></span>
-        </span>
-        <span class="theme-switch-label">Dark</span>
-      </button>
-
-      <a href="#" class="btn-bf-ghost">Sign In</a>
-    </div>
-
-  </div>
-</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Preview | Betforecast.ai</title>
+  <link rel="icon" type="image/svg+xml" href="assets/betforecast-icon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
 <header class="header">
@@ -44,320 +18,295 @@
 
     <nav class="topbar-menu">
       <a href="news.html">News</a>
-<a href="standings.html">Standings</a>
-<a href="match.html" class="active">Matches</a>
-<a href="results.html">Results</a>
-<a href="ai-insights.html">AI Insights</a>
+      <a href="standings.html">Standings</a>
+      <a href="match.html" class="active">Matches</a>
+      <a href="results.html">Results</a>
+      <a href="ai-insights.html">AI Insights</a>
     </nav>
 
-   <div class="topbar-actions">
-  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
-    Glass
-  </button>
-  <a href="#" class="btn-bf-ghost">Sign In</a>
-</div>
+    <div class="topbar-actions">
+      <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
+        <span class="theme-switch-track">
+          <span class="theme-switch-thumb"></span>
+        </span>
+        <span class="theme-switch-label">Dark</span>
+      </button>
+
+      <a href="#" class="btn-bf-ghost">Sign In</a>
+    </div>
   </div>
 </header>
-  <main class="match-page-wrap">
-    <section class="match-pro-hero">
-      <div class="match-pro-hero-overlay"></div>
 
-      <div class="match-pro-left">
-        <div class="hero-badge" id="match-league-badge">Premier League</div>
-        <h2 id="match-title">Arsenal vs Chelsea</h2>
-        <p id="match-subtitle">
-          AI-powered preview with probability, projected score, xG lean, game-state risk, and form comparison.
-        </p>
+<main class="match-page-wrap">
+  <section class="match-pro-hero">
+    <div class="match-pro-hero-overlay"></div>
 
-        <div class="match-meta-row">
-          <span id="match-date">Saturday</span>
-          <span id="match-time">18:30</span>
-          <span id="match-stadium">Emirates Stadium</span>
-        </div>
+    <div class="match-pro-left">
+      <div class="hero-badge" id="match-league-badge">Premier League</div>
+      <h2 id="match-title">Arsenal vs Chelsea</h2>
+      <p id="match-subtitle">
+        AI-powered preview with probability, projected score, xG lean, game-state risk, and form comparison.
+      </p>
 
-        <div class="hero-actions">
-          <a href="#prediction-core" class="primary-btn">Open AI Breakdown</a>
-          <a href="#timeline" class="secondary-btn">View Match Timeline</a>
-        </div>
+      <div class="match-meta-row">
+        <span id="match-date">Saturday</span>
+        <span id="match-time">18:30</span>
+        <span id="match-stadium">Emirates Stadium</span>
       </div>
 
-      <div class="match-pro-right">
-        <div class="pro-score-card">
-          <div class="score-card-top">
-            <span class="mini-label">AI Match Preview</span>
-            <span class="confidence-pill" id="match-confidence-pill">Confidence 74%</span>
+      <div class="hero-actions">
+        <a href="#prediction-core" class="primary-btn">Open AI Breakdown</a>
+        <a href="#timeline" class="secondary-btn">View Match Timeline</a>
+      </div>
+    </div>
+
+    <div class="match-pro-right">
+      <div class="pro-score-card">
+        <div class="score-card-top">
+          <span class="mini-label">AI Match Preview</span>
+          <span class="confidence-pill" id="match-confidence-pill">Confidence 74%</span>
+        </div>
+
+        <div class="score-card-teams">
+          <div class="score-team">
+            <div class="team-badge" id="team-home-short">ARS</div>
+            <div class="team-name" id="team-home-name">Arsenal</div>
           </div>
 
-          <div class="score-card-teams">
-            <div class="score-team">
-              <div class="team-badge" id="team-home-short">ARS</div>
-              <div class="team-name" id="team-home-name">Arsenal</div>
-            </div>
-
-            <div class="score-center">
-              <div class="featured-scoreline" id="projected-score">2 - 1</div>
-              <div class="featured-score-caption">Projected score</div>
-            </div>
-
-            <div class="score-team">
-              <div class="team-badge" id="team-away-short">CHE</div>
-              <div class="team-name" id="team-away-name">Chelsea</div>
-            </div>
+          <div class="score-center">
+            <div class="featured-scoreline" id="projected-score">2 - 1</div>
+            <div class="featured-score-caption">Projected score</div>
           </div>
 
-          <div class="featured-prob-grid pro-hero-prob-grid">
-            <div class="featured-prob-box">
-              <strong id="prob-home">47%</strong>
-              <span id="prob-home-label">Arsenal Win</span>
-            </div>
-            <div class="featured-prob-box">
-              <strong id="prob-draw">28%</strong>
-              <span>Draw</span>
-            </div>
-            <div class="featured-prob-box">
-              <strong id="prob-away">25%</strong>
-              <span id="prob-away-label">Chelsea Win</span>
-            </div>
-          </div>
-
-          <div class="featured-long-bar">
-            <div class="bar-home" id="hero-bar-home"></div>
-            <div class="bar-draw" id="hero-bar-draw"></div>
-            <div class="bar-away" id="hero-bar-away"></div>
+          <div class="score-team">
+            <div class="team-badge" id="team-away-short">CHE</div>
+            <div class="team-name" id="team-away-name">Chelsea</div>
           </div>
         </div>
+
+        <div class="featured-prob-grid pro-hero-prob-grid">
+          <div class="featured-prob-box">
+            <strong id="prob-home">47%</strong>
+            <span id="prob-home-label">Arsenal Win</span>
+          </div>
+          <div class="featured-prob-box">
+            <strong id="prob-draw">28%</strong>
+            <span>Draw</span>
+          </div>
+          <div class="featured-prob-box">
+            <strong id="prob-away">25%</strong>
+            <span id="prob-away-label">Chelsea Win</span>
+          </div>
+        </div>
+
+        <div class="featured-long-bar">
+          <div class="bar-home" id="hero-bar-home"></div>
+          <div class="bar-draw" id="hero-bar-draw"></div>
+          <div class="bar-away" id="hero-bar-away"></div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="match-pro-layout" id="prediction-core">
-      <div class="match-pro-main">
-        <section class="panel">
-          <div class="panel-head">
-            <h2>Prediction Core</h2>
-          </div>
+  <section class="match-pro-layout" id="prediction-core">
+    <div class="match-pro-main">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Prediction Core</h2>
+        </div>
 
-          <div class="prediction-core-grid">
-            <div class="prediction-summary-card">
-              <h3>AI Summary</h3>
-              <p id="match-summary">
-                Arsenal enters with stronger chance creation, steadier pressing sequences, and better home control metrics.
-              </p>
-
-              <div class="factor-tags" id="factor-tags">
-                <span>Home advantage</span>
-                <span>Higher xG trend</span>
-                <span>Better shot volume</span>
-              </div>
-            </div>
-
-            <div class="signals-stack">
-              <div class="mini-stat-card">
-                <div class="mini-stat-label">Best Tip</div>
-                <div class="mini-stat-row">
-                  <span>Primary</span>
-                  <strong id="best-tip">Home Win</strong>
-                </div>
-              </div>
-
-              <div class="mini-stat-card">
-                <div class="mini-stat-label">Goals Lean</div>
-                <div class="mini-stat-row">
-                  <span>Market</span>
-                  <strong id="goals-lean">Over 2.5</strong>
-                </div>
-              </div>
-
-              <div class="mini-stat-card">
-                <div class="mini-stat-label">BTTS</div>
-                <div class="mini-stat-row">
-                  <span>Signal</span>
-                  <strong id="btts-signal">Live</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="panel">
-          <div class="panel-head">
-            <h2>Advanced Match Stats</h2>
-          </div>
-
-          <div class="advanced-stats-grid">
-            <div class="adv-stat-box">
-              <div class="adv-stat-label">Expected Goals</div>
-              <div class="adv-stat-compare">
-                <span id="xg-home-team">Arsenal</span>
-                <strong id="xg-home">2.1</strong>
-              </div>
-              <div class="adv-stat-compare">
-                <span id="xg-away-team">Chelsea</span>
-                <strong id="xg-away">1.2</strong>
-              </div>
-            </div>
-
-            <div class="adv-stat-box">
-              <div class="adv-stat-label">Projected Shots</div>
-              <div class="adv-stat-compare">
-                <span id="shots-home-team">Arsenal</span>
-                <strong id="shots-home">15.4</strong>
-              </div>
-              <div class="adv-stat-compare">
-                <span id="shots-away-team">Chelsea</span>
-                <strong id="shots-away">10.1</strong>
-              </div>
-            </div>
-
-            <div class="adv-stat-box">
-              <div class="adv-stat-label">Possession Lean</div>
-              <div class="adv-stat-compare">
-                <span id="pos-home-team">Arsenal</span>
-                <strong id="pos-home">58%</strong>
-              </div>
-              <div class="adv-stat-compare">
-                <span id="pos-away-team">Chelsea</span>
-                <strong id="pos-away">42%</strong>
-              </div>
-            </div>
-
-            <div class="adv-stat-box">
-              <div class="adv-stat-label">Confidence</div>
-              <div class="confidence-meter">
-                <div class="confidence-fill" id="confidence-fill"></div>
-              </div>
-              <div class="confidence-text-inline">
-                <strong id="confidence-value">74%</strong>
-                <span>model confidence</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="panel" id="timeline">
-          <div class="panel-head">
-            <h2>Game State Timeline</h2>
-          </div>
-
-          <div class="timeline-list" id="timeline-list">
-            <!-- JS -->
-          </div>
-        </section>
-
-        <section class="panel">
-          <div class="panel-head">
-            <h2>Form Comparison</h2>
-          </div>
-
-          <div class="match-comparison-grid">
-            <div class="compare-card">
-              <h3 id="form-home-title">Arsenal</h3>
-              <div class="form-badges" id="form-home-badges"></div>
-              <ul class="compare-list" id="form-home-list"></ul>
-            </div>
-
-            <div class="compare-card">
-              <h3 id="form-away-title">Chelsea</h3>
-              <div class="form-badges" id="form-away-badges"></div>
-              <ul class="compare-list" id="form-away-list"></ul>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <aside class="match-pro-sidebar">
-        <section class="panel side-block">
-          <div class="panel-head">
-            <h2>Key Signals</h2>
-          </div>
-          <div class="key-signal-list" id="key-signal-list">
-            <!-- JS -->
-          </div>
-        </section>
-
-        <section class="panel side-block">
-          <div class="panel-head">
-            <h2>Related Matches</h2>
-          </div>
-          <div class="related-match-list" id="related-match-list">
-            <!-- JS -->
-          </div>
-        </section>
-
-        <section class="panel side-block">
-          <div class="panel-head">
-            <h2>Quick Insight</h2>
-          </div>
-          <div class="news-focus-box">
-            <strong id="quick-insight-title">What can flip this match?</strong>
-            <p id="quick-insight-text">
-              An early away goal changes game-state structure fast. Without that, the model leans toward home control.
+        <div class="prediction-core-grid">
+          <div class="prediction-summary-card">
+            <h3>AI Summary</h3>
+            <p id="match-summary">
+              Arsenal enters with stronger chance creation, steadier pressing sequences, and better home control metrics.
             </p>
-          </div>
-        </section>
-      </aside>
-    </section>
-  </main>
 
-  <script src="js/match-page.js"></script>
+            <div class="factor-tags" id="factor-tags">
+              <span>Home advantage</span>
+              <span>Higher xG trend</span>
+              <span>Better shot volume</span>
+            </div>
+          </div>
+
+          <div class="signals-stack">
+            <div class="mini-stat-card">
+              <div class="mini-stat-label">Best Tip</div>
+              <div class="mini-stat-row">
+                <span>Primary</span>
+                <strong id="best-tip">Home Win</strong>
+              </div>
+            </div>
+
+            <div class="mini-stat-card">
+              <div class="mini-stat-label">Goals Lean</div>
+              <div class="mini-stat-row">
+                <span>Market</span>
+                <strong id="goals-lean">Over 2.5</strong>
+              </div>
+            </div>
+
+            <div class="mini-stat-card">
+              <div class="mini-stat-label">BTTS</div>
+              <div class="mini-stat-row">
+                <span>Signal</span>
+                <strong id="btts-signal">Live</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Advanced Match Stats</h2>
+        </div>
+
+        <div class="advanced-stats-grid">
+          <div class="adv-stat-box">
+            <div class="adv-stat-label">Expected Goals</div>
+            <div class="adv-stat-compare">
+              <span id="xg-home-team">Arsenal</span>
+              <strong id="xg-home">2.1</strong>
+            </div>
+            <div class="adv-stat-compare">
+              <span id="xg-away-team">Chelsea</span>
+              <strong id="xg-away">1.2</strong>
+            </div>
+          </div>
+
+          <div class="adv-stat-box">
+            <div class="adv-stat-label">Projected Shots</div>
+            <div class="adv-stat-compare">
+              <span id="shots-home-team">Arsenal</span>
+              <strong id="shots-home">15.4</strong>
+            </div>
+            <div class="adv-stat-compare">
+              <span id="shots-away-team">Chelsea</span>
+              <strong id="shots-away">10.1</strong>
+            </div>
+          </div>
+
+          <div class="adv-stat-box">
+            <div class="adv-stat-label">Possession Lean</div>
+            <div class="adv-stat-compare">
+              <span id="pos-home-team">Arsenal</span>
+              <strong id="pos-home">58%</strong>
+            </div>
+            <div class="adv-stat-compare">
+              <span id="pos-away-team">Chelsea</span>
+              <strong id="pos-away">42%</strong>
+            </div>
+          </div>
+
+          <div class="adv-stat-box">
+            <div class="adv-stat-label">Confidence</div>
+            <div class="confidence-meter">
+              <div class="confidence-fill" id="confidence-fill"></div>
+            </div>
+            <div class="confidence-text-inline">
+              <strong id="confidence-value">74%</strong>
+              <span>model confidence</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="timeline">
+        <div class="panel-head">
+          <h2>Game State Timeline</h2>
+        </div>
+
+        <div class="timeline-list" id="timeline-list">
+          <!-- JS -->
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Form Comparison</h2>
+        </div>
+
+        <div class="match-comparison-grid">
+          <div class="compare-card">
+            <h3 id="form-home-title">Arsenal</h3>
+            <div class="form-badges" id="form-home-badges"></div>
+            <ul class="compare-list" id="form-home-list"></ul>
+          </div>
+
+          <div class="compare-card">
+            <h3 id="form-away-title">Chelsea</h3>
+            <div class="form-badges" id="form-away-badges"></div>
+            <ul class="compare-list" id="form-away-list"></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="match-pro-sidebar">
+      <section class="panel side-block">
+        <div class="panel-head">
+          <h2>Key Signals</h2>
+        </div>
+        <div class="key-signal-list" id="key-signal-list">
+          <!-- JS -->
+        </div>
+      </section>
+
+      <section class="panel side-block">
+        <div class="panel-head">
+          <h2>Related Matches</h2>
+        </div>
+        <div class="related-match-list" id="related-match-list">
+          <!-- JS -->
+        </div>
+      </section>
+
+      <section class="panel side-block">
+        <div class="panel-head">
+          <h2>Quick Insight</h2>
+        </div>
+        <div class="news-focus-box">
+          <strong id="quick-insight-title">What can flip this match?</strong>
+          <p id="quick-insight-text">
+            An early away goal changes game-state structure fast. Without that, the model leans toward home control.
+          </p>
+        </div>
+      </section>
+    </aside>
+  </section>
+</main>
+
+<script src="js/match-page.js"></script>
 <script>
   (function () {
     const savedTheme = localStorage.getItem("bf-theme") || "dark";
     document.body.classList.add(`theme-${savedTheme}`);
 
-    const toggleBtn = document.getElementById("theme-toggle");
-    if (!toggleBtn) return;
+    const toggle = document.getElementById("theme-toggle");
+    const label = toggle?.querySelector(".theme-switch-label");
 
-    function updateButton(theme) {
-      toggleBtn.textContent = theme === "dark" ? "Glass" : "Dark";
+    function updateUI(theme) {
+      if (label) {
+        label.textContent = theme === "dark" ? "Dark" : "Glass";
+      }
     }
 
-    updateButton(savedTheme);
+    updateUI(savedTheme);
 
-    toggleBtn.addEventListener("click", function () {
+    toggle?.addEventListener("click", () => {
       const isDark = document.body.classList.contains("theme-dark");
 
       document.body.classList.remove("theme-dark", "theme-glass");
 
-      const nextTheme = isDark ? "glass" : "dark";
-      document.body.classList.add(`theme-${nextTheme}`);
-      localStorage.setItem("bf-theme", nextTheme);
-      updateButton(nextTheme);
+      const next = isDark ? "glass" : "dark";
+      document.body.classList.add(`theme-${next}`);
+      localStorage.setItem("bf-theme", next);
+
+      updateUI(next);
     });
   })();
 </script>
-  <!-- твои другие скрипты -->
 
-  <script>
-    (function () {
-      const savedTheme = localStorage.getItem("bf-theme") || "dark";
-      document.body.classList.add(`theme-${savedTheme}`);
-
-      const toggle = document.getElementById("theme-toggle");
-      const label = toggle?.querySelector(".theme-switch-label");
-
-      function updateUI(theme) {
-        if (label) {
-          label.textContent = theme === "dark" ? "Dark" : "Glass";
-        }
-      }
-
-      updateUI(savedTheme);
-
-      toggle?.addEventListener("click", () => {
-        const isDark = document.body.classList.contains("theme-dark");
-
-        document.body.classList.remove("theme-dark", "theme-glass");
-
-        const next = isDark ? "glass" : "dark";
-        document.body.classList.add(`theme-${next}`);
-        localStorage.setItem("bf-theme", next);
-
-        updateUI(next);
-      });
-    })();
-  </script>
-
-</body>
-</html>
 </body>
 </html>
