@@ -56,5 +56,31 @@
 </main>
 
 <script src="js/results.js"></script>
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem("bf-theme") || "dark";
+    document.body.classList.add(`theme-${savedTheme}`);
+
+    const toggleBtn = document.getElementById("theme-toggle");
+    if (!toggleBtn) return;
+
+    function updateButton(theme) {
+      toggleBtn.textContent = theme === "dark" ? "Glass" : "Dark";
+    }
+
+    updateButton(savedTheme);
+
+    toggleBtn.addEventListener("click", function () {
+      const isDark = document.body.classList.contains("theme-dark");
+
+      document.body.classList.remove("theme-dark", "theme-glass");
+
+      const nextTheme = isDark ? "glass" : "dark";
+      document.body.classList.add(`theme-${nextTheme}`);
+      localStorage.setItem("bf-theme", nextTheme);
+      updateButton(nextTheme);
+    });
+  })();
+</script>
 </body>
 </html>
