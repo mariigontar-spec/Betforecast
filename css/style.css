@@ -4464,3 +4464,205 @@ main,
     grid-template-columns: 1fr !important;
   }
 }
+/* =========================================================
+   MATCH PAGE GEOMETRY FIX
+========================================================= */
+
+/* Главная сетка страницы матча */
+.match-pro-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr) !important;
+  gap: 24px !important;
+  align-items: start !important;
+}
+
+/* Левая и правая колонка */
+.match-pro-main,
+.match-pro-sidebar {
+  display: grid !important;
+  gap: 24px !important;
+  align-self: start !important;
+}
+
+/* Hero */
+.match-pro-hero {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.05fr) minmax(380px, 0.95fr) !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+  min-height: 360px !important;
+}
+
+.match-pro-left,
+.match-pro-right {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+
+.pro-score-card {
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+/* Prediction Core */
+.prediction-core-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr) !important;
+  gap: 18px !important;
+  align-items: stretch !important;
+}
+
+.prediction-summary-card,
+.signals-stack {
+  height: 100% !important;
+}
+
+.signals-stack {
+  display: grid !important;
+  gap: 16px !important;
+}
+
+.mini-stat-card {
+  min-height: 112px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+/* Advanced stats */
+.advanced-stats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  align-items: stretch !important;
+}
+
+.adv-stat-box {
+  min-height: 150px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+/* Form section */
+.match-comparison-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  align-items: stretch !important;
+}
+
+.compare-card {
+  min-height: 240px !important;
+}
+
+/* Sidebar cards */
+.match-pro-sidebar .panel.side-block {
+  min-height: 180px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.match-pro-sidebar .panel-head {
+  margin-bottom: 14px !important;
+}
+
+.key-signal-list,
+.related-match-list,
+.timeline-list {
+  display: grid !important;
+  gap: 12px !important;
+}
+
+/* Ровные внутренние карточки */
+.key-signal-item,
+.related-match-item,
+.timeline-item {
+  min-height: 68px !important;
+  box-sizing: border-box !important;
+}
+
+/* Ровные блоки hero probability */
+.featured-prob-grid,
+.pro-hero-prob-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 12px !important;
+}
+
+.featured-prob-box {
+  min-height: 108px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+/* Контент не должен растягиваться хаотично */
+.panel,
+.prediction-summary-card,
+.compare-card,
+.mini-stat-card,
+.adv-stat-box,
+.pro-score-card,
+.news-focus-box {
+  box-sizing: border-box !important;
+}
+
+/* Ограничение ширины текста, чтобы не ломал блоки */
+.match-summary,
+#match-summary,
+.timeline-text,
+.news-focus-box p,
+.compare-list {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* Планшет */
+@media (max-width: 1100px) {
+  .match-pro-hero {
+    grid-template-columns: 1fr !important;
+  }
+
+  .match-pro-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .prediction-core-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .advanced-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .match-comparison-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Мобильный */
+@media (max-width: 760px) {
+  .advanced-stats-grid,
+  .featured-prob-grid,
+  .pro-hero-prob-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .match-pro-hero,
+  .match-pro-layout,
+  .prediction-core-grid,
+  .match-comparison-grid {
+    gap: 16px !important;
+  }
+
+  .compare-card,
+  .adv-stat-box,
+  .mini-stat-card,
+  .match-pro-sidebar .panel.side-block {
+    min-height: auto !important;
+  }
+}
