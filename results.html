@@ -1,38 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<header class="header">
-  <div class="container header-inner">
-
-    <!-- LOGO -->
-    <div class="site-logo">
-      <div class="logo-mark"></div>
-      <span class="site-logo__text">Betforecast.ai</span>
-    </div>
-
-    <!-- NAV -->
-    <nav class="topbar-menu">
-      <a href="news.html">News</a>
-      <a href="standings.html">Standings</a>
-      <a href="index.html">Matches</a>
-      <a href="results.html">Results</a>
-      <a href="ai-insights.html">AI Insights</a>
-    </nav>
-
-    <!-- ACTIONS -->
-    <div class="topbar-actions">
-      
-      <button class="theme-switch" id="theme-toggle">
-        <span class="theme-switch-track">
-          <span class="theme-switch-thumb"></span>
-        </span>
-        <span class="theme-switch-label">Dark</span>
-      </button>
-
-      <a href="#" class="btn-bf-ghost">Sign In</a>
-    </div>
-
-  </div>
-</header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results | Betforecast.ai</title>
+  <link rel="icon" type="image/svg+xml" href="assets/betforecast-icon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
 <header class="header">
@@ -51,15 +25,19 @@
     </nav>
 
     <div class="topbar-actions">
-  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">
-    Glass
-  </button>
-  <a href="#" class="btn-bf-ghost">Sign In</a>
-</div>
+      <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
+        <span class="theme-switch-track">
+          <span class="theme-switch-thumb"></span>
+        </span>
+        <span class="theme-switch-label">Dark</span>
+      </button>
+
+      <a href="#" class="btn-bf-ghost">Sign In</a>
+    </div>
   </div>
 </header>
 
-<main style="max-width: 1280px; margin: 0 auto; padding: 40px 20px 80px;">
+<main class="match-page-wrap">
   <section class="ai-focus-banner ai-focus-banner-compact">
     <div class="ai-focus-glow"></div>
     <div class="ai-focus-shine"></div>
@@ -87,60 +65,29 @@
     const savedTheme = localStorage.getItem("bf-theme") || "dark";
     document.body.classList.add(`theme-${savedTheme}`);
 
-    const toggleBtn = document.getElementById("theme-toggle");
-    if (!toggleBtn) return;
+    const toggle = document.getElementById("theme-toggle");
+    const label = toggle?.querySelector(".theme-switch-label");
 
-    function updateButton(theme) {
-      toggleBtn.textContent = theme === "dark" ? "Glass" : "Dark";
+    function updateUI(theme) {
+      if (label) {
+        label.textContent = theme === "dark" ? "Dark" : "Glass";
+      }
     }
 
-    updateButton(savedTheme);
+    updateUI(savedTheme);
 
-    toggleBtn.addEventListener("click", function () {
+    toggle?.addEventListener("click", () => {
       const isDark = document.body.classList.contains("theme-dark");
 
       document.body.classList.remove("theme-dark", "theme-glass");
 
-      const nextTheme = isDark ? "glass" : "dark";
-      document.body.classList.add(`theme-${nextTheme}`);
-      localStorage.setItem("bf-theme", nextTheme);
-      updateButton(nextTheme);
+      const next = isDark ? "glass" : "dark";
+      document.body.classList.add(`theme-${next}`);
+      localStorage.setItem("bf-theme", next);
+
+      updateUI(next);
     });
   })();
 </script>
-  <!-- твои другие скрипты -->
-
-  <script>
-    (function () {
-      const savedTheme = localStorage.getItem("bf-theme") || "dark";
-      document.body.classList.add(`theme-${savedTheme}`);
-
-      const toggle = document.getElementById("theme-toggle");
-      const label = toggle?.querySelector(".theme-switch-label");
-
-      function updateUI(theme) {
-        if (label) {
-          label.textContent = theme === "dark" ? "Dark" : "Glass";
-        }
-      }
-
-      updateUI(savedTheme);
-
-      toggle?.addEventListener("click", () => {
-        const isDark = document.body.classList.contains("theme-dark");
-
-        document.body.classList.remove("theme-dark", "theme-glass");
-
-        const next = isDark ? "glass" : "dark";
-        document.body.classList.add(`theme-${next}`);
-        localStorage.setItem("bf-theme", next);
-
-        updateUI(next);
-      });
-    })();
-  </script>
-
-</body>
-</html>
 </body>
 </html>
