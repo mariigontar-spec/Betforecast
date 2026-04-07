@@ -5078,3 +5078,79 @@ main,
     grid-template-columns: 1fr !important;
   }
 }
+/* =========================================================
+   THEME SWITCH (PRO)
+========================================================= */
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px 6px 6px;
+
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.theme-switch-track {
+  width: 46px;
+  height: 24px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.theme-switch-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  background: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.theme-switch-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: inherit;
+}
+
+/* ACTIVE (GLASS MODE) */
+body.theme-glass .theme-switch-track {
+  background: rgba(16,185,129,0.25);
+}
+
+body.theme-glass .theme-switch-thumb {
+  transform: translateX(22px);
+  background: #10b981;
+}
+
+/* DARK MODE FIX */
+body.theme-dark .theme-switch {
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.05);
+}
+
+body.theme-dark .theme-switch-label {
+  color: #e5e7eb;
+}
+
+/* GLASS MODE FIX */
+body.theme-glass .theme-switch {
+  border: 1px solid rgba(15,23,42,0.08);
+  background: rgba(255,255,255,0.55);
+}
+
+body.theme-glass .theme-switch-label {
+  color: #0f172a;
+}
