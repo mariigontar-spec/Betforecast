@@ -5154,3 +5154,21 @@ body.theme-glass .theme-switch {
 body.theme-glass .theme-switch-label {
   color: #0f172a;
 }
+body.theme-dark {
+  background:
+    radial-gradient(circle at top, rgba(21, 161, 117, 0.14), transparent 30%),
+    radial-gradient(circle at bottom, rgba(50, 110, 200, 0.08), transparent 30%),
+    #07131c;
+  color: #f4f7fb;
+}
+
+body.theme-dark .panel,
+body.theme-dark .prediction-card,
+body.theme-dark .match-row,
+body.theme-dark .result-row,
+body.theme-dark .compare-card,
+body.theme-dark .mini-stat-card {
+  background: rgba(255,255,255,0.04) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  color: #f4f7fb !important;
+}
