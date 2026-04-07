@@ -108,5 +108,39 @@
     });
   })();
 </script>
+  <!-- твои другие скрипты -->
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("bf-theme") || "dark";
+      document.body.classList.add(`theme-${savedTheme}`);
+
+      const toggle = document.getElementById("theme-toggle");
+      const label = toggle?.querySelector(".theme-switch-label");
+
+      function updateUI(theme) {
+        if (label) {
+          label.textContent = theme === "dark" ? "Dark" : "Glass";
+        }
+      }
+
+      updateUI(savedTheme);
+
+      toggle?.addEventListener("click", () => {
+        const isDark = document.body.classList.contains("theme-dark");
+
+        document.body.classList.remove("theme-dark", "theme-glass");
+
+        const next = isDark ? "glass" : "dark";
+        document.body.classList.add(`theme-${next}`);
+        localStorage.setItem("bf-theme", next);
+
+        updateUI(next);
+      });
+    })();
+  </script>
+
+</body>
+</html>
 </body>
 </html>
