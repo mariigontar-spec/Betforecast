@@ -3819,10 +3819,13 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
-    linear-gradient(135deg, #f8fbff 0%, #f3f7fb 45%, #eef6f3 100%);
-  color: var(--text-main);
+    radial-gradient(circle at 20% 10%, rgba(16, 185, 129, 0.08), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.06), transparent 30%),
+    linear-gradient(135deg, #eef2f6 0%, #e9eef3 40%, #e6edf2 100%);
+
+  color: #0f172a;
 }
 
 a {
@@ -4665,4 +4668,72 @@ main,
   .match-pro-sidebar .panel.side-block {
     min-height: auto !important;
   }
+}
+/* GLASS CARDS */
+
+.panel,
+.predictions-section,
+.prediction-card,
+.match-card,
+.match-row,
+.result-row,
+.pro-score-card,
+.prediction-summary-card,
+.compare-card,
+.mini-stat-card,
+.adv-stat-box,
+.news-focus-box,
+.related-match-item,
+.related-news-item,
+.timeline-item,
+.key-signal-item,
+.standing-row,
+.side-block,
+.news-card,
+.featured-news-card {
+  
+  background: rgba(255, 255, 255, 0.55) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06) !important;
+}
+/* GEOMETRY CLARITY */
+
+.panel,
+.prediction-card,
+.match-row,
+.result-row,
+.compare-card,
+.mini-stat-card,
+.adv-stat-box,
+.side-block {
+  border-radius: 18px !important;
+  position: relative;
+}
+
+/* лёгкий внутренний контур */
+.panel::after,
+.prediction-card::after,
+.compare-card::after,
+.mini-stat-card::after,
+.adv-stat-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  border: 1px solid rgba(255,255,255,0.35);
+}
+.hero,
+.match-pro-hero,
+.news-top-hero,
+.insights-hero {
+  background:
+    linear-gradient(to right, rgba(255,255,255,0.55), rgba(255,255,255,0.35)),
+    url("https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat !important;
+
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(15,23,42,0.08);
 }
