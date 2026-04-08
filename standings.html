@@ -1,182 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betforecast.ai | Standings</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">
+        <img
+          class="site-logo__icon"
+          src="assets/betforecast-icon.svg"
+          alt="Betforecast.ai logo"
+        >
+        <span class="site-logo__text">Betforecast.ai</span>
+      </a>
 
-<header class="header">
-  <div class="header-inner">
-    <a class="site-logo" href="index.html">
-      <img
-        class="site-logo__icon"
-        src="assets/betforecast-icon.svg"
-        alt="Betforecast.ai logo"
-      >
-      <span class="site-logo__text">Betforecast.ai</span>
-    </a>
+      <nav class="topbar-menu" aria-label="Main navigation">
+        <a href="news.html">News</a>
+        <a href="standings.html" class="active">Standings</a>
+        <a href="match.html">Matches</a>
+        <a href="results.html">Results</a>
+        <a href="ai-insights.html">AI Insights</a>
+      </nav>
 
-   <nav class="topbar-menu" aria-label="Main navigation">
-  <a href="news.html">News</a>
-  <a href="standings.html" class="active">Standings</a>
-  <a href="match.html">Matches</a>
-  <a href="results.html">Results</a>
-  <a href="ai-insights.html">AI Insights</a>
-</nav>
+      <div class="topbar-actions">
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="theme-switch-track">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span class="theme-switch-label">Dark</span>
+        </button>
 
-    <div class="topbar-actions">
-      <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
-        <span class="theme-switch-track">
-          <span class="theme-switch-thumb"></span>
-        </span>
-        <span class="theme-switch-label">Dark</span>
-      </button>
-
-      <a href="#" class="btn-bf-ghost">Sign In</a>
+        <a href="#" class="btn-bf-ghost">Sign In</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<main class="standings-page-wrap">
-  <section class="standings-league-bar panel">
-    <div class="standings-league-main">
-      <div class="standings-league-badge" id="league-country">England</div>
-      <h2 id="league-name">Premier League</h2>
-      <p id="league-season">2025/26 season</p>
-    </div>
+  <main class="standings-page-wrap page-shell">
+    <section class="standings-league-bar">
+      <div class="standings-league-main">
+        <span class="standings-league-badge" id="league-country">England</span>
+        <h1 id="league-name">Premier League</h1>
+        <p id="league-season">2025/26 season</p>
+      </div>
 
-    <div class="standings-league-tabs">
-      <button type="button" class="standings-view-tab active" data-view="table">Table</button>
-      <button type="button" class="standings-view-tab" data-view="last">Recent</button>
-      <button type="button" class="standings-view-tab" data-view="upcoming">Upcoming</button>
-    </div>
-  </section>
+      <div class="standings-league-tabs">
+        <button type="button" class="standings-view-tab active" data-view="table">Table</button>
+        <button type="button" class="standings-view-tab" data-view="last">Recent</button>
+        <button type="button" class="standings-view-tab" data-view="upcoming">Upcoming</button>
+      </div>
+    </section>
 
-  <section class="standings-filter-row">
-    <div id="league-filter-list" class="league-filter-list"></div>
-  </section>
+    <section class="standings-filter-row">
+      <div id="league-filter-list" class="league-filter-list"></div>
+    </section>
 
-  <section class="standings-layout">
-    <div class="standings-main">
-      <section class="panel standings-panel">
-        <div class="panel-head">
-          <h2 id="standings-panel-title">League Table</h2>
-        </div>
+    <section class="standings-layout">
+      <div class="standings-main">
+        <section class="panel standings-panel">
+          <div class="panel-head">
+            <h2 id="standings-panel-title">League Table</h2>
+          </div>
 
-        <div id="standings-table-wrap" class="standings-table-wrap"></div>
-        <div id="standings-last-wrap" class="standings-alt-wrap hidden-view"></div>
-        <div id="standings-upcoming-wrap" class="standings-alt-wrap hidden-view"></div>
-      </section>
-    </div>
+          <div id="standings-table-wrap" class="standings-table-wrap"></div>
+          <div id="standings-last-wrap" class="standings-alt-wrap hidden-view"></div>
+          <div id="standings-upcoming-wrap" class="standings-alt-wrap hidden-view"></div>
+        </section>
+      </div>
 
-    <aside class="standings-sidebar">
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>Insight</h2>
-        </div>
-        <div class="news-focus-box">
-          <strong id="league-insight-title">Title race pressure</strong>
-          <p id="league-insight-text">
-            The title race remains tight, with minimal point gaps between top teams.
-          </p>
-        </div>
-      </section>
+      <aside class="standings-sidebar">
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Insight</h2>
+          </div>
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>Table Zones</h2>
-        </div>
-        <div class="standings-legend">
-          <div><span class="legend-dot legend-cl"></span> Champions League</div>
-          <div><span class="legend-dot legend-el"></span> Europa zone</div>
-          <div><span class="legend-dot legend-safe"></span> Mid-table</div>
-          <div><span class="legend-dot legend-rel"></span> Relegation zone</div>
-        </div>
-      </section>
+          <div class="news-focus-box">
+            <strong id="league-insight-title">Title race pressure</strong>
+            <p id="league-insight-text">
+              The title race remains tight, with minimal point gaps between top teams.
+            </p>
+          </div>
+        </section>
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>Matches</h2>
-        </div>
-        <div class="related-match-list">
-          <a class="related-match-item" href="match.html?game=mci_ars">
-            <strong>Man City vs Arsenal</strong>
-            <span>Match Preview</span>
-          </a>
-          <a class="related-match-item" href="match.html?game=liv_tot_live">
-            <strong>Liverpool vs Tottenham</strong>
-            <span>Live Match</span>
-          </a>
-          <a class="related-match-item" href="match.html?game=rm_sev_live">
-            <strong>Real Madrid vs Sevilla</strong>
-            <span>Live Match</span>
-          </a>
-          <a class="related-match-item" href="match.html?game=juv_nap_live">
-            <strong>Juventus vs Napoli</strong>
-            <span>Live Match</span>
-          </a>
-        </div>
-      </section>
-    </aside>
-  </section>
-</main>
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Table Zones</h2>
+          </div>
 
-<script src="js/standings.js"></script>
-<script>
-  (function () {
-    const savedTheme = localStorage.getItem("bf-theme") || "dark";
-    document.body.classList.add(`theme-${savedTheme}`);
+          <div class="standings-legend">
+            <div><span class="legend-dot legend-cl"></span> Champions League</div>
+            <div><span class="legend-dot legend-el"></span> Europa zone</div>
+            <div><span class="legend-dot legend-safe"></span> Mid-table</div>
+            <div><span class="legend-dot legend-rel"></span> Relegation zone</div>
+          </div>
+        </section>
 
-    const toggle = document.getElementById("theme-toggle");
-    const label = toggle?.querySelector(".theme-switch-label");
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Matches</h2>
+          </div>
 
-    function updateUI(theme) {
-      if (label) {
+          <div class="related-match-list">
+            <a class="related-match-item" href="match.html?game=mci_ars">
+              <strong>Man City vs Arsenal</strong>
+              <span>Match Preview</span>
+            </a>
+
+            <a class="related-match-item" href="match.html?game=liv_tot_live">
+              <strong>Liverpool vs Tottenham</strong>
+              <span>Live Match</span>
+            </a>
+
+            <a class="related-match-item" href="match.html?game=rm_sev_live">
+              <strong>Real Madrid vs Sevilla</strong>
+              <span>Live Match</span>
+            </a>
+
+            <a class="related-match-item" href="match.html?game=juv_nap_live">
+              <strong>Juventus vs Napoli</strong>
+              <span>Live Match</span>
+            </a>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <script src="js/standings.js"></script>
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("bf-theme") || "dark";
+      document.body.classList.remove("theme-dark", "theme-glass");
+      document.body.classList.add(`theme-${savedTheme}`);
+
+      const toggle = document.getElementById("theme-toggle");
+      const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
+
+      function updateLabel(theme) {
+        if (!label) return;
         label.textContent = theme === "dark" ? "Dark" : "Glass";
       }
-    }
 
-    updateUI(savedTheme);
+      updateLabel(savedTheme);
 
-    toggle?.addEventListener("click", () => {
-      const isDark = document.body.classList.contains("theme-dark");
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
 
-      document.body.classList.remove("theme-dark", "theme-glass");
+          document.body.classList.remove("theme-dark", "theme-glass");
+          document.body.classList.add(`theme-${nextTheme}`);
 
-      const next = isDark ? "glass" : "dark";
-      document.body.classList.add(`theme-${next}`);
-      localStorage.setItem("bf-theme", next);
-
-      updateUI(next);
-    });
-  })();
-</script>
-<script>
-  (function () {
-    const savedTheme = localStorage.getItem("bf-theme") || "dark";
-    document.body.classList.remove("theme-dark", "theme-glass");
-    document.body.classList.add(`theme-${savedTheme}`);
-
-    const toggle = document.getElementById("theme-toggle");
-    const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
-
-    function updateLabel(theme) {
-      if (!label) return;
-      label.textContent = theme === "dark" ? "Dark" : "Glass";
-    }
-
-    updateLabel(savedTheme);
-
-    if (toggle) {
-      toggle.addEventListener("click", function () {
-        const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
-
-        document.body.classList.remove("theme-dark", "theme-glass");
-        document.body.classList.add(`theme-${nextTheme}`);
-
-        localStorage.setItem("bf-theme", nextTheme);
-        updateLabel(nextTheme);
-      });
-    }
-  })();
-</script>
+          localStorage.setItem("bf-theme", nextTheme);
+          updateLabel(nextTheme);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
