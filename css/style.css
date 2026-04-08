@@ -1574,3 +1574,577 @@ body.theme-glass .theme-switch-thumb {
     height: 220px;
   }
 }
+/* =========================================================
+   TYPOGRAPHY + SPACING FIX
+   ADD TO THE VERY END OF css/style.css
+========================================================= */
+
+/* ---------- global readable text ---------- */
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+p,
+li,
+span,
+a,
+button,
+input,
+textarea,
+select {
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.12;
+  margin-top: 0;
+}
+
+strong {
+  line-height: 1.25;
+}
+
+/* ---------- prevent text overlap ---------- */
+
+* {
+  min-width: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+strong,
+span,
+li {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.panel,
+.predictions-section,
+.side-block,
+.hero-card,
+.insights-hero-card,
+.featured-main-card,
+.featured-news-card,
+.news-card,
+.prediction-card,
+.compare-card,
+.prediction-summary-card,
+.adv-stat-box,
+.pro-score-card,
+.news-focus-box,
+.related-match-item,
+.related-news-item,
+.timeline-item,
+.key-signal-item,
+.mini-stat-card,
+.model-card,
+.form-team,
+.match-card,
+.match-row,
+.result-row,
+.standings-row,
+.standings-match-row {
+  overflow: hidden;
+}
+
+/* ---------- consistent inside padding ---------- */
+
+.panel,
+.predictions-section,
+.side-block,
+.hero-card,
+.insights-hero-card,
+.featured-main-card,
+.featured-news-body,
+.news-card-body,
+.prediction-card-body,
+.compare-card,
+.prediction-summary-card,
+.adv-stat-box,
+.pro-score-card,
+.news-focus-box,
+.mini-stat-card,
+.model-card,
+.form-team,
+.match-card {
+  padding: 24px !important;
+}
+
+.related-match-item,
+.related-news-item,
+.key-signal-item,
+.timeline-item,
+.match-row,
+.result-row,
+.standings-match-row {
+  padding: 18px 20px !important;
+}
+
+/* ---------- larger headings ---------- */
+
+.hero-left h2,
+.news-top-hero-left h2,
+.match-top-hero-left h2,
+.match-pro-left h2,
+.insights-hero-left h2,
+.article-pro-hero h1,
+.article-hero h1 {
+  font-size: clamp(42px, 4vw, 60px) !important;
+  line-height: 1.08 !important;
+}
+
+.section-head h2,
+.panel-head h2 {
+  font-size: 32px !important;
+  line-height: 1.15 !important;
+}
+
+.hero-card h3,
+.news-top-hero-card h3,
+.match-top-hero-card h3,
+.featured-main-card h3,
+.featured-news-body h3,
+.prediction-card h3,
+.insight-card h3,
+.match-feature-card h3,
+.compare-card h3,
+.prediction-summary-card h3,
+.model-card h3 {
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+}
+
+.news-focus-box strong,
+.related-match-item strong,
+.related-news-item strong,
+.form-team-title,
+.team-name {
+  font-size: 20px !important;
+  line-height: 1.25 !important;
+}
+
+/* ---------- larger body text ---------- */
+
+.hero-left p,
+.news-top-hero-left p,
+.match-top-hero-left p,
+.match-pro-left p,
+.insights-hero-left p,
+.article-subtitle,
+.article-pro-subtitle,
+.ai-text,
+.news-card p,
+.featured-news-body p,
+.news-focus-box p,
+.prediction-summary-card p,
+.match-summary-text,
+.article-content p,
+.article-pro-body p,
+.insight-summary p,
+.model-card p,
+.form-team p,
+.compare-list,
+.timeline-text {
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+}
+
+.featured-meta,
+.news-meta,
+.featured-news-meta,
+.article-meta,
+.match-meta-line,
+.featured-score-caption,
+.ai-subtitle,
+.news-excerpt {
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+}
+
+/* ---------- buttons centered ---------- */
+
+.topbar-menu a,
+.btn-bf-ghost,
+.primary-btn,
+.secondary-btn,
+.article-back-btn,
+.theme-switch,
+.standings-view-tab,
+.tab-btn,
+.tabs button,
+.league-filter-btn,
+.filter-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+  white-space: nowrap;
+}
+
+/* ---------- equal spacing between blocks ---------- */
+
+main,
+.news-page-wrap,
+.match-page-wrap,
+.article-page-wrap,
+.article-pro-wrap,
+.standings-page-wrap {
+  display: grid;
+  gap: 24px;
+}
+
+.news-main-column,
+.news-sidebar-v2,
+.match-main-column,
+.match-sidebar-v2,
+.match-pro-main,
+.match-pro-sidebar,
+.standings-main,
+.standings-sidebar,
+.featured-side-stack,
+.signals-stack,
+timeline-list,
+.related-match-list,
+.related-news-list,
+.key-signal-list,
+.trending-list,
+.league-list,
+.standings-legend {
+  gap: 18px !important;
+}
+
+/* ---------- safe grid behaviour ---------- */
+
+.news-layout-v2,
+.match-layout-v2,
+.match-pro-layout,
+.article-layout,
+.article-pro-layout,
+.standings-layout,
+.featured-insight-grid,
+.prediction-core-grid,
+.match-comparison-grid,
+.insight-duo-grid,
+.model-grid,
+.predictions-grid,
+.news-grid,
+.news-grid-v2,
+.insights-cards-grid,
+.advanced-stats-grid,
+.form-compare,
+.homepage-news-list,
+.matches-grid {
+  align-items: start !important;
+}
+
+.featured-insight-grid > *,
+.prediction-core-grid > *,
+.match-comparison-grid > *,
+.insight-duo-grid > *,
+.model-grid > *,
+.predictions-grid > *,
+.news-grid > *,
+.news-grid-v2 > *,
+.insights-cards-grid > *,
+.advanced-stats-grid > *,
+.form-compare > *,
+.matches-grid > * {
+  min-width: 0;
+}
+
+/* ---------- remove hard collapsing ---------- */
+
+.news-card,
+.prediction-card,
+.insight-card,
+.model-card,
+.mini-stat-card,
+.compare-card,
+.adv-stat-box,
+.form-team,
+.match-card,
+.related-match-item,
+.timeline-item,
+.key-signal-item {
+  min-height: unset !important;
+  height: auto !important;
+}
+
+.featured-news-card,
+.featured-main-card,
+.prediction-summary-card,
+.pro-score-card,
+.hero-card,
+.insights-hero-card {
+  height: auto !important;
+  min-height: unset !important;
+}
+
+/* ---------- featured insight cleanup ---------- */
+
+.featured-main-top {
+  align-items: flex-start !important;
+  gap: 16px !important;
+}
+
+.featured-prob-grid,
+.pro-hero-prob-grid,
+.probabilities {
+  gap: 16px !important;
+}
+
+.featured-prob-box,
+.probabilities > div {
+  padding: 18px 16px !important;
+}
+
+.factor-tags {
+  gap: 10px !important;
+  margin-top: 18px !important;
+}
+
+.factor-tags span {
+  line-height: 1.35 !important;
+  padding: 10px 14px !important;
+}
+
+/* ---------- hero card text spacing ---------- */
+
+.card-top {
+  margin-bottom: 14px;
+}
+
+.hero-card h3,
+.insights-hero-card h3 {
+  margin: 0 0 18px !important;
+}
+
+.probabilities {
+  margin-top: 0 !important;
+}
+
+.probability-bar,
+.featured-long-bar,
+.confidence-meter {
+  margin-top: 18px !important;
+}
+
+.ai-text {
+  margin-top: 18px !important;
+}
+
+/* ---------- standings table readability ---------- */
+
+.standings-table-head,
+.standings-row {
+  column-gap: 12px !important;
+}
+
+.standings-table-head {
+  padding: 14px 16px !important;
+}
+
+.standings-row {
+  min-height: 64px !important;
+  padding: 0 16px !important;
+}
+
+.standings-cell,
+.standings-pos,
+.standings-team,
+.standings-points,
+.standings-match-name,
+.standings-match-time,
+.standings-match-status {
+  font-size: 16px !important;
+  line-height: 1.4 !important;
+}
+
+.standings-table-head {
+  text-align: center;
+}
+
+.standings-cell,
+.standings-pos,
+.standings-points {
+  text-align: center;
+}
+
+.standings-team {
+  text-align: left;
+}
+
+.standings-form {
+  justify-content: center !important;
+}
+
+/* ---------- match tables centered ---------- */
+
+.match-table-head,
+.match-table-row {
+  column-gap: 14px !important;
+}
+
+.match-table-head {
+  text-align: center !important;
+}
+
+.match-table-row > * {
+  text-align: center;
+}
+
+.match-table-row .tip-badge,
+.match-table-row .cell-match {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- result cards spacing ---------- */
+
+.match-card__top {
+  margin-bottom: 20px !important;
+}
+
+.match-card__teams {
+  gap: 18px !important;
+}
+
+.match-card__top,
+.match-card__teams,
+.match-card span,
+.match-card strong {
+  line-height: 1.35 !important;
+}
+
+/* ---------- sidebar cards ---------- */
+
+.news-focus-box,
+.related-match-item,
+.related-news-item,
+.key-signal-item {
+  border-radius: 18px !important;
+}
+
+.news-focus-box strong,
+.key-signal-item strong,
+.related-match-item strong,
+.related-news-item strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.news-focus-box p,
+.related-match-item span,
+.related-news-item span {
+  margin: 0;
+}
+
+/* ---------- insights cards ---------- */
+
+.insights-cards-grid .insight-card-body,
+.news-grid-v2 .news-card-body,
+.news-grid .news-card-body {
+  display: grid;
+  gap: 12px;
+}
+
+.insight-card p,
+.news-card p {
+  margin: 0;
+}
+
+/* ---------- mobile ---------- */
+
+@media (max-width: 1100px) {
+  .section-head h2,
+  .panel-head h2 {
+    font-size: 30px !important;
+  }
+
+  .hero-left h2,
+  .news-top-hero-left h2,
+  .match-top-hero-left h2,
+  .match-pro-left h2,
+  .insights-hero-left h2,
+  .article-pro-hero h1,
+  .article-hero h1 {
+    font-size: 44px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    font-size: 17px;
+  }
+
+  .panel,
+  .predictions-section,
+  .side-block,
+  .hero-card,
+  .insights-hero-card,
+  .featured-main-card,
+  .featured-news-body,
+  .news-card-body,
+  .prediction-card-body,
+  .compare-card,
+  .prediction-summary-card,
+  .adv-stat-box,
+  .pro-score-card,
+  .news-focus-box,
+  .mini-stat-card,
+  .model-card,
+  .form-team,
+  .match-card {
+    padding: 20px !important;
+  }
+
+  .related-match-item,
+  .related-news-item,
+  .key-signal-item,
+  .timeline-item,
+  .match-row,
+  .result-row,
+  .standings-match-row {
+    padding: 16px 18px !important;
+  }
+
+  .hero-left h2,
+  .news-top-hero-left h2,
+  .match-top-hero-left h2,
+  .match-pro-left h2,
+  .insights-hero-left h2,
+  .article-pro-hero h1,
+  .article-hero h1 {
+    font-size: 36px !important;
+    line-height: 1.1 !important;
+  }
+
+  .section-head h2,
+  .panel-head h2 {
+    font-size: 28px !important;
+  }
+
+  .hero-card h3,
+  .news-top-hero-card h3,
+  .match-top-hero-card h3,
+  .featured-main-card h3,
+  .featured-news-body h3,
+  .prediction-card h3,
+  .insight-card h3,
+  .match-feature-card h3,
+  .compare-card h3,
+  .prediction-summary-card h3,
+  .model-card h3 {
+    font-size: 22px !important;
+  }
+}
