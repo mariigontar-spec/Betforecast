@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Results | Betforecast.ai</title>
-  <link rel="icon" type="image/svg+xml" href="assets/betforecast-icon.svg">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+
 <body>
 
 <header class="header">
   <div class="header-inner">
     <a class="site-logo" href="index.html">
-      <img class="site-logo__icon" src="assets/betforecast-icon.svg" alt="Betforecast.ai logo">
+      <img
+        class="site-logo__icon"
+        src="assets/betforecast-icon.svg"
+        alt="Betforecast.ai logo"
+      >
       <span class="site-logo__text">Betforecast.ai</span>
     </a>
 
-    <nav class="topbar-menu">
-      <a href="news.html">News</a>
-      <a href="standings.html">Standings</a>
-      <a href="match.html">Matches</a>
-      <a href="results.html" class="active">Results</a>
-      <a href="ai-insights.html">AI Insights</a>
-    </nav>
+    <nav class="topbar-menu" aria-label="Main navigation">
+  <a href="news.html">News</a>
+  <a href="standings.html">Standings</a>
+  <a href="match.html">Matches</a>
+  <a href="results.html" class="active">Results</a>
+  <a href="ai-insights.html">AI Insights</a>
+</nav>
 
     <div class="topbar-actions">
       <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
@@ -36,7 +34,6 @@
     </div>
   </div>
 </header>
-
 <main class="match-page-wrap">
   <section class="ai-focus-banner ai-focus-banner-compact">
     <div class="ai-focus-glow"></div>
@@ -87,6 +84,35 @@
 
       updateUI(next);
     });
+  })();
+</script>
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem("bf-theme") || "dark";
+    document.body.classList.remove("theme-dark", "theme-glass");
+    document.body.classList.add(`theme-${savedTheme}`);
+
+    const toggle = document.getElementById("theme-toggle");
+    const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
+
+    function updateLabel(theme) {
+      if (!label) return;
+      label.textContent = theme === "dark" ? "Dark" : "Glass";
+    }
+
+    updateLabel(savedTheme);
+
+    if (toggle) {
+      toggle.addEventListener("click", function () {
+        const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
+
+        document.body.classList.remove("theme-dark", "theme-glass");
+        document.body.classList.add(`theme-${nextTheme}`);
+
+        localStorage.setItem("bf-theme", nextTheme);
+        updateLabel(nextTheme);
+      });
+    }
   })();
 </script>
 </body>
