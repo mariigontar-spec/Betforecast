@@ -2148,3 +2148,77 @@ timeline-list,
     font-size: 22px !important;
   }
 }
+/* =========================================================
+   NEWS SIDEBAR BUTTONS
+========================================================= */
+
+.league-list-buttons,
+.trending-list-buttons {
+  display: grid !important;
+  gap: 14px !important;
+}
+
+.sidebar-link-card {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  width: 100%;
+  min-height: 64px;
+  padding: 0 18px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* DARK */
+body.theme-dark .sidebar-link-card {
+  color: #f4f7fb;
+  background: linear-gradient(180deg, rgba(31,46,63,0.72), rgba(22,33,47,0.78));
+  border: 1px solid rgba(132,149,171,0.20);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+body.theme-dark .sidebar-link-card:hover {
+  transform: translateY(-1px);
+  border-color: rgba(82,231,176,0.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.26);
+  background: linear-gradient(180deg, rgba(36,52,71,0.86), rgba(24,37,52,0.90));
+}
+
+/* GLASS */
+body.theme-glass .sidebar-link-card {
+  color: #101a2f;
+  background: rgba(245,248,252,0.78);
+  border: 1px solid rgba(16,26,47,0.10);
+  box-shadow: 0 8px 20px rgba(42,58,82,0.05);
+}
+
+body.theme-glass .sidebar-link-card:hover {
+  transform: translateY(-1px);
+  border-color: rgba(15,143,99,0.16);
+  box-shadow: 0 14px 24px rgba(42,58,82,0.08);
+  background: rgba(250,252,255,0.92);
+}
+
+/* optional active feel */
+.sidebar-link-card:active {
+  transform: translateY(0);
+}
+
+/* mobile */
+@media (max-width: 760px) {
+  .sidebar-link-card {
+    min-height: 58px;
+    padding: 0 16px;
+    font-size: 17px;
+    border-radius: 16px;
+  }
+}
