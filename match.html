@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Match Preview | Betforecast.ai</title>
-  <link rel="icon" type="image/svg+xml" href="assets/betforecast-icon.svg">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+
 <body>
 
 <header class="header">
@@ -307,6 +301,34 @@
     });
   })();
 </script>
+<script>
+  (function () {
+    const savedTheme = localStorage.getItem("bf-theme") || "dark";
+    document.body.classList.remove("theme-dark", "theme-glass");
+    document.body.classList.add(`theme-${savedTheme}`);
 
+    const toggle = document.getElementById("theme-toggle");
+    const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
+
+    function updateLabel(theme) {
+      if (!label) return;
+      label.textContent = theme === "dark" ? "Dark" : "Glass";
+    }
+
+    updateLabel(savedTheme);
+
+    if (toggle) {
+      toggle.addEventListener("click", function () {
+        const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
+
+        document.body.classList.remove("theme-dark", "theme-glass");
+        document.body.classList.add(`theme-${nextTheme}`);
+
+        localStorage.setItem("bf-theme", nextTheme);
+        updateLabel(nextTheme);
+      });
+    }
+  })();
+</script>
 </body>
 </html>
