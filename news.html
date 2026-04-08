@@ -1,206 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betforecast.ai | News</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">
+        <img
+          class="site-logo__icon"
+          src="assets/betforecast-icon.svg"
+          alt="Betforecast.ai logo"
+        >
+        <span class="site-logo__text">Betforecast.ai</span>
+      </a>
 
-<header class="header">
-  <div class="header-inner">
-    <a class="site-logo" href="index.html">
-      <img
-        class="site-logo__icon"
-        src="assets/betforecast-icon.svg"
-        alt="Betforecast.ai logo"
-      >
-      <span class="site-logo__text">Betforecast.ai</span>
-    </a>
+      <nav class="topbar-menu" aria-label="Main navigation">
+        <a href="news.html" class="active">News</a>
+        <a href="standings.html">Standings</a>
+        <a href="match.html">Matches</a>
+        <a href="results.html">Results</a>
+        <a href="ai-insights.html">AI Insights</a>
+      </nav>
 
-    <nav class="topbar-menu" aria-label="Main navigation">
-  <a href="news.html" class="active">News</a>
-  <a href="standings.html">Standings</a>
-  <a href="match.html">Matches</a>
-  <a href="results.html">Results</a>
-  <a href="ai-insights.html">AI Insights</a>
-</nav>
+      <div class="topbar-actions">
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="theme-switch-track">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span class="theme-switch-label">Dark</span>
+        </button>
 
-    <div class="topbar-actions">
-      <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
-        <span class="theme-switch-track">
-          <span class="theme-switch-thumb"></span>
-        </span>
-        <span class="theme-switch-label">Dark</span>
-      </button>
-
-      <a href="#" class="btn-bf-ghost">Sign In</a>
+        <a href="#" class="btn-bf-ghost">Sign In</a>
+      </div>
     </div>
-  </div>
-</header>
-<main class="news-page-wrap">
+  </header>
 
-  <!-- HERO -->
-  <section class="news-top-hero">
-    <div class="news-top-hero-overlay"></div>
+  <main class="news-page-wrap page-shell">
+    <section class="news-top-hero">
+      <div class="news-top-hero-overlay"></div>
 
-    <div class="news-top-hero-left">
-      <div class="hero-badge">News</div>
-      <h2>Football News, Transfer Signals & Match Storylines</h2>
-      <p>
-        A curated BetForecast.ai news feed covering major football headlines,
-        transfer movement, title-race pressure, and the stories shaping the next fixtures.
-      </p>
-    </div>
+      <div class="news-top-hero-left">
+        <span class="hero-badge">News</span>
 
-    <div class="news-top-hero-card">
-      <div class="mini-label">Editor Focus</div>
-      <h3>Arsenal injury update ahead of Chelsea clash</h3>
-      <p>
-        Availability, structure, and midfield control may shape both the pre-match narrative
-        and the model’s forecast edge.
-      </p>
-    </div>
-  </section>
+        <h1>Football News, Transfer Signals &amp; Match Storylines</h1>
 
-  <!-- MAIN LAYOUT -->
-  <section class="news-layout-v2">
+        <p>
+          A curated BetForecast.ai news feed covering major football headlines,
+          transfer movement, title-race pressure, and the stories shaping the next fixtures.
+        </p>
+      </div>
 
-    <!-- LEFT -->
-    <div class="news-main-column">
+      <div class="news-top-hero-card">
+        <span class="mini-label">Editor Focus</span>
 
-      <section class="panel news-featured-panel">
-        <div class="panel-head">
-          <h2>Featured Story</h2>
-        </div>
+        <h3>Arsenal injury update ahead of Chelsea clash</h3>
 
-        <article class="featured-news-card">
-          <div class="featured-news-image"></div>
-          <div class="featured-news-body">
-            <div class="news-category">Premier League</div>
-            <h3>Arsenal injury update ahead of Chelsea clash</h3>
-            <p>
-              Arsenal enters a critical phase of the title race with late selection calls
-              likely to affect shape, pressing rhythm, and midfield balance.
-            </p>
-            <div class="featured-news-meta">8 min ago • 4 min read</div>
+        <p>
+          Availability, structure, and midfield control may shape both the pre-match
+          narrative and the model’s forecast edge.
+        </p>
+      </div>
+    </section>
+
+    <section class="news-layout-v2">
+      <div class="news-main-column">
+        <section class="panel news-featured-panel">
+          <div class="panel-head">
+            <h2>Featured Story</h2>
           </div>
-        </article>
-      </section>
 
-      <section class="panel news-feed-panel">
-        <div class="panel-head">
-          <h2>Latest Stories</h2>
-        </div>
+          <article class="featured-news-card">
+            <div class="featured-news-image"></div>
 
-        <div id="news-list" class="news-grid-v2"></div>
-      </section>
+            <div class="featured-news-body">
+              <span class="news-category">Premier League</span>
 
-    </div>
+              <h3>Arsenal injury update ahead of Chelsea clash</h3>
 
-    <!-- RIGHT -->
-    <aside class="news-sidebar-v2">
+              <p>
+                Arsenal enters a critical phase of the title race with late selection calls
+                likely to affect shape, pressing rhythm, and midfield balance.
+              </p>
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>Top Leagues</h2>
-        </div>
-        <div class="league-list">
-          <a href="#">NPFL</a>
-          <a href="#">Premier League</a>
-          <a href="#">La Liga</a>
-          <a href="#">Serie A</a>
-          <a href="#">Bundesliga</a>
-          <a href="#">Champions League</a>
-        </div>
-      </section>
+              <div class="featured-news-meta">8 min ago • 4 min read</div>
+            </div>
+          </article>
+        </section>
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>Trending Topics</h2>
-        </div>
-        <div class="trending-list">
-          <a href="#">Arsenal vs Chelsea</a>
-          <a href="#">Osimhen transfer</a>
-          <a href="#">Title race</a>
-          <a href="#">UCL draw</a>
-        </div>
-      </section>
+        <section class="panel news-feed-panel">
+          <div class="panel-head">
+            <h2>Latest Stories</h2>
+          </div>
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>News Focus</h2>
-        </div>
-        <div class="news-focus-box">
-          <strong>What matters most today</strong>
-          <p>
-            Transfers, injuries, and tactical shifts are shaping both narratives
-            and prediction volatility.
-          </p>
-        </div>
-      </section>
+          <div id="news-list" class="news-grid-v2"></div>
+        </section>
+      </div>
 
-    </aside>
+      <aside class="news-sidebar-v2">
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Top Leagues</h2>
+          </div>
 
-  </section>
-</main>
+          <div class="league-list">
+            <a href="#">NPFL</a>
+            <a href="#">Premier League</a>
+            <a href="#">La Liga</a>
+            <a href="#">Serie A</a>
+            <a href="#">Bundesliga</a>
+            <a href="#">Champions League</a>
+          </div>
+        </section>
 
-<script src="js/news-page.js"></script>
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Trending Topics</h2>
+          </div>
 
-<script>
-(function () {
-  const savedTheme = localStorage.getItem("bf-theme") || "dark";
-  document.body.classList.add(`theme-${savedTheme}`);
+          <div class="trending-list">
+            <a href="#">Arsenal vs Chelsea</a>
+            <a href="#">Osimhen transfer</a>
+            <a href="#">Title race</a>
+            <a href="#">UCL draw</a>
+          </div>
+        </section>
 
-  const toggle = document.getElementById("theme-toggle");
-  const label = toggle?.querySelector(".theme-switch-label");
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>News Focus</h2>
+          </div>
 
-  function updateUI(theme) {
-    if (label) {
-      label.textContent = theme === "dark" ? "Dark" : "Glass";
-    }
-  }
+          <div class="news-focus-box">
+            <strong>What matters most today</strong>
+            <p>
+              Transfers, injuries, and tactical shifts are shaping both narratives
+              and prediction volatility.
+            </p>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
 
-  updateUI(savedTheme);
+  <script src="js/news-page.js"></script>
 
-  toggle?.addEventListener("click", () => {
-    const isDark = document.body.classList.contains("theme-dark");
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("bf-theme") || "dark";
+      document.body.classList.remove("theme-dark", "theme-glass");
+      document.body.classList.add(`theme-${savedTheme}`);
 
-    document.body.classList.remove("theme-dark", "theme-glass");
+      const toggle = document.getElementById("theme-toggle");
+      const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
 
-    const next = isDark ? "glass" : "dark";
-    document.body.classList.add(`theme-${next}`);
-    localStorage.setItem("bf-theme", next);
+      function updateLabel(theme) {
+        if (!label) return;
+        label.textContent = theme === "dark" ? "Dark" : "Glass";
+      }
 
-    updateUI(next);
-  });
-})();
-</script>
-<script>
-  (function () {
-    const savedTheme = localStorage.getItem("bf-theme") || "dark";
-    document.body.classList.remove("theme-dark", "theme-glass");
-    document.body.classList.add(`theme-${savedTheme}`);
+      updateLabel(savedTheme);
 
-    const toggle = document.getElementById("theme-toggle");
-    const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
 
-    function updateLabel(theme) {
-      if (!label) return;
-      label.textContent = theme === "dark" ? "Dark" : "Glass";
-    }
+          document.body.classList.remove("theme-dark", "theme-glass");
+          document.body.classList.add(`theme-${nextTheme}`);
 
-    updateLabel(savedTheme);
-
-    if (toggle) {
-      toggle.addEventListener("click", function () {
-        const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
-
-        document.body.classList.remove("theme-dark", "theme-glass");
-        document.body.classList.add(`theme-${nextTheme}`);
-
-        localStorage.setItem("bf-theme", nextTheme);
-        updateLabel(nextTheme);
-      });
-    }
-  })();
-</script>
+          localStorage.setItem("bf-theme", nextTheme);
+          updateLabel(nextTheme);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
