@@ -9,7 +9,7 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <a class="site-logo" href="index.html">
+      <a class="site-logo" href="index.html" aria-label="Betforecast.ai home">
         <img
           class="site-logo__icon"
           src="assets/betforecast-icon.svg"
@@ -45,15 +45,15 @@
         <div class="ai-focus-text">
           <span class="hero-ai-badge">AI Prediction Engine</span>
 
-          <h1>100+ match signals. One sharper forecast.</h1>
+          <h1 class="page-hero-title">100+ match signals. One sharper forecast.</h1>
 
-          <p>
+          <p class="page-hero-text">
             Our AI system analyzes over 100 match variables to generate smarter
             predictions and more accurate outcomes.
           </p>
 
           <div class="ai-metrics-compact">
-            <div class="ai-metric ai-metric-main">
+            <div class="ai-metric ai-metric-main ai-metric-main-compact">
               <span class="metric-value" data-target="100" data-suffix="+">0</span>
               <span class="metric-label">Signals tracked</span>
             </div>
@@ -79,7 +79,7 @@
       </div>
     </section>
 
-    <section class="hero">
+    <section class="hero hero-home">
       <div class="hero-overlay"></div>
 
       <div class="hero-left">
@@ -98,7 +98,7 @@
         </div>
       </div>
 
-      <div class="hero-card">
+      <aside class="hero-card" aria-label="Featured match">
         <div class="card-top">
           <span class="mini-label">Featured Match</span>
           <span class="mini-tag">AI Insights</span>
@@ -107,12 +107,21 @@
         <h3>Arsenal vs Chelsea</h3>
 
         <div class="probabilities">
-          <div>47%<span>Home</span></div>
-          <div>28%<span>Draw</span></div>
-          <div>25%<span>Away</span></div>
+          <div>
+            47%
+            <span>Home</span>
+          </div>
+          <div>
+            28%
+            <span>Draw</span>
+          </div>
+          <div>
+            25%
+            <span>Away</span>
+          </div>
         </div>
 
-        <div class="probability-bar">
+        <div class="probability-bar" aria-hidden="true">
           <div class="bar-home"></div>
           <div class="bar-draw"></div>
           <div class="bar-away"></div>
@@ -121,7 +130,7 @@
         <p class="ai-text">
           Arsenal slightly ahead due to form and home advantage.
         </p>
-      </div>
+      </aside>
     </section>
 
     <section class="predictions-section" id="predictions">
