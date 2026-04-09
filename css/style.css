@@ -2480,3 +2480,237 @@ body.theme-glass .sidebar-link-card:hover {
     min-height: auto;
   }
 }
+/* =========================================================
+   INDEX PAGE FINAL FIX
+========================================================= */
+
+.page-shell {
+  width: min(1280px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 28px 0 64px;
+}
+
+.ai-focus-banner,
+.hero,
+.predictions-section,
+.page-shell > .panel {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ai-focus-banner {
+  padding: 32px 36px;
+}
+
+.ai-focus-text {
+  max-width: 100%;
+}
+
+.page-hero-title,
+.ai-focus-banner h1,
+.ai-focus-banner h3 {
+  margin: 0 0 16px;
+  max-width: 980px;
+  font-size: clamp(44px, 4.8vw, 68px);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+  overflow-wrap: anywhere;
+}
+
+.page-hero-text,
+.ai-focus-banner p {
+  margin: 0;
+  max-width: 980px;
+  font-size: 22px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.ai-metrics-compact {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+.ai-metrics-bottom-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ai-metric-main,
+.ai-metric-chip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 140px;
+  padding: 20px 22px;
+}
+
+.metric-value {
+  display: block;
+  margin-bottom: 8px;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.05;
+  font-weight: 900;
+}
+
+.metric-label {
+  display: block;
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.hero-home {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+  gap: 28px;
+  align-items: stretch;
+  min-height: 620px;
+  padding: 38px 36px;
+}
+
+.hero-left,
+.hero-card {
+  min-width: 0;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-left h2 {
+  margin: 0 0 18px;
+  max-width: 660px;
+  font-size: clamp(46px, 5vw, 80px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+  overflow-wrap: anywhere;
+}
+
+.hero-left p {
+  margin: 0;
+  max-width: 620px;
+  font-size: 22px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 420px;
+  padding: 28px;
+}
+
+.hero-card h3 {
+  margin: 16px 0 18px;
+  font-size: clamp(30px, 2.4vw, 40px);
+  line-height: 1.14;
+  overflow-wrap: anywhere;
+}
+
+.probabilities {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.probabilities > div {
+  min-width: 0;
+  text-align: center;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.probabilities > div span {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.ai-text {
+  margin-top: 18px;
+  font-size: 20px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 54px;
+  padding: 0 26px;
+}
+
+.predictions-section,
+.page-shell > .panel {
+  margin-top: 28px;
+}
+
+@media (max-width: 1100px) {
+  .ai-metrics-compact,
+  .hero-home {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-home {
+    min-height: auto;
+  }
+
+  .hero-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-shell {
+    width: min(100%, calc(100% - 24px));
+    padding: 18px 0 50px;
+  }
+
+  .ai-focus-banner,
+  .hero-home {
+    padding: 24px 20px;
+  }
+
+  .page-hero-title,
+  .ai-focus-banner h1,
+  .ai-focus-banner h3,
+  .hero-left h2 {
+    font-size: 36px;
+  }
+
+  .page-hero-text,
+  .ai-focus-banner p,
+  .hero-left p,
+  .ai-text,
+  .metric-label {
+    font-size: 18px;
+  }
+
+  .ai-metrics-bottom-row,
+  .probabilities {
+    grid-template-columns: 1fr;
+  }
+}
