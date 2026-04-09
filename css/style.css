@@ -2222,3 +2222,261 @@ body.theme-glass .sidebar-link-card:hover {
     border-radius: 16px;
   }
 }
+/* =========================================================
+   INDEX HERO + AI BANNER OVERFLOW FIX
+========================================================= */
+
+.ai-focus-banner,
+.hero {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.ai-focus-banner {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 28px 32px;
+  border-radius: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-focus-content,
+.ai-focus-text,
+.hero-left,
+.hero-card {
+  min-width: 0;
+}
+
+.ai-focus-text {
+  max-width: 100%;
+}
+
+.ai-focus-banner h3,
+.ai-focus-banner p,
+.hero-left h2,
+.hero-left p,
+.hero-card h3,
+.ai-text {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.ai-focus-banner h3 {
+  margin: 0 0 14px;
+  max-width: 920px;
+  font-size: clamp(38px, 4.8vw, 64px);
+  line-height: 1.06;
+  letter-spacing: -0.04em;
+}
+
+.ai-focus-banner p {
+  margin: 0 0 22px;
+  max-width: 980px;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.ai-metrics-compact {
+  display: grid;
+  grid-template-columns: minmax(220px, 260px) 1fr;
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 18px;
+}
+
+.ai-metric-main.ai-metric-main-compact {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 22px;
+}
+
+.ai-metrics-bottom-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ai-metric-chip {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 22px;
+}
+
+.ai-metric .metric-value,
+.ai-metric .metric-label {
+  display: block;
+}
+
+.ai-metric .metric-value {
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.05;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.ai-metric .metric-label {
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(360px, 0.88fr);
+  gap: 28px;
+  align-items: stretch;
+  min-height: 620px;
+  padding: 40px 36px;
+  border-radius: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-left h2 {
+  margin: 0 0 18px;
+  max-width: 640px;
+  font-size: clamp(44px, 5.4vw, 86px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.hero-left p {
+  margin: 0;
+  max-width: 620px;
+  font-size: 22px;
+  line-height: 1.55;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 420px;
+  padding: 28px;
+}
+
+.hero-card h3 {
+  margin: 16px 0 18px;
+  font-size: clamp(30px, 2.6vw, 42px);
+  line-height: 1.12;
+}
+
+.probabilities {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.probabilities div {
+  min-width: 0;
+  text-align: center;
+}
+
+.probabilities div,
+.probabilities strong,
+.probabilities span {
+  overflow-wrap: break-word;
+}
+
+.ai-text {
+  margin-top: 18px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+/* кнопки строго по центру */
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 54px;
+  padding: 0 26px;
+}
+
+/* =========================================================
+   RESPONSIVE FIX
+========================================================= */
+
+@media (max-width: 1100px) {
+  .ai-metrics-compact,
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-metrics-bottom-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-left h2 {
+    max-width: 100%;
+  }
+
+  .hero-left p {
+    max-width: 100%;
+  }
+
+  .hero-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .ai-focus-banner,
+  .hero {
+    padding: 24px 20px;
+  }
+
+  .ai-focus-banner h3 {
+    font-size: 34px;
+  }
+
+  .ai-focus-banner p,
+  .hero-left p,
+  .ai-text,
+  .ai-metric .metric-label {
+    font-size: 18px;
+  }
+
+  .hero-left h2 {
+    font-size: 40px;
+  }
+
+  .ai-metrics-bottom-row,
+  .probabilities {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-metric-main.ai-metric-main-compact,
+  .ai-metric-chip {
+    min-height: auto;
+  }
+}
