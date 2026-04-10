@@ -4932,3 +4932,326 @@ body.theme-glass .standings-table-head {
     text-align: left;
   }
 }
+/* =========================================================
+   STANDINGS FINAL FIX
+========================================================= */
+
+.standings-page-wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 24px 72px;
+}
+
+.standings-league-bar {
+  width: 100%;
+  margin: 0 0 28px;
+  padding: 32px;
+  border-radius: 28px !important;
+  text-align: center;
+}
+
+.standings-league-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.standings-league-main h1,
+.standings-league-main h2 {
+  margin: 0;
+  font-size: clamp(40px, 4vw, 62px);
+  line-height: 1.05;
+  font-weight: 900;
+}
+
+.standings-league-main p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.standings-league-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.standings-filter-row {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 28px;
+}
+
+.league-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.standings-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(320px, 0.95fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.standings-main,
+.standings-sidebar {
+  min-width: 0;
+}
+
+.standings-sidebar {
+  display: grid;
+  gap: 24px;
+  align-content: start;
+}
+
+.standings-panel {
+  padding: 28px 26px 24px;
+  overflow: hidden;
+}
+
+.standings-table-wrap,
+.standings-alt-wrap {
+  width: 100%;
+  min-width: 0;
+}
+
+.standings-table-wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.standings-table-head,
+.standings-row {
+  min-width: 920px;
+  display: grid;
+  grid-template-columns: 48px minmax(220px, 2fr) 56px 56px 56px 56px 96px 64px 150px;
+  gap: 10px;
+  align-items: center;
+}
+
+.standings-table-head {
+  padding: 0 12px 14px;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.standings-row {
+  min-height: 66px;
+  padding: 16px 12px;
+}
+
+.standings-cell {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.standings-pos {
+  justify-content: center;
+  font-weight: 800;
+}
+
+.standings-team {
+  gap: 12px;
+  font-weight: 800;
+}
+
+.standings-team span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.standings-zone-line {
+  width: 4px;
+  min-width: 4px;
+  height: 30px;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+
+.zone-cl .standings-zone-line {
+  background: #60a5fa !important;
+}
+
+.zone-el .standings-zone-line {
+  background: #fb923c !important;
+}
+
+.zone-safe .standings-zone-line {
+  background: #4ade80 !important;
+}
+
+.zone-rel .standings-zone-line {
+  background: #f87171 !important;
+}
+
+.standings-points {
+  font-weight: 900;
+}
+
+.standings-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.standings-form span {
+  width: 22px;
+  height: 22px;
+  font-size: 10px;
+  flex: 0 0 auto;
+}
+
+.standings-sidebar .side-block {
+  padding: 26px;
+}
+
+.standings-sidebar .panel-head {
+  margin-bottom: 18px;
+}
+
+.standings-sidebar .panel-head h2 {
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.standings-legend {
+  display: grid;
+  gap: 18px;
+}
+
+.standings-legend > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.legend-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+.legend-cl {
+  background: #60a5fa !important;
+}
+
+.legend-el {
+  background: #fb923c !important;
+}
+
+.legend-safe {
+  background: #4ade80 !important;
+}
+
+.legend-rel {
+  background: #f87171 !important;
+}
+
+.standings-match-row {
+  display: grid;
+  grid-template-columns: 84px 1fr 96px;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 18px;
+  min-height: 70px;
+  margin-bottom: 12px;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+.standings-match-time,
+.standings-match-name,
+.standings-match-status {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.standings-match-name {
+  font-weight: 800;
+}
+
+.standings-match-status {
+  justify-content: flex-end;
+  text-align: right;
+  font-weight: 700;
+}
+
+.standings-empty {
+  padding: 24px 8px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1180px) {
+  .standings-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .standings-sidebar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .standings-page-wrap {
+    padding: 24px 16px 56px;
+  }
+
+  .standings-league-bar {
+    padding: 24px 18px;
+  }
+
+  .standings-main h1,
+  .standings-main h2,
+  .standings-league-main h1,
+  .standings-league-main h2 {
+    font-size: 36px;
+  }
+
+  .standings-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .standings-panel,
+  .standings-sidebar .side-block {
+    padding: 22px 18px;
+  }
+
+  .standings-table-head,
+  .standings-row {
+    min-width: 820px;
+  }
+}
+
+@media (max-width: 640px) {
+  .standings-match-row {
+    grid-template-columns: 1fr;
+  }
+
+  .standings-match-status {
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
