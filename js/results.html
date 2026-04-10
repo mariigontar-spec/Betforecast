@@ -3,55 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Results - Betforecast.ai</title>
+  <title>Results | Betforecast.ai</title>
   <link rel="icon" type="image/svg+xml" href="assets/betforecast-icon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html">
+        <img class="site-logo__icon" src="assets/betforecast-icon.svg" alt="Betforecast.ai logo">
+        <span class="site-logo__text">Betforecast.ai</span>
+      </a>
 
-<header class="header">
-  <div class="header-inner">
-    <a class="site-logo" href="index.html">
-      <img class="site-logo__icon" src="assets/betforecast-icon.svg" alt="Betforecast.ai logo">
-      <span class="site-logo__text">Betforecast.ai</span>
-    </a>
+      <nav class="topbar-menu" aria-label="Main navigation">
+        <a href="news.html">News</a>
+        <a href="standings.html">Standings</a>
+        <a href="match.html">Matches</a>
+        <a href="results.html" class="active">Results</a>
+        <a href="ai-insights.html">AI Insights</a>
+      </nav>
 
-    <nav class="topbar-menu">
-      <a href="news.html">News</a>
-      <a href="standings.html">Standings</a>
-      <a href="match.html">Matches</a>
-      <a href="results.html" class="active">Results</a>
-      <a href="ai-insights.html">AI Insights</a>
-    </nav>
+      <div class="topbar-actions">
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="theme-switch-track">
+            <span class="theme-switch-thumb"></span>
+          </span>
+          <span class="theme-switch-label">Dark</span>
+        </button>
 
-    <div class="topbar-actions">
-      <a href="#" class="btn-bf-ghost">Sign In</a>
-    </div>
-  </div>
-</header>
-
-<main style="max-width: 1280px; margin: 0 auto; padding: 40px 20px 80px;">
-  <section class="ai-focus-banner ai-focus-banner-compact">
-    <div class="ai-focus-glow"></div>
-    <div class="ai-focus-shine"></div>
-
-    <div class="ai-focus-content">
-      <div class="ai-focus-text">
-        <span class="hero-ai-badge">MATCH RESULTS</span>
-        <h3>Latest football results in one place.</h3>
-        <p>
-          Follow final scores, recent outcomes, and match result summaries
-          across major competitions.
-        </p>
+        <a href="#" class="btn-bf-ghost">Sign In</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section style="margin-top: 28px;">
-    <div id="results-page-container" class="matches-grid"></div>
-  </section>
-</main>
+  <main class="match-page-wrap page-shell">
+    <section class="ai-focus-banner ai-focus-banner-compact">
+      <div class="ai-focus-glow"></div>
+      <div class="ai-focus-shine"></div>
 
-<script src="js/results.js"></script>
+      <div class="ai-focus-content">
+        <div class="ai-focus-text">
+          <span class="hero-ai-badge">MATCH RESULTS</span>
+          <h1>Latest football results in one place.</h1>
+          <p>
+            Follow final scores, recent outcomes, and match result summaries
+            across major competitions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="results-page-section">
+      <div id="results-page-container" class="matches-grid"></div>
+    </section>
+  </main>
+
+  <script src="js/results.js"></script>
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("bf-theme") || "dark";
+      document.body.classList.remove("theme-dark", "theme-glass");
+      document.body.classList.add(`theme-${savedTheme}`);
+
+      const toggle = document.getElementById("theme-toggle");
+      const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
+
+      function updateLabel(theme) {
+        if (!label) return;
+        label.textContent = theme === "dark" ? "Dark" : "Glass";
+      }
+
+      updateLabel(savedTheme);
+
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
+
+          document.body.classList.remove("theme-dark", "theme-glass");
+          document.body.classList.add(`theme-${nextTheme}`);
+
+          localStorage.setItem("bf-theme", nextTheme);
+          updateLabel(nextTheme);
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
