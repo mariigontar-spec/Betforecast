@@ -3041,3 +3041,377 @@ body.theme-glass .ai-metric-chip .metric-label {
     font-size: 18px;
   }
 }
+/* =========================================================
+   INDEX HERO GEOMETRY FIX
+========================================================= */
+
+.page-shell {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 20px 72px;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 0.85fr);
+  gap: 28px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1280px;
+  margin: 28px auto 0;
+  padding: 36px;
+  border-radius: 32px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero-left,
+.hero-card {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-left .hero-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.hero-left h2 {
+  margin: 16px 0 14px;
+  max-width: 760px;
+  font-size: clamp(52px, 5vw, 84px);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+.hero-left p {
+  margin: 0;
+  max-width: 720px;
+  font-size: 24px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 22px;
+  border-radius: 16px;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 26px;
+  border-radius: 26px;
+  box-sizing: border-box;
+}
+
+.card-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.mini-label,
+.mini-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.hero-card h3 {
+  margin: 0 0 18px;
+  font-size: clamp(30px, 2.6vw, 42px);
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  overflow-wrap: anywhere;
+}
+
+.probabilities {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 18px;
+}
+
+.probabilities > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 110px;
+  padding: 16px 12px;
+  border-radius: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.probabilities > div:first-child,
+.probabilities > div:nth-child(2),
+.probabilities > div:nth-child(3) {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.probabilities > div {
+  font-size: clamp(34px, 3vw, 50px);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.probabilities span {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.probability-bar {
+  width: 100%;
+  height: 14px;
+  margin: 0 0 18px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-home,
+.bar-draw,
+.bar-away {
+  height: 100%;
+  float: left;
+}
+
+.ai-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- DARK THEME ---------- */
+
+body.theme-dark .hero {
+  background:
+    linear-gradient(135deg, rgba(6,17,28,0.92), rgba(10,24,38,0.84)),
+    radial-gradient(circle at 18% 22%, rgba(16,185,129,0.10), transparent 28%),
+    radial-gradient(circle at 86% 18%, rgba(37,99,235,0.08), transparent 28%);
+  border: 1px solid rgba(118, 139, 166, 0.22);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.30);
+}
+
+body.theme-dark .hero-left h2,
+body.theme-dark .hero-card h3,
+body.theme-dark .probabilities > div {
+  color: #f4f7fb;
+}
+
+body.theme-dark .hero-left p,
+body.theme-dark .ai-text,
+body.theme-dark .probabilities span {
+  color: rgba(226, 234, 244, 0.78);
+}
+
+body.theme-dark .hero-left .hero-badge,
+body.theme-dark .mini-label,
+body.theme-dark .mini-tag {
+  background: rgba(12, 84, 62, 0.52);
+  color: #62f0be;
+  border: 1px solid rgba(82, 231, 176, 0.14);
+}
+
+body.theme-dark .hero-card {
+  background: linear-gradient(180deg, rgba(28, 41, 57, 0.90), rgba(22, 33, 47, 0.88));
+  border: 1px solid rgba(132, 149, 171, 0.20);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+}
+
+body.theme-dark .probabilities > div {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(132,149,171,0.16);
+}
+
+body.theme-dark .probability-bar {
+  background: rgba(118, 139, 166, 0.18);
+}
+
+/* ---------- GLASS THEME ---------- */
+
+body.theme-glass .hero {
+  background:
+    linear-gradient(135deg, rgba(244,248,252,0.86), rgba(232,240,246,0.72)),
+    radial-gradient(circle at 18% 22%, rgba(16,185,129,0.08), transparent 28%),
+    radial-gradient(circle at 86% 18%, rgba(59,130,246,0.06), transparent 28%);
+  border: 1px solid rgba(16, 26, 47, 0.10);
+  box-shadow: 0 16px 34px rgba(42, 58, 82, 0.08);
+}
+
+body.theme-glass .hero-left h2,
+body.theme-glass .hero-card h3,
+body.theme-glass .probabilities > div {
+  color: #101a2f;
+}
+
+body.theme-glass .hero-left p,
+body.theme-glass .ai-text,
+body.theme-glass .probabilities span {
+  color: #526177;
+}
+
+body.theme-glass .hero-left .hero-badge,
+body.theme-glass .mini-label,
+body.theme-glass .mini-tag {
+  background: rgba(210, 238, 226, 0.92);
+  color: #0f8f63;
+  border: 1px solid rgba(15, 143, 99, 0.12);
+}
+
+body.theme-glass .hero-card {
+  background: linear-gradient(180deg, rgba(245,248,252,0.78), rgba(238,244,249,0.72));
+  border: 1px solid rgba(16, 26, 47, 0.10);
+  box-shadow: 0 12px 26px rgba(42, 58, 82, 0.07);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+body.theme-glass .probabilities > div {
+  background: rgba(255,255,255,0.50);
+  border: 1px solid rgba(16,26,47,0.08);
+}
+
+body.theme-glass .probability-bar {
+  background: rgba(120, 136, 160, 0.18);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1100px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left h2 {
+    max-width: 100%;
+    font-size: clamp(42px, 6vw, 64px);
+  }
+
+  .hero-left p {
+    max-width: 100%;
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-shell {
+    padding: 20px 14px 56px;
+  }
+
+  .hero {
+    margin-top: 20px;
+    padding: 24px;
+    gap: 20px;
+    border-radius: 24px;
+  }
+
+  .hero-left h2 {
+    font-size: 36px;
+  }
+
+  .hero-left p,
+  .ai-text {
+    font-size: 18px;
+  }
+
+  .hero-card {
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .probabilities {
+    grid-template-columns: 1fr;
+  }
+
+  .probabilities > div {
+    min-height: 88px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+}
+/* =========================================================
+   AI BANNER WIDTH / TYPO FIX FOR INDEX
+========================================================= */
+
+.ai-focus-banner.ai-focus-banner-compact {
+  width: 100%;
+  max-width: 1280px;
+  margin: 28px auto 0;
+  box-sizing: border-box;
+}
+
+.ai-focus-banner.ai-focus-banner-compact .ai-focus-text {
+  max-width: 100%;
+}
+
+.ai-focus-banner.ai-focus-banner-compact h1 {
+  max-width: 980px;
+  overflow-wrap: anywhere;
+}
+
+.ai-focus-banner.ai-focus-banner-compact p {
+  max-width: 980px;
+  overflow-wrap: anywhere;
+}
