@@ -5255,3 +5255,6 @@ body.theme-glass .standings-table-head {
     text-align: left;
   }
 }
+.results-page-section {
+  margin-top: 28px;
+}
