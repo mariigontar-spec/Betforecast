@@ -5542,3 +5542,33 @@ body.theme-glass .standings-table-head {
     padding: 0 12px;
   }
 }
+.glass-card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+.green-glow {
+  background: linear-gradient(135deg, #15a175, #7bffb2);
+  box-shadow:
+    0 0 20px rgba(21,161,117,0.6),
+    0 0 60px rgba(21,161,117,0.25);
+  color: #02140f;
+  font-weight: 600;
+}
+.match-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: 0.3s;
+}
+
+.match-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
