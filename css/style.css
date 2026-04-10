@@ -4066,3 +4066,586 @@ body.theme-glass .confidence-meter {
     width: 100%;
   }
 }
+/* =========================================================
+   STANDINGS PAGE FINAL FIX
+========================================================= */
+
+.standings-page-wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 20px 72px;
+  box-sizing: border-box;
+}
+
+/* ---------- top hero ---------- */
+
+.standings-league-bar {
+  width: 100%;
+  max-width: 100%;
+  margin: 28px auto 0;
+  padding: 34px 32px;
+  border-radius: 32px;
+  box-sizing: border-box;
+}
+
+.standings-league-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.standings-league-main h2 {
+  margin: 0;
+  font-size: clamp(42px, 4vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+.standings-league-main p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.standings-league-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.standings-league-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.standings-view-tab {
+  min-width: 108px;
+  min-height: 52px;
+  padding: 0 18px;
+  border-radius: 18px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 800;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ---------- league filters ---------- */
+
+.standings-filter-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 22px auto 0;
+}
+
+.league-filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.league-filter-btn {
+  min-width: 140px;
+  min-height: 50px;
+  padding: 0 20px;
+  border-radius: 18px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 800;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ---------- main layout ---------- */
+
+.standings-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.85fr);
+  gap: 24px;
+  align-items: start;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.standings-main,
+.standings-sidebar {
+  min-width: 0;
+  display: grid;
+  gap: 24px;
+  align-content: start;
+}
+
+/* ---------- cards ---------- */
+
+.standings-panel,
+.standings-sidebar .side-block {
+  width: 100%;
+  min-width: 0;
+  padding: 26px;
+  border-radius: 24px;
+  box-sizing: border-box;
+}
+
+.standings-sidebar .side-block {
+  min-height: auto;
+}
+
+.standings-sidebar .panel-head {
+  margin-bottom: 18px;
+}
+
+.standings-sidebar .panel-head h2,
+.standings-panel .panel-head h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+/* ---------- table wrapper ---------- */
+
+.standings-table-wrap,
+.standings-alt-wrap {
+  width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+
+.standings-table-wrap::-webkit-scrollbar,
+.standings-alt-wrap::-webkit-scrollbar {
+  height: 8px;
+}
+
+.standings-table-wrap::-webkit-scrollbar-thumb,
+.standings-alt-wrap::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+}
+
+/* ---------- table grid ---------- */
+
+.standings-table-head,
+.standings-row {
+  display: grid;
+  grid-template-columns: 54px minmax(220px, 2.2fr) 56px 56px 56px 56px 92px 64px 132px;
+  align-items: center;
+  gap: 10px;
+  min-width: 796px;
+  box-sizing: border-box;
+}
+
+.standings-table-head {
+  padding: 0 16px 14px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.standings-row {
+  min-height: 72px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.standings-cell {
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.standings-pos {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 800;
+  text-align: center;
+}
+
+.standings-team {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  font-size: 17px;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.standings-team span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.standings-zone-line {
+  width: 4px;
+  height: 30px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.standings-points {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.standings-form {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.standings-form span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+/* ---------- recent / upcoming ---------- */
+
+.standings-match-row {
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr) 100px;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 18px;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+.standings-match-time,
+.standings-match-status {
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.standings-match-name {
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.standings-match-status {
+  text-align: right;
+}
+
+/* ---------- sidebar content ---------- */
+
+.news-focus-box {
+  padding: 18px;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+.news-focus-box strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 19px;
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+.news-focus-box p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.standings-legend {
+  display: grid;
+  gap: 16px;
+}
+
+.standings-legend div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.legend-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.related-match-list {
+  display: grid;
+  gap: 14px;
+}
+
+.related-match-item {
+  display: block;
+  padding: 18px;
+  border-radius: 18px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.related-match-item strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+.related-match-item span {
+  display: block;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* ---------- dark theme ---------- */
+
+body.theme-dark .standings-table-wrap::-webkit-scrollbar-thumb,
+body.theme-dark .standings-alt-wrap::-webkit-scrollbar-thumb {
+  background: rgba(132, 149, 171, 0.35);
+}
+
+body.theme-dark .standings-league-bar,
+body.theme-dark .standings-panel,
+body.theme-dark .standings-sidebar .side-block {
+  background: linear-gradient(180deg, rgba(28, 41, 57, 0.90), rgba(22, 33, 47, 0.88));
+  border: 1px solid rgba(132, 149, 171, 0.18);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
+}
+
+body.theme-dark .standings-league-main h2,
+body.theme-dark .standings-panel .panel-head h2,
+body.theme-dark .standings-sidebar .panel-head h2,
+body.theme-dark .standings-cell,
+body.theme-dark .standings-pos,
+body.theme-dark .standings-team,
+body.theme-dark .standings-points,
+body.theme-dark .news-focus-box strong,
+body.theme-dark .related-match-item strong,
+body.theme-dark .standings-match-name,
+body.theme-dark .standings-legend div {
+  color: #f4f7fb;
+}
+
+body.theme-dark .standings-league-main p,
+body.theme-dark .standings-table-head,
+body.theme-dark .news-focus-box p,
+body.theme-dark .related-match-item span,
+body.theme-dark .standings-match-time,
+body.theme-dark .standings-match-status {
+  color: rgba(226, 234, 244, 0.76);
+}
+
+body.theme-dark .standings-view-tab,
+body.theme-dark .league-filter-btn {
+  background: rgba(31, 46, 63, 0.82);
+  border: 1px solid rgba(132, 149, 171, 0.20);
+  color: #f4f7fb;
+}
+
+body.theme-dark .standings-view-tab.active {
+  background: linear-gradient(180deg, #ff9a33, #ff8420);
+  border-color: transparent;
+  color: #fff;
+}
+
+body.theme-dark .league-filter-btn.active {
+  background: rgba(12, 84, 62, 0.52);
+  border-color: rgba(82, 231, 176, 0.14);
+  color: #62f0be;
+}
+
+body.theme-dark .news-focus-box,
+body.theme-dark .related-match-item,
+body.theme-dark .standings-match-row {
+  background: linear-gradient(180deg, rgba(28, 41, 57, 0.90), rgba(22, 33, 47, 0.88));
+  border: 1px solid rgba(132, 149, 171, 0.18);
+}
+
+body.theme-dark .standings-row {
+  border-bottom: 1px solid rgba(132, 149, 171, 0.14);
+}
+
+body.theme-dark .standings-table-head {
+  border-bottom: 1px solid rgba(132, 149, 171, 0.14);
+}
+
+/* ---------- glass theme ---------- */
+
+body.theme-glass .standings-table-wrap::-webkit-scrollbar-thumb,
+body.theme-glass .standings-alt-wrap::-webkit-scrollbar-thumb {
+  background: rgba(16, 26, 47, 0.18);
+}
+
+body.theme-glass .standings-league-bar,
+body.theme-glass .standings-panel,
+body.theme-glass .standings-sidebar .side-block {
+  background: rgba(245, 248, 252, 0.74);
+  border: 1px solid rgba(16, 26, 47, 0.08);
+  box-shadow: 0 12px 28px rgba(42, 58, 82, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+body.theme-glass .standings-league-main h2,
+body.theme-glass .standings-panel .panel-head h2,
+body.theme-glass .standings-sidebar .panel-head h2,
+body.theme-glass .standings-cell,
+body.theme-glass .standings-pos,
+body.theme-glass .standings-team,
+body.theme-glass .standings-points,
+body.theme-glass .news-focus-box strong,
+body.theme-glass .related-match-item strong,
+body.theme-glass .standings-match-name,
+body.theme-glass .standings-legend div {
+  color: #101a2f;
+}
+
+body.theme-glass .standings-league-main p,
+body.theme-glass .standings-table-head,
+body.theme-glass .news-focus-box p,
+body.theme-glass .related-match-item span,
+body.theme-glass .standings-match-time,
+body.theme-glass .standings-match-status {
+  color: #526177;
+}
+
+body.theme-glass .standings-view-tab,
+body.theme-glass .league-filter-btn {
+  background: rgba(245, 248, 252, 0.82);
+  border: 1px solid rgba(16, 26, 47, 0.08);
+  color: #101a2f;
+}
+
+body.theme-glass .standings-view-tab.active {
+  background: linear-gradient(180deg, #ff9831, #ff881f);
+  border-color: transparent;
+  color: #fff;
+}
+
+body.theme-glass .league-filter-btn.active {
+  background: rgba(210, 238, 226, 0.92);
+  border-color: rgba(15, 143, 99, 0.12);
+  color: #0f8f63;
+}
+
+body.theme-glass .news-focus-box,
+body.theme-glass .related-match-item,
+body.theme-glass .standings-match-row {
+  background: rgba(245, 248, 252, 0.78);
+  border: 1px solid rgba(16, 26, 47, 0.08);
+}
+
+body.theme-glass .standings-row {
+  border-bottom: 1px solid rgba(16, 26, 47, 0.08);
+}
+
+body.theme-glass .standings-table-head {
+  border-bottom: 1px solid rgba(16, 26, 47, 0.08);
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 1180px) {
+  .standings-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .standings-sidebar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .standings-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .standings-table-head,
+  .standings-row {
+    min-width: 760px;
+  }
+}
+
+@media (max-width: 760px) {
+  .standings-page-wrap {
+    padding: 20px 14px 56px;
+  }
+
+  .standings-league-bar {
+    padding: 24px 18px;
+    border-radius: 24px;
+  }
+
+  .standings-league-main h2 {
+    font-size: 36px;
+  }
+
+  .standings-league-main p {
+    font-size: 16px;
+  }
+
+  .standings-view-tab,
+  .league-filter-btn {
+    min-width: 110px;
+    min-height: 46px;
+    font-size: 15px;
+  }
+
+  .standings-panel,
+  .standings-sidebar .side-block {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .standings-sidebar .panel-head h2,
+  .standings-panel .panel-head h2 {
+    font-size: 20px;
+  }
+
+  .news-focus-box strong,
+  .related-match-item strong {
+    font-size: 18px;
+  }
+
+  .news-focus-box p,
+  .related-match-item span,
+  .standings-legend div {
+    font-size: 15px;
+  }
+}
