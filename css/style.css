@@ -5258,3 +5258,287 @@ body.theme-glass .standings-table-head {
 .results-page-section {
   margin-top: 28px;
 }
+/* =========================================================
+   TOP HERO CLEAN FIX
+   news / match / ai insights
+========================================================= */
+
+.news-top-hero,
+.match-pro-hero,
+.insights-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.88fr);
+  align-items: center;
+  gap: 28px;
+
+  min-height: 0 !important;
+  padding: 40px 40px !important;
+  border-radius: 32px !important;
+  overflow: hidden;
+}
+
+/* общий внутренний ритм */
+.news-top-hero-left,
+.match-pro-left,
+.insights-hero-left,
+.news-top-hero-card,
+.pro-score-card,
+.insights-hero-card {
+  position: relative;
+  z-index: 2;
+}
+
+/* левая колонка */
+.news-top-hero-left,
+.match-pro-left,
+.insights-hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 640px;
+}
+
+/* правая колонка */
+.news-top-hero-card,
+.pro-score-card,
+.insights-hero-card {
+  width: 100%;
+  max-width: 520px;
+  justify-self: end;
+}
+
+/* заголовки */
+.news-top-hero-left h2,
+.match-pro-left h1,
+.insights-hero-left h2 {
+  margin: 0 0 16px !important;
+  max-width: 620px;
+  font-size: clamp(44px, 4vw, 60px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+/* текст */
+.news-top-hero-left p,
+.match-pro-left p,
+.insights-hero-left p {
+  margin: 0 !important;
+  max-width: 620px;
+  font-size: 18px !important;
+  line-height: 1.65 !important;
+}
+
+/* бейдж сверху */
+.news-top-hero-left .hero-badge,
+.match-pro-left .hero-badge,
+.insights-hero-left .hero-badge {
+  margin-bottom: 14px !important;
+}
+
+/* кнопки */
+.news-top-hero .hero-actions,
+.match-pro-hero .hero-actions,
+.insights-hero .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 26px !important;
+}
+
+.news-top-hero .hero-actions .primary-btn,
+.news-top-hero .hero-actions .secondary-btn,
+.match-pro-hero .hero-actions .primary-btn,
+.match-pro-hero .hero-actions .secondary-btn,
+.insights-hero .hero-actions .primary-btn,
+.insights-hero .hero-actions .secondary-btn {
+  min-height: 54px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* карточка справа */
+.news-top-hero-card,
+.insights-hero-card,
+.pro-score-card {
+  padding: 24px !important;
+  border-radius: 24px !important;
+}
+
+/* компактный news hero card */
+.news-top-hero-card h3,
+.insights-hero-card h3 {
+  margin: 10px 0 12px !important;
+  font-size: 22px !important;
+  line-height: 1.2 !important;
+}
+
+.news-top-hero-card p,
+.insights-hero-card p,
+.pro-score-card p {
+  margin: 0 !important;
+  line-height: 1.6 !important;
+}
+
+/* match meta pills */
+.match-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px !important;
+}
+
+.match-meta-row span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* правый блок матча */
+.pro-score-card .score-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.pro-score-card .score-card-teams {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.pro-score-card .featured-prob-grid {
+  margin-top: 0 !important;
+}
+
+.pro-score-card .featured-long-bar {
+  margin-top: 18px !important;
+}
+
+/* ai insights card */
+.insights-hero-card .probabilities {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px !important;
+}
+
+.insights-hero-card .probabilities > div {
+  min-height: 108px;
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* news hero – делаем правый текстовый столб аккуратнее */
+.news-top-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(460px, 0.9fr);
+}
+
+.news-top-hero-card {
+  align-self: end;
+}
+
+/* match hero – чуть больше места под цифры */
+.match-pro-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(500px, 0.95fr);
+}
+
+/* insights hero */
+.insights-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(460px, 0.9fr);
+}
+
+/* убираем слишком высокие hero на desktop */
+.news-top-hero,
+.match-pro-hero,
+.insights-hero {
+  max-width: 1280px;
+}
+
+/* tablet */
+@media (max-width: 1180px) {
+  .news-top-hero,
+  .match-pro-hero,
+  .insights-hero {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+    padding: 34px 32px !important;
+  }
+
+  .news-top-hero-left,
+  .match-pro-left,
+  .insights-hero-left,
+  .news-top-hero-card,
+  .pro-score-card,
+  .insights-hero-card {
+    max-width: 100%;
+    justify-self: stretch;
+  }
+
+  .news-top-hero-left h2,
+  .match-pro-left h1,
+  .insights-hero-left h2 {
+    max-width: 760px;
+    font-size: clamp(38px, 5vw, 52px) !important;
+  }
+}
+
+/* mobile */
+@media (max-width: 760px) {
+  .news-top-hero,
+  .match-pro-hero,
+  .insights-hero {
+    padding: 24px 20px !important;
+    gap: 18px !important;
+    border-radius: 24px !important;
+  }
+
+  .news-top-hero-left h2,
+  .match-pro-left h1,
+  .insights-hero-left h2 {
+    font-size: 34px !important;
+    line-height: 1.08 !important;
+  }
+
+  .news-top-hero-left p,
+  .match-pro-left p,
+  .insights-hero-left p {
+    font-size: 17px !important;
+  }
+
+  .news-top-hero-card,
+  .insights-hero-card,
+  .pro-score-card {
+    padding: 18px !important;
+    border-radius: 20px !important;
+  }
+
+  .pro-score-card .score-card-teams,
+  .insights-hero-card .probabilities {
+    grid-template-columns: 1fr !important;
+  }
+
+  .match-meta-row {
+    gap: 8px;
+  }
+
+  .match-meta-row span {
+    min-height: 36px;
+    padding: 0 12px;
+  }
+}
