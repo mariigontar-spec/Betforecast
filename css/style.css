@@ -5572,3 +5572,219 @@ body.theme-glass .standings-table-head {
   transform: translateY(-6px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
+/* =========================================================
+   FINAL VISUAL RESTORE
+========================================================= */
+
+/* 1. page atmosphere */
+body.theme-glass {
+  --page-bg:
+    radial-gradient(circle at 12% 18%, rgba(71, 191, 145, 0.10), transparent 24%),
+    radial-gradient(circle at 88% 12%, rgba(102, 157, 214, 0.10), transparent 28%),
+    linear-gradient(135deg, #dfe7ee 0%, #d7e0e8 40%, #d2dbe4 100%);
+}
+
+body.theme-dark {
+  --page-bg:
+    radial-gradient(circle at 14% 16%, rgba(25,181,109,0.18), transparent 28%),
+    radial-gradient(circle at 86% 10%, rgba(74,169,255,0.12), transparent 30%),
+    linear-gradient(180deg, #04111a 0%, #06131d 50%, #07131c 100%);
+}
+
+/* 2. hero geometry */
+.hero,
+.news-top-hero,
+.match-pro-hero,
+.insights-hero,
+.standings-league-bar,
+.ai-focus-banner .ai-focus-text {
+  position: relative;
+  overflow: hidden;
+}
+
+body.theme-glass .hero,
+body.theme-glass .news-top-hero,
+body.theme-glass .match-pro-hero,
+body.theme-glass .insights-hero,
+body.theme-glass .standings-league-bar,
+body.theme-glass .ai-focus-banner .ai-focus-text {
+  background:
+    linear-gradient(135deg, rgba(244,248,252,0.82), rgba(232,240,246,0.68)),
+    radial-gradient(circle at 15% 18%, rgba(25,181,109,0.08), transparent 26%),
+    radial-gradient(circle at 85% 14%, rgba(74,169,255,0.06), transparent 26%);
+  border: 1px solid rgba(16,26,47,0.10);
+  box-shadow:
+    0 16px 40px rgba(42,58,82,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.35);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+body.theme-dark .hero,
+body.theme-dark .news-top-hero,
+body.theme-dark .match-pro-hero,
+body.theme-dark .insights-hero,
+body.theme-dark .standings-league-bar,
+body.theme-dark .ai-focus-banner .ai-focus-text {
+  background:
+    linear-gradient(135deg, rgba(6,17,28,0.92), rgba(10,24,38,0.86)),
+    radial-gradient(circle at 15% 18%, rgba(25,181,109,0.10), transparent 26%),
+    radial-gradient(circle at 85% 14%, rgba(74,169,255,0.08), transparent 26%);
+  border: 1px solid rgba(132,149,171,0.18);
+  box-shadow:
+    0 18px 44px rgba(0,0,0,0.30),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+/* 3. floating light layer */
+.hero::before,
+.news-top-hero::before,
+.match-pro-hero::before,
+.insights-hero::before,
+.standings-league-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(255,255,255,0.14), transparent 20%),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.06), transparent 24%);
+  opacity: 0.7;
+}
+
+/* 4. cards back to glass */
+body.theme-glass .panel,
+body.theme-glass .predictions-section,
+body.theme-glass .news-card,
+body.theme-glass .insight-card,
+body.theme-glass .match-card,
+body.theme-glass .hero-card,
+body.theme-glass .insights-hero-card,
+body.theme-glass .pro-score-card,
+body.theme-glass .featured-news-card,
+body.theme-glass .featured-main-card,
+body.theme-glass .side-block,
+body.theme-glass .news-focus-box,
+body.theme-glass .related-match-item,
+body.theme-glass .related-news-item,
+body.theme-glass .timeline-item,
+body.theme-glass .key-signal-item,
+body.theme-glass .mini-stat-card,
+body.theme-glass .adv-stat-box,
+body.theme-glass .compare-card,
+body.theme-glass .prediction-summary-card,
+body.theme-glass .standings-match-row {
+  background: rgba(245,248,252,0.72) !important;
+  border: 1px solid rgba(16,26,47,0.08) !important;
+  box-shadow: 0 12px 28px rgba(42,58,82,0.06) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+body.theme-dark .panel,
+body.theme-dark .predictions-section,
+body.theme-dark .news-card,
+body.theme-dark .insight-card,
+body.theme-dark .match-card,
+body.theme-dark .hero-card,
+body.theme-dark .insights-hero-card,
+body.theme-dark .pro-score-card,
+body.theme-dark .featured-news-card,
+body.theme-dark .featured-main-card,
+body.theme-dark .side-block,
+body.theme-dark .news-focus-box,
+body.theme-dark .related-match-item,
+body.theme-dark .related-news-item,
+body.theme-dark .timeline-item,
+body.theme-dark .key-signal-item,
+body.theme-dark .mini-stat-card,
+body.theme-dark .adv-stat-box,
+body.theme-dark .compare-card,
+body.theme-dark .prediction-summary-card,
+body.theme-dark .standings-match-row {
+  background: linear-gradient(180deg, rgba(28,41,57,0.90), rgba(22,33,47,0.88)) !important;
+  border: 1px solid rgba(132,149,171,0.18) !important;
+  box-shadow: 0 14px 34px rgba(0,0,0,0.22) !important;
+}
+
+/* 5. result cards look alive again */
+.match-card {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+body.theme-glass .match-card:hover,
+body.theme-glass .news-card:hover,
+body.theme-glass .insight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 34px rgba(42,58,82,0.10) !important;
+  border-color: rgba(15,143,99,0.14) !important;
+}
+
+body.theme-dark .match-card:hover,
+body.theme-dark .news-card:hover,
+body.theme-dark .insight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 38px rgba(0,0,0,0.34) !important;
+  border-color: rgba(82,231,176,0.16) !important;
+}
+
+/* 6. probability tiles */
+body.theme-glass .probabilities > div,
+body.theme-glass .featured-prob-box {
+  background: rgba(255,255,255,0.50) !important;
+  border: 1px solid rgba(16,26,47,0.08);
+}
+
+body.theme-dark .probabilities > div,
+body.theme-dark .featured-prob-box {
+  background: rgba(255,255,255,0.03) !important;
+  border: 1px solid rgba(132,149,171,0.16);
+}
+
+/* 7. buttons */
+.primary-btn,
+.green-glow {
+  background: linear-gradient(135deg, #16a34a, #b8f34b) !important;
+  color: #081a10 !important;
+  box-shadow:
+    0 10px 24px rgba(21,159,103,0.18),
+    0 0 30px rgba(111,255,176,0.16);
+}
+
+.secondary-btn {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* 8. image treatment */
+.news-card img,
+.article-main-image,
+.article-pro-image,
+.featured-news-image {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.news-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* 9. typography contrast */
+body.theme-glass .hero-left h2,
+body.theme-glass .news-top-hero-left h2,
+body.theme-glass .match-pro-left h1,
+body.theme-glass .insights-hero-left h2,
+body.theme-glass .section-head h2,
+body.theme-glass .panel-head h2 {
+  color: #101a2f !important;
+}
+
+body.theme-dark .hero-left h2,
+body.theme-dark .news-top-hero-left h2,
+body.theme-dark .match-pro-left h1,
+body.theme-dark .insights-hero-left h2,
+body.theme-dark .section-head h2,
+body.theme-dark .panel-head h2 {
+  color: #f4f7fb !important;
+}
