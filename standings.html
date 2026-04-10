@@ -40,9 +40,9 @@
   </header>
 
   <main class="standings-page-wrap page-shell">
-    <section class="standings-league-bar">
+    <section class="standings-league-bar panel">
       <div class="standings-league-main">
-        <span class="standings-league-badge" id="league-country">England</span>
+        <div class="standings-league-badge" id="league-country">England</div>
         <h1 id="league-name">Premier League</h1>
         <p id="league-season">2025/26 season</p>
       </div>
@@ -76,11 +76,10 @@
           <div class="panel-head">
             <h2>Insight</h2>
           </div>
-
           <div class="news-focus-box">
             <strong id="league-insight-title">Title race pressure</strong>
             <p id="league-insight-text">
-              The title race remains tight, with minimal point gaps between top teams.
+              Top positions are separated by narrow margins, making every dropped point highly visible.
             </p>
           </div>
         </section>
@@ -89,12 +88,11 @@
           <div class="panel-head">
             <h2>Table Zones</h2>
           </div>
-
           <div class="standings-legend">
-            <div><span class="legend-dot legend-cl"></span> Champions League</div>
-            <div><span class="legend-dot legend-el"></span> Europa zone</div>
-            <div><span class="legend-dot legend-safe"></span> Mid-table</div>
-            <div><span class="legend-dot legend-rel"></span> Relegation zone</div>
+            <div><span class="legend-dot legend-cl"></span>Champions League</div>
+            <div><span class="legend-dot legend-el"></span>Europa zone</div>
+            <div><span class="legend-dot legend-safe"></span>Mid-table</div>
+            <div><span class="legend-dot legend-rel"></span>Relegation zone</div>
           </div>
         </section>
 
@@ -102,23 +100,19 @@
           <div class="panel-head">
             <h2>Matches</h2>
           </div>
-
           <div class="related-match-list">
             <a class="related-match-item" href="match.html?game=mci_ars">
               <strong>Man City vs Arsenal</strong>
               <span>Match Preview</span>
             </a>
-
             <a class="related-match-item" href="match.html?game=liv_tot_live">
               <strong>Liverpool vs Tottenham</strong>
               <span>Live Match</span>
             </a>
-
             <a class="related-match-item" href="match.html?game=rm_sev_live">
               <strong>Real Madrid vs Sevilla</strong>
               <span>Live Match</span>
             </a>
-
             <a class="related-match-item" href="match.html?game=juv_nap_live">
               <strong>Juventus vs Napoli</strong>
               <span>Live Match</span>
@@ -130,7 +124,6 @@
   </main>
 
   <script src="js/standings.js"></script>
-
   <script>
     (function () {
       const savedTheme = localStorage.getItem("bf-theme") || "dark";
