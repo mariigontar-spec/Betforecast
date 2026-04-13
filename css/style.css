@@ -2487,3 +2487,68 @@ body.theme-glass .prediction-card:hover {
     min-width: 760px;
   }
 }
+/* =========================
+   SIDEBAR BUTTONS STYLE
+========================= */
+
+.league-list,
+.trending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* сама кнопка */
+.league-list a,
+.trending-list a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 12px 16px;
+  border-radius: 14px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-main);
+
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* лёгкий градиент внутри */
+.league-list a::before,
+.trending-list a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at left, rgba(16,185,129,0.15), transparent 60%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* hover */
+.league-list a:hover,
+.trending-list a:hover {
+  border-color: rgba(16,185,129,0.4);
+  background: rgba(16,185,129,0.06);
+  transform: translateY(-2px);
+}
+
+/* glow при наведении */
+.league-list a:hover::before,
+.trending-list a:hover::before {
+  opacity: 1;
+}
+
+/* активная кнопка (если используешь класс active) */
+.league-list a.active,
+.trending-list a.active {
+  border-color: rgba(16,185,129,0.6);
+  background: rgba(16,185,129,0.12);
+  box-shadow: 0 0 12px rgba(16,185,129,0.2);
+}
