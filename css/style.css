@@ -6138,3 +6138,52 @@ main {
     border-radius: 20px !important;
   }
 }
+/* =========================================================
+   STANDINGS HEADER ALIGN FIX
+========================================================= */
+
+.standings-table-wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 6px;
+}
+
+.standings-table-head,
+.standings-row {
+  display: grid;
+  grid-template-columns: 48px minmax(220px, 2fr) 56px 56px 56px 56px 96px 64px 150px;
+  gap: 10px;
+  align-items: center;
+  min-width: 920px;
+  box-sizing: border-box;
+}
+
+.standings-table-head {
+  padding: 0 12px 14px 12px !important;
+  margin: 0 !important;
+}
+
+.standings-row {
+  padding: 16px 12px !important;
+  margin: 0 !important;
+}
+
+.standings-table-head > *,
+.standings-row > * {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* first column exact alignment */
+.standings-table-head > :first-child,
+.standings-row > :first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* team column exact alignment */
+.standings-table-head > :nth-child(2),
+.standings-row > :nth-child(2) {
+  text-align: left;
+}
