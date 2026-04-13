@@ -5788,3 +5788,26 @@ body.theme-dark .section-head h2,
 body.theme-dark .panel-head h2 {
   color: #f4f7fb !important;
 }
+.results-page-section .matches-grid {
+  margin-top: 8px;
+}
+
+.results-page-section .match-card {
+  min-height: 168px;
+}
+
+.results-page-section .match-card__top {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.results-page-section .match-card__teams {
+  gap: 16px;
+  align-items: center;
+}
+
+.results-page-section .match-card__teams strong {
+  font-size: 22px;
+  line-height: 1;
+}
