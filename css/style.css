@@ -2484,3 +2484,14 @@ body.theme-glass .results-page-section .hero {
     flex: unset !important;
   }
 }
+/* =========================================================
+   GLOBAL CONTENT CONTAINER
+   единая ширина для ВСЕГО сайта
+========================================================= */
+
+.container {
+  width: 100%;
+  max-width: 1040px; /* ← выбери: 1000 / 1040 / 1100 */
+  margin: 0 auto;
+  padding: 0 20px;
+}
