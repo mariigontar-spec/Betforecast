@@ -2853,3 +2853,40 @@ button.active,
 .glow-hover {
   overflow: hidden;
 }
+/* =========================
+   GLOW HOVER (UNIVERSAL)
+========================= */
+
+.glow-hover {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.glow-hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(46, 213, 115, 0.18),
+    transparent 60%
+  );
+
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.glow-hover:hover::after {
+  opacity: 1;
+}
+
+.glow-hover:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 0 1px rgba(46, 213, 115, 0.25),
+    0 10px 30px rgba(46, 213, 115, 0.15);
+}
