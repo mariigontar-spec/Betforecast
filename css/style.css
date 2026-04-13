@@ -2324,3 +2324,166 @@ body.theme-glass .prediction-card:hover {
     font-size: 14px;
   }
 }
+/* =========================
+   STANDINGS TABLE ORDER FIX
+========================= */
+
+.standings-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 10px;
+}
+
+.standings-table-head,
+.standings-row {
+  display: grid;
+  grid-template-columns: 46px 220px 56px 56px 56px 56px 96px 120px;
+  column-gap: 10px;
+  align-items: center;
+  min-width: 760px;
+  box-sizing: border-box;
+}
+
+.standings-table-head {
+  padding: 0 12px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.standings-row {
+  padding: 14px 12px;
+  min-height: 58px;
+  border-bottom: 1px solid var(--border);
+}
+
+.standings-row:last-child {
+  border-bottom: 0;
+}
+
+/* ===== HEAD ORDER ===== */
+/* 1 # */
+.standings-table-head > :nth-child(1) { grid-column: 1; text-align: center; }
+/* 2 TEAM */
+.standings-table-head > :nth-child(2) { grid-column: 2; text-align: left; }
+/* 3 P */
+.standings-table-head > :nth-child(3) { grid-column: 3; text-align: center; }
+/* 4 W */
+.standings-table-head > :nth-child(4) { grid-column: 4; text-align: center; }
+/* 5 D */
+.standings-table-head > :nth-child(5) { grid-column: 5; text-align: center; }
+/* 6 L */
+.standings-table-head > :nth-child(6) { grid-column: 6; text-align: center; }
+/* 7 GF-GA */
+.standings-table-head > :nth-child(7) { grid-column: 7; text-align: center; }
+/* 8 FORM */
+.standings-table-head > :nth-child(8) { grid-column: 8; text-align: center; }
+
+/* ===== ROW ORDER ===== */
+/* 1 position */
+.standings-row > :nth-child(1) {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 2 team */
+.standings-row > :nth-child(2) {
+  grid-column: 2;
+}
+
+/* 3 played */
+.standings-row > :nth-child(3),
+/* 4 wins */
+.standings-row > :nth-child(4),
+/* 5 draws */
+.standings-row > :nth-child(5),
+/* 6 losses */
+.standings-row > :nth-child(6),
+/* 7 gf-ga */
+.standings-row > :nth-child(7) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* explicitly map numeric columns */
+.standings-row > :nth-child(3) { grid-column: 3; }
+.standings-row > :nth-child(4) { grid-column: 4; }
+.standings-row > :nth-child(5) { grid-column: 5; }
+.standings-row > :nth-child(6) { grid-column: 6; }
+.standings-row > :nth-child(7) { grid-column: 7; }
+
+/* 8 form */
+.standings-row > :nth-child(8) {
+  grid-column: 8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+/* cell styling */
+.standings-pos,
+.standings-cell,
+.standings-points {
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--text-main);
+}
+
+.standings-team {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.standings-team span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.standings-zone-line {
+  width: 4px;
+  min-width: 4px;
+  height: 22px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.standings-form {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.standings-form span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 900;
+  flex: 0 0 auto;
+}
+
+/* mobile */
+@media (max-width: 760px) {
+  .standings-table-head,
+  .standings-row {
+    min-width: 760px;
+  }
+}
