@@ -1,11 +1,12 @@
 /* =========================================================
-   BETFORECAST CLEAN STYLE
-   unified geometry / compact heroes / dark gray surfaces
+   BETFORECAST FINAL STYLE
+   cleaned after all revisions
+   unified width / compact heroes / restored prediction cards
 ========================================================= */
 
 :root {
   --container-width: 1280px;
-  --content-width: 1180px;
+  --content-width: 1040px;
   --radius-xl: 30px;
   --radius-lg: 24px;
   --radius-md: 18px;
@@ -120,10 +121,7 @@ body.theme-dark {
   --border: rgba(132, 149, 171, 0.18);
   --border-strong: rgba(132, 149, 171, 0.28);
 
-  --hero-surface:
-    linear-gradient(135deg, rgba(11, 24, 37, 0.84), rgba(9, 21, 33, 0.80)),
-    radial-gradient(circle at 18% 20%, rgba(25,181,109,0.08), transparent 24%),
-    radial-gradient(circle at 84% 14%, rgba(74,169,255,0.06), transparent 24%);
+  --hero-surface: linear-gradient(180deg, rgba(40, 53, 69, 0.90), rgba(31, 43, 58, 0.88));
 
   --header-bg: rgba(4, 17, 26, 0.84);
   --header-line: rgba(255, 255, 255, 0.08);
@@ -155,10 +153,7 @@ body.theme-glass {
   --border: rgba(16, 26, 47, 0.08);
   --border-strong: rgba(16, 26, 47, 0.14);
 
-  --hero-surface:
-    linear-gradient(135deg, rgba(244,248,252,0.82), rgba(232,240,246,0.68)),
-    radial-gradient(circle at 18% 20%, rgba(25,181,109,0.08), transparent 24%),
-    radial-gradient(circle at 84% 14%, rgba(74,169,255,0.05), transparent 24%);
+  --hero-surface: rgba(245, 248, 252, 0.76);
 
   --header-bg: rgba(221, 229, 238, 0.74);
   --header-line: rgba(16, 26, 47, 0.10);
@@ -176,6 +171,7 @@ body.theme-glass {
    PAGE CONTAINERS
 ========================================================= */
 
+.container,
 main,
 .news-page-wrap,
 .match-page-wrap,
@@ -185,6 +181,15 @@ main,
 .page-shell {
   width: min(var(--container-width), calc(100% - 40px));
   margin: 0 auto;
+}
+
+main,
+.news-page-wrap,
+.match-page-wrap,
+.article-page-wrap,
+.article-pro-wrap,
+.standings-page-wrap,
+.page-shell {
   padding: 28px 0 64px;
   display: grid;
   gap: 24px;
@@ -526,10 +531,28 @@ body.theme-glass .theme-switch-thumb {
 .standings-league-bar {
   position: relative;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 24px;
   background: var(--hero-surface);
   border: 1px solid var(--border);
   box-shadow: var(--card-shadow);
+}
+
+.hero::before,
+.hero::after,
+.news-top-hero::before,
+.news-top-hero::after,
+.match-pro-hero::before,
+.match-pro-hero::after,
+.insights-hero::before,
+.insights-hero::after,
+.news-hero::before,
+.news-hero::after,
+.results-page-section .hero::before,
+.results-page-section .hero::after,
+.ai-focus-banner .ai-focus-text::before,
+.ai-focus-banner .ai-focus-text::after {
+  content: none;
+  display: none;
 }
 
 .hero,
@@ -539,63 +562,54 @@ body.theme-glass .theme-switch-thumb {
 .news-hero,
 .results-page-section .hero,
 .ai-focus-banner .ai-focus-text {
-  padding: 34px 32px;
-  min-height: 0;
+  width: min(var(--content-width), 100%);
+  margin: 0 auto;
+  padding: 26px 24px;
+  min-height: auto;
 }
 
 .hero,
+.news-top-hero,
 .match-pro-hero,
 .insights-hero {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.82fr) minmax(420px, 0.98fr);
-  gap: 22px;
-  align-items: start;
-}
-
-.news-top-hero {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.84fr) minmax(420px, 0.96fr);
-  gap: 22px;
-  align-items: start;
-}
-
-.news-hero,
-.results-page-section .hero {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
-}
-
-.news-hero > *,
-.results-page-section .hero > * {
-  max-width: 840px;
+  gap: 28px;
 }
 
 .hero-left,
 .news-top-hero-left,
 .match-pro-left,
 .insights-hero-left {
+  flex: 0 1 430px;
+  max-width: 430px;
   width: 100%;
-  max-width: 560px;
-  justify-self: end;
-  align-self: start;
-  padding-top: 4px;
-  position: relative;
-  z-index: 2;
+  padding: 0;
+  margin: 0;
 }
 
 .hero-card,
 .news-top-hero-card,
 .pro-score-card,
 .insights-hero-card {
-  width: 100%;
-  max-width: 620px;
-  justify-self: start;
-  align-self: end;
-  position: relative;
-  z-index: 2;
-  padding: 24px;
-  border-radius: 24px;
+  flex: 0 0 320px;
+  max-width: 320px;
+  width: 320px;
+  margin: 0;
+  align-self: flex-end;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.news-hero,
+.results-page-section .hero {
+  display: block;
+}
+
+.news-hero > *,
+.results-page-section .hero > * {
+  max-width: 760px;
 }
 
 .hero-left h2,
@@ -606,11 +620,11 @@ body.theme-glass .theme-switch-thumb {
 .results-page-section .hero h2,
 .article-pro-hero h1,
 .article-hero h1 {
-  margin: 0 0 14px;
-  max-width: 560px;
-  font-size: clamp(40px, 3.8vw, 56px);
-  line-height: 1.04;
-  letter-spacing: -0.045em;
+  margin: 0 0 12px;
+  max-width: 430px;
+  font-size: clamp(32px, 3vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
   color: var(--text-main);
   font-weight: 900;
   text-wrap: balance;
@@ -618,7 +632,7 @@ body.theme-glass .theme-switch-thumb {
 
 .news-hero h2,
 .results-page-section .hero h2 {
-  max-width: 920px;
+  max-width: 760px;
 }
 
 .hero-left p,
@@ -641,35 +655,35 @@ body.theme-glass .theme-switch-thumb {
 .article-content p,
 .article-pro-body p {
   color: var(--text-soft);
-  font-size: 17px;
-  line-height: 1.62;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .hero-left p,
 .news-top-hero-left p,
 .match-pro-left p,
 .insights-hero-left p {
-  max-width: 540px;
+  max-width: 430px;
 }
 
 .news-hero p,
 .results-page-section .hero p {
-  max-width: 980px;
+  max-width: 760px;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .hero-card h3,
 .news-top-hero-card h3,
 .insights-hero-card h3,
 .pro-score-card h3 {
-  margin: 0 0 16px;
-  font-size: 22px;
+  margin: 0 0 12px;
+  font-size: 18px;
   line-height: 1.2;
   font-weight: 900;
 }
@@ -678,15 +692,7 @@ body.theme-glass .theme-switch-thumb {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 14px;
-}
-
-.results-page-section .hero::before,
-.results-page-section .hero::after,
-.news-hero::before,
-.news-hero::after {
-  display: none !important;
-  content: none !important;
+  margin-bottom: 10px;
 }
 
 /* =========================================================
@@ -773,7 +779,7 @@ body.theme-glass .theme-switch-thumb {
 .matches-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 16px;
 }
 
 .news-grid,
@@ -808,18 +814,18 @@ body.theme-glass .theme-switch-thumb {
 .pro-hero-prob-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  gap: 10px;
 }
 
 .probabilities > div,
 .featured-prob-box {
-  min-height: 104px;
+  min-height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 16px 14px;
-  border-radius: 18px;
+  padding: 10px 8px;
+  border-radius: 14px;
 }
 
 body.theme-dark .probabilities > div,
@@ -835,7 +841,7 @@ body.theme-glass .featured-prob-box {
 }
 
 .probabilities > div {
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 900;
   color: var(--text-main);
 }
@@ -843,15 +849,15 @@ body.theme-glass .featured-prob-box {
 .probabilities span,
 .featured-prob-box span {
   margin-top: 6px;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   color: var(--text-muted);
 }
 
 .featured-prob-box strong {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 900;
   color: var(--text-main);
 }
@@ -1045,18 +1051,116 @@ body.theme-glass .featured-prob-box {
 }
 
 /* =========================================================
+   PREDICTION CARDS RESTORE
+========================================================= */
+
+.prediction-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 210px;
+  padding: 18px 18px 16px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+body.theme-dark .prediction-card {
+  background: linear-gradient(180deg, rgba(40, 53, 69, 0.90), rgba(31, 43, 58, 0.88));
+  border: 1px solid rgba(132,149,171,0.14);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.16);
+}
+
+body.theme-glass .prediction-card {
+  background: rgba(245,248,252,0.76);
+  border: 1px solid rgba(16,26,47,0.08);
+  box-shadow: 0 10px 20px rgba(42,58,82,0.06);
+}
+
+.prediction-card .league {
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+
+.prediction-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.28;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.prediction-card .pred-score,
+.prediction-card .prediction-percentages,
+.prediction-card .prediction-odds {
+  margin-top: 8px;
+}
+
+.prediction-card .pred-line,
+.prediction-card .prediction-line {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 3px 0;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--text-soft);
+}
+
+.prediction-card .pred-line strong,
+.prediction-card .prediction-line strong {
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.prediction-card .home {
+  color: #4ade80;
+}
+
+.prediction-card .draw {
+  color: #cbd5e1;
+}
+
+.prediction-card .away {
+  color: #60a5fa;
+}
+
+.prediction-card .prediction-footer,
+.prediction-card .pred-footer,
+.prediction-card .prediction-meta {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text-soft);
+}
+
+.prediction-card .live-badge {
+  margin-right: 8px;
+}
+
+.prediction-card:hover,
+.match-card:hover,
+.news-card:hover,
+.insight-card:hover {
+  transform: translateY(-3px);
+}
+
+body.theme-dark .prediction-card:hover {
+  box-shadow: 0 16px 28px rgba(0,0,0,0.22);
+}
+
+body.theme-glass .prediction-card:hover {
+  box-shadow: 0 14px 24px rgba(42,58,82,0.08);
+}
+
+/* =========================================================
    MATCH / RESULTS
 ========================================================= */
 
 .match-card {
   min-height: 164px;
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-}
-
-.match-card:hover,
-.news-card:hover,
-.insight-card:hover {
-  transform: translateY(-4px);
 }
 
 .match-card__top {
@@ -1465,10 +1569,6 @@ body.theme-glass .featured-prob-box {
 ========================================================= */
 
 @media (max-width: 1180px) {
-  .hero,
-  .news-top-hero,
-  .match-pro-hero,
-  .insights-hero,
   .news-layout-v2,
   .match-pro-layout,
   .standings-layout,
@@ -1477,18 +1577,6 @@ body.theme-glass .featured-prob-box {
   .insight-duo-grid,
   .match-comparison-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero-left,
-  .news-top-hero-left,
-  .match-pro-left,
-  .insights-hero-left,
-  .hero-card,
-  .news-top-hero-card,
-  .pro-score-card,
-  .insights-hero-card {
-    max-width: 100%;
-    justify-self: stretch;
   }
 
   .model-grid,
@@ -1519,6 +1607,32 @@ body.theme-glass .featured-prob-box {
   .topbar-menu,
   .topbar-actions {
     justify-content: center;
+  }
+
+  .hero,
+  .news-top-hero,
+  .match-pro-hero,
+  .insights-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .hero-left,
+  .news-top-hero-left,
+  .match-pro-left,
+  .insights-hero-left,
+  .hero-card,
+  .news-top-hero-card,
+  .pro-score-card,
+  .insights-hero-card {
+    max-width: 100%;
+    width: 100%;
+    flex: unset;
+  }
+
+  .predictions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1554,8 +1668,8 @@ body.theme-glass .featured-prob-box {
   .results-page-section .hero,
   .ai-focus-banner .ai-focus-text,
   .standings-league-bar {
-    padding: 24px 20px;
-    border-radius: 24px;
+    padding: 22px 18px;
+    border-radius: 22px;
   }
 
   .hero-left h2,
@@ -1568,7 +1682,7 @@ body.theme-glass .featured-prob-box {
   .standings-league-main h2,
   .article-pro-hero h1,
   .article-hero h1 {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 1.08;
   }
 
@@ -1673,954 +1787,8 @@ body.theme-glass .featured-prob-box {
     font-size: 17px;
     border-radius: 16px;
   }
-}
-/* =========================================================
-   HERO FINAL NARROW FIX
-   removes back frame / removes empty pockets / makes blocks narrower
-========================================================= */
-
-/* ---------- make top blocks narrower ---------- */
-
-.hero,
-.news-top-hero,
-.match-pro-hero,
-.insights-hero,
-.news-hero,
-.results-page-section .hero,
-.ai-focus-banner .ai-focus-text {
-  width: 100% !important;
-  max-width: 1080px !important;
-  margin: 0 auto !important;
-  padding: 30px 28px !important;
-  border-radius: 28px !important;
-  min-height: 0 !important;
-  overflow: hidden !important;
-  position: relative !important;
-  isolation: isolate !important;
-}
-
-/* ---------- kill ALL decorative back layers ---------- */
-
-.hero::before,
-.hero::after,
-.news-top-hero::before,
-.news-top-hero::after,
-.match-pro-hero::before,
-.match-pro-hero::after,
-.insights-hero::before,
-.insights-hero::after,
-.news-hero::before,
-.news-hero::after,
-.results-page-section .hero::before,
-.results-page-section .hero::after,
-.ai-focus-banner .ai-focus-text::before,
-.ai-focus-banner .ai-focus-text::after {
-  content: none !important;
-  display: none !important;
-  background: none !important;
-  box-shadow: none !important;
-}
-
-/* ---------- darker theme: cleaner, flatter hero ---------- */
-
-body.theme-dark .hero,
-body.theme-dark .news-top-hero,
-body.theme-dark .match-pro-hero,
-body.theme-dark .insights-hero,
-body.theme-dark .news-hero,
-body.theme-dark .results-page-section .hero,
-body.theme-dark .ai-focus-banner .ai-focus-text {
-  background: linear-gradient(180deg, rgba(14, 28, 42, 0.90), rgba(10, 23, 35, 0.88)) !important;
-  border: 1px solid rgba(132,149,171,0.14) !important;
-  box-shadow: 0 14px 30px rgba(0,0,0,0.16) !important;
-}
-
-/* ---------- hero layout compact ---------- */
-
-.hero,
-.match-pro-hero,
-.insights-hero {
-  display: grid !important;
-  grid-template-columns: 360px minmax(0, 470px) !important;
-  justify-content: center !important;
-  gap: 20px !important;
-  align-items: start !important;
-}
-
-.news-top-hero {
-  display: grid !important;
-  grid-template-columns: 360px minmax(0, 470px) !important;
-  justify-content: center !important;
-  gap: 20px !important;
-  align-items: start !important;
-}
-
-/* text-only hero like results/news */
-.news-hero,
-.results-page-section .hero {
-  display: block !important;
-}
-
-.news-hero > *,
-.results-page-section .hero > * {
-  max-width: 760px !important;
-}
-
-/* ---------- left and right columns ---------- */
-
-.hero-left,
-.news-top-hero-left,
-.match-pro-left,
-.insights-hero-left {
-  max-width: 470px !important;
-  width: 100% !important;
-  justify-self: start !important;
-  align-self: start !important;
-  padding-top: 0 !important;
-}
-
-.hero-card,
-.news-top-hero-card,
-.pro-score-card,
-.insights-hero-card {
-  max-width: 360px !important;
-  width: 100% !important;
-  justify-self: start !important;
-  align-self: end !important;
-  padding: 22px !important;
-  border-radius: 22px !important;
-}
-
-/* ---------- titles and text tighter ---------- */
-
-.hero-left h2,
-.news-top-hero-left h2,
-.match-pro-left h1,
-.insights-hero-left h2,
-.news-hero h2,
-.results-page-section .hero h2 {
-  max-width: 470px !important;
-  margin: 0 0 12px !important;
-  font-size: clamp(34px, 3.2vw, 48px) !important;
-  line-height: 1.06 !important;
-  letter-spacing: -0.04em !important;
-  text-wrap: balance;
-}
-
-.news-hero h2,
-.results-page-section .hero h2 {
-  max-width: 760px !important;
-}
-
-.hero-left p,
-.news-top-hero-left p,
-.match-pro-left p,
-.insights-hero-left p,
-.news-hero p,
-.results-page-section .hero p {
-  max-width: 460px !important;
-  font-size: 16px !important;
-  line-height: 1.6 !important;
-}
-
-.news-hero p,
-.results-page-section .hero p {
-  max-width: 760px !important;
-}
-
-/* ---------- compact card content ---------- */
-
-.hero-card h3,
-.news-top-hero-card h3,
-.insights-hero-card h3,
-.pro-score-card h3 {
-  font-size: 18px !important;
-  line-height: 1.2 !important;
-  margin: 0 0 14px !important;
-}
-
-.hero-card p,
-.news-top-hero-card p,
-.insights-hero-card p,
-.pro-score-card p,
-.ai-text {
-  font-size: 15px !important;
-  line-height: 1.55 !important;
-}
-
-.card-top {
-  margin-bottom: 12px !important;
-}
-
-.probabilities,
-.featured-prob-grid,
-.pro-hero-prob-grid {
-  gap: 10px !important;
-}
-
-.probabilities > div,
-.featured-prob-box {
-  min-height: 86px !important;
-  padding: 12px 10px !important;
-  border-radius: 16px !important;
-}
-
-.probabilities > div {
-  font-size: 28px !important;
-}
-
-.probabilities span,
-.featured-prob-box span {
-  font-size: 11px !important;
-}
-
-/* ---------- remove extra empty feel on homepage AI metrics ---------- */
-
-.ai-focus-banner {
-  max-width: 1080px !important;
-  margin: 0 auto !important;
-}
-
-.ai-focus-banner .ai-focus-text {
-  max-width: 1080px !important;
-}
-
-/* ---------- tablet ---------- */
-
-@media (max-width: 980px) {
-  .hero,
-  .news-top-hero,
-  .match-pro-hero,
-  .insights-hero {
-    grid-template-columns: 1fr !important;
-    max-width: 760px !important;
-  }
-
-  .hero-left,
-  .news-top-hero-left,
-  .match-pro-left,
-  .insights-hero-left,
-  .hero-card,
-  .news-top-hero-card,
-  .pro-score-card,
-  .insights-hero-card {
-    max-width: 100% !important;
-  }
-}
-
-/* ---------- mobile ---------- */
-
-@media (max-width: 760px) {
-  .hero,
-  .news-top-hero,
-  .match-pro-hero,
-  .insights-hero,
-  .news-hero,
-  .results-page-section .hero,
-  .ai-focus-banner .ai-focus-text {
-    max-width: 100% !important;
-    padding: 22px 18px !important;
-    border-radius: 22px !important;
-  }
-
-  .hero-left h2,
-  .news-top-hero-left h2,
-  .match-pro-left h1,
-  .insights-hero-left h2,
-  .news-hero h2,
-  .results-page-section .hero h2 {
-    font-size: 32px !important;
-  }
-}
-/* =========================================================
-   HERO STRIP UNIFY FIX
-   same width as main feed / same gray color / no empty pockets
-========================================================= */
-
-/* 1. Все верхние hero как обычные панели ленты */
-.hero,
-.news-top-hero,
-.match-pro-hero,
-.insights-hero,
-.news-hero,
-.results-page-section .hero,
-.ai-focus-banner .ai-focus-text {
-  width: 100% !important;
-  max-width: 1120px !important;
-  margin: 0 auto !important;
-  padding: 26px 24px !important;
-  border-radius: 24px !important;
-  min-height: 0 !important;
-  position: relative !important;
-  overflow: hidden !important;
-  isolation: isolate !important;
-}
-
-/* 2. Убить все декоративные слои сзади */
-.hero::before,
-.hero::after,
-.news-top-hero::before,
-.news-top-hero::after,
-.match-pro-hero::before,
-.match-pro-hero::after,
-.insights-hero::before,
-.insights-hero::after,
-.news-hero::before,
-.news-hero::after,
-.results-page-section .hero::before,
-.results-page-section .hero::after,
-.ai-focus-banner .ai-focus-text::before,
-.ai-focus-banner .ai-focus-text::after {
-  content: none !important;
-  display: none !important;
-  background: none !important;
-  box-shadow: none !important;
-}
-
-/* 3. Тёмная тема: цвет как у остальных серых блоков */
-body.theme-dark .hero,
-body.theme-dark .news-top-hero,
-body.theme-dark .match-pro-hero,
-body.theme-dark .insights-hero,
-body.theme-dark .news-hero,
-body.theme-dark .results-page-section .hero,
-body.theme-dark .ai-focus-banner .ai-focus-text {
-  background: linear-gradient(180deg, rgba(40, 53, 69, 0.90), rgba(31, 43, 58, 0.88)) !important;
-  border: 1px solid rgba(132,149,171,0.16) !important;
-  box-shadow: 0 14px 30px rgba(0,0,0,0.18) !important;
-}
-
-/* 4. Светлая тема */
-body.theme-glass .hero,
-body.theme-glass .news-top-hero,
-body.theme-glass .match-pro-hero,
-body.theme-glass .insights-hero,
-body.theme-glass .news-hero,
-body.theme-glass .results-page-section .hero,
-body.theme-glass .ai-focus-banner .ai-focus-text {
-  background: rgba(245,248,252,0.76) !important;
-  border: 1px solid rgba(16,26,47,0.08) !important;
-  box-shadow: 0 12px 26px rgba(42,58,82,0.06) !important;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-}
-
-/* 5. Hero в 2 колонки, но компактно, без растяжки */
-.hero,
-.news-top-hero,
-.match-pro-hero,
-.insights-hero {
-  display: grid !important;
-  grid-template-columns: minmax(280px, 360px) minmax(0, 420px) !important;
-  justify-content: space-between !important;
-  align-items: start !important;
-  gap: 20px !important;
-}
-
-/* 6. Results и text-only hero делаем обычным текстовым блоком */
-.news-hero,
-.results-page-section .hero {
-  display: block !important;
-}
-
-/* 7. Левая текстовая колонка */
-.hero-left,
-.news-top-hero-left,
-.match-pro-left,
-.insights-hero-left {
-  width: 100% !important;
-  max-width: 420px !important;
-  justify-self: end !important;
-  align-self: start !important;
-  padding-top: 0 !important;
-}
-
-/* 8. Правая карточка */
-.hero-card,
-.news-top-hero-card,
-.pro-score-card,
-.insights-hero-card {
-  width: 100% !important;
-  max-width: 360px !important;
-  justify-self: start !important;
-  align-self: end !important;
-  padding: 20px !important;
-  border-radius: 20px !important;
-}
-
-/* 9. Заголовки компактнее, без пустых зон */
-.hero-left h2,
-.news-top-hero-left h2,
-.match-pro-left h1,
-.insights-hero-left h2,
-.news-hero h2,
-.results-page-section .hero h2 {
-  margin: 0 0 12px !important;
-  max-width: 420px !important;
-  font-size: clamp(32px, 3vw, 44px) !important;
-  line-height: 1.08 !important;
-  letter-spacing: -0.035em !important;
-  text-wrap: balance;
-}
-
-.news-hero h2,
-.results-page-section .hero h2 {
-  max-width: 780px !important;
-}
-
-/* 10. Текст */
-.hero-left p,
-.news-top-hero-left p,
-.match-pro-left p,
-.insights-hero-left p,
-.news-hero p,
-.results-page-section .hero p {
-  margin: 0 !important;
-  max-width: 420px !important;
-  font-size: 16px !important;
-  line-height: 1.6 !important;
-}
-
-.news-hero p,
-.results-page-section .hero p {
-  max-width: 820px !important;
-}
-
-/* 11. Кнопки */
-.hero-actions {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 12px !important;
-  margin-top: 18px !important;
-}
-
-/* 12. Внутренности карточек hero делаем компактнее */
-.hero-card h3,
-.news-top-hero-card h3,
-.insights-hero-card h3,
-.pro-score-card h3 {
-  margin: 0 0 12px !important;
-  font-size: 18px !important;
-  line-height: 1.2 !important;
-}
-
-.hero-card p,
-.news-top-hero-card p,
-.insights-hero-card p,
-.pro-score-card p,
-.ai-text {
-  font-size: 14px !important;
-  line-height: 1.55 !important;
-}
-
-.card-top {
-  margin-bottom: 10px !important;
-}
-
-/* 13. Probability boxes компактнее */
-.probabilities,
-.featured-prob-grid,
-.pro-hero-prob-grid {
-  gap: 10px !important;
-}
-
-.probabilities > div,
-.featured-prob-box {
-  min-height: 80px !important;
-  padding: 10px 8px !important;
-  border-radius: 14px !important;
-}
-
-.probabilities > div {
-  font-size: 24px !important;
-}
-
-.probabilities span,
-.featured-prob-box span {
-  font-size: 10px !important;
-  letter-spacing: 0.12em !important;
-}
-
-/* 14. AI banner тоже той же ширины ленты */
-.ai-focus-banner {
-  width: 100% !important;
-  max-width: 1120px !important;
-  margin: 0 auto !important;
-}
-
-/* 15. На планшете уходим в одну колонку */
-@media (max-width: 980px) {
-  .hero,
-  .news-top-hero,
-  .match-pro-hero,
-  .insights-hero {
-    grid-template-columns: 1fr !important;
-    max-width: 760px !important;
-  }
-
-  .hero-left,
-  .news-top-hero-left,
-  .match-pro-left,
-  .insights-hero-left,
-  .hero-card,
-  .news-top-hero-card,
-  .pro-score-card,
-  .insights-hero-card {
-    max-width: 100% !important;
-    justify-self: stretch !important;
-  }
-
-  .hero-left h2,
-  .news-top-hero-left h2,
-  .match-pro-left h1,
-  .insights-hero-left h2 {
-    max-width: 100% !important;
-  }
-
-  .hero-left p,
-  .news-top-hero-left p,
-  .match-pro-left p,
-  .insights-hero-left p {
-    max-width: 100% !important;
-  }
-}
-
-/* 16. Мобилка */
-@media (max-width: 760px) {
-  .hero,
-  .news-top-hero,
-  .match-pro-hero,
-  .insights-hero,
-  .news-hero,
-  .results-page-section .hero,
-  .ai-focus-banner .ai-focus-text {
-    max-width: 100% !important;
-    padding: 22px 18px !important;
-    border-radius: 22px !important;
-  }
-
-  .hero-left h2,
-  .news-top-hero-left h2,
-  .match-pro-left h1,
-  .insights-hero-left h2,
-  .news-hero h2,
-  .results-page-section .hero h2 {
-    font-size: 30px !important;
-  }
-}
-/* =========================================================
-   HERO FIX — COMPACT CONTAINER (FINAL)
-========================================================= */
-
-/* 1. главный контейнер */
-.hero,
-.match-pro-hero,
-.insights-hero,
-.news-top-hero {
-  max-width: 980px !important;   /* ВОТ ГДЕ СУЖЕНИЕ */
-  margin: 0 auto !important;
-  padding: 28px 28px !important;
-
-  display: grid !important;
-  grid-template-columns: 1fr 320px !important; /* текст + карточка */
-  gap: 24px !important;
-
-  align-items: center !important;
-}
-
-/* 2. убираем всё лишнее */
-.hero::before,
-.hero::after,
-.match-pro-hero::before,
-.match-pro-hero::after,
-.insights-hero::before,
-.insights-hero::after {
-  display: none !important;
-  content: none !important;
-}
-
-/* 3. текст */
-.hero-left,
-.match-pro-left,
-.insights-hero-left {
-  max-width: 520px !important;
-}
-
-/* 4. карточка */
-.hero-card,
-.pro-score-card,
-.insights-hero-card {
-  width: 100% !important;
-  max-width: 320px !important;
-}
-
-/* 5. заголовок */
-.hero-left h2,
-.match-pro-left h1,
-.insights-hero-left h2 {
-  font-size: 40px !important;
-  line-height: 1.1 !important;
-  margin-bottom: 12px !important;
-}
-
-/* 6. текст */
-.hero-left p,
-.match-pro-left p,
-.insights-hero-left p {
-  max-width: 460px !important;
-}
-
-/* 7. УБИРАЕМ ПУСТОТУ СЛЕВА */
-.hero,
-.match-pro-hero,
-.insights-hero {
-  justify-content: center !important;
-}
-
-/* 8. центрируем карточку вниз */
-.hero-card,
-.pro-score-card,
-.insights-hero-card {
-  align-self: end !important;
-}
-
-/* 9. mobile */
-@media (max-width: 900px) {
-  .hero,
-  .match-pro-hero,
-  .insights-hero {
-    grid-template-columns: 1fr !important;
-    max-width: 640px !important;
-  }
-
-  .hero-card,
-  .pro-score-card,
-  .insights-hero-card {
-    max-width: 100% !important;
-  }
-}
-/* =========================================================
-   HERO CONTENT-FIT FIX
-   block width follows content, text stays in one line flow
-========================================================= */
-
-/* 1. Общий hero контейнер */
-.hero,
-.news-top-hero,
-.match-pro-hero,
-.insights-hero {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: flex-start !important;
-  width: 100% !important;
-  max-width: 980px !important;
-  margin: 0 auto !important;
-  padding: 26px 28px !important;
-  border-radius: 24px !important;
-  min-height: auto !important;
-  gap: 28px !important;
-}
-
-/* 2. Убираем псевдоэлементы и задние декорации */
-.hero::before,
-.hero::after,
-.news-top-hero::before,
-.news-top-hero::after,
-.match-pro-hero::before,
-.match-pro-hero::after,
-.insights-hero::before,
-.insights-hero::after {
-  content: none !important;
-  display: none !important;
-}
-
-/* 3. Внутри делаем content-wrap */
-.hero-left,
-.news-top-hero-left,
-.match-pro-left,
-.insights-hero-left {
-  flex: 0 1 430px !important;
-  max-width: 430px !important;
-  width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.hero-card,
-.news-top-hero-card,
-.pro-score-card,
-.insights-hero-card {
-  flex: 0 0 320px !important;
-  max-width: 320px !important;
-  width: 320px !important;
-  margin: 0 !important;
-  align-self: flex-end !important;
-  padding: 20px !important;
-  border-radius: 20px !important;
-}
-
-/* 4. Заголовок и текст */
-.hero-left h2,
-.news-top-hero-left h2,
-.match-pro-left h1,
-.insights-hero-left h2 {
-  margin: 0 0 12px !important;
-  max-width: 430px !important;
-  font-size: 42px !important;
-  line-height: 1.1 !important;
-  letter-spacing: -0.03em !important;
-  text-wrap: pretty;
-}
-
-.hero-left p,
-.news-top-hero-left p,
-.match-pro-left p,
-.insights-hero-left p {
-  margin: 0 !important;
-  max-width: 430px !important;
-  font-size: 16px !important;
-  line-height: 1.6 !important;
-}
-
-/* 5. Кнопки */
-.hero-actions {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 12px !important;
-  margin-top: 18px !important;
-}
-
-/* 6. Results и text-only hero */
-.news-hero,
-.results-page-section .hero {
-  display: block !important;
-  width: 100% !important;
-  max-width: 980px !important;
-  margin: 0 auto !important;
-  padding: 24px 28px !important;
-  min-height: auto !important;
-}
-
-.news-hero h2,
-.results-page-section .hero h2 {
-  max-width: 720px !important;
-  margin: 0 0 12px !important;
-  font-size: 40px !important;
-  line-height: 1.1 !important;
-}
-
-.news-hero p,
-.results-page-section .hero p {
-  max-width: 760px !important;
-  margin: 0 !important;
-  font-size: 16px !important;
-  line-height: 1.6 !important;
-}
-
-/* 7. Тёмная тема: один цвет как у остальных панелей */
-body.theme-dark .hero,
-body.theme-dark .news-top-hero,
-body.theme-dark .match-pro-hero,
-body.theme-dark .insights-hero,
-body.theme-dark .news-hero,
-body.theme-dark .results-page-section .hero {
-  background: linear-gradient(180deg, rgba(40, 53, 69, 0.90), rgba(31, 43, 58, 0.88)) !important;
-  border: 1px solid rgba(132,149,171,0.16) !important;
-  box-shadow: 0 14px 30px rgba(0,0,0,0.18) !important;
-}
-
-/* 8. Светлая тема */
-body.theme-glass .hero,
-body.theme-glass .news-top-hero,
-body.theme-glass .match-pro-hero,
-body.theme-glass .insights-hero,
-body.theme-glass .news-hero,
-body.theme-glass .results-page-section .hero {
-  background: rgba(245,248,252,0.76) !important;
-  border: 1px solid rgba(16,26,47,0.08) !important;
-  box-shadow: 0 12px 26px rgba(42,58,82,0.06) !important;
-}
-
-/* 9. Карточка компактнее */
-.hero-card h3,
-.news-top-hero-card h3,
-.insights-hero-card h3,
-.pro-score-card h3 {
-  font-size: 18px !important;
-  line-height: 1.2 !important;
-  margin: 0 0 12px !important;
-}
-
-.hero-card p,
-.news-top-hero-card p,
-.insights-hero-card p,
-.pro-score-card p {
-  font-size: 14px !important;
-  line-height: 1.55 !important;
-}
-
-/* 10. Mobile */
-@media (max-width: 900px) {
-  .hero,
-  .news-top-hero,
-  .match-pro-hero,
-  .insights-hero {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    max-width: 640px !important;
-    gap: 18px !important;
-  }
-
-  .hero-left,
-  .news-top-hero-left,
-  .match-pro-left,
-  .insights-hero-left,
-  .hero-card,
-  .news-top-hero-card,
-  .pro-score-card,
-  .insights-hero-card {
-    max-width: 100% !important;
-    width: 100% !important;
-    flex: unset !important;
-  }
-}
-/* =========================================================
-   GLOBAL CONTENT CONTAINER
-   единая ширина для ВСЕГО сайта
-========================================================= */
-
-.container {
-  width: 100%;
-  max-width: 1040px; /* ← выбери: 1000 / 1040 / 1100 */
-  margin: 0 auto;
-  padding: 0 20px;
-}
-/* =========================================================
-   PREDICTION CARDS RESTORE
-   restores match card layout in Today's Best Predictions
-========================================================= */
-
-.predictions-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 16px !important;
-}
-
-.prediction-card {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-  min-height: 210px !important;
-  padding: 18px 18px 16px !important;
-  border-radius: 18px !important;
-  overflow: hidden !important;
-}
-
-body.theme-dark .prediction-card {
-  background: linear-gradient(180deg, rgba(40, 53, 69, 0.90), rgba(31, 43, 58, 0.88)) !important;
-  border: 1px solid rgba(132,149,171,0.14) !important;
-  box-shadow: 0 12px 24px rgba(0,0,0,0.16) !important;
-}
-
-body.theme-glass .prediction-card {
-  background: rgba(245,248,252,0.76) !important;
-  border: 1px solid rgba(16,26,47,0.08) !important;
-  box-shadow: 0 10px 20px rgba(42,58,82,0.06) !important;
-}
-
-/* верхняя часть */
-.prediction-card .league {
-  align-self: flex-start !important;
-  margin-bottom: 12px !important;
-}
-
-.prediction-card h3 {
-  margin: 0 0 10px !important;
-  font-size: 18px !important;
-  line-height: 1.28 !important;
-  font-weight: 800 !important;
-  color: var(--text-main) !important;
-}
-
-/* вероятности */
-.prediction-card .pred-score,
-.prediction-card .prediction-percentages,
-.prediction-card .prediction-odds {
-  margin-top: 8px !important;
-}
-
-.prediction-card .pred-line,
-.prediction-card .prediction-line {
-  display: flex !important;
-  align-items: baseline !important;
-  gap: 8px !important;
-  margin: 3px 0 !important;
-  font-size: 15px !important;
-  line-height: 1.45 !important;
-  color: var(--text-soft) !important;
-}
-
-.prediction-card .pred-line strong,
-.prediction-card .prediction-line strong {
-  font-weight: 800 !important;
-  color: var(--text-main) !important;
-}
-
-.prediction-card .home {
-  color: #4ade80 !important;
-}
-
-.prediction-card .draw {
-  color: #cbd5e1 !important;
-}
-
-.prediction-card .away {
-  color: #60a5fa !important;
-}
-
-/* нижняя часть */
-.prediction-card .prediction-footer,
-.prediction-card .pred-footer,
-.prediction-card .prediction-meta {
-  margin-top: 12px !important;
-  padding-top: 10px !important;
-  border-top: 1px solid var(--border) !important;
-  font-size: 14px !important;
-  line-height: 1.45 !important;
-  color: var(--text-soft) !important;
-}
-
-.prediction-card .live-badge {
-  margin-right: 8px !important;
-}
-
-/* hover */
-.prediction-card:hover {
-  transform: translateY(-3px) !important;
-}
-
-body.theme-dark .prediction-card:hover {
-  box-shadow: 0 16px 28px rgba(0,0,0,0.22) !important;
-}
-
-body.theme-glass .prediction-card:hover {
-  box-shadow: 0 14px 24px rgba(42,58,82,0.08) !important;
-}
-
-/* tablet */
-@media (max-width: 980px) {
-  .predictions-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
-}
-
-/* mobile */
-@media (max-width: 760px) {
-  .predictions-grid {
-    grid-template-columns: 1fr !important;
-  }
 
   .prediction-card {
-    min-height: auto !important;
+    min-height: auto;
   }
 }
