@@ -6187,3 +6187,235 @@ main {
 .standings-row > :nth-child(2) {
   text-align: left;
 }
+.standings-team {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* =========================================================
+   HERO CONTENT ALIGN FIX
+   narrow heroes, remove empty dark pockets
+========================================================= */
+
+/* общий контейнер hero */
+.hero,
+.news-top-hero,
+.match-pro-hero,
+.insights-hero,
+.news-hero {
+  align-items: start !important;
+}
+
+/* ---------- HOME + AI INSIGHTS + MATCH ---------- */
+
+.hero,
+.insights-hero,
+.match-pro-hero {
+  grid-template-columns: minmax(260px, 0.78fr) minmax(420px, 0.92fr) !important;
+  gap: 22px !important;
+}
+
+/* декоративная левая зона уже */
+.hero::after,
+.insights-hero::after,
+.match-pro-hero::after,
+.news-top-hero::after,
+.news-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 22%, rgba(255,255,255,0.06), transparent 16%),
+    radial-gradient(circle at 78% 82%, rgba(255,255,255,0.03), transparent 18%);
+  opacity: 0.7;
+}
+
+/* правая колонка с текстом */
+.hero-left,
+.insights-hero-left,
+.match-pro-left,
+.news-top-hero-left {
+  max-width: 560px !important;
+  width: 100%;
+  justify-self: start !important;
+  align-self: start !important;
+  padding-top: 6px;
+}
+
+/* карточки под текстовым блоком или рядом с ним */
+.hero-card,
+.insights-hero-card,
+.pro-score-card,
+.news-top-hero-card {
+  max-width: 640px !important;
+  width: 100%;
+}
+
+/* домашняя страница: карточка не слишком низко */
+.hero-card,
+.insights-hero-card {
+  align-self: end !important;
+}
+
+/* текстовые размеры компактнее и ровнее */
+.hero-left h2,
+.insights-hero-left h2,
+.match-pro-left h1,
+.news-top-hero-left h2,
+.news-hero h2 {
+  max-width: 560px !important;
+  margin-bottom: 14px !important;
+  font-size: clamp(40px, 3.8vw, 56px) !important;
+  line-height: 1.04 !important;
+}
+
+.hero-left p,
+.insights-hero-left p,
+.match-pro-left p,
+.news-top-hero-left p,
+.news-hero p {
+  max-width: 540px !important;
+  font-size: 17px !important;
+  line-height: 1.62 !important;
+}
+
+/* ---------- NEWS PAGE ---------- */
+
+.news-top-hero {
+  grid-template-columns: minmax(280px, 0.86fr) minmax(420px, 0.94fr) !important;
+  gap: 24px !important;
+}
+
+.news-top-hero-left {
+  justify-self: end !important;
+}
+
+.news-top-hero-card {
+  justify-self: start !important;
+  align-self: end !important;
+  max-width: 620px !important;
+}
+
+/* ---------- NEWS HERO WITHOUT CARD ---------- */
+
+.news-hero {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  min-height: 0 !important;
+}
+
+.news-hero > * {
+  max-width: 720px !important;
+}
+
+.news-hero h2 {
+  max-width: 720px !important;
+}
+
+.news-hero p {
+  max-width: 700px !important;
+}
+
+/* ---------- MATCH PAGE ---------- */
+
+.match-pro-left {
+  justify-self: end !important;
+}
+
+.pro-score-card {
+  justify-self: start !important;
+  max-width: 620px !important;
+}
+
+/* ---------- AI INSIGHTS ---------- */
+
+.insights-hero-left {
+  justify-self: end !important;
+}
+
+.insights-hero-card {
+  justify-self: start !important;
+  max-width: 610px !important;
+}
+
+/* ---------- HOME ---------- */
+
+.hero-left {
+  justify-self: end !important;
+}
+
+.hero-card {
+  justify-self: start !important;
+  max-width: 610px !important;
+}
+
+/* ---------- buttons rhythm ---------- */
+
+.hero-actions {
+  gap: 12px !important;
+  margin-top: 22px !important;
+}
+
+/* ---------- reduce giant empty side padding ---------- */
+
+.hero,
+.news-top-hero,
+.match-pro-hero,
+.insights-hero,
+.news-hero {
+  padding: 34px 32px !important;
+}
+
+/* ---------- tablet ---------- */
+
+@media (max-width: 1180px) {
+  .hero,
+  .news-top-hero,
+  .match-pro-hero,
+  .insights-hero {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .hero-left,
+  .insights-hero-left,
+  .match-pro-left,
+  .news-top-hero-left,
+  .hero-card,
+  .insights-hero-card,
+  .pro-score-card,
+  .news-top-hero-card {
+    max-width: 100% !important;
+    justify-self: stretch !important;
+  }
+}
+
+/* ---------- mobile ---------- */
+
+@media (max-width: 760px) {
+  .hero,
+  .news-top-hero,
+  .match-pro-hero,
+  .insights-hero,
+  .news-hero {
+    padding: 24px 20px !important;
+  }
+
+  .hero-left h2,
+  .insights-hero-left h2,
+  .match-pro-left h1,
+  .news-top-hero-left h2,
+  .news-hero h2 {
+    font-size: 34px !important;
+  }
+
+  .hero-left p,
+  .insights-hero-left p,
+  .match-pro-left p,
+  .news-top-hero-left p,
+  .news-hero p {
+    font-size: 17px !important;
+  }
+}
