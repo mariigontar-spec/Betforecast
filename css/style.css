@@ -2208,3 +2208,94 @@ body.theme-glass .ai-focus-banner .ai-focus-text {
     font-size: 30px !important;
   }
 }
+/* =========================================================
+   HERO FIX — COMPACT CONTAINER (FINAL)
+========================================================= */
+
+/* 1. главный контейнер */
+.hero,
+.match-pro-hero,
+.insights-hero,
+.news-top-hero {
+  max-width: 980px !important;   /* ВОТ ГДЕ СУЖЕНИЕ */
+  margin: 0 auto !important;
+  padding: 28px 28px !important;
+
+  display: grid !important;
+  grid-template-columns: 1fr 320px !important; /* текст + карточка */
+  gap: 24px !important;
+
+  align-items: center !important;
+}
+
+/* 2. убираем всё лишнее */
+.hero::before,
+.hero::after,
+.match-pro-hero::before,
+.match-pro-hero::after,
+.insights-hero::before,
+.insights-hero::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* 3. текст */
+.hero-left,
+.match-pro-left,
+.insights-hero-left {
+  max-width: 520px !important;
+}
+
+/* 4. карточка */
+.hero-card,
+.pro-score-card,
+.insights-hero-card {
+  width: 100% !important;
+  max-width: 320px !important;
+}
+
+/* 5. заголовок */
+.hero-left h2,
+.match-pro-left h1,
+.insights-hero-left h2 {
+  font-size: 40px !important;
+  line-height: 1.1 !important;
+  margin-bottom: 12px !important;
+}
+
+/* 6. текст */
+.hero-left p,
+.match-pro-left p,
+.insights-hero-left p {
+  max-width: 460px !important;
+}
+
+/* 7. УБИРАЕМ ПУСТОТУ СЛЕВА */
+.hero,
+.match-pro-hero,
+.insights-hero {
+  justify-content: center !important;
+}
+
+/* 8. центрируем карточку вниз */
+.hero-card,
+.pro-score-card,
+.insights-hero-card {
+  align-self: end !important;
+}
+
+/* 9. mobile */
+@media (max-width: 900px) {
+  .hero,
+  .match-pro-hero,
+  .insights-hero {
+    grid-template-columns: 1fr !important;
+    max-width: 640px !important;
+  }
+
+  .hero-card,
+  .pro-score-card,
+  .insights-hero-card {
+    max-width: 100% !important;
+  }
+}
