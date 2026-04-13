@@ -5811,3 +5811,330 @@ body.theme-dark .panel-head h2 {
   font-size: 22px;
   line-height: 1;
 }
+/* =========================================================
+   TOP HERO LIGHT BALANCE + UNIFIED GEOMETRY
+   news / results / match / ai insights
+========================================================= */
+
+/* ---------- shared shell ---------- */
+
+.news-top-hero,
+.match-pro-hero,
+.insights-hero,
+.results-top-hero,
+.news-hero,
+.ai-focus-banner .ai-focus-text {
+  width: 100%;
+  max-width: 1280px;
+  margin: 28px auto 0;
+  padding: 36px 36px !important;
+  border-radius: 32px !important;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* if results page uses generic hero block */
+.results-page-section .hero,
+.results-page-section .news-hero,
+.results-page-section .results-top-hero {
+  width: 100%;
+  max-width: 1280px;
+  margin: 28px auto 0;
+  padding: 36px 36px !important;
+  border-radius: 32px !important;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- unified grid ---------- */
+
+.news-top-hero,
+.match-pro-hero,
+.insights-hero {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.9fr);
+  gap: 28px !important;
+  align-items: center !important;
+  min-height: 0 !important;
+}
+
+/* results hero is text-first, no giant empty void */
+.news-hero,
+.results-top-hero,
+.results-page-section .hero {
+  display: block;
+  min-height: 0 !important;
+}
+
+/* ---------- softer hero background ---------- */
+
+body.theme-dark .news-top-hero,
+body.theme-dark .match-pro-hero,
+body.theme-dark .insights-hero,
+body.theme-dark .results-top-hero,
+body.theme-dark .news-hero,
+body.theme-dark .results-page-section .hero,
+body.theme-dark .ai-focus-banner .ai-focus-text {
+  background:
+    linear-gradient(135deg, rgba(10,22,35,0.82), rgba(8,20,32,0.76)),
+    radial-gradient(circle at 16% 18%, rgba(25,181,109,0.08), transparent 26%),
+    radial-gradient(circle at 84% 14%, rgba(74,169,255,0.07), transparent 28%) !important;
+  border: 1px solid rgba(132,149,171,0.16) !important;
+  box-shadow:
+    0 16px 38px rgba(0,0,0,0.22),
+    inset 0 1px 0 rgba(255,255,255,0.03) !important;
+}
+
+/* subtle light haze so hero is not too dark */
+body.theme-dark .news-top-hero::before,
+body.theme-dark .match-pro-hero::before,
+body.theme-dark .insights-hero::before,
+body.theme-dark .results-top-hero::before,
+body.theme-dark .news-hero::before,
+body.theme-dark .results-page-section .hero::before,
+body.theme-dark .ai-focus-banner .ai-focus-text::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 22% 22%, rgba(255,255,255,0.06), transparent 20%),
+    radial-gradient(circle at 82% 78%, rgba(255,255,255,0.03), transparent 22%);
+  opacity: 0.9;
+}
+
+/* ---------- shared inner rhythm ---------- */
+
+.news-top-hero-left,
+.match-pro-left,
+.insights-hero-left,
+.news-top-hero-card,
+.pro-score-card,
+.insights-hero-card,
+.news-hero > *,
+.results-top-hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.news-top-hero-left,
+.match-pro-left,
+.insights-hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 660px;
+}
+
+.news-top-hero-card,
+.pro-score-card,
+.insights-hero-card {
+  width: 100%;
+  max-width: 520px;
+  justify-self: end;
+  padding: 24px !important;
+  border-radius: 24px !important;
+}
+
+/* ---------- titles ---------- */
+
+.news-top-hero-left h2,
+.match-pro-left h1,
+.insights-hero-left h2,
+.news-hero h2,
+.results-top-hero h2,
+.results-page-section .hero h2 {
+  margin: 0 0 16px !important;
+  max-width: 760px;
+  font-size: clamp(42px, 4vw, 58px) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+/* ---------- paragraphs ---------- */
+
+.news-top-hero-left p,
+.match-pro-left p,
+.insights-hero-left p,
+.news-hero p,
+.results-top-hero p,
+.results-page-section .hero p {
+  margin: 0 !important;
+  max-width: 760px;
+  font-size: 18px !important;
+  line-height: 1.65 !important;
+  color: rgba(226,234,244,0.78) !important;
+}
+
+/* ---------- badge spacing ---------- */
+
+.news-top-hero-left .hero-badge,
+.match-pro-left .hero-badge,
+.insights-hero-left .hero-badge,
+.news-hero .hero-badge,
+.results-top-hero .hero-badge {
+  margin-bottom: 14px !important;
+}
+
+/* ---------- buttons ---------- */
+
+.news-top-hero .hero-actions,
+.match-pro-hero .hero-actions,
+.insights-hero .hero-actions,
+.news-hero .hero-actions,
+.results-top-hero .hero-actions,
+.results-page-section .hero .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 26px !important;
+}
+
+.news-top-hero .hero-actions .primary-btn,
+.news-top-hero .hero-actions .secondary-btn,
+.match-pro-hero .hero-actions .primary-btn,
+.match-pro-hero .hero-actions .secondary-btn,
+.insights-hero .hero-actions .primary-btn,
+.insights-hero .hero-actions .secondary-btn,
+.news-hero .hero-actions .primary-btn,
+.news-hero .hero-actions .secondary-btn,
+.results-top-hero .hero-actions .primary-btn,
+.results-top-hero .hero-actions .secondary-btn,
+.results-page-section .hero .hero-actions .primary-btn,
+.results-page-section .hero .hero-actions .secondary-btn {
+  min-height: 54px;
+  padding: 0 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- right cards lighter ---------- */
+
+body.theme-dark .news-top-hero-card,
+body.theme-dark .pro-score-card,
+body.theme-dark .insights-hero-card {
+  background: linear-gradient(180deg, rgba(28,41,57,0.72), rgba(22,33,47,0.68)) !important;
+  border: 1px solid rgba(132,149,171,0.14) !important;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18) !important;
+}
+
+/* ---------- results cards align visually with hero ---------- */
+
+body.theme-dark .results-page-section .match-card {
+  background: linear-gradient(180deg, rgba(28,41,57,0.74), rgba(22,33,47,0.70)) !important;
+  border: 1px solid rgba(132,149,171,0.14) !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.16) !important;
+}
+
+/* ---------- page spacing consistency ---------- */
+
+.news-page-wrap,
+.match-page-wrap,
+.standings-page-wrap,
+.article-page-wrap,
+.article-pro-wrap,
+.page-shell,
+main {
+  width: min(1280px, calc(100% - 40px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.news-layout-v2,
+.match-pro-layout,
+.standings-layout,
+.matches-grid,
+.news-grid,
+.news-grid-v2,
+.insights-cards-grid,
+.predictions-grid {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* ---------- results hero specific cleanup ---------- */
+
+.results-page-section .hero,
+.results-top-hero,
+.news-hero {
+  padding-bottom: 34px !important;
+}
+
+.results-page-section .hero h2,
+.results-top-hero h2,
+.news-hero h2 {
+  max-width: 920px;
+}
+
+.results-page-section .hero p,
+.results-top-hero p,
+.news-hero p {
+  max-width: 980px;
+}
+
+/* ---------- tablet ---------- */
+
+@media (max-width: 1180px) {
+  .news-top-hero,
+  .match-pro-hero,
+  .insights-hero {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+    padding: 32px !important;
+  }
+
+  .news-top-hero-card,
+  .pro-score-card,
+  .insights-hero-card {
+    max-width: 100%;
+    justify-self: stretch;
+  }
+}
+
+/* ---------- mobile ---------- */
+
+@media (max-width: 760px) {
+  .news-top-hero,
+  .match-pro-hero,
+  .insights-hero,
+  .results-top-hero,
+  .news-hero,
+  .results-page-section .hero,
+  .ai-focus-banner .ai-focus-text {
+    margin-top: 20px;
+    padding: 24px 20px !important;
+    border-radius: 24px !important;
+  }
+
+  .news-top-hero-left h2,
+  .match-pro-left h1,
+  .insights-hero-left h2,
+  .news-hero h2,
+  .results-top-hero h2,
+  .results-page-section .hero h2 {
+    font-size: 34px !important;
+    line-height: 1.08 !important;
+  }
+
+  .news-top-hero-left p,
+  .match-pro-left p,
+  .insights-hero-left p,
+  .news-hero p,
+  .results-top-hero p,
+  .results-page-section .hero p {
+    font-size: 17px !important;
+  }
+
+  .news-top-hero-card,
+  .pro-score-card,
+  .insights-hero-card {
+    padding: 18px !important;
+    border-radius: 20px !important;
+  }
+}
