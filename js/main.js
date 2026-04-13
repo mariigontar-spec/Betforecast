@@ -36,7 +36,7 @@ async function loadHomePage() {
 
     predictionMatches.forEach((item) => {
       const card = document.createElement("a");
-      card.className = "prediction-card";
+      card.className = "prediction-card glow-hover";
       card.href = `match.html?game=${item.id}`;
 
       const isLive = item.status === "live";
@@ -102,7 +102,7 @@ async function loadHomePage() {
 
     listMatches.forEach((item) => {
       const row = document.createElement("a");
-      row.className = "match-row";
+      row.className = "match-row glow-hover";
       row.href = `match.html?game=${item.id}`;
 
       const isLive = item.status === "live";
@@ -133,7 +133,7 @@ async function loadHomePage() {
 
     finishedMatches.forEach((item) => {
       const row = document.createElement("a");
-      row.className = "result-row";
+      row.className = "result-row glow-hover";
       row.href = `match.html?game=${item.id}`;
 
       row.innerHTML = `
@@ -165,7 +165,7 @@ async function loadHomePage() {
 
     newsItems.slice(0, 4).forEach((item) => {
       const card = document.createElement("a");
-      card.className = "homepage-news-card";
+      card.className = "homepage-news-card glow-hover";
       card.href = `article.html?id=${item.id}`;
 
       card.innerHTML = `
@@ -181,6 +181,18 @@ async function loadHomePage() {
       homepageNewsList.appendChild(card);
     });
   }
+
+  initGlowHover();
+}
+
+function initGlowHover() {
+  document.querySelectorAll(".glow-hover").forEach((el) => {
+    el.addEventListener("mousemove", (e) => {
+      const rect = el.getBoundingClientRect();
+      el.style.setProperty("--x", `${e.clientX - rect.left}px`);
+      el.style.setProperty("--y", `${e.clientY - rect.top}px`);
+    });
+  });
 }
 
 loadHomePage();
