@@ -2495,3 +2495,132 @@ body.theme-glass .results-page-section .hero {
   margin: 0 auto;
   padding: 0 20px;
 }
+/* =========================================================
+   PREDICTION CARDS RESTORE
+   restores match card layout in Today's Best Predictions
+========================================================= */
+
+.predictions-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+
+.prediction-card {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-height: 210px !important;
+  padding: 18px 18px 16px !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+}
+
+body.theme-dark .prediction-card {
+  background: linear-gradient(180deg, rgba(40, 53, 69, 0.90), rgba(31, 43, 58, 0.88)) !important;
+  border: 1px solid rgba(132,149,171,0.14) !important;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.16) !important;
+}
+
+body.theme-glass .prediction-card {
+  background: rgba(245,248,252,0.76) !important;
+  border: 1px solid rgba(16,26,47,0.08) !important;
+  box-shadow: 0 10px 20px rgba(42,58,82,0.06) !important;
+}
+
+/* верхняя часть */
+.prediction-card .league {
+  align-self: flex-start !important;
+  margin-bottom: 12px !important;
+}
+
+.prediction-card h3 {
+  margin: 0 0 10px !important;
+  font-size: 18px !important;
+  line-height: 1.28 !important;
+  font-weight: 800 !important;
+  color: var(--text-main) !important;
+}
+
+/* вероятности */
+.prediction-card .pred-score,
+.prediction-card .prediction-percentages,
+.prediction-card .prediction-odds {
+  margin-top: 8px !important;
+}
+
+.prediction-card .pred-line,
+.prediction-card .prediction-line {
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 8px !important;
+  margin: 3px 0 !important;
+  font-size: 15px !important;
+  line-height: 1.45 !important;
+  color: var(--text-soft) !important;
+}
+
+.prediction-card .pred-line strong,
+.prediction-card .prediction-line strong {
+  font-weight: 800 !important;
+  color: var(--text-main) !important;
+}
+
+.prediction-card .home {
+  color: #4ade80 !important;
+}
+
+.prediction-card .draw {
+  color: #cbd5e1 !important;
+}
+
+.prediction-card .away {
+  color: #60a5fa !important;
+}
+
+/* нижняя часть */
+.prediction-card .prediction-footer,
+.prediction-card .pred-footer,
+.prediction-card .prediction-meta {
+  margin-top: 12px !important;
+  padding-top: 10px !important;
+  border-top: 1px solid var(--border) !important;
+  font-size: 14px !important;
+  line-height: 1.45 !important;
+  color: var(--text-soft) !important;
+}
+
+.prediction-card .live-badge {
+  margin-right: 8px !important;
+}
+
+/* hover */
+.prediction-card:hover {
+  transform: translateY(-3px) !important;
+}
+
+body.theme-dark .prediction-card:hover {
+  box-shadow: 0 16px 28px rgba(0,0,0,0.22) !important;
+}
+
+body.theme-glass .prediction-card:hover {
+  box-shadow: 0 14px 24px rgba(42,58,82,0.08) !important;
+}
+
+/* tablet */
+@media (max-width: 980px) {
+  .predictions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* mobile */
+@media (max-width: 760px) {
+  .predictions-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .prediction-card {
+    min-height: auto !important;
+  }
+}
