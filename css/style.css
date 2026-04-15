@@ -2936,3 +2936,12 @@ button.active,
   font-size: 16px;
   font-weight: 700;
 }
+.teams {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.match-sub {
+  margin-top: 4px;
+}
