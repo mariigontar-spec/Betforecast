@@ -50,6 +50,36 @@ async function loadStandingsPage() {
       return "form-loss";
     }
 
+    function createMiniCircle(label, extraClass = "") {
+      return `<span class="league-mini-circle ${extraClass}">${label}</span>`;
+    }
+
+    function getLeagueCircle(leagueNameText) {
+      const name = (leagueNameText || "").toLowerCase();
+
+      if (name.includes("premier")) return createMiniCircle("PL");
+      if (name.includes("liga")) return createMiniCircle("LL");
+      if (name.includes("serie")) return createMiniCircle("SA");
+      if (name.includes("bundes")) return createMiniCircle("BL");
+      if (name.includes("champions")) return createMiniCircle("CL");
+      if (name.includes("ligue")) return createMiniCircle("L1");
+
+      return createMiniCircle("LG");
+    }
+
+    function getTeamCircle(teamName) {
+      const words = (teamName || "").trim().split(" ").filter(Boolean);
+
+      const short = words
+        .slice(0, 2)
+        .map((word) => word[0])
+        .join("")
+        .toUpperCase()
+        .slice(0, 2);
+
+      return createMiniCircle(short || "TM", "team-circle");
+    }
+
     function renderLeagueFilters() {
       if (!leagueFilterList) return;
 
@@ -78,15 +108,15 @@ async function loadStandingsPage() {
     function renderTable(league) {
       tableWrap.innerHTML = `
         <div class="standings-table-head">
-          <div>#</div>
-          <div>Team</div>
-          <div>P</div>
-          <div>W</div>
-          <div>D</div>
-          <div>L</div>
-          <div>GF-GA</div>
-          <div>Pts</div>
-          <div>Form</div>
+          <div class="standings-col-pos">#</div>
+          <div class="standings-col-team">Team</div>
+          <div class="standings-col-stat">P</div>
+          <div class="standings-col-stat">W</div>
+          <div class="standings-col-stat">D</div>
+          <div class="standings-col-stat">L</div>
+          <div class="standings-col-goals">GF-GA</div>
+          <div class="standings-col-points">Pts</div>
+          <div class="standings-col-form">Form</div>
         </div>
       `;
 
@@ -99,7 +129,8 @@ async function loadStandingsPage() {
 
           <div class="standings-cell standings-team">
             <span class="standings-zone-line"></span>
-            <span>${row.team}</span>
+            ${getTeamCircle(row.team)}
+            <span class="standings-team-name">${row.team}</span>
           </div>
 
           <div class="standings-cell">${row.played}</div>
@@ -110,7 +141,7 @@ async function loadStandingsPage() {
           <div class="standings-cell standings-points">${row.points}</div>
 
           <div class="standings-cell standings-form">
-            ${row.form.map((value) => `<span class="${formBadgeClass(value)}">${value}</span>`).join("")}
+            ${Array.isArray(row.form) ? row.form.map((value) => `<span class="${formBadgeClass(value)}">${value}</span>`).join("") : ""}
           </div>
         `;
 
@@ -130,11 +161,14 @@ async function loadStandingsPage() {
 
       items.forEach((item) => {
         const row = document.createElement("div");
-        row.className = "standings-match-row";
+        row.className = "standings-match-row glow-hover";
 
         row.innerHTML = `
           <div class="standings-match-time">${item.time || ""}</div>
-          <div class="standings-match-name">${item.match || ""}</div>
+          <div class="standings-match-name">
+            ${getLeagueCircle(item.league || "")}
+            <span>${item.match || ""}</span>
+          </div>
           <div class="standings-match-status">${item.score || item.status || ""}</div>
         `;
 
@@ -166,6 +200,16 @@ async function loadStandingsPage() {
       });
     }
 
+    function initGlowHover() {
+      document.querySelectorAll(".glow-hover").forEach((el) => {
+        el.addEventListener("mousemove", (e) => {
+          const rect = el.getBoundingClientRect();
+          el.style.setProperty("--x", `${e.clientX - rect.left}px`);
+          el.style.setProperty("--y", `${e.clientY - rect.top}px`);
+        });
+      });
+    }
+
     function renderAll() {
       const league = getLeague();
       if (!league) return;
@@ -181,6 +225,7 @@ async function loadStandingsPage() {
       renderAltMatches(lastWrap, league.lastMatches, "No recent matches");
       renderAltMatches(upcomingWrap, league.upcomingMatches, "No upcoming matches");
       updateViewVisibility();
+      initGlowHover();
     }
 
     document.querySelectorAll(".standings-view-tab").forEach((btn) => {
