@@ -2890,3 +2890,23 @@ button.active,
     0 0 0 1px rgba(46, 213, 115, 0.25),
     0 10px 30px rgba(46, 213, 115, 0.15);
 }
+/* =========================
+   MATCH TABLE FIX
+========================= */
+
+.match-row {
+  display: grid;
+  grid-template-columns: 140px 1.5fr 90px 80px 80px 80px;
+  align-items: center;
+
+  gap: 12px;
+  padding: 14px 16px;
+
+  border-radius: 14px;
+  transition: all 0.2s ease;
+}
+
+/* ховер (под твой glow тоже ок) */
+.match-row:hover {
+  background: rgba(255,255,255,0.03);
+}
