@@ -3034,3 +3034,18 @@ button.active,
     display: none;
   }
 }
+.match-card__meta {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.62);
+}
+
+@media (max-width: 760px) {
+  .match-card__meta {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
