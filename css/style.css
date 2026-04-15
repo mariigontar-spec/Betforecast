@@ -3085,3 +3085,53 @@ button.active,
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* =========================
+   NEWS BUTTON GLOW UNIFY
+========================= */
+
+.news-page-wrap .league-list a,
+.news-page-wrap .trending-list a,
+.news-page-wrap .sidebar-link-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.news-page-wrap .league-list a::after,
+.news-page-wrap .trending-list a::after,
+.news-page-wrap .sidebar-link-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(46, 213, 115, 0.18),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.news-page-wrap .league-list a:hover::after,
+.news-page-wrap .trending-list a:hover::after,
+.news-page-wrap .sidebar-link-card:hover::after {
+  opacity: 1;
+}
+
+.news-page-wrap .league-list a:hover,
+.news-page-wrap .trending-list a:hover,
+.news-page-wrap .sidebar-link-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(46, 213, 115, 0.25) !important;
+  box-shadow:
+    0 0 0 1px rgba(46, 213, 115, 0.25),
+    0 10px 30px rgba(46, 213, 115, 0.15) !important;
+}
+
+.news-page-wrap .league-list a:active,
+.news-page-wrap .trending-list a:active,
+.news-page-wrap .sidebar-link-card:active {
+  transform: translateY(0);
+}
