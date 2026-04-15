@@ -111,11 +111,26 @@ async function loadHomePage() {
         : `<span class="tip-badge">${item.tip || "Prediction"}</span>`;
 
       row.innerHTML = `
-        <div class="cell-league">${item.league || ""}</div>
-       <div class="cell-match">
-  <div class="teams">${item.home || ""} vs ${item.away || ""}</div>
-  <div class="match-sub">${badgeHtml}</div>
-</div>
+        <div class="cell-league">
+          <span class="league-dot"></span>
+          <span class="league-name">${item.league || ""}</span>
+        </div>
+
+        <div class="cell-match">
+          <div class="teams">
+            <span class="team-inline">
+              <span class="team-dot home-dot"></span>
+              <span class="team-name-short">${item.home || ""}</span>
+            </span>
+            <span class="vs-sep">vs</span>
+            <span class="team-inline">
+              <span class="team-dot away-dot"></span>
+              <span class="team-name-short">${item.away || ""}</span>
+            </span>
+          </div>
+          <div class="match-sub">${badgeHtml}</div>
+        </div>
+
         <div class="cell-ft">${isLive ? (item.liveScore || "-") : (item.projectedScore || item.predictedScore || "-")}</div>
         <div class="cell-ht">${item.time || item.minute || "-"}</div>
         <div class="cell-xg">${item.xg || "-"}</div>
@@ -138,9 +153,24 @@ async function loadHomePage() {
 
       row.innerHTML = `
         <div class="cell-match">
-          ${item.home || ""} vs ${item.away || ""}<br>
-          <span style="font-size:12px;color:rgba(255,255,255,0.55);">${item.league || ""}</span>
+          <div class="cell-league" style="margin-bottom:6px;">
+            <span class="league-dot"></span>
+            <span class="league-name">${item.league || ""}</span>
+          </div>
+
+          <div class="teams">
+            <span class="team-inline">
+              <span class="team-dot home-dot"></span>
+              <span class="team-name-short">${item.home || ""}</span>
+            </span>
+            <span class="vs-sep">vs</span>
+            <span class="team-inline">
+              <span class="team-dot away-dot"></span>
+              <span class="team-name-short">${item.away || ""}</span>
+            </span>
+          </div>
         </div>
+
         <div class="cell-ft">${item.finalScore || item.projectedScore || item.predictedScore || "-"}</div>
         <div>
           <span class="tip-badge">${item.tip || "Finished"}</span>
