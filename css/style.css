@@ -3049,3 +3049,39 @@ button.active,
     gap: 6px;
   }
 }
+.league-mini-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #dff7ea;
+  background: linear-gradient(180deg, rgba(38, 73, 61, 0.95), rgba(29, 57, 49, 0.95));
+  border: 1px solid rgba(90, 214, 154, 0.22);
+  box-shadow: 0 0 14px rgba(25, 181, 109, 0.12);
+  flex-shrink: 0;
+}
+
+.team-circle {
+  background: linear-gradient(180deg, rgba(58, 88, 124, 0.95), rgba(40, 63, 92, 0.95));
+  border: 1px solid rgba(116, 176, 255, 0.18);
+  box-shadow: 0 0 14px rgba(74, 169, 255, 0.10);
+}
+
+.standings-team,
+.standings-match-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.standings-team-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
