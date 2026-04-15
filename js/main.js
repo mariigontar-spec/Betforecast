@@ -112,10 +112,10 @@ async function loadHomePage() {
 
       row.innerHTML = `
         <div class="cell-league">${item.league || ""}</div>
-        <div class="cell-match">
-          ${item.home || ""} vs ${item.away || ""}<br>
-          ${badgeHtml}
-        </div>
+       <div class="cell-match">
+  <div class="teams">${item.home || ""} vs ${item.away || ""}</div>
+  <div class="match-sub">${badgeHtml}</div>
+</div>
         <div class="cell-ft">${isLive ? (item.liveScore || "-") : (item.projectedScore || item.predictedScore || "-")}</div>
         <div class="cell-ht">${item.time || item.minute || "-"}</div>
         <div class="cell-xg">${item.xg || "-"}</div>
