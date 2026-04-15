@@ -138,149 +138,206 @@ async function loadMatchPage() {
             `Status: ${match.status || "preview"}`
           ];
 
-    document.getElementById("match-league-badge").innerText = match.league || "Top League";
-    document.getElementById("match-title").innerText = `${homeName} vs ${awayName}`;
-    document.getElementById("match-subtitle").innerText = isLive
-      ? `Live AI match view with current score, momentum cues, probability balance, and risk signals for ${homeName} vs ${awayName}.`
-      : isFinished
-      ? `Finished match view with result, projected score context, and model-based breakdown for ${homeName} vs ${awayName}.`
-      : `AI-powered preview with probability, projected score, xG lean, game-state risk, and form comparison for ${homeName} vs ${awayName}.`;
+    setText("match-league-badge", match.league || "Top League");
+    setText("match-title", `${homeName} vs ${awayName}`);
+    setText(
+      "match-subtitle",
+      isLive
+        ? `Live AI match view with current score, momentum cues, probability balance, and risk signals for ${homeName} vs ${awayName}.`
+        : isFinished
+        ? `Finished match view with result, projected score context, and model-based breakdown for ${homeName} vs ${awayName}.`
+        : `AI-powered preview with probability, projected score, xG lean, game-state risk, and form comparison for ${homeName} vs ${awayName}.`
+    );
 
-    document.getElementById("match-date").innerText = dateText;
-    document.getElementById("match-time").innerText = timeText;
-    document.getElementById("match-stadium").innerText = stadiumText;
+    setText("match-date", dateText);
+    setText("match-time", timeText);
+    setText("match-stadium", stadiumText);
 
-    document.getElementById("match-confidence-pill").innerText = isLive
-      ? `LIVE ${match.minute || ""}`.trim()
-      : `Confidence ${confidence}%`;
+    setText(
+      "match-confidence-pill",
+      isLive ? `LIVE ${match.minute || ""}`.trim() : `Confidence ${confidence}%`
+    );
 
-    document.getElementById("team-home-short").innerText = homeShort;
-    document.getElementById("team-away-short").innerText = awayShort;
-    document.getElementById("team-home-name").innerText = homeName;
-    document.getElementById("team-away-name").innerText = awayName;
-    document.getElementById("projected-score").innerText = heroScore;
+    setText("team-home-short", homeShort);
+    setText("team-away-short", awayShort);
+    setText("team-home-name", homeName);
+    setText("team-away-name", awayName);
+    setText("projected-score", heroScore);
 
-    document.getElementById("prob-home").innerText = `${homePct}%`;
-    document.getElementById("prob-draw").innerText = `${drawPct}%`;
-    document.getElementById("prob-away").innerText = `${awayPct}%`;
-    document.getElementById("prob-home-label").innerText = `${homeName} Win`;
-    document.getElementById("prob-away-label").innerText = `${awayName} Win`;
+    setText("prob-home", `${homePct}%`);
+    setText("prob-draw", `${drawPct}%`);
+    setText("prob-away", `${awayPct}%`);
+    setText("prob-home-label", `${homeName} Win`);
+    setText("prob-away-label", `${awayName} Win`);
 
-    document.getElementById("hero-bar-home").style.width = `${homePct}%`;
-    document.getElementById("hero-bar-draw").style.width = `${drawPct}%`;
-    document.getElementById("hero-bar-away").style.width = `${awayPct}%`;
+    setWidth("hero-bar-home", `${homePct}%`);
+    setWidth("hero-bar-draw", `${drawPct}%`);
+    setWidth("hero-bar-away", `${awayPct}%`);
 
-    document.getElementById("match-summary").innerText = summary;
-    document.getElementById("best-tip").innerText = bestTip;
-    document.getElementById("goals-lean").innerText = goalsLean;
-    document.getElementById("btts-signal").innerText = btts;
+    setText("match-summary", summary);
+    setText("best-tip", bestTip);
+    setText("goals-lean", goalsLean);
+    setText("btts-signal", btts);
 
     const factorTags = document.getElementById("factor-tags");
-    factorTags.innerHTML = "";
-    factors.forEach((factor) => {
-      const span = document.createElement("span");
-      span.innerText = factor;
-      factorTags.appendChild(span);
-    });
+    if (factorTags) {
+      factorTags.innerHTML = "";
+      factors.forEach((factor) => {
+        const span = document.createElement("span");
+        span.textContent = factor;
+        factorTags.appendChild(span);
+      });
+    }
 
-    document.getElementById("xg-home-team").innerText = homeName;
-    document.getElementById("xg-away-team").innerText = awayName;
-    document.getElementById("shots-home-team").innerText = homeName;
-    document.getElementById("shots-away-team").innerText = awayName;
-    document.getElementById("pos-home-team").innerText = homeName;
-    document.getElementById("pos-away-team").innerText = awayName;
+    setText("xg-home-team", homeName);
+    setText("xg-away-team", awayName);
+    setText("shots-home-team", homeName);
+    setText("shots-away-team", awayName);
+    setText("pos-home-team", homeName);
+    setText("pos-away-team", awayName);
 
-    document.getElementById("xg-home").innerText = xgHome;
-    document.getElementById("xg-away").innerText = xgAway;
-    document.getElementById("shots-home").innerText = shotsHome;
-    document.getElementById("shots-away").innerText = shotsAway;
-    document.getElementById("pos-home").innerText = possessionHome;
-    document.getElementById("pos-away").innerText = possessionAway;
+    setText("xg-home", xgHome);
+    setText("xg-away", xgAway);
+    setText("shots-home", shotsHome);
+    setText("shots-away", shotsAway);
+    setText("pos-home", possessionHome);
+    setText("pos-away", possessionAway);
 
-    document.getElementById("confidence-fill").style.width = `${confidence}%`;
-    document.getElementById("confidence-value").innerText = `${confidence}%`;
+    setWidth("confidence-fill", `${confidence}%`);
+    setText("confidence-value", `${confidence}%`);
 
-    document.getElementById("form-home-title").innerText = homeName;
-    document.getElementById("form-away-title").innerText = awayName;
+    setText("form-home-title", homeName);
+    setText("form-away-title", awayName);
 
     const formHomeBadges = document.getElementById("form-home-badges");
     const formAwayBadges = document.getElementById("form-away-badges");
-    formHomeBadges.innerHTML = "";
-    formAwayBadges.innerHTML = "";
 
-    function createFormBadge(value) {
-      const span = document.createElement("span");
-      span.innerText = value;
-      if (value === "W") span.className = "form-win";
-      else if (value === "D") span.className = "form-draw";
-      else span.className = "form-loss";
-      return span;
+    if (formHomeBadges) {
+      formHomeBadges.innerHTML = "";
+      formHome.forEach((item) => formHomeBadges.appendChild(createFormBadge(item)));
     }
 
-    formHome.forEach((item) => formHomeBadges.appendChild(createFormBadge(item)));
-    formAway.forEach((item) => formAwayBadges.appendChild(createFormBadge(item)));
+    if (formAwayBadges) {
+      formAwayBadges.innerHTML = "";
+      formAway.forEach((item) => formAwayBadges.appendChild(createFormBadge(item)));
+    }
 
     const formHomeList = document.getElementById("form-home-list");
     const formAwayList = document.getElementById("form-away-list");
-    formHomeList.innerHTML = "";
-    formAwayList.innerHTML = "";
 
-    homeStats.forEach((item) => {
-      const li = document.createElement("li");
-      li.innerHTML = item.includes(": ") ? item.replace(": ", ": <strong>") + "</strong>" : item;
-      formHomeList.appendChild(li);
-    });
+    if (formHomeList) {
+      formHomeList.innerHTML = "";
+      homeStats.forEach((item) => {
+        formHomeList.appendChild(createStatListItem(item));
+      });
+    }
 
-    awayStats.forEach((item) => {
-      const li = document.createElement("li");
-      li.innerHTML = item.includes(": ") ? item.replace(": ", ": <strong>") + "</strong>" : item;
-      formAwayList.appendChild(li);
-    });
+    if (formAwayList) {
+      formAwayList.innerHTML = "";
+      awayStats.forEach((item) => {
+        formAwayList.appendChild(createStatListItem(item));
+      });
+    }
 
-    document.getElementById("quick-insight-text").innerText = quickInsight;
+    setText("quick-insight-text", quickInsight);
 
     const timelineList = document.getElementById("timeline-list");
-    timelineList.innerHTML = "";
-    timeline.forEach((item) => {
-      const row = document.createElement("div");
-      row.className = "timeline-item";
-      row.innerHTML = `
-        <div class="timeline-minute">${item.minute}</div>
-        <div class="timeline-text">${item.text}</div>
-      `;
-      timelineList.appendChild(row);
-    });
+    if (timelineList) {
+      timelineList.innerHTML = "";
+      timeline.forEach((item) => {
+        const row = document.createElement("div");
+        row.className = "timeline-item glow-hover";
+        row.innerHTML = `
+          <div class="timeline-minute">${item.minute}</div>
+          <div class="timeline-text">${item.text}</div>
+        `;
+        timelineList.appendChild(row);
+      });
+    }
 
     const keySignals = document.getElementById("key-signal-list");
-    keySignals.innerHTML = "";
-    [
-      ["Status", (match.status || "preview").toUpperCase()],
-      ["Best Tip", bestTip],
-      ["Goals Lean", goalsLean],
-      ["BTTS", btts],
-      ["Model Confidence", `${confidence}%`]
-    ].forEach(([label, value]) => {
-      const row = document.createElement("div");
-      row.className = "key-signal-item";
-      row.innerHTML = `<span>${label}</span><strong>${value}</strong>`;
-      keySignals.appendChild(row);
-    });
+    if (keySignals) {
+      keySignals.innerHTML = "";
+      [
+        ["Status", (match.status || "preview").toUpperCase()],
+        ["Best Tip", bestTip],
+        ["Goals Lean", goalsLean],
+        ["BTTS", btts],
+        ["Model Confidence", `${confidence}%`]
+      ].forEach(([label, value]) => {
+        const row = document.createElement("div");
+        row.className = "key-signal-item glow-hover";
+        row.innerHTML = `<span>${label}</span><strong>${value}</strong>`;
+        keySignals.appendChild(row);
+      });
+    }
 
     const relatedList = document.getElementById("related-match-list");
-    relatedList.innerHTML = "";
-    matches
-      .filter((item) => item.id !== match.id)
-      .slice(0, 4)
-      .forEach((item) => {
-        const a = document.createElement("a");
-        a.className = "related-match-item";
-        a.href = `match.html?game=${item.id}`;
-        a.innerHTML = `<strong>${item.home || "Home"} vs ${item.away || "Away"}</strong><span>${item.league || "League"}</span>`;
-        relatedList.appendChild(a);
-      });
+    if (relatedList) {
+      relatedList.innerHTML = "";
+      matches
+        .filter((item) => item.id !== match.id)
+        .slice(0, 4)
+        .forEach((item) => {
+          const a = document.createElement("a");
+          a.className = "related-match-item glow-hover";
+          a.href = `match.html?game=${item.id}`;
+          a.innerHTML = `
+            <strong>${item.home || "Home"} vs ${item.away || "Away"}</strong>
+            <span>${item.league || "League"}</span>
+          `;
+          relatedList.appendChild(a);
+        });
+    }
+
+    initGlowHover();
   } catch (error) {
     console.error("Failed to load match page:", error);
   }
+}
+
+function setText(id, value) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = value;
+}
+
+function setWidth(id, value) {
+  const el = document.getElementById(id);
+  if (el) el.style.width = value;
+}
+
+function createFormBadge(value) {
+  const span = document.createElement("span");
+  span.textContent = value;
+
+  if (value === "W") span.className = "form-win";
+  else if (value === "D") span.className = "form-draw";
+  else span.className = "form-loss";
+
+  return span;
+}
+
+function createStatListItem(text) {
+  const li = document.createElement("li");
+
+  if (text.includes(": ")) {
+    const [label, value] = text.split(": ");
+    li.innerHTML = `${label}: <strong>${value}</strong>`;
+  } else {
+    li.textContent = text;
+  }
+
+  return li;
+}
+
+function initGlowHover() {
+  document.querySelectorAll(".glow-hover").forEach((el) => {
+    el.addEventListener("mousemove", (e) => {
+      const rect = el.getBoundingClientRect();
+      el.style.setProperty("--x", `${e.clientX - rect.left}px`);
+      el.style.setProperty("--y", `${e.clientY - rect.top}px`);
+    });
+  });
 }
 
 loadMatchPage();
