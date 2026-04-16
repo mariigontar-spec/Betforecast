@@ -3212,4 +3212,313 @@ body.theme-glass .match-pro-hero .hero-stat-pill {
 .news-page-wrap .sidebar-link-card:hover::after {
   opacity: 1;
 }
-/* ===== HERO METRICS (PILLS + CLICKABLE) ===== */
+/* ===== HERO METRICS (UNIFIED PILLS) ===== */
+
+.ai-metrics-bottom-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+/* ссылка */
+.ai-metric-link {
+  flex: 1;
+  min-width: 120px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* сама кнопка */
+.ai-metric-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  width: 100%;
+  padding: 12px 16px;
+
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(132,149,171,0.16);
+
+  font-weight: 700;
+  font-size: 14px;
+  color: #f4f7fb;
+
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* значение */
+.ai-metric-chip .metric-value {
+  font-size: 15px;
+  font-weight: 800;
+  color: #62f0be;
+}
+
+/* текст */
+.ai-metric-chip .metric-label {
+  opacity: 0.85;
+}
+
+/* hover */
+.ai-metric-link:hover .ai-metric-chip {
+  transform: translateY(-2px);
+}
+
+/* DARK */
+body.theme-dark .ai-metric-link:hover .ai-metric-chip {
+  border-color: rgba(98, 240, 190, 0.35);
+  background: rgba(98, 240, 190, 0.08);
+  box-shadow:
+    0 0 0 1px rgba(98, 240, 190, 0.18),
+    0 10px 24px rgba(98, 240, 190, 0.12);
+}
+
+/* GLASS */
+body.theme-glass .ai-metric-link:hover .ai-metric-chip {
+  border-color: rgba(15, 143, 99, 0.22);
+  background: rgba(15, 143, 99, 0.06);
+  box-shadow:
+    0 0 0 1px rgba(15, 143, 99, 0.10),
+    0 10px 20px rgba(15, 143, 99, 0.08);
+}
+
+/* active */
+.ai-metric-link:active .ai-metric-chip {
+  transform: scale(0.97);
+}
+
+/* чтобы весь блок был кликабельным */
+.ai-metric-chip * {
+  pointer-events: none;
+}
+
+/* 📱 мобильная адаптация */
+@media (max-width: 640px) {
+  .ai-metric-link {
+    flex: 100%;
+  }
+
+  .ai-metric-chip {
+    justify-content: space-between;
+  }
+}
+/* ===== AI SEARCH BLOCK ===== */
+
+.ai-focus-text {
+  position: relative;
+  overflow: hidden;
+}
+
+body.theme-dark .ai-focus-text {
+  background:
+    radial-gradient(circle at 18% 20%, rgba(25,181,109,0.10), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(74,169,255,0.08), transparent 26%),
+    linear-gradient(180deg, rgba(40,53,69,0.92), rgba(31,43,58,0.90)) !important;
+}
+
+body.theme-glass .ai-focus-text {
+  background:
+    radial-gradient(circle at 18% 20%, rgba(25,181,109,0.08), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(74,169,255,0.06), transparent 26%),
+    rgba(245,248,252,0.82) !important;
+}
+
+/* search wrapper */
+.ai-search-box {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+body.theme-glass .ai-search-box {
+  background: rgba(255,255,255,0.45);
+}
+
+.ai-search-head {
+  margin-bottom: 14px;
+}
+
+.ai-search-title {
+  margin: 0 0 6px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.ai-search-subtitle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-soft);
+}
+
+/* form */
+.ai-search-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.ai-search-input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 16px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  outline: none;
+  font: inherit;
+  color: var(--text-main);
+  background: rgba(255,255,255,0.04);
+  transition: border-color 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+}
+
+body.theme-glass .ai-search-input {
+  background: rgba(255,255,255,0.68);
+}
+
+.ai-search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.ai-search-input:focus {
+  border-color: rgba(98,240,190,0.34);
+  box-shadow:
+    0 0 0 1px rgba(98,240,190,0.14),
+    0 0 24px rgba(98,240,190,0.08);
+}
+
+.ai-search-btn {
+  min-width: 180px;
+}
+
+/* result area */
+.ai-search-result {
+  margin-top: 16px;
+}
+
+.ai-search-result__empty {
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px dashed var(--border);
+  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* prediction card */
+.ai-prob-card {
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+}
+
+body.theme-glass .ai-prob-card {
+  background: rgba(255,255,255,0.52);
+}
+
+.ai-prob-card__match {
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-main);
+}
+
+.ai-prob-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.ai-prob-tile {
+  padding: 14px 10px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+}
+
+.ai-prob-tile strong {
+  display: block;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 900;
+  color: var(--text-main);
+}
+
+.ai-prob-tile span {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+}
+
+.ai-prob-tile--home strong {
+  color: #62f0be;
+}
+
+.ai-prob-tile--away strong {
+  color: #6cc7ff;
+}
+
+.ai-prob-summary {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-soft);
+}
+
+.ai-prob-bar {
+  display: flex;
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 0 0 14px;
+  background: rgba(148,163,184,0.18);
+}
+
+.ai-prob-bar__home {
+  background: linear-gradient(90deg, #17b26a, #4ade80);
+}
+
+.ai-prob-bar__draw {
+  background: rgba(148,163,184,0.45);
+}
+
+.ai-prob-bar__away {
+  background: linear-gradient(90deg, #60a5fa, #38bdf8);
+}
+
+/* mobile */
+@media (max-width: 760px) {
+  .ai-search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-search-btn {
+    width: 100%;
+  }
+
+  .ai-prob-grid {
+    grid-template-columns: 1fr;
+  }
+}
