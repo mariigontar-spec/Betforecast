@@ -3212,7 +3212,7 @@ body.theme-glass .match-pro-hero .hero-stat-pill {
 .news-page-wrap .sidebar-link-card:hover::after {
   opacity: 1;
 }
-/* ===== HERO METRICS AS PILLS ===== */
+/* ===== HERO METRICS (PILLS + CLICKABLE) ===== */
 
 .ai-metrics-bottom-row {
   display: flex;
@@ -3221,18 +3221,28 @@ body.theme-glass .match-pro-hero .hero-stat-pill {
   flex-wrap: wrap;
 }
 
+/* сама "пилюля" */
 .ai-metric-chip {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 10px 16px;
   border-radius: 999px;
+
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(132,149,171,0.16);
+
   font-weight: 700;
   font-size: 14px;
   color: #f4f7fb;
+
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
 }
 
 /* значение */
@@ -3247,59 +3257,42 @@ body.theme-glass .match-pro-hero .hero-stat-pill {
   opacity: 0.8;
 }
 
-/* hover как у кнопок */
-.ai-metric-chip:hover {
-  border-color: rgba(46,213,115,0.4);
-  background: rgba(46,213,115,0.08);
-  transform: translateY(-1px);
-  box-shadow:
-    0 0 0 1px rgba(46,213,115,0.2),
-    0 6px 18px rgba(46,213,115,0.12);
-}
-/* ===== CLICKABLE HERO METRICS ===== */
-
-.ai-metrics-bottom-row {
-  display: flex;
-  gap: 12px;
-  margin-top: 16px;
-  flex-wrap: wrap;
-}
-
+/* ссылка-обёртка */
 .ai-metric-link {
   text-decoration: none;
   cursor: pointer;
-  transition:
-    transform 0.22s ease,
-    border-color 0.22s ease,
-    background 0.22s ease,
-    box-shadow 0.22s ease;
+  display: inline-block;
 }
 
-.ai-metric-link:hover {
+/* hover эффект */
+.ai-metric-link:hover .ai-metric-chip {
   transform: translateY(-2px);
 }
 
-body.theme-dark .ai-metric-link:hover {
-  border-color: rgba(98, 240, 190, 0.34) !important;
-  background: rgba(98, 240, 190, 0.08) !important;
+/* DARK тема */
+body.theme-dark .ai-metric-link:hover .ai-metric-chip {
+  border-color: rgba(98, 240, 190, 0.34);
+  background: rgba(98, 240, 190, 0.08);
   box-shadow:
     0 0 0 1px rgba(98, 240, 190, 0.18),
     0 10px 24px rgba(98, 240, 190, 0.10);
 }
 
-body.theme-glass .ai-metric-link:hover {
-  border-color: rgba(15, 143, 99, 0.22) !important;
-  background: rgba(15, 143, 99, 0.06) !important;
+/* GLASS тема */
+body.theme-glass .ai-metric-link:hover .ai-metric-chip {
+  border-color: rgba(15, 143, 99, 0.22);
+  background: rgba(15, 143, 99, 0.06);
   box-shadow:
     0 0 0 1px rgba(15, 143, 99, 0.10),
     0 10px 20px rgba(15, 143, 99, 0.08);
 }
 
-.ai-metric-link:active {
-  transform: translateY(0) scale(0.985);
+/* активное нажатие */
+.ai-metric-link:active .ai-metric-chip {
+  transform: translateY(0) scale(0.98);
 }
 
-.ai-metric-link .metric-label,
-.ai-metric-link .metric-value {
+/* чтобы текст не ломал клики */
+.ai-metric-chip * {
   pointer-events: none;
 }
