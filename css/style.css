@@ -3145,3 +3145,46 @@ button.active,
   content: none !important;
   display: none !important;
 }
+/* ===== MATCH TOP STATS ROW ===== */
+
+.match-pro-hero .hero-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.match-pro-hero .hero-stat-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(132,149,171,0.16);
+  color: var(--text-main);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+body.theme-glass .match-pro-hero .hero-stat-pill {
+  background: rgba(255,255,255,0.5);
+  border: 1px solid rgba(16,26,47,0.08);
+  color: var(--text-main);
+}
+
+@media (max-width: 760px) {
+  .match-pro-hero .hero-stats-row {
+    gap: 10px;
+  }
+
+  .match-pro-hero .hero-stat-pill {
+    min-height: 44px;
+    padding: 0 14px;
+    font-size: 15px;
+  }
+}
