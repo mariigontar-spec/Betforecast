@@ -139,6 +139,14 @@ async function loadHomePage() {
 
       matchesContainer.appendChild(row);
     });
+
+    if (!listMatches.length) {
+      matchesContainer.innerHTML = `
+        <div style="padding:20px; border-radius:16px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); color:rgba(255,255,255,0.75);">
+          No live or upcoming matches right now.
+        </div>
+      `;
+    }
   }
 
   if (resultsContainer) {
@@ -213,6 +221,7 @@ async function loadHomePage() {
   }
 
   initGlowHover();
+  initAiMatchSearch(matches);
 }
 
 function initGlowHover() {
@@ -222,6 +231,100 @@ function initGlowHover() {
       el.style.setProperty("--x", `${e.clientX - rect.left}px`);
       el.style.setProperty("--y", `${e.clientY - rect.top}px`);
     });
+  });
+}
+
+function initAiMatchSearch(matches = []) {
+  const form = document.getElementById("ai-match-form");
+  const input = document.getElementById("ai-match-input");
+  const result = document.getElementById("ai-search-result");
+
+  if (!form || !input || !result) return;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const query = input.value.trim();
+    if (!query) return;
+
+    result.innerHTML = `
+      <div class="ai-search-result__empty">
+        Analyzing match context and generating probabilities...
+      </div>
+    `;
+
+    try {
+      const found =
+        matches.find((item) => {
+          const text = `${item.home || ""} vs ${item.away || ""}`.toLowerCase();
+          return text.includes(query.toLowerCase());
+        }) || null;
+
+      let home = "Home";
+      let away = "Away";
+      let homePct = 45;
+      let drawPct = 28;
+      let awayPct = 27;
+      let summary =
+        "AI sees a balanced match with moderate volatility, where form, squad news and match tempo will heavily influence the final result.";
+
+      if (found) {
+        home = found.home || "Home";
+        away = found.away || "Away";
+        homePct = found.homePct ?? 45;
+        drawPct = found.drawPct ?? 28;
+        awayPct = found.awayPct ?? 27;
+
+        summary =
+          found.summary ||
+          `${home} show slightly stronger structural indicators, while ${away} remain dangerous in transitions. The draw probability stays relevant if the match opens cautiously.`;
+      } else {
+        const parts = query.split("vs");
+        if (parts.length === 2) {
+          home = parts[0].trim() || "Home";
+          away = parts[1].trim() || "Away";
+        } else {
+          home = query;
+          away = "Opponent";
+        }
+      }
+
+      result.innerHTML = `
+        <div class="ai-prob-card">
+          <div class="ai-prob-card__match">${home} vs ${away}</div>
+
+          <div class="ai-prob-grid">
+            <div class="ai-prob-tile ai-prob-tile--home">
+              <strong>${homePct}%</strong>
+              <span>${home} Win</span>
+            </div>
+            <div class="ai-prob-tile">
+              <strong>${drawPct}%</strong>
+              <span>Draw</span>
+            </div>
+            <div class="ai-prob-tile ai-prob-tile--away">
+              <strong>${awayPct}%</strong>
+              <span>${away} Win</span>
+            </div>
+          </div>
+
+          <div class="ai-prob-bar" aria-hidden="true">
+            <div class="ai-prob-bar__home" style="width:${homePct}%"></div>
+            <div class="ai-prob-bar__draw" style="width:${drawPct}%"></div>
+            <div class="ai-prob-bar__away" style="width:${awayPct}%"></div>
+          </div>
+
+          <div class="ai-prob-summary">${summary}</div>
+        </div>
+      `;
+    } catch (error) {
+      console.error("AI match search failed:", error);
+      result.innerHTML = `
+        <div class="ai-search-result__empty">
+          Could not analyze the match right now.
+        </div>
+      `;
+    }
   });
 }
 
