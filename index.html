@@ -54,7 +54,6 @@
 
           <div class="ai-metrics-compact">
             <div class="ai-metrics-bottom-row">
-
               <a href="#model-section" class="ai-metric-link">
                 <div class="ai-metric-chip">
                   <span class="metric-value" data-target="100" data-suffix="+">0</span>
@@ -82,7 +81,34 @@
                   <span class="metric-label">Engine</span>
                 </div>
               </a>
+            </div>
+          </div>
 
+          <div class="ai-search-box">
+            <div class="ai-search-head">
+              <h3 class="ai-search-title">Match Probability Search</h3>
+              <p class="ai-search-subtitle">
+                Search any match and let AI estimate the likely outcome.
+              </p>
+            </div>
+
+            <form class="ai-search-form" id="ai-match-form">
+              <input
+                type="text"
+                id="ai-match-input"
+                class="ai-search-input"
+                placeholder="Example: Arsenal vs Chelsea"
+                autocomplete="off"
+              >
+              <button type="submit" class="primary-btn ai-search-btn">
+                Analyze with AI
+              </button>
+            </form>
+
+            <div class="ai-search-result" id="ai-search-result">
+              <div class="ai-search-result__empty">
+                Enter a match to see win probabilities and AI reasoning.
+              </div>
             </div>
           </div>
         </div>
