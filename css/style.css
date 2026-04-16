@@ -3188,3 +3188,9 @@ body.theme-glass .match-pro-hero .hero-stat-pill {
     font-size: 15px;
   }
 }
+.news-page-wrap .league-list a::after,
+.news-page-wrap .trending-list a::after,
+.news-page-wrap .sidebar-link-card::after {
+  content: none !important;
+  display: none !important;
+}
