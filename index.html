@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Betforecast.ai | Matches</title>
+  <title>Betforecast.ai | Home</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
       <nav class="topbar-menu" aria-label="Main navigation">
         <a href="news.html">News</a>
         <a href="standings.html">Standings</a>
-        <a href="match.html" class="active">Matches</a>
+        <a href="match.html">Matches</a>
         <a href="results.html">Results</a>
         <a href="ai-insights.html">AI Insights</a>
       </nav>
@@ -58,27 +58,21 @@
               <span class="metric-label">Signals tracked</span>
             </div>
 
-           <div class="ai-metrics-bottom-row">
-  <a href="#model-section" class="ai-metric ai-metric-chip ai-metric-link">
-    <span class="metric-value" data-target="85" data-suffix="%">0</span>
-    <span class="metric-label">Accuracy</span>
-  </a>
+            <div class="ai-metrics-bottom-row">
+              <a href="#model-section" class="ai-metric ai-metric-chip ai-metric-link">
+                <span class="metric-value" data-target="85" data-suffix="%">0</span>
+                <span class="metric-label">Accuracy</span>
+              </a>
 
-  <a href="#matches-container" class="ai-metric ai-metric-chip ai-metric-link">
-    <span class="metric-value" data-target="24" data-suffix="/7">0</span>
-    <span class="metric-label">Live updates</span>
-  </a>
+              <a href="#matches-container" class="ai-metric ai-metric-chip ai-metric-link">
+                <span class="metric-value" data-target="24" data-suffix="/7">0</span>
+                <span class="metric-label">Live updates</span>
+              </a>
 
-  <a href="ai-insights.html" class="ai-metric ai-metric-chip ai-metric-link">
-    <span class="metric-value">AI</span>
-    <span class="metric-label">Engine</span>
-  </a>
-</div>
-
-              <div class="ai-metric ai-metric-chip">
+              <a href="ai-insights.html" class="ai-metric ai-metric-chip ai-metric-link">
                 <span class="metric-value">AI</span>
                 <span class="metric-label">Engine</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -145,6 +139,14 @@
       </div>
 
       <div id="predictions-container" class="predictions-grid"></div>
+    </section>
+
+    <section class="panel" id="model-section">
+      <div class="panel-head">
+        <h2>Model View</h2>
+      </div>
+
+      <div id="matches-container"></div>
     </section>
 
     <section class="panel" id="results">
