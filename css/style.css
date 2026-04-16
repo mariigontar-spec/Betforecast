@@ -3212,3 +3212,47 @@ body.theme-glass .match-pro-hero .hero-stat-pill {
 .news-page-wrap .sidebar-link-card:hover::after {
   opacity: 1;
 }
+/* ===== HERO METRICS AS PILLS ===== */
+
+.ai-metrics-bottom-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.ai-metric-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(132,149,171,0.16);
+  font-weight: 700;
+  font-size: 14px;
+  color: #f4f7fb;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+/* значение */
+.ai-metric-chip .metric-value {
+  font-size: 15px;
+  font-weight: 800;
+  color: #62f0be;
+}
+
+/* текст */
+.ai-metric-chip .metric-label {
+  opacity: 0.8;
+}
+
+/* hover как у кнопок */
+.ai-metric-chip:hover {
+  border-color: rgba(46,213,115,0.4);
+  background: rgba(46,213,115,0.08);
+  transform: translateY(-1px);
+  box-shadow:
+    0 0 0 1px rgba(46,213,115,0.2),
+    0 6px 18px rgba(46,213,115,0.12);
+}
