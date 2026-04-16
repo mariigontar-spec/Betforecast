@@ -3114,10 +3114,14 @@ button.active,
   transition: opacity 0.25s ease;
 }
 
-.news-page-wrap .league-list a:hover::after,
-.news-page-wrap .trending-list a:hover::after,
-.news-page-wrap .sidebar-link-card:hover::after {
-  opacity: 1;
+.news-page-wrap .league-list a:hover,
+.news-page-wrap .trending-list a:hover,
+.news-page-wrap .sidebar-link-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(46, 213, 115, 0.25) !important;
+  box-shadow:
+    0 0 0 1px rgba(46, 213, 115, 0.22),
+    0 10px 30px rgba(46, 213, 115, 0.12) !important;
 }
 
 .news-page-wrap .league-list a:hover,
@@ -3134,4 +3138,10 @@ button.active,
 .news-page-wrap .trending-list a:active,
 .news-page-wrap .sidebar-link-card:active {
   transform: translateY(0);
+}
+.news-page-wrap .league-list a::after,
+.news-page-wrap .trending-list a::after,
+.news-page-wrap .sidebar-link-card::after {
+  content: none !important;
+  display: none !important;
 }
