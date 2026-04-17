@@ -3527,3 +3527,26 @@ body.theme-glass .ai-prob-tile {
     grid-template-columns: 1fr;
   }
 }
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.site-logo__icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(0,255,136,0.4));
+}
+
+.site-logo__text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.site-logo__icon:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 18px rgba(0,255,136,0.7));
+}
