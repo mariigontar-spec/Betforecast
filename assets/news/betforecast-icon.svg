@@ -1,0 +1,57 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldFill" x1="60" y1="20" x2="188" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A8FFE0" stop-opacity="0.96"/>
+      <stop offset="0.28" stop-color="#46E6A3" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#0B5F42" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="56" y1="22" x2="154" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M128 18
+           C101 26 70 31 42 36
+           V108
+           C42 159 72 202 128 234
+           C184 202 214 159 214 108
+           V36
+           C186 31 155 26 128 18Z"
+        fill="url(#shieldFill)" stroke="rgba(255,255,255,0.52)" stroke-width="4"/>
+  <path d="M128 36
+           C106 42 81 46 60 50
+           V108
+           C60 151 85 186 128 211
+           C171 186 196 151 196 108
+           V50
+           C175 46 150 42 128 36Z"
+        fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+  <path d="M70 54
+           C106 45 139 42 172 46
+           C145 36 111 35 72 46 Z"
+        fill="url(#shine)"/>
+  <g transform="translate(169 67)">
+    <circle cx="0" cy="0" r="31" fill="#F7FBFA" stroke="#DDE6E2" stroke-width="2"/>
+    <polygon points="0,-9 8,-2 6,8 -6,8 -8,-2" fill="#173A32"/>
+    <polygon points="-18,-7 -10,-17 1,-13 -2,-2 -13,1" fill="#173A32"/>
+    <polygon points="18,-7 10,-17 -1,-13 2,-2 13,1" fill="#173A32"/>
+    <polygon points="-14,17 -4,10 4,18 -4,28 -15,25" fill="#173A32"/>
+    <polygon points="14,17 4,10 -4,18 4,28 15,25" fill="#173A32"/>
+  </g>
+  <g stroke="white" stroke-opacity="0.74" stroke-linecap="round">
+    <path d="M153 71 L136 66" stroke-width="2.5"/>
+    <path d="M152 74 L131 86" stroke-width="2.1"/>
+    <path d="M154 77 L133 106" stroke-width="2.0"/>
+    <path d="M160 79 L154 116" stroke-width="2.0"/>
+    <path d="M165 80 L173 116" stroke-width="2.0"/>
+    <path d="M170 78 L190 102" stroke-width="1.9"/>
+    <path d="M175 76 L196 83" stroke-width="1.9"/>
+    <path d="M145 84 L122 96" stroke-width="1.4"/>
+    <path d="M138 97 L117 120" stroke-width="1.4"/>
+  </g>
+  <g fill="#C9FFF0" opacity="0.9">
+    <path d="M181 26 L188 18 L190 29 Z"/>
+    <path d="M204 38 L212 33 L209 43 Z"/>
+    <path d="M210 57 L219 59 L212 67 Z"/>
+  </g>
+</svg>
