@@ -11,10 +11,10 @@
     <div class="header-inner">
       <a class="site-logo" href="index.html" aria-label="Betforecast.ai home">
         <img
-  class="site-logo__icon"
-  src="assets/bet-logo.png"
-  alt="Betforecast.ai logo"
-/>
+          class="site-logo__icon"
+          src="assets/bet-logo.png"
+          alt="Betforecast.ai logo"
+        >
         <span class="site-logo__text">Betforecast.ai</span>
       </a>
 
@@ -38,136 +38,79 @@
       </div>
     </div>
   </header>
-<section class="hero-ai">
-  <div class="hero-ai-left">
-    <h1 class="hero-title">
-      AI Match Predictions
-    </h1>
-    <p class="hero-subtitle">
-      Analyze matches, teams and form — get instant probability insights
-    </p>
 
-    <div class="ai-search-box">
-      <input type="text" placeholder="Search match (e.g. Arsenal vs Chelsea)">
-      <button>Analyze</button>
-    </div>
-
-    <div class="ai-metrics">
-      <div class="ai-metric">
-        <span>Win</span>
-        <strong>62%</strong>
-      </div>
-      <div class="ai-metric">
-        <span>Draw</span>
-        <strong>21%</strong>
-      </div>
-      <div class="ai-metric">
-        <span>Lose</span>
-        <strong>17%</strong>
-      </div>
-    </div>
-  </div>
-
-  <div class="hero-ai-right">
-    <img src="assets/betforecast-hero-animated.svg" alt="AI visualization">
-  </div>
-</section>
   <main class="page-shell">
-    <section class="ai-focus-banner ai-focus-banner-compact">
-      <div class="ai-focus-content">
-        <div class="ai-focus-text">
-          <span class="hero-ai-badge">AI Prediction Engine</span>
-
-          <h1 class="page-hero-title">100+ match signals. One sharper forecast.</h1>
-
-          <p class="page-hero-text">
-            Our AI system analyzes over 100 match variables to generate smarter
-            predictions and more accurate outcomes.
-          </p>
-
-          <div class="ai-metrics-compact">
-            <div class="ai-metrics-bottom-row">
-              <a href="#model-section" class="ai-metric-link">
-                <div class="ai-metric-chip">
-                  <span class="metric-value" data-target="100" data-suffix="+">0</span>
-                  <span class="metric-label">Signals</span>
-                </div>
-              </a>
-
-              <a href="#model-section" class="ai-metric-link">
-                <div class="ai-metric-chip">
-                  <span class="metric-value" data-target="85" data-suffix="%">0</span>
-                  <span class="metric-label">Accuracy</span>
-                </div>
-              </a>
-
-              <a href="#predictions" class="ai-metric-link">
-                <div class="ai-metric-chip">
-                  <span class="metric-value" data-target="24" data-suffix="/7">0</span>
-                  <span class="metric-label">Live</span>
-                </div>
-              </a>
-
-              <a href="ai-insights.html" class="ai-metric-link">
-                <div class="ai-metric-chip">
-                  <span class="metric-value">AI</span>
-                  <span class="metric-label">Engine</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="ai-search-box">
-            <div class="ai-search-head">
-              <h3 class="ai-search-title">Match Probability Search</h3>
-              <p class="ai-search-subtitle">
-                Search any match and let AI estimate the likely outcome.
-              </p>
-            </div>
-
-            <form class="ai-search-form" id="ai-match-form">
-              <input
-                type="text"
-                id="ai-match-input"
-                class="ai-search-input"
-                placeholder="Example: Arsenal vs Chelsea"
-                autocomplete="off"
-              >
-              <button type="submit" class="primary-btn ai-search-btn">
-                Analyze with AI
-              </button>
-            </form>
-
-            <div class="ai-search-result" id="ai-search-result">
-              <div class="ai-search-result__empty">
-                Enter a match to see win probabilities and AI reasoning.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="hero hero-home">
-      <div class="hero-overlay"></div>
-
+    <section class="hero hero-home hero-home-ai">
       <div class="hero-left">
-        <span class="hero-badge">AI Predictions</span>
+        <span class="hero-ai-badge">AI Prediction Engine</span>
 
-        <h2>Football Predictions, Results &amp; AI Insights</h2>
+        <h1 class="page-hero-title">100+ match signals. One sharper forecast.</h1>
 
-        <p>
-          One dashboard. Predictions, results, news and AI breakdowns.
-          Everything you need to understand the game.
+        <p class="page-hero-text">
+          Our AI system analyzes over 100 match variables to generate smarter
+          predictions and more accurate outcomes.
         </p>
 
-        <div class="hero-actions">
-          <a href="#predictions" class="primary-btn">Open Predictions</a>
-          <a href="#results" class="secondary-btn">View Results</a>
+        <div class="ai-metrics-bottom-row">
+          <a href="#model-section" class="ai-metric-link">
+            <div class="ai-metric-chip">
+              <span class="metric-value" data-target="100" data-suffix="+">0</span>
+              <span class="metric-label">Signals</span>
+            </div>
+          </a>
+
+          <a href="#model-section" class="ai-metric-link">
+            <div class="ai-metric-chip">
+              <span class="metric-value" data-target="85" data-suffix="%">0</span>
+              <span class="metric-label">Accuracy</span>
+            </div>
+          </a>
+
+          <a href="#predictions" class="ai-metric-link">
+            <div class="ai-metric-chip">
+              <span class="metric-value" data-target="24" data-suffix="/7">0</span>
+              <span class="metric-label">Live</span>
+            </div>
+          </a>
+
+          <a href="ai-insights.html" class="ai-metric-link">
+            <div class="ai-metric-chip">
+              <span class="metric-value">AI</span>
+              <span class="metric-label">Engine</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="ai-search-box">
+          <div class="ai-search-head">
+            <h3 class="ai-search-title">Match Probability Search</h3>
+            <p class="ai-search-subtitle">
+              Search any match and let AI estimate the likely outcome.
+            </p>
+          </div>
+
+          <form class="ai-search-form" id="ai-match-form">
+            <input
+              type="text"
+              id="ai-match-input"
+              class="ai-search-input"
+              placeholder="Example: Arsenal vs Chelsea"
+              autocomplete="off"
+            >
+            <button type="submit" class="primary-btn ai-search-btn">
+              Analyze with AI
+            </button>
+          </form>
+
+          <div class="ai-search-result" id="ai-search-result">
+            <div class="ai-search-result__empty">
+              Enter a match to see win probabilities and AI reasoning.
+            </div>
+          </div>
         </div>
       </div>
 
-      <aside class="hero-card" aria-label="Featured match">
+      <aside class="hero-card hero-card-ai" aria-label="Featured match">
         <div class="card-top">
           <span class="mini-label">Featured Match</span>
           <span class="mini-tag">AI Insights</span>
@@ -191,14 +134,19 @@
         </div>
 
         <div class="probability-bar" aria-hidden="true">
-          <div class="bar-home"></div>
-          <div class="bar-draw"></div>
-          <div class="bar-away"></div>
+          <div class="bar-home" style="width: 47%;"></div>
+          <div class="bar-draw" style="width: 28%;"></div>
+          <div class="bar-away" style="width: 25%;"></div>
         </div>
 
         <p class="ai-text">
-          Arsenal slightly ahead due to form and home advantage.
+          Arsenal slightly ahead due to form, structure and home advantage.
         </p>
+
+        <div class="hero-actions">
+          <a href="#predictions" class="primary-btn">Open Predictions</a>
+          <a href="#results" class="secondary-btn">View Results</a>
+        </div>
       </aside>
     </section>
 
