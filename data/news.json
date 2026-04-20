@@ -2,55 +2,37 @@
   {
     "id": 1,
     "category": "Premier League",
-    "title": "Arsenal sweat over key injuries before City showdown",
-    "excerpt": "Arsenal head into a defining stretch with several core players missing training, raising questions around balance, control and match readiness before a major league clash.",
-    "time": "2 hrs ago",
+    "title": "Arsenal injury update ahead of Chelsea clash",
+    "excerpt": "Availability, structure, and midfield control may shape both the pre-match narrative and the model's forecast edge.",
+    "time": "8 min ago",
     "readTime": "4 min read",
-    "image": "assets/news/arsenal-injuries.jpg"
+    "image": "assets/news/arsenal.jpg"
   },
   {
     "id": 2,
-    "category": "Injuries",
-    "title": "Premier League injury list grows ahead of the run-in",
-    "excerpt": "Managers across the league are dealing with absences and suspensions as the season tightens, making squad depth and rotation a major factor in coming fixtures.",
-    "time": "4 hrs ago",
+    "category": "Transfers",
+    "title": "Man United step up pursuit of top striker",
+    "excerpt": "United’s recruitment push intensifies as the club looks to add more attacking weight before the next window closes.",
+    "time": "1 hr ago",
     "readTime": "5 min read",
-    "image": "assets/news/premier-league-injuries.jpg"
+    "image": "assets/news/liverpool.jpg"
   },
   {
     "id": 3,
-    "category": "Champions League",
-    "title": "Liverpool knocked out as Ekitike injury adds new concern",
-    "excerpt": "Liverpool’s European exit has been compounded by a worrying injury setback, increasing pressure on the closing phase of the season.",
-    "time": "6 hrs ago",
+    "category": "La Liga",
+    "title": "Barcelona midfield reshuffle before El Clasico",
+    "excerpt": "Tactical adjustments in the middle third could shape the rhythm, press resistance, and transition balance of the match.",
+    "time": "2 hrs ago",
     "readTime": "4 min read",
-    "image": "assets/news/liverpool-psg.jpg"
+    "image": "assets/news/barcelona.jpg"
   },
   {
     "id": 4,
-    "category": "Tactical Focus",
-    "title": "Why late-season squad fitness is shaping title narratives",
-    "excerpt": "Availability is becoming as important as tactics, with training absences and recovery timelines now heavily influencing match forecasts and expected game states.",
-    "time": "8 hrs ago",
-    "readTime": "3 min read",
-    "image": "assets/news/title-race-fitness.jpg"
-  },
-  {
-    "id": 5,
-    "category": "Schedule",
-    "title": "Fixture changes continue to reshape April planning",
-    "excerpt": "European commitments and calendar pressure are still affecting domestic scheduling, forcing clubs to adjust preparation windows and rotation strategy.",
-    "time": "1 day ago",
-    "readTime": "3 min read",
-    "image": "assets/news/fixture-amendments.jpg"
-  },
-  {
-    "id": 6,
-    "category": "Matchday",
-    "title": "Big matches now hinge on depth, tempo and recovery",
-    "excerpt": "At this stage of the season, the edge often comes from fresher legs, cleaner transitions and the ability to control rhythm across both halves.",
-    "time": "1 day ago",
-    "readTime": "4 min read",
-    "image": "assets/news/matchday-depth.jpg"
+    "category": "Title Race",
+    "title": "Premier League pressure rises at the top",
+    "excerpt": "Every dropped point now hits harder as the title race narrows into small margins, momentum swings, and schedule stress.",
+    "time": "3 hrs ago",
+    "readTime": "6 min read",
+    "image": "assets/news/title-race.jpg"
   }
 ]
