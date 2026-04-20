@@ -3534,6 +3534,9 @@ body.theme-glass .ai-prob-tile {
   text-decoration: none;
 }
 
+.logo-accent {
+  color: #00d084;
+}
 .site-logo__icon {
   width: 72px;
   height: 72px;
@@ -3545,8 +3548,8 @@ body.theme-glass .ai-prob-tile {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
   font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #ffffff;
+  letter-spacing: -0.03em;
+  color: #e8f0f2;
 }
 .site-logo__icon:hover {
   transform: scale(1.05);
