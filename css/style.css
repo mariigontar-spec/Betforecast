@@ -3542,8 +3542,10 @@ body.theme-glass .ai-prob-tile {
 }
 
 .site-logo__text {
-  font-size: 20px;
-  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: #ffffff;
 }
 .site-logo__icon:hover {
