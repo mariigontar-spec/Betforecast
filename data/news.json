@@ -6,7 +6,13 @@
     "excerpt": "Availability, structure, and midfield control may shape both the pre-match narrative and the model's forecast edge.",
     "time": "8 min ago",
     "readTime": "4 min read",
-    "image": "assets/news/arsenal.jpg"
+    "image": "assets/news/arsenal.jpg",
+    "content": [
+      "Arsenal enters a critical phase of the title race with late selection calls likely to affect shape, pressing rhythm, and midfield balance.",
+      "The latest availability picture matters because Arsenal’s control model depends heavily on structure between the lines and quick recovery after transition losses.",
+      "Against Chelsea, the biggest analytical question is not simply who starts, but how those absences or returns shift the game’s tempo and territorial control.",
+      "From a prediction standpoint, even one missing midfielder can tilt the expected win probability by changing how often Arsenal wins second balls and sustains pressure."
+    ]
   },
   {
     "id": 2,
@@ -15,7 +21,13 @@
     "excerpt": "United’s recruitment push intensifies as the club looks to add more attacking weight before the next window closes.",
     "time": "1 hr ago",
     "readTime": "5 min read",
-    "image": "assets/news/liverpool.jpg"
+    "image": "assets/news/liverpool.jpg",
+    "content": [
+      "Manchester United are once again being linked with a high-profile forward as the club looks to improve finishing consistency and box presence.",
+      "The move is also tied to tactical flexibility, since the current attacking unit has struggled at times to convert territorial dominance into cleaner shot quality.",
+      "Recruitment at this stage is not just about star power, but about profile fit, pressing reliability, and the ability to stretch defensive blocks.",
+      "For analysts and bettors, transfer stories like this often shape longer-term expectations around team strength, rotation quality, and squad resilience."
+    ]
   },
   {
     "id": 3,
@@ -24,7 +36,13 @@
     "excerpt": "Tactical adjustments in the middle third could shape the rhythm, press resistance, and transition balance of the match.",
     "time": "2 hrs ago",
     "readTime": "4 min read",
-    "image": "assets/news/barcelona.jpg"
+    "image": "assets/news/barcelona.jpg",
+    "content": [
+      "Barcelona are expected to make a midfield adjustment ahead of El Clasico, a change that could influence build-up quality and defensive cover.",
+      "In matches of this level, midfield spacing often decides whether a team can escape pressure cleanly or gets dragged into rushed sequences.",
+      "The reshuffle may also affect passing lanes into the front line, especially if Barcelona prioritise control over vertical speed.",
+      "For prediction models, these kinds of tactical tweaks often change possession share, tempo control, and expected chance quality more than fans initially assume."
+    ]
   },
   {
     "id": 4,
@@ -33,6 +51,12 @@
     "excerpt": "Every dropped point now hits harder as the title race narrows into small margins, momentum swings, and schedule stress.",
     "time": "3 hrs ago",
     "readTime": "6 min read",
-    "image": "assets/news/title-race.jpg"
+    "image": "assets/news/title-race.jpg",
+    "content": [
+      "The Premier League title race has entered the stage where every draw feels like a loss and every narrow win carries strategic weight.",
+      "As the schedule tightens, fixture density and player freshness become just as important as tactical quality on the pitch.",
+      "Momentum also becomes more fragile, since one unexpected result can reshape both the psychological picture and the probability ladder.",
+      "From an AI forecasting angle, title races are where small changes in squad health, schedule load, and match state management matter most."
+    ]
   }
 ]
