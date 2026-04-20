@@ -3530,7 +3530,7 @@ body.theme-glass .ai-prob-tile {
 .site-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
 }
 
