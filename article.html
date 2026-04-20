@@ -9,12 +9,12 @@
 <body>
   <header class="header">
     <div class="header-inner">
-      <a class="site-logo" href="index.html">
+      <a class="site-logo" href="index.html" aria-label="Betforecast.ai home">
         <img
-  class="site-logo__icon"
-  src="assets/bet-logo.png"
-  alt="Betforecast.ai logo"
-/>
+          class="site-logo__icon"
+          src="assets/bet-logo.png"
+          alt="Betforecast.ai logo"
+        >
         <span class="site-logo__text">Betforecast.ai</span>
       </a>
 
@@ -39,85 +39,71 @@
     </div>
   </header>
 
-  <main class="article-pro-wrap">
-    <section class="article-pro-hero">
-      <div class="article-pro-overlay"></div>
+  <main class="article-page-wrap page-shell">
+    <section class="article-hero panel">
+      <a href="news.html" class="article-back-btn">← Back to News</a>
 
-      <div class="article-pro-hero-content">
-        <div class="hero-badge" id="article-category">Premier League</div>
-        <h1 id="article-title">Article title</h1>
-        <p class="article-pro-subtitle" id="article-excerpt">
-          Article excerpt goes here.
-        </p>
+      <div class="article-hero-head">
+        <span class="news-category" id="article-category">News</span>
 
-        <div class="article-pro-meta">
-          <span id="article-time">8 min ago</span>
+        <div class="news-meta">
+          <span id="article-time">Now</span>
+          <span> • </span>
           <span id="article-readtime">4 min read</span>
         </div>
       </div>
+
+      <h1 id="article-title">Loading article...</h1>
+
+      <p class="article-subtitle" id="article-excerpt">
+        Please wait while the article is loading.
+      </p>
     </section>
 
-    <section class="article-pro-layout">
-      <article class="panel article-pro-main">
-        <img
-          id="article-image"
-          class="article-pro-image"
-          src=""
-          alt="Article image"
-        >
+    <section class="article-layout">
+      <div class="article-main-column">
+        <section class="panel article-main">
+          <img
+            id="article-image"
+            class="article-main-image"
+            src="assets/news/arsenal.jpg"
+            alt="Article image"
+          >
 
-        <div class="article-pro-body" id="article-content">
-          <!-- JS injects article content -->
-        </div>
-
-        <section class="article-insight-box">
-          <div class="article-insight-kicker">BetForecast Insight</div>
-          <h3>Why this story matters for forecasting</h3>
-          <p id="article-insight-text">
-            Team news, tactical shifts, and selection changes can materially affect
-            match probability, confidence, and scoring distribution.
-          </p>
+          <div class="article-content" id="article-content">
+            <p>Loading content...</p>
+          </div>
         </section>
-      </article>
+      </div>
 
-      <aside class="article-pro-sidebar">
+      <aside class="article-sidebar">
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>AI Insight</h2>
+          </div>
+
+          <div class="article-insight-box">
+            <span class="article-insight-kicker">Model Reading</span>
+            <h3>Why this matters</h3>
+            <p id="article-insight-text">
+              Loading insight...
+            </p>
+          </div>
+        </section>
+
         <section class="panel side-block">
           <div class="panel-head">
             <h2>Related News</h2>
           </div>
-          <div id="related-news-list" class="related-news-list"></div>
-        </section>
 
-        <section class="panel side-block">
-          <div class="panel-head">
-            <h2>Trending Matches</h2>
-          </div>
-          <div class="trending-list">
-            <a href="match.html?game=mci_ars">Man City vs Arsenal</a>
-            <a href="match.html?game=liv_tot_live">Liverpool vs Tottenham</a>
-            <a href="match.html?game=rm_sev_live">Real Madrid vs Sevilla</a>
-            <a href="match.html?game=juv_nap_live">Juventus vs Napoli</a>
-          </div>
-        </section>
-
-        <section class="panel side-block">
-          <div class="panel-head">
-            <h2>Back to News</h2>
-          </div>
-          <div class="news-focus-box">
-            <strong>Return to the full feed</strong>
-            <p>
-              Browse the latest football headlines, transfer movement, and
-              match-related storylines.
-            </p>
-            <a href="news.html" class="primary-btn article-back-btn">Open News Feed</a>
-          </div>
+          <div class="related-news-list" id="related-news-list"></div>
         </section>
       </aside>
     </section>
   </main>
 
   <script src="js/article.js"></script>
+
   <script>
     (function () {
       const savedTheme = localStorage.getItem("bf-theme") || "dark";
