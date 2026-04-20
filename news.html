@@ -11,10 +11,10 @@
     <div class="header-inner">
       <a class="site-logo" href="index.html">
         <img
-  class="site-logo__icon"
-  src="assets/bet-logo.png"
-  alt="Betforecast.ai logo"
-/>
+          class="site-logo__icon"
+          src="assets/bet-logo.png"
+          alt="Betforecast.ai logo"
+        >
         <span class="site-logo__text">Betforecast.ai</span>
       </a>
 
@@ -41,8 +41,6 @@
 
   <main class="news-page-wrap page-shell">
     <section class="news-top-hero">
-      <div class="news-top-hero-overlay"></div>
-
       <div class="news-top-hero-left">
         <span class="hero-badge">News</span>
 
@@ -73,22 +71,7 @@
             <h2>Featured Story</h2>
           </div>
 
-          <article class="featured-news-card">
-            <div class="featured-news-image"></div>
-
-            <div class="featured-news-body">
-              <span class="news-category">Premier League</span>
-
-              <h3>Arsenal injury update ahead of Chelsea clash</h3>
-
-              <p>
-                Arsenal enters a critical phase of the title race with late selection calls
-                likely to affect shape, pressing rhythm, and midfield balance.
-              </p>
-
-              <div class="featured-news-meta">8 min ago • 4 min read</div>
-            </div>
-          </article>
+          <div id="featured-story"></div>
         </section>
 
         <section class="panel news-feed-panel">
@@ -100,49 +83,46 @@
         </section>
       </div>
 
-    <!-- RIGHT -->
-<aside class="news-sidebar-v2">
+      <aside class="news-sidebar-v2">
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Top Leagues</h2>
+          </div>
+          <div class="league-list league-list-buttons">
+            <a class="sidebar-link-card" href="standings.html?league=npfl">NPFL</a>
+            <a class="sidebar-link-card" href="standings.html?league=premier-league">Premier League</a>
+            <a class="sidebar-link-card" href="standings.html?league=la-liga">La Liga</a>
+            <a class="sidebar-link-card" href="standings.html?league=serie-a">Serie A</a>
+            <a class="sidebar-link-card" href="standings.html?league=bundesliga">Bundesliga</a>
+            <a class="sidebar-link-card" href="standings.html?league=champions-league">Champions League</a>
+          </div>
+        </section>
 
-  <section class="panel side-block">
-    <div class="panel-head">
-      <h2>Top Leagues</h2>
-    </div>
-    <div class="league-list league-list-buttons">
-      <a class="sidebar-link-card" href="standings.html?league=npfl">NPFL</a>
-      <a class="sidebar-link-card" href="standings.html?league=premier-league">Premier League</a>
-      <a class="sidebar-link-card" href="standings.html?league=la-liga">La Liga</a>
-      <a class="sidebar-link-card" href="standings.html?league=serie-a">Serie A</a>
-      <a class="sidebar-link-card" href="standings.html?league=bundesliga">Bundesliga</a>
-      <a class="sidebar-link-card" href="standings.html?league=champions-league">Champions League</a>
-    </div>
-  </section>
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>Trending Topics</h2>
+          </div>
+          <div class="trending-list trending-list-buttons">
+            <a class="sidebar-link-card" href="article.html?topic=arsenal-chelsea">Arsenal vs Chelsea</a>
+            <a class="sidebar-link-card" href="article.html?topic=osimhen-transfer">Osimhen transfer</a>
+            <a class="sidebar-link-card" href="article.html?topic=title-race">Title race</a>
+            <a class="sidebar-link-card" href="article.html?topic=ucl-draw">UCL draw</a>
+          </div>
+        </section>
 
-  <section class="panel side-block">
-    <div class="panel-head">
-      <h2>Trending Topics</h2>
-    </div>
-    <div class="trending-list trending-list-buttons">
-      <a class="sidebar-link-card" href="article.html?topic=arsenal-chelsea">Arsenal vs Chelsea</a>
-      <a class="sidebar-link-card" href="article.html?topic=osimhen-transfer">Osimhen transfer</a>
-      <a class="sidebar-link-card" href="article.html?topic=title-race">Title race</a>
-      <a class="sidebar-link-card" href="article.html?topic=ucl-draw">UCL draw</a>
-    </div>
-  </section>
-
-  <section class="panel side-block">
-    <div class="panel-head">
-      <h2>News Focus</h2>
-    </div>
-    <div class="news-focus-box">
-      <strong>What matters most today</strong>
-      <p>
-        Transfers, injuries, and tactical shifts are shaping both narratives
-        and prediction volatility.
-      </p>
-    </div>
-  </section>
-
-</aside>
+        <section class="panel side-block">
+          <div class="panel-head">
+            <h2>News Focus</h2>
+          </div>
+          <div class="news-focus-box">
+            <strong>What matters most today</strong>
+            <p>
+              Transfers, injuries, and tactical shifts are shaping both narratives
+              and prediction volatility.
+            </p>
+          </div>
+        </section>
+      </aside>
     </section>
   </main>
 
