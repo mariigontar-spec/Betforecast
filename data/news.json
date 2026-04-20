@@ -60,3 +60,34 @@
     ]
   }
 ]
+,
+{
+  "id": 5,
+  "category": "Champions League",
+  "title": "UCL draw pressure builds before knockout week",
+  "excerpt": "Managers are balancing freshness, tactical caution, and emotional control as the next European round approaches.",
+  "time": "4 hrs ago",
+  "readTime": "4 min read",
+  "image": "assets/news/liverpool.jpg",
+  "content": [
+    "The next Champions League round is shaping preparation across multiple squads.",
+    "Rotation choices and emotional control often become as important as the match plan itself.",
+    "In knockout football, one tactical misread can change the entire tie.",
+    "For forecasting systems, these moments increase volatility and shrink the margin for error."
+  ]
+},
+{
+  "id": 6,
+  "category": "Serie A",
+  "title": "Napoli and Juventus enter a decisive tactical stretch",
+  "excerpt": "Defensive spacing, midfield recovery and chance suppression are becoming central to how the top fixtures are being read.",
+  "time": "5 hrs ago",
+  "readTime": "5 min read",
+  "image": "assets/news/title-race.jpg",
+  "content": [
+    "Both sides are entering a phase where control matters more than spectacle.",
+    "Recent tactical tweaks suggest a heavier focus on defensive spacing and recovery shape.",
+    "That may lower chance volume but raise the importance of the first goal.",
+    "AI models tend to react strongly when elite fixtures become structurally narrow."
+  ]
+}
