@@ -23,6 +23,7 @@ async function loadNewsPage() {
             src="${item.image || 'assets/news/arsenal.jpg'}"
             alt="${item.title || 'Featured story'}"
             class="featured-news-image"
+            onerror="this.src='assets/news/arsenal.jpg'; this.alt='Featured story';"
           >
           <div class="featured-news-body">
             <div class="news-category">${item.category || "News"}</div>
@@ -46,6 +47,7 @@ async function loadNewsPage() {
           <img
             src="${item.image || 'assets/news/arsenal.jpg'}"
             alt="${item.title || 'News image'}"
+            onerror="this.src='assets/news/arsenal.jpg'; this.alt='News image';"
           >
           <div class="news-card-body">
             <div class="news-category">${item.category || "News"}</div>
