@@ -3,7 +3,8 @@ async function loadNewsPage() {
   const newsList = document.getElementById("news-list");
 
   try {
-    const response = await fetch("data/news.json", { cache: "no-store" });
+    const response = await fetch("./data/news.json", { cache: "no-store" });
+
     if (!response.ok) {
       throw new Error(`news.json failed: ${response.status}`);
     }
