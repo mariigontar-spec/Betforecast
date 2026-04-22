@@ -3541,14 +3541,13 @@ body.theme-glass .ai-prob-tile {
 }
 
 .site-logo img {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
 }
 
 .site-logo span {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
-  letter-spacing: 0.3px;
 }
 
 .logo-accent {
