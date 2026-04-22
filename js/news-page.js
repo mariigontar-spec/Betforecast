@@ -54,26 +54,94 @@ async function fetchLocalNews() {
 }
 
 async function fetchLiveNews() {
-  const url =
-    `https://gnews.io/api/v4/search` +
-    `?q=football OR soccer OR "premier league" OR "champions league" OR "transfer news"` +
-    `&lang=en` +
-    `&max=10` +
-    `&apikey=${GNEWS_API_KEY}`;
+  const container = document.querySelector('[data-news-grid]');
+  if (!container) return;
 
-  const response = await fetch(url);
+  container.innerHTML = `
+    <div class="news-loading">Loading live football news...</div>
+  `;
 
-  if (!response.ok) {
-    throw new Error(`GNews failed: ${response.status}`);
+  try {
+    const feeds = [
+      'https://feeds.bbci.co.uk/sport/football/rss.xml',
+      'https://www.espn.com/espn/rss/soccer/news',
+      'https://www.goal.com/feeds/en/news'
+    ];
+
+    const requests = feeds.map(feed =>
+      fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed)}`)
+        .then(res => res.json())
+        .catch(() => null)
+    );
+
+    const results = await Promise.all(requests);
+
+    const articles = results
+      .filter(Boolean)
+      .flatMap(result => result.items || [])
+      .filter(item => item.title && item.link)
+      .slice(0, 9);
+
+    if (!articles.length) {
+      container.innerHTML = `
+        <div class="news-error">Live news is temporarily unavailable.</div>
+      `;
+      return;
+    }
+
+    container.innerHTML = articles.map(article => {
+      const image =
+        article.thumbnail ||
+        extractImageFromDescription(article.description) ||
+        'https://via.placeholder.com/600x400?text=Football+News';
+
+      const date = article.pubDate
+        ? new Date(article.pubDate).toLocaleDateString('en-GB', {
+            day: '2-digit',
+            month: 'short',
+            year: 'numeric'
+          })
+        : '';
+
+      return `
+        <a class="news-card" href="${article.link}" target="_blank" rel="noopener noreferrer">
+          <div class="news-card__image">
+            <img src="${image}" alt="${escapeHtml(article.title)}" loading="lazy">
+          </div>
+          <div class="news-card__content">
+            <div class="news-card__meta">${date}</div>
+            <h3 class="news-card__title">${escapeHtml(article.title)}</h3>
+            <p class="news-card__excerpt">
+              ${escapeHtml(stripHtml(article.description || '').slice(0, 140))}...
+            </p>
+          </div>
+        </a>
+      `;
+    }).join('');
+
+  } catch (error) {
+    console.error('Live news error:', error);
+    container.innerHTML = `
+      <div class="news-error">Failed to load live news.</div>
+    `;
   }
+}
 
-  const data = await response.json();
+function extractImageFromDescription(description = '') {
+  const match = description.match(/<img[^>]+src=["']([^"']+)["']/i);
+  return match ? match[1] : '';
+}
 
-  if (!data.articles || !Array.isArray(data.articles) || data.articles.length === 0) {
-    throw new Error("No live articles returned");
-  }
+function stripHtml(html = '') {
+  const div = document.createElement('div');
+  div.innerHTML = html;
+  return div.textContent || div.innerText || '';
+}
 
-  return mapGNewsToCards(data.articles);
+function escapeHtml(text = '') {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
 }
 
 function renderNews(news, featuredStory, newsList) {
