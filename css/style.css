@@ -3532,12 +3532,23 @@ body.theme-glass .ai-prob-tile {
   .ai-prob-grid {
     grid-template-columns: 1fr;
   }
-}
 .site-logo {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 6px;
   text-decoration: none;
+  margin-right: 0;
+}
+
+.site-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.site-logo span {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
 .logo-accent {
