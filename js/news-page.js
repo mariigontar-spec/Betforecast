@@ -1,4 +1,14 @@
-document.addEventListener("DOMContentLoaded", async () => {
+function initGlowHover() {
+  document.querySelectorAll(".glow-hover").forEach((el) => {
+    el.addEventListener("mousemove", (e) => {
+      const rect = el.getBoundingClientRect();
+      el.style.setProperty("--x", `${e.clientX - rect.left}px`);
+      el.style.setProperty("--y", `${e.clientY - rect.top}px`);
+    });
+  });
+}
+
+async function loadNewsPage() {
   const featuredStory = document.getElementById("featured-story");
   const newsList = document.getElementById("news-list");
 
@@ -12,8 +22,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
+  featuredStory.innerHTML = `<div class="news-error-box">Loading featured story...</div>`;
+  newsList.innerHTML = `<div class="news-error-box">Loading latest stories...</div>`;
+
   try {
-    const response = await fetch("data/news.json?ts=" + Date.now());
+    const response = await fetch("./data/news.json?ts=" + Date.now(), {
+      cache: "no-store"
+    });
 
     if (!response.ok) {
       throw new Error(`news.json failed: ${response.status}`);
@@ -67,6 +82,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       newsList.appendChild(card);
     });
+
+    initGlowHover();
   } catch (error) {
     console.error("Failed to load news page:", error);
 
@@ -78,4 +95,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       <div class="news-error-box">Failed to load latest stories.</div>
     `;
   }
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", loadNewsPage);
+} else {
+  loadNewsPage();
+}
