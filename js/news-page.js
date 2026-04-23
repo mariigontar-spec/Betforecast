@@ -7,7 +7,7 @@ async function fetchLiveNews() {
   const newsContainer = document.getElementById('news-list');
 
   if (!featuredContainer || !newsContainer) {
-    console.error('❌ News containers not found');
+    console.error('News containers not found');
     return;
   }
 
@@ -17,30 +17,48 @@ async function fetchLiveNews() {
   try {
     const feeds = [
       'https://feeds.bbci.co.uk/sport/football/rss.xml',
-      'https://www.espn.com/espn/rss/soccer/news',
-      'https://rss.app/feeds/Sx9M4LwzpqN8xPVR.xml'
+      'https://www.espn.com/espn/rss/soccer/news'
     ];
 
-    const requests = feeds.map(feed =>
-      fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed)}`)
-        .then(res => res.json())
-        .catch(err => {
-          console.error('Feed error:', feed, err);
-          return null;
-        })
-    );
+    const requests = feeds.map(async (feed) => {
+      try {
+        const response = await fetch(
+          `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed)}`
+        );
 
-    const results = await Promise.all(requests);
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
 
-    const articles = results
-      .filter(result => result && result.items)
-      .flatMap(result => result.items)
-      .filter(item => item.title && item.link)
+        const data = await response.json();
+
+        if (!data || data.status !== 'ok' || !Array.isArray(data.items)) {
+          console.warn('Bad feed response:', feed, data);
+          return [];
+        }
+
+        return data.items;
+      } catch (error) {
+        console.error('Feed error:', feed, error);
+        return [];
+      }
+    });
+
+    const feedItems = await Promise.all(requests);
+
+    const articles = feedItems
+      .flat()
+      .filter(item => item && item.title && item.link)
+      .sort((a, b) => new Date(b.pubDate || 0) - new Date(a.pubDate || 0))
       .slice(0, 10);
 
     if (!articles.length) {
-      featuredContainer.innerHTML = `<div class="news-error">Live news is temporarily unavailable.</div>`;
-      newsContainer.innerHTML = `<div class="news-error">No live stories available right now.</div>`;
+      featuredContainer.innerHTML = `
+        <div class="news-error">Live news is temporarily unavailable.</div>
+      `;
+      newsContainer.innerHTML = `
+        <div class="news-error">No live stories available right now.</div>
+      `;
       return;
     }
 
@@ -48,11 +66,18 @@ async function fetchLiveNews() {
     const rest = articles.slice(1);
 
     featuredContainer.innerHTML = renderFeaturedStory(featured);
-    newsContainer.innerHTML = rest.map(renderNewsCard).join('');
+    newsContainer.innerHTML = rest.length
+      ? rest.map(renderNewsCard).join('')
+      : `<div class="news-error">Only one live story is available right now.</div>`;
+
   } catch (error) {
-    console.error('❌ Live news error:', error);
-    featuredContainer.innerHTML = `<div class="news-error">Failed to load featured story.</div>`;
-    newsContainer.innerHTML = `<div class="news-error">Failed to load live news.</div>`;
+    console.error('Live news error:', error);
+    featuredContainer.innerHTML = `
+      <div class="news-error">Failed to load featured story.</div>
+    `;
+    newsContainer.innerHTML = `
+      <div class="news-error">Failed to load live news.</div>
+    `;
   }
 }
 
