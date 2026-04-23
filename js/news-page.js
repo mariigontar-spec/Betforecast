@@ -70,25 +70,30 @@ async function fetchLiveNews() {
     const rest = articles.slice(1);
 
     featuredContainer.innerHTML = renderFeaturedStory(featured);
- newsContainer.innerHTML = rest.length
-  ? rest.map((article, index) => renderNewsCard(article, index)).join('')
-  : `<div class="news-error">Only one live story is available right now.</div>`;
 
+    newsContainer.innerHTML = rest.length
+      ? rest.map((article, index) => renderNewsCard(article, index)).join('')
+      : `<div class="news-error">Only one live story is available right now.</div>`;
   } catch (error) {
     console.error('Live news error:', error);
+
     featuredContainer.innerHTML = `
       <div class="news-error">Failed to load featured story.</div>
     `;
+
     newsContainer.innerHTML = `
       <div class="news-error">Failed to load live news.</div>
     `;
   }
 }
 
-const image =
-  article.thumbnail ||
-  extractImageFromDescription(article.description) ||
-  'https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1200&q=80';
+function renderFeaturedStory(article) {
+  const cleanTitle = cleanNewsTitle(article.title || '');
+
+  const image =
+    article.thumbnail ||
+    extractImageFromDescription(article.description) ||
+    getKeywordFallbackImage(cleanTitle, 0, true);
 
   const date = formatDate(article.pubDate);
   const description = truncateText(stripHtml(article.description || ''), 220);
@@ -96,11 +101,11 @@ const image =
   return `
     <a class="featured-story-card" href="${article.link}" target="_blank" rel="noopener noreferrer">
       <div class="featured-story-card__image">
-        <img src="${image}" alt="${escapeHtml(article.title)}" loading="lazy">
+        <img src="${image}" alt="${escapeHtml(cleanTitle)}" loading="lazy">
       </div>
       <div class="featured-story-card__content">
         <div class="featured-story-card__meta">${date}</div>
-        <h3 class="featured-story-card__title">${escapeHtml(article.title)}</h3>
+        <h3 class="featured-story-card__title">${escapeHtml(cleanTitle)}</h3>
         <p class="featured-story-card__excerpt">${escapeHtml(description)}</p>
       </div>
     </a>
@@ -108,19 +113,12 @@ const image =
 }
 
 function renderNewsCard(article, index = 0) {
-  const fallbackImages = [
-    'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&w=800&q=80'
-  ];
-
-  const fallbackImage = fallbackImages[index % fallbackImages.length];
+  const cleanTitle = cleanNewsTitle(article.title || '');
 
   const image =
     article.thumbnail ||
     extractImageFromDescription(article.description) ||
-    fallbackImage;
+    getKeywordFallbackImage(cleanTitle, index, false);
 
   const date = formatDate(article.pubDate);
   const description = truncateText(stripHtml(article.description || ''), 140);
@@ -128,16 +126,103 @@ function renderNewsCard(article, index = 0) {
   return `
     <a class="news-card-v2" href="${article.link}" target="_blank" rel="noopener noreferrer">
       <div class="news-card-v2__image">
-        <img src="${image}" alt="${escapeHtml(article.title)}" loading="lazy">
+        <img src="${image}" alt="${escapeHtml(cleanTitle)}" loading="lazy">
       </div>
       <div class="news-card-v2__content">
         <div class="news-card-v2__meta">${date}</div>
-        <h3 class="news-card-v2__title">${escapeHtml(article.title)}</h3>
+        <h3 class="news-card-v2__title">${escapeHtml(cleanTitle)}</h3>
         <p class="news-card-v2__excerpt">${escapeHtml(description)}</p>
       </div>
     </a>
   `;
 }
+
+function getKeywordFallbackImage(title = '', index = 0, isFeatured = false) {
+  const text = title.toLowerCase();
+
+  const imageSets = {
+    arsenal: [
+      'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1200&q=80'
+    ],
+    chelsea: [
+      'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80'
+    ],
+    barcelona: [
+      'https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1552667466-07770ae110d0?auto=format&fit=crop&w=1200&q=80'
+    ],
+    transfer: [
+      'https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1494173853739-c21f58b16055?auto=format&fit=crop&w=1200&q=80'
+    ],
+    injury: [
+      'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80'
+    ],
+    manager: [
+      'https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1200&q=80'
+    ],
+    default: isFeatured
+      ? [
+          'https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1400&q=80',
+          'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1400&q=80'
+        ]
+      : [
+          'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=800&q=80',
+          'https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=800&q=80'
+        ]
+  };
+
+  let selectedSet = imageSets.default;
+
+  if (text.includes('arsenal')) {
+    selectedSet = imageSets.arsenal;
+  } else if (text.includes('chelsea')) {
+    selectedSet = imageSets.chelsea;
+  } else if (
+    text.includes('barcelona') ||
+    text.includes('barça') ||
+    text.includes('yamal')
+  ) {
+    selectedSet = imageSets.barcelona;
+  } else if (
+    text.includes('transfer') ||
+    text.includes('move') ||
+    text.includes('sign') ||
+    text.includes('deal')
+  ) {
+    selectedSet = imageSets.transfer;
+  } else if (
+    text.includes('injury') ||
+    text.includes('injured') ||
+    text.includes('hamstring') ||
+    text.includes('fitness')
+  ) {
+    selectedSet = imageSets.injury;
+  } else if (
+    text.includes('coach') ||
+    text.includes('manager') ||
+    text.includes('sack') ||
+    text.includes('boss')
+  ) {
+    selectedSet = imageSets.manager;
+  }
+
+  return selectedSet[index % selectedSet.length];
+}
+
+function cleanNewsTitle(title = '') {
+  return title
+    .replace(/^sources:\s*/i, '')
+    .replace(/^source:\s*/i, '')
+    .trim();
+}
+
 function extractImageFromDescription(description = '') {
   const match = description.match(/<img[^>]+src=["']([^"']+)["']/i);
   return match ? match[1] : '';
@@ -163,7 +248,11 @@ function truncateText(text = '', maxLength = 140) {
 function formatDate(dateString) {
   if (!dateString) return '';
   const date = new Date(dateString);
-  if (Number.isNaN(date.getTime())) return '';
+
+  if (Number.isNaN(date.getTime())) {
+    return '';
+  }
+
   return date.toLocaleDateString('en-GB', {
     day: '2-digit',
     month: 'short',
