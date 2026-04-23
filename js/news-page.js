@@ -108,11 +108,20 @@ function renderFeaturedStory(article) {
   `;
 }
 
-function renderNewsCard(article) {
+function renderNewsCard(article, index = 0) {
+  const fallbackImages = [
+    'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=800&q=80',
+    'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?auto=format&fit=crop&w=800&q=80'
+  ];
+
+  const fallbackImage = fallbackImages[index % fallbackImages.length];
+
   const image =
     article.thumbnail ||
     extractImageFromDescription(article.description) ||
-    'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=800&q=80';
+    fallbackImage;
 
   const date = formatDate(article.pubDate);
   const description = truncateText(stripHtml(article.description || ''), 140);
@@ -130,7 +139,6 @@ function renderNewsCard(article) {
     </a>
   `;
 }
-
 function extractImageFromDescription(description = '') {
   const match = description.match(/<img[^>]+src=["']([^"']+)["']/i);
   return match ? match[1] : '';
