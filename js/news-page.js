@@ -140,42 +140,49 @@ function renderNewsCard(article, index = 0) {
 function getKeywordFallbackImage(title = '', index = 0, isFeatured = false) {
   const text = title.toLowerCase();
 
-  const imageSets = {
-    arsenal: [
-      'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=1200&q=80'
-    ],
-    chelsea: [
-      'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80'
-    ],
-    barcelona: [
-      'https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1552667466-07770ae110d0?auto=format&fit=crop&w=1200&q=80'
-    ],
-    transfer: [
-      'https://images.unsplash.com/photo-1518604666860-9ed391f76460?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1494173853739-c21f58b16055?auto=format&fit=crop&w=1200&q=80'
-    ],
-    injury: [
-      'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80'
-    ],
-    manager: [
-      'https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1200&q=80'
-    ],
-    default: isFeatured
-      ? [
-          'https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1400&q=80',
-          'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=1400&q=80'
-        ]
-      : [
-          'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1547347298-4074fc3086f0?auto=format&fit=crop&w=800&q=80',
-          'https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=800&q=80'
-        ]
+  if (text.includes('arsenal')) {
+    return 'assets/news/arsenal.jpg';
+  }
+
+  if (text.includes('chelsea')) {
+    return 'assets/news/chelsea.jpg';
+  }
+
+  if (
+    text.includes('barcelona') ||
+    text.includes('barça') ||
+    text.includes('yamal')
+  ) {
+    return 'assets/news/barcelona.jpg';
+  }
+
+  if (
+    text.includes('transfer') ||
+    text.includes('move') ||
+    text.includes('sign') ||
+    text.includes('deal')
+  ) {
+    return 'assets/news/transfer.jpg';
+  }
+
+  if (
+    text.includes('injury') ||
+    text.includes('injured') ||
+    text.includes('hamstring') ||
+    text.includes('fitness')
+  ) {
+    return 'assets/news/injury.jpg';
+  }
+
+  const defaultImages = [
+    'assets/news/default-1.jpg',
+    'assets/news/default-2.jpg',
+    'assets/news/default-3.jpg',
+    'assets/news/default-4.jpg'
+  ];
+
+  return defaultImages[index % defaultImages.length];
+}
   };
 
   let selectedSet = imageSets.default;
