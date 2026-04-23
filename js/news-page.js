@@ -1,186 +1,136 @@
-const GNEWS_API_KEY = "e33177b1d184c448e3117610d69d51de";
+document.addEventListener('DOMContentLoaded', () => {
+  fetchLiveNews();
+});
 
-function initGlowHover() {
-  document.querySelectorAll(".glow-hover").forEach((el) => {
-    el.addEventListener("mousemove", (e) => {
-      const rect = el.getBoundingClientRect();
-      el.style.setProperty("--x", `${e.clientX - rect.left}px`);
-      el.style.setProperty("--y", `${e.clientY - rect.top}px`);
-    });
-  });
-}
+async function fetchLiveNews() {
+  const featuredContainer = document.getElementById('featured-story');
+  const newsContainer = document.getElementById('news-list');
 
-function mapGNewsToCards(articles) {
-  return articles.map((item, index) => {
-    const date = item.publishedAt ? new Date(item.publishedAt) : null;
-    const hoursAgo = date
-      ? Math.max(1, Math.floor((Date.now() - date.getTime()) / (1000 * 60 * 60)))
-      : 1;
-
-    return {
-      id: index + 1,
-      category: "Football",
-      title: item.title || "No title",
-      excerpt: item.description || "No description available.",
-      time: `${hoursAgo} hr ago`,
-      readTime: "4 min read",
-      image: item.image || "assets/news/arsenal.jpg",
-      content: [
-        item.description || "No article description available.",
-        item.content || "Full content is limited on some plans.",
-        `Source: ${item.source?.name || "Unknown source"}`,
-        item.url || ""
-      ]
-    };
-  });
-}
-
-async function fetchLocalNews() {
-  const response = await fetch("./data/news.json?ts=" + Date.now(), {
-    cache: "no-store"
-  });
-
-  if (!response.ok) {
-    throw new Error(`Local news.json failed: ${response.status}`);
-  }
-
-  const news = await response.json();
-
-  if (!Array.isArray(news) || news.length === 0) {
-    throw new Error("Local news.json is empty or invalid");
-  }
-
-  return news;
-}
-
-function renderNews(news, featuredStory, newsList) {
-  if (!Array.isArray(news) || news.length === 0) {
-    featuredStory.innerHTML = `
-      <div class="news-error-box">No featured story available.</div>
-    `;
-    newsList.innerHTML = `
-      <div class="news-error-box">No latest stories available.</div>
-    `;
+  if (!featuredContainer || !newsContainer) {
+    console.error('❌ News containers not found');
     return;
   }
 
-  const featured = news[0];
-
-  const featuredImage =
-    featured.thumbnail ||
-    extractImageFromDescription(featured.description) ||
-    'assets/news/arsenal.jpg';
-
-  const featuredDate = featured.pubDate
-    ? new Date(featured.pubDate).toLocaleDateString('en-GB', {
-        day: '2-digit',
-        month: 'short',
-        year: 'numeric'
-      })
-    : '';
-
-  featuredStory.innerHTML = `
-    <article class="featured-news-card glow-hover">
-      <a href="${featured.link}" target="_blank" rel="noopener noreferrer">
-        <img
-          class="featured-news-image"
-          src="${featuredImage}"
-          alt="${escapeHtml(featured.title || 'Featured story')}"
-          onerror="this.onerror=null;this.src='assets/news/arsenal.jpg';"
-        >
-        <div class="featured-news-body">
-          <span class="news-category">Live News</span>
-          <h3>${escapeHtml(featured.title || "")}</h3>
-          <p>${escapeHtml(stripHtml(featured.description || "").slice(0, 180))}...</p>
-          <div class="featured-news-meta">${featuredDate}</div>
-        </div>
-      </a>
-    </article>
-  `;
-
-  newsList.innerHTML = "";
-
-  news.slice(1).forEach((item) => {
-    const image =
-      item.thumbnail ||
-      extractImageFromDescription(item.description) ||
-      'assets/news/arsenal.jpg';
-
-    const date = item.pubDate
-      ? new Date(item.pubDate).toLocaleDateString('en-GB', {
-          day: '2-digit',
-          month: 'short',
-          year: 'numeric'
-        })
-      : '';
-
-    const card = document.createElement("a");
-    card.className = "news-card glow-hover";
-    card.href = item.link;
-    card.target = "_blank";
-    card.rel = "noopener noreferrer";
-
-    card.innerHTML = `
-      <img
-        src="${image}"
-        alt="${escapeHtml(item.title || "News image")}"
-        onerror="this.onerror=null;this.src='assets/news/arsenal.jpg';"
-      >
-      <div class="news-card-body">
-        <span class="news-category">Live News</span>
-        <h3>${escapeHtml(item.title || "")}</h3>
-        <p>${escapeHtml(stripHtml(item.description || "").slice(0, 120))}...</p>
-        <div class="news-meta">${date}</div>
-      </div>
-    `;
-
-    newsList.appendChild(card);
-  });
-
-  initGlowHover();
-
-}
-
-async function loadNewsPage() {
-  const featuredStory = document.getElementById("featured-story");
-  const newsList = document.getElementById("news-list");
-
-  if (!featuredStory || !newsList) {
-    console.error("Missing news containers");
-    return;
-  }
-
-  featuredStory.innerHTML = `<div class="news-error-box">Loading featured story...</div>`;
-  newsList.innerHTML = `<div class="news-error-box">Loading latest stories...</div>`;
+  featuredContainer.innerHTML = `<div class="news-loading">Loading featured story...</div>`;
+  newsContainer.innerHTML = `<div class="news-loading">Loading live football news...</div>`;
 
   try {
-    let news;
+    const feeds = [
+      'https://feeds.bbci.co.uk/sport/football/rss.xml',
+      'https://www.espn.com/espn/rss/soccer/news',
+      'https://rss.app/feeds/Sx9M4LwzpqN8xPVR.xml'
+    ];
 
-    try {
-      news = await fetchLiveNews();
-      console.log("Loaded live news from GNews");
-    } catch (liveError) {
-      console.warn("Live news failed, switching to local JSON:", liveError);
-      news = await fetchLocalNews();
-      console.log("Loaded local news fallback");
+    const requests = feeds.map(feed =>
+      fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed)}`)
+        .then(res => res.json())
+        .catch(err => {
+          console.error('Feed error:', feed, err);
+          return null;
+        })
+    );
+
+    const results = await Promise.all(requests);
+
+    const articles = results
+      .filter(result => result && result.items)
+      .flatMap(result => result.items)
+      .filter(item => item.title && item.link)
+      .slice(0, 10);
+
+    if (!articles.length) {
+      featuredContainer.innerHTML = `<div class="news-error">Live news is temporarily unavailable.</div>`;
+      newsContainer.innerHTML = `<div class="news-error">No live stories available right now.</div>`;
+      return;
     }
 
-    renderNews(news, featuredStory, newsList);
+    const featured = articles[0];
+    const rest = articles.slice(1);
+
+    featuredContainer.innerHTML = renderFeaturedStory(featured);
+    newsContainer.innerHTML = rest.map(renderNewsCard).join('');
   } catch (error) {
-    console.error("Failed to load any news source:", error);
-
-    featuredStory.innerHTML = `
-      <div class="news-error-box">Failed to load featured story.</div>
-    `;
-
-    newsList.innerHTML = `
-      <div class="news-error-box">Failed to load latest stories.</div>
-    `;
+    console.error('❌ Live news error:', error);
+    featuredContainer.innerHTML = `<div class="news-error">Failed to load featured story.</div>`;
+    newsContainer.innerHTML = `<div class="news-error">Failed to load live news.</div>`;
   }
 }
 
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", loadNewsPage);
-} else {
-  loadNewsPage();
+function renderFeaturedStory(article) {
+  const image =
+    article.thumbnail ||
+    extractImageFromDescription(article.description) ||
+    'https://via.placeholder.com/900x520?text=Football+News';
+
+  const date = formatDate(article.pubDate);
+  const description = truncateText(stripHtml(article.description || ''), 220);
+
+  return `
+    <a class="featured-story-card" href="${article.link}" target="_blank" rel="noopener noreferrer">
+      <div class="featured-story-card__image">
+        <img src="${image}" alt="${escapeHtml(article.title)}" loading="lazy">
+      </div>
+      <div class="featured-story-card__content">
+        <div class="featured-story-card__meta">${date}</div>
+        <h3 class="featured-story-card__title">${escapeHtml(article.title)}</h3>
+        <p class="featured-story-card__excerpt">${escapeHtml(description)}</p>
+      </div>
+    </a>
+  `;
+}
+
+function renderNewsCard(article) {
+  const image =
+    article.thumbnail ||
+    extractImageFromDescription(article.description) ||
+    'https://via.placeholder.com/600x400?text=Football+News';
+
+  const date = formatDate(article.pubDate);
+  const description = truncateText(stripHtml(article.description || ''), 140);
+
+  return `
+    <a class="news-card-v2" href="${article.link}" target="_blank" rel="noopener noreferrer">
+      <div class="news-card-v2__image">
+        <img src="${image}" alt="${escapeHtml(article.title)}" loading="lazy">
+      </div>
+      <div class="news-card-v2__content">
+        <div class="news-card-v2__meta">${date}</div>
+        <h3 class="news-card-v2__title">${escapeHtml(article.title)}</h3>
+        <p class="news-card-v2__excerpt">${escapeHtml(description)}</p>
+      </div>
+    </a>
+  `;
+}
+
+function extractImageFromDescription(description = '') {
+  const match = description.match(/<img[^>]+src=["']([^"']+)["']/i);
+  return match ? match[1] : '';
+}
+
+function stripHtml(html = '') {
+  const div = document.createElement('div');
+  div.innerHTML = html;
+  return div.textContent || div.innerText || '';
+}
+
+function escapeHtml(text = '') {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+function truncateText(text = '', maxLength = 140) {
+  if (text.length <= maxLength) return text;
+  return text.slice(0, maxLength).trim() + '...';
+}
+
+function formatDate(dateString) {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  if (Number.isNaN(date.getTime())) return '';
+  return date.toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric'
+  });
 }
