@@ -54,7 +54,7 @@ async function fetchLocalNews() {
 }
 
 async function fetchLiveNews() {
-  const container = document.querySelector('[data-news-grid]');
+  const container = document.getElementById('news-list');
   if (!container) return;
 
   container.innerHTML = `
