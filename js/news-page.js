@@ -112,7 +112,7 @@ function renderNewsCard(article) {
   const image =
     article.thumbnail ||
     extractImageFromDescription(article.description) ||
-    'https://via.placeholder.com/600x400?text=Football+News';
+    'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=800&q=80';
 
   const date = formatDate(article.pubDate);
   const description = truncateText(stripHtml(article.description || ''), 140);
