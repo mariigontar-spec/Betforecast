@@ -89,7 +89,7 @@ function renderFeaturedStory(article) {
   const image =
     article.thumbnail ||
     extractImageFromDescription(article.description) ||
-    'https://via.placeholder.com/900x520?text=Football+News';
+    'https://images.unsplash.com/photo-1508098682722-e99c643e7485?auto=format&fit=crop&w=1200&q=80';
 
   const date = formatDate(article.pubDate);
   const description = truncateText(stripHtml(article.description || ''), 220);
