@@ -101,7 +101,12 @@ function renderFeaturedStory(article) {
   return `
     <a class="featured-story-card" href="${article.link}" target="_blank" rel="noopener noreferrer">
       <div class="featured-story-card__image">
-        <img src="${image}" alt="${escapeHtml(cleanTitle)}" loading="lazy">
+        <img
+          src="${image}"
+          alt="${escapeHtml(cleanTitle)}"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='assets/news/default-1.jpg';"
+        >
       </div>
       <div class="featured-story-card__content">
         <div class="featured-story-card__meta">${date}</div>
@@ -126,7 +131,12 @@ function renderNewsCard(article, index = 0) {
   return `
     <a class="news-card-v2" href="${article.link}" target="_blank" rel="noopener noreferrer">
       <div class="news-card-v2__image">
-        <img src="${image}" alt="${escapeHtml(cleanTitle)}" loading="lazy">
+        <img
+          src="${image}"
+          alt="${escapeHtml(cleanTitle)}"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='assets/news/default-1.jpg';"
+        >
       </div>
       <div class="news-card-v2__content">
         <div class="news-card-v2__meta">${date}</div>
@@ -174,53 +184,25 @@ function getKeywordFallbackImage(title = '', index = 0, isFeatured = false) {
     return 'assets/news/injury.jpg';
   }
 
-  const defaultImages = [
-    'assets/news/default-1.jpg',
-    'assets/news/default-2.jpg',
-    'assets/news/default-3.jpg',
-    'assets/news/default-4.jpg'
-  ];
-
-  return defaultImages[index % defaultImages.length];
-}
-  };
-
-  let selectedSet = imageSets.default;
-
-  if (text.includes('arsenal')) {
-    selectedSet = imageSets.arsenal;
-  } else if (text.includes('chelsea')) {
-    selectedSet = imageSets.chelsea;
-  } else if (
-    text.includes('barcelona') ||
-    text.includes('barça') ||
-    text.includes('yamal')
-  ) {
-    selectedSet = imageSets.barcelona;
-  } else if (
-    text.includes('transfer') ||
-    text.includes('move') ||
-    text.includes('sign') ||
-    text.includes('deal')
-  ) {
-    selectedSet = imageSets.transfer;
-  } else if (
-    text.includes('injury') ||
-    text.includes('injured') ||
-    text.includes('hamstring') ||
-    text.includes('fitness')
-  ) {
-    selectedSet = imageSets.injury;
-  } else if (
+  if (
     text.includes('coach') ||
     text.includes('manager') ||
     text.includes('sack') ||
     text.includes('boss')
   ) {
-    selectedSet = imageSets.manager;
+    return 'assets/news/default-2.jpg';
   }
 
-  return selectedSet[index % selectedSet.length];
+  const defaultImages = isFeatured
+    ? ['assets/news/default-1.jpg', 'assets/news/default-2.jpg']
+    : [
+        'assets/news/default-1.jpg',
+        'assets/news/default-2.jpg',
+        'assets/news/default-3.jpg',
+        'assets/news/default-4.jpg'
+      ];
+
+  return defaultImages[index % defaultImages.length];
 }
 
 function cleanNewsTitle(title = '') {
@@ -254,6 +236,7 @@ function truncateText(text = '', maxLength = 140) {
 
 function formatDate(dateString) {
   if (!dateString) return '';
+
   const date = new Date(dateString);
 
   if (Number.isNaN(date.getTime())) {
