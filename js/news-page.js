@@ -161,9 +161,14 @@ function getKeywordFallbackImage(title = '', index = 0, isFeatured = false) {
   if (
     text.includes('barcelona') ||
     text.includes('barça') ||
+    text.includes('barca') ||
     text.includes('yamal')
   ) {
     return 'assets/news/barcelona.jpg';
+  }
+
+  if (text.includes('liverpool')) {
+    return 'assets/news/liverpool.jpg';
   }
 
   if (
@@ -173,6 +178,13 @@ function getKeywordFallbackImage(title = '', index = 0, isFeatured = false) {
     text.includes('deal')
   ) {
     return 'assets/news/transfer.jpg';
+  }
+
+  if (
+    text.includes('title race') ||
+    (text.includes('title') && text.includes('race'))
+  ) {
+    return 'assets/news/title-race.jpg';
   }
 
   if (
