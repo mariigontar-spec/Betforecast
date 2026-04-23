@@ -83,13 +83,28 @@
           </a>
         </div>
 
-        <div class="ai-search-box ai-search-box-wide">
-          <div class="ai-search-head">
-            <h3 class="ai-search-title">Match Probability Search</h3>
-            <p class="ai-search-subtitle">
-              Search any match and let AI estimate the likely outcome.
-            </p>
-          </div>
+       <div class="match-search-card match-search-card--featured">
+  <div class="match-search-card__eyebrow">Try live AI search</div>
+
+  <h3>Match Probability Search</h3>
+  <p>
+    Search any match and let AI estimate the likely outcome.
+  </p>
+
+  <div class="match-search-form match-search-form--strong">
+    <input
+      type="text"
+      id="match-search-input"
+      placeholder="Example: Arsenal vs Chelsea"
+      aria-label="Search match"
+    >
+    <button type="button" id="match-search-btn">Analyze with AI</button>
+  </div>
+
+  <div class="match-search-result match-search-result--featured" id="match-search-result">
+    Enter a match to see win probabilities and AI reasoning.
+  </div>
+</div>
 
           <form class="ai-search-form ai-search-form-wide" id="ai-match-form">
             <input
