@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function fetchLiveNews() {
+  console.log('🚀 fetchLiveNews started');
+
   const featuredContainer = document.getElementById('featured-story');
   const newsContainer = document.getElementById('news-list');
 
@@ -51,6 +53,8 @@ async function fetchLiveNews() {
       .filter(item => item && item.title && item.link)
       .sort((a, b) => new Date(b.pubDate || 0) - new Date(a.pubDate || 0))
       .slice(0, 10);
+
+    console.log('📦 articles:', articles);
 
     if (!articles.length) {
       featuredContainer.innerHTML = `
