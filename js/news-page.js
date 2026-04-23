@@ -70,9 +70,9 @@ async function fetchLiveNews() {
     const rest = articles.slice(1);
 
     featuredContainer.innerHTML = renderFeaturedStory(featured);
-    newsContainer.innerHTML = rest.length
-      ? rest.map(renderNewsCard).join('')
-      : `<div class="news-error">Only one live story is available right now.</div>`;
+ newsContainer.innerHTML = rest.length
+  ? rest.map((article, index) => renderNewsCard(article, index)).join('')
+  : `<div class="news-error">Only one live story is available right now.</div>`;
 
   } catch (error) {
     console.error('Live news error:', error);
