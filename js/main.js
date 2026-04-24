@@ -325,7 +325,31 @@ function initAiMatchSearch(matches = []) {
         </div>
       `;
     }
+    
   });
+  document.addEventListener('DOMContentLoaded', () => {
+  const counters = document.querySelectorAll('.metric-value[data-target]');
+
+  counters.forEach(counter => {
+    const target = Number(counter.dataset.target);
+    const duration = 1200;
+    const startTime = performance.now();
+
+    function update(now) {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const value = Math.floor(progress * target);
+      counter.textContent = value;
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        counter.textContent = target;
+      }
+    }
+
+    requestAnimationFrame(update);
+  });
+});
 }
 
 loadHomePage();
