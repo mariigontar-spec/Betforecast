@@ -2769,3 +2769,58 @@ body.theme-glass .prediction-card {
   margin-top: 0 !important;
   align-self: flex-start !important;
 }
+/* ===== HERO SCALE DOWN (−30%) ===== */
+
+.hero-home-ai h1 {
+  font-size: 44px !important;
+  line-height: 1.15 !important;
+}
+
+.hero-home-ai p {
+  font-size: 15px !important;
+  opacity: 0.85;
+}
+
+.hero-home-ai .hero-badge {
+  font-size: 12px !important;
+  padding: 6px 14px !important;
+}
+
+.ai-metrics-bottom-row {
+  gap: 10px !important;
+  margin: 16px 0 22px !important;
+}
+
+.ai-metric-chip {
+  min-height: 46px !important;
+  padding: 0 14px !important;
+  font-size: 14px !important;
+}
+
+.metric-value {
+  font-size: 16px !important;
+}
+
+.metric-label {
+  font-size: 13px !important;
+}
+
+/* SEARCH BLOCK */
+.match-search-clean__title {
+  font-size: 20px !important;
+}
+
+.match-search-clean__input {
+  height: 52px !important;
+  font-size: 15px !important;
+}
+
+.match-search-clean__button {
+  height: 52px !important;
+  font-size: 15px !important;
+}
+
+.match-search-clean__result {
+  font-size: 14px !important;
+  padding: 14px !important;
+}
