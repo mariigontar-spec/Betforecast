@@ -2744,3 +2744,18 @@ body.theme-glass .prediction-card {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
+/* ===== SEARCH FULL WIDTH FIX ===== */
+
+.match-search-clean__row {
+  display: block !important;
+}
+
+.match-search-clean__input {
+  width: 100% !important;
+  display: block !important;
+  margin-bottom: 14px !important;
+}
+
+.match-search-clean__button {
+  width: 100% !important;
+}
