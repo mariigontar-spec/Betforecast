@@ -2759,3 +2759,13 @@ body.theme-glass .prediction-card {
 .match-search-clean__button {
   width: 100% !important;
 }
+/* ===== FIX: поднять правый блок вверх ===== */
+
+.hero-home-ai {
+  align-items: flex-start !important;
+}
+
+.hero-card-ai {
+  margin-top: 0 !important;
+  align-self: flex-start !important;
+}
