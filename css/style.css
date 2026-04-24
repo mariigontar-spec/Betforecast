@@ -2552,3 +2552,142 @@ body.theme-glass .prediction-card {
     justify-content: space-between;
   }
 }
+/* ===== HOME HERO FINAL COMPACT FIX ===== */
+
+.hero-home-ai {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) 390px;
+  gap: 34px;
+  align-items: center;
+  padding: 34px 36px;
+}
+
+.hero-home-ai .hero-left {
+  max-width: 680px;
+}
+
+.hero-home-ai .hero-badge {
+  margin-bottom: 16px;
+}
+
+.hero-home-ai h1 {
+  margin-bottom: 20px;
+  max-width: 620px;
+  font-size: clamp(42px, 4.4vw, 66px);
+  line-height: 1.04;
+}
+
+.hero-home-ai .hero-left > p {
+  max-width: 620px;
+  margin-bottom: 22px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.ai-metrics-bottom-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 12px;
+  margin: 0 0 28px;
+}
+
+.ai-metric-link {
+  display: block;
+}
+
+.ai-metric-chip {
+  min-height: 58px;
+  padding: 0 18px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.045);
+  border: 1px solid rgba(132,149,171,0.18);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.ai-metric-chip .metric-value {
+  color: #62f0be;
+  font-weight: 900;
+  margin-right: 4px;
+}
+
+.ai-metric-chip .metric-label {
+  color: rgba(244,247,251,0.88);
+  font-weight: 800;
+}
+
+.match-search-clean {
+  margin-top: 0;
+  max-width: 620px;
+}
+
+.match-search-clean__eyebrow {
+  margin-bottom: 12px;
+}
+
+.match-search-clean__title {
+  margin-bottom: 16px;
+  font-size: 28px;
+}
+
+.match-search-clean__row {
+  grid-template-columns: minmax(0, 1.45fr) 240px;
+  gap: 14px;
+}
+
+.match-search-clean__input,
+.match-search-clean__button {
+  height: 66px;
+  border-radius: 22px;
+}
+
+.match-search-clean__result {
+  min-height: 66px;
+  margin-top: 14px;
+  padding: 18px 22px;
+  border-radius: 22px;
+}
+
+.hero-card-ai {
+  align-self: end;
+  max-width: 390px;
+}
+
+.hero-card-ai .probabilities {
+  gap: 12px;
+}
+
+.hero-card-ai .probabilities > div {
+  min-height: 92px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+@media (max-width: 1100px) {
+  .hero-home-ai {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card-ai,
+  .match-search-clean,
+  .hero-home-ai .hero-left {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-home-ai {
+    padding: 24px 18px;
+  }
+
+  .ai-metrics-bottom-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .match-search-clean__row {
+    grid-template-columns: 1fr;
+  }
+}
