@@ -3008,3 +3008,78 @@ main,
     grid-template-columns: 1fr;
   }
 }
+/* FORCE FIX AI HERO */
+
+.bf-ai-hero {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.92fr) !important;
+  gap: 34px !important;
+  width: min(1040px, 100%) !important;
+  margin: 24px auto !important;
+  padding: 34px 28px 24px !important;
+}
+
+.bf-ai-left {
+  display: block !important;
+}
+
+.bf-match-card {
+  align-self: start !important;
+}
+
+.bf-benefits {
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+}
+
+.bf-ai-title span {
+  display: block !important;
+}
+
+.bf-ai-stats {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.bf-search-form {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 190px !important;
+}
+
+.bf-teams {
+  display: grid !important;
+  grid-template-columns: 1fr auto 1fr !important;
+}
+
+.bf-probabilities {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.bf-match-buttons {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+}
+
+@media (max-width: 900px) {
+  .bf-ai-hero {
+    grid-template-columns: 1fr !important;
+  }
+
+  .bf-benefits {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .bf-benefits,
+  .bf-ai-stats,
+  .bf-search-form,
+  .bf-teams,
+  .bf-probabilities,
+  .bf-match-buttons {
+    grid-template-columns: 1fr !important;
+  }
+}
