@@ -55,16 +55,19 @@
             <strong>100+</strong>
             <small>Signals</small>
           </div>
+
           <div class="bf-metric">
             <span>◎</span>
             <strong>98.6%</strong>
             <small>Accuracy</small>
           </div>
+
           <div class="bf-metric">
             <span>⚡</span>
             <strong>Live</strong>
             <small>Updates</small>
           </div>
+
           <div class="bf-metric">
             <span>🧠</span>
             <strong>AI</strong>
@@ -96,7 +99,9 @@
           </div>
         </div>
 
-        <p class="bf-social-proof">🏆 Join 25,000+ fans making smarter predictions every day.</p>
+        <p class="bf-social-proof">
+          🏆 Join 25,000+ fans making smarter predictions every day.
+        </p>
       </div>
 
       <aside class="bf-featured">
@@ -126,10 +131,12 @@
             <strong class="bf-green">47%</strong>
             <small>Win Probability</small>
           </div>
+
           <div>
             <strong>28%</strong>
             <small>Draw</small>
           </div>
+
           <div>
             <strong class="bf-cold">25%</strong>
             <small>Win Probability</small>
@@ -161,6 +168,7 @@
           <p>100+ signals. Real-time analysis. Smarter bets.</p>
         </div>
       </article>
+
       <article>
         <span>🎯</span>
         <div>
@@ -168,6 +176,7 @@
           <p>Machine learning models fine-tuned for football.</p>
         </div>
       </article>
+
       <article>
         <span>⚡</span>
         <div>
@@ -175,6 +184,7 @@
           <p>Real-time updates as matches unfold.</p>
         </div>
       </article>
+
       <article>
         <span>🛡</span>
         <div>
@@ -187,7 +197,7 @@
     <section class="bf-predictions-section" id="predictions">
       <h2>Today’s Best Predictions</h2>
 
-      <div id="predictions-container" class="bf-predictions-grid">
+      <div class="bf-predictions-table" id="predictions-container">
         <article class="bf-prediction-row">
           <span>Premier League</span>
           <strong>Liverpool vs Tottenham</strong>
@@ -241,22 +251,32 @@
           <b>18% Away</b>
           <em>Upcoming</em>
         </article>
+
+        <article class="bf-prediction-row">
+          <span>Serie A</span>
+          <strong>Napoli vs Roma</strong>
+          <b>46% Home</b>
+          <b>30% Draw</b>
+          <b>24% Away</b>
+          <em>Upcoming</em>
+        </article>
       </div>
     </section>
 
-    <section class="panel" id="model-section">
-      <div class="panel-head">
+    <section class="bf-panel" id="model-section">
+      <div class="bf-panel-head">
         <h2>Model View</h2>
       </div>
       <div id="matches-container"></div>
     </section>
 
-    <section class="panel" id="results">
-      <div class="panel-head">
+    <section class="bf-panel" id="results">
+      <div class="bf-panel-head">
         <h2>Latest Results</h2>
       </div>
       <div id="results-container"></div>
     </section>
+
   </main>
 
   <script src="js/main.js"></script>
@@ -265,6 +285,7 @@
   <script>
     (function () {
       const savedTheme = localStorage.getItem("bf-theme") || "dark";
+
       document.body.classList.remove("theme-dark", "theme-glass");
       document.body.classList.add(`theme-${savedTheme}`);
 
@@ -281,8 +302,10 @@
       if (toggle) {
         toggle.addEventListener("click", function () {
           const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
+
           document.body.classList.remove("theme-dark", "theme-glass");
           document.body.classList.add(`theme-${nextTheme}`);
+
           localStorage.setItem("bf-theme", nextTheme);
           updateLabel(nextTheme);
         });
