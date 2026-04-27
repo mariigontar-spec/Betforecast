@@ -2865,3 +2865,146 @@ body.theme-glass .ai-prob-tile {
     justify-content: space-between;
   }
 }
+/* =========================================================
+   EMERGENCY LAYOUT FIX
+   restores grids, spacing and card layout
+   ========================================================= */
+
+.page-shell,
+main,
+.news-page-wrap,
+.match-page-wrap,
+.article-page-wrap,
+.article-pro-wrap,
+.standings-page-wrap {
+  display: grid;
+  gap: 24px;
+}
+
+.predictions-section,
+.panel,
+.news-layout-v2,
+.match-pro-layout,
+.standings-layout,
+.news-grid,
+.news-grid-v2,
+.predictions-grid,
+.matches-grid,
+.insights-cards-grid,
+.article-layout {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HERO stays compact */
+.bf-ai-hero {
+  width: min(1040px, 100%);
+  max-width: 1040px;
+  margin: 24px auto;
+  gap: 28px;
+}
+
+/* restore 2-column news */
+.news-grid,
+.news-grid-v2,
+.insights-cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+}
+
+/* restore predictions 3-column */
+.predictions-grid,
+.matches-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+
+/* restore page layouts */
+.news-layout-v2 {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr) !important;
+  gap: 24px !important;
+}
+
+.match-pro-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr) !important;
+  gap: 24px !important;
+}
+
+.standings-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.45fr) 320px !important;
+  gap: 24px !important;
+}
+
+.article-layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr) !important;
+  gap: 24px !important;
+}
+
+/* card spacing */
+.news-card,
+.news-card-v2,
+.featured-news-card,
+.featured-story-card,
+.prediction-card,
+.match-card,
+.panel,
+.predictions-section,
+.side-block {
+  display: block;
+  margin: 0;
+}
+
+/* prevent glass overlay from covering content */
+.panel > *,
+.predictions-section > *,
+.news-card > *,
+.news-card-v2 > *,
+.featured-news-card > *,
+.featured-story-card > *,
+.prediction-card > *,
+.match-card > *,
+.side-block > *,
+.bf-search-card > *,
+.bf-match-card > *,
+.bf-benefit > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* responsive */
+@media (max-width: 1180px) {
+  .news-layout-v2,
+  .match-pro-layout,
+  .standings-layout,
+  .article-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .predictions-grid,
+  .matches-grid,
+  .news-grid,
+  .news-grid-v2,
+  .insights-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .predictions-grid,
+  .matches-grid,
+  .news-grid,
+  .news-grid-v2,
+  .insights-cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .bf-ai-hero {
+    grid-template-columns: 1fr;
+  }
+}
