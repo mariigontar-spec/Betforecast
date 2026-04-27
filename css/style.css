@@ -2879,3 +2879,169 @@ body.theme-glass .prediction-card {
   font-size: 14px !important;
   padding: 14px !important;
 }
+/* ===== HOME HERO POLISHED VISUAL ===== */
+
+.hero-home-ai {
+  grid-template-columns: minmax(0, 1.15fr) 390px !important;
+  gap: 42px !important;
+  align-items: start !important;
+  padding: 42px 44px !important;
+  min-height: auto !important;
+}
+
+.hero-home-ai .hero-left {
+  max-width: 720px !important;
+}
+
+.hero-home-ai .hero-badge {
+  margin-bottom: 22px !important;
+}
+
+.hero-home-ai h1 {
+  max-width: 680px !important;
+  margin-bottom: 24px !important;
+  font-size: clamp(44px, 4.2vw, 64px) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.055em !important;
+}
+
+.hero-home-ai .hero-left > p {
+  max-width: 690px !important;
+  margin-bottom: 28px !important;
+  font-size: 17px !important;
+  line-height: 1.55 !important;
+  color: rgba(226, 234, 244, 0.74) !important;
+}
+
+.hero-home-ai .ai-metrics-bottom-row {
+  max-width: 690px !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin: 0 0 34px !important;
+}
+
+.hero-home-ai .ai-metric-chip {
+  min-height: 62px !important;
+  border-radius: 24px !important;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.025)) !important;
+}
+
+.match-search-clean {
+  max-width: 690px !important;
+  padding: 22px !important;
+  border-radius: 28px !important;
+  background:
+    radial-gradient(circle at top left, rgba(52, 211, 153, 0.10), transparent 38%),
+    rgba(8, 17, 31, 0.18) !important;
+  border: 1px solid rgba(132,149,171,0.10) !important;
+}
+
+.match-search-clean__eyebrow {
+  margin-bottom: 10px !important;
+}
+
+.match-search-clean__title {
+  margin-bottom: 18px !important;
+  font-size: 24px !important;
+}
+
+.match-search-clean__row {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 230px !important;
+  gap: 14px !important;
+}
+
+.match-search-clean__input,
+.match-search-clean__button {
+  height: 58px !important;
+  border-radius: 20px !important;
+}
+
+.match-search-clean__button {
+  font-size: 16px !important;
+}
+
+.match-search-clean__result {
+  min-height: 58px !important;
+  margin-top: 14px !important;
+  padding: 16px 18px !important;
+  border-radius: 20px !important;
+}
+
+.hero-card-ai {
+  align-self: start !important;
+  margin-top: 14px !important;
+  max-width: 390px !important;
+  padding: 24px !important;
+  border-radius: 28px !important;
+  background:
+    radial-gradient(circle at bottom left, rgba(52, 211, 153, 0.10), transparent 34%),
+    linear-gradient(180deg, rgba(40, 53, 69, 0.92), rgba(31, 43, 58, 0.90)) !important;
+}
+
+.hero-card-ai h3 {
+  font-size: 24px !important;
+  margin: 18px 0 18px !important;
+}
+
+.hero-card-ai .probabilities {
+  gap: 12px !important;
+}
+
+.hero-card-ai .probabilities > div {
+  min-height: 94px !important;
+  border-radius: 18px !important;
+}
+
+.hero-card-ai .probability-bar {
+  margin-top: 18px !important;
+}
+
+.hero-card-ai .ai-text {
+  margin-top: 10px !important;
+  font-size: 17px !important;
+}
+
+.hero-card-ai .hero-actions {
+  margin-top: 22px !important;
+  display: flex !important;
+  gap: 14px !important;
+}
+
+.hero-card-ai .primary-btn,
+.hero-card-ai .secondary-btn {
+  min-height: 58px !important;
+  border-radius: 18px !important;
+}
+
+@media (max-width: 1100px) {
+  .hero-home-ai {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-card-ai,
+  .match-search-clean,
+  .hero-home-ai .hero-left,
+  .hero-home-ai .ai-metrics-bottom-row {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-home-ai {
+    padding: 26px 18px !important;
+  }
+
+  .hero-home-ai h1 {
+    font-size: 38px !important;
+  }
+
+  .hero-home-ai .ai-metrics-bottom-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .match-search-clean__row {
+    grid-template-columns: 1fr !important;
+  }
+}
