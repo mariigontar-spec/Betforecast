@@ -4656,3 +4656,64 @@ main,
     grid-template-columns: 1fr !important;
   }
 }
+/* ===== HERO MATCH LAYOUT FIX ===== */
+
+.bf-match-hero {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 40px;
+  align-items: center;
+
+  padding: 40px;
+  border-radius: 24px;
+
+  background: linear-gradient(135deg, rgba(20,40,35,0.6), rgba(10,25,40,0.6));
+  border: 1px solid rgba(120,255,190,0.15);
+}
+
+/* карточка слева */
+.bf-match-card {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* правая часть */
+.bf-match-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* заголовок */
+.bf-match-info h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+/* мета */
+.bf-match-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* кнопки */
+.bf-match-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* адаптив */
+@media (max-width: 900px) {
+  .bf-match-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .bf-match-actions {
+    justify-content: center;
+  }
+}
