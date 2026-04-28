@@ -3823,3 +3823,44 @@ button {
     padding: 22px;
   }
 }
+/* ===== LOGO ALIGN FIX ===== */
+
+.bf-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* ближе текст к иконке */
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.bf-logo img {
+  width: 36px;   /* было 30 → увеличили */
+  height: 36px;
+  object-fit: contain;
+}
+
+/* чтобы логотип был ближе к меню */
+.bf-header-inner {
+  gap: 16px; /* уменьшили расстояние между блоками */
+}
+
+/* подгоняем кнопки под размер логотипа */
+.bf-nav a,
+.bf-signin,
+.bf-theme {
+  height: 42px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+/* делаем меню чуть плотнее */
+.bf-nav {
+  gap: 8px;
+}
+
+/* логотип чуть "вытягиваем" визуально к кнопкам */
+.bf-logo span {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
