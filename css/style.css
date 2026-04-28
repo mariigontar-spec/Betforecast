@@ -4322,3 +4322,159 @@ main,
     grid-template-columns: 1fr !important;
   }
 }
+/* ===== MODEL VIEW + LATEST RESULTS ROW FIX ===== */
+
+.bf-panel,
+.panel {
+  width: min(1180px, 100%) !important;
+  margin: 0 auto !important;
+  padding: 26px 28px !important;
+  border-radius: 24px !important;
+}
+
+.bf-panel-head h2,
+.panel-head h2,
+.bf-panel h2,
+.panel h2 {
+  margin: 0 0 18px !important;
+  font-size: 28px !important;
+  line-height: 1 !important;
+  font-weight: 950 !important;
+  letter-spacing: -0.04em !important;
+  background: transparent !important;
+}
+
+/* containers */
+#matches-container,
+#results-container {
+  display: grid !important;
+  gap: 8px !important;
+}
+
+/* both row types */
+#matches-container > *,
+#results-container > * {
+  display: grid !important;
+  align-items: center !important;
+  min-height: 62px !important;
+  padding: 12px 16px !important;
+  border-radius: 14px !important;
+  background: rgba(255, 255, 255, 0.035) !important;
+  border: 1px solid rgba(170, 215, 255, 0.08) !important;
+  box-shadow: none !important;
+}
+
+/* Model View rows */
+#matches-container > * {
+  grid-template-columns: 150px minmax(260px, 1.5fr) 80px 80px 100px 80px !important;
+  gap: 16px !important;
+}
+
+/* Latest Results rows */
+#results-container > * {
+  grid-template-columns: 150px minmax(280px, 1fr) 90px 130px 70px !important;
+  gap: 16px !important;
+}
+
+/* make inner text behave */
+#matches-container *,
+#results-container * {
+  min-width: 0 !important;
+}
+
+#matches-container strong,
+#results-container strong {
+  color: #f4f7fb !important;
+  font-size: 15px !important;
+  font-weight: 900 !important;
+}
+
+#matches-container span,
+#results-container span,
+#matches-container small,
+#results-container small {
+  color: rgba(235, 242, 250, 0.76) !important;
+  font-size: 13px !important;
+  line-height: 1.25 !important;
+}
+
+#matches-container b,
+#results-container b {
+  color: #f4f7fb !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
+  white-space: nowrap !important;
+}
+
+#matches-container em,
+#results-container em {
+  font-style: normal !important;
+  white-space: nowrap !important;
+}
+
+/* dots / league labels */
+#matches-container .league,
+#results-container .league,
+#matches-container [class*="league"],
+#results-container [class*="league"] {
+  color: rgba(235, 242, 250, 0.72) !important;
+  font-size: 12px !important;
+}
+
+/* score near text, not floating away */
+#results-container .score,
+#results-container [class*="score"] {
+  justify-self: start !important;
+  font-size: 18px !important;
+  font-weight: 950 !important;
+  color: #ffffff !important;
+}
+
+/* prediction text */
+#results-container .prediction,
+#results-container [class*="prediction"],
+#matches-container .prediction,
+#matches-container [class*="prediction"] {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  font-weight: 850 !important;
+}
+
+/* live badge */
+#matches-container .live-badge,
+#results-container .live-badge,
+#matches-container [class*="live"],
+#results-container [class*="live"] {
+  width: fit-content !important;
+  padding: 7px 10px !important;
+  border-radius: 999px !important;
+  background: rgba(239, 68, 68, 0.14) !important;
+  color: #ff6b6b !important;
+  border: 1px solid rgba(239, 68, 68, 0.18) !important;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+}
+
+/* hover */
+#matches-container > *:hover,
+#results-container > *:hover {
+  background: rgba(35, 255, 148, 0.06) !important;
+  border-color: rgba(35, 255, 148, 0.18) !important;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  #matches-container > *,
+  #results-container > * {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px 16px !important;
+    min-height: auto !important;
+  }
+}
+
+@media (max-width: 620px) {
+  #matches-container > *,
+  #results-container > * {
+    grid-template-columns: 1fr !important;
+  }
+}
