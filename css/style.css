@@ -4041,3 +4041,181 @@ button {
     grid-template-columns: 1fr !important;
   }
 }
+/* ===== GLOBAL HEADER + PAGE ALIGN FIX ===== */
+
+.bf-header,
+.header {
+  width: 100%;
+  padding: 14px 24px !important;
+  background: rgba(4, 17, 26, 0.88) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bf-header-inner,
+.header-inner {
+  width: min(1180px, calc(100% - 32px)) !important;
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 260px 1fr 250px !important;
+  align-items: center !important;
+  gap: 24px !important;
+}
+
+/* Logo одинаковый на всех страницах */
+.bf-logo,
+.site-logo {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-self: start !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+  font-size: 22px !important;
+  font-weight: 950 !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+.bf-logo img,
+.site-logo__icon {
+  width: 42px !important;
+  height: 42px !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 0 8px rgba(53, 255, 148, 0.45));
+}
+
+.bf-logo > span,
+.site-logo__text {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0 !important;
+  color: #f4f7fb !important;
+  font-size: 22px !important;
+  font-weight: 950 !important;
+  line-height: 1 !important;
+}
+
+.bf-logo > span > span,
+.logo-accent {
+  color: #35ff94 !important;
+}
+
+/* Navigation centered */
+.bf-nav,
+.topbar-menu {
+  justify-self: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  flex-wrap: nowrap !important;
+}
+
+.bf-header-actions,
+.topbar-actions {
+  justify-self: end !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+/* Button text centered */
+.bf-nav a,
+.topbar-menu a,
+.bf-signin,
+.btn-bf-ghost,
+.bf-theme,
+.theme-switch {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  padding: 0 20px !important;
+  border-radius: 16px !important;
+  line-height: 1 !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  white-space: nowrap !important;
+}
+
+/* Main content одинаково по центру на всех страницах */
+.bf-page,
+.page-shell,
+main,
+.news-page-wrap,
+.match-page-wrap,
+.article-page-wrap,
+.article-pro-wrap,
+.standings-page-wrap {
+  width: min(1180px, calc(100% - 32px)) !important;
+  max-width: 1180px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* AI Insights hero не должен уезжать вправо */
+.insights-hero,
+.ai-focus-banner,
+.article-pro-hero,
+.news-top-hero,
+.match-pro-hero,
+.news-hero,
+.results-page-section .hero,
+.standings-league-bar {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Inner sections same width */
+.predictions-section,
+.panel,
+.news-layout-v2,
+.match-pro-layout,
+.standings-layout,
+.matches-grid,
+.news-grid,
+.news-grid-v2,
+.insights-cards-grid,
+.predictions-grid,
+.article-layout,
+.bf-hero,
+.bf-benefits,
+.bf-predictions-section,
+.bf-panel {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Active AI Insights */
+.bf-nav a[href="ai-insights.html"],
+.topbar-menu a[href="ai-insights.html"].active {
+  color: #35ff94 !important;
+  background: rgba(35, 255, 148, 0.12) !important;
+  border-color: rgba(35, 255, 148, 0.28) !important;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .bf-header-inner,
+  .header-inner {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .bf-logo,
+  .site-logo,
+  .bf-nav,
+  .topbar-menu,
+  .bf-header-actions,
+  .topbar-actions {
+    justify-self: center !important;
+  }
+
+  .bf-nav,
+  .topbar-menu {
+    flex-wrap: wrap !important;
+  }
+}
