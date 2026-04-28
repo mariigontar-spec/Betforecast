@@ -3823,44 +3823,76 @@ button {
     padding: 22px;
   }
 }
-/* ===== LOGO ALIGN FIX ===== */
+/* ===== HEADER / LOGO FINAL FIX ===== */
+
+.bf-header {
+  padding: 14px 24px;
+}
+
+.bf-header-inner {
+  width: min(1180px, calc(100% - 32px));
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 26px;
+}
 
 .bf-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px; /*
-  font-size: 18px;
-  font-weight: 900;
+  gap: 6px;
+  font-size: 22px;
+  font-weight: 950;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .bf-logo img {
-  width: 54px;  
-  height: 54px;
+  width: 54px !important;
+  height: 54px !important;
   object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(53, 255, 148, 0.45));
 }
 
-
-.bf-header-inner {
-  gap: 16px; /* уменьшили расстояние между блоками */
+.bf-logo > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  line-height: 1;
 }
 
+.bf-logo > span > span {
+  margin-left: 0;
+  color: #35ff94;
+}
+
+.bf-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 .bf-nav a,
 .bf-signin,
 .bf-theme {
-  height: 42px;
-  padding: 0 16px;
-  font-size: 14px;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 44px;
+  min-height: 44px;
+  padding: 0 20px;
+  line-height: 1 !important;
+  font-size: 16px;
+  font-weight: 900;
 }
 
-
-.bf-nav {
-  gap: 8px;
+.bf-theme {
+  gap: 10px;
 }
 
-
-.bf-logo span {
-  display: flex;
+.bf-theme b {
+  display: inline-flex;
   align-items: center;
   line-height: 1;
 }
