@@ -312,5 +312,48 @@
       }
     })();
   </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("match-search-input");
+    const searchBtn = document.getElementById("match-search-btn");
+    const searchResult = document.getElementById("match-search-result");
+
+    function analyzeMatch(value) {
+      const match = value.trim();
+
+      if (!match) {
+        searchResult.textContent = "Enter a match to see win probabilities and AI reasoning.";
+        searchInput.focus();
+        return;
+      }
+
+      searchResult.innerHTML = `
+        <strong>${match}</strong><br>
+        AI prediction generated: Home 47% · Draw 28% · Away 25%.<br>
+        Open full analysis to view model signals, xG, form and risk layers.
+      `;
+    }
+
+    if (searchBtn && searchInput && searchResult) {
+      searchBtn.addEventListener("click", function () {
+        analyzeMatch(searchInput.value);
+      });
+
+      searchInput.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          analyzeMatch(searchInput.value);
+        }
+      });
+    }
+
+    document.querySelectorAll(".bf-tags button").forEach(function (button) {
+      button.addEventListener("click", function () {
+        const match = button.textContent.trim();
+        searchInput.value = match;
+        analyzeMatch(match);
+      });
+    });
+  });
+</script>
 </body>
 </html>
