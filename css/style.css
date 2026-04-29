@@ -4615,3 +4615,121 @@ main,
     justify-content: center;
   }
 }
+/* =========================================================
+   TODAY'S BEST PREDICTIONS — CLEAN COMPACT TABLE
+   ========================================================= */
+
+.bf-predictions-section {
+  width: min(1180px, 100%) !important;
+  margin: 0 auto !important;
+  padding: 24px 26px !important;
+  border-radius: 24px !important;
+}
+
+.bf-predictions-section h2 {
+  margin: 0 0 18px !important;
+  font-size: 28px !important;
+  line-height: 1 !important;
+  font-weight: 950 !important;
+  letter-spacing: -0.04em !important;
+}
+
+.bf-predictions-table,
+#predictions-container {
+  display: grid !important;
+  gap: 8px !important;
+}
+
+.bf-prediction-row {
+  display: grid !important;
+  grid-template-columns: 145px minmax(220px, 1fr) 86px 86px 86px 125px !important;
+  align-items: center !important;
+  gap: 14px !important;
+  min-height: 58px !important;
+  padding: 10px 14px !important;
+  border-radius: 14px !important;
+  background: rgba(255, 255, 255, 0.035) !important;
+  border: 1px solid rgba(170, 215, 255, 0.08) !important;
+  box-shadow: none !important;
+  transition: 0.2s ease !important;
+}
+
+.bf-prediction-row:hover {
+  background: rgba(35, 255, 148, 0.065) !important;
+  border-color: rgba(35, 255, 148, 0.18) !important;
+}
+
+.bf-prediction-row span {
+  display: inline-flex !important;
+  align-items: center !important;
+  width: fit-content !important;
+  height: 28px !important;
+  padding: 0 12px !important;
+  border-radius: 999px !important;
+  background: rgba(35, 255, 148, 0.13) !important;
+  color: #35ff94 !important;
+  font-size: 10px !important;
+  line-height: 1 !important;
+  font-weight: 950 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+}
+
+.bf-prediction-row strong {
+  color: #f4f7fb !important;
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+  font-weight: 900 !important;
+}
+
+.bf-prediction-row b {
+  color: rgba(235, 242, 250, 0.82) !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  font-weight: 850 !important;
+  white-space: nowrap !important;
+}
+
+.bf-prediction-row b:nth-of-type(1) {
+  color: #35ff94 !important;
+}
+
+.bf-prediction-row b:nth-of-type(3) {
+  color: #58c7ff !important;
+}
+
+.bf-prediction-row em {
+  justify-self: end !important;
+  font-style: normal !important;
+  color: rgba(235, 242, 250, 0.78) !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+  font-weight: 850 !important;
+  white-space: nowrap !important;
+}
+
+.bf-prediction-row em.live {
+  padding: 7px 10px !important;
+  border-radius: 999px !important;
+  background: rgba(239, 68, 68, 0.14) !important;
+  color: #ff6b6b !important;
+}
+
+@media (max-width: 900px) {
+  .bf-prediction-row {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px 14px !important;
+    min-height: auto !important;
+  }
+
+  .bf-prediction-row em {
+    justify-self: start !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .bf-prediction-row {
+    grid-template-columns: 1fr !important;
+  }
+}
