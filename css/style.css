@@ -5106,3 +5106,26 @@ main,
     0 0 28px rgba(53, 255, 148, 0.10),
     inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
+body.theme-light {
+  --page-bg: #f5f7fb;
+  --page-text: #111;
+  --text-main: #222;
+  --text-soft: #666;
+  --text-muted: #999;
+
+  --surface: #ffffff;
+  --surface-soft: #f1f3f7;
+  --surface-strong: #e9edf3;
+
+  --border: rgba(0,0,0,0.08);
+  --border-strong: rgba(0,0,0,0.15);
+
+  --header-bg: rgba(255,255,255,0.8);
+  --header-line: rgba(0,0,0,0.05);
+
+  --button-bg: #ffffff;
+  --button-hover: #f0f2f6;
+  --button-text: #111;
+
+  --card-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
