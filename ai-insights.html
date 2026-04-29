@@ -217,5 +217,27 @@
       }
     })();
   </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const openInsight = document.querySelectorAll(
+      ".insight-card, .insights-cards-grid article, .featured-insight-grid article, .insight-duo-grid article"
+    );
+
+    openInsight.forEach(function (card) {
+      card.setAttribute("tabindex", "0");
+      card.setAttribute("role", "button");
+
+      card.addEventListener("click", function () {
+        window.location.href = "match.html";
+      });
+
+      card.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          window.location.href = "match.html";
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
