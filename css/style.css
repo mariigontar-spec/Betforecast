@@ -5296,3 +5296,59 @@ body:not(.theme-dark) .bf-preview {
   ) !important;
   color: #f4fff8 !important;
 }
+/* LIGHT THEME - TEXT + NAV BUTTON FIX */
+body:not(.theme-dark) .bf-table,
+body:not(.theme-dark) .bf-table *,
+body:not(.theme-dark) .model-view,
+body:not(.theme-dark) .model-view *,
+body:not(.theme-dark) .latest-results,
+body:not(.theme-dark) .latest-results *,
+body:not(.theme-dark) .bf-model,
+body:not(.theme-dark) .bf-model *,
+body:not(.theme-dark) .bf-results,
+body:not(.theme-dark) .bf-results *,
+body:not(.theme-dark) .bf-row,
+body:not(.theme-dark) .bf-row * {
+  color: #102018 !important;
+}
+
+body:not(.theme-dark) .muted,
+body:not(.theme-dark) .text-muted,
+body:not(.theme-dark) small,
+body:not(.theme-dark) .league,
+body:not(.theme-dark) .team-meta,
+body:not(.theme-dark) .bf-muted {
+  color: rgba(16, 32, 24, 0.62) !important;
+}
+
+/* LIGHT NAV BUTTONS */
+body:not(.theme-dark) .bf-nav a,
+body:not(.theme-dark) .topbar-menu a,
+body:not(.theme-dark) .bf-signin,
+body:not(.theme-dark) .bf-theme {
+  background: rgba(255, 255, 255, 0.78) !important;
+  color: #102018 !important;
+  border: 1px solid rgba(16, 32, 24, 0.12) !important;
+  box-shadow:
+    0 8px 22px rgba(20, 45, 35, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+}
+
+body:not(.theme-dark) .bf-nav a:hover,
+body:not(.theme-dark) .topbar-menu a:hover,
+body:not(.theme-dark) .bf-signin:hover,
+body:not(.theme-dark) .bf-theme:hover {
+  border-color: rgba(35, 255, 148, 0.35) !important;
+  box-shadow:
+    0 10px 26px rgba(20, 45, 35, 0.1),
+    0 0 18px rgba(35, 255, 148, 0.12) !important;
+}
+
+body:not(.theme-dark) .bf-nav a.active,
+body:not(.theme-dark) .topbar-menu a.active,
+body:not(.theme-dark) .bf-nav a[aria-current="page"],
+body:not(.theme-dark) .topbar-menu a[aria-current="page"] {
+  background: rgba(35, 255, 148, 0.13) !important;
+  color: #102018 !important;
+  border-color: rgba(35, 255, 148, 0.35) !important;
+}
