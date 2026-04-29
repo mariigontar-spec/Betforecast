@@ -4375,102 +4375,7 @@ main,
     grid-template-columns: 1fr !important;
   }
 }
-/* ===== MATCH HERO TEXT ALIGN FIX ===== */
 
-.match-hero,
-.match-pro-hero,
-.article-pro-hero {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 420px) !important;
-  gap: 40px !important;
-  align-items: center !important;
-}
-
-/* левая колонка */
-.match-hero-left,
-.match-pro-left,
-.article-pro-left {
-  max-width: 620px !important;
-}
-
-/* заголовок */
-.match-hero-left h1,
-.match-pro-left h1,
-.article-pro-left h1 {
-  font-size: 48px !important;
-  line-height: 1.05 !important;
-  letter-spacing: -0.04em !important;
-  margin-bottom: 16px !important;
-}
-
-/* основной текст — вот ключ */
-.match-hero-left p,
-.match-pro-left p,
-.article-pro-left p {
-  max-width: 520px !important;
-  line-height: 1.6 !important;
-  font-size: 16px !important;
-  color: rgba(235,242,250,0.78) !important;
-  margin-bottom: 18px !important;
-}
-
-/* чипы (Sunday / time / stadium) */
-.match-meta,
-.match-pro-meta {
-  display: flex !important;
-  gap: 10px !important;
-  flex-wrap: wrap !important;
-  margin-bottom: 20px !important;
-}
-
-/* кнопки */
-.match-actions,
-.match-pro-actions {
-  display: flex !important;
-  gap: 12px !important;
-  flex-wrap: wrap !important;
-}
-
-/* чтобы не растягивалось на всю ширину */
-.match-actions a,
-.match-pro-actions a {
-  width: auto !important;
-  min-width: 180px !important;
-}
-
-/* правая карточка не прыгает */
-.match-hero-right,
-.match-pro-right {
-  justify-self: end !important;
-  width: 100% !important;
-  max-width: 380px !important;
-}
-
-/* адаптив */
-@media (max-width: 900px) {
-  .match-hero,
-  .match-pro-hero,
-  .article-pro-hero {
-    grid-template-columns: 1fr !important;
-  }
-
-  .match-hero-left,
-  .match-pro-left,
-  .article-pro-left {
-    max-width: 100% !important;
-  }
-
-  .match-hero-left p,
-  .match-pro-left p,
-  .article-pro-left p {
-    max-width: 100% !important;
-  }
-
-  .match-hero-right,
-  .match-pro-right {
-    justify-self: start !important;
-  }
-}
 /* ===== COMPACT GRID PREDICTIONS ===== */
 
 .bf-predictions-grid {
@@ -4731,5 +4636,143 @@ main,
 @media (max-width: 620px) {
   .bf-prediction-row {
     grid-template-columns: 1fr !important;
+  }
+}
+/* ===== MATCH HERO TEXT + CARD ALIGN FIX ===== */
+
+.match-hero,
+.match-pro-hero,
+.article-pro-hero {
+  width: min(1180px, 100%) !important;
+  margin: 0 auto !important;
+  padding: 42px 48px !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.15fr) minmax(340px, 420px) !important;
+  gap: 42px !important;
+  align-items: center !important;
+  border-radius: 26px !important;
+}
+
+/* левая колонка */
+.match-hero-left,
+.match-pro-left,
+.article-pro-left {
+  grid-column: 1 !important;
+  max-width: 620px !important;
+  justify-self: start !important;
+  align-self: center !important;
+}
+
+/* заголовок */
+.match-hero-left h1,
+.match-pro-left h1,
+.article-pro-left h1 {
+  margin: 10px 0 16px !important;
+  font-size: clamp(42px, 4vw, 58px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.05em !important;
+  font-weight: 950 !important;
+}
+
+/* основной текст */
+.match-hero-left p,
+.match-pro-left p,
+.article-pro-left p {
+  max-width: 540px !important;
+  margin: 0 0 20px !important;
+  color: rgba(235, 242, 250, 0.78) !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+
+/* чипы */
+.match-meta,
+.match-pro-meta,
+.match-meta-row {
+  display: flex !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+  margin: 0 0 16px !important;
+}
+
+.match-meta span,
+.match-pro-meta span,
+.match-meta-row span {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 38px !important;
+  padding: 0 18px !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, 0.065) !important;
+  border: 1px solid rgba(170, 215, 255, 0.14) !important;
+  color: rgba(235, 242, 250, 0.82) !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+}
+
+/* кнопки */
+.match-actions,
+.match-pro-actions {
+  display: flex !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+}
+
+.match-actions a,
+.match-pro-actions a {
+  width: auto !important;
+  min-width: 180px !important;
+  min-height: 46px !important;
+  padding: 0 20px !important;
+  border-radius: 14px !important;
+  font-size: 15px !important;
+  font-weight: 900 !important;
+}
+
+/* правая карточка */
+.match-hero-right,
+.match-pro-right,
+.match-pro-hero .pro-score-card,
+.article-pro-hero .pro-score-card {
+  grid-column: 2 !important;
+  justify-self: end !important;
+  align-self: center !important;
+  width: 100% !important;
+  max-width: 380px !important;
+  margin: 0 !important;
+}
+
+/* сама карточка */
+.pro-score-card {
+  padding: 24px !important;
+  border-radius: 22px !important;
+}
+
+/* адаптив */
+@media (max-width: 900px) {
+  .match-hero,
+  .match-pro-hero,
+  .article-pro-hero {
+    grid-template-columns: 1fr !important;
+    padding: 28px 22px !important;
+  }
+
+  .match-hero-left,
+  .match-pro-left,
+  .article-pro-left,
+  .match-hero-right,
+  .match-pro-right,
+  .match-pro-hero .pro-score-card,
+  .article-pro-hero .pro-score-card {
+    grid-column: 1 !important;
+    max-width: 100% !important;
+    justify-self: stretch !important;
+  }
+
+  .match-hero-left p,
+  .match-pro-left p,
+  .article-pro-left p {
+    max-width: 100% !important;
   }
 }
