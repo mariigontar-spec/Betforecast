@@ -286,11 +286,11 @@
 
   <script>
     (function () {
-      const savedTheme = localStorage.getItem("bf-theme") || "dark";
+     const savedTheme = localStorage.getItem("bf-theme") || "light";
 
-      document.body.classList.remove("theme-dark", "theme-glass");
-      document.body.classList.add(`theme-${savedTheme}`);
-
+document.body.classList.remove("theme-dark", "theme-glass", "theme-light");
+document.body.classList.add(`theme-${savedTheme}`);
+      
       const toggle = document.getElementById("theme-toggle");
       const label = toggle ? toggle.querySelector("b") : null;
 
