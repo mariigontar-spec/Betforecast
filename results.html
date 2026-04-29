@@ -77,10 +77,10 @@
 
       if (toggle) {
         toggle.addEventListener("click", function () {
-          const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
+          const savedTheme = localStorage.getItem("bf-theme") || "light";
 
-          document.body.classList.remove("theme-dark", "theme-glass");
-          document.body.classList.add(`theme-${nextTheme}`);
+document.body.classList.remove("theme-dark", "theme-glass", "theme-light");
+document.body.classList.add(`theme-${savedTheme}`);
 
           localStorage.setItem("bf-theme", nextTheme);
           updateLabel(nextTheme);
