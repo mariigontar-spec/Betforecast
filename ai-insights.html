@@ -190,9 +190,10 @@
 
   <script>
     (function () {
-      const savedTheme = localStorage.getItem("bf-theme") || "dark";
-      document.body.classList.remove("theme-dark", "theme-glass");
+      const savedTheme = localStorage.getItem("bf-theme") || "light";
+      document.body.classList.remove("theme-dark", "theme-glass", "theme-light");
       document.body.classList.add(`theme-${savedTheme}`);
+    
 
       const toggle = document.getElementById("theme-toggle");
       const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
