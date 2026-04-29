@@ -5014,3 +5014,65 @@ main,
 #results-container > *:active {
   transform: translateY(-2px) scale(0.99);
 }
+/* ===== AI INSIGHTS PAGE INTERACTION ===== */
+
+.insights-hero a,
+.insights-hero button,
+.insight-card,
+.insights-cards-grid article,
+.featured-insight-grid > *,
+.insight-duo-grid > *,
+.ai-prob-card {
+  position: relative;
+  cursor: pointer;
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.insights-hero a:hover,
+.insights-hero button:hover,
+.insight-card:hover,
+.insights-cards-grid article:hover,
+.featured-insight-grid > *:hover,
+.insight-duo-grid > *:hover,
+.ai-prob-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(53, 255, 148, 0.35) !important;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(53, 255, 148, 0.10), transparent 38%),
+    rgba(255, 255, 255, 0.055) !important;
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.28),
+    0 0 28px rgba(53, 255, 148, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+.insight-card::after,
+.insights-cards-grid article::after {
+  content: "Open insight →";
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  color: #35ff94;
+  font-size: 12px;
+  font-weight: 900;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: 0.22s ease;
+}
+
+.insight-card:hover::after,
+.insights-cards-grid article:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.insights-hero a:active,
+.insights-hero button:active,
+.insight-card:active,
+.insights-cards-grid article:active {
+  transform: translateY(-2px) scale(0.99);
+}
