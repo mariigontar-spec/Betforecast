@@ -113,5 +113,28 @@
     });
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(
+      ".result-card, .results-card, .results-grid article, .results-grid > *, .match-result-card"
+    );
+
+    cards.forEach(function (card) {
+      card.style.cursor = "pointer";
+      card.setAttribute("tabindex", "0");
+      card.setAttribute("role", "button");
+
+      card.addEventListener("click", function () {
+        window.location.href = "match.html";
+      });
+
+      card.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          window.location.href = "match.html";
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
