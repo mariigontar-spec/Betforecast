@@ -4069,10 +4069,16 @@ button {
 .header {
   width: 100%;
   padding: 14px 24px !important;
-  background: rgba(4, 17, 26, 0.88) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.82) !important;
+  border-bottom: 1px solid var(--border-soft) !important;
+  color: var(--page-text) !important;
 }
-
+body.theme-dark .bf-header,
+body.theme-dark .header {
+  background: rgba(4, 17, 26, 0.88) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #f4fff8 !important;
+}
 .bf-header-inner,
 .header-inner {
   width: min(1180px, calc(100% - 32px)) !important;
