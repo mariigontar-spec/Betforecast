@@ -5228,3 +5228,45 @@ body.theme-dark .section-subtitle,
 body.theme-dark .hero-subtitle {
   color: rgba(232, 255, 240, 0.68) !important;
 }
+body:not(.theme-dark) .bf-header,
+body:not(.theme-dark) .header {
+  background: rgba(255, 255, 255, 0.88) !important;
+  border-bottom: 1px solid rgba(16, 32, 24, 0.12) !important;
+  box-shadow: 0 8px 30px rgba(20, 45, 35, 0.08) !important;
+}
+
+body:not(.theme-dark) .site-logo,
+body:not(.theme-dark) .site-logo__text,
+body:not(.theme-dark) .topbar-menu a,
+body:not(.theme-dark) .bf-nav a,
+body:not(.theme-dark) .topbar-actions button {
+  color: #102018 !important;
+}
+body:not(.theme-dark) .hero,
+body:not(.theme-dark) .hero-card,
+body:not(.theme-dark) .home-hero,
+body:not(.theme-dark) .ai-hero,
+body:not(.theme-dark) .hero-panel,
+body:not(.theme-dark) .prediction-card,
+body:not(.theme-dark) .featured-match-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.92),
+    rgba(255, 255, 255, 0.68)
+  ) !important;
+  color: #102018 !important;
+  border: 1px solid rgba(20, 60, 45, 0.12) !important;
+  box-shadow:
+    0 22px 60px rgba(20, 45, 35, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+}
+body:not(.theme-dark) .featured-match-card,
+body:not(.theme-dark) .prediction-preview,
+body:not(.theme-dark) .hero-preview-card {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 31, 40, 0.94),
+    rgba(8, 18, 24, 0.92)
+  ) !important;
+  color: #f4fff8 !important;
+}
