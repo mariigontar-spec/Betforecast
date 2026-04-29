@@ -30,20 +30,44 @@
   --orange: #fb923c;
   --red: #ef6b6b;
 
-  --glass-bg: linear-gradient(180deg, rgba(255,255,255,0.075), rgba(255,255,255,0.025));
-  --glass-bg-strong: linear-gradient(180deg, rgba(255,255,255,0.105), rgba(255,255,255,0.035));
-  --glass-border: rgba(170, 215, 255, 0.15);
-  --glass-green-border: rgba(25, 242, 138, 0.28);
-  --glass-shadow:
-    0 18px 50px rgba(0, 0, 0, 0.30),
-    inset 0 1px 0 rgba(255, 255, 255, 0.07);
-  --glass-shadow-green:
-    0 0 0 1px rgba(25, 242, 138, 0.06),
-    0 18px 60px rgba(0, 0, 0, 0.32),
-    0 0 30px rgba(25, 242, 138, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --glass-bg: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.88),
+  rgba(255, 255, 255, 0.62)
+);
+
+--glass-bg-strong: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.96),
+  rgba(255, 255, 255, 0.74)
+);
+
+--glass-border: rgba(18, 60, 42, 0.12);
+--glass-green-border: rgba(25, 242, 138, 0.28);
+
+--glass-shadow:
+  0 18px 50px rgba(20, 45, 35, 0.11),
+  inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+--glass-shadow-green:
+  0 0 0 1px rgba(25, 242, 138, 0.13),
+  0 18px 60px rgba(20, 45, 35, 0.13),
+  0 0 30px rgba(25, 242, 138, 0.16),
+  inset 0 1px 0 rgba(255, 255, 255, 0.82);
 
   --header-height: 84px;
+   /* COLORS - LIGHT GLASS BASE */
+--page-bg: #f5f7fb;
+--page-text: #102018;
+
+--surface: rgba(255, 255, 255, 0.72);
+--surface-strong: rgba(255, 255, 255, 0.9);
+
+--border-soft: rgba(20, 60, 45, 0.12);
+--text-muted: rgba(16, 32, 24, 0.6);
+
+/* акцент (если нужен зелёный стиль) */
+--accent: #22c55e;
 }
 
 /* =========================================================
