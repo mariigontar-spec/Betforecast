@@ -4919,3 +4919,33 @@ main,
     margin-left: 16px !important;
   }
 }
+.bf-benefit-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(120,255,190,0.12);
+  transition: all 0.25s ease;
+}
+
+.bf-benefit-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(35,255,148,0.35);
+  background: rgba(35,255,148,0.06);
+}
+
+.bf-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .bf-benefits {
+    grid-template-columns: 1fr 1fr;
+  }
+}
