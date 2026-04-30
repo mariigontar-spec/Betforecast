@@ -5358,3 +5358,312 @@ body:not(.theme-dark) .bf-logo span {
   color: #102018 !important;
   opacity: 1 !important;
 }
+/* =========================================================
+   FINAL THEME SYSTEM FIX
+   Light = light glass + dark text
+   Dark = dark glass + white text
+   ========================================================= */
+
+/* ---------- LIGHT BASE ---------- */
+
+body:not(.theme-dark) {
+  background: #dfe9f1 !important;
+  color: #101b2f !important;
+}
+
+body:not(.theme-dark) .bf-header,
+body:not(.theme-dark) .header {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-bottom: 1px solid rgba(16, 32, 48, 0.12) !important;
+  box-shadow: 0 8px 28px rgba(20, 45, 60, 0.08) !important;
+  color: #101b2f !important;
+}
+
+body:not(.theme-dark) .bf-page,
+body:not(.theme-dark) main {
+  color: #101b2f !important;
+}
+
+/* Main blocks */
+body:not(.theme-dark) section,
+body:not(.theme-dark) .bf-hero,
+body:not(.theme-dark) .page-hero,
+body:not(.theme-dark) .news-hero,
+body:not(.theme-dark) .standings-hero,
+body:not(.theme-dark) .match-hero,
+body:not(.theme-dark) .results-hero,
+body:not(.theme-dark) .ai-hero,
+body:not(.theme-dark) .glass-panel,
+body:not(.theme-dark) .card,
+body:not(.theme-dark) .panel,
+body:not(.theme-dark) .news-card,
+body:not(.theme-dark) .story-card,
+body:not(.theme-dark) .prediction-card,
+body:not(.theme-dark) .match-card,
+body:not(.theme-dark) .result-card,
+body:not(.theme-dark) .insight-card,
+body:not(.theme-dark) .league-card,
+body:not(.theme-dark) .table-card,
+body:not(.theme-dark) .sidebar-card,
+body:not(.theme-dark) .bf-card,
+body:not(.theme-dark) .bf-panel,
+body:not(.theme-dark) .bf-table,
+body:not(.theme-dark) .bf-results,
+body:not(.theme-dark) .bf-model {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(237, 245, 250, 0.76)
+  ) !important;
+  color: #101b2f !important;
+  border: 1px solid rgba(22, 54, 64, 0.12) !important;
+  box-shadow:
+    0 20px 55px rgba(20, 45, 60, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+}
+
+/* Inner small cards */
+body:not(.theme-dark) .bf-metric,
+body:not(.theme-dark) .metric,
+body:not(.theme-dark) .mini-card,
+body:not(.theme-dark) .stat-card,
+body:not(.theme-dark) .signal-card,
+body:not(.theme-dark) .timeline-item,
+body:not(.theme-dark) .related-match,
+body:not(.theme-dark) .form-card,
+body:not(.theme-dark) .league-item,
+body:not(.theme-dark) .topic-item,
+body:not(.theme-dark) .result-row,
+body:not(.theme-dark) .match-row,
+body:not(.theme-dark) .bf-row,
+body:not(.theme-dark) .news-list-item {
+  background: rgba(255, 255, 255, 0.78) !important;
+  color: #101b2f !important;
+  border: 1px solid rgba(16, 32, 48, 0.1) !important;
+  box-shadow:
+    0 10px 24px rgba(20, 45, 60, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
+}
+
+/* All text on light */
+body:not(.theme-dark) h1,
+body:not(.theme-dark) h2,
+body:not(.theme-dark) h3,
+body:not(.theme-dark) h4,
+body:not(.theme-dark) h5,
+body:not(.theme-dark) h6,
+body:not(.theme-dark) p,
+body:not(.theme-dark) span,
+body:not(.theme-dark) strong,
+body:not(.theme-dark) small,
+body:not(.theme-dark) a,
+body:not(.theme-dark) li,
+body:not(.theme-dark) td,
+body:not(.theme-dark) th,
+body:not(.theme-dark) div {
+  color: inherit;
+}
+
+body:not(.theme-dark) .bf-hero *,
+body:not(.theme-dark) .page-hero *,
+body:not(.theme-dark) .news-hero *,
+body:not(.theme-dark) .standings-hero *,
+body:not(.theme-dark) .match-hero *,
+body:not(.theme-dark) .results-hero *,
+body:not(.theme-dark) .ai-hero *,
+body:not(.theme-dark) .bf-table *,
+body:not(.theme-dark) .bf-results *,
+body:not(.theme-dark) .bf-model *,
+body:not(.theme-dark) .result-card *,
+body:not(.theme-dark) .match-card *,
+body:not(.theme-dark) .insight-card *,
+body:not(.theme-dark) .news-card * {
+  color: #101b2f !important;
+}
+
+body:not(.theme-dark) .muted,
+body:not(.theme-dark) .text-muted,
+body:not(.theme-dark) .bf-muted,
+body:not(.theme-dark) .section-subtitle,
+body:not(.theme-dark) .hero-subtitle,
+body:not(.theme-dark) .date,
+body:not(.theme-dark) .meta {
+  color: rgba(16, 27, 47, 0.62) !important;
+}
+
+/* Header buttons */
+body:not(.theme-dark) .bf-nav a,
+body:not(.theme-dark) .topbar-menu a,
+body:not(.theme-dark) .bf-signin,
+body:not(.theme-dark) .bf-theme,
+body:not(.theme-dark) #theme-toggle {
+  background: rgba(255, 255, 255, 0.82) !important;
+  color: #101b2f !important;
+  border: 1px solid rgba(16, 32, 48, 0.14) !important;
+  box-shadow:
+    0 8px 22px rgba(20, 45, 60, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+}
+
+body:not(.theme-dark) .bf-nav a.active,
+body:not(.theme-dark) .topbar-menu a.active,
+body:not(.theme-dark) .bf-nav a[aria-current="page"],
+body:not(.theme-dark) .topbar-menu a[aria-current="page"] {
+  background: rgba(18, 150, 91, 0.12) !important;
+  color: #0b6f45 !important;
+  border-color: rgba(18, 150, 91, 0.32) !important;
+}
+
+/* calmer green badges */
+body:not(.theme-dark) .bf-pill,
+body:not(.theme-dark) .badge,
+body:not(.theme-dark) .tag,
+body:not(.theme-dark) .league-badge,
+body:not(.theme-dark) .status-pill {
+  background: rgba(18, 150, 91, 0.12) !important;
+  color: #0b7a4b !important;
+  border: 1px solid rgba(18, 150, 91, 0.28) !important;
+}
+
+/* Green buttons more solid */
+body:not(.theme-dark) .btn-primary,
+body:not(.theme-dark) .green-button,
+body:not(.theme-dark) .ai-button,
+body:not(.theme-dark) .open-button {
+  background: linear-gradient(135deg, #21c465, #65d93e) !important;
+  color: #04130b !important;
+  border: 1px solid rgba(9, 105, 55, 0.22) !important;
+}
+
+
+/* ---------- DARK BASE ---------- */
+
+body.theme-dark {
+  background: #06131b !important;
+  color: #f4fff8 !important;
+}
+
+body.theme-dark .bf-header,
+body.theme-dark .header {
+  background: rgba(4, 17, 26, 0.92) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
+  color: #f4fff8 !important;
+}
+
+body.theme-dark section,
+body.theme-dark .bf-hero,
+body.theme-dark .page-hero,
+body.theme-dark .news-hero,
+body.theme-dark .standings-hero,
+body.theme-dark .match-hero,
+body.theme-dark .results-hero,
+body.theme-dark .ai-hero,
+body.theme-dark .glass-panel,
+body.theme-dark .card,
+body.theme-dark .panel,
+body.theme-dark .news-card,
+body.theme-dark .story-card,
+body.theme-dark .prediction-card,
+body.theme-dark .match-card,
+body.theme-dark .result-card,
+body.theme-dark .insight-card,
+body.theme-dark .league-card,
+body.theme-dark .table-card,
+body.theme-dark .sidebar-card,
+body.theme-dark .bf-card,
+body.theme-dark .bf-panel,
+body.theme-dark .bf-table,
+body.theme-dark .bf-results,
+body.theme-dark .bf-model {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 31, 40, 0.94),
+    rgba(6, 19, 27, 0.94)
+  ) !important;
+  color: #f4fff8 !important;
+  border: 1px solid rgba(35, 180, 120, 0.22) !important;
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+}
+
+body.theme-dark .bf-metric,
+body.theme-dark .metric,
+body.theme-dark .mini-card,
+body.theme-dark .stat-card,
+body.theme-dark .signal-card,
+body.theme-dark .timeline-item,
+body.theme-dark .related-match,
+body.theme-dark .form-card,
+body.theme-dark .league-item,
+body.theme-dark .topic-item,
+body.theme-dark .result-row,
+body.theme-dark .match-row,
+body.theme-dark .bf-row,
+body.theme-dark .news-list-item {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.035)
+  ) !important;
+  color: #f4fff8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.11) !important;
+}
+
+body.theme-dark h1,
+body.theme-dark h2,
+body.theme-dark h3,
+body.theme-dark h4,
+body.theme-dark h5,
+body.theme-dark h6,
+body.theme-dark p,
+body.theme-dark span,
+body.theme-dark strong,
+body.theme-dark small,
+body.theme-dark a,
+body.theme-dark li,
+body.theme-dark td,
+body.theme-dark th {
+  color: #f4fff8 !important;
+}
+
+body.theme-dark .muted,
+body.theme-dark .text-muted,
+body.theme-dark .bf-muted,
+body.theme-dark .section-subtitle,
+body.theme-dark .hero-subtitle,
+body.theme-dark .date,
+body.theme-dark .meta {
+  color: rgba(232, 255, 240, 0.68) !important;
+}
+
+body.theme-dark .bf-nav a,
+body.theme-dark .topbar-menu a,
+body.theme-dark .bf-signin,
+body.theme-dark .bf-theme,
+body.theme-dark #theme-toggle {
+  background: rgba(30, 45, 60, 0.9) !important;
+  color: #f4fff8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: none !important;
+}
+
+body.theme-dark .bf-nav a.active,
+body.theme-dark .topbar-menu a.active,
+body.theme-dark .bf-nav a[aria-current="page"],
+body.theme-dark .topbar-menu a[aria-current="page"] {
+  background: rgba(18, 120, 78, 0.42) !important;
+  color: #35d88f !important;
+  border-color: rgba(35, 216, 143, 0.38) !important;
+}
+
+body.theme-dark .bf-pill,
+body.theme-dark .badge,
+body.theme-dark .tag,
+body.theme-dark .league-badge,
+body.theme-dark .status-pill {
+  background: rgba(18, 120, 78, 0.28) !important;
+  color: #58e0a0 !important;
+  border: 1px solid rgba(88, 224, 160, 0.28) !important;
+}
