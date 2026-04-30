@@ -6018,3 +6018,83 @@ body:not(.theme-dark) .standings-page-wrap,
 body:not(.theme-dark) .page-shell {
   background: transparent !important;
 }
+/* ===== RESULTS PAGE FIX ===== */
+
+/* внешний контейнер страницы */
+.results-page,
+.results-wrapper,
+.results-container,
+.bf-results,
+.page-results {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 24px; /* даёт отступы от краёв */
+}
+
+/* главный верхний блок (Latest football results...) */
+.results-hero,
+.results-header,
+.match-results-header {
+  border-radius: 24px !important;
+  padding: 28px !important;
+  margin-bottom: 24px !important;
+  overflow: hidden; /* чтобы скругления работали */
+}
+
+/* сетка карточек */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px; /* расстояние между карточками */
+}
+
+/* карточки матчей */
+.result-card,
+.match-result-card {
+  border-radius: 20px !important;
+  padding: 20px !important;
+}
+
+/* убираем "прилипание" к краям */
+body:not(.theme-dark) .results-section,
+body.theme-dark .results-section {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* ===== RESULTS PAGE FIX ===== */
+
+.results-page,
+.results-wrapper,
+.results-container,
+.bf-results,
+.page-results {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.results-hero,
+.results-header,
+.match-results-header {
+  border-radius: 24px !important;
+  padding: 28px !important;
+  margin-bottom: 24px !important;
+  overflow: hidden;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.result-card,
+.match-result-card {
+  border-radius: 20px !important;
+  padding: 20px !important;
+}
+
+/*  для стеклянного эффекта */
+.result-card {
+  backdrop-filter: blur(10px);
+}
