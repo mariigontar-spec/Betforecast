@@ -6124,3 +6124,32 @@ body.theme-dark .results-section {
 .result-card {
   backdrop-filter: blur(10px);
 }
+/* INDEX MODEL VIEW + LATEST RESULTS GENERATED TEXT FIX */
+
+body:not(.theme-dark) #matches-container .cell-league,
+body:not(.theme-dark) #matches-container .league-name,
+body:not(.theme-dark) #matches-container .teams,
+body:not(.theme-dark) #matches-container .team-inline,
+body:not(.theme-dark) #matches-container .team-name-short,
+body:not(.theme-dark) #results-container .cell-league,
+body:not(.theme-dark) #results-container .league-name,
+body:not(.theme-dark) #results-container .teams,
+body:not(.theme-dark) #results-container .team-inline,
+body:not(.theme-dark) #results-container .team-name-short {
+  color: #101b2f !important;
+  opacity: 1 !important;
+}
+
+body:not(.theme-dark) #matches-container .cell-league,
+body:not(.theme-dark) #results-container .cell-league,
+body:not(.theme-dark) #matches-container .league-name,
+body:not(.theme-dark) #results-container .league-name {
+  color: rgba(16, 27, 47, 0.62) !important;
+  opacity: 1 !important;
+}
+
+body:not(.theme-dark) #matches-container .result-row,
+body:not(.theme-dark) #results-container .result-row {
+  background: rgba(255, 255, 255, 0.72) !important;
+  border: 1px solid rgba(16, 32, 48, 0.1) !important;
+}
