@@ -5874,7 +5874,33 @@ body.theme-dark .table-row {
   border: 1px solid rgba(255, 255, 255, 0.11) !important;
   box-shadow: none !important;
 }
+/* FORCE LIGHT TEXT INSIDE INDEX MODEL + RESULTS ROWS */
+body:not(.theme-dark) .model-view .bf-row,
+body:not(.theme-dark) .model-view .bf-row *,
+body:not(.theme-dark) .latest-results .bf-row,
+body:not(.theme-dark) .latest-results .bf-row *,
+body:not(.theme-dark) .model-view .result-row,
+body:not(.theme-dark) .model-view .result-row *,
+body:not(.theme-dark) .latest-results .result-row,
+body:not(.theme-dark) .latest-results .result-row *,
+body:not(.theme-dark) .model-view .match-row,
+body:not(.theme-dark) .model-view .match-row *,
+body:not(.theme-dark) .latest-results .match-row,
+body:not(.theme-dark) .latest-results .match-row * {
+  color: #101b2f !important;
+  opacity: 1 !important;
+}
 
+/* второстепенный текст */
+body:not(.theme-dark) .model-view .league,
+body:not(.theme-dark) .model-view .meta,
+body:not(.theme-dark) .model-view .team-meta,
+body:not(.theme-dark) .latest-results .league,
+body:not(.theme-dark) .latest-results .meta,
+body:not(.theme-dark) .latest-results .team-meta {
+  color: rgba(16, 27, 47, 0.62) !important;
+  opacity: 1 !important;
+}
 /* ---------- TEXT FIX ---------- */
 
 body:not(.theme-dark) .bf-page *,
