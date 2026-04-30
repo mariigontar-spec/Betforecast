@@ -6153,3 +6153,105 @@ body:not(.theme-dark) #results-container .result-row {
   background: rgba(255, 255, 255, 0.72) !important;
   border: 1px solid rgba(16, 32, 48, 0.1) !important;
 }
+/* ===== DARK THEME UNIFY FIX ===== */
+
+body.theme-dark .bf-preview,
+body.theme-dark .match-preview,
+body.theme-dark .ai-preview,
+body.theme-dark .story-card,
+body.theme-dark .news-card,
+body.theme-dark .result-card,
+body.theme-dark .match-result-card,
+body.theme-dark .insight-card,
+body.theme-dark .stat-card,
+body.theme-dark .signal-card,
+body.theme-dark .mini-card,
+body.theme-dark .form-card,
+body.theme-dark .related-match,
+body.theme-dark .league-item,
+body.theme-dark .topic-item,
+body.theme-dark .timeline-item,
+body.theme-dark .bf-metric,
+body.theme-dark .prediction-card,
+body.theme-dark .prediction-tile,
+body.theme-dark .quick-insight,
+body.theme-dark .news-focus,
+body.theme-dark .table-zones,
+body.theme-dark .sidebar-card {
+  background: linear-gradient(
+    180deg,
+    rgba(24, 39, 49, 0.96),
+    rgba(12, 27, 36, 0.94)
+  ) !important;
+  color: #f4fff8 !important;
+  border: 1px solid rgba(72, 220, 156, 0.18) !important;
+  box-shadow:
+    0 14px 34px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+}
+
+body.theme-dark .bf-preview *,
+body.theme-dark .match-preview *,
+body.theme-dark .ai-preview *,
+body.theme-dark .story-card *,
+body.theme-dark .news-card *,
+body.theme-dark .result-card *,
+body.theme-dark .match-result-card *,
+body.theme-dark .insight-card *,
+body.theme-dark .stat-card *,
+body.theme-dark .signal-card *,
+body.theme-dark .mini-card *,
+body.theme-dark .form-card *,
+body.theme-dark .related-match *,
+body.theme-dark .league-item *,
+body.theme-dark .topic-item *,
+body.theme-dark .timeline-item *,
+body.theme-dark .bf-metric *,
+body.theme-dark .prediction-card *,
+body.theme-dark .prediction-tile *,
+body.theme-dark .quick-insight *,
+body.theme-dark .news-focus *,
+body.theme-dark .table-zones *,
+body.theme-dark .sidebar-card * {
+  color: #f4fff8 !important;
+  opacity: 1 !important;
+}
+
+/* мягкий вторичный текст в тёмной теме */
+body.theme-dark small,
+body.theme-dark .meta,
+body.theme-dark .date,
+body.theme-dark .league-name,
+body.theme-dark .cell-league,
+body.theme-dark .team-meta,
+body.theme-dark .bf-muted,
+body.theme-dark .text-muted {
+  color: rgba(232, 255, 240, 0.68) !important;
+  opacity: 1 !important;
+}
+
+/* тёмные hero-вставки, чтобы не были серыми */
+body.theme-dark .results-hero,
+body.theme-dark .match-hero,
+body.theme-dark .news-hero,
+body.theme-dark .ai-hero,
+body.theme-dark .standings-hero,
+body.theme-dark .bf-hero {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 31, 40, 0.96),
+    rgba(7, 20, 28, 0.96)
+  ) !important;
+  color: #f4fff8 !important;
+  border: 1px solid rgba(72, 220, 156, 0.2) !important;
+}
+
+/* контурные/вторичные кнопки в тёмной теме */
+body.theme-dark .btn-secondary,
+body.theme-dark .ghost-button,
+body.theme-dark .secondary-button,
+body.theme-dark .bf-secondary {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #f4fff8 !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+}
