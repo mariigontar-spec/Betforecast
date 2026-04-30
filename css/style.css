@@ -6257,3 +6257,22 @@ body.theme-dark .bf-secondary {
   color: #f4fff8 !important;
   border: 1px solid rgba(255, 255, 255, 0.14) !important;
 }
+/* ===== FIX VS + PREDICTION VISIBILITY ===== */
+
+body:not(.theme-dark) .vs-sep,
+body:not(.theme-dark) .cell-pick,
+body:not(.theme-dark) .market,
+body:not(.theme-dark) .prediction {
+  color: #475569 !important;
+  opacity: 1 !important;
+  font-weight: 500;
+}
+/* ===== ROW STRUCTURE ===== */
+
+body:not(.theme-dark) .result-row,
+body:not(.theme-dark) .match-row {
+  border: 1px solid rgba(16, 32, 48, 0.12) !important;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  margin-bottom: 10px;
+}
