@@ -6289,3 +6289,33 @@ body:not(.theme-dark) .match-row {
   color: #475569 !important;
   opacity: 1 !important;
 }
+/* ===== MODEL VIEW GRID FIX ===== */
+
+#matches-container .bf-row,
+.model-view .bf-row {
+  position: relative;
+  border-bottom: 1px solid rgba(16, 32, 48, 0.08);
+  padding: 14px 16px;
+}
+
+/* последняя строка без линии */
+#matches-container .bf-row:last-child,
+.model-view .bf-row:last-child {
+  border-bottom: none;
+}
+
+/* hover как сейчас, но аккуратнее */
+#matches-container .bf-row:hover,
+.model-view .bf-row:hover {
+  background: rgba(72, 220, 156, 0.08);
+  border-radius: 12px;
+}
+
+/* вертикальные разделители (опционально, но красиво) */
+.model-view .cell-score,
+.model-view .cell-time,
+.model-view .cell-xg,
+.model-view .cell-odds {
+  border-left: 1px solid rgba(16, 32, 48, 0.06);
+  padding-left: 16px;
+}
