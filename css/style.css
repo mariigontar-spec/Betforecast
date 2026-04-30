@@ -1990,11 +1990,10 @@ body.theme-glass .ai-prob-tile {
 
 .league-name,
 .team-name-short {
-  white-space: normal;
+  white-space: nowrap;
   overflow: visible;
   text-overflow: clip;
 }
-
 .league-dot {
   width: 10px;
   height: 10px;
@@ -6275,4 +6274,18 @@ body:not(.theme-dark) .match-row {
   border-radius: 16px !important;
   background: rgba(255, 255, 255, 0.85) !important;
   margin-bottom: 10px;
+}
+#results-container .team-name-short,
+#matches-container .team-name-short {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+}
+
+#results-container .vs-sep,
+#matches-container .vs-sep,
+#results-container .cell-pick,
+#matches-container .cell-pick {
+  color: #475569 !important;
+  opacity: 1 !important;
 }
