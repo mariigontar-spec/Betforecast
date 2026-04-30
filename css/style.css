@@ -1990,9 +1990,9 @@ body.theme-glass .ai-prob-tile {
 
 .league-name,
 .team-name-short {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 .league-dot {
@@ -6131,13 +6131,15 @@ body:not(.theme-dark) #matches-container .league-name,
 body:not(.theme-dark) #matches-container .teams,
 body:not(.theme-dark) #matches-container .team-inline,
 body:not(.theme-dark) #matches-container .team-name-short,
-body:not(.theme-dark) #results-container .cell-league,
-body:not(.theme-dark) #results-container .league-name,
-body:not(.theme-dark) #results-container .teams,
 body:not(.theme-dark) #results-container .team-inline,
 body:not(.theme-dark) #results-container .team-name-short {
   color: #101b2f !important;
   opacity: 1 !important;
+  max-width: none !important;
+  width: auto !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
 }
 
 body:not(.theme-dark) #matches-container .cell-league,
