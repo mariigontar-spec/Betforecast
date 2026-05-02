@@ -2150,7 +2150,7 @@ body.theme-glass .ai-prob-tile {
 
 .standings-table-wrap {
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   margin-top: 10px;
   padding-bottom: 6px;
