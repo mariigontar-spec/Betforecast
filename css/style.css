@@ -4110,44 +4110,6 @@ body.theme-dark .header {
   gap: 24px !important;
 }
 
-/* Logo одинаковый на всех страницах */
-.bf-logo,
-.site-logo {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-self: start !important;
-  gap: 8px !important;
-  min-width: 0 !important;
-  font-size: 22px !important;
-  font-weight: 950 !important;
-  line-height: 1 !important;
-  white-space: nowrap !important;
-}
-
-.bf-logo img,
-.site-logo__icon {
-  width: 42px !important;
-  height: 42px !important;
-  object-fit: contain !important;
-  filter: drop-shadow(0 0 8px rgba(53, 255, 148, 0.45));
-}
-
-.bf-logo > span,
-.site-logo__text {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 0 !important;
-  color: #f4f7fb !important;
-  font-size: 22px !important;
-  font-weight: 950 !important;
-  line-height: 1 !important;
-}
-
-.bf-logo > span > span,
-.logo-accent {
-  color: #35ff94 !important;
-}
-
 /* Navigation centered */
 .bf-nav,
 .topbar-menu {
