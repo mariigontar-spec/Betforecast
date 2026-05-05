@@ -6784,3 +6784,34 @@ body.theme-dark strong,
 body.theme-dark small {
   font-family: var(--font-main) !important;
 }
+/* FULL PAGE BACKGROUND FIX */
+
+html,
+body {
+  min-height: 100%;
+}
+
+body.theme-dark,
+body.theme-dark html {
+  background: #06121c !important;
+}
+
+body.theme-dark {
+  min-height: 100vh !important;
+}
+
+body.theme-dark main,
+body.theme-dark .page-shell,
+body.theme-dark .results-page-wrap,
+body.theme-dark .match-page-wrap,
+body.theme-dark .news-page-wrap,
+body.theme-dark .standings-page-wrap,
+body.theme-dark .article-page-wrap {
+  background: transparent !important;
+  min-height: calc(100vh - var(--header-height, 84px)) !important;
+}
+
+/* remove debug outline if still active */
+body.theme-dark {
+  outline: none !important;
+}
