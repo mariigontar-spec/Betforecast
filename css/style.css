@@ -6603,7 +6603,6 @@ body.theme-dark .ai-card,
 body.theme-dark .result-card,
 body.theme-dark .match-result-card,
 body.theme-dark .results-card,
-body.theme-dark #results-page-container > * {
   background: linear-gradient(180deg, #122637, #0c1d2b) !important;
   color: #f8fafc !important;
   border: 1px solid rgba(148, 163, 184, 0.14) !important;
