@@ -357,5 +357,38 @@ document.body.classList.add(`theme-${savedTheme}`);
     });
   });
 </script>
+<script>
+  (function () {
+    const body = document.body;
+    const toggle = document.getElementById("theme-toggle");
+    const label = toggle ? toggle.querySelector("b") : null;
+
+    function applyTheme(theme) {
+      body.classList.remove("theme-dark", "theme-glass", "theme-light");
+
+      if (theme === "dark") {
+        body.classList.add("theme-dark");
+      } else {
+        body.classList.add("theme-glass");
+      }
+
+      localStorage.setItem("bf-theme", theme);
+
+      if (label) {
+        label.textContent = theme === "dark" ? "Dark" : "Glass";
+      }
+    }
+
+    const savedTheme = localStorage.getItem("bf-theme") || "glass";
+    applyTheme(savedTheme);
+
+    if (toggle) {
+      toggle.addEventListener("click", function () {
+        const nextTheme = body.classList.contains("theme-dark") ? "glass" : "dark";
+        applyTheme(nextTheme);
+      });
+    }
+  })();
+</script>
 </body>
 </html>
