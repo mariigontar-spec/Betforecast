@@ -6725,8 +6725,6 @@ body.theme-dark .news-card,
 body.theme-dark .result-card,
 body.theme-dark .related-news-item,
 body.theme-dark .side-block,
-body.theme-dark article,
-body.theme-dark section > div {
   background: linear-gradient(180deg, #122637, #0c1d2b) !important;
   color: #f8fafc !important;
   border: 1px solid rgba(94, 224, 164, 0.18);
@@ -6736,6 +6734,53 @@ body.theme-dark section > div {
 body.theme-dark .card *,
 body.theme-dark .panel *,
 body.theme-dark .block *,
-body.theme-dark article * {
   color: inherit !important;
+}
+/* RESTORE GLASS SHAPE AFTER DARK FIX */
+
+body {
+  font-family: var(--font-main) !important;
+}
+
+body.theme-dark .bf-hero,
+body.theme-dark .page-hero,
+body.theme-dark .news-hero,
+body.theme-dark .match-hero,
+body.theme-dark .results-hero,
+body.theme-dark .ai-hero,
+body.theme-dark .ai-focus-banner,
+body.theme-dark .bf-panel,
+body.theme-dark .glass-panel,
+body.theme-dark .news-panel,
+body.theme-dark .story-card,
+body.theme-dark .news-card,
+body.theme-dark .result-card,
+body.theme-dark .match-result-card,
+body.theme-dark .insight-card,
+body.theme-dark .sidebar-card,
+body.theme-dark .panel,
+body.theme-dark .side-block {
+  border-radius: 24px !important;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 35, 48, 0.92),
+    rgba(8, 24, 34, 0.9)
+  ) !important;
+  border: 1px solid rgba(94, 224, 164, 0.16) !important;
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(18px) !important;
+}
+
+body.theme-dark h1,
+body.theme-dark h2,
+body.theme-dark h3,
+body.theme-dark h4,
+body.theme-dark p,
+body.theme-dark a,
+body.theme-dark span,
+body.theme-dark strong,
+body.theme-dark small {
+  font-family: var(--font-main) !important;
 }
