@@ -4930,23 +4930,6 @@ main,
     box-shadow 0.22s ease;
 }
 
-.result-card::after,
-.results-card::after,
-.match-result-card::after,
-.results-grid article::after,
-#results-container > *::after {
-  content: "View analysis →";
-  position: absolute;
-  right: 22px;
-  bottom: 18px;
-  color: #35ff94;
-  font-size: 13px;
-  font-weight: 900;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: 0.22s ease;
-}
-
 .result-card:hover,
 .results-card:hover,
 .match-result-card:hover,
