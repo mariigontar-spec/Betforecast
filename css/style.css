@@ -6666,3 +6666,6 @@ body.theme-dark::before,
 body.theme-dark::after {
   background: transparent !important;
 }
+body.theme-dark {
+  outline: 8px solid red !important;
+}
