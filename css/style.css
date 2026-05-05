@@ -6801,3 +6801,160 @@ body.theme-dark .match-result-card {
 .topbar-menu {
   margin-left: 24px;
 }
+/* ===== FINAL TABLE / RESULTS TEXT CLEAN FIX ===== */
+
+/* возвращаем нормальный шрифт всему сайту */
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-main, Arial, Helvetica, sans-serif) !important;
+}
+
+/* убираем serif у заголовков и строк */
+h1, h2, h3, h4, h5, h6,
+p, a, span, strong, small,
+.result-row,
+.match-row,
+.bf-row,
+.match-card,
+.result-card,
+.match-result-card {
+  font-family: var(--font-main, Arial, Helvetica, sans-serif) !important;
+}
+
+/* карточки результатов */
+.latest-results .result-row,
+#results-container .result-row,
+#matches-container .match-row,
+.model-view .bf-row {
+  display: grid !important;
+  grid-template-columns: minmax(260px, 1.4fr) 110px 150px 90px !important;
+  align-items: center !important;
+  gap: 22px !important;
+
+  min-height: 86px !important;
+  padding: 18px 24px !important;
+
+  background: var(--card-bg) !important;
+  border: 1px solid var(--border-soft) !important;
+  border-radius: 18px !important;
+  box-shadow: var(--shadow-soft) !important;
+}
+
+/* левая часть с командами */
+.latest-results .cell-match,
+#results-container .cell-match,
+#matches-container .cell-match,
+.model-view .cell-match {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+}
+
+/* лига */
+.latest-results .cell-league,
+#results-container .cell-league,
+#matches-container .cell-league,
+.model-view .cell-league {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: var(--text-muted) !important;
+  white-space: nowrap !important;
+}
+
+/* строка команд */
+.latest-results .teams,
+#results-container .teams,
+#matches-container .teams,
+.model-view .teams {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+}
+
+/* названия команд */
+.latest-results .team-inline,
+.latest-results .team-name-short,
+#results-container .team-inline,
+#results-container .team-name-short,
+#matches-container .team-inline,
+#matches-container .team-name-short,
+.model-view .team-inline,
+.model-view .team-name-short {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+
+  color: var(--text-main) !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  max-width: none !important;
+}
+
+/* VS между командами */
+.latest-results .vs-sep,
+#results-container .vs-sep,
+#matches-container .vs-sep,
+.model-view .vs-sep {
+  display: inline-flex !important;
+  flex: 0 0 auto !important;
+  margin: 0 4px !important;
+
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  color: var(--text-soft) !important;
+  opacity: 1 !important;
+  white-space: nowrap !important;
+}
+
+/* счёт, прогноз, коэффициент */
+.latest-results .cell-score,
+.latest-results .cell-pick,
+.latest-results .cell-odds,
+#results-container .cell-score,
+#results-container .cell-pick,
+#results-container .cell-odds,
+#matches-container .cell-score,
+#matches-container .cell-pick,
+#matches-container .cell-odds,
+.model-view .cell-score,
+.model-view .cell-pick,
+.model-view .cell-odds {
+  color: var(--text-main) !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+  opacity: 1 !important;
+}
+
+/* убираем зелёную hover-плашку, которая налезает сверху */
+.latest-results .result-row:hover::before,
+#results-container .result-row:hover::before,
+#matches-container .match-row:hover::before,
+.model-view .bf-row:hover::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* hover аккуратный */
+.latest-results .result-row:hover,
+#results-container .result-row:hover,
+#matches-container .match-row:hover,
+.model-view .bf-row:hover {
+  background: var(--inner-bg) !important;
+  transform: none !important;
+}
