@@ -6669,3 +6669,25 @@ body.theme-dark::after {
 body.theme-dark {
   outline: 8px solid red !important;
 }
+/* ARTICLE PAGE DARK FIX */
+
+body.theme-dark .article-page-wrap,
+body.theme-dark .article-page-wrap * {
+  color: #f8fafc !important;
+}
+
+body.theme-dark .article-page-wrap .article-card,
+body.theme-dark .article-page-wrap .article-sidebar,
+body.theme-dark .article-page-wrap .article-panel,
+body.theme-dark .article-page-wrap .article-box,
+body.theme-dark .article-page-wrap .insight-box,
+body.theme-dark .article-page-wrap .related-news,
+body.theme-dark .article-page-wrap .related-card,
+body.theme-dark .article-page-wrap .ai-insight,
+body.theme-dark .article-page-wrap aside,
+body.theme-dark .article-page-wrap aside > div {
+  background: linear-gradient(180deg, #122637, #0c1d2b) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(94, 224, 164, 0.18) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.32) !important;
+}
