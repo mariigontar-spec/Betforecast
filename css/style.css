@@ -6571,3 +6571,58 @@ body:not(.theme-dark) {
     color: #334155 !important;
   }
 }
+/* ===== THEME TOGGLE FIX ===== */
+
+.bf-theme,
+#theme-toggle {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  min-width: 112px !important;
+}
+
+.bf-theme span,
+#theme-toggle span {
+  display: inline-flex !important;
+  width: 34px !important;
+  height: 20px !important;
+  padding: 2px !important;
+  border-radius: 999px !important;
+  background: #e2e8f0 !important;
+  border: 1px solid rgba(15, 23, 42, 0.14) !important;
+  position: relative !important;
+}
+
+.bf-theme span::before,
+#theme-toggle span::before {
+  content: "" !important;
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 50% !important;
+  background: #16b88a !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18) !important;
+  transform: translateX(14px) !important;
+  transition: transform 0.2s ease, background 0.2s ease !important;
+}
+
+body.theme-dark .bf-theme span,
+body.theme-dark #theme-toggle span {
+  background: #334155 !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+body.theme-dark .bf-theme span::before,
+body.theme-dark #theme-toggle span::before {
+  background: #ffffff !important;
+  transform: translateX(0) !important;
+}
+
+body:not(.theme-dark) .bf-theme b,
+body:not(.theme-dark) #theme-toggle b {
+  color: #0f172a !important;
+}
+
+body.theme-dark .bf-theme b,
+body.theme-dark #theme-toggle b {
+  color: #f8fafc !important;
+}
