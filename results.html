@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="theme-glass">
   <header class="header">
     <div class="header-inner">
       <a class="site-logo" href="index.html" aria-label="Betforecast.ai home">
@@ -28,7 +28,7 @@
           <span class="theme-switch-track">
             <span class="theme-switch-thumb"></span>
           </span>
-          <span class="theme-switch-label">Dark</span>
+          <span class="theme-switch-label">Glass</span>
         </button>
 
         <a href="#" class="btn-bf-ghost">Sign In</a>
@@ -36,8 +36,8 @@
     </div>
   </header>
 
-  <main class="match-page-wrap page-shell">
-    <section class="ai-focus-banner ai-focus-banner-compact">
+  <main class="match-page-wrap page-shell results-page-wrap">
+    <section class="ai-focus-banner ai-focus-banner-compact results-hero">
       <div class="ai-focus-content">
         <div class="ai-focus-text">
           <span class="hero-ai-badge">Match Results</span>
@@ -59,14 +59,29 @@
 
   <script src="js/results.js"></script>
 
-
+  <script>
     document.addEventListener("DOMContentLoaded", function () {
       const resultsContainer = document.getElementById("results-page-container");
 
       if (!resultsContainer) return;
 
+      function makeCardsInteractive() {
+        const cards = resultsContainer.querySelectorAll(
+          ".match-card, article, .result-card, .results-card, .match-result-card"
+        );
+
+        cards.forEach(function (card) {
+          card.style.cursor = "pointer";
+          card.setAttribute("tabindex", "0");
+          card.setAttribute("role", "button");
+          card.setAttribute("aria-label", "Open match analysis");
+        });
+      }
+
       resultsContainer.addEventListener("click", function (event) {
-        const card = event.target.closest(".match-card, article, .result-card, .results-card, .match-result-card");
+        const card = event.target.closest(
+          ".match-card, article, .result-card, .results-card, .match-result-card"
+        );
 
         if (!card || !resultsContainer.contains(card)) return;
 
@@ -76,7 +91,9 @@
       resultsContainer.addEventListener("keydown", function (event) {
         if (event.key !== "Enter" && event.key !== " ") return;
 
-        const card = event.target.closest(".match-card, article, .result-card, .results-card, .match-result-card");
+        const card = event.target.closest(
+          ".match-card, article, .result-card, .results-card, .match-result-card"
+        );
 
         if (!card || !resultsContainer.contains(card)) return;
 
@@ -84,15 +101,9 @@
         window.location.href = "match.html";
       });
 
-      const observer = new MutationObserver(function () {
-        const cards = resultsContainer.querySelectorAll(".match-card, article, .result-card, .results-card, .match-result-card");
+      makeCardsInteractive();
 
-        cards.forEach(function (card) {
-          card.style.cursor = "pointer";
-          card.setAttribute("tabindex", "0");
-          card.setAttribute("role", "button");
-        });
-      });
+      const observer = new MutationObserver(makeCardsInteractive);
 
       observer.observe(resultsContainer, {
         childList: true,
@@ -100,38 +111,39 @@
       });
     });
   </script>
+
   <script>
-  (function () {
-    const body = document.body;
-    const toggle = document.getElementById("theme-toggle");
-    const label = toggle ? toggle.querySelector("b") : null;
+    (function () {
+      const body = document.body;
+      const toggle = document.getElementById("theme-toggle");
+      const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
 
-    function applyTheme(theme) {
-      body.classList.remove("theme-dark", "theme-glass", "theme-light");
+      function applyTheme(theme) {
+        body.classList.remove("theme-dark", "theme-glass", "theme-light");
 
-      if (theme === "dark") {
-        body.classList.add("theme-dark");
-      } else {
-        body.classList.add("theme-glass");
+        if (theme === "dark") {
+          body.classList.add("theme-dark");
+        } else {
+          body.classList.add("theme-glass");
+        }
+
+        localStorage.setItem("bf-theme", theme);
+
+        if (label) {
+          label.textContent = theme === "dark" ? "Dark" : "Glass";
+        }
       }
 
-      localStorage.setItem("bf-theme", theme);
+      const savedTheme = localStorage.getItem("bf-theme") || "glass";
+      applyTheme(savedTheme);
 
-      if (label) {
-        label.textContent = theme === "dark" ? "Dark" : "Glass";
+      if (toggle) {
+        toggle.addEventListener("click", function () {
+          const nextTheme = body.classList.contains("theme-dark") ? "glass" : "dark";
+          applyTheme(nextTheme);
+        });
       }
-    }
-
-    const savedTheme = localStorage.getItem("bf-theme") || "glass";
-    applyTheme(savedTheme);
-
-    if (toggle) {
-      toggle.addEventListener("click", function () {
-        const nextTheme = body.classList.contains("theme-dark") ? "glass" : "dark";
-        applyTheme(nextTheme);
-      });
-    }
-  })();
-</script>
+    })();
+  </script>
 </body>
 </html>
