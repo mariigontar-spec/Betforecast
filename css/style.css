@@ -6219,4 +6219,308 @@ a.btn,
 .vs-sep {
   color: var(--text-soft) !important;
 }
+/* =========================================================
+   BETFORECAST CLEAN THEME SYSTEM
+   Uses tokens from :root / body.theme-glass / body.theme-dark
+   ========================================================= */
 
+/* BASE */
+html,
+body {
+  background: var(--page-bg) !important;
+  color: var(--page-text) !important;
+}
+
+body,
+body * {
+  color: inherit;
+}
+
+/* HEADER */
+.header,
+.bf-header {
+  background: var(--header-bg) !important;
+  border-bottom: 1px solid var(--border-main) !important;
+  color: var(--text-main) !important;
+  box-shadow: var(--shadow-soft) !important;
+}
+
+.site-logo,
+.site-logo__text,
+.bf-logo,
+.bf-logo span {
+  color: var(--text-main) !important;
+  opacity: 1 !important;
+}
+
+/* NAV / TOP BUTTONS */
+.topbar-menu a,
+.bf-nav a,
+.bf-signin,
+.btn-bf-ghost,
+#theme-toggle,
+.theme-switch {
+  background: var(--button-secondary-bg) !important;
+  color: var(--button-secondary-text) !important;
+  border: 1px solid var(--border-main) !important;
+  box-shadow: var(--shadow-soft) !important;
+}
+
+.topbar-menu a.active,
+.bf-nav a.active,
+.topbar-menu a[aria-current="page"],
+.bf-nav a[aria-current="page"] {
+  background: var(--accent-green-soft) !important;
+  color: var(--accent-green) !important;
+  border-color: var(--accent-green-border) !important;
+}
+
+/* MAIN PANELS */
+.bf-hero,
+.page-hero,
+.news-hero,
+.standings-hero,
+.match-hero,
+.results-hero,
+.ai-hero,
+.ai-focus-banner,
+.bf-panel,
+.glass-panel,
+.card,
+.panel,
+.news-card,
+.story-card,
+.prediction-card,
+.match-card,
+.result-card,
+.insight-card,
+.league-card,
+.table-card,
+.sidebar-card,
+.standings-card,
+.standings-sidebar,
+.model-view,
+.latest-results,
+.bf-table,
+.bf-results,
+.bf-model {
+  background: var(--panel-bg) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border-main) !important;
+  box-shadow: var(--shadow-main) !important;
+}
+
+/* INNER CARDS / ROWS */
+.bf-metric,
+.metric,
+.mini-card,
+.stat-card,
+.signal-card,
+.timeline-item,
+.related-match,
+.form-card,
+.league-item,
+.topic-item,
+.result-row,
+.match-row,
+.bf-row,
+.news-list-item,
+.standing-row,
+.table-row,
+.result-card,
+.match-result-card,
+.analysis-card,
+.insight-tile {
+  background: var(--card-bg) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border-soft) !important;
+  box-shadow: var(--shadow-soft) !important;
+}
+
+/* TEXT */
+main,
+main *,
+.bf-page,
+.bf-page *,
+.page-shell,
+.page-shell * {
+  color: var(--text-main) !important;
+  opacity: 1 !important;
+}
+
+small,
+.meta,
+.date,
+.league-name,
+.cell-league,
+.team-meta,
+.bf-muted,
+.text-muted,
+.section-subtitle,
+.hero-subtitle {
+  color: var(--text-muted) !important;
+  opacity: 1 !important;
+}
+
+/* GENERATED HOME ROWS */
+#matches-container *,
+#results-container * {
+  color: var(--text-main) !important;
+  opacity: 1 !important;
+}
+
+#matches-container .cell-league,
+#results-container .cell-league,
+#matches-container .league-name,
+#results-container .league-name {
+  color: var(--text-muted) !important;
+}
+
+#matches-container .team-name-short,
+#results-container .team-name-short,
+#matches-container .team-inline,
+#results-container .team-inline {
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  max-width: none !important;
+  color: var(--text-main) !important;
+  font-weight: 700 !important;
+}
+
+#matches-container .vs-sep,
+#results-container .vs-sep,
+#matches-container .cell-pick,
+#results-container .cell-pick {
+  color: var(--text-soft) !important;
+  opacity: 1 !important;
+  font-weight: 600 !important;
+}
+
+/* INPUTS */
+input,
+textarea,
+.search-input,
+.search-box input,
+.bf-search input {
+  background: var(--inner-bg) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border-main) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 0.75 !important;
+}
+
+.search-box,
+.search-bar,
+.bf-search,
+.search-hint,
+.input-hint,
+.helper-text {
+  background: var(--inner-bg) !important;
+  color: var(--text-soft) !important;
+  border: 1px solid var(--border-soft) !important;
+}
+
+/* BADGES */
+.bf-pill,
+.badge,
+.tag,
+.league-badge,
+.status-pill,
+.hero-ai-badge {
+  background: var(--accent-green-soft) !important;
+  color: var(--accent-green) !important;
+  border: 1px solid var(--accent-green-border) !important;
+}
+
+/* GREEN CTA */
+.btn-primary,
+.green-button,
+.ai-button,
+.open-button,
+.bf-cta {
+  background: linear-gradient(135deg, #20b866, #72dc4c) !important;
+  color: #06121c !important;
+  border: 1px solid rgba(9, 105, 55, 0.25) !important;
+}
+
+/* SECONDARY BUTTONS */
+.btn-secondary,
+.btn-dark,
+.ghost-button,
+.secondary-button,
+.bf-secondary {
+  background: var(--button-secondary-bg) !important;
+  color: var(--button-secondary-text) !important;
+  border: 1px solid var(--border-main) !important;
+}
+
+/* THEME TOGGLE */
+#theme-toggle,
+.theme-switch {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.theme-switch-track,
+#theme-toggle .theme-switch-track {
+  width: 36px !important;
+  height: 22px !important;
+  padding: 2px !important;
+  border-radius: 999px !important;
+  background: var(--button-secondary-bg) !important;
+  border: 1px solid var(--border-main) !important;
+}
+
+.theme-switch-thumb,
+#theme-toggle .theme-switch-thumb {
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 50% !important;
+  background: var(--accent-green) !important;
+  transition: transform 0.2s ease !important;
+}
+
+body.theme-dark .theme-switch-thumb,
+body.theme-dark #theme-toggle .theme-switch-thumb {
+  transform: translateX(14px) !important;
+}
+
+/* REMOVE STRANGE STRIPS */
+.standings-tabs,
+.tabs,
+.filter-tabs {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.standings-page-wrap,
+.standings-layout,
+.page-shell {
+  background: transparent !important;
+}
+
+/* TABLE / MODEL VIEW LINES */
+#matches-container .bf-row,
+.model-view .bf-row,
+#results-container .result-row {
+  border: 1px solid var(--border-soft) !important;
+  border-radius: 16px !important;
+  margin-bottom: 10px !important;
+  padding: 14px 18px !important;
+}
+
+/* PRESERVE COLORED PILLS */
+.live,
+.status-live,
+.badge-live,
+.badge-red,
+.badge-green {
+  color: inherit !important;
+}
