@@ -6715,3 +6715,32 @@ body.theme-dark .article-sidebar .related-news-item small,
 body.theme-dark .article-sidebar .related-news-item .meta {
   color: #b8c7d8 !important;
 }
+/* GLOBAL DARK THEME FIX */
+
+body.theme-dark {
+  background: #06141f;
+  color: #f8fafc;
+}
+
+body.theme-dark .card,
+body.theme-dark .panel,
+body.theme-dark .block,
+body.theme-dark .match-card,
+body.theme-dark .news-card,
+body.theme-dark .result-card,
+body.theme-dark .related-news-item,
+body.theme-dark .side-block,
+body.theme-dark article,
+body.theme-dark section > div {
+  background: linear-gradient(180deg, #122637, #0c1d2b) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(94, 224, 164, 0.18);
+}
+
+/* текст внутри */
+body.theme-dark .card *,
+body.theme-dark .panel *,
+body.theme-dark .block *,
+body.theme-dark article * {
+  color: inherit !important;
+}
