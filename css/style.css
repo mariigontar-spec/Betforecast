@@ -6814,3 +6814,48 @@ body.theme-dark .article-page-wrap {
 body.theme-dark {
   outline: none !important;
 }
+/* ===== REMOVE SHARP LAYOUT LINES ===== */
+
+body.theme-dark .page-shell,
+body.theme-dark .match-page-wrap,
+body.theme-dark .news-page-wrap,
+body.theme-dark .standings-page-wrap,
+body.theme-dark .results-page-wrap,
+body.theme-dark .article-page-wrap,
+body.theme-dark .news-layout,
+body.theme-dark .standings-layout,
+body.theme-dark .match-layout,
+body.theme-dark .results-page-section,
+body.theme-dark .matches-grid,
+body.theme-dark #results-page-container {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* оставляем рамки только настоящим карточкам */
+body.theme-dark .bf-panel,
+body.theme-dark .card,
+body.theme-dark .panel,
+body.theme-dark .side-block,
+body.theme-dark .news-card,
+body.theme-dark .story-card,
+body.theme-dark .result-card,
+body.theme-dark .match-result-card,
+body.theme-dark .insight-card,
+body.theme-dark .league-item,
+body.theme-dark .topic-item,
+body.theme-dark .related-news-item {
+  border-radius: 24px !important;
+  border: 1px solid rgba(94, 224, 164, 0.16) !important;
+}
+
+/* убираем квадратные рамки вокруг внутренних div */
+body.theme-dark section,
+body.theme-dark section > div,
+body.theme-dark .panel-head,
+body.theme-dark .ai-focus-content,
+body.theme-dark .ai-focus-text {
+  border: none !important;
+  outline: none !important;
+}
