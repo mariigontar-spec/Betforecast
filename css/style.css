@@ -6460,3 +6460,71 @@ a.btn,
 .vs-sep {
   color: var(--text-soft) !important;
 }
+/* ===== DARK THEME BLOCK FIX ===== */
+
+body.theme-dark {
+
+  /* основной фон */
+  background: #06121c !important;
+}
+
+/* ВСЕ карточки / блоки */
+body.theme-dark .bf-panel,
+body.theme-dark .card,
+body.theme-dark .mini-card,
+body.theme-dark .stat-card,
+body.theme-dark .signal-card,
+body.theme-dark .timeline-item,
+body.theme-dark .related-match,
+body.theme-dark .form-card,
+body.theme-dark .league-item,
+body.theme-dark .topic-item,
+body.theme-dark .result-row,
+body.theme-dark .match-row,
+body.theme-dark .bf-row,
+body.theme-dark .news-list-item,
+body.theme-dark .standings-tabs,
+body.theme-dark .standing-row,
+body.theme-dark .table-row,
+body.theme-dark .insight,
+body.theme-dark .block,
+body.theme-dark .widget {
+
+  background: linear-gradient(145deg, #0b1f2d, #081824) !important;
+  border: 1px solid rgba(0, 255, 180, 0.08) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* внутренние светлые карточки (твои серые блоки) */
+body.theme-dark .mini-card,
+body.theme-dark .stat-card,
+body.theme-dark .signal-card,
+body.theme-dark .insight-card,
+body.theme-dark .analysis-card {
+
+  background: linear-gradient(145deg, #0e2536, #0a1d2b) !important;
+  border: 1px solid rgba(0, 255, 180, 0.06) !important;
+}
+
+/* hover (чтобы красиво оживало) */
+body.theme-dark .result-row:hover,
+body.theme-dark .match-row:hover,
+body.theme-dark .bf-row:hover {
+
+  background: linear-gradient(145deg, #12324a, #0b2538) !important;
+}
+
+/* hero / большие панели */
+body.theme-dark .bf-hero,
+body.theme-dark .page-hero,
+body.theme-dark .news-hero,
+body.theme-dark .results-hero,
+body.theme-dark .ai-hero {
+
+  background: radial-gradient(circle at top, #0b2a3d, #06121c) !important;
+}
+
+/* убираем белые стеклянные фоны */
+body.theme-dark * {
+  backdrop-filter: none !important;
+}
