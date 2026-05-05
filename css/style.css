@@ -5546,41 +5546,6 @@ body.theme-dark .status-pill {
   color: #58e0a0 !important;
   border: 1px solid rgba(88, 224, 160, 0.28) !important;
 }
-/* =========================================================
-   BETFORECAST FINAL THEME FIX v2
-   Light: light blocks + dark text
-   Dark: dark blocks + white text
-   ========================================================= */
-
-/* ---------- BASE ---------- */
-
-body:not(.theme-dark) {
-  background: #dfe9f1 !important;
-  color: #101b2f !important;
-}
-
-body.theme-dark {
-  background: #06131b !important;
-  color: #f4fff8 !important;
-}
-
-/* ---------- HEADER ---------- */
-
-body:not(.theme-dark) .bf-header,
-body:not(.theme-dark) .header {
-  background: rgba(255, 255, 255, 0.92) !important;
-  border-bottom: 1px solid rgba(16, 32, 48, 0.12) !important;
-  box-shadow: 0 8px 28px rgba(20, 45, 60, 0.08) !important;
-  color: #101b2f !important;
-}
-
-body.theme-dark .bf-header,
-body.theme-dark .header {
-  background: rgba(4, 17, 26, 0.92) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-  box-shadow: none !important;
-  color: #f4fff8 !important;
-}
 
 /* ---------- NAV BUTTONS ---------- */
 
