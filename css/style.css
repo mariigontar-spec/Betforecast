@@ -6524,3 +6524,145 @@ body.theme-dark #theme-toggle .theme-switch-thumb {
 .badge-green {
   color: inherit !important;
 }
+/* =========================================================
+   DARK THEME FINAL PAGE-SPECIFIC FIX
+   ========================================================= */
+
+body.theme-dark,
+body.theme-dark html {
+  background: #06121c !important;
+}
+
+/* все главные страницы */
+body.theme-dark main,
+body.theme-dark .page-shell,
+body.theme-dark .match-page-wrap,
+body.theme-dark .news-page-wrap,
+body.theme-dark .standings-page-wrap,
+body.theme-dark .article-page-wrap,
+body.theme-dark .article-pro-wrap,
+body.theme-dark .results-page-wrap,
+body.theme-dark .ai-insights-page-wrap {
+  background: #06121c !important;
+  color: #f8fafc !important;
+}
+
+/* крупные секции */
+body.theme-dark .news-layout,
+body.theme-dark .news-main,
+body.theme-dark .news-sidebar,
+body.theme-dark .standings-layout,
+body.theme-dark .standings-main,
+body.theme-dark .standings-sidebar,
+body.theme-dark .match-layout,
+body.theme-dark .results-page-section,
+body.theme-dark .ai-section,
+body.theme-dark .insights-section {
+  background: transparent !important;
+  color: #f8fafc !important;
+}
+
+/* большие панели */
+body.theme-dark .news-panel,
+body.theme-dark .news-section,
+body.theme-dark .news-block,
+body.theme-dark .featured-story,
+body.theme-dark .latest-stories,
+body.theme-dark .top-leagues,
+body.theme-dark .trending-topics,
+body.theme-dark .news-focus,
+body.theme-dark .table-zones,
+body.theme-dark .matches-panel,
+body.theme-dark .prediction-core,
+body.theme-dark .key-signals,
+body.theme-dark .advanced-stats,
+body.theme-dark .game-state,
+body.theme-dark .form-comparison,
+body.theme-dark .featured-match-insight,
+body.theme-dark .how-ai-reads,
+body.theme-dark .more-insights,
+body.theme-dark .results-page-section,
+body.theme-dark .results-page-container,
+body.theme-dark #results-page-container {
+  background: linear-gradient(180deg, #0d1d2a, #081824) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(94, 224, 164, 0.18) !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* карточки внутри */
+body.theme-dark .story-card,
+body.theme-dark .news-card,
+body.theme-dark .news-item,
+body.theme-dark .league-item,
+body.theme-dark .topic-item,
+body.theme-dark .focus-card,
+body.theme-dark .insight-card,
+body.theme-dark .match-preview-card,
+body.theme-dark .related-match,
+body.theme-dark .signal-card,
+body.theme-dark .stat-card,
+body.theme-dark .form-card,
+body.theme-dark .metric-card,
+body.theme-dark .ai-card,
+body.theme-dark .result-card,
+body.theme-dark .match-result-card,
+body.theme-dark .results-card,
+body.theme-dark #results-page-container > * {
+  background: linear-gradient(180deg, #122637, #0c1d2b) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(148, 163, 184, 0.14) !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28) !important;
+}
+
+/* hero-блоки, включая results */
+body.theme-dark .ai-focus-banner,
+body.theme-dark .ai-focus-banner-compact,
+body.theme-dark .results-hero,
+body.theme-dark .news-hero,
+body.theme-dark .match-hero,
+body.theme-dark .standings-hero,
+body.theme-dark .ai-hero,
+body.theme-dark .bf-hero {
+  background: linear-gradient(180deg, #0d1d2a, #081824) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(94, 224, 164, 0.18) !important;
+}
+
+/* текст внутри всех этих блоков */
+body.theme-dark .news-panel *,
+body.theme-dark .news-section *,
+body.theme-dark .featured-story *,
+body.theme-dark .latest-stories *,
+body.theme-dark .top-leagues *,
+body.theme-dark .trending-topics *,
+body.theme-dark .news-focus *,
+body.theme-dark .standings-sidebar *,
+body.theme-dark .matches-panel *,
+body.theme-dark .prediction-core *,
+body.theme-dark .key-signals *,
+body.theme-dark .advanced-stats *,
+body.theme-dark .form-comparison *,
+body.theme-dark .featured-match-insight *,
+body.theme-dark .how-ai-reads *,
+body.theme-dark .more-insights *,
+body.theme-dark #results-page-container *,
+body.theme-dark .ai-focus-banner * {
+  color: #f8fafc !important;
+  opacity: 1 !important;
+}
+
+/* приглушённый текст */
+body.theme-dark .date,
+body.theme-dark .meta,
+body.theme-dark small,
+body.theme-dark .section-subtitle,
+body.theme-dark .hero-subtitle {
+  color: #b8c7d8 !important;
+}
+
+/* чтобы низ страницы результатов не был белым */
+body.theme-dark::before,
+body.theme-dark::after {
+  background: transparent !important;
+}
