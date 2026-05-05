@@ -3,6 +3,63 @@
    ========================================================= */
 
 :root {
+   /* =========================================================
+   BETFORECAST THEME TOKENS
+   One source of truth for light / dark themes
+   ========================================================= */
+
+:root,
+body.theme-glass {
+  --page-bg: #dfe9f1;
+  --page-text: #0f172a;
+  --text-main: #0f172a;
+  --text-soft: #475569;
+  --text-muted: #64748b;
+
+  --header-bg: rgba(255, 255, 255, 0.92);
+  --panel-bg: rgba(255, 255, 255, 0.88);
+  --card-bg: rgba(255, 255, 255, 0.78);
+  --inner-bg: rgba(248, 250, 252, 0.86);
+
+  --border-main: rgba(15, 23, 42, 0.12);
+  --border-soft: rgba(15, 23, 42, 0.08);
+
+  --shadow-main: 0 18px 50px rgba(15, 23, 42, 0.12);
+  --shadow-soft: 0 8px 24px rgba(15, 23, 42, 0.08);
+
+  --accent-green: #168a56;
+  --accent-green-soft: rgba(22, 138, 86, 0.12);
+  --accent-green-border: rgba(22, 138, 86, 0.28);
+
+  --button-secondary-bg: #e8eef4;
+  --button-secondary-text: #0f172a;
+}
+
+body.theme-dark {
+  --page-bg: #06121c;
+  --page-text: #f8fafc;
+  --text-main: #f8fafc;
+  --text-soft: #b8c7d8;
+  --text-muted: #94a3b8;
+
+  --header-bg: rgba(4, 17, 26, 0.94);
+  --panel-bg: rgba(13, 29, 42, 0.96);
+  --card-bg: rgba(17, 38, 54, 0.94);
+  --inner-bg: rgba(21, 47, 66, 0.88);
+
+  --border-main: rgba(94, 224, 164, 0.18);
+  --border-soft: rgba(148, 163, 184, 0.12);
+
+  --shadow-main: 0 18px 50px rgba(0, 0, 0, 0.38);
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.28);
+
+  --accent-green: #5ee0a4;
+  --accent-green-soft: rgba(94, 224, 164, 0.14);
+  --accent-green-border: rgba(94, 224, 164, 0.32);
+
+  --button-secondary-bg: rgba(255, 255, 255, 0.08);
+  --button-secondary-text: #f8fafc;
+}
   --container-width: 1280px;
   --content-width: 1040px;
 
