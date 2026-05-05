@@ -4858,52 +4858,6 @@ main,
     grid-template-columns: 1fr !important;
   }
 }
-/* ===== LOGO — STRONG HEADER PRESENCE ===== */
-
-.bf-header-inner {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-}
-
-/* логотип блок */
-.bf-logo {
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  text-decoration: none !important;
-}
-
-/* иконка */
-.bf-logo img,
-.site-logo__icon {
-  width: 34px !important;
-  height: 34px !important;
-  object-fit: contain !important;
-
-  /* легкий glow */
-  filter: drop-shadow(0 0 6px rgba(35,255,148,0.35));
-}
-
-/* текст */
-.bf-logo span,
-.site-logo__text {
-  font-size: 20px !important;
-  font-weight: 900 !important;
-  letter-spacing: -0.02em !important;
-  color: #f4f7fb !important;
-}
-
-/* .ai подсветка */
-.bf-logo span span,
-.logo-accent {
-  color: #35ff94 !important;
-}
-
-/* навигация ближе к логотипу */
-.bf-nav {
-  margin-left: 32px !important;
-}
 
 /* кнопки не расползаются */
 .bf-nav a {
@@ -6804,4 +6758,46 @@ body.theme-dark .match-result-card {
   border: 1px solid rgba(94, 224, 164, 0.18) !important;
   border-radius: 20px !important;
   box-shadow: 0 10px 40px rgba(0,0,0,0.4) !important;
+}
+/* ===== LOGO FINAL CLEAN ===== */
+
+.header,
+.bf-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* логотип */
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+/* иконка */
+.site-logo__icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(53,255,148,0.45));
+}
+
+/* текст */
+.site-logo__text {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #f4f7fb;
+}
+
+/* .ai акцент */
+.logo-accent {
+  color: #35ff94;
+}
+
+/* немного ближе к меню */
+.topbar-menu {
+  margin-left: 24px;
 }
