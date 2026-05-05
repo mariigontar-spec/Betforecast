@@ -6383,3 +6383,80 @@ body:not(.theme-dark) #results-container .cell-league {
   font-size: 15px !important;
   font-weight: 700 !important;
 }
+/* ===== GLOBAL TEXT SYSTEM ===== */
+
+/* базовые переменные */
+:root {
+  --text-main-light: #0f172a;
+  --text-soft-light: #475569;
+
+  --text-main-dark: #eaf3ff;
+  --text-soft-dark: #9fb3c8;
+}
+
+/* светлая тема */
+body:not(.theme-dark) {
+  --text-main: var(--text-main-light);
+  --text-soft: var(--text-soft-light);
+}
+
+/* тёмная тема */
+body.theme-dark {
+  --text-main: var(--text-main-dark);
+  --text-soft: var(--text-soft-dark);
+}
+
+/* ===== ГЛОБАЛЬНОЕ ПРИМЕНЕНИЕ ===== */
+
+/* ВСЕ тексты */
+body main,
+body main * {
+  color: var(--text-main) !important;
+}
+
+/* второстепенный текст */
+.league-name,
+.cell-league,
+.meta,
+.team-meta,
+.small,
+.time,
+.status {
+  color: var(--text-soft) !important;
+}
+
+/* ===== ИСКЛЮЧЕНИЯ (важно!) ===== */
+
+/* кнопки */
+button,
+.btn,
+a.btn,
+.chip,
+.badge,
+.tag {
+  color: inherit !important;
+}
+
+/* цветные плашки */
+.live,
+.status-live,
+.badge-live,
+.badge-red,
+.badge-green,
+.analysis-link,
+.highlight,
+.green,
+.red {
+  color: inherit !important;
+}
+
+/* score (оставляем контрастным) */
+.cell-ft,
+.score {
+  font-weight: 700;
+}
+
+/* VS чуть мягче */
+.vs-sep {
+  color: var(--text-soft) !important;
+}
