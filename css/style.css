@@ -6263,28 +6263,7 @@ body:not(.theme-dark) #results-container .cell-league {
   font-size: 15px !important;
   font-weight: 700 !important;
 }
-/* ===== GLOBAL TEXT SYSTEM ===== */
 
-/* базовые переменные */
-:root {
-  --text-main-light: #0f172a;
-  --text-soft-light: #475569;
-
-  --text-main-dark: #eaf3ff;
-  --text-soft-dark: #9fb3c8;
-}
-
-/* светлая тема */
-body:not(.theme-dark) {
-  --text-main: var(--text-main-light);
-  --text-soft: var(--text-soft-light);
-}
-
-/* тёмная тема */
-body.theme-dark {
-  --text-main: var(--text-main-dark);
-  --text-soft: var(--text-soft-dark);
-}
 
 /* ===== ГЛОБАЛЬНОЕ ПРИМЕНЕНИЕ ===== */
 
