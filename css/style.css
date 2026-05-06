@@ -7187,3 +7187,156 @@ body.theme-dark .bf-theme > span > span {
   font-weight: 800 !important;
   line-height: 1 !important;
 }
+/* ===== CLEAN HEADER SYSTEM ===== */
+
+.header,
+.bf-header {
+  width: 100%;
+  padding: 12px 0;
+  background: var(--header-bg, #07111a);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.header-inner,
+.bf-header-inner {
+  width: min(1280px, calc(100% - 48px));
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+/* ===== LOGO ===== */
+
+.site-logo,
+.bf-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.site-logo__icon,
+.bf-logo img {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  object-fit: contain;
+  display: block;
+
+  filter: drop-shadow(0 0 8px rgba(53,255,148,.32));
+}
+
+.site-logo__text,
+.bf-logo > span {
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+
+  color: var(--text-main, #f8fafc);
+}
+
+.logo-accent,
+.bf-logo > span > span {
+  color: #35ff94;
+}
+
+/* ===== NAVIGATION ===== */
+
+.topbar-menu,
+.bf-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  flex: 1;
+}
+
+.topbar-menu a,
+.bf-nav a {
+  flex-shrink: 0;
+}
+
+/* ===== ACTIONS ===== */
+
+.topbar-actions,
+.bf-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  flex-shrink: 0;
+}
+
+/* ===== THEME SWITCH ===== */
+
+.theme-switch,
+#theme-toggle,
+.bf-theme {
+  height: 48px;
+  min-width: 132px;
+  padding: 0 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 16px;
+}
+
+.theme-switch-track {
+  width: 42px;
+  height: 24px;
+
+  padding: 3px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 999px;
+}
+
+.theme-switch-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  transition: transform .22s ease;
+}
+
+body.theme-dark .theme-switch-thumb {
+  transform: translateX(18px);
+}
+
+.theme-switch-label {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 980px) {
+
+  .header-inner,
+  .bf-header-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .topbar-menu,
+  .bf-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
