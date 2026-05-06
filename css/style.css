@@ -6975,16 +6975,22 @@ p, a, span, strong, small,
   text-decoration: none !important;
 }
 
-.site-logo__icon,
 .bf-logo img {
-  width: 38px !important;
-  height: 38px !important;
-  min-width: 38px !important;
-  max-width: 38px !important;
+  width: 52px !important;
+  height: 52px !important;
+  min-width: 52px !important;
+  max-width: 52px !important;
   object-fit: contain !important;
-  filter: drop-shadow(0 0 9px rgba(22, 138, 86, 0.36)) !important;
-}
+  display: block !important;
+  flex-shrink: 0 !important;
+  transform: scale(1) !important;
+  zoom: 1 !important;
+  margin-right: 6px !important;
 
+  filter:
+    drop-shadow(0 0 12px rgba(53,255,148,.38))
+    drop-shadow(0 0 22px rgba(53,255,148,.18));
+}
 .site-logo__text,
 .bf-logo span {
   font-family: var(--font-main, Arial, Helvetica, sans-serif) !important;
@@ -7232,4 +7238,9 @@ button.view-analysis {
   width: fit-content !important;
   white-space: nowrap !important;
   margin-top: 6px !important;
+}
+.bf-logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
 }
