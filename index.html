@@ -285,36 +285,6 @@
   <script src="js/home-animations.js"></script>
 
   <script>
-    (function () {
-     const savedTheme = localStorage.getItem("bf-theme") || "light";
-
-document.body.classList.remove("theme-dark", "theme-glass", "theme-light");
-document.body.classList.add(`theme-${savedTheme}`);
-      
-      const toggle = document.getElementById("theme-toggle");
-      const label = toggle ? toggle.querySelector("b") : null;
-
-      function updateLabel(theme) {
-        if (!label) return;
-        label.textContent = theme === "dark" ? "Dark" : "Glass";
-      }
-
-      updateLabel(savedTheme);
-
-      if (toggle) {
-        toggle.addEventListener("click", function () {
-          const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
-
-          document.body.classList.remove("theme-dark", "theme-glass");
-          document.body.classList.add(`theme-${nextTheme}`);
-
-          localStorage.setItem("bf-theme", nextTheme);
-          updateLabel(nextTheme);
-        });
-      }
-    })();
-  </script>
-  <script>
   document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("match-search-input");
     const searchBtn = document.getElementById("match-search-btn");
