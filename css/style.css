@@ -7114,3 +7114,55 @@ body.theme-dark .bf-theme > span > span {
     justify-self: center !important;
   }
 }
+/* ===== FORCE WHITE INPUT / CTA (AI SEARCH BLOCK) ===== */
+
+/* поле ввода */
+.ai-search input,
+.ai-search-bar input,
+.search-input {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 14px !important;
+
+  font-weight: 500 !important;
+}
+
+/* placeholder */
+.ai-search input::placeholder,
+.search-input::placeholder {
+  color: #6b7280 !important;
+}
+
+/* обёртка инпута */
+.ai-search-bar,
+.ai-search-wrapper {
+  background: transparent !important;
+}
+
+/* подсказка под инпутом */
+.ai-search-hint,
+.ai-search-helper {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-radius: 14px !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+/* кнопка */
+.ai-search button,
+.ai-search-btn,
+button.view-analysis {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #d1d5db !important;
+
+  border-radius: 18px !important;
+  font-weight: 700 !important;
+}
+
+/* hover (чтоб не серела) */
+.ai-search button:hover,
+.ai-search-btn:hover {
+  background: #f9fafb !important;
+}
