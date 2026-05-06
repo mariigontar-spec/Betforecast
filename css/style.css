@@ -6941,3 +6941,176 @@ p, a, span, strong, small,
   background: var(--inner-bg) !important;
   transform: none !important;
 }
+/* ===== FINAL HEADER / LOGO / THEME SWITCH NORMALIZER ===== */
+
+.header,
+.bf-header {
+  width: 100% !important;
+  padding: 14px 0 !important;
+  background: var(--header-bg) !important;
+  border-bottom: 1px solid var(--border-main) !important;
+}
+
+.header-inner,
+.bf-header-inner {
+  width: min(1280px, calc(100% - 48px)) !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+
+  display: grid !important;
+  grid-template-columns: 270px 1fr 270px !important;
+  align-items: center !important;
+  gap: 24px !important;
+}
+
+/* LOGO SAME ON ALL PAGES */
+.site-logo,
+.bf-logo {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-self: start !important;
+  gap: 12px !important;
+
+  min-width: 0 !important;
+  text-decoration: none !important;
+}
+
+.site-logo__icon,
+.bf-logo img {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  max-width: 38px !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 0 9px rgba(22, 138, 86, 0.36)) !important;
+}
+
+.site-logo__text,
+.bf-logo span {
+  font-family: var(--font-main, Arial, Helvetica, sans-serif) !important;
+  font-size: 30px !important;
+  line-height: 1 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.04em !important;
+  white-space: nowrap !important;
+  color: var(--text-main) !important;
+}
+
+.logo-accent,
+.bf-logo span span {
+  color: var(--accent-green) !important;
+}
+
+/* NAV CENTER */
+.topbar-menu,
+.bf-nav {
+  justify-self: center !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin: 0 !important;
+}
+
+/* ACTIONS RIGHT */
+.topbar-actions,
+.bf-header-actions {
+  justify-self: end !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+/* THEME SWITCH SAME ON ALL PAGES */
+.theme-switch,
+#theme-toggle,
+.bf-theme {
+  height: 52px !important;
+  min-width: 150px !important;
+  padding: 0 22px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+
+  border-radius: 18px !important;
+  background: var(--button-secondary-bg) !important;
+  color: var(--button-secondary-text) !important;
+  border: 1px solid var(--border-main) !important;
+  box-shadow: var(--shadow-soft) !important;
+  cursor: pointer !important;
+}
+
+.theme-switch-track,
+#theme-toggle .theme-switch-track,
+.bf-theme > span {
+  width: 48px !important;
+  height: 28px !important;
+  padding: 3px !important;
+  flex: 0 0 48px !important;
+
+  display: flex !important;
+  align-items: center !important;
+
+  border-radius: 999px !important;
+  background: rgba(148, 163, 184, 0.22) !important;
+  border: 1px solid rgba(148, 163, 184, 0.22) !important;
+}
+
+.theme-switch-thumb,
+#theme-toggle .theme-switch-thumb,
+.bf-theme > span > span {
+  display: block !important;
+  width: 22px !important;
+  height: 22px !important;
+  border-radius: 50% !important;
+  background: var(--accent-green) !important;
+  transform: translateX(0) !important;
+  transition: transform 0.22s ease !important;
+}
+
+body.theme-dark .theme-switch-thumb,
+body.theme-dark #theme-toggle .theme-switch-thumb,
+body.theme-dark .bf-theme > span > span {
+  transform: translateX(20px) !important;
+}
+
+.theme-switch-label,
+.bf-theme b {
+  display: inline-block !important;
+  font-family: var(--font-main, Arial, Helvetica, sans-serif) !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  color: var(--button-secondary-text) !important;
+  white-space: nowrap !important;
+}
+
+/* SIGN IN */
+.btn-bf-ghost,
+.bf-signin {
+  height: 52px !important;
+  padding: 0 22px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 18px !important;
+}
+
+/* MOBILE */
+@media (max-width: 980px) {
+  .header-inner,
+  .bf-header-inner {
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+  }
+
+  .site-logo,
+  .bf-logo,
+  .topbar-menu,
+  .bf-nav,
+  .topbar-actions,
+  .bf-header-actions {
+    justify-self: center !important;
+  }
+}
