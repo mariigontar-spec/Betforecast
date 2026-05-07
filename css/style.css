@@ -8035,3 +8035,49 @@ body:not(.theme-dark) .bf-featured-mini-grid div {
   font-size: 18px;
   font-weight: 950;
 }
+/* ===== DARK THEME FIX FOR SEARCH RESULT + BENEFITS ===== */
+
+body.theme-dark .bf-live-result,
+body.theme-dark .bf-benefit-card {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(18, 35, 48, .96),
+      rgba(8, 24, 34, .94)
+    ) !important;
+
+  color: #f8fafc !important;
+  border: 1px solid rgba(94, 224, 164, .18) !important;
+
+  box-shadow:
+    0 18px 50px rgba(0,0,0,.34),
+    inset 0 1px 0 rgba(255,255,255,.04) !important;
+}
+
+body.theme-dark .bf-live-result *,
+body.theme-dark .bf-benefit-card * {
+  color: #f8fafc !important;
+}
+
+body.theme-dark .bf-live-stats div {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(25, 43, 58, .92),
+      rgba(12, 25, 36, .96)
+    ) !important;
+
+  border: 1px solid rgba(255,255,255,.08) !important;
+}
+
+body.theme-dark .bf-live-result-top {
+  color: #6cffad !important;
+}
+
+body.theme-dark .bf-mini-analysis-link {
+  color: #06140d !important;
+}
+
+body.theme-dark .bf-benefit-card p {
+  color: rgba(248,250,252,.72) !important;
+}
