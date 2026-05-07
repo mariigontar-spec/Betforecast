@@ -7500,3 +7500,65 @@ body:not(.theme-dark) .tab-btn:hover,
 body:not(.theme-dark) .filter-btn:hover {
   transform: translateY(-1px) !important;
 }
+/* ===== FORCE MATCH BUTTON CONTAINERS ===== */
+
+.bf-featured-actions a,
+.match-hero-actions a,
+.ai-focus-actions a,
+.bf-main-btn,
+.bf-ghost-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  min-height: 54px !important;
+  padding: 0 28px !important;
+
+  border-radius: 18px !important;
+  position: relative !important;
+  overflow: hidden !important;
+
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+
+  border: 1px solid rgba(255,255,255,.08) !important;
+}
+
+/* GREEN */
+
+.bf-main-btn {
+  background:
+    linear-gradient(
+      135deg,
+      #1fd67a,
+      #86ff4f
+    ) !important;
+
+  color: #04150d !important;
+
+  box-shadow:
+    0 12px 34px rgba(53,255,148,.28),
+    0 0 18px rgba(53,255,148,.18) !important;
+}
+
+/* DARK */
+
+.bf-ghost-btn {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(25,38,52,.96),
+      rgba(10,20,32,.98)
+    ) !important;
+
+  color: #f4f7fb !important;
+
+  border:
+    1px solid rgba(255,255,255,.10) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04),
+    0 8px 24px rgba(0,0,0,.28) !important;
+}
