@@ -7960,23 +7960,36 @@ body.theme-dark #match-search-btn {
 .bf-club-logo {
   width: 118px;
   height: 118px;
+
   border-radius: 30px;
-  display: grid;
-  place-items: center;
-  font-size: 52px;
-  font-weight: 950;
-  color: #081420;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.12),
+      rgba(255,255,255,.04)
+    );
+
+  border: 1px solid rgba(255,255,255,.08);
+
   box-shadow:
     0 18px 42px rgba(0,0,0,.18),
-    inset 0 1px 0 rgba(255,255,255,.35);
+    inset 0 1px 0 rgba(255,255,255,.14);
+
+  overflow: hidden;
 }
 
-.arsenal-logo {
-  background: linear-gradient(135deg, #ff314f, #ffb12b);
-}
+.bf-club-logo img {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
 
-.chelsea-logo {
-  background: linear-gradient(135deg, #145cff, #00b7ff);
+  filter:
+    drop-shadow(0 8px 18px rgba(0,0,0,.22));
 }
 
 .bf-team small {
