@@ -7350,3 +7350,6 @@ body .results-page-wrap #results-page-container {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+body .results-page-wrap {
+  gap: 28px !important;
+}
