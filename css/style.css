@@ -7240,3 +7240,78 @@ body.theme-dark .theme-switch-thumb {
   background: none !important;
   background-image: none !important;
 }
+/* ===== BUTTON VISUAL RESTORE ===== */
+
+button,
+.bf-main-btn,
+.bf-ghost-btn,
+.topbar-menu a,
+.bf-nav a,
+.league-tabs button,
+.standings-tabs button,
+.tab-button {
+  appearance: none;
+  border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(180deg,#1b2a3a,#13202d);
+  color: #f8fafc;
+
+  border-radius: 18px;
+  padding: 12px 20px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background .22s ease,
+    border-color .22s ease,
+    transform .18s ease,
+    box-shadow .22s ease;
+}
+
+/* hover */
+
+button:hover,
+.bf-main-btn:hover,
+.bf-ghost-btn:hover,
+.topbar-menu a:hover,
+.bf-nav a:hover,
+.league-tabs button:hover,
+.standings-tabs button:hover,
+.tab-button:hover {
+  border-color: rgba(53,255,148,.22);
+  box-shadow: 0 0 18px rgba(53,255,148,.12);
+  transform: translateY(-1px);
+}
+
+/* active green */
+
+.active,
+button.active,
+.topbar-menu a.active,
+.bf-nav a.active,
+.tab-button.active {
+  background: linear-gradient(180deg,#0e5b45,#083d2e);
+  color: #35ff94;
+  border-color: rgba(53,255,148,.28);
+}
+
+/* green CTA */
+
+.bf-main-btn {
+  background: linear-gradient(90deg,#2fd66f,#8dff2f);
+  color: #07111a;
+  border: none;
+  box-shadow:
+    0 0 22px rgba(53,255,148,.26),
+    inset 0 1px 0 rgba(255,255,255,.22);
+}
+
+/* secondary */
+
+.bf-ghost-btn {
+  background: linear-gradient(180deg,#1b2a3a,#13202d);
+  color: #f8fafc;
+}
