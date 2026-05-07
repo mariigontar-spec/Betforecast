@@ -7682,3 +7682,81 @@ body.theme-dark #match-search-btn {
   font-weight: 900;
   text-decoration: none;
 }
+/* ===== BENEFIT CARDS RESTORE ===== */
+
+.bf-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+
+  margin-top: 34px;
+}
+
+.bf-benefit-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  padding: 26px;
+
+  border-radius: 24px;
+
+  text-decoration: none;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.72),
+      rgba(245,248,252,.92)
+    );
+
+  border: 1px solid rgba(15,23,42,.06);
+
+  box-shadow:
+    0 10px 30px rgba(15,23,42,.08),
+    inset 0 1px 0 rgba(255,255,255,.75);
+
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    border-color .18s ease;
+}
+
+.bf-benefit-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(25,211,124,.22);
+
+  box-shadow:
+    0 16px 34px rgba(25,211,124,.10),
+    inset 0 1px 0 rgba(255,255,255,.8);
+}
+
+.bf-benefit-card span {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.bf-benefit-card h3 {
+  margin: 0 0 10px;
+
+  font-size: 20px;
+  font-weight: 900;
+
+  color: #081420;
+}
+
+.bf-benefit-card p {
+  margin: 0;
+
+  color: #475467;
+  line-height: 1.6;
+}
+
+@media (max-width: 980px) {
+
+  .bf-benefits {
+    grid-template-columns: 1fr;
+  }
+
+}
