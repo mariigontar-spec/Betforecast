@@ -7172,34 +7172,10 @@ body.theme-dark .bf-theme > span > span {
 
 /* ===== LOGO ===== */
 
-.site-logo,
-.bf-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  text-decoration: none;
-  flex-shrink: 0;
-}
-
-.site-logo__icon,
-.bf-logo img {
-  width: 34px;
-  height: 34px;
-  min-width: 34px;
-  object-fit: contain;
-  display: block;
 
   filter: drop-shadow(0 0 8px rgba(53,255,148,.32));
 }
 
-.site-logo__text,
-.bf-logo > span {
-  font-size: 26px;
-  line-height: 1;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  white-space: nowrap;
 
   color: var(--text-main, #f8fafc);
 }
