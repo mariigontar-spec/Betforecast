@@ -4187,15 +4187,6 @@ main,
 }
 
 
-  .bf-logo,
-  .site-logo,
-  .bf-nav,
-  .topbar-menu,
-  .bf-header-actions,
-  .topbar-actions {
-    justify-self: center !important;
-  }
-
   .bf-nav,
   .topbar-menu {
     flex-wrap: wrap !important;
