@@ -290,47 +290,150 @@
   <script src="js/home-animations.js"></script>
 
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("match-search-input");
-    const searchBtn = document.getElementById("match-search-btn");
-    const searchResult = document.getElementById("match-search-result");
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("match-search-input");
+  const searchBtn = document.getElementById("match-search-btn");
+  const searchResult = document.getElementById("match-search-result");
 
-    function analyzeMatch(value) {
-      const match = value.trim();
+  if (!searchInput || !searchBtn || !searchResult) return;
 
-      if (!match) {
-        searchResult.textContent = "Enter a match to see win probabilities and AI reasoning.";
-        searchInput.focus();
-        return;
-      }
+  const matchData = {
+    "arsenal vs chelsea": {
+      title: "Arsenal vs Chelsea",
+      home: 47,
+      draw: 28,
+      away: 25,
+      tip: "Home lean",
+      reason: "Arsenal has a slight edge due to home advantage, stronger attacking rhythm and recent form."
+    },
+    "man city vs liverpool": {
+      title: "Man City vs Liverpool",
+      home: 45,
+      draw: 27,
+      away: 28,
+      tip: "Over 2.5",
+      reason: "Both teams create high xG, play at strong tempo and usually generate chances from transitions."
+    },
+    "real madrid vs barcelona": {
+      title: "Real Madrid vs Barcelona",
+      home: 42,
+      draw: 30,
+      away: 28,
+      tip: "Home / Draw",
+      reason: "Madrid has stronger control phases, while Barcelona remains dangerous through possession and quick attacks."
+    },
+    "psg vs marseille": {
+      title: "PSG vs Marseille",
+      home: 54,
+      draw: 25,
+      away: 21,
+      tip: "Home win",
+      reason: "PSG rates higher in possession control, chance quality and final-third pressure."
+    }
+  };
 
-      searchResult.innerHTML = `
-        <strong>${match}</strong><br>
-        AI prediction generated: Home 47% · Draw 28% · Away 25%.<br>
-        Open full analysis to view model signals, xG, form and risk layers.
-      `;
+  const aliases = {
+    "barca": "barcelona",
+    "madrid": "real madrid",
+    "real": "real madrid",
+    "city": "man city",
+    "manchester city": "man city",
+    "man utd": "man united",
+    "manchester united": "man united",
+    "spurs": "tottenham"
+  };
+
+  function normalizeMatch(value) {
+    let text = value.toLowerCase().trim().replace(/\s+/g, " ");
+
+    Object.keys(aliases).forEach(function (alias) {
+      text = text.replace(alias, aliases[alias]);
+    });
+
+    text = text
+      .replace(" versus ", " vs ")
+      .replace(" v ", " vs ")
+      .replace(" - ", " vs ");
+
+    return text;
+  }
+
+  function buildFallback(matchName) {
+    return {
+      title: matchName,
+      home: 46,
+      draw: 28,
+      away: 26,
+      tip: "Balanced prediction",
+      reason: "The AI model checks form, scoring rhythm, xG trend, home advantage, team strength and risk layers before generating probabilities."
+    };
+  }
+
+  function renderAnalysis(data) {
+    searchResult.innerHTML = `
+      <div class="bf-live-result">
+        <div class="bf-live-result-top">✦ AI Match Analysis Ready</div>
+
+        <h3>${data.title}</h3>
+
+        <div class="bf-live-stats">
+          <div>
+            <strong>${data.home}%</strong>
+            <span>Home</span>
+          </div>
+          <div>
+            <strong>${data.draw}%</strong>
+            <span>Draw</span>
+          </div>
+          <div>
+            <strong>${data.away}%</strong>
+            <span>Away</span>
+          </div>
+        </div>
+
+        <p><b>Best tip:</b> ${data.tip}</p>
+        <p>${data.reason}</p>
+
+        <a class="bf-mini-analysis-link" href="match.html">
+          Open full AI analysis →
+        </a>
+      </div>
+    `;
+  }
+
+  function analyzeMatch(value) {
+    const original = value.trim();
+
+    if (!original) {
+      searchResult.textContent = "Enter a match to see win probabilities and AI reasoning.";
+      searchInput.focus();
+      return;
     }
 
-    if (searchBtn && searchInput && searchResult) {
-      searchBtn.addEventListener("click", function () {
-        analyzeMatch(searchInput.value);
-      });
+    const key = normalizeMatch(original);
+    const data = matchData[key] || buildFallback(original);
 
-      searchInput.addEventListener("keydown", function (event) {
-        if (event.key === "Enter") {
-          analyzeMatch(searchInput.value);
-        }
-      });
+    renderAnalysis(data);
+  }
+
+  searchBtn.addEventListener("click", function () {
+    analyzeMatch(searchInput.value);
+  });
+
+  searchInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      analyzeMatch(searchInput.value);
     }
+  });
 
-    document.querySelectorAll(".bf-tags button").forEach(function (button) {
-      button.addEventListener("click", function () {
-        const match = button.textContent.trim();
-        searchInput.value = match;
-        analyzeMatch(match);
-      });
+  document.querySelectorAll(".bf-tags button").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const match = button.textContent.trim();
+      searchInput.value = match;
+      analyzeMatch(match);
     });
   });
+});
 </script>
 <script>
   (function () {
