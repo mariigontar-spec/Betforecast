@@ -7425,3 +7425,26 @@ body .results-page-wrap {
 .bf-ghost-btn:hover {
   transform: translateY(-2px) !important;
 }
+/* ===== LIGHT THEME: FIX DARK INPUTS / GHOST BUTTONS ===== */
+
+body:not(.theme-dark) .bf-input,
+body:not(.theme-dark) .bf-input input,
+body:not(.theme-dark) #match-search-input,
+body:not(.theme-dark) .bf-search-result,
+body:not(.theme-dark) .bf-ghost-btn {
+  background: rgba(255,255,255,.78) !important;
+  color: #101b2f !important;
+  border-color: rgba(16,32,48,.12) !important;
+  box-shadow: 0 10px 24px rgba(20,45,60,.08) !important;
+}
+
+body:not(.theme-dark) .bf-input span,
+body:not(.theme-dark) .bf-input input::placeholder,
+body:not(.theme-dark) #match-search-input::placeholder {
+  color: rgba(16,27,47,.45) !important;
+}
+
+body:not(.theme-dark) .bf-ghost-btn:hover {
+  background: rgba(255,255,255,.95) !important;
+  color: #101b2f !important;
+}
