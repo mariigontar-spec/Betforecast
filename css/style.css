@@ -7230,3 +7230,13 @@ body.theme-dark .theme-switch-thumb {
   background: var(--header-bg, #07111a) !important;
   border-bottom: 1px solid var(--border-main, rgba(255,255,255,.08)) !important;
 }
+/* remove duplicate pseudo logo */
+.bf-logo::before,
+.site-logo::before,
+.header::before,
+.bf-header::before {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+}
