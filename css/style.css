@@ -7448,3 +7448,55 @@ body:not(.theme-dark) .bf-ghost-btn:hover {
   background: rgba(255,255,255,.95) !important;
   color: #101b2f !important;
 }
+/* ===== LIGHT THEME STANDINGS BUTTON FIX ===== */
+
+body:not(.theme-dark) .standings-tab,
+body:not(.theme-dark) .league-tab,
+body:not(.theme-dark) .table-tab,
+body:not(.theme-dark) .season-tab,
+body:not(.theme-dark) .tab-btn,
+body:not(.theme-dark) .filter-btn {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.96),
+      rgba(245,248,252,.94)
+    ) !important;
+
+  color: #142033 !important;
+
+  border: 1px solid rgba(20,32,51,.10) !important;
+
+  box-shadow:
+    0 8px 24px rgba(20,40,60,.08) !important;
+}
+
+/* ACTIVE */
+
+body:not(.theme-dark) .standings-tab.active,
+body:not(.theme-dark) .league-tab.active,
+body:not(.theme-dark) .table-tab.active,
+body:not(.theme-dark) .season-tab.active,
+body:not(.theme-dark) .tab-btn.active,
+body:not(.theme-dark) .filter-btn.active {
+  background:
+    linear-gradient(
+      135deg,
+      #19d37c,
+      #7dff57
+    ) !important;
+
+  color: #082114 !important;
+  border-color: transparent !important;
+}
+
+/* HOVER */
+
+body:not(.theme-dark) .standings-tab:hover,
+body:not(.theme-dark) .league-tab:hover,
+body:not(.theme-dark) .table-tab:hover,
+body:not(.theme-dark) .season-tab:hover,
+body:not(.theme-dark) .tab-btn:hover,
+body:not(.theme-dark) .filter-btn:hover {
+  transform: translateY(-1px) !important;
+}
