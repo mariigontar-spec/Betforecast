@@ -387,5 +387,22 @@
 </script>
 
 <!-- /Adhit Media Ad Server -->
+  <!-- Adhit Media Ad Server / Push notification -->
+<script data-cfasync="false">
+(function(w,a){
+  w[a]=w[a]||{};
+  w[a].queue=w[a].queue||[];
+
+  w[a].queue.push(function () {
+    _ASO.PushOptions = {
+      idzone: 161912
+    };
+
+    _ASO.loadPushHelper();
+  });
+
+})(window,"_aso");
+</script>
+<!-- /Adhit Media Ad Server -->
 </body>
 </html>
