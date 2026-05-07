@@ -7380,25 +7380,6 @@ body .results-page-wrap {
     background .18s ease !important;
 }
 
-/* GREEN BUTTON */
-
-.bf-main-btn {
-  color: #ffffff !important;
-
-  background:
-    linear-gradient(
-      135deg,
-      #19d37c,
-      #67ff63
-    ) !important;
-
-  border: none !important;
-
-  box-shadow:
-    0 10px 30px rgba(53,255,148,.28),
-    0 0 18px rgba(53,255,148,.18) !important;
-}
-
 /* DARK BUTTON */
 
 .bf-ghost-btn {
