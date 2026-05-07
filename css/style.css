@@ -8353,3 +8353,118 @@ body.theme-dark .bf-benefit-card p {
       rgba(255,255,255,.02)
     ) !important;
 }
+/* ===== FINAL CTA + RESULTS VISUAL FIX ===== */
+
+/* 1. All real CTA links/buttons */
+.bf-main-btn,
+.bf-ghost-btn,
+.match-hero-actions a,
+.ai-focus-actions a,
+.bf-featured-actions a,
+.ai-hero-actions a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  min-height: 54px !important;
+  padding: 0 28px !important;
+  border-radius: 18px !important;
+
+  font-family: var(--font-main, Arial, sans-serif) !important;
+  font-size: 16px !important;
+  font-weight: 850 !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+
+  border: 1px solid rgba(15, 23, 42, .10) !important;
+  box-shadow:
+    0 10px 24px rgba(15, 23, 42, .10),
+    inset 0 1px 0 rgba(255,255,255,.55) !important;
+
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.96), rgba(244,248,252,.92)) !important;
+
+  color: #0f1b2d !important;
+}
+
+/* green main CTA */
+.bf-main-btn,
+.match-hero-actions a:first-child,
+.ai-focus-actions a:first-child,
+.bf-featured-actions a:first-child,
+.ai-hero-actions a:first-child {
+  background: linear-gradient(135deg, #25d979, #8dff5f) !important;
+  color: #06140d !important;
+  border-color: rgba(53,255,148,.28) !important;
+  box-shadow:
+    0 14px 34px rgba(53,255,148,.26),
+    inset 0 1px 0 rgba(255,255,255,.35) !important;
+}
+
+/* dark theme ghost */
+body.theme-dark .bf-ghost-btn,
+body.theme-dark .match-hero-actions a:last-child,
+body.theme-dark .ai-focus-actions a:last-child,
+body.theme-dark .bf-featured-actions a:last-child,
+body.theme-dark .ai-hero-actions a:last-child {
+  background: linear-gradient(180deg, rgba(25,38,52,.96), rgba(10,20,32,.98)) !important;
+  color: #f8fafc !important;
+  border-color: rgba(255,255,255,.10) !important;
+}
+
+/* 2. Fix button containers */
+.bf-featured-actions,
+.match-hero-actions,
+.ai-focus-actions,
+.ai-hero-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  flex-wrap: wrap !important;
+  margin-top: 28px !important;
+}
+
+/* 3. Results cards: smaller logos, lighter visual */
+.results-page-wrap .match-card,
+.results-page-wrap .result-card,
+.results-page-wrap .results-card,
+.results-page-wrap .match-result-card,
+#results-page-container article {
+  min-height: 330px !important;
+  padding: 24px !important;
+}
+
+.results-page-wrap img,
+#results-page-container img {
+  width: 42px !important;
+  height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  object-fit: contain !important;
+}
+
+.results-page-wrap .team-logo,
+#results-page-container .team-logo {
+  width: 54px !important;
+  height: 54px !important;
+}
+
+/* 4. Light theme: no dark buttons except green active */
+body:not(.theme-dark) .bf-ghost-btn,
+body:not(.theme-dark) .match-hero-actions a:last-child,
+body:not(.theme-dark) .ai-focus-actions a:last-child,
+body:not(.theme-dark) .bf-featured-actions a:last-child,
+body:not(.theme-dark) .ai-hero-actions a:last-child {
+  background: linear-gradient(180deg, #ffffff, #f4f8fc) !important;
+  color: #0f1b2d !important;
+  border: 1px solid rgba(15, 23, 42, .10) !important;
+}
+
+/* 5. Kill naked text-button look */
+.bf-main-btn::before,
+.bf-ghost-btn::before,
+.match-hero-actions a::before,
+.ai-focus-actions a::before {
+  display: none !important;
+}
