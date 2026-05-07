@@ -8081,3 +8081,84 @@ body.theme-dark .bf-mini-analysis-link {
 body.theme-dark .bf-benefit-card p {
   color: rgba(248,250,252,.72) !important;
 }
+/* TEAM LOGOS FIX */
+
+.bf-team-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+  margin:42px 0 26px;
+}
+
+.bf-team{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+.bf-team-logo-wrap{
+  width:158px;
+  height:158px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:36px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.07),
+      rgba(255,255,255,.03)
+    );
+
+  border:1px solid rgba(255,255,255,.08);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.05),
+    0 20px 40px rgba(0,0,0,.24);
+
+  padding:22px;
+}
+
+.bf-team-logo-img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+
+.bf-team h3{
+  margin-top:18px;
+  margin-bottom:6px;
+
+  font-size:26px;
+  font-weight:800;
+
+  color:#f5fbff;
+}
+
+.bf-team small{
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.18em;
+
+  color:#d8e2ea;
+  opacity:.9;
+}
+
+.bf-vs{
+  font-size:62px;
+  font-weight:900;
+
+  color:#f4fff9;
+
+  text-shadow:
+    0 0 24px rgba(83,255,148,.24);
+
+  margin-top:-18px;
+}
