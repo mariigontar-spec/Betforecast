@@ -7247,8 +7247,6 @@ body.theme-dark .theme-switch-thumb {
 /* ===== BUTTON VISUAL RESTORE ===== */
 
 button,
-.bf-main-btn,
-.bf-ghost-btn,
 .topbar-menu a,
 .bf-nav a,
 .league-tabs button,
@@ -7278,8 +7276,6 @@ button,
 /* hover */
 
 button:hover,
-.bf-main-btn:hover,
-.bf-ghost-btn:hover,
 .topbar-menu a:hover,
 .bf-nav a:hover,
 .league-tabs button:hover,
