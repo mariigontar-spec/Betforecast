@@ -5115,14 +5115,7 @@ body:not(.theme-dark) .header {
   background: rgba(255, 255, 255, 0.88) !important;
   border-bottom: 1px solid rgba(16, 32, 24, 0.12) !important;
   box-shadow: 0 8px 30px rgba(20, 45, 35, 0.08) !important;
-}
 
-body:not(.theme-dark) .site-logo,
-body:not(.theme-dark) .site-logo__text,
-body:not(.theme-dark) .topbar-menu a,
-body:not(.theme-dark) .bf-nav a,
-body:not(.theme-dark) .topbar-actions button {
-  color: #102018 !important;
 }
 body:not(.theme-dark) .hero,
 body:not(.theme-dark) .hero-card,
