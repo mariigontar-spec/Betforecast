@@ -6058,13 +6058,6 @@ body * {
   box-shadow: var(--shadow-soft) !important;
 }
 
-.site-logo,
-.site-logo__text,
-.bf-logo,
-.bf-logo span {
-  color: var(--text-main) !important;
-  opacity: 1 !important;
-}
 
 /* NAV / TOP BUTTONS */
 .topbar-menu a,
