@@ -6694,29 +6694,6 @@ body.theme-dark .match-result-card {
   justify-content: space-between;
 }
 
-/* логотип */
-.site-logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
-
-/* иконка */
-.site-logo__icon {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 10px rgba(53,255,148,0.45));
-}
-
-/* текст */
-.site-logo__text {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: #f4f7fb;
-}
 
 /* .ai акцент */
 .logo-accent {
