@@ -7947,3 +7947,78 @@ body.theme-dark #match-search-btn {
     font-size: 34px;
   }
 }
+/* ===== FEATURED MATCH CARD UPGRADE ===== */
+
+.bf-featured {
+  min-height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 28px !important;
+  justify-content: flex-start !important;
+}
+
+.bf-club-logo {
+  width: 118px;
+  height: 118px;
+  border-radius: 30px;
+  display: grid;
+  place-items: center;
+  font-size: 52px;
+  font-weight: 950;
+  color: #081420;
+  box-shadow:
+    0 18px 42px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.35);
+}
+
+.arsenal-logo {
+  background: linear-gradient(135deg, #ff314f, #ffb12b);
+}
+
+.chelsea-logo {
+  background: linear-gradient(135deg, #145cff, #00b7ff);
+}
+
+.bf-team small {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  opacity: .58;
+}
+
+.bf-featured-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.bf-featured-mini-grid div {
+  padding: 16px 14px;
+  border-radius: 18px;
+  text-align: center;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+body:not(.theme-dark) .bf-featured-mini-grid div {
+  background: rgba(255,255,255,.72);
+  border-color: rgba(15,23,42,.07);
+}
+
+.bf-featured-mini-grid span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  opacity: .6;
+}
+
+.bf-featured-mini-grid strong {
+  font-size: 18px;
+  font-weight: 950;
+}
