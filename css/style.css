@@ -6341,6 +6341,11 @@ body.theme-dark .bf-hero {
   background: linear-gradient(180deg, #0d1d2a, #081824) !important;
   color: #f8fafc !important;
   border: 1px solid rgba(94, 224, 164, 0.18) !important;
+   min-height: auto !important;
+height: auto !important;
+
+padding-top: 48px !important;
+padding-bottom: 42px !important;
 }
 
 /* текст внутри всех этих блоков */
