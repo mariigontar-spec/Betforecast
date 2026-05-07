@@ -37,20 +37,38 @@ async function loadResultsPage() {
           <span class="result-card__status">FT</span>
         </div>
 
-        <div class="result-card__body">
-          <div class="result-team">
-            <span class="result-team__logo home-dot"></span>
-            <span class="result-team__name">${item.home || ""}</span>
-          </div>
+    <div class="result-team">
+  <img
+    class="result-team__logo"
+    src="assets/teams/${(item.homeShort || "").toLowerCase()}.png"
+    alt="${item.home || ""}"
+    onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+  />
 
+  <span class="result-team__fallback home-dot">
+    ${item.homeShort || ""}
+  </span>
+
+  <span class="result-team__name">${item.home || ""}</span>
+</div>
           <div class="result-score">
             <span>${finalScore}</span>
           </div>
 
-          <div class="result-team result-team--away">
-            <span class="result-team__name">${item.away || ""}</span>
-            <span class="result-team__logo away-dot"></span>
-          </div>
+ <div class="result-team result-team--away">
+  <span class="result-team__name">${item.away || ""}</span>
+
+  <img
+    class="result-team__logo"
+    src="assets/teams/${(item.awayShort || "").toLowerCase()}.png"
+    alt="${item.away || ""}"
+    onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+  />
+
+  <span class="result-team__fallback away-dot">
+    ${item.awayShort || ""}
+  </span>
+</div>
         </div>
 
         <div class="result-card__ai">
