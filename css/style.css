@@ -7176,3 +7176,57 @@ body.theme-dark .theme-switch-thumb {
     margin-left: 0;
   }
 }
+/* ===== FIX OLD HEADER LOGO PAGES ===== */
+
+.site-logo,
+.bf-logo {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  flex-shrink: 0 !important;
+}
+
+.site-logo__icon,
+.bf-logo img {
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  max-width: 34px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.site-logo__text,
+.bf-logo > span {
+  font-family: var(--font-main, Arial, Helvetica, sans-serif) !important;
+  font-size: 26px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.04em !important;
+  white-space: nowrap !important;
+  color: var(--text-main, #f8fafc) !important;
+}
+
+.logo-accent,
+.bf-logo > span > span {
+  color: #35ff94 !important;
+}
+
+.header-inner,
+.bf-header-inner {
+  width: min(1280px, calc(100% - 48px)) !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 28px !important;
+}
+
+.header,
+.bf-header {
+  width: 100% !important;
+  padding: 12px 0 !important;
+  background: var(--header-bg, #07111a) !important;
+  border-bottom: 1px solid var(--border-main, rgba(255,255,255,.08)) !important;
+}
