@@ -8323,3 +8323,33 @@ body.theme-dark .bf-benefit-card p {
 
   transform: translateY(-2px) !important;
 }
+/* ===== RESULT CARD LOGO SIZE TUNE ===== */
+
+.result-card img,
+.match-result-card img,
+.result-team img,
+.team-logo img {
+  width: 54px !important;
+  height: 54px !important;
+  object-fit: contain !important;
+}
+
+.result-card .team-logo,
+.match-result-card .team-logo,
+.result-team .team-logo {
+  width: 68px !important;
+  height: 68px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border-radius: 50% !important;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.08),
+      rgba(255,255,255,.02)
+    ) !important;
+}
