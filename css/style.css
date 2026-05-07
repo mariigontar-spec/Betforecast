@@ -3412,7 +3412,6 @@ button {
 }
 
 .bf-search-row button,
-.bf-main-btn {
   border: 0;
   border-radius: 16px;
   background: linear-gradient(135deg, #24e982, #b6ff3c);
