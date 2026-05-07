@@ -7003,39 +7003,6 @@ button.view-analysis {
   gap: 28px !important;
 }
 
-/* логотип без второго дубля */
-.site-logo,
-.bf-logo {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  text-decoration: none !important;
-  flex: 0 0 auto !important;
-}
-
-.site-logo__icon,
-.bf-logo img {
-  width: 34px !important;
-  height: 34px !important;
-  min-width: 34px !important;
-  max-width: 34px !important;
-  object-fit: contain !important;
-  display: block !important;
-  flex-shrink: 0 !important;
-  filter: drop-shadow(0 0 8px rgba(53,255,148,.35)) !important;
-}
-
-.site-logo__text,
-.bf-logo > span {
-  font-family: var(--font-main, Arial, Helvetica, sans-serif) !important;
-  font-size: 26px !important;
-  line-height: 1 !important;
-  font-weight: 800 !important;
-  letter-spacing: -0.04em !important;
-  white-space: nowrap !important;
-  color: var(--text-main, #f8fafc) !important;
-}
-
 .logo-accent,
 .bf-logo > span > span {
   color: var(--accent-green, #35ff94) !important;
