@@ -16,34 +16,60 @@ async function loadResultsPage() {
 
     finishedMatches.forEach((item) => {
       const card = document.createElement("article");
-      card.className = "match-card glow-hover";
+      card.className = "match-card result-card glow-hover";
+
+      const finalScore =
+        item.finalScore || item.projectedScore || item.predictedScore || "-";
+
+      const predictedScore =
+        item.predictedScore || item.projectedScore || "-";
+
+      const confidence =
+        item.confidence || item.aiConfidence || item.probability || "78";
 
       card.innerHTML = `
-        <div class="match-card__top">
-          <span class="cell-league">
+        <div class="result-card__top">
+          <span class="result-card__league">
             <span class="league-dot"></span>
-            <span class="league-name">${item.league || ""}</span>
+            <span>${item.league || "Football"}</span>
           </span>
-          <span>FT</span>
+
+          <span class="result-card__status">FT</span>
         </div>
 
-        <div class="match-card__teams">
-          <div class="team-inline">
-            <span class="team-dot home-dot"></span>
-            <span class="team-name-short">${item.home || ""}</span>
+        <div class="result-card__body">
+          <div class="result-team">
+            <span class="result-team__logo home-dot"></span>
+            <span class="result-team__name">${item.home || ""}</span>
           </div>
 
-          <strong>${item.finalScore || item.projectedScore || item.predictedScore || "-"}</strong>
+          <div class="result-score">
+            <span>${finalScore}</span>
+          </div>
 
-          <div class="team-inline" style="justify-content:flex-end;">
-            <span class="team-dot away-dot"></span>
-            <span class="team-name-short">${item.away || ""}</span>
+          <div class="result-team result-team--away">
+            <span class="result-team__name">${item.away || ""}</span>
+            <span class="result-team__logo away-dot"></span>
           </div>
         </div>
 
-        <div class="match-card__meta">
-          <span>Predicted: ${item.predictedScore || item.projectedScore || "-"}</span>
-          <span>${item.stadium || ""}</span>
+        <div class="result-card__ai">
+          <div>
+            <span class="result-card__label">AI predicted</span>
+            <strong>${predictedScore}</strong>
+          </div>
+
+          <div class="result-card__confidence">
+            <span>${confidence}% confidence</span>
+            <div class="result-card__bar">
+              <span style="width:${confidence}%"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-card__meta">
+          <span>${item.stadium || "Match analysis"}</span>
+          <span>Open details</span>
         </div>
       `;
 
@@ -52,7 +78,7 @@ async function loadResultsPage() {
 
     if (!finishedMatches.length) {
       container.innerHTML = `
-        <div style="padding:20px; border-radius:16px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); color:rgba(255,255,255,0.75);">
+        <div class="results-empty-state">
           No finished matches yet.
         </div>
       `;
@@ -62,7 +88,7 @@ async function loadResultsPage() {
   } catch (error) {
     console.error("Failed to load results page:", error);
     container.innerHTML = `
-      <div style="padding:20px; border-radius:16px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); color:rgba(255,255,255,0.75);">
+      <div class="results-empty-state">
         Failed to load results.
       </div>
     `;
