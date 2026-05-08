@@ -2502,10 +2502,6 @@ body.theme-dark .trending-list a {
   font-size: 9px;
   font-weight: 800;
   letter-spacing: 0.04em;
-  color: #dff7ea;
-  background: linear-gradient(180deg, rgba(38, 73, 61, 0.95), rgba(29, 57, 49, 0.95));
-  border: 1px solid rgba(90, 214, 154, 0.22);
-  box-shadow: 0 0 14px rgba(25, 181, 109, 0.12);
   flex-shrink: 0;
 }
 
