@@ -2509,11 +2509,6 @@ body.theme-dark .trending-list a {
   flex-shrink: 0;
 }
 
-.team-circle {
-  background: linear-gradient(180deg, rgba(58, 88, 124, 0.95), rgba(40, 63, 92, 0.95));
-  border: 1px solid rgba(116, 176, 255, 0.18);
-  box-shadow: 0 0 14px rgba(74, 169, 255, 0.10);
-}
 
 .hidden-view {
   display: none;
