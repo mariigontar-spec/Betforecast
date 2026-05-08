@@ -9117,7 +9117,37 @@ body.theme-dark .standings-table [class*="badge"] {
   position: relative;
   overflow: hidden;
 }
+.ai-insights-page .hero-stadium {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
 
+  width: 52%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.92;
+  pointer-events: none;
+}
+
+.ai-insights-page .insights-hero-left,
+.ai-insights-page .insights-hero-card {
+  position: relative;
+  z-index: 2;
+}
+
+body.theme-glass .ai-insights-page .hero-stadium,
+body.theme-light .ai-insights-page .hero-stadium {
+  background-image: url("../assets/stadium-light.jpg");
+}
+
+body.theme-dark .ai-insights-page .hero-stadium {
+  background-image: url("../assets/stadium-dark.jpg");
+}
 .ai-insights-page .insights-hero-left {
   max-width: 720px;
 }
