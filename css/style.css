@@ -9095,9 +9095,9 @@ body.theme-dark .standings-table [class*="badge"] {
 ========================================================= */
 
 .ai-insights-page {
-  max-width: 1180px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 34px 24px 80px;
+  padding: 34px 28px 90px;
 }
 
 /* HERO */
