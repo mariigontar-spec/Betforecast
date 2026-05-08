@@ -8847,3 +8847,173 @@ body.theme-glass .table-zone-card {
   box-shadow:
     0 8px 18px rgba(15,23,42,.05) !important;
 }
+/* =========================================================
+   AI INSIGHTS PREMIUM THEME SYSTEM
+   scoped only to ai-insights.html
+========================================================= */
+
+.ai-insights-page {
+  --ai-bg: rgba(255, 255, 255, 0.9);
+  --ai-bg-soft: rgba(248, 252, 255, 0.86);
+  --ai-text: #06142c;
+  --ai-muted: #5b6b82;
+  --ai-border: rgba(148, 163, 184, 0.24);
+  --ai-shadow: 0 24px 70px rgba(15, 23, 42, 0.09);
+  --ai-green: #16c857;
+  --ai-blue: #1677ff;
+  --ai-purple: #9b4dff;
+}
+
+body.theme-dark .ai-insights-page {
+  --ai-bg: rgba(6, 18, 36, 0.88);
+  --ai-bg-soft: rgba(8, 24, 48, 0.78);
+  --ai-text: #f5fbff;
+  --ai-muted: rgba(220, 235, 255, 0.74);
+  --ai-border: rgba(90, 180, 255, 0.24);
+  --ai-shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
+  --ai-green: #21e67a;
+  --ai-blue: #35a2ff;
+  --ai-purple: #b26cff;
+}
+
+.ai-insights-page .insights-hero,
+.ai-insights-page .panel {
+  background: var(--ai-bg);
+  color: var(--ai-text);
+  border: 1px solid var(--ai-border);
+  box-shadow: var(--ai-shadow);
+  backdrop-filter: blur(18px);
+}
+
+.ai-insights-page .insights-hero {
+  border-radius: 32px;
+  padding: 56px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(22, 200, 87, 0.16), transparent 32%),
+    radial-gradient(circle at 90% 75%, rgba(37, 119, 255, 0.14), transparent 30%),
+    var(--ai-bg);
+}
+
+body.theme-dark .ai-insights-page .insights-hero {
+  background:
+    radial-gradient(circle at 85% 20%, rgba(33, 230, 122, 0.18), transparent 32%),
+    radial-gradient(circle at 90% 75%, rgba(53, 162, 255, 0.28), transparent 30%),
+    linear-gradient(145deg, rgba(4, 12, 24, 0.96), rgba(7, 20, 42, 0.92));
+}
+
+.ai-insights-page h1,
+.ai-insights-page h2,
+.ai-insights-page h3,
+.ai-insights-page h4 {
+  color: var(--ai-text);
+}
+
+.ai-insights-page p,
+.ai-insights-page .featured-meta,
+.ai-insights-page .ai-text {
+  color: var(--ai-muted);
+}
+
+.ai-insights-page .insights-hero-card,
+.ai-insights-page .featured-main-card,
+.ai-insights-page .mini-stat-card,
+.ai-insights-page .model-card {
+  background: var(--ai-bg-soft);
+  color: var(--ai-text);
+  border: 1px solid var(--ai-border);
+  border-radius: 24px;
+  box-shadow: 0 18px 44px rgba(15, 23, 42, 0.08);
+}
+
+body.theme-dark .ai-insights-page .insights-hero-card,
+body.theme-dark .ai-insights-page .featured-main-card,
+body.theme-dark .ai-insights-page .mini-stat-card,
+body.theme-dark .ai-insights-page .model-card {
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.26);
+}
+
+.ai-insights-page .bf-main-btn {
+  background: rgba(22, 200, 87, 0.14);
+  color: var(--ai-green);
+  border: 1px solid rgba(22, 200, 87, 0.32);
+}
+
+.ai-insights-page .bf-ghost-btn {
+  background: var(--ai-bg-soft);
+  color: var(--ai-text);
+  border: 1px solid var(--ai-border);
+}
+
+.ai-insights-page .probabilities,
+.ai-insights-page .featured-prob-grid {
+  background: var(--ai-bg);
+  border: 1px solid var(--ai-border);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.ai-insights-page .probabilities div,
+.ai-insights-page .featured-prob-grid div {
+  color: var(--ai-text);
+  border-color: var(--ai-border);
+}
+
+.ai-insights-page .probabilities div:nth-child(1),
+.ai-insights-page .featured-prob-grid div:nth-child(1) strong {
+  color: var(--ai-green);
+}
+
+.ai-insights-page .probabilities div:nth-child(2),
+.ai-insights-page .featured-prob-grid div:nth-child(2) strong {
+  color: var(--ai-blue);
+}
+
+.ai-insights-page .probabilities div:nth-child(3),
+.ai-insights-page .featured-prob-grid div:nth-child(3) strong {
+  color: var(--ai-purple);
+}
+
+.ai-insights-page .probability-bar,
+.ai-insights-page .featured-long-bar {
+  background: rgba(148, 163, 184, 0.18);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.ai-insights-page .bar-home {
+  background: var(--ai-green);
+}
+
+.ai-insights-page .bar-draw {
+  background: var(--ai-blue);
+}
+
+.ai-insights-page .bar-away {
+  background: var(--ai-purple);
+}
+
+.ai-insights-page .confidence-pill,
+.ai-insights-page .mini-tag,
+.ai-insights-page .hero-badge {
+  background: rgba(22, 200, 87, 0.12);
+  color: var(--ai-green);
+  border: 1px solid rgba(22, 200, 87, 0.28);
+}
+
+.ai-insights-page .factor-tags span {
+  background: var(--ai-bg-soft);
+  color: var(--ai-text);
+  border: 1px solid var(--ai-border);
+}
+
+.ai-insights-page .mini-stat-card strong {
+  color: var(--ai-text);
+}
+
+@media (max-width: 900px) {
+  .ai-insights-page .insights-hero {
+    padding: 28px;
+    border-radius: 24px;
+  }
+}
