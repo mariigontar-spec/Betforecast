@@ -9104,11 +9104,18 @@ body.theme-dark .standings-table [class*="badge"] {
 
 .ai-insights-page .insights-hero {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 34px;
-  min-height: auto;
-  padding: 56px;
-  border-radius: 34px;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 40px;
+
+  min-height: 640px;
+
+  padding: 64px;
+
+  border-radius: 38px;
+
+  position: relative;
+  overflow: hidden;
 }
 
 .ai-insights-page .insights-hero-left {
@@ -9476,4 +9483,80 @@ body.theme-dark .trending-topics > *:not(h2):not(h3) {
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,.04),
     0 10px 24px rgba(0,0,0,.18) !important;
+}
+/* ===== STANDINGS TABS + TEAM DOTS FINAL FIX ===== */
+
+/* dark theme tabs */
+body.theme-dark .standings-tabs button,
+body.theme-dark .league-tabs button,
+body.theme-dark .tab-button,
+body.theme-dark .standings-hero button,
+body.theme-dark .standings-filter button {
+  background: linear-gradient(180deg, #1b2a3a, #13202d) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255,255,255,.10) !important;
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.28),
+    inset 0 1px 0 rgba(255,255,255,.05) !important;
+}
+
+/* light theme tabs */
+body.theme-glass .standings-tabs button,
+body.theme-glass .league-tabs button,
+body.theme-glass .tab-button,
+body.theme-glass .standings-hero button,
+body.theme-glass .standings-filter button {
+  background: linear-gradient(180deg, #ffffff, #f4f8fc) !important;
+  color: #0f172a !important;
+  border: 1px solid rgba(15,23,42,.10) !important;
+  box-shadow:
+    0 8px 20px rgba(15,23,42,.06),
+    inset 0 1px 0 rgba(255,255,255,.9) !important;
+}
+
+/* active always green */
+body.theme-dark .standings-tabs button.active,
+body.theme-dark .league-tabs button.active,
+body.theme-dark .tab-button.active,
+body.theme-dark .standings-hero button.active,
+body.theme-dark .standings-filter button.active,
+body.theme-glass .standings-tabs button.active,
+body.theme-glass .league-tabs button.active,
+body.theme-glass .tab-button.active,
+body.theme-glass .standings-hero button.active,
+body.theme-glass .standings-filter button.active {
+  background: linear-gradient(135deg, #087a46, #0fbf6a) !important;
+  color: #ffffff !important;
+  border-color: rgba(53,255,148,.35) !important;
+}
+
+/* light theme team initials circles */
+body.theme-glass .team-initial,
+body.theme-glass .team-avatar,
+body.theme-glass .team-badge,
+body.theme-glass .club-badge,
+body.theme-glass .table-team-badge,
+body.theme-glass .standings-table [class*="badge"],
+body.theme-glass .standings-table [class*="avatar"],
+body.theme-glass .standings-table [class*="initial"] {
+  background: linear-gradient(180deg, #eef4fb, #dfe8f3) !important;
+  color: #102033 !important;
+  border: 1px solid rgba(15,23,42,.08) !important;
+  box-shadow:
+    0 4px 10px rgba(15,23,42,.06),
+    inset 0 1px 0 rgba(255,255,255,.75) !important;
+}
+
+/* dark theme team initials circles */
+body.theme-dark .team-initial,
+body.theme-dark .team-avatar,
+body.theme-dark .team-badge,
+body.theme-dark .club-badge,
+body.theme-dark .table-team-badge,
+body.theme-dark .standings-table [class*="badge"],
+body.theme-dark .standings-table [class*="avatar"],
+body.theme-dark .standings-table [class*="initial"] {
+  background: linear-gradient(180deg, #2d4968, #183049) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255,255,255,.08) !important;
 }
