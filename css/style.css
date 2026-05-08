@@ -9017,3 +9017,57 @@ body.theme-dark .ai-insights-page .model-card {
     border-radius: 24px;
   }
 }
+/* ===== STANDINGS TABS DARK/LIGHT FINAL ===== */
+
+body.theme-dark .standings-tabs button,
+body.theme-dark .league-tabs button,
+body.theme-dark .tab-button {
+  background: linear-gradient(180deg, #1b2a3a, #13202d) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255,255,255,.10) !important;
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.28),
+    inset 0 1px 0 rgba(255,255,255,.05) !important;
+}
+
+body.theme-glass .standings-tabs button,
+body.theme-glass .league-tabs button,
+body.theme-glass .tab-button {
+  background: linear-gradient(180deg, #ffffff, #f4f8fc) !important;
+  color: #0f172a !important;
+  border: 1px solid rgba(15,23,42,.10) !important;
+  box-shadow:
+    0 8px 20px rgba(15,23,42,.06),
+    inset 0 1px 0 rgba(255,255,255,.9) !important;
+}
+
+body .standings-tabs button.active,
+body .league-tabs button.active,
+body .tab-button.active {
+  background: linear-gradient(135deg, #087a46, #0fbf6a) !important;
+  color: #ffffff !important;
+  border-color: rgba(53,255,148,.35) !important;
+}/* ===== STANDINGS TEAM BADGES LIGHT FIX ===== */
+
+body.theme-glass .team-badge,
+body.theme-glass .club-badge,
+body.theme-glass .table-team-badge,
+body.theme-glass .standings-table .badge,
+body.theme-glass .standings-table [class*="badge"] {
+  background: linear-gradient(180deg, #eef4fb, #dfe8f3) !important;
+  color: #102033 !important;
+  border: 1px solid rgba(15,23,42,.08) !important;
+  box-shadow:
+    0 4px 10px rgba(15,23,42,.06),
+    inset 0 1px 0 rgba(255,255,255,.75) !important;
+}
+
+body.theme-dark .team-badge,
+body.theme-dark .club-badge,
+body.theme-dark .table-team-badge,
+body.theme-dark .standings-table .badge,
+body.theme-dark .standings-table [class*="badge"] {
+  background: linear-gradient(180deg, #2d4968, #183049) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255,255,255,.08) !important;
+}
