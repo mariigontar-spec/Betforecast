@@ -9403,9 +9403,50 @@ body.theme-light .ai-insights-page .insights-hero {
     grid-template-columns: 1fr;
   }
 
-  .ai-insights-page .insights-hero h1 {
-    font-size: 46px;
-  }
+.ai-insights-page .insights-hero h1 {
+  max-width: 720px;
+
+  font-size: clamp(64px, 7vw, 104px);
+
+  line-height: 0.92;
+
+  letter-spacing: -0.08em;
+
+  margin-bottom: 24px;
+}
+   .ai-insights-page .insights-featured-panel {
+  padding: 48px;
+  border-radius: 38px;
+}
+
+.ai-insights-page .featured-main-card {
+  min-height: 100%;
+}
+
+.ai-insights-page .featured-side-stack {
+  gap: 22px;
+}
+
+.ai-insights-page .mini-stat-card {
+  min-height: 150px;
+}
+   body.theme-dark .ai-insights-page .panel,
+body.theme-dark .ai-insights-page .featured-main-card,
+body.theme-dark .ai-insights-page .mini-stat-card,
+body.theme-dark .ai-insights-page .insights-hero-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(4, 12, 24, 0.98),
+      rgba(6, 18, 38, 0.94)
+    );
+
+  border: 1px solid rgba(53, 162, 255, 0.18);
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.34),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+
 }
 /* ===== RESULTS PAGE LOGOS REAL FINAL ===== */
 
