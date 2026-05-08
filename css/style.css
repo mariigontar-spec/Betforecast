@@ -8830,3 +8830,76 @@ body.theme-dark .ai-insights-page .insight-model {
     border-bottom: 1px solid var(--ai-border);
   }
 }
+/* ===== LIGHT THEME FINAL FIX ===== */
+
+body.theme-glass .league-tabs button,
+body.theme-glass .standings-tabs button,
+body.theme-glass .tab-button,
+body.theme-glass .matches-filter button,
+body.theme-glass .mini-match-card,
+body.theme-glass .insight-card,
+body.theme-glass .zone-card,
+body.theme-glass .sidebar-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.94),
+    rgba(245,248,252,.98)
+  ) !important;
+
+  color: #0f172a !important;
+
+  border: 1px solid rgba(15,23,42,.08) !important;
+
+  box-shadow:
+    0 8px 20px rgba(15,23,42,.06),
+    inset 0 1px 0 rgba(255,255,255,.92) !important;
+}
+
+/* active green buttons */
+
+body.theme-glass .active,
+body.theme-glass button.active,
+body.theme-glass .league-tabs button.active,
+body.theme-glass .standings-tabs button.active {
+  background: linear-gradient(
+    135deg,
+    #17c964,
+    #7dff61
+  ) !important;
+
+  color: #052814 !important;
+
+  border-color: rgba(23,201,100,.22) !important;
+
+  box-shadow:
+    0 10px 24px rgba(23,201,100,.22) !important;
+}
+
+/* team circles */
+
+body.theme-glass .team-badge,
+body.theme-glass .table-team-badge,
+body.theme-glass .club-badge {
+  background: linear-gradient(
+    180deg,
+    #eef4fb,
+    #dfe8f3
+  ) !important;
+
+  color: #0f172a !important;
+
+  border: 1px solid rgba(15,23,42,.08) !important;
+}
+
+/* right sidebar cards */
+
+body.theme-glass .matches-sidebar-card,
+body.theme-glass .sidebar-match,
+body.theme-glass .table-zone-card {
+  background: rgba(255,255,255,.72) !important;
+
+  border: 1px solid rgba(15,23,42,.06) !important;
+
+  box-shadow:
+    0 8px 18px rgba(15,23,42,.05) !important;
+}
