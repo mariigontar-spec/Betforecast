@@ -9587,3 +9587,32 @@ body.theme-dark .tab-button:not(.active) {
   color: #f8fafc !important;
   border: 1px solid rgba(255,255,255,.10) !important;
 }
+.ai-insights-page .hero-stadium {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 52%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+
+  opacity: 0.92;
+
+  pointer-events: none;
+}
+
+/* LIGHT */
+
+body.theme-glass .ai-insights-page .hero-stadium,
+body.theme-light .ai-insights-page .hero-stadium {
+  background-image: url("../assets/stadium-light.jpg");
+}
+
+/* DARK */
+
+body.theme-dark .ai-insights-page .hero-stadium {
+  background-image: url("../assets/stadium-dark.jpg");
+}
