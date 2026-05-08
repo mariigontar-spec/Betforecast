@@ -1554,15 +1554,34 @@ body.theme-glass .ai-prob-tile {
   align-items: center;
   justify-content: flex-start;
   gap: 12px;
+
   width: 100%;
   min-height: 64px;
-  padding: 12px 16px;
-  border-radius: 14px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-main);
-}
+  padding: 0 20px;
 
+  border-radius: 18px;
+
+  background: linear-gradient(180deg,#ffffff,#f4f8fc);
+  border: 1px solid rgba(15,23,42,.08);
+
+  box-shadow:
+    0 8px 18px rgba(15,23,42,.06),
+    inset 0 1px 0 rgba(255,255,255,.9);
+
+  text-decoration: none;
+  transition: .2s ease;
+}
+body.theme-dark .sidebar-link-card,
+body.theme-dark .league-list a,
+body.theme-dark .trending-list a {
+  background: linear-gradient(180deg,#1b2a3a,#13202d) !important;
+  border: 1px solid rgba(255,255,255,.08) !important;
+  color: #f8fafc !important;
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.04) !important;
+}
 .sidebar-link-card::before,
 .league-list a::before,
 .trending-list a::before {
