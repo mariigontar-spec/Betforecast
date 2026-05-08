@@ -9381,3 +9381,23 @@ body.theme-light .ai-insights-page .insights-hero {
     font-size: 46px;
   }
 }
+/* ===== RESULTS PAGE LOGOS REAL FINAL ===== */
+
+body .results-page-wrap img[src*="assets/teams/"],
+body #results-page-container img[src*="assets/teams/"] {
+  width: 34px !important;
+  height: 34px !important;
+  max-width: 34px !important;
+  max-height: 34px !important;
+  object-fit: contain !important;
+}
+
+body .results-page-wrap img[src*="assets/teams/"] {
+  transform: scale(.78) !important;
+}
+
+body .results-page-wrap .match-card,
+body #results-page-container .match-card {
+  min-height: 260px !important;
+  padding: 22px !important;
+}
