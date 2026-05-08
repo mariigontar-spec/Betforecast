@@ -9560,3 +9560,30 @@ body.theme-dark .standings-table [class*="initial"] {
   color: #f8fafc !important;
   border: 1px solid rgba(255,255,255,.08) !important;
 }
+/* ===== STANDINGS MINI TEAM CIRCLES FINAL ===== */
+
+body.theme-glass .league-mini-circle.team-circle,
+body.theme-glass .standings-table .league-mini-circle.team-circle,
+body:not(.theme-dark) .league-mini-circle.team-circle,
+body:not(.theme-dark) .standings-table .league-mini-circle.team-circle {
+  background: linear-gradient(180deg, #eef4fb, #dfe8f3) !important;
+  color: #102033 !important;
+  border: 1px solid rgba(15,23,42,.08) !important;
+  box-shadow:
+    0 4px 10px rgba(15,23,42,.06),
+    inset 0 1px 0 rgba(255,255,255,.75) !important;
+}
+
+body.theme-dark .league-mini-circle.team-circle,
+body.theme-dark .standings-table .league-mini-circle.team-circle {
+  background: linear-gradient(180deg, #2d4968, #183049) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255,255,255,.08) !important;
+}
+body.theme-dark .standings-tabs button:not(.active),
+body.theme-dark .league-tabs button:not(.active),
+body.theme-dark .tab-button:not(.active) {
+  background: linear-gradient(180deg, #1b2a3a, #13202d) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255,255,255,.10) !important;
+}
