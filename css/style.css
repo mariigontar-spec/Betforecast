@@ -7253,26 +7253,27 @@ button,
 .standings-tabs button,
 .tab-button {
   appearance: none;
-  border: 1px solid rgba(255,255,255,.08);
-  background: linear-gradient(180deg,#1b2a3a,#13202d);
-  color: #f8fafc;
-
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: linear-gradient(180deg, rgba(255,255,255,.94), rgba(245,248,252,.96));
+  color: #0f172a;
   border-radius: 18px;
   padding: 12px 20px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
-
   cursor: pointer;
-
-  transition:
-    background .22s ease,
-    border-color .22s ease,
-    transform .18s ease,
-    box-shadow .22s ease;
+  box-shadow: 0 8px 20px rgba(15,23,42,.06), inset 0 1px 0 rgba(255,255,255,.9);
+  transition: background .22s ease, border-color .22s ease, transform .18s ease, box-shadow .22s ease;
 }
-
+body.theme-dark .bf-nav a,
+body.theme-dark .league-tabs button,
+body.theme-dark .standings-tabs button,
+body.theme-dark .tab-button {
+  border-color: rgba(255,255,255,.08);
+  background: linear-gradient(180deg, #1b2a3a, #13202d);
+  color: #f8fafc;
+  box-shadow: 0 10px 24px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.04);
+}
 /* hover */
 
 button:hover,
