@@ -9828,3 +9828,134 @@ body.theme-dark .league-mini-circle {
   color: #f8fafc !important;
   border: 1px solid rgba(255,255,255,.08) !important;
 }
+/* ===== AI INSIGHTS HERO PREMIUM REBUILD ===== */
+
+.ai-insights-page .ai-hero,
+.ai-hero {
+  width: min(1220px, calc(100% - 48px)) !important;
+  margin: 44px auto 32px !important;
+  padding: 46px 42px 34px !important;
+
+  display: block !important;
+  position: relative !important;
+  overflow: hidden !important;
+
+  border-radius: 28px !important;
+  border: 1px solid rgba(82, 180, 255, .18) !important;
+
+  background:
+    linear-gradient(90deg, rgba(4,10,24,.98) 0%, rgba(5,13,30,.92) 42%, rgba(5,13,30,.32) 68%),
+    url("../assets/stadium-dark.png") right center / cover no-repeat !important;
+
+  box-shadow:
+    0 26px 70px rgba(0,0,0,.42),
+    inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+
+.ai-hero::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(32,132,255,.34), transparent 34%),
+    radial-gradient(circle at 26% 92%, rgba(53,255,148,.12), transparent 36%) !important;
+  pointer-events: none !important;
+}
+
+.ai-hero-content,
+.ai-hero-text {
+  position: relative !important;
+  z-index: 2 !important;
+  max-width: 640px !important;
+}
+
+.ai-hero h1 {
+  max-width: 720px !important;
+  margin: 18px 0 24px !important;
+
+  font-size: clamp(44px, 4.8vw, 72px) !important;
+  line-height: .98 !important;
+  letter-spacing: -0.055em !important;
+  color: #f8fafc !important;
+}
+
+.ai-hero h1 span,
+.ai-hero .green {
+  color: #35ff94 !important;
+}
+
+.ai-hero p {
+  max-width: 640px !important;
+  color: rgba(248,250,252,.84) !important;
+  font-size: 18px !important;
+  line-height: 1.65 !important;
+}
+
+.ai-hero-visual,
+.hero-stadium,
+.ai-stadium {
+  display: none !important;
+}
+
+/* action buttons */
+.ai-hero-actions,
+.ai-focus-actions {
+  position: relative !important;
+  z-index: 2 !important;
+  display: flex !important;
+  gap: 18px !important;
+  margin-top: 28px !important;
+}
+
+/* model card inside banner */
+.ai-model-card,
+.ai-hero .model-card,
+.ai-hero .ai-model-view {
+  position: relative !important;
+  z-index: 2 !important;
+
+  width: 100% !important;
+  max-width: none !important;
+  margin: 34px 0 0 !important;
+  padding: 28px !important;
+
+  border-radius: 22px !important;
+  background: rgba(3, 12, 29, .72) !important;
+  border: 1px solid rgba(82,180,255,.18) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.05),
+    0 20px 50px rgba(0,0,0,.25) !important;
+
+  backdrop-filter: blur(12px) !important;
+}
+
+/* probability row */
+.ai-model-card .prob-row,
+.ai-model-card .ai-prob-row,
+.ai-model-view .prob-row {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr !important;
+  gap: 12px !important;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .ai-insights-page .ai-hero,
+  .ai-hero {
+    width: min(100% - 28px, 1220px) !important;
+    padding: 32px 24px !important;
+    background:
+      linear-gradient(180deg, rgba(4,10,24,.95), rgba(5,13,30,.78)),
+      url("../assets/stadium-dark.png") center bottom / cover no-repeat !important;
+  }
+
+  .ai-hero h1 {
+    font-size: 42px !important;
+  }
+
+  .ai-hero-actions,
+  .ai-focus-actions {
+    flex-direction: column !important;
+  }
+}
