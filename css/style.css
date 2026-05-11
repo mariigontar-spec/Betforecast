@@ -9675,3 +9675,105 @@ body.theme-light .ai-insights-page .hero-stadium {
 body.theme-dark .ai-insights-page .hero-stadium {
   background-image: url("../assets/stadium-dark.jpg");
 }
+/* ===== AI INSIGHTS HERO LAYOUT FIX ===== */
+
+.ai-insights-page .ai-hero,
+.ai-page .ai-hero,
+.ai-hero {
+  width: min(1180px, calc(100% - 48px)) !important;
+  margin: 48px auto 32px !important;
+  padding: 56px !important;
+
+  display: grid !important;
+  grid-template-columns: 1.05fr .95fr !important;
+  gap: 42px !important;
+  align-items: center !important;
+
+  border-radius: 32px !important;
+  overflow: hidden !important;
+}
+
+.ai-hero-content,
+.ai-hero-text {
+  position: relative !important;
+  z-index: 2 !important;
+  max-width: 560px !important;
+}
+
+.ai-hero h1 {
+  max-width: 560px !important;
+  margin: 18px 0 22px !important;
+  font-size: clamp(48px, 5.2vw, 86px) !important;
+  line-height: .95 !important;
+  letter-spacing: -0.06em !important;
+}
+
+.ai-hero p {
+  max-width: 520px !important;
+  font-size: 18px !important;
+  line-height: 1.65 !important;
+}
+
+.ai-hero-actions,
+.ai-focus-actions {
+  display: flex !important;
+  gap: 16px !important;
+  flex-wrap: wrap !important;
+  margin-top: 28px !important;
+}
+
+.ai-hero-visual,
+.hero-stadium,
+.ai-stadium {
+  position: relative !important;
+  z-index: 1 !important;
+  min-height: 620px !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+}
+
+.ai-hero-visual img,
+.hero-stadium img,
+.ai-stadium img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 620px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* analysis card should sit inside left content, not fly over stadium */
+.ai-model-card,
+.ai-hero .model-card,
+.ai-hero .ai-model-view {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+
+  width: 100% !important;
+  max-width: 520px !important;
+  margin-top: 34px !important;
+
+  z-index: 3 !important;
+}
+
+/* mobile */
+@media (max-width: 980px) {
+  .ai-insights-page .ai-hero,
+  .ai-page .ai-hero,
+  .ai-hero {
+    grid-template-columns: 1fr !important;
+    padding: 32px !important;
+  }
+
+  .ai-hero-visual,
+  .hero-stadium,
+  .ai-stadium,
+  .ai-hero-visual img,
+  .hero-stadium img,
+  .ai-stadium img {
+    min-height: 420px !important;
+  }
+}
