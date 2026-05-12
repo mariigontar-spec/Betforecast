@@ -9740,28 +9740,58 @@ body.theme-dark .league-mini-circle {
     flex-direction: column !important;
   }
 }
-/* ===== FINAL STANDINGS VIEW TABS FIX ===== */
+/* ===== FINAL STANDINGS TABS PREMIUM ===== */
 
-body.theme-dark .standings-view-tab:not(.active) {
-    background: linear-gradient(180deg, #182532, #101b26) !important;
-    color: #f4fff8 !important;
-    border: 1px solid rgba(255,255,255,.10) !important;
+/* DARK */
+
+body.theme-dark .standings-view-tab:not(.active),
+body.theme-dark .league-filter-btn:not(.active) {
+    background: linear-gradient(180deg, #1b2a3a, #13202d) !important;
+    color: #f8fafc !important;
+
+    border: 1px solid rgba(255,255,255,.08) !important;
+
+    border-radius: 999px !important;
+
     box-shadow:
-        0 8px 24px rgba(0,0,0,.28),
-        inset 0 1px 0 rgba(255,255,255,.04) !important;
+        0 10px 24px rgba(0,0,0,.28),
+        inset 0 1px 0 rgba(255,255,255,.05) !important;
 }
 
-body.theme-glass .standings-view-tab:not(.active) {
+/* LIGHT */
+
+body.theme-glass .standings-view-tab:not(.active),
+body.theme-glass .league-filter-btn:not(.active),
+body:not(.theme-dark) .standings-view-tab:not(.active),
+body:not(.theme-dark) .league-filter-btn:not(.active) {
+
     background: linear-gradient(180deg, #ffffff, #f4f8fc) !important;
+
     color: #0f172a !important;
-    border: 1px solid rgba(15,23,42,.10) !important;
+
+    border: 1px solid rgba(15,23,42,.08) !important;
+
+    border-radius: 999px !important;
+
     box-shadow:
         0 8px 20px rgba(15,23,42,.06),
-        inset 0 1px 0 rgba(255,255,255,.90) !important;
+        inset 0 1px 0 rgba(255,255,255,.92) !important;
 }
 
-body .standings-view-tab.active {
+/* ACTIVE GREEN */
+
+body .standings-view-tab.active,
+body .league-filter-btn.active {
+
     background: linear-gradient(135deg, #0d7f4a, #28e677) !important;
+
     color: #ffffff !important;
-    border-color: rgba(53,255,148,.35) !important;
+
+    border: 1px solid rgba(53,255,148,.35) !important;
+
+    border-radius: 999px !important;
+
+    box-shadow:
+        0 10px 30px rgba(53,255,148,.18),
+        inset 0 1px 0 rgba(255,255,255,.12) !important;
 }
