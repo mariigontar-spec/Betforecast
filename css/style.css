@@ -9919,3 +9919,33 @@ body.theme-dark .league-mini-circle {
     flex-direction: column !important;
   }
 }
+/* ===== STANDINGS REAL VIEW TABS FINAL ===== */
+
+body.theme-dark .standings-view-tab:not(.active),
+body.theme-dark button.standings-view-tab:not(.active) {
+  background: linear-gradient(180deg, #1b2a3a, #13202d) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255,255,255,.10) !important;
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.28),
+    inset 0 1px 0 rgba(255,255,255,.05) !important;
+}
+
+body.theme-glass .standings-view-tab:not(.active),
+body.theme-glass button.standings-view-tab:not(.active),
+body:not(.theme-dark) .standings-view-tab:not(.active),
+body:not(.theme-dark) button.standings-view-tab:not(.active) {
+  background: linear-gradient(180deg, #ffffff, #f4f8fc) !important;
+  color: #0f172a !important;
+  border: 1px solid rgba(15,23,42,.10) !important;
+  box-shadow:
+    0 8px 20px rgba(15,23,42,.06),
+    inset 0 1px 0 rgba(255,255,255,.9) !important;
+}
+
+body .standings-view-tab.active,
+body button.standings-view-tab.active {
+  background: linear-gradient(135deg, #0d7f4a, #28e677) !important;
+  color: #ffffff !important;
+  border-color: rgba(53,255,148,.35) !important;
+}
