@@ -7256,45 +7256,6 @@ body.theme-dark .theme-switch-thumb {
 /* ===== BUTTON VISUAL RESTORE ===== */
 
 button,
-.topbar-menu a,
-.bf-nav a,
-.league-tabs button,
-.standings-tabs button,
-.tab-button {
-  appearance: none;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  background: linear-gradient(180deg, rgba(255,255,255,.94), rgba(245,248,252,.96));
-  color: #0f172a;
-  border-radius: 18px;
-  padding: 12px 20px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1;
-  cursor: pointer;
-  box-shadow: 0 8px 20px rgba(15,23,42,.06), inset 0 1px 0 rgba(255,255,255,.9);
-  transition: background .22s ease, border-color .22s ease, transform .18s ease, box-shadow .22s ease;
-}
-body.theme-dark .bf-nav a,
-body.theme-dark .league-tabs button,
-body.theme-dark .standings-tabs button,
-body.theme-dark .tab-button {
-  border-color: rgba(255,255,255,.08);
-  background: linear-gradient(180deg, #1b2a3a, #13202d);
-  color: #f8fafc;
-  box-shadow: 0 10px 24px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.04);
-}
-/* hover */
-
-button:hover,
-.topbar-menu a:hover,
-.bf-nav a:hover,
-.league-tabs button:hover,
-.standings-tabs button:hover,
-.tab-button:hover {
-  border-color: rgba(53,255,148,.22);
-  box-shadow: 0 0 18px rgba(53,255,148,.12);
-  transform: translateY(-1px);
-}
 
 /* active green */
 
@@ -8785,40 +8746,7 @@ body.theme-dark .ai-insights-page .insight-model {
 }
 /* ===== LIGHT THEME FINAL FIX ===== */
 
-body.theme-glass .league-tabs button,
-body.theme-glass .standings-tabs button,
-body.theme-glass .tab-button,
-body.theme-glass .matches-filter button,
-body.theme-glass .mini-match-card,
-body.theme-glass .insight-card,
-body.theme-glass .zone-card,
-body.theme-glass .sidebar-card {
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,.94),
-    rgba(245,248,252,.98)
-  ) !important;
 
-  color: #0f172a !important;
-
-  border: 1px solid rgba(15,23,42,.08) !important;
-
-  box-shadow:
-    0 8px 20px rgba(15,23,42,.06),
-    inset 0 1px 0 rgba(255,255,255,.92) !important;
-}
-
-/* active green buttons */
-
-body.theme-glass .active,
-body.theme-glass button.active,
-body.theme-glass .league-tabs button.active,
-body.theme-glass .standings-tabs button.active {
-  background: linear-gradient(
-    135deg,
-    #17c964,
-    #7dff61
-  ) !important;
 
   color: #052814 !important;
 
@@ -9028,35 +8956,6 @@ body.theme-dark .ai-insights-page .model-card {
 }
 /* ===== STANDINGS TABS DARK/LIGHT FINAL ===== */
 
-body.theme-dark .standings-tabs button,
-body.theme-dark .league-tabs button,
-body.theme-dark .tab-button {
-  background: linear-gradient(180deg, #1b2a3a, #13202d) !important;
-  color: #f8fafc !important;
-  border: 1px solid rgba(255,255,255,.10) !important;
-  box-shadow:
-    0 10px 24px rgba(0,0,0,.28),
-    inset 0 1px 0 rgba(255,255,255,.05) !important;
-}
-
-
-/* =========================================================
-   AI INSIGHTS FINAL PREMIUM OVERRIDE
-========================================================= */
-
-.ai-insights-page {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 34px 28px 90px;
-}
-
-/* HERO */
-
-.ai-insights-page .insights-hero {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  align-items: center;
-  gap: 40px;
 
   min-height: 640px;
 
@@ -9507,49 +9406,6 @@ body.theme-dark .trending-topics > *:not(h2):not(h3) {
 }
 /* ===== STANDINGS TABS + TEAM DOTS FINAL FIX ===== */
 
-/* dark theme tabs */
-body.theme-dark .standings-tabs button,
-body.theme-dark .league-tabs button,
-body.theme-dark .tab-button,
-body.theme-dark .standings-hero button,
-body.theme-dark .standings-filter button {
-  background: linear-gradient(180deg, #1b2a3a, #13202d) !important;
-  color: #f8fafc !important;
-  border: 1px solid rgba(255,255,255,.10) !important;
-  box-shadow:
-    0 10px 24px rgba(0,0,0,.28),
-    inset 0 1px 0 rgba(255,255,255,.05) !important;
-}
-
-/* light theme tabs */
-body.theme-glass .standings-tabs button,
-body.theme-glass .league-tabs button,
-body.theme-glass .tab-button,
-body.theme-glass .standings-hero button,
-body.theme-glass .standings-filter button {
-  background: linear-gradient(180deg, #ffffff, #f4f8fc) !important;
-  color: #0f172a !important;
-  border: 1px solid rgba(15,23,42,.10) !important;
-  box-shadow:
-    0 8px 20px rgba(15,23,42,.06),
-    inset 0 1px 0 rgba(255,255,255,.9) !important;
-}
-
-/* active always green */
-body.theme-dark .standings-tabs button.active,
-body.theme-dark .league-tabs button.active,
-body.theme-dark .tab-button.active,
-body.theme-dark .standings-hero button.active,
-body.theme-dark .standings-filter button.active,
-body.theme-glass .standings-tabs button.active,
-body.theme-glass .league-tabs button.active,
-body.theme-glass .tab-button.active,
-body.theme-glass .standings-hero button.active,
-body.theme-glass .standings-filter button.active {
-  background: linear-gradient(135deg, #087a46, #0fbf6a) !important;
-  color: #ffffff !important;
-  border-color: rgba(53,255,148,.35) !important;
-}
 
 /* light theme team initials circles */
 body.theme-glass .team-initial,
@@ -9737,42 +9593,7 @@ body.theme-dark .ai-insights-page .hero-stadium {
     min-height: 420px !important;
   }
 }
-/* ===== ABSOLUTE FINAL STANDINGS DARK/LIGHT FIX ===== */
 
-/* buttons in standings */
-body.theme-dark .standings-tabs button,
-body.theme-dark .league-tabs button,
-body.theme-dark .tab-button,
-body.theme-dark .standings-hero button,
-body.theme-dark .standings-tabs .tab-button,
-body.theme-dark .league-tabs .tab-button {
-  background: linear-gradient(180deg, #1b2a3a, #13202d) !important;
-  color: #f8fafc !important;
-  border: 1px solid rgba(255,255,255,.10) !important;
-  box-shadow: 0 10px 24px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.05) !important;
-}
-
-body.theme-glass .standings-tabs button:not(.active),
-body.theme-glass .league-tabs button:not(.active),
-body.theme-glass .tab-button:not(.active),
-body.theme-glass .standings-hero button:not(.active),
-body.theme-glass .standings-tabs .tab-button:not(.active),
-body.theme-glass .league-tabs .tab-button:not(.active) {
-  background: linear-gradient(180deg, #ffffff, #f4f8fc) !important;
-  color: #0f172a !important;
-  border: 1px solid rgba(15,23,42,.10) !important;
-  box-shadow: 0 8px 20px rgba(15,23,42,.06), inset 0 1px 0 rgba(255,255,255,.9) !important;
-}
-
-/* active green */
-body .standings-tabs button.active,
-body .league-tabs button.active,
-body .tab-button.active,
-body .standings-hero button.active {
-  background: linear-gradient(135deg, #0d7f4a, #28e677) !important;
-  color: #ffffff !important;
-  border-color: rgba(53,255,148,.35) !important;
-}
 
 /* team circles */
 body.theme-glass .league-mini-circle,
@@ -9978,4 +9799,31 @@ body button.league-filter-btn.active {
   background: linear-gradient(135deg, #0d7f4a, #28e677) !important;
   color: #ffffff !important;
   border-color: rgba(53,255,148,.35) !important;
+}
+/* ===== STANDINGS REAL BUTTONS ONLY SOURCE ===== */
+
+body.theme-dark .standings-view-tab:not(.active),
+body.theme-dark .league-filter-btn:not(.active) {
+  background: linear-gradient(180deg, #1b2a3a, #13202d) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255,255,255,.10) !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.05) !important;
+}
+
+body.theme-glass .standings-view-tab:not(.active),
+body.theme-glass .league-filter-btn:not(.active),
+body:not(.theme-dark) .standings-view-tab:not(.active),
+body:not(.theme-dark) .league-filter-btn:not(.active) {
+  background: linear-gradient(180deg, #ffffff, #f4f8fc) !important;
+  color: #0f172a !important;
+  border: 1px solid rgba(15,23,42,.10) !important;
+  box-shadow: 0 8px 20px rgba(15,23,42,.06), inset 0 1px 0 rgba(255,255,255,.9) !important;
+}
+
+body .standings-view-tab.active,
+body .league-filter-btn.active {
+  background: linear-gradient(135deg, #0d7f4a, #28e677) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(53,255,148,.35) !important;
+  box-shadow: 0 10px 24px rgba(53,255,148,.22) !important;
 }
