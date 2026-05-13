@@ -9953,3 +9953,76 @@ body:not(.theme-dark) .league-filter-btn:not(.active) {
         0 8px 18px rgba(15,23,42,.05),
         inset 0 1px 0 rgba(255,255,255,.95) !important;
 }
+/* ===== STANDINGS BUTTONS HERO STYLE ===== */
+
+/* BASE */
+
+.standings-view-tab,
+.league-filter-btn {
+
+    border-radius: 999px !important;
+
+    min-height: 46px !important;
+
+    padding: 0 24px !important;
+
+    font-weight: 800 !important;
+
+    transition:
+        background .22s ease,
+        border-color .22s ease,
+        box-shadow .22s ease,
+        transform .18s ease !important;
+}
+
+/* ACTIVE GREEN */
+
+body .standings-view-tab.active,
+body .league-filter-btn.active {
+
+    background: linear-gradient(135deg, #4df76b, #7dff57) !important;
+
+    color: #04120a !important;
+
+    border: 1px solid rgba(255,255,255,.22) !important;
+
+    box-shadow:
+        0 0 18px rgba(109,255,120,.28),
+        inset 0 1px 0 rgba(255,255,255,.35) !important;
+}
+
+/* DARK INACTIVE */
+
+body.theme-dark .standings-view-tab:not(.active),
+body.theme-dark .league-filter-btn:not(.active) {
+
+    background:
+        linear-gradient(180deg, rgba(18,31,40,.94), rgba(6,19,27,.94)) !important;
+
+    color: #f4fff8 !important;
+
+    border: 1px solid rgba(180,180,180,.22) !important;
+
+    box-shadow:
+        0 0 18px rgba(0,0,0,.32),
+        inset 0 1px 0 rgba(255,255,255,.06) !important;
+}
+
+/* LIGHT INACTIVE */
+
+body.theme-glass .standings-view-tab:not(.active),
+body.theme-glass .league-filter-btn:not(.active),
+body:not(.theme-dark) .standings-view-tab:not(.active),
+body:not(.theme-dark) .league-filter-btn:not(.active) {
+
+    background:
+        linear-gradient(180deg, #ffffff, #f4f6f8) !important;
+
+    color: #0f172a !important;
+
+    border: 1px solid rgba(15,23,42,.08) !important;
+
+    box-shadow:
+        0 8px 18px rgba(15,23,42,.05),
+        inset 0 1px 0 rgba(255,255,255,.95) !important;
+}
