@@ -2074,12 +2074,29 @@ body.theme-dark .trending-list a {
 
 .standings-league-tabs,
 .league-filter-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
 
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+.standings-view-tab,
+.league-filter-btn {
+  border-radius: 999px !important;
+  padding: 0 22px !important;
+  min-height: 44px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
 .standings-filter-row {
   width: 100%;
   margin: 0 auto 4px;
