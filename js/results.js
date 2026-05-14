@@ -15,8 +15,13 @@ async function loadResultsPage() {
    const today = new Date();
 const date = today.toISOString().split("T")[0];
 
+const yesterday = new Date();
+yesterday.setDate(yesterday.getDate() - 1);
+
+const date = yesterday.toISOString().split("T")[0];
+
 const response = await fetch(
-  `${BF_API.baseUrl}/fixtures?date=${date}&status=FT`,
+  `${BF_API.baseUrl}/fixtures?date=${date}`,
   {
     method: "GET",
     headers: {
@@ -27,10 +32,15 @@ const response = await fetch(
 
     const data = await response.json();
     const matches = data.response || [];
-
+const finishedMatches = matches.filter(
+  (match) =>
+    match.fixture?.status?.short === "FT" ||
+    match.fixture?.status?.short === "AET" ||
+    match.fixture?.status?.short === "PEN"
+);
     container.innerHTML = "";
 
-    if (!matches.length) {
+if (!finishedMatches.length){
       container.innerHTML = `
         <div class="results-empty-state">
           No finished matches found.
@@ -39,7 +49,7 @@ const response = await fetch(
       return;
     }
 
-    matches.forEach((item) => {
+finishedMatches.forEach((item) => {
       const card = document.createElement("article");
       card.className = "match-card result-card glow-hover";
 
