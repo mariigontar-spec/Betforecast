@@ -1,5 +1,6 @@
-async function loadMatchPage() {
-const container = document.querySelector("#matches-container");
+async function loadMatchPage() 
+{
+  const urlParams = new URLSearchParams(window.location.search); 
   const game = urlParams.get("game");
 
   try {
