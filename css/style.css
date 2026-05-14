@@ -2087,16 +2087,7 @@ body.theme-dark .trending-list a {
   border-radius: 0 !important;
   padding: 0 !important;
 }
-.standings-view-tab,
-.league-filter-btn {
-  border-radius: 999px !important;
-  padding: 0 22px !important;
-  min-height: 44px !important;
 
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
 .standings-filter-row {
   width: 100%;
   margin: 0 auto 4px;
@@ -9814,14 +9805,6 @@ body .league-filter-btn.active {
 }
 /* ===== STANDINGS PILLS ABSOLUTE FINAL ===== */
 
-body .standings-view-tab,
-body button.standings-view-tab,
-body .league-filter-btn,
-body button.league-filter-btn {
-  appearance: none !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
 
   min-height: 46px !important;
   height: 46px !important;
@@ -9882,25 +9865,7 @@ body button.league-filter-btn.active {
 }
 /* ===== STANDINGS BUTTONS HERO STYLE ===== */
 
-/* BASE */
 
-.standings-view-tab,
-.league-filter-btn {
-
-    border-radius: 999px !important;
-
-    min-height: 46px !important;
-
-    padding: 0 24px !important;
-
-    font-weight: 800 !important;
-
-    transition:
-        background .22s ease,
-        border-color .22s ease,
-        box-shadow .22s ease,
-        transform .18s ease !important;
-}
 
 /* ACTIVE GREEN */
 
@@ -9955,25 +9920,7 @@ body:not(.theme-dark) .league-filter-btn:not(.active) {
 }
 /* ===== STANDINGS BUTTONS HERO STYLE ===== */
 
-/* BASE */
 
-.standings-view-tab,
-.league-filter-btn {
-
-    border-radius: 999px !important;
-
-    min-height: 46px !important;
-
-    padding: 0 24px !important;
-
-    font-weight: 800 !important;
-
-    transition:
-        background .22s ease,
-        border-color .22s ease,
-        box-shadow .22s ease,
-        transform .18s ease !important;
-}
 
 /* ACTIVE GREEN */
 
@@ -10025,4 +9972,47 @@ body:not(.theme-dark) .league-filter-btn:not(.active) {
     box-shadow:
         0 8px 18px rgba(15,23,42,.05),
         inset 0 1px 0 rgba(255,255,255,.95) !important;
+}
+.standings-view-tab,
+.league-filter-btn {
+
+    appearance: none !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-height: 46px !important;
+    padding: 0 24px !important;
+
+    border-radius: 999px !important;
+
+    font-weight: 800 !important;
+
+    transition:
+        background .22s ease,
+        border-color .22s ease,
+        box-shadow .22s ease,
+        transform .18s ease !important;
+}
+/* ACTIVE */
+
+body .standings-view-tab.active,
+body .league-filter-btn.active {
+    background: linear-gradient(135deg,#0d7f4a,#28e677) !important;
+    color: #fff !important;
+}
+/* DARK */
+
+body.theme-dark .standings-view-tab:not(.active),
+body.theme-dark .league-filter-btn:not(.active) {
+    background: linear-gradient(180deg,#1b2a3a,#13202d) !important;
+    color:#f8fafc !important;
+}
+/* LIGHT */
+
+body.theme-glass .standings-view-tab:not(.active),
+body.theme-glass .league-filter-btn:not(.active) {
+    background: linear-gradient(180deg,#ffffff,#f4f8fc) !important;
+    color:#0f172a !important;
 }
