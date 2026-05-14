@@ -10016,3 +10016,26 @@ body.theme-glass .league-filter-btn:not(.active) {
     background: linear-gradient(180deg,#ffffff,#f4f8fc) !important;
     color:#0f172a !important;
 }
+/* ===== HOME SEARCH GREEN BUTTON RESTORE ===== */
+
+#match-search-btn,
+.bf-search-row button {
+  border-radius: 18px !important;
+  min-height: 58px !important;
+  padding: 0 28px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background: linear-gradient(135deg, #4df76b, #7dff57) !important;
+  color: #04120a !important;
+
+  border: 1px solid rgba(255,255,255,.22) !important;
+
+  font-weight: 900 !important;
+
+  box-shadow:
+    0 0 22px rgba(109,255,120,.28),
+    inset 0 1px 0 rgba(255,255,255,.35) !important;
+}
