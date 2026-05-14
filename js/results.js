@@ -12,12 +12,18 @@ async function loadResultsPage() {
   `;
 
   try {
-    const response = await fetch(`${BF_API.baseUrl}/fixtures?last=10`, {
-      method: "GET",
-      headers: {
-        "x-apisports-key": BF_API.key
-      }
-    });
+   const today = new Date();
+const date = today.toISOString().split("T")[0];
+
+const response = await fetch(
+  `${BF_API.baseUrl}/fixtures?date=${date}&status=FT`,
+  {
+    method: "GET",
+    headers: {
+      "x-apisports-key": BF_API.key
+    }
+  }
+);
 
     const data = await response.json();
     const matches = data.response || [];
