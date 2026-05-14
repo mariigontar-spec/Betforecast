@@ -1,106 +1,108 @@
 async function loadResultsPage() {
-  const container = document.getElementById("results-page-container");
+  const container =
+    document.getElementById("results-page-container") ||
+    document.getElementById("results-container");
+
   if (!container) return;
 
+  container.innerHTML = `
+    <div class="results-empty-state">
+      Loading latest results...
+    </div>
+  `;
+
   try {
-    const response = await fetch("data/matches.json");
+    const response = await fetch(`${BF_API.baseUrl}/fixtures?last=10`, {
+      method: "GET",
+      headers: {
+        "x-apisports-key": BF_API.key
+      }
+    });
 
-    if (!response.ok) {
-      throw new Error(`Failed to load matches.json: ${response.status}`);
-    }
+    const data = await response.json();
+    const matches = data.response || [];
 
-    const matches = await response.json();
     container.innerHTML = "";
 
-    const finishedMatches = matches.filter((item) => item.status === "finished");
+    if (!matches.length) {
+      container.innerHTML = `
+        <div class="results-empty-state">
+          No finished matches found.
+        </div>
+      `;
+      return;
+    }
 
-    finishedMatches.forEach((item) => {
+    matches.forEach((item) => {
       const card = document.createElement("article");
       card.className = "match-card result-card glow-hover";
 
-      const finalScore =
-        item.finalScore || item.projectedScore || item.predictedScore || "-";
-
-      const predictedScore =
-        item.predictedScore || item.projectedScore || "-";
-
-      const confidence =
-        item.confidence || item.aiConfidence || item.probability || "78";
+      const home = item.teams?.home?.name || "Home";
+      const away = item.teams?.away?.name || "Away";
+      const homeLogo = item.teams?.home?.logo || "";
+      const awayLogo = item.teams?.away?.logo || "";
+      const homeGoals = item.goals?.home ?? "-";
+      const awayGoals = item.goals?.away ?? "-";
+      const league = item.league?.name || "Football";
+      const status = item.fixture?.status?.short || "FT";
+      const venue = item.fixture?.venue?.name || "Match analysis";
 
       card.innerHTML = `
         <div class="result-card__top">
           <span class="result-card__league">
             <span class="league-dot"></span>
-            <span>${item.league || "Football"}</span>
+            <span>${league}</span>
           </span>
 
-          <span class="result-card__status">FT</span>
+          <span class="result-card__status">${status}</span>
         </div>
 
-    <div class="result-team">
-  <img
-    class="result-team__logo"
-    src="assets/teams/${(item.homeShort || "").toLowerCase()}.png"
-    alt="${item.home || ""}"
-    onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
-  />
+        <div class="result-team">
+          <img
+            class="result-team__logo"
+            src="${homeLogo}"
+            alt="${home}"
+            onerror="this.style.display='none';"
+          />
+          <span class="result-team__name">${home}</span>
+        </div>
 
-  <span class="result-team__fallback home-dot">
-    ${item.homeShort || ""}
-  </span>
+        <div class="result-score">
+          <span>${homeGoals} - ${awayGoals}</span>
+        </div>
 
-  <span class="result-team__name">${item.home || ""}</span>
-</div>
-          <div class="result-score">
-            <span>${finalScore}</span>
-          </div>
-
- <div class="result-team result-team--away">
-  <span class="result-team__name">${item.away || ""}</span>
-
-  <img
-    class="result-team__logo"
-    src="assets/teams/${(item.awayShort || "").toLowerCase()}.png"
-    alt="${item.away || ""}"
-    onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
-  />
-
-  <span class="result-team__fallback away-dot">
-    ${item.awayShort || ""}
-  </span>
-</div>
+        <div class="result-team result-team--away">
+          <span class="result-team__name">${away}</span>
+          <img
+            class="result-team__logo"
+            src="${awayLogo}"
+            alt="${away}"
+            onerror="this.style.display='none';"
+          />
         </div>
 
         <div class="result-card__ai">
           <div>
             <span class="result-card__label">AI predicted</span>
-            <strong>${predictedScore}</strong>
+            <strong>Coming soon</strong>
           </div>
 
           <div class="result-card__confidence">
-            <span>${confidence}% confidence</span>
+            <span>Live data result</span>
             <div class="result-card__bar">
-              <span style="width:${confidence}%"></span>
+              <span style="width:72%"></span>
             </div>
           </div>
         </div>
 
         <div class="result-card__meta">
-          <span>${item.stadium || "Match analysis"}</span>
-          <span>Open details</span>
+          <span>${venue}</span>
+          <span>${new Date(item.fixture.date).toLocaleDateString()}</span>
         </div>
       `;
 
       container.appendChild(card);
     });
-
-    if (!finishedMatches.length) {
-      container.innerHTML = `
-        <div class="results-empty-state">
-          No finished matches yet.
-        </div>
-      `;
-    }
 
     initGlowHover();
   } catch (error) {
