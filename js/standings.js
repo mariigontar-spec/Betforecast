@@ -1,250 +1,157 @@
+const BF_LEAGUES = [
+  { id: "39", name: "Premier League", country: "England" },
+  { id: "140", name: "La Liga", country: "Spain" },
+  { id: "135", name: "Serie A", country: "Italy" }
+];
+
+const BF_SEASON = 2025;
+
 async function loadStandingsPage() {
   const leagueFilterList = document.getElementById("league-filter-list");
   const tableWrap = document.getElementById("standings-table-wrap");
-  const lastWrap = document.getElementById("standings-last-wrap");
-  const upcomingWrap = document.getElementById("standings-upcoming-wrap");
 
   const leagueCountry = document.getElementById("league-country");
   const leagueName = document.getElementById("league-name");
   const leagueSeason = document.getElementById("league-season");
   const leagueInsightTitle = document.getElementById("league-insight-title");
   const leagueInsightText = document.getElementById("league-insight-text");
-  const panelTitle = document.getElementById("standings-panel-title");
 
-  if (!tableWrap) {
-    console.error("standings-table-wrap not found");
-    return;
+  if (!tableWrap) return;
+
+  const params = new URLSearchParams(window.location.search);
+  let currentLeagueId = params.get("league") || "39";
+
+  function getLeague() {
+    return BF_LEAGUES.find((league) => league.id === currentLeagueId) || BF_LEAGUES[0];
   }
 
-  try {
-    const response = await fetch("data/standings.json", { cache: "no-store" });
+  function formBadgeClass(value) {
+    if (value === "W") return "form-win";
+    if (value === "D") return "form-draw";
+    return "form-loss";
+  }
 
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
+  function zoneClass(rank) {
+    if (rank <= 4) return "zone-cl";
+    if (rank <= 6) return "zone-el";
+    if (rank >= 18) return "zone-rel";
+    return "zone-safe";
+  }
 
-    const data = await response.json();
+  function renderLeagueFilters() {
+    if (!leagueFilterList) return;
 
-    if (!data?.leagues?.length) {
-      throw new Error("standings.json is empty or invalid");
-    }
+    leagueFilterList.innerHTML = "";
 
-    const params = new URLSearchParams(window.location.search);
-    let currentLeagueId = params.get("league") || data.defaultLeague || data.leagues[0].id;
-    let currentView = "table";
+    BF_LEAGUES.forEach((league) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = `league-filter-btn ${league.id === currentLeagueId ? "active" : ""}`;
+      btn.textContent = league.name;
 
-    function getLeague() {
-      return data.leagues.find((league) => league.id === currentLeagueId) || data.leagues[0];
-    }
+      btn.addEventListener("click", () => {
+        currentLeagueId = league.id;
 
-    function zoneClass(zone) {
-      if (zone === "cl") return "zone-cl";
-      if (zone === "el") return "zone-el";
-      if (zone === "rel") return "zone-rel";
-      return "zone-safe";
-    }
+        const url = new URL(window.location.href);
+        url.searchParams.set("league", currentLeagueId);
+        window.history.replaceState({}, "", url);
 
-    function formBadgeClass(value) {
-      if (value === "W") return "form-win";
-      if (value === "D") return "form-draw";
-      return "form-loss";
-    }
-
-    function createMiniCircle(label, extraClass = "") {
-      return `<span class="league-mini-circle ${extraClass}">${label}</span>`;
-    }
-
-    function getLeagueCircle(leagueNameText) {
-      const name = (leagueNameText || "").toLowerCase();
-
-      if (name.includes("premier")) return createMiniCircle("PL");
-      if (name.includes("liga")) return createMiniCircle("LL");
-      if (name.includes("serie")) return createMiniCircle("SA");
-      if (name.includes("bundes")) return createMiniCircle("BL");
-      if (name.includes("champions")) return createMiniCircle("CL");
-      if (name.includes("ligue")) return createMiniCircle("L1");
-
-      return createMiniCircle("LG");
-    }
-
-    function getTeamCircle(teamName) {
-      const words = (teamName || "").trim().split(" ").filter(Boolean);
-
-      const short = words
-        .slice(0, 2)
-        .map((word) => word[0])
-        .join("")
-        .toUpperCase()
-        .slice(0, 2);
-
-      return createMiniCircle(short || "TM", "team-circle");
-    }
-
-    function renderLeagueFilters() {
-      if (!leagueFilterList) return;
-
-      leagueFilterList.innerHTML = "";
-
-      data.leagues.forEach((league) => {
-        const btn = document.createElement("button");
-        btn.type = "button";
-        btn.className = `league-filter-btn ${league.id === currentLeagueId ? "active" : ""}`;
-        btn.textContent = league.name;
-
-        btn.addEventListener("click", () => {
-          currentLeagueId = league.id;
-
-          const url = new URL(window.location.href);
-          url.searchParams.set("league", currentLeagueId);
-          window.history.replaceState({}, "", url);
-
-          renderAll();
-        });
-
-        leagueFilterList.appendChild(btn);
+        renderAll();
       });
-    }
 
-    function renderTable(league) {
-      tableWrap.innerHTML = `
-        <div class="standings-table-head">
-          <div class="standings-col-pos">#</div>
-          <div class="standings-col-team">Team</div>
-          <div class="standings-col-stat">P</div>
-          <div class="standings-col-stat">W</div>
-          <div class="standings-col-stat">D</div>
-          <div class="standings-col-stat">L</div>
-          <div class="standings-col-goals">GF-GA</div>
-          <div class="standings-col-points">Pts</div>
-          <div class="standings-col-form">Form</div>
+      leagueFilterList.appendChild(btn);
+    });
+  }
+
+  function renderTable(rows) {
+    tableWrap.innerHTML = `
+      <div class="standings-table-head">
+        <div class="standings-col-pos">#</div>
+        <div class="standings-col-team">Team</div>
+        <div class="standings-col-stat">P</div>
+        <div class="standings-col-stat">W</div>
+        <div class="standings-col-stat">D</div>
+        <div class="standings-col-stat">L</div>
+        <div class="standings-col-goals">GF-GA</div>
+        <div class="standings-col-points">Pts</div>
+        <div class="standings-col-form">Form</div>
+      </div>
+    `;
+
+    rows.forEach((row) => {
+      const stats = row.all || {};
+      const team = row.team || {};
+      const rank = row.rank || 0;
+      const form = row.form ? row.form.split("").slice(-5) : [];
+
+      const item = document.createElement("div");
+      item.className = `standings-row ${zoneClass(rank)}`;
+
+      item.innerHTML = `
+        <div class="standings-cell standings-pos">${rank}</div>
+
+        <div class="standings-cell standings-team">
+          <span class="standings-zone-line"></span>
+          <img src="${team.logo}" alt="${team.name}" class="standings-team-logo">
+          <span class="standings-team-name">${team.name}</span>
+        </div>
+
+        <div class="standings-cell">${stats.played ?? 0}</div>
+        <div class="standings-cell">${stats.win ?? 0}</div>
+        <div class="standings-cell">${stats.draw ?? 0}</div>
+        <div class="standings-cell">${stats.lose ?? 0}</div>
+        <div class="standings-cell">${stats.goals?.for ?? 0}-${stats.goals?.against ?? 0}</div>
+        <div class="standings-cell standings-points">${row.points ?? 0}</div>
+
+        <div class="standings-cell standings-form">
+          ${form.map((value) => `<span class="${formBadgeClass(value)}">${value}</span>`).join("")}
         </div>
       `;
 
-      league.table.forEach((row) => {
-        const item = document.createElement("div");
-        item.className = `standings-row ${zoneClass(row.zone)}`;
+      tableWrap.appendChild(item);
+    });
+  }
 
-        item.innerHTML = `
-          <div class="standings-cell standings-pos">${row.pos}</div>
+  async function renderAll() {
+    const league = getLeague();
 
-          <div class="standings-cell standings-team">
-            <span class="standings-zone-line"></span>
-            ${getTeamCircle(row.team)}
-            <span class="standings-team-name">${row.team}</span>
-          </div>
+    if (leagueCountry) leagueCountry.textContent = league.country;
+    if (leagueName) leagueName.textContent = league.name;
+    if (leagueSeason) leagueSeason.textContent = BF_SEASON;
+    if (leagueInsightTitle) leagueInsightTitle.textContent = "Live league table";
+    if (leagueInsightText) leagueInsightText.textContent = "Standings are loaded directly from API-Football.";
 
-          <div class="standings-cell">${row.played}</div>
-          <div class="standings-cell">${row.wins}</div>
-          <div class="standings-cell">${row.draws}</div>
-          <div class="standings-cell">${row.losses}</div>
-          <div class="standings-cell">${row.gf}-${row.ga}</div>
-          <div class="standings-cell standings-points">${row.points}</div>
+    renderLeagueFilters();
 
-          <div class="standings-cell standings-form">
-            ${Array.isArray(row.form) ? row.form.map((value) => `<span class="${formBadgeClass(value)}">${value}</span>`).join("") : ""}
-          </div>
-        `;
+    tableWrap.innerHTML = `<div class="standings-empty">Loading ${league.name}...</div>`;
 
-        tableWrap.appendChild(item);
-      });
-    }
+    try {
+      const response = await fetch(
+        `${BF_API.baseUrl}/standings?league=${league.id}&season=${BF_SEASON}`,
+        {
+          method: "GET",
+          headers: {
+            "x-apisports-key": BF_API.key
+          }
+        }
+      );
 
-    function renderAltMatches(target, items, emptyText) {
-      if (!target) return;
+      const data = await response.json();
+      const rows = data.response?.[0]?.league?.standings?.[0] || [];
 
-      target.innerHTML = "";
-
-      if (!Array.isArray(items) || items.length === 0) {
-        target.innerHTML = `<div class="standings-empty">${emptyText}</div>`;
+      if (!rows.length) {
+        tableWrap.innerHTML = `<div class="standings-empty">No standings found for ${league.name}.</div>`;
         return;
       }
 
-      items.forEach((item) => {
-        const row = document.createElement("div");
-        row.className = "standings-match-row glow-hover";
-
-        row.innerHTML = `
-          <div class="standings-match-time">${item.time || ""}</div>
-          <div class="standings-match-name">
-            ${getLeagueCircle(item.league || "")}
-            <span>${item.match || ""}</span>
-          </div>
-          <div class="standings-match-status">${item.score || item.status || ""}</div>
-        `;
-
-        target.appendChild(row);
-      });
+      renderTable(rows);
+    } catch (error) {
+      console.error(error);
+      tableWrap.innerHTML = `<div class="standings-empty">Could not load standings.</div>`;
     }
-
-    function updateViewVisibility() {
-      if (tableWrap) {
-        tableWrap.classList.toggle("hidden-view", currentView !== "table");
-      }
-
-      if (lastWrap) {
-        lastWrap.classList.toggle("hidden-view", currentView !== "last");
-      }
-
-      if (upcomingWrap) {
-        upcomingWrap.classList.toggle("hidden-view", currentView !== "upcoming");
-      }
-
-      if (panelTitle) {
-        if (currentView === "table") panelTitle.textContent = "League Table";
-        if (currentView === "last") panelTitle.textContent = "Recent Matches";
-        if (currentView === "upcoming") panelTitle.textContent = "Upcoming Matches";
-      }
-
-      document.querySelectorAll(".standings-view-tab").forEach((btn) => {
-        btn.classList.toggle("active", btn.dataset.view === currentView);
-      });
-    }
-
-    function initGlowHover() {
-      document.querySelectorAll(".glow-hover").forEach((el) => {
-        el.addEventListener("mousemove", (e) => {
-          const rect = el.getBoundingClientRect();
-          el.style.setProperty("--x", `${e.clientX - rect.left}px`);
-          el.style.setProperty("--y", `${e.clientY - rect.top}px`);
-        });
-      });
-    }
-
-    function renderAll() {
-      const league = getLeague();
-      if (!league) return;
-
-      if (leagueCountry) leagueCountry.textContent = league.country || "";
-      if (leagueName) leagueName.textContent = league.name || "";
-      if (leagueSeason) leagueSeason.textContent = league.season || "";
-      if (leagueInsightTitle) leagueInsightTitle.textContent = league.insightTitle || "";
-      if (leagueInsightText) leagueInsightText.textContent = league.insightText || "";
-
-      renderLeagueFilters();
-      renderTable(league);
-      renderAltMatches(lastWrap, league.lastMatches, "No recent matches");
-      renderAltMatches(upcomingWrap, league.upcomingMatches, "No upcoming matches");
-      updateViewVisibility();
-      initGlowHover();
-    }
-
-    document.querySelectorAll(".standings-view-tab").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        currentView = btn.dataset.view;
-        updateViewVisibility();
-      });
-    });
-
-    renderAll();
-  } catch (error) {
-    console.error("Failed to load standings page:", error);
-
-    tableWrap.innerHTML = `
-      <div class="standings-empty">
-        Failed to load standings data. Check data/standings.json and browser console.
-      </div>
-    `;
   }
+
+  renderAll();
 }
 
 document.addEventListener("DOMContentLoaded", loadStandingsPage);
