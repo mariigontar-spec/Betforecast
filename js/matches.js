@@ -2,7 +2,6 @@ async function loadHomeMatches() {
   const container = document.getElementById("matches-container");
 
   if (!container) return;
-
   container.innerHTML = `
     <div class="results-empty-state">
       Loading live matches...
