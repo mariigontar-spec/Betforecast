@@ -12,14 +12,13 @@ async function loadResultsPage() {
   `;
 
   try {
-const today = new Date();
-const todayDate = today.toISOString().split("T")[0];
-
 const yesterday = new Date();
 yesterday.setDate(yesterday.getDate() - 1);
 
+const resultsDate = yesterday.toISOString().split("T")[0];
+
 const response = await fetch(
-  `${BF_API.baseUrl}/fixtures?date=${date}`,
+  `${BF_API.baseUrl}/fixtures?date=${resultsDate}`,
   {
     method: "GET",
     headers: {
