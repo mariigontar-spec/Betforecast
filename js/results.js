@@ -12,8 +12,6 @@ async function loadResultsPage() {
   `;
 
   try {
-const yesterday = new Date();
-yesterday.setDate(yesterday.getDate() - 1);
 
 const resultsDate = yesterday.toISOString().split("T")[0];
 
