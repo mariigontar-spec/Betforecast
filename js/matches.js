@@ -9,7 +9,7 @@ async function loadHomeMatches() {
   `;
 
   try {
-    const response = await fetch(`${BF_API.baseUrl}/fixtures?next=8`, {
+    const response = await fetch(`${BF_API.baseUrl}/fixtures?next=20`, {
       method: "GET",
       headers: {
         "x-apisports-key": BF_API.key
