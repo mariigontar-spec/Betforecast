@@ -50,7 +50,11 @@ function renderResults(container, matches) {
 
     const card = document.createElement("article");
     card.className = "match-card result-card glow-hover";
-
+const gameId = apiMode ? item.fixture?.id : `${home}-${away}`.toLowerCase().replace(/\s+/g, "-");
+card.onclick = () => {
+  window.location.href = `match.html?game=${gameId}`;
+};
+card.style.cursor = "pointer";
     card.innerHTML = `
       <div class="result-card__top">
         <span class="result-card__league">
