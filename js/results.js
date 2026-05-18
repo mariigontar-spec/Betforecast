@@ -64,30 +64,19 @@ card.style.cursor = "pointer";
         <span class="result-card__status">${status}</span>
       </div>
 
-      <div class="result-team">
-        ${homeLogo ? `<img class="result-team__logo" src="${homeLogo}" alt="${home}">` : ""}
-        <span class="result-team__name">${home}</span>
-      </div>
-
-      <div class="result-score">
-        <span>${homeGoals} - ${awayGoals}</span>
-      </div>
-
-      <div class="result-team result-team--away">
-        <span class="result-team__name">${away}</span>
-        ${awayLogo ? `<img class="result-team__logo" src="${awayLogo}" alt="${away}">` : ""}
-      </div>
-<div class="result-card__ai">
-  <div>
-    <span class="result-card__label">Match status</span>
-    <strong>${status}</strong>
+    <div class="result-card__scoreline">
+  <div class="result-card__team">
+    ${home}
   </div>
 
-  <div class="result-card__confidence">
-    <span>Final result</span>
+  <div class="result-card__score">
+    ${homeGoals} - ${awayGoals}
+  </div>
 
-    <div class="result-card__bar">
-      <span style="width:72%"></span>
+  <div class="result-card__team">
+    ${away}
+  </div>
+</div>
     </div>
   </div>
 </div>
