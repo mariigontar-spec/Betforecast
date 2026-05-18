@@ -18,7 +18,7 @@ yesterday.setDate(yesterday.getDate() - 1);
 const resultsDate = yesterday.toISOString().split("T")[0];
 
 const response = await fetch(
-  `${BF_API.baseUrl}/fixtures?date=${resultsDate}`,
+  `${BF_API.baseUrl}/fixtures?last=20`,
   {
     method: "GET",
     headers: {
