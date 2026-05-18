@@ -55,37 +55,32 @@ card.onclick = () => {
   window.location.href = `match.html?game=${gameId}`;
 };
 card.style.cursor = "pointer";
-    card.innerHTML = `
-      <div class="result-card__top">
-        <span class="result-card__league">
-          <span class="league-dot"></span>
-          <span>${league}</span>
-        </span>
-        <span class="result-card__status">${status}</span>
-      </div>
-
-    <div class="result-card__scoreline">
-  <div class="result-card__team">
-    ${home}
+   card.innerHTML = `
+  <div class="result-card__top">
+    <span class="result-card__league">
+      <span class="league-dot"></span>
+      <span>${league}</span>
+    </span>
+    <span class="result-card__status">${status}</span>
   </div>
 
-  <div class="result-card__score">
-    ${homeGoals} - ${awayGoals}
+  <div class="result-team">
+    <span class="result-team__name">${home}</span>
   </div>
 
-  <div class="result-card__team">
-    ${away}
+  <div class="result-score">
+    <span>${homeGoals} - ${awayGoals}</span>
   </div>
-</div>
-    </div>
-  </div>
-</div>
-      <div class="result-card__meta">
-        <span>${venue}</span>
-        <span>${matchDate}</span>
-      </div>
-    `;
 
+  <div class="result-team result-team--away">
+    <span class="result-team__name">${away}</span>
+  </div>
+
+  <div class="result-card__meta">
+    <span>${venue}</span>
+    <span>${matchDate}</span>
+  </div>
+`;
     container.appendChild(card);
   });
 
