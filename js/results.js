@@ -73,7 +73,20 @@ function renderResults(container, matches) {
         <span class="result-team__name">${away}</span>
         ${awayLogo ? `<img class="result-team__logo" src="${awayLogo}" alt="${away}">` : ""}
       </div>
+<div class="result-card__ai">
+  <div>
+    <span class="result-card__label">Match status</span>
+    <strong>${status}</strong>
+  </div>
 
+  <div class="result-card__confidence">
+    <span>Final result</span>
+
+    <div class="result-card__bar">
+      <span style="width:72%"></span>
+    </div>
+  </div>
+</div>
       <div class="result-card__meta">
         <span>${venue}</span>
         <span>${matchDate}</span>
