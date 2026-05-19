@@ -10039,3 +10039,56 @@ body.theme-glass .league-filter-btn:not(.active) {
     0 0 22px rgba(109,255,120,.28),
     inset 0 1px 0 rgba(255,255,255,.35) !important;
 }
+.result-card {
+  display: grid !important;
+  grid-template-columns: 1.1fr 1.4fr 0.7fr 1.4fr 1fr !important;
+  align-items: center !important;
+  gap: 18px !important;
+  min-height: 96px !important;
+  padding: 22px 24px !important;
+}
+
+.result-card__top {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.result-card__league {
+  white-space: nowrap !important;
+}
+
+.result-team,
+.result-team--away {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.result-team__name {
+  white-space: nowrap !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+}
+
+.result-score {
+  text-align: center !important;
+  font-size: 22px !important;
+  font-weight: 900 !important;
+  white-space: nowrap !important;
+}
+
+.result-card__meta {
+  display: flex !important;
+  justify-content: flex-end !important;
+  gap: 14px !important;
+  white-space: nowrap !important;
+  border-top: 0 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.result-card__meta span {
+  white-space: nowrap !important;
+  font-size: 13px !important;
+}
