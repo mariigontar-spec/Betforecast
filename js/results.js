@@ -56,27 +56,18 @@ card.onclick = () => {
 };
 card.style.cursor = "pointer";
    card.innerHTML = `
-  <div class="result-card__top">
-    <span class="result-card__league">
-      <span class="league-dot"></span>
-      <span>${league}</span>
-    </span>
-    <span class="result-card__status">${status}</span>
+  <div class="bf-result-top">
+    <span>${league}</span>
+    <b>${status}</b>
   </div>
 
-  <div class="result-team">
-    <span class="result-team__name">${home}</span>
+  <div class="bf-result-main">
+    <strong>${home}</strong>
+    <div class="bf-result-score">${homeGoals} - ${awayGoals}</div>
+    <strong>${away}</strong>
   </div>
 
-  <div class="result-score">
-    <span>${homeGoals} - ${awayGoals}</span>
-  </div>
-
-  <div class="result-team result-team--away">
-    <span class="result-team__name">${away}</span>
-  </div>
-
-  <div class="result-card__meta">
+  <div class="bf-result-bottom">
     <span>${venue}</span>
     <span>${matchDate}</span>
   </div>
