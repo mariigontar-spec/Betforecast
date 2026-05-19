@@ -498,50 +498,57 @@ document.addEventListener("DOMContentLoaded", function () {
   })();
 </script>
 <!-- Adhit Media Ad Server / Popup -->
-
 <script data-cfasync="false">
 (function(w,a){
   w[a]=w[a]||{};
   w[a].queue=w[a].queue||[];
 
   w[a].queue.push(function () {
-
-    _ASO.PuOptions = {
-      idzone: 161907
-    };
-
+    _ASO.PuOptions = { idzone: 161907 };
     _ASO.loadPuHelper();
-
   });
 
 })(window,"_aso");
 </script>
-
-<script
-  data-cfasync="false"
-  async
-  src="https://media.getads.online/js/code.min.js">
-</script>
-
 <!-- /Adhit Media Ad Server -->
-  <!-- Adhit Media Ad Server / Push notification -->
+
+
+<!-- Adhit Media Ad Server / Push notification -->
 <script data-cfasync="false">
 (function(w,a){
   w[a]=w[a]||{};
   w[a].queue=w[a].queue||[];
 
   w[a].queue.push(function () {
-    _ASO.PushOptions = {
-      idzone: 161912
-    };
-
+    _ASO.PushOptions = { idzone: 161912 };
     _ASO.loadPushHelper();
   });
 
 })(window,"_aso");
 </script>
 <!-- /Adhit Media Ad Server -->
-  <script src="js/matches.js"></script>
+
+
+<script src="js/matches.js"></script>
+
+
+<!-- Adhit Media Ad Server / In-Page notification -->
+<script data-cfasync="false">
+(function(w,a){
+  w[a]=w[a]||{};
+  w[a].queue=w[a].queue||[];
+
+  w[a].queue.push(function () {
+    _ASO.InpOptions = { idzone: 161915 };
+    _ASO.loadInpHelper();
+  });
+
+})(window,"_aso");
+</script>
+<!-- /Adhit Media Ad Server -->
+
+
+<script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
 
 </body>
 </html>
