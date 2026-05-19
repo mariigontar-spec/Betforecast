@@ -10296,14 +10296,3 @@ body.theme-glass .league-filter-btn:not(.active) {
   display:block;
   width:100%;
 }
-
-/* уменьшаем внутренний масштаб widget */
-.standings-table-wrap .widget-box{
-  zoom:.78;
-  transform-origin:top left;
-}
-
-/* возвращаем нормальную ширину после zoom */
-.standings-table-wrap .widget-box > *{
-  width:128%;
-}
