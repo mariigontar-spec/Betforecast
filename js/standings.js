@@ -127,15 +127,14 @@ async function loadStandingsPage() {
 
     try {
       const response = await fetch(
-        `${BF_API.baseUrl}/standings?league=${league.id}&season=${BF_SEASON}`,
-        {
-          method: "GET",
-          headers: {
-            "x-apisports-key": BF_API.key
-          }
-        }
-      );
-
+  `${BF_API.baseUrl}/standings?league=39&season=2025`,
+  {
+    method: "GET",
+    headers: {
+      "x-apisports-key": BF_API.key
+    }
+  }
+);
       const data = await response.json();
       const rows =
   data.response?.[0]?.league?.standings?.flat?.() ||
