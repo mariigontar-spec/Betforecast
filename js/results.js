@@ -49,25 +49,25 @@ function renderResults(container, matches) {
       : item.date;
 
     const card = document.createElement("article");
-   card.className = "bf-result-card glow-hover";
+  card.className = "bf-clean-result-card";
 const gameId = apiMode ? item.fixture?.id : `${home}-${away}`.toLowerCase().replace(/\s+/g, "-");
 card.onclick = () => {
   window.location.href = `match.html?game=${gameId}`;
 };
 card.style.cursor = "pointer";
    card.innerHTML = `
-  <div class="bf-result-top">
+  <div class="bf-clean-result-top">
     <span>${league}</span>
     <b>${status}</b>
   </div>
 
-  <div class="bf-result-main">
-    <strong>${home}</strong>
-    <div class="bf-result-score">${homeGoals} - ${awayGoals}</div>
-    <strong>${away}</strong>
+  <div class="bf-clean-result-score">
+    <span>${home}</span>
+    <strong>${homeGoals} - ${awayGoals}</strong>
+    <span>${away}</span>
   </div>
 
-  <div class="bf-result-bottom">
+  <div class="bf-clean-result-meta">
     <span>${venue}</span>
     <span>${matchDate}</span>
   </div>
