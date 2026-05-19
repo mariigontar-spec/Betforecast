@@ -49,7 +49,7 @@ function renderResults(container, matches) {
       : item.date;
 
     const card = document.createElement("article");
-    card.className = "match-card result-card glow-hover";
+   card.className = "bf-result-card glow-hover";
 const gameId = apiMode ? item.fixture?.id : `${home}-${away}`.toLowerCase().replace(/\s+/g, "-");
 card.onclick = () => {
   window.location.href = `match.html?game=${gameId}`;
