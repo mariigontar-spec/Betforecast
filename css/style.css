@@ -10283,3 +10283,27 @@ body.theme-glass .league-filter-btn:not(.active) {
   backdrop-filter:blur(18px);
   padding:12px;
 }
+/* API-Sports standings visual fix */
+.standings-table-wrap .widget-box{
+  width:100%;
+  max-width:100%;
+  overflow-x:auto;
+  padding:0;
+  border-radius:24px;
+}
+
+.standings-table-wrap api-sports-widget{
+  display:block;
+  width:100%;
+}
+
+/* уменьшаем внутренний масштаб widget */
+.standings-table-wrap .widget-box{
+  zoom:.78;
+  transform-origin:top left;
+}
+
+/* возвращаем нормальную ширину после zoom */
+.standings-table-wrap .widget-box > *{
+  width:128%;
+}
