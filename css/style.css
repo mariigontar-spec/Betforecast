@@ -10273,3 +10273,13 @@ body.theme-glass .league-filter-btn:not(.active) {
     grid-template-columns: 1fr !important;
   }
 }
+.widget-box{
+  width:100%;
+  margin-bottom:24px;
+  border-radius:24px;
+  overflow:hidden;
+  background:rgba(18,18,18,.72);
+  border:1px solid rgba(255,255,255,.06);
+  backdrop-filter:blur(18px);
+  padding:12px;
+}
