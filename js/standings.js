@@ -136,10 +136,8 @@ async function loadStandingsPage() {
   }
 );
       const data = await response.json();
-      const rows =
-  data.response?.[0]?.league?.standings?.flat?.() ||
-  data.response?.[0]?.league?.standings?.[0] ||
-  [];
+  const rows =
+  data.response?.[0]?.league?.standings?.[0] || [];
       if (!rows.length) {
         tableWrap.innerHTML = `<div class="standings-empty">No standings found for ${league.name}.</div>`;
         return;
