@@ -10209,3 +10209,67 @@ body.theme-glass .league-filter-btn:not(.active) {
     grid-template-columns: 1fr;
   }
 }
+#results-page-container,
+#results-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(260px, 1fr)) !important;
+  gap: 18px !important;
+}
+
+.bf-clean-result-card {
+  min-height: 210px !important;
+  padding: 22px !important;
+  border-radius: 22px !important;
+  background: rgba(18, 38, 52, 0.9) !important;
+  border: 1px solid rgba(76, 255, 176, 0.14) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+.bf-clean-result-top,
+.bf-clean-result-meta {
+  display: flex !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  font-size: 13px !important;
+  color: rgba(244, 247, 251, 0.72) !important;
+}
+
+.bf-clean-result-top b {
+  padding: 6px 10px !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,0.08) !important;
+  color: #f4f7fb !important;
+}
+
+.bf-clean-result-score {
+  display: grid !important;
+  grid-template-columns: 1fr auto 1fr !important;
+  align-items: center !important;
+  gap: 14px !important;
+}
+
+.bf-clean-result-score span {
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: #f4f7fb !important;
+}
+
+.bf-clean-result-score span:last-child {
+  text-align: right !important;
+}
+
+.bf-clean-result-score strong {
+  font-size: 34px !important;
+  font-weight: 900 !important;
+  color: #fff !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 900px) {
+  #results-page-container,
+  #results-container {
+    grid-template-columns: 1fr !important;
+  }
+}
