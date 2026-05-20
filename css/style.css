@@ -10296,3 +10296,55 @@ body.theme-glass .league-filter-btn:not(.active) {
   display:block;
   width:100%;
 }
+/* Football-data.org standings table */
+.bf-fd-table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0 10px;
+}
+
+.bf-fd-table th{
+  text-align:left;
+  font-size:12px;
+  opacity:.65;
+  padding:0 12px 8px;
+}
+
+.bf-fd-table td{
+  padding:14px 12px;
+  background:rgba(255,255,255,.045);
+  border-top:1px solid rgba(255,255,255,.08);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.bf-fd-table td:first-child{
+  border-radius:16px 0 0 16px;
+  border-left:1px solid rgba(255,255,255,.08);
+}
+
+.bf-fd-table td:last-child{
+  border-radius:0 16px 16px 0;
+  border-right:1px solid rgba(255,255,255,.08);
+}
+
+.bf-fd-team{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-width:220px;
+  font-weight:700;
+}
+
+.bf-fd-team img{
+  width:28px;
+  height:28px;
+  object-fit:contain;
+}
+
+.standings-loading,
+.standings-empty{
+  padding:24px;
+  border-radius:20px;
+  background:rgba(255,255,255,.045);
+  color:inherit;
+}
