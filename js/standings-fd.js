@@ -29,11 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (error) {
       console.error(error);
 
-      tableWrap.innerHTML = `
-        <div class="standings-empty">
-          Could not load standings right now.
-        </div>
-      `;
+     console.error(error);
+
+tableWrap.innerHTML = `
+  <div class="standings-empty">
+    Could not load standings right now.<br>
+    Error: ${error.message}
+  </div>
+`;
     }
   }
 
