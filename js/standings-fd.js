@@ -12,11 +12,20 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
 
     try {
-      const response = await fetch(`${BASE_URL}/competitions/PL/standings`, {
-        headers: {
-          "X-Auth-Token": API_KEY
-        }
-      });
+     const response = await fetch(`${BASE_URL}/competitions/PL/standings`, {
+  method: "GET",
+  headers: {
+    "X-Auth-Token": API_KEY
+  }
+});
+
+const raw = await response.text();
+
+if (!response.ok) {
+  throw new Error(`Status ${response.status}: ${raw}`);
+}
+
+const data = JSON.parse(raw);
 
       if (!response.ok) {
         throw new Error(`Football-data error: ${response.status}`);
