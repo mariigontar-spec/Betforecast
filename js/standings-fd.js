@@ -32,7 +32,7 @@ const data = JSON.parse(raw);
         throw new Error(`Football-data error: ${response.status}`);
       }
 
-      const data = await response.json();
+
       const table = data.standings?.[0]?.table || [];
 
       renderTable(table);
