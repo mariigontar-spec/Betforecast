@@ -11,20 +11,29 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="standings-loading">Loading Premier League table...</div>
     `;
 
-   const response = await fetch(`${BASE_URL}/competitions/PL/standings`, {
-  method: "GET",
-  headers: {
-    "X-Auth-Token": API_KEY
-  }
-});
+    try {
+      const response = await fetch(`${BASE_URL}/competitions/PL/standings`, {
+        headers: {
+          "X-Auth-Token": API_KEY
+        }
+      });
 
-const raw = await response.text();
+      if (!response.ok) {
+        throw new Error(`Football-data error: ${response.status}`);
+      }
 
-if (!response.ok) {
-  throw new Error(`Status ${response.status}: ${raw}`);
-}
+      const data = await response.json();
+      const table = data.standings?.[0]?.table || [];
 
-const data = JSON.parse(raw);
+      renderTable(table);
+    } catch (error) {
+      console.error(error);
+
+      tableWrap.innerHTML = `
+        <div class="standings-empty">
+          Could not load standings right now.
+        </div>
+      `;
     }
   }
 
