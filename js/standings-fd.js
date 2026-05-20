@@ -1,5 +1,7 @@
 alert("standings-fd.js loaded");
+
 document.addEventListener("DOMContentLoaded", function () {
+
   const tableWrap = document.getElementById("standings-table-wrap");
 
   if (!tableWrap) return;
@@ -8,60 +10,66 @@ document.addEventListener("DOMContentLoaded", function () {
   const BASE_URL = FD_API.baseUrl;
 
   async function loadStandings() {
+
     tableWrap.innerHTML = `
-      <div class="standings-loading">Loading Premier League table...</div>
+      <div class="standings-loading">
+        Loading standings...
+      </div>
     `;
 
     try {
-     const response = await fetch(`${BASE_URL}/competitions/PL/standings`, {
-  method: "GET",
-  headers: {
-    "X-Auth-Token": API_KEY
-  }
-});
 
-const raw = await response.text();
+      const response = await fetch(
+        `${BASE_URL}/competitions/PL/standings`,
+        {
+          method: "GET",
+          headers: {
+            "X-Auth-Token": API_KEY
+          }
+        }
+      );
 
-if (!response.ok) {
-  throw new Error(`Status ${response.status}: ${raw}`);
-}
-
-const data = JSON.parse(raw);
+      const raw = await response.text();
 
       if (!response.ok) {
-        throw new Error(`Football-data error: ${response.status}`);
+        throw new Error(`Status ${response.status}: ${raw}`);
       }
 
+      const standingsData = JSON.parse(raw);
 
-      const table = data.standings?.[0]?.table || [];
+      const table =
+        standingsData.standings?.[0]?.table || [];
 
       renderTable(table);
+
     } catch (error) {
+
       console.error(error);
 
-     console.error(error);
-
-tableWrap.innerHTML = `
-  <div class="standings-empty">
-    Could not load standings right now.<br>
-    Error: ${error.message}
-  </div>
-`;
+      tableWrap.innerHTML = `
+        <div class="standings-empty">
+          ${error.message}
+        </div>
+      `;
     }
   }
 
   function renderTable(table) {
+
     if (!table.length) {
+
       tableWrap.innerHTML = `
         <div class="standings-empty">
           No standings found.
         </div>
       `;
+
       return;
     }
 
     tableWrap.innerHTML = `
       <table class="bf-fd-table">
+
         <thead>
           <tr>
             <th>#</th>
@@ -72,36 +80,45 @@ tableWrap.innerHTML = `
             <th>L</th>
             <th>GF</th>
             <th>GA</th>
-            <th>GD</th>
             <th>Pts</th>
           </tr>
         </thead>
+
         <tbody>
-          ${table.map(function (row) {
-            const team = row.team || {};
+
+          ${table.map(function(row) {
 
             return `
               <tr>
+
                 <td>${row.position}</td>
+
                 <td class="bf-fd-team">
-                  <img src="${team.crest || ""}" alt="">
-                  <span>${team.name || "Team"}</span>
+                  <img src="${row.team.crest}" alt="">
+                  <span>${row.team.name}</span>
                 </td>
+
                 <td>${row.playedGames}</td>
                 <td>${row.won}</td>
                 <td>${row.draw}</td>
                 <td>${row.lost}</td>
                 <td>${row.goalsFor}</td>
                 <td>${row.goalsAgainst}</td>
-                <td>${row.goalDifference}</td>
-                <td><strong>${row.points}</strong></td>
+                <td>
+                  <strong>${row.points}</strong>
+                </td>
+
               </tr>
             `;
+
           }).join("")}
+
         </tbody>
+
       </table>
     `;
   }
 
   loadStandings();
+
 });
