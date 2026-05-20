@@ -3,3 +3,7 @@ const BF_API = {
   host: "v3.football.api-sports.io",
   baseUrl: "https://v3.football.api-sports.io"
 };
+const FD_API = {
+  key: "19bca927b9cc4bcaa099a6c0fa4722a2",
+  baseUrl: "https://api.football-data.org/v4"
+};
