@@ -1,3 +1,5 @@
+alert("standings-fd.js loaded");
+
 document.addEventListener("DOMContentLoaded", function () {
 
   const tableWrap = document.getElementById("standings-table-wrap");
