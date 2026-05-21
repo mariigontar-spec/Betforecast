@@ -1,4 +1,3 @@
-alert("standings-fd.js loaded");
 
 document.addEventListener("DOMContentLoaded", function () {
 
