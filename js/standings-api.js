@@ -9,7 +9,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function loadStandings() {
     const cached = getCache();
+function getRowClass(rank) {
 
+  if (rank <= 4) {
+    return "zone-cl";
+  }
+
+  if (rank <= 6) {
+    return "zone-el";
+  }
+
+  if (rank >= 18) {
+    return "zone-rel";
+  }
+
+  return "zone-safe";
+}
     if (cached) {
       renderTable(cached);
       return;
