@@ -10348,3 +10348,18 @@ body.theme-glass .league-filter-btn:not(.active) {
   background:rgba(255,255,255,.045);
   color:inherit;
 }
+.zone-cl {
+  border-left: 4px solid #22c55e;
+}
+
+.zone-el {
+  border-left: 4px solid #3b82f6;
+}
+
+.zone-rel {
+  border-left: 4px solid #ef4444;
+}
+
+.zone-safe {
+  border-left: 4px solid transparent;
+}
