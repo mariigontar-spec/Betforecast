@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tableWrap.innerHTML = `
       <table class="bf-fd-table">
         <thead>
-          <tr>
+          <tr class="${getRowClass(row.rank)}">
             <th>#</th>
             <th>Team</th>
             <th>P</th>
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <tbody>
           ${table.map(row => `
-            <tr>
+            <tr class="${getRowClass(row.rank)}">
               <td>${row.rank}</td>
 
               <td class="bf-fd-team">
