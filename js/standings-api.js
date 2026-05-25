@@ -1,22 +1,44 @@
-alert("standings-api loaded");
+async function loadStandings() {
 
-document.addEventListener("DOMContentLoaded", function () {
+  const cached = getCache();
 
-  const tableWrap =
-    document.getElementById("standings-table-wrap");
+  if (cached) {
+    renderTable(cached);
+    return;
+  }
 
-  if (!tableWrap) return;
+  tableWrap.innerHTML =
+    '<div class="standings-loading">Loading league table...</div>';
 
-  const LEAGUE_ID = 39;
-  const SEASON = 2024;
+  try {
 
-  const CACHE_KEY =
-    `bf_standings_${LEAGUE_ID}_${SEASON}`;
+    const response = await fetch(
+      `${BF_API.baseUrl}/standings?league=${LEAGUE_ID}&season=${SEASON}`,
+      {
+        headers: {
+          "x-apisports-key": BF_API.key
+        }
+      }
+    );
 
-  const CACHE_TIME =
-    6 * 60 * 60 * 1000;
-  async function loadStandings() {
-    const cached = getCache();
+    const data = await response.json();
+
+    const table =
+      data.response?.[0]?.league?.standings?.[0] || [];
+
+    saveCache(table);
+
+    renderTable(table);
+
+  } catch (error) {
+
+    console.error(error);
+
+    tableWrap.innerHTML =
+      '<div class="standings-empty">Could not load standings.</div>';
+  }
+}
+
 function getRowClass(rank) {
 
   if (rank <= 4) {
