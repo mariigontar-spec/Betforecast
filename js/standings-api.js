@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const tableWrap = document.getElementById("standings-table-wrap");
 const tabs = document.querySelectorAll(".standings-view-tab");
 const tableView = document.getElementById("standings-table-wrap");
 const lastView = document.getElementById("standings-last-wrap");
@@ -16,9 +17,6 @@ tabs.forEach(function (tab) {
     upcomingView.classList.toggle("hidden-view", view !== "upcoming");
   });
 });
-
-  const tableWrap = document.getElementById("standings-table-wrap");
-
   if (!tableWrap) {
     alert("ERROR: standings-table-wrap not found");
     return;
