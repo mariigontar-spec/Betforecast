@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ${table.map(function (row) {
             return `
               <tr>
-                <td class="zone-marker ${getRowClass(row.rank)}">
+                <td>${row.rank}</td>
                   ${row.rank}
                 </td>
 
