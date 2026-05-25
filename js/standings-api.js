@@ -1,14 +1,20 @@
 alert("standings-api loaded");
-<script src="js/standings-api.js?v=4000"></script>
+
 document.addEventListener("DOMContentLoaded", function () {
-  const tableWrap = document.getElementById("standings-table-wrap");
+
+  const tableWrap =
+    document.getElementById("standings-table-wrap");
+
   if (!tableWrap) return;
 
   const LEAGUE_ID = 39;
   const SEASON = 2024;
-  const CACHE_KEY = `bf_standings_${LEAGUE_ID}_${SEASON}`;
-  const CACHE_TIME = 6 * 60 * 60 * 1000; // 6 hours
 
+  const CACHE_KEY =
+    `bf_standings_${LEAGUE_ID}_${SEASON}`;
+
+  const CACHE_TIME =
+    6 * 60 * 60 * 1000;
   async function loadStandings() {
     const cached = getCache();
 function getRowClass(rank) {
