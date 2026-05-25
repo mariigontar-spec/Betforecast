@@ -135,7 +135,7 @@ if (view === "upcoming" && upcomingWrap && !upcomingWrap.dataset.loaded) {
           </tr>
         </thead>
 
-      <tbody>
+  <tbody>
   ${table.map(function (row) {
     return `
       <tr>
