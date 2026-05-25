@@ -1,169 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
+  alert("standings-api connected");
 
-  const tableWrap =
-    document.getElementById("standings-table-wrap");
+  const tableWrap = document.getElementById("standings-table-wrap");
 
-  if (!tableWrap) return;
-
-  const LEAGUE_ID = 39;
-  const SEASON = 2024;
-
-  const CACHE_KEY =
-    `bf_standings_${LEAGUE_ID}_${SEASON}`;
-
-  const CACHE_TIME =
-    6 * 60 * 60 * 1000;
-
-  async function loadStandings() {
-
-    const cached = getCache();
-
-    if (cached) {
-      renderTable(cached);
-      return;
-    }
-
-    tableWrap.innerHTML =
-      `<div class="standings-loading">Loading league table...</div>`;
-
-    try {
-
-      const response = await fetch(
-        `${BF_API.baseUrl}/standings?league=${LEAGUE_ID}&season=${SEASON}`,
-        {
-          headers: {
-            "x-apisports-key": BF_API.key
-          }
-        }
-      );
-
-      const data = await response.json();
-
-      const table =
-        data.response?.[0]?.league?.standings?.[0] || [];
-
-      saveCache(table);
-
-      renderTable(table);
-
-    } catch (error) {
-
-      console.error(error);
-
-      tableWrap.innerHTML =
-        `<div class="standings-empty">Could not load standings.</div>`;
-    }
+  if (!tableWrap) {
+    alert("ERROR: standings-table-wrap not found");
+    return;
   }
 
-  function getRowClass(rank) {
-
-    if (rank <= 4) {
-      return "zone-cl";
-    }
-
-    if (rank <= 6) {
-      return "zone-el";
-    }
-
-    if (rank >= 18) {
-      return "zone-rel";
-    }
-
-    return "zone-safe";
+  if (typeof BF_API === "undefined") {
+    alert("ERROR: BF_API not found");
+    return;
   }
 
-  function renderTable(table) {
-
-    tableWrap.innerHTML = `
-      <table class="bf-fd-table">
-
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Team</th>
-            <th>P</th>
-            <th>W</th>
-            <th>D</th>
-            <th>L</th>
-            <th>GF</th>
-            <th>GA</th>
-            <th>GD</th>
-            <th>Pts</th>
-          </tr>
-        </thead>
-
-        <tbody>
-
-          ${table.map(row => `
-
-            <tr class="${getRowClass(row.rank)}">
-
-              <td>${row.rank}</td>
-
-              <td class="bf-fd-team">
-                <img src="${row.team.logo}" alt="">
-                <span>${row.team.name}</span>
-              </td>
-
-              <td>${row.all.played}</td>
-              <td>${row.all.win}</td>
-              <td>${row.all.draw}</td>
-              <td>${row.all.lose}</td>
-              <td>${row.all.goals.for}</td>
-              <td>${row.all.goals.against}</td>
-              <td>${row.goalsDiff}</td>
-
-              <td>
-                <strong>${row.points}</strong>
-              </td>
-
-            </tr>
-
-          `).join("")}
-
-        </tbody>
-
-      </table>
-    `;
-  }
-
-  function saveCache(data) {
-
-    localStorage.setItem(
-      CACHE_KEY,
-      JSON.stringify({
-        time: Date.now(),
-        data
-      })
-    );
-  }
-
-  function getCache() {
-
-    const cached =
-      localStorage.getItem(CACHE_KEY);
-
-    if (!cached) return null;
-
-    try {
-
-      const parsed = JSON.parse(cached);
-
-      if (
-        Date.now() - parsed.time >
-        CACHE_TIME
-      ) {
-        return null;
-      }
-
-      return parsed.data;
-
-    } catch {
-
-      return null;
-    }
-  }
-
-  loadStandings();
-
+  tableWrap.innerHTML = `
+    <div class="standings-loading">
+      JS works. Container found. API config found.
+    </div>
+  `;
 });
