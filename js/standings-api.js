@@ -1,3 +1,5 @@
+alert("standings-api loaded");
+<script src="js/standings-api.js?v=4000"></script>
 document.addEventListener("DOMContentLoaded", function () {
   const tableWrap = document.getElementById("standings-table-wrap");
   if (!tableWrap) return;
