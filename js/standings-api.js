@@ -202,6 +202,172 @@ if (view === "upcoming" && upcomingWrap && !upcomingWrap.dataset.loaded) {
       return null;
     }
   }
+async function loadMatches(type) {
+  const target = type === "last" ? lastWrap : upcomingWrap;
 
+  if (!target) return;
+
+  const today = new Date();
+  const from = new Date(today);
+  const to = new Date(today);
+
+  if (type === "last") {
+    from.setDate(today.getDate() - 14);
+    to.setDate(today.getDate() - 1);
+  } else {
+    from.setDate(today.getDate());
+    to.setDate(today.getDate() + 14);
+  }
+
+  const fromDate = formatDate(from);
+  const toDate = formatDate(to);
+
+  const cacheKey = `bf_matches_${type}_${LEAGUE_ID}_${SEASON}_${fromDate}_${toDate}`;
+  const cached = getGenericCache(cacheKey);
+
+  if (cached) {
+    renderMatches(target, cached, type);
+    target.dataset.loaded = "true";
+    return;
+  }
+
+  target.innerHTML = `
+    <div class="standings-loading">
+      Loading ${type === "last" ? "recent" : "upcoming"} matches...
+    </div>
+  `;
+
+  try {
+    const response = await fetch(
+      `${BF_API.baseUrl}/fixtures?league=${LEAGUE_ID}&season=${SEASON}&from=${fromDate}&to=${toDate}`,
+      {
+        method: "GET",
+        headers: {
+          "x-apisports-key": BF_API.key
+        }
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(`API status ${response.status}`);
+    }
+
+    if (data.errors && Object.keys(data.errors).length > 0) {
+      throw new Error(JSON.stringify(data.errors));
+    }
+
+    let matches = data.response || [];
+
+    if (type === "last") {
+      matches = matches
+        .filter(match => ["FT", "AET", "PEN"].includes(match.fixture.status.short))
+        .slice(-8)
+        .reverse();
+    } else {
+      matches = matches
+        .filter(match => ["NS", "TBD"].includes(match.fixture.status.short))
+        .slice(0, 8);
+    }
+
+    saveGenericCache(cacheKey, matches);
+    renderMatches(target, matches, type);
+    target.dataset.loaded = "true";
+
+  } catch (error) {
+    console.error(error);
+
+    target.innerHTML = `
+      <div class="standings-empty">
+        Could not load matches right now.
+      </div>
+    `;
+  }
+}
+
+function renderMatches(target, matches, type) {
+  if (!matches.length) {
+    target.innerHTML = `
+      <div class="standings-empty">
+        No ${type === "last" ? "recent" : "upcoming"} matches found.
+      </div>
+    `;
+    return;
+  }
+
+  target.innerHTML = `
+    <div class="bf-match-list">
+      ${matches.map(match => {
+        const home = match.teams.home;
+        const away = match.teams.away;
+        const goals = match.goals;
+        const date = new Date(match.fixture.date);
+
+        const score =
+          goals.home !== null && goals.away !== null
+            ? `${goals.home} - ${goals.away}`
+            : formatMatchTime(date);
+
+        return `
+          <a class="bf-match-row" href="match.html?fixture=${match.fixture.id}">
+            <div class="bf-match-team">
+              <img src="${home.logo}" alt="${home.name}">
+              <span>${home.name}</span>
+            </div>
+
+            <strong class="bf-match-score">${score}</strong>
+
+            <div class="bf-match-team bf-match-team-away">
+              <span>${away.name}</span>
+              <img src="${away.logo}" alt="${away.name}">
+            </div>
+          </a>
+        `;
+      }).join("")}
+    </div>
+  `;
+}
+
+function formatDate(date) {
+  return date.toISOString().slice(0, 10);
+}
+
+function formatMatchTime(date) {
+  return date.toLocaleString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit"
+  });
+}
+
+function saveGenericCache(key, data) {
+  localStorage.setItem(
+    key,
+    JSON.stringify({
+      savedAt: Date.now(),
+      data: data
+    })
+  );
+}
+
+function getGenericCache(key) {
+  try {
+    const raw = localStorage.getItem(key);
+    if (!raw) return null;
+
+    const cached = JSON.parse(raw);
+
+    if (Date.now() - cached.savedAt > CACHE_TIME) {
+      localStorage.removeItem(key);
+      return null;
+    }
+
+    return cached.data;
+  } catch (error) {
+    return null;
+  }
+}
   loadStandings();
 });
