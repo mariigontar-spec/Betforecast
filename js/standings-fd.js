@@ -1,14 +1,20 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-
   const tableWrap = document.getElementById("standings-table-wrap");
-
   if (!tableWrap) return;
 
-  const API_KEY = FD_API.key;
-  const BASE_URL = FD_API.baseUrl;
+  const LEAGUE_ID = 39;
+  const SEASON = 2024;
+
+  const CACHE_KEY = `bf_api_standings_${LEAGUE_ID}_${SEASON}`;
+  const CACHE_TIME = 6 * 60 * 60 * 1000;
 
   async function loadStandings() {
+    const cached = getCache();
+
+    if (cached) {
+      renderTable(cached);
+      return;
+    }
 
     tableWrap.innerHTML = `
       <div class="standings-loading">
@@ -17,58 +23,89 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
 
     try {
-
       const response = await fetch(
-        `${BASE_URL}/competitions/PL/standings`,
+        `${BF_API.baseUrl}/standings?league=${LEAGUE_ID}&season=${SEASON}`,
         {
           method: "GET",
           headers: {
-            "X-Auth-Token": API_KEY
+            "x-apisports-key": BF_API.key
           }
         }
       );
 
-      const raw = await response.text();
+      const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(`Status ${response.status}: ${raw}`);
+        throw new Error(`Status ${response.status}`);
       }
 
-      const standingsData = JSON.parse(raw);
+      if (data.errors && Object.keys(data.errors).length) {
+        throw new Error(JSON.stringify(data.errors));
+      }
 
-      const table =
-        standingsData.standings?.[0]?.table || [];
+      const table = data.response?.[0]?.league?.standings?.[0] || [];
 
+      saveCache(table);
       renderTable(table);
-
     } catch (error) {
-
       console.error(error);
 
       tableWrap.innerHTML = `
         <div class="standings-empty">
+          Could not load standings right now.<br>
           ${error.message}
         </div>
       `;
     }
   }
 
+  function getCache() {
+    try {
+      const raw = localStorage.getItem(CACHE_KEY);
+      if (!raw) return null;
+
+      const cached = JSON.parse(raw);
+
+      if (Date.now() - cached.savedAt > CACHE_TIME) {
+        localStorage.removeItem(CACHE_KEY);
+        return null;
+      }
+
+      return cached.data;
+    } catch {
+      return null;
+    }
+  }
+
+  function saveCache(data) {
+    localStorage.setItem(
+      CACHE_KEY,
+      JSON.stringify({
+        savedAt: Date.now(),
+        data
+      })
+    );
+  }
+
+  function getRowClass(rank) {
+    if (rank <= 4) return "zone-cl";
+    if (rank <= 6) return "zone-el";
+    if (rank >= 18) return "zone-rel";
+    return "zone-safe";
+  }
+
   function renderTable(table) {
-
     if (!table.length) {
-
       tableWrap.innerHTML = `
         <div class="standings-empty">
           No standings found.
         </div>
       `;
-
       return;
     }
 
     tableWrap.innerHTML = `
       <table class="bf-fd-table">
-
         <thead>
           <tr>
             <th>#</th>
@@ -79,45 +116,37 @@ document.addEventListener("DOMContentLoaded", function () {
             <th>L</th>
             <th>GF</th>
             <th>GA</th>
+            <th>GD</th>
             <th>Pts</th>
           </tr>
         </thead>
 
         <tbody>
-
-          ${table.map(function(row) {
-
+          ${table.map(function (row) {
             return `
               <tr>
-
-                <td>${row.position}</td>
+                <td class="zone-marker ${getRowClass(row.rank)}">${row.rank}</td>
 
                 <td class="bf-fd-team">
-                  <img src="${row.team.crest}" alt="">
+                  <img src="${row.team.logo}" alt="${row.team.name}">
                   <span>${row.team.name}</span>
                 </td>
 
-                <td>${row.playedGames}</td>
-                <td>${row.won}</td>
-                <td>${row.draw}</td>
-                <td>${row.lost}</td>
-                <td>${row.goalsFor}</td>
-                <td>${row.goalsAgainst}</td>
-                <td>
-                  <strong>${row.points}</strong>
-                </td>
-
+                <td>${row.all.played}</td>
+                <td>${row.all.win}</td>
+                <td>${row.all.draw}</td>
+                <td>${row.all.lose}</td>
+                <td>${row.all.goals.for}</td>
+                <td>${row.all.goals.against}</td>
+                <td>${row.goalsDiff}</td>
+                <td><strong>${row.points}</strong></td>
               </tr>
             `;
-
           }).join("")}
-
         </tbody>
-
       </table>
     `;
   }
 
   loadStandings();
-
 });
