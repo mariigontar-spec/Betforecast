@@ -113,7 +113,7 @@ function getRowClass(rank) {
 
         <tbody>
           ${table.map(row => `
-            <tr class="${getRowClass(row.rank)}">
+            <tr>
               <td>${row.rank}</td>
 
               <td class="bf-fd-team">
