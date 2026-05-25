@@ -44,16 +44,13 @@ document.addEventListener("DOMContentLoaded", function () {
       if (view === "last" && lastWrap && !lastWrap.dataset.loaded) {
         lastWrap.innerHTML = `
           <div class="standings-empty">
-            Recent matches will be connected next.
-          </div>
-        `;
-        lastWrap.dataset.loaded = "true";
-      }
+            if (view === "last" && lastWrap && !lastWrap.dataset.loaded) {
+  loadMatches("last");
+}
 
-      if (view === "upcoming" && upcomingWrap && !upcomingWrap.dataset.loaded) {
-        upcomingWrap.innerHTML = `
-          <div class="standings-empty">
-            Upcoming matches will be connected next.
+if (view === "upcoming" && upcomingWrap && !upcomingWrap.dataset.loaded) {
+  loadMatches("upcoming");
+}
           </div>
         `;
         upcomingWrap.dataset.loaded = "true";
