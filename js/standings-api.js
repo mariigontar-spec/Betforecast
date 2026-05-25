@@ -135,13 +135,11 @@ if (view === "upcoming" && upcomingWrap && !upcomingWrap.dataset.loaded) {
           </tr>
         </thead>
 
-        <tbody>
-          ${table.map(function (row) {
-            return `
-              <tr>
-                <td>${row.rank}</td>
-                  ${row.rank}
-                </td>
+      <tbody>
+  ${table.map(function (row) {
+    return `
+      <tr>
+        <td>${row.rank}</td>
 
                 <td class="bf-fd-team">
                   <img src="${row.team.logo}" alt="${row.team.name}">
