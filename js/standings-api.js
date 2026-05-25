@@ -21,15 +21,11 @@ tabs.forEach(function (tab) {
     alert("ERROR: standings-table-wrap not found");
     return;
   }
+if (typeof BF_API === "undefined") {
+  alert("ERROR: BF_API not found");
+  return;
+}
 
-  if (typeof BF_API === "undefined") {
-    alert("ERROR: BF_API not found");
-    return;
-  }
+loadStandings();
 
-  tableWrap.innerHTML = `
-    <div class="standings-loading">
-      JS works. Container found. API config found.
-    </div>
-  `;
 });
