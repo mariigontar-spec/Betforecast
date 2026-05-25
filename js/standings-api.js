@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  alert("standings-api connected");
+
 
   const tableWrap = document.getElementById("standings-table-wrap");
 
