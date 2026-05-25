@@ -1,68 +1,33 @@
-async function loadStandings() {
+document.addEventListener("DOMContentLoaded", function () {
 
-  const cached = getCache();
+  const tableWrap =
+    document.getElementById("standings-table-wrap");
 
-  if (cached) {
-    renderTable(cached);
-    return;
-  }
+  if (!tableWrap) return;
 
-  tableWrap.innerHTML =
-    '<div class="standings-loading">Loading league table...</div>';
+  const LEAGUE_ID = 39;
+  const SEASON = 2024;
 
-  try {
+  const CACHE_KEY =
+    `bf_standings_${LEAGUE_ID}_${SEASON}`;
 
-    const response = await fetch(
-      `${BF_API.baseUrl}/standings?league=${LEAGUE_ID}&season=${SEASON}`,
-      {
-        headers: {
-          "x-apisports-key": BF_API.key
-        }
-      }
-    );
+  const CACHE_TIME =
+    6 * 60 * 60 * 1000;
 
-    const data = await response.json();
+  async function loadStandings() {
 
-    const table =
-      data.response?.[0]?.league?.standings?.[0] || [];
+    const cached = getCache();
 
-    saveCache(table);
-
-    renderTable(table);
-
-  } catch (error) {
-
-    console.error(error);
-
-    tableWrap.innerHTML =
-      '<div class="standings-empty">Could not load standings.</div>';
-  }
-}
-
-function getRowClass(rank) {
-
-  if (rank <= 4) {
-    return "zone-cl";
-  }
-
-  if (rank <= 6) {
-    return "zone-el";
-  }
-
-  if (rank >= 18) {
-    return "zone-rel";
-  }
-
-  return "zone-safe";
-}
     if (cached) {
       renderTable(cached);
       return;
     }
 
-    tableWrap.innerHTML = `<div class="standings-loading">Loading league table...</div>`;
+    tableWrap.innerHTML =
+      `<div class="standings-loading">Loading league table...</div>`;
 
     try {
+
       const response = await fetch(
         `${BF_API.baseUrl}/standings?league=${LEAGUE_ID}&season=${SEASON}`,
         {
@@ -74,60 +39,46 @@ function getRowClass(rank) {
 
       const data = await response.json();
 
-      if (!response.ok || data.errors?.length) {
-        throw new Error("API-Football standings request failed");
-      }
-
-      const table = data.response?.[0]?.league?.standings?.[0] || [];
+      const table =
+        data.response?.[0]?.league?.standings?.[0] || [];
 
       saveCache(table);
+
       renderTable(table);
 
     } catch (error) {
+
       console.error(error);
 
-      tableWrap.innerHTML = `
-        <div class="standings-empty">
-          Could not load standings right now.
-        </div>
-      `;
+      tableWrap.innerHTML =
+        `<div class="standings-empty">Could not load standings.</div>`;
     }
   }
 
-  function getCache() {
-    try {
-      const raw = localStorage.getItem(CACHE_KEY);
-      if (!raw) return null;
+  function getRowClass(rank) {
 
-      const cached = JSON.parse(raw);
-      const isFresh = Date.now() - cached.savedAt < CACHE_TIME;
-
-      return isFresh ? cached.data : null;
-    } catch {
-      return null;
+    if (rank <= 4) {
+      return "zone-cl";
     }
-  }
 
-  function saveCache(data) {
-    localStorage.setItem(
-      CACHE_KEY,
-      JSON.stringify({
-        savedAt: Date.now(),
-        data
-      })
-    );
+    if (rank <= 6) {
+      return "zone-el";
+    }
+
+    if (rank >= 18) {
+      return "zone-rel";
+    }
+
+    return "zone-safe";
   }
 
   function renderTable(table) {
-    if (!table.length) {
-      tableWrap.innerHTML = `<div class="standings-empty">No standings found.</div>`;
-      return;
-    }
 
     tableWrap.innerHTML = `
       <table class="bf-fd-table">
+
         <thead>
-          <tr class="${getRowClass(row.rank)}">
+          <tr>
             <th>#</th>
             <th>Team</th>
             <th>P</th>
@@ -142,12 +93,15 @@ function getRowClass(rank) {
         </thead>
 
         <tbody>
+
           ${table.map(row => `
-            <tr>
+
+            <tr class="${getRowClass(row.rank)}">
+
               <td>${row.rank}</td>
 
               <td class="bf-fd-team">
-                <img src="${row.team.logo}" alt="${row.team.name}">
+                <img src="${row.team.logo}" alt="">
                 <span>${row.team.name}</span>
               </td>
 
@@ -158,13 +112,58 @@ function getRowClass(rank) {
               <td>${row.all.goals.for}</td>
               <td>${row.all.goals.against}</td>
               <td>${row.goalsDiff}</td>
-              <td><strong>${row.points}</strong></td>
+
+              <td>
+                <strong>${row.points}</strong>
+              </td>
+
             </tr>
+
           `).join("")}
+
         </tbody>
+
       </table>
     `;
   }
 
+  function saveCache(data) {
+
+    localStorage.setItem(
+      CACHE_KEY,
+      JSON.stringify({
+        time: Date.now(),
+        data
+      })
+    );
+  }
+
+  function getCache() {
+
+    const cached =
+      localStorage.getItem(CACHE_KEY);
+
+    if (!cached) return null;
+
+    try {
+
+      const parsed = JSON.parse(cached);
+
+      if (
+        Date.now() - parsed.time >
+        CACHE_TIME
+      ) {
+        return null;
+      }
+
+      return parsed.data;
+
+    } catch {
+
+      return null;
+    }
+  }
+
   loadStandings();
+
 });
