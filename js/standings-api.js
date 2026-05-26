@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     `;
     return;
+    
   }
 
   const LEAGUE_ID = 39;
@@ -30,46 +31,6 @@ tabs.forEach(function (tab) {
     tabs.forEach(function (btn) {
       btn.classList.remove("active");
     });
-
-    tab.classList.add("active");
-
-    tableWrap.classList.toggle(
-      "hidden-view",
-      view !== "table"
-    );
-
-    if (lastWrap) {
-      lastWrap.classList.toggle(
-        "hidden-view",
-        view !== "last"
-      );
-    }
-
-    if (upcomingWrap) {
-      upcomingWrap.classList.toggle(
-        "hidden-view",
-        view !== "upcoming"
-      );
-    }
-
-    if (
-      view === "last" &&
-      lastWrap &&
-      !lastWrap.dataset.loaded
-    ) {
-      loadMatches("last");
-    }
-
-    if (
-      view === "upcoming" &&
-      upcomingWrap &&
-      !upcomingWrap.dataset.loaded
-    ) {
-      loadMatches("upcoming");
-    }
-
-  });
-
 });
       tab.classList.add("active");
 
