@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const LEAGUE_ID = 39;
-  const SEASON = 2024;
+const SEASON = 2025;
   const CACHE_TIME = 6 * 60 * 60 * 1000;
 
   const STANDINGS_CACHE_KEY = `bf_standings_${LEAGUE_ID}_${SEASON}`;
