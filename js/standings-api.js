@@ -1,4 +1,3 @@
-console.log("JS STARTED");
 document.addEventListener("DOMContentLoaded", function () {
   const tableWrap = document.getElementById("standings-table-wrap");
   const lastWrap = document.getElementById("standings-last-wrap");
@@ -15,37 +14,45 @@ document.addEventListener("DOMContentLoaded", function () {
   const LEAGUE_ID = 39;
   const SEASON = 2024;
   const CACHE_TIME = 6 * 60 * 60 * 1000;
+
   const STANDINGS_CACHE_KEY = `bf_standings_${LEAGUE_ID}_${SEASON}`;
+  const RECENT_CACHE_KEY = `bf_matches_recent_${LEAGUE_ID}_${SEASON}`;
+  const UPCOMING_CACHE_KEY = `bf_matches_upcoming_${LEAGUE_ID}_${SEASON}`;
 
-  tabs.forEach(function (tab) {
-    tab.addEventListener("click", function () {
-      const view = tab.dataset.view;
+  setupTabs();
+  loadStandings();
 
-      tabs.forEach(function (btn) {
-        btn.classList.remove("active");
+  function setupTabs() {
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        const view = tab.dataset.view;
+
+        tabs.forEach(function (btn) {
+          btn.classList.remove("active");
+        });
+
+        tab.classList.add("active");
+
+        tableWrap.classList.toggle("hidden-view", view !== "table");
+
+        if (lastWrap) {
+          lastWrap.classList.toggle("hidden-view", view !== "last");
+        }
+
+        if (upcomingWrap) {
+          upcomingWrap.classList.toggle("hidden-view", view !== "upcoming");
+        }
+
+        if (view === "last") {
+          loadMatches("last");
+        }
+
+        if (view === "upcoming") {
+          loadMatches("upcoming");
+        }
       });
-
-      tab.classList.add("active");
-
-      tableWrap.classList.toggle("hidden-view", view !== "table");
-
-      if (lastWrap) {
-        lastWrap.classList.toggle("hidden-view", view !== "last");
-      }
-
-      if (upcomingWrap) {
-        upcomingWrap.classList.toggle("hidden-view", view !== "upcoming");
-      }
-
-      if (view === "last" && lastWrap && !lastWrap.dataset.loaded) {
-        loadMatches("last");
-      }
-
-      if (view === "upcoming" && upcomingWrap && !upcomingWrap.dataset.loaded) {
-        loadMatches("upcoming");
-      }
     });
-  });
+  }
 
   async function loadStandings() {
     const cached = getCache(STANDINGS_CACHE_KEY);
@@ -140,14 +147,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function loadMatches(type) {
     const target = type === "last" ? lastWrap : upcomingWrap;
+    const cacheKey = type === "last" ? RECENT_CACHE_KEY : UPCOMING_CACHE_KEY;
+
     if (!target) return;
 
-    const cacheKey = `bf_matches_${type}_${LEAGUE_ID}_${SEASON}`;
     const cached = getCache(cacheKey);
 
     if (cached) {
       renderMatches(target, cached, type);
-      target.dataset.loaded = "true";
       return;
     }
 
@@ -184,7 +191,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       saveCache(cacheKey, matches);
       renderMatches(target, matches, type);
-      target.dataset.loaded = "true";
     } catch (error) {
       console.error(error);
       target.innerHTML = `<div class="standings-empty">Could not load matches right now.</div>`;
@@ -210,14 +216,18 @@ document.addEventListener("DOMContentLoaded", function () {
           const fixture = match.fixture;
           const date = new Date(fixture.date);
 
-          const isFinished = ["FT", "AET", "PEN"].includes(fixture.status.short);
+          const isFinished =
+            ["FT", "AET", "PEN"].includes(fixture.status.short);
 
           const score =
             isFinished && goals.home !== null && goals.away !== null
               ? `${goals.home} - ${goals.away}`
               : "vs";
 
-          const statusLabel = isFinished ? "FT" : formatMatchTime(date);
+          const statusLabel =
+            isFinished
+              ? "FT"
+              : formatMatchTime(date);
 
           return `
             <a class="bf-match-row" href="match.html?fixture=${fixture.id}">
@@ -252,18 +262,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function saveCache(key, data) {
-    localStorage.setItem(
-      key,
-      JSON.stringify({
-        savedAt: Date.now(),
-        data: data
-      })
-    );
+    try {
+      localStorage.setItem(
+        key,
+        JSON.stringify({
+          savedAt: Date.now(),
+          data: data
+        })
+      );
+    } catch (error) {
+      console.warn("Cache save failed:", error);
+    }
   }
 
   function getCache(key) {
     try {
       const raw = localStorage.getItem(key);
+
       if (!raw) return null;
 
       const cached = JSON.parse(raw);
@@ -278,6 +293,4 @@ document.addEventListener("DOMContentLoaded", function () {
       return null;
     }
   }
-
-  loadStandings();
 });
