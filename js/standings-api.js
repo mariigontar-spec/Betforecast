@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const CACHE_KEY = `bf_standings_${LEAGUE_ID}_${SEASON}`;
   const CACHE_TIME = 6 * 60 * 60 * 1000;
 
-  tabs.forEach(function (tab) {
+tabs.forEach(function (tab) {
 
   tab.addEventListener("click", function () {
 
@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
-
       tab.classList.add("active");
 
       tableWrap.classList.toggle("hidden-view", view !== "table");
