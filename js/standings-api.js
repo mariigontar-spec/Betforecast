@@ -341,38 +341,7 @@ function renderMatches(target, matches, type) {
     </div>
   `;
 }
-  target.innerHTML = `
-    <div class="bf-match-list">
-      ${matches.map(match => {
-        const home = match.teams.home;
-        const away = match.teams.away;
-        const goals = match.goals;
-        const date = new Date(match.fixture.date);
 
-        const score =
-          goals.home !== null && goals.away !== null
-            ? `${goals.home} - ${goals.away}`
-            : formatMatchTime(date);
-
-        return `
-          <a class="bf-match-row" href="match.html?fixture=${match.fixture.id}">
-            <div class="bf-match-team">
-              <img src="${home.logo}" alt="${home.name}">
-              <span>${home.name}</span>
-            </div>
-
-            <strong class="bf-match-score">${score}</strong>
-
-            <div class="bf-match-team bf-match-team-away">
-              <span>${away.name}</span>
-              <img src="${away.logo}" alt="${away.name}">
-            </div>
-          </a>
-        `;
-      }).join("")}
-    </div>
-  `;
-}
 
 function formatDate(date) {
   return date.toISOString().slice(0, 10);
