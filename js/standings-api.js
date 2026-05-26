@@ -296,6 +296,50 @@ function renderMatches(target, matches, type) {
 
   target.innerHTML = `
     <div class="bf-match-list">
+      ${matches.map(function (match) {
+        const home = match.teams.home;
+        const away = match.teams.away;
+        const goals = match.goals;
+        const fixture = match.fixture;
+        const date = new Date(fixture.date);
+
+        const isFinished =
+          ["FT", "AET", "PEN"].includes(fixture.status.short);
+
+        const statusLabel = isFinished
+          ? "FT"
+          : formatMatchTime(date);
+
+        const score = isFinished
+          ? `${goals.home} - ${goals.away}`
+          : "vs";
+
+        return `
+          <a class="bf-match-row" href="match.html?fixture=${fixture.id}">
+
+            <div class="bf-match-team">
+              <img src="${home.logo}" alt="${home.name}">
+              <span>${home.name}</span>
+            </div>
+
+            <div class="bf-match-center">
+              <strong>${score}</strong>
+              <em>${statusLabel}</em>
+            </div>
+
+            <div class="bf-match-team bf-match-team-away">
+              <span>${away.name}</span>
+              <img src="${away.logo}" alt="${away.name}">
+            </div>
+
+          </a>
+        `;
+      }).join("")}
+    </div>
+  `;
+}
+  target.innerHTML = `
+    <div class="bf-match-list">
       ${matches.map(match => {
         const home = match.teams.home;
         const away = match.teams.away;
