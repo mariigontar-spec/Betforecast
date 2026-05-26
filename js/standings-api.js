@@ -22,12 +22,55 @@ document.addEventListener("DOMContentLoaded", function () {
   const CACHE_TIME = 6 * 60 * 60 * 1000;
 
   tabs.forEach(function (tab) {
-    tab.addEventListener("click", function () {
-      const view = tab.dataset.view;
 
-      tabs.forEach(function (btn) {
-        btn.classList.remove("active");
-      });
+  tab.addEventListener("click", function () {
+
+    const view = tab.dataset.view;
+
+    tabs.forEach(function (btn) {
+      btn.classList.remove("active");
+    });
+
+    tab.classList.add("active");
+
+    tableWrap.classList.toggle(
+      "hidden-view",
+      view !== "table"
+    );
+
+    if (lastWrap) {
+      lastWrap.classList.toggle(
+        "hidden-view",
+        view !== "last"
+      );
+    }
+
+    if (upcomingWrap) {
+      upcomingWrap.classList.toggle(
+        "hidden-view",
+        view !== "upcoming"
+      );
+    }
+
+    if (
+      view === "last" &&
+      lastWrap &&
+      !lastWrap.dataset.loaded
+    ) {
+      loadMatches("last");
+    }
+
+    if (
+      view === "upcoming" &&
+      upcomingWrap &&
+      !upcomingWrap.dataset.loaded
+    ) {
+      loadMatches("upcoming");
+    }
+
+  });
+
+});
 
       tab.classList.add("active");
 
