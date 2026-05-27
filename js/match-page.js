@@ -349,10 +349,35 @@ if (!match) {
     }
 
     const relatedList = document.getElementById("related-match-list");
-    if (relatedList) {
-      relatedList.innerHTML = "";
-      matches
-        .filter((item) => item.id !== match.id)
+if (relatedList) {
+  relatedList.innerHTML = "";
+
+  const relatedMatches =
+    Array.isArray(match.related) && match.related.length
+      ? match.related
+      : [];
+
+  if (!relatedMatches.length) {
+    relatedList.innerHTML = `
+      <div class="standings-empty">
+        Related matches will appear here soon.
+      </div>
+    `;
+  } else {
+    relatedMatches
+      .slice(0, 4)
+      .forEach((item) => {
+        const a = document.createElement("a");
+        a.className = "related-match-item glow-hover";
+        a.href = `match.html?game=${item.id}`;
+        a.innerHTML = `
+          <strong>${item.home || "Home"} vs ${item.away || "Away"}</strong>
+          <span>${item.league || "League"}</span>
+        `;
+        relatedList.appendChild(a);
+      });
+  }
+}
         .slice(0, 4)
         .forEach((item) => {
           const a = document.createElement("a");
