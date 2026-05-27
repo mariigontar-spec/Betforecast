@@ -10456,3 +10456,16 @@ body.theme-glass .league-filter-btn:not(.active) {
     margin:0 auto;
   }
 }
+.team-badge img{
+  width:28px;
+  height:28px;
+  object-fit:contain;
+  display:block;
+}
+
+.team-badge{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+}
