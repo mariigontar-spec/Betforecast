@@ -5,15 +5,64 @@ const fixture = urlParams.get("fixture");
 const game = urlParams.get("game") || fixture;
 
   try {
-    const response = await fetch("data/matches.json");
+    let match = null;
 
-    if (!response.ok) {
-      throw new Error(`matches.json failed: ${response.status}`);
+if (fixture && typeof BF_API !== "undefined") {
+
+  const apiResponse = await fetch(
+    `${BF_API.baseUrl}/fixtures?id=${fixture}`,
+    {
+      method: "GET",
+      headers: {
+        "x-apisports-key": BF_API.key
+      }
     }
+  );
 
-    const matches = await response.json();
-    const match = matches.find((item) => item.id === game) || matches[0];
+  const apiData = await apiResponse.json();
+  const apiMatch = apiData.response?.[0];
 
+  if (apiMatch) {
+
+    match = {
+      id: apiMatch.fixture.id,
+
+      home: apiMatch.teams.home.name,
+      away: apiMatch.teams.away.name,
+
+      homeLogo: apiMatch.teams.home.logo,
+      awayLogo: apiMatch.teams.away.logo,
+
+      homeScore: apiMatch.goals.home,
+      awayScore: apiMatch.goals.away,
+
+      league: apiMatch.league.name,
+
+      status:
+        apiMatch.fixture.status.short === "FT"
+          ? "finished"
+          : "live"
+    };
+
+  }
+
+}
+
+if (!match) {
+
+  const response = await fetch("data/matches.json");
+
+  if (!response.ok) {
+    throw new Error(`matches.json failed: ${response.status}`);
+  }
+
+  const matches = await response.json();
+
+  match =
+    matches.find((item) => item.id === game) ||
+    matches[0];
+
+}
     if (!match) {
       throw new Error("No match data found");
     }
