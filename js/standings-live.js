@@ -164,10 +164,17 @@ const SEASON = 2025;
       </div>
     `;
 
-    const endpoint =
+const today = new Date();
+const future = new Date();
+future.setDate(today.getDate() + 180);
+
+const fromDate = today.toISOString().slice(0, 10);
+const toDate = future.toISOString().slice(0, 10);
+
+const endpoint =
   type === "last"
     ? `${BF_API.baseUrl}/fixtures?league=${LEAGUE_ID}&season=2024&last=8`
-   : `${BF_API.baseUrl}/fixtures?league=${LEAGUE_ID}&next=8`;
+    : `${BF_API.baseUrl}/fixtures?league=${LEAGUE_ID}&from=${fromDate}&to=${toDate}`;
 
     try {
       const response = await fetch(endpoint, {
