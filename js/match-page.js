@@ -240,6 +240,9 @@ if (!match) {
     setText("team-away-name", awayName);
     setText("projected-score", heroScore);
 
+setLogo("team-home-logo", match.homeLogo, homeName);
+setLogo("team-away-logo", match.awayLogo, awayName);
+    
     setText("prob-home", `${homePct}%`);
     setText("prob-draw", `${drawPct}%`);
     setText("prob-away", `${awayPct}%`);
@@ -440,5 +443,12 @@ function initGlowHover() {
     });
   });
 }
+function setLogo(id, src, alt) {
+  const img = document.getElementById(id);
 
+  if (!img || !src) return;
+
+  img.src = src;
+  img.alt = alt || "Team logo";
+}
 loadMatchPage();
