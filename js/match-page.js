@@ -2,7 +2,7 @@ async function loadMatchPage()
 {
 const urlParams = new URLSearchParams(window.location.search);
 const fixture = urlParams.get("fixture");
-const game = urlParams.get("game") || fixture;
+console.log("fixture from URL:", fixture);
 
   try {
     let match = null;
@@ -21,7 +21,7 @@ if (fixture && typeof BF_API !== "undefined") {
 
   const apiData = await apiResponse.json();
   const apiMatch = apiData.response?.[0];
-
+console.log("apiMatch:", apiMatch);
   if (apiMatch) {
      match = {
   id: String(apiMatch.fixture.id),
