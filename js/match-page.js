@@ -1,7 +1,8 @@
 async function loadMatchPage() 
 {
-  const urlParams = new URLSearchParams(window.location.search); 
-  const game = urlParams.get("game");
+const urlParams = new URLSearchParams(window.location.search);
+const fixture = urlParams.get("fixture");
+const game = urlParams.get("game") || fixture;
 
   try {
     const response = await fetch("data/matches.json");
