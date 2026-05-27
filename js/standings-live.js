@@ -167,7 +167,7 @@ const SEASON = 2025;
     const endpoint =
   type === "last"
     ? `${BF_API.baseUrl}/fixtures?league=${LEAGUE_ID}&season=2024&last=8`
-    : `${BF_API.baseUrl}/fixtures?league=${LEAGUE_ID}&season=2025&next=8`;
+   : `${BF_API.baseUrl}/fixtures?league=${LEAGUE_ID}&next=8`;
 
     try {
       const response = await fetch(endpoint, {
