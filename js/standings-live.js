@@ -207,7 +207,7 @@ const endpoint =
   function renderMatches(target, matches, type) {
     if (!matches.length) {
       target.innerHTML = `
-<a class="bf-match-card" href="match.html?id=${fixture.id}">
+<a class="bf-match-card" href="match.html?fixture=${fixture.id}">
     Upcoming Premier League fixtures for the 2025/26 season will appear once officially released.
  </a>
 `;
