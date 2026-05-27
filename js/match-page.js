@@ -366,10 +366,9 @@ if (relatedList) {
         Related matches will appear here soon.
       </div>
     `;
-  } else {
-    relatedMatches
-      .slice(0, 4)
-      .forEach((item) => {
+ } else {
+  relatedMatches.slice(0, 4)
+    .forEach((item) => {
         const a = document.createElement("a");
         a.className = "related-match-item glow-hover";
         a.href = `match.html?game=${item.id}`;
