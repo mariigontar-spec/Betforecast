@@ -207,10 +207,10 @@ const endpoint =
   function renderMatches(target, matches, type) {
     if (!matches.length) {
       target.innerHTML = `
-        <div class="standings-empty">
-          No ${type === "last" ? "recent" : "upcoming"} matches found.
-        </div>
-      `;
+  <div class="standings-empty">
+    Upcoming Premier League fixtures for the 2025/26 season will appear once officially released.
+  </div>
+`;
       return;
     }
 
