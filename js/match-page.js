@@ -23,26 +23,51 @@ if (fixture && typeof BF_API !== "undefined") {
   const apiMatch = apiData.response?.[0];
 
   if (apiMatch) {
+     match = {
+  id: String(apiMatch.fixture.id),
 
-    match = {
-      id: apiMatch.fixture.id,
+  league: apiMatch.league.name,
+  date: apiMatch.fixture.date,
+  time: new Date(apiMatch.fixture.date).toLocaleTimeString("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit"
+  }),
+  stadium: apiMatch.fixture.venue?.name || "",
 
-      home: apiMatch.teams.home.name,
-      away: apiMatch.teams.away.name,
+  home: apiMatch.teams.home.name,
+  away: apiMatch.teams.away.name,
+  homeLogo: apiMatch.teams.home.logo,
+  awayLogo: apiMatch.teams.away.logo,
 
-      homeLogo: apiMatch.teams.home.logo,
-      awayLogo: apiMatch.teams.away.logo,
+  homeShort: apiMatch.teams.home.name.slice(0, 3).toUpperCase(),
+  awayShort: apiMatch.teams.away.name.slice(0, 3).toUpperCase(),
 
-      homeScore: apiMatch.goals.home,
-      awayScore: apiMatch.goals.away,
+  projectedScore:
+    apiMatch.goals.home !== null && apiMatch.goals.away !== null
+      ? `${apiMatch.goals.home} - ${apiMatch.goals.away}`
+      : "vs",
 
-      league: apiMatch.league.name,
+  homeWin: 47,
+  draw: 28,
+  awayWin: 25,
+  confidence: 74,
 
-      status:
-        apiMatch.fixture.status.short === "FT"
-          ? "finished"
-          : "live"
-    };
+  summary: `${apiMatch.teams.home.name} vs ${apiMatch.teams.away.name} match data loaded from API-Football.`,
+  bestTip: "AI analysis pending",
+  goalsLean: "Market pending",
+  btts: "Pending",
+
+  xgHome: "-",
+  xgAway: "-",
+  shotsHome: "-",
+  shotsAway: "-",
+  possessionHome: "-",
+  possessionAway: "-",
+
+  timeline: [],
+  keySignals: [],
+  related: []
+};;
 
   }
 
