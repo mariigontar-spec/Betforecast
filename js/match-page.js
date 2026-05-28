@@ -27,10 +27,10 @@ console.log("apiMatch:", apiMatch);
   id: String(apiMatch.fixture.id),
 
   league: apiMatch.league.name,
-  date: apiMatch.fixture.date,
-  time: new Date(apiMatch.fixture.date).toLocaleTimeString("en-GB", {
-    hour: "2-digit",
-    minute: "2-digit"
+date: new Date(apiMatch.fixture.date).toLocaleDateString("en-GB", {
+  day: "2-digit",
+  month: "short",
+  year: "numeric"
   }),
   stadium: apiMatch.fixture.venue?.name || "",
 
