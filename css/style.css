@@ -10469,3 +10469,10 @@ body.theme-glass .league-filter-btn:not(.active) {
   justify-content:center;
   gap:8px;
 }
+#team-home-logo,
+#team-away-logo{
+  display:block !important;
+  width:34px !important;
+  height:34px !important;
+  object-fit:contain !important;
+}
