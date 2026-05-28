@@ -242,7 +242,8 @@ if (!match) {
 
 setLogo("team-home-logo", match.homeLogo, homeName);
 setLogo("team-away-logo", match.awayLogo, awayName);
-    
+ console.log("home logo:", match.homeLogo);
+console.log("away logo:", match.awayLogo);   
     setText("prob-home", `${homePct}%`);
     setText("prob-draw", `${drawPct}%`);
     setText("prob-away", `${awayPct}%`);
