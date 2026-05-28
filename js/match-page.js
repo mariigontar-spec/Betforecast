@@ -27,6 +27,7 @@ console.log("apiMatch:", apiMatch);
   id: String(apiMatch.fixture.id),
 
   league: apiMatch.league.name,
+  status: apiMatch.fixture.status.short || "NS",
 date: new Date(apiMatch.fixture.date).toLocaleDateString("en-GB", {
   day: "2-digit",
   month: "short",
