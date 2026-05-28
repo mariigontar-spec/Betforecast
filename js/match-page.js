@@ -77,7 +77,18 @@ date: new Date(apiMatch.fixture.date).toLocaleDateString("en-GB", {
 if (!match) {
 
   const response = await fetch("data/matches.json");
+const eventsResponse = await fetch(
+  `https://v3.football.api-sports.io/fixtures/events?fixture=${fixture}`,
+  {
+    headers: {
+      "x-apisports-key": BF_API.key
+    }
+  }
+);
 
+const eventsData = await eventsResponse.json();
+
+console.log("events:", eventsData);
   if (!response.ok) {
     throw new Error(`matches.json failed: ${response.status}`);
   }
