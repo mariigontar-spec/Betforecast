@@ -83,10 +83,9 @@ if (!match) {
 
   const matches = await response.json();
 
-  match =
-    matches.find((item) => item.id === game) ||
-    matches[0];
-
+ match =
+  matches.find((item) => String(item.id) === String(game)) ||
+  null;
 }
     if (!match) {
       throw new Error("No match data found");
