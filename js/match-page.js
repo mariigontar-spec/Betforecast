@@ -336,8 +336,10 @@ console.log("away logo:", match.awayLogo);
 
     const keySignals = document.getElementById("key-signal-list");
     if (keySignals) {
-      keySignals.innerHTML = "";
-["Status", (match.status || "NS").toUpperCase()],
+keySignals.innerHTML = "";
+
+[
+  ["Status", (match.status || "NS").toUpperCase()],
         ["Best Tip", bestTip],
         ["Goals Lean", goalsLean],
         ["BTTS", btts],
