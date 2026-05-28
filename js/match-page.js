@@ -23,6 +23,19 @@ if (fixture && typeof BF_API !== "undefined") {
   const apiData = await apiResponse.json();
   const apiMatch = apiData.response?.[0];
 console.log("apiMatch:", apiMatch);
+ const eventsResponse = await fetch(
+  `${BF_API.baseUrl}/fixtures/events?fixture=${fixture}`,
+  {
+    method: "GET",
+    headers: {
+      "x-apisports-key": BF_API.key
+    }
+  }
+);
+
+const eventsData = await eventsResponse.json();
+
+console.log("events response:", eventsData); 
   if (apiMatch) {
      match = {
   id: String(apiMatch.fixture.id),
