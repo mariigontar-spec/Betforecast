@@ -201,7 +201,7 @@ if (!match) {
             `xG trend: ${xgHome}`,
             `Projected shots: ${shotsHome}`,
             `Possession lean: ${possessionHome}`,
-            `Status: ${match.status || "preview"}`
+            `Status: ${match.status || "NS"}`
           ];
 
     const awayStats =
@@ -211,7 +211,7 @@ if (!match) {
             `xG trend: ${xgAway}`,
             `Projected shots: ${shotsAway}`,
             `Possession lean: ${possessionAway}`,
-            `Status: ${match.status || "preview"}`
+            `Status: ${match.status || "NS"}`
           ];
 
     setText("match-league-badge", match.league || "Top League");
