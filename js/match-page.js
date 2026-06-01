@@ -445,7 +445,7 @@ if (relatedList) {
     .forEach((item) => {
         const a = document.createElement("a");
         a.className = "related-match-item glow-hover";
-        a.href = `match.html?game=${item.id}`;
+        a.href = `match.html?fixture=${item.id}`;
         a.innerHTML = `
           <strong>${item.home || "Home"} vs ${item.away || "Away"}</strong>
           <span>${item.league || "League"}</span>
