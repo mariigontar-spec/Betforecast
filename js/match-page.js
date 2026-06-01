@@ -39,22 +39,16 @@ if (fixture && typeof BF_API !== "undefined") {
   console.log("events status:", eventsResponse.status);
 
   const eventsData = await eventsResponse.json();
-alert("EVENTS LOADED");
-console.log("EVENTS LOADED");
-  console.log("events response:", eventsData);
-console.log("events count:", eventsData.response?.length);
 
 const goals = eventsData.response.filter(
   e => e.type === "Goal"
 );
 
-console.log("GOALS:", goals);
 
 const cards = eventsData.response.filter(
   e => e.type === "Card"
 );
 
-console.log("CARDS:", cards);
   if (apiMatch) {
     match = {
       id: String(apiMatch.fixture.id),
