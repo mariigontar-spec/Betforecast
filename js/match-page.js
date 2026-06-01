@@ -93,30 +93,22 @@ date: new Date(apiMatch.fixture.date).toLocaleDateString("en-GB", {
 }
 
 if (!match) {
-
   const response = await fetch("data/matches.json");
-const eventsResponse = await fetch(
-  `https://v3.football.api-sports.io/fixtures/events?fixture=${fixture}`,
-  {
-    headers: {
-      "x-apisports-key": BF_API.key
-    }
-  }
-);
 
-const eventsData = await eventsResponse.json();
-
+  if (!response.ok) {
+    throw new Error(`matches.json failed: ${response.status}`);
   }
-console.log("events response:", eventsData);
+
   const matches = await response.json();
 
- match =
-  matches.find((item) => String(item.id) === String(game)) ||
-  null;
+  match =
+    matches.find((item) => String(item.id) === String(game)) ||
+    null;
 }
-    if (!match) {
-      throw new Error("No match data found");
-    }
+
+if (!match) {
+  throw new Error("No match data found");
+}
 
     const isLive = match.status === "live";
     const isFinished = match.status === "finished";
