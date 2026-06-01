@@ -102,7 +102,24 @@ console.log("CARDS:", cards);
       possessionHome: "-",
       possessionAway: "-",
 
-      timeline: [],
+    timeline:
+  eventsData.response && eventsData.response.length
+    ? eventsData.response.map((event) => {
+        const minute = event.time?.elapsed ? `${event.time.elapsed}'` : "-";
+
+        let icon = "•";
+
+        if (event.type === "Goal") icon = "⚽";
+        if (event.type === "Card") icon = "🟨";
+        if (event.type === "subst") icon = "🔄";
+        if (event.type === "Var") icon = "📺";
+
+        return {
+          minute: minute,
+          text: `${icon} ${event.team?.name || ""} — ${event.player?.name || ""} ${event.detail || event.type || ""}`
+        };
+      })
+    : [],
       keySignals: [],
       related: []
     };
