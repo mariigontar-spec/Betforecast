@@ -10551,3 +10551,25 @@ body.theme-glass .league-filter-btn:not(.active) {
 .match-stat-card:last-child p {
   line-height: 1.15;
 }
+#confidence-fill {
+  display: block !important;
+  height: 10px !important;
+  border-radius: 999px !important;
+}
+
+#confidence-value {
+  display: block !important;
+  margin-top: 14px !important;
+  font-size: 30px !important;
+  line-height: 1 !important;
+  font-weight: 800 !important;
+}
+
+#confidence-value::after {
+  content: " confidence";
+  display: block;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-top: 4px;
+}
