@@ -109,16 +109,19 @@ console.log("CARDS:", cards);
   }
 }
 
+if (!match) {
+  const fallbackResponse = await fetch("data/matches.json");
 
-    throw new Error(`matches.json failed: ${response.status}`);
+  if (!fallbackResponse.ok) {
+    throw new Error(`matches.json failed: ${fallbackResponse.status}`);
   }
 
-  const matches = await response.json();
+  const matches = await fallbackResponse.json();
 
   match =
     matches.find((item) => String(item.id) === String(game)) ||
     null;
-
+}
 if (!match) {
   throw new Error("No match data found");
 }
