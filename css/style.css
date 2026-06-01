@@ -10512,3 +10512,42 @@ body.theme-glass .league-filter-btn:not(.active) {
   font-size: 28px;
   font-weight: 800;
 }
+.match-stats-grid {
+  align-items: stretch;
+}
+
+.match-stat-card {
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.match-stat-card .stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  line-height: 1.2;
+}
+
+.match-stat-card .stat-row strong {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.match-stat-card:last-child {
+  justify-content: center;
+  gap: 18px;
+}
+
+.match-stat-card:last-child strong,
+.match-stat-card:last-child .confidence-value {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.match-stat-card:last-child span,
+.match-stat-card:last-child p {
+  line-height: 1.15;
+}
