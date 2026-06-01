@@ -109,7 +109,7 @@ console.log("CARDS:", cards);
   }
 }
 
-  if (!response.ok) {
+
     throw new Error(`matches.json failed: ${response.status}`);
   }
 
