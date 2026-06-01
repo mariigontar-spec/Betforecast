@@ -62,7 +62,7 @@ if (apiMatch) {
   );
 
   const relatedData = await relatedResponse.json();
-
+console.log("relatedData:", relatedData);
   relatedFixtures = relatedData.response
     .filter((item) => String(item.fixture.id) !== String(apiMatch.fixture.id))
     .slice(0, 4)
@@ -72,6 +72,7 @@ if (apiMatch) {
       away: item.teams.away.name,
       league: item.league.name
     }));
+  console.log("relatedFixtures:", relatedFixtures);
 }
   if (apiMatch) {
     match = {
