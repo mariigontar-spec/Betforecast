@@ -105,9 +105,6 @@ const eventsResponse = await fetch(
 
 const eventsData = await eventsResponse.json();
 
-console.log("events:", eventsData);
-  if (!response.ok) {
-    throw new Error(`matches.json failed: ${response.status}`);
   }
 console.log("events response:", eventsData);
   const matches = await response.json();
