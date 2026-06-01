@@ -94,6 +94,8 @@ if (apiMatch) {
       homeLogo: apiMatch.teams.home.logo,
       awayLogo: apiMatch.teams.away.logo,
 
+related: relatedFixtures,
+      
       homeShort: apiMatch.teams.home.name.slice(0, 3).toUpperCase(),
       awayShort: apiMatch.teams.away.name.slice(0, 3).toUpperCase(),
 
