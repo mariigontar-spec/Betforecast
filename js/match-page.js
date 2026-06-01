@@ -23,7 +23,7 @@ if (fixture && typeof BF_API !== "undefined") {
   const apiData = await apiResponse.json();
   const apiMatch = apiData.response?.[0];
 console.log("apiMatch:", apiMatch);
- const eventsResponse = await fetch(
+const eventsResponse = await fetch(
   `${BF_API.baseUrl}/fixtures/events?fixture=${fixture}`,
   {
     method: "GET",
@@ -33,9 +33,12 @@ console.log("apiMatch:", apiMatch);
   }
 );
 
+console.log("events status:", eventsResponse.status);
+console.log("eventsResponse raw:", eventsResponse);
+
 const eventsData = await eventsResponse.json();
 
-console.log("events response:", eventsData); 
+console.log("events response:", eventsData);
   if (apiMatch) {
      match = {
   id: String(apiMatch.fixture.id),
