@@ -10476,3 +10476,39 @@ body.theme-glass .league-filter-btn:not(.active) {
   height:34px !important;
   object-fit:contain !important;
 }
+.match-stat-card {
+  min-height: 150px;
+  padding: 24px;
+}
+
+.match-stat-card strong,
+.match-stat-card .stat-value {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.confidence-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.confidence-card .confidence-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.confidence-card .confidence-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 1.1;
+}
+
+.confidence-card .confidence-value {
+  font-size: 28px;
+  font-weight: 800;
+}
