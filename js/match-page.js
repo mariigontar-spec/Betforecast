@@ -2,6 +2,7 @@ async function loadMatchPage()
 {
 const urlParams = new URLSearchParams(window.location.search);
 const fixture = urlParams.get("fixture");
+const game = urlParams.get("game") || fixture;
 console.log("fixture for events:", fixture);
 console.log("fixture from URL:", fixture);
 
