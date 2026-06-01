@@ -118,7 +118,6 @@ console.log("CARDS:", cards);
   match =
     matches.find((item) => String(item.id) === String(game)) ||
     null;
-}
 
 if (!match) {
   throw new Error("No match data found");
