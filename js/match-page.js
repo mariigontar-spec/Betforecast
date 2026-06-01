@@ -44,7 +44,7 @@ console.log("events response:", eventsData);
      match = {
   id: String(apiMatch.fixture.id),
 console.log("events count:", eventsData.response?.length);
-    
+console.log("EVENTS ARRAY:", eventsData.response);    
   league: apiMatch.league.name,
   status: apiMatch.fixture.status.short || "NS",
 date: new Date(apiMatch.fixture.date).toLocaleDateString("en-GB", {
