@@ -39,7 +39,8 @@ if (fixture && typeof BF_API !== "undefined") {
   console.log("events status:", eventsResponse.status);
 
   const eventsData = await eventsResponse.json();
-
+alert("EVENTS LOADED");
+console.log("EVENTS LOADED");
   console.log("events response:", eventsData);
 console.log("events count:", eventsData.response?.length);
 
