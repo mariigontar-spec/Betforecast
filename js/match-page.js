@@ -141,15 +141,7 @@ related: relatedFixtures,
       })
     : [],
       keySignals: [],
-      related: apiData.response
-  .filter((item) => String(item.fixture.id) !== String(apiMatch.fixture.id))
-  .slice(0, 4)
-  .map((item) => ({
-    id: item.fixture.id,
-    home: item.teams.home.name,
-    away: item.teams.away.name,
-    league: item.league.name
-  }))
+related: relatedFixtures
     };
   }
 }
