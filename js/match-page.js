@@ -17,13 +17,11 @@ if (fixture && typeof BF_API !== "undefined") {
       method: "GET",
       headers: {
         "x-apisports-key": BF_API.key
-      }
-    }
-  );
+   const apiData = await apiResponse.json();
+const apiMatch = apiData.response?.[0];
 
-  const apiData = await apiResponse.json();
-  const apiMatch = apiData.response?.[0];
 console.log("apiMatch:", apiMatch);
+
 const eventsResponse = await fetch(
   `${BF_API.baseUrl}/fixtures/events?fixture=${fixture}`,
   {
@@ -35,47 +33,62 @@ const eventsResponse = await fetch(
 );
 
 console.log("events status:", eventsResponse.status);
-console.log("eventsResponse raw:", eventsResponse);
 
 const eventsData = await eventsResponse.json();
 
 console.log("events response:", eventsData);
-  if (apiMatch) {
-     match = {
-  id: String(apiMatch.fixture.id),
 
-  league: apiMatch.league.name,
-  status: apiMatch.fixture.status.short || "NS",
-date: new Date(apiMatch.fixture.date).toLocaleDateString("en-GB", {
-  day: "2-digit",
-  month: "short",
-  year: "numeric"
-  }),
-  stadium: apiMatch.fixture.venue?.name || "",
+if (apiMatch) {
+  match = {
+    id: String(apiMatch.fixture.id),
 
-  home: apiMatch.teams.home.name,
-  away: apiMatch.teams.away.name,
-  homeLogo: apiMatch.teams.home.logo,
-  awayLogo: apiMatch.teams.away.logo,
+    league: apiMatch.league.name,
+    status: apiMatch.fixture.status.short || "NS",
 
-  homeShort: apiMatch.teams.home.name.slice(0, 3).toUpperCase(),
-  awayShort: apiMatch.teams.away.name.slice(0, 3).toUpperCase(),
+    date: new Date(apiMatch.fixture.date).toLocaleDateString("en-GB", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric"
+    }),
 
-  projectedScore:
-    apiMatch.goals.home !== null && apiMatch.goals.away !== null
-      ? `${apiMatch.goals.home} - ${apiMatch.goals.away}`
-      : "vs",
+    stadium: apiMatch.fixture.venue?.name || "",
 
-  homeWin: 47,
-  draw: 28,
-  awayWin: 25,
-  confidence: 74,
+    home: apiMatch.teams.home.name,
+    away: apiMatch.teams.away.name,
 
-  summary: `${apiMatch.teams.home.name} vs ${apiMatch.teams.away.name} match data loaded from API-Football.`,
-  bestTip: "AI analysis pending",
-  goalsLean: "Market pending",
-  btts: "Pending",
+    homeLogo: apiMatch.teams.home.logo,
+    awayLogo: apiMatch.teams.away.logo,
 
+    homeShort: apiMatch.teams.home.name.slice(0, 3).toUpperCase(),
+    awayShort: apiMatch.teams.away.name.slice(0, 3).toUpperCase(),
+
+    projectedScore:
+      apiMatch.goals.home !== null && apiMatch.goals.away !== null
+        ? `${apiMatch.goals.home} - ${apiMatch.goals.away}`
+        : "vs",
+
+    homeWin: 47,
+    draw: 28,
+    awayWin: 25,
+    confidence: 74,
+
+    summary: `${apiMatch.teams.home.name} vs ${apiMatch.teams.away.name} match data loaded from API-Football.`,
+    bestTip: "AI analysis pending",
+    goalsLean: "Market pending",
+    btts: "Pending",
+
+    xgHome: "-",
+    xgAway: "-",
+    shotsHome: "-",
+    shotsAway: "-",
+    possessionHome: "-",
+    possessionAway: "-",
+
+    timeline: [],
+    keySignals: [],
+    related: []
+  };
+}
   xgHome: "-",
   xgAway: "-",
   shotsHome: "-",
