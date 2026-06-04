@@ -335,15 +335,10 @@ console.log("away logo:", match.awayLogo);
     setText("goals-lean", goalsLean);
     setText("btts-signal", btts);
 
-    const factorTags = document.getElementById("factor-tags");
-    if (factorTags) {
-      factorTags.innerHTML = "";
-      factors.forEach((factor) => {
-        const span = document.createElement("span");
-        span.textContent = factor;
-        factorTags.appendChild(span);
-      });
-    }
+   const factorTags = document.getElementById("factor-tags");
+if (factorTags) {
+  factorTags.innerHTML = "";
+}
 
     setText("xg-home-team", homeName);
     setText("xg-away-team", awayName);
