@@ -422,6 +422,18 @@ keySignals.innerHTML = "";
         row.innerHTML = `<span>${label}</span><strong>${value}</strong>`;
         keySignals.appendChild(row);
       });
+      factors.forEach((factor) => {
+  const row = document.createElement("div");
+
+  row.className = "key-signal-item glow-hover";
+
+  row.innerHTML = `
+    <span>⚡ Signal</span>
+    <strong>${factor}</strong>
+  `;
+
+  keySignals.appendChild(row);
+});
     }
 
     const relatedList = document.getElementById("related-match-list");
