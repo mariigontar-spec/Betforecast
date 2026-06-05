@@ -223,36 +223,38 @@ const totalGoals =
     ? homeGoals + awayGoals
     : null;
 
-const bestTip =
-  match.tip ||
-  (totalGoals !== null
-    ? homeGoals > awayGoals
-      ? "Home Win"
-      : awayGoals > homeGoals
-      ? "Away Win"
-      : "Draw"
-    : isLive
-    ? "Live Match"
-    : "Match Preview");
+const scoreParts = String(heroScore || projectedScore).split("-");
+const homeGoals = Number(scoreParts[0]?.trim());
+const awayGoals = Number(scoreParts[1]?.trim());
 
-const goalsLean =
-  match.goalsLean &&
-  match.goalsLean !== "Market pending"
-  (totalGoals !== null
-    ? totalGoals > 2.5
-      ? "Over 2.5"
-      : "Under 2.5"
-    : "Market pending");
+const hasScore =
+  Number.isFinite(homeGoals) && Number.isFinite(awayGoals);
 
-const btts =
-  match.btts &&
-  match.btts !== "Pending"
-    ? homeGoals > 0 && awayGoals > 0
-      ? "Yes"
-      : "No"
-    : isLive
-    ? "Live"
-    : "Pending");
+const totalGoals = hasScore ? homeGoals + awayGoals : null;
+
+const bestTip = hasScore
+  ? homeGoals > awayGoals
+    ? "Home Win"
+    : awayGoals > homeGoals
+    ? "Away Win"
+    : "Draw"
+  : isLive
+  ? "Live Match"
+  : "Match Preview";
+
+const goalsLean = hasScore
+  ? totalGoals > 2.5
+    ? "Over 2.5"
+    : "Under 2.5"
+  : "Market pending";
+
+const btts = hasScore
+  ? homeGoals > 0 && awayGoals > 0
+    ? "Yes"
+    : "No"
+  : isLive
+  ? "Live"
+  : "Pending";
     const quickInsight =
       match.quickInsight ||
       `The key swing factor in ${homeName} vs ${awayName} is who controls momentum after the first major chance.`;
