@@ -236,7 +236,8 @@ const bestTip =
     : "Match Preview");
 
 const goalsLean =
-  match.goalsLean ||
+  match.goalsLean &&
+  match.goalsLean !== "Market pending"
   (totalGoals !== null
     ? totalGoals > 2.5
       ? "Over 2.5"
@@ -244,8 +245,8 @@ const goalsLean =
     : "Market pending");
 
 const btts =
-  match.btts ||
-  (totalGoals !== null
+  match.btts &&
+  match.btts !== "Pending"
     ? homeGoals > 0 && awayGoals > 0
       ? "Yes"
       : "No"
