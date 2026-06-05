@@ -407,35 +407,29 @@ if (factorTags) {
     }
 
     const keySignals = document.getElementById("key-signal-list");
-    if (keySignals) {
-keySignals.innerHTML = "";
+   if (keySignals) {
+  keySignals.innerHTML = "";
 
-[
-  ["Status", (match.status || "NS").toUpperCase()],
-        ["Best Tip", bestTip],
-        ["Goals Lean", goalsLean],
-        ["BTTS", btts],
-        ["Model Confidence", `${confidence}%`]
-      ].forEach(([label, value]) => {
-        const row = document.createElement("div");
-        row.className = "key-signal-item glow-hover";
-        row.innerHTML = `<span>${label}</span><strong>${value}</strong>`;
-        keySignals.appendChild(row);
-      });
-      factors.forEach((factor) => {
-  const row = document.createElement("div");
+  [
+    ["Status", (match.status || "NS").toUpperCase()],
+    ["Best Tip", bestTip],
+    ["Goals Lean", goalsLean],
+    ["BTTS", btts],
+    ["Model Confidence", `${confidence}%`],
+    ["Key Factors", factors.join(" • ")]
+  ].forEach(([label, value]) => {
+    const row = document.createElement("div");
 
-  row.className = "key-signal-item glow-hover";
+    row.className = "key-signal-item glow-hover";
 
-  row.innerHTML = `
-    <span>⚡ Signal</span>
-    <strong>${factor}</strong>
-  `;
+    row.innerHTML = `
+      <span>${label}</span>
+      <strong>${value}</strong>
+    `;
 
-  keySignals.appendChild(row);
-});
-    }
-
+    keySignals.appendChild(row);
+  });
+}
     const relatedList = document.getElementById("related-match-list");
 if (relatedList) {
   relatedList.innerHTML = "";
