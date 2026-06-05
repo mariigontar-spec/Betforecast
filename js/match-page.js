@@ -215,9 +215,43 @@ if (!match) {
       match.summary ||
       `${homeName} vs ${awayName} is profiled by our model as a balanced matchup with clear pressure phases, scoring windows, and game-state shifts to watch.`;
 
-    const bestTip = match.tip || (isLive ? "Live Match" : "Match Preview");
-    const goalsLean = match.goalsLean || "Over 2.5";
-    const btts = match.btts || (isLive ? "Live" : "Watch");
+const homeGoals = Number(String(projectedScore).split("-")[0]?.trim());
+const awayGoals = Number(String(projectedScore).split("-")[1]?.trim());
+
+const totalGoals =
+  Number.isFinite(homeGoals) && Number.isFinite(awayGoals)
+    ? homeGoals + awayGoals
+    : null;
+
+const bestTip =
+  match.tip ||
+  (totalGoals !== null
+    ? homeGoals > awayGoals
+      ? "Home Win"
+      : awayGoals > homeGoals
+      ? "Away Win"
+      : "Draw"
+    : isLive
+    ? "Live Match"
+    : "Match Preview");
+
+const goalsLean =
+  match.goalsLean ||
+  (totalGoals !== null
+    ? totalGoals > 2.5
+      ? "Over 2.5"
+      : "Under 2.5"
+    : "Market pending");
+
+const btts =
+  match.btts ||
+  (totalGoals !== null
+    ? homeGoals > 0 && awayGoals > 0
+      ? "Yes"
+      : "No"
+    : isLive
+    ? "Live"
+    : "Pending");
     const quickInsight =
       match.quickInsight ||
       `The key swing factor in ${homeName} vs ${awayName} is who controls momentum after the first major chance.`;
