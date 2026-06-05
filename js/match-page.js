@@ -215,13 +215,6 @@ if (!match) {
       match.summary ||
       `${homeName} vs ${awayName} is profiled by our model as a balanced matchup with clear pressure phases, scoring windows, and game-state shifts to watch.`;
 
-const homeGoals = Number(String(projectedScore).split("-")[0]?.trim());
-const awayGoals = Number(String(projectedScore).split("-")[1]?.trim());
-
-const totalGoals =
-  Number.isFinite(homeGoals) && Number.isFinite(awayGoals)
-    ? homeGoals + awayGoals
-    : null;
 
 const scoreParts = String(heroScore || projectedScore).split("-");
 const homeGoals = Number(scoreParts[0]?.trim());
