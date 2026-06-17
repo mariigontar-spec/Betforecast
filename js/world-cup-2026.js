@@ -122,7 +122,7 @@ fixturesEl.innerHTML = displayFixtures.map(item => {
       `;
     }).join("");
 
-    renderPredictions(sortedFixtures);
+    renderPredictions(displayFixtures);
     renderTournamentStats(fixtures);
 
     return fixtures;
