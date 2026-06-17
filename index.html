@@ -497,51 +497,6 @@ document.addEventListener("DOMContentLoaded", function () {
   })();
 </script>
 
-
-<!-- Adhit Media Ad Server / Popup + Push + In-Page with daily browser limits -->
-<script data-cfasync="false">
-(function(w,a){
-  w[a]=w[a]||{};
-  w[a].queue=w[a].queue||[];
-
-  function canShowAdhit(key, limitPerDay) {
-    var today = new Date().toISOString().slice(0, 10);
-    var storageKey = "adhit_" + key + "_" + today;
-    var count = parseInt(localStorage.getItem(storageKey) || "0", 10);
-
-    if (count >= limitPerDay) {
-      return false;
-    }
-
-    localStorage.setItem(storageKey, String(count + 1));
-    return true;
-  }
-
-  w[a].queue.push(function () {
-
-    if (canShowAdhit("popup", 2)) {
-      _ASO.PuOptions = { idzone: 161907 };
-      _ASO.loadPuHelper();
-    }
-
-    if (canShowAdhit("push", 2)) {
-      _ASO.PushOptions = { idzone: 161912 };
-      _ASO.loadPushHelper();
-    }
-
-    if (canShowAdhit("inpage", 2)) {
-      _ASO.InpOptions = { idzone: 161915 };
-      _ASO.loadInpHelper();
-    }
-
-  });
-
-})(window,"_aso");
-</script>
-
-<script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
-<!-- /Adhit Media Ad Server -->
-
 </body>
 </html>
 
