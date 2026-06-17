@@ -12666,3 +12666,97 @@ body {
     transform: none !important;
   }
 }
+/* ===== RESET BROKEN MOBILE TABLE ===== */
+
+@media (max-width: 768px) {
+  .table-card,
+  .standings-card {
+    width: calc(100vw - 28px) !important;
+    max-width: calc(100vw - 28px) !important;
+    margin: 22px auto !important;
+    padding: 18px 12px !important;
+    overflow: hidden !important;
+  }
+
+  .table-card h2,
+  .standings-card h2 {
+    font-size: 26px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .table-wrapper,
+  .standings-table-wrapper,
+  .league-table,
+  .league-table-wrap {
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table,
+  .standings-table {
+    display: table !important;
+    width: 620px !important;
+    min-width: 620px !important;
+    border-collapse: separate !important;
+    border-spacing: 0 8px !important;
+  }
+
+  table thead,
+  .standings-table thead {
+    display: table-header-group !important;
+  }
+
+  table tbody {
+    display: table-row-group !important;
+  }
+
+  table tr {
+    display: table-row !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+  }
+
+  table th,
+  table td {
+    display: table-cell !important;
+    padding: 10px 12px !important;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+  }
+
+  table td:nth-child(n),
+  table th:nth-child(n) {
+    display: table-cell !important;
+  }
+
+  table td:nth-child(1),
+  table th:nth-child(1) {
+    width: 40px !important;
+    text-align: center !important;
+  }
+
+  table td:nth-child(2),
+  table th:nth-child(2) {
+    width: 260px !important;
+    max-width: 260px !important;
+  }
+
+  table td:nth-child(2) {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  table img,
+  .team-logo,
+  .club-logo {
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 8px !important;
+    vertical-align: middle !important;
+  }
+}
