@@ -10573,3 +10573,28 @@ body.theme-glass .league-filter-btn:not(.active) {
   font-weight: 700;
   margin-top: 4px;
 }
+.side-banner {
+    position: fixed;
+    top: 120px;
+    z-index: 100;
+}
+
+.side-banner img {
+    width: 160px;
+    height: 600px;
+    display: block;
+}
+
+.left-banner {
+    left: 15px;
+}
+
+.right-banner {
+    right: 15px;
+}
+
+@media (max-width: 1400px) {
+    .side-banner {
+        display: none;
+    }
+}
