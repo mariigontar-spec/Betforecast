@@ -11317,37 +11317,26 @@ body {
     transform-origin: center top;
   }
 }
-/* FIX 300x250 BANNER */
-.ad-banner-wrap {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 56px auto 72px;
-  overflow: visible !important;
+/* Adhit 300x250 */
+.adhit-300x250 {
+    width: 300px !important;
+    height: 250px !important;
+
+    min-width: 300px !important;
+    min-height: 250px !important;
+
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: visible !important;
+    flex-shrink: 0;
 }
 
-.ad-banner-300x250 {
-  width: 300px !important;
-  min-width: 300px !important;
-  max-width: 300px !important;
-
-  height: 250px !important;
-  min-height: 250px !important;
-  max-height: 250px !important;
-
-  display: block;
-  flex: 0 0 300px !important;
-  overflow: hidden;
-}
-
-.ad-banner-300x250 iframe,
-.ad-banner-300x250 img,
-.ad-banner-300x250 ins,
-.ad-banner-300x250 a {
-  width: 300px !important;
-  height: 250px !important;
-  max-width: none !important;
-  max-height: none !important;
-  display: block;
+.adhit-300x250 .ins-zone,
+.adhit-300x250 iframe {
+    width: 300px !important;
+    height: 250px !important;
+    max-width: none !important;
 }
