@@ -11222,3 +11222,92 @@ body.theme-glass .league-filter-btn:not(.active) {
     grid-template-columns: 1fr;
   }
 }
+/* MOBILE FIX */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container,
+  .page,
+  .main,
+  .content,
+  .section,
+  .hero,
+  .panel,
+  .card,
+  .prediction-card,
+  .results-card,
+  .model-view,
+  .latest-results,
+  .features,
+  .insights,
+  .ai-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .container,
+  .main,
+  .content {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  section,
+  .section,
+  .panel,
+  .card {
+    overflow: hidden;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero,
+  .main-card,
+  .prediction-box,
+  .results-box {
+    border-radius: 22px;
+  }
+
+/* 300x250 banner */
+.ad-300x250 {
+  width: 300px !important;
+  min-width: 300px !important;
+  max-width: 300px !important;
+
+  height: 250px !important;
+  min-height: 250px !important;
+  max-height: 250px !important;
+
+  margin: 20px auto;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ad-300x250 iframe,
+.ad-300x250 img,
+.ad-300x250 ins {
+  width: 300px !important;
+  height: 250px !important;
+  max-width: none !important;
+}
