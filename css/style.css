@@ -12267,3 +12267,201 @@ body {
     max-width: 300px !important;
   }
 }   
+/* ===== STANDINGS FINAL MOBILE FIX ===== */
+
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  body {
+    margin: 0 !important;
+  }
+
+  main,
+  .main,
+  .page,
+  .container,
+  .content {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    overflow-x: hidden !important;
+  }
+
+  header,
+  .header,
+  .site-header {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 28px 16px !important;
+    margin: 0 auto !important;
+  }
+
+  .logo,
+  .brand {
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 auto 20px !important;
+  }
+
+  .theme-toggle,
+  .dark-toggle {
+    margin: 0 auto 22px !important;
+  }
+
+  .nav,
+  .main-nav,
+  .nav-buttons,
+  .menu-buttons {
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .nav a,
+  .main-nav a,
+  .nav-buttons a,
+  .menu-buttons a {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 12px 10px !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .nav a:last-child,
+  .main-nav a:last-child,
+  .nav-buttons a:last-child,
+  .menu-buttons a:last-child {
+    grid-column: 1 / -1;
+    max-width: 210px;
+    margin: 0 auto;
+  }
+
+  .league-hero,
+  .league-card,
+  .standings-card,
+  .table-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 22px auto !important;
+    padding: 22px 16px !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+  }
+
+  .league-hero h1,
+  .league-title {
+    font-size: 30px !important;
+    line-height: 1.1 !important;
+    white-space: normal !important;
+  }
+
+  .league-tabs,
+  .tabs {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .league-tabs button,
+  .tabs button {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 12px 10px !important;
+    font-size: 15px !important;
+  }
+}/* ===== MOBILE LEAGUE TABLE AS CARDS ===== */
+
+@media (max-width: 768px) {
+  .standings-table,
+  .league-table table,
+  table {
+    width: 100% !important;
+    min-width: 0 !important;
+    border-collapse: separate !important;
+    border-spacing: 0 10px !important;
+  }
+
+  .standings-table thead,
+  .league-table thead,
+  table thead {
+    display: none !important;
+  }
+
+  .standings-table tr,
+  .league-table tr,
+  table tr {
+    display: grid !important;
+    grid-template-columns: 34px 1fr 44px !important;
+    align-items: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+    padding: 12px !important;
+    border-radius: 16px !important;
+    background: rgba(255,255,255,0.05) !important;
+  }
+
+  .standings-table td,
+  .league-table td,
+  table td {
+    display: block !important;
+    padding: 0 !important;
+    border: 0 !important;
+    font-size: 14px !important;
+    white-space: nowrap !important;
+  }
+
+  .standings-table td:nth-child(1),
+  .league-table td:nth-child(1),
+  table td:nth-child(1) {
+    text-align: center !important;
+  }
+
+  .standings-table td:nth-child(2),
+  .league-table td:nth-child(2),
+  table td:nth-child(2) {
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .standings-table td:nth-child(3),
+  .league-table td:nth-child(3),
+  table td:nth-child(3) {
+    text-align: right !important;
+  }
+
+  .standings-table td:nth-child(n+4),
+  .league-table td:nth-child(n+4),
+  table td:nth-child(n+4) {
+    display: none !important;
+  }
+
+  .team,
+  .team-name,
+  .club-name {
+    min-width: 0 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  .team img,
+  .team-logo,
+  .club-logo {
+    width: 26px !important;
+    height: 26px !important;
+    margin-right: 8px !important;
+  }
+}
