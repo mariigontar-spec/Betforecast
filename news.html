@@ -66,16 +66,29 @@
           </div>
           <div id="featured-story"></div>
         </section>
-<!-- Adhit Media / News inline banner -->
-<div class="news-inline-banner">
-  <div class="news-banner-desktop">
-    <ins class="ins-zone" data-zone="163631"></ins>
-  </div>
+<!-- Adhit Media / News adaptive banner -->
+<div class="news-ad-slot" id="newsAdaptiveBanner"></div>
 
-  <div class="news-banner-mobile">
-    <ins class="ins-zone" data-zone="163631"></ins>
-  </div>
-</div>
+<script>
+  (function () {
+    const slot = document.getElementById("newsAdaptiveBanner");
+    if (!slot) return;
+
+    const isMobile = window.innerWidth <= 768;
+
+    slot.innerHTML = isMobile
+      ? `
+        <div class="adhit-300x250">
+          <ins class="ins-zone" data-zone="163623"></ins>
+        </div>
+      `
+      : `
+        <div class="banner-728">
+          <ins class="ins-zone" data-zone="163631"></ins>
+        </div>
+      `;
+  })();
+</script>
 <!-- /Adhit Media -->
         <section class="panel news-feed-panel">
           <div class="panel-head">
