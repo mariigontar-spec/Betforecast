@@ -10784,3 +10784,24 @@ body.theme-glass .league-filter-btn:not(.active) {
         display: none;
     }
 }
+.news-title-strip {
+    margin: 18px 0 24px;
+    padding: 0 0 18px;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.news-title-strip span {
+    display: block;
+    margin-bottom: 8px;
+    color: #48e6a4;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.news-title-strip h1 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.1;
+}
