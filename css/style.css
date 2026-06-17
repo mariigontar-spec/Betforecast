@@ -10674,3 +10674,18 @@ body.theme-glass .league-filter-btn:not(.active) {
     width: 160px;
     height: 600px;
 }
+.side-banner {
+    position: fixed;
+    top: 120px;
+    z-index: 50;
+    width: 160px;
+    height: 600px;
+}
+
+.left-banner {
+    left: max(10px, calc((100vw - 1400px) / 2 - 170px));
+}
+
+.right-banner {
+    right: max(10px, calc((100vw - 1400px) / 2 - 170px));
+}
