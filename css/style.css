@@ -10598,3 +10598,40 @@ body.theme-glass .league-filter-btn:not(.active) {
         display: none;
     }
 }
+.side-banner {
+    position: fixed;
+    top: 120px;
+    z-index: 100;
+}
+
+.left-banner {
+    left: 15px;
+}
+
+.right-banner {
+    right: 15px;
+}
+
+.side-banner .ins-zone {
+    width: 160px;
+    height: 600px;
+    display: block;
+}
+
+.content-banner {
+    width: 300px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.content-banner .ins-zone {
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+}
+
+@media (max-width: 1600px) {
+    .side-banner {
+        display: none;
+    }
+}
