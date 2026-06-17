@@ -12507,3 +12507,43 @@ body {
     display: flex;
   }
 }
+.news-ad-slot {
+  width: 100%;
+  margin: 26px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-728 {
+  width: 728px;
+  max-width: 100%;
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adhit-300x250 {
+  width: 350px;
+  max-width: 100%;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adhit-300x250 ins {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  min-height: 250px;
+}
+
+.banner-728 ins {
+  display: block;
+  width: 728px;
+  max-width: 100%;
+  min-height: 90px;
+}
