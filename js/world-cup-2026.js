@@ -181,7 +181,12 @@ async function loadWorldCupStandings() {
     );
 
     const league = data.response?.[0]?.league;
-    const groups = league?.standings || [];
+    const groupsRaw = league?.standings || [];
+
+const groups = groupsRaw.filter(group => {
+  const groupName = group?.[0]?.group || "";
+  return /^Group [A-L]$/i.test(groupName);
+});
 
     if (!groups.length) {
       statusEl.textContent = "Official standings are not available yet";
