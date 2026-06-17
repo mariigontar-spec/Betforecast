@@ -11311,3 +11311,9 @@ body {
   height: 250px !important;
   max-width: none !important;
 }
+@media (max-width: 340px) {
+  .ad-300x250 {
+    transform: scale(0.9);
+    transform-origin: center top;
+  }
+}
