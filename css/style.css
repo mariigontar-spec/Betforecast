@@ -11808,3 +11808,36 @@ body {
     width: 100% !important;
   }
 }
+/* По умолчанию */
+.desktop-ad {
+  display: flex;
+  justify-content: center;
+  margin: 24px auto 32px;
+}
+
+.wc-mobile-ad {
+  display: none;
+}
+
+/* Мобильные */
+@media (max-width: 768px) {
+
+  .desktop-ad {
+    display: none !important;
+  }
+
+  .wc-mobile-ad {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .wc-mobile-ad iframe,
+  .wc-mobile-ad img {
+    width: 300px !important;
+    height: 250px !important;
+    display: block;
+  }
+}
