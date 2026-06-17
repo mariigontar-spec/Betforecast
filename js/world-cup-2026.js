@@ -25,7 +25,7 @@ async function wcFetch(endpoint) {
 }
 
 function startWorldCupCountdown() {
-  const target = new Date("2026-06-11T00:00:00+03:00").getTime();
+  const target = new Date("2026-07-19T23:59:00+03:00").getTime();
 
   function update() {
     const now = Date.now();
