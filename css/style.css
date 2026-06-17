@@ -11451,17 +11451,8 @@ body {
     width: 620px !important;
   }
 }
-/* Скрыть боковые баннеры на мобильных */
 
-@media (max-width: 768px) {
-  .sidebar-ad,
-  .side-banner,
-  .left-banner,
-  .right-banner {
-    display: none !important;
-  }
-}
-/* Полностью отключить боковые баннеры на телефонах */
+/* отключить боковые баннеры на телефонах */
 
 @media screen and (max-width: 768px) {
   .ad-sidebar-left,
