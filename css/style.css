@@ -10642,11 +10642,11 @@ body.theme-glass .league-filter-btn:not(.active) {
 }
 
 .left-banner {
-    left: 8px;
+    left: calc(50% - 930px);
 }
 
 .right-banner {
-    right: 8px;
+    right: calc(50% - 930px);
 }
 
 .side-banner .ins-zone,
