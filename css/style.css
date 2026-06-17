@@ -10821,3 +10821,11 @@ body.theme-glass .league-filter-btn:not(.active) {
     align-items:center;
     margin:40px auto;
 }
+.wc-nav {
+  color: #d4af37 !important;
+  font-weight: 700;
+}
+
+.wc-nav:hover {
+  color: #f4d03f !important;
+}
