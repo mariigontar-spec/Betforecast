@@ -34,7 +34,7 @@
     <nav class="topbar-menu" aria-label="Main navigation">
       <a href="news.html">News</a>
       <a href="standings.html">Standings</a>
-     <a href="standings.html">Matches</a>
+     <a href="match.html" class="active">Matches</a>
       <a href="results.html">Results</a>
       <a href="ai-insights.html">AI Insights</a>
     </nav>
@@ -231,119 +231,8 @@
 
       </section>
 
-      <!-- ADVANCED STATS -->
-      <section class="panel">
-
-        <div class="panel-head">
-          <h2>Advanced Match Stats</h2>
-        </div>
-
-        <!-- API SPORTS STANDINGS -->
-        <div class="widget-box">
-
-          <api-sports-widget data-type="standings"></api-sports-widget>
-
-          <api-sports-widget
-            data-type="config"
-            data-key="YOUR_API_KEY"
-            data-sport="football"
-            data-league="39"
-            data-season="2025"
-            data-theme="dark"
-            data-lang="en">
-          </api-sports-widget>
-
-        </div>
-
-        <!-- LIVE SCORE -->
-        <div class="widget-box">
-
-          <api-sports-widget data-type="livescore"></api-sports-widget>
-
-          <api-sports-widget
-            data-type="config"
-            data-key="YOUR_API_KEY"
-            data-sport="football"
-            data-theme="dark"
-            data-lang="en">
-          </api-sports-widget>
-
-        </div>
-
-        <div class="advanced-stats-grid">
-
-          <div class="adv-stat-box">
-            <div class="adv-stat-label">Expected Goals</div>
-
-            <div class="adv-stat-compare">
-              <span id="xg-home-team">Arsenal</span>
-              <strong id="xg-home">2.1</strong>
-            </div>
-
-            <div class="adv-stat-compare">
-              <span id="xg-away-team">Chelsea</span>
-              <strong id="xg-away">1.2</strong>
-            </div>
-          </div>
-
-          <div class="adv-stat-box">
-            <div class="adv-stat-label">Projected Shots</div>
-
-            <div class="adv-stat-compare">
-              <span id="shots-home-team">Arsenal</span>
-              <strong id="shots-home">15.4</strong>
-            </div>
-
-            <div class="adv-stat-compare">
-              <span id="shots-away-team">Chelsea</span>
-              <strong id="shots-away">10.1</strong>
-            </div>
-          </div>
-
-          <div class="adv-stat-box">
-            <div class="adv-stat-label">Possession Lean</div>
-
-            <div class="adv-stat-compare">
-              <span id="pos-home-team">Arsenal</span>
-              <strong id="pos-home">58%</strong>
-            </div>
-
-            <div class="adv-stat-compare">
-              <span id="pos-away-team">Chelsea</span>
-              <strong id="pos-away">42%</strong>
-            </div>
-          </div>
-
-          <div class="adv-stat-box">
-
-            <div class="adv-stat-label">Confidence</div>
-
-            <div class="confidence-meter">
-              <div class="confidence-fill" id="confidence-fill"></div>
-            </div>
-
-            <div class="confidence-text-inline">
-              <strong id="confidence-value">74%</strong>
     
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- TIMELINE -->
-      <section class="panel" id="timeline">
-
-        <div class="panel-head">
-          <h2>Game State Timeline</h2>
-        </div>
-
-        <div class="timeline-list" id="timeline-list"></div>
-
-      </section>
-
+     
       <!-- FORM -->
       <section class="panel">
 
