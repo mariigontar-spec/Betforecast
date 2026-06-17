@@ -11461,3 +11461,15 @@ body {
     display: none !important;
   }
 }
+/* Полностью отключить боковые баннеры на телефонах */
+
+@media screen and (max-width: 768px) {
+  .ad-sidebar-left,
+  .ad-sidebar-right,
+  .sidebar-banner,
+  .left-banner,
+  .right-banner,
+  .side-banner {
+    display: none !important;
+  }
+}
