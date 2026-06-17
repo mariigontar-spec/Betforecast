@@ -11340,3 +11340,114 @@ body {
     height: 250px !important;
     max-width: none !important;
 }
+   /* ===== 300x250 BANNER FIX ===== */
+
+.ad-300x250,
+.banner-300x250,
+.wc-banner,
+.side-banner {
+  width: 300px !important;
+  min-width: 300px !important;
+  max-width: 300px !important;
+
+  height: 250px !important;
+  min-height: 250px !important;
+  max-height: 250px !important;
+
+  margin: 28px auto !important;
+  display: block !important;
+  overflow: hidden !important;
+  flex: 0 0 300px !important;
+}
+
+.ad-300x250 img,
+.banner-300x250 img,
+.wc-banner img,
+.side-banner img,
+.ad-300x250 iframe,
+.banner-300x250 iframe,
+.wc-banner iframe,
+.side-banner iframe {
+  width: 300px !important;
+  height: 250px !important;
+  max-width: none !important;
+  display: block !important;
+}
+/* ===== STANDINGS MOBILE FIX ===== */
+
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  main,
+  .main,
+  .container,
+  .standings-page,
+  .standings-section,
+  section {
+    width: 100% !important;
+    max-width: 100vw !important;
+    margin: 0 auto !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    overflow-x: hidden !important;
+  }
+
+  .league-hero,
+  .league-card,
+  .league-table,
+  .table-card,
+  .standings-card,
+  .matches-card,
+  .live-card,
+  .panel,
+  .card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .league-hero {
+    text-align: left !important;
+    padding: 28px 20px !important;
+  }
+
+  .league-hero h1,
+  .league-title {
+    font-size: 34px !important;
+    line-height: 1.1 !important;
+    white-space: normal !important;
+  }
+
+  .league-tabs,
+  .tabs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+  }
+
+  .league-tabs button,
+  .tabs button {
+    flex: 1 1 auto !important;
+    min-width: 120px !important;
+  }
+
+  .table-wrapper,
+  .standings-table-wrapper {
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table,
+  .standings-table {
+    min-width: 620px !important;
+    width: 620px !important;
+  }
+}
