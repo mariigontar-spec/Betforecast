@@ -11872,3 +11872,45 @@ body {
         overflow: hidden;
     }
 }
+/* desktop/mobile ad switch */
+
+.ad-desktop-only {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto 32px;
+}
+
+.ad-mobile-only {
+  display: none !important;
+}
+
+.banner-728,
+.banner-728 ins,
+.banner-728 iframe {
+  width: 728px !important;
+  height: 90px !important;
+  max-width: 728px !important;
+}
+
+@media (max-width: 768px) {
+  .ad-desktop-only {
+    display: none !important;
+  }
+
+  .ad-mobile-only {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 22px auto 30px;
+    width: 100% !important;
+  }
+
+  .adhit-300x250,
+  .adhit-300x250 ins,
+  .adhit-300x250 iframe {
+    width: 300px !important;
+    height: 250px !important;
+    max-width: 300px !important;
+  }
+}
