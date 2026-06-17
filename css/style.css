@@ -12760,3 +12760,21 @@ body {
     vertical-align: middle !important;
   }
 }
+@media (max-width: 768px) {
+  .league-hero,
+  .league-card {
+    width: calc(100vw - 28px) !important;
+    max-width: calc(100vw - 28px) !important;
+    margin: 20px auto !important;
+    padding: 22px 16px !important;
+    overflow-x: hidden !important;
+    transform: none !important;
+  }
+
+  .league-hero h1,
+  .league-title {
+    font-size: 28px !important;
+    line-height: 1.1 !important;
+    white-space: normal !important;
+  }
+}
