@@ -10677,11 +10677,11 @@ body.theme-glass .league-filter-btn:not(.active) {
 }
 
 .left-banner {
-    left: 20px;
+    left: 140px;
 }
 
 .right-banner {
-    right: 20px;
+    right: 140px;
 }
 
 @media (max-width: 1700px) {
