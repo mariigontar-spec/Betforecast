@@ -12465,3 +12465,45 @@ body {
     margin-right: 8px !important;
   }
 }
+.news-inline-banner {
+  width: 100%;
+  margin: 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.news-banner-desktop {
+  width: 728px;
+  max-width: 100%;
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-banner-mobile {
+  display: none;
+  width: 350px;
+  max-width: 100%;
+  min-height: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-banner-desktop ins,
+.news-banner-mobile ins {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .news-banner-desktop {
+    display: none;
+  }
+
+  .news-banner-mobile {
+    display: flex;
+  }
+}
