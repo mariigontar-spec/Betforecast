@@ -61,13 +61,29 @@ async function loadWorldCupFixtures() {
       return [];
     }
 
-    const sortedFixtures = fixtures
-      .sort((a, b) => new Date(a.fixture.date) - new Date(b.fixture.date))
-      .slice(0, 8);
+   const now = new Date();
 
-    statusEl.textContent = `${fixtures.length} fixtures loaded`;
+const upcomingFixtures = fixtures
+  .filter(item => {
+    const matchDate = new Date(item.fixture.date);
+    const status = item.fixture.status.short;
+    return matchDate >= now && ["NS", "TBD", "PST"].includes(status);
+  })
+  .sort((a, b) => new Date(a.fixture.date) - new Date(b.fixture.date));
 
-    fixturesEl.innerHTML = sortedFixtures.map(item => {
+const recentFixtures = fixtures
+  .filter(item => ["FT", "AET", "PEN"].includes(item.fixture.status.short))
+  .sort((a, b) => new Date(b.fixture.date) - new Date(a.fixture.date));
+
+const displayFixtures = upcomingFixtures.length
+  ? upcomingFixtures.slice(0, 8)
+  : recentFixtures.slice(0, 8);
+
+statusEl.textContent = upcomingFixtures.length
+  ? `${upcomingFixtures.length} upcoming fixtures`
+  : `${recentFixtures.length} recent results`;
+
+fixturesEl.innerHTML = displayFixtures.map(item => {
       const date = new Date(item.fixture.date);
       const home = item.teams.home;
       const away = item.teams.away;
