@@ -10815,3 +10815,9 @@ body.theme-glass .league-filter-btn:not(.active) {
     font-size: 36px;
     line-height: 1.1;
 }
+.content-banner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:40px auto;
+}
