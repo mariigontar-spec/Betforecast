@@ -11197,3 +11197,28 @@ body.theme-glass .league-filter-btn:not(.active) {
     text-align: left;
   }
 }
+.wc-full {
+  grid-column: 1 / -1;
+}
+
+.wc-bracket-placeholder {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.wc-bracket-placeholder div {
+  padding: 18px 14px;
+  border-radius: 16px;
+  background: rgba(2, 6, 23, 0.42);
+  border: 1px solid rgba(212, 175, 55, 0.24);
+  color: #f8fafc;
+  text-align: center;
+  font-weight: 800;
+}
+
+@media (max-width: 920px) {
+  .wc-bracket-placeholder {
+    grid-template-columns: 1fr;
+  }
+}
