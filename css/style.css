@@ -10689,3 +10689,16 @@ body.theme-glass .league-filter-btn:not(.active) {
 .right-banner {
     right: max(10px, calc((100vw - 1400px) / 2 - 170px));
 }
+.page-shell,
+.bf-hero,
+.bf-main-content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.left-banner {
+    left: calc(50% - 850px);
+}
+
+.right-banner {
+    right: calc(50% - 850px);
+}
