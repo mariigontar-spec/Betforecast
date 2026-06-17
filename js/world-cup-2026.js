@@ -2,13 +2,8 @@ const WC_LEAGUE_ID = 1;
 const WC_SEASON = 2026;
 const WC_TIMEZONE = "Europe/Tallinn";
 
-const wcApiKey =
-  window.BF_API?.key ||
-  "";
-
-const wcBaseUrl =
-  window.BF_API?.baseUrl ||
-  "https://v3.football.api-sports.io";
+const wcApiKey = BF_API.key;
+const wcBaseUrl = BF_API.baseUrl;
 
 async function wcFetch(endpoint) {
   if (!wcApiKey) {
