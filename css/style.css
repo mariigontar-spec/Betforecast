@@ -11841,3 +11841,34 @@ body {
     display: block;
   }
 }
+/* Desktop */
+.desktop-ad {
+    display: flex;
+    justify-content: center;
+    margin: 24px auto;
+}
+
+.mobile-ad {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .desktop-ad {
+        display: none !important;
+    }
+
+    .mobile-ad {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .adhit-300x250 {
+        width: 300px !important;
+        height: 250px !important;
+        overflow: hidden;
+    }
+}
