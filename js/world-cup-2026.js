@@ -3,12 +3,11 @@ const WC_SEASON = 2026;
 const WC_TIMEZONE = "Europe/Tallinn";
 
 const wcApiKey =
-  window.API_FOOTBALL_KEY ||
-  window.API_KEY ||
+  window.BF_API?.key ||
   "";
 
 const wcBaseUrl =
-  window.API_FOOTBALL_BASE_URL ||
+  window.BF_API?.baseUrl ||
   "https://v3.football.api-sports.io";
 
 async function wcFetch(endpoint) {
