@@ -11451,3 +11451,13 @@ body {
     width: 620px !important;
   }
 }
+/* Скрыть боковые баннеры на мобильных */
+
+@media (max-width: 768px) {
+  .sidebar-ad,
+  .side-banner,
+  .left-banner,
+  .right-banner {
+    display: none !important;
+  }
+}
