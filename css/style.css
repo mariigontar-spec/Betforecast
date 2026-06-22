@@ -13195,3 +13195,54 @@ body.has-background-ad .bf-header {
   background: rgba(3, 13, 22, 0.92) !important;
   backdrop-filter: blur(14px);
 }
+/* WC 2026 dark theme fix */
+
+body.theme-dark,
+body.theme-dark.has-background-ad {
+  background: #020b13 !important;
+  color: #f8fafc !important;
+}
+
+body.theme-dark .bf-header {
+  background: rgba(3, 13, 22, 0.94) !important;
+  border-bottom: 1px solid rgba(94, 224, 164, 0.16) !important;
+  backdrop-filter: blur(14px);
+}
+
+body.theme-dark .wc-page {
+  background: transparent !important;
+  color: #f8fafc !important;
+}
+
+body.theme-dark .wc-hero,
+body.theme-dark .wc-card {
+  background: linear-gradient(180deg, rgba(18, 38, 55, 0.94), rgba(8, 20, 32, 0.96)) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(94, 224, 164, 0.16) !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.38) !important;
+}
+
+body.theme-dark .wc-hero h1,
+body.theme-dark .wc-card h2,
+body.theme-dark .wc-kicker,
+body.theme-dark .wc-card-head h2 {
+  color: #f8fafc !important;
+}
+
+body.theme-dark .wc-hero p,
+body.theme-dark .wc-card-head span,
+body.theme-dark .wc-countdown span,
+body.theme-dark .wc-hosts span {
+  color: rgba(248, 250, 252, 0.76) !important;
+}
+
+body.theme-dark .wc-countdown > div,
+body.theme-dark .wc-hosts span,
+body.theme-dark .wc-fixtures > div,
+body.theme-dark .wc-predictions > div,
+body.theme-dark .wc-standings,
+body.theme-dark .wc-bracket-placeholder > div {
+  background: rgba(3, 13, 22, 0.78) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(94, 224, 164, 0.14) !important;
+}
