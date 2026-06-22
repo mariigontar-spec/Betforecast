@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Betforecast.ai | Standings</title>
 
- <link rel="stylesheet" href="css/style.css?v=9">
+<link rel="stylesheet" href="css/style.css?v=10">
 
   <script src="https://cdn.counter.dev/script.js"
     data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098"
@@ -13,13 +13,81 @@
   </script>
 <style>
 @media (max-width: 768px) {
-  html, body {
-    overflow-x: hidden !important;
+  html,
+  body {
     width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    zoom: 1 !important;
   }
 
-  body {
-    zoom: 0.82;
+  * {
+    box-sizing: border-box !important;
+  }
+
+  .side-banner,
+  .left-banner,
+  .right-banner,
+  .banner-728,
+  .desktop-ad {
+    display: none !important;
+  }
+
+  .header,
+  .bf-header {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 16px 12px !important;
+    margin: 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .header-inner,
+  .bf-header-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 14px !important;
+  }
+
+  .bf-logo {
+    width: 100% !important;
+    justify-content: center !important;
+    font-size: 28px !important;
+  }
+
+  .topbar-menu,
+  .bf-nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    overflow: visible !important;
+  }
+
+  .topbar-menu a,
+  .bf-nav a {
+    flex: 0 1 auto !important;
+    white-space: nowrap !important;
+    font-size: 16px !important;
+    padding: 12px 18px !important;
+    border-radius: 16px !important;
+  }
+
+  .topbar-actions,
+  .bf-header-actions {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
   }
 
   .standings-page,
@@ -28,26 +96,118 @@
   .league-table-section,
   .league-hero,
   .table-card,
-  .standings-card {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 14px !important;
-    padding-right: 14px !important;
-    transform: none !important;
+  .standings-card,
+  .insight-card,
+  .matches-section,
+  .matches-card {
+    width: 100% !important;
+    max-width: calc(100vw - 24px) !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
     overflow: hidden !important;
+    transform: none !important;
+  }
+
+  .standings-page,
+  .standings-container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    margin-top: 22px !important;
   }
 
   .league-hero {
-    height: auto !important;
-    min-height: 220px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 18px !important;
+    padding: 24px 18px !important;
+    border-radius: 24px !important;
+    text-align: left !important;
+  }
+
+  .league-hero *,
+  .league-table-section *,
+  .table-card *,
+  .insight-card *,
+  .matches-section * {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    transform: none !important;
   }
 
   .league-hero h1,
-  .league-title {
-    font-size: 28px !important;
-    line-height: 1.1 !important;
+  .league-hero h2,
+  .league-title,
+  .league-name {
+    width: 100% !important;
+    font-size: 32px !important;
+    line-height: 1.05 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .league-country,
+  .league-season,
+  .league-hero p {
+    width: 100% !important;
+    font-size: 15px !important;
+    line-height: 1.35 !important;
+    text-align: left !important;
+    white-space: normal !important;
+  }
+
+  .league-tabs,
+  .standings-tabs,
+  .table-tabs {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    margin-top: 16px !important;
+  }
+
+  .league-tabs button,
+  .standings-tabs button,
+  .table-tabs button {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 14px 10px !important;
+    font-size: 16px !important;
+    border-radius: 18px !important;
+  }
+
+  .league-table-section,
+  .table-card,
+  .insight-card,
+  .matches-section,
+  .matches-card {
+    padding: 22px 16px !important;
+    border-radius: 24px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .league-table-section h2,
+  .table-card h2,
+  .insight-card h2,
+  .matches-section h2 {
+    font-size: 32px !important;
+    line-height: 1.08 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .insight-card p,
+  .matches-section p,
+  .matches-card p {
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
   }
 
   .standings-table,
@@ -55,30 +215,70 @@
   table {
     width: 100% !important;
     min-width: 0 !important;
+    max-width: 100% !important;
+    table-layout: auto !important;
   }
 
-  table th:nth-child(n+4),
-  table td:nth-child(n+4) {
-    display: none !important;
+  .standings-table th,
+  .standings-table td,
+  .league-table th,
+  .league-table td {
+    padding: 10px 8px !important;
+    font-size: 14px !important;
+    white-space: normal !important;
   }
 
-  table th,
-  table td {
-    font-size: 13px !important;
-    padding: 8px 6px !important;
-  }
-
+  .team-cell,
   .team-name,
-  .club-name,
-  .team {
-    font-size: 15px !important;
-    white-space: nowrap !important;
+  .club-name {
+    max-width: 220px !important;
+    font-size: 24px !important;
+    line-height: 1.1 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
   }
 
   .team-logo,
-  table img {
-    width: 24px !important;
-    height: 24px !important;
+  .club-logo,
+  .team-cell img {
+    width: 28px !important;
+    height: 28px !important;
+    flex: 0 0 28px !important;
+  }
+
+  .mobile-ad,
+  .adhit-300x250 {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 18px auto !important;
+    overflow: hidden !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .league-hero h1,
+  .league-hero h2,
+  .league-title,
+  .league-name,
+  .league-table-section h2,
+  .table-card h2,
+  .insight-card h2,
+  .matches-section h2 {
+    font-size: 30px !important;
+  }
+
+  .team-cell,
+  .team-name,
+  .club-name {
+    font-size: 22px !important;
+  }
+
+  .topbar-menu a,
+  .bf-nav a {
+    font-size: 15px !important;
+    padding: 11px 16px !important;
   }
 }
 </style>
