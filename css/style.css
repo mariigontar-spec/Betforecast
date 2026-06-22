@@ -13125,3 +13125,58 @@ body {
     max-width: none !important;
   }
 }
+/* Adhit Background / Site Skin fix */
+
+body.has-background-ad {
+  padding-top: 135px !important;
+  background: #020b13 !important;
+  min-height: 100vh;
+  isolation: isolate;
+}
+
+/* Background zone goes behind the site */
+body.has-background-ad .adhit-bg-zone {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 0 !important;
+  overflow: hidden !important;
+  pointer-events: auto !important;
+}
+
+/* Adhit iframe/image inside background */
+body.has-background-ad .adhit-bg-zone ins.ins-zone,
+body.has-background-ad .adhit-bg-zone iframe {
+  width: 100vw !important;
+  height: 100vh !important;
+  display: block !important;
+  border: 0 !important;
+}
+
+/* Site content must stay above the background */
+body.has-background-ad .header,
+body.has-background-ad main,
+body.has-background-ad footer,
+body.has-background-ad .side-banner,
+body.has-background-ad .content-banner {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Keep header readable over the skin */
+body.has-background-ad .header {
+  background: rgba(3, 13, 22, 0.92) !important;
+  backdrop-filter: blur(14px);
+}
+
+/* Mobile: no background takeover */
+@media (max-width: 900px) {
+  body.has-background-ad {
+    padding-top: 0 !important;
+  }
+
+  body.has-background-ad .adhit-bg-zone {
+    display: none !important;
+  }
+}
