@@ -13246,3 +13246,108 @@ body.theme-dark .wc-bracket-placeholder > div {
   color: #f8fafc !important;
   border: 1px solid rgba(94, 224, 164, 0.14) !important;
 }
+/* FIX: Adhit background must not push page down */
+
+body.has-background-ad {
+  background: #020b13 !important;
+  color: #f8fafc !important;
+  padding-top: 135px !important;
+  overflow-x: hidden !important;
+}
+
+/* Background ad is fixed behind the site, not part of page flow */
+body.has-background-ad .adhit-bg-zone {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 0 !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Adhit ins and iframe inside background */
+body.has-background-ad .adhit-bg-zone ins.ins-zone,
+body.has-background-ad .adhit-bg-zone iframe,
+body.has-background-ad .adhit-bg-zone > div {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  display: block !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Site content above the background */
+body.has-background-ad .bf-header,
+body.has-background-ad .header,
+body.has-background-ad main,
+body.has-background-ad footer,
+body.has-background-ad .side-banner,
+body.has-background-ad .banner-728,
+body.has-background-ad .adhit-300x250 {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Header readable */
+body.has-background-ad .bf-header {
+  background: rgba(3, 13, 22, 0.94) !important;
+  border-bottom: 1px solid rgba(94, 224, 164, 0.16) !important;
+  backdrop-filter: blur(14px);
+}
+
+/* WC page dark cards */
+body.theme-dark .wc-page {
+  background: transparent !important;
+  color: #f8fafc !important;
+}
+
+body.theme-dark .wc-hero,
+body.theme-dark .wc-card {
+  background: linear-gradient(180deg, rgba(18, 38, 55, 0.94), rgba(8, 20, 32, 0.96)) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(94, 224, 164, 0.16) !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.38) !important;
+}
+
+body.theme-dark .wc-hero h1,
+body.theme-dark .wc-card h2,
+body.theme-dark .wc-kicker,
+body.theme-dark .wc-card-head h2 {
+  color: #f8fafc !important;
+}
+
+body.theme-dark .wc-hero p,
+body.theme-dark .wc-card-head span,
+body.theme-dark .wc-countdown span,
+body.theme-dark .wc-hosts span {
+  color: rgba(248, 250, 252, 0.76) !important;
+}
+
+body.theme-dark .wc-countdown > div,
+body.theme-dark .wc-hosts span,
+body.theme-dark .wc-fixtures > div,
+body.theme-dark .wc-predictions > div,
+body.theme-dark .wc-standings,
+body.theme-dark .wc-bracket-placeholder > div {
+  background: rgba(3, 13, 22, 0.78) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(94, 224, 164, 0.14) !important;
+}
+
+/* Mobile: disable background skin */
+@media (max-width: 900px) {
+  body.has-background-ad {
+    padding-top: 0 !important;
+  }
+
+  body.has-background-ad .adhit-bg-zone {
+    display: none !important;
+  }
+}
