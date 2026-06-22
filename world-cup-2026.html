@@ -149,5 +149,41 @@
 <script src="api-config.js"></script>
 <script src="js/world-cup-2026.js?v=4"></script>
 <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
+<script>
+  (function () {
+    const body = document.body;
+    const toggle = document.getElementById("theme-toggle");
+    const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
+
+    function applyTheme(theme) {
+      body.classList.remove("theme-dark", "theme-glass", "theme-light");
+
+      if (theme === "glass") {
+        body.classList.add("theme-glass");
+      } else {
+        body.classList.add("theme-dark");
+      }
+
+      body.classList.add("has-background-ad");
+      localStorage.setItem("bf-theme", theme);
+
+      if (label) {
+        label.textContent = theme === "dark" ? "Dark" : "Glass";
+      }
+    }
+
+    const savedTheme = "dark";
+    applyTheme(savedTheme);
+
+    if (toggle) {
+      toggle.addEventListener("click", function () {
+        const nextTheme = body.classList.contains("theme-dark") ? "glass" : "dark";
+        applyTheme(nextTheme);
+      });
+    }
+  })();
+</script>
+  
+
 </body>
 </html>
