@@ -13360,3 +13360,226 @@ body.theme-dark .wc-bracket-placeholder > div {
 body.has-background-ad {
   padding-top: 0 !important;
 }
+/* =========================
+   STANDINGS MOBILE FIX
+   ========================= */
+
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  body {
+    zoom: 1 !important;
+  }
+
+  .side-banner,
+  .left-banner,
+  .right-banner {
+    display: none !important;
+  }
+
+  /* Header */
+  .header,
+  .bf-header {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 14px 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  .header-inner,
+  .bf-header-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .bf-logo {
+    width: 100% !important;
+    justify-content: center !important;
+    font-size: 26px !important;
+  }
+
+  .topbar-menu,
+  .bf-nav {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    overflow: visible !important;
+  }
+
+  .topbar-menu a,
+  .bf-nav a {
+    flex: 0 1 auto !important;
+    white-space: nowrap !important;
+    font-size: 15px !important;
+    padding: 12px 18px !important;
+    border-radius: 16px !important;
+  }
+
+  .topbar-actions,
+  .bf-header-actions {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  /* Main standings layout */
+  .standings-page,
+  .standings-container,
+  .league-section,
+  .league-table-section,
+  .league-hero,
+  .table-card,
+  .standings-card {
+    width: 100% !important;
+    max-width: calc(100vw - 24px) !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .standings-page,
+  .standings-container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .league-hero {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+    padding: 22px 18px !important;
+    border-radius: 22px !important;
+  }
+
+  .league-hero h1,
+  .league-hero h2,
+  .league-title,
+  .league-name {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 30px !important;
+    line-height: 1.05 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+  .league-hero p,
+  .league-season,
+  .league-country {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 15px !important;
+    white-space: normal !important;
+  }
+
+  .league-tabs,
+  .standings-tabs,
+  .table-tabs {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .league-tabs button,
+  .standings-tabs button,
+  .table-tabs button {
+    flex: 1 1 130px !important;
+    min-width: 120px !important;
+    max-width: 180px !important;
+    padding: 13px 16px !important;
+    font-size: 15px !important;
+  }
+
+  /* League table */
+  .league-table-section,
+  .table-card {
+    padding: 20px 14px !important;
+    border-radius: 22px !important;
+  }
+
+  .league-table-section h2,
+  .table-card h2 {
+    font-size: 30px !important;
+    line-height: 1.1 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .standings-table,
+  .league-table,
+  table {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    table-layout: auto !important;
+  }
+
+  .standings-table th,
+  .standings-table td,
+  .league-table th,
+  .league-table td {
+    font-size: 14px !important;
+    padding: 10px 8px !important;
+    white-space: normal !important;
+  }
+
+  .team-cell,
+  .team-name,
+  .club-name {
+    max-width: 170px !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .team-cell img,
+  .team-logo,
+  .club-logo {
+    width: 28px !important;
+    height: 28px !important;
+    flex: 0 0 28px !important;
+  }
+
+  /* If table still too wide, allow internal scroll only */
+  .table-wrap,
+  .standings-table-wrap,
+  .league-table-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Ads */
+  .banner-728,
+  .desktop-ad {
+    display: none !important;
+  }
+
+  .adhit-300x250,
+  .mobile-ad {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 18px auto !important;
+    overflow: hidden !important;
+  }
+}
