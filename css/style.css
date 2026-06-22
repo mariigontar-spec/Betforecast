@@ -13351,3 +13351,12 @@ body.theme-dark .wc-bracket-placeholder > div {
     display: none !important;
   }
 }
+
+/* TEMP: disable broken Adhit background skin */
+.adhit-bg-zone {
+  display: none !important;
+}
+
+body.has-background-ad {
+  padding-top: 0 !important;
+}
