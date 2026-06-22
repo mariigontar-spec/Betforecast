@@ -13180,3 +13180,18 @@ body.has-background-ad .header {
     display: none !important;
   }
 }
+body.has-background-ad .bf-header,
+body.has-background-ad .header,
+body.has-background-ad main,
+body.has-background-ad footer,
+body.has-background-ad .side-banner,
+body.has-background-ad .banner-728,
+body.has-background-ad .adhit-300x250 {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+body.has-background-ad .bf-header {
+  background: rgba(3, 13, 22, 0.92) !important;
+  backdrop-filter: blur(14px);
+}
