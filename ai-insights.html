@@ -10,7 +10,56 @@
   data-utcoffset="3">
 </script>
 </head>
-<body class="theme-dark site-skin-1win">
+<style>
+body.site-skin-1win {
+  background-color: #020b13 !important;
+  background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: 1920px auto !important;
+  background-attachment: fixed !important;
+
+  /* вот это двигает сайт ниже */
+  padding-top: 165px !important;
+
+  overflow-x: hidden !important;
+}
+
+/* сайт поверх фоновой картинки */
+body.site-skin-1win .bf-header,
+body.site-skin-1win .header,
+body.site-skin-1win main,
+body.site-skin-1win .wc-page {
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+/* шапка поверх фона */
+body.site-skin-1win .bf-header,
+body.site-skin-1win .header {
+  background: rgba(3, 13, 22, 0.94) !important;
+  border-bottom: 1px solid rgba(94, 224, 164, 0.16) !important;
+  backdrop-filter: blur(14px);
+}
+
+/* чуть больше воздуха между меню и первым большим блоком */
+body.site-skin-1win .wc-page {
+  padding-top: 42px !important;
+}
+
+/* мобильную версию не трогаем */
+@media (max-width: 900px) {
+  body.site-skin-1win {
+    padding-top: 0 !important;
+    background-image: none !important;
+    background-attachment: scroll !important;
+  }
+
+  body.site-skin-1win .wc-page {
+    padding-top: 22px !important;
+  }
+}
+</style>
 <div class="side-banner left-banner">
     <ins class="ins-zone" data-zone="163622"></ins>
 </div>  
