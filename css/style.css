@@ -13879,9 +13879,7 @@ body.site-skin-1win .bf-header {
     background-attachment: scroll !important;
   }
 }
-html body.site-skin-1win {
-  background-color: red !important;
-}
+
 /* ===== HEADER AS COMPACT BLOCK ===== */
 
 body.site-skin-1win .header,
