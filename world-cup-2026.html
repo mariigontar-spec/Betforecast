@@ -111,6 +111,61 @@ body.site-skin-1win .skin-click-right {
     display: none !important;
   }
 }
+  /* FINAL HEADER WIDTH FIX */
+
+body.site-skin-1win .bf-header,
+body.site-skin-1win .header {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* сама шапка теперь как отдельный блок по ширине контента */
+body.site-skin-1win .bf-header-inner,
+body.site-skin-1win .header-inner {
+  width: min(1320px, calc(100vw - 48px)) !important;
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+  padding: 14px 24px !important;
+
+  background: rgba(3, 13, 22, 0.94) !important;
+  border: 1px solid rgba(94, 224, 164, 0.16) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28) !important;
+  backdrop-filter: blur(14px) !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 24px !important;
+
+  position: relative !important;
+  z-index: 30 !important;
+}
+
+/* логотип слева внутри ширины блока */
+body.site-skin-1win .bf-logo {
+  flex: 0 0 auto !important;
+}
+
+/* меню занимает центр */
+body.site-skin-1win .bf-nav,
+body.site-skin-1win .topbar-menu {
+  flex: 1 1 auto !important;
+  justify-content: center !important;
+}
+
+/* если кнопка темы уже удалена, этот блок просто не нужен */
+body.site-skin-1win .bf-header-actions,
+body.site-skin-1win .topbar-actions {
+  display: none !important;
+}
 </style>
 </head>
 
