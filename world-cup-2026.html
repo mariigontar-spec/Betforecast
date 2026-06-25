@@ -16,7 +16,7 @@ body.site-skin-1win {
   background-color: #020b13 !important;
   background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
   background-repeat: no-repeat !important;
-  background-position: top center !important;
+  background-position: center -45px !important;
   background-size: 1920px auto !important;
   background-attachment: fixed !important;
 
@@ -47,7 +47,21 @@ body.site-skin-1win .header {
 body.site-skin-1win .wc-page {
   padding-top: 42px !important;
 }
+/* опускаем боковые баннеры ниже верхнего background-баннера */
+body.site-skin-1win .side-banner {
+  top: 210px !important;
+  z-index: 8 !important;
+}
 
+/* левый баннер */
+body.site-skin-1win .left-banner {
+  left: 28px !important;
+}
+
+/* правый баннер */
+body.site-skin-1win .right-banner {
+  right: 28px !important;
+}
 /* мобильную версию не трогаем */
 @media (max-width: 900px) {
   body.site-skin-1win {
