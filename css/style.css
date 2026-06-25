@@ -13882,3 +13882,64 @@ body.site-skin-1win .bf-header {
 html body.site-skin-1win {
   background-color: red !important;
 }
+/* ===== HEADER AS COMPACT BLOCK ===== */
+
+body.site-skin-1win .header,
+body.site-skin-1win .bf-header {
+  background: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 0 !important;
+}
+
+body.site-skin-1win .header-inner,
+body.site-skin-1win .bf-header-inner {
+  width: min(1320px, calc(100vw - 48px)) !important;
+  margin: 24px auto 0 !important;
+  padding: 14px 24px !important;
+
+  background: rgba(3, 13, 22, 0.94) !important;
+  border: 1px solid rgba(94, 224, 164, 0.16) !important;
+  border-radius: 24px !important;
+  backdrop-filter: blur(14px) !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 20px !important;
+
+  position: relative !important;
+  z-index: 25 !important;
+}
+
+/* если убрали кнопку темы — меню красиво центрируется */
+body.site-skin-1win .topbar-actions,
+body.site-skin-1win .bf-header-actions {
+  display: none !important;
+}
+
+/* чтобы логотип + меню не разъезжались */
+body.site-skin-1win .header-inner .bf-logo,
+body.site-skin-1win .bf-header-inner .bf-logo {
+  flex: 0 0 auto !important;
+}
+
+body.site-skin-1win .topbar-menu,
+body.site-skin-1win .bf-nav {
+  flex: 1 1 auto !important;
+  justify-content: center !important;
+}
+
+/* мобильная версия */
+@media (max-width: 900px) {
+  body.site-skin-1win .header-inner,
+  body.site-skin-1win .bf-header-inner {
+    width: calc(100vw - 24px) !important;
+    margin: 12px auto 0 !important;
+    padding: 14px 12px !important;
+    border-radius: 20px !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+}
