@@ -13720,3 +13720,72 @@ body.has-background-ad {
     font-size: 24px !important;
   }
 }
+/* =========================
+   1WIN WC 2026 SITE SKIN
+   background behind blocks
+   ========================= */
+
+body.site-skin-1win {
+  background-color: #020b13 !important;
+  background-image: url("../assets/ads/1win-wc2026-site-skin.webp") !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: 1920px auto !important;
+  background-attachment: fixed !important;
+  overflow-x: hidden !important;
+}
+
+/* Даём место сверху под верхний баннер фона */
+body.site-skin-1win {
+  padding-top: 135px !important;
+}
+
+/* Все блоки сайта поверх фона */
+body.site-skin-1win .header,
+body.site-skin-1win .bf-header,
+body.site-skin-1win main,
+body.site-skin-1win footer,
+body.site-skin-1win .page-shell,
+body.site-skin-1win .wc-page,
+body.site-skin-1win .standings-page-wrap,
+body.site-skin-1win .match-page-wrap,
+body.site-skin-1win .results-page-wrap,
+body.site-skin-1win .news-page {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Шапка читаемая поверх фона */
+body.site-skin-1win .header,
+body.site-skin-1win .bf-header {
+  background: rgba(3, 13, 22, 0.94) !important;
+  border-bottom: 1px solid rgba(94, 224, 164, 0.16) !important;
+  backdrop-filter: blur(14px);
+}
+
+/* Чтобы карточки не сливались с фоном */
+body.site-skin-1win .panel,
+body.site-skin-1win .wc-hero,
+body.site-skin-1win .wc-card,
+body.site-skin-1win .match-card,
+body.site-skin-1win .article-card,
+body.site-skin-1win .standings-panel,
+body.site-skin-1win .side-block,
+body.site-skin-1win .standings-league-bar {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 38, 55, 0.94),
+    rgba(8, 20, 32, 0.96)
+  ) !important;
+  border: 1px solid rgba(94, 224, 164, 0.16) !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.38) !important;
+}
+
+/* На мобильном фон отключаем, чтобы не ломал ширину */
+@media (max-width: 900px) {
+  body.site-skin-1win {
+    padding-top: 0 !important;
+    background-image: none !important;
+    background-attachment: scroll !important;
+  }
+}
