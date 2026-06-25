@@ -16,10 +16,17 @@ body.site-skin-1win {
   background-color: #020b13 !important;
   background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
   background-repeat: no-repeat !important;
-  background-position: center -45px !important;
+  background-position: center top !important;
   background-size: 1920px auto !important;
-  background-attachment: fixed !important;
 
+  /* ВАЖНО: не fixed, чтобы не было огромного странного отступа при скролле */
+  background-attachment: scroll !important;
+
+  /* место под верхний 1win-баннер */
+  padding-top: 150px !important;
+
+  overflow-x: hidden !important;
+}
   /* вот это двигает сайт ниже */
   padding-top: 200px !important;
 
