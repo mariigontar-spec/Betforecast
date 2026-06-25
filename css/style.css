@@ -13789,3 +13789,48 @@ body.site-skin-1win .standings-league-bar {
     background-attachment: scroll !important;
   }
 }
+/* =========================
+   1WIN WC 2026 SITE SKIN
+   ========================= */
+
+body.site-skin-1win {
+  background-color: #020b13 !important;
+  background-image: url("../assets/ads/1win-wc2026-site-skin.webp") !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: 1920px auto !important;
+  background-attachment: fixed !important;
+  padding-top: 135px !important;
+  overflow-x: hidden !important;
+}
+
+/* Блоки сайта поверх фона */
+body.site-skin-1win .header,
+body.site-skin-1win .bf-header,
+body.site-skin-1win main,
+body.site-skin-1win footer,
+body.site-skin-1win .page-shell,
+body.site-skin-1win .wc-page,
+body.site-skin-1win .standings-page-wrap,
+body.site-skin-1win .match-page-wrap,
+body.site-skin-1win .results-page-wrap {
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+/* Шапка поверх фона */
+body.site-skin-1win .header,
+body.site-skin-1win .bf-header {
+  background: rgba(3, 13, 22, 0.94) !important;
+  border-bottom: 1px solid rgba(94, 224, 164, 0.16) !important;
+  backdrop-filter: blur(14px);
+}
+
+/* На мобильном выключаем skin */
+@media (max-width: 900px) {
+  body.site-skin-1win {
+    padding-top: 0 !important;
+    background-image: none !important;
+    background-attachment: scroll !important;
+  }
+}
