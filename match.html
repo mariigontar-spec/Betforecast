@@ -1,57 +1,224 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>Betforecast.ai | Match Preview</title>
 
-  <link rel="stylesheet" href="css/style.css?v=15">
+  <link rel="stylesheet" href="css/style.css?v=21">
 
-  <script src="https://cdn.counter.dev/script.js"
+  <script
+    src="https://cdn.counter.dev/script.js"
     data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098"
     data-utcoffset="3">
   </script>
 
   <style>
+    :root {
+      --bf-shell-width: 1240px;
+      --bf-page-gap: 48px;
+      --bf-page-bg: #020b13;
+
+      --bf-panel-background:
+        linear-gradient(
+          180deg,
+          rgba(18, 38, 55, 0.97),
+          rgba(8, 20, 32, 0.98)
+        );
+
+      --bf-panel-border:
+        1px solid rgba(94, 224, 164, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+
+      margin: 0;
+      padding: 0;
+
+      background-color: var(--bf-page-bg) !important;
+
+      overflow-x: hidden;
+    }
+
     body.site-skin-1win {
-      background-color: #020b13 !important;
-      background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+      min-height: 100vh;
+
+      padding-top: 190px !important;
+
+      color: #f8fafc;
+
+      background-color: var(--bf-page-bg) !important;
+
+      background-image:
+        url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+
       background-repeat: no-repeat !important;
       background-position: center top !important;
       background-size: 1920px auto !important;
       background-attachment: scroll !important;
 
-      /* отступ под верхний 1win background */
-      padding-top: 190px !important;
-
       overflow-x: hidden !important;
     }
 
-    /* сайт поверх фоновой картинки */
-    body.site-skin-1win .header,
-    body.site-skin-1win main,
-    body.site-skin-1win .match-page-wrap,
-    body.site-skin-1win .page-shell {
+    /* ========================================
+       DESKTOP HEADER
+       ======================================== */
+
+    body.site-skin-1win .header {
+      position: relative !important;
+      z-index: 30 !important;
+
+      width: 100% !important;
+
+      margin: 0 !important;
+      padding: 0 !important;
+
+      background: transparent !important;
+
+      border: 0 !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+    }
+
+    body.site-skin-1win .header-inner {
+      position: relative !important;
+      z-index: 30 !important;
+
+      width: min(
+        var(--bf-shell-width),
+        calc(100vw - var(--bf-page-gap))
+      ) !important;
+
+      max-width: var(--bf-shell-width) !important;
+      min-height: 82px;
+
+      margin: 0 auto !important;
+      padding: 14px 24px !important;
+
+      display: grid !important;
+
+      grid-template-columns:
+        220px minmax(0, 1fr) 220px !important;
+
+      align-items: center !important;
+
+      gap: 18px !important;
+
+      background: var(--bf-panel-background) !important;
+
+      border: var(--bf-panel-border) !important;
+      border-radius: 26px !important;
+
+      box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.32) !important;
+
+      backdrop-filter: blur(14px) !important;
+      -webkit-backdrop-filter: blur(14px) !important;
+    }
+
+    body.site-skin-1win .header-inner::after {
+      content: "";
+
+      display: block;
+
+      width: 220px;
+      height: 1px;
+    }
+
+    body.site-skin-1win .bf-logo {
+      justify-self: start !important;
+
+      width: auto !important;
+      min-width: 0 !important;
+    }
+
+    body.site-skin-1win .topbar-menu {
+      justify-self: center !important;
+
+      width: max-content !important;
+      max-width: 100% !important;
+
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-wrap: nowrap !important;
+
+      gap: 10px !important;
+    }
+
+    body.site-skin-1win .topbar-menu a {
+      flex: 0 0 auto !important;
+
+      white-space: nowrap !important;
+    }
+
+    body.site-skin-1win .topbar-actions,
+    body.site-skin-1win .theme-switch {
+      display: none !important;
+    }
+
+    /* ========================================
+       DESKTOP PAGE
+       ======================================== */
+
+    body.site-skin-1win .match-page-wrap {
       position: relative !important;
       z-index: 20 !important;
+
+      width: min(
+        var(--bf-shell-width),
+        calc(100vw - var(--bf-page-gap))
+      ) !important;
+
+      max-width: var(--bf-shell-width) !important;
+
+      margin: 28px auto 0 !important;
+      padding: 0 0 40px !important;
+
+      background: transparent !important;
     }
 
-    /* шапка поверх фона */
-    body.site-skin-1win .header {
-      background: rgba(3, 13, 22, 0.94) !important;
-      border-bottom: 1px solid rgba(94, 224, 164, 0.16) !important;
-      backdrop-filter: blur(14px);
+    body.site-skin-1win .match-pro-hero,
+    body.site-skin-1win .match-pro-layout,
+    body.site-skin-1win .match-pro-main,
+    body.site-skin-1win .match-pro-sidebar {
+      min-width: 0 !important;
     }
 
-    /* расстояние между меню и первым match-блоком */
-    body.site-skin-1win .match-page-wrap {
-      padding-top: 28px !important;
+    body.site-skin-1win .content-banner {
+      position: relative !important;
+      z-index: 20 !important;
+
+      display: flex !important;
+      justify-content: center !important;
+
+      width: 100% !important;
+
+      margin: 24px auto 0 !important;
     }
 
-    /* боковые Dafabet баннеры ниже top skin */
+    /* ========================================
+       SIDE BANNERS
+       ======================================== */
+
     body.site-skin-1win .side-banner {
       position: fixed !important;
+
       top: 400px !important;
+
       z-index: 30 !important;
     }
 
@@ -65,63 +232,932 @@
       left: auto !important;
     }
 
-    /* кликабельные зоны фона */
+    /* ========================================
+       CLICKABLE SKIN
+       ======================================== */
+
     body.site-skin-1win .skin-click {
       position: fixed !important;
-      display: block !important;
+
       z-index: 2 !important;
-      text-decoration: none !important;
+
+      display: block !important;
+
       background: transparent !important;
+      text-decoration: none !important;
     }
 
     body.site-skin-1win .skin-click-top {
       top: 0 !important;
       left: 50% !important;
+
       width: min(100vw, 1920px) !important;
       height: 165px !important;
+
       transform: translateX(-50%) !important;
     }
 
     body.site-skin-1win .skin-click-left {
       top: 165px !important;
+      bottom: 0 !important;
       left: 0 !important;
-      width: calc((100vw - 1320px) / 2) !important;
+
+      width: max(
+        0px,
+        calc((100vw - var(--bf-shell-width)) / 2)
+      ) !important;
+
       max-width: 320px !important;
-      height: calc(100vh - 165px) !important;
     }
 
     body.site-skin-1win .skin-click-right {
       top: 165px !important;
       right: 0 !important;
-      width: calc((100vw - 1320px) / 2) !important;
+      bottom: 0 !important;
+
+      width: max(
+        0px,
+        calc((100vw - var(--bf-shell-width)) / 2)
+      ) !important;
+
       max-width: 320px !important;
-      height: calc(100vh - 165px) !important;
     }
 
-    /* контентный баннер тоже поверх кликабельного фона */
-    body.site-skin-1win .content-banner {
-      position: relative !important;
-      z-index: 20 !important;
+    /* ========================================
+       TABLET
+       ======================================== */
+
+    @media (max-width: 1100px) {
+      body.site-skin-1win .header-inner {
+        grid-template-columns: 1fr !important;
+
+        justify-items: center !important;
+      }
+
+      body.site-skin-1win .header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        justify-self: center !important;
+      }
+
+      body.site-skin-1win .topbar-menu {
+        width: 100% !important;
+
+        flex-wrap: wrap !important;
+      }
     }
 
-    /* мобильную версию не трогаем */
-    @media (max-width: 900px) {
-      body.site-skin-1win {
-        padding-top: 0 !important;
+    /* ========================================
+       MOBILE
+       ======================================== */
+
+    @media (max-width: 768px) {
+      html,
+      body {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background-color: var(--bf-page-bg) !important;
         background-image: none !important;
+
+        overflow-x: hidden !important;
+      }
+
+      body.site-skin-1win {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        min-height: 100vh !important;
+
+        padding-top: 96px !important;
+
+        background-color: var(--bf-page-bg) !important;
+
+        background-image:
+          linear-gradient(
+            180deg,
+            rgba(2, 11, 19, 0) 0,
+            rgba(2, 11, 19, 0.12) 92px,
+            rgba(2, 11, 19, 0.88) 235px,
+            #020b13 330px
+          ),
+          url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+
+        background-repeat: no-repeat !important;
+
+        background-position:
+          center top,
+          center top !important;
+
+        background-size:
+          100% 340px,
+          auto 290px !important;
+
         background-attachment: scroll !important;
+
+        overflow-x: hidden !important;
+      }
+
+      body.site-skin-1win::before,
+      body.site-skin-1win::after {
+        content: none !important;
+        display: none !important;
+
+        background: none !important;
+      }
+
+      body.site-skin-1win .header,
+      body.site-skin-1win .match-page-wrap,
+      body.site-skin-1win .match-pro-layout,
+      body.site-skin-1win .match-pro-main,
+      body.site-skin-1win .match-pro-sidebar {
+        background-color: transparent !important;
+        background-image: none !important;
+      }
+
+      /* Боковые баннеры скрываем */
+      body.site-skin-1win .side-banner,
+      body.site-skin-1win .left-banner,
+      body.site-skin-1win .right-banner {
+        display: none !important;
+      }
+
+      /* Боковые click-зоны скрываем */
+      body.site-skin-1win .skin-click-left,
+      body.site-skin-1win .skin-click-right {
+        display: none !important;
+      }
+
+      /* Верхний фон остаётся кликабельным */
+      body.site-skin-1win .skin-click-top {
+        position: absolute !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 96px !important;
+
+        transform: none !important;
+
+        z-index: 2 !important;
+      }
+
+      /* ====================================
+         MOBILE HEADER
+         ==================================== */
+
+      body.site-skin-1win .header {
+        position: relative !important;
+
+        z-index: 30 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: transparent !important;
+
+        border: 0 !important;
+        box-shadow: none !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .header-inner {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        min-width: 0 !important;
+        min-height: 0 !important;
+
+        margin: 6px auto 0 !important;
+        padding: 12px 10px !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        gap: 10px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.18) !important;
+
+        border-radius: 18px !important;
+
+        box-shadow:
+          0 14px 34px rgba(0, 0, 0, 0.34) !important;
+
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 23px !important;
+        line-height: 1 !important;
+      }
+
+      body.site-skin-1win .bf-logo img {
+        width: 28px !important;
+        height: 28px !important;
+      }
+
+      /* Меню 3 × 2 */
+      body.site-skin-1win .topbar-menu {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 8px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .topbar-menu a {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 10px 3px !important;
+
+        font-size: 13px !important;
+        line-height: 1.1 !important;
+
+        text-align: center !important;
+        white-space: nowrap !important;
+
+        border-radius: 13px !important;
+
+        overflow: hidden !important;
+      }
+
+      /* ====================================
+         MOBILE PAGE
+         ==================================== */
+
+      body.site-skin-1win .match-page-wrap {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        min-width: 0 !important;
+
+        margin: 14px auto 0 !important;
+        padding: 0 0 28px !important;
+
+        background: transparent !important;
+
+        overflow: hidden !important;
+      }
+
+      /* Match hero */
+      body.site-skin-1win .match-pro-hero {
+        position: relative !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 16px !important;
+
+        margin: 0 !important;
+        padding: 20px 14px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
+        border-radius: 20px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .match-pro-hero-overlay {
+        display: none !important;
+      }
+
+      body.site-skin-1win .match-pro-left,
+      body.site-skin-1win .match-pro-right {
+        position: relative !important;
+        z-index: 2 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+      }
+
+      body.site-skin-1win .hero-badge {
+        display: inline-flex !important;
+
+        max-width: 100% !important;
+
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+      }
+
+      body.site-skin-1win .match-pro-left h1,
+      body.site-skin-1win #match-title {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 10px 0 !important;
+
+        font-size: 29px !important;
+        line-height: 1.06 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win #match-subtitle {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        font-size: 15px !important;
+        line-height: 1.42 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* Date / time / stadium */
+      body.site-skin-1win .match-meta-row {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 7px !important;
+
+        margin-top: 15px !important;
+      }
+
+      body.site-skin-1win .match-meta-row span {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 9px 4px !important;
+
+        font-size: 11px !important;
+        line-height: 1.2 !important;
+
+        text-align: center !important;
+        white-space: normal !important;
+
+        border-radius: 13px !important;
+      }
+
+      /* Hero buttons */
+      body.site-skin-1win .match-hero-actions {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          1fr 1fr !important;
+
+        gap: 8px !important;
+
+        margin-top: 15px !important;
+      }
+
+      body.site-skin-1win .match-hero-actions a {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 11px 7px !important;
+
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+
+        text-align: center !important;
+        white-space: normal !important;
+
+        border-radius: 14px !important;
+      }
+
+      /* Score card */
+      body.site-skin-1win .pro-score-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 16px 12px !important;
+
+        border-radius: 18px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .score-card-top {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+
+        gap: 8px !important;
+      }
+
+      body.site-skin-1win .mini-label,
+      body.site-skin-1win .confidence-pill {
+        font-size: 11px !important;
+        line-height: 1.2 !important;
+      }
+
+      body.site-skin-1win .score-card-teams {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          minmax(0, 1fr)
+          minmax(80px, 0.8fr)
+          minmax(0, 1fr) !important;
+
+        align-items: center !important;
+
+        gap: 7px !important;
+
+        margin-top: 16px !important;
+      }
+
+      body.site-skin-1win .score-team,
+      body.site-skin-1win .score-center {
+        min-width: 0 !important;
+      }
+
+      body.site-skin-1win .team-badge {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        gap: 5px !important;
+      }
+
+      body.site-skin-1win .team-badge img {
+        width: 44px !important;
+        height: 44px !important;
+
+        object-fit: contain !important;
+      }
+
+      body.site-skin-1win .team-badge span {
+        font-size: 11px !important;
+      }
+
+      body.site-skin-1win .score-team .team-name {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-top: 7px !important;
+
+        font-size: 14px !important;
+        line-height: 1.18 !important;
+
+        text-align: center !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .featured-scoreline {
+        font-size: 27px !important;
+        line-height: 1 !important;
+
+        white-space: nowrap !important;
+      }
+
+      body.site-skin-1win .featured-score-caption {
+        margin-top: 5px !important;
+
+        font-size: 9px !important;
+        line-height: 1.2 !important;
+
+        text-align: center !important;
+      }
+
+      /* Probabilities */
+      body.site-skin-1win .featured-prob-grid {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 7px !important;
+
+        margin-top: 15px !important;
+      }
+
+      body.site-skin-1win .featured-prob-box {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 11px 3px !important;
+
+        border-radius: 13px !important;
+      }
+
+      body.site-skin-1win .featured-prob-box strong {
+        font-size: 19px !important;
+      }
+
+      body.site-skin-1win .featured-prob-box span {
+        font-size: 9px !important;
+        line-height: 1.15 !important;
+
+        text-align: center !important;
+
+        white-space: normal !important;
+      }
+
+      body.site-skin-1win .featured-long-bar {
+        width: 100% !important;
+
+        margin-top: 12px !important;
+      }
+
+      /* ====================================
+         MOBILE CONTENT
+         ==================================== */
+
+      body.site-skin-1win .match-pro-layout {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 16px !important;
+
+        margin: 16px 0 0 !important;
+        padding: 0 !important;
+      }
+
+      body.site-skin-1win .match-pro-main,
+      body.site-skin-1win .match-pro-sidebar {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 16px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      body.site-skin-1win .panel,
+      body.site-skin-1win .side-block {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 18px 12px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
+        border-radius: 20px !important;
+
+        overflow: hidden !important;
+        transform: none !important;
+      }
+
+      body.site-skin-1win .panel-head {
+        width: 100% !important;
+
+        margin-bottom: 14px !important;
+      }
+
+      body.site-skin-1win .panel-head h2 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        font-size: 24px !important;
+        line-height: 1.08 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* Prediction core */
+      body.site-skin-1win .prediction-core-grid {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 14px !important;
+      }
+
+      body.site-skin-1win .prediction-summary-card,
+      body.site-skin-1win .signals-stack,
+      body.site-skin-1win .mini-stat-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+      }
+
+      body.site-skin-1win .prediction-summary-card {
+        padding: 15px 12px !important;
+
+        border-radius: 16px !important;
+      }
+
+      body.site-skin-1win .prediction-summary-card h3 {
+        margin-top: 0 !important;
+
+        font-size: 20px !important;
+      }
+
+      body.site-skin-1win .prediction-summary-card p {
+        font-size: 15px !important;
+        line-height: 1.42 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .factor-tags {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+        gap: 7px !important;
+      }
+
+      body.site-skin-1win .factor-tags span {
+        max-width: 100% !important;
+
+        font-size: 12px !important;
+
+        white-space: normal !important;
+      }
+
+      body.site-skin-1win .signals-stack {
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 10px !important;
+      }
+
+      body.site-skin-1win .mini-stat-card {
+        padding: 13px 11px !important;
+
+        border-radius: 15px !important;
+      }
+
+      body.site-skin-1win .mini-stat-row {
+        width: 100% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+
+        gap: 10px !important;
+      }
+
+      body.site-skin-1win .mini-stat-row span,
+      body.site-skin-1win .mini-stat-row strong {
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* Form comparison */
+      body.site-skin-1win .match-comparison-grid {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 12px !important;
+      }
+
+      body.site-skin-1win .compare-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 15px 12px !important;
+
+        border-radius: 16px !important;
+      }
+
+      body.site-skin-1win .compare-card h3 {
+        margin-top: 0 !important;
+
+        font-size: 20px !important;
+      }
+
+      body.site-skin-1win .form-badges {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+        gap: 6px !important;
+      }
+
+      body.site-skin-1win .compare-list {
+        width: 100% !important;
+
+        padding-left: 18px !important;
+      }
+
+      body.site-skin-1win .compare-list li {
+        max-width: 100% !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* Sidebar */
+      body.site-skin-1win .key-signal-list,
+      body.site-skin-1win .related-match-list,
+      body.site-skin-1win .news-focus-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+      }
+
+      body.site-skin-1win .related-match-item,
+      body.site-skin-1win .key-signal-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 13px 11px !important;
+
+        border-radius: 14px !important;
+      }
+
+      body.site-skin-1win .related-match-item *,
+      body.site-skin-1win .key-signal-item *,
+      body.site-skin-1win .news-focus-box strong,
+      body.site-skin-1win .news-focus-box p {
+        max-width: 100% !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .news-focus-box p {
+        font-size: 15px !important;
+        line-height: 1.4 !important;
+      }
+
+      /* Десктопный баннер скрываем */
+      body.site-skin-1win .content-banner {
+        display: none !important;
+      }
+    }
+
+    /* ========================================
+       SMALL MOBILE
+       ======================================== */
+
+    @media (max-width: 420px) {
+      body.site-skin-1win {
+        padding-top: 88px !important;
+
+        background-size:
+          100% 310px,
+          auto 270px !important;
+      }
+
+      body.site-skin-1win .skin-click-top {
+        height: 88px !important;
+      }
+
+      body.site-skin-1win .header-inner {
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
+
+        margin-top: 5px !important;
       }
 
       body.site-skin-1win .match-page-wrap {
-        padding-top: 22px !important;
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
       }
 
-      body.site-skin-1win .skin-click {
-        display: none !important;
+      body.site-skin-1win .topbar-menu {
+        gap: 6px !important;
       }
 
-      body.site-skin-1win .side-banner {
-        display: none !important;
+      body.site-skin-1win .topbar-menu a {
+        padding: 9px 2px !important;
+
+        font-size: 12px !important;
+      }
+
+      body.site-skin-1win .match-pro-hero {
+        padding: 18px 12px !important;
+      }
+
+      body.site-skin-1win .match-pro-left h1,
+      body.site-skin-1win #match-title {
+        font-size: 26px !important;
+      }
+
+      body.site-skin-1win .panel,
+      body.site-skin-1win .side-block {
+        padding: 16px 10px !important;
+      }
+
+      body.site-skin-1win .panel-head h2 {
+        font-size: 22px !important;
+      }
+
+      body.site-skin-1win .score-card-teams {
+        grid-template-columns:
+          minmax(0, 1fr)
+          minmax(72px, 0.7fr)
+          minmax(0, 1fr) !important;
+      }
+
+      body.site-skin-1win .team-badge img {
+        width: 40px !important;
+        height: 40px !important;
+      }
+
+      body.site-skin-1win .score-team .team-name {
+        font-size: 13px !important;
+      }
+
+      body.site-skin-1win .featured-scoreline {
+        font-size: 24px !important;
       }
     }
   </style>
@@ -129,393 +1165,567 @@
 
 <body class="theme-dark site-skin-1win">
 
-<a
-  class="skin-click skin-click-top"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 top banner"
-></a>
+  <!-- Кликабельный фон 1win -->
+  <a
+    class="skin-click skin-click-top"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 top banner">
+  </a>
 
-<a
-  class="skin-click skin-click-left"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 left background"
-></a>
+  <a
+    class="skin-click skin-click-left"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 left background">
+  </a>
 
-<a
-  class="skin-click skin-click-right"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 right background"
-></a>
+  <a
+    class="skin-click skin-click-right"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 right background">
+  </a>
 
-<div class="side-banner left-banner">
-  <ins class="ins-zone" data-zone="163622"></ins>
-</div>
-
-<div class="side-banner right-banner">
-  <ins class="ins-zone" data-zone="163622"></ins>
-</div>
-
-<header class="header">
-  <div class="header-inner">
-
-    <a class="bf-logo" href="index.html" aria-label="Betforecast.ai home">
-      <img src="assets/bet-logo.png" alt="Betforecast.ai logo">
-      <span>Betforecast<span>.ai</span></span>
-    </a>
-
-    <nav class="topbar-menu" aria-label="Main navigation">
-      <a href="world-cup-2026.html">🏆 WC 2026</a>
-      <a href="news.html">News</a>
-      <a href="standings.html">Standings</a>
-      <a href="match.html" class="active">Matches</a>
-      <a href="results.html">Results</a>
-      <a href="ai-insights.html">AI Insights</a>
-    </nav>
-
-    <div class="topbar-actions">
-      <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
-        <span class="theme-switch-track">
-          <span class="theme-switch-thumb"></span>
-        </span>
-        <span class="theme-switch-label">Dark</span>
-      </button>
-    </div>
-
+  <!-- Боковые баннеры -->
+  <div class="side-banner left-banner">
+    <ins
+      class="ins-zone"
+      data-zone="163622">
+    </ins>
   </div>
-</header>
 
-<main class="match-page-wrap page-shell">
+  <div class="side-banner right-banner">
+    <ins
+      class="ins-zone"
+      data-zone="163622">
+    </ins>
+  </div>
 
-  <section class="match-pro-hero">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
 
-    <div class="match-pro-hero-overlay"></div>
+      <a
+        class="bf-logo"
+        href="index.html"
+        aria-label="Betforecast.ai home">
 
-    <div class="match-pro-left">
+        <img
+          src="assets/bet-logo.png"
+          alt="Betforecast.ai logo">
 
-      <span class="hero-badge" id="match-league-badge">
-        Premier League
-      </span>
+        <span>
+          Betforecast<span>.ai</span>
+        </span>
+      </a>
 
-      <h1 id="match-title">
-        Arsenal vs Chelsea
-      </h1>
+      <nav
+        class="topbar-menu"
+        aria-label="Main navigation">
 
-      <p id="match-subtitle">
-        AI-powered preview with probability, projected score,
-        xG lean, game-state risk, and form comparison.
-      </p>
-
-      <div class="match-meta-row">
-        <span id="match-date">Saturday</span>
-        <span id="match-time">18:30</span>
-        <span id="match-stadium">Emirates Stadium</span>
-      </div>
-
-      <div class="match-hero-actions">
-        <a class="bf-main-btn" href="#prediction-core">
-          Open AI Breakdown
+        <a href="world-cup-2026.html">
+          🏆 WC 2026
         </a>
 
-        <a class="bf-ghost-btn" href="#timeline">
-          View Match Timeline
+        <a href="news.html">
+          News
         </a>
-      </div>
+
+        <a href="standings.html">
+          Standings
+        </a>
+
+        <a
+          href="match.html"
+          class="active">
+          Matches
+        </a>
+
+        <a href="results.html">
+          Results
+        </a>
+
+        <a href="ai-insights.html">
+          AI Insights
+        </a>
+
+      </nav>
 
     </div>
+  </header>
 
-    <div class="match-pro-right">
+  <!-- Main -->
+  <main class="match-page-wrap page-shell">
 
-      <div class="pro-score-card">
+    <section class="match-pro-hero">
 
-        <div class="score-card-top">
-          <span class="mini-label">AI Match Preview</span>
+      <div class="match-pro-hero-overlay"></div>
 
-          <span class="confidence-pill" id="match-confidence-pill">
-            Confidence 74%
+      <div class="match-pro-left">
+
+        <span
+          class="hero-badge"
+          id="match-league-badge">
+          Premier League
+        </span>
+
+        <h1 id="match-title">
+          Arsenal vs Chelsea
+        </h1>
+
+        <p id="match-subtitle">
+          AI-powered preview with probability, projected score,
+          xG lean, game-state risk, and form comparison.
+        </p>
+
+        <div class="match-meta-row">
+
+          <span id="match-date">
+            Saturday
           </span>
-        </div>
 
-        <div class="score-card-teams">
+          <span id="match-time">
+            18:30
+          </span>
 
-          <div class="score-team">
-            <div class="team-badge">
-              <img id="team-home-logo" src="assets/default.jpg" alt="Home team logo">
-              <span id="team-home-short">ARS</span>
-            </div>
-            <div class="team-name" id="team-home-name">Arsenal</div>
-          </div>
-
-          <div class="score-center">
-            <div class="featured-scoreline" id="projected-score">
-              2 - 1
-            </div>
-
-            <div class="featured-score-caption">
-              Projected score
-            </div>
-          </div>
-
-          <div class="score-team">
-            <div class="team-badge">
-              <img id="team-away-logo" src="assets/default.jpg" alt="Away team logo">
-              <span id="team-away-short">CHE</span>
-            </div>
-            <div class="team-name" id="team-away-name">Chelsea</div>
-          </div>
+          <span id="match-stadium">
+            Emirates Stadium
+          </span>
 
         </div>
 
-        <div class="featured-prob-grid pro-hero-prob-grid">
+        <div class="match-hero-actions">
 
-          <div class="featured-prob-box">
-            <strong id="prob-home">47%</strong>
-            <span id="prob-home-label">Arsenal Win</span>
-          </div>
+          <a
+            class="bf-main-btn"
+            href="#prediction-core">
+            Open AI Breakdown
+          </a>
 
-          <div class="featured-prob-box">
-            <strong id="prob-draw">28%</strong>
-            <span>Draw</span>
-          </div>
+          <a
+            class="bf-ghost-btn"
+            href="#timeline">
+            View Match Timeline
+          </a>
 
-          <div class="featured-prob-box">
-            <strong id="prob-away">25%</strong>
-            <span id="prob-away-label">Chelsea Win</span>
-          </div>
-
-        </div>
-
-        <div class="featured-long-bar">
-          <div class="bar-home" id="hero-bar-home"></div>
-          <div class="bar-draw" id="hero-bar-draw"></div>
-          <div class="bar-away" id="hero-bar-away"></div>
         </div>
 
       </div>
 
-    </div>
+      <div class="match-pro-right">
 
-  </section>
+        <div class="pro-score-card">
 
-  <section class="match-pro-layout" id="prediction-core">
+          <div class="score-card-top">
 
-    <div class="match-pro-main">
+            <span class="mini-label">
+              AI Match Preview
+            </span>
 
-      <section class="panel">
+            <span
+              class="confidence-pill"
+              id="match-confidence-pill">
+              Confidence 74%
+            </span>
 
-        <div class="panel-head">
-          <h2>Prediction Core</h2>
+          </div>
+
+          <div class="score-card-teams">
+
+            <div class="score-team">
+
+              <div class="team-badge">
+
+                <img
+                  id="team-home-logo"
+                  src="assets/default.jpg"
+                  alt="Home team logo">
+
+                <span id="team-home-short">
+                  ARS
+                </span>
+
+              </div>
+
+              <div
+                class="team-name"
+                id="team-home-name">
+                Arsenal
+              </div>
+
+            </div>
+
+            <div class="score-center">
+
+              <div
+                class="featured-scoreline"
+                id="projected-score">
+                2 - 1
+              </div>
+
+              <div class="featured-score-caption">
+                Projected score
+              </div>
+
+            </div>
+
+            <div class="score-team">
+
+              <div class="team-badge">
+
+                <img
+                  id="team-away-logo"
+                  src="assets/default.jpg"
+                  alt="Away team logo">
+
+                <span id="team-away-short">
+                  CHE
+                </span>
+
+              </div>
+
+              <div
+                class="team-name"
+                id="team-away-name">
+                Chelsea
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="featured-prob-grid pro-hero-prob-grid">
+
+            <div class="featured-prob-box">
+
+              <strong id="prob-home">
+                47%
+              </strong>
+
+              <span id="prob-home-label">
+                Arsenal Win
+              </span>
+
+            </div>
+
+            <div class="featured-prob-box">
+
+              <strong id="prob-draw">
+                28%
+              </strong>
+
+              <span>
+                Draw
+              </span>
+
+            </div>
+
+            <div class="featured-prob-box">
+
+              <strong id="prob-away">
+                25%
+              </strong>
+
+              <span id="prob-away-label">
+                Chelsea Win
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="featured-long-bar">
+
+            <div
+              class="bar-home"
+              id="hero-bar-home">
+            </div>
+
+            <div
+              class="bar-draw"
+              id="hero-bar-draw">
+            </div>
+
+            <div
+              class="bar-away"
+              id="hero-bar-away">
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="prediction-core-grid">
+      </div>
 
-          <div class="prediction-summary-card">
+    </section>
 
-            <h3>AI Summary</h3>
+    <section
+      class="match-pro-layout"
+      id="prediction-core">
 
-            <p id="match-summary">
-              Arsenal enters with stronger chance creation,
-              steadier pressing sequences,
-              and better home control metrics.
+      <div class="match-pro-main">
+
+        <section class="panel">
+
+          <div class="panel-head">
+
+            <h2>
+              Prediction Core
+            </h2>
+
+          </div>
+
+          <div class="prediction-core-grid">
+
+            <div class="prediction-summary-card">
+
+              <h3>
+                AI Summary
+              </h3>
+
+              <p id="match-summary">
+                Arsenal enters with stronger chance creation,
+                steadier pressing sequences, and better home control metrics.
+              </p>
+
+              <div
+                class="factor-tags"
+                id="factor-tags">
+
+                <span>
+                  Home advantage
+                </span>
+
+                <span>
+                  Higher xG trend
+                </span>
+
+                <span>
+                  Better shot volume
+                </span>
+
+              </div>
+
+            </div>
+
+            <div class="signals-stack">
+
+              <div class="mini-stat-card">
+
+                <div class="mini-stat-label">
+                  Best Tip
+                </div>
+
+                <div class="mini-stat-row">
+
+                  <span>
+                    Primary
+                  </span>
+
+                  <strong id="best-tip">
+                    Home Win
+                  </strong>
+
+                </div>
+
+              </div>
+
+              <div class="mini-stat-card">
+
+                <div class="mini-stat-label">
+                  Goals Lean
+                </div>
+
+                <div class="mini-stat-row">
+
+                  <span>
+                    Market
+                  </span>
+
+                  <strong id="goals-lean">
+                    Over 2.5
+                  </strong>
+
+                </div>
+
+              </div>
+
+              <div class="mini-stat-card">
+
+                <div class="mini-stat-label">
+                  BTTS
+                </div>
+
+                <div class="mini-stat-row">
+
+                  <span>
+                    Signal
+                  </span>
+
+                  <strong id="btts-signal">
+                    Live
+                  </strong>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="panel">
+
+          <div class="panel-head">
+
+            <h2>
+              Form Comparison
+            </h2>
+
+          </div>
+
+          <div class="match-comparison-grid">
+
+            <div class="compare-card">
+
+              <h3 id="form-home-title">
+                Arsenal
+              </h3>
+
+              <div
+                class="form-badges"
+                id="form-home-badges">
+              </div>
+
+              <ul
+                class="compare-list"
+                id="form-home-list">
+              </ul>
+
+            </div>
+
+            <div class="compare-card">
+
+              <h3 id="form-away-title">
+                Chelsea
+              </h3>
+
+              <div
+                class="form-badges"
+                id="form-away-badges">
+              </div>
+
+              <ul
+                class="compare-list"
+                id="form-away-list">
+              </ul>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+      <aside class="match-pro-sidebar">
+
+        <section class="panel side-block">
+
+          <div class="panel-head">
+
+            <h2>
+              Key Signals
+            </h2>
+
+          </div>
+
+          <div
+            class="key-signal-list"
+            id="key-signal-list">
+          </div>
+
+        </section>
+
+        <section class="panel side-block">
+
+          <div class="panel-head">
+
+            <h2>
+              Related Matches
+            </h2>
+
+          </div>
+
+          <div
+            class="related-match-list"
+            id="related-match-list">
+          </div>
+
+        </section>
+
+        <section class="panel side-block">
+
+          <div class="panel-head">
+
+            <h2>
+              Quick Insight
+            </h2>
+
+          </div>
+
+          <div class="news-focus-box">
+
+            <strong id="quick-insight-title">
+              What can flip this match?
+            </strong>
+
+            <p id="quick-insight-text">
+              An early away goal changes game-state structure fast.
+              Without that, the model leans toward home control.
             </p>
 
-            <div class="factor-tags" id="factor-tags">
-              <span>Home advantage</span>
-              <span>Higher xG trend</span>
-              <span>Better shot volume</span>
-            </div>
-
           </div>
 
-          <div class="signals-stack">
+        </section>
 
-            <div class="mini-stat-card">
-              <div class="mini-stat-label">Best Tip</div>
+      </aside>
 
-              <div class="mini-stat-row">
-                <span>Primary</span>
-                <strong id="best-tip">Home Win</strong>
-              </div>
-            </div>
+    </section>
 
-            <div class="mini-stat-card">
-              <div class="mini-stat-label">Goals Lean</div>
+    <!-- Desktop 728x90 -->
+    <div class="content-banner">
 
-              <div class="mini-stat-row">
-                <span>Market</span>
-                <strong id="goals-lean">Over 2.5</strong>
-              </div>
-            </div>
-
-            <div class="mini-stat-card">
-              <div class="mini-stat-label">BTTS</div>
-
-              <div class="mini-stat-row">
-                <span>Signal</span>
-                <strong id="btts-signal">Live</strong>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <section class="panel">
-
-        <div class="panel-head">
-          <h2>Form Comparison</h2>
-        </div>
-
-        <div class="match-comparison-grid">
-
-          <div class="compare-card">
-
-            <h3 id="form-home-title">Arsenal</h3>
-
-            <div class="form-badges" id="form-home-badges"></div>
-
-            <ul class="compare-list" id="form-home-list"></ul>
-
-          </div>
-
-          <div class="compare-card">
-
-            <h3 id="form-away-title">Chelsea</h3>
-
-            <div class="form-badges" id="form-away-badges"></div>
-
-            <ul class="compare-list" id="form-away-list"></ul>
-
-          </div>
-
-        </div>
-
-      </section>
+      <ins
+        class="ins-zone"
+        data-zone="163631">
+      </ins>
 
     </div>
 
-    <aside class="match-pro-sidebar">
+  </main>
 
-      <section class="panel side-block">
+  <script src="api-config.js"></script>
 
-        <div class="panel-head">
-          <h2>Key Signals</h2>
-        </div>
+  <script src="js/match-page.js?v=10001"></script>
 
-        <div class="key-signal-list" id="key-signal-list"></div>
+  <script
+    type="module"
+    src="https://widgets.api-sports.io/2.0.3/widgets.js">
+  </script>
 
-      </section>
-
-      <section class="panel side-block">
-
-        <div class="panel-head">
-          <h2>Related Matches</h2>
-        </div>
-
-        <div class="related-match-list" id="related-match-list"></div>
-
-      </section>
-
-      <section class="panel side-block">
-
-        <div class="panel-head">
-          <h2>Quick Insight</h2>
-        </div>
-
-        <div class="news-focus-box">
-
-          <strong id="quick-insight-title">
-            What can flip this match?
-          </strong>
-
-          <p id="quick-insight-text">
-            An early away goal changes game-state structure fast.
-            Without that, the model leans toward home control.
-          </p>
-
-        </div>
-
-      </section>
-
-    </aside>
-
-  </section>
-
-  <div class="content-banner">
-    <ins class="ins-zone" data-zone="163631"></ins>
-  </div>
-
-</main>
-
-<script src="api-config.js"></script>
-<script src="js/match-page.js?v=10001"></script>
-
-<script>
-(function () {
-  const savedTheme = localStorage.getItem("bf-theme") || "dark";
-
-  document.body.classList.remove(
-    "theme-dark",
-    "theme-glass",
-    "theme-light"
-  );
-
-  document.body.classList.add(`theme-${savedTheme}`);
-  document.body.classList.add("site-skin-1win");
-
-  const toggle = document.getElementById("theme-toggle");
-
-  const label = toggle
-    ? toggle.querySelector(".theme-switch-label")
-    : null;
-
-  function updateLabel(theme) {
-    if (!label) return;
-
-    label.textContent =
-      theme === "dark"
-      ? "Dark"
-      : "Glass";
-  }
-
-  updateLabel(savedTheme);
-
-  if (toggle) {
-    toggle.addEventListener("click", function () {
-      const nextTheme =
-        document.body.classList.contains("theme-dark")
-        ? "glass"
-        : "dark";
-
-      document.body.classList.remove(
-        "theme-dark",
-        "theme-glass"
-      );
-
-      document.body.classList.add(`theme-${nextTheme}`);
-      document.body.classList.add("site-skin-1win");
-
-      localStorage.setItem("bf-theme", nextTheme);
-
-      updateLabel(nextTheme);
-    });
-  }
-})();
-</script>
-
-<script
-  type="module"
-  src="https://widgets.api-sports.io/2.0.3/widgets.js">
-</script>
-
-<script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
+  <script
+    data-cfasync="false"
+    async
+    src="https://media.getads.online/js/code.min.js">
+  </script>
 
 </body>
 </html>
+```
