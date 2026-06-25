@@ -1,48 +1,161 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Betforecast.ai | Standings</title>
 
-  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="stylesheet" href="css/style.css?v=18">
 
-  <script src="https://cdn.counter.dev/script.js"
+  <script
+    src="https://cdn.counter.dev/script.js"
     data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098"
     data-utcoffset="3">
   </script>
 
   <style>
+    :root {
+      --bf-shell-width: 1240px;
+      --bf-page-gap: 48px;
+      --bf-panel-background:
+        linear-gradient(
+          180deg,
+          rgba(18, 38, 55, 0.96),
+          rgba(8, 20, 32, 0.97)
+        );
+      --bf-panel-border: 1px solid rgba(94, 224, 164, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
     body.site-skin-1win {
+      min-height: 100vh;
+      padding-top: 190px !important;
+
       background-color: #020b13 !important;
-      background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+      background-image:
+        url("/assets/ads/1win-wc2026-site-skin.webp") !important;
       background-repeat: no-repeat !important;
       background-position: center top !important;
       background-size: 1920px auto !important;
       background-attachment: scroll !important;
-      padding-top: 190px !important;
-      overflow-x: hidden !important;
+
+      color: #f8fafc;
     }
 
-    body.site-skin-1win .header,
-    body.site-skin-1win main,
-    body.site-skin-1win .standings-page-wrap,
-    body.site-skin-1win .page-shell {
+    /* Общая ширина страницы */
+    body.site-skin-1win .standings-page-wrap {
       position: relative !important;
       z-index: 20 !important;
+
+      width: min(
+        var(--bf-shell-width),
+        calc(100vw - var(--bf-page-gap))
+      ) !important;
+
+      max-width: var(--bf-shell-width) !important;
+
+      margin: 28px auto 0 !important;
+      padding: 0 0 40px !important;
     }
 
+    /* Внешняя оболочка шапки прозрачная */
     body.site-skin-1win .header {
-      background: rgba(3, 13, 22, 0.94) !important;
-      border-bottom: 1px solid rgba(94, 224, 164, 0.16) !important;
-      backdrop-filter: blur(14px);
+      position: relative !important;
+      z-index: 30 !important;
+
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
     }
 
-    body.site-skin-1win .standings-page-wrap {
-      padding-top: 28px !important;
+    /* Чёрная капсула шапки */
+    body.site-skin-1win .header-inner {
+      position: relative !important;
+      z-index: 30 !important;
+
+      width: min(
+        var(--bf-shell-width),
+        calc(100vw - var(--bf-page-gap))
+      ) !important;
+
+      max-width: var(--bf-shell-width) !important;
+      min-height: 82px;
+
+      margin: 0 auto !important;
+      padding: 14px 24px !important;
+
+      display: grid !important;
+      grid-template-columns: 220px minmax(0, 1fr) 220px !important;
+      align-items: center !important;
+      gap: 18px !important;
+
+      background: var(--bf-panel-background) !important;
+      border: var(--bf-panel-border) !important;
+      border-radius: 26px !important;
+
+      box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.32) !important;
+
+      backdrop-filter: blur(14px) !important;
+      -webkit-backdrop-filter: blur(14px) !important;
     }
 
-    /* боковые Dafabet баннеры ниже, как просила: 450px */
+    /* Правая пустая колонка держит меню строго по центру */
+    body.site-skin-1win .header-inner::after {
+      content: "";
+      display: block;
+      width: 220px;
+      height: 1px;
+    }
+
+    body.site-skin-1win .bf-logo {
+      justify-self: start !important;
+      width: auto !important;
+      min-width: 0 !important;
+    }
+
+    body.site-skin-1win .topbar-menu {
+      justify-self: center !important;
+
+      width: max-content !important;
+      max-width: 100% !important;
+
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-wrap: nowrap !important;
+      gap: 10px !important;
+    }
+
+    body.site-skin-1win .topbar-menu a {
+      flex: 0 0 auto !important;
+      white-space: nowrap !important;
+    }
+
+    /* На случай старого кода */
+    body.site-skin-1win .topbar-actions,
+    body.site-skin-1win .theme-switch {
+      display: none !important;
+    }
+
+    /* Боковые баннеры */
     body.site-skin-1win .side-banner {
       position: fixed !important;
       top: 400px !important;
@@ -59,37 +172,50 @@
       left: auto !important;
     }
 
-    /* кликабельные зоны фона */
+    /* Кликабельные зоны фонового скина */
     body.site-skin-1win .skin-click {
       position: fixed !important;
-      display: block !important;
       z-index: 2 !important;
-      text-decoration: none !important;
+
+      display: block !important;
       background: transparent !important;
+      text-decoration: none !important;
     }
 
     body.site-skin-1win .skin-click-top {
       top: 0 !important;
       left: 50% !important;
+
       width: min(100vw, 1920px) !important;
       height: 165px !important;
+
       transform: translateX(-50%) !important;
     }
 
     body.site-skin-1win .skin-click-left {
       top: 165px !important;
+      bottom: 0 !important;
       left: 0 !important;
-      width: calc((100vw - 1320px) / 2) !important;
+
+      width: max(
+        0px,
+        calc((100vw - var(--bf-shell-width)) / 2)
+      ) !important;
+
       max-width: 320px !important;
-      height: calc(100vh - 165px) !important;
     }
 
     body.site-skin-1win .skin-click-right {
       top: 165px !important;
       right: 0 !important;
-      width: calc((100vw - 1320px) / 2) !important;
+      bottom: 0 !important;
+
+      width: max(
+        0px,
+        calc((100vw - var(--bf-shell-width)) / 2)
+      ) !important;
+
       max-width: 320px !important;
-      height: calc(100vh - 165px) !important;
     }
 
     body.site-skin-1win .content-banner {
@@ -97,85 +223,92 @@
       z-index: 20 !important;
     }
 
+    /* Планшеты */
+    @media (max-width: 1100px) {
+      body.site-skin-1win .header-inner {
+        grid-template-columns: 1fr !important;
+        justify-items: center !important;
+      }
+
+      body.site-skin-1win .header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        justify-self: center !important;
+      }
+
+      body.site-skin-1win .topbar-menu {
+        width: 100% !important;
+        flex-wrap: wrap !important;
+      }
+    }
+
+    /* Мобильная версия */
     @media (max-width: 768px) {
       html,
       body {
         width: 100% !important;
         max-width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
         overflow-x: hidden !important;
-        zoom: 1 !important;
       }
 
-      * {
-        box-sizing: border-box !important;
+      body.site-skin-1win {
+        padding-top: 0 !important;
+        background-image: none !important;
+        background-attachment: scroll !important;
       }
 
-      .side-banner,
-      .left-banner,
-      .right-banner,
-      .banner-728,
-      .desktop-ad,
-      .content-banner {
+      body.site-skin-1win .skin-click,
+      body.site-skin-1win .side-banner,
+      body.site-skin-1win .content-banner {
         display: none !important;
       }
 
-      .header {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 16px 12px !important;
-        margin: 0 !important;
-        overflow: hidden !important;
-      }
+      body.site-skin-1win .header-inner {
+        width: calc(100vw - 24px) !important;
+        max-width: calc(100vw - 24px) !important;
 
-      .header-inner {
-        width: 100% !important;
-        max-width: 100% !important;
+        margin: 12px auto 0 !important;
+        padding: 14px 12px !important;
+
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         gap: 14px !important;
-        margin: 0 auto !important;
-        padding: 0 !important;
+
+        border-radius: 20px !important;
       }
 
-      .bf-logo {
+      body.site-skin-1win .bf-logo {
         width: 100% !important;
         justify-content: center !important;
         font-size: 28px !important;
       }
 
-      .topbar-menu {
+      body.site-skin-1win .topbar-menu {
         width: 100% !important;
         max-width: 100% !important;
+
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
         gap: 10px !important;
-        overflow: visible !important;
       }
 
-      .topbar-menu a {
+      body.site-skin-1win .topbar-menu a {
         flex: 0 1 auto !important;
-        white-space: nowrap !important;
-        font-size: 16px !important;
         padding: 12px 18px !important;
+        font-size: 16px !important;
         border-radius: 16px !important;
       }
 
-      .topbar-actions {
-        width: 100% !important;
-        display: flex !important;
-        justify-content: center !important;
-      }
+      body.site-skin-1win .standings-page-wrap {
+        width: calc(100vw - 24px) !important;
+        max-width: calc(100vw - 24px) !important;
 
-      .standings-page-wrap {
-        width: 100% !important;
-        max-width: 100vw !important;
-        padding: 22px 12px 40px !important;
-        margin: 0 !important;
-        overflow-x: hidden !important;
+        margin: 22px auto 0 !important;
+        padding: 0 0 40px !important;
       }
 
       .standings-league-bar,
@@ -186,10 +319,12 @@
       .standings-sidebar,
       .side-block {
         width: 100% !important;
-        max-width: calc(100vw - 24px) !important;
+        max-width: 100% !important;
         min-width: 0 !important;
+
         margin-left: auto !important;
         margin-right: auto !important;
+
         overflow: hidden !important;
         transform: none !important;
       }
@@ -198,8 +333,8 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: stretch !important;
-        justify-content: flex-start !important;
         gap: 18px !important;
+
         padding: 24px 18px !important;
         border-radius: 24px !important;
         text-align: left !important;
@@ -215,10 +350,13 @@
       .standings-league-badge,
       #league-country {
         display: block !important;
+
         width: 100% !important;
         max-width: 100% !important;
+
         font-size: 13px !important;
         letter-spacing: 4px !important;
+
         white-space: normal !important;
         overflow-wrap: anywhere !important;
         text-align: left !important;
@@ -226,21 +364,27 @@
 
       #league-name {
         display: block !important;
+
         width: 100% !important;
         max-width: 100% !important;
         min-width: 0 !important;
+
+        margin: 10px 0 6px !important;
+
         font-size: 34px !important;
         line-height: 1.05 !important;
+
         white-space: normal !important;
         overflow-wrap: anywhere !important;
         text-align: left !important;
-        margin: 10px 0 6px !important;
       }
 
       #league-season {
         width: 100% !important;
         max-width: 100% !important;
+
         font-size: 16px !important;
+
         white-space: normal !important;
         overflow-wrap: anywhere !important;
         text-align: left !important;
@@ -249,6 +393,7 @@
       .standings-league-tabs {
         width: 100% !important;
         max-width: 100% !important;
+
         display: grid !important;
         grid-template-columns: 1fr 1fr !important;
         gap: 10px !important;
@@ -258,6 +403,7 @@
         width: 100% !important;
         min-width: 0 !important;
         max-width: 100% !important;
+
         padding: 14px 10px !important;
         font-size: 16px !important;
         border-radius: 18px !important;
@@ -281,8 +427,8 @@
       .standings-panel,
       .side-block {
         padding: 22px 16px !important;
-        border-radius: 24px !important;
         margin-bottom: 24px !important;
+        border-radius: 24px !important;
       }
 
       .panel-head,
@@ -296,6 +442,7 @@
       #standings-panel-title {
         font-size: 32px !important;
         line-height: 1.08 !important;
+
         white-space: normal !important;
         overflow-wrap: anywhere !important;
       }
@@ -304,6 +451,7 @@
       .standings-alt-wrap {
         width: 100% !important;
         max-width: 100% !important;
+
         overflow-x: auto !important;
         -webkit-overflow-scrolling: touch;
       }
@@ -320,6 +468,7 @@
       th,
       td {
         padding: 10px 8px !important;
+
         white-space: normal !important;
         overflow-wrap: anywhere !important;
       }
@@ -328,8 +477,10 @@
       .team-name,
       .club-name {
         max-width: 220px !important;
+
         font-size: 22px !important;
         line-height: 1.12 !important;
+
         white-space: normal !important;
         overflow-wrap: anywhere !important;
       }
@@ -351,6 +502,7 @@
       .standings-legend div {
         width: 100% !important;
         max-width: 100% !important;
+
         white-space: normal !important;
         overflow-wrap: anywhere !important;
       }
@@ -360,16 +512,6 @@
       .related-match-item strong {
         font-size: 18px !important;
         line-height: 1.35 !important;
-      }
-
-      body.site-skin-1win {
-        padding-top: 0 !important;
-        background-image: none !important;
-        background-attachment: scroll !important;
-      }
-
-      body.site-skin-1win .skin-click {
-        display: none !important;
       }
     }
 
@@ -389,9 +531,9 @@
         font-size: 21px !important;
       }
 
-      .topbar-menu a {
-        font-size: 15px !important;
+      body.site-skin-1win .topbar-menu a {
         padding: 11px 16px !important;
+        font-size: 15px !important;
       }
     }
   </style>
@@ -399,211 +541,279 @@
 
 <body class="theme-dark site-skin-1win">
 
-<a
-  class="skin-click skin-click-top"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 top banner"
-></a>
+  <a
+    class="skin-click skin-click-top"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 top banner">
+  </a>
 
-<a
-  class="skin-click skin-click-left"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 left background"
-></a>
+  <a
+    class="skin-click skin-click-left"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 left background">
+  </a>
 
-<a
-  class="skin-click skin-click-right"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 right background"
-></a>
+  <a
+    class="skin-click skin-click-right"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 right background">
+  </a>
 
-<div class="side-banner left-banner">
-  <ins class="ins-zone" data-zone="163622"></ins>
-</div>
+  <div class="side-banner left-banner">
+    <ins class="ins-zone" data-zone="163622"></ins>
+  </div>
 
-<div class="side-banner right-banner">
-  <ins class="ins-zone" data-zone="163622"></ins>
-</div>
+  <div class="side-banner right-banner">
+    <ins class="ins-zone" data-zone="163622"></ins>
+  </div>
 
-<header class="header">
-  <div class="header-inner">
+  <header class="header">
+    <div class="header-inner">
 
-    <a class="bf-logo" href="index.html" aria-label="Betforecast.ai home">
-      <img src="assets/bet-logo.png" alt="Betforecast.ai logo">
-      <span>Betforecast<span>.ai</span></span>
-    </a>
+      <a
+        class="bf-logo"
+        href="index.html"
+        aria-label="Betforecast.ai home">
 
-    <nav class="topbar-menu" aria-label="Main navigation">
-      <a href="world-cup-2026.html">🏆 WC 2026</a>
-      <a href="news.html">News</a>
-      <a href="standings.html" class="active">Standings</a>
-      <a href="match.html">Matches</a>
-      <a href="results.html">Results</a>
-      <a href="ai-insights.html">AI Insights</a>
-    </nav>
+        <img
+          src="assets/bet-logo.png"
+          alt="Betforecast.ai logo">
 
-    <div class="topbar-actions">
-      <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
-        <span class="theme-switch-track">
-          <span class="theme-switch-thumb"></span>
+        <span>
+          Betforecast<span>.ai</span>
         </span>
-        <span class="theme-switch-label">Dark</span>
-      </button>
-    </div>
+      </a>
 
-  </div>
-</header>
+      <nav class="topbar-menu" aria-label="Main navigation">
+        <a href="world-cup-2026.html">🏆 WC 2026</a>
+        <a href="news.html">News</a>
 
-<main class="standings-page-wrap page-shell">
+        <a
+          href="standings.html"
+          class="active">
+          Standings
+        </a>
 
-  <section class="standings-league-bar panel">
-
-    <div class="standings-league-main">
-      <div class="standings-league-badge" id="league-country">England</div>
-      <h1 id="league-name">Premier League</h1>
-      <p id="league-season">2025/26 season</p>
-    </div>
-
-    <div class="standings-league-tabs">
-      <button type="button" class="standings-view-tab active" data-view="table">Table</button>
-      <button type="button" class="standings-view-tab" data-view="last">Recent</button>
-      <button type="button" class="standings-view-tab" data-view="upcoming">Upcoming</button>
-    </div>
-
-  </section>
-
-  <section class="standings-filter-row">
-    <div id="league-filter-list" class="league-filter-list"></div>
-  </section>
-
-  <section class="standings-layout">
-
-    <div class="standings-main">
-
-      <section class="panel standings-panel">
-
-        <div class="panel-head">
-          <h2 id="standings-panel-title">League Table</h2>
-        </div>
-
-        <div id="standings-table-wrap" class="standings-table-wrap"></div>
-
-        <div id="standings-last-wrap" class="standings-alt-wrap hidden-view"></div>
-        <div id="standings-upcoming-wrap" class="standings-alt-wrap hidden-view"></div>
-
-      </section>
+        <a href="match.html">Matches</a>
+        <a href="results.html">Results</a>
+        <a href="ai-insights.html">AI Insights</a>
+      </nav>
 
     </div>
+  </header>
 
-    <aside class="standings-sidebar">
+  <main class="standings-page-wrap page-shell">
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>Insight</h2>
+    <section class="standings-league-bar panel">
+
+      <div class="standings-league-main">
+        <div
+          class="standings-league-badge"
+          id="league-country">
+          England
         </div>
 
-        <div class="news-focus-box">
-          <strong id="league-insight-title">Title race pressure</strong>
-          <p id="league-insight-text">
-            Top positions are separated by narrow margins, making every dropped point highly visible.
-          </p>
-        </div>
-      </section>
+        <h1 id="league-name">
+          Premier League
+        </h1>
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>Table Zones</h2>
-        </div>
+        <p id="league-season">
+          2025/26 season
+        </p>
+      </div>
 
-        <div class="standings-legend">
-          <div><span class="legend-dot legend-cl"></span>Champions League</div>
-          <div><span class="legend-dot legend-el"></span>Europa zone</div>
-          <div><span class="legend-dot legend-safe"></span>Mid-table</div>
-          <div><span class="legend-dot legend-rel"></span>Relegation zone</div>
-        </div>
-      </section>
+      <div class="standings-league-tabs">
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>Matches</h2>
-        </div>
+        <button
+          type="button"
+          class="standings-view-tab active"
+          data-view="table">
+          Table
+        </button>
 
-        <div class="related-match-list">
-          <a class="related-match-item" href="match.html?game=mci_ars">
-            <strong>Man City vs Arsenal</strong>
-            <span>Match Preview</span>
-          </a>
+        <button
+          type="button"
+          class="standings-view-tab"
+          data-view="last">
+          Recent
+        </button>
 
-          <a class="related-match-item" href="match.html?game=liv_tot_live">
-            <strong>Liverpool vs Tottenham</strong>
-            <span>Live Match</span>
-          </a>
+        <button
+          type="button"
+          class="standings-view-tab"
+          data-view="upcoming">
+          Upcoming
+        </button>
 
-          <a class="related-match-item" href="match.html?game=rm_sev_live">
-            <strong>Real Madrid vs Sevilla</strong>
-            <span>Live Match</span>
-          </a>
+      </div>
 
-          <a class="related-match-item" href="match.html?game=juv_nap_live">
-            <strong>Juventus vs Napoli</strong>
-            <span>Live Match</span>
-          </a>
-        </div>
-      </section>
+    </section>
 
-    </aside>
+    <section class="standings-filter-row">
+      <div
+        id="league-filter-list"
+        class="league-filter-list">
+      </div>
+    </section>
 
-  </section>
+    <section class="standings-layout">
 
-  <div class="content-banner">
-    <ins class="ins-zone" data-zone="163631"></ins>
-  </div>
+      <div class="standings-main">
 
-</main>
+        <section class="panel standings-panel">
 
-<script src="api-config.js"></script>
-<script src="js/standings-live.js?v=53000"></script>
+          <div class="panel-head">
+            <h2 id="standings-panel-title">
+              League Table
+            </h2>
+          </div>
 
-<script>
-  (function () {
-    const savedTheme = localStorage.getItem("bf-theme") || "dark";
+          <div
+            id="standings-table-wrap"
+            class="standings-table-wrap">
+          </div>
 
-    document.body.classList.remove("theme-dark", "theme-glass", "theme-light");
-    document.body.classList.add(`theme-${savedTheme}`);
-    document.body.classList.add("site-skin-1win");
+          <div
+            id="standings-last-wrap"
+            class="standings-alt-wrap hidden-view">
+          </div>
 
-    const toggle = document.getElementById("theme-toggle");
-    const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
+          <div
+            id="standings-upcoming-wrap"
+            class="standings-alt-wrap hidden-view">
+          </div>
 
-    function updateLabel(theme) {
-      if (!label) return;
-      label.textContent = theme === "dark" ? "Dark" : "Glass";
-    }
+        </section>
 
-    updateLabel(savedTheme);
+      </div>
 
-    if (toggle) {
-      toggle.addEventListener("click", function () {
-        const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
+      <aside class="standings-sidebar">
 
-        document.body.classList.remove("theme-dark", "theme-glass", "theme-light");
-        document.body.classList.add(`theme-${nextTheme}`);
-        document.body.classList.add("site-skin-1win");
+        <section class="panel side-block">
 
-        localStorage.setItem("bf-theme", nextTheme);
-        updateLabel(nextTheme);
-      });
-    }
-  })();
-</script>
+          <div class="panel-head">
+            <h2>Insight</h2>
+          </div>
 
-<script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
+          <div class="news-focus-box">
+
+            <strong id="league-insight-title">
+              Title race pressure
+            </strong>
+
+            <p id="league-insight-text">
+              Top positions are separated by narrow margins,
+              making every dropped point highly visible.
+            </p>
+
+          </div>
+
+        </section>
+
+        <section class="panel side-block">
+
+          <div class="panel-head">
+            <h2>Table Zones</h2>
+          </div>
+
+          <div class="standings-legend">
+
+            <div>
+              <span class="legend-dot legend-cl"></span>
+              Champions League
+            </div>
+
+            <div>
+              <span class="legend-dot legend-el"></span>
+              Europa zone
+            </div>
+
+            <div>
+              <span class="legend-dot legend-safe"></span>
+              Mid-table
+            </div>
+
+            <div>
+              <span class="legend-dot legend-rel"></span>
+              Relegation zone
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="panel side-block">
+
+          <div class="panel-head">
+            <h2>Matches</h2>
+          </div>
+
+          <div class="related-match-list">
+
+            <a
+              class="related-match-item"
+              href="match.html?game=mci_ars">
+
+              <strong>Man City vs Arsenal</strong>
+              <span>Match Preview</span>
+            </a>
+
+            <a
+              class="related-match-item"
+              href="match.html?game=liv_tot_live">
+
+              <strong>Liverpool vs Tottenham</strong>
+              <span>Live Match</span>
+            </a>
+
+            <a
+              class="related-match-item"
+              href="match.html?game=rm_sev_live">
+
+              <strong>Real Madrid vs Sevilla</strong>
+              <span>Live Match</span>
+            </a>
+
+            <a
+              class="related-match-item"
+              href="match.html?game=juv_nap_live">
+
+              <strong>Juventus vs Napoli</strong>
+              <span>Live Match</span>
+            </a>
+
+          </div>
+
+        </section>
+
+      </aside>
+
+    </section>
+
+    <div class="content-banner">
+      <ins
+        class="ins-zone"
+        data-zone="163631">
+      </ins>
+    </div>
+
+  </main>
+
+  <script src="api-config.js"></script>
+  <script src="js/standings-live.js?v=53000"></script>
+
+  <script
+    data-cfasync="false"
+    async
+    src="https://media.getads.online/js/code.min.js">
+  </script>
 
 </body>
 </html>
+```
