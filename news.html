@@ -2,53 +2,224 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>News | Betforecast.ai</title>
 
-  <link rel="stylesheet" href="css/style.css?v=15">
+  <link rel="stylesheet" href="css/style.css?v=20">
 
-  <script src="https://cdn.counter.dev/script.js"
+  <script
+    src="https://cdn.counter.dev/script.js"
     data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098"
     data-utcoffset="3">
   </script>
 
   <style>
+    :root {
+      --bf-shell-width: 1240px;
+      --bf-page-gap: 48px;
+      --bf-page-bg: #020b13;
+
+      --bf-panel-background:
+        linear-gradient(
+          180deg,
+          rgba(18, 38, 55, 0.97),
+          rgba(8, 20, 32, 0.98)
+        );
+
+      --bf-panel-border:
+        1px solid rgba(94, 224, 164, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+
+      margin: 0;
+      padding: 0;
+
+      background-color: var(--bf-page-bg) !important;
+      overflow-x: hidden;
+    }
+
     body.site-skin-1win {
-      background-color: #020b13 !important;
-      background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+      min-height: 100vh;
+      padding-top: 190px !important;
+
+      color: #f8fafc;
+
+      background-color: var(--bf-page-bg) !important;
+      background-image:
+        url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+
       background-repeat: no-repeat !important;
       background-position: center top !important;
       background-size: 1920px auto !important;
       background-attachment: scroll !important;
 
-      /* такой же отступ, как на WC и Match */
-      padding-top: 190px !important;
-
       overflow-x: hidden !important;
     }
 
-    /* сайт поверх фоновой картинки */
-    body.site-skin-1win .header,
-    body.site-skin-1win main,
-    body.site-skin-1win .news-page-wrap,
-    body.site-skin-1win .page-shell {
+    /* ========================================
+       DESKTOP HEADER
+       ======================================== */
+
+    body.site-skin-1win .header {
+      position: relative !important;
+      z-index: 30 !important;
+
+      width: 100% !important;
+
+      margin: 0 !important;
+      padding: 0 !important;
+
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+    }
+
+    body.site-skin-1win .header-inner {
+      position: relative !important;
+      z-index: 30 !important;
+
+      width: min(
+        var(--bf-shell-width),
+        calc(100vw - var(--bf-page-gap))
+      ) !important;
+
+      max-width: var(--bf-shell-width) !important;
+      min-height: 82px;
+
+      margin: 0 auto !important;
+      padding: 14px 24px !important;
+
+      display: grid !important;
+
+      grid-template-columns:
+        220px minmax(0, 1fr) 220px !important;
+
+      align-items: center !important;
+      gap: 18px !important;
+
+      background: var(--bf-panel-background) !important;
+      border: var(--bf-panel-border) !important;
+      border-radius: 26px !important;
+
+      box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.32) !important;
+
+      backdrop-filter: blur(14px) !important;
+      -webkit-backdrop-filter: blur(14px) !important;
+    }
+
+    body.site-skin-1win .header-inner::after {
+      content: "";
+
+      display: block;
+
+      width: 220px;
+      height: 1px;
+    }
+
+    body.site-skin-1win .bf-logo {
+      justify-self: start !important;
+
+      width: auto !important;
+      min-width: 0 !important;
+    }
+
+    body.site-skin-1win .topbar-menu {
+      justify-self: center !important;
+
+      width: max-content !important;
+      max-width: 100% !important;
+
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-wrap: nowrap !important;
+
+      gap: 10px !important;
+    }
+
+    body.site-skin-1win .topbar-menu a {
+      flex: 0 0 auto !important;
+      white-space: nowrap !important;
+    }
+
+    body.site-skin-1win .topbar-actions,
+    body.site-skin-1win .theme-switch {
+      display: none !important;
+    }
+
+    /* ========================================
+       DESKTOP PAGE
+       ======================================== */
+
+    body.site-skin-1win .news-page-wrap {
       position: relative !important;
       z-index: 20 !important;
+
+      width: min(
+        var(--bf-shell-width),
+        calc(100vw - var(--bf-page-gap))
+      ) !important;
+
+      max-width: var(--bf-shell-width) !important;
+
+      margin: 28px auto 0 !important;
+      padding: 0 0 40px !important;
+
+      background: transparent !important;
     }
 
-    /* шапка поверх фона */
-    body.site-skin-1win .header {
-      background: rgba(3, 13, 22, 0.94) !important;
-      border-bottom: 1px solid rgba(94, 224, 164, 0.16) !important;
-      backdrop-filter: blur(14px);
+    body.site-skin-1win .news-title-strip,
+    body.site-skin-1win .news-layout-v2,
+    body.site-skin-1win .news-main-column,
+    body.site-skin-1win .news-sidebar-v2 {
+      min-width: 0 !important;
     }
 
-    /* расстояние между меню и первым новостным блоком */
-    body.site-skin-1win .news-page-wrap {
-      padding-top: 28px !important;
+    /* ========================================
+       ADAPTIVE NEWS AD
+       ======================================== */
+
+    body.site-skin-1win .news-ad-slot {
+      position: relative !important;
+      z-index: 20 !important;
+
+      display: flex !important;
+      justify-content: center !important;
+
+      width: 100% !important;
+
+      margin: 22px auto !important;
+      overflow: hidden !important;
     }
 
-    /* боковые Dafabet баннеры ниже top skin */
+    body.site-skin-1win .news-ad-slot .banner-728 {
+      display: flex !important;
+      justify-content: center !important;
+    }
+
+    body.site-skin-1win .news-ad-slot .adhit-300x250 {
+      display: none !important;
+    }
+
+    /* ========================================
+       SIDE BANNERS
+       ======================================== */
+
     body.site-skin-1win .side-banner {
       position: fixed !important;
       top: 400px !important;
@@ -65,65 +236,619 @@
       left: auto !important;
     }
 
-    /* кликабельные зоны фона */
+    /* ========================================
+       CLICKABLE SKIN
+       ======================================== */
+
     body.site-skin-1win .skin-click {
       position: fixed !important;
-      display: block !important;
       z-index: 2 !important;
-      text-decoration: none !important;
+
+      display: block !important;
+
       background: transparent !important;
+      text-decoration: none !important;
     }
 
     body.site-skin-1win .skin-click-top {
       top: 0 !important;
       left: 50% !important;
+
       width: min(100vw, 1920px) !important;
       height: 165px !important;
+
       transform: translateX(-50%) !important;
     }
 
     body.site-skin-1win .skin-click-left {
       top: 165px !important;
+      bottom: 0 !important;
       left: 0 !important;
-      width: calc((100vw - 1320px) / 2) !important;
+
+      width: max(
+        0px,
+        calc((100vw - var(--bf-shell-width)) / 2)
+      ) !important;
+
       max-width: 320px !important;
-      height: calc(100vh - 165px) !important;
     }
 
     body.site-skin-1win .skin-click-right {
       top: 165px !important;
       right: 0 !important;
-      width: calc((100vw - 1320px) / 2) !important;
+      bottom: 0 !important;
+
+      width: max(
+        0px,
+        calc((100vw - var(--bf-shell-width)) / 2)
+      ) !important;
+
       max-width: 320px !important;
-      height: calc(100vh - 165px) !important;
     }
 
-    /* баннеры внутри страницы поверх кликабельного фона */
-    body.site-skin-1win .news-ad-slot,
-    body.site-skin-1win .banner-728,
-    body.site-skin-1win .adhit-300x250 {
-      position: relative !important;
-      z-index: 20 !important;
+    /* ========================================
+       TABLET
+       ======================================== */
+
+    @media (max-width: 1100px) {
+      body.site-skin-1win .header-inner {
+        grid-template-columns: 1fr !important;
+        justify-items: center !important;
+      }
+
+      body.site-skin-1win .header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        justify-self: center !important;
+      }
+
+      body.site-skin-1win .topbar-menu {
+        width: 100% !important;
+        flex-wrap: wrap !important;
+      }
     }
 
-    /* мобильную версию не трогаем */
-    @media (max-width: 900px) {
-      body.site-skin-1win {
-        padding-top: 0 !important;
+    /* ========================================
+       MOBILE
+       ======================================== */
+
+    @media (max-width: 768px) {
+      html,
+      body {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background-color: var(--bf-page-bg) !important;
         background-image: none !important;
+
+        overflow-x: hidden !important;
+      }
+
+      body.site-skin-1win {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        min-height: 100vh !important;
+
+        padding-top: 96px !important;
+
+        background-color: var(--bf-page-bg) !important;
+
+        background-image:
+          linear-gradient(
+            180deg,
+            rgba(2, 11, 19, 0) 0,
+            rgba(2, 11, 19, 0.12) 92px,
+            rgba(2, 11, 19, 0.88) 235px,
+            #020b13 330px
+          ),
+          url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+
+        background-repeat: no-repeat !important;
+
+        background-position:
+          center top,
+          center top !important;
+
+        background-size:
+          100% 340px,
+          auto 290px !important;
+
         background-attachment: scroll !important;
+
+        overflow-x: hidden !important;
+      }
+
+      body.site-skin-1win::before,
+      body.site-skin-1win::after {
+        background-color: transparent !important;
+        background-image: none !important;
+      }
+
+      body.site-skin-1win .header,
+      body.site-skin-1win .news-page-wrap,
+      body.site-skin-1win .news-layout-v2,
+      body.site-skin-1win .news-main-column,
+      body.site-skin-1win .news-sidebar-v2 {
+        background-color: transparent !important;
+        background-image: none !important;
+      }
+
+      /* Боковые баннеры скрываем */
+      body.site-skin-1win .side-banner,
+      body.site-skin-1win .left-banner,
+      body.site-skin-1win .right-banner {
+        display: none !important;
+      }
+
+      /* Боковые click-зоны скрываем */
+      body.site-skin-1win .skin-click-left,
+      body.site-skin-1win .skin-click-right {
+        display: none !important;
+      }
+
+      /* Верх мобильного скина кликабельный */
+      body.site-skin-1win .skin-click-top {
+        position: absolute !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 96px !important;
+
+        transform: none !important;
+        z-index: 2 !important;
+      }
+
+      /* ====================================
+         MOBILE HEADER
+         ==================================== */
+
+      body.site-skin-1win .header {
+        position: relative !important;
+        z-index: 30 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .header-inner {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        min-width: 0 !important;
+        min-height: 0 !important;
+
+        margin: 6px auto 0 !important;
+        padding: 12px 10px !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        gap: 10px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.18) !important;
+
+        border-radius: 18px !important;
+
+        box-shadow:
+          0 14px 34px rgba(0, 0, 0, 0.34) !important;
+
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 23px !important;
+        line-height: 1 !important;
+      }
+
+      body.site-skin-1win .bf-logo img {
+        width: 28px !important;
+        height: 28px !important;
+      }
+
+      /* Меню 3 × 2 */
+      body.site-skin-1win .topbar-menu {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 8px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .topbar-menu a {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 10px 3px !important;
+
+        font-size: 13px !important;
+        line-height: 1.1 !important;
+
+        text-align: center !important;
+        white-space: nowrap !important;
+
+        border-radius: 13px !important;
+
+        overflow: hidden !important;
+      }
+
+      /* ====================================
+         MOBILE PAGE
+         ==================================== */
+
+      body.site-skin-1win .news-page-wrap {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        min-width: 0 !important;
+
+        margin: 14px auto 0 !important;
+        padding: 0 0 28px !important;
+
+        background: transparent !important;
+
+        overflow: hidden !important;
+      }
+
+      /* News title */
+      body.site-skin-1win .news-title-strip {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 20px 14px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
+        border-radius: 20px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .news-title-strip > div {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+      }
+
+      body.site-skin-1win .news-title-strip span {
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+
+        white-space: normal !important;
+      }
+
+      body.site-skin-1win .news-title-strip h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 10px 0 0 !important;
+
+        font-size: 28px !important;
+        line-height: 1.06 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* Основная сетка одной колонкой */
+      body.site-skin-1win .news-layout-v2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 16px !important;
+
+        margin: 16px 0 0 !important;
+        padding: 0 !important;
+      }
+
+      body.site-skin-1win .news-main-column,
+      body.site-skin-1win .news-sidebar-v2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 16px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      body.site-skin-1win .panel,
+      body.site-skin-1win .news-featured-panel,
+      body.site-skin-1win .news-feed-panel,
+      body.site-skin-1win .side-block {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 18px 12px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
+        border-radius: 20px !important;
+
+        overflow: hidden !important;
+        transform: none !important;
+      }
+
+      body.site-skin-1win .panel-head {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-bottom: 14px !important;
+      }
+
+      body.site-skin-1win .panel-head h2 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        font-size: 24px !important;
+        line-height: 1.08 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* Featured story */
+      body.site-skin-1win #featured-story,
+      body.site-skin-1win #featured-story > * {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        transform: none !important;
+      }
+
+      body.site-skin-1win #featured-story img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+
+        object-fit: cover !important;
+
+        border-radius: 16px !important;
+      }
+
+      /* Latest stories */
+      body.site-skin-1win .news-grid-v2 {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 14px !important;
+      }
+
+      body.site-skin-1win .news-grid-v2 > *,
+      body.site-skin-1win .news-card,
+      body.site-skin-1win .article-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+
+        border-radius: 16px !important;
+
+        overflow: hidden !important;
+        transform: none !important;
+      }
+
+      body.site-skin-1win .news-grid-v2 img,
+      body.site-skin-1win .news-card img,
+      body.site-skin-1win .article-card img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+
+        object-fit: cover !important;
+      }
+
+      body.site-skin-1win .news-grid-v2 h2,
+      body.site-skin-1win .news-grid-v2 h3,
+      body.site-skin-1win .news-card h2,
+      body.site-skin-1win .news-card h3,
+      body.site-skin-1win .article-card h2,
+      body.site-skin-1win .article-card h3 {
+        max-width: 100% !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* Sidebar links */
+      body.site-skin-1win .league-list,
+      body.site-skin-1win .trending-list,
+      body.site-skin-1win .news-focus-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+      }
+
+      body.site-skin-1win .sidebar-link-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 13px 12px !important;
+
+        font-size: 15px !important;
+        line-height: 1.25 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+
+        border-radius: 14px !important;
+      }
+
+      body.site-skin-1win .news-focus-box strong,
+      body.site-skin-1win .news-focus-box p {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .news-focus-box p {
+        font-size: 15px !important;
+        line-height: 1.4 !important;
+      }
+
+      /* Реклама: 728 скрываем, 300×250 показываем */
+      body.site-skin-1win .news-ad-slot {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        background: transparent !important;
+      }
+
+      body.site-skin-1win .news-ad-slot .banner-728 {
+        display: none !important;
+      }
+
+      body.site-skin-1win .news-ad-slot .adhit-300x250 {
+        display: flex !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        overflow: hidden !important;
+      }
+    }
+
+    /* ========================================
+       SMALL MOBILE
+       ======================================== */
+
+    @media (max-width: 420px) {
+      body.site-skin-1win {
+        padding-top: 88px !important;
+
+        background-size:
+          100% 310px,
+          auto 270px !important;
+      }
+
+      body.site-skin-1win .skin-click-top {
+        height: 88px !important;
+      }
+
+      body.site-skin-1win .header-inner {
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
+
+        margin-top: 5px !important;
       }
 
       body.site-skin-1win .news-page-wrap {
-        padding-top: 22px !important;
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
       }
 
-      body.site-skin-1win .skin-click {
-        display: none !important;
+      body.site-skin-1win .topbar-menu {
+        gap: 6px !important;
       }
 
-      body.site-skin-1win .side-banner {
-        display: none !important;
+      body.site-skin-1win .topbar-menu a {
+        padding: 9px 2px !important;
+        font-size: 12px !important;
+      }
+
+      body.site-skin-1win .news-title-strip {
+        padding: 18px 12px !important;
+      }
+
+      body.site-skin-1win .news-title-strip h1 {
+        font-size: 26px !important;
+      }
+
+      body.site-skin-1win .panel,
+      body.site-skin-1win .news-featured-panel,
+      body.site-skin-1win .news-feed-panel,
+      body.site-skin-1win .side-block {
+        padding: 16px 10px !important;
+      }
+
+      body.site-skin-1win .panel-head h2 {
+        font-size: 22px !important;
       }
     }
   </style>
@@ -131,207 +856,296 @@
 
 <body class="theme-dark site-skin-1win">
 
-<a
-  class="skin-click skin-click-top"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 top banner"
-></a>
+  <!-- Кликабельный фон 1win -->
+  <a
+    class="skin-click skin-click-top"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 top banner">
+  </a>
 
-<a
-  class="skin-click skin-click-left"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 left background"
-></a>
+  <a
+    class="skin-click skin-click-left"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 left background">
+  </a>
 
-<a
-  class="skin-click skin-click-right"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 right background"
-></a>
+  <a
+    class="skin-click skin-click-right"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 right background">
+  </a>
 
-<div class="side-banner left-banner">
-  <ins class="ins-zone" data-zone="163622"></ins>
-</div>
-
-<div class="side-banner right-banner">
-  <ins class="ins-zone" data-zone="163622"></ins>
-</div>
-
-<header class="header">
-  <div class="header-inner">
-
-    <a class="bf-logo" href="index.html" aria-label="Betforecast.ai home">
-      <img src="assets/bet-logo.png" alt="Betforecast.ai logo">
-      <span>Betforecast<span>.ai</span></span>
-    </a>
-
-    <nav class="topbar-menu" aria-label="Main navigation">
-      <a href="world-cup-2026.html">🏆 WC 2026</a>
-      <a href="news.html" class="active">News</a>
-      <a href="standings.html">Standings</a>
-      <a href="match.html">Matches</a>
-      <a href="results.html">Results</a>
-      <a href="ai-insights.html">AI Insights</a>
-    </nav>
-
-    <div class="topbar-actions">
-      <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
-        <span class="theme-switch-track">
-          <span class="theme-switch-thumb"></span>
-        </span>
-        <span class="theme-switch-label">Dark</span>
-      </button>
-    </div>
-
+  <!-- Боковые баннеры -->
+  <div class="side-banner left-banner">
+    <ins
+      class="ins-zone"
+      data-zone="163622">
+    </ins>
   </div>
-</header>
 
-<main class="news-page-wrap page-shell">
+  <div class="side-banner right-banner">
+    <ins
+      class="ins-zone"
+      data-zone="163622">
+    </ins>
+  </div>
 
-  <section class="news-title-strip">
-    <div>
-      <span>Football News</span>
-      <h1>Headlines, Transfers & Match Stories</h1>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+
+      <a
+        class="bf-logo"
+        href="index.html"
+        aria-label="Betforecast.ai home">
+
+        <img
+          src="assets/bet-logo.png"
+          alt="Betforecast.ai logo">
+
+        <span>
+          Betforecast<span>.ai</span>
+        </span>
+      </a>
+
+      <nav
+        class="topbar-menu"
+        aria-label="Main navigation">
+
+        <a href="world-cup-2026.html">
+          🏆 WC 2026
+        </a>
+
+        <a
+          href="news.html"
+          class="active">
+          News
+        </a>
+
+        <a href="standings.html">
+          Standings
+        </a>
+
+        <a href="match.html">
+          Matches
+        </a>
+
+        <a href="results.html">
+          Results
+        </a>
+
+        <a href="ai-insights.html">
+          AI Insights
+        </a>
+
+      </nav>
+
     </div>
-  </section>
+  </header>
 
-  <section class="news-layout-v2">
+  <!-- Main -->
+  <main class="news-page-wrap page-shell">
 
-    <div class="news-main-column">
+    <section class="news-title-strip">
 
-      <section class="panel news-featured-panel">
-        <div class="panel-head">
-          <h2>Featured Story</h2>
-        </div>
-        <div id="featured-story"></div>
-      </section>
+      <div>
+        <span>
+          Football News
+        </span>
 
-      <!-- Adhit Media / News adaptive banner -->
-      <div class="news-ad-slot" id="newsAdaptiveBanner"></div>
+        <h1>
+          Headlines, Transfers &amp; Match Stories
+        </h1>
+      </div>
 
-      <script>
-        (function () {
-          const slot = document.getElementById("newsAdaptiveBanner");
-          if (!slot) return;
+    </section>
 
-          const isMobile = window.innerWidth <= 768;
+    <section class="news-layout-v2">
 
-          slot.innerHTML = isMobile
-            ? `
-              <div class="adhit-300x250">
-                <ins class="ins-zone" data-zone="163623"></ins>
-              </div>
-            `
-            : `
-              <div class="banner-728">
-                <ins class="ins-zone" data-zone="163631"></ins>
-              </div>
-            `;
-        })();
-      </script>
-      <!-- /Adhit Media -->
+      <div class="news-main-column">
 
-      <section class="panel news-feed-panel">
-        <div class="panel-head">
-          <h2>Latest Stories</h2>
-        </div>
-        <div id="news-list" class="news-grid-v2"></div>
-      </section>
+        <section class="panel news-featured-panel">
 
-    </div>
+          <div class="panel-head">
+            <h2>
+              Featured Story
+            </h2>
+          </div>
 
-    <aside class="news-sidebar-v2">
+          <div id="featured-story"></div>
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>Top Leagues</h2>
-        </div>
+        </section>
 
-        <div class="league-list league-list-buttons">
-          <a class="sidebar-link-card" href="standings.html?league=npfl">NPFL</a>
-          <a class="sidebar-link-card" href="standings.html?league=premier-league">Premier League</a>
-          <a class="sidebar-link-card" href="standings.html?league=la-liga">La Liga</a>
-          <a class="sidebar-link-card" href="standings.html?league=serie-a">Serie A</a>
-          <a class="sidebar-link-card" href="standings.html?league=bundesliga">Bundesliga</a>
-          <a class="sidebar-link-card" href="standings.html?league=champions-league">Champions League</a>
-        </div>
-      </section>
+        <!-- Adaptive Adhit banner -->
+        <div
+          class="news-ad-slot"
+          id="newsAdaptiveBanner">
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>Trending Topics</h2>
+          <div class="banner-728">
+            <ins
+              class="ins-zone"
+              data-zone="163631">
+            </ins>
+          </div>
+
+          <div class="adhit-300x250">
+            <ins
+              class="ins-zone"
+              data-zone="163623">
+            </ins>
+          </div>
+
         </div>
 
-        <div class="trending-list trending-list-buttons">
-          <a class="sidebar-link-card" href="article.html?id=1">Arsenal vs Chelsea</a>
-          <a class="sidebar-link-card" href="article.html?id=2">Osimhen transfer</a>
-          <a class="sidebar-link-card" href="article.html?id=4">Title race</a>
-          <a class="sidebar-link-card" href="article.html?id=3">UCL draw</a>
-        </div>
-      </section>
+        <section class="panel news-feed-panel">
 
-      <section class="panel side-block">
-        <div class="panel-head">
-          <h2>News Focus</h2>
-        </div>
+          <div class="panel-head">
+            <h2>
+              Latest Stories
+            </h2>
+          </div>
 
-        <div class="news-focus-box">
-          <strong>What matters most today</strong>
-          <p>
-            Transfers, injuries, and tactical shifts are shaping both narratives
-            and prediction volatility.
-          </p>
-        </div>
-      </section>
+          <div
+            id="news-list"
+            class="news-grid-v2">
+          </div>
 
-    </aside>
+        </section>
 
-  </section>
+      </div>
 
-</main>
+      <aside class="news-sidebar-v2">
 
-<script src="js/news-page.js"></script>
+        <section class="panel side-block">
 
-<script>
-  (function () {
-    const savedTheme = localStorage.getItem("bf-theme") || "dark";
+          <div class="panel-head">
+            <h2>
+              Top Leagues
+            </h2>
+          </div>
 
-    document.body.classList.remove("theme-dark", "theme-glass", "theme-light");
-    document.body.classList.add(`theme-${savedTheme}`);
-    document.body.classList.add("site-skin-1win");
+          <div class="league-list league-list-buttons">
 
-    const toggle = document.getElementById("theme-toggle");
-    const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
+            <a
+              class="sidebar-link-card"
+              href="standings.html?league=npfl">
+              NPFL
+            </a>
 
-    function updateLabel(theme) {
-      if (!label) return;
-      label.textContent = theme === "dark" ? "Dark" : "Glass";
-    }
+            <a
+              class="sidebar-link-card"
+              href="standings.html?league=premier-league">
+              Premier League
+            </a>
 
-    updateLabel(savedTheme);
+            <a
+              class="sidebar-link-card"
+              href="standings.html?league=la-liga">
+              La Liga
+            </a>
 
-    if (toggle) {
-      toggle.addEventListener("click", function () {
-        const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
+            <a
+              class="sidebar-link-card"
+              href="standings.html?league=serie-a">
+              Serie A
+            </a>
 
-        document.body.classList.remove("theme-dark", "theme-glass", "theme-light");
-        document.body.classList.add(`theme-${nextTheme}`);
-        document.body.classList.add("site-skin-1win");
+            <a
+              class="sidebar-link-card"
+              href="standings.html?league=bundesliga">
+              Bundesliga
+            </a>
 
-        localStorage.setItem("bf-theme", nextTheme);
-        updateLabel(nextTheme);
-      });
-    }
-  })();
-</script>
+            <a
+              class="sidebar-link-card"
+              href="standings.html?league=champions-league">
+              Champions League
+            </a>
 
-<script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
+          </div>
+
+        </section>
+
+        <section class="panel side-block">
+
+          <div class="panel-head">
+            <h2>
+              Trending Topics
+            </h2>
+          </div>
+
+          <div class="trending-list trending-list-buttons">
+
+            <a
+              class="sidebar-link-card"
+              href="article.html?id=1">
+              Arsenal vs Chelsea
+            </a>
+
+            <a
+              class="sidebar-link-card"
+              href="article.html?id=2">
+              Osimhen transfer
+            </a>
+
+            <a
+              class="sidebar-link-card"
+              href="article.html?id=4">
+              Title race
+            </a>
+
+            <a
+              class="sidebar-link-card"
+              href="article.html?id=3">
+              UCL draw
+            </a>
+
+          </div>
+
+        </section>
+
+        <section class="panel side-block">
+
+          <div class="panel-head">
+            <h2>
+              News Focus
+            </h2>
+          </div>
+
+          <div class="news-focus-box">
+
+            <strong>
+              What matters most today
+            </strong>
+
+            <p>
+              Transfers, injuries, and tactical shifts are
+              shaping both narratives and prediction volatility.
+            </p>
+
+          </div>
+
+        </section>
+
+      </aside>
+
+    </section>
+
+  </main>
+
+  <script src="js/news-page.js"></script>
+
+  <script
+    data-cfasync="false"
+    async
+    src="https://media.getads.online/js/code.min.js">
+  </script>
 
 </body>
 </html>
