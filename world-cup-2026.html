@@ -10,7 +10,7 @@
 
   <title>Betforecast.ai | World Cup 2026</title>
 
-  <link rel="stylesheet" href="css/style.css?v=19">
+  <link rel="stylesheet" href="css/style.css?v=20">
 
   <script
     src="https://cdn.counter.dev/script.js"
@@ -23,11 +23,13 @@
       --bf-shell-width: 1240px;
       --bf-page-gap: 48px;
 
+      --bf-page-bg: #020b13;
+
       --bf-panel-background:
         linear-gradient(
           180deg,
-          rgba(18, 38, 55, 0.96),
-          rgba(8, 20, 32, 0.97)
+          rgba(18, 38, 55, 0.97),
+          rgba(8, 20, 32, 0.98)
         );
 
       --bf-panel-border:
@@ -38,12 +40,23 @@
       box-sizing: border-box;
     }
 
-    html,
+    html {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+
+      background: var(--bf-page-bg) !important;
+      overflow-x: hidden;
+    }
+
     body {
       width: 100%;
       min-height: 100%;
       margin: 0;
       padding: 0;
+
+      background: var(--bf-page-bg) !important;
       overflow-x: hidden;
     }
 
@@ -53,9 +66,10 @@
 
       color: #f8fafc;
 
-      background-color: #020b13 !important;
+      background-color: var(--bf-page-bg) !important;
       background-image:
         url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+
       background-repeat: no-repeat !important;
       background-position: center top !important;
       background-size: 1920px auto !important;
@@ -100,6 +114,7 @@
       display: grid !important;
       grid-template-columns:
         220px minmax(0, 1fr) 220px !important;
+
       align-items: center !important;
       gap: 18px !important;
 
@@ -114,7 +129,6 @@
       -webkit-backdrop-filter: blur(14px) !important;
     }
 
-    /* Пустая правая колонка удерживает меню по центру */
     body.site-skin-1win .bf-header-inner::after {
       content: "";
       display: block;
@@ -140,6 +154,7 @@
       align-items: center !important;
       justify-content: center !important;
       flex-wrap: nowrap !important;
+
       gap: 10px !important;
     }
 
@@ -171,15 +186,8 @@
 
       margin: 28px auto 0 !important;
       padding: 0 0 40px !important;
-    }
 
-    /* Баннеры внутри WC grid занимают всю строку */
-    body.site-skin-1win .banner-728,
-    body.site-skin-1win .desktop-ad,
-    body.site-skin-1win .mobile-ad,
-    body.site-skin-1win .adhit-300x250 {
-      position: relative !important;
-      z-index: 20 !important;
+      background: transparent !important;
     }
 
     body.site-skin-1win .wc-grid > .desktop-ad,
@@ -188,6 +196,9 @@
     }
 
     body.site-skin-1win .desktop-ad {
+      position: relative !important;
+      z-index: 20 !important;
+
       display: flex !important;
       justify-content: center !important;
 
@@ -220,7 +231,7 @@
     }
 
     /* ========================================
-       CLICKABLE BACKGROUND
+       CLICKABLE SKIN
        ======================================== */
 
     body.site-skin-1win .skin-click {
@@ -302,60 +313,82 @@
       body {
         width: 100% !important;
         max-width: 100% !important;
+        min-width: 0 !important;
 
         margin: 0 !important;
         padding: 0 !important;
 
+        background-color: var(--bf-page-bg) !important;
+        background-image: none !important;
+
         overflow-x: hidden !important;
-        zoom: 1 !important;
       }
 
       body.site-skin-1win {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
         min-height: 100vh !important;
 
-        /* Место под верхний мобильный фрагмент 1win */
-        padding-top: 112px !important;
+        /* Отступ под верхнюю часть рекламного скина */
+        padding-top: 96px !important;
 
-        background-color: #020b13 !important;
+        background-color: var(--bf-page-bg) !important;
 
         background-image:
           linear-gradient(
             180deg,
-            rgba(2, 11, 19, 0.02) 0,
-            rgba(2, 11, 19, 0.18) 110px,
-            rgba(2, 11, 19, 0.90) 270px,
-            #020b13 390px
+            rgba(2, 11, 19, 0) 0,
+            rgba(2, 11, 19, 0.12) 92px,
+            rgba(2, 11, 19, 0.88) 235px,
+            #020b13 330px
           ),
           url("/assets/ads/1win-wc2026-site-skin.webp") !important;
 
         background-repeat: no-repeat !important;
 
         background-position:
-          top center,
-          top center !important;
+          center top,
+          center top !important;
 
         background-size:
-          100% 390px,
-          auto 340px !important;
+          100% 340px,
+          auto 290px !important;
 
         background-attachment: scroll !important;
+
         overflow-x: hidden !important;
       }
 
-      /* Боковые баннеры скрыты */
+      /*
+        Перекрываем возможный старый красный background
+        из css/style.css на всех основных контейнерах.
+      */
+      body.site-skin-1win::before,
+      body.site-skin-1win::after {
+        background-color: transparent !important;
+        background-image: none !important;
+      }
+
+      body.site-skin-1win .bf-header,
+      body.site-skin-1win .wc-page,
+      body.site-skin-1win .wc-grid {
+        background-color: transparent !important;
+        background-image: none !important;
+      }
+
       body.site-skin-1win .side-banner,
       body.site-skin-1win .left-banner,
       body.site-skin-1win .right-banner {
         display: none !important;
       }
 
-      /* Боковые click-зоны скрыты */
       body.site-skin-1win .skin-click-left,
       body.site-skin-1win .skin-click-right {
         display: none !important;
       }
 
-      /* Верхний мобильный фон остаётся кликабельным */
       body.site-skin-1win .skin-click-top {
         position: absolute !important;
 
@@ -365,7 +398,8 @@
         display: block !important;
 
         width: 100% !important;
-        height: 112px !important;
+        max-width: 100% !important;
+        height: 96px !important;
 
         transform: none !important;
         z-index: 2 !important;
@@ -388,28 +422,26 @@
         background: transparent !important;
         border: 0 !important;
         box-shadow: none !important;
+
+        overflow: hidden !important;
       }
 
       body.site-skin-1win .bf-header-inner {
-        width: calc(100vw - 20px) !important;
-        max-width: calc(100vw - 20px) !important;
-
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        min-width: 0 !important;
         min-height: 0 !important;
 
-        margin: 8px auto 0 !important;
+        margin: 6px auto 0 !important;
         padding: 12px 10px !important;
 
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
+
         gap: 10px !important;
 
-        background:
-          linear-gradient(
-            180deg,
-            rgba(18, 38, 55, 0.97),
-            rgba(8, 20, 32, 0.98)
-          ) !important;
+        background: var(--bf-panel-background) !important;
 
         border:
           1px solid rgba(94, 224, 164, 0.18) !important;
@@ -421,6 +453,8 @@
 
         backdrop-filter: blur(12px) !important;
         -webkit-backdrop-filter: blur(12px) !important;
+
+        overflow: hidden !important;
       }
 
       body.site-skin-1win .bf-header-inner::after {
@@ -429,9 +463,11 @@
 
       body.site-skin-1win .bf-logo {
         width: 100% !important;
+        max-width: 100% !important;
 
         display: flex !important;
         justify-content: center !important;
+        align-items: center !important;
 
         font-size: 23px !important;
         line-height: 1 !important;
@@ -442,35 +478,42 @@
         height: 28px !important;
       }
 
-      /* Меню 3 кнопки в строке */
+      /* Меню 3 × 2 */
       body.site-skin-1win .bf-nav {
         width: 100% !important;
         max-width: 100% !important;
+        min-width: 0 !important;
 
         display: grid !important;
+
         grid-template-columns:
           repeat(3, minmax(0, 1fr)) !important;
 
         gap: 8px !important;
-        overflow: visible !important;
+
+        overflow: hidden !important;
       }
 
       body.site-skin-1win .bf-nav a {
         width: 100% !important;
+        max-width: 100% !important;
         min-width: 0 !important;
 
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
 
-        padding: 10px 5px !important;
+        padding: 10px 3px !important;
 
         font-size: 13px !important;
         line-height: 1.1 !important;
+
         text-align: center !important;
         white-space: nowrap !important;
 
         border-radius: 13px !important;
+
+        overflow: hidden !important;
       }
 
       /* ====================================
@@ -478,16 +521,18 @@
          ==================================== */
 
       body.site-skin-1win .wc-page {
-        width: calc(100vw - 20px) !important;
-        max-width: calc(100vw - 20px) !important;
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        min-width: 0 !important;
 
         margin: 14px auto 0 !important;
         padding: 0 0 28px !important;
 
-        overflow: visible !important;
+        background: transparent !important;
+
+        overflow: hidden !important;
       }
 
-      /* Все основные секции укладываются в экран */
       body.site-skin-1win .wc-hero,
       body.site-skin-1win .wc-grid,
       body.site-skin-1win .wc-card,
@@ -497,20 +542,27 @@
         max-width: 100% !important;
         min-width: 0 !important;
 
-        margin-left: auto !important;
-        margin-right: auto !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
 
         transform: none !important;
       }
 
-      /* Верхний WC hero */
+      /* Hero */
       body.site-skin-1win .wc-hero {
         display: flex !important;
         flex-direction: column !important;
         align-items: stretch !important;
-        gap: 18px !important;
 
-        padding: 22px 16px !important;
+        gap: 16px !important;
+
+        padding: 20px 14px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
         border-radius: 20px !important;
 
         overflow: hidden !important;
@@ -523,20 +575,22 @@
       }
 
       body.site-skin-1win .wc-kicker {
-        width: max-content !important;
+        width: 100% !important;
         max-width: 100% !important;
 
         font-size: 12px !important;
         line-height: 1.2 !important;
+
+        white-space: normal !important;
       }
 
       body.site-skin-1win .wc-hero h1 {
         width: 100% !important;
         max-width: 100% !important;
 
-        margin: 12px 0 10px !important;
+        margin: 10px 0 !important;
 
-        font-size: 31px !important;
+        font-size: 28px !important;
         line-height: 1.06 !important;
 
         white-space: normal !important;
@@ -550,7 +604,7 @@
         margin: 0 !important;
 
         font-size: 15px !important;
-        line-height: 1.45 !important;
+        line-height: 1.4 !important;
 
         white-space: normal !important;
         overflow-wrap: anywhere !important;
@@ -560,12 +614,13 @@
         width: 100% !important;
 
         display: grid !important;
+
         grid-template-columns:
           repeat(3, minmax(0, 1fr)) !important;
 
-        gap: 7px !important;
+        gap: 6px !important;
 
-        margin-top: 16px !important;
+        margin-top: 14px !important;
       }
 
       body.site-skin-1win .wc-hosts span {
@@ -576,9 +631,10 @@
         align-items: center !important;
         justify-content: center !important;
 
-        padding: 9px 4px !important;
+        padding: 9px 2px !important;
 
-        font-size: 12px !important;
+        font-size: 11px !important;
+        text-align: center !important;
         white-space: nowrap !important;
 
         border-radius: 13px !important;
@@ -590,45 +646,52 @@
         max-width: 100% !important;
 
         display: grid !important;
+
         grid-template-columns:
           repeat(3, minmax(0, 1fr)) !important;
 
-        gap: 8px !important;
+        gap: 7px !important;
       }
 
       body.site-skin-1win .wc-countdown > div {
         width: 100% !important;
         min-width: 0 !important;
 
-        padding: 13px 5px !important;
-        border-radius: 15px !important;
+        padding: 12px 4px !important;
+        border-radius: 14px !important;
       }
 
       body.site-skin-1win .wc-countdown strong {
-        font-size: 25px !important;
+        font-size: 22px !important;
         line-height: 1 !important;
       }
 
       body.site-skin-1win .wc-countdown span {
         margin-top: 5px !important;
-        font-size: 11px !important;
+        font-size: 10px !important;
       }
 
-      /* WC grid в одну колонку */
+      /* Cards */
       body.site-skin-1win .wc-grid {
         display: flex !important;
         flex-direction: column !important;
+
         gap: 16px !important;
+
+        background: transparent !important;
       }
 
       body.site-skin-1win .wc-card {
-        width: 100% !important;
-        max-width: 100% !important;
-
         margin: 0 !important;
         padding: 18px 12px !important;
 
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
         border-radius: 20px !important;
+
         overflow: hidden !important;
       }
 
@@ -638,6 +701,7 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: flex-start !important;
+
         gap: 5px !important;
 
         margin-bottom: 14px !important;
@@ -649,8 +713,8 @@
 
         margin: 0 !important;
 
-        font-size: 24px !important;
-        line-height: 1.08 !important;
+        font-size: 22px !important;
+        line-height: 1.1 !important;
 
         white-space: normal !important;
         overflow-wrap: anywhere !important;
@@ -667,7 +731,6 @@
         overflow-wrap: anywhere !important;
       }
 
-      /* Матчи и прогнозы не выходят за край */
       body.site-skin-1win .wc-fixtures,
       body.site-skin-1win .wc-predictions {
         width: 100% !important;
@@ -675,38 +738,35 @@
         min-width: 0 !important;
       }
 
-      body.site-skin-1win .wc-fixture,
-      body.site-skin-1win .wc-fixture-row,
-      body.site-skin-1win .wc-prediction,
-      body.site-skin-1win .wc-prediction-item {
+      /*
+        Горизонтальная прокрутка для групп,
+        таблицы и турнирной сетки.
+      */
+      body.site-skin-1win .wc-tabs,
+      body.site-skin-1win .wc-standings,
+      body.site-skin-1win .wc-bracket-placeholder {
         width: 100% !important;
         max-width: 100% !important;
-        min-width: 0 !important;
-
-        padding: 12px 10px !important;
-        border-radius: 14px !important;
-      }
-
-      /* Вкладки групп можно двигать пальцем */
-      body.site-skin-1win .wc-tabs {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        display: flex !important;
-        flex-wrap: nowrap !important;
-        gap: 7px !important;
 
         overflow-x: auto !important;
         overflow-y: hidden !important;
-
-        padding-bottom: 7px !important;
 
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
       }
 
-      body.site-skin-1win .wc-tabs::-webkit-scrollbar {
+      body.site-skin-1win .wc-tabs::-webkit-scrollbar,
+      body.site-skin-1win .wc-standings::-webkit-scrollbar,
+      body.site-skin-1win .wc-bracket-placeholder::-webkit-scrollbar {
         display: none;
+      }
+
+      body.site-skin-1win .wc-tabs {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+
+        gap: 7px !important;
+        padding-bottom: 7px !important;
       }
 
       body.site-skin-1win .wc-tabs button,
@@ -719,19 +779,6 @@
         white-space: nowrap !important;
 
         border-radius: 13px !important;
-      }
-
-      /* Таблица групп двигается горизонтально */
-      body.site-skin-1win .wc-standings {
-        width: 100% !important;
-        max-width: 100% !important;
-
-        overflow-x: auto !important;
-        overflow-y: hidden !important;
-
-        padding-bottom: 6px !important;
-
-        -webkit-overflow-scrolling: touch;
       }
 
       body.site-skin-1win .wc-standings table {
@@ -747,27 +794,28 @@
         white-space: nowrap !important;
       }
 
-      /* Турнирная статистика */
+      /* Tournament stats */
       body.site-skin-1win .wc-stats {
         width: 100% !important;
 
         display: grid !important;
+
         grid-template-columns:
           repeat(3, minmax(0, 1fr)) !important;
 
-        gap: 8px !important;
+        gap: 7px !important;
       }
 
       body.site-skin-1win .wc-stats > div {
         width: 100% !important;
         min-width: 0 !important;
 
-        padding: 13px 5px !important;
+        padding: 12px 3px !important;
         border-radius: 14px !important;
       }
 
       body.site-skin-1win .wc-stats strong {
-        font-size: 23px !important;
+        font-size: 21px !important;
       }
 
       body.site-skin-1win .wc-stats span {
@@ -776,26 +824,13 @@
         text-align: center !important;
       }
 
-      /* Road to Final двигается пальцем */
+      /* Road to Final */
       body.site-skin-1win .wc-bracket-placeholder {
-        width: 100% !important;
-        max-width: 100% !important;
-
         display: flex !important;
         flex-wrap: nowrap !important;
+
         gap: 8px !important;
-
-        overflow-x: auto !important;
-        overflow-y: hidden !important;
-
         padding-bottom: 7px !important;
-
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-      }
-
-      body.site-skin-1win .wc-bracket-placeholder::-webkit-scrollbar {
-        display: none;
       }
 
       body.site-skin-1win .wc-bracket-placeholder > div {
@@ -810,7 +845,7 @@
         border-radius: 14px !important;
       }
 
-      /* Desktop 728 скрыт, mobile 300x250 показан */
+      /* Mobile ad */
       body.site-skin-1win .desktop-ad,
       body.site-skin-1win .banner-728 {
         display: none !important;
@@ -829,6 +864,8 @@
 
         margin: 4px auto !important;
 
+        background: transparent !important;
+
         overflow: hidden !important;
       }
     }
@@ -839,27 +876,27 @@
 
     @media (max-width: 420px) {
       body.site-skin-1win {
-        padding-top: 96px !important;
+        padding-top: 88px !important;
 
         background-size:
-          100% 330px,
-          auto 290px !important;
+          100% 310px,
+          auto 270px !important;
       }
 
       body.site-skin-1win .skin-click-top {
-        height: 96px !important;
+        height: 88px !important;
       }
 
       body.site-skin-1win .bf-header-inner {
-        width: calc(100vw - 16px) !important;
-        max-width: calc(100vw - 16px) !important;
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
 
-        margin-top: 6px !important;
+        margin-top: 5px !important;
       }
 
       body.site-skin-1win .wc-page {
-        width: calc(100vw - 16px) !important;
-        max-width: calc(100vw - 16px) !important;
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
       }
 
       body.site-skin-1win .bf-nav {
@@ -867,31 +904,23 @@
       }
 
       body.site-skin-1win .bf-nav a {
-        padding: 9px 3px !important;
+        padding: 9px 2px !important;
         font-size: 12px !important;
       }
 
       body.site-skin-1win .wc-hero {
-        padding: 19px 13px !important;
+        padding: 18px 12px !important;
       }
 
       body.site-skin-1win .wc-hero h1 {
-        font-size: 28px !important;
+        font-size: 26px !important;
       }
 
       body.site-skin-1win .wc-card-head h2 {
-        font-size: 22px !important;
-      }
-
-      body.site-skin-1win .wc-hosts span {
-        font-size: 11px !important;
+        font-size: 21px !important;
       }
 
       body.site-skin-1win .wc-countdown strong {
-        font-size: 22px !important;
-      }
-
-      body.site-skin-1win .wc-stats strong {
         font-size: 21px !important;
       }
     }
@@ -958,9 +987,7 @@
         </span>
       </a>
 
-      <nav
-        class="bf-nav"
-        aria-label="Main navigation">
+      <nav class="bf-nav" aria-label="Main navigation">
 
         <a
           href="world-cup-2026.html"
@@ -1048,15 +1075,11 @@
       <div class="wc-card wc-wide">
 
         <div class="wc-card-head">
-
-          <h2>
-            Upcoming World Cup Matches
-          </h2>
+          <h2>Upcoming World Cup Matches</h2>
 
           <span id="wc-fixtures-status">
             Loading real fixtures...
           </span>
-
         </div>
 
         <div
@@ -1069,15 +1092,11 @@
       <div class="wc-card">
 
         <div class="wc-card-head">
-
-          <h2>
-            AI Predictions
-          </h2>
+          <h2>AI Predictions</h2>
 
           <span>
             Based on available match data
           </span>
-
         </div>
 
         <div
@@ -1106,15 +1125,11 @@
       <div class="wc-card wc-wide">
 
         <div class="wc-card-head">
-
-          <h2>
-            Group Standings
-          </h2>
+          <h2>Group Standings</h2>
 
           <span id="wc-standings-status">
             Loading real standings...
           </span>
-
         </div>
 
         <div
@@ -1132,15 +1147,11 @@
       <div class="wc-card">
 
         <div class="wc-card-head">
-
-          <h2>
-            Tournament Stats
-          </h2>
+          <h2>Tournament Stats</h2>
 
           <span>
             Live from fixtures
           </span>
-
         </div>
 
         <div class="wc-stats">
@@ -1182,38 +1193,20 @@
       <div class="wc-card wc-full">
 
         <div class="wc-card-head">
-
-          <h2>
-            Road to the Final
-          </h2>
+          <h2>Road to the Final</h2>
 
           <span>
             Knockout bracket will appear after group stage
           </span>
-
         </div>
 
         <div class="wc-bracket-placeholder">
 
-          <div>
-            Round of 32
-          </div>
-
-          <div>
-            Round of 16
-          </div>
-
-          <div>
-            Quarter-finals
-          </div>
-
-          <div>
-            Semi-finals
-          </div>
-
-          <div>
-            Final
-          </div>
+          <div>Round of 32</div>
+          <div>Round of 16</div>
+          <div>Quarter-finals</div>
+          <div>Semi-finals</div>
+          <div>Final</div>
 
         </div>
 
@@ -1235,3 +1228,4 @@
 
 </body>
 </html>
+
