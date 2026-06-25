@@ -4,288 +4,428 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Betforecast.ai | AI Insights</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/style.css?v=17">
+
   <script src="https://cdn.counter.dev/script.js"
-  data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098"
-  data-utcoffset="3">
-</script>
+    data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098"
+    data-utcoffset="3">
+  </script>
+
+  <style>
+    body.site-skin-1win {
+      background-color: #020b13 !important;
+      background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+      background-repeat: no-repeat !important;
+      background-position: center top !important;
+      background-size: 1920px auto !important;
+      background-attachment: scroll !important;
+      padding-top: 190px !important;
+      overflow-x: hidden !important;
+    }
+
+    /* Content above background */
+    body.site-skin-1win main,
+    body.site-skin-1win .ai-insights-page,
+    body.site-skin-1win .page-shell {
+      position: relative !important;
+      z-index: 20 !important;
+    }
+
+    body.site-skin-1win .ai-insights-page {
+      padding-top: 28px !important;
+    }
+
+    /* Header wrapper transparent, no full-width black strip */
+    body.site-skin-1win .header,
+    body.site-skin-1win .bf-header {
+      width: 100% !important;
+      background: transparent !important;
+      background-color: transparent !important;
+      border: 0 !important;
+      border-bottom: 0 !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      position: relative !important;
+      z-index: 30 !important;
+    }
+
+    /* Black capsule width like main blocks */
+    body.site-skin-1win .header-inner,
+    body.site-skin-1win .bf-header-inner {
+      width: min(1240px, calc(100vw - 48px)) !important;
+      max-width: 1240px !important;
+      margin: 0 auto !important;
+      padding: 14px 24px !important;
+
+      background: rgba(3, 13, 22, 0.96) !important;
+      border: 1px solid rgba(94, 224, 164, 0.16) !important;
+      border-radius: 24px !important;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28) !important;
+      backdrop-filter: blur(14px) !important;
+
+      display: grid !important;
+      grid-template-columns: 220px 1fr 220px !important;
+      align-items: center !important;
+      gap: 18px !important;
+
+      position: relative !important;
+      z-index: 30 !important;
+    }
+
+    /* Logo left */
+    body.site-skin-1win .bf-logo {
+      justify-self: start !important;
+      width: auto !important;
+      flex: 0 0 auto !important;
+    }
+
+    /* Menu centered */
+    body.site-skin-1win .topbar-menu,
+    body.site-skin-1win .bf-nav {
+      justify-self: center !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 10px !important;
+      width: auto !important;
+      flex: 1 1 auto !important;
+    }
+
+    /* Empty right column, keeps menu centered */
+    body.site-skin-1win .header-inner::after,
+    body.site-skin-1win .bf-header-inner::after {
+      content: "";
+      display: block;
+    }
+
+    /* Theme button removed, hide if old code appears */
+    body.site-skin-1win .topbar-actions,
+    body.site-skin-1win .bf-header-actions {
+      display: none !important;
+    }
+
+    /* Side banners */
+    body.site-skin-1win .side-banner {
+      position: fixed !important;
+      top: 300px !important;
+      z-index: 30 !important;
+    }
+
+    body.site-skin-1win .left-banner {
+      left: 24px !important;
+      right: auto !important;
+    }
+
+    body.site-skin-1win .right-banner {
+      right: 24px !important;
+      left: auto !important;
+    }
+
+    /* Background clickable zones */
+    body.site-skin-1win .skin-click {
+      position: fixed !important;
+      display: block !important;
+      z-index: 2 !important;
+      text-decoration: none !important;
+      background: transparent !important;
+    }
+
+    body.site-skin-1win .skin-click-top {
+      top: 0 !important;
+      left: 50% !important;
+      width: min(100vw, 1920px) !important;
+      height: 165px !important;
+      transform: translateX(-50%) !important;
+    }
+
+    body.site-skin-1win .skin-click-left {
+      top: 165px !important;
+      left: 0 !important;
+      width: calc((100vw - 1320px) / 2) !important;
+      max-width: 320px !important;
+      height: calc(100vh - 165px) !important;
+    }
+
+    body.site-skin-1win .skin-click-right {
+      top: 165px !important;
+      right: 0 !important;
+      width: calc((100vw - 1320px) / 2) !important;
+      max-width: 320px !important;
+      height: calc(100vh - 165px) !important;
+    }
+
+    body.site-skin-1win .banner-728,
+    body.site-skin-1win .adhit-300x250,
+    body.site-skin-1win .mobile-ad,
+    body.site-skin-1win .desktop-ad {
+      position: relative !important;
+      z-index: 20 !important;
+    }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+      body.site-skin-1win {
+        padding-top: 0 !important;
+        background-image: none !important;
+        background-attachment: scroll !important;
+      }
+
+      body.site-skin-1win .ai-insights-page {
+        padding-top: 22px !important;
+      }
+
+      body.site-skin-1win .skin-click,
+      body.site-skin-1win .side-banner {
+        display: none !important;
+      }
+
+      body.site-skin-1win .header-inner,
+      body.site-skin-1win .bf-header-inner {
+        width: calc(100vw - 24px) !important;
+        margin: 12px auto 0 !important;
+        padding: 14px 12px !important;
+        border-radius: 20px !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 14px !important;
+      }
+
+      body.site-skin-1win .topbar-menu,
+      body.site-skin-1win .bf-nav {
+        flex-wrap: wrap !important;
+        width: 100% !important;
+      }
+    }
+  </style>
 </head>
-<style>
-body.site-skin-1win {
-  background-color: #020b13 !important;
-  background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
-  background-repeat: no-repeat !important;
-  background-position: top center !important;
-  background-size: 1920px auto !important;
-  background-attachment: fixed !important;
 
-  /* вот это двигает сайт ниже */
-  padding-top: 165px !important;
+<body class="theme-dark site-skin-1win">
 
-  overflow-x: hidden !important;
-}
+<a
+  class="skin-click skin-click-top"
+  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+  target="_blank"
+  rel="nofollow sponsored noopener"
+  aria-label="1win World Cup 2026 top banner"
+></a>
 
-/* сайт поверх фоновой картинки */
-body.site-skin-1win .bf-header,
-body.site-skin-1win .header,
-body.site-skin-1win main,
-body.site-skin-1win .wc-page {
-  position: relative !important;
-  z-index: 5 !important;
-}
+<a
+  class="skin-click skin-click-left"
+  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+  target="_blank"
+  rel="nofollow sponsored noopener"
+  aria-label="1win World Cup 2026 left background"
+></a>
 
-/* шапка поверх фона */
-body.site-skin-1win .bf-header,
-body.site-skin-1win .header {
-  background: rgba(3, 13, 22, 0.94) !important;
-  border-bottom: 1px solid rgba(94, 224, 164, 0.16) !important;
-  backdrop-filter: blur(14px);
-}
+<a
+  class="skin-click skin-click-right"
+  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+  target="_blank"
+  rel="nofollow sponsored noopener"
+  aria-label="1win World Cup 2026 right background"
+></a>
 
-/* чуть больше воздуха между меню и первым большим блоком */
-body.site-skin-1win .wc-page {
-  padding-top: 42px !important;
-}
-
-/* мобильную версию не трогаем */
-@media (max-width: 900px) {
-  body.site-skin-1win {
-    padding-top: 0 !important;
-    background-image: none !important;
-    background-attachment: scroll !important;
-  }
-
-  body.site-skin-1win .wc-page {
-    padding-top: 22px !important;
-  }
-}
-</style>
 <div class="side-banner left-banner">
-    <ins class="ins-zone" data-zone="163622"></ins>
-</div>  
-  <div class="side-banner right-banner">
-    <ins class="ins-zone" data-zone="163622"></ins>
+  <ins class="ins-zone" data-zone="163622"></ins>
 </div>
-  <header class="header">
-    <div class="header-inner">
-      
-        <a class="bf-logo" href="index.html" aria-label="Betforecast.ai home">
-  <img src="assets/bet-logo.png" alt="Betforecast.ai logo">
-  <span>Betforecast<span>.ai</span></span>
-</a>
-      <nav class="topbar-menu" aria-label="Main navigation">
-        <a href="world-cup-2026.html">🏆 WC 2026</a>
-        <a href="news.html">News</a>
-        <a href="standings.html">Standings</a>
-        <a href="match.html">Matches</a>
-        <a href="results.html">Results</a>
-        <a href="ai-insights.html" class="active">AI Insights</a>
-      </nav>
 
-      <div class="topbar-actions">
-        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
-  <span class="theme-switch-track">
-    <span class="theme-switch-thumb"></span>
-  </span>
-  <span class="theme-switch-label">Glass</span>
-</button>
+<div class="side-banner right-banner">
+  <ins class="ins-zone" data-zone="163622"></ins>
+</div>
 
-     
+<header class="header">
+  <div class="header-inner">
+
+    <a class="bf-logo" href="index.html" aria-label="Betforecast.ai home">
+      <img src="assets/bet-logo.png" alt="Betforecast.ai logo">
+      <span>Betforecast<span>.ai</span></span>
+    </a>
+
+    <nav class="topbar-menu" aria-label="Main navigation">
+      <a href="world-cup-2026.html">🏆 WC 2026</a>
+      <a href="news.html">News</a>
+      <a href="standings.html">Standings</a>
+      <a href="match.html">Matches</a>
+      <a href="results.html">Results</a>
+      <a href="ai-insights.html" class="active">AI Insights</a>
+    </nav>
+
+  </div>
+</header>
+
+<main class="page-shell ai-insights-page">
+
+  <section class="insights-hero">
+    <div class="insights-hero-overlay"></div>
+    <div class="hero-stadium"></div>
+
+    <div class="insights-hero-left">
+      <span class="hero-badge">AI Insights</span>
+
+      <h1>Understand the prediction, not just the percentage</h1>
+
+      <p>
+        We break each match into form, xG, possession, tempo and risk layers
+        so you see not just the number, but the logic behind it.
+      </p>
+
+      <div class="ai-hero-actions">
+        <a class="bf-main-btn" href="#featured-insight">Open Insight</a>
+        <a class="bf-ghost-btn" href="match.html">More Matches</a>
       </div>
     </div>
-  </header>
 
- <main class="page-shell ai-insights-page">
-    <section class="insights-hero">
-      <div class="insights-hero-overlay"></div>
-<div class="hero-stadium"></div>
-      <div class="insights-hero-left">
-        <span class="hero-badge">AI Insights</span>
-
-        <h1>Understand the prediction, not just the percentage</h1>
-
-        <p>
-          We break each match into form, xG, possession, tempo and risk layers
-          so you see not just the number, but the logic behind it.
-        </p>
-
-        <div class="ai-hero-actions">
-  <a class="bf-main-btn" href="#featured-insight">Open Insight</a>
-  <a class="bf-ghost-btn" href="match.html">More Matches</a>
-</div>
+    <div class="insights-hero-card">
+      <div class="card-top">
+        <span class="mini-label">AI Model View</span>
+        <span class="mini-tag">Insight</span>
       </div>
 
-      <div class="insights-hero-card">
-        <div class="card-top">
-          <span class="mini-label">AI Model View</span>
-          <span class="mini-tag">Insight</span>
+      <h3>Arsenal vs Chelsea</h3>
+
+      <div class="probabilities">
+        <div>47%<span>Home</span></div>
+        <div>28%<span>Draw</span></div>
+        <div>25%<span>Away</span></div>
+      </div>
+
+      <div class="probability-bar">
+        <div class="bar-home"></div>
+        <div class="bar-draw"></div>
+        <div class="bar-away"></div>
+      </div>
+
+      <p class="ai-text">
+        Arsenal stronger in structure and volume. Chelsea dangerous in transitions.
+      </p>
+    </div>
+  </section>
+
+  <!-- DESKTOP 728x90 -->
+  <div class="banner-728 desktop-ad">
+    <ins class="ins-zone" data-zone="163631"></ins>
+  </div>
+
+  <!-- MOBILE 300x250 -->
+  <div class="adhit-300x250 mobile-ad">
+    <ins class="ins-zone" data-zone="163623"></ins>
+  </div>
+
+  <section class="panel insights-featured-panel" id="featured-insight">
+    <div class="panel-head">
+      <h2>Featured Match Insight</h2>
+    </div>
+
+    <div class="featured-insight-grid">
+      <div class="featured-main-card">
+        <div class="featured-main-top">
+          <div>
+            <span class="insight-kicker">Premier League</span>
+            <h3>Arsenal vs Chelsea</h3>
+            <p class="featured-meta">Saturday • 18:30</p>
+          </div>
+
+          <div class="confidence-pill">74%</div>
         </div>
 
-        <h3>Arsenal vs Chelsea</h3>
-
-        <div class="probabilities">
-          <div>47%<span>Home</span></div>
-          <div>28%<span>Draw</span></div>
-          <div>25%<span>Away</span></div>
+        <div class="featured-prob-grid">
+          <div><strong>47%</strong><span>Home</span></div>
+          <div><strong>28%</strong><span>Draw</span></div>
+          <div><strong>25%</strong><span>Away</span></div>
         </div>
 
-        <div class="probability-bar">
+        <div class="featured-long-bar">
           <div class="bar-home"></div>
           <div class="bar-draw"></div>
           <div class="bar-away"></div>
         </div>
 
-        <p class="ai-text">
-          Arsenal stronger in structure and volume. Chelsea dangerous in transitions.
-        </p>
-      </div>
-    </section>
-<!-- DESKTOP 728x90 -->
-<div class="banner-728 desktop-ad">
-    <ins class="ins-zone" data-zone="163631"></ins>
-</div>
-
-<!-- MOBILE 300x250 -->
-<div class="adhit-300x250 mobile-ad">
-    <ins class="ins-zone" data-zone="163623"></ins>
-</div>
-    <section class="panel insights-featured-panel" id="featured-insight">
-      <div class="panel-head">
-        <h2>Featured Match Insight</h2>
-      </div>
-
-      <div class="featured-insight-grid">
-        <div class="featured-main-card">
-          <div class="featured-main-top">
-            <div>
-              <span class="insight-kicker">Premier League</span>
-              <h3>Arsenal vs Chelsea</h3>
-              <p class="featured-meta">Saturday • 18:30</p>
-            </div>
-
-            <div class="confidence-pill">74%</div>
-          </div>
-
-          <div class="featured-prob-grid">
-            <div><strong>47%</strong><span>Home</span></div>
-            <div><strong>28%</strong><span>Draw</span></div>
-            <div><strong>25%</strong><span>Away</span></div>
-          </div>
-
-          <div class="featured-long-bar">
-            <div class="bar-home"></div>
-            <div class="bar-draw"></div>
-            <div class="bar-away"></div>
-          </div>
-
-          <div class="insight-summary">
-            <h4>AI Summary</h4>
-            <p>
-              Arsenal shows stronger attacking consistency and more stable control phases.
-              Chelsea remains unpredictable but sharp in transitions.
-            </p>
-          </div>
-
-          <div class="factor-tags">
-            <span>Home advantage</span>
-            <span>Higher xG</span>
-            <span>Better volume</span>
-            <span>Counter risk</span>
-          </div>
+        <div class="insight-summary">
+          <h4>AI Summary</h4>
+          <p>
+            Arsenal shows stronger attacking consistency and more stable control phases.
+            Chelsea remains unpredictable but sharp in transitions.
+          </p>
         </div>
 
-        <div class="featured-side-stack">
-          <div class="mini-stat-card">
-            <span>Expected Goals</span>
-            <strong>2.1 vs 1.2</strong>
-          </div>
-
-          <div class="mini-stat-card">
-            <span>Shots</span>
-            <strong>15 vs 10</strong>
-          </div>
-
-          <div class="mini-stat-card">
-            <span>Possession</span>
-            <strong>58% vs 42%</strong>
-          </div>
+        <div class="factor-tags">
+          <span>Home advantage</span>
+          <span>Higher xG</span>
+          <span>Better volume</span>
+          <span>Counter risk</span>
         </div>
       </div>
-    </section>
 
-    <section class="panel">
-      <div class="panel-head">
-        <h2>How AI reads a match</h2>
-      </div>
-
-      <div class="model-grid">
-        <div class="model-card">
-          <h3>History</h3>
-          <p>Past match patterns and scoring rhythm.</p>
+      <div class="featured-side-stack">
+        <div class="mini-stat-card">
+          <span>Expected Goals</span>
+          <strong>2.1 vs 1.2</strong>
         </div>
 
-        <div class="model-card">
-          <h3>Form</h3>
-          <p>Recent results, xG trend, consistency.</p>
+        <div class="mini-stat-card">
+          <span>Shots</span>
+          <strong>15 vs 10</strong>
         </div>
 
-        <div class="model-card">
-          <h3>Risk</h3>
-          <p>How teams react to goals and pressure.</p>
-        </div>
-
-        <div class="model-card">
-          <h3>Probability</h3>
-          <p>Final distribution across outcomes.</p>
+        <div class="mini-stat-card">
+          <span>Possession</span>
+          <strong>58% vs 42%</strong>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="panel" id="more-insights">
-      <div class="panel-head">
-        <h2>More Insights</h2>
+  <section class="panel">
+    <div class="panel-head">
+      <h2>How AI reads a match</h2>
+    </div>
+
+    <div class="model-grid">
+      <div class="model-card">
+        <h3>History</h3>
+        <p>Past match patterns and scoring rhythm.</p>
       </div>
 
-      <div id="insights-cards" class="insights-cards-grid"></div>
-    </section>
-  </main>
+      <div class="model-card">
+        <h3>Form</h3>
+        <p>Recent results, xG trend, consistency.</p>
+      </div>
 
-  <script src="js/ai-insights.js"></script>
+      <div class="model-card">
+        <h3>Risk</h3>
+        <p>How teams react to goals and pressure.</p>
+      </div>
 
-  <script>
-    (function () {
-      const savedTheme = localStorage.getItem("bf-theme") || "light";
-      document.body.classList.remove("theme-dark", "theme-glass", "theme-light");
-      document.body.classList.add(`theme-${savedTheme}`);
-    
+      <div class="model-card">
+        <h3>Probability</h3>
+        <p>Final distribution across outcomes.</p>
+      </div>
+    </div>
+  </section>
 
-      const toggle = document.getElementById("theme-toggle");
-      const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
+  <section class="panel" id="more-insights">
+    <div class="panel-head">
+      <h2>More Insights</h2>
+    </div>
 
-      function updateLabel(theme) {
-        if (!label) return;
-        label.textContent = theme === "dark" ? "Dark" : "Glass";
-      }
+    <div id="insights-cards" class="insights-cards-grid"></div>
+  </section>
 
-      updateLabel(savedTheme);
+</main>
 
-      if (toggle) {
-        toggle.addEventListener("click", function () {
-          const nextTheme = document.body.classList.contains("theme-dark") ? "glass" : "dark";
+<script src="js/ai-insights.js"></script>
 
-          document.body.classList.remove("theme-dark", "theme-glass");
-          document.body.classList.add(`theme-${nextTheme}`);
-
-          localStorage.setItem("bf-theme", nextTheme);
-          updateLabel(nextTheme);
-        });
-      }
-    })();
-  </script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const openInsight = document.querySelectorAll(
-      ".insight-card, .insights-cards-grid article, .featured-insight-grid article, .insight-duo-grid article"
+      ".insight-card, " +
+      ".insights-cards-grid article, " +
+      ".featured-insight-grid article, " +
+      ".insight-duo-grid article"
     );
 
     openInsight.forEach(function (card) {
@@ -304,6 +444,7 @@ body.site-skin-1win .wc-page {
     });
   });
 </script>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const clickableCards = document.querySelectorAll(
@@ -335,6 +476,8 @@ body.site-skin-1win .wc-page {
     });
   });
 </script>
+
 <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
+
 </body>
 </html>
