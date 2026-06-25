@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>Betforecast.ai | Results</title>
 
-  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="stylesheet" href="css/style.css?v=20">
 
-  <script src="https://cdn.counter.dev/script.js"
+  <script
+    src="https://cdn.counter.dev/script.js"
     data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098"
     data-utcoffset="3">
   </script>
@@ -15,70 +21,192 @@
   <script src="api-config.js"></script>
 
   <style>
+    :root {
+      --bf-shell-width: 1240px;
+      --bf-page-gap: 48px;
+      --bf-page-bg: #020b13;
+
+      --bf-panel-background:
+        linear-gradient(
+          180deg,
+          rgba(18, 38, 55, 0.97),
+          rgba(8, 20, 32, 0.98)
+        );
+
+      --bf-panel-border:
+        1px solid rgba(94, 224, 164, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+
+      margin: 0;
+      padding: 0;
+
+      background-color: var(--bf-page-bg) !important;
+      overflow-x: hidden;
+    }
+
     body.site-skin-1win {
-      background-color: #020b13 !important;
-      background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+      min-height: 100vh;
+      padding-top: 190px !important;
+
+      color: #f8fafc;
+
+      background-color: var(--bf-page-bg) !important;
+      background-image:
+        url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+
       background-repeat: no-repeat !important;
       background-position: center top !important;
       background-size: 1920px auto !important;
       background-attachment: scroll !important;
-      padding-top: 190px !important;
+
       overflow-x: hidden !important;
     }
 
-    /* Header as compact block, not full-width black strip */
+    /* ========================================
+       DESKTOP HEADER
+       ======================================== */
+
     body.site-skin-1win .header {
-      background: transparent !important;
-      border-bottom: none !important;
-      box-shadow: none !important;
-      backdrop-filter: none !important;
-      padding: 0 !important;
       position: relative !important;
       z-index: 30 !important;
+
+      width: 100% !important;
+
+      margin: 0 !important;
+      padding: 0 !important;
+
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
     }
 
     body.site-skin-1win .header-inner {
-      width: min(1320px, calc(100vw - 48px)) !important;
+      position: relative !important;
+      z-index: 30 !important;
+
+      width: min(
+        var(--bf-shell-width),
+        calc(100vw - var(--bf-page-gap))
+      ) !important;
+
+      max-width: var(--bf-shell-width) !important;
+      min-height: 82px;
+
       margin: 0 auto !important;
       padding: 14px 24px !important;
 
-      background: rgba(3, 13, 22, 0.94) !important;
-      border: 1px solid rgba(94, 224, 164, 0.16) !important;
-      border-radius: 24px !important;
-      backdrop-filter: blur(14px) !important;
+      display: grid !important;
 
-      display: flex !important;
+      grid-template-columns:
+        220px minmax(0, 1fr) 220px !important;
+
       align-items: center !important;
-      justify-content: space-between !important;
-      gap: 20px !important;
+      gap: 18px !important;
 
-      position: relative !important;
-      z-index: 30 !important;
+      background: var(--bf-panel-background) !important;
+      border: var(--bf-panel-border) !important;
+      border-radius: 26px !important;
+
+      box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.32) !important;
+
+      backdrop-filter: blur(14px) !important;
+      -webkit-backdrop-filter: blur(14px) !important;
+    }
+
+    /* Пустая правая колонка удерживает меню по центру */
+    body.site-skin-1win .header-inner::after {
+      content: "";
+
+      display: block;
+
+      width: 220px;
+      height: 1px;
     }
 
     body.site-skin-1win .bf-logo {
-      flex: 0 0 auto !important;
+      justify-self: start !important;
+
+      width: auto !important;
+      min-width: 0 !important;
     }
 
     body.site-skin-1win .topbar-menu {
-      flex: 1 1 auto !important;
+      justify-self: center !important;
+
+      width: max-content !important;
+      max-width: 100% !important;
+
+      display: flex !important;
+      align-items: center !important;
       justify-content: center !important;
+      flex-wrap: nowrap !important;
+
+      gap: 10px !important;
     }
 
-    /* Content above background */
-    body.site-skin-1win main,
-    body.site-skin-1win .results-page-wrap,
-    body.site-skin-1win .match-page-wrap,
-    body.site-skin-1win .page-shell {
-      position: relative !important;
-      z-index: 20 !important;
+    body.site-skin-1win .topbar-menu a {
+      flex: 0 0 auto !important;
+      white-space: nowrap !important;
     }
+
+    body.site-skin-1win .topbar-actions,
+    body.site-skin-1win .theme-switch {
+      display: none !important;
+    }
+
+    /* ========================================
+       DESKTOP PAGE
+       ======================================== */
 
     body.site-skin-1win .results-page-wrap {
-      padding-top: 28px !important;
+      position: relative !important;
+      z-index: 20 !important;
+
+      width: min(
+        var(--bf-shell-width),
+        calc(100vw - var(--bf-page-gap))
+      ) !important;
+
+      max-width: var(--bf-shell-width) !important;
+
+      margin: 28px auto 0 !important;
+      padding: 0 0 40px !important;
+
+      background: transparent !important;
     }
 
-    /* Side banners lower */
+    body.site-skin-1win .results-hero,
+    body.site-skin-1win .results-page-section {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    body.site-skin-1win .content-banner {
+      position: relative !important;
+      z-index: 20 !important;
+
+      display: flex !important;
+      justify-content: center !important;
+
+      width: 100% !important;
+      margin: 24px auto 0 !important;
+    }
+
+    /* ========================================
+       SIDE BANNERS
+       ======================================== */
+
     body.site-skin-1win .side-banner {
       position: fixed !important;
       top: 400px !important;
@@ -95,71 +223,511 @@
       left: auto !important;
     }
 
-    /* Background click zones */
+    /* ========================================
+       CLICKABLE SKIN
+       ======================================== */
+
     body.site-skin-1win .skin-click {
       position: fixed !important;
-      display: block !important;
       z-index: 2 !important;
-      text-decoration: none !important;
+
+      display: block !important;
+
       background: transparent !important;
+      text-decoration: none !important;
     }
 
     body.site-skin-1win .skin-click-top {
       top: 0 !important;
       left: 50% !important;
+
       width: min(100vw, 1920px) !important;
       height: 165px !important;
+
       transform: translateX(-50%) !important;
     }
 
     body.site-skin-1win .skin-click-left {
       top: 165px !important;
+      bottom: 0 !important;
       left: 0 !important;
-      width: calc((100vw - 1320px) / 2) !important;
+
+      width: max(
+        0px,
+        calc((100vw - var(--bf-shell-width)) / 2)
+      ) !important;
+
       max-width: 320px !important;
-      height: calc(100vh - 165px) !important;
     }
 
     body.site-skin-1win .skin-click-right {
       top: 165px !important;
       right: 0 !important;
-      width: calc((100vw - 1320px) / 2) !important;
+      bottom: 0 !important;
+
+      width: max(
+        0px,
+        calc((100vw - var(--bf-shell-width)) / 2)
+      ) !important;
+
       max-width: 320px !important;
-      height: calc(100vh - 165px) !important;
     }
 
-    body.site-skin-1win .content-banner {
-      position: relative !important;
-      z-index: 20 !important;
+    /* ========================================
+       TABLET
+       ======================================== */
+
+    @media (max-width: 1100px) {
+      body.site-skin-1win .header-inner {
+        grid-template-columns: 1fr !important;
+        justify-items: center !important;
+      }
+
+      body.site-skin-1win .header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        justify-self: center !important;
+      }
+
+      body.site-skin-1win .topbar-menu {
+        width: 100% !important;
+        flex-wrap: wrap !important;
+      }
     }
 
-    /* Mobile: no background skin */
-    @media (max-width: 900px) {
-      body.site-skin-1win {
-        padding-top: 0 !important;
+    /* ========================================
+       MOBILE
+       ======================================== */
+
+    @media (max-width: 768px) {
+      html,
+      body {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background-color: var(--bf-page-bg) !important;
         background-image: none !important;
+
+        overflow-x: hidden !important;
+      }
+
+      body.site-skin-1win {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        min-height: 100vh !important;
+
+        /* Отступ под мобильную верхушку 1win */
+        padding-top: 96px !important;
+
+        background-color: var(--bf-page-bg) !important;
+
+        background-image:
+          linear-gradient(
+            180deg,
+            rgba(2, 11, 19, 0) 0,
+            rgba(2, 11, 19, 0.12) 92px,
+            rgba(2, 11, 19, 0.88) 235px,
+            #020b13 330px
+          ),
+          url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+
+        background-repeat: no-repeat !important;
+
+        background-position:
+          center top,
+          center top !important;
+
+        background-size:
+          100% 340px,
+          auto 290px !important;
+
         background-attachment: scroll !important;
+
+        overflow-x: hidden !important;
       }
 
-      body.site-skin-1win .results-page-wrap {
-        padding-top: 22px !important;
+      /*
+        Убираем возможный красный фон из общего style.css.
+      */
+      body.site-skin-1win::before,
+      body.site-skin-1win::after {
+        background-color: transparent !important;
+        background-image: none !important;
       }
 
-      body.site-skin-1win .skin-click {
+      body.site-skin-1win .header,
+      body.site-skin-1win .results-page-wrap,
+      body.site-skin-1win .results-page-section,
+      body.site-skin-1win .matches-grid {
+        background-color: transparent !important;
+        background-image: none !important;
+      }
+
+      /* Боковые баннеры скрываем */
+      body.site-skin-1win .side-banner,
+      body.site-skin-1win .left-banner,
+      body.site-skin-1win .right-banner {
         display: none !important;
       }
 
-      body.site-skin-1win .side-banner {
+      /* Боковые кликабельные зоны скрываем */
+      body.site-skin-1win .skin-click-left,
+      body.site-skin-1win .skin-click-right {
         display: none !important;
+      }
+
+      /* Верхний мобильный фон остаётся кликабельным */
+      body.site-skin-1win .skin-click-top {
+        position: absolute !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 96px !important;
+
+        transform: none !important;
+        z-index: 2 !important;
+      }
+
+      /* ====================================
+         MOBILE HEADER
+         ==================================== */
+
+      body.site-skin-1win .header {
+        position: relative !important;
+        z-index: 30 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+
+        overflow: hidden !important;
       }
 
       body.site-skin-1win .header-inner {
-        width: calc(100vw - 24px) !important;
-        margin: 12px auto 0 !important;
-        padding: 14px 12px !important;
-        border-radius: 20px !important;
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        min-width: 0 !important;
+        min-height: 0 !important;
+
+        margin: 6px auto 0 !important;
+        padding: 12px 10px !important;
+
+        display: flex !important;
         flex-direction: column !important;
+        align-items: center !important;
+
+        gap: 10px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.18) !important;
+
+        border-radius: 18px !important;
+
+        box-shadow:
+          0 14px 34px rgba(0, 0, 0, 0.34) !important;
+
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        font-size: 23px !important;
+        line-height: 1 !important;
+      }
+
+      body.site-skin-1win .bf-logo img {
+        width: 28px !important;
+        height: 28px !important;
+      }
+
+      /* Меню 3 × 2 */
+      body.site-skin-1win .topbar-menu {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 8px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .topbar-menu a {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 10px 3px !important;
+
+        font-size: 13px !important;
+        line-height: 1.1 !important;
+
+        text-align: center !important;
+        white-space: nowrap !important;
+
+        border-radius: 13px !important;
+
+        overflow: hidden !important;
+      }
+
+      /* ====================================
+         MOBILE PAGE
+         ==================================== */
+
+      body.site-skin-1win .results-page-wrap {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        min-width: 0 !important;
+
+        margin: 14px auto 0 !important;
+        padding: 0 0 28px !important;
+
+        background: transparent !important;
+
+        overflow: hidden !important;
+      }
+
+      /* Hero */
+      body.site-skin-1win .results-hero {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 20px 14px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
+        border-radius: 20px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .results-hero .ai-focus-content,
+      body.site-skin-1win .results-hero .ai-focus-text {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+      }
+
+      body.site-skin-1win .hero-ai-badge {
+        display: inline-flex !important;
+
+        max-width: 100% !important;
+
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+      }
+
+      body.site-skin-1win .results-hero h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 10px 0 !important;
+
+        font-size: 28px !important;
+        line-height: 1.06 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .results-hero p {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        font-size: 15px !important;
+        line-height: 1.42 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* Results section */
+      body.site-skin-1win .results-page-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 16px 0 0 !important;
+        padding: 0 !important;
+
+        background: transparent !important;
+      }
+
+      body.site-skin-1win #results-page-container,
+      body.site-skin-1win .matches-grid {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
         gap: 14px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: transparent !important;
+      }
+
+      /* Динамически созданные карточки */
+      body.site-skin-1win #results-page-container > *,
+      body.site-skin-1win .match-card,
+      body.site-skin-1win .result-card,
+      body.site-skin-1win .results-card,
+      body.site-skin-1win .match-result-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 16px 12px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
+        border-radius: 18px !important;
+
+        overflow: hidden !important;
+        transform: none !important;
+      }
+
+      /* Команды и текст внутри карточек */
+      body.site-skin-1win .match-card *,
+      body.site-skin-1win .result-card *,
+      body.site-skin-1win .results-card *,
+      body.site-skin-1win .match-result-card * {
+        max-width: 100% !important;
+      }
+
+      body.site-skin-1win .team-name,
+      body.site-skin-1win .club-name,
+      body.site-skin-1win .match-team-name {
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .team-logo,
+      body.site-skin-1win .club-logo {
+        width: 30px !important;
+        height: 30px !important;
+        flex: 0 0 30px !important;
+      }
+
+      /* Десктопный баннер скрываем */
+      body.site-skin-1win .content-banner {
+        display: none !important;
+      }
+
+      /*
+        Мобильный баннер можно добавить отдельно:
+        zone 163623, если понадобится внутри Results.
+      */
+    }
+
+    /* ========================================
+       SMALL MOBILE
+       ======================================== */
+
+    @media (max-width: 420px) {
+      body.site-skin-1win {
+        padding-top: 88px !important;
+
+        background-size:
+          100% 310px,
+          auto 270px !important;
+      }
+
+      body.site-skin-1win .skin-click-top {
+        height: 88px !important;
+      }
+
+      body.site-skin-1win .header-inner {
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
+
+        margin-top: 5px !important;
+      }
+
+      body.site-skin-1win .results-page-wrap {
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
+      }
+
+      body.site-skin-1win .topbar-menu {
+        gap: 6px !important;
+      }
+
+      body.site-skin-1win .topbar-menu a {
+        padding: 9px 2px !important;
+        font-size: 12px !important;
+      }
+
+      body.site-skin-1win .results-hero {
+        padding: 18px 12px !important;
+      }
+
+      body.site-skin-1win .results-hero h1 {
+        font-size: 26px !important;
+      }
+
+      body.site-skin-1win #results-page-container > *,
+      body.site-skin-1win .match-card,
+      body.site-skin-1win .result-card,
+      body.site-skin-1win .results-card,
+      body.site-skin-1win .match-result-card {
+        padding: 14px 10px !important;
       }
     }
   </style>
@@ -167,141 +735,237 @@
 
 <body class="theme-dark site-skin-1win">
 
-<a
-  class="skin-click skin-click-top"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 top banner"
-></a>
+  <!-- Кликабельный фон 1win -->
+  <a
+    class="skin-click skin-click-top"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 top banner">
+  </a>
 
-<a
-  class="skin-click skin-click-left"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 left background"
-></a>
+  <a
+    class="skin-click skin-click-left"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 left background">
+  </a>
 
-<a
-  class="skin-click skin-click-right"
-  href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
-  target="_blank"
-  rel="nofollow sponsored noopener"
-  aria-label="1win World Cup 2026 right background"
-></a>
+  <a
+    class="skin-click skin-click-right"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 right background">
+  </a>
 
-<div class="side-banner left-banner">
-  <ins class="ins-zone" data-zone="163622"></ins>
-</div>
-
-<div class="side-banner right-banner">
-  <ins class="ins-zone" data-zone="163622"></ins>
-</div>
-
-<header class="header">
-  <div class="header-inner">
-
-    <a class="bf-logo" href="index.html" aria-label="Betforecast.ai home">
-      <img src="assets/bet-logo.png" alt="Betforecast.ai logo">
-      <span>Betforecast<span>.ai</span></span>
-    </a>
-
-    <nav class="topbar-menu" aria-label="Main navigation">
-      <a href="world-cup-2026.html">🏆 WC 2026</a>
-      <a href="news.html">News</a>
-      <a href="standings.html">Standings</a>
-      <a href="match.html">Matches</a>
-      <a href="results.html" class="active">Results</a>
-      <a href="ai-insights.html">AI Insights</a>
-    </nav>
-
+  <!-- Боковые баннеры -->
+  <div class="side-banner left-banner">
+    <ins
+      class="ins-zone"
+      data-zone="163622">
+    </ins>
   </div>
-</header>
 
-<main class="match-page-wrap page-shell results-page-wrap">
+  <div class="side-banner right-banner">
+    <ins
+      class="ins-zone"
+      data-zone="163622">
+    </ins>
+  </div>
 
-  <section class="ai-focus-banner ai-focus-banner-compact results-hero">
-    <div class="ai-focus-content">
-      <div class="ai-focus-text">
-        <span class="hero-ai-badge">Match Results</span>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
 
-        <h1>Latest football results in one place.</h1>
+      <a
+        class="bf-logo"
+        href="index.html"
+        aria-label="Betforecast.ai home">
 
-        <p>
-          Follow final scores, recent outcomes, and match result summaries
-          across major competitions.
-        </p>
-      </div>
+        <img
+          src="assets/bet-logo.png"
+          alt="Betforecast.ai logo">
+
+        <span>
+          Betforecast<span>.ai</span>
+        </span>
+      </a>
+
+      <nav
+        class="topbar-menu"
+        aria-label="Main navigation">
+
+        <a href="world-cup-2026.html">
+          🏆 WC 2026
+        </a>
+
+        <a href="news.html">
+          News
+        </a>
+
+        <a href="standings.html">
+          Standings
+        </a>
+
+        <a href="match.html">
+          Matches
+        </a>
+
+        <a
+          href="results.html"
+          class="active">
+          Results
+        </a>
+
+        <a href="ai-insights.html">
+          AI Insights
+        </a>
+
+      </nav>
+
     </div>
-  </section>
+  </header>
 
-  <section class="results-page-section">
-    <div id="results-page-container" class="matches-grid"></div>
-  </section>
+  <!-- Main -->
+  <main class="match-page-wrap page-shell results-page-wrap">
 
-  <div class="content-banner">
-    <ins class="ins-zone" data-zone="163631"></ins>
-  </div>
+    <section
+      class="ai-focus-banner ai-focus-banner-compact results-hero">
 
-</main>
+      <div class="ai-focus-content">
 
-<script src="js/results.js"></script>
+        <div class="ai-focus-text">
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const resultsContainer = document.getElementById("results-page-container");
+          <span class="hero-ai-badge">
+            Match Results
+          </span>
 
-    if (!resultsContainer) return;
+          <h1>
+            Latest football results in one place.
+          </h1>
 
-    function makeCardsInteractive() {
-      const cards = resultsContainer.querySelectorAll(
-        ".match-card, article, .result-card, .results-card, .match-result-card"
+          <p>
+            Follow final scores, recent outcomes, and match result
+            summaries across major competitions.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="results-page-section">
+
+      <div
+        id="results-page-container"
+        class="matches-grid">
+      </div>
+
+    </section>
+
+    <!-- Desktop 728x90 -->
+    <div class="content-banner">
+      <ins
+        class="ins-zone"
+        data-zone="163631">
+      </ins>
+    </div>
+
+  </main>
+
+  <script src="js/results.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const resultsContainer =
+        document.getElementById("results-page-container");
+
+      if (!resultsContainer) {
+        return;
+      }
+
+      const cardSelector =
+        ".match-card, " +
+        "article, " +
+        ".result-card, " +
+        ".results-card, " +
+        ".match-result-card";
+
+      function makeCardsInteractive() {
+        const cards =
+          resultsContainer.querySelectorAll(cardSelector);
+
+        cards.forEach(function (card) {
+          card.style.cursor = "pointer";
+          card.setAttribute("tabindex", "0");
+          card.setAttribute("role", "button");
+          card.setAttribute(
+            "aria-label",
+            "Open match analysis"
+          );
+        });
+      }
+
+      resultsContainer.addEventListener(
+        "click",
+        function (event) {
+          const card = event.target.closest(cardSelector);
+
+          if (
+            !card ||
+            !resultsContainer.contains(card)
+          ) {
+            return;
+          }
+
+          window.location.href = "match.html";
+        }
       );
 
-      cards.forEach(function (card) {
-        card.style.cursor = "pointer";
-        card.setAttribute("tabindex", "0");
-        card.setAttribute("role", "button");
-        card.setAttribute("aria-label", "Open match analysis");
+      resultsContainer.addEventListener(
+        "keydown",
+        function (event) {
+          if (
+            event.key !== "Enter" &&
+            event.key !== " "
+          ) {
+            return;
+          }
+
+          const card = event.target.closest(cardSelector);
+
+          if (
+            !card ||
+            !resultsContainer.contains(card)
+          ) {
+            return;
+          }
+
+          event.preventDefault();
+          window.location.href = "match.html";
+        }
+      );
+
+      makeCardsInteractive();
+
+      const observer =
+        new MutationObserver(makeCardsInteractive);
+
+      observer.observe(resultsContainer, {
+        childList: true,
+        subtree: true
       });
-    }
-
-    resultsContainer.addEventListener("click", function (event) {
-      const card = event.target.closest(
-        ".match-card, article, .result-card, .results-card, .match-result-card"
-      );
-
-      if (!card || !resultsContainer.contains(card)) return;
-
-      window.location.href = "match.html";
     });
+  </script>
 
-    resultsContainer.addEventListener("keydown", function (event) {
-      if (event.key !== "Enter" && event.key !== " ") return;
-
-      const card = event.target.closest(
-        ".match-card, article, .result-card, .results-card, .match-result-card"
-      );
-
-      if (!card || !resultsContainer.contains(card)) return;
-
-      event.preventDefault();
-      window.location.href = "match.html";
-    });
-
-    makeCardsInteractive();
-
-    const observer = new MutationObserver(makeCardsInteractive);
-
-    observer.observe(resultsContainer, {
-      childList: true,
-      subtree: true
-    });
-  });
-</script>
-
-<script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
+  <script
+    data-cfasync="false"
+    async
+    src="https://media.getads.online/js/code.min.js">
+  </script>
 
 </body>
 </html>
