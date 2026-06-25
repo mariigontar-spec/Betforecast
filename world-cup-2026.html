@@ -18,18 +18,8 @@ body.site-skin-1win {
   background-repeat: no-repeat !important;
   background-position: center top !important;
   background-size: 1920px auto !important;
-
-  /* ВАЖНО: не fixed, чтобы не было огромного странного отступа при скролле */
   background-attachment: scroll !important;
-
-  /* место под верхний 1win-баннер */
   padding-top: 150px !important;
-
-  overflow-x: hidden !important;
-}
-  /* вот это двигает сайт ниже */
-  padding-top: 200px !important;
-
   overflow-x: hidden !important;
 }
 
@@ -39,7 +29,7 @@ body.site-skin-1win .header,
 body.site-skin-1win main,
 body.site-skin-1win .wc-page {
   position: relative !important;
-  z-index: 5 !important;
+  z-index: 10 !important;
 }
 
 /* шапка поверх фона */
@@ -50,113 +40,62 @@ body.site-skin-1win .header {
   backdrop-filter: blur(14px);
 }
 
-/* чуть больше воздуха между меню и первым большим блоком */
+/* расстояние между меню и первым большим блоком */
 body.site-skin-1win .wc-page {
-  padding-top: 42px !important;
+  padding-top: 28px !important;
 }
-/* опускаем боковые баннеры ниже верхнего background-баннера */
+
+/* боковые Dafabet баннеры ниже, чтобы не перекрывали top skin */
 body.site-skin-1win .side-banner {
-  top: 210px !important;
-  z-index: 8 !important;
+  position: fixed !important;
+  top: 260px !important;
+  z-index: 20 !important;
 }
 
-/* левый баннер */
 body.site-skin-1win .left-banner {
-  left: 28px !important;
+  left: 24px !important;
+  right: auto !important;
 }
 
-/* правый баннер */
 body.site-skin-1win .right-banner {
-  right: 28px !important;
-}
-/* мобильную версию не трогаем */
-@media (max-width: 900px) {
-  body.site-skin-1win {
-    padding-top: 0 !important;
-    background-image: none !important;
-    background-attachment: scroll !important;
-  }
-
-  body.site-skin-1win .wc-page {
-    padding-top: 22px !important;
-  }
-}
-</style>
-  <style>
-body.site-skin-1win {
-  background-color: #020b13 !important;
-  background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
-  background-repeat: no-repeat !important;
-  background-position: top center !important;
-  background-size: 1920px auto !important;
-  background-attachment: fixed !important;
-  padding-top: 135px !important;
-  overflow-x: hidden !important;
+  right: 24px !important;
+  left: auto !important;
 }
 
-body.site-skin-1win main,
-body.site-skin-1win .page-shell,
-body.site-skin-1win .standings-page-wrap,
-body.site-skin-1win .wc-page {
-  background: transparent !important;
-  position: relative !important;
-  z-index: 5 !important;
-}
-
-body.site-skin-1win .header,
-body.site-skin-1win .bf-header {
-  position: relative !important;
-  z-index: 10 !important;
-  background: rgba(3, 13, 22, 0.94) !important;
-}
 /* кликабельные зоны фона */
 body.site-skin-1win .skin-click {
   position: fixed !important;
   display: block !important;
-  z-index: 3 !important;
+  z-index: 2 !important;
   text-decoration: none !important;
   background: transparent !important;
 }
 
-/* верхний баннер фона */
 body.site-skin-1win .skin-click-top {
   top: 0 !important;
   left: 50% !important;
   width: min(100vw, 1920px) !important;
-  height: 135px !important;
+  height: 140px !important;
   transform: translateX(-50%) !important;
 }
 
-/* левая часть фона */
 body.site-skin-1win .skin-click-left {
-  top: 135px !important;
+  top: 150px !important;
   left: 0 !important;
   width: calc((100vw - 1320px) / 2) !important;
-  max-width: 300px !important;
-  min-width: 0 !important;
-  height: calc(100vh - 135px) !important;
+  max-width: 320px !important;
+  height: calc(100vh - 150px) !important;
 }
 
-/* правая часть фона */
 body.site-skin-1win .skin-click-right {
-  top: 135px !important;
+  top: 150px !important;
   right: 0 !important;
   width: calc((100vw - 1320px) / 2) !important;
-  max-width: 300px !important;
-  min-width: 0 !important;
-  height: calc(100vh - 135px) !important;
+  max-width: 320px !important;
+  height: calc(100vh - 150px) !important;
 }
 
-/* сайт и рекламные баннеры должны быть выше кликабельного фона */
-body.site-skin-1win .bf-header,
-body.site-skin-1win .header,
-body.site-skin-1win main,
-body.site-skin-1win .side-banner,
-body.site-skin-1win .banner-728,
-body.site-skin-1win .adhit-300x250 {
-  position: relative !important;
-  z-index: 10 !important;
-}
+/* мобильную версию не трогаем */
 @media (max-width: 900px) {
   body.site-skin-1win {
     padding-top: 0 !important;
@@ -172,7 +111,6 @@ body.site-skin-1win .adhit-300x250 {
     display: none !important;
   }
 }
-
 </style>
 </head>
 
