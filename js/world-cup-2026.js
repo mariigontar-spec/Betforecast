@@ -25,80 +25,6 @@ async function footballDataRequest(path) {
   return response.json();
 }
 
-function startWorldCupCountdown() {
-  const target = new Date("2026-07-19T23:59:00+03:00").getTime();
-
-  function update() {
-    const now = Date.now();
-    const diff = Math.max(0, target - now);
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-
-    document.getElementById("wc-days").textContent = days;
-    document.getElementById("wc-hours").textContent = hours;
-    document.getElementById("wc-minutes").textContent = minutes;
-  }
-
-  update();
-  setInterval(update, 60000);
-}
-
-async function loadWorldCupFixtures() {
-  const fixturesEl = document.getElementById("wc-fixtures");
-  const statusEl = document.getElementById("wc-fixtures-status");
-
-  try {
-    const data = await footballDataRequest(
-  `/competitions/${fdCompetition}/matches?season=${fdSeason}`
-);
-function normalizeFootballDataStandings(standings) {
-  return standings.map((standing, index) => {
-    const groupName = normalizeFootballDataGroupName(standing.group, index);
-
-    return (standing.table || []).map(row => ({
-      rank: row.position || 0,
-      team: {
-        id: row.team?.id || null,
-        name: row.team?.name || "TBD",
-        logo: row.team?.crest || ""
-      },
-      points: row.points ?? 0,
-      goalsDiff: row.goalDifference ?? 0,
-      group: groupName,
-      form: "",
-      status: "same",
-      description: "",
-      all: {
-        played: row.playedGames ?? 0,
-        win: row.won ?? 0,
-        draw: row.draw ?? 0,
-        lose: row.lost ?? 0,
-        goals: {
-          for: row.goalsFor ?? 0,
-          against: row.goalsAgainst ?? 0
-        }
-      }
-    }));
-  });
-}
-
-function normalizeFootballDataGroupName(group, index) {
-  if (!group) {
-    return `Group ${String.fromCharCode(65 + index)}`;
-  }
-
-  // football-data часто отдаёт формат GROUP_A
-  const match = String(group).match(/GROUP[_\s-]?([A-L])/i);
-
-  if (match) {
-    return `Group ${match[1].toUpperCase()}`;
-  }
-
-  return String(group).replace("_", " ");
-}
-    
 function normalizeFootballDataMatch(match) {
   const statusMap = {
     SCHEDULED: "NS",
@@ -154,7 +80,82 @@ function normalizeFootballDataMatch(match) {
     }
   };
 }
-const fixtures = (data.matches || []).map(normalizeFootballDataMatch);
+
+function normalizeFootballDataStandings(standings) {
+  return standings.map((standing, index) => {
+    const groupName = normalizeFootballDataGroupName(standing.group, index);
+
+    return (standing.table || []).map(row => ({
+      rank: row.position || 0,
+      team: {
+        id: row.team?.id || null,
+        name: row.team?.name || "TBD",
+        logo: row.team?.crest || ""
+      },
+      points: row.points ?? 0,
+      goalsDiff: row.goalDifference ?? 0,
+      group: groupName,
+      form: "",
+      status: "same",
+      description: "",
+      all: {
+        played: row.playedGames ?? 0,
+        win: row.won ?? 0,
+        draw: row.draw ?? 0,
+        lose: row.lost ?? 0,
+        goals: {
+          for: row.goalsFor ?? 0,
+          against: row.goalsAgainst ?? 0
+        }
+      }
+    }));
+  });
+}
+
+function normalizeFootballDataGroupName(group, index) {
+  if (!group) {
+    return `Group ${String.fromCharCode(65 + index)}`;
+  }
+
+  const match = String(group).match(/GROUP[_\s-]?([A-L])/i);
+
+  if (match) {
+    return `Group ${match[1].toUpperCase()}`;
+  }
+
+  return String(group).replace("_", " ");
+}
+
+function startWorldCupCountdown() {
+  const target = new Date("2026-07-19T23:59:00+03:00").getTime();
+
+  function update() {
+    const now = Date.now();
+    const diff = Math.max(0, target - now);
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+
+    document.getElementById("wc-days").textContent = days;
+    document.getElementById("wc-hours").textContent = hours;
+    document.getElementById("wc-minutes").textContent = minutes;
+  }
+
+  update();
+  setInterval(update, 60000);
+}
+
+async function loadWorldCupFixtures() {
+  const fixturesEl = document.getElementById("wc-fixtures");
+  const statusEl = document.getElementById("wc-fixtures-status");
+
+  try {
+    const data = await footballDataRequest(
+      `/competitions/${fdCompetition}/matches?season=${fdSeason}`
+    );
+
+    const fixtures = (data.matches || []).map(normalizeFootballDataMatch);
 
     if (!fixtures.length) {
       statusEl.textContent = "Official fixtures are not available yet";
@@ -162,29 +163,29 @@ const fixtures = (data.matches || []).map(normalizeFootballDataMatch);
       return [];
     }
 
-   const now = new Date();
+    const now = new Date();
 
-const upcomingFixtures = fixtures
-  .filter(item => {
-    const matchDate = new Date(item.fixture.date);
-    const status = item.fixture.status.short;
-    return matchDate >= now && ["NS", "TBD", "PST"].includes(status);
-  })
-  .sort((a, b) => new Date(a.fixture.date) - new Date(b.fixture.date));
+    const upcomingFixtures = fixtures
+      .filter(item => {
+        const matchDate = new Date(item.fixture.date);
+        const status = item.fixture.status.short;
+        return matchDate >= now && ["NS", "TBD", "PST"].includes(status);
+      })
+      .sort((a, b) => new Date(a.fixture.date) - new Date(b.fixture.date));
 
-const recentFixtures = fixtures
-  .filter(item => ["FT", "AET", "PEN"].includes(item.fixture.status.short))
-  .sort((a, b) => new Date(b.fixture.date) - new Date(a.fixture.date));
+    const recentFixtures = fixtures
+      .filter(item => ["FT", "AET", "PEN"].includes(item.fixture.status.short))
+      .sort((a, b) => new Date(b.fixture.date) - new Date(a.fixture.date));
 
-const displayFixtures = upcomingFixtures.length
-  ? upcomingFixtures.slice(0, 8)
-  : recentFixtures.slice(0, 8);
+    const displayFixtures = upcomingFixtures.length
+      ? upcomingFixtures.slice(0, 8)
+      : recentFixtures.slice(0, 8);
 
-statusEl.textContent = upcomingFixtures.length
-  ? `${upcomingFixtures.length} upcoming fixtures`
-  : `${recentFixtures.length} recent results`;
+    statusEl.textContent = upcomingFixtures.length
+      ? `${upcomingFixtures.length} upcoming fixtures`
+      : `${recentFixtures.length} recent results`;
 
-fixturesEl.innerHTML = displayFixtures.map(item => {
+    fixturesEl.innerHTML = displayFixtures.map(item => {
       const date = new Date(item.fixture.date);
       const home = item.teams.home;
       const away = item.teams.away;
@@ -277,16 +278,16 @@ async function loadWorldCupStandings() {
   const statusEl = document.getElementById("wc-standings-status");
 
   try {
-   const data = await footballDataRequest(
-  `/competitions/${fdCompetition}/standings?season=${fdSeason}`
-);
+    const data = await footballDataRequest(
+      `/competitions/${fdCompetition}/standings?season=${fdSeason}`
+    );
 
-const groupsRaw = normalizeFootballDataStandings(data.standings || []);
+    const groupsRaw = normalizeFootballDataStandings(data.standings || []);
 
-const groups = groupsRaw.filter(group => {
-  const groupName = group?.[0]?.group || "";
-  return /^Group [A-L]$/i.test(groupName);
-});
+    const groups = groupsRaw.filter(group => {
+      const groupName = group?.[0]?.group || "";
+      return /^Group [A-L]$/i.test(groupName);
+    });
 
     if (!groups.length) {
       statusEl.textContent = "Official standings are not available yet";
