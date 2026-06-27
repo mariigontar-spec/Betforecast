@@ -5,7 +5,21 @@ const fdToken = BF_API.key || "";
 const fdCompetition = BF_API.competition || "WC";
 const fdSeason = BF_API.season || 2026;
 
-async function footballDataRequest(path) {
+async function footballDataRequest(type) {
+  const response = await fetch(
+    `/football-data-proxy.php?type=${type}&season=${fdSeason}`,
+    {
+      method: "GET"
+    }
+  );
+
+  if (!response.ok) {
+    const errorText = await response.text();
+    throw new Error(`Football-data proxy error ${response.status}: ${errorText}`);
+  }
+
+  return response.json();
+}
   if (!fdToken) {
     throw new Error("Football-data API token is missing");
   }
