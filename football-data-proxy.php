@@ -2,7 +2,7 @@
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
 
-$token = 'ТВОЙ_FOOTBALL_DATA_TOKEN';
+$token = '19bca927b9cc4bcaa099a6c0fa4722a2';
 $baseUrl = 'https://api.football-data.org/v4';
 
 $type = $_GET['type'] ?? 'matches';
