@@ -53,6 +53,52 @@ async function loadWorldCupFixtures() {
     const data = await footballDataRequest(
   `/competitions/${fdCompetition}/matches?season=${fdSeason}`
 );
+function normalizeFootballDataStandings(standings) {
+  return standings.map((standing, index) => {
+    const groupName = normalizeFootballDataGroupName(standing.group, index);
+
+    return (standing.table || []).map(row => ({
+      rank: row.position || 0,
+      team: {
+        id: row.team?.id || null,
+        name: row.team?.name || "TBD",
+        logo: row.team?.crest || ""
+      },
+      points: row.points ?? 0,
+      goalsDiff: row.goalDifference ?? 0,
+      group: groupName,
+      form: "",
+      status: "same",
+      description: "",
+      all: {
+        played: row.playedGames ?? 0,
+        win: row.won ?? 0,
+        draw: row.draw ?? 0,
+        lose: row.lost ?? 0,
+        goals: {
+          for: row.goalsFor ?? 0,
+          against: row.goalsAgainst ?? 0
+        }
+      }
+    }));
+  });
+}
+
+function normalizeFootballDataGroupName(group, index) {
+  if (!group) {
+    return `Group ${String.fromCharCode(65 + index)}`;
+  }
+
+  // football-data часто отдаёт формат GROUP_A
+  const match = String(group).match(/GROUP[_\s-]?([A-L])/i);
+
+  if (match) {
+    return `Group ${match[1].toUpperCase()}`;
+  }
+
+  return String(group).replace("_", " ");
+}
+    
 function normalizeFootballDataMatch(match) {
   const statusMap = {
     SCHEDULED: "NS",
