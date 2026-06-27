@@ -165,8 +165,7 @@ async function loadWorldCupFixtures() {
   const statusEl = document.getElementById("wc-fixtures-status");
 
   try {
-    const data = await footballDataRequest(
-      `/competitions/${fdCompetition}/matches?season=${fdSeason}`
+const data = await footballDataRequest("matches");
     );
 
     const fixtures = (data.matches || []).map(normalizeFootballDataMatch);
