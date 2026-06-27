@@ -291,8 +291,7 @@ async function loadWorldCupStandings() {
   const statusEl = document.getElementById("wc-standings-status");
 
   try {
-    const data = await footballDataRequest(
-      `/competitions/${fdCompetition}/standings?season=${fdSeason}`
+const data = await footballDataRequest("standings");
     );
 
     const groupsRaw = normalizeFootballDataStandings(data.standings || []);
