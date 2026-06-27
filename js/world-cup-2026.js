@@ -53,7 +53,61 @@ async function loadWorldCupFixtures() {
     const data = await footballDataRequest(
   `/competitions/${fdCompetition}/matches?season=${fdSeason}`
 );
+function normalizeFootballDataMatch(match) {
+  const statusMap = {
+    SCHEDULED: "NS",
+    TIMED: "NS",
+    IN_PLAY: "LIVE",
+    PAUSED: "HT",
+    FINISHED: "FT",
+    POSTPONED: "PST",
+    SUSPENDED: "SUSP",
+    CANCELED: "CANC"
+  };
 
+  return {
+    fixture: {
+      id: match.id,
+      date: match.utcDate,
+      status: {
+        short: statusMap[match.status] || match.status || "NS",
+        long: match.status || ""
+      },
+      venue: {
+        name: match.venue || ""
+      }
+    },
+    league: {
+      round: match.stage || match.group || ""
+    },
+    teams: {
+      home: {
+        id: match.homeTeam?.id || null,
+        name: match.homeTeam?.name || "TBD",
+        logo: match.homeTeam?.crest || ""
+      },
+      away: {
+        id: match.awayTeam?.id || null,
+        name: match.awayTeam?.name || "TBD",
+        logo: match.awayTeam?.crest || ""
+      }
+    },
+    goals: {
+      home: match.score?.fullTime?.home ?? null,
+      away: match.score?.fullTime?.away ?? null
+    },
+    score: {
+      halftime: {
+        home: match.score?.halfTime?.home ?? null,
+        away: match.score?.halfTime?.away ?? null
+      },
+      fulltime: {
+        home: match.score?.fullTime?.home ?? null,
+        away: match.score?.fullTime?.away ?? null
+      }
+    }
+  };
+}
 const fixtures = (data.matches || []).map(normalizeFootballDataMatch);
 
     if (!fixtures.length) {
