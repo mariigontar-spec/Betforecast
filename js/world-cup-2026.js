@@ -1,24 +1,25 @@
-const WC_LEAGUE_ID = 1;
-const WC_SEASON = 2026;
-const WC_TIMEZONE = "Europe/Tallinn";
+const BF_API = window.BF_API || {};
 
-const wcApiKey = window.BF_API?.key || "";
-const wcBaseUrl = window.BF_API?.baseUrl || "https://v3.football.api-sports.io";
+const fdBaseUrl = BF_API.baseUrl || "https://api.football-data.org/v4";
+const fdToken = BF_API.key || "";
+const fdCompetition = BF_API.competition || "WC";
+const fdSeason = BF_API.season || 2026;
 
-async function wcFetch(endpoint) {
-  if (!wcApiKey) {
-    throw new Error("API key is missing. Check api-config.js");
+async function footballDataRequest(path) {
+  if (!fdToken) {
+    throw new Error("Football-data API token is missing");
   }
 
-  const response = await fetch(`${wcBaseUrl}${endpoint}`, {
+  const response = await fetch(`${fdBaseUrl}${path}`, {
     method: "GET",
     headers: {
-      "x-apisports-key": wcApiKey
+      "X-Auth-Token": fdToken
     }
   });
 
   if (!response.ok) {
-    throw new Error(`API error ${response.status}`);
+    const errorText = await response.text();
+    throw new Error(`Football-data error ${response.status}: ${errorText}`);
   }
 
   return response.json();
