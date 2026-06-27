@@ -231,12 +231,11 @@ async function loadWorldCupStandings() {
   const statusEl = document.getElementById("wc-standings-status");
 
   try {
-    const data = await wcFetch(
-      `/standings?league=${WC_LEAGUE_ID}&season=${WC_SEASON}`
-    );
+   const data = await footballDataRequest(
+  `/competitions/${fdCompetition}/standings?season=${fdSeason}`
+);
 
-    const league = data.response?.[0]?.league;
-    const groupsRaw = league?.standings || [];
+const groupsRaw = normalizeFootballDataStandings(data.standings || []);
 
 const groups = groupsRaw.filter(group => {
   const groupName = group?.[0]?.group || "";
