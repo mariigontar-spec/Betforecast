@@ -1,39 +1,15 @@
 const BF_API = window.BF_API || {};
-
-const fdBaseUrl = BF_API.baseUrl || "https://api.football-data.org/v4";
-const fdToken = BF_API.key || "";
-const fdCompetition = BF_API.competition || "WC";
 const fdSeason = BF_API.season || 2026;
 
 async function footballDataRequest(type) {
   const response = await fetch(
-    `/football-data-proxy.php?type=${type}&season=${fdSeason}`,
-    {
-      method: "GET"
-    }
+    `/football-data-proxy.php?type=${encodeURIComponent(type)}&season=${encodeURIComponent(fdSeason)}`,
+    { method: "GET" }
   );
 
   if (!response.ok) {
     const errorText = await response.text();
     throw new Error(`Football-data proxy error ${response.status}: ${errorText}`);
-  }
-
-  return response.json();
-}
-  if (!fdToken) {
-    throw new Error("Football-data API token is missing");
-  }
-
-  const response = await fetch(`${fdBaseUrl}${path}`, {
-    method: "GET",
-    headers: {
-      "X-Auth-Token": fdToken
-    }
-  });
-
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`Football-data error ${response.status}: ${errorText}`);
   }
 
   return response.json();
@@ -44,11 +20,13 @@ function normalizeFootballDataMatch(match) {
     SCHEDULED: "NS",
     TIMED: "NS",
     IN_PLAY: "LIVE",
+    LIVE: "LIVE",
     PAUSED: "HT",
     FINISHED: "FT",
     POSTPONED: "PST",
     SUSPENDED: "SUSP",
-    CANCELED: "CANC"
+    CANCELED: "CANC",
+    CANCELLED: "CANC"
   };
 
   return {
@@ -137,10 +115,26 @@ function normalizeFootballDataGroupName(group, index) {
     return `Group ${match[1].toUpperCase()}`;
   }
 
-  return String(group).replace("_", " ");
+  return String(group).replace(/_/g, " ");
+}
+
+function renderTeamLogo(team) {
+  if (!team.logo) {
+    return "";
+  }
+
+  return `<img src="${team.logo}" alt="${team.name}">`;
 }
 
 function startWorldCupCountdown() {
+  const daysEl = document.getElementById("wc-days");
+  const hoursEl = document.getElementById("wc-hours");
+  const minutesEl = document.getElementById("wc-minutes");
+
+  if (!daysEl || !hoursEl || !minutesEl) {
+    return;
+  }
+
   const target = new Date("2026-07-19T23:59:00+03:00").getTime();
 
   function update() {
@@ -151,9 +145,9 @@ function startWorldCupCountdown() {
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
 
-    document.getElementById("wc-days").textContent = days;
-    document.getElementById("wc-hours").textContent = hours;
-    document.getElementById("wc-minutes").textContent = minutes;
+    daysEl.textContent = days;
+    hoursEl.textContent = hours;
+    minutesEl.textContent = minutes;
   }
 
   update();
@@ -164,15 +158,21 @@ async function loadWorldCupFixtures() {
   const fixturesEl = document.getElementById("wc-fixtures");
   const statusEl = document.getElementById("wc-fixtures-status");
 
-  try {
-const data = await footballDataRequest("matches");
-    );
+  if (!fixturesEl || !statusEl) {
+    return [];
+  }
 
+  statusEl.textContent = "Loading real fixtures...";
+
+  try {
+    const data = await footballDataRequest("matches");
     const fixtures = (data.matches || []).map(normalizeFootballDataMatch);
 
     if (!fixtures.length) {
       statusEl.textContent = "Official fixtures are not available yet";
       fixturesEl.innerHTML = `<div class="wc-empty">Real World Cup 2026 fixtures will appear here once the API provides official data.</div>`;
+      renderPredictions([]);
+      renderTournamentStats([]);
       return [];
     }
 
@@ -220,14 +220,14 @@ const data = await footballDataRequest("matches");
 
           <div class="wc-teams">
             <div>
-              <img src="${home.logo}" alt="${home.name}">
+              ${renderTeamLogo(home)}
               <strong>${home.name}</strong>
             </div>
 
             <div class="wc-score">${score}</div>
 
             <div>
-              <img src="${away.logo}" alt="${away.name}">
+              ${renderTeamLogo(away)}
               <strong>${away.name}</strong>
             </div>
           </div>
@@ -241,16 +241,21 @@ const data = await footballDataRequest("matches");
     renderTournamentStats(fixtures);
 
     return fixtures;
-
   } catch (error) {
     statusEl.textContent = "Fixtures failed to load";
     fixturesEl.innerHTML = `<div class="wc-empty">${error.message}</div>`;
+    renderPredictions([]);
+    renderTournamentStats([]);
     return [];
   }
 }
 
 function renderPredictions(fixtures) {
   const predictionsEl = document.getElementById("wc-predictions");
+
+  if (!predictionsEl) {
+    return;
+  }
 
   if (!fixtures.length) {
     predictionsEl.innerHTML = `<div class="wc-empty">Predictions will appear when real fixtures are available.</div>`;
@@ -271,6 +276,14 @@ function renderPredictions(fixtures) {
 }
 
 function renderTournamentStats(fixtures) {
+  const matchesPlayedEl = document.getElementById("wc-matches-played");
+  const goalsEl = document.getElementById("wc-goals");
+  const avgGoalsEl = document.getElementById("wc-avg-goals");
+
+  if (!matchesPlayedEl || !goalsEl || !avgGoalsEl) {
+    return;
+  }
+
   const played = fixtures.filter(item =>
     ["FT", "AET", "PEN"].includes(item.fixture.status.short)
   );
@@ -279,10 +292,9 @@ function renderTournamentStats(fixtures) {
     return sum + (item.goals.home || 0) + (item.goals.away || 0);
   }, 0);
 
-  document.getElementById("wc-matches-played").textContent = played.length;
-  document.getElementById("wc-goals").textContent = goals;
-  document.getElementById("wc-avg-goals").textContent =
-    played.length ? (goals / played.length).toFixed(2) : "0.00";
+  matchesPlayedEl.textContent = played.length;
+  goalsEl.textContent = goals;
+  avgGoalsEl.textContent = played.length ? (goals / played.length).toFixed(2) : "0.00";
 }
 
 async function loadWorldCupStandings() {
@@ -290,10 +302,14 @@ async function loadWorldCupStandings() {
   const standingsEl = document.getElementById("wc-standings");
   const statusEl = document.getElementById("wc-standings-status");
 
-  try {
-const data = await footballDataRequest("standings");
-    );
+  if (!tabsEl || !standingsEl || !statusEl) {
+    return;
+  }
 
+  statusEl.textContent = "Loading real standings...";
+
+  try {
+    const data = await footballDataRequest("standings");
     const groupsRaw = normalizeFootballDataStandings(data.standings || []);
 
     const groups = groupsRaw.filter(group => {
@@ -337,7 +353,7 @@ const data = await footballDataRequest("standings");
               <tr>
                 <td>${row.rank}</td>
                 <td class="wc-team-cell">
-                  <img src="${row.team.logo}" alt="${row.team.name}">
+                  ${renderTeamLogo(row.team)}
                   ${row.team.name}
                 </td>
                 <td>${row.all.played}</td>
@@ -362,13 +378,14 @@ const data = await footballDataRequest("standings");
     });
 
     renderGroup(0);
-
   } catch (error) {
     statusEl.textContent = "Standings failed to load";
     standingsEl.innerHTML = `<div class="wc-empty">${error.message}</div>`;
   }
 }
 
-startWorldCupCountdown();
-loadWorldCupFixtures();
-loadWorldCupStandings();
+document.addEventListener("DOMContentLoaded", () => {
+  startWorldCupCountdown();
+  loadWorldCupFixtures();
+  loadWorldCupStandings();
+});
