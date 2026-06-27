@@ -50,11 +50,11 @@ async function loadWorldCupFixtures() {
   const statusEl = document.getElementById("wc-fixtures-status");
 
   try {
-    const data = await wcFetch(
-      `/fixtures?league=${WC_LEAGUE_ID}&season=${WC_SEASON}&timezone=${WC_TIMEZONE}`
-    );
+    const data = await footballDataRequest(
+  `/competitions/${fdCompetition}/matches?season=${fdSeason}`
+);
 
-    const fixtures = data.response || [];
+const fixtures = (data.matches || []).map(normalizeFootballDataMatch);
 
     if (!fixtures.length) {
       statusEl.textContent = "Official fixtures are not available yet";
