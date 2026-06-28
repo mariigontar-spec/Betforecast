@@ -12533,3 +12533,128 @@ body.has-css-site-skin {
     gap: 14px !important;
   }
 }
+/* =========================================================
+   EMERGENCY RESTORE — SITE SKIN LAYOUT
+   ========================================================= */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body.theme-dark.has-site-skin,
+body.theme-dark.site-skin-1win {
+  position: relative;
+  background: #04111a;
+}
+
+/* слой задника */
+.bf-site-skin-code {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  display: block;
+}
+
+.bf-site-skin-code ins {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* весь реальный контент сайта должен быть выше задника */
+.header,
+main,
+.news-page-wrap,
+.match-page-wrap,
+.article-page-wrap,
+.article-pro-wrap,
+.standings-page-wrap,
+.page-shell,
+.footer {
+  position: relative;
+  z-index: 2;
+}
+
+/* центральная зона */
+.container,
+main,
+.news-page-wrap,
+.match-page-wrap,
+.article-page-wrap,
+.article-pro-wrap,
+.standings-page-wrap,
+.page-shell {
+  width: min(1280px, calc(100% - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* контентный центр уже */
+.hero,
+.news-top-hero,
+.match-pro-hero,
+.insights-hero,
+.article-pro-hero,
+.article-hero,
+.ai-focus-banner,
+.predictions-section,
+.panel,
+.news-hero,
+.results-page-section .hero,
+.standings-league-bar,
+.news-layout-v2,
+.match-pro-layout,
+.standings-layout,
+.matches-grid,
+.news-grid,
+.news-grid-v2,
+.insights-cards-grid,
+.predictions-grid,
+.article-layout {
+  width: min(1040px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* шапка */
+.header {
+  width: min(1280px, calc(100% - 40px));
+  margin: 12px auto 0;
+  border-radius: 24px;
+}
+
+/* чтобы фон не лез поверх карточек */
+.hero,
+.panel,
+.predictions-section,
+.news-card,
+.match-card,
+.side-block,
+.standings-panel,
+.featured-news-card,
+.featured-story-card,
+.news-card-v2,
+.bf-ai-hero {
+  position: relative;
+  z-index: 2;
+}
+
+/* на мобильном отключаем тяжёлый задник */
+@media (max-width: 1100px) {
+  .bf-site-skin-code {
+    display: none;
+  }
+
+  .container,
+  main,
+  .news-page-wrap,
+  .match-page-wrap,
+  .article-page-wrap,
+  .article-pro-wrap,
+  .standings-page-wrap,
+  .page-shell,
+  .header {
+    width: min(100%, calc(100% - 20px));
+  }
+}
