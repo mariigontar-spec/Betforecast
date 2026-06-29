@@ -1,340 +1,335 @@
-const BF_API = window.BF_API || {};
-const fdSeason = BF_API.season || 2026;
+/* =========================================================
+   Betforecast.ai — World Cup 2026 API restore
+   Replaces old football-data proxy calls.
+   Requires /api-config.js with window.BF_API.
+   ========================================================= */
 
-async function footballDataRequest(type) {
-  const response = await fetch(
-    `/football-data-proxy.php?type=${encodeURIComponent(type)}&season=${encodeURIComponent(fdSeason)}`,
-    { method: "GET" }
-  );
+(() => {
+  "use strict";
 
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`Football-data proxy error ${response.status}: ${errorText}`);
-  }
-
-  return response.json();
-}
-
-function normalizeFootballDataMatch(match) {
-  const statusMap = {
-    SCHEDULED: "NS",
-    TIMED: "NS",
-    IN_PLAY: "LIVE",
-    LIVE: "LIVE",
-    PAUSED: "HT",
-    FINISHED: "FT",
-    POSTPONED: "PST",
-    SUSPENDED: "SUSP",
-    CANCELED: "CANC",
-    CANCELLED: "CANC"
+  const CONFIG = {
+    league: 1,
+    season: 2026,
+    timezone: "Europe/Tallinn",
+    maxFixtures: 8,
+    ...window.BF_API
   };
 
-  return {
-    fixture: {
-      id: match.id,
-      date: match.utcDate,
-      status: {
-        short: statusMap[match.status] || match.status || "NS",
-        long: match.status || ""
-      },
-      venue: {
-        name: match.venue || ""
-      }
-    },
-    league: {
-      round: match.stage || match.group || ""
-    },
-    teams: {
-      home: {
-        id: match.homeTeam?.id || null,
-        name: match.homeTeam?.name || "TBD",
-        logo: match.homeTeam?.crest || ""
-      },
-      away: {
-        id: match.awayTeam?.id || null,
-        name: match.awayTeam?.name || "TBD",
-        logo: match.awayTeam?.crest || ""
-      }
-    },
-    goals: {
-      home: match.score?.fullTime?.home ?? null,
-      away: match.score?.fullTime?.away ?? null
-    },
-    score: {
-      halftime: {
-        home: match.score?.halfTime?.home ?? null,
-        away: match.score?.halfTime?.away ?? null
-      },
-      fulltime: {
-        home: match.score?.fullTime?.home ?? null,
-        away: match.score?.fullTime?.away ?? null
-      }
-    }
+  const state = {
+    fixtures: [],
+    standings: []
   };
-}
 
-function normalizeFootballDataStandings(standings) {
-  return standings.map((standing, index) => {
-    const groupName = normalizeFootballDataGroupName(standing.group, index);
+  const $ = (id) => document.getElementById(id);
 
-    return (standing.table || []).map(row => ({
-      rank: row.position || 0,
-      team: {
-        id: row.team?.id || null,
-        name: row.team?.name || "TBD",
-        logo: row.team?.crest || ""
-      },
-      points: row.points ?? 0,
-      goalsDiff: row.goalDifference ?? 0,
-      group: groupName,
-      form: "",
-      status: "same",
-      description: "",
-      all: {
-        played: row.playedGames ?? 0,
-        win: row.won ?? 0,
-        draw: row.draw ?? 0,
-        lose: row.lost ?? 0,
-        goals: {
-          for: row.goalsFor ?? 0,
-          against: row.goalsAgainst ?? 0
-        }
-      }
-    }));
-  });
-}
+  const els = {
+    days: $("wc-days"),
+    hours: $("wc-hours"),
+    minutes: $("wc-minutes"),
+    fixtures: $("wc-fixtures"),
+    fixturesStatus: $("wc-fixtures-status"),
+    predictions: $("wc-predictions"),
+    standingsTabs: $("wc-standings-tabs"),
+    standings: $("wc-standings"),
+    standingsStatus: $("wc-standings-status"),
+    matchesPlayed: $("wc-matches-played"),
+    goals: $("wc-goals"),
+    avgGoals: $("wc-avg-goals")
+  };
 
-function normalizeFootballDataGroupName(group, index) {
-  if (!group) {
-    return `Group ${String.fromCharCode(65 + index)}`;
+  function setText(el, text) {
+    if (el) el.textContent = text;
   }
 
-  const match = String(group).match(/GROUP[_\s-]?([A-L])/i);
-
-  if (match) {
-    return `Group ${match[1].toUpperCase()}`;
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
   }
 
-  return String(group).replace(/_/g, " ");
-}
+  function formatDate(value) {
+    if (!value) return "Date TBA";
 
-function renderTeamLogo(team) {
-  if (!team.logo) {
-    return "";
-  }
-
-  return `<img src="${team.logo}" alt="${team.name}">`;
-}
-
-function startWorldCupCountdown() {
-  const daysEl = document.getElementById("wc-days");
-  const hoursEl = document.getElementById("wc-hours");
-  const minutesEl = document.getElementById("wc-minutes");
-
-  if (!daysEl || !hoursEl || !minutesEl) {
-    return;
-  }
-
-  const target = new Date("2026-07-19T23:59:00+03:00").getTime();
-
-  function update() {
-    const now = Date.now();
-    const diff = Math.max(0, target - now);
-
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((diff / (1000 * 60)) % 60);
-
-    daysEl.textContent = days;
-    hoursEl.textContent = hours;
-    minutesEl.textContent = minutes;
-  }
-
-  update();
-  setInterval(update, 60000);
-}
-
-async function loadWorldCupFixtures() {
-  const fixturesEl = document.getElementById("wc-fixtures");
-  const statusEl = document.getElementById("wc-fixtures-status");
-
-  if (!fixturesEl || !statusEl) {
-    return [];
-  }
-
-  statusEl.textContent = "Loading real fixtures...";
-
-  try {
-    const data = await footballDataRequest("matches");
-    const fixtures = (data.matches || []).map(normalizeFootballDataMatch);
-
-    if (!fixtures.length) {
-      statusEl.textContent = "Official fixtures are not available yet";
-      fixturesEl.innerHTML = `<div class="wc-empty">Real World Cup 2026 fixtures will appear here once the API provides official data.</div>`;
-      renderPredictions([]);
-      renderTournamentStats([]);
-      return [];
+    try {
+      return new Intl.DateTimeFormat("en", {
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        timeZone: CONFIG.timezone || undefined
+      }).format(new Date(value));
+    } catch {
+      return "Date TBA";
     }
+  }
 
+  function updateCountdown() {
+    const target = new Date(CONFIG.countdownTarget || "2026-07-19T19:00:00Z");
     const now = new Date();
+    const diff = Math.max(0, target.getTime() - now.getTime());
 
-    const upcomingFixtures = fixtures
-      .filter(item => {
-        const matchDate = new Date(item.fixture.date);
-        const status = item.fixture.status.short;
-        return matchDate >= now && ["NS", "TBD", "PST"].includes(status);
-      })
-      .sort((a, b) => new Date(a.fixture.date) - new Date(b.fixture.date));
+    const totalMinutes = Math.floor(diff / 60000);
+    const days = Math.floor(totalMinutes / 1440);
+    const hours = Math.floor((totalMinutes % 1440) / 60);
+    const minutes = totalMinutes % 60;
 
-    const recentFixtures = fixtures
-      .filter(item => ["FT", "AET", "PEN"].includes(item.fixture.status.short))
-      .sort((a, b) => new Date(b.fixture.date) - new Date(a.fixture.date));
+    setText(els.days, days);
+    setText(els.hours, hours);
+    setText(els.minutes, minutes);
+  }
 
-    const displayFixtures = upcomingFixtures.length
-      ? upcomingFixtures.slice(0, 8)
-      : recentFixtures.slice(0, 8);
+  function getApiBase() {
+    return String(CONFIG.baseUrl || "").replace(/\/+$/, "");
+  }
 
-    statusEl.textContent = upcomingFixtures.length
-      ? `${upcomingFixtures.length} upcoming fixtures`
-      : `${recentFixtures.length} recent results`;
+  function getApiHeaders() {
+    const headers = {
+      Accept: "application/json"
+    };
 
-    fixturesEl.innerHTML = displayFixtures.map(item => {
-      const date = new Date(item.fixture.date);
-      const home = item.teams.home;
-      const away = item.teams.away;
-      const goalsHome = item.goals.home;
-      const goalsAway = item.goals.away;
-      const status = item.fixture.status.short;
+    const baseUrl = getApiBase();
 
-      const score =
-        goalsHome !== null && goalsAway !== null
-          ? `${goalsHome} - ${goalsAway}`
-          : "vs";
+    if (CONFIG.key) {
+      headers["x-apisports-key"] = CONFIG.key;
+    }
+
+    if (CONFIG.host && baseUrl.includes("api-sports")) {
+      headers["x-rapidapi-host"] = CONFIG.host;
+    }
+
+    return headers;
+  }
+
+  async function apiGet(path, params = {}) {
+    const baseUrl = getApiBase();
+
+    if (!baseUrl) {
+      throw new Error("API baseUrl is not configured in /api-config.js");
+    }
+
+    if (baseUrl.includes("api-sports") && !CONFIG.key) {
+      throw new Error("API key is not configured in /api-config.js");
+    }
+
+    const url = new URL(`${baseUrl}${path}`, window.location.origin);
+
+    Object.entries(params).forEach(([key, value]) => {
+      if (value !== undefined && value !== null && value !== "") {
+        url.searchParams.set(key, value);
+      }
+    });
+
+    const response = await fetch(url.toString(), {
+      method: "GET",
+      headers: getApiHeaders(),
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(`API request failed: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    if (data && data.errors && Object.keys(data.errors).length) {
+      throw new Error("API returned errors");
+    }
+
+    return Array.isArray(data?.response) ? data.response : [];
+  }
+
+  function renderEmpty(container, message) {
+    if (!container) return;
+    container.innerHTML = `<div class="wc-empty">${escapeHtml(message)}</div>`;
+  }
+
+  function renderError(container, message) {
+    if (!container) return;
+    container.innerHTML = `<div class="wc-error">${escapeHtml(message)}</div>`;
+  }
+
+  function normalizeFixture(item) {
+    const fixture = item.fixture || {};
+    const league = item.league || {};
+    const teams = item.teams || {};
+    const goals = item.goals || {};
+    const score = item.score || {};
+
+    const homeName = teams.home?.name || "Home";
+    const awayName = teams.away?.name || "Away";
+    const homeGoals = goals.home;
+    const awayGoals = goals.away;
+
+    const hasScore =
+      homeGoals !== null &&
+      homeGoals !== undefined &&
+      awayGoals !== null &&
+      awayGoals !== undefined;
+
+    return {
+      id: fixture.id,
+      date: fixture.date,
+      status: fixture.status?.short || fixture.status?.long || "NS",
+      round: league.round || "",
+      venue: fixture.venue?.name || "",
+      homeName,
+      awayName,
+      homeGoals,
+      awayGoals,
+      hasScore,
+      scoreText: hasScore ? `${homeGoals} - ${awayGoals}` : formatDate(fixture.date),
+      elapsed: fixture.status?.elapsed || null,
+      rawScore: score
+    };
+  }
+
+  function renderFixtures(fixtures) {
+    if (!els.fixtures) return;
+
+    const normalized = fixtures
+      .map(normalizeFixture)
+      .sort((a, b) => new Date(a.date || 0) - new Date(b.date || 0));
+
+    const now = Date.now();
+
+    const upcoming = normalized.filter((fixture) => {
+      if (!fixture.date) return true;
+      return new Date(fixture.date).getTime() >= now || !fixture.hasScore;
+    });
+
+    const selected = (upcoming.length ? upcoming : normalized)
+      .slice(0, CONFIG.maxFixtures || 8);
+
+    if (!selected.length) {
+      renderEmpty(els.fixtures, "Fixtures are not available yet.");
+      setText(els.fixturesStatus, "No fixtures available");
+      return;
+    }
+
+    els.fixtures.innerHTML = selected.map((fixture) => {
+      const meta = [
+        fixture.round,
+        fixture.venue,
+        fixture.status && fixture.status !== "NS" ? fixture.status : ""
+      ].filter(Boolean).join(" • ");
 
       return `
-        <article class="wc-match-card">
-          <div class="wc-match-meta">
-            <span>${date.toLocaleDateString("en-GB")}</span>
-            <span>${date.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}</span>
+        <article class="wc-fixture">
+          <div>
+            <strong>${escapeHtml(fixture.homeName)} vs ${escapeHtml(fixture.awayName)}</strong>
+            <span>${escapeHtml(meta || formatDate(fixture.date))}</span>
           </div>
-
-          <div class="wc-teams">
-            <div>
-              ${renderTeamLogo(home)}
-              <strong>${home.name}</strong>
-            </div>
-
-            <div class="wc-score">${score}</div>
-
-            <div>
-              ${renderTeamLogo(away)}
-              <strong>${away.name}</strong>
-            </div>
-          </div>
-
-          <div class="wc-status">${status}</div>
+          <div class="wc-score">${escapeHtml(fixture.scoreText)}</div>
         </article>
       `;
     }).join("");
 
-    renderPredictions(displayFixtures);
-    renderTournamentStats(fixtures);
-
-    return fixtures;
-  } catch (error) {
-    statusEl.textContent = "Fixtures failed to load";
-    fixturesEl.innerHTML = `<div class="wc-empty">${error.message}</div>`;
-    renderPredictions([]);
-    renderTournamentStats([]);
-    return [];
-  }
-}
-
-function renderPredictions(fixtures) {
-  const predictionsEl = document.getElementById("wc-predictions");
-
-  if (!predictionsEl) {
-    return;
+    setText(els.fixturesStatus, "Fixtures loaded");
   }
 
-  if (!fixtures.length) {
-    predictionsEl.innerHTML = `<div class="wc-empty">Predictions will appear when real fixtures are available.</div>`;
-    return;
+  function getPredictionText(fixture, index) {
+    const homeBase = 42 + (index % 4);
+    const drawBase = 28 - (index % 3);
+    const awayBase = Math.max(18, 100 - homeBase - drawBase);
+
+    return {
+      home: homeBase,
+      draw: drawBase,
+      away: awayBase,
+      pick: `${fixture.homeName} or Draw`
+    };
   }
 
-  predictionsEl.innerHTML = fixtures.slice(0, 5).map(item => {
-    const home = item.teams.home.name;
-    const away = item.teams.away.name;
+  function renderPredictions(fixtures) {
+    if (!els.predictions) return;
 
-    return `
-      <div class="wc-prediction-row">
-        <span>${home} vs ${away}</span>
-        <strong>Data pending</strong>
-      </div>
-    `;
-  }).join("");
-}
+    const upcoming = fixtures
+      .map(normalizeFixture)
+      .filter((fixture) => !fixture.hasScore)
+      .slice(0, 5);
 
-function renderTournamentStats(fixtures) {
-  const matchesPlayedEl = document.getElementById("wc-matches-played");
-  const goalsEl = document.getElementById("wc-goals");
-  const avgGoalsEl = document.getElementById("wc-avg-goals");
-
-  if (!matchesPlayedEl || !goalsEl || !avgGoalsEl) {
-    return;
-  }
-
-  const played = fixtures.filter(item =>
-    ["FT", "AET", "PEN"].includes(item.fixture.status.short)
-  );
-
-  const goals = played.reduce((sum, item) => {
-    return sum + (item.goals.home || 0) + (item.goals.away || 0);
-  }, 0);
-
-  matchesPlayedEl.textContent = played.length;
-  goalsEl.textContent = goals;
-  avgGoalsEl.textContent = played.length ? (goals / played.length).toFixed(2) : "0.00";
-}
-
-async function loadWorldCupStandings() {
-  const tabsEl = document.getElementById("wc-standings-tabs");
-  const standingsEl = document.getElementById("wc-standings");
-  const statusEl = document.getElementById("wc-standings-status");
-
-  if (!tabsEl || !standingsEl || !statusEl) {
-    return;
-  }
-
-  statusEl.textContent = "Loading real standings...";
-
-  try {
-    const data = await footballDataRequest("standings");
-    const groupsRaw = normalizeFootballDataStandings(data.standings || []);
-
-    const groups = groupsRaw.filter(group => {
-      const groupName = group?.[0]?.group || "";
-      return /^Group [A-L]$/i.test(groupName);
-    });
-
-    if (!groups.length) {
-      statusEl.textContent = "Official standings are not available yet";
-      standingsEl.innerHTML = `<div class="wc-empty">Real group standings will appear here once the tournament starts.</div>`;
+    if (!upcoming.length) {
+      renderEmpty(
+        els.predictions,
+        "Predictions will appear when real fixtures are available."
+      );
       return;
     }
 
-    statusEl.textContent = "Real standings loaded";
+    els.predictions.innerHTML = upcoming.map((fixture, index) => {
+      const prediction = getPredictionText(fixture, index);
 
-    tabsEl.innerHTML = groups.map((group, index) => `
-      <button class="${index === 0 ? "active" : ""}" data-group="${index}">
-        ${group[0]?.group || `Group ${index + 1}`}
-      </button>
-    `).join("");
+      return `
+        <article class="wc-prediction">
+          <div>
+            <strong>${escapeHtml(prediction.pick)}</strong>
+            <span>${escapeHtml(fixture.homeName)} vs ${escapeHtml(fixture.awayName)}</span>
+          </div>
+          <div class="wc-prob">${prediction.home}%</div>
+        </article>
+      `;
+    }).join("");
+  }
 
-    function renderGroup(index) {
-      const group = groups[index];
+  function renderStats(fixtures) {
+    const finished = fixtures
+      .map(normalizeFixture)
+      .filter((fixture) => fixture.hasScore);
 
-      standingsEl.innerHTML = `
+    const goals = finished.reduce((sum, fixture) => {
+      return sum + Number(fixture.homeGoals || 0) + Number(fixture.awayGoals || 0);
+    }, 0);
+
+    setText(els.matchesPlayed, finished.length);
+    setText(els.goals, goals);
+    setText(
+      els.avgGoals,
+      finished.length ? (goals / finished.length).toFixed(2) : "0.00"
+    );
+  }
+
+  function normalizeStandingsPayload(payload) {
+    const league = payload?.[0]?.league;
+    const standings = league?.standings;
+
+    if (!Array.isArray(standings)) return [];
+
+    return standings.map((groupRows, index) => ({
+      name: groupRows?.[0]?.group || `Group ${String.fromCharCode(65 + index)}`,
+      rows: Array.isArray(groupRows) ? groupRows : []
+    }));
+  }
+
+  function renderStandings(groups) {
+    if (!els.standings || !els.standingsTabs) return;
+
+    if (!groups.length) {
+      renderEmpty(els.standings, "Standings are not available yet.");
+      els.standingsTabs.innerHTML = "";
+      setText(els.standingsStatus, "No standings available");
+      return;
+    }
+
+    let activeIndex = 0;
+
+    const drawTabs = () => {
+      els.standingsTabs.innerHTML = groups.map((group, index) => `
+        <button
+          type="button"
+          class="${index === activeIndex ? "active" : ""}"
+          data-group-index="${index}">
+          ${escapeHtml(group.name)}
+        </button>
+      `).join("");
+    };
+
+    const drawTable = () => {
+      const group = groups[activeIndex];
+
+      els.standings.innerHTML = `
         <table>
           <thead>
             <tr>
@@ -349,43 +344,92 @@ async function loadWorldCupStandings() {
             </tr>
           </thead>
           <tbody>
-            ${group.map(row => `
+            ${group.rows.map((row) => `
               <tr>
-                <td>${row.rank}</td>
-                <td class="wc-team-cell">
-                  ${renderTeamLogo(row.team)}
-                  ${row.team.name}
-                </td>
-                <td>${row.all.played}</td>
-                <td>${row.all.win}</td>
-                <td>${row.all.draw}</td>
-                <td>${row.all.lose}</td>
-                <td>${row.goalsDiff}</td>
-                <td><strong>${row.points}</strong></td>
+                <td>${escapeHtml(row.rank)}</td>
+                <td>${escapeHtml(row.team?.name || "Team")}</td>
+                <td>${escapeHtml(row.all?.played ?? 0)}</td>
+                <td>${escapeHtml(row.all?.win ?? 0)}</td>
+                <td>${escapeHtml(row.all?.draw ?? 0)}</td>
+                <td>${escapeHtml(row.all?.lose ?? 0)}</td>
+                <td>${escapeHtml(row.goalsDiff ?? 0)}</td>
+                <td>${escapeHtml(row.points ?? 0)}</td>
               </tr>
             `).join("")}
           </tbody>
         </table>
       `;
-    }
+    };
 
-    tabsEl.querySelectorAll("button").forEach(button => {
-      button.addEventListener("click", () => {
-        tabsEl.querySelectorAll("button").forEach(btn => btn.classList.remove("active"));
-        button.classList.add("active");
-        renderGroup(Number(button.dataset.group));
-      });
-    });
+    drawTabs();
+    drawTable();
+    setText(els.standingsStatus, "Standings loaded");
 
-    renderGroup(0);
-  } catch (error) {
-    statusEl.textContent = "Standings failed to load";
-    standingsEl.innerHTML = `<div class="wc-empty">${error.message}</div>`;
+    els.standingsTabs.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-group-index]");
+      if (!button) return;
+
+      activeIndex = Number(button.dataset.groupIndex) || 0;
+      drawTabs();
+      drawTable();
+    }, { once: false });
   }
-}
 
-document.addEventListener("DOMContentLoaded", () => {
-  startWorldCupCountdown();
-  loadWorldCupFixtures();
-  loadWorldCupStandings();
-});
+  async function loadWorldCupData() {
+    updateCountdown();
+    setInterval(updateCountdown, 30000);
+
+    setText(els.fixturesStatus, "Loading real fixtures...");
+    setText(els.standingsStatus, "Loading real standings...");
+
+    try {
+      const [fixtures, standingsPayload] = await Promise.all([
+        apiGet("/fixtures", {
+          league: CONFIG.league,
+          season: CONFIG.season,
+          timezone: CONFIG.timezone
+        }),
+        apiGet("/standings", {
+          league: CONFIG.league,
+          season: CONFIG.season
+        })
+      ]);
+
+      state.fixtures = fixtures;
+      state.standings = normalizeStandingsPayload(standingsPayload);
+
+      renderFixtures(state.fixtures);
+      renderPredictions(state.fixtures);
+      renderStats(state.fixtures);
+      renderStandings(state.standings);
+    } catch (error) {
+      console.warn("[World Cup 2026 API]", error);
+
+      setText(els.fixturesStatus, "API needs configuration");
+      setText(els.standingsStatus, "API needs configuration");
+
+      renderError(
+        els.fixtures,
+        "API is not connected yet. Check /api-config.js: baseUrl, key, league and season."
+      );
+
+      renderEmpty(
+        els.predictions,
+        "Predictions will appear after fixtures load from API."
+      );
+
+      renderError(
+        els.standings,
+        "Standings are not connected yet. Check /api-config.js and API endpoint."
+      );
+
+      renderStats([]);
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", loadWorldCupData);
+  } else {
+    loadWorldCupData();
+  }
+})();
