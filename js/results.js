@@ -1,100 +1,235 @@
-async function loadResultsPage() {
-  const container =
-    document.getElementById("results-page-container") ||
-    document.getElementById("results-container");
+(function () {
+  const config = window.BF_API || {};
 
-  if (!container) return;
+  const apiKey = config.key || "";
+  const baseUrl = config.baseUrl || "https://v3.football.api-sports.io";
+  const league = config.league || 1;
+  const season = config.season || 2026;
+  const timezone = config.timezone || "Europe/Tallinn";
 
-  container.innerHTML = `<div class="results-empty-state">Loading latest results...</div>`;
+  const grid = document.getElementById("results-grid");
+  const statusEl = document.getElementById("results-status");
 
-  try {
-    const response = await fetch(`${BF_API.baseUrl}/fixtures?last=20`, {
-      method: "GET",
-      headers: {
-        "x-apisports-key": BF_API.key
+  const finishedStatuses = new Set([
+    "FT",
+    "AET",
+    "PEN"
+  ]);
+
+  if (!grid) return;
+
+  function setStatus(text) {
+    if (statusEl) {
+      statusEl.textContent = text;
+    }
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  function formatDate(dateString) {
+    if (!dateString) return "";
+
+    try {
+      return new Intl.DateTimeFormat("en-GB", {
+        timeZone: timezone,
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(new Date(dateString));
+    } catch (error) {
+      return "";
+    }
+  }
+
+  async function apiGet(endpoint, params) {
+    const url = new URL(endpoint, baseUrl);
+
+    Object.entries(params || {}).forEach(function ([key, value]) {
+      if (value !== undefined && value !== null && value !== "") {
+        url.searchParams.set(key, value);
       }
     });
 
-    const data = await response.json();
-    let matches = data.response || [];
+    const response = await fetch(url.toString(), {
+      headers: {
+        "x-apisports-key": apiKey
+      }
+    });
 
-    if (!matches.length) {
-      matches = getFallbackResults();
+    if (!response.ok) {
+      throw new Error("API error " + response.status);
     }
 
-    renderResults(container, matches.slice(0, 12));
-  } catch (error) {
-    console.error("Failed to load results page:", error);
-    renderResults(container, getFallbackResults());
+    const data = await response.json();
+
+    if (data.errors && Object.keys(data.errors).length) {
+      throw new Error(JSON.stringify(data.errors));
+    }
+
+    return data.response || [];
   }
-}
 
-function renderResults(container, matches) {
-  container.innerHTML = "";
+  function renderEmpty(message) {
+    grid.innerHTML = `
+      <div class="results-empty">
+        ${escapeHtml(message)}
+      </div>
+    `;
+  }
 
-  matches.forEach((item) => {
-    const apiMode = !!item.fixture;
+  function renderResults(fixtures) {
+    if (!fixtures.length) {
+      setStatus("No finished World Cup matches yet");
 
-    const home = apiMode ? item.teams?.home?.name : item.home;
-    const away = apiMode ? item.teams?.away?.name : item.away;
-    const homeLogo = apiMode ? item.teams?.home?.logo : "";
-    const awayLogo = apiMode ? item.teams?.away?.logo : "";
-    const homeGoals = apiMode ? item.goals?.home ?? "-" : item.homeGoals;
-    const awayGoals = apiMode ? item.goals?.away ?? "-" : item.awayGoals;
-    const league = apiMode ? item.league?.name : item.league;
-    const status = apiMode ? item.fixture?.status?.short || "FT" : "FT";
-    const venue = apiMode ? item.fixture?.venue?.name || "Match analysis" : item.venue;
-    const matchDate = apiMode
-      ? new Date(item.fixture.date).toLocaleDateString()
-      : item.date;
+      renderEmpty(
+        "World Cup finished results will appear here as soon as completed matches are available in the API."
+      );
 
-    const card = document.createElement("article");
-  card.className = "bf-clean-result-card";
-const gameId = apiMode ? item.fixture?.id : `${home}-${away}`.toLowerCase().replace(/\s+/g, "-");
-card.onclick = () => {
-  window.location.href = `match.html?game=${gameId}`;
-};
-card.style.cursor = "pointer";
-   card.innerHTML = `
-  <div class="bf-clean-result-top">
-    <span>${league}</span>
-    <b>${status}</b>
-  </div>
+      return;
+    }
 
-  <div class="bf-clean-result-score">
-    <span>${home}</span>
-    <strong>${homeGoals} - ${awayGoals}</strong>
-    <span>${away}</span>
-  </div>
+    grid.innerHTML = fixtures
+      .map(function (match) {
+        const home = match.teams?.home || {};
+        const away = match.teams?.away || {};
+        const goals = match.goals || {};
+        const fixture = match.fixture || {};
+        const leagueData = match.league || {};
+        const venue = fixture.venue?.name || "World Cup venue";
+        const date = formatDate(fixture.date);
+        const status = fixture.status?.short || "FT";
+        const round = leagueData.round || "FIFA World Cup 2026";
+        const fixtureId = fixture.id || "";
 
-  <div class="bf-clean-result-meta">
-    <span>${venue}</span>
-    <span>${matchDate}</span>
-  </div>
-`;
-    container.appendChild(card);
-  });
+        const homeName = home.name || "Home";
+        const awayName = away.name || "Away";
 
-  initGlowHover();
-}
+        const matchHref =
+          fixtureId
+            ? "match.html?id=" + encodeURIComponent(fixtureId)
+            : "match.html";
 
-function getFallbackResults() {
-  return [
-    { league: "Premier League", home: "Man City", away: "Arsenal", homeGoals: 2, awayGoals: 1, venue: "Etihad Stadium", date: "Latest result" },
-    { league: "La Liga", home: "Real Madrid", away: "Sevilla", homeGoals: 3, awayGoals: 0, venue: "Santiago Bernabéu", date: "Latest result" },
-    { league: "Serie A", home: "Napoli", away: "Roma", homeGoals: 2, awayGoals: 1, venue: "Diego Armando Maradona Stadium", date: "Latest result" },
-    { league: "Bundesliga", home: "Dortmund", away: "RB Leipzig", homeGoals: 2, awayGoals: 2, venue: "Signal Iduna Park", date: "Latest result" }
-  ];
-}
+        return `
+          <a
+            class="result-card"
+            href="${escapeHtml(matchHref)}"
+            aria-label="Open match analysis: ${escapeHtml(homeName)} vs ${escapeHtml(awayName)}">
 
-function initGlowHover() {
-  document.querySelectorAll(".glow-hover").forEach((el) => {
-    el.addEventListener("mousemove", (e) => {
-      const rect = el.getBoundingClientRect();
-      el.style.setProperty("--x", `${e.clientX - rect.left}px`);
-      el.style.setProperty("--y", `${e.clientY - rect.top}px`);
-    });
-  });
-}
+            <div class="result-card-top">
+              <span class="result-round">
+                ${escapeHtml(round)}
+              </span>
 
-loadResultsPage();
+              <strong class="result-status">
+                ${escapeHtml(status)}
+              </strong>
+            </div>
+
+            <div class="result-teams">
+
+              <div class="result-team">
+                ${
+                  home.logo
+                    ? `<img src="${escapeHtml(home.logo)}" alt="${escapeHtml(homeName)} logo" loading="lazy">`
+                    : `<span class="result-logo-placeholder"></span>`
+                }
+
+                <h3>
+                  ${escapeHtml(homeName)}
+                </h3>
+              </div>
+
+              <div class="result-score">
+                <strong>${goals.home ?? "-"}</strong>
+                <span>-</span>
+                <strong>${goals.away ?? "-"}</strong>
+              </div>
+
+              <div class="result-team">
+                ${
+                  away.logo
+                    ? `<img src="${escapeHtml(away.logo)}" alt="${escapeHtml(awayName)} logo" loading="lazy">`
+                    : `<span class="result-logo-placeholder"></span>`
+                }
+
+                <h3>
+                  ${escapeHtml(awayName)}
+                </h3>
+              </div>
+
+            </div>
+
+            <div class="result-card-bottom">
+              <span>
+                ${escapeHtml(venue)}
+              </span>
+
+              <span>
+                ${escapeHtml(date)}
+              </span>
+            </div>
+
+          </a>
+        `;
+      })
+      .join("");
+
+    setStatus(fixtures.length + " latest finished matches");
+  }
+
+  async function initResults() {
+    if (!apiKey || apiKey === "PASTE_YOUR_API_KEY_HERE") {
+      setStatus("API key is missing");
+
+      renderEmpty(
+        "Add your API key in /api-config.js to load World Cup results."
+      );
+
+      return;
+    }
+
+    try {
+      setStatus("Loading World Cup results...");
+
+      const fixtures = await apiGet("/fixtures", {
+        league,
+        season,
+        timezone
+      });
+
+      const latestFinished = fixtures
+        .filter(function (match) {
+          const status = match.fixture?.status?.short;
+          return finishedStatuses.has(status);
+        })
+        .sort(function (a, b) {
+          const aTime = a.fixture?.timestamp || 0;
+          const bTime = b.fixture?.timestamp || 0;
+          return bTime - aTime;
+        })
+        .slice(0, 12);
+
+      renderResults(latestFinished);
+
+    } catch (error) {
+      console.error("World Cup results failed:", error);
+
+      setStatus("Results failed to load");
+
+      renderEmpty(
+        "World Cup results could not be loaded. Check /api-config.js, API key, API limits, and browser console errors."
+      );
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", initResults);
+})();
