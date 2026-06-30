@@ -1,405 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+(() => {
+  "use strict";
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  const CONFIG = {
+    provider: "api-football",
+    league: 1,
+    season: 2026,
+    timezone: "Europe/Tallinn",
+    maxResults: 12,
+    ...window.BF_API
+  };
 
-  <title>Betforecast.ai | World Cup 2026 Results</title>
+  const grid = document.getElementById("results-grid");
+  const statusEl = document.getElementById("results-status");
 
-  <link rel="stylesheet" href="css/style.css?v=21">
+  const finishedStatuses = new Set([
+    "FT",
+    "AET",
+    "PEN"
+  ]);
 
-  <script
-    src="https://cdn.counter.dev/script.js"
-    data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098"
-    data-utcoffset="3">
-  </script>
+  if (!grid) return;
 
-  <style>
-    .results-page-wrap {
-      width: min(1280px, calc(100% - 40px));
-      margin: 0 auto;
-      padding: 28px 0 64px;
-      display: grid;
-      gap: 24px;
+  function setStatus(text) {
+    if (statusEl) statusEl.textContent = text;
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  function getApiBase() {
+    return String(CONFIG.baseUrl || "").replace(/\/+$/, "");
+  }
+
+  function getApiHeaders() {
+    const headers = {
+      Accept: "application/json"
+    };
+
+    if (CONFIG.key) {
+      headers["x-apisports-key"] = CONFIG.key;
     }
 
-    .results-hero,
-    .results-page-section {
-      width: min(1040px, 100%);
-      margin: 0 auto;
+    if (CONFIG.host) {
+      headers["x-rapidapi-host"] = CONFIG.host;
     }
 
-    .results-page-section {
-      padding: 22px;
-      border-radius: 24px;
-      background:
-        linear-gradient(
-          180deg,
-          rgba(18, 38, 55, 0.94),
-          rgba(6, 17, 27, 0.97)
-        );
-      border: 1px solid rgba(94, 224, 164, 0.16);
-      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
-    }
+    return headers;
+  }
 
-    .results-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 16px;
-      margin-bottom: 18px;
-    }
+  function formatDate(value) {
+    if (!value) return "";
 
-    .results-head h2 {
-      margin: 0;
-      color: var(--text-main);
-      font-size: 28px;
-      line-height: 1.12;
-      font-weight: 900;
-      letter-spacing: -0.035em;
-    }
-
-    .results-head span {
-      color: var(--text-soft);
-      font-size: 13px;
-      line-height: 1.4;
-      text-align: right;
-    }
-
-    .results-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .result-card {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      min-height: 300px;
-      padding: 22px;
-      border-radius: 22px;
-      overflow: hidden;
-      color: var(--text-main);
-      background:
-        radial-gradient(
-          circle at 50% 25%,
-          rgba(94, 224, 164, 0.09),
-          transparent 38%
-        ),
-        linear-gradient(
-          180deg,
-          rgba(18, 38, 55, 0.98),
-          rgba(7, 19, 31, 0.99)
-        );
-      border: 1px solid rgba(94, 224, 164, 0.18);
-      box-shadow:
-        0 12px 34px rgba(0, 0, 0, 0.24),
-        inset 0 1px 0 rgba(255, 255, 255, 0.04);
-      text-decoration: none;
-      transition:
-        transform 0.22s ease,
-        border-color 0.22s ease,
-        box-shadow 0.22s ease;
-    }
-
-    .result-card:hover {
-      transform: translateY(-3px);
-      border-color: rgba(94, 224, 164, 0.36);
-      box-shadow:
-        0 18px 44px rgba(0, 0, 0, 0.32),
-        0 0 28px rgba(94, 224, 164, 0.12);
-    }
-
-    .result-card-top,
-    .result-card-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-    }
-
-    .result-card-top {
-      margin-bottom: 30px;
-      color: var(--text-soft);
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    .result-round {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .result-status {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 44px;
-      min-height: 36px;
-      padding: 0 12px;
-      border-radius: 999px;
-      color: #f8fafc;
-      background: rgba(255, 255, 255, 0.08);
-      font-size: 12px;
-      font-weight: 900;
-      flex-shrink: 0;
-    }
-
-    .result-teams {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-      align-items: center;
-      gap: 16px;
-      margin: auto 0 30px;
-    }
-
-    .result-team {
-      display: grid;
-      justify-items: center;
-      gap: 10px;
-      text-align: center;
-      min-width: 0;
-    }
-
-    .result-team img,
-    .result-logo-placeholder {
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      object-fit: contain;
-      background: rgba(255, 255, 255, 0.08);
-      padding: 7px;
-    }
-
-    .result-logo-placeholder {
-      display: block;
-    }
-
-    .result-team h3 {
-      max-width: 100%;
-      margin: 0;
-      color: var(--text-main);
-      font-size: 16px;
-      line-height: 1.2;
-      font-weight: 900;
-      white-space: normal;
-      overflow-wrap: anywhere;
-    }
-
-    .result-score {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--text-main);
-      font-size: 34px;
-      line-height: 1;
-      font-weight: 950;
-      white-space: nowrap;
-    }
-
-    .result-score span {
-      color: var(--text-soft);
-    }
-
-    .result-card-bottom {
-      margin-top: auto;
-      color: var(--text-soft);
-      font-size: 12px;
-      line-height: 1.35;
-    }
-
-    .result-card-bottom span:last-child {
-      text-align: right;
-    }
-
-    .results-empty {
-      grid-column: 1 / -1;
-      padding: 24px;
-      border-radius: 20px;
-      color: var(--text-soft);
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px dashed rgba(94, 224, 164, 0.18);
-      line-height: 1.55;
-    }
-
-    @media (max-width: 1100px) {
-      .results-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 700px) {
-      .results-page-wrap {
-        width: calc(100% - 16px);
-        padding: 18px 0 44px;
-      }
-
-      .results-page-section {
-        padding: 16px 12px;
-      }
-
-      .results-head {
-        flex-direction: column;
-      }
-
-      .results-head span {
-        text-align: left;
-      }
-
-      .results-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .result-card {
-        min-height: 260px;
-        padding: 18px;
-      }
-
-      .result-score {
-        font-size: 28px;
-      }
-
-      .result-team img,
-      .result-logo-placeholder {
-        width: 48px;
-        height: 48px;
-      }
-    }
-  </style>
-</head>
-
-<body class="theme-dark">
-
-<header class="header">
-  <div class="header-inner">
-
-    <a class="bf-logo" href="/" aria-label="Betforecast.ai home">
-      <img src="assets/bet-logo.png" alt="Betforecast.ai logo">
-      <span>Betforecast<span>.ai</span></span>
-    </a>
-
-    <nav class="topbar-menu" aria-label="Main navigation">
-      <a href="world-cup-2026.html">🏆 WC 2026</a>
-      <a href="news.html">News</a>
-      <a href="standings.html">Standings</a>
-      <a href="match.html">Matches</a>
-      <a href="results.html" class="active">Results</a>
-      <a href="ai-insights.html">AI Insights</a>
-    </nav>
-
-    <div class="topbar-actions">
-      <button
-        class="theme-switch"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle theme">
-
-        <span class="theme-switch-track">
-          <span class="theme-switch-thumb"></span>
-        </span>
-
-        <span class="theme-switch-label">Dark</span>
-      </button>
-    </div>
-
-  </div>
-</header>
-
-<main class="results-page-wrap">
-
-  <section class="ai-focus-banner ai-focus-banner-compact results-hero">
-
-    <div class="ai-focus-content">
-
-      <div class="ai-focus-text">
-
-        <span class="hero-ai-badge">
-          World Cup Results
-        </span>
-
-        <h1>
-          Latest World Cup 2026 results.
-        </h1>
-
-        <p>
-          Follow final scores, recent outcomes,
-          and team results from the FIFA World Cup 2026.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="results-page-section">
-
-    <div class="results-head">
-
-      <h2>
-        World Cup Match Results
-      </h2>
-
-      <span id="results-status">
-        Loading World Cup results...
-      </span>
-
-    </div>
-
-    <div
-      id="results-grid"
-      class="results-grid">
-    </div>
-
-  </section>
-
-</main>
-
-<script src="/api-config.js"></script>
-<script src="/js/results.js?v=3"></script>
-
-<script>
-(function () {
-
-  const body = document.body;
-  const toggle = document.getElementById("theme-toggle");
-  const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
-
-  function applyTheme(theme) {
-    body.classList.remove("theme-dark", "theme-glass", "theme-light");
-
-    if (theme === "glass") {
-      body.classList.add("theme-glass");
-    } else {
-      body.classList.add("theme-dark");
-    }
-
-    localStorage.setItem("bf-theme", theme);
-
-    if (label) {
-      label.textContent = theme === "glass" ? "Glass" : "Dark";
+    try {
+      return new Intl.DateTimeFormat("en", {
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        timeZone: CONFIG.timezone || undefined
+      }).format(new Date(value));
+    } catch {
+      return "";
     }
   }
 
-  const savedTheme = localStorage.getItem("bf-theme") || "dark";
+  async function apiGet(path, params = {}) {
+    const baseUrl = getApiBase();
 
-  applyTheme(savedTheme);
+    if (!baseUrl) {
+      throw new Error("API baseUrl is missing in /api-config.js");
+    }
 
-  if (toggle) {
-    toggle.addEventListener("click", function () {
-      const nextTheme = body.classList.contains("theme-dark") ? "glass" : "dark";
-      applyTheme(nextTheme);
+    if (!CONFIG.key) {
+      throw new Error("API key is missing in /api-config.js");
+    }
+
+    const url = new URL(`${baseUrl}${path}`, window.location.origin);
+
+    Object.entries(params).forEach(([key, value]) => {
+      if (value !== undefined && value !== null && value !== "") {
+        url.searchParams.set(key, value);
+      }
     });
+
+    const response = await fetch(url.toString(), {
+      method: "GET",
+      headers: getApiHeaders(),
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(`API request failed: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    if (data && data.errors && Object.keys(data.errors).length) {
+      throw new Error("API returned errors");
+    }
+
+    return Array.isArray(data?.response) ? data.response : [];
   }
 
-})();
-</script>
+  function renderEmpty(message) {
+    grid.innerHTML = `
+      <div class="results-empty">
+        ${escapeHtml(message)}
+      </div>
+    `;
+  }
 
-</body>
-</html>
+  function normalizeFixture(item) {
+    const fixture = item.fixture || {};
+    const league = item.league || {};
+    const teams = item.teams || {};
+    const goals = item.goals || {};
+
+    const home = teams.home || {};
+    const away = teams.away || {};
+
+    return {
+      id: fixture.id || "",
+      date: fixture.date || "",
+      status: fixture.status?.short || "FT",
+      round: league.round || "FIFA World Cup 2026",
+      venue: fixture.venue?.name || "World Cup venue",
+
+      homeName: home.name || "Home",
+      awayName: away.name || "Away",
+      homeLogo: home.logo || "",
+      awayLogo: away.logo || "",
+
+      homeGoals: goals.home,
+      awayGoals: goals.away
+    };
+  }
+
+  function renderResults(fixtures) {
+    if (!fixtures.length) {
+      setStatus("No finished World Cup matches yet");
+
+      renderEmpty(
+        "World Cup finished results will appear here as soon as completed matches are available in the API."
+      );
+
+      return;
+    }
+
+    grid.innerHTML = fixtures
+      .map((item) => {
+        const fixture = normalizeFixture(item);
+
+        const matchHref =
+          fixture.id
+            ? `match.html?id=${encodeURIComponent(fixture.id)}`
+            : "match.html";
+
+        return `
+          <a
+            class="result-card"
+            href="${escapeHtml(matchHref)}"
+            aria-label="Open match analysis: ${escapeHtml(fixture.homeName)} vs ${escapeHtml(fixture.awayName)}">
+
+            <div class="result-card-top">
+              <span class="result-round">
+                ${escapeHtml(fixture.round)}
+              </span>
+
+              <strong class="result-status">
+                ${escapeHtml(fixture.status)}
+              </strong>
+            </div>
+
+            <div class="result-teams">
+
+              <div class="result-team">
+                ${
+                  fixture.homeLogo
+                    ? `<img src="${escapeHtml(fixture.homeLogo)}" alt="${escapeHtml(fixture.homeName)} logo" loading="lazy">`
+                    : `<span class="result-logo-placeholder"></span>`
+                }
+
+                <h3>
+                  ${escapeHtml(fixture.homeName)}
+                </h3>
+              </div>
+
+              <div class="result-score">
+                <strong>${escapeHtml(fixture.homeGoals ?? "-")}</strong>
+                <span>-</span>
+                <strong>${escapeHtml(fixture.awayGoals ?? "-")}</strong>
+              </div>
+
+              <div class="result-team">
+                ${
+                  fixture.awayLogo
+                    ? `<img src="${escapeHtml(fixture.awayLogo)}" alt="${escapeHtml(fixture.awayName)} logo" loading="lazy">`
+                    : `<span class="result-logo-placeholder"></span>`
+                }
+
+                <h3>
+                  ${escapeHtml(fixture.awayName)}
+                </h3>
+              </div>
+
+            </div>
+
+            <div class="result-card-bottom">
+              <span>
+                ${escapeHtml(fixture.venue)}
+              </span>
+
+              <span>
+                ${escapeHtml(formatDate(fixture.date))}
+              </span>
+            </div>
+
+          </a>
+        `;
+      })
+      .join("");
+
+    setStatus(`${fixtures.length} latest finished matches`);
+  }
+
+  async function loadResults() {
+    try {
+      setStatus("Loading World Cup results...");
+
+      const fixtures = await apiGet("/fixtures", {
+        league: CONFIG.league,
+        season: CONFIG.season,
+        timezone: CONFIG.timezone
+      });
+
+      const finished = fixtures
+        .filter((item) => {
+          const status = item.fixture?.status?.short;
+          return finishedStatuses.has(status);
+        })
+        .sort((a, b) => {
+          const aTime = a.fixture?.timestamp || 0;
+          const bTime = b.fixture?.timestamp || 0;
+          return bTime - aTime;
+        })
+        .slice(0, CONFIG.maxResults || 12);
+
+      renderResults(finished);
+
+    } catch (error) {
+      console.warn("[World Cup Results API]", error);
+
+      setStatus("Results failed to load");
+
+      renderEmpty(
+        "World Cup results could not be loaded. Check /api-config.js, API key, API limits and browser console."
+      );
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", loadResults);
+  } else {
+    loadResults();
+  }
+})();
