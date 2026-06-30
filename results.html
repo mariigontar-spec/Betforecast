@@ -197,14 +197,19 @@
     }
 
     body.site-skin-1win .results-hero .ai-focus-content {
-      padding: 34px 40px !important;
+      min-height: 300px !important;
+      padding: 52px 56px !important;
+      display: flex !important;
+      align-items: center !important;
     }
 
     body.site-skin-1win .results-hero .ai-focus-text {
-      width: min(720px, 100%) !important;
-      padding: 28px 30px !important;
-      border-radius: 22px !important;
-      background: rgba(5, 15, 27, 0.68) !important;
+      width: min(860px, 100%) !important;
+      padding: 0 !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
     }
 
     .results-page-section {
@@ -678,12 +683,16 @@
       }
 
       .results-hero .ai-focus-content {
+        min-height: 0 !important;
         padding: 20px 14px !important;
       }
 
       .results-hero .ai-focus-text {
         width: 100% !important;
-        padding: 18px 14px !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
       }
 
       .results-page-section {
@@ -838,7 +847,7 @@
   </main>
 
   <script src="/api-config.js"></script>
-  <script src="/js/results.js?v=10"></script>
+  <script src="/js/results.js?v=11"></script>
 
   <script
     data-cfasync="false"
