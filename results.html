@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>Betforecast.ai | World Cup 2026 Results</title>
 
-  <link rel="stylesheet" href="css/style.css?v=22">
+  <link rel="stylesheet" href="css/style.css?v=21">
 
   <script
     src="https://cdn.counter.dev/script.js"
@@ -31,7 +36,12 @@
     .results-page-section {
       padding: 22px;
       border-radius: 24px;
-      background: linear-gradient(180deg, rgba(18, 38, 55, 0.94), rgba(6, 17, 27, 0.97));
+      background:
+        linear-gradient(
+          180deg,
+          rgba(18, 38, 55, 0.94),
+          rgba(6, 17, 27, 0.97)
+        );
       border: 1px solid rgba(94, 224, 164, 0.16);
       box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
     }
@@ -75,17 +85,34 @@
       border-radius: 22px;
       overflow: hidden;
       color: var(--text-main);
-      background: radial-gradient(circle at 50% 25%, rgba(94, 224, 164, 0.09), transparent 38%), linear-gradient(180deg, rgba(18, 38, 55, 0.98), rgba(7, 19, 31, 0.99));
+      background:
+        radial-gradient(
+          circle at 50% 25%,
+          rgba(94, 224, 164, 0.09),
+          transparent 38%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(18, 38, 55, 0.98),
+          rgba(7, 19, 31, 0.99)
+        );
       border: 1px solid rgba(94, 224, 164, 0.18);
-      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      box-shadow:
+        0 12px 34px rgba(0, 0, 0, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
       text-decoration: none;
-      transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+      transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
     }
 
     .result-card:hover {
       transform: translateY(-3px);
       border-color: rgba(94, 224, 164, 0.36);
-      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.32), 0 0 28px rgba(94, 224, 164, 0.12);
+      box-shadow:
+        0 18px 44px rgba(0, 0, 0, 0.32),
+        0 0 28px rgba(94, 224, 164, 0.12);
     }
 
     .result-card-top,
@@ -267,8 +294,16 @@
     </nav>
 
     <div class="topbar-actions">
-      <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
-        <span class="theme-switch-track"><span class="theme-switch-thumb"></span></span>
+      <button
+        class="theme-switch"
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle theme">
+
+        <span class="theme-switch-track">
+          <span class="theme-switch-thumb"></span>
+        </span>
+
         <span class="theme-switch-label">Dark</span>
       </button>
     </div>
@@ -279,47 +314,81 @@
 <main class="results-page-wrap">
 
   <section class="ai-focus-banner ai-focus-banner-compact results-hero">
+
     <div class="ai-focus-content">
+
       <div class="ai-focus-text">
-        <span class="hero-ai-badge">World Cup Results</span>
-        <h1>Latest World Cup 2026 results.</h1>
-        <p>Follow final scores, recent outcomes, and team results from the FIFA World Cup 2026.</p>
+
+        <span class="hero-ai-badge">
+          World Cup Results
+        </span>
+
+        <h1>
+          Latest World Cup 2026 results.
+        </h1>
+
+        <p>
+          Follow final scores, recent outcomes,
+          and team results from the FIFA World Cup 2026.
+        </p>
+
       </div>
+
     </div>
+
   </section>
 
   <section class="results-page-section">
+
     <div class="results-head">
-      <h2>World Cup Match Results</h2>
-      <span id="results-status">Loading World Cup results...</span>
+
+      <h2>
+        World Cup Match Results
+      </h2>
+
+      <span id="results-status">
+        Loading World Cup results...
+      </span>
+
     </div>
 
-    <div id="results-grid" class="results-grid"></div>
+    <div
+      id="results-grid"
+      class="results-grid">
+    </div>
+
   </section>
 
 </main>
 
 <script src="/api-config.js"></script>
-<script src="/js/results.js?v=5"></script>
+<script src="/js/results.js?v=3"></script>
 
 <script>
 (function () {
+
   const body = document.body;
   const toggle = document.getElementById("theme-toggle");
   const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
 
   function applyTheme(theme) {
     body.classList.remove("theme-dark", "theme-glass", "theme-light");
+
     if (theme === "glass") {
       body.classList.add("theme-glass");
     } else {
       body.classList.add("theme-dark");
     }
+
     localStorage.setItem("bf-theme", theme);
-    if (label) label.textContent = theme === "glass" ? "Glass" : "Dark";
+
+    if (label) {
+      label.textContent = theme === "glass" ? "Glass" : "Dark";
+    }
   }
 
   const savedTheme = localStorage.getItem("bf-theme") || "dark";
+
   applyTheme(savedTheme);
 
   if (toggle) {
@@ -328,6 +397,7 @@
       applyTheme(nextTheme);
     });
   }
+
 })();
 </script>
 
