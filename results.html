@@ -16,6 +16,8 @@
   <style>
     :root {
       --bf-shell-width: 1240px;
+      --bf-content-width: 1040px;
+      --bf-hero-width: 960px;
       --bf-page-gap: 48px;
       --bf-page-bg: #020b13;
       --bf-green: #5ee0a4;
@@ -65,13 +67,13 @@
     body.site-skin-1win .header-inner {
       position: relative !important;
       z-index: 30 !important;
-      width: min(var(--bf-shell-width), calc(100vw - var(--bf-page-gap))) !important;
-      max-width: var(--bf-shell-width) !important;
+      width: min(var(--bf-content-width), calc(100vw - var(--bf-page-gap))) !important;
+      max-width: var(--bf-content-width) !important;
       min-height: 82px;
       margin: 0 auto !important;
       padding: 14px 24px !important;
       display: grid !important;
-      grid-template-columns: 220px minmax(0, 1fr) 220px !important;
+      grid-template-columns: 170px minmax(0, 1fr) 0px !important;
       align-items: center !important;
       gap: 18px !important;
       background: var(--bf-panel-background) !important;
@@ -85,7 +87,7 @@
     body.site-skin-1win .header-inner::after {
       content: "";
       display: block;
-      width: 220px;
+      width: 0;
       height: 1px;
     }
 
@@ -179,16 +181,19 @@
       gap: 24px;
     }
 
-    body.site-skin-1win .results-hero,
     body.site-skin-1win .results-page-section,
     body.site-skin-1win .content-banner {
-      width: min(1040px, 100%) !important;
-      max-width: 1040px !important;
+      width: min(var(--bf-content-width), 100%) !important;
+      max-width: var(--bf-content-width) !important;
       margin-left: auto !important;
       margin-right: auto !important;
     }
 
     body.site-skin-1win .results-hero {
+      width: min(var(--bf-hero-width), 100%) !important;
+      max-width: var(--bf-hero-width) !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
       border-radius: 24px !important;
       background: var(--bf-panel-background) !important;
       border: var(--bf-panel-border) !important;
@@ -197,14 +202,14 @@
     }
 
     body.site-skin-1win .results-hero .ai-focus-content {
-      min-height: 300px !important;
-      padding: 52px 56px !important;
+      min-height: 240px !important;
+      padding: 36px 42px !important;
       display: flex !important;
       align-items: center !important;
     }
 
     body.site-skin-1win .results-hero .ai-focus-text {
-      width: min(860px, 100%) !important;
+      width: min(760px, 100%) !important;
       padding: 0 !important;
       border: 0 !important;
       border-radius: 0 !important;
@@ -847,7 +852,7 @@
   </main>
 
   <script src="/api-config.js"></script>
-  <script src="/js/results.js?v=11"></script>
+  <script src="/js/results.js?v=12"></script>
 
   <script
     data-cfasync="false"
