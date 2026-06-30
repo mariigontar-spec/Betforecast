@@ -19,11 +19,6 @@
   </script>
 
   <style>
-    /* =========================================================
-       RESULTS PAGE LOCAL FIX
-       Keeps this page safe without touching global style.css
-       ========================================================= */
-
     .results-page-wrap {
       width: min(1280px, calc(100% - 40px));
       margin: 0 auto;
@@ -32,14 +27,13 @@
       gap: 24px;
     }
 
-    .results-hero {
+    .results-hero,
+    .results-page-section {
       width: min(1040px, 100%);
       margin: 0 auto;
     }
 
     .results-page-section {
-      width: min(1040px, 100%);
-      margin: 0 auto;
       padding: 22px;
       border-radius: 24px;
       background:
@@ -285,7 +279,7 @@
 <header class="header">
   <div class="header-inner">
 
-    <a class="bf-logo" href="index.html" aria-label="Betforecast.ai home">
+    <a class="bf-logo" href="/" aria-label="Betforecast.ai home">
       <img src="assets/bet-logo.png" alt="Betforecast.ai logo">
       <span>Betforecast<span>.ai</span></span>
     </a>
@@ -300,7 +294,6 @@
     </nav>
 
     <div class="topbar-actions">
-
       <button
         class="theme-switch"
         id="theme-toggle"
@@ -313,8 +306,8 @@
 
         <span class="theme-switch-label">Dark</span>
       </button>
-
     </div>
+
   </div>
 </header>
 
@@ -369,28 +362,17 @@
 </main>
 
 <script src="/api-config.js"></script>
-<script src="/js/results.js?v=2"></script>
+<script src="/js/results.js?v=3"></script>
 
 <script>
 (function () {
 
   const body = document.body;
-
-  const toggle =
-    document.getElementById("theme-toggle");
-
-  const label =
-    toggle
-    ? toggle.querySelector(".theme-switch-label")
-    : null;
+  const toggle = document.getElementById("theme-toggle");
+  const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
 
   function applyTheme(theme) {
-
-    body.classList.remove(
-      "theme-dark",
-      "theme-glass",
-      "theme-light"
-    );
+    body.classList.remove("theme-dark", "theme-glass", "theme-light");
 
     if (theme === "glass") {
       body.classList.add("theme-glass");
@@ -401,29 +383,18 @@
     localStorage.setItem("bf-theme", theme);
 
     if (label) {
-      label.textContent =
-        theme === "glass"
-        ? "Glass"
-        : "Dark";
+      label.textContent = theme === "glass" ? "Glass" : "Dark";
     }
   }
 
-  const savedTheme =
-    localStorage.getItem("bf-theme") || "dark";
+  const savedTheme = localStorage.getItem("bf-theme") || "dark";
 
   applyTheme(savedTheme);
 
   if (toggle) {
-
     toggle.addEventListener("click", function () {
-
-      const nextTheme =
-        body.classList.contains("theme-dark")
-        ? "glass"
-        : "dark";
-
+      const nextTheme = body.classList.contains("theme-dark") ? "glass" : "dark";
       applyTheme(nextTheme);
-
     });
   }
 
