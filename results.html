@@ -2,15 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Betforecast.ai | World Cup 2026 Results</title>
 
-  <link rel="stylesheet" href="css/style.css?v=21">
+  <link rel="stylesheet" href="css/style.css?v=22">
 
   <script
     src="https://cdn.counter.dev/script.js"
@@ -36,12 +31,7 @@
     .results-page-section {
       padding: 22px;
       border-radius: 24px;
-      background:
-        linear-gradient(
-          180deg,
-          rgba(18, 38, 55, 0.94),
-          rgba(6, 17, 27, 0.97)
-        );
+      background: linear-gradient(180deg, rgba(18, 38, 55, 0.94), rgba(6, 17, 27, 0.97));
       border: 1px solid rgba(94, 224, 164, 0.16);
       box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
     }
@@ -76,64 +66,55 @@
       gap: 18px;
     }
 
+    .result-card,
+    .result-card * {
+      writing-mode: horizontal-tb !important;
+      text-orientation: mixed !important;
+      word-break: normal !important;
+      overflow-wrap: normal !important;
+      hyphens: none !important;
+    }
+
     .result-card {
       position: relative;
       display: flex;
       flex-direction: column;
-      min-height: 300px;
-      padding: 22px;
+      min-height: 260px;
+      padding: 20px;
       border-radius: 22px;
       overflow: hidden;
       color: var(--text-main);
-      background:
-        radial-gradient(
-          circle at 50% 25%,
-          rgba(94, 224, 164, 0.09),
-          transparent 38%
-        ),
-        linear-gradient(
-          180deg,
-          rgba(18, 38, 55, 0.98),
-          rgba(7, 19, 31, 0.99)
-        );
+      background: radial-gradient(circle at 50% 25%, rgba(94, 224, 164, 0.09), transparent 38%), linear-gradient(180deg, rgba(18, 38, 55, 0.98), rgba(7, 19, 31, 0.99));
       border: 1px solid rgba(94, 224, 164, 0.18);
-      box-shadow:
-        0 12px 34px rgba(0, 0, 0, 0.24),
-        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.04);
       text-decoration: none;
-      transition:
-        transform 0.22s ease,
-        border-color 0.22s ease,
-        box-shadow 0.22s ease;
+      transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
     }
 
     .result-card:hover {
       transform: translateY(-3px);
       border-color: rgba(94, 224, 164, 0.36);
-      box-shadow:
-        0 18px 44px rgba(0, 0, 0, 0.32),
-        0 0 28px rgba(94, 224, 164, 0.12);
-    }
-
-    .result-card-top,
-    .result-card-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.32), 0 0 28px rgba(94, 224, 164, 0.12);
     }
 
     .result-card-top {
-      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-width: 0;
+      margin-bottom: 18px;
       color: var(--text-soft);
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 800;
     }
 
     .result-round {
+      min-width: 0;
+      max-width: calc(100% - 58px);
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap;
+      white-space: nowrap !important;
     }
 
     .result-status {
@@ -141,7 +122,7 @@
       align-items: center;
       justify-content: center;
       min-width: 44px;
-      min-height: 36px;
+      min-height: 34px;
       padding: 0 12px;
       border-radius: 999px;
       color: #f8fafc;
@@ -153,28 +134,32 @@
 
     .result-teams {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      grid-template-columns: minmax(86px, 1fr) 82px minmax(86px, 1fr);
       align-items: center;
-      gap: 16px;
-      margin: auto 0 30px;
+      gap: 10px;
+      width: 100%;
+      margin: 12px 0 18px;
     }
 
     .result-team {
-      display: grid;
-      justify-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
       gap: 10px;
-      text-align: center;
       min-width: 0;
+      text-align: center;
     }
 
     .result-team img,
     .result-logo-placeholder {
-      width: 58px;
-      height: 58px;
+      width: 54px;
+      height: 54px;
       border-radius: 50%;
       object-fit: contain;
       background: rgba(255, 255, 255, 0.08);
       padding: 7px;
+      flex: 0 0 auto;
     }
 
     .result-logo-placeholder {
@@ -182,25 +167,29 @@
     }
 
     .result-team h3 {
-      max-width: 100%;
+      width: 100%;
+      max-width: 112px;
+      min-height: 38px;
       margin: 0;
       color: var(--text-main);
-      font-size: 16px;
-      line-height: 1.2;
+      font-size: 15px;
+      line-height: 1.18;
       font-weight: 900;
-      white-space: normal;
-      overflow-wrap: anywhere;
+      text-align: center;
+      white-space: normal !important;
     }
 
     .result-score {
       display: flex;
       align-items: center;
-      gap: 8px;
+      justify-content: center;
+      gap: 7px;
+      min-width: 82px;
       color: var(--text-main);
-      font-size: 34px;
+      font-size: 30px;
       line-height: 1;
       font-weight: 950;
-      white-space: nowrap;
+      white-space: nowrap !important;
     }
 
     .result-score span {
@@ -208,14 +197,22 @@
     }
 
     .result-card-bottom {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
       margin-top: auto;
       color: var(--text-soft);
       font-size: 12px;
       line-height: 1.35;
+      text-align: center;
+      min-width: 0;
     }
 
-    .result-card-bottom span:last-child {
-      text-align: right;
+    .result-card-bottom span {
+      display: block;
+      min-width: 0;
+      text-align: center !important;
+      white-space: normal !important;
     }
 
     .results-empty {
@@ -257,18 +254,29 @@
       }
 
       .result-card {
-        min-height: 260px;
+        min-height: 240px;
         padding: 18px;
       }
 
+      .result-teams {
+        grid-template-columns: minmax(82px, 1fr) 76px minmax(82px, 1fr);
+        gap: 8px;
+      }
+
       .result-score {
-        font-size: 28px;
+        min-width: 76px;
+        font-size: 27px;
       }
 
       .result-team img,
       .result-logo-placeholder {
         width: 48px;
         height: 48px;
+      }
+
+      .result-team h3 {
+        max-width: 105px;
+        font-size: 14px;
       }
     }
   </style>
@@ -294,16 +302,8 @@
     </nav>
 
     <div class="topbar-actions">
-      <button
-        class="theme-switch"
-        id="theme-toggle"
-        type="button"
-        aria-label="Toggle theme">
-
-        <span class="theme-switch-track">
-          <span class="theme-switch-thumb"></span>
-        </span>
-
+      <button class="theme-switch" id="theme-toggle" type="button" aria-label="Toggle theme">
+        <span class="theme-switch-track"><span class="theme-switch-thumb"></span></span>
         <span class="theme-switch-label">Dark</span>
       </button>
     </div>
@@ -314,81 +314,47 @@
 <main class="results-page-wrap">
 
   <section class="ai-focus-banner ai-focus-banner-compact results-hero">
-
     <div class="ai-focus-content">
-
       <div class="ai-focus-text">
-
-        <span class="hero-ai-badge">
-          World Cup Results
-        </span>
-
-        <h1>
-          Latest World Cup 2026 results.
-        </h1>
-
-        <p>
-          Follow final scores, recent outcomes,
-          and team results from the FIFA World Cup 2026.
-        </p>
-
+        <span class="hero-ai-badge">World Cup Results</span>
+        <h1>Latest World Cup 2026 results.</h1>
+        <p>Follow final scores, recent outcomes, and team results from the FIFA World Cup 2026.</p>
       </div>
-
     </div>
-
   </section>
 
   <section class="results-page-section">
-
     <div class="results-head">
-
-      <h2>
-        World Cup Match Results
-      </h2>
-
-      <span id="results-status">
-        Loading World Cup results...
-      </span>
-
+      <h2>World Cup Match Results</h2>
+      <span id="results-status">Loading World Cup results...</span>
     </div>
 
-    <div
-      id="results-grid"
-      class="results-grid">
-    </div>
-
+    <div id="results-grid" class="results-grid"></div>
   </section>
 
 </main>
 
 <script src="/api-config.js"></script>
-<script src="/js/results.js?v=3"></script>
+<script src="/js/results.js?v=6"></script>
 
 <script>
 (function () {
-
   const body = document.body;
   const toggle = document.getElementById("theme-toggle");
   const label = toggle ? toggle.querySelector(".theme-switch-label") : null;
 
   function applyTheme(theme) {
     body.classList.remove("theme-dark", "theme-glass", "theme-light");
-
     if (theme === "glass") {
       body.classList.add("theme-glass");
     } else {
       body.classList.add("theme-dark");
     }
-
     localStorage.setItem("bf-theme", theme);
-
-    if (label) {
-      label.textContent = theme === "glass" ? "Glass" : "Dark";
-    }
+    if (label) label.textContent = theme === "glass" ? "Glass" : "Dark";
   }
 
   const savedTheme = localStorage.getItem("bf-theme") || "dark";
-
   applyTheme(savedTheme);
 
   if (toggle) {
@@ -397,7 +363,6 @@
       applyTheme(nextTheme);
     });
   }
-
 })();
 </script>
 
