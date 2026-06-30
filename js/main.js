@@ -325,31 +325,51 @@ function initAiMatchSearch(matches = []) {
         </div>
       `;
     }
-    
   });
-  document.addEventListener('DOMContentLoaded', () => {
-  const counters = document.querySelectorAll('.metric-value[data-target]');
 
-  counters.forEach(counter => {
-    const target = Number(counter.dataset.target);
-    const duration = 1200;
-    const startTime = performance.now();
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".metric-value[data-target]");
 
-    function update(now) {
-      const progress = Math.min((now - startTime) / duration, 1);
-      const value = Math.floor(progress * target);
-      counter.textContent = value;
+    counters.forEach(counter => {
+      const target = Number(counter.dataset.target);
+      const duration = 1200;
+      const startTime = performance.now();
 
-      if (progress < 1) {
-        requestAnimationFrame(update);
-      } else {
-        counter.textContent = target;
+      function update(now) {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const value = Math.floor(progress * target);
+        counter.textContent = value;
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          counter.textContent = target;
+        }
       }
-    }
 
-    requestAnimationFrame(update);
+      requestAnimationFrame(update);
+    });
   });
-});
 }
 
+function initAdhitPopup() {
+  const popupZoneId = 161907;
+
+  window._aso = window._aso || {};
+  window._aso.queue = window._aso.queue || [];
+
+  window._aso.queue.push(function () {
+    if (!window._ASO || typeof window._ASO.loadPuHelper !== "function") {
+      return;
+    }
+
+    window._ASO.PuOptions = {
+      idzone: popupZoneId
+    };
+
+    window._ASO.loadPuHelper();
+  });
+}
+
+initAdhitPopup();
 loadHomePage();
