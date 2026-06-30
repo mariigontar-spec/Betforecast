@@ -13,11 +13,7 @@
   const grid = document.getElementById("results-grid");
   const statusEl = document.getElementById("results-status");
 
-  const finishedStatuses = new Set([
-    "FT",
-    "AET",
-    "PEN"
-  ]);
+  const finishedStatuses = new Set(["FT", "AET", "PEN"]);
 
   if (!grid) return;
 
@@ -54,17 +50,26 @@
     return headers;
   }
 
-  function formatDate(value) {
+  function formatKickoff(value) {
     if (!value) return "";
 
     try {
-      return new Intl.DateTimeFormat("en", {
+      const parts = new Intl.DateTimeFormat("en-GB", {
+        day: "2-digit",
         month: "short",
-        day: "numeric",
         hour: "2-digit",
         minute: "2-digit",
+        hour12: false,
         timeZone: CONFIG.timezone || undefined
-      }).format(new Date(value));
+      }).formatToParts(new Date(value));
+
+      const get = (type) => parts.find((part) => part.type === type)?.value || "";
+      const day = get("day");
+      const month = get("month");
+      const hour = get("hour");
+      const minute = get("minute");
+
+      return `${day} ${month} • ${hour}:${minute}`.trim();
     } catch {
       return "";
     }
@@ -121,9 +126,21 @@
     const league = item.league || {};
     const teams = item.teams || {};
     const goals = item.goals || {};
+    const score = item.score || {};
 
     const home = teams.home || {};
     const away = teams.away || {};
+    const penalties = score.penalty || {};
+
+    const homePenalty = penalties.home;
+    const awayPenalty = penalties.away;
+    const penaltyText =
+      homePenalty !== null &&
+      homePenalty !== undefined &&
+      awayPenalty !== null &&
+      awayPenalty !== undefined
+        ? `${homePenalty}-${awayPenalty} on pens`
+        : "";
 
     return {
       id: fixture.id || "",
@@ -138,8 +155,32 @@
       awayLogo: away.logo || "",
 
       homeGoals: goals.home,
-      awayGoals: goals.away
+      awayGoals: goals.away,
+      penaltyText
     };
+  }
+
+  function logoMarkup(src, name) {
+    if (!src) {
+      return `<span class="result-logo-placeholder" aria-hidden="true"></span>`;
+    }
+
+    return `<img src="${escapeHtml(src)}" alt="${escapeHtml(name)} logo" loading="lazy">`;
+  }
+
+  function renderTeamRow(name, logo, goals) {
+    return `
+      <div class="result-row">
+        <div class="result-side">
+          ${logoMarkup(logo, name)}
+          <span>${escapeHtml(name)}</span>
+        </div>
+
+        <strong class="result-goals">
+          ${escapeHtml(goals ?? "-")}
+        </strong>
+      </div>
+    `;
   }
 
   function renderResults(fixtures) {
@@ -156,11 +197,9 @@
     grid.innerHTML = fixtures
       .map((item) => {
         const fixture = normalizeFixture(item);
-
-        const matchHref =
-          fixture.id
-            ? `match.html?id=${encodeURIComponent(fixture.id)}`
-            : "match.html";
+        const matchHref = fixture.id
+          ? `match.html?id=${encodeURIComponent(fixture.id)}`
+          : "match.html";
 
         return `
           <a
@@ -178,47 +217,24 @@
               </strong>
             </div>
 
-            <div class="result-teams">
-
-              <div class="result-team">
-                ${
-                  fixture.homeLogo
-                    ? `<img src="${escapeHtml(fixture.homeLogo)}" alt="${escapeHtml(fixture.homeName)} logo" loading="lazy">`
-                    : `<span class="result-logo-placeholder"></span>`
-                }
-
-                <h3>
-                  ${escapeHtml(fixture.homeName)}
-                </h3>
-              </div>
-
-              <div class="result-score">
-                <strong>${escapeHtml(fixture.homeGoals ?? "-")}</strong>
-                <span>-</span>
-                <strong>${escapeHtml(fixture.awayGoals ?? "-")}</strong>
-              </div>
-
-              <div class="result-team">
-                ${
-                  fixture.awayLogo
-                    ? `<img src="${escapeHtml(fixture.awayLogo)}" alt="${escapeHtml(fixture.awayName)} logo" loading="lazy">`
-                    : `<span class="result-logo-placeholder"></span>`
-                }
-
-                <h3>
-                  ${escapeHtml(fixture.awayName)}
-                </h3>
-              </div>
-
+            <div class="result-scoreboard">
+              ${renderTeamRow(fixture.homeName, fixture.homeLogo, fixture.homeGoals)}
+              ${renderTeamRow(fixture.awayName, fixture.awayLogo, fixture.awayGoals)}
             </div>
 
+            ${
+              fixture.penaltyText
+                ? `<div class="result-penalty">${escapeHtml(fixture.penaltyText)}</div>`
+                : ""
+            }
+
             <div class="result-card-bottom">
-              <span>
+              <span class="result-venue">
                 ${escapeHtml(fixture.venue)}
               </span>
 
-              <span>
-                ${escapeHtml(formatDate(fixture.date))}
+              <span class="result-date">
+                ${escapeHtml(formatKickoff(fixture.date))}
               </span>
             </div>
 
@@ -253,7 +269,6 @@
         .slice(0, CONFIG.maxResults || 12);
 
       renderResults(finished);
-
     } catch (error) {
       console.warn("[World Cup Results API]", error);
 
