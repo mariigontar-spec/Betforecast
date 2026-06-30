@@ -189,11 +189,11 @@
     }
 
     body.site-skin-1win .results-hero {
-      border-radius: 24px;
+      border-radius: 24px !important;
       background: var(--bf-panel-background) !important;
       border: var(--bf-panel-border) !important;
       box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28) !important;
-      overflow: hidden;
+      overflow: hidden !important;
     }
 
     body.site-skin-1win .results-hero .ai-focus-content {
@@ -203,13 +203,13 @@
     body.site-skin-1win .results-hero .ai-focus-text {
       width: min(720px, 100%) !important;
       padding: 28px 30px !important;
-      border-radius: 22px;
-      background: rgba(5, 15, 27, 0.68);
+      border-radius: 22px !important;
+      background: rgba(5, 15, 27, 0.68) !important;
     }
 
-    body.site-skin-1win .results-page-section {
-      padding: 22px !important;
-      border-radius: 24px !important;
+    .results-page-section {
+      padding: 22px;
+      border-radius: 24px;
       background: var(--bf-panel-background) !important;
       border: var(--bf-panel-border) !important;
       box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
@@ -239,7 +239,7 @@
       text-align: right;
     }
 
-    body.site-skin-1win .results-grid {
+    .results-grid {
       display: grid !important;
       grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
       gap: 16px !important;
@@ -434,42 +434,47 @@
       line-height: 1.55;
     }
 
-    body.site-skin-1win .content-banner {
+    .content-banner {
       position: relative !important;
       z-index: 20 !important;
       display: flex !important;
       justify-content: center !important;
       align-items: center !important;
+      width: min(1040px, 100%) !important;
+      max-width: 1040px !important;
       min-height: 90px !important;
-      margin-top: 24px !important;
+      margin: 24px auto 0 !important;
+      overflow: visible !important;
     }
 
-    body.site-skin-1win .content-banner-desktop {
+    .content-banner-desktop {
       display: block !important;
       width: 728px !important;
       height: 90px !important;
       flex: 0 0 728px !important;
-      overflow: hidden !important;
+      max-width: 100% !important;
     }
 
-    body.site-skin-1win .content-banner-desktop .ins-zone {
+    .content-banner-desktop .ins-zone {
       display: block !important;
       width: 728px !important;
       height: 90px !important;
+      max-width: 100% !important;
     }
 
-    body.site-skin-1win .content-banner-mobile {
+    .content-banner-mobile {
       display: none !important;
       width: 300px !important;
       height: 250px !important;
       flex: 0 0 300px !important;
-      overflow: hidden !important;
+      max-width: 100% !important;
     }
 
-    body.site-skin-1win .content-banner-mobile .ins-zone {
+    .content-banner-mobile .ins-zone {
       display: block !important;
       width: 300px !important;
       height: 250px !important;
+      max-width: 100% !important;
     }
 
     @media (max-width: 1100px) {
@@ -493,9 +498,8 @@
     }
 
     @media (max-width: 900px) {
-      body.site-skin-1win .results-grid {
+      .results-grid {
         grid-template-columns: 1fr !important;
-        width: 100% !important;
       }
     }
 
@@ -626,24 +630,40 @@
         overflow: hidden !important;
       }
 
-      body.site-skin-1win .results-hero,
-      body.site-skin-1win .results-page-section,
-      body.site-skin-1win .content-banner {
+      .results-hero,
+      .results-page-section,
+      .content-banner {
         width: 100% !important;
         max-width: 100% !important;
       }
 
-      body.site-skin-1win .results-hero .ai-focus-content {
+      .results-hero .ai-focus-content {
         padding: 20px 14px !important;
       }
 
-      body.site-skin-1win .results-hero .ai-focus-text {
+      .results-hero .ai-focus-text {
         width: 100% !important;
         padding: 18px 14px !important;
       }
 
-      body.site-skin-1win .results-page-section {
+      .results-page-section {
         padding: 16px 12px !important;
+      }
+
+      .content-banner {
+        display: flex !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: 250px !important;
+        margin: 18px auto 0 !important;
+      }
+
+      .content-banner-desktop {
+        display: none !important;
+      }
+
+      .content-banner-mobile {
+        display: block !important;
       }
 
       .results-head {
@@ -680,18 +700,6 @@
         width: 38px !important;
         min-width: 38px !important;
         font-size: 25px !important;
-      }
-
-      body.site-skin-1win .content-banner {
-        min-height: 250px !important;
-      }
-
-      body.site-skin-1win .content-banner-desktop {
-        display: none !important;
-      }
-
-      body.site-skin-1win .content-banner-mobile {
-        display: block !important;
       }
     }
   </style>
