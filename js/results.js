@@ -7,6 +7,7 @@
     season: 2026,
     timezone: "Europe/Tallinn",
     maxResults: 12,
+    cacheUrl: "/data/wc-2026.json",
     ...window.BF_API
   };
 
@@ -75,6 +76,23 @@
     }
   }
 
+  function formatCacheDate(value) {
+    if (!value) return "Cached results";
+
+    try {
+      return `Cached results • ${new Intl.DateTimeFormat("en-GB", {
+        day: "2-digit",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+        timeZone: CONFIG.timezone || undefined
+      }).format(new Date(value))}`;
+    } catch {
+      return "Cached results";
+    }
+  }
+
   async function apiGet(path, params = {}) {
     const baseUrl = getApiBase();
 
@@ -111,6 +129,25 @@
     }
 
     return Array.isArray(data?.response) ? data.response : [];
+  }
+
+  async function cacheGet() {
+    const response = await fetch(`${CONFIG.cacheUrl}?v=1`, {
+      method: "GET",
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(`Cache request failed: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    if (!data || !Array.isArray(data.fixtures)) {
+      throw new Error("World Cup cache is empty or invalid");
+    }
+
+    return data;
   }
 
   function renderEmpty(message) {
@@ -183,12 +220,26 @@
     `;
   }
 
-  function renderResults(fixtures) {
+  function selectFinishedFixtures(fixtures) {
+    return fixtures
+      .filter((item) => {
+        const status = item.fixture?.status?.short;
+        return finishedStatuses.has(status);
+      })
+      .sort((a, b) => {
+        const aTime = a.fixture?.timestamp || 0;
+        const bTime = b.fixture?.timestamp || 0;
+        return bTime - aTime;
+      })
+      .slice(0, CONFIG.maxResults || 12);
+  }
+
+  function renderResults(fixtures, sourceLabel = "") {
     if (!fixtures.length) {
-      setStatus("No finished World Cup matches yet");
+      setStatus(sourceLabel || "No finished World Cup matches yet");
 
       renderEmpty(
-        "World Cup finished results will appear here as soon as completed matches are available in the API."
+        "World Cup finished results will appear here as soon as completed matches are available."
       );
 
       return;
@@ -243,39 +294,42 @@
       })
       .join("");
 
-    setStatus(`${fixtures.length} latest finished matches`);
+    setStatus(sourceLabel || `${fixtures.length} latest finished matches`);
+  }
+
+  async function loadFromApi() {
+    const fixtures = await apiGet("/fixtures", {
+      league: CONFIG.league,
+      season: CONFIG.season,
+      timezone: CONFIG.timezone
+    });
+
+    renderResults(selectFinishedFixtures(fixtures), "Live API fallback");
   }
 
   async function loadResults() {
+    setStatus("Loading cached World Cup results...");
+
     try {
-      setStatus("Loading World Cup results...");
+      const cached = await cacheGet();
+      const finished = selectFinishedFixtures(cached.fixtures);
+      renderResults(finished, formatCacheDate(cached.updatedAt));
+      return;
+    } catch (cacheError) {
+      console.warn("[World Cup Results cache]", cacheError);
+    }
 
-      const fixtures = await apiGet("/fixtures", {
-        league: CONFIG.league,
-        season: CONFIG.season,
-        timezone: CONFIG.timezone
-      });
+    setStatus("Loading API fallback...");
 
-      const finished = fixtures
-        .filter((item) => {
-          const status = item.fixture?.status?.short;
-          return finishedStatuses.has(status);
-        })
-        .sort((a, b) => {
-          const aTime = a.fixture?.timestamp || 0;
-          const bTime = b.fixture?.timestamp || 0;
-          return bTime - aTime;
-        })
-        .slice(0, CONFIG.maxResults || 12);
-
-      renderResults(finished);
+    try {
+      await loadFromApi();
     } catch (error) {
       console.warn("[World Cup Results API]", error);
 
       setStatus("Results failed to load");
 
       renderEmpty(
-        "World Cup results could not be loaded. Check /api-config.js, API key, API limits and browser console."
+        "World Cup results could not be loaded. Run the Update World Cup cache workflow or check API settings."
       );
     }
   }
