@@ -1,10 +1,80 @@
 {
-  "updatedAt": "2026-07-01T15:11:43.565Z",
+  "updatedAt": "2026-07-01T17:23:36.803Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
   "timezone": "Europe/Tallinn",
   "fixtures": [
+    {
+      "fixture": {
+        "id": 1567307,
+        "referee": "Adham Mohammad, Jordan",
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-01T19:00:00+03:00",
+        "timestamp": 1782921600,
+        "periods": {
+          "first": 1782921600,
+          "second": 1782925200
+        },
+        "venue": {
+          "id": 1898,
+          "name": "Mercedes-Benz Stadium",
+          "city": "Atlanta"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 61,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 32",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 10,
+          "name": "England",
+          "logo": "https://media.api-sports.io/football/teams/10.png",
+          "winner": false
+        },
+        "away": {
+          "id": 1508,
+          "name": "Congo DR",
+          "logo": "https://media.api-sports.io/football/teams/1508.png",
+          "winner": true
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 1
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
     {
       "fixture": {
         "id": 1489369,
@@ -5524,76 +5594,6 @@
         "fulltime": {
           "home": 2,
           "away": 0
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1567307,
-        "referee": "Adham Mohammad, Jordan",
-        "timezone": "Europe/Tallinn",
-        "date": "2026-07-01T19:00:00+03:00",
-        "timestamp": 1782921600,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 1898,
-          "name": "Mercedes-Benz Stadium",
-          "city": "Atlanta"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 1,
-        "name": "World Cup",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/1.png",
-        "flag": null,
-        "season": 2026,
-        "round": "Round of 32",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 10,
-          "name": "England",
-          "logo": "https://media.api-sports.io/football/teams/10.png",
-          "winner": null
-        },
-        "away": {
-          "id": 1508,
-          "name": "Congo DR",
-          "logo": "https://media.api-sports.io/football/teams/1508.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
         },
         "extratime": {
           "home": null,
