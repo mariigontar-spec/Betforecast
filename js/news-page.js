@@ -15,7 +15,7 @@ async function loadCachedNews() {
   newsContainer.innerHTML = `<div class="news-loading">Loading cached football news...</div>`;
 
   try {
-    const response = await fetch("/data/news.json?v=1", {
+    const response = await fetch("/data/news.json?v=2", {
       cache: "no-store"
     });
 
@@ -31,7 +31,7 @@ async function loadCachedNews() {
 
     const articles = newsItems
       .filter((item) => item && item.title)
-      .slice(0, 12);
+      .slice(0, 30);
 
     const featured = articles[0];
     const rest = articles.slice(1);
