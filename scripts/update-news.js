@@ -14,7 +14,7 @@ const FEEDS = [
   }
 ];
 
-const MAX_NEWS = 12;
+const MAX_NEWS = 30;
 const OUTPUT_FILE = path.join(process.cwd(), "data", "news.json");
 
 async function main() {
