@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T20:14:13.094Z",
+  "updatedAt": "2026-07-01T22:39:48.341Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
@@ -14,7 +14,7 @@
         "timestamp": 1782936000,
         "periods": {
           "first": 1782936000,
-          "second": null
+          "second": 1782939600
         },
         "venue": {
           "id": 11534,
@@ -22,9 +22,9 @@
           "city": "Seattle"
         },
         "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 14,
+          "long": "Extra Time",
+          "short": "ET",
+          "elapsed": 122,
           "extra": null
         }
       },
@@ -53,21 +53,21 @@
         }
       },
       "goals": {
-        "home": 0,
-        "away": 0
+        "home": 2,
+        "away": 2
       },
       "score": {
         "halftime": {
           "home": 0,
-          "away": 0
+          "away": 1
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         },
         "extratime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "penalty": {
           "home": null,
