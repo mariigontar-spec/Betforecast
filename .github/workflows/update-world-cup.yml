@@ -1,0 +1,38 @@
+name: Update World Cup cache
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 */3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-world-cup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update World Cup cache
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          API_FOOTBALL_BASE_URL: https://v3.football.api-sports.io
+          API_FOOTBALL_HOST: v3.football.api-sports.io
+          API_FOOTBALL_LEAGUE: "1"
+          API_FOOTBALL_SEASON: "2026"
+          API_FOOTBALL_TIMEZONE: Europe/Tallinn
+        run: node scripts/update-world-cup.js
+
+      - name: Commit updated World Cup cache
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update World Cup cached data"
+          file_pattern: data/wc-2026.json
