@@ -1,7 +1,6 @@
 /* =========================================================
-   Betforecast.ai — World Cup 2026 API restore
-   Replaces old football-data proxy calls.
-   Requires /api-config.js with window.BF_API.
+   Betforecast.ai — World Cup 2026 cached data loader
+   Uses /data/wc-2026.json first, then falls back to API.
    ========================================================= */
 
 (() => {
@@ -12,6 +11,7 @@
     season: 2026,
     timezone: "Europe/Tallinn",
     maxFixtures: 8,
+    cacheUrl: "/data/wc-2026.json",
     ...window.BF_API
   };
 
@@ -63,6 +63,22 @@
       }).format(new Date(value));
     } catch {
       return "Date TBA";
+    }
+  }
+
+  function formatCacheDate(value) {
+    if (!value) return "Cached data";
+
+    try {
+      return `Cached • ${new Intl.DateTimeFormat("en", {
+        month: "short",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+        timeZone: CONFIG.timezone || undefined
+      }).format(new Date(value))}`;
+    } catch {
+      return "Cached data";
     }
   }
 
@@ -139,6 +155,25 @@
     }
 
     return Array.isArray(data?.response) ? data.response : [];
+  }
+
+  async function cacheGet() {
+    const response = await fetch(`${CONFIG.cacheUrl}?v=1`, {
+      method: "GET",
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(`Cache request failed: ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    if (!data || !Array.isArray(data.fixtures)) {
+      throw new Error("World Cup cache is empty or invalid");
+    }
+
+    return data;
   }
 
   function renderEmpty(container, message) {
@@ -375,33 +410,61 @@
     }, { once: false });
   }
 
+  function applyWorldCupData(fixtures, standingsPayload, sourceLabel) {
+    state.fixtures = Array.isArray(fixtures) ? fixtures : [];
+    state.standings = normalizeStandingsPayload(Array.isArray(standingsPayload) ? standingsPayload : []);
+
+    renderFixtures(state.fixtures);
+    renderPredictions(state.fixtures);
+    renderStats(state.fixtures);
+    renderStandings(state.standings);
+
+    if (sourceLabel) {
+      setText(els.fixturesStatus, sourceLabel);
+      setText(els.standingsStatus, sourceLabel);
+    }
+  }
+
+  async function loadFromApi() {
+    const [fixtures, standingsPayload] = await Promise.all([
+      apiGet("/fixtures", {
+        league: CONFIG.league,
+        season: CONFIG.season,
+        timezone: CONFIG.timezone
+      }),
+      apiGet("/standings", {
+        league: CONFIG.league,
+        season: CONFIG.season
+      })
+    ]);
+
+    applyWorldCupData(fixtures, standingsPayload, "Live API fallback");
+  }
+
   async function loadWorldCupData() {
     updateCountdown();
     setInterval(updateCountdown, 30000);
 
-    setText(els.fixturesStatus, "Loading real fixtures...");
-    setText(els.standingsStatus, "Loading real standings...");
+    setText(els.fixturesStatus, "Loading cached fixtures...");
+    setText(els.standingsStatus, "Loading cached standings...");
 
     try {
-      const [fixtures, standingsPayload] = await Promise.all([
-        apiGet("/fixtures", {
-          league: CONFIG.league,
-          season: CONFIG.season,
-          timezone: CONFIG.timezone
-        }),
-        apiGet("/standings", {
-          league: CONFIG.league,
-          season: CONFIG.season
-        })
-      ]);
+      const cached = await cacheGet();
+      applyWorldCupData(
+        cached.fixtures,
+        cached.standingsPayload,
+        formatCacheDate(cached.updatedAt)
+      );
+      return;
+    } catch (cacheError) {
+      console.warn("[World Cup 2026 cache]", cacheError);
+    }
 
-      state.fixtures = fixtures;
-      state.standings = normalizeStandingsPayload(standingsPayload);
+    setText(els.fixturesStatus, "Loading API fallback...");
+    setText(els.standingsStatus, "Loading API fallback...");
 
-      renderFixtures(state.fixtures);
-      renderPredictions(state.fixtures);
-      renderStats(state.fixtures);
-      renderStandings(state.standings);
+    try {
+      await loadFromApi();
     } catch (error) {
       console.warn("[World Cup 2026 API]", error);
 
@@ -410,17 +473,17 @@
 
       renderError(
         els.fixtures,
-        "API is not connected yet. Check /api-config.js: baseUrl, key, league and season."
+        "World Cup cache is not ready yet. Run the Update World Cup cache workflow."
       );
 
       renderEmpty(
         els.predictions,
-        "Predictions will appear after fixtures load from API."
+        "Predictions will appear after fixtures load from cache."
       );
 
       renderError(
         els.standings,
-        "Standings are not connected yet. Check /api-config.js and API endpoint."
+        "Standings cache is not ready yet. Run the Update World Cup cache workflow."
       );
 
       renderStats([]);
