@@ -15,7 +15,7 @@ async function loadCachedNews() {
   newsContainer.innerHTML = `<div class="news-loading">Loading cached football news...</div>`;
 
   try {
-    const response = await fetch("/data/news.json?v=2", {
+    const response = await fetch(`/data/news.json?v=${Date.now()}`, {
       cache: "no-store"
     });
 
@@ -29,7 +29,7 @@ async function loadCachedNews() {
       throw new Error("news.json is empty or invalid");
     }
 
-    const articles = newsItems
+    const articles = dedupeNews(newsItems)
       .filter((item) => item && item.title)
       .slice(0, 30);
 
@@ -60,9 +60,10 @@ function renderFeaturedStory(article) {
   const date = article.time || article.date || "Latest update";
   const description = truncateText(article.excerpt || firstContentParagraph(article), 220);
   const href = getArticleHref(article);
+  const attrs = getLinkAttrs(href);
 
   return `
-    <a class="featured-story-card" href="${escapeHtml(href)}">
+    <a class="featured-story-card" href="${escapeHtml(href)}"${attrs}>
       <div class="featured-story-card__image">
         <img
           src="${escapeHtml(image)}"
@@ -86,9 +87,10 @@ function renderNewsCard(article, index = 0) {
   const date = article.time || article.date || "Latest update";
   const description = truncateText(article.excerpt || firstContentParagraph(article), 140);
   const href = getArticleHref(article);
+  const attrs = getLinkAttrs(href);
 
   return `
-    <a class="news-card-v2" href="${escapeHtml(href)}">
+    <a class="news-card-v2" href="${escapeHtml(href)}"${attrs}>
       <div class="news-card-v2__image">
         <img
           src="${escapeHtml(image)}"
@@ -106,12 +108,44 @@ function renderNewsCard(article, index = 0) {
   `;
 }
 
+function dedupeNews(items = []) {
+  const seen = new Set();
+
+  return items.filter((item) => {
+    const titleKey = String(item.title || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9а-яё]+/gi, "-");
+
+    const urlKey = String(item.sourceUrl || item.url || "")
+      .toLowerCase()
+      .replace(/[?#].*$/, "");
+
+    const key = urlKey || titleKey;
+    if (!key || seen.has(key)) return false;
+
+    seen.add(key);
+    return true;
+  });
+}
+
 function getArticleHref(article) {
+  if (article.sourceUrl) {
+    return article.sourceUrl;
+  }
+
   if (article.url) {
     return article.url;
   }
 
   return `article.html?id=${encodeURIComponent(article.id || "")}`;
+}
+
+function getLinkAttrs(href = "") {
+  if (/^https?:\/\//i.test(href)) {
+    return ` target="_blank" rel="noopener noreferrer"`;
+  }
+
+  return "";
 }
 
 function firstContentParagraph(article) {
