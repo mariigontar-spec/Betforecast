@@ -1,62 +1,218 @@
 [
   {
-    "id": 1,
-    "category": "Premier League",
-    "title": "Arsenal injury update ahead of Chelsea clash",
-    "excerpt": "Availability, structure, and midfield control may shape both the pre-match narrative and the model's forecast edge.",
-    "time": "8 min ago",
-    "readTime": "4 min read",
-    "image": "assets/news/arsenal.jpg",
+    "id": "1",
+    "category": "Football",
+    "title": "Scouting DR Congo - where England can win the game",
+    "excerpt": "England play DR Congo in the World Cup round of 32 on Wednesday. BBC Sport looks at what dangers the African side possess.",
+    "time": "11 min ago",
+    "date": "2026-07-01T10:36:06.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5448/live/7909d970-748f-11f1-ac9a-3d30b5bdbb12.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cn4dgz454dgo?at_medium=RSS&at_campaign=rss",
     "content": [
-      "Arsenal enters a critical phase of the title race with late selection calls likely to affect shape, pressing rhythm, and midfield balance.",
-      "The latest availability picture matters because Arsenal’s control model depends heavily on structure between the lines and quick recovery after transition losses.",
-      "Against Chelsea, the biggest analytical question is not simply who starts, but how those absences or returns shift the game’s tempo and territorial control.",
-      "From a prediction standpoint, even one missing midfielder can tilt the expected win probability by changing how often Arsenal wins second balls and sustains pressure."
+      "England play DR Congo in the World Cup round of 32 on Wednesday. BBC Sport looks at what dangers the African side possess.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
     ]
   },
   {
-    "id": 2,
-    "category": "Transfers",
-    "title": "Man United step up pursuit of top striker",
-    "excerpt": "United’s recruitment push intensifies as the club looks to add more attacking weight before the next window closes.",
+    "id": "2",
+    "category": "Football",
+    "title": "Three killed in Mexico City World Cup celebrations",
+    "excerpt": "More than one million people took to the streets of Mexico City on Tuesday to mark the country's win over Ecuador.",
+    "time": "34 min ago",
+    "date": "2026-07-01T10:12:48.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cf79/live/5f3d4680-752f-11f1-80a1-17435238a3d4.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/news/articles/cx2xjwj8p39o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "More than one million people took to the streets of Mexico City on Tuesday to mark the country's win over Ecuador.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "3",
+    "category": "Football",
+    "title": "PSG set Barcola price - Wednesday's gossip",
+    "excerpt": "Paris St-Germain set their price for Bradley Barcola, Chelsea want Bournemouth striker Eli Junior Kroupi, Ayyoub Bouaddi is attracting interest, plus more.",
     "time": "1 hr ago",
-    "readTime": "5 min read",
-    "image": "assets/news/liverpool.jpg",
+    "date": "2026-07-01T09:28:24.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0b76/live/f85e4820-74bf-11f1-8e1d-bbbb1017d210.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cze90p2x09wo?at_medium=RSS&at_campaign=rss",
     "content": [
-      "Manchester United are once again being linked with a high-profile forward as the club looks to improve finishing consistency and box presence.",
-      "The move is also tied to tactical flexibility, since the current attacking unit has struggled at times to convert territorial dominance into cleaner shot quality.",
-      "Recruitment at this stage is not just about star power, but about profile fit, pressing reliability, and the ability to stretch defensive blocks.",
-      "For analysts and bettors, transfer stories like this often shape longer-term expectations around team strength, rotation quality, and squad resilience."
+      "Paris St-Germain set their price for Bradley Barcola, Chelsea want Bournemouth striker Eli Junior Kroupi, Ayyoub Bouaddi is attracting interest, plus more.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
     ]
   },
   {
-    "id": 3,
-    "category": "La Liga",
-    "title": "Barcelona midfield reshuffle before El Clasico",
-    "excerpt": "Tactical adjustments in the middle third could shape the rhythm, press resistance, and transition balance of the match.",
+    "id": "4",
+    "category": "Football",
+    "title": "Beccacece reign as Ecuador manager over after exit",
+    "excerpt": "Ecuador manager Sebastian Beccacece says he is leaving his role following his side's World Cup exit against Mexico.",
+    "time": "1 hr ago",
+    "date": "2026-07-01T09:25:41.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/af8b/live/26b3ee20-7522-11f1-adcf-e1eef1a1ef9c.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c932jj0d25no?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Ecuador manager Sebastian Beccacece says he is leaving his role following his side's World Cup exit against Mexico.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "5",
+    "category": "Football",
+    "title": "Midfielder Neil joins Rangers from Sunderland",
+    "excerpt": "Dan Neil expects \"a very similar feeling\" of trying to meet expectations after joining Rangers from Sunderland on a three-year deal.",
+    "time": "1 hr ago",
+    "date": "2026-07-01T09:23:16.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f4d5/live/edf91190-752c-11f1-8546-8f19e4fe30f4.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c2lyrw20n80o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Dan Neil expects \"a very similar feeling\" of trying to meet expectations after joining Rangers from Sunderland on a three-year deal.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "6",
+    "category": "Football",
+    "title": "Neil embraces expectation after joining Rangers",
+    "excerpt": "Dan Neil expects \"a very similar feeling\" of trying to meet expectations after joining Rangers from Sunderland on a three-year deal.",
+    "time": "1 hr ago",
+    "date": "2026-07-01T09:23:16.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f4d5/live/edf91190-752c-11f1-8546-8f19e4fe30f4.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c2lyrw20n80o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Dan Neil expects \"a very similar feeling\" of trying to meet expectations after joining Rangers from Sunderland on a three-year deal.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "7",
+    "category": "Football",
+    "title": "Time for Tuchel to show hand as England enter World Cup danger zone",
+    "excerpt": "England coach Thomas Tuchel must now play his strongest hand as he enters the danger zone in a World Cup of shocks, says chief football writer Phil McNulty.",
     "time": "2 hrs ago",
-    "readTime": "4 min read",
-    "image": "assets/news/barcelona.jpg",
+    "date": "2026-07-01T09:10:35.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/25e5/live/2df5cf30-74b6-11f1-9c5b-41132a229f02.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c17y8r90082o?at_medium=RSS&at_campaign=rss",
     "content": [
-      "Barcelona are expected to make a midfield adjustment ahead of El Clasico, a change that could influence build-up quality and defensive cover.",
-      "In matches of this level, midfield spacing often decides whether a team can escape pressure cleanly or gets dragged into rushed sequences.",
-      "The reshuffle may also affect passing lanes into the front line, especially if Barcelona prioritise control over vertical speed.",
-      "For prediction models, these kinds of tactical tweaks often change possession share, tempo control, and expected chance quality more than fans initially assume."
+      "England coach Thomas Tuchel must now play his strongest hand as he enters the danger zone in a World Cup of shocks, says chief football writer Phil McNulty.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
     ]
   },
   {
-    "id": 4,
-    "category": "Title Race",
-    "title": "Premier League pressure rises at the top",
-    "excerpt": "Every dropped point now hits harder as the title race narrows into small margins, momentum swings, and schedule stress.",
-    "time": "3 hrs ago",
-    "readTime": "6 min read",
-    "image": "assets/news/title-race.jpg",
+    "id": "8",
+    "category": "Football",
+    "title": "Villa sign Denmark striker Vangsgaard",
+    "excerpt": "Amalie Vangsgaard says she is \"very excited for this new adventure\" after joining Aston Villa from Juventus.",
+    "time": "2 hrs ago",
+    "date": "2026-07-01T09:05:27.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8595/live/17cd1af0-752a-11f1-b8b8-e187759eae96.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c862yegveq2o?at_medium=RSS&at_campaign=rss",
     "content": [
-      "The Premier League title race has entered the stage where every draw feels like a loss and every narrow win carries strategic weight.",
-      "As the schedule tightens, fixture density and player freshness become just as important as tactical quality on the pitch.",
-      "Momentum also becomes more fragile, since one unexpected result can reshape both the psychological picture and the probability ladder.",
-      "From an AI forecasting angle, title races are where small changes in squad health, schedule load, and match state management matter most."
+      "Amalie Vangsgaard says she is \"very excited for this new adventure\" after joining Aston Villa from Juventus.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "9",
+    "category": "Football",
+    "title": "All done deals in June 2026",
+    "excerpt": "Check out the significant signings and departures in the Premier League, Scottish Premiership, EFL and Women's Super League.",
+    "time": "2 hrs ago",
+    "date": "2026-07-01T08:44:49.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aec0/live/fd14b290-e25e-11ef-a819-277e390a7a08.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ce9p91r771go?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Check out the significant signings and departures in the Premier League, Scottish Premiership, EFL and Women's Super League.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "10",
+    "category": "Football",
+    "title": "Football Daily",
+    "excerpt": "Tim Ream on leading the USA, legacy and his famous blonde hair.",
+    "time": "3 hrs ago",
+    "date": "2026-07-01T07:27:00.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0ntl4dr.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0ns8312?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Tim Ream on leading the USA, legacy and his famous blonde hair.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "11",
+    "category": "Football",
+    "title": "Celtic may seek to sign Gineitis as Engels replacement - gossip",
+    "excerpt": "Celtic linked with Lithuania midfielder, Rangers player liked by Atalanta and Dundee defender set for seven-figure move.",
+    "time": "4 hrs ago",
+    "date": "2026-07-01T06:47:42.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/86f4/live/22ea7920-7519-11f1-8546-8f19e4fe30f4.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cly0ggny09ko?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Celtic linked with Lithuania midfielder, Rangers player liked by Atalanta and Dundee defender set for seven-figure move.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "12",
+    "category": "Football",
+    "title": "Fifa explains decision to rule out Germany goal",
+    "excerpt": "Fifa says coaches and players were told before the World Cup referees will punish the type of foul that saw Germany's extra-time goal against Paraguay ruled out.",
+    "time": "4 hrs ago",
+    "date": "2026-07-01T06:40:56.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/acd2/live/405c9100-7514-11f1-b1db-af71d47507d6.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c862yvvd2qdo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Fifa says coaches and players were told before the World Cup referees will punish the type of foul that saw Germany's extra-time goal against Paraguay ruled out.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
     ]
   }
 ]
