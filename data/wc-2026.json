@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01T11:07:25.374Z",
+  "updatedAt": "2026-07-01T15:11:43.565Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
@@ -5538,7 +5538,7 @@
     {
       "fixture": {
         "id": 1567307,
-        "referee": "A. Makhadmeh",
+        "referee": "Adham Mohammad, Jordan",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-01T19:00:00+03:00",
         "timestamp": 1782921600,
