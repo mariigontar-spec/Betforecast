@@ -187,11 +187,17 @@
       text-decoration: none !important;
     }
 
-    .bf-nav a.active,
+    .bf-nav a.active {
+      color: var(--bf-green) !important;
+      background: rgba(5, 66, 48, 0.72) !important;
+      border-color: rgba(94, 224, 164, 0.34) !important;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+    }
+
     .bf-nav a:hover {
       color: var(--bf-green) !important;
-      background: rgba(94, 224, 164, 0.14) !important;
-      border-color: rgba(94, 224, 164, 0.32) !important;
+      background: rgba(5, 66, 48, 0.48) !important;
+      border-color: rgba(94, 224, 164, 0.28) !important;
     }
 
     .side-banner {
@@ -219,157 +225,251 @@
       background: transparent !important;
     }
 
-    .wc-hero,
-    .wc-card {
-      position: relative;
-      z-index: 20;
-      overflow: hidden;
-      background: var(--bf-panel-bg) !important;
-      border: var(--bf-panel-border) !important;
-      border-radius: 26px !important;
-      box-shadow: var(--bf-card-shadow) !important;
-      backdrop-filter: blur(14px) !important;
-      -webkit-backdrop-filter: blur(14px) !important;
-    }
-
     .wc-hero {
-      display: grid !important;
-      grid-template-columns: minmax(0, 1fr) 320px !important;
-      gap: 28px !important;
-      align-items: center !important;
-      min-height: 260px;
-      padding: 34px 36px !important;
-      margin: 0 0 28px !important;
+      position: relative;
+      min-height: 430px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+      gap: 26px;
+      align-items: stretch;
+      padding: 42px;
+      border-radius: 30px;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(94, 224, 164, 0.13), transparent 35%),
+        linear-gradient(180deg, rgba(15, 34, 48, 0.98), rgba(6, 17, 28, 0.99));
+      border: 1px solid rgba(94, 224, 164, 0.16);
+      box-shadow: var(--bf-card-shadow);
+      overflow: hidden;
     }
 
-    .wc-kicker {
-      margin-bottom: 8px;
-      color: #ffffff;
-      font-size: 15px;
+    .wc-hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -80px -140px auto;
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(94, 224, 164, 0.14), transparent 68%);
+      pointer-events: none;
+    }
+
+    .wc-hero-left,
+    .wc-hero-right {
+      position: relative;
+      z-index: 1;
+    }
+
+    .wc-kicker,
+    .wc-section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: var(--bf-green);
+      background: var(--bf-green-soft);
+      border: 1px solid var(--bf-green-border);
+      font-size: 12px;
       font-weight: 900;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
     }
 
     .wc-hero h1 {
-      max-width: 680px;
-      margin: 0 0 18px !important;
-      color: #ffffff !important;
-      font-size: clamp(38px, 4vw, 56px) !important;
-      line-height: 0.98 !important;
-      letter-spacing: -0.055em !important;
-      font-weight: 950 !important;
+      max-width: 760px;
+      margin: 16px 0 14px;
+      color: #f8fafc;
+      font-size: clamp(46px, 6vw, 84px);
+      line-height: 0.95;
+      letter-spacing: -0.07em;
+      font-weight: 950;
     }
 
-    .wc-hero p {
-      max-width: 690px;
-      margin: 0 0 22px !important;
-      color: rgba(248, 250, 252, 0.88) !important;
-      font-size: 16px !important;
-      line-height: 1.5 !important;
+    .wc-hero h1 span {
+      color: var(--bf-green);
     }
 
-    .wc-hosts {
+    .wc-hero-text {
+      max-width: 660px;
+      margin: 0;
+      color: rgba(226, 232, 240, 0.76);
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .wc-hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
+      margin-top: 26px;
     }
 
-    .wc-hosts span,
-    .wc-tabs button {
+    .wc-primary-btn,
+    .wc-secondary-btn {
+      min-height: 52px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 42px;
-      padding: 0 16px;
-      border-radius: 12px;
+      padding: 0 22px;
+      border-radius: 16px;
+      font-size: 15px;
+      font-weight: 950;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .wc-primary-btn {
+      color: #04150b;
+      background: linear-gradient(135deg, #24e982 0%, #b6ff3c 100%);
+      box-shadow: 0 0 28px rgba(61, 255, 137, 0.34), 0 14px 32px rgba(18, 200, 120, 0.20);
+    }
+
+    .wc-secondary-btn {
       color: #f8fafc;
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .wc-primary-btn:hover,
+    .wc-secondary-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .wc-countdown-card {
+      height: 100%;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 26px;
+      border-radius: 24px;
+      background: rgba(2, 11, 19, 0.52);
+      border: 1px solid rgba(94, 224, 164, 0.16);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    }
+
+    .wc-countdown-card h2 {
+      margin: 12px 0 8px;
+      font-size: 28px;
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+    }
+
+    .wc-countdown-card p {
+      margin: 0;
+      color: rgba(226, 232, 240, 0.72);
       font-size: 14px;
-      font-weight: 850;
+      line-height: 1.45;
     }
 
-    .wc-countdown {
+    .wc-countdown-grid {
       display: grid;
-      gap: 12px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
     }
 
-    .wc-countdown > div,
-    .wc-stats > div {
-      min-height: 86px;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 14px;
+    .wc-countdown-grid div {
+      padding: 16px 8px;
       border-radius: 18px;
-      background: rgba(5, 13, 28, 0.82);
-      border: 1px solid rgba(94, 224, 164, 0.18);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
     }
 
-    .wc-countdown strong,
-    .wc-stats strong {
+    .wc-countdown-grid strong {
       display: block;
-      color: #ffffff;
-      font-size: 32px;
+      color: #f8fafc;
+      font-size: 30px;
       line-height: 1;
       font-weight: 950;
     }
 
-    .wc-countdown span,
-    .wc-stats span {
+    .wc-countdown-grid span {
       display: block;
-      margin-top: 8px;
-      color: rgba(248, 250, 252, 0.82);
+      margin-top: 6px;
+      color: rgba(226, 232, 240, 0.6);
       font-size: 11px;
-      font-weight: 900;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .wc-stats-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .wc-stat-card {
+      padding: 20px;
+      border-radius: 22px;
+      background: var(--bf-panel-bg);
+      border: var(--bf-panel-border);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
+    }
+
+    .wc-stat-card span {
+      display: block;
+      color: rgba(226, 232, 240, 0.64);
+      font-size: 12px;
+      font-weight: 850;
       text-transform: uppercase;
       letter-spacing: 0.08em;
     }
 
-    .wc-grid {
-      display: grid !important;
-      grid-template-columns: minmax(0, 1.6fr) minmax(320px, 0.9fr) !important;
-      gap: 18px !important;
-      align-items: stretch !important;
-      background: transparent !important;
+    .wc-stat-card strong {
+      display: block;
+      margin-top: 8px;
+      color: #f8fafc;
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 950;
     }
 
-    .wc-card {
-      padding: 22px !important;
-      min-height: 220px;
+    .wc-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(330px, 0.75fr);
+      gap: 24px;
+      margin-top: 24px;
     }
 
-    .wc-wide {
-      min-width: 0;
+    .wc-panel {
+      padding: 24px;
+      border-radius: 26px;
+      background: var(--bf-panel-bg);
+      border: var(--bf-panel-border);
+      box-shadow: var(--bf-card-shadow);
     }
 
-    .wc-full,
-    .wc-grid > .desktop-ad,
-    .wc-grid > .mobile-ad {
-      grid-column: 1 / -1 !important;
-    }
-
-    .wc-card-head {
+    .wc-panel-head {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 14px;
-      margin-bottom: 16px;
+      gap: 16px;
+      margin-bottom: 18px;
     }
 
-    .wc-card-head h2 {
-      margin: 0 !important;
-      color: #ffffff !important;
-      font-size: 22px !important;
-      line-height: 1.1 !important;
-      font-weight: 950 !important;
-      letter-spacing: -0.025em;
+    .wc-panel-head h2 {
+      margin: 0;
+      color: #f8fafc;
+      font-size: 28px;
+      line-height: 1.08;
+      letter-spacing: -0.04em;
     }
 
-    .wc-card-head span {
-      color: rgba(248, 250, 252, 0.78) !important;
-      font-size: 12px !important;
-      font-weight: 850 !important;
-      text-align: right;
+    .wc-panel-head p {
+      margin: 8px 0 0;
+      color: rgba(226, 232, 240, 0.62);
+      font-size: 14px;
+    }
+
+    .wc-status {
+      flex: 0 0 auto;
+      color: var(--bf-green);
+      font-size: 12px;
+      font-weight: 850;
     }
 
     .wc-fixtures,
@@ -379,169 +479,148 @@
       gap: 10px;
     }
 
-    .wc-empty,
-    .wc-error {
-      padding: 16px;
-      border-radius: 14px;
-      color: rgba(248, 250, 252, 0.9);
-      background: rgba(4, 12, 26, 0.65);
-      border: 1px dashed rgba(148, 163, 184, 0.25);
-      font-size: 14px;
-      line-height: 1.45;
-    }
-
-    .wc-error {
-      border-color: rgba(248, 113, 113, 0.35);
-      color: #fecaca;
-    }
-
     .wc-fixture,
     .wc-prediction {
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
       gap: 14px;
       align-items: center;
-      padding: 14px 16px;
-      border-radius: 14px;
-      background: rgba(4, 12, 26, 0.54);
-      border: 1px solid rgba(148, 163, 184, 0.14);
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.07);
     }
 
     .wc-fixture strong,
     .wc-prediction strong {
       display: block;
-      color: #ffffff;
-      font-size: 16px;
+      color: #f8fafc;
+      font-size: 15px;
       line-height: 1.25;
     }
 
     .wc-fixture span,
     .wc-prediction span {
       display: block;
-      margin-top: 5px;
-      color: rgba(248, 250, 252, 0.72);
-      font-size: 13px;
+      margin-top: 4px;
+      color: rgba(226, 232, 240, 0.58);
+      font-size: 12px;
     }
 
     .wc-score,
     .wc-prob {
       color: var(--bf-green);
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 950;
       white-space: nowrap;
     }
 
-    .wc-tabs {
+    .wc-standings-tabs {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       margin-bottom: 14px;
     }
 
-    .wc-tabs button {
-      cursor: pointer;
+    .wc-standings-tabs button {
+      min-height: 36px;
+      padding: 0 12px;
+      border-radius: 999px;
+      color: #f8fafc;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      font-size: 12px;
+      font-weight: 850;
     }
 
-    .wc-tabs button.active {
+    .wc-standings-tabs button.active {
       color: var(--bf-green);
       background: var(--bf-green-soft);
       border-color: var(--bf-green-border);
     }
 
-    .wc-standings {
-      width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-
     .wc-standings table {
       width: 100%;
-      min-width: 620px;
       border-collapse: collapse;
     }
 
     .wc-standings th,
     .wc-standings td {
       padding: 10px 8px;
-      border-bottom: 1px solid rgba(148, 163, 184, 0.15);
-      color: rgba(248, 250, 252, 0.9);
-      font-size: 13px;
-      text-align: center;
-      white-space: nowrap;
-    }
-
-    .wc-standings th:nth-child(2),
-    .wc-standings td:nth-child(2) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
       text-align: left;
+      font-size: 13px;
+    }
+
+    .wc-standings th {
+      color: rgba(226, 232, 240, 0.55);
+      font-size: 11px;
       font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
     }
 
-    .wc-stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
+    .wc-standings td {
+      color: rgba(248, 250, 252, 0.92);
     }
 
-    .wc-bracket-placeholder {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 10px;
+    .wc-empty,
+    .wc-error {
+      padding: 18px;
+      border-radius: 18px;
+      color: rgba(226, 232, 240, 0.70);
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px dashed rgba(255, 255, 255, 0.12);
     }
 
-    .wc-bracket-placeholder > div {
-      min-height: 66px;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 10px;
-      border-radius: 14px;
-      background: rgba(4, 12, 26, 0.54);
-      border: 1px solid rgba(148, 163, 184, 0.14);
-      color: rgba(248, 250, 252, 0.82);
-      font-weight: 850;
+    .wc-error {
+      color: #fecaca;
+      border-color: rgba(248, 113, 113, 0.22);
     }
 
-    .desktop-ad {
+    .wc-news-card {
+      display: block;
+      padding: 18px;
+      border-radius: 20px;
+      color: #f8fafc;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      text-decoration: none;
+    }
+
+    .wc-news-card + .wc-news-card {
+      margin-top: 10px;
+    }
+
+    .wc-news-card strong {
+      display: block;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .wc-news-card span {
+      display: block;
+      margin-top: 8px;
+      color: rgba(226, 232, 240, 0.56);
+      font-size: 12px;
+    }
+
+    .content-banner,
+    .mobile-ad {
       position: relative !important;
       z-index: 20 !important;
       display: flex !important;
       justify-content: center !important;
       width: 100% !important;
-      min-height: 90px !important;
-      margin: 8px auto !important;
-      overflow: visible !important;
-    }
-
-    .banner-728,
-    .banner-728 .ins-zone,
-    .banner-728 iframe,
-    .banner-728 > div {
-      width: 728px !important;
-      min-width: 728px !important;
-      max-width: 728px !important;
-      height: 90px !important;
-      min-height: 90px !important;
-      max-height: 90px !important;
-      margin: 0 auto !important;
-      transform: none !important;
-      zoom: 1 !important;
+      margin: 24px auto 0 !important;
+      overflow: hidden !important;
     }
 
     .mobile-ad {
       display: none !important;
     }
 
-    @media (max-width: 1500px) {
-      .side-banner {
-        display: none !important;
-      }
-    }
-
     @media (max-width: 1100px) {
-      body.site-skin-1win {
-        padding-top: 150px !important;
-      }
-
       .bf-header-inner {
         grid-template-columns: 1fr !important;
         justify-items: center !important;
@@ -561,16 +640,32 @@
       }
 
       .wc-hero,
-      .wc-grid {
-        grid-template-columns: 1fr !important;
+      .wc-layout {
+        grid-template-columns: 1fr;
       }
 
-      .wc-countdown {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+      .wc-stats-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .side-banner {
+        display: none !important;
       }
     }
 
     @media (max-width: 768px) {
+      html,
+      body {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: var(--bf-page-bg) !important;
+        background-image: none !important;
+        overflow-x: hidden !important;
+      }
+
       body.site-skin-1win {
         width: 100% !important;
         max-width: 100% !important;
@@ -578,7 +673,9 @@
         min-height: 100vh !important;
         padding-top: 96px !important;
         background-color: var(--bf-page-bg) !important;
-        background-image: linear-gradient(180deg, rgba(2, 11, 19, 0) 0, rgba(2, 11, 19, 0.12) 92px, rgba(2, 11, 19, 0.88) 235px, #020b13 330px), url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+        background-image:
+          linear-gradient(180deg, rgba(2, 11, 19, 0) 0, rgba(2, 11, 19, 0.12) 92px, rgba(2, 11, 19, 0.88) 235px, #020b13 330px),
+          url("/assets/ads/1win-wc2026-site-skin.webp") !important;
         background-repeat: no-repeat !important;
         background-position: center top, center top !important;
         background-size: 100% 340px, auto 290px !important;
@@ -586,9 +683,15 @@
         overflow-x: hidden !important;
       }
 
+      body.site-skin-1win::before,
+      body.site-skin-1win::after {
+        content: none !important;
+        display: none !important;
+        background: none !important;
+      }
+
       .skin-click-left,
-      .skin-click-right,
-      .side-banner {
+      .skin-click-right {
         display: none !important;
       }
 
@@ -604,20 +707,40 @@
         z-index: 2 !important;
       }
 
-      .bf-header-inner,
-      .wc-page {
-        width: calc(100% - 16px) !important;
-        max-width: calc(100% - 16px) !important;
+      .bf-header {
+        position: relative !important;
+        z-index: 30 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        overflow: hidden !important;
       }
 
       .bf-header-inner {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
         min-height: 0 !important;
-        margin: 8px auto 0 !important;
+        margin: 6px auto 0 !important;
         padding: 12px 10px !important;
         display: flex !important;
         flex-direction: column !important;
+        align-items: center !important;
         gap: 10px !important;
+        background: var(--bf-panel-bg) !important;
+        border: var(--bf-panel-border) !important;
         border-radius: 18px !important;
+        box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34) !important;
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        overflow: hidden !important;
+      }
+
+      .bf-header-inner::after {
+        display: none !important;
       }
 
       .bf-logo {
@@ -632,64 +755,85 @@
       }
 
       .bf-nav {
+        width: 100% !important;
         display: grid !important;
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
         gap: 8px !important;
+        overflow: hidden !important;
       }
 
       .bf-nav a {
         width: 100% !important;
-        min-height: 38px !important;
-        padding: 0 4px !important;
-        font-size: 12px !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        padding: 10px 3px !important;
+        font-size: 13px !important;
         text-align: center !important;
       }
 
       .wc-page {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
         margin: 14px auto 0 !important;
         padding: 0 0 28px !important;
       }
 
       .wc-hero {
-        padding: 20px 14px !important;
-        border-radius: 20px !important;
+        min-height: 0;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 20px 14px;
+        border-radius: 20px;
       }
 
       .wc-hero h1 {
-        font-size: 28px !important;
-        line-height: 1.04 !important;
+        font-size: 38px;
       }
 
-      .wc-hero p {
-        font-size: 15px !important;
+      .wc-hero-text {
+        font-size: 15px;
       }
 
-      .wc-hosts,
-      .wc-countdown,
-      .wc-stats {
-        display: grid !important;
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-        gap: 7px !important;
+      .wc-hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
       }
 
-      .wc-hosts span {
-        padding: 0 4px;
-        font-size: 11px;
+      .wc-countdown-grid {
+        grid-template-columns: repeat(3, 1fr);
       }
 
-      .wc-card {
-        padding: 18px 12px !important;
-        border-radius: 20px !important;
+      .wc-countdown-grid strong {
+        font-size: 24px;
       }
 
-      .wc-card-head {
+      .wc-stats-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .wc-stat-card {
+        padding: 16px 12px;
+        border-radius: 18px;
+      }
+
+      .wc-layout {
+        gap: 16px;
+        margin-top: 16px;
+      }
+
+      .wc-panel {
+        padding: 18px 12px;
+        border-radius: 20px;
+      }
+
+      .wc-panel-head {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
       }
 
-      .wc-card-head span {
-        text-align: left;
+      .wc-panel-head h2 {
+        font-size: 24px;
       }
 
       .wc-fixture,
@@ -697,43 +841,41 @@
         grid-template-columns: 1fr;
       }
 
-      .wc-score,
-      .wc-prob {
-        white-space: normal;
-      }
-
-      .wc-bracket-placeholder {
-        display: flex;
+      .wc-standings {
         overflow-x: auto;
-        padding-bottom: 7px;
+        -webkit-overflow-scrolling: touch;
       }
 
-      .wc-bracket-placeholder > div {
-        flex: 0 0 145px;
+      .wc-standings table {
+        min-width: 660px;
       }
 
-      .desktop-ad,
-      .banner-728 {
+      .content-banner {
         display: none !important;
       }
 
-      .mobile-ad,
-      .adhit-300x250 {
-        position: relative !important;
-        z-index: 20 !important;
+      .mobile-ad {
         display: flex !important;
-        justify-content: center !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        min-height: 250px !important;
-        margin: 4px auto !important;
-        background: transparent !important;
-        overflow: hidden !important;
+        margin: 16px auto !important;
       }
     }
 
     @media (max-width: 420px) {
-      .bf-header-inner,
+      body.site-skin-1win {
+        padding-top: 88px !important;
+        background-size: 100% 310px, auto 270px !important;
+      }
+
+      .skin-click-top {
+        height: 88px !important;
+      }
+
+      .bf-header-inner {
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
+        margin-top: 5px !important;
+      }
+
       .wc-page {
         width: calc(100% - 12px) !important;
         max-width: calc(100% - 12px) !important;
@@ -744,30 +886,45 @@
       }
 
       .bf-nav a {
-        font-size: 11px !important;
+        padding: 9px 2px !important;
+        font-size: 12px !important;
       }
 
       .wc-hero h1 {
-        font-size: 26px !important;
+        font-size: 34px;
       }
 
-      .wc-card-head h2 {
-        font-size: 21px !important;
-      }
-
-      .wc-countdown strong,
-      .wc-stats strong {
-        font-size: 21px !important;
+      .wc-stats-strip {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 
 <body class="theme-dark site-skin-1win">
+  <a
+    class="skin-click skin-click-top"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 top banner">
+  </a>
 
-  <a class="skin-click skin-click-top" href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ" target="_blank" rel="nofollow sponsored noopener" aria-label="1win World Cup 2026 top banner"></a>
-  <a class="skin-click skin-click-left" href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ" target="_blank" rel="nofollow sponsored noopener" aria-label="1win World Cup 2026 left background"></a>
-  <a class="skin-click skin-click-right" href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ" target="_blank" rel="nofollow sponsored noopener" aria-label="1win World Cup 2026 right background"></a>
+  <a
+    class="skin-click skin-click-left"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 left background">
+  </a>
+
+  <a
+    class="skin-click skin-click-right"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 right background">
+  </a>
 
   <div class="side-banner left-banner">
     <ins class="ins-zone" data-zone="163622"></ins>
@@ -797,118 +954,108 @@
 
   <main class="wc-page">
     <section class="wc-hero">
-      <div class="wc-hero-content">
-        <div class="wc-kicker">🏆 FIFA World Cup 2026</div>
-
-        <h1>FIFA World Cup 2026 Predictions, Fixtures &amp; Standings</h1>
-
-        <p>Real fixtures, live results, group tables and AI-powered match insights for the 2026 World Cup.</p>
-
-        <div class="wc-hosts">
-          <span>🇺🇸 USA</span>
-          <span>🇨🇦 Canada</span>
-          <span>🇲🇽 Mexico</span>
+      <div class="wc-hero-left">
+        <span class="wc-kicker">World Cup 2026</span>
+        <h1>AI football forecast for <span>World Cup 2026</span></h1>
+        <p class="wc-hero-text">
+          Follow fixtures, standings, results, and AI-powered match signals for the biggest football tournament.
+        </p>
+        <div class="wc-hero-actions">
+          <a class="wc-primary-btn" href="match.html">Open Match Center</a>
+          <a class="wc-secondary-btn" href="standings.html">View Standings</a>
         </div>
       </div>
 
-      <div class="wc-countdown">
-        <div>
-          <strong id="wc-days">0</strong>
-          <span>Days</span>
-        </div>
-
-        <div>
-          <strong id="wc-hours">0</strong>
-          <span>Hours</span>
-        </div>
-
-        <div>
-          <strong id="wc-minutes">0</strong>
-          <span>Minutes</span>
+      <div class="wc-hero-right">
+        <div class="wc-countdown-card">
+          <div>
+            <span class="wc-section-kicker">Tournament tracker</span>
+            <h2>Countdown to the final</h2>
+            <p>Live tournament pages are powered by cached football data to reduce API usage.</p>
+          </div>
+          <div class="wc-countdown-grid">
+            <div><strong id="wc-days">0</strong><span>Days</span></div>
+            <div><strong id="wc-hours">0</strong><span>Hours</span></div>
+            <div><strong id="wc-minutes">0</strong><span>Minutes</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="wc-grid">
-      <div class="wc-card wc-wide">
-        <div class="wc-card-head">
-          <h2>Upcoming World Cup Matches</h2>
-          <span id="wc-fixtures-status">Loading real fixtures...</span>
-        </div>
-
-        <div id="wc-fixtures" class="wc-fixtures"></div>
-      </div>
-
-      <div class="wc-card">
-        <div class="wc-card-head">
-          <h2>AI Predictions</h2>
-          <span>Based on available match data</span>
-        </div>
-
-        <div id="wc-predictions" class="wc-predictions"></div>
-      </div>
-
-      <div class="banner-728 desktop-ad">
-        <ins class="ins-zone" data-zone="163631"></ins>
-      </div>
-
-      <div class="adhit-300x250 mobile-ad">
-        <ins class="ins-zone" data-zone="163623"></ins>
-      </div>
-
-      <div class="wc-card wc-wide">
-        <div class="wc-card-head">
-          <h2>Group Standings</h2>
-          <span id="wc-standings-status">Loading real standings...</span>
-        </div>
-
-        <div id="wc-standings-tabs" class="wc-tabs"></div>
-        <div id="wc-standings" class="wc-standings"></div>
-      </div>
-
-      <div class="wc-card">
-        <div class="wc-card-head">
-          <h2>Tournament Stats</h2>
-          <span>Live from fixtures</span>
-        </div>
-
-        <div class="wc-stats">
-          <div>
-            <strong id="wc-matches-played">0</strong>
-            <span>Matches Played</span>
-          </div>
-
-          <div>
-            <strong id="wc-goals">0</strong>
-            <span>Goals</span>
-          </div>
-
-          <div>
-            <strong id="wc-avg-goals">0.00</strong>
-            <span>Avg Goals</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="wc-card wc-full">
-        <div class="wc-card-head">
-          <h2>Road to the Final</h2>
-          <span>Knockout bracket will appear after group stage</span>
-        </div>
-
-        <div class="wc-bracket-placeholder">
-          <div>Round of 32</div>
-          <div>Round of 16</div>
-          <div>Quarter-finals</div>
-          <div>Semi-finals</div>
-          <div>Final</div>
-        </div>
-      </div>
+    <section class="wc-stats-strip">
+      <div class="wc-stat-card"><span>Teams</span><strong>48</strong></div>
+      <div class="wc-stat-card"><span>Matches Played</span><strong id="wc-matches-played">0</strong></div>
+      <div class="wc-stat-card"><span>Goals</span><strong id="wc-goals">0</strong></div>
+      <div class="wc-stat-card"><span>Avg Goals</span><strong id="wc-avg-goals">0.00</strong></div>
     </section>
+
+    <div class="mobile-ad adhit-300x250">
+      <ins class="ins-zone" data-zone="163623"></ins>
+    </div>
+
+    <section class="wc-layout">
+      <div class="wc-main">
+        <section class="wc-panel">
+          <div class="wc-panel-head">
+            <div>
+              <h2>Upcoming Fixtures</h2>
+              <p>Cached schedule, refreshed by GitHub Actions.</p>
+            </div>
+            <span class="wc-status" id="wc-fixtures-status">Loading...</span>
+          </div>
+          <div class="wc-fixtures" id="wc-fixtures"></div>
+        </section>
+
+        <section class="wc-panel" style="margin-top: 24px;">
+          <div class="wc-panel-head">
+            <div>
+              <h2>Group Standings</h2>
+              <p>Group table data from tournament cache.</p>
+            </div>
+            <span class="wc-status" id="wc-standings-status">Loading...</span>
+          </div>
+          <div class="wc-standings-tabs" id="wc-standings-tabs"></div>
+          <div class="wc-standings" id="wc-standings"></div>
+        </section>
+      </div>
+
+      <aside class="wc-sidebar">
+        <section class="wc-panel">
+          <div class="wc-panel-head">
+            <div>
+              <h2>AI Predictions</h2>
+              <p>Model signals for the next available fixtures.</p>
+            </div>
+          </div>
+          <div class="wc-predictions" id="wc-predictions"></div>
+        </section>
+
+        <section class="wc-panel" style="margin-top: 24px;">
+          <div class="wc-panel-head">
+            <div>
+              <h2>World Cup News</h2>
+              <p>Latest football context.</p>
+            </div>
+          </div>
+          <a class="wc-news-card" href="news.html">
+            <strong>Follow tournament news and model context</strong>
+            <span>Open cached football news</span>
+          </a>
+          <a class="wc-news-card" href="results.html">
+            <strong>Latest World Cup results</strong>
+            <span>Track finished matches</span>
+          </a>
+        </section>
+      </aside>
+    </section>
+
+    <div class="content-banner banner-728">
+      <ins class="ins-zone" data-zone="163631"></ins>
+    </div>
   </main>
 
-  <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
   <script src="/api-config.js"></script>
   <script src="/js/world-cup-2026.js?v=6"></script>
+  <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
 </body>
 </html>
