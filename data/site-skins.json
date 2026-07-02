@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "enabled": true,
+  "defaultSkin": "1win",
+  "adScript": "https://media.getads.online/js/code.min.js",
+  "testParams": {
+    "skin": "skin",
+    "country": "country"
+  },
+  "skins": {
+    "1win": {
+      "enabled": true,
+      "label": "1win World Cup 2026",
+      "bodyClass": "site-skin-1win",
+      "mode": "code",
+      "codeZone": "163743",
+      "fallbackImage": "/assets/ads/1win-wc2026-site-skin.webp",
+      "clickUrl": "https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ",
+      "topClickHeight": 165,
+      "sideStartTop": 165
+    },
+    "dafabet": {
+      "enabled": true,
+      "label": "Dafabet",
+      "bodyClass": "site-skin-dafabet",
+      "mode": "code",
+      "codeZone": "DAFABET_SITE_SKIN_ZONE",
+      "fallbackImage": "",
+      "clickUrl": "",
+      "topClickHeight": 165,
+      "sideStartTop": 165
+    },
+    "mostbet": {
+      "enabled": true,
+      "label": "Mostbet",
+      "bodyClass": "site-skin-mostbet",
+      "mode": "code",
+      "codeZone": "MOSTBET_SITE_SKIN_ZONE",
+      "fallbackImage": "",
+      "clickUrl": "",
+      "topClickHeight": 165,
+      "sideStartTop": 165
+    }
+  },
+  "geoRules": [
+    {
+      "countries": ["BD", "IN", "LK"],
+      "skin": "dafabet"
+    },
+    {
+      "countries": ["KZ", "UZ", "AZ", "UA"],
+      "skin": "mostbet"
+    },
+    {
+      "countries": ["DEFAULT"],
+      "skin": "1win"
+    }
+  ]
+}
