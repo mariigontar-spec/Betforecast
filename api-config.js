@@ -12,6 +12,20 @@ window.BF_API = {
   timezone: "Europe/Tallinn"
 };
 
+(function loadSiteSkinManager() {
+  const scriptId = "bf-site-skin-manager-loader";
+
+  if (document.getElementById(scriptId)) {
+    return;
+  }
+
+  const script = document.createElement("script");
+  script.id = scriptId;
+  script.src = "/js/site-skin-manager.js?v=1";
+  script.defer = true;
+  document.head.appendChild(script);
+})();
+
 (function injectUnifiedNavActiveStyle() {
   const styleId = "bf-unified-nav-active-style";
 
@@ -22,6 +36,10 @@ window.BF_API = {
   const style = document.createElement("style");
   style.id = styleId;
   style.textContent = `
+    body.theme-dark.site-skin-managed .bf-header .bf-nav a.active,
+    body.theme-dark.site-skin-managed .header .topbar-menu a.active,
+    body.theme-dark.site-skin-managed .bf-nav a.active,
+    body.theme-dark.site-skin-managed .topbar-menu a.active,
     body.theme-dark.site-skin-1win .bf-header .bf-nav a.active,
     body.theme-dark.site-skin-1win .header .topbar-menu a.active,
     body.theme-dark.site-skin-1win .bf-nav a.active,
@@ -34,6 +52,10 @@ window.BF_API = {
         0 0 0 1px rgba(94, 224, 164, 0.04) !important;
     }
 
+    body.theme-dark.site-skin-managed .bf-header .bf-nav a:hover,
+    body.theme-dark.site-skin-managed .header .topbar-menu a:hover,
+    body.theme-dark.site-skin-managed .bf-nav a:hover,
+    body.theme-dark.site-skin-managed .topbar-menu a:hover,
     body.theme-dark.site-skin-1win .bf-header .bf-nav a:hover,
     body.theme-dark.site-skin-1win .header .topbar-menu a:hover,
     body.theme-dark.site-skin-1win .bf-nav a:hover,
