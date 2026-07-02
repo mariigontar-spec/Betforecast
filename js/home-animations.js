@@ -1,3 +1,17 @@
+function loadHomeSiteSkinManager() {
+  const scriptId = "bf-site-skin-manager-loader";
+
+  if (document.getElementById(scriptId)) {
+    return;
+  }
+
+  const script = document.createElement("script");
+  script.id = scriptId;
+  script.src = "/js/site-skin-manager.js?v=1";
+  script.defer = true;
+  document.head.appendChild(script);
+}
+
 function animateMetricValue(el, target, suffix = "") {
   const duration = 1400;
   const startTime = performance.now();
@@ -54,5 +68,6 @@ function initAiMetricsAnimation() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  loadHomeSiteSkinManager();
   initAiMetricsAnimation();
 });
