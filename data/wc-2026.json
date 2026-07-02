@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T04:21:07.123Z",
+  "updatedAt": "2026-07-02T14:30:51.505Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
@@ -8,7 +8,7 @@
     {
       "fixture": {
         "id": 1489369,
-        "referee": "Wilton Pereira Sampaio, Brazil",
+        "referee": "W. Sampaio",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-11T22:00:00+03:00",
         "timestamp": 1781204400,
@@ -78,7 +78,7 @@
     {
       "fixture": {
         "id": 1538999,
-        "referee": "Amin Mohamed Omar, Egypt",
+        "referee": "A. Omar",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-12T05:00:00+03:00",
         "timestamp": 1781229600,
@@ -148,7 +148,7 @@
     {
       "fixture": {
         "id": 1539000,
-        "referee": "Facundo Raul Tello Figueroa, Argentina",
+        "referee": "F. Tello",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-12T22:00:00+03:00",
         "timestamp": 1781290800,
@@ -218,7 +218,7 @@
     {
       "fixture": {
         "id": 1489370,
-        "referee": "Danny Makkelie, Netherlands",
+        "referee": "D. Makkelie",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-13T04:00:00+03:00",
         "timestamp": 1781312400,
@@ -288,7 +288,7 @@
     {
       "fixture": {
         "id": 1489373,
-        "referee": "Said Martinez, Honduras",
+        "referee": "S. Martinez",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-13T22:00:00+03:00",
         "timestamp": 1781377200,
@@ -358,7 +358,7 @@
     {
       "fixture": {
         "id": 1489371,
-        "referee": "Slavko Vinčić, Slovenia",
+        "referee": "S. Vincic",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-14T01:00:00+03:00",
         "timestamp": 1781388000,
@@ -428,7 +428,7 @@
     {
       "fixture": {
         "id": 1489372,
-        "referee": "Mustapha Ghorbal, Algeria",
+        "referee": "M. Ghorbal",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-14T04:00:00+03:00",
         "timestamp": 1781398800,
@@ -498,7 +498,7 @@
     {
       "fixture": {
         "id": 1539001,
-        "referee": "Jesús Valenzuela, Venezuela",
+        "referee": "J. Valenzuela",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-14T07:00:00+03:00",
         "timestamp": 1781409600,
@@ -568,7 +568,7 @@
     {
       "fixture": {
         "id": 1489374,
-        "referee": "Jalal Jayed, Morocco",
+        "referee": "J. Jayed",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-14T20:00:00+03:00",
         "timestamp": 1781456400,
@@ -638,7 +638,7 @@
     {
       "fixture": {
         "id": 1489376,
-        "referee": "Ismail Elfath, USA",
+        "referee": "I. Elfath",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-14T23:00:00+03:00",
         "timestamp": 1781467200,
@@ -708,7 +708,7 @@
     {
       "fixture": {
         "id": 1489375,
-        "referee": "François Letexier, France",
+        "referee": "F. Letexier",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-15T02:00:00+03:00",
         "timestamp": 1781478000,
@@ -778,7 +778,7 @@
     {
       "fixture": {
         "id": 1539002,
-        "referee": "Yael Falcon Perez, Argentina",
+        "referee": "Y. Perez",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-15T05:00:00+03:00",
         "timestamp": 1781488800,
@@ -848,7 +848,7 @@
     {
       "fixture": {
         "id": 1489380,
-        "referee": "Adham Mohammad, Jordan",
+        "referee": "A. Makhadmeh",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-15T19:00:00+03:00",
         "timestamp": 1781539200,
@@ -918,7 +918,7 @@
     {
       "fixture": {
         "id": 1489377,
-        "referee": "Ramon Abatti Abel, Brazil",
+        "referee": "R. Abatti",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-15T22:00:00+03:00",
         "timestamp": 1781550000,
@@ -988,7 +988,7 @@
     {
       "fixture": {
         "id": 1489379,
-        "referee": "Maurizio Mariani, Italy",
+        "referee": "M. Mariani",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-16T01:00:00+03:00",
         "timestamp": 1781560800,
@@ -1058,7 +1058,7 @@
     {
       "fixture": {
         "id": 1489378,
-        "referee": "César Ramos Palazuelos, Mexico",
+        "referee": "C. A. Ramos",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-16T04:00:00+03:00",
         "timestamp": 1781571600,
@@ -1128,7 +1128,7 @@
     {
       "fixture": {
         "id": 1489383,
-        "referee": "Alireza Faghani, Australia",
+        "referee": "A. Faghani",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-16T22:00:00+03:00",
         "timestamp": 1781636400,
@@ -1198,7 +1198,7 @@
     {
       "fixture": {
         "id": 1539016,
-        "referee": "Pierre Ghislain Atcho, Gabon",
+        "referee": "P. Atcho",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-17T01:00:00+03:00",
         "timestamp": 1781647200,
@@ -1268,7 +1268,7 @@
     {
       "fixture": {
         "id": 1489381,
-        "referee": "Szymon Marciniak, Poland",
+        "referee": "S. Marciniak",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-17T04:00:00+03:00",
         "timestamp": 1781658000,
@@ -1338,7 +1338,7 @@
     {
       "fixture": {
         "id": 1489382,
-        "referee": "Dahane Beida, Mauritania",
+        "referee": "D. Beida",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-17T07:00:00+03:00",
         "timestamp": 1781668800,
@@ -1408,7 +1408,7 @@
     {
       "fixture": {
         "id": 1539003,
-        "referee": "Abdulrahman Al-Jassim, Qatar",
+        "referee": "A. Al Jassim",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-17T20:00:00+03:00",
         "timestamp": 1781715600,
@@ -1478,7 +1478,7 @@
     {
       "fixture": {
         "id": 1489384,
-        "referee": "Clement Turpin, France",
+        "referee": "C. Turpin",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-17T23:00:00+03:00",
         "timestamp": 1781726400,
@@ -1548,7 +1548,7 @@
     {
       "fixture": {
         "id": 1489385,
-        "referee": "Glenn Nyberg, Sweden",
+        "referee": "G. Nyberg",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-18T02:00:00+03:00",
         "timestamp": 1781737200,
@@ -1618,7 +1618,7 @@
     {
       "fixture": {
         "id": 1489386,
-        "referee": "Anthony Taylor, England",
+        "referee": "A. Taylor",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-18T05:00:00+03:00",
         "timestamp": 1781748000,
@@ -1688,7 +1688,7 @@
     {
       "fixture": {
         "id": 1539004,
-        "referee": "Tori Penso, USA",
+        "referee": "T. Penso",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-18T19:00:00+03:00",
         "timestamp": 1781798400,
@@ -1758,7 +1758,7 @@
     {
       "fixture": {
         "id": 1539005,
-        "referee": "Joao Pedro Pinheiro, Portugal",
+        "referee": "J. Pinheiro",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-18T22:00:00+03:00",
         "timestamp": 1781809200,
@@ -1828,7 +1828,7 @@
     {
       "fixture": {
         "id": 1489387,
-        "referee": "Cristian Garay, Chile",
+        "referee": "C. Garay",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-19T01:00:00+03:00",
         "timestamp": 1781820000,
@@ -1898,7 +1898,7 @@
     {
       "fixture": {
         "id": 1489388,
-        "referee": "Gustavo Tejera, Uruguay",
+        "referee": "G. Tejera",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-19T04:00:00+03:00",
         "timestamp": 1781830800,
@@ -1968,7 +1968,7 @@
     {
       "fixture": {
         "id": 1489391,
-        "referee": "Felix Zwayer, Germany",
+        "referee": "F. Zwayer",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-19T22:00:00+03:00",
         "timestamp": 1781895600,
@@ -2038,7 +2038,7 @@
     {
       "fixture": {
         "id": 1489390,
-        "referee": "Ilgiz Tantashev, Uzbekistan",
+        "referee": "I. Tantashev",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-20T01:00:00+03:00",
         "timestamp": 1781906400,
@@ -2108,7 +2108,7 @@
     {
       "fixture": {
         "id": 1489389,
-        "referee": "Alejandro Hernandez, Spain",
+        "referee": "A. Hernandez",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-20T03:30:00+03:00",
         "timestamp": 1781915400,
@@ -2178,7 +2178,7 @@
     {
       "fixture": {
         "id": 1539006,
-        "referee": "Iván Barton, El Salvador",
+        "referee": "I. Barton",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-20T06:00:00+03:00",
         "timestamp": 1781924400,
@@ -2248,7 +2248,7 @@
     {
       "fixture": {
         "id": 1539007,
-        "referee": "Michael Oliver, England",
+        "referee": "M. Oliver",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-20T20:00:00+03:00",
         "timestamp": 1781974800,
@@ -2318,7 +2318,7 @@
     {
       "fixture": {
         "id": 1489393,
-        "referee": "Juan Gabriel Benitez, Paraguay",
+        "referee": "J. Benitez",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-20T23:00:00+03:00",
         "timestamp": 1781985600,
@@ -2388,7 +2388,7 @@
     {
       "fixture": {
         "id": 1489392,
-        "referee": "Ma Ning, China",
+        "referee": "Ma Ning",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-21T03:00:00+03:00",
         "timestamp": 1782000000,
@@ -2458,7 +2458,7 @@
     {
       "fixture": {
         "id": 1489394,
-        "referee": "Istvan Kovacs, Romania",
+        "referee": "I. Kovacs",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-21T07:00:00+03:00",
         "timestamp": 1782014400,
@@ -2528,7 +2528,7 @@
     {
       "fixture": {
         "id": 1489397,
-        "referee": "Raphael Claus, Brazil",
+        "referee": "R. Claus",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-21T19:00:00+03:00",
         "timestamp": 1782057600,
@@ -2598,7 +2598,7 @@
     {
       "fixture": {
         "id": 1489395,
-        "referee": "Dario Herrera, Argentina",
+        "referee": "D. Herrera",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-21T22:00:00+03:00",
         "timestamp": 1782068400,
@@ -2668,7 +2668,7 @@
     {
       "fixture": {
         "id": 1489398,
-        "referee": "Espen Eskas, Norway",
+        "referee": "E. Eskas",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-22T01:00:00+03:00",
         "timestamp": 1782079200,
@@ -2738,7 +2738,7 @@
     {
       "fixture": {
         "id": 1489396,
-        "referee": "Omar Mohamed Al Ali, United Arab Emirates",
+        "referee": "O. Alali",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-22T04:00:00+03:00",
         "timestamp": 1782090000,
@@ -2808,7 +2808,7 @@
     {
       "fixture": {
         "id": 1489399,
-        "referee": "Amin Mohamed Omar, Egypt",
+        "referee": "A. Omar",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-22T20:00:00+03:00",
         "timestamp": 1782147600,
@@ -2878,7 +2878,7 @@
     {
       "fixture": {
         "id": 1539017,
-        "referee": "Drew Fischer, Canada",
+        "referee": "D. Fischer",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-23T00:00:00+03:00",
         "timestamp": 1782162000,
@@ -2948,7 +2948,7 @@
     {
       "fixture": {
         "id": 1489401,
-        "referee": "Wilton Pereira Sampaio, Brazil",
+        "referee": "W. Sampaio",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-23T03:00:00+03:00",
         "timestamp": 1782172800,
@@ -3018,7 +3018,7 @@
     {
       "fixture": {
         "id": 1489400,
-        "referee": "Slavko Vinčić, Slovenia",
+        "referee": "S. Vincic",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-23T06:00:00+03:00",
         "timestamp": 1782183600,
@@ -3088,7 +3088,7 @@
     {
       "fixture": {
         "id": 1489404,
-        "referee": "Jalal Jayed, Morocco",
+        "referee": "J. Jayed",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-23T20:00:00+03:00",
         "timestamp": 1782234000,
@@ -3158,7 +3158,7 @@
     {
       "fixture": {
         "id": 1489402,
-        "referee": "Said Martinez, Honduras",
+        "referee": "S. Martinez",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-23T23:00:00+03:00",
         "timestamp": 1782244800,
@@ -3228,7 +3228,7 @@
     {
       "fixture": {
         "id": 1489403,
-        "referee": "Pierre Ghislain Atcho, Gabon",
+        "referee": "P. Atcho",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-24T02:00:00+03:00",
         "timestamp": 1782255600,
@@ -3298,7 +3298,7 @@
     {
       "fixture": {
         "id": 1539008,
-        "referee": "Maurizio Mariani, Italy",
+        "referee": "M. Mariani",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-24T05:00:00+03:00",
         "timestamp": 1782266400,
@@ -3368,7 +3368,7 @@
     {
       "fixture": {
         "id": 1489408,
-        "referee": "Ramon Abatti Abel, Brazil",
+        "referee": "R. Abatti",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-24T22:00:00+03:00",
         "timestamp": 1782327600,
@@ -3438,7 +3438,7 @@
     {
       "fixture": {
         "id": 1539009,
-        "referee": "Jesús Valenzuela, Venezuela",
+        "referee": "J. Valenzuela",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-24T22:00:00+03:00",
         "timestamp": 1782327600,
@@ -3508,7 +3508,7 @@
     {
       "fixture": {
         "id": 1489405,
-        "referee": "Danny Makkelie, Netherlands",
+        "referee": "D. Makkelie",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T01:00:00+03:00",
         "timestamp": 1782338400,
@@ -3578,7 +3578,7 @@
     {
       "fixture": {
         "id": 1489406,
-        "referee": "César Ramos Palazuelos, Mexico",
+        "referee": "C. A. Ramos",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T01:00:00+03:00",
         "timestamp": 1782338400,
@@ -3648,7 +3648,7 @@
     {
       "fixture": {
         "id": 1539010,
-        "referee": "Yael Falcon Perez, Argentina",
+        "referee": "Y. Perez",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T04:00:00+03:00",
         "timestamp": 1782349200,
@@ -3718,7 +3718,7 @@
     {
       "fixture": {
         "id": 1489407,
-        "referee": "Facundo Raul Tello Figueroa, Argentina",
+        "referee": "F. Tello",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T04:00:00+03:00",
         "timestamp": 1782349200,
@@ -3788,7 +3788,7 @@
     {
       "fixture": {
         "id": 1489410,
-        "referee": "Tori Penso, USA",
+        "referee": "T. Penso",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T23:00:00+03:00",
         "timestamp": 1782417600,
@@ -3858,7 +3858,7 @@
     {
       "fixture": {
         "id": 1489409,
-        "referee": "Glenn Nyberg, Sweden",
+        "referee": "G. Nyberg",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T23:00:00+03:00",
         "timestamp": 1782417600,
@@ -3928,7 +3928,7 @@
     {
       "fixture": {
         "id": 1539011,
-        "referee": "Iván Barton, El Salvador",
+        "referee": "I. Barton",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T02:00:00+03:00",
         "timestamp": 1782428400,
@@ -3998,7 +3998,7 @@
     {
       "fixture": {
         "id": 1489412,
-        "referee": "Katia García, Mexico",
+        "referee": "K. I. Garcia Mendoza",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T02:00:00+03:00",
         "timestamp": 1782428400,
@@ -4068,7 +4068,7 @@
     {
       "fixture": {
         "id": 1539012,
-        "referee": "Mustapha Ghorbal, Algeria",
+        "referee": "M. Ghorbal",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T05:00:00+03:00",
         "timestamp": 1782439200,
@@ -4138,7 +4138,7 @@
     {
       "fixture": {
         "id": 1489411,
-        "referee": "Clement Turpin, France",
+        "referee": "C. Turpin",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T05:00:00+03:00",
         "timestamp": 1782439200,
@@ -4208,7 +4208,7 @@
     {
       "fixture": {
         "id": 1539074,
-        "referee": "Anthony Taylor, England",
+        "referee": "A. Taylor",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T22:00:00+03:00",
         "timestamp": 1782500400,
@@ -4278,7 +4278,7 @@
     {
       "fixture": {
         "id": 1489416,
-        "referee": "Michael Oliver, England",
+        "referee": "M. Oliver",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T22:00:00+03:00",
         "timestamp": 1782500400,
@@ -4348,7 +4348,7 @@
     {
       "fixture": {
         "id": 1489417,
-        "referee": "Ismail Elfath, USA",
+        "referee": "I. Elfath",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-27T03:00:00+03:00",
         "timestamp": 1782518400,
@@ -4418,7 +4418,7 @@
     {
       "fixture": {
         "id": 1489413,
-        "referee": "François Letexier, France",
+        "referee": "F. Letexier",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-27T03:00:00+03:00",
         "timestamp": 1782518400,
@@ -4488,7 +4488,7 @@
     {
       "fixture": {
         "id": 1489414,
-        "referee": "Szymon Marciniak, Poland",
+        "referee": "S. Marciniak",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-27T06:00:00+03:00",
         "timestamp": 1782529200,
@@ -4558,7 +4558,7 @@
     {
       "fixture": {
         "id": 1489415,
-        "referee": "Adham Mohammad, Jordan",
+        "referee": "A. Makhadmeh",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-27T06:00:00+03:00",
         "timestamp": 1782529200,
@@ -4628,7 +4628,7 @@
     {
       "fixture": {
         "id": 1489420,
-        "referee": "Drew Fischer, Canada",
+        "referee": "D. Fischer",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-28T00:00:00+03:00",
         "timestamp": 1782594000,
@@ -4698,7 +4698,7 @@
     {
       "fixture": {
         "id": 1489422,
-        "referee": "Abdulrahman Al-Jassim, Qatar",
+        "referee": "A. Al Jassim",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-28T00:00:00+03:00",
         "timestamp": 1782594000,
@@ -4768,7 +4768,7 @@
     {
       "fixture": {
         "id": 1489419,
-        "referee": "Alireza Faghani, Australia",
+        "referee": "A. Faghani",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-28T02:30:00+03:00",
         "timestamp": 1782603000,
@@ -4838,7 +4838,7 @@
     {
       "fixture": {
         "id": 1539013,
-        "referee": "Felix Zwayer, Germany",
+        "referee": "F. Zwayer",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-28T02:30:00+03:00",
         "timestamp": 1782603000,
@@ -5048,7 +5048,7 @@
     {
       "fixture": {
         "id": 1561329,
-        "referee": "Joao Pedro Pinheiro, Portugal",
+        "referee": "J. Pinheiro",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-28T22:00:00+03:00",
         "timestamp": 1782673200,
@@ -5118,7 +5118,7 @@
     {
       "fixture": {
         "id": 1562344,
-        "referee": "Maurizio Mariani, Italy",
+        "referee": "M. Mariani",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-29T20:00:00+03:00",
         "timestamp": 1782752400,
@@ -5188,7 +5188,7 @@
     {
       "fixture": {
         "id": 1565176,
-        "referee": "Jalal Jayed, Morocco",
+        "referee": "J. Jayed",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-29T23:30:00+03:00",
         "timestamp": 1782765000,
@@ -5246,8 +5246,8 @@
           "away": 1
         },
         "extratime": {
-          "home": 0,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "penalty": {
           "home": 3,
@@ -5258,7 +5258,7 @@
     {
       "fixture": {
         "id": 1562345,
-        "referee": "Wilton Pereira Sampaio, Brazil",
+        "referee": "W. Sampaio",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-30T04:00:00+03:00",
         "timestamp": 1782781200,
@@ -5316,8 +5316,8 @@
           "away": 1
         },
         "extratime": {
-          "home": 0,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "penalty": {
           "home": 2,
@@ -5328,7 +5328,7 @@
     {
       "fixture": {
         "id": 1564789,
-        "referee": "Jesús Valenzuela, Venezuela",
+        "referee": "J. Valenzuela",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-30T20:00:00+03:00",
         "timestamp": 1782838800,
@@ -5398,7 +5398,7 @@
     {
       "fixture": {
         "id": 1565177,
-        "referee": "Danny Makkelie, Netherlands",
+        "referee": "D. Makkelie",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-01T00:00:00+03:00",
         "timestamp": 1782853200,
@@ -5468,7 +5468,7 @@
     {
       "fixture": {
         "id": 1567306,
-        "referee": "Slavko Vinčić, Slovenia",
+        "referee": "S. Vincic",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-01T04:00:00+03:00",
         "timestamp": 1782867600,
@@ -5538,7 +5538,7 @@
     {
       "fixture": {
         "id": 1567307,
-        "referee": "Adham Mohammad, Jordan",
+        "referee": "A. Makhadmeh",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-01T19:00:00+03:00",
         "timestamp": 1782921600,
@@ -5608,7 +5608,7 @@
     {
       "fixture": {
         "id": 1567308,
-        "referee": "Said Martinez, Honduras",
+        "referee": "S. Martinez",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-01T23:00:00+03:00",
         "timestamp": 1782936000,
@@ -5958,7 +5958,7 @@
     {
       "fixture": {
         "id": 1565178,
-        "referee": null,
+        "referee": "G. Tejera",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-03T21:00:00+03:00",
         "timestamp": 1783101600,
@@ -6028,7 +6028,7 @@
     {
       "fixture": {
         "id": 1565179,
-        "referee": null,
+        "referee": "D. Fischer",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-04T01:00:00+03:00",
         "timestamp": 1783116000,
@@ -6098,7 +6098,7 @@
     {
       "fixture": {
         "id": 1567310,
-        "referee": null,
+        "referee": "C. Turpin",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-04T04:30:00+03:00",
         "timestamp": 1783128600,
@@ -6318,7 +6318,7 @@
         },
         "venue": {
           "id": 0,
-          "name": null,
+          "name": "MetLife Stadium",
           "city": null
         },
         "status": {
@@ -6349,6 +6349,146 @@
           "id": 1090,
           "name": "Norway",
           "logo": "https://media.api-sports.io/football/teams/1090.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1570714,
+        "referee": null,
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-06T03:00:00+03:00",
+        "timestamp": 1783296000,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": null,
+          "name": "Estadio Banorte",
+          "city": "Mexico City"
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 16",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 16,
+          "name": "Mexico",
+          "logo": "https://media.api-sports.io/football/teams/16.png",
+          "winner": null
+        },
+        "away": {
+          "id": 10,
+          "name": "England",
+          "logo": "https://media.api-sports.io/football/teams/10.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1570715,
+        "referee": null,
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-07T03:00:00+03:00",
+        "timestamp": 1783382400,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": null,
+          "name": "Lumen Field",
+          "city": null
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 16",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 2384,
+          "name": "USA",
+          "logo": "https://media.api-sports.io/football/teams/2384.png",
+          "winner": null
+        },
+        "away": {
+          "id": 1,
+          "name": "Belgium",
+          "logo": "https://media.api-sports.io/football/teams/1.png",
           "winner": null
         }
       },
