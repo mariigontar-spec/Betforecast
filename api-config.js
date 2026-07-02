@@ -11,3 +11,38 @@ window.BF_API = {
 
   timezone: "Europe/Tallinn"
 };
+
+(function injectUnifiedNavActiveStyle() {
+  const styleId = "bf-unified-nav-active-style";
+
+  if (document.getElementById(styleId)) {
+    return;
+  }
+
+  const style = document.createElement("style");
+  style.id = styleId;
+  style.textContent = `
+    body.theme-dark.site-skin-1win .bf-header .bf-nav a.active,
+    body.theme-dark.site-skin-1win .header .topbar-menu a.active,
+    body.theme-dark.site-skin-1win .bf-nav a.active,
+    body.theme-dark.site-skin-1win .topbar-menu a.active {
+      color: #5ee0a4 !important;
+      background: rgba(5, 66, 48, 0.72) !important;
+      border-color: rgba(94, 224, 164, 0.34) !important;
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        0 0 0 1px rgba(94, 224, 164, 0.04) !important;
+    }
+
+    body.theme-dark.site-skin-1win .bf-header .bf-nav a:hover,
+    body.theme-dark.site-skin-1win .header .topbar-menu a:hover,
+    body.theme-dark.site-skin-1win .bf-nav a:hover,
+    body.theme-dark.site-skin-1win .topbar-menu a:hover {
+      color: #5ee0a4 !important;
+      background: rgba(5, 66, 48, 0.48) !important;
+      border-color: rgba(94, 224, 164, 0.28) !important;
+    }
+  `;
+
+  document.head.appendChild(style);
+})();
