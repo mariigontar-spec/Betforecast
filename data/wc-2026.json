@@ -1,10 +1,80 @@
 {
-  "updatedAt": "2026-07-03T14:33:28.469Z",
+  "updatedAt": "2026-07-03T19:51:54.887Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
   "timezone": "Europe/Tallinn",
   "fixtures": [
+    {
+      "fixture": {
+        "id": 1565178,
+        "referee": "Gustavo Tejera, Uruguay",
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-03T21:00:00+03:00",
+        "timestamp": 1783101600,
+        "periods": {
+          "first": 1783101600,
+          "second": 1783105200
+        },
+        "venue": {
+          "id": 0,
+          "name": "AT&T Stadium",
+          "city": "Dallas"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 32",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 20,
+          "name": "Australia",
+          "logo": "https://media.api-sports.io/football/teams/20.png",
+          "winner": null
+        },
+        "away": {
+          "id": 32,
+          "name": "Egypt",
+          "logo": "https://media.api-sports.io/football/teams/32.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 1
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
     {
       "fixture": {
         "id": 1489369,
@@ -5944,76 +6014,6 @@
         "fulltime": {
           "home": 2,
           "away": 0
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1565178,
-        "referee": "G. Tejera",
-        "timezone": "Europe/Tallinn",
-        "date": "2026-07-03T21:00:00+03:00",
-        "timestamp": 1783101600,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 0,
-          "name": "AT&T Stadium",
-          "city": "Dallas"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 1,
-        "name": "World Cup",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/1.png",
-        "flag": null,
-        "season": 2026,
-        "round": "Round of 32",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 20,
-          "name": "Australia",
-          "logo": "https://media.api-sports.io/football/teams/20.png",
-          "winner": null
-        },
-        "away": {
-          "id": 32,
-          "name": "Egypt",
-          "logo": "https://media.api-sports.io/football/teams/32.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
         },
         "extratime": {
           "home": null,
