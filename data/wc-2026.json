@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-02T19:54:10.051Z",
+  "updatedAt": "2026-07-03T04:11:00.620Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
@@ -7,24 +7,24 @@
   "fixtures": [
     {
       "fixture": {
-        "id": 1567311,
-        "referee": "Glenn Nyberg, Sweden",
+        "id": 1567312,
+        "referee": "Yael Falcon Perez, Argentina",
         "timezone": "Europe/Tallinn",
-        "date": "2026-07-02T22:00:00+03:00",
-        "timestamp": 1783018800,
+        "date": "2026-07-03T06:00:00+03:00",
+        "timestamp": 1783047600,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1783047600,
+          "second": 1783051200
         },
         "venue": {
-          "id": null,
-          "name": "SoFi Stadium",
-          "city": "Inglewood"
+          "id": 19445,
+          "name": "BC Place",
+          "city": "Vancouver"
         },
         "status": {
-          "long": "Halftime",
-          "short": "HT",
-          "elapsed": 45,
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 51,
           "extra": null
         }
       },
@@ -40,20 +40,20 @@
       },
       "teams": {
         "home": {
-          "id": 9,
-          "name": "Spain",
-          "logo": "https://media.api-sports.io/football/teams/9.png",
+          "id": 15,
+          "name": "Switzerland",
+          "logo": "https://media.api-sports.io/football/teams/15.png",
           "winner": true
         },
         "away": {
-          "id": 775,
-          "name": "Austria",
-          "logo": "https://media.api-sports.io/football/teams/775.png",
+          "id": 1532,
+          "name": "Algeria",
+          "logo": "https://media.api-sports.io/football/teams/1532.png",
           "winner": false
         }
       },
       "goals": {
-        "home": 1,
+        "home": 2,
         "away": 0
       },
       "score": {
@@ -78,7 +78,7 @@
     {
       "fixture": {
         "id": 1489369,
-        "referee": "W. Sampaio",
+        "referee": "Wilton Pereira Sampaio, Brazil",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-11T22:00:00+03:00",
         "timestamp": 1781204400,
@@ -148,7 +148,7 @@
     {
       "fixture": {
         "id": 1538999,
-        "referee": "A. Omar",
+        "referee": "Amin Mohamed Omar, Egypt",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-12T05:00:00+03:00",
         "timestamp": 1781229600,
@@ -218,7 +218,7 @@
     {
       "fixture": {
         "id": 1539000,
-        "referee": "F. Tello",
+        "referee": "Facundo Raul Tello Figueroa, Argentina",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-12T22:00:00+03:00",
         "timestamp": 1781290800,
@@ -288,7 +288,7 @@
     {
       "fixture": {
         "id": 1489370,
-        "referee": "D. Makkelie",
+        "referee": "Danny Makkelie, Netherlands",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-13T04:00:00+03:00",
         "timestamp": 1781312400,
@@ -358,7 +358,7 @@
     {
       "fixture": {
         "id": 1489373,
-        "referee": "S. Martinez",
+        "referee": "Said Martinez, Honduras",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-13T22:00:00+03:00",
         "timestamp": 1781377200,
@@ -428,7 +428,7 @@
     {
       "fixture": {
         "id": 1489371,
-        "referee": "S. Vincic",
+        "referee": "Slavko Vinčić, Slovenia",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-14T01:00:00+03:00",
         "timestamp": 1781388000,
@@ -498,7 +498,7 @@
     {
       "fixture": {
         "id": 1489372,
-        "referee": "M. Ghorbal",
+        "referee": "Mustapha Ghorbal, Algeria",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-14T04:00:00+03:00",
         "timestamp": 1781398800,
@@ -568,7 +568,7 @@
     {
       "fixture": {
         "id": 1539001,
-        "referee": "J. Valenzuela",
+        "referee": "Jesús Valenzuela, Venezuela",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-14T07:00:00+03:00",
         "timestamp": 1781409600,
@@ -638,7 +638,7 @@
     {
       "fixture": {
         "id": 1489374,
-        "referee": "J. Jayed",
+        "referee": "Jalal Jayed, Morocco",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-14T20:00:00+03:00",
         "timestamp": 1781456400,
@@ -708,7 +708,7 @@
     {
       "fixture": {
         "id": 1489376,
-        "referee": "I. Elfath",
+        "referee": "Ismail Elfath, USA",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-14T23:00:00+03:00",
         "timestamp": 1781467200,
@@ -778,7 +778,7 @@
     {
       "fixture": {
         "id": 1489375,
-        "referee": "F. Letexier",
+        "referee": "François Letexier, France",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-15T02:00:00+03:00",
         "timestamp": 1781478000,
@@ -848,7 +848,7 @@
     {
       "fixture": {
         "id": 1539002,
-        "referee": "Y. Perez",
+        "referee": "Yael Falcon Perez, Argentina",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-15T05:00:00+03:00",
         "timestamp": 1781488800,
@@ -918,7 +918,7 @@
     {
       "fixture": {
         "id": 1489380,
-        "referee": "A. Makhadmeh",
+        "referee": "Adham Mohammad, Jordan",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-15T19:00:00+03:00",
         "timestamp": 1781539200,
@@ -988,7 +988,7 @@
     {
       "fixture": {
         "id": 1489377,
-        "referee": "R. Abatti",
+        "referee": "Ramon Abatti Abel, Brazil",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-15T22:00:00+03:00",
         "timestamp": 1781550000,
@@ -1058,7 +1058,7 @@
     {
       "fixture": {
         "id": 1489379,
-        "referee": "M. Mariani",
+        "referee": "Maurizio Mariani, Italy",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-16T01:00:00+03:00",
         "timestamp": 1781560800,
@@ -1128,7 +1128,7 @@
     {
       "fixture": {
         "id": 1489378,
-        "referee": "C. A. Ramos",
+        "referee": "César Ramos Palazuelos, Mexico",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-16T04:00:00+03:00",
         "timestamp": 1781571600,
@@ -1198,7 +1198,7 @@
     {
       "fixture": {
         "id": 1489383,
-        "referee": "A. Faghani",
+        "referee": "Alireza Faghani, Australia",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-16T22:00:00+03:00",
         "timestamp": 1781636400,
@@ -1268,7 +1268,7 @@
     {
       "fixture": {
         "id": 1539016,
-        "referee": "P. Atcho",
+        "referee": "Pierre Ghislain Atcho, Gabon",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-17T01:00:00+03:00",
         "timestamp": 1781647200,
@@ -1338,7 +1338,7 @@
     {
       "fixture": {
         "id": 1489381,
-        "referee": "S. Marciniak",
+        "referee": "Szymon Marciniak, Poland",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-17T04:00:00+03:00",
         "timestamp": 1781658000,
@@ -1408,7 +1408,7 @@
     {
       "fixture": {
         "id": 1489382,
-        "referee": "D. Beida",
+        "referee": "Dahane Beida, Mauritania",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-17T07:00:00+03:00",
         "timestamp": 1781668800,
@@ -1478,7 +1478,7 @@
     {
       "fixture": {
         "id": 1539003,
-        "referee": "A. Al Jassim",
+        "referee": "Abdulrahman Al-Jassim, Qatar",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-17T20:00:00+03:00",
         "timestamp": 1781715600,
@@ -1548,7 +1548,7 @@
     {
       "fixture": {
         "id": 1489384,
-        "referee": "C. Turpin",
+        "referee": "Clement Turpin, France",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-17T23:00:00+03:00",
         "timestamp": 1781726400,
@@ -1618,7 +1618,7 @@
     {
       "fixture": {
         "id": 1489385,
-        "referee": "G. Nyberg",
+        "referee": "Glenn Nyberg, Sweden",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-18T02:00:00+03:00",
         "timestamp": 1781737200,
@@ -1688,7 +1688,7 @@
     {
       "fixture": {
         "id": 1489386,
-        "referee": "A. Taylor",
+        "referee": "Anthony Taylor, England",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-18T05:00:00+03:00",
         "timestamp": 1781748000,
@@ -1758,7 +1758,7 @@
     {
       "fixture": {
         "id": 1539004,
-        "referee": "T. Penso",
+        "referee": "Tori Penso, USA",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-18T19:00:00+03:00",
         "timestamp": 1781798400,
@@ -1828,7 +1828,7 @@
     {
       "fixture": {
         "id": 1539005,
-        "referee": "J. Pinheiro",
+        "referee": "Joao Pedro Pinheiro, Portugal",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-18T22:00:00+03:00",
         "timestamp": 1781809200,
@@ -1898,7 +1898,7 @@
     {
       "fixture": {
         "id": 1489387,
-        "referee": "C. Garay",
+        "referee": "Cristian Garay, Chile",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-19T01:00:00+03:00",
         "timestamp": 1781820000,
@@ -1968,7 +1968,7 @@
     {
       "fixture": {
         "id": 1489388,
-        "referee": "G. Tejera",
+        "referee": "Gustavo Tejera, Uruguay",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-19T04:00:00+03:00",
         "timestamp": 1781830800,
@@ -2038,7 +2038,7 @@
     {
       "fixture": {
         "id": 1489391,
-        "referee": "F. Zwayer",
+        "referee": "Felix Zwayer, Germany",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-19T22:00:00+03:00",
         "timestamp": 1781895600,
@@ -2108,7 +2108,7 @@
     {
       "fixture": {
         "id": 1489390,
-        "referee": "I. Tantashev",
+        "referee": "Ilgiz Tantashev, Uzbekistan",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-20T01:00:00+03:00",
         "timestamp": 1781906400,
@@ -2178,7 +2178,7 @@
     {
       "fixture": {
         "id": 1489389,
-        "referee": "A. Hernandez",
+        "referee": "Alejandro Hernandez, Spain",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-20T03:30:00+03:00",
         "timestamp": 1781915400,
@@ -2248,7 +2248,7 @@
     {
       "fixture": {
         "id": 1539006,
-        "referee": "I. Barton",
+        "referee": "Iván Barton, El Salvador",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-20T06:00:00+03:00",
         "timestamp": 1781924400,
@@ -2318,7 +2318,7 @@
     {
       "fixture": {
         "id": 1539007,
-        "referee": "M. Oliver",
+        "referee": "Michael Oliver, England",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-20T20:00:00+03:00",
         "timestamp": 1781974800,
@@ -2388,7 +2388,7 @@
     {
       "fixture": {
         "id": 1489393,
-        "referee": "J. Benitez",
+        "referee": "Juan Gabriel Benitez, Paraguay",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-20T23:00:00+03:00",
         "timestamp": 1781985600,
@@ -2458,7 +2458,7 @@
     {
       "fixture": {
         "id": 1489392,
-        "referee": "Ma Ning",
+        "referee": "Ma Ning, China",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-21T03:00:00+03:00",
         "timestamp": 1782000000,
@@ -2528,7 +2528,7 @@
     {
       "fixture": {
         "id": 1489394,
-        "referee": "I. Kovacs",
+        "referee": "Istvan Kovacs, Romania",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-21T07:00:00+03:00",
         "timestamp": 1782014400,
@@ -2598,7 +2598,7 @@
     {
       "fixture": {
         "id": 1489397,
-        "referee": "R. Claus",
+        "referee": "Raphael Claus, Brazil",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-21T19:00:00+03:00",
         "timestamp": 1782057600,
@@ -2668,7 +2668,7 @@
     {
       "fixture": {
         "id": 1489395,
-        "referee": "D. Herrera",
+        "referee": "Dario Herrera, Argentina",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-21T22:00:00+03:00",
         "timestamp": 1782068400,
@@ -2738,7 +2738,7 @@
     {
       "fixture": {
         "id": 1489398,
-        "referee": "E. Eskas",
+        "referee": "Espen Eskas, Norway",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-22T01:00:00+03:00",
         "timestamp": 1782079200,
@@ -2808,7 +2808,7 @@
     {
       "fixture": {
         "id": 1489396,
-        "referee": "O. Alali",
+        "referee": "Omar Mohamed Al Ali, United Arab Emirates",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-22T04:00:00+03:00",
         "timestamp": 1782090000,
@@ -2878,7 +2878,7 @@
     {
       "fixture": {
         "id": 1489399,
-        "referee": "A. Omar",
+        "referee": "Amin Mohamed Omar, Egypt",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-22T20:00:00+03:00",
         "timestamp": 1782147600,
@@ -2948,7 +2948,7 @@
     {
       "fixture": {
         "id": 1539017,
-        "referee": "D. Fischer",
+        "referee": "Drew Fischer, Canada",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-23T00:00:00+03:00",
         "timestamp": 1782162000,
@@ -3018,7 +3018,7 @@
     {
       "fixture": {
         "id": 1489401,
-        "referee": "W. Sampaio",
+        "referee": "Wilton Pereira Sampaio, Brazil",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-23T03:00:00+03:00",
         "timestamp": 1782172800,
@@ -3088,7 +3088,7 @@
     {
       "fixture": {
         "id": 1489400,
-        "referee": "S. Vincic",
+        "referee": "Slavko Vinčić, Slovenia",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-23T06:00:00+03:00",
         "timestamp": 1782183600,
@@ -3158,7 +3158,7 @@
     {
       "fixture": {
         "id": 1489404,
-        "referee": "J. Jayed",
+        "referee": "Jalal Jayed, Morocco",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-23T20:00:00+03:00",
         "timestamp": 1782234000,
@@ -3228,7 +3228,7 @@
     {
       "fixture": {
         "id": 1489402,
-        "referee": "S. Martinez",
+        "referee": "Said Martinez, Honduras",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-23T23:00:00+03:00",
         "timestamp": 1782244800,
@@ -3298,7 +3298,7 @@
     {
       "fixture": {
         "id": 1489403,
-        "referee": "P. Atcho",
+        "referee": "Pierre Ghislain Atcho, Gabon",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-24T02:00:00+03:00",
         "timestamp": 1782255600,
@@ -3368,7 +3368,7 @@
     {
       "fixture": {
         "id": 1539008,
-        "referee": "M. Mariani",
+        "referee": "Maurizio Mariani, Italy",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-24T05:00:00+03:00",
         "timestamp": 1782266400,
@@ -3438,7 +3438,7 @@
     {
       "fixture": {
         "id": 1489408,
-        "referee": "R. Abatti",
+        "referee": "Ramon Abatti Abel, Brazil",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-24T22:00:00+03:00",
         "timestamp": 1782327600,
@@ -3508,7 +3508,7 @@
     {
       "fixture": {
         "id": 1539009,
-        "referee": "J. Valenzuela",
+        "referee": "Jesús Valenzuela, Venezuela",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-24T22:00:00+03:00",
         "timestamp": 1782327600,
@@ -3578,7 +3578,7 @@
     {
       "fixture": {
         "id": 1489405,
-        "referee": "D. Makkelie",
+        "referee": "Danny Makkelie, Netherlands",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T01:00:00+03:00",
         "timestamp": 1782338400,
@@ -3648,7 +3648,7 @@
     {
       "fixture": {
         "id": 1489406,
-        "referee": "C. A. Ramos",
+        "referee": "César Ramos Palazuelos, Mexico",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T01:00:00+03:00",
         "timestamp": 1782338400,
@@ -3718,7 +3718,7 @@
     {
       "fixture": {
         "id": 1539010,
-        "referee": "Y. Perez",
+        "referee": "Yael Falcon Perez, Argentina",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T04:00:00+03:00",
         "timestamp": 1782349200,
@@ -3788,7 +3788,7 @@
     {
       "fixture": {
         "id": 1489407,
-        "referee": "F. Tello",
+        "referee": "Facundo Raul Tello Figueroa, Argentina",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T04:00:00+03:00",
         "timestamp": 1782349200,
@@ -3858,7 +3858,7 @@
     {
       "fixture": {
         "id": 1489410,
-        "referee": "T. Penso",
+        "referee": "Tori Penso, USA",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T23:00:00+03:00",
         "timestamp": 1782417600,
@@ -3928,7 +3928,7 @@
     {
       "fixture": {
         "id": 1489409,
-        "referee": "G. Nyberg",
+        "referee": "Glenn Nyberg, Sweden",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-25T23:00:00+03:00",
         "timestamp": 1782417600,
@@ -3998,7 +3998,7 @@
     {
       "fixture": {
         "id": 1539011,
-        "referee": "I. Barton",
+        "referee": "Iván Barton, El Salvador",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T02:00:00+03:00",
         "timestamp": 1782428400,
@@ -4068,7 +4068,7 @@
     {
       "fixture": {
         "id": 1489412,
-        "referee": "K. I. Garcia Mendoza",
+        "referee": "Katia García, Mexico",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T02:00:00+03:00",
         "timestamp": 1782428400,
@@ -4138,7 +4138,7 @@
     {
       "fixture": {
         "id": 1539012,
-        "referee": "M. Ghorbal",
+        "referee": "Mustapha Ghorbal, Algeria",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T05:00:00+03:00",
         "timestamp": 1782439200,
@@ -4208,7 +4208,7 @@
     {
       "fixture": {
         "id": 1489411,
-        "referee": "C. Turpin",
+        "referee": "Clement Turpin, France",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T05:00:00+03:00",
         "timestamp": 1782439200,
@@ -4278,7 +4278,7 @@
     {
       "fixture": {
         "id": 1539074,
-        "referee": "A. Taylor",
+        "referee": "Anthony Taylor, England",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T22:00:00+03:00",
         "timestamp": 1782500400,
@@ -4348,7 +4348,7 @@
     {
       "fixture": {
         "id": 1489416,
-        "referee": "M. Oliver",
+        "referee": "Michael Oliver, England",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-26T22:00:00+03:00",
         "timestamp": 1782500400,
@@ -4418,7 +4418,7 @@
     {
       "fixture": {
         "id": 1489417,
-        "referee": "I. Elfath",
+        "referee": "Ismail Elfath, USA",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-27T03:00:00+03:00",
         "timestamp": 1782518400,
@@ -4488,7 +4488,7 @@
     {
       "fixture": {
         "id": 1489413,
-        "referee": "F. Letexier",
+        "referee": "François Letexier, France",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-27T03:00:00+03:00",
         "timestamp": 1782518400,
@@ -4558,7 +4558,7 @@
     {
       "fixture": {
         "id": 1489414,
-        "referee": "S. Marciniak",
+        "referee": "Szymon Marciniak, Poland",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-27T06:00:00+03:00",
         "timestamp": 1782529200,
@@ -4628,7 +4628,7 @@
     {
       "fixture": {
         "id": 1489415,
-        "referee": "A. Makhadmeh",
+        "referee": "Adham Mohammad, Jordan",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-27T06:00:00+03:00",
         "timestamp": 1782529200,
@@ -4698,7 +4698,7 @@
     {
       "fixture": {
         "id": 1489420,
-        "referee": "D. Fischer",
+        "referee": "Drew Fischer, Canada",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-28T00:00:00+03:00",
         "timestamp": 1782594000,
@@ -4768,7 +4768,7 @@
     {
       "fixture": {
         "id": 1489422,
-        "referee": "A. Al Jassim",
+        "referee": "Abdulrahman Al-Jassim, Qatar",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-28T00:00:00+03:00",
         "timestamp": 1782594000,
@@ -4838,7 +4838,7 @@
     {
       "fixture": {
         "id": 1489419,
-        "referee": "A. Faghani",
+        "referee": "Alireza Faghani, Australia",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-28T02:30:00+03:00",
         "timestamp": 1782603000,
@@ -4908,7 +4908,7 @@
     {
       "fixture": {
         "id": 1539013,
-        "referee": "F. Zwayer",
+        "referee": "Felix Zwayer, Germany",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-28T02:30:00+03:00",
         "timestamp": 1782603000,
@@ -5118,7 +5118,7 @@
     {
       "fixture": {
         "id": 1561329,
-        "referee": "J. Pinheiro",
+        "referee": "Joao Pedro Pinheiro, Portugal",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-28T22:00:00+03:00",
         "timestamp": 1782673200,
@@ -5188,7 +5188,7 @@
     {
       "fixture": {
         "id": 1562344,
-        "referee": "M. Mariani",
+        "referee": "Maurizio Mariani, Italy",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-29T20:00:00+03:00",
         "timestamp": 1782752400,
@@ -5258,7 +5258,7 @@
     {
       "fixture": {
         "id": 1565176,
-        "referee": "J. Jayed",
+        "referee": "Jalal Jayed, Morocco",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-29T23:30:00+03:00",
         "timestamp": 1782765000,
@@ -5398,7 +5398,7 @@
     {
       "fixture": {
         "id": 1564789,
-        "referee": "J. Valenzuela",
+        "referee": "Jesús Valenzuela, Venezuela",
         "timezone": "Europe/Tallinn",
         "date": "2026-06-30T20:00:00+03:00",
         "timestamp": 1782838800,
@@ -5468,7 +5468,7 @@
     {
       "fixture": {
         "id": 1565177,
-        "referee": "D. Makkelie",
+        "referee": "Danny Makkelie, Netherlands",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-01T00:00:00+03:00",
         "timestamp": 1782853200,
@@ -5608,7 +5608,7 @@
     {
       "fixture": {
         "id": 1567307,
-        "referee": "A. Makhadmeh",
+        "referee": "Adham Mohammad, Jordan",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-01T19:00:00+03:00",
         "timestamp": 1782921600,
@@ -5678,7 +5678,7 @@
     {
       "fixture": {
         "id": 1567308,
-        "referee": "S. Martinez",
+        "referee": "Said Martinez, Honduras",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-01T23:00:00+03:00",
         "timestamp": 1782936000,
@@ -5817,14 +5817,84 @@
     },
     {
       "fixture": {
+        "id": 1567311,
+        "referee": "Glenn Nyberg, Sweden",
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-02T22:00:00+03:00",
+        "timestamp": 1783018800,
+        "periods": {
+          "first": 1783018800,
+          "second": 1783022400
+        },
+        "venue": {
+          "id": null,
+          "name": "SoFi Stadium",
+          "city": "Inglewood"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 1
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 32",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 9,
+          "name": "Spain",
+          "logo": "https://media.api-sports.io/football/teams/9.png",
+          "winner": true
+        },
+        "away": {
+          "id": 775,
+          "name": "Austria",
+          "logo": "https://media.api-sports.io/football/teams/775.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 3,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 1,
+          "away": 0
+        },
+        "fulltime": {
+          "home": 3,
+          "away": 0
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
         "id": 1567309,
-        "referee": "E. Eskas",
+        "referee": "Espen Eskas, Norway",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-03T02:00:00+03:00",
         "timestamp": 1783033200,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1783033200,
+          "second": 1783036800
         },
         "venue": {
           "id": 312,
@@ -5832,9 +5902,9 @@
           "city": "Toronto"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
           "extra": null
         }
       },
@@ -5853,97 +5923,27 @@
           "id": 27,
           "name": "Portugal",
           "logo": "https://media.api-sports.io/football/teams/27.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 3,
           "name": "Croatia",
           "logo": "https://media.api-sports.io/football/teams/3.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 2,
+        "away": 1
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1567312,
-        "referee": "Y. Perez",
-        "timezone": "Europe/Tallinn",
-        "date": "2026-07-03T06:00:00+03:00",
-        "timestamp": 1783047600,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 19445,
-          "name": "BC Place",
-          "city": "Vancouver"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 1,
-        "name": "World Cup",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/1.png",
-        "flag": null,
-        "season": 2026,
-        "round": "Round of 32",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 15,
-          "name": "Switzerland",
-          "logo": "https://media.api-sports.io/football/teams/15.png",
-          "winner": null
-        },
-        "away": {
-          "id": 1532,
-          "name": "Algeria",
-          "logo": "https://media.api-sports.io/football/teams/1532.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "extratime": {
           "home": null,
@@ -6570,7 +6570,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -6615,7 +6615,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -6660,7 +6660,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -6705,7 +6705,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -6752,7 +6752,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -6797,7 +6797,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -6842,7 +6842,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -6887,7 +6887,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -6934,7 +6934,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -6979,7 +6979,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7024,7 +7024,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7069,7 +7069,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -7116,7 +7116,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7161,7 +7161,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7206,7 +7206,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7251,7 +7251,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -7298,7 +7298,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7343,7 +7343,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7388,7 +7388,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7433,7 +7433,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -7480,7 +7480,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7525,7 +7525,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7570,7 +7570,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7615,7 +7615,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -7662,7 +7662,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7707,7 +7707,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7752,7 +7752,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7797,7 +7797,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -7811,7 +7811,7 @@
               "points": 7,
               "goalsDiff": 5,
               "group": "Group H",
-              "form": "WWD",
+              "form": "WWWD",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -7844,7 +7844,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7889,7 +7889,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7934,7 +7934,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7979,7 +7979,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -8026,7 +8026,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8071,7 +8071,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8116,7 +8116,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8161,7 +8161,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -8208,7 +8208,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8220,7 +8220,7 @@
               "points": 4,
               "goalsDiff": 0,
               "group": "Group J",
-              "form": "DLW",
+              "form": "LDLW",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8253,7 +8253,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8298,7 +8298,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8343,7 +8343,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -8390,7 +8390,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8402,7 +8402,7 @@
               "points": 5,
               "goalsDiff": 5,
               "group": "Group K",
-              "form": "DWD",
+              "form": "WDWD",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8435,7 +8435,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8480,7 +8480,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8525,7 +8525,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -8572,7 +8572,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8584,7 +8584,7 @@
               "points": 6,
               "goalsDiff": 0,
               "group": "Group L",
-              "form": "WWL",
+              "form": "LWWL",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8617,7 +8617,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8662,7 +8662,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8707,7 +8707,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ],
           [
@@ -8754,7 +8754,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8799,7 +8799,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8844,7 +8844,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8889,7 +8889,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 5,
@@ -8934,7 +8934,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 6,
@@ -8979,7 +8979,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 7,
@@ -9024,7 +9024,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 8,
@@ -9069,7 +9069,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 9,
@@ -9114,7 +9114,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 10,
@@ -9159,7 +9159,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 11,
@@ -9204,7 +9204,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             },
             {
               "rank": 12,
@@ -9249,7 +9249,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-02T00:00:00+00:00"
+              "update": "2026-07-03T00:00:00+00:00"
             }
           ]
         ]
