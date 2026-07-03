@@ -1,80 +1,10 @@
 {
-  "updatedAt": "2026-07-03T04:11:00.620Z",
+  "updatedAt": "2026-07-03T09:36:36.601Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
   "timezone": "Europe/Tallinn",
   "fixtures": [
-    {
-      "fixture": {
-        "id": 1567312,
-        "referee": "Yael Falcon Perez, Argentina",
-        "timezone": "Europe/Tallinn",
-        "date": "2026-07-03T06:00:00+03:00",
-        "timestamp": 1783047600,
-        "periods": {
-          "first": 1783047600,
-          "second": 1783051200
-        },
-        "venue": {
-          "id": 19445,
-          "name": "BC Place",
-          "city": "Vancouver"
-        },
-        "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 51,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 1,
-        "name": "World Cup",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/1.png",
-        "flag": null,
-        "season": 2026,
-        "round": "Round of 32",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 15,
-          "name": "Switzerland",
-          "logo": "https://media.api-sports.io/football/teams/15.png",
-          "winner": true
-        },
-        "away": {
-          "id": 1532,
-          "name": "Algeria",
-          "logo": "https://media.api-sports.io/football/teams/1532.png",
-          "winner": false
-        }
-      },
-      "goals": {
-        "home": 2,
-        "away": 0
-      },
-      "score": {
-        "halftime": {
-          "home": 1,
-          "away": 0
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
     {
       "fixture": {
         "id": 1489369,
@@ -5957,6 +5887,76 @@
     },
     {
       "fixture": {
+        "id": 1567312,
+        "referee": "Yael Falcon Perez, Argentina",
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-03T06:00:00+03:00",
+        "timestamp": 1783047600,
+        "periods": {
+          "first": 1783047600,
+          "second": 1783051200
+        },
+        "venue": {
+          "id": 19445,
+          "name": "BC Place",
+          "city": "Vancouver"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 32",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 15,
+          "name": "Switzerland",
+          "logo": "https://media.api-sports.io/football/teams/15.png",
+          "winner": true
+        },
+        "away": {
+          "id": 1532,
+          "name": "Algeria",
+          "logo": "https://media.api-sports.io/football/teams/1532.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 1,
+          "away": 0
+        },
+        "fulltime": {
+          "home": 2,
+          "away": 0
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
         "id": 1565178,
         "referee": "G. Tejera",
         "timezone": "Europe/Tallinn",
@@ -6447,6 +6447,76 @@
     },
     {
       "fixture": {
+        "id": 1576756,
+        "referee": null,
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-06T22:00:00+03:00",
+        "timestamp": 1783364400,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 0,
+          "name": null,
+          "city": null
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 16",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 27,
+          "name": "Portugal",
+          "logo": "https://media.api-sports.io/football/teams/27.png",
+          "winner": null
+        },
+        "away": {
+          "id": 9,
+          "name": "Spain",
+          "logo": "https://media.api-sports.io/football/teams/9.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
         "id": 1570715,
         "referee": null,
         "timezone": "Europe/Tallinn",
@@ -6719,7 +6789,7 @@
               "points": 7,
               "goalsDiff": 4,
               "group": "Group B",
-              "form": "WWD",
+              "form": "WWWD",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8265,7 +8335,7 @@
               "points": 4,
               "goalsDiff": -2,
               "group": "Group J",
-              "form": "DWL",
+              "form": "LDWL",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8946,7 +9016,7 @@
               "points": 4,
               "goalsDiff": -2,
               "group": "Group Stage",
-              "form": "DWL",
+              "form": "LDWL",
               "status": "same",
               "description": "Round of 32",
               "all": {
