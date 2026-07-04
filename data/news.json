@@ -2,9 +2,477 @@
   {
     "id": "1",
     "category": "Football",
+    "title": "Listen: Sportsound with Levein, McLeish, Halliday, Lennon, Neilson & Naysmith",
+    "excerpt": "All the World Cup and domestic football news. Who's next for the Scotland manager job?",
+    "time": "1 min ago",
+    "date": "2026-07-04T16:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0h39mr3.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sounds/play/live:bbc_radio_scotland_fm?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "All the World Cup and domestic football news. Who's next for the Scotland manager job?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "2",
+    "category": "Football",
+    "title": "Can the U.S. win without Balogun? One big question...",
+    "excerpt": "As this week sees the World Cup field cut from 32 to 16, we're wondering what the biggest issue is for each team still in the tournament.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:57:10.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49228332/world-cup-round-16-analysis-brazil-canada-paraguay-morocco-ryan-ohanlon",
+    "content": [
+      "As this week sees the World Cup field cut from 32 to 16, we're wondering what the biggest issue is for each team still in the tournament.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "3",
+    "category": "Football",
+    "title": "Grades for every team eliminated from the World Cu...",
+    "excerpt": "When the World Cup ends, 47 teams will have been eliminated, and we're grading every one on how their run compared with expectations.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:57:10.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49178425/world-cup-grades-every-eliminated-team-rating-exit-tournament",
+    "content": [
+      "When the World Cup ends, 47 teams will have been eliminated, and we're grading every one on how their run compared with expectations.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "4",
+    "category": "Football",
+    "title": "Copy of How can Brazil stop Haaland? It might come down to...",
+    "excerpt": "Brazil face Norway in the round of 16 of the World Cup, and the showdown against Erling Haaland and Carlo Ancelotti's midfielders will be one to watch.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:56:56.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49265115/how-brazil-stop-erling-haaland-come-their-midfielders",
+    "content": [
+      "Brazil face Norway in the round of 16 of the World Cup, and the showdown against Erling Haaland and Carlo Ancelotti's midfielders will be one to watch.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "5",
+    "category": "Football",
+    "title": "Can England handle Mexico's altitude? Why caffeine...",
+    "excerpt": "Estadio Azteca's sky-high altitude punishes visiting teams, so England must use any means necessary if they want to get past Mexico.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:56:56.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49260461/how-england-overcome-mexico-altitude-world-cup-round-16",
+    "content": [
+      "Estadio Azteca's sky-high altitude punishes visiting teams, so England must use any means necessary if they want to get past Mexico.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "6",
+    "category": "Football",
+    "title": "⚾ Pochettino is latest WC star to throw first pitc...",
+    "excerpt": "U.S. coach Mauricio Pochettino was the latest soccer star to throw the first pitch at an MLB game this summer. How did he and he fellow footballers do?",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:42:19.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49261996/usmnt-coach-mauricio-pochettino-latest-world-cup-star-throw-first-pitch-mlb",
+    "content": [
+      "U.S. coach Mauricio Pochettino was the latest soccer star to throw the first pitch at an MLB game this summer. How did he and he fellow footballers do?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "7",
+    "category": "Football",
+    "title": "Argentina break Cape Verde hearts in extra-time",
+    "excerpt": "Argentina were taken into extra time by Cape Verde but eventually prevailed 3-2, with Lionel Messi on the scoresheet, in the round of 32 in Miami on Friday.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:42:18.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49263170/argentina-break-cape-verde-hearts-extra-world-cup-lionel-messi-scores",
+    "content": [
+      "Argentina were taken into extra time by Cape Verde but eventually prevailed 3-2, with Lionel Messi on the scoresheet, in the round of 32 in Miami on Friday.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "8",
+    "category": "Football",
+    "title": "Messi: Argentina have 'many' things to correct",
+    "excerpt": "Lionel Messi said Argentina have \"many\" things to improve after a nail-biting 3-2 win over Cape Verde in extra time Friday night at Hard Rock Stadium in Miami Gardens, Florida, pointing out his team's shortcomings in the round-of-32 victory...",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:42:18.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49263953/lionel-messi-argentina-many-bad-things-correct",
+    "content": [
+      "Lionel Messi said Argentina have \"many\" things to improve after a nail-biting 3-2 win over Cape Verde in extra time Friday night at Hard Rock Stadium in Miami Gardens, Florida, pointing out his team's shortcomings in the round-of-32 victory...",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "9",
+    "category": "Football",
+    "title": "Colombia see off Ghana to set up clash with Swiss",
+    "excerpt": "Colombia controlled Ghana on a sweltering night at Arrowhead Stadium, allowing Los Cafeteros to advance to the round of 16 at the World Cup with a 1-0 victory Friday night.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:42:18.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49264513/colombia-ghana-fifa-world-cup-2026-round-32",
+    "content": [
+      "Colombia controlled Ghana on a sweltering night at Arrowhead Stadium, allowing Los Cafeteros to advance to the round of 16 at the World Cup with a 1-0 victory Friday night.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "10",
+    "category": "Football",
+    "title": "Rodman marks NWSL return with dramatic double",
+    "excerpt": "Trinity Rodman scored two goals, including a stoppage-time winner, to lift the Washington Spirit to a 2-1 win over the Houston Dash on Friday..",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:42:18.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49265167/trinity-rodman-washington-spirit-goals-houston-dash",
+    "content": [
+      "Trinity Rodman scored two goals, including a stoppage-time winner, to lift the Washington Spirit to a 2-1 win over the Houston Dash on Friday..",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "11",
+    "category": "Football",
+    "title": "U.S.'s Balogun on ban: 'Emotional rollercoaster'",
+    "excerpt": "USMNT forward Folarin Balogun said that he's been on an emotional \"roller coaster\" in the wake of his sending off against Bosnia-Herzegovina on Wednesday, but he intends to \"support the boys\" as the team prepares to play Belgium in the roun...",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:42:18.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49260630/usmnt-folarin-balogun-red-card-ban-belgium-emotional-rollercoaster",
+    "content": [
+      "USMNT forward Folarin Balogun said that he's been on an emotional \"roller coaster\" in the wake of his sending off against Bosnia-Herzegovina on Wednesday, but he intends to \"support the boys\" as the team prepares to play Belgium in the roun...",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "12",
+    "category": "Football",
+    "title": "Mexico vs. England to KO six hours early",
+    "excerpt": "Mexico's World Cup round-of-16 clash against England will kick off at 6 p.m. local time, as originally scheduled, in Mexico City on Sunday, sources have told ESPN, after lengthy talks between FIFA and the two national associations Friday.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:42:18.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49260497/mexico-vs-england-world-cup-clash-brought-forward-six-hours-sources",
+    "content": [
+      "Mexico's World Cup round-of-16 clash against England will kick off at 6 p.m. local time, as originally scheduled, in Mexico City on Sunday, sources have told ESPN, after lengthy talks between FIFA and the two national associations Friday.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "13",
+    "category": "Football",
+    "title": "Nagelsmann out as Germany boss, Klopp lined up",
+    "excerpt": "Former Liverpool manager Jürgen Klopp said Friday he has had discussions with the German federation about taking over as national team coach after Julian Nagelsmann's exit.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:42:18.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49225220/julian-nagelsmann-germany-world-cup-2026",
+    "content": [
+      "Former Liverpool manager Jürgen Klopp said Friday he has had discussions with the German federation about taking over as national team coach after Julian Nagelsmann's exit.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "14",
+    "category": "Football",
+    "title": "Ancelotti: SAF is only manager more qualified",
+    "excerpt": "Brazil manager Carlo Ancelotti had a reply to social media doubters in Brazil on Friday, saying legendary former Manchester United manager Sir Alex Ferguson is the only manager more qualified than he is.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:42:18.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49260431/brazil-carlo-ancelotti-sir-alex-ferguson-only-manager-more-qualified",
+    "content": [
+      "Brazil manager Carlo Ancelotti had a reply to social media doubters in Brazil on Friday, saying legendary former Manchester United manager Sir Alex Ferguson is the only manager more qualified than he is.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "15",
+    "category": "Football",
+    "title": "How Messi, Argentina saved themselves from humilia...",
+    "excerpt": "No one could've predicted Argentina would nearly be bounced from the World Cup by Cape Verde, but the round of 32 gave us an instant classic.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:41:45.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49262637/messi-argentina-nearly-suffered-historic-world-cup-upset-cape-verde",
+    "content": [
+      "No one could've predicted Argentina would nearly be bounced from the World Cup by Cape Verde, but the round of 32 gave us an instant classic.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "16",
+    "category": "Football",
+    "title": "Transfer rumors, news: Premier League clubs on ale...",
+    "excerpt": "Chelsea, Liverpool, Arsenal, Manchester City and Bayern Munich have been alerted over a potential deal for Barcelona defender Jules Kounde. Transfer Talk has the latest.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:39:20.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/transfer.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49265988/transfer-rumors-news-premier-league-clubs-alert-barcelona-france-defender",
+    "content": [
+      "Chelsea, Liverpool, Arsenal, Manchester City and Bayern Munich have been alerted over a potential deal for Barcelona defender Jules Kounde. Transfer Talk has the latest.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "17",
+    "category": "Football",
+    "title": "How will the USMNT cope without suspended star str...",
+    "excerpt": "With Folarin Balogun controversially suspended for the USMNT's World Cup round-of-16 clash with Belgium, it's time to weigh options on how to replace him.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:38:56.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49256530/how-usmnt-cope-red-card-striker-folarin-balogun-world-cup-round-16-belgium",
+    "content": [
+      "With Folarin Balogun controversially suspended for the USMNT's World Cup round-of-16 clash with Belgium, it's time to weigh options on how to replace him.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "18",
+    "category": "Football",
+    "title": "World Cup Daily live: Cape Verde overshadow Taylor...",
+    "excerpt": "Enjoy all the features, news, video analysis and color from around the 2026 World Cup as the Round of 16 begins.",
+    "time": "1 min ago",
+    "date": "2026-07-04T13:33:59.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49265379/world-cup-daily-live-cape-verde-overshadow-taylor-swift-travis-kelce-wedding-round-16-begins-canada-morocco-paraguay-france",
+    "content": [
+      "Enjoy all the features, news, video analysis and color from around the 2026 World Cup as the Round of 16 begins.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "19",
+    "category": "Football",
+    "title": "Oxlade-Chamberlain signs new one-year Celtic deal",
+    "excerpt": "England-capped midfielder Alex Oxlade-Chamberlain signs a new one-year contract with Celtic.",
+    "time": "1 hr ago",
+    "date": "2026-07-04T11:54:18.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9dcb/live/9a056920-779e-11f1-90c7-73fde41eb72e.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c77y5zvjd8zo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "England-capped midfielder Alex Oxlade-Chamberlain signs a new one-year contract with Celtic.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "20",
+    "category": "Football",
+    "title": "World Cup quiz: How well do you remember the last 32?",
+    "excerpt": "The World Cup's last-32 ties were decided in a busy six-day spell. But how closely were you paying attention?",
+    "time": "1 hr ago",
+    "date": "2026-07-04T11:44:57.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1b5f/live/886464c0-76f2-11f1-a627-714adb4eed6e.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ce8j485z1ppo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "The World Cup's last-32 ties were decided in a busy six-day spell. But how closely were you paying attention?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "21",
+    "category": "Football",
+    "title": "Lightning, hotel security and spying - issues England face in Mexico",
+    "excerpt": "England are booed as they arrive at their Mexico City hotel to prepare for their World Cup last-16 game against Mexico - and it's not the only issue they face.",
+    "time": "2 hrs ago",
+    "date": "2026-07-04T11:23:54.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/90b1/live/6108c870-7784-11f1-a146-99f41269c606.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cx2x1gwwjego?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "England are booed as they arrive at their Mexico City hotel to prepare for their World Cup last-16 game against Mexico - and it's not the only issue they face.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "22",
+    "category": "Football",
+    "title": "Williamson eyes Scotland job with McCoist on staff",
+    "excerpt": "Former Hibernian and Kilmarnock manager Bobby Williamson puts himself forward for the job as Scotland head coach leading a dream team of Ally McCoist, Scott Brown and Kevin Thomson.",
+    "time": "2 hrs ago",
+    "date": "2026-07-04T11:21:59.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e437/live/4f6dc960-779a-11f1-a02d-cbd2f4813818.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cvg7zj78eklo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Former Hibernian and Kilmarnock manager Bobby Williamson puts himself forward for the job as Scotland head coach leading a dream team of Ally McCoist, Scott Brown and Kevin Thomson.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "23",
+    "category": "Football",
+    "title": "In spotlight but shunning limelight - Olise's unique rise to top",
+    "excerpt": "A footballer who dislikes too much media attention, but Michael Olise might not have much choice if he carries on his World Cup heroics.",
+    "time": "2 hrs ago",
+    "date": "2026-07-04T11:02:02.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/df3e/live/89fcbda0-7666-11f1-8d48-61dc4743c0e7.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c5yzr42943lo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "A footballer who dislikes too much media attention, but Michael Olise might not have much choice if he carries on his World Cup heroics.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "24",
+    "category": "Football",
+    "title": "From one to 16 - ranking every team left in the World Cup",
+    "excerpt": "BBC Sport ranks the 16 teams left in the World Cup. Do Argentina deserve to be in the top three? Should Norway be higher? What about England's position?",
+    "time": "3 hrs ago",
+    "date": "2026-07-04T09:55:36.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ec6a/live/8ef6d710-6ac1-11f1-b1db-af71d47507d6.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cd6elwx7eepo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "BBC Sport ranks the 16 teams left in the World Cup. Do Argentina deserve to be in the top three? Should Norway be higher? What about England's position?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "25",
+    "category": "Football",
+    "title": "Brazil going out? Chris Sutton predicts World Cup's last-16 matches",
+    "excerpt": "BBC Sport's football expert Chris Sutton gives his predictions for the last-16 ties at the 2026 World Cup, including England against Mexico.",
+    "time": "3 hrs ago",
+    "date": "2026-07-04T09:33:37.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/da24/live/94353bc0-641a-11f1-8546-8f19e4fe30f4.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c1my20zyn2eo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "BBC Sport's football expert Chris Sutton gives his predictions for the last-16 ties at the 2026 World Cup, including England against Mexico.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "26",
+    "category": "Football",
+    "title": "Eight of the 10 most populous countries are not in the World Cup",
+    "excerpt": "Many countries with massive populations consistently miss out on football’s biggest party. What can they do to change their sporting fortunes?",
+    "time": "4 hrs ago",
+    "date": "2026-07-04T09:09:18.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a501/live/0d6a3de0-7561-11f1-9510-1546718f668b.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/news/articles/c621je3we82o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Many countries with massive populations consistently miss out on football’s biggest party. What can they do to change their sporting fortunes?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "27",
+    "category": "Football",
     "title": "No matter the France result, Paraguay's inspired W...",
     "excerpt": "Back at the World Cup for the first time since 2010, Paraguay have already stunned Germany. Now, they face an even greater challenge against an in-form France.",
-    "time": "1 min ago",
+    "time": "4 hrs ago",
     "date": "2026-07-04T09:06:42.000Z",
     "readTime": "2 min read",
     "image": "assets/news/default-1.jpg",
@@ -18,486 +486,18 @@
     ]
   },
   {
-    "id": "2",
-    "category": "Football",
-    "title": "Transfer rumors, news: Premier League clubs on ale...",
-    "excerpt": "Chelsea, Liverpool, Arsenal, Manchester City and Bayern Munich have been alerted over a potential deal for Barcelona defender Jules Kounde. Transfer Talk has the latest.",
-    "time": "1 min ago",
-    "date": "2026-07-04T09:06:20.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/transfer.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49265988/transfer-rumors-news-premier-league-clubs-alert-barcelona-france-defender",
-    "content": [
-      "Chelsea, Liverpool, Arsenal, Manchester City and Bayern Munich have been alerted over a potential deal for Barcelona defender Jules Kounde. Transfer Talk has the latest.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "3",
-    "category": "Football",
-    "title": "How can Brazil stop Haaland? It might come down to...",
-    "excerpt": "Brazil face Norway in the round of 16 of the World Cup, and the showdown against Erling Haaland and Carlo Ancelotti's midfielders will be one to watch.",
-    "time": "1 min ago",
-    "date": "2026-07-04T08:24:25.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49265115/how-brazil-stop-erling-haaland-come-their-midfielders",
-    "content": [
-      "Brazil face Norway in the round of 16 of the World Cup, and the showdown against Erling Haaland and Carlo Ancelotti's midfielders will be one to watch.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "4",
-    "category": "Football",
-    "title": "Salah leads Egypt to World Cup history with impude...",
-    "excerpt": "Mohamed Salah has been at the heart of everything in Egypt's World Cup campaign, including their first knockout stage win after beating Australia in a penalty shootout.",
-    "time": "11 min ago",
-    "date": "2026-07-04T08:14:41.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49261423/world-cup-history-mohamed-salah-egypt-penalty-shootout-australia",
-    "content": [
-      "Mohamed Salah has been at the heart of everything in Egypt's World Cup campaign, including their first knockout stage win after beating Australia in a penalty shootout.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "5",
-    "category": "Football",
-    "title": "Penalty heartbreak for Australia leaves questions ...",
-    "excerpt": "Australia had a chance to make a big leap forward in their history vs. Egypt. Instead, another World Cup ends with questions of what might have been.",
-    "time": "11 min ago",
-    "date": "2026-07-04T08:14:41.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49260415/penalty-heartbreak-australia-vs-egypt-world-cup-knockout-win-eludes-socceroos",
-    "content": [
-      "Australia had a chance to make a big leap forward in their history vs. Egypt. Instead, another World Cup ends with questions of what might have been.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "6",
-    "category": "Football",
-    "title": "Can England handle Mexico's altitude? Why caffeine...",
-    "excerpt": "Estadio Azteca's sky-high altitude punishes visiting teams, so England must use any means necessary if they want to get past Mexico.",
-    "time": "15 min ago",
-    "date": "2026-07-04T08:10:31.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49260461/how-england-overcome-mexico-altitude-world-cup-round-16",
-    "content": [
-      "Estadio Azteca's sky-high altitude punishes visiting teams, so England must use any means necessary if they want to get past Mexico.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "7",
-    "category": "Football",
-    "title": "Can the U.S. win without Balogun? One big question...",
-    "excerpt": "As this week sees the World Cup field cut from 32 to 16, we're wondering what the biggest issue is for each team still in the tournament -- like can the U.S. win without their suspended star striker, Folarin Balogun?",
-    "time": "20 min ago",
-    "date": "2026-07-04T08:05:33.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49228332/world-cup-round-16-analysis-brazil-canada-paraguay-morocco-ryan-ohanlon",
-    "content": [
-      "As this week sees the World Cup field cut from 32 to 16, we're wondering what the biggest issue is for each team still in the tournament -- like can the U.S. win without their suspended star striker, Folarin Balogun?",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "8",
-    "category": "Football",
-    "title": "Grades for every team eliminated from the World Cu...",
-    "excerpt": "When the World Cup ends, 47 teams will have been eliminated, and we're grading every one on how their run compared with expectations.",
-    "time": "20 min ago",
-    "date": "2026-07-04T08:05:33.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49178425/world-cup-grades-every-eliminated-team-rating-exit-tournament",
-    "content": [
-      "When the World Cup ends, 47 teams will have been eliminated, and we're grading every one on how their run compared with expectations.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "9",
-    "category": "Football",
-    "title": "Messi: Argentina have 'many' things to correct",
-    "excerpt": "Lionel Messi said Argentina have \"many\" things to improve after a nail-biting 3-2 win over Cape Verde in extra time Friday night at Hard Rock Stadium in Miami Gardens, Florida, pointing out his team's shortcomings in the round-of-32 victory...",
-    "time": "24 min ago",
-    "date": "2026-07-04T08:02:01.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49263953/lionel-messi-argentina-many-bad-things-correct",
-    "content": [
-      "Lionel Messi said Argentina have \"many\" things to improve after a nail-biting 3-2 win over Cape Verde in extra time Friday night at Hard Rock Stadium in Miami Gardens, Florida, pointing out his team's shortcomings in the round-of-32 victory...",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "10",
-    "category": "Football",
-    "title": "Colombia see off Ghana to set up clash with Swiss",
-    "excerpt": "Colombia controlled Ghana on a sweltering night at Arrowhead Stadium, allowing Los Cafeteros to advance to the round of 16 at the World Cup with a 1-0 victory Friday night.",
-    "time": "24 min ago",
-    "date": "2026-07-04T08:02:01.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49264513/colombia-ghana-fifa-world-cup-2026-round-32",
-    "content": [
-      "Colombia controlled Ghana on a sweltering night at Arrowhead Stadium, allowing Los Cafeteros to advance to the round of 16 at the World Cup with a 1-0 victory Friday night.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "11",
-    "category": "Football",
-    "title": "⚾ Poch latest WC star to throw out first pitch",
-    "excerpt": "U.S. coach Mauricio Pochettino was the latest soccer star to throw the first pitch at an MLB game this summer. How did he and he fellow footballers do?",
-    "time": "24 min ago",
-    "date": "2026-07-04T08:02:01.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49261996/usmnt-coach-mauricio-pochettino-latest-world-cup-star-throw-first-pitch-mlb",
-    "content": [
-      "U.S. coach Mauricio Pochettino was the latest soccer star to throw the first pitch at an MLB game this summer. How did he and he fellow footballers do?",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "12",
-    "category": "Football",
-    "title": "Argentina break Cape Verde hearts in extra-time",
-    "excerpt": "Argentina were taken into extra time by Cape Verde but eventually prevailed 3-2, with Lionel Messi on the scoresheet, in the round of 32 in Miami on Friday.",
-    "time": "24 min ago",
-    "date": "2026-07-04T08:01:34.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49263170/argentina-break-cape-verde-hearts-extra-world-cup-lionel-messi-scores",
-    "content": [
-      "Argentina were taken into extra time by Cape Verde but eventually prevailed 3-2, with Lionel Messi on the scoresheet, in the round of 32 in Miami on Friday.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "13",
-    "category": "Football",
-    "title": "Rodman marks NWSL return with dramatic double",
-    "excerpt": "Trinity Rodman scored two goals, including a stoppage-time winner, to lift the Washington Spirit to a 2-1 win over the Houston Dash on Friday..",
-    "time": "24 min ago",
-    "date": "2026-07-04T08:01:34.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49265167/trinity-rodman-washington-spirit-goals-houston-dash",
-    "content": [
-      "Trinity Rodman scored two goals, including a stoppage-time winner, to lift the Washington Spirit to a 2-1 win over the Houston Dash on Friday..",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "14",
-    "category": "Football",
-    "title": "U.S.'s Balogun on ban: 'Emotional rollercoaster'",
-    "excerpt": "USMNT forward Folarin Balogun said that he's been on an emotional \"roller coaster\" in the wake of his sending off against Bosnia-Herzegovina on Wednesday, but he intends to \"support the boys\" as the team prepares to play Belgium in the roun...",
-    "time": "24 min ago",
-    "date": "2026-07-04T08:01:34.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49260630/usmnt-folarin-balogun-red-card-ban-belgium-emotional-rollercoaster",
-    "content": [
-      "USMNT forward Folarin Balogun said that he's been on an emotional \"roller coaster\" in the wake of his sending off against Bosnia-Herzegovina on Wednesday, but he intends to \"support the boys\" as the team prepares to play Belgium in the roun...",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "15",
-    "category": "Football",
-    "title": "Mexico vs. England to KO six hours early",
-    "excerpt": "Mexico's World Cup round-of-16 clash against England will kick off at 6 p.m. local time, as originally scheduled, in Mexico City on Sunday, sources have told ESPN, after lengthy talks between FIFA and the two national associations Friday.",
-    "time": "24 min ago",
-    "date": "2026-07-04T08:01:34.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49260497/mexico-vs-england-world-cup-clash-brought-forward-six-hours-sources",
-    "content": [
-      "Mexico's World Cup round-of-16 clash against England will kick off at 6 p.m. local time, as originally scheduled, in Mexico City on Sunday, sources have told ESPN, after lengthy talks between FIFA and the two national associations Friday.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "16",
-    "category": "Football",
-    "title": "Nagelsmann out as Germany boss, Klopp lined up",
-    "excerpt": "Former Liverpool manager Jürgen Klopp said Friday he has had discussions with the German federation about taking over as national team coach after Julian Nagelsmann's exit.",
-    "time": "24 min ago",
-    "date": "2026-07-04T08:01:34.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49225220/julian-nagelsmann-germany-world-cup-2026",
-    "content": [
-      "Former Liverpool manager Jürgen Klopp said Friday he has had discussions with the German federation about taking over as national team coach after Julian Nagelsmann's exit.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "17",
-    "category": "Football",
-    "title": "Ancelotti: SAF is only manager more qualified",
-    "excerpt": "Brazil manager Carlo Ancelotti had a reply to social media doubters in Brazil on Friday, saying legendary former Manchester United manager Sir Alex Ferguson is the only manager more qualified than he is.",
-    "time": "24 min ago",
-    "date": "2026-07-04T08:01:34.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49260431/brazil-carlo-ancelotti-sir-alex-ferguson-only-manager-more-qualified",
-    "content": [
-      "Brazil manager Carlo Ancelotti had a reply to social media doubters in Brazil on Friday, saying legendary former Manchester United manager Sir Alex Ferguson is the only manager more qualified than he is.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "18",
-    "category": "Football",
-    "title": "How Messi, Argentina saved themselves from humilia...",
-    "excerpt": "No one could've predicted Argentina would nearly be bounced from the World Cup by Cape Verde, but the round of 32 gave us an instant classic.",
-    "time": "25 min ago",
-    "date": "2026-07-04T08:01:10.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49262637/messi-argentina-nearly-suffered-historic-world-cup-upset-cape-verde",
-    "content": [
-      "No one could've predicted Argentina would nearly be bounced from the World Cup by Cape Verde, but the round of 32 gave us an instant classic.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "19",
-    "category": "Football",
-    "title": "Cape Verde's incredible World Cup run captured hea...",
-    "excerpt": "If World Cups were measured in moments then Cape Verde would be champions.",
-    "time": "25 min ago",
-    "date": "2026-07-04T08:01:10.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49265781/cape-verde-incredible-world-cup-run-captured-hearts-earned-respect",
-    "content": [
-      "If World Cups were measured in moments then Cape Verde would be champions.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "20",
-    "category": "Football",
-    "title": "England team booed on arrival at Mexico City hotel",
-    "excerpt": "England are booed as they arrive at their Mexico City hotel to prepare for their World Cup last-16 game against Mexico.",
-    "time": "29 min ago",
-    "date": "2026-07-04T07:57:21.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/410b/live/f32d1b40-7773-11f1-bfcd-0551ebb03f4c.png",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cx2x1gwwjego?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "England are booed as they arrive at their Mexico City hotel to prepare for their World Cup last-16 game against Mexico.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "21",
-    "category": "Football",
-    "title": "Who am I? Guess World Cup star No 27",
-    "excerpt": "Will you get today's player in as few attempts as possible?",
-    "time": "2 hrs ago",
-    "date": "2026-07-04T06:06:21.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a297/live/2f4b1e60-6b94-11f1-8546-8f19e4fe30f4.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c5yrk3l4d90o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Will you get today's player in as few attempts as possible?",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "22",
-    "category": "Football",
-    "title": "Murals, flags and beef dishes - Messi mania takes hold in Miami",
-    "excerpt": "Lionel Messi's World Cup goals roadshow continued with his seventh of the tournament for Argentina against Cape Verde - and delighted the fans who were in Miami to see their hero.",
-    "time": "3 hrs ago",
-    "date": "2026-07-04T05:37:08.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/00f5/live/caa8a4b0-7768-11f1-b976-0b9c15b0ccfc.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cm2jpkkdld4o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Lionel Messi's World Cup goals roadshow continued with his seventh of the tournament for Argentina against Cape Verde - and delighted the fans who were in Miami to see their hero.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "23",
-    "category": "Football",
-    "title": "Arias strike sends Colombia into last 16 with victory over Ghana",
-    "excerpt": "Jhon Arias scores the only goal of the game as Colombia become the last team to book their place in the last 16 following a 1-0 win over Ghana in Kansas City.",
-    "time": "4 hrs ago",
-    "date": "2026-07-04T04:12:20.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8baa/live/04bac620-7759-11f1-9510-1546718f668b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/crr8pz45409o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Jhon Arias scores the only goal of the game as Colombia become the last team to book their place in the last 16 following a 1-0 win over Ghana in Kansas City.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "24",
-    "category": "Football",
-    "title": "England into last 16 - what is their path to the final?",
-    "excerpt": "BBC Sport takes a look at what England will need to do to reach the final after progressing the last 16",
-    "time": "5 hrs ago",
-    "date": "2026-07-04T03:33:21.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fbaf/live/d94933c0-7576-11f1-afe7-df77d8cf5f2d.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c5yz0zkzw39o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "BBC Sport takes a look at what England will need to do to reach the final after progressing the last 16",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "25",
-    "category": "Football",
-    "title": "Farewell Cape Verde - the underdogs the World Cup will never forget",
-    "excerpt": "Cape Verde may have been the World Cup's second-smallest nation but they leave the largest impact as they depart following defeat by defending champions Argentina in an epic.",
-    "time": "5 hrs ago",
-    "date": "2026-07-04T03:09:37.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d7b4/live/b7fee070-774c-11f1-8e4e-2dc6898b0152.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqj1pd8lqw9o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Cape Verde may have been the World Cup's second-smallest nation but they leave the largest impact as they depart following defeat by defending champions Argentina in an epic.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "26",
-    "category": "Football",
-    "title": "How will the USMNT cope without suspended star str...",
-    "excerpt": "With Folarin Balogun controversially suspended for the USMNT's World Cup round-of-16 clash with Belgium, it's time to weigh options on how to replace him.",
-    "time": "6 hrs ago",
-    "date": "2026-07-04T02:43:28.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "ESPN Soccer",
-    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49256530/how-usmnt-cope-red-card-striker-folarin-balogun-world-cup-round-16-belgium",
-    "content": [
-      "With Folarin Balogun controversially suspended for the USMNT's World Cup round-of-16 clash with Belgium, it's time to weigh options on how to replace him.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: ESPN Soccer."
-    ]
-  },
-  {
-    "id": "27",
-    "category": "Football",
-    "title": "Argentina overcome Cape Verde in extra-time thriller",
-    "excerpt": "Argentina overcome a huge scare as they beat Cape Verde 3-2 in extra time thanks to a deflected header from Cristian Romero to advance to the last 16.",
-    "time": "7 hrs ago",
-    "date": "2026-07-04T01:55:42.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6bcc/live/6e4a8380-7742-11f1-a627-714adb4eed6e.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cj6gp70g967o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Argentina overcome a huge scare as they beat Cape Verde 3-2 in extra time thanks to a deflected header from Cristian Romero to advance to the last 16.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
     "id": "28",
     "category": "Football",
-    "title": "Five and a half hours that left England's World Cup tie in chaos",
-    "excerpt": "For several hours on Friday, no-one seemed to know when England's World Cup last-16 match against co-hosts Mexico would kick off. BBC Sport tells how a story of confusion and anger - culminating in a Fifa U-turn - unfolded.",
-    "time": "7 hrs ago",
-    "date": "2026-07-04T01:36:43.000Z",
+    "title": "'Celtic in fresh talks for Qarabag's Duran' - gossip",
+    "excerpt": "Celtic are reportedly close to signing Qarabag forward Camilo Duran amid transfer speculation for Aberdeen, Dundee, Hearts, Rangers and St Mirren.",
+    "time": "4 hrs ago",
+    "date": "2026-07-04T08:46:05.000Z",
     "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a110/live/5dd8ea40-774d-11f1-a627-714adb4eed6e.jpg",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b7c9/live/b1fdec00-7785-11f1-9510-1546718f668b.png",
     "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c0ey24q42w2o?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cx2vr8errgvo?at_medium=RSS&at_campaign=rss",
     "content": [
-      "For several hours on Friday, no-one seemed to know when England's World Cup last-16 match against co-hosts Mexico would kick off. BBC Sport tells how a story of confusion and anger - culminating in a Fifa U-turn - unfolded.",
+      "Celtic are reportedly close to signing Qarabag forward Camilo Duran amid transfer speculation for Aberdeen, Dundee, Hearts, Rangers and St Mirren.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
@@ -506,34 +506,34 @@
   {
     "id": "29",
     "category": "Football",
-    "title": "'What a strike!' - Cabral hits brilliant goal to draw Cape Verde level in extra time",
-    "excerpt": "Sidny Cabral scores an incredible goal in extra time for Cape Verde as they equalise for a second time against Argentina.",
-    "time": "7 hrs ago",
-    "date": "2026-07-04T00:58:28.000Z",
+    "title": "Cape Verde's incredible World Cup run captured hearts and earned them respect",
+    "excerpt": "If World Cups were measured in moments, then Cape Verde would be champions, as their incredible run to the knockouts captured the hearts of fans.",
+    "time": "4 hrs ago",
+    "date": "2026-07-04T08:45:01.000Z",
     "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c7dc/live/26c53000-7742-11f1-9510-1546718f668b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c9q23jpee23o?at_medium=RSS&at_campaign=rss",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/49265781/cape-verde-incredible-world-cup-run-captured-hearts-earned-respect",
     "content": [
-      "Sidny Cabral scores an incredible goal in extra time for Cape Verde as they equalise for a second time against Argentina.",
+      "If World Cups were measured in moments, then Cape Verde would be champions, as their incredible run to the knockouts captured the hearts of fans.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
+      "Source feed: ESPN Soccer."
     ]
   },
   {
     "id": "30",
     "category": "Football",
-    "title": "Martinez restores Argentina's lead against Cape Verde",
-    "excerpt": "Lisandro Martinez restores Argentina's lead against Cape Verde in the knockout stage of the 2026 World Cup.",
-    "time": "8 hrs ago",
-    "date": "2026-07-04T00:48:33.000Z",
+    "title": "Who am I? Guess World Cup star No 27",
+    "excerpt": "Will you get today's player in as few attempts as possible?",
+    "time": "7 hrs ago",
+    "date": "2026-07-04T06:06:21.000Z",
     "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aa57/live/ed3d6ee0-773e-11f1-a627-714adb4eed6e.jpg",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a297/live/2f4b1e60-6b94-11f1-8546-8f19e4fe30f4.jpg",
     "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c4gy8exgyd3o?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c5yrk3l4d90o?at_medium=RSS&at_campaign=rss",
     "content": [
-      "Lisandro Martinez restores Argentina's lead against Cape Verde in the knockout stage of the 2026 World Cup.",
+      "Will you get today's player in as few attempts as possible?",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
