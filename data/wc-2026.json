@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T04:03:46.654Z",
+  "updatedAt": "2026-07-04T09:02:27.959Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
@@ -6584,6 +6584,146 @@
           "away": null
         }
       }
+    },
+    {
+      "fixture": {
+        "id": 1576804,
+        "referee": null,
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-07T19:00:00+03:00",
+        "timestamp": 1783440000,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 0,
+          "name": null,
+          "city": null
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 16",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": null
+        },
+        "away": {
+          "id": 32,
+          "name": "Egypt",
+          "logo": "https://media.api-sports.io/football/teams/32.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1576805,
+        "referee": null,
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-07T23:00:00+03:00",
+        "timestamp": 1783454400,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 0,
+          "name": null,
+          "city": null
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 16",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 15,
+          "name": "Switzerland",
+          "logo": "https://media.api-sports.io/football/teams/15.png",
+          "winner": null
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
     }
   ],
   "standingsPayload": [
@@ -8427,7 +8567,7 @@
               "points": 7,
               "goalsDiff": 3,
               "group": "Group K",
-              "form": "DWW",
+              "form": "WDWW",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8699,7 +8839,7 @@
               "points": 4,
               "goalsDiff": 0,
               "group": "Group L",
-              "form": "LDW",
+              "form": "LLDW",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8881,7 +9021,7 @@
               "points": 4,
               "goalsDiff": 0,
               "group": "Group Stage",
-              "form": "LDW",
+              "form": "LLDW",
               "status": "same",
               "description": "Round of 32",
               "all": {
