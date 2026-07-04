@@ -1,80 +1,10 @@
 {
-  "updatedAt": "2026-07-03T19:51:54.887Z",
+  "updatedAt": "2026-07-04T04:03:46.654Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
   "timezone": "Europe/Tallinn",
   "fixtures": [
-    {
-      "fixture": {
-        "id": 1565178,
-        "referee": "Gustavo Tejera, Uruguay",
-        "timezone": "Europe/Tallinn",
-        "date": "2026-07-03T21:00:00+03:00",
-        "timestamp": 1783101600,
-        "periods": {
-          "first": 1783101600,
-          "second": 1783105200
-        },
-        "venue": {
-          "id": 0,
-          "name": "AT&T Stadium",
-          "city": "Dallas"
-        },
-        "status": {
-          "long": "Second Half",
-          "short": "2H",
-          "elapsed": 90,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 1,
-        "name": "World Cup",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/1.png",
-        "flag": null,
-        "season": 2026,
-        "round": "Round of 32",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 20,
-          "name": "Australia",
-          "logo": "https://media.api-sports.io/football/teams/20.png",
-          "winner": null
-        },
-        "away": {
-          "id": 32,
-          "name": "Egypt",
-          "logo": "https://media.api-sports.io/football/teams/32.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 1
-      },
-      "score": {
-        "halftime": {
-          "home": 0,
-          "away": 1
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
     {
       "fixture": {
         "id": 1489369,
@@ -6027,14 +5957,84 @@
     },
     {
       "fixture": {
+        "id": 1565178,
+        "referee": "Gustavo Tejera, Uruguay",
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-03T21:00:00+03:00",
+        "timestamp": 1783101600,
+        "periods": {
+          "first": 1783101600,
+          "second": 1783105200
+        },
+        "venue": {
+          "id": 0,
+          "name": "AT&T Stadium",
+          "city": "Dallas"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "PEN",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 32",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 20,
+          "name": "Australia",
+          "logo": "https://media.api-sports.io/football/teams/20.png",
+          "winner": false
+        },
+        "away": {
+          "id": 32,
+          "name": "Egypt",
+          "logo": "https://media.api-sports.io/football/teams/32.png",
+          "winner": true
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 1
+        },
+        "fulltime": {
+          "home": 1,
+          "away": 1
+        },
+        "extratime": {
+          "home": 0,
+          "away": 0
+        },
+        "penalty": {
+          "home": 2,
+          "away": 4
+        }
+      }
+    },
+    {
+      "fixture": {
         "id": 1565179,
-        "referee": "D. Fischer",
+        "referee": "Drew Fischer, Canada",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-04T01:00:00+03:00",
         "timestamp": 1783116000,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1783116000,
+          "second": 1783119600
         },
         "venue": {
           "id": 0,
@@ -6042,9 +6042,9 @@
           "city": "Miami"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
+          "long": "Match Finished",
+          "short": "AET",
+          "elapsed": 120,
           "extra": null
         }
       },
@@ -6063,31 +6063,31 @@
           "id": 26,
           "name": "Argentina",
           "logo": "https://media.api-sports.io/football/teams/26.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 1533,
           "name": "Cape Verde Islands",
           "logo": "https://media.api-sports.io/football/teams/1533.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 3,
+        "away": 2
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "extratime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "penalty": {
           "home": null,
@@ -6098,13 +6098,13 @@
     {
       "fixture": {
         "id": 1567310,
-        "referee": "C. Turpin",
+        "referee": "Clement Turpin, France",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-04T04:30:00+03:00",
         "timestamp": 1783128600,
         "periods": {
-          "first": null,
-          "second": null
+          "first": 1783128600,
+          "second": 1783132200
         },
         "venue": {
           "id": 0,
@@ -6112,10 +6112,10 @@
           "city": "Kansas City"
         },
         "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
         }
       },
       "league": {
@@ -6133,27 +6133,27 @@
           "id": 8,
           "name": "Colombia",
           "logo": "https://media.api-sports.io/football/teams/8.png",
-          "winner": null
+          "winner": true
         },
         "away": {
           "id": 1504,
           "name": "Ghana",
           "logo": "https://media.api-sports.io/football/teams/1504.png",
-          "winner": null
+          "winner": false
         }
       },
       "goals": {
-        "home": null,
-        "away": null
+        "home": 1,
+        "away": 0
       },
       "score": {
         "halftime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fulltime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "extratime": {
           "home": null,
@@ -6640,7 +6640,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -6685,7 +6685,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -6730,7 +6730,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -6775,7 +6775,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -6822,7 +6822,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -6867,7 +6867,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -6912,7 +6912,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -6957,7 +6957,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -7004,7 +7004,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7049,7 +7049,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7094,7 +7094,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7139,7 +7139,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -7186,7 +7186,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7198,7 +7198,7 @@
               "points": 4,
               "goalsDiff": 0,
               "group": "Group D",
-              "form": "DLW",
+              "form": "LDLW",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -7231,7 +7231,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7276,7 +7276,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7321,7 +7321,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -7368,7 +7368,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7413,7 +7413,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7458,7 +7458,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7503,7 +7503,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -7550,7 +7550,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7595,7 +7595,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7640,7 +7640,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7685,7 +7685,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -7732,7 +7732,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7744,7 +7744,7 @@
               "points": 5,
               "goalsDiff": 2,
               "group": "Group G",
-              "form": "DWD",
+              "form": "WDWD",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -7777,7 +7777,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7822,7 +7822,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7867,7 +7867,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -7914,7 +7914,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7926,7 +7926,7 @@
               "points": 3,
               "goalsDiff": 0,
               "group": "Group H",
-              "form": "DDD",
+              "form": "LDDD",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -7959,7 +7959,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8004,7 +8004,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8049,7 +8049,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -8096,7 +8096,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8141,7 +8141,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8186,7 +8186,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8231,7 +8231,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -8245,7 +8245,7 @@
               "points": 9,
               "goalsDiff": 7,
               "group": "Group J",
-              "form": "WWW",
+              "form": "WWWW",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8278,7 +8278,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8323,7 +8323,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8368,7 +8368,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8413,7 +8413,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -8460,7 +8460,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8505,7 +8505,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8550,7 +8550,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8595,7 +8595,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -8642,7 +8642,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8687,7 +8687,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8732,7 +8732,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8777,7 +8777,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ],
           [
@@ -8824,7 +8824,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8869,7 +8869,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8914,7 +8914,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8959,7 +8959,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 5,
@@ -9004,7 +9004,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 6,
@@ -9049,7 +9049,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 7,
@@ -9094,7 +9094,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 8,
@@ -9139,7 +9139,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 9,
@@ -9184,7 +9184,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 10,
@@ -9229,7 +9229,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 11,
@@ -9274,7 +9274,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             },
             {
               "rank": 12,
@@ -9319,7 +9319,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-03T00:00:00+00:00"
+              "update": "2026-07-04T00:00:00+00:00"
             }
           ]
         ]
