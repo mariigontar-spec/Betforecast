@@ -1,40 +1,3 @@
-function injectHomeAdhitBackground() {
-  const zoneId = "163743";
-  const slotId = "bf-adhit-background-zone";
-  const styleId = "bf-adhit-background-style";
-
-  if (!document.getElementById(styleId)) {
-    const style = document.createElement("style");
-    style.id = styleId;
-    style.textContent = `
-      #bf-adhit-background-zone {
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 1px !important;
-        height: 1px !important;
-        overflow: visible !important;
-        z-index: 1 !important;
-      }
-    `;
-    document.head.appendChild(style);
-  }
-
-  if (
-    document.getElementById(slotId) ||
-    document.querySelector(`ins.ins-zone[data-zone="${zoneId}"]`)
-  ) {
-    return;
-  }
-
-  const slot = document.createElement("ins");
-  slot.id = slotId;
-  slot.className = "ins-zone";
-  slot.dataset.zone = zoneId;
-
-  document.body.insertBefore(slot, document.body.firstChild);
-}
-
 function loadHomeSiteSkinManager() {
   const scriptId = "bf-site-skin-manager-loader";
 
@@ -104,10 +67,7 @@ function initAiMetricsAnimation() {
   observer.observe(aiBanner);
 }
 
-injectHomeAdhitBackground();
-
 document.addEventListener("DOMContentLoaded", () => {
-  injectHomeAdhitBackground();
   loadHomeSiteSkinManager();
   initAiMetricsAnimation();
 });
