@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "enabled": true,
   "defaultSkin": "1win",
   "adScript": "https://media.getads.online/js/code.min.js",
@@ -14,7 +14,7 @@
       "bodyClass": "site-skin-1win",
       "mode": "code",
       "codeZone": "",
-      "fallbackImage": "",
+      "fallbackImage": "/assets/ads/1win-wc2026-site-skin.webp",
       "clickUrl": "",
       "topClickHeight": 165,
       "sideStartTop": 165
