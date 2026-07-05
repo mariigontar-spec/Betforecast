@@ -152,6 +152,7 @@
       }
 
       body.site-skin-managed .bf-header,
+      body.site-skin-managed .header,
       body.site-skin-managed .bf-page,
       body.site-skin-managed .wc-page,
       body.site-skin-managed .match-page-wrap,
@@ -162,7 +163,8 @@
         z-index: 20 !important;
       }
 
-      body.site-skin-managed .bf-header-inner {
+      body.site-skin-managed .bf-header-inner,
+      body.site-skin-managed .header-inner {
         width: min(var(--bf-shell-width, 1240px), calc(100vw - var(--bf-page-gap, 48px))) !important;
         max-width: var(--bf-shell-width, 1240px) !important;
         min-height: 82px !important;
@@ -180,14 +182,16 @@
         -webkit-backdrop-filter: blur(14px) !important;
       }
 
-      body.site-skin-managed .bf-header-inner::after {
+      body.site-skin-managed .bf-header-inner::after,
+      body.site-skin-managed .header-inner::after {
         content: "" !important;
         display: block !important;
         width: 220px !important;
         height: 1px !important;
       }
 
-      body.site-skin-managed .bf-nav {
+      body.site-skin-managed .bf-nav,
+      body.site-skin-managed .topbar-menu {
         justify-self: center !important;
         width: max-content !important;
         max-width: 100% !important;
@@ -199,7 +203,9 @@
       }
 
       body.site-skin-managed .bf-nav a,
-      body.site-skin-managed .bf-nav a.active {
+      body.site-skin-managed .bf-nav a.active,
+      body.site-skin-managed .topbar-menu a,
+      body.site-skin-managed .topbar-menu a.active {
         flex: 0 0 auto !important;
         min-height: 48px !important;
         padding: 0 18px !important;
@@ -219,10 +225,29 @@
       }
 
       body.site-skin-managed .bf-nav a:hover,
-      body.site-skin-managed .bf-nav a.active:hover {
+      body.site-skin-managed .bf-nav a.active:hover,
+      body.site-skin-managed .topbar-menu a:hover,
+      body.site-skin-managed .topbar-menu a.active:hover {
         color: #5ee0a4 !important;
         background: rgba(48, 63, 81, 0.88) !important;
         border-color: rgba(94, 224, 164, 0.28) !important;
+      }
+
+      body.site-skin-managed .results-page-wrap,
+      body.site-skin-managed .results-hero,
+      body.site-skin-managed .results-page-section,
+      body.site-skin-managed .content-banner {
+        width: min(var(--bf-shell-width, 1240px), calc(100vw - var(--bf-page-gap, 48px))) !important;
+        max-width: var(--bf-shell-width, 1240px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      body.site-skin-managed .results-grid {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
       }
 
       .bf-site-skin-code-slot {
@@ -282,7 +307,8 @@
           background-position: center top !important;
         }
 
-        body.site-skin-managed .bf-header-inner {
+        body.site-skin-managed .bf-header-inner,
+        body.site-skin-managed .header-inner {
           width: calc(100% - 16px) !important;
           max-width: calc(100% - 16px) !important;
           min-height: 0 !important;
@@ -295,7 +321,8 @@
           border-radius: 18px !important;
         }
 
-        body.site-skin-managed .bf-header-inner::after {
+        body.site-skin-managed .bf-header-inner::after,
+        body.site-skin-managed .header-inner::after {
           display: none !important;
         }
 
@@ -304,7 +331,8 @@
           justify-content: center !important;
         }
 
-        body.site-skin-managed .bf-nav {
+        body.site-skin-managed .bf-nav,
+        body.site-skin-managed .topbar-menu {
           width: 100% !important;
           display: grid !important;
           grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -312,12 +340,22 @@
         }
 
         body.site-skin-managed .bf-nav a,
-        body.site-skin-managed .bf-nav a.active {
+        body.site-skin-managed .bf-nav a.active,
+        body.site-skin-managed .topbar-menu a,
+        body.site-skin-managed .topbar-menu a.active {
           width: 100% !important;
           min-height: 40px !important;
           padding: 10px 3px !important;
           font-size: 13px !important;
           text-align: center !important;
+        }
+
+        body.site-skin-managed .results-page-wrap,
+        body.site-skin-managed .results-hero,
+        body.site-skin-managed .results-page-section,
+        body.site-skin-managed .content-banner {
+          width: calc(100% - 16px) !important;
+          max-width: calc(100% - 16px) !important;
         }
 
         .bf-site-skin-click-left,
