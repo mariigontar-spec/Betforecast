@@ -7,15 +7,6 @@ function injectHomeAdhitBackground() {
     const style = document.createElement("style");
     style.id = styleId;
     style.textContent = `
-      body.site-skin-1win {
-        background-image: none !important;
-      }
-
-      .skin-click {
-        display: none !important;
-        pointer-events: none !important;
-      }
-
       #bf-adhit-background-zone {
         position: absolute !important;
         top: 0 !important;
@@ -25,19 +16,9 @@ function injectHomeAdhitBackground() {
         overflow: visible !important;
         z-index: 1 !important;
       }
-
-      @media (max-width: 768px) {
-        body.site-skin-1win {
-          background-image: none !important;
-        }
-      }
     `;
     document.head.appendChild(style);
   }
-
-  document.querySelectorAll(".skin-click").forEach((item) => {
-    item.remove();
-  });
 
   if (
     document.getElementById(slotId) ||
