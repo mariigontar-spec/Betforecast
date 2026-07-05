@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "enabled": true,
   "defaultSkin": "1win",
   "adScript": "https://media.getads.online/js/code.min.js",
@@ -10,10 +10,10 @@
   "skins": {
     "1win": {
       "enabled": true,
-      "label": "1win World Cup 2026",
+      "label": "Main site skin",
       "bodyClass": "site-skin-1win",
       "mode": "code",
-      "codeZone": "",
+      "codeZone": "163743",
       "fallbackImage": "/assets/ads/1win-wc2026-site-skin.webp",
       "clickUrl": "",
       "topClickHeight": 165,
