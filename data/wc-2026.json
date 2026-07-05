@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-05T14:11:10.498Z",
+  "updatedAt": "2026-07-05T19:43:39.053Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
@@ -6308,7 +6308,7 @@
     {
       "fixture": {
         "id": 1568100,
-        "referee": null,
+        "referee": "Ismail Elfath, USA",
         "timezone": "Europe/Tallinn",
         "date": "2026-07-05T23:00:00+03:00",
         "timestamp": 1783281600,
@@ -6319,7 +6319,7 @@
         "venue": {
           "id": 0,
           "name": "MetLife Stadium",
-          "city": null
+          "city": "East Rutherford"
         },
         "status": {
           "long": "Not Started",
