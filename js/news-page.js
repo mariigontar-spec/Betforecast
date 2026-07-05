@@ -1,4 +1,26 @@
+function injectAdhitBackgroundSlot() {
+  const zoneId = "163743";
+  const slotId = "bf-adhit-background-zone";
+
+  if (
+    document.getElementById(slotId) ||
+    document.querySelector(`ins.ins-zone[data-zone="${zoneId}"]`)
+  ) {
+    return;
+  }
+
+  const slot = document.createElement("ins");
+  slot.id = slotId;
+  slot.className = "ins-zone";
+  slot.dataset.zone = zoneId;
+
+  document.body.insertBefore(slot, document.body.firstChild);
+}
+
+injectAdhitBackgroundSlot();
+
 document.addEventListener("DOMContentLoaded", () => {
+  injectAdhitBackgroundSlot();
   loadCachedNews();
 });
 
