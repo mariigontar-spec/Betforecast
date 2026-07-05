@@ -162,6 +162,69 @@
         z-index: 20 !important;
       }
 
+      body.site-skin-managed .bf-header-inner {
+        width: min(var(--bf-shell-width, 1240px), calc(100vw - var(--bf-page-gap, 48px))) !important;
+        max-width: var(--bf-shell-width, 1240px) !important;
+        min-height: 82px !important;
+        margin: 0 auto !important;
+        padding: 14px 24px !important;
+        display: grid !important;
+        grid-template-columns: 220px minmax(0, 1fr) 220px !important;
+        align-items: center !important;
+        gap: 18px !important;
+        background: var(--bf-panel-background, linear-gradient(180deg, rgba(18, 38, 55, 0.97), rgba(8, 20, 32, 0.98))) !important;
+        border: var(--bf-panel-border, 1px solid rgba(94, 224, 164, 0.16)) !important;
+        border-radius: 26px !important;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.32) !important;
+        backdrop-filter: blur(14px) !important;
+        -webkit-backdrop-filter: blur(14px) !important;
+      }
+
+      body.site-skin-managed .bf-header-inner::after {
+        content: "" !important;
+        display: block !important;
+        width: 220px !important;
+        height: 1px !important;
+      }
+
+      body.site-skin-managed .bf-nav {
+        justify-self: center !important;
+        width: max-content !important;
+        max-width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-wrap: nowrap !important;
+        gap: 10px !important;
+      }
+
+      body.site-skin-managed .bf-nav a,
+      body.site-skin-managed .bf-nav a.active {
+        flex: 0 0 auto !important;
+        min-height: 48px !important;
+        padding: 0 18px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 14px !important;
+        color: #f8fafc !important;
+        background: rgba(38, 51, 67, 0.72) !important;
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+        font-size: 16px !important;
+        font-weight: 900 !important;
+        line-height: 1 !important;
+        white-space: nowrap !important;
+        text-decoration: none !important;
+      }
+
+      body.site-skin-managed .bf-nav a:hover,
+      body.site-skin-managed .bf-nav a.active:hover {
+        color: #5ee0a4 !important;
+        background: rgba(48, 63, 81, 0.88) !important;
+        border-color: rgba(94, 224, 164, 0.28) !important;
+      }
+
       .bf-site-skin-code-slot {
         position: absolute !important;
         top: 0 !important;
@@ -217,6 +280,44 @@
           background-image: var(--bf-site-skin-mobile-bg, var(--bf-site-skin-bg, none)) !important;
           background-size: var(--bf-site-skin-mobile-bg-size, auto 290px) !important;
           background-position: center top !important;
+        }
+
+        body.site-skin-managed .bf-header-inner {
+          width: calc(100% - 16px) !important;
+          max-width: calc(100% - 16px) !important;
+          min-height: 0 !important;
+          margin: 6px auto 0 !important;
+          padding: 12px 10px !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          gap: 10px !important;
+          border-radius: 18px !important;
+        }
+
+        body.site-skin-managed .bf-header-inner::after {
+          display: none !important;
+        }
+
+        body.site-skin-managed .bf-logo {
+          width: 100% !important;
+          justify-content: center !important;
+        }
+
+        body.site-skin-managed .bf-nav {
+          width: 100% !important;
+          display: grid !important;
+          grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+          gap: 8px !important;
+        }
+
+        body.site-skin-managed .bf-nav a,
+        body.site-skin-managed .bf-nav a.active {
+          width: 100% !important;
+          min-height: 40px !important;
+          padding: 10px 3px !important;
+          font-size: 13px !important;
+          text-align: center !important;
         }
 
         .bf-site-skin-click-left,
