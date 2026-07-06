@@ -4,63 +4,879 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Betforecast.ai</title>
-  <link rel="stylesheet" href="css/style.css?v=27">
+
+  <script src="https://cdn.counter.dev/script.js" data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098" data-utcoffset="3"></script>
+
   <style>
-    :root{--bg:#020b13;--green:#5ee0a4;--panel:linear-gradient(180deg,rgba(18,38,55,.96),rgba(8,20,32,.98));--border:1px solid rgba(94,224,164,.16);--shell:1240px;--gap:48px}
-    *{box-sizing:border-box;min-width:0}html,body{width:100%;min-height:100%;margin:0;padding:0;overflow-x:hidden;background:var(--bg)!important;color:#f8fafc!important;font-family:Arial,Helvetica,sans-serif!important}body.site-skin-1win{min-height:100vh;padding-top:240px!important;background:var(--bg)!important}.bf-adserver-background{position:relative;z-index:1;width:100%;min-height:1px}.bf-header,.bf-page,.side-banner,.home-leaderboard-ad,.home-box-ad{position:relative!important;z-index:20!important}.bf-header{width:100%!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important}.bf-header-inner{width:min(var(--shell),calc(100vw - var(--gap)))!important;max-width:var(--shell)!important;margin:0 auto!important;padding:14px 24px!important;min-height:82px!important;display:grid!important;grid-template-columns:220px minmax(0,1fr) 220px!important;align-items:center!important;gap:18px!important;background:var(--panel)!important;border:var(--border)!important;border-radius:26px!important;box-shadow:0 18px 50px rgba(0,0,0,.32)!important;backdrop-filter:blur(14px)!important}.bf-header-inner:after{content:"";display:block;width:220px;height:1px}.bf-logo{display:flex!important;align-items:center!important;gap:10px;color:#fff!important;text-decoration:none!important;font-weight:800!important;font-size:22px!important;justify-self:start!important}.bf-logo img{width:38px!important;height:38px!important;object-fit:contain!important}.bf-logo span span{color:var(--green)!important}.bf-nav{justify-self:center!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:10px!important;flex-wrap:nowrap!important}.bf-nav a{flex:0 0 auto!important;padding:11px 14px!important;border:1px solid rgba(94,224,164,.12)!important;border-radius:999px!important;color:#fff!important;text-decoration:none!important;background:rgba(255,255,255,.04)!important;white-space:nowrap!important;font-weight:800!important}.bf-nav a:hover{border-color:rgba(94,224,164,.46)!important;box-shadow:0 0 18px rgba(94,224,164,.16)!important}.bf-page{width:min(var(--shell),calc(100vw - var(--gap)))!important;max-width:var(--shell)!important;margin:28px auto 0!important;padding:0 0 56px!important;background:transparent!important;display:grid!important;gap:24px!important}.bf-hero{display:grid!important;grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr)!important;gap:20px!important;min-width:0!important}.bf-hero-left,.bf-featured,.bf-benefit-card,.bf-predictions-section,.bf-panel{background:var(--panel)!important;border:var(--border)!important;border-radius:26px!important;box-shadow:0 18px 50px rgba(0,0,0,.32)!important;backdrop-filter:blur(14px)!important;min-width:0!important;color:#f8fafc!important}.bf-hero-left,.bf-featured{padding:28px!important}.bf-pill,.bf-mini-pill{display:inline-flex!important;align-items:center!important;gap:8px!important;padding:8px 12px!important;border-radius:999px!important;border:1px solid rgba(94,224,164,.18)!important;color:var(--green)!important;background:rgba(94,224,164,.08)!important;font-weight:800!important;font-size:13px!important;text-transform:uppercase!important;letter-spacing:.08em!important}.bf-hero h1{margin:18px 0 14px!important;font-size:clamp(42px,5vw,70px)!important;line-height:.98!important;letter-spacing:-.05em!important;color:#f8fafc!important}.bf-hero h1 span{display:block!important;color:var(--green)!important}.bf-hero p,.bf-featured p{color:rgba(248,250,252,.74)!important;line-height:1.55!important;font-size:16px!important}.bf-metrics,.bf-probs,.bf-featured-mini-grid,.bf-benefits,.model-view{display:grid!important;gap:14px!important}.bf-metrics{grid-template-columns:repeat(4,minmax(0,1fr))!important;margin-top:22px!important}.bf-metric,.bf-featured-mini-grid>div,.bf-probs>div,.bf-search-result{padding:14px!important;border:1px solid rgba(94,224,164,.12)!important;border-radius:18px!important;background:rgba(2,11,19,.44)!important;color:#f8fafc!important}.bf-metric{display:grid!important;grid-template-columns:auto 1fr!important;column-gap:10px!important;align-items:center!important}.bf-metric span{grid-row:span 2;color:var(--green)!important;font-size:22px!important}.bf-metric strong{font-size:19px!important;color:#fff!important}.bf-metric small{color:rgba(248,250,252,.68)!important}.bf-search-card{margin-top:24px!important;padding:20px!important;border-radius:22px!important;border:1px solid rgba(94,224,164,.14)!important;background:rgba(2,11,19,.38)!important}.bf-search-card h2{margin:16px 0!important;color:#fff!important}.bf-search-row{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;gap:10px!important}.bf-input{display:flex!important;align-items:center!important;gap:8px!important;padding:0 14px!important;border-radius:16px!important;border:1px solid rgba(94,224,164,.16)!important;background:rgba(255,255,255,.05)!important}.bf-input input{width:100%!important;min-width:0!important;padding:14px 0!important;color:#fff!important;border:0!important;outline:0!important;background:transparent!important;font:inherit!important}.bf-input input::placeholder{color:rgba(248,250,252,.45)!important}.bf-search-row button,.bf-featured-actions a{padding:14px 18px!important;border:0!important;border-radius:16px!important;color:#06120d!important;background:linear-gradient(135deg,#5ee0a4,#b7ffcf)!important;font-weight:900!important;text-decoration:none!important;cursor:pointer!important}.bf-tags{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin-top:12px!important}.bf-tags button{padding:8px 10px!important;border:1px solid rgba(94,224,164,.14)!important;border-radius:999px!important;color:#fff!important;background:rgba(255,255,255,.04)!important;cursor:pointer!important;font-weight:800!important}.bf-featured-top{display:flex!important;justify-content:space-between!important;gap:16px!important;align-items:center!important;text-transform:uppercase!important}.bf-featured-top strong{color:#fff!important;font-size:17px!important}.bf-featured-top span{color:rgba(255,255,255,.82)!important;font-size:13px!important;font-weight:900!important}.bf-team-row{display:grid!important;grid-template-columns:minmax(0,1fr) 62px minmax(0,1fr)!important;align-items:center!important;gap:12px!important;margin-top:28px!important;text-align:center!important}.bf-team-logo-wrap{width:104px!important;height:104px!important;margin:0 auto 14px!important;border-radius:50%!important;overflow:hidden!important;background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.1)!important;display:grid!important;place-items:center!important}.bf-team-logo-img{width:112%!important;height:112%!important;object-fit:contain!important;padding:0!important;transform:scale(1.32)!important}.bf-team h3{margin:0!important;color:#fff!important;font-size:24px!important;line-height:1.15!important}.bf-team small{display:block!important;margin-top:8px!important;color:rgba(248,250,252,.72)!important;font-weight:900!important;text-transform:uppercase!important;letter-spacing:.12em!important;font-size:12px!important}.bf-vs{width:52px!important;height:52px!important;display:grid!important;place-items:center!important;border-radius:50%!important;color:var(--green)!important;background:rgba(94,224,164,.08)!important;font-size:28px!important;font-weight:950!important;margin:0 auto!important}.bf-ai-predicts{display:grid!important;gap:4px!important;text-align:center!important;justify-content:center!important;margin:24px auto 22px!important;padding:16px!important;border-radius:18px!important;background:rgba(94,224,164,.08)!important;border:1px solid rgba(94,224,164,.18)!important;width:fit-content!important;max-width:100%!important}.bf-ai-predicts span{font-size:11px!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:rgba(248,250,252,.72)!important;font-weight:800!important}.bf-ai-predicts strong{font-size:13px!important;letter-spacing:.06em!important;text-transform:uppercase!important;color:#f8fafc!important}.bf-probs{grid-template-columns:repeat(3,minmax(0,1fr))!important;margin-top:14px!important}.bf-probs small{display:block!important;color:rgba(248,250,252,.72)!important;font-size:11px!important;font-weight:900!important;text-transform:uppercase!important}.bf-probs strong{display:block!important;margin-top:4px!important;color:#fff!important;font-size:34px!important;line-height:1!important}.bf-prob-bar{height:7px!important;margin-top:8px!important;border-radius:999px!important;overflow:hidden!important;background:rgba(255,255,255,.08)!important}.bf-prob-bar span{display:block!important;height:100%!important;border-radius:inherit!important;background:var(--green)!important}.bf-featured-mini-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;margin-top:14px!important}.bf-featured-mini-grid>div span{display:block!important;font-size:11px!important;font-weight:800!important;letter-spacing:.08em!important;text-transform:uppercase!important;color:rgba(248,250,252,.62)!important}.bf-featured-mini-grid>div strong{display:block!important;margin-top:8px!important;font-size:15px!important;color:#fff!important;line-height:1.2!important}.bf-featured-actions{display:flex!important;flex-wrap:wrap!important;gap:10px!important;margin-top:18px!important}.bf-featured-actions a:nth-child(2){color:#fff!important;background:rgba(255,255,255,.06)!important;border:1px solid rgba(255,255,255,.13)!important}.bf-benefits{grid-template-columns:repeat(3,minmax(0,1fr))!important;margin-top:20px!important}.bf-benefit-card,.bf-predictions-section,.bf-panel{padding:24px!important}.bf-benefit-card h3{margin:0 0 6px!important;color:#fff!important}.bf-benefit-card p{margin:0!important;color:rgba(248,250,252,.7)!important}.home-leaderboard-ad,.home-box-ad{display:flex!important;justify-content:center!important;width:100%!important;margin:24px auto!important;overflow:hidden!important}.home-box-ad{display:none!important}.bf-predictions-table{display:block!important;overflow-x:auto!important;border-radius:18px!important;border:1px solid rgba(94,224,164,.12)!important}.bf-predictions-table:before,.bf-predictions-table:after,.bf-prediction-row:before,.bf-prediction-row:after{content:none!important;display:none!important}.bf-prediction-row{min-width:860px!important;display:grid!important;grid-template-columns:1.35fr .95fr .65fr .65fr .65fr 1fr!important;gap:14px!important;align-items:center!important;padding:13px 14px!important;border-bottom:1px solid rgba(255,255,255,.06)!important;background:transparent!important;text-align:left!important;min-height:0!important}.bf-prediction-row>*{display:block!important;min-width:0!important;white-space:nowrap!important;text-align:left!important;transform:none!important}.bf-prediction-head{color:rgba(248,250,252,.62)!important;font-size:12px!important;text-transform:uppercase!important;min-height:0!important}.bf-prediction-row em{justify-self:start!important;padding:6px 10px!important;border-radius:999px!important;color:#06120d!important;background:var(--green)!important;font-style:normal!important;font-weight:800!important}.model-view{grid-template-columns:repeat(2,minmax(0,1fr))!important}.bf-panel h2,.bf-predictions-section h2{margin:0 0 18px!important;color:#fff!important}.side-banner{position:fixed!important;top:400px!important;z-index:30!important}.left-banner{left:24px!important}.right-banner{right:24px!important}
-    @media(max-width:1100px){.bf-header-inner{grid-template-columns:1fr!important;justify-items:center!important}.bf-header-inner:after{display:none!important}.bf-nav{width:100%!important;flex-wrap:wrap!important}.bf-hero,.model-view{grid-template-columns:1fr!important}}
-    @media(max-width:768px){body.site-skin-1win{padding-top:150px!important}.side-banner{display:none!important}.bf-header-inner{width:calc(100% - 16px)!important;margin:6px auto 0!important;padding:12px 10px!important;display:flex!important;flex-direction:column!important;gap:10px!important;border-radius:18px!important}.bf-logo{width:100%!important;justify-content:center!important;font-size:20px!important}.bf-logo img{width:30px!important;height:30px!important}.bf-nav{width:100%!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:7px!important}.bf-nav a{width:100%!important;padding:9px 3px!important;font-size:12px!important;line-height:1.15!important;text-align:center!important;white-space:normal!important}.bf-page{width:calc(100% - 16px)!important;max-width:calc(100% - 16px)!important;margin:12px auto 0!important;padding-bottom:28px!important}.bf-hero-left,.bf-featured,.bf-benefit-card,.bf-predictions-section,.bf-panel{padding:18px 12px!important;border-radius:22px!important}.bf-hero h1{font-size:32px!important}.bf-metrics,.bf-probs,.bf-featured-mini-grid,.bf-benefits,.model-view{grid-template-columns:1fr!important}.bf-search-row,.bf-featured-actions{display:grid!important;grid-template-columns:1fr!important}.bf-team-row{grid-template-columns:1fr!important}.bf-team-logo-wrap{width:88px!important;height:88px!important;margin-bottom:12px!important}.bf-team-logo-img{width:112%!important;height:112%!important;padding:0!important;transform:scale(1.25)!important}.home-leaderboard-ad,.banner-728{display:none!important}.home-box-ad,.adhit-300x250{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;margin:18px auto!important;overflow:hidden!important}.bf-predictions-table,#matches-container,#results-container{overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}}
-    @media(max-width:420px){body.site-skin-1win{padding-top:150px!important}.bf-nav{gap:6px!important}.bf-nav a{font-size:11px!important}.bf-hero h1{font-size:29px!important}}
+    :root {
+      --bg: #020b13;
+      --panel: linear-gradient(180deg, rgba(18, 38, 55, 0.96), rgba(8, 20, 32, 0.98));
+      --panel-soft: rgba(2, 11, 19, 0.44);
+      --border: 1px solid rgba(94, 224, 164, 0.16);
+      --green: #5ee0a4;
+      --text: #f8fafc;
+      --muted: rgba(248, 250, 252, 0.7);
+      --shell: 1240px;
+      --gap: 48px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+    }
+
+    body {
+      min-height: 100vh;
+      padding-top: 240px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .bf-adserver-background {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      min-height: 1px;
+    }
+
+    .site-shell {
+      position: relative;
+      z-index: 20;
+      width: min(var(--shell), calc(100vw - var(--gap)));
+      margin: 0 auto 64px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: var(--border);
+      border-radius: 28px;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.32);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .header {
+      min-height: 82px;
+      padding: 14px 24px;
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr) 220px;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .header::after {
+      content: "";
+      display: block;
+      width: 220px;
+      height: 1px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+    }
+
+    .logo-mark {
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1px solid rgba(94, 224, 164, 0.32);
+      color: var(--green);
+      font-size: 14px;
+    }
+
+    .logo span span {
+      color: var(--green);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: nowrap;
+    }
+
+    .nav a {
+      padding: 12px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(255, 255, 255, 0.05);
+      font-weight: 800;
+      white-space: nowrap;
+      transition: 0.2s ease;
+    }
+
+    .nav a:hover {
+      border-color: rgba(94, 224, 164, 0.5);
+      box-shadow: 0 0 18px rgba(94, 224, 164, 0.18);
+    }
+
+    .hero {
+      margin-top: 28px;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
+      gap: 22px;
+    }
+
+    .hero-card,
+    .featured-card {
+      min-width: 0;
+      padding: 28px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(18, 38, 55, 0.72), rgba(8, 20, 32, 0.82));
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 9px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(94, 224, 164, 0.22);
+      background: rgba(94, 224, 164, 0.1);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 22px 0 16px;
+      font-size: clamp(46px, 5vw, 74px);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+    }
+
+    h1 span {
+      display: block;
+      color: var(--green);
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .metric,
+    .mini-card,
+    .search-result,
+    .prob-card,
+    .list-card {
+      min-width: 0;
+      padding: 14px;
+      border: 1px solid rgba(94, 224, 164, 0.12);
+      border-radius: 18px;
+      background: rgba(2, 11, 19, 0.46);
+    }
+
+    .metric {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 10px;
+      align-items: center;
+    }
+
+    .metric span {
+      grid-row: span 2;
+      color: var(--green);
+      font-size: 22px;
+    }
+
+    .metric strong,
+    .prob-card strong,
+    .mini-card strong {
+      display: block;
+      color: #fff;
+      font-size: 22px;
+    }
+
+    .metric small,
+    .prob-card small,
+    .mini-card span {
+      display: block;
+      color: rgba(248, 250, 252, 0.66);
+      font-size: 12px;
+    }
+
+    .search-card {
+      margin-top: 24px;
+      padding: 20px;
+      border-radius: 22px;
+      border: 1px solid rgba(94, 224, 164, 0.14);
+      background: rgba(2, 11, 19, 0.38);
+    }
+
+    .search-card h2 {
+      margin: 16px 0;
+      font-size: 24px;
+    }
+
+    .search-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+    }
+
+    .input-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(94, 224, 164, 0.16);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .input-wrap input {
+      width: 100%;
+      min-width: 0;
+      padding: 14px 0;
+      color: #fff;
+      border: 0;
+      outline: 0;
+      background: transparent;
+    }
+
+    .btn {
+      padding: 14px 18px;
+      border: 0;
+      border-radius: 16px;
+      color: #06120d;
+      background: linear-gradient(135deg, #5ee0a4, #b7ffcf);
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tags button {
+      padding: 8px 10px;
+      border: 1px solid rgba(94, 224, 164, 0.14);
+      border-radius: 999px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.04);
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .search-result {
+      margin-top: 14px;
+      color: rgba(248, 250, 252, 0.72);
+    }
+
+    .featured-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .featured-top span {
+      color: rgba(248, 250, 252, 0.78);
+      font-size: 13px;
+    }
+
+    .teams {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 72px minmax(0, 1fr);
+      align-items: center;
+      gap: 14px;
+      margin-top: 34px;
+      text-align: center;
+    }
+
+    .team-logo {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .team h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .team small {
+      display: block;
+      margin-top: 8px;
+      color: rgba(248, 250, 252, 0.72);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .vs {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--green);
+      background: rgba(94, 224, 164, 0.1);
+      font-size: 30px;
+      font-weight: 950;
+    }
+
+    .ai-pick {
+      width: fit-content;
+      max-width: 100%;
+      margin: 30px auto 22px;
+      padding: 16px 22px;
+      border-radius: 18px;
+      border: 1px solid rgba(94, 224, 164, 0.18);
+      background: rgba(94, 224, 164, 0.08);
+      text-align: center;
+    }
+
+    .ai-pick span,
+    .ai-pick strong {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .ai-pick span {
+      color: rgba(248, 250, 252, 0.68);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .ai-pick strong {
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+    .prob-grid,
+    .mini-grid,
+    .benefits,
+    .panels {
+      display: grid;
+      gap: 14px;
+    }
+
+    .prob-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .prob-card small {
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .prob-card strong {
+      margin-top: 4px;
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .bar {
+      height: 7px;
+      margin-top: 9px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .bar i {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--green);
+    }
+
+    .mini-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 14px;
+    }
+
+    .benefits {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 20px;
+    }
+
+    .benefit {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 14px;
+      padding: 20px;
+      border-radius: 22px;
+    }
+
+    .benefit > span {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(94, 224, 164, 0.1);
+    }
+
+    .benefit h3 {
+      margin: 0 0 6px;
+    }
+
+    .benefit p {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .leaderboard-ad,
+    .box-ad {
+      display: flex;
+      justify-content: center;
+      margin: 24px auto;
+      overflow: hidden;
+    }
+
+    .box-ad {
+      display: none;
+    }
+
+    .predictions {
+      margin-top: 20px;
+      padding: 24px;
+    }
+
+    .predictions h2,
+    .data-panel h2 {
+      margin: 0 0 18px;
+      font-size: 28px;
+    }
+
+    .prediction-table {
+      overflow-x: auto;
+      border-radius: 18px;
+      border: 1px solid rgba(94, 224, 164, 0.12);
+    }
+
+    .prediction-row {
+      min-width: 820px;
+      display: grid;
+      grid-template-columns: 1.35fr 1fr 0.65fr 0.65fr 0.65fr 1fr;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .prediction-head {
+      color: rgba(248, 250, 252, 0.64);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .chip {
+      display: inline-flex;
+      width: fit-content;
+      padding: 7px 11px;
+      border-radius: 999px;
+      color: #06120d;
+      background: var(--green);
+      font-weight: 900;
+      font-style: normal;
+      white-space: nowrap;
+    }
+
+    .league-chip {
+      display: inline-flex;
+      width: fit-content;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: rgba(248, 250, 252, 0.92);
+      background: rgba(94, 224, 164, 0.16);
+      border: 1px solid rgba(94, 224, 164, 0.18);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .panels {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: stretch;
+      margin-top: 24px;
+    }
+
+    .data-panel {
+      min-height: 310px;
+      padding: 24px;
+    }
+
+    .data-panel > span {
+      display: block;
+      margin-bottom: 12px;
+      color: rgba(248, 250, 252, 0.82);
+      font-size: 17px;
+    }
+
+    .match-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .list-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      min-height: 82px;
+    }
+
+    .list-card strong,
+    .list-card small {
+      display: block;
+      writing-mode: horizontal-tb;
+      text-orientation: mixed;
+      transform: none;
+      word-break: normal;
+    }
+
+    .list-card strong {
+      color: #fff;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .list-card small {
+      margin-top: 6px;
+      color: rgba(248, 250, 252, 0.66);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .side-banner {
+      position: fixed;
+      top: 400px;
+      z-index: 30;
+    }
+
+    .left-banner {
+      left: 24px;
+    }
+
+    .right-banner {
+      right: 24px;
+    }
+
+    @media (max-width: 1100px) {
+      .header {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+
+      .header::after {
+        display: none;
+      }
+
+      .nav {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      .hero,
+      .panels {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding-top: 150px;
+      }
+
+      .site-shell {
+        width: calc(100% - 16px);
+        margin-bottom: 36px;
+      }
+
+      .side-banner,
+      .leaderboard-ad,
+      .banner-728 {
+        display: none !important;
+      }
+
+      .box-ad,
+      .adhit-300x250 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 18px auto;
+        overflow: hidden;
+      }
+
+      .header {
+        min-height: 0;
+        padding: 12px 10px;
+        border-radius: 18px;
+      }
+
+      .logo {
+        justify-content: center;
+        font-size: 20px;
+      }
+
+      .nav {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 7px;
+      }
+
+      .nav a {
+        padding: 9px 4px;
+        font-size: 12px;
+        text-align: center;
+        white-space: normal;
+      }
+
+      .hero,
+      .hero-card,
+      .featured-card,
+      .predictions,
+      .data-panel {
+        padding: 18px 12px;
+        border-radius: 22px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .metrics,
+      .prob-grid,
+      .mini-grid,
+      .benefits,
+      .search-row,
+      .teams,
+      .list-card {
+        grid-template-columns: 1fr;
+      }
+
+      .vs {
+        margin: 0 auto;
+      }
+
+      .prediction-row {
+        min-width: 760px;
+      }
+
+      .chip {
+        justify-self: start;
+      }
+    }
   </style>
 </head>
-<body class="theme-dark site-skin-1win">
+<body>
   <div class="bf-adserver-background"><ins class="ins-zone" data-zone="163743"></ins></div>
+
   <div class="side-banner left-banner"><ins class="ins-zone" data-zone="163622"></ins></div>
   <div class="side-banner right-banner"><ins class="ins-zone" data-zone="163622"></ins></div>
 
-  <header class="bf-header">
-    <div class="bf-header-inner">
-      <a class="bf-logo" href="/" aria-label="Betforecast.ai home"><img src="assets/bet-logo.png" alt="Betforecast.ai logo"><span>Betforecast<span>.ai</span></span></a>
-      <nav class="bf-nav" aria-label="Main navigation"><a href="world-cup-2026.html">🏆 WC 2026</a><a href="news.html">News</a><a href="standings.html">Standings</a><a href="match.html">Matches</a><a href="results.html">Results</a><a href="ai-insights.html">AI Insights</a></nav>
-    </div>
-  </header>
+  <div class="site-shell">
+    <header class="header panel">
+      <a class="logo" href="/" aria-label="Betforecast.ai home">
+        <span class="logo-mark">B</span>
+        <span>Betforecast<span>.ai</span></span>
+      </a>
 
-  <main class="bf-page">
-    <section class="bf-hero">
-      <div class="bf-hero-left">
-        <div class="bf-pill">✦ AI Prediction Engine</div>
-        <h1>Know the outcome <span>before the whistle.</span></h1>
-        <p>Our AI analyzes 100+ match variables in real time to deliver sharp, readable football forecasts.</p>
-        <div class="bf-metrics"><div class="bf-metric"><span>〽</span><strong>100+</strong><small>Signals</small></div><div class="bf-metric"><span>◎</span><strong>98.6%</strong><small>Accuracy</small></div><div class="bf-metric"><span>⚡</span><strong>Live</strong><small>Updates</small></div><div class="bf-metric"><span>🧠</span><strong>AI</strong><small>Engine</small></div></div>
-        <div class="bf-search-card"><div class="bf-mini-pill">Try Live AI Search</div><h2>Search any match 👇</h2><div class="bf-search-row"><label class="bf-input"><span>⌕</span><input id="match-search-input" type="text" placeholder="e.g. Arsenal vs Chelsea"></label><button id="match-search-btn">Analyze Match</button></div><div class="bf-tags"><button>Germany vs France</button><button>Brazil vs Argentina</button><button>Spain vs England</button></div><div id="match-search-result" class="bf-search-result">Enter a match to see probabilities and AI reasoning.</div></div>
-      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="world-cup-2026.html">🏆 WC 2026</a>
+        <a href="news.html">News</a>
+        <a href="standings.html">Standings</a>
+        <a href="match.html">Matches</a>
+        <a href="results.html">Results</a>
+        <a href="ai-insights.html">AI Insights</a>
+      </nav>
+    </header>
 
-      <aside class="bf-featured" id="wcFeaturedCard">
-        <div class="bf-featured-top"><strong>Featured Prediction</strong><span id="wcConfidence">AI Confidence —</span></div>
-        <div class="bf-team-row">
-          <div class="bf-team"><div class="bf-team-logo-wrap"><img class="bf-team-logo-img" id="wcHomeLogo" src="" alt=""></div><h3 id="wcHomeTeam">Loading...</h3><small id="wcHomeNote">World Cup</small></div>
-          <div class="bf-vs" id="wcVersus">VS</div>
-          <div class="bf-team"><div class="bf-team-logo-wrap"><img class="bf-team-logo-img" id="wcAwayLogo" src="" alt=""></div><h3 id="wcAwayTeam">Loading...</h3><small id="wcAwayNote">World Cup</small></div>
+    <main>
+      <section class="hero panel">
+        <div class="hero-card">
+          <div class="pill">✦ AI Prediction Engine</div>
+          <h1>Know the outcome <span>before the whistle.</span></h1>
+          <p>Our AI analyzes 100+ match variables in real time to deliver sharp, readable football forecasts.</p>
+
+          <div class="metrics">
+            <div class="metric"><span>〽</span><strong>100+</strong><small>Signals</small></div>
+            <div class="metric"><span>◎</span><strong>98.6%</strong><small>Accuracy</small></div>
+            <div class="metric"><span>⚡</span><strong>Live</strong><small>Updates</small></div>
+            <div class="metric"><span>🧠</span><strong>AI</strong><small>Engine</small></div>
+          </div>
+
+          <div class="search-card">
+            <div class="pill">Try Live AI Search</div>
+            <h2>Search any match 👇</h2>
+            <div class="search-row">
+              <label class="input-wrap"><span>⌕</span><input id="match-search-input" type="text" placeholder="e.g. Arsenal vs Chelsea"></label>
+              <button class="btn" id="match-search-btn">Analyze Match</button>
+            </div>
+            <div class="tags">
+              <button>Germany vs France</button>
+              <button>Brazil vs Argentina</button>
+              <button>Spain vs England</button>
+            </div>
+            <div id="match-search-result" class="search-result">Enter a match to see probabilities and AI reasoning.</div>
+          </div>
         </div>
-        <div class="bf-ai-predicts"><span>AI tracks</span><strong id="wcAdvice">Loading World Cup match...</strong></div>
-        <div class="bf-probs"><div><small>Home Win</small><strong id="wcHomePercent">—</strong><div class="bf-prob-bar"><span id="wcHomeBar" style="width:12%"></span></div></div><div><small>Draw</small><strong id="wcDrawPercent">—</strong><div class="bf-prob-bar"><span id="wcDrawBar" style="width:12%"></span></div></div><div><small>Away Win</small><strong id="wcAwayPercent">—</strong><div class="bf-prob-bar"><span id="wcAwayBar" style="width:12%"></span></div></div></div>
-        <div class="bf-featured-mini-grid"><div><span>Match Date</span><strong id="wcMatchDate">—</strong></div><div><span>Status</span><strong id="wcMatchStatus">—</strong></div><div><span>Venue</span><strong id="wcVenue">—</strong></div></div>
-        <p id="wcPredictionText">World Cup fixture data is loading. The card will update automatically.</p>
-        <div class="bf-featured-actions"><a href="match.html" id="wcMatchLink">View Match Details</a><a href="ai-insights.html">AI Insights</a></div>
-      </aside>
-    </section>
 
-    <section class="bf-benefits"><article class="bf-benefit-card"><span>⚽</span><div><h3>Football-first intelligence</h3><p>Dedicated prediction models for football matches, leagues, standings and form trends.</p></div></article><article class="bf-benefit-card"><span>📊</span><div><h3>100+ AI parameters</h3><p>Team form, expected goals, injuries, line movement, weather, motivation and historical patterns.</p></div></article><article class="bf-benefit-card"><span>🧩</span><div><h3>Clear match reasoning</h3><p>Every prediction is supported by readable context, confidence level and key match factors.</p></div></article></section>
-    <div class="home-leaderboard-ad"><div class="banner-728"><ins class="ins-zone" data-zone="163631"></ins></div></div><div class="home-box-ad"><div class="adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div></div>
-    <section class="bf-predictions-section"><h2>Today’s AI Football Predictions</h2><div class="bf-predictions-table"><div class="bf-prediction-row bf-prediction-head"><span>Match</span><span>League</span><span>Home</span><span>Draw</span><span>Away</span><span>AI Pick</span></div><div class="bf-prediction-row"><strong>Portugal vs Spain</strong><span>World Cup</span><b>31%</b><b>29%</b><b>40%</b><em>Spain DNB</em></div><div class="bf-prediction-row"><strong>Brazil vs Argentina</strong><span>International</span><b>42%</b><b>28%</b><b>30%</b><em>Brazil Win</em></div><div class="bf-prediction-row"><strong>Germany vs France</strong><span>Europe</span><b>34%</b><b>31%</b><b>35%</b><em>France DNB</em></div></div></section>
-    <section class="model-view"><article class="bf-panel"><div class="bf-panel-head"><h2>Upcoming Matches</h2><span>Fixtures</span></div><div id="matches-container">Loading upcoming matches...</div></article><article class="bf-panel"><div class="bf-panel-head"><h2>Latest Results</h2><span>Scores</span></div><div id="results-container">Loading results...</div></article></section>
-  </main>
+        <aside class="featured-card">
+          <div class="featured-top"><strong>Featured Prediction</strong><span>AI Confidence 45%</span></div>
+
+          <div class="teams">
+            <div class="team"><div class="team-logo"></div><h3>Portugal</h3><small>Round of 16</small></div>
+            <div class="vs">VS</div>
+            <div class="team"><div class="team-logo"></div><h3>Spain</h3><small>Round of 16</small></div>
+          </div>
+
+          <div class="ai-pick"><span>AI tracks</span><strong>Combo double chance: draw or Spain and -3.5 goals</strong></div>
+
+          <div class="prob-grid">
+            <div class="prob-card"><small>Home Win</small><strong>31%</strong><div class="bar"><i style="width:31%"></i></div></div>
+            <div class="prob-card"><small>Draw</small><strong>29%</strong><div class="bar"><i style="width:29%"></i></div></div>
+            <div class="prob-card"><small>Away Win</small><strong>40%</strong><div class="bar"><i style="width:40%"></i></div></div>
+          </div>
+
+          <div class="mini-grid">
+            <div class="mini-card"><span>Match Date</span><strong>06 Jul, 22:00</strong></div>
+            <div class="mini-card"><span>Status</span><strong>Scheduled</strong></div>
+            <div class="mini-card"><span>Venue</span><strong>AT&T Stadium</strong></div>
+          </div>
+
+          <p>Prediction considers form, squad depth, recent tempo and available World Cup data.</p>
+        </aside>
+      </section>
+
+      <section class="benefits">
+        <article class="benefit panel"><span>⚽</span><div><h3>Football-first intelligence</h3><p>Dedicated prediction models for football matches, leagues, standings and form trends.</p></div></article>
+        <article class="benefit panel"><span>📊</span><div><h3>100+ AI parameters</h3><p>Team form, expected goals, injuries, line movement, weather and motivation.</p></div></article>
+        <article class="benefit panel"><span>🧩</span><div><h3>Clear match reasoning</h3><p>Every prediction is supported by readable context and key match factors.</p></div></article>
+      </section>
+
+      <div class="leaderboard-ad"><div class="banner-728"><ins class="ins-zone" data-zone="163631"></ins></div></div>
+      <div class="box-ad"><div class="adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div></div>
+
+      <section class="predictions panel">
+        <h2>Today’s AI Football Predictions</h2>
+        <div class="prediction-table">
+          <div class="prediction-row prediction-head"><span>Match</span><span>League</span><span>Home</span><span>Draw</span><span>Away</span><span>AI Pick</span></div>
+          <div class="prediction-row"><strong>Portugal vs Spain</strong><span class="league-chip">World Cup</span><b>31%</b><b>29%</b><b>40%</b><em class="chip">Spain DNB</em></div>
+          <div class="prediction-row"><strong>Brazil vs Argentina</strong><span class="league-chip">International</span><b>42%</b><b>28%</b><b>30%</b><em class="chip">Brazil Win</em></div>
+          <div class="prediction-row"><strong>Germany vs France</strong><span class="league-chip">Europe</span><b>34%</b><b>31%</b><b>35%</b><em class="chip">France DNB</em></div>
+        </div>
+      </section>
+
+      <section class="panels">
+        <article class="data-panel panel">
+          <h2>Upcoming Matches</h2>
+          <span>Fixtures</span>
+          <div class="match-list">
+            <article class="list-card"><div><strong>Portugal vs Spain</strong><small>06 Jul, 22:00 · AT&T Stadium</small></div><em class="chip">Upcoming</em></article>
+            <article class="list-card"><div><strong>Brazil vs Argentina</strong><small>International · AI watchlist</small></div><em class="chip">Preview</em></article>
+          </div>
+        </article>
+
+        <article class="data-panel panel">
+          <h2>Latest Results</h2>
+          <span>Scores</span>
+          <div class="match-list">
+            <article class="list-card"><div><strong>Mexico vs England</strong><small>06 Jul, 04:00 · Estadio Banorte</small></div><em class="chip">2-3</em></article>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded",function(){const input=document.getElementById("match-search-input"),button=document.getElementById("match-search-btn"),result=document.getElementById("match-search-result");if(!input||!button||!result)return;const data={"germany vs france":["Germany vs France",[34,31,35],"France DNB","71%","France has a slight edge through transition speed and squad balance."],"brazil vs argentina":["Brazil vs Argentina",[42,28,30],"Brazil Win","86%","Brazil shows stronger attacking momentum, but Argentina keeps a high draw probability."],"spain vs england":["Spain vs England",[37,30,33],"Spain DNB","74%","Spain’s possession model creates more stable expected chances."]};function norm(v){return v.toLowerCase().replace(/\s+/g," ").trim()}function analyze(v){const q=v.trim();if(!q){result.textContent="Enter a match to see probabilities and AI reasoning.";input.focus();return}const d=data[norm(q)]||[q,[39,29,32],"Home Team or Draw","68%","AI fallback model found a balanced match profile."];result.innerHTML=`<div class="bf-live-result"><h3>${d[0]}</h3><p><strong>Home:</strong> ${d[1][0]}% · <strong>Draw:</strong> ${d[1][1]}% · <strong>Away:</strong> ${d[1][2]}%<br><strong>AI pick:</strong> ${d[2]}<br><strong>Confidence:</strong> ${d[3]}<br>${d[4]}</p></div>`}button.addEventListener("click",()=>analyze(input.value));input.addEventListener("keydown",e=>{if(e.key==="Enter")analyze(input.value)});document.querySelectorAll(".bf-tags button").forEach(t=>t.addEventListener("click",()=>{input.value=t.textContent.trim();analyze(input.value)}))});
+    document.addEventListener("DOMContentLoaded", function () {
+      const input = document.getElementById("match-search-input");
+      const button = document.getElementById("match-search-btn");
+      const result = document.getElementById("match-search-result");
+      if (!input || !button || !result) return;
+
+      const data = {
+        "germany vs france": ["Germany vs France", [34, 31, 35], "France DNB", "71%", "France has a slight edge through transition speed and squad balance."],
+        "brazil vs argentina": ["Brazil vs Argentina", [42, 28, 30], "Brazil Win", "86%", "Brazil shows stronger attacking momentum, but Argentina keeps a high draw probability."],
+        "spain vs england": ["Spain vs England", [37, 30, 33], "Spain DNB", "74%", "Spain’s possession model creates more stable expected chances."]
+      };
+
+      function normalize(value) {
+        return value.toLowerCase().replace(/\s+/g, " ").trim();
+      }
+
+      function analyze(value) {
+        const query = value.trim();
+        if (!query) {
+          result.textContent = "Enter a match to see probabilities and AI reasoning.";
+          input.focus();
+          return;
+        }
+
+        const item = data[normalize(query)] || [query, [39, 29, 32], "Home Team or Draw", "68%", "AI fallback model found a balanced match profile."];
+        result.innerHTML = `<strong>${item[0]}</strong><br>Home ${item[1][0]}% · Draw ${item[1][1]}% · Away ${item[1][2]}%<br><strong>AI pick:</strong> ${item[2]} · <strong>Confidence:</strong> ${item[3]}<br>${item[4]}`;
+      }
+
+      button.addEventListener("click", function () { analyze(input.value); });
+      input.addEventListener("keydown", function (event) { if (event.key === "Enter") analyze(input.value); });
+      document.querySelectorAll(".tags button").forEach(function (tag) {
+        tag.addEventListener("click", function () {
+          input.value = tag.textContent.trim();
+          analyze(input.value);
+        });
+      });
+    });
   </script>
-  <script src="/api-config.js"></script>
-  <script src="/js/wc-featured-match.js?v=3"></script>
+
   <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
 </body>
 </html>
