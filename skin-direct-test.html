@@ -22,13 +22,44 @@
       overflow-x: hidden;
     }
 
+    body {
+      min-height: 100vh;
+    }
+
+    .bf-adserver-background,
+    .bf-adserver-background .ins-zone,
+    .bf-adserver-background iframe,
+    .bf-adserver-background img,
+    .bf-adserver-background a {
+      display: block !important;
+    }
+
     .bf-adserver-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      width: 100%;
-      min-height: 1px;
+      position: fixed !important;
+      inset: 0 !important;
+      z-index: 1 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      min-height: 100vh !important;
+      overflow: visible !important;
+      pointer-events: auto !important;
+    }
+
+    .bf-adserver-background .ins-zone,
+    .bf-adserver-background iframe {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 100vw !important;
+      height: 100vh !important;
+      min-width: 100vw !important;
+      min-height: 100vh !important;
+      border: 0 !important;
+      overflow: visible !important;
+    }
+
+    .bf-adserver-background img {
+      max-width: none !important;
     }
 
     .test-shell {
