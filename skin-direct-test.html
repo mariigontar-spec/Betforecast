@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betforecast Skin Direct Test</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #020b13 !important;
+      color: #f8fafc;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .bf-adserver-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      min-height: 1px;
+    }
+
+    .test-shell {
+      position: relative;
+      z-index: 20;
+      width: min(1240px, calc(100vw - 48px));
+      margin: 210px auto 60px;
+      padding: 28px;
+      border: 1px solid rgba(94, 224, 164, 0.18);
+      border-radius: 26px;
+      background: linear-gradient(180deg, rgba(18, 38, 55, 0.94), rgba(8, 20, 32, 0.96));
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.34);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .test-title {
+      margin: 0 0 8px;
+      font-size: 30px;
+      line-height: 1.15;
+    }
+
+    .test-text {
+      max-width: 760px;
+      margin: 0;
+      color: rgba(248, 250, 252, 0.78);
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .test-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .test-card {
+      min-height: 110px;
+      padding: 18px;
+      border: 1px solid rgba(94, 224, 164, 0.14);
+      border-radius: 20px;
+      background: rgba(2, 11, 19, 0.48);
+    }
+
+    .test-card strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #5ee0a4;
+    }
+
+    @media (max-width: 768px) {
+      .test-shell {
+        width: calc(100% - 16px);
+        margin-top: 110px;
+        padding: 18px 14px;
+        border-radius: 20px;
+      }
+
+      .test-title {
+        font-size: 24px;
+      }
+
+      .test-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Adhit Media Ad Server / Background Rotation Direct Test -->
+  <div class="bf-adserver-background">
+    <ins class="ins-zone" data-zone="163743"></ins>
+  </div>
+  <!-- /Adhit Media Ad Server -->
+
+  <main class="test-shell">
+    <h1 class="test-title">Betforecast background skin test</h1>
+    <p class="test-text">
+      This page has no static 1win background and no old 1win clickable zones. It shows only the Adhit Background zone 163743.
+    </p>
+
+    <div class="test-grid">
+      <div class="test-card">
+        <strong>Zone</strong>
+        163743
+      </div>
+      <div class="test-card">
+        <strong>Static 1win CSS</strong>
+        Removed
+      </div>
+      <div class="test-card">
+        <strong>Purpose</strong>
+        Check Dafabet / Mostbet / rotation
+      </div>
+    </div>
+  </main>
+
+  <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
+</body>
+</html>
