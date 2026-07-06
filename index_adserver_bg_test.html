@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Betforecast.ai</title>
+
+  <link rel="stylesheet" href="css/style.css?v=22">
+
+  <script
+    src="https://cdn.counter.dev/script.js"
+    data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098"
+    data-utcoffset="3">
+  </script>
+
+  <style>
+    :root {
+      --bf-shell-width: 1240px;
+      --bf-page-gap: 48px;
+      --bf-page-bg: #020b13;
+
+      --bf-panel-background:
+        linear-gradient(
+          180deg,
+          rgba(18, 38, 55, 0.97),
+          rgba(8, 20, 32, 0.98)
+        );
+
+      --bf-panel-border:
+        1px solid rgba(94, 224, 164, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+
+      margin: 0;
+      padding: 0;
+
+      background-color: var(--bf-page-bg) !important;
+
+      overflow-x: hidden;
+    }
+
+    body.site-skin-1win {
+      min-height: 100vh;
+
+      padding-top: 190px !important;
+
+      color: #f8fafc;
+
+      background-color: var(--bf-page-bg) !important;
+
+      background-image:
+        url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+
+      background-repeat: no-repeat !important;
+      background-position: center top !important;
+      background-size: 1920px auto !important;
+      background-attachment: scroll !important;
+
+      overflow-x: hidden !important;
+    }
+
+    /* ========================================
+       DESKTOP HEADER
+       ======================================== */
+
+    body.site-skin-1win .bf-header {
+      position: relative !important;
+      z-index: 30 !important;
+
+      width: 100% !important;
+
+      margin: 0 !important;
+      padding: 0 !important;
+
+      background: transparent !important;
+
+      border: 0 !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+    }
+
+    body.site-skin-1win .bf-header-inner {
+      position: relative !important;
+      z-index: 30 !important;
+
+      width: min(
+        var(--bf-shell-width),
+        calc(100vw - var(--bf-page-gap))
+      ) !important;
+
+      max-width: var(--bf-shell-width) !important;
+      min-height: 82px;
+
+      margin: 0 auto !important;
+      padding: 14px 24px !important;
+
+      display: grid !important;
+
+      grid-template-columns:
+        220px minmax(0, 1fr) 220px !important;
+
+      align-items: center !important;
+
+      gap: 18px !important;
+
+      background: var(--bf-panel-background) !important;
+
+      border: var(--bf-panel-border) !important;
+      border-radius: 26px !important;
+
+      box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.32) !important;
+
+      backdrop-filter: blur(14px) !important;
+      -webkit-backdrop-filter: blur(14px) !important;
+    }
+
+    body.site-skin-1win .bf-header-inner::after {
+      content: "";
+
+      display: block;
+
+      width: 220px;
+      height: 1px;
+    }
+
+    body.site-skin-1win .bf-logo {
+      justify-self: start !important;
+
+      width: auto !important;
+      min-width: 0 !important;
+    }
+
+    body.site-skin-1win .bf-nav {
+      justify-self: center !important;
+
+      width: max-content !important;
+      max-width: 100% !important;
+
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-wrap: nowrap !important;
+
+      gap: 10px !important;
+    }
+
+    body.site-skin-1win .bf-nav a {
+      flex: 0 0 auto !important;
+
+      white-space: nowrap !important;
+    }
+
+    /* ========================================
+       DESKTOP PAGE
+       ======================================== */
+
+    body.site-skin-1win .bf-page {
+      position: relative !important;
+      z-index: 20 !important;
+
+      width: min(
+        var(--bf-shell-width),
+        calc(100vw - var(--bf-page-gap))
+      ) !important;
+
+      max-width: var(--bf-shell-width) !important;
+
+      margin: 28px auto 0 !important;
+      padding: 0 0 40px !important;
+
+      background: transparent !important;
+    }
+
+    body.site-skin-1win .bf-hero,
+    body.site-skin-1win .bf-hero-left,
+    body.site-skin-1win .bf-featured,
+    body.site-skin-1win .bf-benefits,
+    body.site-skin-1win .bf-predictions-section,
+    body.site-skin-1win .bf-predictions-table,
+    body.site-skin-1win .model-view,
+    body.site-skin-1win .bf-panel {
+      min-width: 0 !important;
+    }
+
+    /* ========================================
+       ADS
+       ======================================== */
+
+    body.site-skin-1win .home-box-ad,
+    body.site-skin-1win .home-leaderboard-ad {
+      position: relative !important;
+      z-index: 20 !important;
+
+      display: flex !important;
+      justify-content: center !important;
+
+      width: 100% !important;
+
+      margin: 24px auto !important;
+
+      overflow: hidden !important;
+    }
+
+    body.site-skin-1win .home-box-ad {
+      display: none !important;
+    }
+
+    body.site-skin-1win .home-leaderboard-ad {
+      display: flex !important;
+    }
+
+    /* ========================================
+       SIDE BANNERS
+       ======================================== */
+
+    body.site-skin-1win .side-banner {
+      position: fixed !important;
+
+      top: 400px !important;
+
+      z-index: 30 !important;
+    }
+
+    body.site-skin-1win .left-banner {
+      left: 24px !important;
+      right: auto !important;
+    }
+
+    body.site-skin-1win .right-banner {
+      right: 24px !important;
+      left: auto !important;
+    }
+
+    /* ========================================
+       CLICKABLE SKIN
+       ======================================== */
+
+    body.site-skin-1win .skin-click {
+      position: fixed !important;
+
+      z-index: 2 !important;
+
+      display: block !important;
+
+      background: transparent !important;
+      text-decoration: none !important;
+    }
+
+    body.site-skin-1win .skin-click-top {
+      top: 0 !important;
+      left: 50% !important;
+
+      width: min(100vw, 1920px) !important;
+      height: 165px !important;
+
+      transform: translateX(-50%) !important;
+    }
+
+    body.site-skin-1win .skin-click-left {
+      top: 165px !important;
+      bottom: 0 !important;
+      left: 0 !important;
+
+      width: max(
+        0px,
+        calc((100vw - var(--bf-shell-width)) / 2)
+      ) !important;
+
+      max-width: 320px !important;
+    }
+
+    body.site-skin-1win .skin-click-right {
+      top: 165px !important;
+      right: 0 !important;
+      bottom: 0 !important;
+
+      width: max(
+        0px,
+        calc((100vw - var(--bf-shell-width)) / 2)
+      ) !important;
+
+      max-width: 320px !important;
+    }
+
+    /* ========================================
+       TABLET
+       ======================================== */
+
+    @media (max-width: 1100px) {
+      body.site-skin-1win .bf-header-inner {
+        grid-template-columns: 1fr !important;
+
+        justify-items: center !important;
+      }
+
+      body.site-skin-1win .bf-header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        justify-self: center !important;
+      }
+
+      body.site-skin-1win .bf-nav {
+        width: 100% !important;
+
+        flex-wrap: wrap !important;
+      }
+    }
+
+    /* ========================================
+       MOBILE
+       ======================================== */
+
+    @media (max-width: 768px) {
+      html,
+      body {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background-color: var(--bf-page-bg) !important;
+        background-image: none !important;
+
+        overflow-x: hidden !important;
+      }
+
+      body.site-skin-1win {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        min-height: 100vh !important;
+
+        padding-top: 96px !important;
+
+        background-color: var(--bf-page-bg) !important;
+
+        background-image:
+          linear-gradient(
+            180deg,
+            rgba(2, 11, 19, 0) 0,
+            rgba(2, 11, 19, 0.12) 92px,
+            rgba(2, 11, 19, 0.88) 235px,
+            #020b13 330px
+          ),
+          url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+
+        background-repeat: no-repeat !important;
+
+        background-position:
+          center top,
+          center top !important;
+
+        background-size:
+          100% 340px,
+          auto 290px !important;
+
+        background-attachment: scroll !important;
+
+        overflow-x: hidden !important;
+      }
+
+      body.site-skin-1win::before,
+      body.site-skin-1win::after {
+        content: none !important;
+        display: none !important;
+
+        background: none !important;
+      }
+
+      body.site-skin-1win .bf-header,
+      body.site-skin-1win .bf-page,
+      body.site-skin-1win .bf-benefits,
+      body.site-skin-1win .bf-predictions-section,
+      body.site-skin-1win .model-view {
+        background-color: transparent !important;
+        background-image: none !important;
+      }
+
+      /* Боковые баннеры скрываем */
+      body.site-skin-1win .side-banner,
+      body.site-skin-1win .left-banner,
+      body.site-skin-1win .right-banner {
+        display: none !important;
+      }
+
+      /* Боковые click-зоны скрываем */
+      body.site-skin-1win .skin-click-left,
+      body.site-skin-1win .skin-click-right {
+        display: none !important;
+      }
+
+      /* Верхний скин остаётся кликабельным */
+      body.site-skin-1win .skin-click-top {
+        position: absolute !important;
+
+        top: 0 !important;
+        left: 0 !important;
+
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 96px !important;
+
+        transform: none !important;
+
+        z-index: 2 !important;
+      }
+
+      /* ====================================
+         MOBILE HEADER
+         ==================================== */
+
+      body.site-skin-1win .bf-header {
+        position: relative !important;
+
+        z-index: 30 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        background: transparent !important;
+
+        border: 0 !important;
+        box-shadow: none !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .bf-header-inner {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        min-width: 0 !important;
+        min-height: 0 !important;
+
+        margin: 6px auto 0 !important;
+        padding: 12px 10px !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+        gap: 10px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.18) !important;
+
+        border-radius: 18px !important;
+
+        box-shadow:
+          0 14px 34px rgba(0, 0, 0, 0.34) !important;
+
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .bf-header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        font-size: 23px !important;
+        line-height: 1 !important;
+      }
+
+      body.site-skin-1win .bf-logo img {
+        width: 28px !important;
+        height: 28px !important;
+      }
+
+      /* Меню 3 × 2 */
+      body.site-skin-1win .bf-nav {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 8px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .bf-nav a {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 10px 3px !important;
+
+        font-size: 13px !important;
+        line-height: 1.1 !important;
+
+        text-align: center !important;
+        white-space: nowrap !important;
+
+        border-radius: 13px !important;
+
+        overflow: hidden !important;
+      }
+
+      /* ====================================
+         MOBILE PAGE
+         ==================================== */
+
+      body.site-skin-1win .bf-page {
+        width: calc(100% - 16px) !important;
+        max-width: calc(100% - 16px) !important;
+        min-width: 0 !important;
+
+        margin: 14px auto 0 !important;
+        padding: 0 0 28px !important;
+
+        background: transparent !important;
+
+        overflow: hidden !important;
+      }
+
+      /* Hero */
+      body.site-skin-1win .bf-hero {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 16px !important;
+
+        margin: 0 !important;
+        padding: 20px 14px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
+        border-radius: 20px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .bf-hero-left,
+      body.site-skin-1win .bf-featured {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+      }
+
+      body.site-skin-1win .bf-pill {
+        display: inline-flex !important;
+
+        max-width: 100% !important;
+
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+      }
+
+      body.site-skin-1win .bf-hero h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 10px 0 !important;
+
+        font-size: 32px !important;
+        line-height: 1.04 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .bf-hero h1 span {
+        display: block !important;
+      }
+
+      body.site-skin-1win .bf-hero-text {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        font-size: 15px !important;
+        line-height: 1.42 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* Hero metrics */
+      body.site-skin-1win .bf-metrics {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 8px !important;
+
+        margin-top: 16px !important;
+      }
+
+      body.site-skin-1win .bf-metric {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 12px 6px !important;
+
+        border-radius: 14px !important;
+      }
+
+      body.site-skin-1win .bf-metric > span {
+        font-size: 16px !important;
+      }
+
+      body.site-skin-1win .bf-metric strong {
+        font-size: 19px !important;
+      }
+
+      body.site-skin-1win .bf-metric small {
+        font-size: 10px !important;
+      }
+
+      /* Search */
+      body.site-skin-1win .bf-search-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin-top: 16px !important;
+        padding: 16px 12px !important;
+
+        border-radius: 18px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .bf-mini-pill {
+        font-size: 11px !important;
+      }
+
+      body.site-skin-1win .bf-search-card h2 {
+        width: 100% !important;
+
+        margin: 9px 0 12px !important;
+
+        font-size: 22px !important;
+        line-height: 1.1 !important;
+      }
+
+      body.site-skin-1win .bf-search-row {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 8px !important;
+      }
+
+      body.site-skin-1win .bf-input,
+      body.site-skin-1win .bf-search-row button {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+      }
+
+      body.site-skin-1win .bf-input {
+        display: flex !important;
+        align-items: center !important;
+
+        padding: 0 11px !important;
+      }
+
+      body.site-skin-1win .bf-input input {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        font-size: 15px !important;
+      }
+
+      body.site-skin-1win .bf-search-row button {
+        padding: 12px 10px !important;
+
+        font-size: 14px !important;
+
+        border-radius: 14px !important;
+      }
+
+      body.site-skin-1win .bf-tags {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-wrap: wrap !important;
+
+        gap: 7px !important;
+
+        margin-top: 11px !important;
+      }
+
+      body.site-skin-1win .bf-tags button {
+        max-width: 100% !important;
+
+        padding: 8px 9px !important;
+
+        font-size: 11px !important;
+
+        white-space: normal !important;
+      }
+
+      body.site-skin-1win .bf-search-result {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-top: 12px !important;
+
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .bf-live-result,
+      body.site-skin-1win .bf-live-result h3,
+      body.site-skin-1win .bf-live-result p {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .bf-live-stats {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 7px !important;
+      }
+
+      body.site-skin-1win .bf-live-stats > div {
+        min-width: 0 !important;
+      }
+
+      body.site-skin-1win .bf-social-proof {
+        margin: 13px 0 0 !important;
+
+        font-size: 12px !important;
+        line-height: 1.35 !important;
+      }
+
+      /* Featured prediction */
+      body.site-skin-1win .bf-featured {
+        padding: 16px 12px !important;
+
+        border-radius: 18px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .bf-featured-top {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+
+        gap: 7px !important;
+      }
+
+      body.site-skin-1win .bf-featured-top strong,
+      body.site-skin-1win .bf-featured-top span {
+        font-size: 11px !important;
+        line-height: 1.2 !important;
+      }
+
+      body.site-skin-1win .bf-team-row {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          minmax(0, 1fr)
+          52px
+          minmax(0, 1fr) !important;
+
+        align-items: center !important;
+
+        gap: 7px !important;
+
+        margin-top: 16px !important;
+      }
+
+      body.site-skin-1win .bf-team {
+        min-width: 0 !important;
+
+        text-align: center !important;
+      }
+
+      body.site-skin-1win .bf-team-logo-wrap,
+      body.site-skin-1win .bf-team-logo-img {
+        width: 52px !important;
+        height: 52px !important;
+      }
+
+      body.site-skin-1win .bf-team h3 {
+        width: 100% !important;
+
+        margin: 7px 0 3px !important;
+
+        font-size: 16px !important;
+        line-height: 1.15 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .bf-team small {
+        font-size: 9px !important;
+      }
+
+      body.site-skin-1win .bf-vs {
+        font-size: 14px !important;
+      }
+
+      body.site-skin-1win .bf-ai-predicts {
+        margin-top: 14px !important;
+
+        font-size: 11px !important;
+      }
+
+      body.site-skin-1win .bf-probs {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 7px !important;
+
+        margin-top: 10px !important;
+      }
+
+      body.site-skin-1win .bf-probs > div {
+        min-width: 0 !important;
+
+        padding: 11px 3px !important;
+
+        border-radius: 13px !important;
+      }
+
+      body.site-skin-1win .bf-probs strong {
+        font-size: 19px !important;
+      }
+
+      body.site-skin-1win .bf-probs small {
+        font-size: 9px !important;
+      }
+
+      body.site-skin-1win .bf-prob-bar {
+        width: 100% !important;
+
+        margin-top: 11px !important;
+      }
+
+      body.site-skin-1win .bf-featured-mini-grid {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 7px !important;
+
+        margin-top: 13px !important;
+      }
+
+      body.site-skin-1win .bf-featured-mini-grid > div {
+        min-width: 0 !important;
+
+        padding: 11px 3px !important;
+
+        border-radius: 13px !important;
+      }
+
+      body.site-skin-1win .bf-featured-mini-grid span {
+        font-size: 9px !important;
+        line-height: 1.15 !important;
+
+        text-align: center !important;
+      }
+
+      body.site-skin-1win .bf-featured-mini-grid strong {
+        font-size: 13px !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .bf-featured-text {
+        width: 100% !important;
+
+        margin: 13px 0 0 !important;
+
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .bf-featured-actions {
+        width: 100% !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          1fr 1fr !important;
+
+        gap: 8px !important;
+
+        margin-top: 14px !important;
+      }
+
+      body.site-skin-1win .bf-featured-actions a {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 11px 6px !important;
+
+        font-size: 11px !important;
+        line-height: 1.2 !important;
+
+        text-align: center !important;
+        white-space: normal !important;
+
+        border-radius: 14px !important;
+      }
+
+      /* Benefits */
+      body.site-skin-1win .bf-benefits {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 10px !important;
+
+        margin: 16px 0 0 !important;
+      }
+
+      body.site-skin-1win .bf-benefit-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        gap: 8px !important;
+
+        margin: 0 !important;
+        padding: 14px 11px !important;
+
+        border-radius: 16px !important;
+
+        overflow: hidden !important;
+        transform: none !important;
+      }
+
+      body.site-skin-1win .bf-benefit-card > span {
+        font-size: 22px !important;
+      }
+
+      body.site-skin-1win .bf-benefit-card h3 {
+        margin: 0 0 5px !important;
+
+        font-size: 16px !important;
+        line-height: 1.15 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .bf-benefit-card p {
+        margin: 0 !important;
+
+        font-size: 12px !important;
+        line-height: 1.35 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      /* Mobile ad */
+      body.site-skin-1win .home-leaderboard-ad,
+      body.site-skin-1win .banner-728 {
+        display: none !important;
+      }
+
+      body.site-skin-1win .home-box-ad,
+      body.site-skin-1win .adhit-300x250 {
+        position: relative !important;
+        z-index: 20 !important;
+
+        display: flex !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 16px auto !important;
+
+        background: transparent !important;
+
+        overflow: hidden !important;
+      }
+
+      /* Predictions */
+      body.site-skin-1win .bf-predictions-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 16px 0 0 !important;
+        padding: 18px 12px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
+        border-radius: 20px !important;
+
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .bf-predictions-section > h2 {
+        width: 100% !important;
+
+        margin: 0 0 14px !important;
+
+        font-size: 24px !important;
+        line-height: 1.08 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .bf-predictions-table {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 10px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        overflow: visible !important;
+      }
+
+      body.site-skin-1win .bf-prediction-row {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: grid !important;
+
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 8px !important;
+
+        margin: 0 !important;
+        padding: 14px 11px !important;
+
+        border-radius: 16px !important;
+
+        overflow: hidden !important;
+        transform: none !important;
+      }
+
+      body.site-skin-1win .bf-prediction-row > span,
+      body.site-skin-1win .bf-prediction-row > strong,
+      body.site-skin-1win .bf-prediction-row > b,
+      body.site-skin-1win .bf-prediction-row > em {
+        min-width: 0 !important;
+
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+      }
+
+      body.site-skin-1win .bf-prediction-row > span {
+        font-size: 10px !important;
+      }
+
+      body.site-skin-1win .bf-prediction-row > strong {
+        grid-column: 1 / -1 !important;
+
+        font-size: 16px !important;
+        line-height: 1.2 !important;
+      }
+
+      body.site-skin-1win .bf-prediction-row > b {
+        font-size: 11px !important;
+      }
+
+      body.site-skin-1win .bf-prediction-row > em {
+        grid-column: 1 / -1 !important;
+
+        font-size: 11px !important;
+      }
+
+      /* Model and results */
+      body.site-skin-1win .model-view {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        gap: 16px !important;
+
+        margin: 16px 0 0 !important;
+      }
+
+      body.site-skin-1win .bf-panel {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 0 !important;
+        padding: 18px 12px !important;
+
+        background: var(--bf-panel-background) !important;
+
+        border:
+          1px solid rgba(94, 224, 164, 0.16) !important;
+
+        border-radius: 20px !important;
+
+        overflow: hidden !important;
+        transform: none !important;
+      }
+
+      body.site-skin-1win .bf-panel-head {
+        width: 100% !important;
+
+        margin-bottom: 14px !important;
+      }
+
+      body.site-skin-1win .bf-panel-head h2 {
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        font-size: 24px !important;
+        line-height: 1.08 !important;
+      }
+
+      body.site-skin-1win #matches-container,
+      body.site-skin-1win #results-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+
+        -webkit-overflow-scrolling: touch;
+      }
+
+      body.site-skin-1win #matches-container > *,
+      body.site-skin-1win #results-container > * {
+        max-width: 100% !important;
+        min-width: 0 !important;
+      }
+    }
+
+    /* ========================================
+       SMALL MOBILE
+       ======================================== */
+
+    @media (max-width: 420px) {
+      body.site-skin-1win {
+        padding-top: 88px !important;
+
+        background-size:
+          100% 310px,
+          auto 270px !important;
+      }
+
+      body.site-skin-1win .skin-click-top {
+        height: 88px !important;
+      }
+
+      body.site-skin-1win .bf-header-inner {
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
+
+        margin-top: 5px !important;
+      }
+
+      body.site-skin-1win .bf-page {
+        width: calc(100% - 12px) !important;
+        max-width: calc(100% - 12px) !important;
+      }
+
+      body.site-skin-1win .bf-nav {
+        gap: 6px !important;
+      }
+
+      body.site-skin-1win .bf-nav a {
+        padding: 9px 2px !important;
+
+        font-size: 12px !important;
+      }
+
+      body.site-skin-1win .bf-hero {
+        padding: 18px 12px !important;
+      }
+
+      body.site-skin-1win .bf-hero h1 {
+        font-size: 29px !important;
+      }
+
+      body.site-skin-1win .bf-benefits {
+        grid-template-columns: 1fr !important;
+      }
+
+      body.site-skin-1win .bf-predictions-section,
+      body.site-skin-1win .bf-panel {
+        padding: 16px 10px !important;
+      }
+
+      body.site-skin-1win .bf-predictions-section > h2,
+      body.site-skin-1win .bf-panel-head h2 {
+        font-size: 22px !important;
+      }
+    }
+
+
+    /* ========================================
+       ADSERVER BACKGROUND TEST MODE
+       Показывает скины из зоны 163743 вместо статичного 1win.
+       Удалить класс site-skin-adserver-test, чтобы вернуть обычный 1win фон.
+       ======================================== */
+
+    body.site-skin-adserver-test {
+      background-image: none !important;
+      background-color: var(--bf-page-bg) !important;
+    }
+
+    body.site-skin-adserver-test .skin-click {
+      display: none !important;
+      pointer-events: none !important;
+    }
+
+    body.site-skin-adserver-test .bf-adserver-background {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      z-index: 1 !important;
+
+      width: 100% !important;
+      min-height: 1px !important;
+
+      pointer-events: auto !important;
+    }
+
+    body.site-skin-adserver-test .bf-header,
+    body.site-skin-adserver-test .bf-page,
+    body.site-skin-adserver-test .side-banner {
+      position: relative !important;
+      z-index: 30 !important;
+    }
+
+    @media (max-width: 768px) {
+      body.site-skin-adserver-test {
+        background-image: none !important;
+        padding-top: 96px !important;
+      }
+    }
+
+  </style>
+</head>
+
+<body class="theme-dark site-skin-1win site-skin-adserver-test">
+
+  <!-- Adhit Media Ad Server / Background Rotation Test -->
+  <div class="bf-adserver-background">
+    <ins
+      class="ins-zone"
+      data-zone="163743">
+    </ins>
+  </div>
+  <!-- /Adhit Media Ad Server -->
+
+
+  <!-- Кликабельный фон 1win -->
+  <a
+    class="skin-click skin-click-top"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 top banner">
+  </a>
+
+  <a
+    class="skin-click skin-click-left"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 left background">
+  </a>
+
+  <a
+    class="skin-click skin-click-right"
+    href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ"
+    target="_blank"
+    rel="nofollow sponsored noopener"
+    aria-label="1win World Cup 2026 right background">
+  </a>
+
+  <!-- Боковые баннеры -->
+  <div class="side-banner left-banner">
+    <ins
+      class="ins-zone"
+      data-zone="163622">
+    </ins>
+  </div>
+
+  <div class="side-banner right-banner">
+    <ins
+      class="ins-zone"
+      data-zone="163622">
+    </ins>
+  </div>
+
+  <!-- Header -->
+  <header class="bf-header">
+    <div class="bf-header-inner">
+
+      <a
+        class="bf-logo"
+        href="/"
+        aria-label="Betforecast.ai home">
+
+        <img
+          src="assets/bet-logo.png"
+          alt="Betforecast.ai logo">
+
+        <span>
+          Betforecast<span>.ai</span>
+        </span>
+      </a>
+
+      <nav
+        class="bf-nav"
+        aria-label="Main navigation">
+
+        <a href="world-cup-2026.html">
+          🏆 WC 2026
+        </a>
+
+        <a href="news.html">
+          News
+        </a>
+
+        <a href="standings.html">
+          Standings
+        </a>
+
+        <a href="match.html">
+          Matches
+        </a>
+
+        <a href="results.html">
+          Results
+        </a>
+
+        <a href="ai-insights.html">
+          AI Insights
+        </a>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="bf-page">
+
+    <section class="bf-hero">
+
+      <div class="bf-hero-left">
+
+        <div class="bf-pill">
+          ✦ AI Prediction Engine
+        </div>
+
+        <h1>
+          Know the outcome
+          <span>before the whistle.</span>
+        </h1>
+
+        <p class="bf-hero-text">
+          Our AI analyzes 100+ match variables in real time
+          to deliver sharp, reliable predictions you can trust.
+        </p>
+
+        <div class="bf-metrics">
+
+          <div class="bf-metric">
+            <span>〽</span>
+            <strong>100+</strong>
+            <small>Signals</small>
+          </div>
+
+          <div class="bf-metric">
+            <span>◎</span>
+            <strong>98.6%</strong>
+            <small>Accuracy</small>
+          </div>
+
+          <div class="bf-metric">
+            <span>⚡</span>
+            <strong>Live</strong>
+            <small>Updates</small>
+          </div>
+
+          <div class="bf-metric">
+            <span>🧠</span>
+            <strong>AI</strong>
+            <small>Engine</small>
+          </div>
+
+        </div>
+
+        <div class="bf-search-card">
+
+          <div class="bf-mini-pill">
+            Try Live AI Search
+          </div>
+
+          <h2>
+            Search any match 👇
+          </h2>
+
+          <div class="bf-search-row">
+
+            <label class="bf-input">
+
+              <span>⌕</span>
+
+              <input
+                id="match-search-input"
+                type="text"
+                placeholder="e.g. Arsenal vs Chelsea"
+              >
+
+            </label>
+
+            <button
+              id="match-search-btn"
+              type="button">
+              ✦ Analyze with AI
+            </button>
+
+          </div>
+
+          <div class="bf-tags">
+
+            <button type="button">
+              Man City vs Liverpool
+            </button>
+
+            <button type="button">
+              Real Madrid vs Barcelona
+            </button>
+
+            <button type="button">
+              PSG vs Marseille
+            </button>
+
+          </div>
+
+          <div
+            class="bf-search-result"
+            id="match-search-result">
+            Enter a match to see win probabilities
+            and AI reasoning.
+          </div>
+
+        </div>
+
+        <p class="bf-social-proof">
+          🏆 Join 25,000+ fans making smarter predictions every day.
+        </p>
+
+      </div>
+
+      <aside class="bf-featured">
+
+        <div class="bf-featured-top">
+
+          <strong>
+            🔥 Featured Match Prediction
+          </strong>
+
+          <span>
+            Premier League
+          </span>
+
+        </div>
+
+        <div class="bf-team-row">
+
+          <div class="bf-team">
+
+            <div class="bf-team-logo-wrap">
+
+              <img
+                class="bf-team-logo-img"
+                src="assets/teams/ars.png"
+                alt="Arsenal"
+              >
+
+            </div>
+
+            <h3>Arsenal</h3>
+            <small>HOME</small>
+
+          </div>
+
+          <div class="bf-vs">
+            VS
+          </div>
+
+          <div class="bf-team">
+
+            <div class="bf-team-logo-wrap">
+
+              <img
+                class="bf-team-logo-img"
+                src="assets/teams/che.png"
+                alt="Chelsea"
+              >
+
+            </div>
+
+            <h3>Chelsea</h3>
+            <small>AWAY</small>
+
+          </div>
+
+        </div>
+
+        <div class="bf-ai-predicts">
+          AI Predicts
+        </div>
+
+        <div class="bf-probs">
+
+          <div>
+            <strong class="bf-green">47%</strong>
+            <small>Home</small>
+          </div>
+
+          <div>
+            <strong>28%</strong>
+            <small>Draw</small>
+          </div>
+
+          <div>
+            <strong class="bf-cold">25%</strong>
+            <small>Away</small>
+          </div>
+
+        </div>
+
+        <div
+          class="bf-prob-bar"
+          aria-hidden="true">
+
+          <span class="bf-home"></span>
+          <span class="bf-draw"></span>
+          <span class="bf-away"></span>
+
+        </div>
+
+        <div class="bf-featured-mini-grid">
+
+          <div>
+            <span>Expected Goals</span>
+            <strong>2.1 - 1.2</strong>
+          </div>
+
+          <div>
+            <span>Confidence</span>
+            <strong>74%</strong>
+          </div>
+
+          <div>
+            <span>Best Tip</span>
+            <strong>Home Lean</strong>
+          </div>
+
+        </div>
+
+        <p class="bf-featured-text">
+          Arsenal slightly ahead due to form,
+          home advantage and attacking strength.
+        </p>
+
+        <div class="bf-featured-actions">
+
+          <a
+            class="bf-main-btn"
+            href="#predictions">
+            🔥 Open Predictions
+          </a>
+
+          <a
+            class="bf-ghost-btn"
+            href="match.html">
+            View Full Analysis
+          </a>
+
+        </div>
+
+      </aside>
+
+    </section>
+
+    <section class="bf-benefits">
+
+      <a
+        href="ai-insights.html"
+        class="bf-benefit-card">
+
+        <span>📈</span>
+
+        <div>
+          <h3>Data-Driven Insights</h3>
+          <p>
+            100+ signals. Real-time analysis. Smarter bets.
+          </p>
+        </div>
+
+      </a>
+
+      <a
+        href="ai-insights.html"
+        class="bf-benefit-card">
+
+        <span>🎯</span>
+
+        <div>
+          <h3>High Accuracy</h3>
+          <p>
+            Machine learning models fine-tuned for football.
+          </p>
+        </div>
+
+      </a>
+
+      <a
+        href="#predictions"
+        class="bf-benefit-card">
+
+        <span>⚡</span>
+
+        <div>
+          <h3>Live Predictions</h3>
+          <p>
+            Real-time updates as matches unfold.
+          </p>
+        </div>
+
+      </a>
+
+      <a
+        href="match.html"
+        class="bf-benefit-card">
+
+        <span>🛡</span>
+
+        <div>
+          <h3>Stay Ahead</h3>
+          <p>
+            Better insights. Better decisions.
+          </p>
+        </div>
+
+      </a>
+
+    </section>
+
+    <!-- Mobile 300×250 -->
+    <div class="home-box-ad adhit-300x250">
+      <ins
+        class="ins-zone"
+        data-zone="163623">
+      </ins>
+    </div>
+
+    <section
+      class="bf-predictions-section"
+      id="predictions">
+
+      <h2>
+        Today’s Best Predictions
+      </h2>
+
+      <div
+        class="bf-predictions-table"
+        id="predictions-container">
+
+        <article class="bf-prediction-row">
+          <span>Premier League</span>
+          <strong>Liverpool vs Tottenham</strong>
+          <b>52% Home</b>
+          <b>26% Draw</b>
+          <b>22% Away</b>
+          <em class="live">● LIVE 63’ 1 - 0</em>
+        </article>
+
+        <article class="bf-prediction-row">
+          <span>La Liga</span>
+          <strong>Real Madrid vs Sevilla</strong>
+          <b>61% Home</b>
+          <b>24% Draw</b>
+          <b>15% Away</b>
+          <em>LIVE 28’ 0 - 0</em>
+        </article>
+
+        <article class="bf-prediction-row">
+          <span>Serie A</span>
+          <strong>Juventus vs Napoli</strong>
+          <b>31% Home</b>
+          <b>39% Draw</b>
+          <b>30% Away</b>
+          <em>LIVE 79’ 2 - 2</em>
+        </article>
+
+        <article class="bf-prediction-row">
+          <span>Premier League</span>
+          <strong>Arsenal vs Newcastle</strong>
+          <b>57% Home</b>
+          <b>24% Draw</b>
+          <b>19% Away</b>
+          <em>Upcoming</em>
+        </article>
+
+        <article class="bf-prediction-row">
+          <span>Bundesliga</span>
+          <strong>Dortmund vs RB Leipzig</strong>
+          <b>34% Home</b>
+          <b>35% Draw</b>
+          <b>31% Away</b>
+          <em>Upcoming</em>
+        </article>
+
+        <article class="bf-prediction-row">
+          <span>La Liga</span>
+          <strong>Atletico Madrid vs Real Betis</strong>
+          <b>55% Home</b>
+          <b>27% Draw</b>
+          <b>18% Away</b>
+          <em>Upcoming</em>
+        </article>
+
+        <article class="bf-prediction-row">
+          <span>Serie A</span>
+          <strong>Napoli vs Roma</strong>
+          <b>46% Home</b>
+          <b>30% Draw</b>
+          <b>24% Away</b>
+          <em>Upcoming</em>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Desktop 728×90 -->
+    <div class="home-leaderboard-ad banner-728">
+      <ins
+        class="ins-zone"
+        data-zone="163631">
+      </ins>
+    </div>
+
+    <section class="model-view">
+
+      <section
+        class="bf-panel"
+        id="model-section">
+
+        <div class="bf-panel-head">
+          <h2>
+            Model View
+          </h2>
+        </div>
+
+        <div id="matches-container"></div>
+
+      </section>
+
+      <section
+        class="bf-panel"
+        id="results">
+
+        <div class="bf-panel-head">
+          <h2>
+            Latest Results
+          </h2>
+        </div>
+
+        <div id="results-container"></div>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/home-animations.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchInput =
+        document.getElementById("match-search-input");
+
+      const searchBtn =
+        document.getElementById("match-search-btn");
+
+      const searchResult =
+        document.getElementById("match-search-result");
+
+      if (
+        !searchInput ||
+        !searchBtn ||
+        !searchResult
+      ) {
+        return;
+      }
+
+      const matchData = {
+        "arsenal vs chelsea": {
+          title: "Arsenal vs Chelsea",
+          home: 47,
+          draw: 28,
+          away: 25,
+          tip: "Home lean",
+          reason:
+            "Arsenal has a slight edge due to home advantage, stronger attacking rhythm and recent form."
+        },
+
+        "man city vs liverpool": {
+          title: "Man City vs Liverpool",
+          home: 45,
+          draw: 27,
+          away: 28,
+          tip: "Over 2.5",
+          reason:
+            "Both teams create high xG, play at strong tempo and usually generate chances from transitions."
+        },
+
+        "real madrid vs barcelona": {
+          title: "Real Madrid vs Barcelona",
+          home: 42,
+          draw: 30,
+          away: 28,
+          tip: "Home / Draw",
+          reason:
+            "Madrid has stronger control phases, while Barcelona remains dangerous through possession and quick attacks."
+        },
+
+        "psg vs marseille": {
+          title: "PSG vs Marseille",
+          home: 54,
+          draw: 25,
+          away: 21,
+          tip: "Home win",
+          reason:
+            "PSG rates higher in possession control, chance quality and final-third pressure."
+        }
+      };
+
+      const aliases = {
+        "barca": "barcelona",
+        "madrid": "real madrid",
+        "real": "real madrid",
+        "city": "man city",
+        "manchester city": "man city",
+        "man utd": "man united",
+        "manchester united": "man united",
+        "spurs": "tottenham"
+      };
+
+      function normalizeMatch(value) {
+        let text = value
+          .toLowerCase()
+          .trim()
+          .replace(/\s+/g, " ");
+
+        Object.keys(aliases).forEach(function (alias) {
+          text = text.replace(alias, aliases[alias]);
+        });
+
+        text = text
+          .replace(" versus ", " vs ")
+          .replace(" v ", " vs ")
+          .replace(" - ", " vs ");
+
+        return text;
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function buildFallback(matchName) {
+        return {
+          title: matchName,
+          home: 46,
+          draw: 28,
+          away: 26,
+          tip: "Balanced prediction",
+          reason:
+            "The AI model checks form, scoring rhythm, xG trend, home advantage, team strength and risk layers before generating probabilities."
+        };
+      }
+
+      function renderAnalysis(data) {
+        const title = escapeHtml(data.title);
+        const tip = escapeHtml(data.tip);
+        const reason = escapeHtml(data.reason);
+
+        searchResult.innerHTML = `
+          <div class="bf-live-result">
+            <div class="bf-live-result-top">
+              ✦ AI Match Analysis Ready
+            </div>
+
+            <h3>${title}</h3>
+
+            <div class="bf-live-stats">
+              <div>
+                <strong>${data.home}%</strong>
+                <span>Home</span>
+              </div>
+
+              <div>
+                <strong>${data.draw}%</strong>
+                <span>Draw</span>
+              </div>
+
+              <div>
+                <strong>${data.away}%</strong>
+                <span>Away</span>
+              </div>
+            </div>
+
+            <p>
+              <b>Best tip:</b> ${tip}
+            </p>
+
+            <p>${reason}</p>
+
+            <a
+              class="bf-mini-analysis-link"
+              href="match.html">
+              Open full AI analysis →
+            </a>
+          </div>
+        `;
+      }
+
+      function analyzeMatch(value) {
+        const original = value.trim();
+
+        if (!original) {
+          searchResult.textContent =
+            "Enter a match to see win probabilities and AI reasoning.";
+
+          searchInput.focus();
+
+          return;
+        }
+
+        const key = normalizeMatch(original);
+
+        const data =
+          matchData[key] ||
+          buildFallback(original);
+
+        renderAnalysis(data);
+      }
+
+      searchBtn.addEventListener(
+        "click",
+        function () {
+          analyzeMatch(searchInput.value);
+        }
+      );
+
+      searchInput.addEventListener(
+        "keydown",
+        function (event) {
+          if (event.key === "Enter") {
+            analyzeMatch(searchInput.value);
+          }
+        }
+      );
+
+      document
+        .querySelectorAll(".bf-tags button")
+        .forEach(function (button) {
+          button.addEventListener(
+            "click",
+            function () {
+              const match =
+                button.textContent.trim();
+
+              searchInput.value = match;
+
+              analyzeMatch(match);
+            }
+          );
+        });
+    });
+  </script>
+
+  <script
+    data-cfasync="false"
+    async
+    src="https://media.getads.online/js/code.min.js">
+  </script>
+
+</body>
+</html>
