@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-06T04:41:19.780Z",
+  "updatedAt": "2026-07-06T11:05:32.674Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
@@ -6794,6 +6794,76 @@
           "away": null
         }
       }
+    },
+    {
+      "fixture": {
+        "id": 1581037,
+        "referee": null,
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-12T00:00:00+03:00",
+        "timestamp": 1783803600,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 0,
+          "name": null,
+          "city": null
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Quarter-finals",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 1090,
+          "name": "Norway",
+          "logo": "https://media.api-sports.io/football/teams/1090.png",
+          "winner": null
+        },
+        "away": {
+          "id": 10,
+          "name": "England",
+          "logo": "https://media.api-sports.io/football/teams/10.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
     }
   ],
   "standingsPayload": [
@@ -6806,233 +6876,6 @@
         "flag": null,
         "season": 2026,
         "standings": [
-          [
-            {
-              "rank": 4,
-              "team": {
-                "id": 23,
-                "name": "Saudi Arabia",
-                "logo": "https://media.api-sports.io/football/teams/23.png"
-              },
-              "points": 2,
-              "goalsDiff": -4,
-              "group": "Group H",
-              "form": "DLD",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 2,
-                "lose": 1,
-                "goals": {
-                  "for": 1,
-                  "against": 5
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 1,
-              "team": {
-                "id": 9,
-                "name": "Spain",
-                "logo": "https://media.api-sports.io/football/teams/9.png"
-              },
-              "points": 7,
-              "goalsDiff": 5,
-              "group": "Group H",
-              "form": "WWWD",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 2,
-                "draw": 1,
-                "lose": 0,
-                "goals": {
-                  "for": 5,
-                  "against": 0
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 1533,
-                "name": "Cape Verde Islands",
-                "logo": "https://media.api-sports.io/football/teams/1533.png"
-              },
-              "points": 3,
-              "goalsDiff": 0,
-              "group": "Group H",
-              "form": "LDDD",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 3,
-                "lose": 0,
-                "goals": {
-                  "for": 2,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 7,
-                "name": "Uruguay",
-                "logo": "https://media.api-sports.io/football/teams/7.png"
-              },
-              "points": 2,
-              "goalsDiff": -1,
-              "group": "Group H",
-              "form": "LDD",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 2,
-                "lose": 1,
-                "goals": {
-                  "for": 3,
-                  "against": 4
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 23,
-                "name": "Saudi Arabia",
-                "logo": "https://media.api-sports.io/football/teams/23.png"
-              },
-              "points": 2,
-              "goalsDiff": -4,
-              "group": "Group H",
-              "form": "DLD",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 2,
-                "lose": 1,
-                "goals": {
-                  "for": 1,
-                  "against": 5
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            }
-          ],
           [
             {
               "rank": 1,
@@ -7190,368 +7033,6 @@
                 "goals": {
                   "for": 2,
                   "against": 6
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            }
-          ],
-          [
-            {
-              "rank": 1,
-              "team": {
-                "id": 2,
-                "name": "France",
-                "logo": "https://media.api-sports.io/football/teams/2.png"
-              },
-              "points": 9,
-              "goalsDiff": 8,
-              "group": "Group I",
-              "form": "WWWWW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 3,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 10,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 1090,
-                "name": "Norway",
-                "logo": "https://media.api-sports.io/football/teams/1090.png"
-              },
-              "points": 6,
-              "goalsDiff": 1,
-              "group": "Group I",
-              "form": "WWLWW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 2,
-                "draw": 0,
-                "lose": 1,
-                "goals": {
-                  "for": 8,
-                  "against": 7
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 13,
-                "name": "Senegal",
-                "logo": "https://media.api-sports.io/football/teams/13.png"
-              },
-              "points": 3,
-              "goalsDiff": 2,
-              "group": "Group I",
-              "form": "LWLL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 0,
-                "lose": 2,
-                "goals": {
-                  "for": 8,
-                  "against": 6
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 1567,
-                "name": "Iraq",
-                "logo": "https://media.api-sports.io/football/teams/1567.png"
-              },
-              "points": 0,
-              "goalsDiff": -11,
-              "group": "Group I",
-              "form": "LLL",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 0,
-                "lose": 3,
-                "goals": {
-                  "for": 1,
-                  "against": 12
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 1,
-              "team": {
-                "id": 2,
-                "name": "France",
-                "logo": "https://media.api-sports.io/football/teams/2.png"
-              },
-              "points": 9,
-              "goalsDiff": 8,
-              "group": "Group I",
-              "form": "WWWWW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 3,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 10,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 1090,
-                "name": "Norway",
-                "logo": "https://media.api-sports.io/football/teams/1090.png"
-              },
-              "points": 6,
-              "goalsDiff": 1,
-              "group": "Group I",
-              "form": "WWLWW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 2,
-                "draw": 0,
-                "lose": 1,
-                "goals": {
-                  "for": 8,
-                  "against": 7
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 13,
-                "name": "Senegal",
-                "logo": "https://media.api-sports.io/football/teams/13.png"
-              },
-              "points": 3,
-              "goalsDiff": 2,
-              "group": "Group I",
-              "form": "LWLL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 0,
-                "lose": 2,
-                "goals": {
-                  "for": 8,
-                  "against": 6
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 1567,
-                "name": "Iraq",
-                "logo": "https://media.api-sports.io/football/teams/1567.png"
-              },
-              "points": 0,
-              "goalsDiff": -11,
-              "group": "Group I",
-              "form": "LLL",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 0,
-                "lose": 3,
-                "goals": {
-                  "for": 1,
-                  "against": 12
                 }
               },
               "home": {
@@ -7763,368 +7244,6 @@
             {
               "rank": 1,
               "team": {
-                "id": 26,
-                "name": "Argentina",
-                "logo": "https://media.api-sports.io/football/teams/26.png"
-              },
-              "points": 9,
-              "goalsDiff": 7,
-              "group": "Group J",
-              "form": "WWWW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 3,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 8,
-                  "against": 1
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 775,
-                "name": "Austria",
-                "logo": "https://media.api-sports.io/football/teams/775.png"
-              },
-              "points": 4,
-              "goalsDiff": 0,
-              "group": "Group J",
-              "form": "LDLW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 6,
-                  "against": 6
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 1532,
-                "name": "Algeria",
-                "logo": "https://media.api-sports.io/football/teams/1532.png"
-              },
-              "points": 4,
-              "goalsDiff": -2,
-              "group": "Group J",
-              "form": "LDWL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 5,
-                  "against": 7
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 1548,
-                "name": "Jordan",
-                "logo": "https://media.api-sports.io/football/teams/1548.png"
-              },
-              "points": 0,
-              "goalsDiff": -5,
-              "group": "Group J",
-              "form": "LLL",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 0,
-                "lose": 3,
-                "goals": {
-                  "for": 3,
-                  "against": 8
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 1,
-              "team": {
-                "id": 26,
-                "name": "Argentina",
-                "logo": "https://media.api-sports.io/football/teams/26.png"
-              },
-              "points": 9,
-              "goalsDiff": 7,
-              "group": "Group J",
-              "form": "WWWW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 3,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 8,
-                  "against": 1
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 775,
-                "name": "Austria",
-                "logo": "https://media.api-sports.io/football/teams/775.png"
-              },
-              "points": 4,
-              "goalsDiff": 0,
-              "group": "Group J",
-              "form": "LDLW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 6,
-                  "against": 6
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 1532,
-                "name": "Algeria",
-                "logo": "https://media.api-sports.io/football/teams/1532.png"
-              },
-              "points": 4,
-              "goalsDiff": -2,
-              "group": "Group J",
-              "form": "LDWL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 5,
-                  "against": 7
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 1548,
-                "name": "Jordan",
-                "logo": "https://media.api-sports.io/football/teams/1548.png"
-              },
-              "points": 0,
-              "goalsDiff": -5,
-              "group": "Group J",
-              "form": "LLL",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 0,
-                "lose": 3,
-                "goals": {
-                  "for": 3,
-                  "against": 8
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            }
-          ],
-          [
-            {
-              "rank": 1,
-              "team": {
                 "id": 6,
                 "name": "Brazil",
                 "logo": "https://media.api-sports.io/football/teams/6.png"
@@ -8307,730 +7426,6 @@
             {
               "rank": 1,
               "team": {
-                "id": 8,
-                "name": "Colombia",
-                "logo": "https://media.api-sports.io/football/teams/8.png"
-              },
-              "points": 7,
-              "goalsDiff": 3,
-              "group": "Group K",
-              "form": "WDWW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 2,
-                "draw": 1,
-                "lose": 0,
-                "goals": {
-                  "for": 4,
-                  "against": 1
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 27,
-                "name": "Portugal",
-                "logo": "https://media.api-sports.io/football/teams/27.png"
-              },
-              "points": 5,
-              "goalsDiff": 5,
-              "group": "Group K",
-              "form": "WDWD",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 2,
-                "lose": 0,
-                "goals": {
-                  "for": 6,
-                  "against": 1
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 1508,
-                "name": "Congo DR",
-                "logo": "https://media.api-sports.io/football/teams/1508.png"
-              },
-              "points": 4,
-              "goalsDiff": 1,
-              "group": "Group K",
-              "form": "LWLD",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 4,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 1568,
-                "name": "Uzbekistan",
-                "logo": "https://media.api-sports.io/football/teams/1568.png"
-              },
-              "points": 0,
-              "goalsDiff": -9,
-              "group": "Group K",
-              "form": "LLL",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 0,
-                "lose": 3,
-                "goals": {
-                  "for": 2,
-                  "against": 11
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 1,
-              "team": {
-                "id": 8,
-                "name": "Colombia",
-                "logo": "https://media.api-sports.io/football/teams/8.png"
-              },
-              "points": 7,
-              "goalsDiff": 3,
-              "group": "Group K",
-              "form": "WDWW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 2,
-                "draw": 1,
-                "lose": 0,
-                "goals": {
-                  "for": 4,
-                  "against": 1
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 27,
-                "name": "Portugal",
-                "logo": "https://media.api-sports.io/football/teams/27.png"
-              },
-              "points": 5,
-              "goalsDiff": 5,
-              "group": "Group K",
-              "form": "WDWD",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 2,
-                "lose": 0,
-                "goals": {
-                  "for": 6,
-                  "against": 1
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 1508,
-                "name": "Congo DR",
-                "logo": "https://media.api-sports.io/football/teams/1508.png"
-              },
-              "points": 4,
-              "goalsDiff": 1,
-              "group": "Group K",
-              "form": "LWLD",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 4,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 1568,
-                "name": "Uzbekistan",
-                "logo": "https://media.api-sports.io/football/teams/1568.png"
-              },
-              "points": 0,
-              "goalsDiff": -9,
-              "group": "Group K",
-              "form": "LLL",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 0,
-                "lose": 3,
-                "goals": {
-                  "for": 2,
-                  "against": 11
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            }
-          ],
-          [
-            {
-              "rank": 1,
-              "team": {
-                "id": 10,
-                "name": "England",
-                "logo": "https://media.api-sports.io/football/teams/10.png"
-              },
-              "points": 7,
-              "goalsDiff": 4,
-              "group": "Group L",
-              "form": "WWWDW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 2,
-                "draw": 1,
-                "lose": 0,
-                "goals": {
-                  "for": 6,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 3,
-                "name": "Croatia",
-                "logo": "https://media.api-sports.io/football/teams/3.png"
-              },
-              "points": 6,
-              "goalsDiff": 0,
-              "group": "Group L",
-              "form": "LWWL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 2,
-                "draw": 0,
-                "lose": 1,
-                "goals": {
-                  "for": 5,
-                  "against": 5
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 1504,
-                "name": "Ghana",
-                "logo": "https://media.api-sports.io/football/teams/1504.png"
-              },
-              "points": 4,
-              "goalsDiff": 0,
-              "group": "Group L",
-              "form": "LLDW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 2,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 11,
-                "name": "Panama",
-                "logo": "https://media.api-sports.io/football/teams/11.png"
-              },
-              "points": 0,
-              "goalsDiff": -4,
-              "group": "Group L",
-              "form": "LLL",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 0,
-                "lose": 3,
-                "goals": {
-                  "for": 0,
-                  "against": 4
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 1,
-              "team": {
-                "id": 10,
-                "name": "England",
-                "logo": "https://media.api-sports.io/football/teams/10.png"
-              },
-              "points": 7,
-              "goalsDiff": 4,
-              "group": "Group L",
-              "form": "WWWDW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 2,
-                "draw": 1,
-                "lose": 0,
-                "goals": {
-                  "for": 6,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 3,
-                "name": "Croatia",
-                "logo": "https://media.api-sports.io/football/teams/3.png"
-              },
-              "points": 6,
-              "goalsDiff": 0,
-              "group": "Group L",
-              "form": "LWWL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 2,
-                "draw": 0,
-                "lose": 1,
-                "goals": {
-                  "for": 5,
-                  "against": 5
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 1504,
-                "name": "Ghana",
-                "logo": "https://media.api-sports.io/football/teams/1504.png"
-              },
-              "points": 4,
-              "goalsDiff": 0,
-              "group": "Group L",
-              "form": "LLDW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 2,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 11,
-                "name": "Panama",
-                "logo": "https://media.api-sports.io/football/teams/11.png"
-              },
-              "points": 0,
-              "goalsDiff": -4,
-              "group": "Group L",
-              "form": "LLL",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 0,
-                "lose": 3,
-                "goals": {
-                  "for": 0,
-                  "against": 4
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            }
-          ],
-          [
-            {
-              "rank": 1,
-              "team": {
                 "id": 2384,
                 "name": "USA",
                 "logo": "https://media.api-sports.io/football/teams/2384.png"
@@ -9184,1088 +7579,6 @@
                 "goals": {
                   "for": 3,
                   "against": 5
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            }
-          ],
-          [
-            {
-              "rank": 1,
-              "team": {
-                "id": 1508,
-                "name": "Congo DR",
-                "logo": "https://media.api-sports.io/football/teams/1508.png"
-              },
-              "points": 4,
-              "goalsDiff": 1,
-              "group": "Group Stage",
-              "form": "LWLD",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 4,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 5,
-                "name": "Sweden",
-                "logo": "https://media.api-sports.io/football/teams/5.png"
-              },
-              "points": 4,
-              "goalsDiff": 0,
-              "group": "Group Stage",
-              "form": "LDLW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 7,
-                  "against": 7
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 1504,
-                "name": "Ghana",
-                "logo": "https://media.api-sports.io/football/teams/1504.png"
-              },
-              "points": 4,
-              "goalsDiff": 0,
-              "group": "Group Stage",
-              "form": "LLDW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 2,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 2382,
-                "name": "Ecuador",
-                "logo": "https://media.api-sports.io/football/teams/2382.png"
-              },
-              "points": 4,
-              "goalsDiff": 0,
-              "group": "Group Stage",
-              "form": "LWDL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 2,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 5,
-              "team": {
-                "id": 1113,
-                "name": "Bosnia & Herzegovina",
-                "logo": "https://media.api-sports.io/football/teams/1113.png"
-              },
-              "points": 4,
-              "goalsDiff": -1,
-              "group": "Group Stage",
-              "form": "LWLD",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 5,
-                  "against": 6
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 6,
-              "team": {
-                "id": 1532,
-                "name": "Algeria",
-                "logo": "https://media.api-sports.io/football/teams/1532.png"
-              },
-              "points": 4,
-              "goalsDiff": -2,
-              "group": "Group Stage",
-              "form": "LDWL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 5,
-                  "against": 7
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 7,
-              "team": {
-                "id": 2380,
-                "name": "Paraguay",
-                "logo": "https://media.api-sports.io/football/teams/2380.png"
-              },
-              "points": 4,
-              "goalsDiff": -2,
-              "group": "Group Stage",
-              "form": "LWDWL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 2,
-                  "against": 4
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 8,
-              "team": {
-                "id": 13,
-                "name": "Senegal",
-                "logo": "https://media.api-sports.io/football/teams/13.png"
-              },
-              "points": 3,
-              "goalsDiff": 2,
-              "group": "Group Stage",
-              "form": "LWLL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 0,
-                "lose": 2,
-                "goals": {
-                  "for": 8,
-                  "against": 6
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 9,
-              "team": {
-                "id": 22,
-                "name": "Iran",
-                "logo": "https://media.api-sports.io/football/teams/22.png"
-              },
-              "points": 3,
-              "goalsDiff": 0,
-              "group": "Group Stage",
-              "form": "DDD",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 3,
-                "lose": 0,
-                "goals": {
-                  "for": 3,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 10,
-              "team": {
-                "id": 17,
-                "name": "South Korea",
-                "logo": "https://media.api-sports.io/football/teams/17.png"
-              },
-              "points": 3,
-              "goalsDiff": -1,
-              "group": "Group Stage",
-              "form": "LLW",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 0,
-                "lose": 2,
-                "goals": {
-                  "for": 2,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 11,
-              "team": {
-                "id": 1108,
-                "name": "Scotland",
-                "logo": "https://media.api-sports.io/football/teams/1108.png"
-              },
-              "points": 3,
-              "goalsDiff": -3,
-              "group": "Group Stage",
-              "form": "LLW",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 0,
-                "lose": 2,
-                "goals": {
-                  "for": 1,
-                  "against": 4
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 12,
-              "team": {
-                "id": 7,
-                "name": "Uruguay",
-                "logo": "https://media.api-sports.io/football/teams/7.png"
-              },
-              "points": 2,
-              "goalsDiff": -1,
-              "group": "Group Stage",
-              "form": "LDD",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 2,
-                "lose": 1,
-                "goals": {
-                  "for": 3,
-                  "against": 4
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 1,
-              "team": {
-                "id": 1508,
-                "name": "Congo DR",
-                "logo": "https://media.api-sports.io/football/teams/1508.png"
-              },
-              "points": 4,
-              "goalsDiff": 1,
-              "group": "Group Stage",
-              "form": "LWLD",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 4,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 2,
-              "team": {
-                "id": 5,
-                "name": "Sweden",
-                "logo": "https://media.api-sports.io/football/teams/5.png"
-              },
-              "points": 4,
-              "goalsDiff": 0,
-              "group": "Group Stage",
-              "form": "LDLW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 7,
-                  "against": 7
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": 1504,
-                "name": "Ghana",
-                "logo": "https://media.api-sports.io/football/teams/1504.png"
-              },
-              "points": 4,
-              "goalsDiff": 0,
-              "group": "Group Stage",
-              "form": "LLDW",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 2,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": 2382,
-                "name": "Ecuador",
-                "logo": "https://media.api-sports.io/football/teams/2382.png"
-              },
-              "points": 4,
-              "goalsDiff": 0,
-              "group": "Group Stage",
-              "form": "LWDL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 2,
-                  "against": 2
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 5,
-              "team": {
-                "id": 1113,
-                "name": "Bosnia & Herzegovina",
-                "logo": "https://media.api-sports.io/football/teams/1113.png"
-              },
-              "points": 4,
-              "goalsDiff": -1,
-              "group": "Group Stage",
-              "form": "LWLD",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 5,
-                  "against": 6
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 6,
-              "team": {
-                "id": 1532,
-                "name": "Algeria",
-                "logo": "https://media.api-sports.io/football/teams/1532.png"
-              },
-              "points": 4,
-              "goalsDiff": -2,
-              "group": "Group Stage",
-              "form": "LDWL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 5,
-                  "against": 7
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 7,
-              "team": {
-                "id": 2380,
-                "name": "Paraguay",
-                "logo": "https://media.api-sports.io/football/teams/2380.png"
-              },
-              "points": 4,
-              "goalsDiff": -2,
-              "group": "Group Stage",
-              "form": "LWDWL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 1,
-                "lose": 1,
-                "goals": {
-                  "for": 2,
-                  "against": 4
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 8,
-              "team": {
-                "id": 13,
-                "name": "Senegal",
-                "logo": "https://media.api-sports.io/football/teams/13.png"
-              },
-              "points": 3,
-              "goalsDiff": 2,
-              "group": "Group Stage",
-              "form": "LWLL",
-              "status": "same",
-              "description": "Round of 32",
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 0,
-                "lose": 2,
-                "goals": {
-                  "for": 8,
-                  "against": 6
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 9,
-              "team": {
-                "id": 22,
-                "name": "Iran",
-                "logo": "https://media.api-sports.io/football/teams/22.png"
-              },
-              "points": 3,
-              "goalsDiff": 0,
-              "group": "Group Stage",
-              "form": "DDD",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 3,
-                "lose": 0,
-                "goals": {
-                  "for": 3,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 10,
-              "team": {
-                "id": 17,
-                "name": "South Korea",
-                "logo": "https://media.api-sports.io/football/teams/17.png"
-              },
-              "points": 3,
-              "goalsDiff": -1,
-              "group": "Group Stage",
-              "form": "LLW",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 0,
-                "lose": 2,
-                "goals": {
-                  "for": 2,
-                  "against": 3
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 11,
-              "team": {
-                "id": 1108,
-                "name": "Scotland",
-                "logo": "https://media.api-sports.io/football/teams/1108.png"
-              },
-              "points": 3,
-              "goalsDiff": -3,
-              "group": "Group Stage",
-              "form": "LLW",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 1,
-                "draw": 0,
-                "lose": 2,
-                "goals": {
-                  "for": 1,
-                  "against": 4
-                }
-              },
-              "home": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "away": {
-                "played": 0,
-                "win": 0,
-                "draw": 0,
-                "lose": 0,
-                "goals": {
-                  "for": 0,
-                  "against": 0
-                }
-              },
-              "update": "2026-07-06T00:00:00+00:00"
-            },
-            {
-              "rank": 12,
-              "team": {
-                "id": 7,
-                "name": "Uruguay",
-                "logo": "https://media.api-sports.io/football/teams/7.png"
-              },
-              "points": 2,
-              "goalsDiff": -1,
-              "group": "Group Stage",
-              "form": "LDD",
-              "status": "same",
-              "description": null,
-              "all": {
-                "played": 3,
-                "win": 0,
-                "draw": 2,
-                "lose": 1,
-                "goals": {
-                  "for": 3,
-                  "against": 4
                 }
               },
               "home": {
@@ -10812,6 +8125,1458 @@
                 "goals": {
                   "for": 4,
                   "against": 10
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 9,
+                "name": "Spain",
+                "logo": "https://media.api-sports.io/football/teams/9.png"
+              },
+              "points": 7,
+              "goalsDiff": 5,
+              "group": "Group H",
+              "form": "WWWD",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 1,
+                "lose": 0,
+                "goals": {
+                  "for": 5,
+                  "against": 0
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 1533,
+                "name": "Cape Verde Islands",
+                "logo": "https://media.api-sports.io/football/teams/1533.png"
+              },
+              "points": 3,
+              "goalsDiff": 0,
+              "group": "Group H",
+              "form": "LDDD",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 3,
+                "lose": 0,
+                "goals": {
+                  "for": 2,
+                  "against": 2
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 7,
+                "name": "Uruguay",
+                "logo": "https://media.api-sports.io/football/teams/7.png"
+              },
+              "points": 2,
+              "goalsDiff": -1,
+              "group": "Group H",
+              "form": "LDD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 2,
+                "lose": 1,
+                "goals": {
+                  "for": 3,
+                  "against": 4
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 23,
+                "name": "Saudi Arabia",
+                "logo": "https://media.api-sports.io/football/teams/23.png"
+              },
+              "points": 2,
+              "goalsDiff": -4,
+              "group": "Group H",
+              "form": "DLD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 2,
+                "lose": 1,
+                "goals": {
+                  "for": 1,
+                  "against": 5
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 2,
+                "name": "France",
+                "logo": "https://media.api-sports.io/football/teams/2.png"
+              },
+              "points": 9,
+              "goalsDiff": 8,
+              "group": "Group I",
+              "form": "WWWWW",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 3,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 10,
+                  "against": 2
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 1090,
+                "name": "Norway",
+                "logo": "https://media.api-sports.io/football/teams/1090.png"
+              },
+              "points": 6,
+              "goalsDiff": 1,
+              "group": "Group I",
+              "form": "WWLWW",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 0,
+                "lose": 1,
+                "goals": {
+                  "for": 8,
+                  "against": 7
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 13,
+                "name": "Senegal",
+                "logo": "https://media.api-sports.io/football/teams/13.png"
+              },
+              "points": 3,
+              "goalsDiff": 2,
+              "group": "Group I",
+              "form": "LWLL",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 0,
+                "lose": 2,
+                "goals": {
+                  "for": 8,
+                  "against": 6
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 1567,
+                "name": "Iraq",
+                "logo": "https://media.api-sports.io/football/teams/1567.png"
+              },
+              "points": 0,
+              "goalsDiff": -11,
+              "group": "Group I",
+              "form": "LLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 0,
+                "lose": 3,
+                "goals": {
+                  "for": 1,
+                  "against": 12
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 26,
+                "name": "Argentina",
+                "logo": "https://media.api-sports.io/football/teams/26.png"
+              },
+              "points": 9,
+              "goalsDiff": 7,
+              "group": "Group J",
+              "form": "WWWW",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 3,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 8,
+                  "against": 1
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 775,
+                "name": "Austria",
+                "logo": "https://media.api-sports.io/football/teams/775.png"
+              },
+              "points": 4,
+              "goalsDiff": 0,
+              "group": "Group J",
+              "form": "LDLW",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 6,
+                  "against": 6
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 1532,
+                "name": "Algeria",
+                "logo": "https://media.api-sports.io/football/teams/1532.png"
+              },
+              "points": 4,
+              "goalsDiff": -2,
+              "group": "Group J",
+              "form": "LDWL",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 5,
+                  "against": 7
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 1548,
+                "name": "Jordan",
+                "logo": "https://media.api-sports.io/football/teams/1548.png"
+              },
+              "points": 0,
+              "goalsDiff": -5,
+              "group": "Group J",
+              "form": "LLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 0,
+                "lose": 3,
+                "goals": {
+                  "for": 3,
+                  "against": 8
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 8,
+                "name": "Colombia",
+                "logo": "https://media.api-sports.io/football/teams/8.png"
+              },
+              "points": 7,
+              "goalsDiff": 3,
+              "group": "Group K",
+              "form": "WDWW",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 1,
+                "lose": 0,
+                "goals": {
+                  "for": 4,
+                  "against": 1
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 27,
+                "name": "Portugal",
+                "logo": "https://media.api-sports.io/football/teams/27.png"
+              },
+              "points": 5,
+              "goalsDiff": 5,
+              "group": "Group K",
+              "form": "WDWD",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 2,
+                "lose": 0,
+                "goals": {
+                  "for": 6,
+                  "against": 1
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 1508,
+                "name": "Congo DR",
+                "logo": "https://media.api-sports.io/football/teams/1508.png"
+              },
+              "points": 4,
+              "goalsDiff": 1,
+              "group": "Group K",
+              "form": "LWLD",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 4,
+                  "against": 3
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 1568,
+                "name": "Uzbekistan",
+                "logo": "https://media.api-sports.io/football/teams/1568.png"
+              },
+              "points": 0,
+              "goalsDiff": -9,
+              "group": "Group K",
+              "form": "LLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 0,
+                "lose": 3,
+                "goals": {
+                  "for": 2,
+                  "against": 11
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 10,
+                "name": "England",
+                "logo": "https://media.api-sports.io/football/teams/10.png"
+              },
+              "points": 7,
+              "goalsDiff": 4,
+              "group": "Group L",
+              "form": "WWWDW",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 1,
+                "lose": 0,
+                "goals": {
+                  "for": 6,
+                  "against": 2
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 3,
+                "name": "Croatia",
+                "logo": "https://media.api-sports.io/football/teams/3.png"
+              },
+              "points": 6,
+              "goalsDiff": 0,
+              "group": "Group L",
+              "form": "LWWL",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 2,
+                "draw": 0,
+                "lose": 1,
+                "goals": {
+                  "for": 5,
+                  "against": 5
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 1504,
+                "name": "Ghana",
+                "logo": "https://media.api-sports.io/football/teams/1504.png"
+              },
+              "points": 4,
+              "goalsDiff": 0,
+              "group": "Group L",
+              "form": "LLDW",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 2,
+                  "against": 2
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 11,
+                "name": "Panama",
+                "logo": "https://media.api-sports.io/football/teams/11.png"
+              },
+              "points": 0,
+              "goalsDiff": -4,
+              "group": "Group L",
+              "form": "LLL",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 0,
+                "lose": 3,
+                "goals": {
+                  "for": 0,
+                  "against": 4
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            }
+          ],
+          [
+            {
+              "rank": 1,
+              "team": {
+                "id": 1508,
+                "name": "Congo DR",
+                "logo": "https://media.api-sports.io/football/teams/1508.png"
+              },
+              "points": 4,
+              "goalsDiff": 1,
+              "group": "Group Stage",
+              "form": "LWLD",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 4,
+                  "against": 3
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 2,
+              "team": {
+                "id": 5,
+                "name": "Sweden",
+                "logo": "https://media.api-sports.io/football/teams/5.png"
+              },
+              "points": 4,
+              "goalsDiff": 0,
+              "group": "Group Stage",
+              "form": "LDLW",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 7,
+                  "against": 7
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": 1504,
+                "name": "Ghana",
+                "logo": "https://media.api-sports.io/football/teams/1504.png"
+              },
+              "points": 4,
+              "goalsDiff": 0,
+              "group": "Group Stage",
+              "form": "LLDW",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 2,
+                  "against": 2
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 4,
+              "team": {
+                "id": 2382,
+                "name": "Ecuador",
+                "logo": "https://media.api-sports.io/football/teams/2382.png"
+              },
+              "points": 4,
+              "goalsDiff": 0,
+              "group": "Group Stage",
+              "form": "LWDL",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 2,
+                  "against": 2
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 5,
+              "team": {
+                "id": 1113,
+                "name": "Bosnia & Herzegovina",
+                "logo": "https://media.api-sports.io/football/teams/1113.png"
+              },
+              "points": 4,
+              "goalsDiff": -1,
+              "group": "Group Stage",
+              "form": "LWLD",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 5,
+                  "against": 6
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 6,
+              "team": {
+                "id": 1532,
+                "name": "Algeria",
+                "logo": "https://media.api-sports.io/football/teams/1532.png"
+              },
+              "points": 4,
+              "goalsDiff": -2,
+              "group": "Group Stage",
+              "form": "LDWL",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 5,
+                  "against": 7
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 7,
+              "team": {
+                "id": 2380,
+                "name": "Paraguay",
+                "logo": "https://media.api-sports.io/football/teams/2380.png"
+              },
+              "points": 4,
+              "goalsDiff": -2,
+              "group": "Group Stage",
+              "form": "LWDWL",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 1,
+                "lose": 1,
+                "goals": {
+                  "for": 2,
+                  "against": 4
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 8,
+              "team": {
+                "id": 13,
+                "name": "Senegal",
+                "logo": "https://media.api-sports.io/football/teams/13.png"
+              },
+              "points": 3,
+              "goalsDiff": 2,
+              "group": "Group Stage",
+              "form": "LWLL",
+              "status": "same",
+              "description": "Round of 32",
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 0,
+                "lose": 2,
+                "goals": {
+                  "for": 8,
+                  "against": 6
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 9,
+              "team": {
+                "id": 22,
+                "name": "Iran",
+                "logo": "https://media.api-sports.io/football/teams/22.png"
+              },
+              "points": 3,
+              "goalsDiff": 0,
+              "group": "Group Stage",
+              "form": "DDD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 3,
+                "lose": 0,
+                "goals": {
+                  "for": 3,
+                  "against": 3
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 10,
+              "team": {
+                "id": 17,
+                "name": "South Korea",
+                "logo": "https://media.api-sports.io/football/teams/17.png"
+              },
+              "points": 3,
+              "goalsDiff": -1,
+              "group": "Group Stage",
+              "form": "LLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 0,
+                "lose": 2,
+                "goals": {
+                  "for": 2,
+                  "against": 3
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 11,
+              "team": {
+                "id": 1108,
+                "name": "Scotland",
+                "logo": "https://media.api-sports.io/football/teams/1108.png"
+              },
+              "points": 3,
+              "goalsDiff": -3,
+              "group": "Group Stage",
+              "form": "LLW",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 1,
+                "draw": 0,
+                "lose": 2,
+                "goals": {
+                  "for": 1,
+                  "against": 4
+                }
+              },
+              "home": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "away": {
+                "played": 0,
+                "win": 0,
+                "draw": 0,
+                "lose": 0,
+                "goals": {
+                  "for": 0,
+                  "against": 0
+                }
+              },
+              "update": "2026-07-06T00:00:00+00:00"
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": 7,
+                "name": "Uruguay",
+                "logo": "https://media.api-sports.io/football/teams/7.png"
+              },
+              "points": 2,
+              "goalsDiff": -1,
+              "group": "Group Stage",
+              "form": "LDD",
+              "status": "same",
+              "description": null,
+              "all": {
+                "played": 3,
+                "win": 0,
+                "draw": 2,
+                "lose": 1,
+                "goals": {
+                  "for": 3,
+                  "against": 4
                 }
               },
               "home": {
