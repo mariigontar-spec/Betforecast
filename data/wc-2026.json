@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T04:18:16.326Z",
+  "updatedAt": "2026-07-07T10:02:04.208Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
@@ -6808,8 +6808,8 @@
         },
         "venue": {
           "id": 0,
-          "name": null,
-          "city": null
+          "name": "SoFi Stadium",
+          "city": "Los Angeles"
         },
         "status": {
           "long": "Not Started",
