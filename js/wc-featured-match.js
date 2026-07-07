@@ -1,4 +1,39 @@
 (function () {
+  const TODAY_MATCHES = [
+    {
+      home: 'Argentina',
+      away: 'Egypt',
+      round: 'Round of 16',
+      date: '07 Jul, 19:00',
+      venue: 'Mercedes-Benz Stadium',
+      confidence: 'AI Confidence 76%',
+      homePercent: 62,
+      drawPercent: 23,
+      awayPercent: 15,
+      pick: 'Argentina win',
+      advice: 'Argentina edge: win market with cautious total-goals control',
+      text: 'Argentina carry the stronger knockout profile, while Egypt remain dangerous on counters and set pieces.',
+      homeLogo: 'https://flagcdn.com/w160/ar.png',
+      awayLogo: 'https://flagcdn.com/w160/eg.png'
+    },
+    {
+      home: 'Switzerland',
+      away: 'Colombia',
+      round: 'Round of 16',
+      date: '07 Jul, 23:00',
+      venue: 'BC Place',
+      confidence: 'AI Confidence 68%',
+      homePercent: 32,
+      drawPercent: 31,
+      awayPercent: 37,
+      pick: 'Colombia DNB',
+      advice: 'Narrow Colombia edge: draw no bet looks safer than straight win',
+      text: 'Colombia have the attacking edge, but Switzerland’s structure keeps the draw probability high.',
+      homeLogo: 'https://flagcdn.com/w160/ch.png',
+      awayLogo: 'https://flagcdn.com/w160/co.png'
+    }
+  ];
+
   function injectFixCss() {
     var old = document.getElementById('bf-home-fix-css');
     if (old) old.remove();
@@ -6,6 +41,26 @@
     var style = document.createElement('style');
     style.id = 'bf-home-fix-css';
     style.textContent = `
+      body.site-skin-1win .bf-team-logo-wrap {
+        width: 104px !important;
+        height: 104px !important;
+        margin: 0 auto 14px !important;
+        border-radius: 50% !important;
+        overflow: hidden !important;
+        background: rgba(255,255,255,.08) !important;
+        border: 1px solid rgba(255,255,255,.10) !important;
+        display: grid !important;
+        place-items: center !important;
+      }
+
+      body.site-skin-1win .bf-team-logo-img {
+        width: 118% !important;
+        height: 118% !important;
+        padding: 0 !important;
+        object-fit: cover !important;
+        transform: scale(1.06) !important;
+      }
+
       body.site-skin-1win .bf-predictions-table,
       body.site-skin-1win #matches-container,
       body.site-skin-1win #results-container {
@@ -105,6 +160,7 @@
       }
 
       @media (max-width: 768px) {
+        body.site-skin-1win .bf-team-logo-wrap { width: 88px !important; height: 88px !important; }
         body.site-skin-1win .bf-prediction-row { min-width: 760px !important; }
         body.site-skin-1win .bf-home-list-card { grid-template-columns: 1fr !important; }
         body.site-skin-1win .bf-home-list-pill { justify-self: start !important; }
@@ -118,31 +174,51 @@
     if (el) el.textContent = text;
   }
 
+  function setImage(id, src, alt) {
+    var img = document.getElementById(id);
+    if (!img) return;
+    img.src = src;
+    img.alt = alt || '';
+    img.style.visibility = 'visible';
+  }
+
+  function setBar(id, percent) {
+    var bar = document.getElementById(id);
+    if (bar) bar.style.width = percent + '%';
+  }
+
   function fixFeaturedCard() {
-    setText('wcConfidence', 'AI Confidence 45%');
-    setText('wcHomeTeam', 'Portugal');
-    setText('wcAwayTeam', 'Spain');
-    setText('wcHomeNote', 'Round of 16');
-    setText('wcAwayNote', 'Round of 16');
+    var m = TODAY_MATCHES[0];
+    setText('wcConfidence', m.confidence);
+    setText('wcHomeTeam', m.home);
+    setText('wcAwayTeam', m.away);
+    setText('wcHomeNote', m.round);
+    setText('wcAwayNote', m.round);
     setText('wcVersus', 'VS');
-    setText('wcAdvice', 'Combo double chance: draw or Spain and -3.5 goals');
-    setText('wcHomePercent', '31%');
-    setText('wcDrawPercent', '29%');
-    setText('wcAwayPercent', '40%');
-    setText('wcMatchDate', '06 Jul, 22:00');
-    setText('wcMatchStatus', 'Scheduled');
-    setText('wcVenue', 'AT&T Stadium');
-    setText('wcPredictionText', 'Prediction considers form, squad depth, recent tempo and available World Cup data.');
+    setText('wcAdvice', m.advice);
+    setText('wcHomePercent', m.homePercent + '%');
+    setText('wcDrawPercent', m.drawPercent + '%');
+    setText('wcAwayPercent', m.awayPercent + '%');
+    setText('wcMatchDate', m.date);
+    setText('wcMatchStatus', 'Today');
+    setText('wcVenue', m.venue);
+    setText('wcPredictionText', m.text);
+    setImage('wcHomeLogo', m.homeLogo, m.home + ' flag');
+    setImage('wcAwayLogo', m.awayLogo, m.away + ' flag');
+    setBar('wcHomeBar', m.homePercent);
+    setBar('wcDrawBar', m.drawPercent);
+    setBar('wcAwayBar', m.awayPercent);
   }
 
   function fixPredictionTable() {
     var table = document.querySelector('.bf-predictions-table');
     if (!table) return;
+
     table.innerHTML = `
       <div class="bf-prediction-row bf-prediction-head"><span>Match</span><span>League</span><span>Home</span><span>Draw</span><span>Away</span><span>AI Pick</span></div>
-      <div class="bf-prediction-row"><strong>Portugal vs Spain</strong><span>World Cup</span><b>31%</b><b>29%</b><b>40%</b><em>Spain DNB</em></div>
-      <div class="bf-prediction-row"><strong>Brazil vs Argentina</strong><span>International</span><b>42%</b><b>28%</b><b>30%</b><em>Brazil Win</em></div>
-      <div class="bf-prediction-row"><strong>Germany vs France</strong><span>Europe</span><b>34%</b><b>31%</b><b>35%</b><em>France DNB</em></div>
+      ${TODAY_MATCHES.map(function (m) {
+        return `<div class="bf-prediction-row"><strong>${m.home} vs ${m.away}</strong><span>World Cup · ${m.round}</span><b>${m.homePercent}%</b><b>${m.drawPercent}%</b><b>${m.awayPercent}%</b><em>${m.pick}</em></div>`;
+      }).join('')}
     `;
   }
 
@@ -153,8 +229,9 @@
     if (upcoming) {
       upcoming.innerHTML = `
         <div class="bf-home-list">
-          <article class="bf-home-list-card"><div><strong>Portugal vs Spain</strong><small>06 Jul, 22:00 · AT&T Stadium</small></div><span class="bf-home-list-pill">Upcoming</span></article>
-          <article class="bf-home-list-card"><div><strong>Brazil vs Argentina</strong><small>International · AI watchlist</small></div><span class="bf-home-list-pill">Preview</span></article>
+          ${TODAY_MATCHES.map(function (m) {
+            return `<article class="bf-home-list-card"><div><strong>${m.home} vs ${m.away}</strong><small>${m.date} · ${m.venue}</small></div><span class="bf-home-list-pill">Today</span></article>`;
+          }).join('')}
         </div>
       `;
     }
@@ -162,14 +239,32 @@
     if (results) {
       results.innerHTML = `
         <div class="bf-home-list">
-          <article class="bf-home-list-card"><div><strong>Mexico vs England</strong><small>06 Jul, 04:00 · Estadio Banorte</small></div><span class="bf-home-list-pill">2-3</span></article>
+          <article class="bf-home-list-card"><div><strong>Portugal vs Spain</strong><small>06 Jul · Spain advanced to face Belgium in the quarterfinals</small></div><span class="bf-home-list-pill">Latest</span></article>
+          <article class="bf-home-list-card"><div><strong>USA vs Belgium</strong><small>06 Jul · Round of 16 completed</small></div><span class="bf-home-list-pill">Latest</span></article>
         </div>
       `;
     }
   }
 
+  function fixSearchPresets() {
+    var input = document.getElementById('match-search-input');
+    if (input) input.placeholder = 'e.g. Argentina vs Egypt';
+
+    var tags = document.querySelector('.bf-tags');
+    if (tags) {
+      tags.innerHTML = '<button>Argentina vs Egypt</button><button>Switzerland vs Colombia</button>';
+    }
+  }
+
+  function fixSectionTitle() {
+    var title = document.querySelector('.bf-predictions-section h2');
+    if (title) title.textContent = 'Today’s World Cup AI Predictions';
+  }
+
   function run() {
     injectFixCss();
+    fixSearchPresets();
+    fixSectionTitle();
     fixFeaturedCard();
     fixPredictionTable();
     fixLowerCards();
