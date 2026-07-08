@@ -80,10 +80,10 @@
   ];
 
   function injectFixCss() {
-    var old = document.getElementById('bf-home-fix-css');
+    const old = document.getElementById('bf-home-fix-css');
     if (old) old.remove();
 
-    var style = document.createElement('style');
+    const style = document.createElement('style');
     style.id = 'bf-home-fix-css';
     style.textContent = `
       body.site-skin-1win .bf-team-logo-wrap {
@@ -106,7 +106,6 @@
         transform: scale(1.06) !important;
       }
 
-      body.site-skin-1win .bf-predictions-table,
       body.site-skin-1win #matches-container,
       body.site-skin-1win #results-container {
         display: block !important;
@@ -116,52 +115,33 @@
         overflow: visible !important;
       }
 
-      body.site-skin-1win .bf-predictions-table::before,
-      body.site-skin-1win .bf-predictions-table::after,
-      body.site-skin-1win .bf-prediction-row::before,
-      body.site-skin-1win .bf-prediction-row::after {
-        content: none !important;
-        display: none !important;
-      }
-
-      body.site-skin-1win .bf-prediction-row {
-        display: grid !important;
-        grid-template-columns: 1.35fr .95fr .65fr .65fr .65fr 1fr !important;
-        gap: 14px !important;
-        min-width: 860px !important;
-        align-items: center !important;
-        padding: 14px 18px !important;
-      }
-
-      body.site-skin-1win .bf-prediction-row > * {
-        display: block !important;
-        white-space: nowrap !important;
-        text-align: left !important;
-        writing-mode: horizontal-tb !important;
-        text-orientation: mixed !important;
-        transform: none !important;
-      }
-
       body.site-skin-1win .bf-home-list {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        gap: 10px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
         width: 100% !important;
         max-width: 100% !important;
       }
 
       body.site-skin-1win .bf-home-list-card {
-        display: grid !important;
-        grid-template-columns: minmax(0, 1fr) auto !important;
-        gap: 12px !important;
+        display: flex !important;
         align-items: center !important;
+        justify-content: space-between !important;
+        gap: 14px !important;
         width: 100% !important;
         max-width: 100% !important;
-        min-width: 0 !important;
-        padding: 14px !important;
+        min-width: 100% !important;
+        padding: 16px !important;
         border: 1px solid rgba(94,224,164,.12) !important;
         border-radius: 16px !important;
         background: rgba(2,11,19,.34) !important;
+        box-sizing: border-box !important;
+      }
+
+      body.site-skin-1win .bf-home-list-content {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
       }
 
       body.site-skin-1win .bf-home-list-card,
@@ -171,30 +151,34 @@
         transform: none !important;
         letter-spacing: normal !important;
         word-break: normal !important;
+        overflow-wrap: normal !important;
       }
 
       body.site-skin-1win .bf-home-list-card strong {
         display: block !important;
         color: #fff !important;
-        font-size: 15px !important;
-        line-height: 1.25 !important;
+        font-size: 16px !important;
+        line-height: 1.3 !important;
         font-weight: 900 !important;
         white-space: normal !important;
       }
 
       body.site-skin-1win .bf-home-list-card small {
         display: block !important;
-        margin-top: 5px !important;
+        margin-top: 6px !important;
         color: rgba(248,250,252,.66) !important;
-        font-size: 12px !important;
-        line-height: 1.35 !important;
+        font-size: 13px !important;
+        line-height: 1.4 !important;
         white-space: normal !important;
       }
 
       body.site-skin-1win .bf-home-list-pill {
-        justify-self: end !important;
+        flex: 0 0 auto !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
         min-width: max-content !important;
-        padding: 7px 10px !important;
+        padding: 8px 12px !important;
         border-radius: 999px !important;
         color: #06120d !important;
         background: #5ee0a4 !important;
@@ -205,22 +189,31 @@
       }
 
       @media (max-width: 768px) {
-        body.site-skin-1win .bf-team-logo-wrap { width: 88px !important; height: 88px !important; }
-        body.site-skin-1win .bf-prediction-row { min-width: 760px !important; }
-        body.site-skin-1win .bf-home-list-card { grid-template-columns: 1fr !important; }
-        body.site-skin-1win .bf-home-list-pill { justify-self: start !important; }
+        body.site-skin-1win .bf-team-logo-wrap {
+          width: 88px !important;
+          height: 88px !important;
+        }
+
+        body.site-skin-1win .bf-home-list-card {
+          flex-direction: column !important;
+          align-items: flex-start !important;
+        }
+
+        body.site-skin-1win .bf-home-list-pill {
+          align-self: flex-start !important;
+        }
       }
     `;
     document.head.appendChild(style);
   }
 
   function setText(id, text) {
-    var el = document.getElementById(id);
+    const el = document.getElementById(id);
     if (el) el.textContent = text;
   }
 
   function setImage(id, src, alt) {
-    var img = document.getElementById(id);
+    const img = document.getElementById(id);
     if (!img) return;
     img.src = src;
     img.alt = alt || '';
@@ -228,12 +221,12 @@
   }
 
   function setBar(id, percent) {
-    var bar = document.getElementById(id);
+    const bar = document.getElementById(id);
     if (bar) bar.style.width = percent + '%';
   }
 
   function fixFeaturedCard() {
-    var m = NEXT_MATCHES[0];
+    const m = NEXT_MATCHES[0];
     setText('wcConfidence', m.confidence);
     setText('wcHomeTeam', m.home);
     setText('wcAwayTeam', m.away);
@@ -256,26 +249,45 @@
   }
 
   function fixPredictionTable() {
-    var table = document.querySelector('.bf-predictions-table');
+    const table = document.querySelector('.bf-predictions-table');
     if (!table) return;
 
     table.innerHTML = `
-      <div class="bf-prediction-row bf-prediction-head"><span>Match</span><span>League</span><span>Home</span><span>Draw</span><span>Away</span><span>AI Pick</span></div>
+      <div class="bf-prediction-row bf-prediction-head">
+        <span>Match</span><span>League</span><span>Home</span><span>Draw</span><span>Away</span><span>AI Pick</span>
+      </div>
       ${NEXT_MATCHES.map(function (m) {
-        return `<div class="bf-prediction-row"><strong>${m.home} vs ${m.away}</strong><span>World Cup · ${m.round}</span><b>${m.homePercent}%</b><b>${m.drawPercent}%</b><b>${m.awayPercent}%</b><em>${m.pick}</em></div>`;
+        return `
+          <div class="bf-prediction-row">
+            <strong>${m.home} vs ${m.away}</strong>
+            <span>World Cup · ${m.round}</span>
+            <b>${m.homePercent}%</b>
+            <b>${m.drawPercent}%</b>
+            <b>${m.awayPercent}%</b>
+            <em>${m.pick}</em>
+          </div>
+        `;
       }).join('')}
     `;
   }
 
   function fixLowerCards() {
-    var upcoming = document.getElementById('matches-container');
-    var results = document.getElementById('results-container');
+    const upcoming = document.getElementById('matches-container');
+    const results = document.getElementById('results-container');
 
     if (upcoming) {
       upcoming.innerHTML = `
         <div class="bf-home-list">
           ${NEXT_MATCHES.map(function (m, index) {
-            return `<article class="bf-home-list-card"><div><strong>${m.home} vs ${m.away}</strong><small>${m.date} · ${m.venue}</small></div><span class="bf-home-list-pill">${index === 0 ? 'Next' : 'QF'}</span></article>`;
+            return `
+              <article class="bf-home-list-card">
+                <div class="bf-home-list-content">
+                  <strong>${m.home} vs ${m.away}</strong>
+                  <small>${m.date} · ${m.venue}</small>
+                </div>
+                <span class="bf-home-list-pill">${index === 0 ? 'Next' : 'QF'}</span>
+              </article>
+            `;
           }).join('')}
         </div>
       `;
@@ -285,7 +297,15 @@
       results.innerHTML = `
         <div class="bf-home-list">
           ${LATEST_RESULTS.map(function (r) {
-            return `<article class="bf-home-list-card"><div><strong>${r.match}</strong><small>${r.note}</small></div><span class="bf-home-list-pill">${r.score}</span></article>`;
+            return `
+              <article class="bf-home-list-card">
+                <div class="bf-home-list-content">
+                  <strong>${r.match}</strong>
+                  <small>${r.note}</small>
+                </div>
+                <span class="bf-home-list-pill">${r.score}</span>
+              </article>
+            `;
           }).join('')}
         </div>
       `;
@@ -293,44 +313,64 @@
   }
 
   function fixSearchPresets() {
-    var input = document.getElementById('match-search-input');
+    const input = document.getElementById('match-search-input');
     if (input) input.placeholder = 'e.g. France vs Morocco';
 
-    var tags = document.querySelector('.bf-tags');
+    const tags = document.querySelector('.bf-tags');
     if (tags) {
-      tags.innerHTML = '<button>France vs Morocco</button><button>Spain vs Belgium</button><button>Norway vs England</button><button>Argentina vs Switzerland</button>';
+      tags.innerHTML = `
+        <button>France vs Morocco</button>
+        <button>Spain vs Belgium</button>
+        <button>Norway vs England</button>
+        <button>Argentina vs Switzerland</button>
+      `;
     }
   }
 
   function fixSectionTitle() {
-    var title = document.querySelector('.bf-predictions-section h2');
+    const title = document.querySelector('.bf-predictions-section h2');
     if (title) title.textContent = 'Next World Cup Quarterfinal AI Predictions';
   }
 
   function patchSearchModel() {
-    var input = document.getElementById('match-search-input');
-    var button = document.getElementById('match-search-btn');
-    var result = document.getElementById('match-search-result');
+    const input = document.getElementById('match-search-input');
+    const button = document.getElementById('match-search-btn');
+    const result = document.getElementById('match-search-result');
     if (!input || !button || !result) return;
 
-    var data = {};
+    const data = {};
     NEXT_MATCHES.forEach(function (m) {
       data[(m.home + ' vs ' + m.away).toLowerCase()] = m;
     });
 
     function analyze(value) {
-      var q = String(value || '').trim();
+      const q = String(value || '').trim();
       if (!q) {
         result.textContent = 'Enter a match to see probabilities and AI reasoning.';
         input.focus();
         return;
       }
 
-      var m = data[q.toLowerCase().replace(/\s+/g, ' ')] || NEXT_MATCHES[0];
-      result.innerHTML = `<div class="bf-live-result"><h3>${m.home} vs ${m.away}</h3><p><strong>Home:</strong> ${m.homePercent}% · <strong>Draw:</strong> ${m.drawPercent}% · <strong>Away:</strong> ${m.awayPercent}%<br><strong>AI pick:</strong> ${m.pick}<br><strong>Confidence:</strong> ${m.confidence.replace('AI Confidence ', '')}<br>${m.text}</p></div>`;
+      const m = data[q.toLowerCase().replace(/\s+/g, ' ')] || NEXT_MATCHES[0];
+      result.innerHTML = `
+        <div class="bf-live-result">
+          <h3>${m.home} vs ${m.away}</h3>
+          <p>
+            <strong>Home:</strong> ${m.homePercent}% ·
+            <strong>Draw:</strong> ${m.drawPercent}% ·
+            <strong>Away:</strong> ${m.awayPercent}%<br>
+            <strong>AI pick:</strong> ${m.pick}<br>
+            <strong>Confidence:</strong> ${m.confidence.replace('AI Confidence ', '')}<br>
+            ${m.text}
+          </p>
+        </div>
+      `;
     }
 
-    button.onclick = function () { analyze(input.value); };
+    button.onclick = function () {
+      analyze(input.value);
+    };
+
     input.onkeydown = function (event) {
       if (event.key === 'Enter') analyze(input.value);
     };
