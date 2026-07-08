@@ -1,80 +1,10 @@
 {
-  "updatedAt": "2026-07-07T20:16:55.574Z",
+  "updatedAt": "2026-07-08T03:47:10.767Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
   "timezone": "Europe/Tallinn",
   "fixtures": [
-    {
-      "fixture": {
-        "id": 1576805,
-        "referee": "Iván Barton, El Salvador",
-        "timezone": "Europe/Tallinn",
-        "date": "2026-07-07T23:00:00+03:00",
-        "timestamp": 1783454400,
-        "periods": {
-          "first": 1783454400,
-          "second": null
-        },
-        "venue": {
-          "id": 19445,
-          "name": "BC Place",
-          "city": "Vancouver"
-        },
-        "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 16,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 1,
-        "name": "World Cup",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/1.png",
-        "flag": null,
-        "season": 2026,
-        "round": "Round of 16",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 15,
-          "name": "Switzerland",
-          "logo": "https://media.api-sports.io/football/teams/15.png",
-          "winner": null
-        },
-        "away": {
-          "id": 8,
-          "name": "Colombia",
-          "logo": "https://media.api-sports.io/football/teams/8.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "score": {
-        "halftime": {
-          "home": 0,
-          "away": 0
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
     {
       "fixture": {
         "id": 1489369,
@@ -6727,6 +6657,76 @@
     },
     {
       "fixture": {
+        "id": 1576805,
+        "referee": "Iván Barton, El Salvador",
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-07T23:00:00+03:00",
+        "timestamp": 1783454400,
+        "periods": {
+          "first": 1783454400,
+          "second": 1783458000
+        },
+        "venue": {
+          "id": 19445,
+          "name": "BC Place",
+          "city": "Vancouver"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "PEN",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Round of 16",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 15,
+          "name": "Switzerland",
+          "logo": "https://media.api-sports.io/football/teams/15.png",
+          "winner": true
+        },
+        "away": {
+          "id": 8,
+          "name": "Colombia",
+          "logo": "https://media.api-sports.io/football/teams/8.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 0
+        },
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": {
+          "home": 0,
+          "away": 0
+        },
+        "penalty": {
+          "home": 4,
+          "away": 3
+        }
+      }
+    },
+    {
+      "fixture": {
         "id": 1578539,
         "referee": null,
         "timezone": "Europe/Tallinn",
@@ -6909,6 +6909,76 @@
           "id": 10,
           "name": "England",
           "logo": "https://media.api-sports.io/football/teams/10.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1582681,
+        "referee": null,
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-12T04:00:00+03:00",
+        "timestamp": 1783818000,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 0,
+          "name": null,
+          "city": null
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Quarter-finals",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": null
+        },
+        "away": {
+          "id": 15,
+          "name": "Switzerland",
+          "logo": "https://media.api-sports.io/football/teams/15.png",
           "winner": null
         }
       },
@@ -7139,7 +7209,7 @@
               "points": 7,
               "goalsDiff": 4,
               "group": "Group B",
-              "form": "WWWD",
+              "form": "WWWWD",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8777,7 +8847,7 @@
               "points": 7,
               "goalsDiff": 3,
               "group": "Group K",
-              "form": "WDWW",
+              "form": "LWDWW",
               "status": "same",
               "description": "Round of 32",
               "all": {
