@@ -4,14 +4,15 @@
       home: 'France',
       away: 'Morocco',
       stage: 'Quarterfinal',
-      date: '09 Jul, 23:00',
+      date: '09 Jul',
+      time: '23:00',
       venue: 'Bay Area Stadium',
       homePercent: 47,
       drawPercent: 28,
       awayPercent: 25,
       confidence: 72,
       pick: 'France DNB',
-      tag: 'Next match',
+      tag: 'Next',
       advice: 'France draw no bet with controlled goal line',
       text: 'France have the deeper squad and stronger knockout profile. Morocco keep upset value through compact defending and fast transitions.',
       homeLogo: 'https://flagcdn.com/w160/fr.png',
@@ -21,14 +22,15 @@
       home: 'Spain',
       away: 'Belgium',
       stage: 'Quarterfinal',
-      date: '10 Jul, 22:00',
+      date: '10 Jul',
+      time: '22:00',
       venue: 'World Cup Quarterfinal',
       homePercent: 44,
       drawPercent: 29,
       awayPercent: 27,
       confidence: 70,
       pick: 'Spain DNB',
-      tag: 'Quarterfinal',
+      tag: 'QF',
       advice: 'Spain possession edge keeps the safer side on Spain',
       text: 'Spain project cleaner possession stability. Belgium remain dangerous if the game opens early.',
       homeLogo: 'https://flagcdn.com/w160/es.png',
@@ -38,16 +40,17 @@
       home: 'Norway',
       away: 'England',
       stage: 'Quarterfinal',
-      date: '12 Jul, 00:00',
+      date: '12 Jul',
+      time: '00:00',
       venue: 'World Cup Quarterfinal',
       homePercent: 29,
       drawPercent: 30,
       awayPercent: 41,
       confidence: 69,
       pick: 'England DNB',
-      tag: 'Quarterfinal',
+      tag: 'QF',
       advice: 'England narrow edge, Norway goal threat keeps risk medium',
-      text: 'England rate higher for control. Norway’s direct attack keeps the upset window open.',
+      text: 'England rate higher for control. Norway direct attack keeps the upset window open.',
       homeLogo: 'https://flagcdn.com/w160/no.png',
       awayLogo: 'https://flagcdn.com/w160/gb-eng.png'
     },
@@ -55,16 +58,17 @@
       home: 'Argentina',
       away: 'Switzerland',
       stage: 'Quarterfinal',
-      date: '12 Jul, 04:00',
+      date: '12 Jul',
+      time: '04:00',
       venue: 'Kansas City',
       homePercent: 52,
       drawPercent: 27,
       awayPercent: 21,
       confidence: 74,
       pick: 'Argentina Win',
-      tag: 'Quarterfinal',
+      tag: 'QF',
       advice: 'Argentina edge against Swiss structure',
-      text: 'Argentina’s late-game quality gives them the stronger profile. Switzerland bring discipline and penalty danger.',
+      text: 'Argentina late-game quality gives them the stronger profile. Switzerland bring discipline and penalty danger.',
       homeLogo: 'https://flagcdn.com/w160/ar.png',
       awayLogo: 'https://flagcdn.com/w160/ch.png'
     }
@@ -74,11 +78,11 @@
     {
       match: 'Argentina vs Egypt',
       score: '3-2',
-      note: 'Argentina advanced after a late comeback in Atlanta'
+      note: 'Argentina advanced in Atlanta'
     },
     {
       match: 'Switzerland vs Colombia',
-      score: '0-0 · pens 4-3',
+      score: '0-0 pens 4-3',
       note: 'Switzerland advanced after penalties in Vancouver'
     }
   ];
@@ -86,6 +90,7 @@
   function cleanText(value) {
     return String(value || '')
       .replace(/[\u200E\u200F\u202A-\u202E\u2066-\u2069]/g, '')
+      .replace(/[·•]/g, '-')
       .trim();
   }
 
@@ -141,18 +146,18 @@
         display: flex !important;
         flex-direction: column !important;
         min-width: 0 !important;
-        min-height: 190px !important;
+        min-height: 178px !important;
         padding: 18px !important;
         border-radius: 20px !important;
         border: 1px solid rgba(94,224,164,.14) !important;
-        background: rgba(2,11,19,.42) !important;
+        background: rgba(2,11,19,.34) !important;
         box-shadow: inset 0 1px 0 rgba(255,255,255,.03) !important;
       }
 
       body.site-skin-1win .bf-clean-match-card,
       body.site-skin-1win .bf-clean-match-card *,
-      body.site-skin-1win .bf-clean-list-card,
-      body.site-skin-1win .bf-clean-list-card * {
+      body.site-skin-1win .bf-stream,
+      body.site-skin-1win .bf-stream * {
         writing-mode: horizontal-tb !important;
         text-orientation: mixed !important;
         transform: none !important;
@@ -179,7 +184,9 @@
       }
 
       body.site-skin-1win .bf-clean-stage,
-      body.site-skin-1win .bf-clean-pill {
+      body.site-skin-1win .bf-clean-pill,
+      body.site-skin-1win .bf-stream-chip,
+      body.site-skin-1win .bf-score-chip {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -248,10 +255,39 @@
       }
 
       body.site-skin-1win .model-view > .bf-panel {
-        min-width: 0 !important;
         width: 100% !important;
-        height: auto !important;
+        min-width: 0 !important;
         min-height: 0 !important;
+        padding: 34px 32px !important;
+        border-radius: 28px !important;
+      }
+
+      body.site-skin-1win .bf-panel-head {
+        display: flex !important;
+        align-items: flex-end !important;
+        justify-content: space-between !important;
+        gap: 16px !important;
+        margin-bottom: 22px !important;
+      }
+
+      body.site-skin-1win .bf-panel-head h2 {
+        margin: 0 !important;
+        color: #fff !important;
+        font-size: 36px !important;
+        line-height: 1 !important;
+        letter-spacing: -.05em !important;
+      }
+
+      body.site-skin-1win .bf-panel-head span {
+        display: inline-flex !important;
+        padding: 7px 10px !important;
+        border-radius: 999px !important;
+        color: rgba(248,250,252,.72) !important;
+        background: rgba(255,255,255,.045) !important;
+        font-size: 12px !important;
+        font-weight: 900 !important;
+        text-transform: uppercase !important;
+        white-space: nowrap !important;
       }
 
       body.site-skin-1win #matches-container,
@@ -261,44 +297,86 @@
         max-width: 100% !important;
         min-width: 0 !important;
         overflow: visible !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
       }
 
-      body.site-skin-1win .bf-clean-list {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        gap: 12px !important;
+      body.site-skin-1win .bf-stream {
+        display: flex !important;
+        flex-direction: column !important;
         width: 100% !important;
+        gap: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
       }
 
-      body.site-skin-1win .bf-clean-list-card {
+      body.site-skin-1win .bf-stream-row {
         display: grid !important;
-        grid-template-columns: minmax(0, 1fr) auto !important;
+        grid-template-columns: 82px minmax(0, 1fr) auto !important;
         align-items: center !important;
-        gap: 14px !important;
+        gap: 18px !important;
         width: 100% !important;
         min-width: 0 !important;
-        padding: 16px !important;
-        border-radius: 16px !important;
-        border: 1px solid rgba(94,224,164,.12) !important;
-        background: rgba(2,11,19,.38) !important;
+        padding: 17px 0 !important;
+        border: 0 !important;
+        border-bottom: 1px solid rgba(94,224,164,.13) !important;
+        background: transparent !important;
       }
 
-      body.site-skin-1win .bf-clean-list-card strong {
+      body.site-skin-1win .bf-stream-row:first-child {
+        padding-top: 0 !important;
+      }
+
+      body.site-skin-1win .bf-stream-row:last-child {
+        padding-bottom: 0 !important;
+        border-bottom: 0 !important;
+      }
+
+      body.site-skin-1win .bf-stream-date {
+        display: grid !important;
+        gap: 3px !important;
+        color: rgba(248,250,252,.64) !important;
+        font-size: 12px !important;
+        line-height: 1.2 !important;
+        text-transform: uppercase !important;
+      }
+
+      body.site-skin-1win .bf-stream-date b {
+        color: #fff !important;
+        font-size: 17px !important;
+        line-height: 1 !important;
+      }
+
+      body.site-skin-1win .bf-stream-main {
+        display: block !important;
+        min-width: 0 !important;
+      }
+
+      body.site-skin-1win .bf-stream-main strong {
         display: block !important;
         color: #fff !important;
-        font-size: 16px !important;
-        line-height: 1.3 !important;
+        font-size: 18px !important;
+        line-height: 1.25 !important;
         font-weight: 900 !important;
         white-space: normal !important;
       }
 
-      body.site-skin-1win .bf-clean-list-card small {
+      body.site-skin-1win .bf-stream-main small {
         display: block !important;
-        margin-top: 6px !important;
+        margin-top: 5px !important;
         color: rgba(248,250,252,.68) !important;
         font-size: 13px !important;
-        line-height: 1.45 !important;
+        line-height: 1.35 !important;
         white-space: normal !important;
+      }
+
+      body.site-skin-1win .bf-stream-chip,
+      body.site-skin-1win .bf-score-chip {
+        justify-self: end !important;
       }
 
       @media (max-width: 1100px) {
@@ -320,13 +398,29 @@
           height: 88px !important;
         }
 
-        body.site-skin-1win .bf-clean-list-card {
-          grid-template-columns: 1fr !important;
-          align-items: flex-start !important;
+        body.site-skin-1win .model-view > .bf-panel {
+          padding: 24px 18px !important;
         }
 
-        body.site-skin-1win .bf-clean-pill {
-          justify-self: start !important;
+        body.site-skin-1win .bf-panel-head {
+          align-items: flex-start !important;
+          flex-direction: column !important;
+        }
+
+        body.site-skin-1win .bf-panel-head h2 {
+          font-size: 30px !important;
+        }
+
+        body.site-skin-1win .bf-stream-row {
+          grid-template-columns: 1fr auto !important;
+          gap: 12px !important;
+        }
+
+        body.site-skin-1win .bf-stream-date {
+          grid-column: 1 / -1 !important;
+          display: flex !important;
+          gap: 8px !important;
+          align-items: baseline !important;
         }
       }
     `;
@@ -363,7 +457,7 @@
     setText('wcHomePercent', m.homePercent + '%');
     setText('wcDrawPercent', m.drawPercent + '%');
     setText('wcAwayPercent', m.awayPercent + '%');
-    setText('wcMatchDate', m.date);
+    setText('wcMatchDate', m.date + ', ' + m.time);
     setText('wcMatchStatus', m.tag);
     setText('wcVenue', m.venue);
     setText('wcPredictionText', m.text);
@@ -397,7 +491,7 @@
                 <div><span>Away</span><b>${m.awayPercent}%</b></div>
               </div>
               <span class="bf-clean-pill">${m.pick}</span>
-              <small class="bf-clean-meta">${m.date} · ${m.venue}</small>
+              <small class="bf-clean-meta">${m.date}, ${m.time} - ${m.venue}</small>
             </article>
           `;
         }).join('')}
@@ -412,15 +506,13 @@
     if (upcoming) {
       upcoming.textContent = '';
       upcoming.innerHTML = `
-        <div class="bf-clean-list">
-          ${MATCHES.map(function (m, index) {
+        <div class="bf-stream">
+          ${MATCHES.map(function (m) {
             return `
-              <article class="bf-clean-list-card">
-                <div>
-                  <strong>${m.home} vs ${m.away}</strong>
-                  <small>${m.date} · ${m.venue}</small>
-                </div>
-                <span class="bf-clean-pill">${index === 0 ? 'Next' : 'QF'}</span>
+              <article class="bf-stream-row">
+                <span class="bf-stream-date"><span>${m.date}</span><b>${m.time}</b></span>
+                <span class="bf-stream-main"><strong>${m.home} vs ${m.away}</strong><small>${m.stage} - ${m.venue}</small></span>
+                <span class="bf-stream-chip">${m.tag}</span>
               </article>
             `;
           }).join('')}
@@ -431,15 +523,13 @@
     if (results) {
       results.textContent = '';
       results.innerHTML = `
-        <div class="bf-clean-list">
+        <div class="bf-stream">
           ${RESULTS.map(function (r) {
             return `
-              <article class="bf-clean-list-card">
-                <div>
-                  <strong>${r.match}</strong>
-                  <small>${r.note}</small>
-                </div>
-                <span class="bf-clean-pill">${r.score}</span>
+              <article class="bf-stream-row">
+                <span class="bf-stream-date"><span>Last</span><b>R16</b></span>
+                <span class="bf-stream-main"><strong>${r.match}</strong><small>${r.note}</small></span>
+                <span class="bf-score-chip">${r.score}</span>
               </article>
             `;
           }).join('')}
@@ -479,7 +569,7 @@
       result.innerHTML = `
         <div class="bf-live-result">
           <h3>${m.home} vs ${m.away}</h3>
-          <p><strong>Home:</strong> ${m.homePercent}% · <strong>Draw:</strong> ${m.drawPercent}% · <strong>Away:</strong> ${m.awayPercent}%<br><strong>AI pick:</strong> ${m.pick}<br><strong>Confidence:</strong> ${m.confidence}%<br>${m.text}</p>
+          <p><strong>Home:</strong> ${m.homePercent}% - <strong>Draw:</strong> ${m.drawPercent}% - <strong>Away:</strong> ${m.awayPercent}%<br><strong>AI pick:</strong> ${m.pick}<br><strong>Confidence:</strong> ${m.confidence}%<br>${m.text}</p>
         </div>
       `;
     }
