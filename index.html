@@ -526,11 +526,40 @@
       align-items: stretch;
     }
 
-    .bf-panel > span {
-      display: block;
-      margin-bottom: 12px;
-      color: rgba(248,250,252,.82);
-      font-size: 17px;
+    .bf-panel-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .bf-panel-head h2 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1;
+      letter-spacing: -.05em;
+    }
+
+    .bf-panel-head span {
+      display: inline-flex;
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: rgba(248,250,252,.72);
+      background: rgba(255,255,255,.045);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    #matches-container,
+    #results-container {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      background: transparent;
+      overflow: visible;
     }
 
     .side-banner {
@@ -735,8 +764,8 @@
     </section>
   </main>
 
-  <script src="/api-config.js?v=10"></script>
-  <script src="/js/wc-featured-match.js?v=10"></script>
+  <script src="/api-config.js?v=12"></script>
+  <script src="/js/wc-featured-match.js?v=12"></script>
   <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
 </body>
 </html>
