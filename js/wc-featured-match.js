@@ -65,7 +65,7 @@
     {
       match: 'Argentina vs Egypt',
       score: '3-2',
-      note: 'Argentina advanced after a late comeback'
+      note: 'Argentina advanced in Atlanta'
     },
     {
       match: 'Switzerland vs Colombia',
@@ -82,13 +82,11 @@
   }
 
   function injectCss() {
-    ['bf-home-fix-css', 'bf-home-clean-css', 'bf-flat-panels-css'].forEach(function (id) {
-      const old = document.getElementById(id);
-      if (old) old.remove();
-    });
+    const old = document.getElementById('bf-home-clean-css');
+    if (old) old.remove();
 
     const style = document.createElement('style');
-    style.id = 'bf-flat-panels-css';
+    style.id = 'bf-home-clean-css';
     style.textContent = `
       body.site-skin-1win .bf-team-logo-wrap {
         width: 104px !important;
@@ -108,11 +106,6 @@
         padding: 0 !important;
         object-fit: cover !important;
         transform: scale(1.06) !important;
-      }
-
-      body.site-skin-1win .bf-predictions-section,
-      body.site-skin-1win .bf-panel {
-        overflow: hidden !important;
       }
 
       body.site-skin-1win .bf-clean-predictions {
@@ -135,7 +128,7 @@
         display: flex !important;
         flex-direction: column !important;
         min-width: 0 !important;
-        min-height: 178px !important;
+        min-height: 170px !important;
         padding: 18px !important;
         border-radius: 20px !important;
         border: 1px solid rgba(94,224,164,.14) !important;
@@ -145,14 +138,15 @@
 
       body.site-skin-1win .bf-clean-match-card,
       body.site-skin-1win .bf-clean-match-card *,
-      body.site-skin-1win .bf-line-list,
-      body.site-skin-1win .bf-line-list * {
+      body.site-skin-1win .bf-line-panels,
+      body.site-skin-1win .bf-line-panels * {
         writing-mode: horizontal-tb !important;
         text-orientation: mixed !important;
         transform: none !important;
         word-break: normal !important;
         overflow-wrap: normal !important;
         letter-spacing: normal !important;
+        box-sizing: border-box !important;
       }
 
       body.site-skin-1win .bf-clean-card-top {
@@ -174,8 +168,8 @@
 
       body.site-skin-1win .bf-clean-stage,
       body.site-skin-1win .bf-clean-pill,
-      body.site-skin-1win .bf-line-chip,
-      body.site-skin-1win .bf-score-chip {
+      body.site-skin-1win .bf-line-badge,
+      body.site-skin-1win .bf-line-score {
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -236,88 +230,74 @@
         line-height: 1 !important;
       }
 
-      body.site-skin-1win .model-view {
+      body.site-skin-1win .model-view.bf-line-panels {
         display: grid !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 20px !important;
-        align-items: stretch !important;
-      }
-
-      body.site-skin-1win .model-view > .bf-panel {
+        gap: 22px !important;
         width: 100% !important;
-        min-width: 0 !important;
-        min-height: 0 !important;
-        padding: 34px 32px !important;
-        border-radius: 28px !important;
-      }
-
-      body.site-skin-1win .bf-panel-head {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        gap: 16px !important;
-        margin-bottom: 24px !important;
-      }
-
-      body.site-skin-1win .bf-panel-head h2 {
-        margin: 0 !important;
-        color: #fff !important;
-        font-size: 36px !important;
-        line-height: 1 !important;
-        letter-spacing: -.05em !important;
-      }
-
-      body.site-skin-1win .bf-panel-head span {
-        display: none !important;
-      }
-
-      body.site-skin-1win #matches-container,
-      body.site-skin-1win #results-container {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        min-width: 0 !important;
-        height: auto !important;
-        min-height: 0 !important;
-        overflow: visible !important;
-        padding: 0 !important;
-        margin: 0 !important;
+        align-items: start !important;
         border: 0 !important;
-        border-radius: 0 !important;
         background: transparent !important;
         box-shadow: none !important;
       }
 
-      body.site-skin-1win #matches-container::before,
-      body.site-skin-1win #matches-container::after,
-      body.site-skin-1win #results-container::before,
-      body.site-skin-1win #results-container::after {
-        content: none !important;
-        display: none !important;
+      body.site-skin-1win .bf-line-panel {
+        width: 100% !important;
+        min-width: 0 !important;
+        padding: 30px 32px !important;
+        border-radius: 28px !important;
+        border: 1px solid rgba(94,224,164,.16) !important;
+        background: linear-gradient(180deg, rgba(18,38,55,.96), rgba(8,20,32,.98)) !important;
+        box-shadow: 0 18px 50px rgba(0,0,0,.26) !important;
+        overflow: hidden !important;
+      }
+
+      body.site-skin-1win .bf-line-head {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 18px !important;
+        margin-bottom: 20px !important;
+      }
+
+      body.site-skin-1win .bf-line-head h2 {
+        margin: 0 !important;
+        color: #fff !important;
+        font-size: 34px !important;
+        line-height: 1 !important;
+        letter-spacing: -.05em !important;
+      }
+
+      body.site-skin-1win .bf-line-head span {
+        display: inline-flex !important;
+        flex: 0 0 auto !important;
+        padding: 8px 12px !important;
+        border-radius: 999px !important;
+        color: rgba(248,250,252,.72) !important;
+        background: rgba(255,255,255,.055) !important;
+        font-size: 12px !important;
+        font-weight: 900 !important;
+        text-transform: uppercase !important;
+        white-space: nowrap !important;
       }
 
       body.site-skin-1win .bf-line-list {
         display: grid !important;
-        grid-template-columns: 1fr !important;
         gap: 0 !important;
         width: 100% !important;
         padding: 0 !important;
         margin: 0 !important;
         border: 0 !important;
-        border-radius: 0 !important;
         background: transparent !important;
-        box-shadow: none !important;
       }
 
       body.site-skin-1win .bf-line-row {
         display: grid !important;
-        grid-template-columns: 82px minmax(0, 1fr) auto !important;
+        grid-template-columns: 86px minmax(0, 1fr) auto !important;
         align-items: center !important;
         gap: 18px !important;
         width: 100% !important;
-        min-width: 0 !important;
-        min-height: 68px !important;
-        padding: 16px 0 !important;
+        padding: 15px 0 !important;
         margin: 0 !important;
         border: 0 !important;
         border-bottom: 1px solid rgba(94,224,164,.13) !important;
@@ -337,17 +317,17 @@
 
       body.site-skin-1win .bf-line-date {
         display: grid !important;
-        gap: 3px !important;
-        color: rgba(248,250,252,.62) !important;
+        gap: 4px !important;
+        color: rgba(248,250,252,.58) !important;
         font-size: 12px !important;
-        line-height: 1.12 !important;
+        line-height: 1.1 !important;
         text-transform: uppercase !important;
         white-space: nowrap !important;
       }
 
       body.site-skin-1win .bf-line-date b {
         color: #fff !important;
-        font-size: 18px !important;
+        font-size: 17px !important;
         line-height: 1 !important;
       }
 
@@ -359,8 +339,8 @@
       body.site-skin-1win .bf-line-main strong {
         display: block !important;
         color: #fff !important;
-        font-size: 19px !important;
-        line-height: 1.2 !important;
+        font-size: 18px !important;
+        line-height: 1.22 !important;
         font-weight: 900 !important;
         white-space: normal !important;
       }
@@ -374,15 +354,14 @@
         white-space: normal !important;
       }
 
-      body.site-skin-1win .bf-line-chip,
-      body.site-skin-1win .bf-score-chip {
+      body.site-skin-1win .bf-line-badge,
+      body.site-skin-1win .bf-line-score {
         justify-self: end !important;
-        box-shadow: none !important;
       }
 
       @media (max-width: 1100px) {
         body.site-skin-1win .bf-clean-grid,
-        body.site-skin-1win .model-view {
+        body.site-skin-1win .model-view.bf-line-panels {
           grid-template-columns: 1fr !important;
         }
       }
@@ -393,11 +372,11 @@
           height: 88px !important;
         }
 
-        body.site-skin-1win .model-view > .bf-panel {
+        body.site-skin-1win .bf-line-panel {
           padding: 24px 18px !important;
         }
 
-        body.site-skin-1win .bf-panel-head h2 {
+        body.site-skin-1win .bf-line-head h2 {
           font-size: 30px !important;
         }
 
@@ -490,34 +469,47 @@
   }
 
   function renderLowerPanels() {
-    const upcoming = document.getElementById('matches-container');
-    const results = document.getElementById('results-container');
+    const modelView = document.querySelector('.model-view');
+    if (!modelView) return;
 
-    if (upcoming) {
-      upcoming.className = 'bf-line-list';
-      upcoming.innerHTML = MATCHES.map(function (m) {
-        return `
-          <article class="bf-line-row">
-            <span class="bf-line-date"><span>${m.date}</span><b>${m.time}</b></span>
-            <span class="bf-line-main"><strong>${m.home} vs ${m.away}</strong><small>${m.stage} - ${m.venue}</small></span>
-            <span class="bf-line-chip">${m.tag}</span>
-          </article>
-        `;
-      }).join('');
-    }
+    modelView.className = 'model-view bf-line-panels';
+    modelView.innerHTML = `
+      <article class="bf-line-panel">
+        <div class="bf-line-head">
+          <h2>Upcoming Matches</h2>
+          <span>Fixtures</span>
+        </div>
+        <div class="bf-line-list">
+          ${MATCHES.map(function (m) {
+            return `
+              <div class="bf-line-row">
+                <span class="bf-line-date"><span>${m.date}</span><b>${m.time}</b></span>
+                <span class="bf-line-main"><strong>${m.home} vs ${m.away}</strong><small>${m.stage} - ${m.venue}</small></span>
+                <span class="bf-line-badge">${m.tag}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </article>
 
-    if (results) {
-      results.className = 'bf-line-list';
-      results.innerHTML = RESULTS.map(function (r) {
-        return `
-          <article class="bf-line-row">
-            <span class="bf-line-date"><span>Last</span><b>R16</b></span>
-            <span class="bf-line-main"><strong>${r.match}</strong><small>${r.note}</small></span>
-            <span class="bf-score-chip">${r.score}</span>
-          </article>
-        `;
-      }).join('');
-    }
+      <article class="bf-line-panel">
+        <div class="bf-line-head">
+          <h2>Latest Results</h2>
+          <span>Scores</span>
+        </div>
+        <div class="bf-line-list">
+          ${RESULTS.map(function (r) {
+            return `
+              <div class="bf-line-row">
+                <span class="bf-line-date"><span>Last</span><b>Match</b></span>
+                <span class="bf-line-main"><strong>${r.match}</strong><small>${r.note}</small></span>
+                <span class="bf-line-score">${r.score}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </article>
+    `;
   }
 
   function renderSearch() {
