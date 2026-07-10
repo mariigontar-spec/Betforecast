@@ -1,10 +1,80 @@
 {
-  "updatedAt": "2026-07-10T15:03:34.615Z",
+  "updatedAt": "2026-07-10T19:53:59.947Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
   "timezone": "Europe/Tallinn",
   "fixtures": [
+    {
+      "fixture": {
+        "id": 1581821,
+        "referee": "Michael Oliver, England",
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-10T22:00:00+03:00",
+        "timestamp": 1783710000,
+        "periods": {
+          "first": 1783710000,
+          "second": null
+        },
+        "venue": {
+          "id": 0,
+          "name": "SoFi Stadium",
+          "city": "Los Angeles"
+        },
+        "status": {
+          "long": "Halftime",
+          "short": "HT",
+          "elapsed": 45,
+          "extra": 6
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Quarter-finals",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 9,
+          "name": "Spain",
+          "logo": "https://media.api-sports.io/football/teams/9.png",
+          "winner": null
+        },
+        "away": {
+          "id": 1,
+          "name": "Belgium",
+          "logo": "https://media.api-sports.io/football/teams/1.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 1,
+          "away": 1
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
     {
       "fixture": {
         "id": 1489369,
@@ -6784,76 +6854,6 @@
         "fulltime": {
           "home": 2,
           "away": 0
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1581821,
-        "referee": null,
-        "timezone": "Europe/Tallinn",
-        "date": "2026-07-10T22:00:00+03:00",
-        "timestamp": 1783710000,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 0,
-          "name": "SoFi Stadium",
-          "city": "Los Angeles"
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 1,
-        "name": "World Cup",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/1.png",
-        "flag": null,
-        "season": 2026,
-        "round": "Quarter-finals",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 9,
-          "name": "Spain",
-          "logo": "https://media.api-sports.io/football/teams/9.png",
-          "winner": null
-        },
-        "away": {
-          "id": 1,
-          "name": "Belgium",
-          "logo": "https://media.api-sports.io/football/teams/1.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
         },
         "extratime": {
           "home": null,
