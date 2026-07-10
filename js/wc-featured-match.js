@@ -1,24 +1,6 @@
 (function () {
   const MATCHES = [
     {
-      home: 'France',
-      away: 'Morocco',
-      stage: 'Quarterfinal',
-      date: '09 Jul',
-      time: '23:00',
-      venue: 'Bay Area Stadium',
-      homePercent: 47,
-      drawPercent: 28,
-      awayPercent: 25,
-      confidence: 72,
-      pick: 'France DNB',
-      tag: 'Next',
-      advice: 'France draw no bet with controlled goal line',
-      text: 'France have the deeper squad and stronger knockout profile. Morocco keep upset value through compact defending and fast transitions.',
-      homeLogo: 'https://flagcdn.com/w160/fr.png',
-      awayLogo: 'https://flagcdn.com/w160/ma.png'
-    },
-    {
       home: 'Spain',
       away: 'Belgium',
       stage: 'Quarterfinal',
@@ -30,7 +12,7 @@
       awayPercent: 27,
       confidence: 70,
       pick: 'Spain DNB',
-      tag: 'QF',
+      tag: 'Next',
       advice: 'Spain possession edge keeps the safer side on Spain',
       text: 'Spain project cleaner possession stability. Belgium remain dangerous if the game opens early.',
       homeLogo: 'https://flagcdn.com/w160/es.png',
@@ -76,14 +58,19 @@
 
   const RESULTS = [
     {
+      match: 'France vs Morocco',
+      score: '2-0',
+      note: 'France advanced to the semifinal'
+    },
+    {
       match: 'Argentina vs Egypt',
       score: '3-2',
-      note: 'Argentina advanced in Atlanta'
+      note: 'Argentina advanced after a late comeback'
     },
     {
       match: 'Switzerland vs Colombia',
       score: '0-0 pens 4-3',
-      note: 'Switzerland advanced after penalties in Vancouver'
+      note: 'Switzerland advanced after penalties'
     }
   ];
 
@@ -95,11 +82,13 @@
   }
 
   function injectCss() {
-    const old = document.getElementById('bf-home-clean-css');
-    if (old) old.remove();
+    ['bf-home-fix-css', 'bf-home-clean-css', 'bf-flat-panels-css'].forEach(function (id) {
+      const old = document.getElementById(id);
+      if (old) old.remove();
+    });
 
     const style = document.createElement('style');
-    style.id = 'bf-home-clean-css';
+    style.id = 'bf-flat-panels-css';
     style.textContent = `
       body.site-skin-1win .bf-team-logo-wrap {
         width: 104px !important;
@@ -137,7 +126,7 @@
 
       body.site-skin-1win .bf-clean-grid {
         display: grid !important;
-        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
         gap: 14px !important;
         width: 100% !important;
       }
@@ -156,8 +145,8 @@
 
       body.site-skin-1win .bf-clean-match-card,
       body.site-skin-1win .bf-clean-match-card *,
-      body.site-skin-1win .bf-stream,
-      body.site-skin-1win .bf-stream * {
+      body.site-skin-1win .bf-line-list,
+      body.site-skin-1win .bf-line-list * {
         writing-mode: horizontal-tb !important;
         text-orientation: mixed !important;
         transform: none !important;
@@ -185,7 +174,7 @@
 
       body.site-skin-1win .bf-clean-stage,
       body.site-skin-1win .bf-clean-pill,
-      body.site-skin-1win .bf-stream-chip,
+      body.site-skin-1win .bf-line-chip,
       body.site-skin-1win .bf-score-chip {
         display: inline-flex !important;
         align-items: center !important;
@@ -250,7 +239,7 @@
       body.site-skin-1win .model-view {
         display: grid !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 18px !important;
+        gap: 20px !important;
         align-items: stretch !important;
       }
 
@@ -264,10 +253,10 @@
 
       body.site-skin-1win .bf-panel-head {
         display: flex !important;
-        align-items: flex-end !important;
+        align-items: center !important;
         justify-content: space-between !important;
         gap: 16px !important;
-        margin-bottom: 22px !important;
+        margin-bottom: 24px !important;
       }
 
       body.site-skin-1win .bf-panel-head h2 {
@@ -279,15 +268,7 @@
       }
 
       body.site-skin-1win .bf-panel-head span {
-        display: inline-flex !important;
-        padding: 7px 10px !important;
-        border-radius: 999px !important;
-        color: rgba(248,250,252,.72) !important;
-        background: rgba(255,255,255,.045) !important;
-        font-size: 12px !important;
-        font-weight: 900 !important;
-        text-transform: uppercase !important;
-        white-space: nowrap !important;
+        display: none !important;
       }
 
       body.site-skin-1win #matches-container,
@@ -296,76 +277,95 @@
         width: 100% !important;
         max-width: 100% !important;
         min-width: 0 !important;
+        height: auto !important;
+        min-height: 0 !important;
         overflow: visible !important;
         padding: 0 !important;
         margin: 0 !important;
         border: 0 !important;
+        border-radius: 0 !important;
         background: transparent !important;
+        box-shadow: none !important;
       }
 
-      body.site-skin-1win .bf-stream {
-        display: flex !important;
-        flex-direction: column !important;
-        width: 100% !important;
+      body.site-skin-1win #matches-container::before,
+      body.site-skin-1win #matches-container::after,
+      body.site-skin-1win #results-container::before,
+      body.site-skin-1win #results-container::after {
+        content: none !important;
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-line-list {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
         gap: 0 !important;
+        width: 100% !important;
         padding: 0 !important;
         margin: 0 !important;
         border: 0 !important;
+        border-radius: 0 !important;
         background: transparent !important;
+        box-shadow: none !important;
       }
 
-      body.site-skin-1win .bf-stream-row {
+      body.site-skin-1win .bf-line-row {
         display: grid !important;
         grid-template-columns: 82px minmax(0, 1fr) auto !important;
         align-items: center !important;
         gap: 18px !important;
         width: 100% !important;
         min-width: 0 !important;
-        padding: 17px 0 !important;
+        min-height: 68px !important;
+        padding: 16px 0 !important;
+        margin: 0 !important;
         border: 0 !important;
         border-bottom: 1px solid rgba(94,224,164,.13) !important;
+        border-radius: 0 !important;
         background: transparent !important;
+        box-shadow: none !important;
       }
 
-      body.site-skin-1win .bf-stream-row:first-child {
+      body.site-skin-1win .bf-line-row:first-child {
         padding-top: 0 !important;
       }
 
-      body.site-skin-1win .bf-stream-row:last-child {
+      body.site-skin-1win .bf-line-row:last-child {
         padding-bottom: 0 !important;
         border-bottom: 0 !important;
       }
 
-      body.site-skin-1win .bf-stream-date {
+      body.site-skin-1win .bf-line-date {
         display: grid !important;
         gap: 3px !important;
-        color: rgba(248,250,252,.64) !important;
+        color: rgba(248,250,252,.62) !important;
         font-size: 12px !important;
-        line-height: 1.2 !important;
+        line-height: 1.12 !important;
         text-transform: uppercase !important;
+        white-space: nowrap !important;
       }
 
-      body.site-skin-1win .bf-stream-date b {
+      body.site-skin-1win .bf-line-date b {
         color: #fff !important;
-        font-size: 17px !important;
+        font-size: 18px !important;
         line-height: 1 !important;
       }
 
-      body.site-skin-1win .bf-stream-main {
+      body.site-skin-1win .bf-line-main {
         display: block !important;
         min-width: 0 !important;
       }
 
-      body.site-skin-1win .bf-stream-main strong {
+      body.site-skin-1win .bf-line-main strong {
         display: block !important;
         color: #fff !important;
-        font-size: 18px !important;
-        line-height: 1.25 !important;
+        font-size: 19px !important;
+        line-height: 1.2 !important;
         font-weight: 900 !important;
         white-space: normal !important;
       }
 
-      body.site-skin-1win .bf-stream-main small {
+      body.site-skin-1win .bf-line-main small {
         display: block !important;
         margin-top: 5px !important;
         color: rgba(248,250,252,.68) !important;
@@ -374,21 +374,16 @@
         white-space: normal !important;
       }
 
-      body.site-skin-1win .bf-stream-chip,
+      body.site-skin-1win .bf-line-chip,
       body.site-skin-1win .bf-score-chip {
         justify-self: end !important;
+        box-shadow: none !important;
       }
 
       @media (max-width: 1100px) {
         body.site-skin-1win .bf-clean-grid,
         body.site-skin-1win .model-view {
           grid-template-columns: 1fr !important;
-        }
-      }
-
-      @media (min-width: 1101px) and (max-width: 1320px) {
-        body.site-skin-1win .bf-clean-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         }
       }
 
@@ -402,21 +397,16 @@
           padding: 24px 18px !important;
         }
 
-        body.site-skin-1win .bf-panel-head {
-          align-items: flex-start !important;
-          flex-direction: column !important;
-        }
-
         body.site-skin-1win .bf-panel-head h2 {
           font-size: 30px !important;
         }
 
-        body.site-skin-1win .bf-stream-row {
+        body.site-skin-1win .bf-line-row {
           grid-template-columns: 1fr auto !important;
           gap: 12px !important;
         }
 
-        body.site-skin-1win .bf-stream-date {
+        body.site-skin-1win .bf-line-date {
           grid-column: 1 / -1 !important;
           display: flex !important;
           gap: 8px !important;
@@ -504,37 +494,29 @@
     const results = document.getElementById('results-container');
 
     if (upcoming) {
-      upcoming.textContent = '';
-      upcoming.innerHTML = `
-        <div class="bf-stream">
-          ${MATCHES.map(function (m) {
-            return `
-              <article class="bf-stream-row">
-                <span class="bf-stream-date"><span>${m.date}</span><b>${m.time}</b></span>
-                <span class="bf-stream-main"><strong>${m.home} vs ${m.away}</strong><small>${m.stage} - ${m.venue}</small></span>
-                <span class="bf-stream-chip">${m.tag}</span>
-              </article>
-            `;
-          }).join('')}
-        </div>
-      `;
+      upcoming.className = 'bf-line-list';
+      upcoming.innerHTML = MATCHES.map(function (m) {
+        return `
+          <article class="bf-line-row">
+            <span class="bf-line-date"><span>${m.date}</span><b>${m.time}</b></span>
+            <span class="bf-line-main"><strong>${m.home} vs ${m.away}</strong><small>${m.stage} - ${m.venue}</small></span>
+            <span class="bf-line-chip">${m.tag}</span>
+          </article>
+        `;
+      }).join('');
     }
 
     if (results) {
-      results.textContent = '';
-      results.innerHTML = `
-        <div class="bf-stream">
-          ${RESULTS.map(function (r) {
-            return `
-              <article class="bf-stream-row">
-                <span class="bf-stream-date"><span>Last</span><b>R16</b></span>
-                <span class="bf-stream-main"><strong>${r.match}</strong><small>${r.note}</small></span>
-                <span class="bf-score-chip">${r.score}</span>
-              </article>
-            `;
-          }).join('')}
-        </div>
-      `;
+      results.className = 'bf-line-list';
+      results.innerHTML = RESULTS.map(function (r) {
+        return `
+          <article class="bf-line-row">
+            <span class="bf-line-date"><span>Last</span><b>R16</b></span>
+            <span class="bf-line-main"><strong>${r.match}</strong><small>${r.note}</small></span>
+            <span class="bf-score-chip">${r.score}</span>
+          </article>
+        `;
+      }).join('');
     }
   }
 
@@ -544,7 +526,7 @@
     const result = document.getElementById('match-search-result');
     const tags = document.querySelector('.bf-tags');
 
-    if (input) input.placeholder = 'e.g. France vs Morocco';
+    if (input) input.placeholder = 'e.g. Spain vs Belgium';
     if (tags) {
       tags.innerHTML = MATCHES.map(function (m) {
         return `<button type="button">${m.home} vs ${m.away}</button>`;
