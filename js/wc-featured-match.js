@@ -1,24 +1,6 @@
 (function () {
   const MATCHES = [
     {
-      home: 'Spain',
-      away: 'Belgium',
-      stage: 'Quarterfinal',
-      date: '10 Jul',
-      time: '22:00',
-      venue: 'World Cup Quarterfinal',
-      homePercent: 44,
-      drawPercent: 29,
-      awayPercent: 27,
-      confidence: 70,
-      pick: 'Spain DNB',
-      tag: 'Next',
-      advice: 'Spain possession edge keeps the safer side on Spain',
-      text: 'Spain project cleaner possession stability. Belgium remain dangerous if the game opens early.',
-      homeLogo: 'https://flagcdn.com/w160/es.png',
-      awayLogo: 'https://flagcdn.com/w160/be.png'
-    },
-    {
       home: 'Norway',
       away: 'England',
       stage: 'Quarterfinal',
@@ -30,7 +12,7 @@
       awayPercent: 41,
       confidence: 69,
       pick: 'England DNB',
-      tag: 'QF',
+      tag: 'Next',
       advice: 'England narrow edge, Norway goal threat keeps risk medium',
       text: 'England rate higher for control. Norway direct attack keeps the upset window open.',
       homeLogo: 'https://flagcdn.com/w160/no.png',
@@ -42,7 +24,7 @@
       stage: 'Quarterfinal',
       date: '12 Jul',
       time: '04:00',
-      venue: 'Kansas City',
+      venue: 'World Cup Quarterfinal',
       homePercent: 52,
       drawPercent: 27,
       awayPercent: 21,
@@ -53,10 +35,33 @@
       text: 'Argentina late-game quality gives them the stronger profile. Switzerland bring discipline and penalty danger.',
       homeLogo: 'https://flagcdn.com/w160/ar.png',
       awayLogo: 'https://flagcdn.com/w160/ch.png'
+    },
+    {
+      home: 'France',
+      away: 'Spain',
+      stage: 'Semifinal',
+      date: '14 Jul',
+      time: '22:00',
+      venue: 'World Cup Semifinal',
+      homePercent: 34,
+      drawPercent: 31,
+      awayPercent: 35,
+      confidence: 66,
+      pick: 'Spain DNB',
+      tag: 'SF',
+      advice: 'Fine margins expected in a high-control semifinal',
+      text: 'Spain carry a slight possession edge, while France remain dangerous in transition and set-piece moments.',
+      homeLogo: 'https://flagcdn.com/w160/fr.png',
+      awayLogo: 'https://flagcdn.com/w160/es.png'
     }
   ];
 
   const RESULTS = [
+    {
+      match: 'Spain vs Belgium',
+      score: '2-1',
+      note: 'Spain advanced to the semifinal'
+    },
     {
       match: 'France vs Morocco',
       score: '2-0',
@@ -65,12 +70,7 @@
     {
       match: 'Argentina vs Egypt',
       score: '3-2',
-      note: 'Argentina advanced in Atlanta'
-    },
-    {
-      match: 'Switzerland vs Colombia',
-      score: '0-0 pens 4-3',
-      note: 'Switzerland advanced after penalties'
+      note: 'Argentina advanced to the quarterfinal'
     }
   ];
 
@@ -306,14 +306,8 @@
         box-shadow: none !important;
       }
 
-      body.site-skin-1win .bf-line-row:first-child {
-        padding-top: 0 !important;
-      }
-
-      body.site-skin-1win .bf-line-row:last-child {
-        padding-bottom: 0 !important;
-        border-bottom: 0 !important;
-      }
+      body.site-skin-1win .bf-line-row:first-child { padding-top: 0 !important; }
+      body.site-skin-1win .bf-line-row:last-child { padding-bottom: 0 !important; border-bottom: 0 !important; }
 
       body.site-skin-1win .bf-line-date {
         display: grid !important;
@@ -331,10 +325,7 @@
         line-height: 1 !important;
       }
 
-      body.site-skin-1win .bf-line-main {
-        display: block !important;
-        min-width: 0 !important;
-      }
+      body.site-skin-1win .bf-line-main { display: block !important; min-width: 0 !important; }
 
       body.site-skin-1win .bf-line-main strong {
         display: block !important;
@@ -355,42 +346,19 @@
       }
 
       body.site-skin-1win .bf-line-badge,
-      body.site-skin-1win .bf-line-score {
-        justify-self: end !important;
-      }
+      body.site-skin-1win .bf-line-score { justify-self: end !important; }
 
       @media (max-width: 1100px) {
         body.site-skin-1win .bf-clean-grid,
-        body.site-skin-1win .model-view.bf-line-panels {
-          grid-template-columns: 1fr !important;
-        }
+        body.site-skin-1win .model-view.bf-line-panels { grid-template-columns: 1fr !important; }
       }
 
       @media (max-width: 768px) {
-        body.site-skin-1win .bf-team-logo-wrap {
-          width: 88px !important;
-          height: 88px !important;
-        }
-
-        body.site-skin-1win .bf-line-panel {
-          padding: 24px 18px !important;
-        }
-
-        body.site-skin-1win .bf-line-head h2 {
-          font-size: 30px !important;
-        }
-
-        body.site-skin-1win .bf-line-row {
-          grid-template-columns: 1fr auto !important;
-          gap: 12px !important;
-        }
-
-        body.site-skin-1win .bf-line-date {
-          grid-column: 1 / -1 !important;
-          display: flex !important;
-          gap: 8px !important;
-          align-items: baseline !important;
-        }
+        body.site-skin-1win .bf-team-logo-wrap { width: 88px !important; height: 88px !important; }
+        body.site-skin-1win .bf-line-panel { padding: 24px 18px !important; }
+        body.site-skin-1win .bf-line-head h2 { font-size: 30px !important; }
+        body.site-skin-1win .bf-line-row { grid-template-columns: 1fr auto !important; gap: 12px !important; }
+        body.site-skin-1win .bf-line-date { grid-column: 1 / -1 !important; display: flex !important; gap: 8px !important; align-items: baseline !important; }
       }
     `;
     document.head.appendChild(style);
@@ -440,11 +408,10 @@
   function renderPredictions() {
     const title = document.querySelector('.bf-predictions-section h2');
     const box = document.querySelector('.bf-predictions-table');
-    if (title) title.textContent = 'Next World Cup Quarterfinal AI Predictions';
+    if (title) title.textContent = 'Next World Cup AI Predictions';
     if (!box) return;
 
     box.className = 'bf-predictions-table bf-clean-predictions';
-    box.textContent = '';
     box.innerHTML = `
       <div class="bf-clean-grid">
         ${MATCHES.map(function (m) {
@@ -475,10 +442,7 @@
     modelView.className = 'model-view bf-line-panels';
     modelView.innerHTML = `
       <article class="bf-line-panel">
-        <div class="bf-line-head">
-          <h2>Upcoming Matches</h2>
-          <span>Fixtures</span>
-        </div>
+        <div class="bf-line-head"><h2>Upcoming Matches</h2><span>Fixtures</span></div>
         <div class="bf-line-list">
           ${MATCHES.map(function (m) {
             return `
@@ -493,10 +457,7 @@
       </article>
 
       <article class="bf-line-panel">
-        <div class="bf-line-head">
-          <h2>Latest Results</h2>
-          <span>Scores</span>
-        </div>
+        <div class="bf-line-head"><h2>Latest Results</h2><span>Scores</span></div>
         <div class="bf-line-list">
           ${RESULTS.map(function (r) {
             return `
@@ -518,7 +479,7 @@
     const result = document.getElementById('match-search-result');
     const tags = document.querySelector('.bf-tags');
 
-    if (input) input.placeholder = 'e.g. Spain vs Belgium';
+    if (input) input.placeholder = 'e.g. Norway vs England';
     if (tags) {
       tags.innerHTML = MATCHES.map(function (m) {
         return `<button type="button">${m.home} vs ${m.away}</button>`;
