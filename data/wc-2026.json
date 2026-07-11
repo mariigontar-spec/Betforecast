@@ -1,80 +1,10 @@
 {
-  "updatedAt": "2026-07-10T19:53:59.947Z",
+  "updatedAt": "2026-07-11T03:44:39.117Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
   "timezone": "Europe/Tallinn",
   "fixtures": [
-    {
-      "fixture": {
-        "id": 1581821,
-        "referee": "Michael Oliver, England",
-        "timezone": "Europe/Tallinn",
-        "date": "2026-07-10T22:00:00+03:00",
-        "timestamp": 1783710000,
-        "periods": {
-          "first": 1783710000,
-          "second": null
-        },
-        "venue": {
-          "id": 0,
-          "name": "SoFi Stadium",
-          "city": "Los Angeles"
-        },
-        "status": {
-          "long": "Halftime",
-          "short": "HT",
-          "elapsed": 45,
-          "extra": 6
-        }
-      },
-      "league": {
-        "id": 1,
-        "name": "World Cup",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/1.png",
-        "flag": null,
-        "season": 2026,
-        "round": "Quarter-finals",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 9,
-          "name": "Spain",
-          "logo": "https://media.api-sports.io/football/teams/9.png",
-          "winner": null
-        },
-        "away": {
-          "id": 1,
-          "name": "Belgium",
-          "logo": "https://media.api-sports.io/football/teams/1.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": 1,
-        "away": 1
-      },
-      "score": {
-        "halftime": {
-          "home": 1,
-          "away": 1
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
     {
       "fixture": {
         "id": 1489369,
@@ -6867,6 +6797,76 @@
     },
     {
       "fixture": {
+        "id": 1581821,
+        "referee": "Michael Oliver, England",
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-10T22:00:00+03:00",
+        "timestamp": 1783710000,
+        "periods": {
+          "first": 1783710000,
+          "second": 1783713600
+        },
+        "venue": {
+          "id": 0,
+          "name": "SoFi Stadium",
+          "city": "Los Angeles"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "FT",
+          "elapsed": 90,
+          "extra": 8
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Quarter-finals",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 9,
+          "name": "Spain",
+          "logo": "https://media.api-sports.io/football/teams/9.png",
+          "winner": true
+        },
+        "away": {
+          "id": 1,
+          "name": "Belgium",
+          "logo": "https://media.api-sports.io/football/teams/1.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 1,
+          "away": 1
+        },
+        "fulltime": {
+          "home": 2,
+          "away": 1
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "fixture": {
         "id": 1581037,
         "referee": null,
         "timezone": "Europe/Tallinn",
@@ -7004,6 +7004,76 @@
           "away": null
         }
       }
+    },
+    {
+      "fixture": {
+        "id": 1585131,
+        "referee": null,
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-14T22:00:00+03:00",
+        "timestamp": 1784055600,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 0,
+          "name": null,
+          "city": null
+        },
+        "status": {
+          "long": "Not Started",
+          "short": "NS",
+          "elapsed": null,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Semi-finals",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 2,
+          "name": "France",
+          "logo": "https://media.api-sports.io/football/teams/2.png",
+          "winner": null
+        },
+        "away": {
+          "id": 9,
+          "name": "Spain",
+          "logo": "https://media.api-sports.io/football/teams/9.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": null,
+        "away": null
+      },
+      "score": {
+        "halftime": {
+          "home": null,
+          "away": null
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
     }
   ],
   "standingsPayload": [
@@ -7060,7 +7130,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7105,7 +7175,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7150,7 +7220,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7195,7 +7265,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -7242,7 +7312,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7287,7 +7357,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7332,7 +7402,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7377,7 +7447,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -7424,7 +7494,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7469,7 +7539,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7514,7 +7584,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7559,7 +7629,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -7606,7 +7676,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7651,7 +7721,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7696,7 +7766,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7741,7 +7811,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -7788,7 +7858,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -7833,7 +7903,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -7878,7 +7948,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -7923,7 +7993,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -7970,7 +8040,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8015,7 +8085,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8060,7 +8130,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8105,7 +8175,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -8119,7 +8189,7 @@
               "points": 5,
               "goalsDiff": 4,
               "group": "Group G",
-              "form": "WWWDD",
+              "form": "LWWWD",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8152,7 +8222,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8197,7 +8267,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8242,7 +8312,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8287,7 +8357,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -8301,7 +8371,7 @@
               "points": 7,
               "goalsDiff": 5,
               "group": "Group H",
-              "form": "WWWWD",
+              "form": "WWWWW",
               "status": "same",
               "description": "Round of 32",
               "all": {
@@ -8334,7 +8404,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8379,7 +8449,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8424,7 +8494,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8469,7 +8539,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -8516,7 +8586,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8561,7 +8631,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8606,7 +8676,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8651,7 +8721,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -8698,7 +8768,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8743,7 +8813,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8788,7 +8858,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -8833,7 +8903,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -8880,7 +8950,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -8925,7 +8995,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -8970,7 +9040,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -9015,7 +9085,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -9062,7 +9132,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -9107,7 +9177,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -9152,7 +9222,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -9197,7 +9267,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ],
           [
@@ -9244,7 +9314,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 2,
@@ -9289,7 +9359,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 3,
@@ -9334,7 +9404,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 4,
@@ -9379,7 +9449,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 5,
@@ -9424,7 +9494,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 6,
@@ -9469,7 +9539,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 7,
@@ -9514,7 +9584,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 8,
@@ -9559,7 +9629,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 9,
@@ -9604,7 +9674,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 10,
@@ -9649,7 +9719,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 11,
@@ -9694,7 +9764,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             },
             {
               "rank": 12,
@@ -9739,7 +9809,7 @@
                   "against": 0
                 }
               },
-              "update": "2026-07-10T00:00:00+00:00"
+              "update": "2026-07-11T00:00:00+00:00"
             }
           ]
         ]
