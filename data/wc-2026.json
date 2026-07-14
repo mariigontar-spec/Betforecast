@@ -1,10 +1,80 @@
 {
-  "updatedAt": "2026-07-14T14:15:23.731Z",
+  "updatedAt": "2026-07-14T19:45:18.721Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
   "timezone": "Europe/Tallinn",
   "fixtures": [
+    {
+      "fixture": {
+        "id": 1585131,
+        "referee": "Iván Barton, El Salvador",
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-14T22:00:00+03:00",
+        "timestamp": 1784055600,
+        "periods": {
+          "first": 1784055600,
+          "second": null
+        },
+        "venue": {
+          "id": 0,
+          "name": null,
+          "city": null
+        },
+        "status": {
+          "long": "First Half",
+          "short": "1H",
+          "elapsed": 45,
+          "extra": 1
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Semi-finals",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 2,
+          "name": "France",
+          "logo": "https://media.api-sports.io/football/teams/2.png",
+          "winner": false
+        },
+        "away": {
+          "id": 9,
+          "name": "Spain",
+          "logo": "https://media.api-sports.io/football/teams/9.png",
+          "winner": true
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 1
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
     {
       "fixture": {
         "id": 1489369,
@@ -6998,76 +7068,6 @@
         "extratime": {
           "home": 2,
           "away": 0
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "fixture": {
-        "id": 1585131,
-        "referee": null,
-        "timezone": "Europe/Tallinn",
-        "date": "2026-07-14T22:00:00+03:00",
-        "timestamp": 1784055600,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 0,
-          "name": null,
-          "city": null
-        },
-        "status": {
-          "long": "Not Started",
-          "short": "NS",
-          "elapsed": null,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 1,
-        "name": "World Cup",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/1.png",
-        "flag": null,
-        "season": 2026,
-        "round": "Semi-finals",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 2,
-          "name": "France",
-          "logo": "https://media.api-sports.io/football/teams/2.png",
-          "winner": null
-        },
-        "away": {
-          "id": 9,
-          "name": "Spain",
-          "logo": "https://media.api-sports.io/football/teams/9.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": null,
-        "away": null
-      },
-      "score": {
-        "halftime": {
-          "home": null,
-          "away": null
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
         },
         "penalty": {
           "home": null,
