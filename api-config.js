@@ -68,3 +68,28 @@ window.BF_API = {
 
   document.head.appendChild(style);
 })();
+
+(function moveHomeAdsAboveBenefits() {
+  function moveAds() {
+    const benefits = document.querySelector(".bf-page > .bf-benefits");
+    const leaderboard = document.querySelector(".bf-page > .home-leaderboard-ad");
+    const mobileBox = document.querySelector(".bf-page > .home-box-ad");
+
+    if (!benefits || (!leaderboard && !mobileBox)) {
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+
+    if (leaderboard) fragment.appendChild(leaderboard);
+    if (mobileBox) fragment.appendChild(mobileBox);
+
+    benefits.parentNode.insertBefore(fragment, benefits);
+  }
+
+  moveAds();
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", moveAds, { once: true });
+  }
+})();
