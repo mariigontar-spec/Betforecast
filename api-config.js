@@ -154,7 +154,10 @@ window.BF_TIMEZONE = {
 
     if (featured && isTargetMatch) {
       const matchDate = document.getElementById("wcMatchDate");
-      if (matchDate) matchDate.textContent = `15 Jul, ${DISPLAY_TIME}`;
+      const nextDateText = `15 Jul, ${DISPLAY_TIME}`;
+      if (matchDate && matchDate.textContent !== nextDateText) {
+        matchDate.textContent = nextDateText;
+      }
       replaceTimeText(featured);
     }
 
@@ -165,8 +168,12 @@ window.BF_TIMEZONE = {
       const strong = metric.querySelector("strong");
       const small = metric.querySelector("small");
 
-      if (strong) strong.textContent = ARGENTINA_TIME;
-      if (small) small.textContent = "Argentina time";
+      if (strong && strong.textContent !== ARGENTINA_TIME) {
+        strong.textContent = ARGENTINA_TIME;
+      }
+      if (small && small.textContent !== "Argentina time") {
+        small.textContent = "Argentina time";
+      }
     });
   }
 
