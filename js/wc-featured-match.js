@@ -5,8 +5,8 @@
       away: 'Argentina',
       stage: 'Semifinal',
       date: '15 Jul',
-      time: '22:00',
-      venue: 'Atlanta Stadium',
+      time: '16:00 ARG',
+      venue: 'Mercedes-Benz Stadium, Atlanta, USA',
       homePercent: 35,
       drawPercent: 31,
       awayPercent: 34,
@@ -23,8 +23,8 @@
       away: 'TBD',
       stage: 'Third Place Playoff',
       date: '18 Jul',
-      time: '00:00',
-      venue: 'Miami Stadium',
+      time: 'TBA',
+      venue: 'Miami Stadium, Miami, USA',
       homePercent: 38,
       drawPercent: 30,
       awayPercent: 32,
@@ -41,8 +41,8 @@
       away: 'TBD',
       stage: 'Final',
       date: '19 Jul',
-      time: '22:00',
-      venue: 'New York New Jersey Stadium',
+      time: 'TBA',
+      venue: 'New York New Jersey Stadium, USA',
       homePercent: 40,
       drawPercent: 30,
       awayPercent: 30,
@@ -63,106 +63,34 @@
   ];
 
   function cleanText(value) {
-    return String(value || '').replace(/[\u200E\u200F\u202A-\u202E\u2066-\u2069]/g, '').replace(/[·•]/g, '-').trim();
+    return String(value || '')
+      .replace(/[\u200E\u200F\u202A-\u202E\u2066-\u2069]/g, '')
+      .replace(/[·•]/g, '-')
+      .trim();
   }
 
   function injectCss() {
     const old = document.getElementById('bf-home-clean-css');
     if (old) old.remove();
+
     const style = document.createElement('style');
     style.id = 'bf-home-clean-css';
     style.textContent = `
-      body.site-skin-1win .bf-hero.argentina-night{
-        position:relative!important;
-        overflow:hidden!important;
-        background:
-          radial-gradient(circle at 15% 15%,rgba(117,201,255,.22),transparent 34%),
-          radial-gradient(circle at 88% 28%,rgba(255,255,255,.12),transparent 28%),
-          linear-gradient(135deg,rgba(8,30,49,.94),rgba(4,14,25,.98))!important;
-        border-color:rgba(117,201,255,.34)!important;
-        box-shadow:0 22px 70px rgba(0,0,0,.42),0 0 42px rgba(117,201,255,.09)!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night:before{
-        content:'ARGENTINA NIGHT  🇦🇷';
-        position:absolute;
-        top:18px;
-        right:-52px;
-        z-index:2;
-        width:220px;
-        padding:8px 18px;
-        transform:rotate(34deg);
-        color:#06121d;
-        background:linear-gradient(90deg,#78c8ff,#fff,#78c8ff);
-        font-size:10px;
-        line-height:1;
-        font-weight:950;
-        letter-spacing:.12em;
-        text-align:center;
-        box-shadow:0 0 26px rgba(117,201,255,.36);
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-hero-left,
-      body.site-skin-1win .bf-hero.argentina-night .bf-featured{
-        position:relative!important;
-        z-index:1!important;
-        border-color:rgba(117,201,255,.24)!important;
-        background:linear-gradient(180deg,rgba(12,35,54,.95),rgba(5,18,31,.98))!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-pill,
-      body.site-skin-1win .bf-hero.argentina-night .bf-mini-pill{
-        color:#a9dcff!important;
-        border-color:rgba(117,201,255,.34)!important;
-        background:rgba(117,201,255,.11)!important;
-        box-shadow:0 0 20px rgba(117,201,255,.10)!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night h1 span{
-        color:#8fd3ff!important;
-        text-shadow:0 0 24px rgba(117,201,255,.20)!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-metric{
-        border-color:rgba(117,201,255,.20)!important;
-        background:rgba(117,201,255,.055)!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-metric span{
-        color:#8fd3ff!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-search-card{
-        border-color:rgba(117,201,255,.22)!important;
-        box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 0 28px rgba(117,201,255,.06)!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-search-row button,
-      body.site-skin-1win .bf-hero.argentina-night .bf-featured-actions a:first-child{
-        color:#06121d!important;
-        background:linear-gradient(135deg,#78c8ff,#eaf8ff)!important;
-        box-shadow:0 0 24px rgba(117,201,255,.28)!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-featured{
-        box-shadow:0 18px 50px rgba(0,0,0,.28),inset 0 0 32px rgba(117,201,255,.035)!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-team:last-child .bf-team-logo-wrap{
-        border-color:rgba(117,201,255,.62)!important;
-        box-shadow:0 0 0 5px rgba(117,201,255,.08),0 0 34px rgba(117,201,255,.25)!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-ai-predicts{
-        width:100%!important;
-        border-color:rgba(117,201,255,.34)!important;
-        background:linear-gradient(90deg,rgba(117,201,255,.10),rgba(255,255,255,.055),rgba(117,201,255,.10))!important;
-        box-shadow:0 0 26px rgba(117,201,255,.08)!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-ai-predicts strong{
-        color:#c9ebff!important;
-        font-size:14px!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-probs>div:last-child{
-        border-color:rgba(117,201,255,.44)!important;
-        background:rgba(117,201,255,.10)!important;
-        box-shadow:0 0 24px rgba(117,201,255,.10)!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-probs>div:last-child strong{
-        color:#9bd9ff!important;
-      }
-      body.site-skin-1win .bf-hero.argentina-night .bf-probs>div:last-child .bf-prob-bar span{
-        background:linear-gradient(90deg,#78c8ff,#fff)!important;
-      }
+      body.site-skin-1win .bf-hero.argentina-night{position:relative!important;overflow:hidden!important;background:radial-gradient(circle at 15% 15%,rgba(117,201,255,.22),transparent 34%),radial-gradient(circle at 88% 28%,rgba(255,255,255,.12),transparent 28%),linear-gradient(135deg,rgba(8,30,49,.94),rgba(4,14,25,.98))!important;border-color:rgba(117,201,255,.34)!important;box-shadow:0 22px 70px rgba(0,0,0,.42),0 0 42px rgba(117,201,255,.09)!important}
+      body.site-skin-1win .bf-hero.argentina-night:before{content:'ARGENTINA NIGHT  🇦🇷';position:absolute;top:18px;right:-52px;z-index:2;width:220px;padding:8px 18px;transform:rotate(34deg);color:#06121d;background:linear-gradient(90deg,#78c8ff,#fff,#78c8ff);font-size:10px;line-height:1;font-weight:950;letter-spacing:.12em;text-align:center;box-shadow:0 0 26px rgba(117,201,255,.36)}
+      body.site-skin-1win .bf-hero.argentina-night .bf-hero-left,body.site-skin-1win .bf-hero.argentina-night .bf-featured{position:relative!important;z-index:1!important;border-color:rgba(117,201,255,.24)!important;background:linear-gradient(180deg,rgba(12,35,54,.95),rgba(5,18,31,.98))!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-pill,body.site-skin-1win .bf-hero.argentina-night .bf-mini-pill{color:#a9dcff!important;border-color:rgba(117,201,255,.34)!important;background:rgba(117,201,255,.11)!important;box-shadow:0 0 20px rgba(117,201,255,.10)!important}
+      body.site-skin-1win .bf-hero.argentina-night h1 span{color:#8fd3ff!important;text-shadow:0 0 24px rgba(117,201,255,.20)!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-metric{border-color:rgba(117,201,255,.20)!important;background:rgba(117,201,255,.055)!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-metric span{color:#8fd3ff!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-search-card{border-color:rgba(117,201,255,.22)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 0 28px rgba(117,201,255,.06)!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-search-row button,body.site-skin-1win .bf-hero.argentina-night .bf-featured-actions a:first-child{color:#06121d!important;background:linear-gradient(135deg,#78c8ff,#eaf8ff)!important;box-shadow:0 0 24px rgba(117,201,255,.28)!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-team:last-child .bf-team-logo-wrap{border-color:rgba(117,201,255,.62)!important;box-shadow:0 0 0 5px rgba(117,201,255,.08),0 0 34px rgba(117,201,255,.25)!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-ai-predicts{width:100%!important;border-color:rgba(117,201,255,.34)!important;background:linear-gradient(90deg,rgba(117,201,255,.10),rgba(255,255,255,.055),rgba(117,201,255,.10))!important;box-shadow:0 0 26px rgba(117,201,255,.08)!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-ai-predicts strong{color:#c9ebff!important;font-size:14px!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-probs>div:last-child{border-color:rgba(117,201,255,.44)!important;background:rgba(117,201,255,.10)!important;box-shadow:0 0 24px rgba(117,201,255,.10)!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-probs>div:last-child strong{color:#9bd9ff!important}
+      body.site-skin-1win .bf-hero.argentina-night .bf-probs>div:last-child .bf-prob-bar span{background:linear-gradient(90deg,#78c8ff,#fff)!important}
       body.site-skin-1win .bf-team-logo-wrap{width:104px!important;height:104px!important;margin:0 auto 14px!important;border-radius:50%!important;overflow:hidden!important;background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.10)!important;display:grid!important;place-items:center!important}
       body.site-skin-1win .bf-team-logo-img{width:118%!important;height:118%!important;padding:0!important;object-fit:cover!important;transform:scale(1.06)!important}
       body.site-skin-1win .bf-clean-predictions{display:block!important;width:100%!important;min-width:0!important;overflow:visible!important;border:0!important;background:transparent!important}
@@ -185,7 +113,7 @@
       body.site-skin-1win .bf-line-head span{padding:8px 12px!important;border-radius:999px!important;color:rgba(248,250,252,.72)!important;background:rgba(255,255,255,.055)!important;font-size:12px!important;font-weight:900!important;text-transform:uppercase!important;white-space:nowrap!important}
       body.site-skin-1win .bf-line-list{display:grid!important;gap:0!important;width:100%!important}
       body.site-skin-1win .bf-line-row{display:grid!important;grid-template-columns:86px minmax(0,1fr) auto!important;align-items:center!important;gap:18px!important;width:100%!important;padding:15px 0!important;border:0!important;border-bottom:1px solid rgba(94,224,164,.13)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
-      body.site-skin-1win .bf-line-row:first-child{padding-top:0!important} body.site-skin-1win .bf-line-row:last-child{padding-bottom:0!important;border-bottom:0!important}
+      body.site-skin-1win .bf-line-row:first-child{padding-top:0!important}body.site-skin-1win .bf-line-row:last-child{padding-bottom:0!important;border-bottom:0!important}
       body.site-skin-1win .bf-line-date{display:grid!important;gap:4px!important;color:rgba(248,250,252,.58)!important;font-size:12px!important;line-height:1.1!important;text-transform:uppercase!important;white-space:nowrap!important}
       body.site-skin-1win .bf-line-date b{color:#fff!important;font-size:17px!important}
       body.site-skin-1win .bf-line-main strong{display:block!important;color:#fff!important;font-size:18px!important;line-height:1.22!important;font-weight:900!important}
@@ -197,9 +125,34 @@
     document.head.appendChild(style);
   }
 
-  function setText(id, text) { const el = document.getElementById(id); if (el) el.textContent = cleanText(text); }
-  function setImage(id, src, alt) { const img = document.getElementById(id); if (!img) return; img.src = src; img.alt = alt || ''; img.style.visibility = 'visible'; }
-  function setBar(id, percent) { const bar = document.getElementById(id); if (bar) bar.style.width = percent + '%'; }
+  function setText(id, text) {
+    const element = document.getElementById(id);
+    if (element) element.textContent = cleanText(text);
+  }
+
+  function setImage(id, src, alt) {
+    const image = document.getElementById(id);
+    if (!image) return;
+    image.src = src;
+    image.alt = alt || '';
+    image.style.visibility = 'visible';
+  }
+
+  function setBar(id, percent) {
+    const bar = document.getElementById(id);
+    if (bar) bar.style.width = percent + '%';
+  }
+
+  function setFeaturedLabels(match) {
+    const boxes = document.querySelectorAll('#wcFeaturedCard .bf-probs > div');
+    if (boxes.length < 3) return;
+
+    const labels = [match.home + ' Win', 'Draw', match.away + ' Win'];
+    boxes.forEach(function (box, index) {
+      const label = box.querySelector('small');
+      if (label) label.textContent = labels[index];
+    });
+  }
 
   function renderArgentinaHero() {
     const hero = document.querySelector('.bf-hero');
@@ -218,18 +171,18 @@
 
     if (pill) pill.textContent = '🔥 Tonight\'s World Cup Semifinal';
     if (title) title.innerHTML = 'Argentina. One match from glory. <span>The final is calling.</span>';
-    if (intro) intro.textContent = 'The defending champions face England tonight. Messi, history and a place in the World Cup final. Our model sees a near-even battle, with Argentina carrying the champion\'s nerve.';
+    if (intro) intro.textContent = 'The defending champions face England tonight in Atlanta. Messi, history and a place in the World Cup final. Our model sees a near-even battle, with Argentina carrying the champion\'s nerve.';
 
     const metricData = [
       ['🏆', '3', 'Knockout wins'],
       ['⚽', '8', 'Messi goals'],
       ['🔥', '12', 'WC unbeaten'],
-      ['⚡', '22:00', 'Tallinn kickoff']
+      ['⚡', '16:00', 'Argentina time']
     ];
 
-    metrics.forEach((metric, index) => {
+    metrics.forEach(function (metric, index) {
       const data = metricData[index];
-      if (data) metric.innerHTML = `<span>${data[0]}</span><strong>${data[1]}</strong><small>${data[2]}</small>`;
+      if (data) metric.innerHTML = '<span>' + data[0] + '</span><strong>' + data[1] + '</strong><small>' + data[2] + '</small>';
     });
 
     if (searchPill) searchPill.textContent = 'Tonight\'s main event';
@@ -244,38 +197,121 @@
   }
 
   function renderFeaturedCard() {
-    const m = MATCHES[0];
-    setText('wcConfidence', 'AI Confidence ' + m.confidence + '%'); setText('wcHomeTeam', m.home); setText('wcAwayTeam', m.away);
-    setText('wcHomeNote', m.stage); setText('wcAwayNote', m.stage); setText('wcVersus', 'VS'); setText('wcAdvice', m.advice);
-    setText('wcHomePercent', m.homePercent + '%'); setText('wcDrawPercent', m.drawPercent + '%'); setText('wcAwayPercent', m.awayPercent + '%');
-    setText('wcMatchDate', m.date + ', ' + m.time); setText('wcMatchStatus', m.tag); setText('wcVenue', m.venue); setText('wcPredictionText', m.text);
-    setImage('wcHomeLogo', m.homeLogo, m.home + ' flag'); setImage('wcAwayLogo', m.awayLogo, m.away + ' flag');
-    setBar('wcHomeBar', m.homePercent); setBar('wcDrawBar', m.drawPercent); setBar('wcAwayBar', m.awayPercent);
+    const match = MATCHES[0];
+    setText('wcConfidence', 'AI Confidence ' + match.confidence + '%');
+    setText('wcHomeTeam', match.home);
+    setText('wcAwayTeam', match.away);
+    setText('wcHomeNote', match.stage);
+    setText('wcAwayNote', match.stage);
+    setText('wcVersus', 'VS');
+    setText('wcAdvice', match.advice);
+    setText('wcHomePercent', match.homePercent + '%');
+    setText('wcDrawPercent', match.drawPercent + '%');
+    setText('wcAwayPercent', match.awayPercent + '%');
+    setText('wcMatchDate', match.date + ', ' + match.time);
+    setText('wcMatchStatus', match.tag);
+    setText('wcVenue', match.venue);
+    setText('wcPredictionText', match.text);
+    setImage('wcHomeLogo', match.homeLogo, match.home + ' flag');
+    setImage('wcAwayLogo', match.awayLogo, match.away + ' flag');
+    setBar('wcHomeBar', match.homePercent);
+    setBar('wcDrawBar', match.drawPercent);
+    setBar('wcAwayBar', match.awayPercent);
+    setFeaturedLabels(match);
   }
 
   function renderPredictions() {
-    const title = document.querySelector('.bf-predictions-section h2'); const box = document.querySelector('.bf-predictions-table');
-    if (title) title.textContent = 'Next World Cup AI Predictions'; if (!box) return;
+    const title = document.querySelector('.bf-predictions-section h2');
+    const box = document.querySelector('.bf-predictions-table');
+    if (title) title.textContent = 'Next World Cup AI Predictions';
+    if (!box) return;
+
     box.className = 'bf-predictions-table bf-clean-predictions';
-    box.innerHTML = `<div class="bf-clean-grid">${MATCHES.map(m => `<article class="bf-clean-match-card"><div class="bf-clean-card-top"><strong class="bf-clean-match-title">${m.home} vs ${m.away}</strong><span class="bf-clean-stage">${m.stage}</span></div><div class="bf-clean-probs"><div><span>Home</span><b>${m.homePercent}%</b></div><div><span>Draw</span><b>${m.drawPercent}%</b></div><div><span>Away</span><b>${m.awayPercent}%</b></div></div><span class="bf-clean-pill">${m.pick}</span><small class="bf-clean-meta">${m.date}, ${m.time} - ${m.venue}</small></article>`).join('')}</div>`;
+    box.innerHTML = '<div class="bf-clean-grid">' + MATCHES.map(function (match) {
+      return '<article class="bf-clean-match-card">' +
+        '<div class="bf-clean-card-top"><strong class="bf-clean-match-title">' + match.home + ' vs ' + match.away + '</strong><span class="bf-clean-stage">' + match.stage + '</span></div>' +
+        '<div class="bf-clean-probs"><div><span>' + match.home + '</span><b>' + match.homePercent + '%</b></div><div><span>Draw</span><b>' + match.drawPercent + '%</b></div><div><span>' + match.away + '</span><b>' + match.awayPercent + '%</b></div></div>' +
+        '<span class="bf-clean-pill">' + match.pick + '</span>' +
+        '<small class="bf-clean-meta">' + match.date + ', ' + match.time + ' - ' + match.venue + '</small>' +
+      '</article>';
+    }).join('') + '</div>';
   }
 
   function renderLowerPanels() {
-    const modelView = document.querySelector('.model-view'); if (!modelView) return;
+    const modelView = document.querySelector('.model-view');
+    if (!modelView) return;
+
     modelView.className = 'model-view bf-line-panels';
-    modelView.innerHTML = `<article class="bf-line-panel"><div class="bf-line-head"><h2>Upcoming Matches</h2><span>Fixtures</span></div><div class="bf-line-list">${MATCHES.map(m => `<div class="bf-line-row"><span class="bf-line-date"><span>${m.date}</span><b>${m.time}</b></span><span class="bf-line-main"><strong>${m.home} vs ${m.away}</strong><small>${m.stage} - ${m.venue}</small></span><span class="bf-line-badge">${m.tag}</span></div>`).join('')}</div></article><article class="bf-line-panel"><div class="bf-line-head"><h2>Latest Results</h2><span>Scores</span></div><div class="bf-line-list">${RESULTS.map(r => `<div class="bf-line-row"><span class="bf-line-date"><span>Last</span><b>Match</b></span><span class="bf-line-main"><strong>${r.match}</strong><small>${r.note}</small></span><span class="bf-line-score">${r.score}</span></div>`).join('')}</div></article>`;
+    modelView.innerHTML = '<article class="bf-line-panel"><div class="bf-line-head"><h2>Upcoming Matches</h2><span>Fixtures</span></div><div class="bf-line-list">' +
+      MATCHES.map(function (match) {
+        return '<div class="bf-line-row"><span class="bf-line-date"><span>' + match.date + '</span><b>' + match.time + '</b></span><span class="bf-line-main"><strong>' + match.home + ' vs ' + match.away + '</strong><small>' + match.stage + ' - ' + match.venue + '</small></span><span class="bf-line-badge">' + match.tag + '</span></div>';
+      }).join('') +
+      '</div></article><article class="bf-line-panel"><div class="bf-line-head"><h2>Latest Results</h2><span>Scores</span></div><div class="bf-line-list">' +
+      RESULTS.map(function (result) {
+        return '<div class="bf-line-row"><span class="bf-line-date"><span>Last</span><b>Match</b></span><span class="bf-line-main"><strong>' + result.match + '</strong><small>' + result.note + '</small></span><span class="bf-line-score">' + result.score + '</span></div>';
+      }).join('') +
+      '</div></article>';
   }
 
   function renderSearch() {
-    const input = document.getElementById('match-search-input'); const button = document.getElementById('match-search-btn'); const result = document.getElementById('match-search-result'); const tags = document.querySelector('.bf-tags');
-    if (input) input.placeholder = 'England vs Argentina'; if (tags) tags.innerHTML = MATCHES.map(m => `<button type="button">${m.home} vs ${m.away}</button>`).join(''); if (!input || !button || !result) return;
-    const data = {}; MATCHES.forEach(m => { data[(m.home + ' vs ' + m.away).toLowerCase()] = m; });
-    function analyze(value) { const query = cleanText(value); if (!query) { result.textContent = 'Enter a match to see probabilities and AI reasoning.'; return; } const m = data[query.toLowerCase().replace(/\s+/g, ' ')] || MATCHES[0]; result.innerHTML = `<div class="bf-live-result"><h3>${m.home} vs ${m.away}</h3><p><strong>Home:</strong> ${m.homePercent}% - <strong>Draw:</strong> ${m.drawPercent}% - <strong>Away:</strong> ${m.awayPercent}%<br><strong>AI pick:</strong> ${m.pick}<br><strong>Confidence:</strong> ${m.confidence}%<br>${m.text}</p></div>`; }
-    button.onclick = () => analyze(input.value); input.onkeydown = event => { if (event.key === 'Enter') analyze(input.value); };
-    document.querySelectorAll('.bf-tags button').forEach(tag => { tag.onclick = () => { input.value = tag.textContent.trim(); analyze(input.value); }; });
+    const input = document.getElementById('match-search-input');
+    const button = document.getElementById('match-search-btn');
+    const result = document.getElementById('match-search-result');
+    const tags = document.querySelector('.bf-tags');
+
+    if (input) input.placeholder = 'England vs Argentina';
+    if (tags) {
+      tags.innerHTML = MATCHES.map(function (match) {
+        return '<button type="button">' + match.home + ' vs ' + match.away + '</button>';
+      }).join('');
+    }
+    if (!input || !button || !result) return;
+
+    const data = {};
+    MATCHES.forEach(function (match) {
+      data[(match.home + ' vs ' + match.away).toLowerCase()] = match;
+    });
+
+    function analyze(value) {
+      const query = cleanText(value);
+      if (!query) {
+        result.textContent = 'Enter a match to see probabilities and AI reasoning.';
+        return;
+      }
+
+      const match = data[query.toLowerCase().replace(/\s+/g, ' ')] || MATCHES[0];
+      result.innerHTML = '<div class="bf-live-result"><h3>' + match.home + ' vs ' + match.away + '</h3><p>' +
+        '<strong>' + match.home + ' win:</strong> ' + match.homePercent + '% - ' +
+        '<strong>Draw:</strong> ' + match.drawPercent + '% - ' +
+        '<strong>' + match.away + ' win:</strong> ' + match.awayPercent + '%<br>' +
+        '<strong>Venue:</strong> ' + match.venue + '<br>' +
+        '<strong>AI pick:</strong> ' + match.pick + '<br>' +
+        '<strong>Confidence:</strong> ' + match.confidence + '%<br>' + match.text + '</p></div>';
+    }
+
+    button.onclick = function () { analyze(input.value); };
+    input.onkeydown = function (event) { if (event.key === 'Enter') analyze(input.value); };
+    document.querySelectorAll('.bf-tags button').forEach(function (tag) {
+      tag.onclick = function () {
+        input.value = tag.textContent.trim();
+        analyze(input.value);
+      };
+    });
   }
 
-  function run() { injectCss(); renderFeaturedCard(); renderArgentinaHero(); renderPredictions(); renderLowerPanels(); renderSearch(); }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
-  window.addEventListener('load', run); setTimeout(run, 500); setTimeout(run, 1200);
+  function run() {
+    injectCss();
+    renderFeaturedCard();
+    renderArgentinaHero();
+    renderPredictions();
+    renderLowerPanels();
+    renderSearch();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run);
+  else run();
+
+  window.addEventListener('load', run);
+  setTimeout(run, 500);
+  setTimeout(run, 1200);
 })();
