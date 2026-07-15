@@ -7,14 +7,14 @@
       date: '15 Jul',
       time: '22:00',
       venue: 'Atlanta Stadium',
-      homePercent: 29,
-      drawPercent: 28,
-      awayPercent: 43,
-      confidence: 74,
+      homePercent: 35,
+      drawPercent: 31,
+      awayPercent: 34,
+      confidence: 61,
       pick: 'Argentina to advance',
       tag: 'Tonight',
-      advice: 'ARGENTINA HAVE THE EDGE. ONE WIN FROM THE FINAL.',
-      text: 'Argentina enter as defending champions, with Lionel Messi carrying the tournament\'s leading scoring form. England can punish transitions, but our model gives Argentina the stronger path to the final.',
+      advice: 'ARGENTINA ARE ONE BIG PERFORMANCE FROM THE FINAL.',
+      text: 'England hold a narrow market edge, but Argentina remain unbeaten across 12 World Cup matches and Messi leads the scoring race. The holders have every reason to believe.',
       homeLogo: 'https://flagcdn.com/w160/gb-eng.png',
       awayLogo: 'https://flagcdn.com/w160/ar.png'
     },
@@ -218,12 +218,12 @@
 
     if (pill) pill.textContent = '🔥 Tonight\'s World Cup Semifinal';
     if (title) title.innerHTML = 'Argentina. One match from glory. <span>The final is calling.</span>';
-    if (intro) intro.textContent = 'The defending champions face England tonight. Momentum, Messi and a place in the World Cup final. Our model gives Argentina the edge.';
+    if (intro) intro.textContent = 'The defending champions face England tonight. Messi, history and a place in the World Cup final. Our model sees a near-even battle, with Argentina carrying the champion\'s nerve.';
 
     const metricData = [
       ['🏆', '3', 'Knockout wins'],
       ['⚽', '8', 'Messi goals'],
-      ['🇦🇷', '43%', 'Argentina win'],
+      ['🔥', '12', 'WC unbeaten'],
       ['⚡', '22:00', 'Tallinn kickoff']
     ];
 
@@ -236,7 +236,7 @@
     if (searchTitle) searchTitle.textContent = 'Will Argentina reach the final? 🇦🇷';
     if (searchButton) searchButton.textContent = 'Analyze Argentina';
     if (searchResult && !searchResult.querySelector('.bf-live-result')) {
-      searchResult.textContent = 'England vs Argentina. One semifinal. One ticket to the final. See why the model leans Argentina.';
+      searchResult.textContent = 'England vs Argentina. One semifinal. One ticket to the final. See why the champions can beat the narrow odds.';
     }
     if (featuredTitle) featuredTitle.textContent = 'Tonight\'s Semifinal';
     if (actions[0]) actions[0].textContent = 'Full Argentina Prediction';
