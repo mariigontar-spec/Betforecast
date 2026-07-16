@@ -30,12 +30,32 @@
     return String(value || '').replace(/[\u200E\u200F\u202A-\u202E\u2066-\u2069]/g, '').replace(/[·•]/g, '-').trim();
   }
 
+  function injectHomepagePopup() {
+    if (document.getElementById('bf-home-popup-zone')) return;
+
+    const popup = document.createElement('ins');
+    popup.id = 'bf-home-popup-zone';
+    popup.className = 'ins-zone bf-popup-zone';
+    popup.setAttribute('data-zone', '161907');
+    popup.setAttribute('aria-hidden', 'true');
+
+    popup.style.position = 'absolute';
+    popup.style.left = '-9999px';
+    popup.style.top = '0';
+    popup.style.width = '1px';
+    popup.style.height = '1px';
+    popup.style.overflow = 'hidden';
+
+    document.body.insertBefore(popup, document.body.firstChild);
+  }
+
   function injectCss() {
     const old = document.getElementById('bf-home-clean-css');
     if (old) old.remove();
     const style = document.createElement('style');
     style.id = 'bf-home-clean-css';
     style.textContent = `
+      body.site-skin-1win .bf-popup-zone{position:absolute!important;left:-9999px!important;top:0!important;width:1px!important;height:1px!important;overflow:hidden!important}
       body.site-skin-1win .bf-team-logo-wrap{width:104px!important;height:104px!important;margin:0 auto 14px!important;border-radius:50%!important;overflow:hidden!important;background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.10)!important;display:grid!important;place-items:center!important}
       body.site-skin-1win .bf-team-logo-img{width:118%!important;height:118%!important;padding:0!important;object-fit:cover!important;transform:scale(1.06)!important}
       body.site-skin-1win .bf-clean-predictions{display:block!important;width:100%!important;min-width:0!important;overflow:visible!important;border:0!important;background:transparent!important}
@@ -132,7 +152,7 @@
     document.querySelectorAll('.bf-tags button').forEach(function (tag) { tag.onclick = function () { input.value = tag.textContent.trim(); analyze(input.value); }; });
   }
 
-  function run() { injectCss(); renderFeaturedCard(); renderHero(); renderPredictions(); renderLowerPanels(); renderSearch(); }
+  function run() { injectHomepagePopup(); injectCss(); renderFeaturedCard(); renderHero(); renderPredictions(); renderLowerPanels(); renderSearch(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
   window.addEventListener('load', run); setTimeout(run, 500); setTimeout(run, 1200);
 })();
