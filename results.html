@@ -334,6 +334,11 @@
       line-height: 1.5;
     }
 
+    body.site-skin-1win .content-banner {
+      position: relative !important;
+      z-index: 20 !important;
+    }
+
     @media (max-width: 1100px) {
       .header-inner {
         grid-template-columns: 1fr;
@@ -443,9 +448,22 @@
       </div>
       <div id="results-grid" class="wc-results-grid"></div>
     </section>
+
+    <!-- Desktop content banner -->
+    <div class="content-banner">
+      <ins
+        class="ins-zone"
+        data-zone="163631">
+      </ins>
+    </div>
   </main>
 
   <script src="/api-config.js"></script>
   <script src="/js/results.js?v=21"></script>
+  <script
+    data-cfasync="false"
+    async
+    src="https://media.getads.online/js/code.min.js">
+  </script>
 </body>
 </html>
