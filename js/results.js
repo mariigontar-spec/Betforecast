@@ -18,6 +18,125 @@
 
   if (!grid) return;
 
+  function injectResultsAds() {
+    if (!document.getElementById("bf-results-ad-fix")) {
+      const style = document.createElement("style");
+      style.id = "bf-results-ad-fix";
+      style.textContent = `
+        body.site-skin-1win .content-banner {
+          position: relative !important;
+          z-index: 20 !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          width: min(1040px, 100%) !important;
+          max-width: 1040px !important;
+          min-height: 132px !important;
+          margin: 24px auto !important;
+          padding: 18px !important;
+          border-radius: 22px !important;
+          border: 1px solid rgba(94, 224, 164, 0.16) !important;
+          background: linear-gradient(180deg, rgba(18, 38, 55, 0.78), rgba(8, 20, 32, 0.92)) !important;
+          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.25) !important;
+          overflow: hidden !important;
+        }
+
+        body.site-skin-1win .content-banner-top {
+          margin-top: 24px !important;
+          margin-bottom: 24px !important;
+        }
+
+        body.site-skin-1win .content-banner-desktop,
+        body.site-skin-1win .content-banner .banner-728 {
+          display: block !important;
+          width: 728px !important;
+          min-width: 728px !important;
+          max-width: 728px !important;
+          height: 90px !important;
+          min-height: 90px !important;
+          max-height: 90px !important;
+          flex: 0 0 728px !important;
+          margin: 0 auto !important;
+          padding: 0 !important;
+          border-radius: 12px !important;
+          overflow: hidden !important;
+          background: rgba(2, 11, 19, 0.35) !important;
+          transform: none !important;
+          zoom: 1 !important;
+        }
+
+        body.site-skin-1win .content-banner-desktop .ins-zone,
+        body.site-skin-1win .content-banner-desktop > .ins-zone,
+        body.site-skin-1win .content-banner-desktop iframe,
+        body.site-skin-1win .content-banner-desktop > iframe,
+        body.site-skin-1win .content-banner .banner-728 .ins-zone,
+        body.site-skin-1win .content-banner .banner-728 > .ins-zone,
+        body.site-skin-1win .content-banner .banner-728 iframe,
+        body.site-skin-1win .content-banner .banner-728 > iframe {
+          display: block !important;
+          width: 728px !important;
+          min-width: 728px !important;
+          max-width: 728px !important;
+          height: 90px !important;
+          min-height: 90px !important;
+          max-height: 90px !important;
+          margin: 0 auto !important;
+          padding: 0 !important;
+          transform: none !important;
+          zoom: 1 !important;
+        }
+
+        body.site-skin-1win .content-banner-mobile,
+        body.site-skin-1win .content-banner .adhit-300x250 {
+          display: none !important;
+          width: 300px !important;
+          height: 250px !important;
+          flex: 0 0 300px !important;
+          margin: 0 auto !important;
+        }
+
+        @media (max-width: 768px) {
+          body.site-skin-1win .content-banner {
+            min-height: 282px !important;
+            margin: 18px auto !important;
+            padding: 16px !important;
+          }
+
+          body.site-skin-1win .content-banner-desktop,
+          body.site-skin-1win .content-banner .banner-728 {
+            display: none !important;
+          }
+
+          body.site-skin-1win .content-banner-mobile,
+          body.site-skin-1win .content-banner .adhit-300x250 {
+            display: block !important;
+            width: 300px !important;
+            height: 250px !important;
+          }
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    const hero = document.querySelector(".results-hero");
+    const existingTop = document.getElementById("results-top-728-ad");
+
+    if (hero && !existingTop) {
+      const banner = document.createElement("div");
+      banner.id = "results-top-728-ad";
+      banner.className = "content-banner content-banner-top";
+      banner.innerHTML = `
+        <div class="banner-728 content-banner-desktop">
+          <ins class="ins-zone" data-zone="163631"></ins>
+        </div>
+        <div class="adhit-300x250 content-banner-mobile">
+          <ins class="ins-zone" data-zone="163623"></ins>
+        </div>
+      `;
+      hero.insertAdjacentElement("afterend", banner);
+    }
+  }
+
   function setStatus(text) {
     if (statusEl) statusEl.textContent = text;
   }
@@ -308,6 +427,7 @@
   }
 
   async function loadResults() {
+    injectResultsAds();
     setStatus("Loading cached World Cup results...");
 
     try {
