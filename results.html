@@ -103,10 +103,10 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      color: #fff;
       font-size: 22px;
       font-weight: 900;
       letter-spacing: -.04em;
-      color: #fff;
     }
 
     .bf-logo img {
@@ -201,21 +201,36 @@
       line-height: 1.45;
     }
 
-    .bf-ad-slot {
+    /* Real Adhit banner slots */
+    .results-ad-wrap {
       position: relative;
       z-index: 25;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 2px auto;
+      width: min(var(--bf-content), 100%);
+      min-height: 90px;
+      margin: 0 auto;
       padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      border: 0;
       overflow: visible;
       text-align: center;
     }
 
-    .bf-ad-desktop,
-    .bf-ad-desktop .ins-zone {
+    .results-ad-desktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 728px;
+      height: 90px;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .results-ad-desktop .banner-728,
+    .results-ad-desktop .ins-zone {
       display: block;
       width: 728px;
       height: 90px;
@@ -224,7 +239,7 @@
       overflow: hidden;
     }
 
-    .bf-ad-mobile { display: none; }
+    .results-ad-mobile { display: none; }
 
     .results-page-section {
       padding: 28px;
@@ -455,9 +470,25 @@
       .results-hero h1 { font-size: 34px; }
       .results-hero p { font-size: 15px; }
 
-      .bf-ad-desktop { display: none; }
-      .bf-ad-mobile,
-      .bf-ad-mobile .ins-zone {
+      .results-ad-wrap {
+        width: 100%;
+        min-height: 250px;
+      }
+
+      .results-ad-desktop { display: none; }
+
+      .results-ad-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 250px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .results-ad-mobile .adhit-300x250,
+      .results-ad-mobile .ins-zone {
         display: block;
         width: 300px;
         height: 250px;
@@ -525,10 +556,23 @@
       </div>
     </section>
 
-    <div class="bf-ad-slot" id="results-top-728-ad">
-      <div class="bf-ad-desktop banner-728"><ins class="ins-zone" data-zone="163631"></ins></div>
-      <div class="bf-ad-mobile adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div>
-    </div>
+    <section class="results-ad-wrap" aria-label="Advertisement">
+      <div class="results-ad-desktop">
+        <!-- Adhit Media Ad Server / Banner / 728x90 -->
+        <div class="banner-728">
+          <ins class="ins-zone" data-zone="163631"></ins>
+        </div>
+        <!-- /Adhit Media Ad Server -->
+      </div>
+
+      <div class="results-ad-mobile">
+        <!-- Adhit Media Ad Server / Banner / 300x250 -->
+        <div class="adhit-300x250">
+          <ins class="ins-zone" data-zone="163623"></ins>
+        </div>
+        <!-- /Adhit Media Ad Server -->
+      </div>
+    </section>
 
     <section class="results-page-section">
       <div class="results-head">
@@ -538,10 +582,23 @@
       <div id="results-grid" class="wc-results-grid"></div>
     </section>
 
-    <div class="bf-ad-slot">
-      <div class="bf-ad-desktop banner-728"><ins class="ins-zone" data-zone="163631"></ins></div>
-      <div class="bf-ad-mobile adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div>
-    </div>
+    <section class="results-ad-wrap" aria-label="Advertisement">
+      <div class="results-ad-desktop">
+        <!-- Adhit Media Ad Server / Banner / 728x90 -->
+        <div class="banner-728">
+          <ins class="ins-zone" data-zone="163631"></ins>
+        </div>
+        <!-- /Adhit Media Ad Server -->
+      </div>
+
+      <div class="results-ad-mobile">
+        <!-- Adhit Media Ad Server / Banner / 300x250 -->
+        <div class="adhit-300x250">
+          <ins class="ins-zone" data-zone="163623"></ins>
+        </div>
+        <!-- /Adhit Media Ad Server -->
+      </div>
+    </section>
   </main>
 
   <script src="/api-config.js"></script>
