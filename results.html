@@ -175,39 +175,6 @@
       line-height: 1.45;
     }
 
-    .content-banner {
-      width: 100%;
-      min-height: 90px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      padding: 0;
-      background: transparent;
-      border: 0;
-      overflow: visible;
-    }
-
-    .content-banner-desktop,
-    .banner-728 {
-      width: 728px;
-      height: 90px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      padding: 0;
-      overflow: hidden;
-    }
-
-    .banner-728 > .ins-zone {
-      display: block;
-      width: 728px;
-      height: 90px;
-      margin: 0 auto;
-      padding: 0;
-    }
-
     .results-page-section { padding: 28px; }
 
     .results-head {
@@ -419,12 +386,6 @@
       .results-hero h1 { font-size: 34px; }
       .results-hero p { font-size: 15px; }
 
-      .content-banner,
-      .banner-728,
-      .content-banner-desktop {
-        display: none !important;
-      }
-
       .results-page-section { padding: 18px 12px; }
       .results-head { flex-direction: column; }
       .results-head span { text-align: left; }
@@ -466,6 +427,7 @@
     </div>
   </header>
 
+  <main class="results-page-wrap">
     <section class="results-hero">
       <div>
         <span class="hero-ai-badge">World Cup Results</span>
@@ -485,6 +447,5 @@
 
   <script src="/api-config.js"></script>
   <script src="/js/results.js?v=21"></script>
-  <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
 </body>
 </html>
