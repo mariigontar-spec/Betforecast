@@ -201,7 +201,7 @@
       line-height: 1.45;
     }
 
-    /* Same direct Adhit structure as the working standings banner */
+    /* Fixed real Adhit slots. This class was missing after the last HTML change. */
     .results-ad-line {
       position: relative;
       z-index: 25;
@@ -210,16 +210,40 @@
       margin: 0 auto;
       padding: 0;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       background: transparent;
       border: 0;
       overflow: visible;
+      text-align: center;
     }
 
     .results-ad-line .content-banner {
       position: relative !important;
       z-index: 25 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 728px !important;
+      min-width: 728px !important;
+      max-width: 728px !important;
+      height: 90px !important;
+      min-height: 90px !important;
+      max-height: 90px !important;
+      margin: 0 auto !important;
+      padding: 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      overflow: hidden !important;
+    }
+
+    .results-ad-line .content-banner .ins-zone,
+    .results-ad-line .content-banner ins,
+    .results-ad-line .content-banner iframe,
+    .results-ad-line .content-banner .ins-zone > div,
+    .results-ad-line .content-banner .ins-zone > iframe,
+    .results-ad-line .content-banner .ins-zone > ins {
       display: block !important;
       width: 728px !important;
       min-width: 728px !important;
@@ -229,19 +253,8 @@
       max-height: 90px !important;
       margin: 0 auto !important;
       padding: 0 !important;
-      overflow: visible !important;
-      background: transparent !important;
       border: 0 !important;
-      box-shadow: none !important;
-      text-align: center !important;
-    }
-
-    .results-ad-line .content-banner > .ins-zone {
-      display: block !important;
-      width: 728px !important;
-      height: 90px !important;
-      margin: 0 auto !important;
-      padding: 0 !important;
+      overflow: hidden !important;
     }
 
     .results-mobile-ad { display: none; }
@@ -461,14 +474,29 @@
       .results-hero h1 { font-size: 34px; }
       .results-hero p { font-size: 15px; }
 
-      .results-ad-line {
-        width: 100%;
-        min-height: 250px;
-      }
-
+      .results-ad-line { width: 100%; min-height: 250px; }
       .results-ad-line .content-banner { display: none !important; }
 
       .results-mobile-ad {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px !important;
+        min-width: 300px !important;
+        max-width: 300px !important;
+        height: 250px !important;
+        min-height: 250px !important;
+        max-height: 250px !important;
+        margin: 0 auto !important;
+        overflow: hidden !important;
+      }
+
+      .results-mobile-ad .ins-zone,
+      .results-mobile-ad ins,
+      .results-mobile-ad iframe,
+      .results-mobile-ad .ins-zone > div,
+      .results-mobile-ad .ins-zone > iframe,
+      .results-mobile-ad .ins-zone > ins {
         display: block !important;
         width: 300px !important;
         min-width: 300px !important;
@@ -478,15 +506,8 @@
         max-height: 250px !important;
         margin: 0 auto !important;
         padding: 0 !important;
+        border: 0 !important;
         overflow: hidden !important;
-      }
-
-      .results-mobile-ad > .ins-zone {
-        display: block !important;
-        width: 300px !important;
-        height: 250px !important;
-        margin: 0 auto !important;
-        padding: 0 !important;
       }
 
       .results-page-section { padding: 18px 12px; }
