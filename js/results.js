@@ -29,25 +29,28 @@
           display: flex !important;
           align-items: center !important;
           justify-content: center !important;
-          width: min(1040px, 100%) !important;
-          max-width: 1040px !important;
-          min-height: 132px !important;
-          margin: 24px auto !important;
-          padding: 18px !important;
-          border-radius: 22px !important;
-          border: 1px solid rgba(94, 224, 164, 0.16) !important;
-          background: linear-gradient(180deg, rgba(18, 38, 55, 0.78), rgba(8, 20, 32, 0.92)) !important;
-          box-shadow: 0 14px 34px rgba(0, 0, 0, 0.25) !important;
-          overflow: hidden !important;
+          width: 728px !important;
+          max-width: calc(100vw - 32px) !important;
+          height: 90px !important;
+          min-height: 90px !important;
+          max-height: 90px !important;
+          margin: 26px auto !important;
+          padding: 0 !important;
+          border: 0 !important;
+          border-radius: 0 !important;
+          background: transparent !important;
+          box-shadow: none !important;
+          overflow: visible !important;
         }
 
         body.site-skin-1win .content-banner-top {
-          margin-top: 24px !important;
-          margin-bottom: 24px !important;
+          margin-top: 26px !important;
+          margin-bottom: 26px !important;
         }
 
         body.site-skin-1win .content-banner-desktop,
         body.site-skin-1win .content-banner .banner-728 {
+          position: relative !important;
           display: block !important;
           width: 728px !important;
           min-width: 728px !important;
@@ -58,9 +61,10 @@
           flex: 0 0 728px !important;
           margin: 0 auto !important;
           padding: 0 !important;
-          border-radius: 12px !important;
+          border: 0 !important;
+          border-radius: 10px !important;
           overflow: hidden !important;
-          background: rgba(2, 11, 19, 0.35) !important;
+          background: rgba(2, 11, 19, 0.42) !important;
           transform: none !important;
           zoom: 1 !important;
         }
@@ -72,7 +76,11 @@
         body.site-skin-1win .content-banner .banner-728 .ins-zone,
         body.site-skin-1win .content-banner .banner-728 > .ins-zone,
         body.site-skin-1win .content-banner .banner-728 iframe,
-        body.site-skin-1win .content-banner .banner-728 > iframe {
+        body.site-skin-1win .content-banner .banner-728 > iframe,
+        body.site-skin-1win .content-banner .banner-728 > div,
+        body.site-skin-1win .content-banner .banner-728 ins,
+        body.site-skin-1win .content-banner .banner-728 ins > div,
+        body.site-skin-1win .content-banner .banner-728 ins iframe {
           display: block !important;
           width: 728px !important;
           min-width: 728px !important;
@@ -82,6 +90,7 @@
           max-height: 90px !important;
           margin: 0 auto !important;
           padding: 0 !important;
+          border: 0 !important;
           transform: none !important;
           zoom: 1 !important;
         }
@@ -90,16 +99,42 @@
         body.site-skin-1win .content-banner .adhit-300x250 {
           display: none !important;
           width: 300px !important;
+          min-width: 300px !important;
+          max-width: 300px !important;
           height: 250px !important;
+          min-height: 250px !important;
+          max-height: 250px !important;
           flex: 0 0 300px !important;
           margin: 0 auto !important;
+          padding: 0 !important;
+          overflow: hidden !important;
+        }
+
+        body.site-skin-1win .content-banner-mobile .ins-zone,
+        body.site-skin-1win .content-banner .adhit-300x250 .ins-zone,
+        body.site-skin-1win .content-banner-mobile iframe,
+        body.site-skin-1win .content-banner .adhit-300x250 iframe {
+          display: block !important;
+          width: 300px !important;
+          min-width: 300px !important;
+          max-width: 300px !important;
+          height: 250px !important;
+          min-height: 250px !important;
+          max-height: 250px !important;
+          margin: 0 auto !important;
+          padding: 0 !important;
+          border: 0 !important;
         }
 
         @media (max-width: 768px) {
           body.site-skin-1win .content-banner {
-            min-height: 282px !important;
+            width: 300px !important;
+            max-width: calc(100vw - 24px) !important;
+            height: 250px !important;
+            min-height: 250px !important;
+            max-height: 250px !important;
             margin: 18px auto !important;
-            padding: 16px !important;
+            padding: 0 !important;
           }
 
           body.site-skin-1win .content-banner-desktop,
@@ -110,8 +145,6 @@
           body.site-skin-1win .content-banner-mobile,
           body.site-skin-1win .content-banner .adhit-300x250 {
             display: block !important;
-            width: 300px !important;
-            height: 250px !important;
           }
         }
       `;
