@@ -14,7 +14,6 @@
   const grid = document.getElementById("results-grid");
   const statusEl = document.getElementById("results-status");
   const finishedStatuses = new Set(["FT", "AET", "PEN"]);
-  const bannerClickUrl = "https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ";
 
   if (!grid) return;
 
@@ -26,7 +25,9 @@
         body.site-skin-1win .content-banner {
           position: relative !important;
           z-index: 20 !important;
-          display: block !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
           width: 728px !important;
           max-width: calc(100vw - 32px) !important;
           height: 90px !important;
@@ -35,10 +36,11 @@
           margin: 24px auto !important;
           padding: 0 !important;
           border: 0 !important;
-          border-radius: 14px !important;
+          border-radius: 0 !important;
           background: transparent !important;
           box-shadow: none !important;
           overflow: hidden !important;
+          text-align: center !important;
         }
 
         body.site-skin-1win .content-banner-top {
@@ -46,100 +48,79 @@
           margin-bottom: 24px !important;
         }
 
-        body.site-skin-1win .bf-banner-fallback {
-          position: absolute !important;
-          inset: 0 !important;
-          z-index: 5 !important;
-          display: flex !important;
-          align-items: center !important;
-          justify-content: space-between !important;
-          gap: 18px !important;
-          width: 728px !important;
-          max-width: 100% !important;
-          height: 90px !important;
-          padding: 0 28px !important;
-          border-radius: 14px !important;
-          color: #f8fafc !important;
-          text-decoration: none !important;
-          background:
-            linear-gradient(90deg, rgba(2,11,19,.92), rgba(4,49,84,.64), rgba(2,11,19,.92)),
-            url('/assets/ads/1win-wc2026-site-skin.webp') center 23% / 1560px auto no-repeat !important;
-          border: 1px solid rgba(64, 218, 255, .35) !important;
-          box-shadow: 0 10px 34px rgba(0, 0, 0, .35), inset 0 0 26px rgba(0, 201, 255, .14) !important;
-          overflow: hidden !important;
-        }
-
-        body.site-skin-1win .bf-banner-fallback::before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          background: radial-gradient(circle at 78% 50%, rgba(48, 213, 255, .32), transparent 34%);
-          pointer-events: none;
-        }
-
-        body.site-skin-1win .bf-banner-brand,
-        body.site-skin-1win .bf-banner-main,
-        body.site-skin-1win .bf-banner-cta {
-          position: relative !important;
-          z-index: 2 !important;
-          white-space: nowrap !important;
-        }
-
-        body.site-skin-1win .bf-banner-brand {
-          font-size: 28px !important;
-          line-height: 1 !important;
-          font-weight: 950 !important;
-          letter-spacing: -.04em !important;
-          color: #4cd9ff !important;
-        }
-
-        body.site-skin-1win .bf-banner-main {
-          flex: 1 1 auto !important;
-          text-align: center !important;
-          font-size: 25px !important;
-          line-height: 1 !important;
-          font-weight: 950 !important;
-          letter-spacing: .02em !important;
-          text-transform: uppercase !important;
-        }
-
-        body.site-skin-1win .bf-banner-main small {
-          display: block !important;
-          margin-top: 7px !important;
-          color: #5ee0a4 !important;
-          font-size: 13px !important;
-          letter-spacing: .18em !important;
-        }
-
-        body.site-skin-1win .bf-banner-cta {
-          display: inline-flex !important;
-          align-items: center !important;
-          justify-content: center !important;
-          min-width: 118px !important;
-          height: 42px !important;
-          padding: 0 18px !important;
-          border-radius: 999px !important;
-          color: #06120d !important;
-          background: linear-gradient(135deg, #5ee0a4, #72ff4d) !important;
-          font-size: 14px !important;
-          font-weight: 950 !important;
-          box-shadow: 0 0 22px rgba(94,224,164,.32) !important;
-        }
-
         body.site-skin-1win .content-banner-desktop,
-        body.site-skin-1win .content-banner .banner-728,
-        body.site-skin-1win .content-banner-mobile,
-        body.site-skin-1win .content-banner .adhit-300x250,
-        body.site-skin-1win .content-banner .ins-zone,
-        body.site-skin-1win .content-banner iframe,
-        body.site-skin-1win .content-banner ins {
-          opacity: 0 !important;
-          visibility: hidden !important;
-          pointer-events: none !important;
-          position: absolute !important;
-          width: 1px !important;
-          height: 1px !important;
+        body.site-skin-1win .content-banner .banner-728 {
+          display: block !important;
+          width: 728px !important;
+          min-width: 728px !important;
+          max-width: 728px !important;
+          height: 90px !important;
+          min-height: 90px !important;
+          max-height: 90px !important;
+          margin: 0 auto !important;
+          padding: 0 !important;
+          border: 0 !important;
           overflow: hidden !important;
+          background: transparent !important;
+          transform: none !important;
+        }
+
+        body.site-skin-1win .content-banner-desktop .ins-zone,
+        body.site-skin-1win .content-banner-desktop ins,
+        body.site-skin-1win .content-banner-desktop iframe,
+        body.site-skin-1win .content-banner-desktop div,
+        body.site-skin-1win .content-banner .banner-728 .ins-zone,
+        body.site-skin-1win .content-banner .banner-728 ins,
+        body.site-skin-1win .content-banner .banner-728 iframe,
+        body.site-skin-1win .content-banner .banner-728 div {
+          display: block !important;
+          width: 728px !important;
+          min-width: 728px !important;
+          max-width: 728px !important;
+          height: 90px !important;
+          min-height: 90px !important;
+          max-height: 90px !important;
+          margin: 0 auto !important;
+          padding: 0 !important;
+          border: 0 !important;
+          transform: none !important;
+        }
+
+        body.site-skin-1win .content-banner-mobile,
+        body.site-skin-1win .content-banner .adhit-300x250 {
+          display: none !important;
+          width: 300px !important;
+          min-width: 300px !important;
+          max-width: 300px !important;
+          height: 250px !important;
+          min-height: 250px !important;
+          max-height: 250px !important;
+          margin: 0 auto !important;
+          padding: 0 !important;
+          border: 0 !important;
+          overflow: hidden !important;
+          background: transparent !important;
+        }
+
+        body.site-skin-1win .content-banner-mobile .ins-zone,
+        body.site-skin-1win .content-banner-mobile ins,
+        body.site-skin-1win .content-banner-mobile iframe,
+        body.site-skin-1win .content-banner-mobile div,
+        body.site-skin-1win .content-banner .adhit-300x250 .ins-zone,
+        body.site-skin-1win .content-banner .adhit-300x250 ins,
+        body.site-skin-1win .content-banner .adhit-300x250 iframe,
+        body.site-skin-1win .content-banner .adhit-300x250 div {
+          display: block !important;
+          width: 300px !important;
+          min-width: 300px !important;
+          max-width: 300px !important;
+          height: 250px !important;
+          min-height: 250px !important;
+          max-height: 250px !important;
+          margin: 0 auto !important;
+          padding: 0 !important;
+          border: 0 !important;
+          transform: none !important;
         }
 
         @media (max-width: 768px) {
@@ -150,37 +131,16 @@
             min-height: 250px !important;
             max-height: 250px !important;
             margin: 18px auto !important;
-            border-radius: 18px !important;
           }
 
-          body.site-skin-1win .bf-banner-fallback {
-            width: 300px !important;
-            height: 250px !important;
-            flex-direction: column !important;
-            justify-content: center !important;
-            padding: 22px !important;
-            text-align: center !important;
-            background:
-              linear-gradient(180deg, rgba(2,11,19,.78), rgba(2,11,19,.94)),
-              url('/assets/ads/1win-wc2026-site-skin.webp') center top / 720px auto no-repeat !important;
+          body.site-skin-1win .content-banner-desktop,
+          body.site-skin-1win .content-banner .banner-728 {
+            display: none !important;
           }
 
-          body.site-skin-1win .bf-banner-brand {
-            font-size: 32px !important;
-          }
-
-          body.site-skin-1win .bf-banner-main {
-            font-size: 28px !important;
-            line-height: 1.05 !important;
-          }
-
-          body.site-skin-1win .bf-banner-main small {
-            font-size: 12px !important;
-          }
-
-          body.site-skin-1win .bf-banner-cta {
-            min-width: 150px !important;
-            height: 44px !important;
+          body.site-skin-1win .content-banner-mobile,
+          body.site-skin-1win .content-banner .adhit-300x250 {
+            display: block !important;
           }
         }
       `;
@@ -194,23 +154,25 @@
       const banner = document.createElement("div");
       banner.id = "results-top-728-ad";
       banner.className = "content-banner content-banner-top";
+      banner.innerHTML = getAdMarkup();
       hero.insertAdjacentElement("afterend", banner);
     }
 
     document.querySelectorAll(".content-banner").forEach((banner) => {
-      if (!banner.querySelector(".bf-banner-fallback")) {
-        banner.insertAdjacentHTML("afterbegin", getFallbackBannerMarkup());
+      if (!banner.querySelector(".banner-728") && !banner.querySelector(".adhit-300x250")) {
+        banner.innerHTML = getAdMarkup();
       }
     });
   }
 
-  function getFallbackBannerMarkup() {
+  function getAdMarkup() {
     return `
-      <a class="bf-banner-fallback" href="${bannerClickUrl}" target="_blank" rel="nofollow sponsored noopener" aria-label="World Cup 2026 betting banner">
-        <span class="bf-banner-brand">1win</span>
-        <span class="bf-banner-main">World Cup 2026<small>Bet smart. Win big.</small></span>
-        <span class="bf-banner-cta">Play now</span>
-      </a>
+      <div class="banner-728 content-banner-desktop">
+        <ins class="ins-zone" data-zone="163631"></ins>
+      </div>
+      <div class="adhit-300x250 content-banner-mobile">
+        <ins class="ins-zone" data-zone="163623"></ins>
+      </div>
     `;
   }
 
