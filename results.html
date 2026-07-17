@@ -9,7 +9,7 @@
 
   <style>
     :root {
-      --page-max: 1040px;
+      --results-shell: 1040px;
       --banner-width: 728px;
       --bg: #020b13;
       --panel: linear-gradient(180deg, rgba(18, 38, 55, .96), rgba(7, 19, 31, .98));
@@ -83,14 +83,21 @@
     }
 
     .header-inner,
-    .results-page,
+    .results-page {
+      width: min(var(--results-shell), calc(100vw - 48px)) !important;
+      max-width: var(--results-shell) !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
     .results-hero,
     .results-section,
     .content-banner {
-      width: min(var(--page-max), calc(100vw - 48px));
-      max-width: var(--page-max);
-      margin-left: auto;
-      margin-right: auto;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      justify-self: stretch !important;
     }
 
     .header-inner {
@@ -153,10 +160,10 @@
     }
 
     .results-page {
-      margin-top: 28px;
+      margin-top: 28px !important;
       padding-bottom: 52px;
       display: grid;
-      justify-items: center;
+      grid-template-columns: 1fr;
       gap: 28px;
     }
 
@@ -251,9 +258,7 @@
 
     .content-banner-mobile { display: none; }
 
-    .results-section {
-      padding: 26px;
-    }
+    .results-section { padding: 26px; }
 
     .results-head {
       display: flex;
@@ -423,11 +428,8 @@
       .skin-click-top { height: 96px; }
 
       .header-inner,
-      .results-page,
-      .results-hero,
-      .results-section,
-      .content-banner {
-        width: calc(100vw - 16px);
+      .results-page {
+        width: calc(100vw - 16px) !important;
       }
 
       .header-inner {
