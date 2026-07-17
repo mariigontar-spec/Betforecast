@@ -372,9 +372,7 @@
 
     .content-banner-desktop,
     .content-banner .banner-728 {
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
+      display: block !important;
       width: 728px !important;
       min-width: 728px !important;
       max-width: 728px !important;
@@ -385,27 +383,33 @@
       padding: 0 !important;
       overflow: hidden !important;
       background: transparent !important;
+      transform: none !important;
     }
 
     .content-banner-desktop > .ins-zone,
-    .content-banner .banner-728 > .ins-zone {
+    .content-banner-desktop > ins,
+    .content-banner .banner-728 > .ins-zone,
+    .content-banner .banner-728 > ins,
+    .content-banner .banner-728 iframe,
+    .content-banner-desktop iframe {
       display: block !important;
       width: 728px !important;
+      min-width: 728px !important;
+      max-width: 728px !important;
       height: 90px !important;
+      min-height: 90px !important;
+      max-height: 90px !important;
       margin: 0 auto !important;
       padding: 0 !important;
+      border: 0 !important;
+      transform: none !important;
     }
 
     .content-banner-mobile,
-    .content-banner .adhit-300x250 {
-      display: none !important;
-    }
+    .content-banner .adhit-300x250 { display: none !important; }
 
     @media (max-width: 1100px) {
-      body.site-skin-1win .header-inner {
-        grid-template-columns: 1fr !important;
-        justify-items: center !important;
-      }
+      body.site-skin-1win .header-inner { grid-template-columns: 1fr !important; justify-items: center !important; }
       body.site-skin-1win .bf-logo { justify-self: center !important; }
       body.site-skin-1win .topbar-menu { width: 100% !important; flex-wrap: wrap !important; }
     }
@@ -448,11 +452,7 @@
         overflow: hidden !important;
       }
 
-      body.site-skin-1win .bf-logo {
-        width: 100% !important;
-        justify-content: center !important;
-        font-size: 23px !important;
-      }
+      body.site-skin-1win .bf-logo { width: 100% !important; justify-content: center !important; font-size: 23px !important; }
 
       body.site-skin-1win .topbar-menu {
         width: 100% !important;
@@ -469,40 +469,22 @@
         border-radius: 13px !important;
       }
 
-      .results-page-wrap {
-        width: calc(100% - 16px) !important;
-        max-width: calc(100% - 16px) !important;
-        margin: 14px auto 0 !important;
-        gap: 18px !important;
-      }
-
+      .results-page-wrap { width: calc(100% - 16px) !important; max-width: calc(100% - 16px) !important; margin: 14px auto 0 !important; gap: 18px !important; }
       .results-hero,
-      .results-page-section {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-
+      .results-page-section { width: 100% !important; max-width: 100% !important; }
       .results-hero .ai-focus-content { min-height: 0 !important; padding: 20px 14px !important; }
       .results-hero .ai-focus-text { width: 100% !important; }
       .results-page-section { padding: 16px 12px !important; }
       .results-head { flex-direction: column; }
       .results-head span { text-align: left; }
 
-      .content-banner {
-        min-height: 250px !important;
-        margin: 20px auto !important;
-      }
-
+      .content-banner { min-height: 250px !important; margin: 20px auto !important; }
       .content-banner-desktop,
-      .content-banner .banner-728 {
-        display: none !important;
-      }
+      .content-banner .banner-728 { display: none !important; }
 
       .content-banner-mobile,
       .content-banner .adhit-300x250 {
-        display: flex !important;
-        justify-content: center !important;
-        align-items: center !important;
+        display: block !important;
         width: 300px !important;
         min-width: 300px !important;
         max-width: 300px !important;
@@ -513,15 +495,26 @@
         padding: 0 !important;
         overflow: hidden !important;
         background: transparent !important;
+        transform: none !important;
       }
 
       .content-banner-mobile > .ins-zone,
-      .content-banner .adhit-300x250 > .ins-zone {
+      .content-banner-mobile > ins,
+      .content-banner .adhit-300x250 > .ins-zone,
+      .content-banner .adhit-300x250 > ins,
+      .content-banner .adhit-300x250 iframe,
+      .content-banner-mobile iframe {
         display: block !important;
         width: 300px !important;
+        min-width: 300px !important;
+        max-width: 300px !important;
         height: 250px !important;
+        min-height: 250px !important;
+        max-height: 250px !important;
         margin: 0 auto !important;
         padding: 0 !important;
+        border: 0 !important;
+        transform: none !important;
       }
     }
   </style>
@@ -585,7 +578,7 @@
   </main>
 
   <script src="/api-config.js"></script>
-  <script src="/js/results.js?v=18"></script>
+  <script src="/js/results.js?v=19"></script>
   <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
 </body>
 </html>
