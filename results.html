@@ -9,17 +9,18 @@
 
   <style>
     :root {
+      --bf-shell-width: 1240px;
+      --bf-page-gap: 48px;
+      --bf-content: 1040px;
       --bf-bg: #020b13;
       --bf-green: #5ee0a4;
       --bf-text: #f8fafc;
       --bf-muted: rgba(248, 250, 252, .68);
-      --bf-panel: linear-gradient(180deg, rgba(18, 38, 55, .97), rgba(8, 20, 32, .98));
-      --bf-border: 1px solid rgba(94, 224, 164, .16);
-      --bf-shell: 1240px;
-      --bf-content: 1040px;
+      --bf-panel-background: linear-gradient(180deg, rgba(18, 38, 55, .96), rgba(8, 20, 32, .97));
+      --bf-panel-border: 1px solid rgba(94, 224, 164, .16);
     }
 
-    * { box-sizing: border-box; min-width: 0; }
+    * { box-sizing: border-box; }
 
     html,
     body {
@@ -27,53 +28,68 @@
       min-height: 100%;
       margin: 0;
       padding: 0;
-      background: var(--bf-bg) !important;
-      color: var(--bf-text);
       overflow-x: hidden;
-      font-family: Arial, Helvetica, sans-serif;
     }
 
     body.site-skin-1win {
       min-height: 100vh;
       padding-top: 190px !important;
+      color: var(--bf-text);
       background-color: var(--bf-bg) !important;
       background-image: url("/assets/ads/1win-wc2026-site-skin.webp") !important;
       background-repeat: no-repeat !important;
       background-position: center top !important;
       background-size: 1920px auto !important;
       background-attachment: scroll !important;
+      overflow-x: hidden !important;
     }
 
     a { color: inherit; text-decoration: none; }
 
-    .header {
+    body.site-skin-1win .header {
       position: relative !important;
       z-index: 30 !important;
-      width: 100%;
-      margin: 0;
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
       background: transparent !important;
       border: 0 !important;
       box-shadow: none !important;
+      backdrop-filter: none !important;
     }
 
-    .header-inner {
-      width: min(var(--bf-content), calc(100vw - 48px));
+    body.site-skin-1win .header-inner {
+      position: relative !important;
+      z-index: 30 !important;
+      width: min(var(--bf-shell-width), calc(100vw - var(--bf-page-gap))) !important;
+      max-width: var(--bf-shell-width) !important;
       min-height: 82px;
-      margin: 0 auto;
-      padding: 14px 24px;
-      display: grid;
-      grid-template-columns: 170px minmax(0, 1fr);
-      align-items: center;
-      gap: 18px;
-      background: var(--bf-panel);
-      border: var(--bf-border);
-      border-radius: 26px;
-      box-shadow: 0 18px 50px rgba(0, 0, 0, .32);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
+      margin: 0 auto !important;
+      padding: 14px 24px !important;
+      display: grid !important;
+      grid-template-columns: 220px minmax(0, 1fr) 220px !important;
+      align-items: center !important;
+      gap: 18px !important;
+      background: var(--bf-panel-background) !important;
+      border: var(--bf-panel-border) !important;
+      border-radius: 26px !important;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, .32) !important;
+      backdrop-filter: blur(14px) !important;
+      -webkit-backdrop-filter: blur(14px) !important;
     }
 
-    .bf-logo {
+    body.site-skin-1win .header-inner::after {
+      content: "";
+      display: block;
+      width: 220px;
+      height: 1px;
+    }
+
+    body.site-skin-1win .bf-logo {
+      justify-self: start !important;
+      width: auto !important;
+      min-width: 0 !important;
+      flex: 0 0 auto !important;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -83,24 +99,28 @@
       letter-spacing: -.04em;
     }
 
-    .bf-logo img {
+    body.site-skin-1win .bf-logo img {
       width: 34px;
       height: 34px;
       object-fit: contain;
     }
 
-    .bf-logo span span { color: var(--bf-green); }
+    body.site-skin-1win .bf-logo span span { color: var(--bf-green); }
 
-    .topbar-menu {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: nowrap;
-      gap: 10px;
+    body.site-skin-1win .topbar-menu {
+      justify-self: center !important;
+      width: max-content !important;
+      max-width: 100% !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-wrap: nowrap !important;
+      gap: 10px !important;
     }
 
-    .topbar-menu a {
-      flex: 0 0 auto;
+    body.site-skin-1win .topbar-menu a {
+      flex: 0 0 auto !important;
+      white-space: nowrap !important;
       padding: 11px 15px;
       border-radius: 14px;
       color: #fff;
@@ -108,23 +128,81 @@
       border: 1px solid rgba(255, 255, 255, .12);
       font-size: 14px;
       font-weight: 900;
-      white-space: nowrap;
     }
 
-    .topbar-menu a.active {
+    body.site-skin-1win .topbar-menu a.active {
       color: var(--bf-green);
       background: rgba(94, 224, 164, .12);
       border-color: rgba(94, 224, 164, .35);
     }
 
-    .results-page-wrap {
-      position: relative;
-      z-index: 20;
-      width: min(var(--bf-shell), calc(100vw - 48px));
-      margin: 28px auto 0;
-      padding-bottom: 56px;
+    body.site-skin-1win .topbar-actions,
+    body.site-skin-1win .theme-switch {
+      display: none !important;
+    }
+
+    body.site-skin-1win .results-page-wrap {
+      position: relative !important;
+      z-index: 20 !important;
+      width: min(var(--bf-shell-width), calc(100vw - var(--bf-page-gap))) !important;
+      max-width: var(--bf-shell-width) !important;
+      margin: 28px auto 0 !important;
+      padding: 0 0 40px !important;
       display: grid;
       gap: 28px;
+    }
+
+    body.site-skin-1win .side-banner {
+      position: fixed !important;
+      top: 400px !important;
+      z-index: 30 !important;
+    }
+
+    body.site-skin-1win .left-banner {
+      left: 24px !important;
+      right: auto !important;
+    }
+
+    body.site-skin-1win .right-banner {
+      right: 24px !important;
+      left: auto !important;
+    }
+
+    body.site-skin-1win .skin-click {
+      position: fixed !important;
+      z-index: 2 !important;
+      display: block !important;
+      background: transparent !important;
+      text-decoration: none !important;
+    }
+
+    body.site-skin-1win .skin-click-top {
+      top: 0 !important;
+      left: 50% !important;
+      width: min(100vw, 1920px) !important;
+      height: 165px !important;
+      transform: translateX(-50%) !important;
+    }
+
+    body.site-skin-1win .skin-click-left {
+      top: 165px !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      width: max(0px, calc((100vw - var(--bf-shell-width)) / 2)) !important;
+      max-width: 320px !important;
+    }
+
+    body.site-skin-1win .skin-click-right {
+      top: 165px !important;
+      right: 0 !important;
+      bottom: 0 !important;
+      width: max(0px, calc((100vw - var(--bf-shell-width)) / 2)) !important;
+      max-width: 320px !important;
+    }
+
+    body.site-skin-1win .content-banner {
+      position: relative !important;
+      z-index: 20 !important;
     }
 
     .results-hero,
@@ -132,8 +210,8 @@
       width: min(var(--bf-content), 100%);
       margin: 0 auto;
       border-radius: 28px;
-      background: var(--bf-panel);
-      border: var(--bf-border);
+      background: var(--bf-panel-background);
+      border: var(--bf-panel-border);
       box-shadow: 0 18px 50px rgba(0, 0, 0, .28);
       overflow: hidden;
     }
@@ -334,63 +412,155 @@
       line-height: 1.5;
     }
 
-    body.site-skin-1win .content-banner {
-      position: relative !important;
-      z-index: 20 !important;
-    }
-
     @media (max-width: 1100px) {
-      .header-inner {
-        grid-template-columns: 1fr;
-        justify-items: center;
+      body.site-skin-1win .header-inner {
+        grid-template-columns: 1fr !important;
+        justify-items: center !important;
       }
-      .topbar-menu { flex-wrap: wrap; }
+
+      body.site-skin-1win .header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        justify-self: center !important;
+      }
+
+      body.site-skin-1win .topbar-menu {
+        width: 100% !important;
+        flex-wrap: wrap !important;
+      }
+
       .wc-results-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 768px) {
+      html,
+      body {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+        zoom: 1 !important;
+      }
+
       body.site-skin-1win {
-        padding-top: 98px !important;
-        background-image: linear-gradient(180deg, rgba(2,11,19,0) 0, rgba(2,11,19,.14) 96px, rgba(2,11,19,.88) 240px, #020b13 330px), url('/assets/ads/1win-wc2026-site-skin.webp') !important;
-        background-size: 100% 340px, auto 290px !important;
+        min-height: 100vh !important;
+        padding-top: 112px !important;
+        background-color: #020b13 !important;
+        background-image: linear-gradient(180deg, rgba(2,11,19,.02) 0, rgba(2,11,19,.18) 110px, rgba(2,11,19,.90) 270px, #020b13 390px), url('/assets/ads/1win-wc2026-site-skin.webp') !important;
+        background-repeat: no-repeat !important;
+        background-position: top center, top center !important;
+        background-size: 100% 390px, auto 340px !important;
+        background-attachment: scroll !important;
+        overflow-x: hidden !important;
       }
 
-      .header-inner,
-      .results-page-wrap { width: calc(100% - 16px); }
-
-      .header-inner {
-        min-height: 0;
-        padding: 12px 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        border-radius: 18px;
+      body.site-skin-1win .side-banner,
+      body.site-skin-1win .left-banner,
+      body.site-skin-1win .right-banner,
+      body.site-skin-1win .banner-728,
+      body.site-skin-1win .desktop-ad,
+      body.site-skin-1win .content-banner {
+        display: none !important;
       }
 
-      .topbar-menu {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 8px;
+      body.site-skin-1win .skin-click-left,
+      body.site-skin-1win .skin-click-right {
+        display: none !important;
       }
 
-      .topbar-menu a {
-        width: 100%;
-        padding: 10px 3px;
-        border-radius: 13px;
-        font-size: 13px;
-        text-align: center;
+      body.site-skin-1win .skin-click-top {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        display: block !important;
+        width: 100% !important;
+        height: 112px !important;
+        transform: none !important;
+        z-index: 2 !important;
       }
 
-      .results-page-wrap { margin-top: 14px; gap: 18px; }
+      body.site-skin-1win .header {
+        position: relative !important;
+        z-index: 30 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+      }
+
+      body.site-skin-1win .header-inner {
+        width: calc(100vw - 20px) !important;
+        max-width: calc(100vw - 20px) !important;
+        min-height: 0 !important;
+        margin: 8px auto 0 !important;
+        padding: 12px 10px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+        border-radius: 18px !important;
+      }
+
+      body.site-skin-1win .header-inner::after {
+        display: none !important;
+      }
+
+      body.site-skin-1win .bf-logo {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        font-size: 23px !important;
+        line-height: 1 !important;
+      }
+
+      body.site-skin-1win .bf-logo img {
+        width: 28px !important;
+        height: 28px !important;
+      }
+
+      body.site-skin-1win .topbar-menu {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 8px !important;
+        overflow: visible !important;
+      }
+
+      body.site-skin-1win .topbar-menu a {
+        width: 100% !important;
+        min-width: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 10px 5px !important;
+        font-size: 13px !important;
+        line-height: 1.1 !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+        border-radius: 13px !important;
+      }
+
+      body.site-skin-1win .results-page-wrap {
+        width: calc(100vw - 20px) !important;
+        max-width: calc(100vw - 20px) !important;
+        margin: 14px auto 0 !important;
+        padding: 0 0 28px !important;
+        overflow: visible !important;
+        gap: 18px;
+      }
 
       .results-hero,
       .results-page-section { width: 100%; border-radius: 22px; }
-
       .results-hero { min-height: 0; padding: 22px 16px; }
       .results-hero h1 { font-size: 34px; }
       .results-hero p { font-size: 15px; }
-
       .results-page-section { padding: 18px 12px; }
       .results-head { flex-direction: column; }
       .results-head span { text-align: left; }
@@ -414,6 +584,18 @@
 </head>
 
 <body class="theme-dark site-skin-1win">
+  <a class="skin-click skin-click-top" href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ" target="_blank" rel="nofollow sponsored noopener" aria-label="1win World Cup 2026 top banner"></a>
+  <a class="skin-click skin-click-left" href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ" target="_blank" rel="nofollow sponsored noopener" aria-label="1win World Cup 2026 left background"></a>
+  <a class="skin-click skin-click-right" href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ" target="_blank" rel="nofollow sponsored noopener" aria-label="1win World Cup 2026 right background"></a>
+
+  <div class="side-banner left-banner">
+    <ins class="ins-zone" data-zone="163622"></ins>
+  </div>
+
+  <div class="side-banner right-banner">
+    <ins class="ins-zone" data-zone="163622"></ins>
+  </div>
+
   <header class="header">
     <div class="header-inner">
       <a class="bf-logo" href="/" aria-label="Betforecast.ai home">
@@ -451,19 +633,12 @@
 
     <!-- Desktop content banner -->
     <div class="content-banner">
-      <ins
-        class="ins-zone"
-        data-zone="163631">
-      </ins>
+      <ins class="ins-zone" data-zone="163631"></ins>
     </div>
   </main>
 
-  <script src="/api-config.js"></script>
-  <script src="/js/results.js?v=21"></script>
-  <script
-    data-cfasync="false"
-    async
-    src="https://media.getads.online/js/code.min.js">
-  </script>
+  <script src="api-config.js"></script>
+  <script src="js/results.js?v=21"></script>
+  <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
 </body>
 </html>
