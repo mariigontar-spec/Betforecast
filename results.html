@@ -201,8 +201,8 @@
       line-height: 1.45;
     }
 
-    /* Adhit real ad slots. Keep this scoped, otherwise result cards get bitten. */
-    .results-ad-wrap {
+    /* Same direct Adhit structure as the working standings banner */
+    .results-ad-line {
       position: relative;
       z-index: 25;
       width: min(var(--bf-content), 100%);
@@ -210,37 +210,16 @@
       margin: 0 auto;
       padding: 0;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       background: transparent;
       border: 0;
       overflow: visible;
-      text-align: center;
     }
 
-    .results-ad-desktop {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 728px !important;
-      min-width: 728px !important;
-      max-width: 728px !important;
-      height: 90px !important;
-      min-height: 90px !important;
-      max-height: 90px !important;
-      margin: 0 auto !important;
-      padding: 0 !important;
-      overflow: hidden !important;
-      background: transparent !important;
-    }
-
-    .results-ad-desktop .banner-728,
-    .results-ad-desktop .ins-zone,
-    .results-ad-desktop ins,
-    .results-ad-desktop iframe,
-    .results-ad-desktop .ins-zone > div,
-    .results-ad-desktop .ins-zone > iframe,
-    .results-ad-desktop .ins-zone > ins {
+    .results-ad-line .content-banner {
+      position: relative !important;
+      z-index: 25 !important;
       display: block !important;
       width: 728px !important;
       min-width: 728px !important;
@@ -250,11 +229,22 @@
       max-height: 90px !important;
       margin: 0 auto !important;
       padding: 0 !important;
+      overflow: visible !important;
+      background: transparent !important;
       border: 0 !important;
-      overflow: hidden !important;
+      box-shadow: none !important;
+      text-align: center !important;
     }
 
-    .results-ad-mobile { display: none; }
+    .results-ad-line .content-banner > .ins-zone {
+      display: block !important;
+      width: 728px !important;
+      height: 90px !important;
+      margin: 0 auto !important;
+      padding: 0 !important;
+    }
+
+    .results-mobile-ad { display: none; }
 
     .results-page-section { padding: 28px; }
 
@@ -471,30 +461,14 @@
       .results-hero h1 { font-size: 34px; }
       .results-hero p { font-size: 15px; }
 
-      .results-ad-wrap { width: 100%; min-height: 250px; }
-      .results-ad-desktop { display: none !important; }
-
-      .results-ad-mobile {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 300px !important;
-        min-width: 300px !important;
-        max-width: 300px !important;
-        height: 250px !important;
-        min-height: 250px !important;
-        max-height: 250px !important;
-        margin: 0 auto !important;
-        overflow: hidden !important;
+      .results-ad-line {
+        width: 100%;
+        min-height: 250px;
       }
 
-      .results-ad-mobile .adhit-300x250,
-      .results-ad-mobile .ins-zone,
-      .results-ad-mobile ins,
-      .results-ad-mobile iframe,
-      .results-ad-mobile .ins-zone > div,
-      .results-ad-mobile .ins-zone > iframe,
-      .results-ad-mobile .ins-zone > ins {
+      .results-ad-line .content-banner { display: none !important; }
+
+      .results-mobile-ad {
         display: block !important;
         width: 300px !important;
         min-width: 300px !important;
@@ -504,8 +478,15 @@
         max-height: 250px !important;
         margin: 0 auto !important;
         padding: 0 !important;
-        border: 0 !important;
         overflow: hidden !important;
+      }
+
+      .results-mobile-ad > .ins-zone {
+        display: block !important;
+        width: 300px !important;
+        height: 250px !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
       }
 
       .results-page-section { padding: 18px 12px; }
@@ -562,16 +543,12 @@
       </div>
     </section>
 
-    <section class="results-ad-wrap" aria-label="Advertisement">
-      <div class="results-ad-desktop">
-        <div class="banner-728">
-          <ins class="ins-zone" data-zone="163631"></ins>
-        </div>
+    <section class="results-ad-line" aria-label="Advertisement">
+      <div class="content-banner">
+        <ins class="ins-zone" data-zone="163631"></ins>
       </div>
-      <div class="results-ad-mobile">
-        <div class="adhit-300x250">
-          <ins class="ins-zone" data-zone="163623"></ins>
-        </div>
+      <div class="results-mobile-ad">
+        <ins class="ins-zone" data-zone="163623"></ins>
       </div>
     </section>
 
@@ -583,16 +560,12 @@
       <div id="results-grid" class="wc-results-grid"></div>
     </section>
 
-    <section class="results-ad-wrap" aria-label="Advertisement">
-      <div class="results-ad-desktop">
-        <div class="banner-728">
-          <ins class="ins-zone" data-zone="163631"></ins>
-        </div>
+    <section class="results-ad-line" aria-label="Advertisement">
+      <div class="content-banner">
+        <ins class="ins-zone" data-zone="163631"></ins>
       </div>
-      <div class="results-ad-mobile">
-        <div class="adhit-300x250">
-          <ins class="ins-zone" data-zone="163623"></ins>
-        </div>
+      <div class="results-mobile-ad">
+        <ins class="ins-zone" data-zone="163623"></ins>
       </div>
     </section>
   </main>
