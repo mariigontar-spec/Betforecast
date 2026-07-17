@@ -28,12 +28,17 @@
           display: flex !important;
           align-items: center !important;
           justify-content: center !important;
+          justify-self: center !important;
+          align-self: center !important;
+          grid-column: 1 / -1 !important;
           width: 728px !important;
           max-width: calc(100vw - 32px) !important;
           height: 90px !important;
           min-height: 90px !important;
           max-height: 90px !important;
           margin: 24px auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
           padding: 0 !important;
           border: 0 !important;
           border-radius: 0 !important;
@@ -44,6 +49,7 @@
         }
 
         body.site-skin-1win .content-banner-top {
+          justify-self: center !important;
           margin-top: 24px !important;
           margin-bottom: 24px !important;
         }
@@ -131,6 +137,7 @@
             min-height: 250px !important;
             max-height: 250px !important;
             margin: 18px auto !important;
+            justify-self: center !important;
           }
 
           body.site-skin-1win .content-banner-desktop,
