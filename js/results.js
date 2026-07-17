@@ -42,9 +42,7 @@
 
         body.site-skin-1win .content-banner-desktop,
         body.site-skin-1win .content-banner .banner-728 {
-          display: flex !important;
-          justify-content: center !important;
-          align-items: center !important;
+          display: block !important;
           width: 728px !important;
           min-width: 728px !important;
           max-width: 728px !important;
@@ -55,15 +53,26 @@
           padding: 0 !important;
           overflow: hidden !important;
           background: transparent !important;
+          transform: none !important;
         }
 
         body.site-skin-1win .content-banner-desktop > .ins-zone,
-        body.site-skin-1win .content-banner .banner-728 > .ins-zone {
+        body.site-skin-1win .content-banner-desktop > ins,
+        body.site-skin-1win .content-banner .banner-728 > .ins-zone,
+        body.site-skin-1win .content-banner .banner-728 > ins,
+        body.site-skin-1win .content-banner .banner-728 iframe,
+        body.site-skin-1win .content-banner-desktop iframe {
           display: block !important;
           width: 728px !important;
+          min-width: 728px !important;
+          max-width: 728px !important;
           height: 90px !important;
+          min-height: 90px !important;
+          max-height: 90px !important;
           margin: 0 auto !important;
           padding: 0 !important;
+          border: 0 !important;
+          transform: none !important;
         }
 
         body.site-skin-1win .content-banner-mobile,
@@ -84,9 +93,7 @@
 
           body.site-skin-1win .content-banner-mobile,
           body.site-skin-1win .content-banner .adhit-300x250 {
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
+            display: block !important;
             width: 300px !important;
             min-width: 300px !important;
             max-width: 300px !important;
@@ -97,15 +104,26 @@
             padding: 0 !important;
             overflow: hidden !important;
             background: transparent !important;
+            transform: none !important;
           }
 
           body.site-skin-1win .content-banner-mobile > .ins-zone,
-          body.site-skin-1win .content-banner .adhit-300x250 > .ins-zone {
+          body.site-skin-1win .content-banner-mobile > ins,
+          body.site-skin-1win .content-banner .adhit-300x250 > .ins-zone,
+          body.site-skin-1win .content-banner .adhit-300x250 > ins,
+          body.site-skin-1win .content-banner .adhit-300x250 iframe,
+          body.site-skin-1win .content-banner-mobile iframe {
             display: block !important;
             width: 300px !important;
+            min-width: 300px !important;
+            max-width: 300px !important;
             height: 250px !important;
+            min-height: 250px !important;
+            max-height: 250px !important;
             margin: 0 auto !important;
             padding: 0 !important;
+            border: 0 !important;
+            transform: none !important;
           }
         }
       `;
