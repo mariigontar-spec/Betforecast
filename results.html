@@ -175,6 +175,39 @@
       line-height: 1.45;
     }
 
+    .content-banner {
+      width: 100%;
+      min-height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0;
+      background: transparent;
+      border: 0;
+      overflow: visible;
+    }
+
+    .content-banner-desktop,
+    .banner-728 {
+      width: 728px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .banner-728 > .ins-zone {
+      display: block;
+      width: 728px;
+      height: 90px;
+      margin: 0 auto;
+      padding: 0;
+    }
+
     .results-page-section { padding: 28px; }
 
     .results-head {
@@ -386,6 +419,12 @@
       .results-hero h1 { font-size: 34px; }
       .results-hero p { font-size: 15px; }
 
+      .content-banner,
+      .banner-728,
+      .content-banner-desktop {
+        display: none !important;
+      }
+
       .results-page-section { padding: 18px 12px; }
       .results-head { flex-direction: column; }
       .results-head span { text-align: left; }
@@ -428,7 +467,13 @@
   </header>
 
   <main class="results-page-wrap">
-    <ins class="ins-zone" data-zone="163631" style="display:block;width:728px;height:90px;margin:0 auto;padding:0;"></ins>
+    <div id="results-top-728-ad" class="content-banner">
+      <div class="content-banner-desktop">
+        <div class="banner-728">
+          <ins class="ins-zone" data-zone="163631"></ins>
+        </div>
+      </div>
+    </div>
 
     <section class="results-hero">
       <div>
