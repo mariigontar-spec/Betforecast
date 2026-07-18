@@ -13,6 +13,7 @@
       --panel: linear-gradient(180deg, rgba(18,38,55,.96), rgba(8,20,32,.98));
       --soft: rgba(2,11,19,.44);
       --green: #5ee0a4;
+      --green-2: #b7ffcf;
       --border: 1px solid rgba(94,224,164,.16);
       --text: #f8fafc;
       --muted: rgba(248,250,252,.68);
@@ -126,17 +127,23 @@
     }
 
     .bf-page {
-      width: min(var(--shell), calc(100vw - var(--gap)));
-      margin: 28px auto 0;
-      padding-bottom: 56px;
-      display: grid;
-      gap: 24px;
+      width: min(var(--shell), calc(100vw - var(--gap))) !important;
+      max-width: var(--shell) !important;
+      margin: 28px auto 0 !important;
+      padding: 0 0 56px !important;
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      gap: 24px !important;
+      justify-items: stretch !important;
+      align-items: start !important;
     }
 
     .results-hero,
-    .results-section {
-      width: 100%;
-      margin: 0;
+    .results-panel {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      min-width: 0;
       background: var(--panel);
       border: var(--border);
       border-radius: 26px;
@@ -146,8 +153,8 @@
     }
 
     .results-hero {
-      min-height: 220px;
-      padding: 48px 64px;
+      min-height: 210px;
+      padding: 42px 56px;
       display: flex;
       align-items: center;
     }
@@ -186,14 +193,17 @@
 
     .results-leaderboard-ad,
     .results-box-ad {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin: 24px auto;
-      overflow: hidden;
+      width: 100% !important;
+      max-width: 100% !important;
+      min-height: 90px;
+      margin: 0 auto !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      overflow: visible !important;
     }
 
-    .results-box-ad { display: none; }
+    .results-box-ad { display: none !important; }
 
     .banner-728 {
       width: 728px !important;
@@ -221,16 +231,16 @@
       height: 90px !important;
     }
 
-    .results-section {
-      padding: 26px;
+    .results-panel {
+      padding: 24px;
     }
 
     .results-head {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: flex-end;
       gap: 16px;
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
 
     .results-head h2 {
@@ -242,9 +252,14 @@
     }
 
     .results-head span {
-      color: var(--muted);
-      font-size: 13px;
-      text-align: right;
+      display: inline-flex;
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: rgba(248,250,252,.72);
+      background: rgba(255,255,255,.045);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
       white-space: nowrap;
     }
 
@@ -252,7 +267,7 @@
       width: 100%;
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
+      gap: 18px;
     }
 
     .wc-result-card,
@@ -428,18 +443,18 @@
         white-space: normal;
       }
       .bf-page {
-        width: calc(100% - 16px);
-        margin-top: 12px;
+        width: calc(100% - 16px) !important;
+        margin-top: 12px !important;
       }
       .results-hero,
-      .results-section {
+      .results-panel {
         padding: 18px 12px;
         border-radius: 22px;
       }
       .results-hero h1 { font-size: 32px; }
       .results-hero p { font-size: 15px; }
-      .results-head { flex-direction: column; }
-      .results-head span { text-align: left; }
+      .results-head { flex-direction: column; align-items: flex-start; }
+      .results-head span { white-space: normal; }
       .wc-result-card {
         grid-template-columns: 1fr;
         gap: 14px;
@@ -485,7 +500,7 @@
     </div>
   </header>
 
-  <main class="bf-page results-page">
+  <main class="bf-page">
     <section class="results-hero">
       <div>
         <span class="hero-ai-badge">World Cup Results</span>
@@ -494,14 +509,10 @@
       </div>
     </section>
 
-    <div class="results-leaderboard-ad">
-      <div class="banner-728"><ins class="ins-zone" data-zone="163631"></ins></div>
-    </div>
-    <div class="results-box-ad">
-      <div class="adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div>
-    </div>
+    <div class="results-leaderboard-ad"><div class="banner-728"><ins class="ins-zone" data-zone="163631"></ins></div></div>
+    <div class="results-box-ad"><div class="adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div></div>
 
-    <section class="results-section">
+    <section class="results-panel">
       <div class="results-head">
         <h2>World Cup Match Results</h2>
         <span id="results-status">Loading World Cup results...</span>
@@ -509,12 +520,8 @@
       <div id="results-grid" class="wc-results-grid"></div>
     </section>
 
-    <div class="results-leaderboard-ad">
-      <div class="banner-728"><ins class="ins-zone" data-zone="163631"></ins></div>
-    </div>
-    <div class="results-box-ad">
-      <div class="adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div>
-    </div>
+    <div class="results-leaderboard-ad"><div class="banner-728"><ins class="ins-zone" data-zone="163631"></ins></div></div>
+    <div class="results-box-ad"><div class="adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div></div>
   </main>
 
   <script src="/api-config.js"></script>
