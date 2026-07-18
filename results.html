@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Betforecast.ai | World Cup 2026 Results</title>
-  <link rel="stylesheet" href="css/style.css?v=22">
+  <link rel="stylesheet" href="css/style.css?v=26">
   <script src="https://cdn.counter.dev/script.js" data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098" data-utcoffset="3"></script>
 
   <style>
     :root {
-      --results-shell: 1120px;
-      --banner-width: 728px;
       --bg: #020b13;
-      --panel: linear-gradient(180deg, rgba(18, 38, 55, .96), rgba(7, 19, 31, .98));
-      --border: 1px solid rgba(94, 224, 164, .16);
+      --panel: linear-gradient(180deg, rgba(18,38,55,.96), rgba(8,20,32,.98));
+      --soft: rgba(2,11,19,.44);
       --green: #5ee0a4;
+      --border: 1px solid rgba(94,224,164,.16);
       --text: #f8fafc;
-      --muted: rgba(248, 250, 252, .72);
+      --muted: rgba(248,250,252,.68);
+      --shell: 1240px;
+      --gap: 48px;
     }
 
-    * { box-sizing: border-box; }
+    * { box-sizing: border-box; min-width: 0; }
 
     html,
     body {
@@ -27,89 +28,56 @@
       min-height: 100%;
       margin: 0;
       padding: 0;
-      background: var(--bg);
-      color: var(--text);
       overflow-x: hidden;
+      background: var(--bg) !important;
+      color: var(--text);
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    body.site-skin-1win {
-      padding-top: 178px;
-      background-color: var(--bg);
-      background-image: url("/assets/ads/1win-wc2026-site-skin.webp");
-      background-repeat: no-repeat;
-      background-position: top center;
-      background-size: 1920px auto;
-      background-attachment: scroll;
-    }
+    body.site-skin-1win { padding-top: 240px !important; }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
 
-    .skin-click {
-      position: fixed;
-      z-index: 2;
-      display: block;
-      background: transparent;
-    }
-
-    .skin-click-top {
-      top: 0;
-      left: 50%;
-      width: min(100vw, 1920px);
-      height: 165px;
-      transform: translateX(-50%);
-    }
-
-    .skin-click-left,
-    .skin-click-right {
-      top: 165px;
-      bottom: 0;
-      width: max(0px, calc((100vw - 1240px) / 2));
-      max-width: 320px;
-    }
-
-    .skin-click-left { left: 0; }
-    .skin-click-right { right: 0; }
-
-    .header,
-    .results-page {
+    .bf-adserver-background {
       position: relative;
-      z-index: 20;
-    }
-
-    .header {
+      z-index: 1;
       width: 100%;
-      margin: 0;
-      padding: 0;
-      background: transparent !important;
-      border: 0 !important;
-      box-shadow: none !important;
+      min-height: 1px;
     }
 
-    .header-inner,
-    .results-page {
-      width: min(var(--results-shell), calc(100vw - 40px)) !important;
-      max-width: var(--results-shell) !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
+    .bf-header,
+    .bf-page,
+    .side-banner,
+    .results-leaderboard-ad,
+    .results-box-ad {
+      position: relative !important;
+      z-index: 20 !important;
     }
 
-    .header-inner {
-      min-height: 74px;
-      padding: 12px 22px;
+    .bf-header { width: 100%; }
+
+    .bf-header-inner {
+      width: min(var(--shell), calc(100vw - var(--gap)));
+      min-height: 82px;
+      margin: 0 auto;
+      padding: 14px 24px;
       display: grid;
-      grid-template-columns: 190px minmax(0, 1fr);
+      grid-template-columns: 220px minmax(0, 1fr) 220px;
       align-items: center;
       gap: 18px;
       background: var(--panel);
       border: var(--border);
-      border-radius: 24px;
-      box-shadow: 0 18px 50px rgba(0, 0, 0, .32);
+      border-radius: 26px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.32);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
+    }
+
+    .bf-header-inner::after {
+      content: "";
+      display: block;
+      width: 220px;
+      height: 1px;
     }
 
     .bf-logo {
@@ -117,138 +85,125 @@
       align-items: center;
       gap: 10px;
       color: #fff;
-      font-size: 23px;
-      line-height: 1;
+      font-size: 22px;
       font-weight: 900;
       letter-spacing: -.04em;
-      white-space: nowrap;
     }
 
     .bf-logo img {
-      width: 32px;
-      height: 32px;
+      width: 38px;
+      height: 38px;
       object-fit: contain;
     }
 
     .bf-logo span span { color: var(--green); }
 
-    .topbar-menu {
+    .bf-nav {
       display: flex;
-      align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 9px;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: nowrap;
     }
 
-    .topbar-menu a {
-      padding: 11px 15px;
-      border-radius: 14px;
+    .bf-nav a {
+      padding: 11px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(94,224,164,.12);
+      background: rgba(255,255,255,.04);
       color: #fff;
-      background: rgba(255, 255, 255, .08);
-      border: 1px solid rgba(255, 255, 255, .12);
       font-size: 14px;
-      line-height: 1;
-      font-weight: 800;
+      font-weight: 900;
       white-space: nowrap;
     }
 
-    .topbar-menu a.active,
-    .topbar-menu a:hover {
+    .bf-nav a:hover,
+    .bf-nav a.active {
       color: var(--green);
-      background: rgba(94, 224, 164, .12);
-      border-color: rgba(94, 224, 164, .34);
+      border-color: rgba(94,224,164,.46);
+      box-shadow: 0 0 18px rgba(94,224,164,.16);
+      background: rgba(94,224,164,.10);
     }
 
-    .results-page {
-      margin-top: 24px !important;
+    .bf-page {
+      width: min(var(--shell), calc(100vw - var(--gap)));
+      margin: 28px auto 0;
       padding-bottom: 56px;
-      display: grid !important;
-      grid-template-columns: 1fr;
+      display: grid;
       gap: 24px;
     }
 
     .results-hero,
-    .results-section,
-    .content-banner {
-      width: 100% !important;
-      max-width: 100% !important;
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-      justify-self: stretch !important;
-    }
-
-    .results-hero,
     .results-section {
+      width: 100%;
+      margin: 0;
       background: var(--panel);
       border: var(--border);
       border-radius: 26px;
-      box-shadow: 0 18px 50px rgba(0, 0, 0, .28);
+      box-shadow: 0 18px 50px rgba(0,0,0,.26);
+      color: var(--text);
       overflow: hidden;
     }
 
     .results-hero {
-      min-height: 188px;
-      padding: 38px 46px;
+      min-height: 220px;
+      padding: 48px 64px;
       display: flex;
       align-items: center;
     }
 
     .hero-ai-badge {
       display: inline-flex;
+      align-items: center;
+      gap: 8px;
       width: fit-content;
-      padding: 9px 15px;
+      padding: 8px 12px;
       border-radius: 999px;
-      color: #d9fff0;
-      background: rgba(94, 224, 164, .14);
-      border: 1px solid rgba(94, 224, 164, .28);
-      font-size: 12px;
-      line-height: 1;
+      border: 1px solid rgba(94,224,164,.18);
+      background: rgba(94,224,164,.08);
+      color: var(--green);
+      font-size: 13px;
       font-weight: 900;
-      letter-spacing: .14em;
+      letter-spacing: .08em;
       text-transform: uppercase;
     }
 
     .results-hero h1 {
-      margin: 17px 0 10px;
+      margin: 18px 0 12px;
       color: #fff;
-      font-size: clamp(36px, 3.7vw, 56px);
+      font-size: clamp(42px, 5vw, 60px);
       line-height: 1;
-      letter-spacing: -.055em;
+      letter-spacing: -.05em;
     }
 
     .results-hero p {
-      max-width: 790px;
       margin: 0;
+      max-width: 780px;
       color: var(--muted);
-      font-size: 17px;
-      line-height: 1.45;
+      font-size: 18px;
+      line-height: 1.55;
     }
 
-    .content-banner {
-      min-height: 90px;
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
-      padding: 0 !important;
-      background: transparent !important;
-      border: 0 !important;
-      overflow: visible !important;
-      text-align: center !important;
+    .results-leaderboard-ad,
+    .results-box-ad {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 24px auto;
+      overflow: hidden;
     }
 
-    .content-banner-desktop,
+    .results-box-ad { display: none; }
+
     .banner-728 {
-      flex: 0 0 var(--banner-width) !important;
-      width: var(--banner-width) !important;
-      max-width: var(--banner-width) !important;
+      width: 728px !important;
+      max-width: 728px !important;
       height: 90px !important;
       display: flex !important;
       justify-content: center !important;
       align-items: center !important;
       margin: 0 auto !important;
-      padding: 0 !important;
       overflow: hidden !important;
-      text-align: center !important;
     }
 
     .banner-728 > .ins-zone,
@@ -262,15 +217,12 @@
     }
 
     .banner-728 > .ins-zone {
-      width: var(--banner-width) !important;
+      width: 728px !important;
       height: 90px !important;
-      padding: 0 !important;
     }
 
-    .content-banner-mobile { display: none; }
-
     .results-section {
-      padding: 24px;
+      padding: 26px;
     }
 
     .results-head {
@@ -284,15 +236,14 @@
     .results-head h2 {
       margin: 0;
       color: #fff;
-      font-size: 31px;
+      font-size: 34px;
       line-height: 1;
-      letter-spacing: -.04em;
+      letter-spacing: -.05em;
     }
 
     .results-head span {
       color: var(--muted);
       font-size: 13px;
-      line-height: 1.3;
       text-align: right;
       white-space: nowrap;
     }
@@ -316,15 +267,15 @@
 
     .wc-result-card {
       display: grid;
-      grid-template-columns: 118px minmax(0, 1fr) 98px;
+      grid-template-columns: 118px minmax(0, 1fr) 96px;
       align-items: center;
-      gap: 16px;
-      min-height: 120px;
-      padding: 17px 18px;
+      gap: 18px;
+      min-height: 124px;
+      padding: 18px 20px;
       border-radius: 22px;
+      border: 1px solid rgba(94,224,164,.18);
+      background: radial-gradient(circle at 8% 0%, rgba(94,224,164,.08), transparent 36%), rgba(2,11,19,.42);
       color: #fff;
-      background: radial-gradient(circle at 8% 0%, rgba(94, 224, 164, .08), transparent 36%), rgba(2, 11, 19, .42);
-      border: 1px solid rgba(94, 224, 164, .18);
       overflow: hidden;
     }
 
@@ -348,7 +299,7 @@
       padding: 7px 11px;
       border-radius: 999px;
       color: #fff;
-      background: rgba(255, 255, 255, .08);
+      background: rgba(255,255,255,.08);
       font-size: 12px;
       font-weight: 950;
       white-space: nowrap;
@@ -368,8 +319,8 @@
       height: 42px;
       padding: 0 10px 0 0;
       border-radius: 12px;
-      background: rgba(255, 255, 255, .06);
-      border: 1px solid rgba(255, 255, 255, .08);
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.08);
       overflow: hidden;
     }
 
@@ -380,7 +331,7 @@
       border-radius: 50%;
       padding: 6px;
       object-fit: contain;
-      background: rgba(255, 255, 255, .08);
+      background: rgba(255,255,255,.08);
     }
 
     .wc-logo-placeholder { display: block; }
@@ -389,8 +340,8 @@
       overflow: hidden;
       color: #fff;
       font-size: 16px;
-      line-height: 1.1;
       font-weight: 950;
+      line-height: 1.1;
       white-space: nowrap;
       text-overflow: ellipsis;
     }
@@ -415,7 +366,7 @@
     }
 
     .wc-result-meta span {
-      max-width: 98px;
+      max-width: 96px;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -426,118 +377,104 @@
       padding: 22px;
       border-radius: 20px;
       color: var(--muted);
-      background: rgba(255, 255, 255, .04);
-      border: 1px dashed rgba(94, 224, 164, .22);
+      background: rgba(255,255,255,.04);
+      border: 1px dashed rgba(94,224,164,.22);
       line-height: 1.5;
     }
 
-    @media (max-width: 900px) {
-      body.site-skin-1win {
-        padding-top: 115px;
-        background-size: auto 330px;
-      }
+    .side-banner {
+      position: fixed !important;
+      top: 400px !important;
+      z-index: 30 !important;
+    }
 
-      .skin-click-left,
-      .skin-click-right { display: none; }
-      .skin-click-top { height: 96px; }
+    .left-banner { left: 24px !important; }
+    .right-banner { right: 24px !important; }
 
-      .header-inner,
-      .results-page {
-        width: calc(100vw - 16px) !important;
-      }
-
-      .header-inner {
-        min-height: 0;
+    @media (max-width: 1100px) {
+      .bf-header-inner {
         grid-template-columns: 1fr;
         justify-items: center;
+      }
+      .bf-header-inner::after { display: none; }
+      .bf-nav { width: 100%; flex-wrap: wrap; }
+      .wc-results-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      body.site-skin-1win { padding-top: 150px !important; }
+      .side-banner,
+      .results-leaderboard-ad,
+      .banner-728 { display: none !important; }
+      .bf-header-inner {
+        width: calc(100% - 16px);
         padding: 12px 10px;
+        display: flex;
+        flex-direction: column;
         border-radius: 18px;
       }
-
-      .topbar-menu {
-        width: 100%;
+      .bf-logo { justify-content: center; font-size: 20px; }
+      .bf-logo img { width: 30px; height: 30px; }
+      .bf-nav {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 8px;
+        gap: 7px;
       }
-
-      .topbar-menu a {
-        padding: 10px 4px;
+      .bf-nav a {
+        width: 100%;
+        padding: 9px 4px;
         font-size: 12px;
         text-align: center;
+        white-space: normal;
       }
-
-      .results-page { gap: 18px; margin-top: 16px !important; }
-
-      .results-hero {
-        min-height: 0;
-        padding: 24px 16px;
+      .bf-page {
+        width: calc(100% - 16px);
+        margin-top: 12px;
+      }
+      .results-hero,
+      .results-section {
+        padding: 18px 12px;
         border-radius: 22px;
       }
-
-      .results-hero h1 { font-size: 34px; }
+      .results-hero h1 { font-size: 32px; }
       .results-hero p { font-size: 15px; }
-      .results-section { padding: 16px 12px; }
       .results-head { flex-direction: column; }
       .results-head span { text-align: left; }
-      .wc-results-grid { grid-template-columns: 1fr; }
-
       .wc-result-card {
         grid-template-columns: 1fr;
         gap: 14px;
         min-height: 0;
       }
-
       .wc-result-round {
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
-
-      .wc-result-meta {
-        justify-items: start;
-        text-align: left;
-      }
-
+      .wc-result-meta { justify-items: start; text-align: left; }
       .wc-result-meta span { max-width: 100%; }
-
-      .content-banner { min-height: 250px; }
-      .content-banner-desktop { display: none !important; }
-
-      .content-banner-mobile,
+      .results-box-ad,
       .adhit-300x250 {
-        width: 300px;
-        height: 250px;
-        display: flex;
+        display: flex !important;
         justify-content: center;
-        align-items: center;
-        margin: 0 auto;
+        width: 100%;
+        margin: 18px auto;
         overflow: hidden;
-      }
-
-      .adhit-300x250 > .ins-zone {
-        display: block;
-        width: 300px;
-        height: 250px;
-        margin: 0 auto;
       }
     }
   </style>
 </head>
-
 <body class="theme-dark site-skin-1win">
-  <a class="skin-click skin-click-top" href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ" target="_blank" rel="nofollow sponsored noopener" aria-label="1win World Cup 2026 top banner"></a>
-  <a class="skin-click skin-click-left" href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ" target="_blank" rel="nofollow sponsored noopener" aria-label="1win World Cup 2026 left background"></a>
-  <a class="skin-click skin-click-right" href="https://track.getads.online/link?z=163798&pu=1&cs=1HBQnfwhKxi0tMmjOtMLBQ" target="_blank" rel="nofollow sponsored noopener" aria-label="1win World Cup 2026 right background"></a>
+  <div class="bf-adserver-background"><ins class="ins-zone" data-zone="163743"></ins></div>
+  <div class="side-banner left-banner"><ins class="ins-zone" data-zone="163622"></ins></div>
+  <div class="side-banner right-banner"><ins class="ins-zone" data-zone="163622"></ins></div>
 
-  <header class="header">
-    <div class="header-inner">
+  <header class="bf-header">
+    <div class="bf-header-inner">
       <a class="bf-logo" href="/" aria-label="Betforecast.ai home">
         <img src="assets/bet-logo.png" alt="Betforecast.ai logo">
         <span>Betforecast<span>.ai</span></span>
       </a>
-
-      <nav class="topbar-menu" aria-label="Main navigation">
+      <nav class="bf-nav" aria-label="Main navigation">
         <a href="world-cup-2026.html">🏆 WC 2026</a>
         <a href="news.html">News</a>
         <a href="standings.html">Standings</a>
@@ -548,7 +485,7 @@
     </div>
   </header>
 
-  <main class="results-page">
+  <main class="bf-page results-page">
     <section class="results-hero">
       <div>
         <span class="hero-ai-badge">World Cup Results</span>
@@ -557,18 +494,11 @@
       </div>
     </section>
 
-    <div id="results-top-728-ad" class="content-banner">
-      <div class="content-banner-desktop">
-        <div class="banner-728">
-          <ins class="ins-zone" data-zone="163631"></ins>
-        </div>
-      </div>
-
-      <div class="content-banner-mobile">
-        <div class="adhit-300x250">
-          <ins class="ins-zone" data-zone="163623"></ins>
-        </div>
-      </div>
+    <div class="results-leaderboard-ad">
+      <div class="banner-728"><ins class="ins-zone" data-zone="163631"></ins></div>
+    </div>
+    <div class="results-box-ad">
+      <div class="adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div>
     </div>
 
     <section class="results-section">
@@ -576,22 +506,14 @@
         <h2>World Cup Match Results</h2>
         <span id="results-status">Loading World Cup results...</span>
       </div>
-
       <div id="results-grid" class="wc-results-grid"></div>
     </section>
 
-    <div class="content-banner">
-      <div class="content-banner-desktop">
-        <div class="banner-728">
-          <ins class="ins-zone" data-zone="163631"></ins>
-        </div>
-      </div>
-
-      <div class="content-banner-mobile">
-        <div class="adhit-300x250">
-          <ins class="ins-zone" data-zone="163623"></ins>
-        </div>
-      </div>
+    <div class="results-leaderboard-ad">
+      <div class="banner-728"><ins class="ins-zone" data-zone="163631"></ins></div>
+    </div>
+    <div class="results-box-ad">
+      <div class="adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div>
     </div>
   </main>
 
