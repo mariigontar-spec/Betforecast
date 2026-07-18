@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "enabled": true,
   "defaultSkin": "1win",
   "adScript": "https://media.getads.online/js/code.min.js",
@@ -10,11 +10,11 @@
   "skins": {
     "1win": {
       "enabled": true,
-      "label": "Main site skin",
+      "label": "1win",
       "bodyClass": "site-skin-1win",
       "mode": "code",
       "codeZone": "163743",
-      "fallbackImage": "/assets/ads/1win-wc2026-site-skin.webp",
+      "fallbackImage": "",
       "clickUrl": "",
       "topClickHeight": 165,
       "sideStartTop": 165
@@ -24,7 +24,7 @@
       "label": "Dafabet",
       "bodyClass": "site-skin-dafabet",
       "mode": "code",
-      "codeZone": "DAFABET_SITE_SKIN_ZONE",
+      "codeZone": "163743",
       "fallbackImage": "",
       "clickUrl": "",
       "topClickHeight": 165,
@@ -35,7 +35,7 @@
       "label": "Mostbet",
       "bodyClass": "site-skin-mostbet",
       "mode": "code",
-      "codeZone": "MOSTBET_SITE_SKIN_ZONE",
+      "codeZone": "163743",
       "fallbackImage": "",
       "clickUrl": "",
       "topClickHeight": 165,
