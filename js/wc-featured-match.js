@@ -1,31 +1,12 @@
 (function () {
   const MATCHES = [
     {
-      home: 'Spain',
-      away: 'Argentina',
-      stage: 'World Cup Final',
-      date: '19 Jul',
-      time: '22:00 Tallinn',
-      localTimes: 'Miami 15:00 - Spain 21:00 - Argentina 16:00',
-      venue: 'New York New Jersey Stadium, USA',
-      homePercent: 41,
-      drawPercent: 30,
-      awayPercent: 29,
-      confidence: 78,
-      pick: 'Spain edge',
-      tag: 'Final',
-      advice: 'PICK YOUR SIDE: SPAIN OR ARGENTINA. THE TROPHY NIGHT IS HERE.',
-      text: 'Spain bring control, rhythm and pressure. Argentina bring champion nerve, final experience and a fearless late-game punch.',
-      homeLogo: 'https://flagcdn.com/w160/es.png',
-      awayLogo: 'https://flagcdn.com/w160/ar.png'
-    },
-    {
       home: 'France',
       away: 'England',
       stage: 'Bronze Final',
-      date: '18 Jul',
+      date: '19 Jul',
       time: '00:00 Tallinn',
-      localTimes: 'Miami 17:00 - Spain 23:00 - Argentina 18:00',
+      localTimes: 'Tallinn 00:00 - London 22:00 - BuenosAires 18:00',
       venue: 'Miami Stadium, Miami, USA',
       homePercent: 39,
       drawPercent: 29,
@@ -37,6 +18,25 @@
       text: 'France and England meet for third place after semifinal defeats. France hold a narrow model edge, but England remain dangerous in transition.',
       homeLogo: 'https://flagcdn.com/w160/fr.png',
       awayLogo: 'https://flagcdn.com/w160/gb-eng.png'
+    },
+    {
+      home: 'Spain',
+      away: 'Argentina',
+      stage: 'World Cup Final',
+      date: '19 Jul',
+      time: '22:00 Tallinn',
+      localTimes: 'Tallinn 22:00 - London 20:00 - BuenosAires 16:00',
+      venue: 'New York New Jersey Stadium, USA',
+      homePercent: 41,
+      drawPercent: 30,
+      awayPercent: 29,
+      confidence: 78,
+      pick: 'Spain edge',
+      tag: 'Final',
+      advice: 'PICK YOUR SIDE: SPAIN OR ARGENTINA. THE TROPHY NIGHT IS HERE.',
+      text: 'Spain bring control, rhythm and pressure. Argentina bring champion nerve, final experience and a fearless late-game punch.',
+      homeLogo: 'https://flagcdn.com/w160/es.png',
+      awayLogo: 'https://flagcdn.com/w160/ar.png'
     }
   ];
 
@@ -174,8 +174,8 @@
     });
 
     const actions = document.querySelectorAll('#wcFeaturedCard .bf-featured-actions a');
-    if (actions[0]) actions[0].textContent = 'Final Match Details';
-    if (actions[1]) actions[1].textContent = 'AI Final Preview';
+    if (actions[0]) actions[0].textContent = match.tag + ' Match Details';
+    if (actions[1]) actions[1].textContent = 'AI ' + match.tag + ' Preview';
   }
 
   function renderHero() {
@@ -187,7 +187,7 @@
     if (pill) pill.textContent = 'World Cup Final Weekend';
     if (title) title.innerHTML = 'Choose your colours. <span>Back your final team.</span>';
     if (intro) intro.textContent = 'Spain and Argentina play for the trophy. France and England fight for bronze. Pick your side, check the kickoff times and support your team until the final whistle.';
-    if (featuredTitle) featuredTitle.textContent = 'World Cup Final Focus';
+    if (featuredTitle) featuredTitle.textContent = 'Next World Cup Match';
   }
 
   function renderPredictions() {
@@ -225,7 +225,7 @@
     const result = document.getElementById('match-search-result');
     const tags = document.querySelector('.bf-tags');
 
-    if (input) input.placeholder = 'Spain vs Argentina';
+    if (input) input.placeholder = 'France vs England';
     if (tags) {
       tags.innerHTML = MATCHES.map(function (match) {
         return '<button type="button">' + match.home + ' vs ' + match.away + '</button>';
