@@ -35,14 +35,16 @@
   }
 
   function injectHomepagePopup() {
-    if (document.getElementById('bf-home-popup-zone')) return;
-    const popup = document.createElement('ins');
-    popup.id = 'bf-home-popup-zone';
-    popup.className = 'ins-zone bf-popup-zone';
-    popup.setAttribute('data-zone', '161907');
-    popup.setAttribute('aria-hidden', 'true');
-    popup.style.cssText = 'position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden';
-    document.body.insertBefore(popup, document.body.firstChild);
+    if (window.__BF_HOME_POPUP_161907__) return;
+    window.__BF_HOME_POPUP_161907__ = true;
+
+    window._aso = window._aso || {};
+    window._aso.queue = window._aso.queue || [];
+
+    window._aso.queue.push(function () {
+      window._ASO.PuOptions = { idzone: 161907 };
+      window._ASO.loadPuHelper();
+    });
   }
 
   function injectCss() {
@@ -51,7 +53,6 @@
     const style = document.createElement('style');
     style.id = 'bf-home-clean-css';
     style.textContent = `
-      body.site-skin-1win .bf-popup-zone{position:absolute!important;left:-9999px!important;top:0!important;width:1px!important;height:1px!important;overflow:hidden!important}
       body.site-skin-1win .bf-team-logo-wrap{width:104px!important;height:104px!important;margin:0 auto 14px!important;border-radius:50%!important;overflow:hidden!important;background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.10)!important;display:grid!important;place-items:center!important}
       body.site-skin-1win .bf-team-logo-img{width:118%!important;height:118%!important;padding:0!important;object-fit:cover!important;transform:scale(1.06)!important}
       body.site-skin-1win .bf-ai-predicts{width:100%!important;max-width:100%!important}
