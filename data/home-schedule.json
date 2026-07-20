@@ -1,0 +1,100 @@
+{
+  "updatedAt": "2026-07-20T12:00:00Z",
+  "featuredId": "fenerbahce-gornik",
+  "events": [
+    {
+      "id": "mjallby-lincoln",
+      "type": "match",
+      "sport": "Football",
+      "date": "21 Jul",
+      "time": "18:00 CET",
+      "title": "Mjällby vs Lincoln Red Imps",
+      "home": "Mjällby",
+      "away": "Lincoln Red Imps",
+      "competition": "UEFA Champions League",
+      "stage": "Second qualifying round",
+      "status": "Scheduled",
+      "signals": ["First leg", "Champions path", "Home advantage"]
+    },
+    {
+      "id": "sabah-kups",
+      "type": "match",
+      "sport": "Football",
+      "date": "21 Jul",
+      "time": "18:00 CET",
+      "title": "Sabah vs KuPS Kuopio",
+      "home": "Sabah",
+      "away": "KuPS Kuopio",
+      "competition": "UEFA Champions League",
+      "stage": "Second qualifying round",
+      "status": "Scheduled",
+      "signals": ["First leg", "Champions path", "Form check"]
+    },
+    {
+      "id": "fenerbahce-gornik",
+      "type": "match",
+      "sport": "Football",
+      "date": "21 Jul",
+      "time": "20:00 CET",
+      "title": "Fenerbahçe vs Górnik Zabrze",
+      "home": "Fenerbahçe",
+      "away": "Górnik Zabrze",
+      "competition": "UEFA Champions League",
+      "stage": "Second qualifying round · League path",
+      "status": "Model tracking",
+      "signals": ["First leg", "Home pressure", "Squad news"]
+    },
+    {
+      "id": "sturm-hearts",
+      "type": "match",
+      "sport": "Football",
+      "date": "21 Jul",
+      "time": "20:30 CET",
+      "title": "Sturm Graz vs Hearts",
+      "home": "Sturm Graz",
+      "away": "Hearts",
+      "competition": "UEFA Champions League",
+      "stage": "Second qualifying round · League path",
+      "status": "Scheduled",
+      "signals": ["First leg", "League path", "Tactical matchup"]
+    },
+    {
+      "id": "omonia-kairat",
+      "type": "match",
+      "sport": "Football",
+      "date": "22 Jul",
+      "time": "19:00 CET",
+      "title": "Omonia vs Kairat Almaty",
+      "home": "Omonia",
+      "away": "Kairat Almaty",
+      "competition": "UEFA Champions League",
+      "stage": "Second qualifying round",
+      "status": "Scheduled",
+      "signals": ["First leg", "Champions path", "Travel factor"]
+    },
+    {
+      "id": "hungarian-gp",
+      "type": "event",
+      "sport": "Formula 1",
+      "date": "24–26 Jul",
+      "time": "Budapest",
+      "title": "Hungarian Grand Prix",
+      "competition": "Formula 1",
+      "stage": "Round 11",
+      "status": "Next race",
+      "signals": ["Race weekend", "Circuit form", "Weather watch"]
+    },
+    {
+      "id": "mubadala-dc-open",
+      "type": "event",
+      "sport": "Tennis",
+      "date": "27 Jul–2 Aug",
+      "time": "Washington, D.C.",
+      "title": "Mubadala DC Open",
+      "competition": "ATP 500",
+      "stage": "Hard-court season",
+      "status": "Upcoming",
+      "signals": ["Hard court", "ATP 500", "US Open build-up"]
+    }
+  ]
+}
