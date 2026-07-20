@@ -36,7 +36,22 @@ body {
     radial-gradient(circle at 88% 22%, rgba(24, 86, 126, 0.13), transparent 28rem),
     linear-gradient(180deg, #07111d 0, var(--bg) 36rem, var(--bg-deep) 100%);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+/* The managed Adhit skin restores the wide top/side background used before
+   the evergreen homepage update. The image is also a no-fill fallback. */
+body.site-skin-1win,
+body.site-skin-dafabet,
+body.site-skin-mostbet {
+  padding-top: 165px;
+  background-color: #020b13;
+  background-image: url("../assets/ads/1win-wc2026-site-skin.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1920px auto;
 }
 
 body::before {
@@ -131,7 +146,7 @@ a {
   align-items: center;
   gap: 10px;
   color: #fff;
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 900;
   letter-spacing: -0.045em;
 }
@@ -163,7 +178,7 @@ a {
   border: 1px solid transparent;
   border-radius: 12px;
   color: #aebbc8;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 750;
   transition: 0.2s ease;
 }
@@ -244,7 +259,7 @@ a {
 .eyebrow,
 .section-kicker {
   color: var(--green);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 900;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -283,7 +298,7 @@ a {
   max-width: 650px;
   margin: 0;
   color: #a4b1bf;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.65;
 }
 
@@ -302,7 +317,7 @@ a {
   justify-content: center;
   border: 1px solid transparent;
   border-radius: 14px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 850;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -353,13 +368,13 @@ a {
 
 .hero-radar strong {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .hero-radar span {
   margin-top: 5px;
   color: var(--muted-2);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .match-search {
@@ -370,7 +385,7 @@ a {
   display: block;
   margin-bottom: 9px;
   color: #c5d0da;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 800;
 }
 
@@ -427,7 +442,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.03);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 750;
   cursor: pointer;
 }
@@ -441,7 +456,7 @@ a {
   min-height: 21px;
   margin-top: 12px;
   color: #718293;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.55;
 }
 
@@ -464,7 +479,7 @@ a {
   padding-bottom: 18px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -475,7 +490,7 @@ a {
   align-items: center;
   gap: 7px;
   color: var(--green);
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .status-dot::before {
@@ -499,7 +514,7 @@ a {
   justify-content: space-between;
   gap: 12px;
   color: #7f8f9e;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 750;
 }
 
@@ -531,13 +546,13 @@ a {
 .featured-team strong {
   display: block;
   color: #fff;
-  font-size: clamp(17px, 2vw, 22px);
+  font-size: clamp(20px, 2vw, 26px);
   line-height: 1.15;
 }
 
 .featured-vs {
   color: #5b6a79;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -550,7 +565,7 @@ a {
 
 .featured-signal > span {
   color: #657687;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -569,14 +584,14 @@ a {
   color: #b8c5cf;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.035);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 750;
 }
 
 .featured-note {
   margin: 18px 0 0;
   color: #8998a6;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.55;
 }
 
@@ -614,19 +629,19 @@ a {
 .trust-line span {
   grid-row: span 2;
   color: var(--green);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 900;
 }
 
 .trust-line strong {
   color: #edf3f7;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .trust-line p {
   margin: 7px 0 0;
   color: #718191;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -680,12 +695,13 @@ a {
   margin: 10px 0 0;
   color: #7f8f9f;
   line-height: 1.6;
+  font-size: 18px;
 }
 
 .section-heading > a {
   flex: 0 0 auto;
   color: var(--green);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 850;
 }
 
@@ -704,7 +720,7 @@ a {
 .schedule-head {
   min-height: 45px;
   color: #5f7081;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -731,24 +747,24 @@ a {
 
 .schedule-date strong {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .schedule-date small,
 .schedule-title small {
   margin-top: 5px;
   color: #657687;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .schedule-title strong {
   color: #fff;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .schedule-competition {
   color: #8595a3;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .schedule-status {
@@ -758,7 +774,7 @@ a {
   border-radius: 999px;
   color: var(--green);
   background: rgba(109, 232, 169, 0.06);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -784,7 +800,7 @@ a {
 
 .competition-number {
   color: var(--green);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 900;
 }
 
@@ -795,18 +811,18 @@ a {
 
 .competition-line strong {
   color: #f2f6f9;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .competition-line small {
   margin-top: 5px;
   color: #697a8b;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .competition-tag {
   color: #8292a1;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 850;
   text-transform: uppercase;
 }
@@ -842,18 +858,18 @@ a {
 
 .method-steps span {
   color: var(--green);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 900;
 }
 
 .method-steps strong {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .method-steps p {
   color: #748494;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -901,7 +917,7 @@ a {
   max-width: 390px;
   margin: 13px 0 0;
   color: #657485;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.55;
 }
 
@@ -912,7 +928,7 @@ a {
 
 .bf-footer nav a {
   color: #8998a6;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 750;
 }
 
@@ -927,7 +943,7 @@ a {
 
 .loading-state {
   color: #728292;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .side-banner {
@@ -987,6 +1003,13 @@ a {
 }
 
 @media (max-width: 760px) {
+  body.site-skin-1win,
+  body.site-skin-dafabet,
+  body.site-skin-mostbet {
+    padding-top: 96px;
+    background-size: auto 290px;
+  }
+
   .bf-header {
     padding: 10px 8px 0;
   }
@@ -1044,7 +1067,7 @@ a {
   }
 
   .hero-lead {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .hero-actions,

@@ -163,8 +163,8 @@
         z-index: 20 !important;
       }
 
-      body.site-skin-managed .bf-header-inner,
-      body.site-skin-managed .header-inner {
+      body.site-skin-managed:not(.home-page) .bf-header-inner,
+      body.site-skin-managed:not(.home-page) .header-inner {
         width: min(var(--bf-shell-width, 1240px), calc(100vw - var(--bf-page-gap, 48px))) !important;
         max-width: var(--bf-shell-width, 1240px) !important;
         min-height: 82px !important;
@@ -182,16 +182,16 @@
         -webkit-backdrop-filter: blur(14px) !important;
       }
 
-      body.site-skin-managed .bf-header-inner::after,
-      body.site-skin-managed .header-inner::after {
+      body.site-skin-managed:not(.home-page) .bf-header-inner::after,
+      body.site-skin-managed:not(.home-page) .header-inner::after {
         content: "" !important;
         display: block !important;
         width: 220px !important;
         height: 1px !important;
       }
 
-      body.site-skin-managed .bf-nav,
-      body.site-skin-managed .topbar-menu {
+      body.site-skin-managed:not(.home-page) .bf-nav,
+      body.site-skin-managed:not(.home-page) .topbar-menu {
         justify-self: center !important;
         width: max-content !important;
         max-width: 100% !important;
@@ -202,10 +202,10 @@
         gap: 10px !important;
       }
 
-      body.site-skin-managed .bf-nav a,
-      body.site-skin-managed .bf-nav a.active,
-      body.site-skin-managed .topbar-menu a,
-      body.site-skin-managed .topbar-menu a.active {
+      body.site-skin-managed:not(.home-page) .bf-nav a,
+      body.site-skin-managed:not(.home-page) .bf-nav a.active,
+      body.site-skin-managed:not(.home-page) .topbar-menu a,
+      body.site-skin-managed:not(.home-page) .topbar-menu a.active {
         flex: 0 0 auto !important;
         min-height: 48px !important;
         padding: 0 18px !important;
@@ -224,10 +224,10 @@
         text-decoration: none !important;
       }
 
-      body.site-skin-managed .bf-nav a:hover,
-      body.site-skin-managed .bf-nav a.active:hover,
-      body.site-skin-managed .topbar-menu a:hover,
-      body.site-skin-managed .topbar-menu a.active:hover {
+      body.site-skin-managed:not(.home-page) .bf-nav a:hover,
+      body.site-skin-managed:not(.home-page) .bf-nav a.active:hover,
+      body.site-skin-managed:not(.home-page) .topbar-menu a:hover,
+      body.site-skin-managed:not(.home-page) .topbar-menu a.active:hover {
         color: #5ee0a4 !important;
         background: rgba(48, 63, 81, 0.88) !important;
         border-color: rgba(94, 224, 164, 0.28) !important;
@@ -307,8 +307,8 @@
           background-position: center top !important;
         }
 
-        body.site-skin-managed .bf-header-inner,
-        body.site-skin-managed .header-inner {
+        body.site-skin-managed:not(.home-page) .bf-header-inner,
+        body.site-skin-managed:not(.home-page) .header-inner {
           width: calc(100% - 16px) !important;
           max-width: calc(100% - 16px) !important;
           min-height: 0 !important;
@@ -321,28 +321,28 @@
           border-radius: 18px !important;
         }
 
-        body.site-skin-managed .bf-header-inner::after,
-        body.site-skin-managed .header-inner::after {
+        body.site-skin-managed:not(.home-page) .bf-header-inner::after,
+        body.site-skin-managed:not(.home-page) .header-inner::after {
           display: none !important;
         }
 
-        body.site-skin-managed .bf-logo {
+        body.site-skin-managed:not(.home-page) .bf-logo {
           width: 100% !important;
           justify-content: center !important;
         }
 
-        body.site-skin-managed .bf-nav,
-        body.site-skin-managed .topbar-menu {
+        body.site-skin-managed:not(.home-page) .bf-nav,
+        body.site-skin-managed:not(.home-page) .topbar-menu {
           width: 100% !important;
           display: grid !important;
           grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
           gap: 8px !important;
         }
 
-        body.site-skin-managed .bf-nav a,
-        body.site-skin-managed .bf-nav a.active,
-        body.site-skin-managed .topbar-menu a,
-        body.site-skin-managed .topbar-menu a.active {
+        body.site-skin-managed:not(.home-page) .bf-nav a,
+        body.site-skin-managed:not(.home-page) .bf-nav a.active,
+        body.site-skin-managed:not(.home-page) .topbar-menu a,
+        body.site-skin-managed:not(.home-page) .topbar-menu a.active {
           width: 100% !important;
           min-height: 40px !important;
           padding: 10px 3px !important;
