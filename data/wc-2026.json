@@ -1,80 +1,10 @@
 {
-  "updatedAt": "2026-07-19T19:34:05.322Z",
+  "updatedAt": "2026-07-20T04:06:33.948Z",
   "provider": "api-football",
   "league": 1,
   "season": 2026,
   "timezone": "Europe/Tallinn",
   "fixtures": [
-    {
-      "fixture": {
-        "id": 1591866,
-        "referee": "Slavko Vinčić, Slovenia",
-        "timezone": "Europe/Tallinn",
-        "date": "2026-07-19T22:00:00+03:00",
-        "timestamp": 1784487600,
-        "periods": {
-          "first": null,
-          "second": null
-        },
-        "venue": {
-          "id": 0,
-          "name": "MetLife Stadium",
-          "city": "East Rutherford"
-        },
-        "status": {
-          "long": "First Half",
-          "short": "1H",
-          "elapsed": 29,
-          "extra": null
-        }
-      },
-      "league": {
-        "id": 1,
-        "name": "World Cup",
-        "country": "World",
-        "logo": "https://media.api-sports.io/football/leagues/1.png",
-        "flag": null,
-        "season": 2026,
-        "round": "Final",
-        "standings": true
-      },
-      "teams": {
-        "home": {
-          "id": 9,
-          "name": "Spain",
-          "logo": "https://media.api-sports.io/football/teams/9.png",
-          "winner": null
-        },
-        "away": {
-          "id": 26,
-          "name": "Argentina",
-          "logo": "https://media.api-sports.io/football/teams/26.png",
-          "winner": null
-        }
-      },
-      "goals": {
-        "home": 0,
-        "away": 0
-      },
-      "score": {
-        "halftime": {
-          "home": 0,
-          "away": 0
-        },
-        "fulltime": {
-          "home": null,
-          "away": null
-        },
-        "extratime": {
-          "home": null,
-          "away": null
-        },
-        "penalty": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
     {
       "fixture": {
         "id": 1489369,
@@ -7284,6 +7214,76 @@
           "away": null
         }
       }
+    },
+    {
+      "fixture": {
+        "id": 1591866,
+        "referee": "Slavko Vinčić, Slovenia",
+        "timezone": "Europe/Tallinn",
+        "date": "2026-07-19T22:00:00+03:00",
+        "timestamp": 1784487600,
+        "periods": {
+          "first": null,
+          "second": null
+        },
+        "venue": {
+          "id": 0,
+          "name": "MetLife Stadium",
+          "city": "East Rutherford"
+        },
+        "status": {
+          "long": "Match Finished",
+          "short": "AET",
+          "elapsed": 120,
+          "extra": null
+        }
+      },
+      "league": {
+        "id": 1,
+        "name": "World Cup",
+        "country": "World",
+        "logo": "https://media.api-sports.io/football/leagues/1.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Final",
+        "standings": true
+      },
+      "teams": {
+        "home": {
+          "id": 9,
+          "name": "Spain",
+          "logo": "https://media.api-sports.io/football/teams/9.png",
+          "winner": true
+        },
+        "away": {
+          "id": 26,
+          "name": "Argentina",
+          "logo": "https://media.api-sports.io/football/teams/26.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 0
+        },
+        "fulltime": {
+          "home": 0,
+          "away": 0
+        },
+        "extratime": {
+          "home": 1,
+          "away": 0
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      }
     }
   ],
   "standingsPayload": [
@@ -8945,7 +8945,7 @@
               "points": 9,
               "goalsDiff": 7,
               "group": "Group J",
-              "form": "WWWWW",
+              "form": "LWWWW",
               "status": "same",
               "description": "Round of 32",
               "all": {
