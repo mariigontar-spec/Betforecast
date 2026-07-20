@@ -3,769 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Betforecast.ai</title>
-  <link rel="stylesheet" href="css/style.css?v=26">
-  <style>
-    :root {
-      --bg: #020b13;
-      --panel: linear-gradient(180deg, rgba(18,38,55,.96), rgba(8,20,32,.98));
-      --soft: rgba(2,11,19,.44);
-      --green: #5ee0a4;
-      --green-2: #b7ffcf;
-      --border: 1px solid rgba(94,224,164,.16);
-      --text: #f8fafc;
-      --muted: rgba(248,250,252,.68);
-      --shell: 1240px;
-      --gap: 48px;
-    }
-
-    * { box-sizing: border-box; min-width: 0; }
-
-    html,
-    body {
-      width: 100%;
-      min-height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      background: var(--bg) !important;
-      color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body.site-skin-1win { padding-top: 240px !important; }
-
-    a { color: inherit; text-decoration: none; }
-    button, input { font: inherit; }
-
-    .bf-adserver-background {
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      min-height: 1px;
-    }
-
-    .bf-header,
-    .bf-page,
-    .side-banner,
-    .home-leaderboard-ad,
-    .home-box-ad {
-      position: relative !important;
-      z-index: 20 !important;
-    }
-
-    .bf-header { width: 100%; }
-
-    .bf-header-inner {
-      width: min(var(--shell), calc(100vw - var(--gap)));
-      min-height: 82px;
-      margin: 0 auto;
-      padding: 14px 24px;
-      display: grid;
-      grid-template-columns: 220px minmax(0, 1fr) 220px;
-      align-items: center;
-      gap: 18px;
-      background: var(--panel);
-      border: var(--border);
-      border-radius: 26px;
-      box-shadow: 0 18px 50px rgba(0,0,0,.32);
-      backdrop-filter: blur(14px);
-    }
-
-    .bf-header-inner::after {
-      content: "";
-      display: block;
-      width: 220px;
-      height: 1px;
-    }
-
-    .bf-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 22px;
-      font-weight: 900;
-      color: #fff;
-      letter-spacing: -.04em;
-    }
-
-    .bf-logo img {
-      width: 38px;
-      height: 38px;
-      object-fit: contain;
-    }
-
-    .bf-logo span span { color: var(--green); }
-
-    .bf-nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: nowrap;
-    }
-
-    .bf-nav a {
-      padding: 11px 14px;
-      border-radius: 999px;
-      border: 1px solid rgba(94,224,164,.12);
-      background: rgba(255,255,255,.04);
-      color: #fff;
-      font-size: 14px;
-      font-weight: 900;
-      white-space: nowrap;
-    }
-
-    .bf-nav a:hover {
-      border-color: rgba(94,224,164,.46);
-      box-shadow: 0 0 18px rgba(94,224,164,.16);
-    }
-
-    .bf-page {
-      width: min(var(--shell), calc(100vw - var(--gap)));
-      margin: 28px auto 0;
-      padding-bottom: 56px;
-      display: grid;
-      gap: 24px;
-    }
-
-    .bf-hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1.08fr) minmax(380px, .92fr);
-      gap: 20px;
-      padding: 28px;
-      border-radius: 28px;
-      background: rgba(18,38,55,.72);
-      border: var(--border);
-      box-shadow: 0 18px 50px rgba(0,0,0,.32);
-      backdrop-filter: blur(14px);
-    }
-
-    .bf-hero-left,
-    .bf-featured,
-    .bf-benefit-card,
-    .bf-predictions-section,
-    .bf-panel {
-      min-width: 0;
-      background: var(--panel);
-      border: var(--border);
-      border-radius: 26px;
-      box-shadow: 0 18px 50px rgba(0,0,0,.26);
-      color: var(--text);
-    }
-
-    .bf-hero-left,
-    .bf-featured,
-    .bf-predictions-section,
-    .bf-panel { padding: 24px; }
-
-    .bf-pill,
-    .bf-mini-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      width: fit-content;
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(94,224,164,.18);
-      background: rgba(94,224,164,.08);
-      color: var(--green);
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-
-    .bf-hero h1 {
-      margin: 18px 0 14px;
-      color: #fff;
-      font-size: clamp(42px, 5vw, 70px);
-      line-height: .98;
-      letter-spacing: -.05em;
-    }
-
-    .bf-hero h1 span {
-      display: block;
-      color: var(--green);
-    }
-
-    p {
-      color: var(--muted);
-      line-height: 1.55;
-    }
-
-    .bf-metrics,
-    .bf-probs,
-    .bf-featured-mini-grid,
-    .bf-benefits,
-    .model-view {
-      display: grid;
-      gap: 14px;
-    }
-
-    .bf-metrics {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      margin-top: 22px;
-    }
-
-    .bf-metric,
-    .bf-probs > div,
-    .bf-featured-mini-grid > div,
-    .bf-search-result {
-      padding: 14px;
-      border-radius: 18px;
-      border: 1px solid rgba(94,224,164,.12);
-      background: var(--soft);
-    }
-
-    .bf-metric {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      align-items: center;
-      column-gap: 10px;
-    }
-
-    .bf-metric span {
-      grid-row: span 2;
-      color: var(--green);
-      font-size: 22px;
-    }
-
-    .bf-metric strong {
-      color: #fff;
-      font-size: 19px;
-    }
-
-    .bf-metric small,
-    .bf-probs small,
-    .bf-featured-mini-grid span {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .bf-search-card {
-      margin-top: 24px;
-      padding: 20px;
-      border-radius: 22px;
-      border: 1px solid rgba(94,224,164,.14);
-      background: rgba(2,11,19,.38);
-    }
-
-    .bf-search-card h2 {
-      margin: 16px 0;
-      color: #fff;
-      font-size: 24px;
-    }
-
-    .bf-search-row {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 10px;
-    }
-
-    .bf-input {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 0 14px;
-      border-radius: 16px;
-      border: 1px solid rgba(94,224,164,.16);
-      background: rgba(255,255,255,.05);
-    }
-
-    .bf-input input {
-      width: 100%;
-      padding: 14px 0;
-      color: #fff;
-      border: 0;
-      outline: 0;
-      background: transparent;
-    }
-
-    .bf-input input::placeholder { color: rgba(248,250,252,.45); }
-
-    .bf-search-row button,
-    .bf-featured-actions a {
-      padding: 14px 18px;
-      border: 0;
-      border-radius: 16px;
-      color: #06120d;
-      background: linear-gradient(135deg, var(--green), var(--green-2));
-      font-weight: 900;
-      cursor: pointer;
-    }
-
-    .bf-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 12px;
-    }
-
-    .bf-tags button {
-      padding: 8px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(94,224,164,.14);
-      background: rgba(255,255,255,.04);
-      color: #fff;
-      font-size: 12px;
-      font-weight: 900;
-      cursor: pointer;
-    }
-
-    .bf-search-result {
-      margin-top: 14px;
-      color: rgba(248,250,252,.78);
-      line-height: 1.5;
-    }
-
-    .bf-featured-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: 900;
-    }
-
-    .bf-featured-top span {
-      color: rgba(255,255,255,.82);
-      font-size: 13px;
-    }
-
-    .bf-team-row {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr);
-      align-items: center;
-      gap: 12px;
-      margin-top: 28px;
-      text-align: center;
-    }
-
-    .bf-team-logo-wrap {
-      width: 104px;
-      height: 104px;
-      margin: 0 auto 14px;
-      display: grid;
-      place-items: center;
-      overflow: hidden;
-      border-radius: 50%;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.08);
-    }
-
-    .bf-team-logo-img {
-      width: 118%;
-      height: 118%;
-      object-fit: cover;
-    }
-
-    .bf-team h3 {
-      margin: 0;
-      color: #fff;
-      font-size: 24px;
-      line-height: 1.15;
-    }
-
-    .bf-team small {
-      display: block;
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-
-    .bf-vs {
-      width: 54px;
-      height: 54px;
-      display: grid;
-      place-items: center;
-      margin: 0 auto;
-      border-radius: 50%;
-      background: rgba(94,224,164,.10);
-      color: var(--green);
-      font-size: 28px;
-      font-weight: 950;
-    }
-
-    .bf-ai-predicts {
-      width: fit-content;
-      max-width: 100%;
-      margin: 24px auto 22px;
-      padding: 16px 22px;
-      border-radius: 18px;
-      border: 1px solid rgba(94,224,164,.18);
-      background: rgba(94,224,164,.08);
-      text-align: center;
-    }
-
-    .bf-ai-predicts span,
-    .bf-ai-predicts strong {
-      display: block;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-    }
-
-    .bf-ai-predicts span {
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 900;
-    }
-
-    .bf-ai-predicts strong {
-      margin-top: 6px;
-      color: #fff;
-      font-size: 13px;
-    }
-
-    .bf-probs {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .bf-probs strong {
-      display: block;
-      margin-top: 4px;
-      color: #fff;
-      font-size: 32px;
-      line-height: 1;
-    }
-
-    .bf-prob-bar {
-      height: 7px;
-      margin-top: 9px;
-      overflow: hidden;
-      border-radius: 999px;
-      background: rgba(255,255,255,.08);
-    }
-
-    .bf-prob-bar span {
-      display: block;
-      height: 100%;
-      border-radius: inherit;
-      background: var(--green);
-    }
-
-    .bf-featured-mini-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      margin-top: 14px;
-    }
-
-    .bf-featured-mini-grid strong {
-      display: block;
-      margin-top: 8px;
-      color: #fff;
-      font-size: 15px;
-      line-height: 1.2;
-    }
-
-    .bf-featured-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    .bf-featured-actions a:nth-child(2) {
-      color: #fff;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.13);
-    }
-
-    .bf-benefits {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .bf-benefit-card {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 14px;
-      padding: 22px;
-    }
-
-    .bf-benefit-card h3 {
-      margin: 0 0 6px;
-      color: #fff;
-    }
-
-    .bf-benefit-card p {
-      margin: 0;
-      font-size: 13px;
-    }
-
-    .home-leaderboard-ad,
-    .home-box-ad {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin: 24px auto;
-      overflow: hidden;
-    }
-
-    .home-box-ad { display: none; }
-
-    .bf-predictions-section h2,
-    .bf-panel h2 {
-      margin: 0 0 18px;
-      color: #fff;
-      font-size: 28px;
-    }
-
-    .bf-predictions-table {
-      display: block;
-      border: 0;
-      background: transparent;
-    }
-
-    .model-view {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      align-items: stretch;
-    }
-
-    .bf-panel-head {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 22px;
-    }
-
-    .bf-panel-head h2 {
-      margin: 0;
-      font-size: 34px;
-      line-height: 1;
-      letter-spacing: -.05em;
-    }
-
-    .bf-panel-head span {
-      display: inline-flex;
-      padding: 7px 10px;
-      border-radius: 999px;
-      color: rgba(248,250,252,.72);
-      background: rgba(255,255,255,.045);
-      font-size: 12px;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-
-    #matches-container,
-    #results-container {
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      border: 0;
-      background: transparent;
-      overflow: visible;
-    }
-
-    .side-banner {
-      position: fixed !important;
-      top: 400px !important;
-      z-index: 30 !important;
-    }
-
-    .left-banner { left: 24px !important; }
-    .right-banner { right: 24px !important; }
-
-    @media (max-width: 1100px) {
-      .bf-header-inner {
-        grid-template-columns: 1fr;
-        justify-items: center;
-      }
-      .bf-header-inner::after { display: none; }
-      .bf-nav { width: 100%; flex-wrap: wrap; }
-      .bf-hero,
-      .model-view { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 768px) {
-      body.site-skin-1win { padding-top: 150px !important; }
-      .side-banner,
-      .home-leaderboard-ad,
-      .banner-728 { display: none !important; }
-      .bf-header-inner {
-        width: calc(100% - 16px);
-        padding: 12px 10px;
-        display: flex;
-        flex-direction: column;
-        border-radius: 18px;
-      }
-      .bf-logo { justify-content: center; font-size: 20px; }
-      .bf-logo img { width: 30px; height: 30px; }
-      .bf-nav {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 7px;
-      }
-      .bf-nav a {
-        width: 100%;
-        padding: 9px 4px;
-        font-size: 12px;
-        text-align: center;
-        white-space: normal;
-      }
-      .bf-page {
-        width: calc(100% - 16px);
-        margin-top: 12px;
-      }
-      .bf-hero,
-      .bf-hero-left,
-      .bf-featured,
-      .bf-benefit-card,
-      .bf-predictions-section,
-      .bf-panel {
-        padding: 18px 12px;
-        border-radius: 22px;
-      }
-      .bf-hero h1 { font-size: 32px; }
-      .bf-metrics,
-      .bf-probs,
-      .bf-featured-mini-grid,
-      .bf-benefits,
-      .bf-search-row,
-      .bf-team-row { grid-template-columns: 1fr; }
-      .bf-vs { margin: 0 auto; }
-      .bf-team-logo-wrap { width: 88px; height: 88px; }
-      .home-box-ad,
-      .adhit-300x250 {
-        display: flex !important;
-        justify-content: center;
-        width: 100%;
-        margin: 18px auto;
-        overflow: hidden;
-      }
-    }
-  </style>
+  <meta name="theme-color" content="#07111d">
+  <meta name="description" content="AI-assisted football previews, match schedules and clear pre-match insights from Betforecast.ai.">
+  <meta property="og:title" content="Betforecast.ai — Smarter match previews">
+  <meta property="og:description" content="Follow the next match, understand the key signals and explore AI-assisted football forecasts.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://betforecast.ai/">
+  <meta property="og:image" content="https://betforecast.ai/assets/stadium-dark.jpg">
+  <title>Betforecast.ai — AI Match Predictions & Sports Calendar</title>
+  <link rel="icon" type="image/png" href="assets/bet-logo.png">
+  <link rel="stylesheet" href="css/home.css?v=1">
+  <script defer src="https://cdn.counter.dev/script.js" data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098" data-utcoffset="3"></script>
 </head>
-<body class="theme-dark site-skin-1win">
-  <div class="bf-adserver-background"><ins class="ins-zone" data-zone="163743"></ins></div>
-  <div class="side-banner left-banner"><ins class="ins-zone" data-zone="163622"></ins></div>
-  <div class="side-banner right-banner"><ins class="ins-zone" data-zone="163622"></ins></div>
+
+<body class="theme-dark">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="side-banner side-banner-left" aria-label="Advertisement">
+    <ins class="ins-zone" data-zone="163622"></ins>
+  </div>
+  <div class="side-banner side-banner-right" aria-label="Advertisement">
+    <ins class="ins-zone" data-zone="163622"></ins>
+  </div>
 
   <header class="bf-header">
     <div class="bf-header-inner">
-      <a class="bf-logo" href="/" aria-label="Betforecast.ai home">
-        <img src="assets/bet-logo.png" alt="Betforecast.ai logo">
+      <a class="bf-logo" href="index.html" aria-label="Betforecast.ai home">
+        <img src="assets/bet-logo.png" alt="" width="38" height="38">
         <span>Betforecast<span>.ai</span></span>
       </a>
-      <nav class="bf-nav" aria-label="Main navigation">
-        <a href="world-cup-2026.html">🏆 WC 2026</a>
-        <a href="news.html">News</a>
-        <a href="standings.html">Standings</a>
+
+      <button class="bf-menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav class="bf-nav" id="main-navigation" aria-label="Main navigation">
+        <a class="active" href="index.html">Today</a>
+        <a href="ai-insights.html">Predictions</a>
         <a href="match.html">Matches</a>
         <a href="results.html">Results</a>
-        <a href="ai-insights.html">AI Insights</a>
+        <a href="news.html">News</a>
+        <a href="standings.html">Standings</a>
       </nav>
     </div>
   </header>
 
-  <main class="bf-page">
-    <section class="bf-hero">
-      <div class="bf-hero-left">
-        <div class="bf-pill">✦ AI Prediction Engine</div>
-        <h1>Know the outcome <span>before the whistle.</span></h1>
-        <p>Our AI analyzes 100+ match variables in real time to deliver sharp, readable football forecasts.</p>
+  <main class="bf-page" id="main-content">
+    <section class="home-hero" aria-labelledby="hero-title">
+      <div class="home-hero-copy">
+        <div class="eyebrow"><span></span> The season continues</div>
+        <h1 id="hero-title">Every match has a story. <em>Read it before kick-off.</em></h1>
+        <p class="hero-lead">From Champions League qualifiers to the new league season — follow the schedule, understand the key signals and make your own informed call.</p>
 
-        <div class="bf-metrics">
-          <div class="bf-metric"><span>〽</span><strong>100+</strong><small>Signals</small></div>
-          <div class="bf-metric"><span>◎</span><strong>98.6%</strong><small>Accuracy</small></div>
-          <div class="bf-metric"><span>⚡</span><strong>Live</strong><small>Updates</small></div>
-          <div class="bf-metric"><span>🧠</span><strong>AI</strong><small>Engine</small></div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#match-schedule">Explore upcoming matches</a>
+          <a class="button button-secondary" href="ai-insights.html">Open AI Insights</a>
         </div>
 
-        <div class="bf-search-card">
-          <div class="bf-mini-pill">Try Live AI Search</div>
-          <h2>Search any match 👇</h2>
-          <div class="bf-search-row">
-            <label class="bf-input">
-              <span>⌕</span>
-              <input id="match-search-input" type="text" placeholder="e.g. France vs Morocco">
-            </label>
-            <button id="match-search-btn">Analyze Match</button>
+        <div class="hero-radar" aria-label="Upcoming sports highlights">
+          <div><strong>21 Jul</strong><span>UCL qualifying</span></div>
+          <div><strong>24–26 Jul</strong><span>F1 Hungary</span></div>
+          <div><strong>27 Jul</strong><span>ATP Washington</span></div>
+        </div>
+
+        <form class="match-search" id="home-match-search" role="search">
+          <label for="home-search-input">Find a match or competition</label>
+          <div class="match-search-row">
+            <span aria-hidden="true">⌕</span>
+            <input id="home-search-input" type="search" autocomplete="off" placeholder="Try: Fenerbahçe vs Górnik">
+            <button type="submit">Find match</button>
           </div>
-          <div class="bf-tags"></div>
-          <div id="match-search-result" class="bf-search-result">Enter a match to see probabilities and AI reasoning.</div>
-        </div>
+          <div class="search-chips" aria-label="Popular searches">
+            <button type="button" data-query="Champions League">Champions League</button>
+            <button type="button" data-query="Fenerbahçe">Fenerbahçe</button>
+            <button type="button" data-query="Formula 1">Formula 1</button>
+          </div>
+          <div class="search-result" id="home-search-result" aria-live="polite">Search the current sports calendar without leaving the page.</div>
+        </form>
       </div>
 
-      <aside class="bf-featured" id="wcFeaturedCard">
-        <div class="bf-featured-top">
-          <strong>Featured Prediction</strong>
-          <span id="wcConfidence">AI Confidence —</span>
+      <aside class="featured-focus" aria-labelledby="featured-title">
+        <div class="featured-topline">
+          <span>Featured match</span>
+          <span class="status-dot">Model tracking</span>
         </div>
-
-        <div class="bf-team-row">
-          <div class="bf-team">
-            <div class="bf-team-logo-wrap"><img class="bf-team-logo-img" id="wcHomeLogo" src="" alt=""></div>
-            <h3 id="wcHomeTeam">Loading...</h3>
-            <small id="wcHomeNote">World Cup</small>
-          </div>
-          <div class="bf-vs" id="wcVersus">VS</div>
-          <div class="bf-team">
-            <div class="bf-team-logo-wrap"><img class="bf-team-logo-img" id="wcAwayLogo" src="" alt=""></div>
-            <h3 id="wcAwayTeam">Loading...</h3>
-            <small id="wcAwayNote">World Cup</small>
-          </div>
-        </div>
-
-        <div class="bf-ai-predicts">
-          <span>AI tracks</span>
-          <strong id="wcAdvice">Loading World Cup match...</strong>
-        </div>
-
-        <div class="bf-probs">
-          <div><small>Home Win</small><strong id="wcHomePercent">—</strong><div class="bf-prob-bar"><span id="wcHomeBar" style="width:12%"></span></div></div>
-          <div><small>Draw</small><strong id="wcDrawPercent">—</strong><div class="bf-prob-bar"><span id="wcDrawBar" style="width:12%"></span></div></div>
-          <div><small>Away Win</small><strong id="wcAwayPercent">—</strong><div class="bf-prob-bar"><span id="wcAwayBar" style="width:12%"></span></div></div>
-        </div>
-
-        <div class="bf-featured-mini-grid">
-          <div><span>Match Date</span><strong id="wcMatchDate">—</strong></div>
-          <div><span>Status</span><strong id="wcMatchStatus">—</strong></div>
-          <div><span>Venue</span><strong id="wcVenue">—</strong></div>
-        </div>
-
-        <p id="wcPredictionText">World Cup fixture data is loading. The card will update automatically.</p>
-
-        <div class="bf-featured-actions">
-          <a href="match.html" id="wcMatchLink">View Match Details</a>
-          <a href="ai-insights.html">AI Insights</a>
+        <div id="featured-match" class="featured-body">
+          <p class="loading-state">Loading the next match...</p>
         </div>
       </aside>
     </section>
 
-    <section class="bf-benefits">
-      <article class="bf-benefit-card"><span>⚽</span><div><h3>Football-first intelligence</h3><p>Dedicated prediction models for football matches, leagues, standings and form trends.</p></div></article>
-      <article class="bf-benefit-card"><span>📊</span><div><h3>100+ AI parameters</h3><p>Team form, expected goals, injuries, line movement, weather, motivation and historical patterns.</p></div></article>
-      <article class="bf-benefit-card"><span>🧩</span><div><h3>Clear match reasoning</h3><p>Every prediction is supported by readable context, confidence level and key match factors.</p></div></article>
+    <section class="trust-line" aria-label="Betforecast features">
+      <div><span>01</span><strong>Clear match context</strong><p>Form, pressure, motivation and home advantage in one readable view.</p></div>
+      <div><span>02</span><strong>No false certainty</strong><p>Probabilities and model signals are shown as guidance, never as guaranteed results.</p></div>
+      <div><span>03</span><strong>Built for matchday</strong><p>Fast pages, current schedules and focused pre-match information.</p></div>
     </section>
 
-    <div class="home-leaderboard-ad"><div class="banner-728"><ins class="ins-zone" data-zone="163631"></ins></div></div>
-    <div class="home-box-ad"><div class="adhit-300x250"><ins class="ins-zone" data-zone="163623"></ins></div></div>
+    <div class="home-ad home-ad-desktop" aria-label="Advertisement">
+      <ins class="ins-zone" data-zone="163631"></ins>
+    </div>
+    <div class="home-ad home-ad-mobile" aria-label="Advertisement">
+      <ins class="ins-zone" data-zone="163623"></ins>
+    </div>
 
-    <section class="bf-predictions-section">
-      <h2>Next World Cup Quarterfinal AI Predictions</h2>
-      <div class="bf-predictions-table"></div>
+    <section class="schedule-section" id="match-schedule" aria-labelledby="schedule-title">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">What’s next</span>
+          <h2 id="schedule-title">Upcoming matches & events</h2>
+          <p>Verified event dates for the first week after the World Cup.</p>
+        </div>
+        <a href="match.html">All matches <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="schedule-table" role="table" aria-label="Upcoming sports schedule">
+        <div class="schedule-head" role="row">
+          <span role="columnheader">Date</span>
+          <span role="columnheader">Match / Event</span>
+          <span role="columnheader">Competition</span>
+          <span role="columnheader">Status</span>
+        </div>
+        <div id="schedule-list" class="schedule-list" role="rowgroup">
+          <p class="loading-state">Loading upcoming events...</p>
+        </div>
+      </div>
     </section>
 
-    <section class="model-view">
-      <article class="bf-panel">
-        <div class="bf-panel-head"><h2>Upcoming Matches</h2><span>Fixtures</span></div>
-        <div id="matches-container">Loading upcoming matches...</div>
-      </article>
-      <article class="bf-panel">
-        <div class="bf-panel-head"><h2>Latest Results</h2><span>Scores</span></div>
-        <div id="results-container">Loading results...</div>
-      </article>
+    <section class="competition-section" aria-labelledby="competition-title">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Season radar</span>
+          <h2 id="competition-title">The next big traffic windows</h2>
+          <p>One homepage that can move from one major competition to the next.</p>
+        </div>
+      </div>
+
+      <div class="competition-lines">
+        <a href="match.html" class="competition-line">
+          <span class="competition-number">01</span>
+          <span><strong>Champions League Qualifying</strong><small>21 July – 26 August</small></span>
+          <span class="competition-tag">Football</span>
+          <span class="line-arrow">↗</span>
+        </a>
+        <a href="match.html" class="competition-line">
+          <span class="competition-number">02</span>
+          <span><strong>Premier League 2026/27</strong><small>Opening weekend: 21–23 August</small></span>
+          <span class="competition-tag">Football</span>
+          <span class="line-arrow">↗</span>
+        </a>
+        <a href="match.html" class="competition-line">
+          <span class="competition-number">03</span>
+          <span><strong>La Liga 2026/27</strong><small>Opening weekend: 22–23 August</small></span>
+          <span class="competition-tag">Football</span>
+          <span class="line-arrow">↗</span>
+        </a>
+        <a href="ai-insights.html" class="competition-line">
+          <span class="competition-number">04</span>
+          <span><strong>US Open</strong><small>23 August – 13 September</small></span>
+          <span class="competition-tag">Tennis</span>
+          <span class="line-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="method-section" aria-labelledby="method-title">
+      <div class="method-copy">
+        <span class="section-kicker">Betforecast model</span>
+        <h2 id="method-title">Useful signals. Clear reasoning. Your decision.</h2>
+        <p>We turn match information into a compact pre-match view: current form, team strength, game context and risk factors. Predictions are informational and should be used responsibly.</p>
+        <a class="button button-primary" href="ai-insights.html">See how predictions work</a>
+      </div>
+      <div class="method-steps">
+        <div><span>01</span><strong>Collect</strong><p>Fixtures, team form and available match context.</p></div>
+        <div><span>02</span><strong>Compare</strong><p>Strength, momentum and likely game state.</p></div>
+        <div><span>03</span><strong>Explain</strong><p>A readable forecast with the main uncertainty included.</p></div>
+      </div>
+    </section>
+
+    <section class="archive-line">
+      <div>
+        <span class="section-kicker">Tournament archive</span>
+        <h2>World Cup 2026</h2>
+        <p>The tournament is over, but its fixtures, predictions and results remain available.</p>
+      </div>
+      <a class="button button-secondary" href="world-cup-2026.html">Open archive</a>
     </section>
   </main>
 
-  <script src="/api-config.js?v=12"></script>
-  <script src="/js/wc-featured-match.js?v=12"></script>
+  <footer class="bf-footer">
+    <div class="bf-footer-inner">
+      <div>
+        <a class="bf-logo footer-logo" href="index.html">
+          <img src="assets/bet-logo.png" alt="" width="32" height="32">
+          <span>Betforecast<span>.ai</span></span>
+        </a>
+        <p>AI-assisted sports information. Predictions are not guarantees.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="news.html">News</a>
+        <a href="results.html">Results</a>
+        <a href="ai-insights.html">AI Insights</a>
+        <a href="world-cup-2026.html">WC 2026 Archive</a>
+      </nav>
+      <p class="responsible-note"><strong>18+</strong> Gamble responsibly. Never bet more than you can afford to lose.</p>
+    </div>
+  </footer>
+
+  <script src="js/home.js?v=1" defer></script>
   <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
 </body>
 </html>
