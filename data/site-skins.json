@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "enabled": true,
   "defaultSkin": "1win",
   "adScript": "https://media.getads.online/js/code.min.js",
@@ -14,7 +14,7 @@
       "bodyClass": "site-skin-1win",
       "mode": "code",
       "codeZone": "163743",
-      "fallbackImage": "/assets/ads/1win-wc2026-site-skin.webp",
+      "fallbackImage": "",
       "clickUrl": "",
       "topClickHeight": 165,
       "sideStartTop": 165
@@ -25,7 +25,7 @@
       "bodyClass": "site-skin-dafabet",
       "mode": "code",
       "codeZone": "163743",
-      "fallbackImage": "/assets/ads/1win-wc2026-site-skin.webp",
+      "fallbackImage": "",
       "clickUrl": "",
       "topClickHeight": 165,
       "sideStartTop": 165
@@ -36,7 +36,7 @@
       "bodyClass": "site-skin-mostbet",
       "mode": "code",
       "codeZone": "163743",
-      "fallbackImage": "/assets/ads/1win-wc2026-site-skin.webp",
+      "fallbackImage": "",
       "clickUrl": "",
       "topClickHeight": 165,
       "sideStartTop": 165
