@@ -83,7 +83,7 @@
         body.site-skin-1win,
         body.site-skin-dafabet,
         body.site-skin-mostbet {
-          padding-top: 120px !important;
+          padding-top: 100px !important;
           background-size: auto 300px !important;
         }
 
@@ -95,7 +95,7 @@
         .bf-adserver-background iframe,
         #${SLOT_ID} > div,
         .bf-adserver-background > div {
-          min-height: 120px !important;
+          min-height: 100px !important;
         }
       }
     `;
@@ -127,7 +127,8 @@
     window.BF_ACTIVE_SITE_SKIN = {
       mode: "adhit-background",
       codeZone: ZONE,
-      height: 190
+      height: 190,
+      mobileHeight: 100
     };
   }
 
