@@ -949,9 +949,11 @@ a {
 }
 
 .side-banner {
-  position: fixed;
+  /* Adhit adds `.aso-background > div { position: relative; }` after load.
+     Keep the skyscrapers out of the document flow so the whole page does not jump. */
+  position: fixed !important;
   top: 230px;
-  z-index: 10;
+  z-index: 10 !important;
   width: 160px;
   min-height: 600px;
 }
