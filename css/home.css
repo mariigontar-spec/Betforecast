@@ -168,28 +168,30 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 5px;
+  gap: 10px;
 }
 
 .bf-nav a {
   min-height: 42px;
-  padding: 0 13px;
+  padding: 0 18px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid transparent;
-  border-radius: 12px;
-  color: #aebbc8;
-  font-size: 15px;
-  font-weight: 750;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 14px;
+  color: #f4f7fb;
+  background: rgba(255, 255, 255, 0.055);
+  font-size: 16px;
+  font-weight: 800;
   transition: 0.2s ease;
 }
 
 .bf-nav a:hover,
 .bf-nav a.active {
-  color: #f6fffa;
-  border-color: var(--line);
-  background: rgba(109, 232, 169, 0.08);
+  color: var(--green);
+  border-color: rgba(73, 224, 145, 0.34);
+  background: rgba(25, 126, 84, 0.34);
+  box-shadow: 0 0 22px rgba(73, 224, 145, 0.08);
 }
 
 .bf-menu-button {
