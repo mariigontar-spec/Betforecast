@@ -46,7 +46,9 @@ body {
 body.site-skin-1win,
 body.site-skin-dafabet,
 body.site-skin-mostbet {
-  padding-top: 165px;
+  /* Keep the page shell directly under the skin header. The ad code may
+     otherwise replace this with the full creative height. */
+  padding-top: 165px !important;
   background-color: #020b13;
   background-image: url("../assets/ads/1win-wc2026-site-skin.webp");
   background-repeat: no-repeat;
@@ -1006,7 +1008,7 @@ a {
   body.site-skin-1win,
   body.site-skin-dafabet,
   body.site-skin-mostbet {
-    padding-top: 96px;
+    padding-top: 96px !important;
     background-size: auto 290px;
   }
 
