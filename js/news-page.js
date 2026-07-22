@@ -16,7 +16,7 @@ function ensureSiteSkinManager() {
   }
 
   const script = document.createElement("script");
-  script.src = "/js/site-skin-manager.js?v=4";
+  script.src = "/js/site-skin-manager.js?v=8";
   script.defer = true;
   document.head.appendChild(script);
 }
