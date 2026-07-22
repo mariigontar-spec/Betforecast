@@ -1,3 +1,16 @@
+ensureSiteSkinManager();
+
+function ensureSiteSkinManager() {
+  if (document.querySelector('script[src^="/js/site-skin-manager.js"], script[src^="js/site-skin-manager.js"]')) {
+    return;
+  }
+
+  const script = document.createElement("script");
+  script.src = "/js/site-skin-manager.js?v=8";
+  script.defer = true;
+  document.head.appendChild(script);
+}
+
 const insightsMatches = [
   {
     league: "Premier League",
