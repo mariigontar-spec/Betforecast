@@ -1,10 +1,5 @@
 ensureSiteSkinManager();
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.body.classList.add("page-news");
-  loadCachedNews();
-});
-
 function ensureSiteSkinManager() {
   const adScript = document.querySelector('script[src="https://media.getads.online/js/code.min.js"]');
   if (adScript && !adScript.id) {
@@ -16,10 +11,15 @@ function ensureSiteSkinManager() {
   }
 
   const script = document.createElement("script");
-  script.src = "/js/site-skin-manager.js?v=8";
+  script.src = "/js/site-skin-manager.js?v=10";
   script.defer = true;
   document.head.appendChild(script);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("page-news");
+  loadCachedNews();
+});
 
 async function loadCachedNews() {
   const featuredContainer = document.getElementById("featured-story");
