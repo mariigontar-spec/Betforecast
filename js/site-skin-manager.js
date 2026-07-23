@@ -13,6 +13,13 @@
       .forEach((element) => element.remove());
   }
 
+  function hasAdhitScript() {
+    return Boolean(
+      document.getElementById(SCRIPT_ID) ||
+      document.querySelector('script[src*="media.getads.online/js/code.min.js"]')
+    );
+  }
+
   function injectStyle() {
     document.getElementById(STYLE_ID)?.remove();
 
@@ -28,13 +35,6 @@
         background-repeat: no-repeat !important;
         background-position: top center !important;
         background-size: 1920px auto !important;
-      }
-
-      body.site-skin-managed:not(.home-page),
-      body.site-skin-managed.site-skin-1win:not(.home-page),
-      body.site-skin-managed.site-skin-dafabet:not(.home-page),
-      body.site-skin-managed.site-skin-mostbet:not(.home-page) {
-        background-image: none !important;
       }
 
       .bf-adserver-background,
@@ -78,7 +78,9 @@
       .match-page-wrap,
       .standings-page-wrap,
       .results-page-section,
-      .news-page-wrap {
+      .news-page-wrap,
+      .ai-insights-page,
+      .article-page-wrap {
         position: relative !important;
         z-index: 20 !important;
       }
@@ -90,13 +92,6 @@
         body.site-skin-mostbet {
           padding-top: 100px !important;
           background-size: auto 300px !important;
-        }
-
-        body.site-skin-managed:not(.home-page),
-        body.site-skin-managed.site-skin-1win:not(.home-page),
-        body.site-skin-managed.site-skin-dafabet:not(.home-page),
-        body.site-skin-managed.site-skin-mostbet:not(.home-page) {
-          background-image: none !important;
         }
 
         .bf-adserver-background,
@@ -124,18 +119,23 @@
       document.body.insertBefore(slot, document.body.firstChild);
     }
 
-    slot.innerHTML = `<ins class="ins-zone" data-zone="${ZONE}"></ins>`;
+    if (!slot.querySelector(`.ins-zone[data-zone="${ZONE}"]`)) {
+      slot.innerHTML = `<ins class="ins-zone" data-zone="${ZONE}"></ins>`;
+    }
+
     return slot;
   }
 
   function loadAdhitScript() {
-    document.getElementById(SCRIPT_ID)?.remove();
+    if (hasAdhitScript()) {
+      return;
+    }
 
     const script = document.createElement("script");
     script.id = SCRIPT_ID;
     script.dataset.cfasync = "false";
     script.async = true;
-    script.src = `https://media.getads.online/js/code.min.js?bf-bg=${Date.now()}`;
+    script.src = "https://media.getads.online/js/code.min.js";
     document.body.appendChild(script);
   }
 
