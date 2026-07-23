@@ -85,6 +85,173 @@
         z-index: 20 !important;
       }
 
+      body.site-skin-managed .bf-header,
+      body.site-skin-managed .header {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+
+      body.site-skin-managed .bf-header-inner,
+      body.site-skin-managed .header-inner {
+        width: min(1860px, calc(100vw - 96px)) !important;
+        max-width: 1860px !important;
+        min-height: 122px !important;
+        margin: 0 auto !important;
+        padding: 28px 36px 28px 52px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 34px !important;
+        background: linear-gradient(180deg, rgba(18, 38, 55, 0.96), rgba(8, 20, 32, 0.98)) !important;
+        border: 1px solid rgba(94, 224, 164, 0.16) !important;
+        border-radius: 36px !important;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.32) !important;
+        backdrop-filter: blur(14px) !important;
+        -webkit-backdrop-filter: blur(14px) !important;
+      }
+
+      body.site-skin-managed .bf-header-inner::after,
+      body.site-skin-managed .header-inner::after {
+        content: none !important;
+        display: none !important;
+      }
+
+      body.site-skin-managed .bf-logo,
+      body.site-skin-managed .site-logo {
+        flex: 0 0 auto !important;
+        justify-self: auto !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 12px !important;
+        margin: 0 !important;
+        color: #fff !important;
+        font-size: 34px !important;
+        line-height: 1 !important;
+        font-weight: 950 !important;
+        letter-spacing: -0.05em !important;
+        white-space: nowrap !important;
+        text-decoration: none !important;
+      }
+
+      body.site-skin-managed .bf-logo img,
+      body.site-skin-managed .site-logo img {
+        width: 40px !important;
+        height: 40px !important;
+        object-fit: contain !important;
+      }
+
+      body.site-skin-managed .bf-nav,
+      body.site-skin-managed .topbar-menu {
+        flex: 0 1 auto !important;
+        width: auto !important;
+        max-width: calc(100% - 320px) !important;
+        margin: 0 0 0 auto !important;
+        padding: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        gap: 14px !important;
+        flex-wrap: nowrap !important;
+        overflow: visible !important;
+      }
+
+      body.site-skin-managed .bf-nav a,
+      body.site-skin-managed .topbar-menu a {
+        flex: 0 0 auto !important;
+        min-width: 0 !important;
+        width: auto !important;
+        min-height: 64px !important;
+        padding: 0 28px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: 20px !important;
+        border: 1px solid rgba(255, 255, 255, 0.13) !important;
+        background: rgba(255, 255, 255, 0.055) !important;
+        color: #f8fafc !important;
+        font-size: 24px !important;
+        line-height: 1 !important;
+        font-weight: 900 !important;
+        white-space: nowrap !important;
+        text-decoration: none !important;
+      }
+
+      body.site-skin-managed .bf-nav a:hover,
+      body.site-skin-managed .topbar-menu a:hover,
+      body.site-skin-managed .bf-nav a.active,
+      body.site-skin-managed .topbar-menu a.active {
+        color: #5ee0a4 !important;
+        background: rgba(5, 66, 48, 0.48) !important;
+        border-color: rgba(94, 224, 164, 0.28) !important;
+        box-shadow: 0 0 18px rgba(94, 224, 164, 0.12) !important;
+      }
+
+      @media (max-width: 1500px) {
+        body.site-skin-managed .bf-header-inner,
+        body.site-skin-managed .header-inner {
+          width: min(1240px, calc(100vw - 48px)) !important;
+          min-height: 82px !important;
+          padding: 14px 24px !important;
+          border-radius: 26px !important;
+          gap: 18px !important;
+        }
+
+        body.site-skin-managed .bf-logo,
+        body.site-skin-managed .site-logo {
+          font-size: 22px !important;
+          gap: 10px !important;
+        }
+
+        body.site-skin-managed .bf-logo img,
+        body.site-skin-managed .site-logo img {
+          width: 34px !important;
+          height: 34px !important;
+        }
+
+        body.site-skin-managed .bf-nav,
+        body.site-skin-managed .topbar-menu {
+          max-width: calc(100% - 220px) !important;
+          gap: 10px !important;
+        }
+
+        body.site-skin-managed .bf-nav a,
+        body.site-skin-managed .topbar-menu a {
+          min-height: 42px !important;
+          padding: 0 16px !important;
+          border-radius: 14px !important;
+          font-size: 14px !important;
+        }
+      }
+
+      @media (max-width: 1100px) {
+        body.site-skin-managed .bf-header-inner,
+        body.site-skin-managed .header-inner {
+          width: calc(100% - 24px) !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+          gap: 12px !important;
+        }
+
+        body.site-skin-managed .bf-nav,
+        body.site-skin-managed .topbar-menu {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin: 0 !important;
+          justify-content: center !important;
+          flex-wrap: wrap !important;
+        }
+      }
+
       @media (max-width: 768px) {
         body.site-skin-managed,
         body.site-skin-1win,
@@ -103,6 +270,50 @@
         .bf-adserver-background > div,
         #${SLOT_ID} > div {
           min-height: 100px !important;
+        }
+
+        body.site-skin-managed .bf-header-inner,
+        body.site-skin-managed .header-inner {
+          width: calc(100% - 16px) !important;
+          max-width: calc(100% - 16px) !important;
+          min-height: 0 !important;
+          margin: 6px auto 0 !important;
+          padding: 12px 10px !important;
+          border-radius: 18px !important;
+        }
+
+        body.site-skin-managed .bf-logo,
+        body.site-skin-managed .site-logo {
+          width: 100% !important;
+          justify-content: center !important;
+          font-size: 20px !important;
+        }
+
+        body.site-skin-managed .bf-logo img,
+        body.site-skin-managed .site-logo img {
+          width: 30px !important;
+          height: 30px !important;
+        }
+
+        body.site-skin-managed .bf-nav,
+        body.site-skin-managed .topbar-menu {
+          display: grid !important;
+          grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+          gap: 7px !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        body.site-skin-managed .bf-nav a,
+        body.site-skin-managed .topbar-menu a {
+          width: 100% !important;
+          min-height: 38px !important;
+          padding: 9px 4px !important;
+          border-radius: 13px !important;
+          font-size: 12px !important;
+          line-height: 1.1 !important;
+          text-align: center !important;
+          white-space: normal !important;
         }
       }
     `;
