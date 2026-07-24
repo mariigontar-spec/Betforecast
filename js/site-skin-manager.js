@@ -6,6 +6,11 @@
   const SLOT_ID = "bf-adserver-background-slot";
   const SCRIPT_ID = "bf-adserver-background-script";
   const STYLE_ID = "bf-adserver-background-style";
+  const LEGACY_SKIN_IMAGE = "1win-wc2026-site-skin.webp";
+
+  function isHomePage() {
+    return document.body.classList.contains("home-page");
+  }
 
   function removeOldSkinLinks() {
     document
@@ -13,11 +18,29 @@
       .forEach((element) => element.remove());
   }
 
-  function hasAdhitScript() {
-    return Boolean(
-      document.getElementById(SCRIPT_ID) ||
-      document.querySelector('script[src*="media.getads.online/js/code.min.js"]')
-    );
+  function removeLegacyInlineSkinCss() {
+    if (isHomePage()) return;
+
+    Array.from(document.styleSheets).forEach((sheet) => {
+      let rules;
+
+      try {
+        rules = sheet.cssRules;
+      } catch (error) {
+        return;
+      }
+
+      if (!rules) return;
+
+      Array.from(rules).forEach((rule) => {
+        if (!rule.cssText || !rule.cssText.includes(LEGACY_SKIN_IMAGE)) return;
+
+        if (rule.style) {
+          rule.style.removeProperty("background");
+          rule.style.removeProperty("background-image");
+        }
+      });
+    });
   }
 
   function injectStyle() {
@@ -302,7 +325,7 @@
   }
 
   function loadAdhitScript() {
-    if (hasAdhitScript()) {
+    if (document.getElementById(SCRIPT_ID)) {
       return;
     }
 
@@ -310,13 +333,14 @@
     script.id = SCRIPT_ID;
     script.dataset.cfasync = "false";
     script.async = true;
-    script.src = "https://media.getads.online/js/code.min.js";
+    script.src = "https://media.getads.online/js/code.min.js?bf-bg=v12";
     document.body.appendChild(script);
   }
 
   function run() {
     document.body.classList.add("site-skin-managed");
     removeOldSkinLinks();
+    removeLegacyInlineSkinCss();
     injectStyle();
     ensureBackgroundSlot();
     loadAdhitScript();
