@@ -23,7 +23,7 @@ window.BF_TIMEZONE = {
 
   const script = document.createElement("script");
   script.id = scriptId;
-  script.src = "/js/site-skin-manager.js?v=14";
+  script.src = "/js/site-skin-manager.js?v=15";
   script.defer = true;
   document.head.appendChild(script);
 })();
