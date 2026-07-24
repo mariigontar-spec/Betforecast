@@ -48,85 +48,15 @@
 
     const style = document.createElement("style");
     style.id = STYLE_ID;
-
-    if (isHomePage()) {
-      style.textContent = `
-        .bf-adserver-background,
-        #${SLOT_ID} {
-          position: absolute !important;
-          top: 0 !important;
-          left: 0 !important;
-          width: 100% !important;
-          min-height: 190px !important;
-          overflow: visible !important;
-          opacity: 1 !important;
-          visibility: visible !important;
-          z-index: 1 !important;
-          pointer-events: auto !important;
-          background: transparent !important;
-        }
-
-        .bf-adserver-background .ins-zone,
-        #${SLOT_ID} .ins-zone,
-        .bf-adserver-background iframe,
-        #${SLOT_ID} iframe,
-        .bf-adserver-background > div,
-        #${SLOT_ID} > div {
-          display: block !important;
-          width: 100% !important;
-          max-width: 100% !important;
-          min-width: 100% !important;
-          min-height: 190px !important;
-          overflow: visible !important;
-          opacity: 1 !important;
-          visibility: visible !important;
-        }
-
-        .bf-header,
-        .bf-page,
-        .bf-footer,
-        .side-banner,
-        .home-ad {
-          position: relative !important;
-          z-index: 20 !important;
-        }
-
-        @media (max-width: 768px) {
-          .bf-adserver-background,
-          #${SLOT_ID},
-          .bf-adserver-background .ins-zone,
-          #${SLOT_ID} .ins-zone,
-          .bf-adserver-background iframe,
-          #${SLOT_ID} iframe,
-          .bf-adserver-background > div,
-          #${SLOT_ID} > div {
-            min-height: 100px !important;
-          }
-        }
-      `;
-
-      document.head.appendChild(style);
-      return;
-    }
-
     style.textContent = `
-      body.site-skin-managed,
-      body.site-skin-1win,
-      body.site-skin-dafabet,
-      body.site-skin-mostbet {
-        padding-top: 190px !important;
-        background-color: #020b13 !important;
-        background-repeat: no-repeat !important;
-        background-position: top center !important;
-        background-size: 1920px auto !important;
-      }
-
       .bf-adserver-background,
       #${SLOT_ID} {
-        position: absolute !important;
+        position: fixed !important;
         top: 0 !important;
         left: 0 !important;
+        right: 0 !important;
         width: 100% !important;
+        height: 100vh !important;
         min-height: 190px !important;
         overflow: visible !important;
         opacity: 1 !important;
@@ -152,6 +82,55 @@
         visibility: visible !important;
       }
 
+      body.home-page.site-skin-1win,
+      body.home-page.site-skin-dafabet,
+      body.home-page.site-skin-mostbet {
+        padding-top: 190px !important;
+        background-color: #020b13 !important;
+        background-repeat: no-repeat !important;
+        background-position: top center !important;
+        background-size: 1920px auto !important;
+      }
+
+      body.home-page .bf-header,
+      body.home-page .bf-page,
+      body.home-page .bf-footer,
+      body.home-page .side-banner,
+      body.home-page .home-ad {
+        position: relative !important;
+        z-index: 20 !important;
+        transform: none !important;
+        zoom: 1 !important;
+      }
+
+      body.home-page .bf-header-inner,
+      body.home-page .bf-page,
+      body.home-page .bf-footer-inner {
+        width: min(1240px, calc(100vw - 48px)) !important;
+        max-width: 1240px !important;
+        transform: none !important;
+        zoom: 1 !important;
+      }
+
+      body.home-page .bf-header-inner {
+        margin: 0 auto !important;
+      }
+
+      body.home-page .bf-page {
+        margin: 24px auto 0 !important;
+      }
+
+      body:not(.home-page).site-skin-managed,
+      body:not(.home-page).site-skin-1win,
+      body:not(.home-page).site-skin-dafabet,
+      body:not(.home-page).site-skin-mostbet {
+        padding-top: 190px !important;
+        background-color: #020b13 !important;
+        background-repeat: no-repeat !important;
+        background-position: top center !important;
+        background-size: 1920px auto !important;
+      }
+
       body > header,
       body > main,
       body > footer,
@@ -169,8 +148,8 @@
         z-index: 20 !important;
       }
 
-      body.site-skin-managed .bf-header,
-      body.site-skin-managed .header {
+      body.site-skin-managed:not(.home-page) .bf-header,
+      body.site-skin-managed:not(.home-page) .header {
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
@@ -182,8 +161,8 @@
         -webkit-backdrop-filter: none !important;
       }
 
-      body.site-skin-managed .bf-header-inner,
-      body.site-skin-managed .header-inner {
+      body.site-skin-managed:not(.home-page) .bf-header-inner,
+      body.site-skin-managed:not(.home-page) .header-inner {
         width: min(1240px, calc(100vw - 48px)) !important;
         max-width: 1240px !important;
         min-height: 82px !important;
@@ -201,16 +180,15 @@
         -webkit-backdrop-filter: blur(14px) !important;
       }
 
-      body.site-skin-managed .bf-header-inner::after,
-      body.site-skin-managed .header-inner::after {
+      body.site-skin-managed:not(.home-page) .bf-header-inner::after,
+      body.site-skin-managed:not(.home-page) .header-inner::after {
         content: none !important;
         display: none !important;
       }
 
-      body.site-skin-managed .bf-logo,
-      body.site-skin-managed .site-logo {
+      body.site-skin-managed:not(.home-page) .bf-logo,
+      body.site-skin-managed:not(.home-page) .site-logo {
         flex: 0 0 auto !important;
-        justify-self: auto !important;
         display: inline-flex !important;
         align-items: center !important;
         justify-content: flex-start !important;
@@ -225,15 +203,15 @@
         text-decoration: none !important;
       }
 
-      body.site-skin-managed .bf-logo img,
-      body.site-skin-managed .site-logo img {
+      body.site-skin-managed:not(.home-page) .bf-logo img,
+      body.site-skin-managed:not(.home-page) .site-logo img {
         width: 38px !important;
         height: 38px !important;
         object-fit: contain !important;
       }
 
-      body.site-skin-managed .bf-nav,
-      body.site-skin-managed .topbar-menu {
+      body.site-skin-managed:not(.home-page) .bf-nav,
+      body.site-skin-managed:not(.home-page) .topbar-menu {
         flex: 0 1 auto !important;
         width: auto !important;
         max-width: calc(100% - 260px) !important;
@@ -247,8 +225,8 @@
         overflow: visible !important;
       }
 
-      body.site-skin-managed .bf-nav a,
-      body.site-skin-managed .topbar-menu a {
+      body.site-skin-managed:not(.home-page) .bf-nav a,
+      body.site-skin-managed:not(.home-page) .topbar-menu a {
         flex: 0 0 auto !important;
         min-width: 0 !important;
         width: auto !important;
@@ -270,10 +248,10 @@
         box-shadow: none !important;
       }
 
-      body.site-skin-managed .bf-nav a:hover,
-      body.site-skin-managed .topbar-menu a:hover,
-      body.site-skin-managed .bf-nav a.active,
-      body.site-skin-managed .topbar-menu a.active {
+      body.site-skin-managed:not(.home-page) .bf-nav a:hover,
+      body.site-skin-managed:not(.home-page) .topbar-menu a:hover,
+      body.site-skin-managed:not(.home-page) .bf-nav a.active,
+      body.site-skin-managed:not(.home-page) .topbar-menu a.active {
         color: #6de8a9 !important;
         background: rgba(25, 126, 84, 0.34) !important;
         border-color: rgba(73, 224, 145, 0.34) !important;
@@ -281,8 +259,8 @@
       }
 
       @media (max-width: 1100px) {
-        body.site-skin-managed .bf-header-inner,
-        body.site-skin-managed .header-inner {
+        body.site-skin-managed:not(.home-page) .bf-header-inner,
+        body.site-skin-managed:not(.home-page) .header-inner {
           width: calc(100% - 24px) !important;
           display: flex !important;
           flex-direction: column !important;
@@ -291,8 +269,8 @@
           gap: 12px !important;
         }
 
-        body.site-skin-managed .bf-nav,
-        body.site-skin-managed .topbar-menu {
+        body.site-skin-managed:not(.home-page) .bf-nav,
+        body.site-skin-managed:not(.home-page) .topbar-menu {
           width: 100% !important;
           max-width: 100% !important;
           margin: 0 !important;
@@ -321,8 +299,15 @@
           min-height: 100px !important;
         }
 
-        body.site-skin-managed .bf-header-inner,
-        body.site-skin-managed .header-inner {
+        body.home-page .bf-header-inner,
+        body.home-page .bf-page,
+        body.home-page .bf-footer-inner {
+          width: calc(100% - 16px) !important;
+          max-width: calc(100% - 16px) !important;
+        }
+
+        body.site-skin-managed:not(.home-page) .bf-header-inner,
+        body.site-skin-managed:not(.home-page) .header-inner {
           width: calc(100% - 16px) !important;
           max-width: calc(100% - 16px) !important;
           min-height: 0 !important;
@@ -331,21 +316,21 @@
           border-radius: 18px !important;
         }
 
-        body.site-skin-managed .bf-logo,
-        body.site-skin-managed .site-logo {
+        body.site-skin-managed:not(.home-page) .bf-logo,
+        body.site-skin-managed:not(.home-page) .site-logo {
           width: 100% !important;
           justify-content: center !important;
           font-size: 20px !important;
         }
 
-        body.site-skin-managed .bf-logo img,
-        body.site-skin-managed .site-logo img {
+        body.site-skin-managed:not(.home-page) .bf-logo img,
+        body.site-skin-managed:not(.home-page) .site-logo img {
           width: 30px !important;
           height: 30px !important;
         }
 
-        body.site-skin-managed .bf-nav,
-        body.site-skin-managed .topbar-menu {
+        body.site-skin-managed:not(.home-page) .bf-nav,
+        body.site-skin-managed:not(.home-page) .topbar-menu {
           display: grid !important;
           grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
           gap: 7px !important;
@@ -353,8 +338,8 @@
           max-width: 100% !important;
         }
 
-        body.site-skin-managed .bf-nav a,
-        body.site-skin-managed .topbar-menu a {
+        body.site-skin-managed:not(.home-page) .bf-nav a,
+        body.site-skin-managed:not(.home-page) .topbar-menu a {
           width: 100% !important;
           min-height: 38px !important;
           height: auto !important;
@@ -369,6 +354,40 @@
     `;
 
     document.head.appendChild(style);
+  }
+
+  function enforceHomeLayout() {
+    if (!isHomePage()) return;
+
+    const apply = () => {
+      document.body.style.setProperty("padding-top", "190px", "important");
+
+      document.querySelectorAll(".bf-header, .bf-page, .bf-footer, .side-banner, .home-ad").forEach((element) => {
+        element.style.setProperty("position", "relative", "important");
+        element.style.setProperty("z-index", "20", "important");
+        element.style.setProperty("transform", "none", "important");
+        element.style.setProperty("zoom", "1", "important");
+      });
+
+      document.querySelectorAll(".bf-header-inner, .bf-page, .bf-footer-inner").forEach((element) => {
+        element.style.setProperty("width", "min(1240px, calc(100vw - 48px))", "important");
+        element.style.setProperty("max-width", "1240px", "important");
+        element.style.setProperty("transform", "none", "important");
+        element.style.setProperty("zoom", "1", "important");
+      });
+
+      document.querySelectorAll(".bf-header-inner").forEach((element) => {
+        element.style.setProperty("margin-left", "auto", "important");
+        element.style.setProperty("margin-right", "auto", "important");
+      });
+
+      document.querySelectorAll(".bf-page").forEach((element) => {
+        element.style.setProperty("margin", "24px auto 0", "important");
+      });
+    };
+
+    apply();
+    [250, 700, 1400, 2400].forEach((delay) => window.setTimeout(apply, delay));
   }
 
   function ensureBackgroundSlot() {
@@ -392,7 +411,10 @@
   }
 
   function loadAdhitScript() {
-    if (document.getElementById(SCRIPT_ID)) {
+    const existingScript = document.querySelector('script[src*="media.getads.online/js/code.min.js"]');
+
+    if (existingScript) {
+      if (!existingScript.id) existingScript.id = SCRIPT_ID;
       return;
     }
 
@@ -414,6 +436,7 @@
     injectStyle();
     ensureBackgroundSlot();
     loadAdhitScript();
+    enforceHomeLayout();
 
     window.BF_ACTIVE_SITE_SKIN = {
       mode: isHomePage() ? "home-adhit-background" : "adhit-background",
