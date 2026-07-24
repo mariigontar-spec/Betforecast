@@ -1,12 +1,16 @@
-/* Betforecast.ai - unified Adhit background skin and header layout */
+/* Betforecast.ai — Adhit background skin loader */
 (() => {
   "use strict";
 
   const ZONE = "163743";
   const SLOT_ID = "bf-adserver-background-slot";
   const SCRIPT_ID = "bf-adserver-background-script";
-  const STYLE_ID = "bf-managed-skin-style";
+  const STYLE_ID = "bf-adserver-background-style";
   const LEGACY_SKIN_IMAGE = "1win-wc2026-site-skin.webp";
+
+  function isHomePage() {
+    return document.body.classList.contains("home-page");
+  }
 
   function removeOldSkinLinks() {
     document
@@ -15,6 +19,8 @@
   }
 
   function removeLegacyInlineSkinCss() {
+    if (isHomePage()) return;
+
     Array.from(document.styleSheets).forEach((sheet) => {
       let rules;
 
@@ -42,23 +48,74 @@
 
     const style = document.createElement("style");
     style.id = STYLE_ID;
-    style.textContent = `
-      :root {
-        --bf-managed-shell: 1240px;
-        --bf-managed-gap: 48px;
-        --bf-managed-bg: #020b13;
-        --bf-managed-panel: linear-gradient(180deg, rgba(18, 38, 55, 0.965), rgba(8, 20, 32, 0.98));
-        --bf-managed-border: 1px solid rgba(255, 255, 255, 0.08);
-        --bf-managed-green: #6de8a9;
-      }
 
+    if (isHomePage()) {
+      style.textContent = `
+        .bf-adserver-background,
+        #${SLOT_ID} {
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          width: 100% !important;
+          min-height: 190px !important;
+          overflow: visible !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          z-index: 1 !important;
+          pointer-events: auto !important;
+          background: transparent !important;
+        }
+
+        .bf-adserver-background .ins-zone,
+        #${SLOT_ID} .ins-zone,
+        .bf-adserver-background iframe,
+        #${SLOT_ID} iframe,
+        .bf-adserver-background > div,
+        #${SLOT_ID} > div {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          min-width: 100% !important;
+          min-height: 190px !important;
+          overflow: visible !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+
+        .bf-header,
+        .bf-page,
+        .bf-footer,
+        .side-banner,
+        .home-ad {
+          position: relative !important;
+          z-index: 20 !important;
+        }
+
+        @media (max-width: 768px) {
+          .bf-adserver-background,
+          #${SLOT_ID},
+          .bf-adserver-background .ins-zone,
+          #${SLOT_ID} .ins-zone,
+          .bf-adserver-background iframe,
+          #${SLOT_ID} iframe,
+          .bf-adserver-background > div,
+          #${SLOT_ID} > div {
+            min-height: 100px !important;
+          }
+        }
+      `;
+
+      document.head.appendChild(style);
+      return;
+    }
+
+    style.textContent = `
       body.site-skin-managed,
       body.site-skin-1win,
       body.site-skin-dafabet,
       body.site-skin-mostbet {
         padding-top: 190px !important;
-        background-color: var(--bf-managed-bg) !important;
-        background-image: none !important;
+        background-color: #020b13 !important;
         background-repeat: no-repeat !important;
         background-position: top center !important;
         background-size: 1920px auto !important;
@@ -66,11 +123,11 @@
 
       .bf-adserver-background,
       #${SLOT_ID} {
-        position: fixed !important;
-        inset: 0 !important;
-        width: 100vw !important;
-        max-width: 100vw !important;
-        min-height: 100vh !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        min-height: 190px !important;
         overflow: visible !important;
         opacity: 1 !important;
         visibility: visible !important;
@@ -86,10 +143,10 @@
       .bf-adserver-background > div,
       #${SLOT_ID} > div {
         display: block !important;
-        width: 100vw !important;
-        max-width: 100vw !important;
-        min-width: 100vw !important;
-        min-height: 100vh !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        min-height: 190px !important;
         overflow: visible !important;
         opacity: 1 !important;
         visibility: visible !important;
@@ -105,17 +162,9 @@
       .match-page-wrap,
       .standings-page-wrap,
       .results-page-section,
-      .results-panel,
       .news-page-wrap,
       .ai-insights-page,
-      .article-page-wrap,
-      .side-banner,
-      .left-banner,
-      .right-banner,
-      .desktop-ad,
-      .mobile-ad,
-      .results-leaderboard-ad,
-      .results-box-ad {
+      .article-page-wrap {
         position: relative !important;
         z-index: 20 !important;
       }
@@ -135,8 +184,8 @@
 
       body.site-skin-managed .bf-header-inner,
       body.site-skin-managed .header-inner {
-        width: min(var(--bf-managed-shell), calc(100vw - var(--bf-managed-gap))) !important;
-        max-width: var(--bf-managed-shell) !important;
+        width: min(1240px, calc(100vw - 48px)) !important;
+        max-width: 1240px !important;
         min-height: 82px !important;
         margin: 0 auto !important;
         padding: 14px 24px !important;
@@ -144,8 +193,8 @@
         align-items: center !important;
         justify-content: space-between !important;
         gap: 22px !important;
-        background: var(--bf-managed-panel) !important;
-        border: var(--bf-managed-border) !important;
+        background: linear-gradient(180deg, rgba(18, 38, 55, 0.965), rgba(8, 20, 32, 0.98)) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
         border-radius: 26px !important;
         box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34) !important;
         backdrop-filter: blur(14px) !important;
@@ -166,8 +215,6 @@
         align-items: center !important;
         justify-content: flex-start !important;
         gap: 10px !important;
-        width: auto !important;
-        min-width: 0 !important;
         margin: 0 !important;
         color: #fff !important;
         font-size: 23px !important;
@@ -195,7 +242,6 @@
         display: flex !important;
         align-items: center !important;
         justify-content: flex-end !important;
-        justify-self: auto !important;
         gap: 10px !important;
         flex-wrap: nowrap !important;
         overflow: visible !important;
@@ -207,7 +253,7 @@
         min-width: 0 !important;
         width: auto !important;
         min-height: 42px !important;
-        height: 42px !important;
+        height: auto !important;
         padding: 0 18px !important;
         display: inline-flex !important;
         align-items: center !important;
@@ -228,24 +274,10 @@
       body.site-skin-managed .topbar-menu a:hover,
       body.site-skin-managed .bf-nav a.active,
       body.site-skin-managed .topbar-menu a.active {
-        color: var(--bf-managed-green) !important;
+        color: #6de8a9 !important;
         background: rgba(25, 126, 84, 0.34) !important;
         border-color: rgba(73, 224, 145, 0.34) !important;
         box-shadow: 0 0 22px rgba(73, 224, 145, 0.08) !important;
-      }
-
-      body.site-skin-managed .bf-page,
-      body.site-skin-managed .wc-page,
-      body.site-skin-managed .match-page-wrap,
-      body.site-skin-managed .standings-page-wrap,
-      body.site-skin-managed .results-page-section,
-      body.site-skin-managed .news-page-wrap,
-      body.site-skin-managed .ai-insights-page,
-      body.site-skin-managed .article-page-wrap {
-        width: min(var(--bf-managed-shell), calc(100vw - var(--bf-managed-gap))) !important;
-        max-width: var(--bf-managed-shell) !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
       }
 
       @media (max-width: 1100px) {
@@ -286,7 +318,7 @@
         #${SLOT_ID} iframe,
         .bf-adserver-background > div,
         #${SLOT_ID} > div {
-          min-height: 100vh !important;
+          min-height: 100px !important;
         }
 
         body.site-skin-managed .bf-header-inner,
@@ -335,6 +367,7 @@
         }
       }
     `;
+
     document.head.appendChild(style);
   }
 
@@ -359,26 +392,31 @@
   }
 
   function loadAdhitScript() {
-    document.getElementById(SCRIPT_ID)?.remove();
+    if (document.getElementById(SCRIPT_ID)) {
+      return;
+    }
 
     const script = document.createElement("script");
     script.id = SCRIPT_ID;
     script.dataset.cfasync = "false";
     script.async = true;
-    script.src = "https://media.getads.online/js/code.min.js?bf-bg=v13";
+    script.src = "https://media.getads.online/js/code.min.js";
     document.body.appendChild(script);
   }
 
   function run() {
-    document.body.classList.add("site-skin-managed");
-    removeOldSkinLinks();
-    removeLegacyInlineSkinCss();
+    if (!isHomePage()) {
+      document.body.classList.add("site-skin-managed");
+      removeOldSkinLinks();
+      removeLegacyInlineSkinCss();
+    }
+
     injectStyle();
     ensureBackgroundSlot();
     loadAdhitScript();
 
     window.BF_ACTIVE_SITE_SKIN = {
-      mode: "adhit-background",
+      mode: isHomePage() ? "home-adhit-background" : "adhit-background",
       codeZone: ZONE,
       height: 190,
       mobileHeight: 100
