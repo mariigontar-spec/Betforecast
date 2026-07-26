@@ -18,8 +18,54 @@ function ensureSiteSkinManager() {
 
 document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("page-news");
+  updateNewsPageLabels();
   loadCachedNews();
 });
+
+function updateNewsPageLabels() {
+  document.title = "World Sports News | Betforecast.ai";
+
+  const kicker = document.querySelector(".news-title-strip span");
+  const title = document.querySelector(".news-title-strip h1");
+
+  if (kicker) kicker.textContent = "World Sports News";
+  if (title) title.textContent = "Football, F1, Tennis, Cycling & Global Results";
+
+  const sidebarHeads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
+  if (sidebarHeads[0]) sidebarHeads[0].textContent = "Top Categories";
+  if (sidebarHeads[1]) sidebarHeads[1].textContent = "Trending Signals";
+  if (sidebarHeads[2]) sidebarHeads[2].textContent = "News Focus";
+
+  const categoryList = document.querySelector(".league-list");
+  if (categoryList) {
+    categoryList.innerHTML = `
+      <a class="sidebar-link-card" href="news.html#football">Football</a>
+      <a class="sidebar-link-card" href="news.html#f1">Formula 1</a>
+      <a class="sidebar-link-card" href="news.html#tennis">Tennis</a>
+      <a class="sidebar-link-card" href="news.html#cycling">Cycling</a>
+      <a class="sidebar-link-card" href="news.html#multi-sport">Commonwealth Games</a>
+      <a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>
+    `;
+  }
+
+  const trendingList = document.querySelector(".trending-list");
+  if (trendingList) {
+    trendingList.innerHTML = `
+      <a class="sidebar-link-card" href="article.html?id=1">Guimaraes transfer watch</a>
+      <a class="sidebar-link-card" href="article.html?id=3">Pogacar Tour title</a>
+      <a class="sidebar-link-card" href="article.html?id=4">Hungarian GP race day</a>
+      <a class="sidebar-link-card" href="article.html?id=6">Glasgow medal table</a>
+    `;
+  }
+
+  const focusBox = document.querySelector(".news-focus-box");
+  if (focusBox) {
+    focusBox.innerHTML = `
+      <strong>What matters most today</strong>
+      <p>Football transfers, F1 race strategy, tennis hard-court form, cycling results and Glasgow medal events are the current traffic windows.</p>
+    `;
+  }
+}
 
 async function loadCachedNews() {
   const featuredContainer = document.getElementById("featured-story");
@@ -31,7 +77,7 @@ async function loadCachedNews() {
   }
 
   featuredContainer.innerHTML = `<div class="news-loading">Loading featured story...</div>`;
-  newsContainer.innerHTML = `<div class="news-loading">Loading cached football news...</div>`;
+  newsContainer.innerHTML = `<div class="news-loading">Loading cached world sports news...</div>`;
 
   try {
     const response = await fetch(`/data/news.json?v=${Date.now()}`, {
@@ -92,7 +138,7 @@ function renderFeaturedStory(article) {
         >
       </div>
       <div class="featured-story-card__content">
-        <div class="featured-story-card__meta">${escapeHtml(article.category || "Football")} • ${escapeHtml(date)}</div>
+        <div class="featured-story-card__meta">${escapeHtml(article.category || "World Sport")} • ${escapeHtml(date)}</div>
         <h3 class="featured-story-card__title">${escapeHtml(title)}</h3>
         <p class="featured-story-card__excerpt">${escapeHtml(description)}</p>
       </div>
@@ -119,7 +165,7 @@ function renderNewsCard(article, index = 0) {
         >
       </div>
       <div class="news-card-v2__content">
-        <div class="news-card-v2__meta">${escapeHtml(article.category || "Football")} • ${escapeHtml(date)}</div>
+        <div class="news-card-v2__meta">${escapeHtml(article.category || "World Sport")} • ${escapeHtml(date)}</div>
         <h3 class="news-card-v2__title">${escapeHtml(title)}</h3>
         <p class="news-card-v2__excerpt">${escapeHtml(description)}</p>
       </div>
