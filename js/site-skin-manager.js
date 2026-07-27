@@ -1,16 +1,15 @@
-/* Betforecast.ai — clean Adhit background manager
+/* Betforecast.ai — legacy background cleanup
    Purpose:
-   - Do not touch the homepage layout.
-   - On inner pages, remove old hardcoded skin links/backgrounds.
-   - Add one managed background zone: 163743.
-   - Keep one compact header override for inner pages only. */
+   - Keep normal page layout and normal ad units.
+   - Remove old hardcoded site-skin backgrounds and click layers.
+   - Do not inject background zone 163743 anymore.
+*/
 (() => {
   "use strict";
 
-  const BG_ZONE = "163743";
-  const BG_SLOT_ID = "bf-adserver-background-slot";
+  const LEGACY_BG_ZONE = "163743";
   const AD_SCRIPT_ID = "bf-adserver-script";
-  const STYLE_ID = "bf-site-skin-style";
+  const STYLE_ID = "bf-legacy-background-cleanup-style";
   const AD_SCRIPT_SRC = "https://media.getads.online/js/code.min.js";
   const LEGACY_IMAGE = "1win-wc2026-site-skin.webp";
 
@@ -40,6 +39,28 @@
       .forEach((element) => element.remove());
   }
 
+  function removeLegacyBackgroundSlots() {
+    document
+      .querySelectorAll(".bf-adserver-background, #bf-adserver-background-slot")
+      .forEach((element) => element.remove());
+
+    document
+      .querySelectorAll(`ins.ins-zone[data-zone="${LEGACY_BG_ZONE}"]`)
+      .forEach((ins) => {
+        const parent = ins.parentElement;
+        ins.remove();
+
+        if (
+          parent &&
+          parent !== document.body &&
+          parent.children.length === 0 &&
+          /background|skin|bg/i.test(parent.className || "")
+        ) {
+          parent.remove();
+        }
+      });
+  }
+
   function stripLegacyBackgroundCss() {
     Array.from(document.styleSheets).forEach((sheet) => {
       let rules;
@@ -53,7 +74,8 @@
       if (!rules) return;
 
       Array.from(rules).forEach((rule) => {
-        if (!rule.cssText || !rule.cssText.includes(LEGACY_IMAGE) || !rule.style) return;
+        if (!rule.cssText || !rule.style) return;
+        if (!rule.cssText.includes(LEGACY_IMAGE) && !rule.cssText.includes(LEGACY_BG_ZONE)) return;
 
         rule.style.removeProperty("background");
         rule.style.removeProperty("background-image");
@@ -61,48 +83,38 @@
     });
   }
 
-  function injectInnerPageStyle() {
+  function injectCleanupStyle() {
     document.getElementById(STYLE_ID)?.remove();
 
     const style = document.createElement("style");
     style.id = STYLE_ID;
     style.textContent = `
+      body.site-skin-1win,
+      body.site-skin-dafabet,
+      body.site-skin-mostbet,
       body.site-skin-managed {
-        padding-top: 190px !important;
+        background-image: none !important;
+        background:
+          radial-gradient(circle at 18% 0%, rgba(22, 117, 84, 0.17), transparent 31rem),
+          radial-gradient(circle at 88% 22%, rgba(24, 86, 126, 0.13), transparent 28rem),
+          linear-gradient(180deg, #07111d 0, #050b13 36rem, #02070d 100%) !important;
+        background-repeat: no-repeat !important;
+        background-position: center top !important;
+        background-size: auto !important;
+        background-attachment: scroll !important;
         background-color: #020b13 !important;
-        overflow-x: hidden !important;
       }
 
-      body.site-skin-managed .bf-adserver-background,
-      body.site-skin-managed #${BG_SLOT_ID} {
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        height: 100vh !important;
-        min-height: 190px !important;
-        overflow: visible !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-        z-index: 1 !important;
-        pointer-events: auto !important;
-        background: transparent !important;
-      }
-
-      body.site-skin-managed .bf-adserver-background .ins-zone,
-      body.site-skin-managed #${BG_SLOT_ID} .ins-zone,
-      body.site-skin-managed .bf-adserver-background iframe,
-      body.site-skin-managed #${BG_SLOT_ID} iframe,
-      body.site-skin-managed .bf-adserver-background > div,
-      body.site-skin-managed #${BG_SLOT_ID} > div {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        min-width: 100% !important;
-        min-height: 190px !important;
-        overflow: visible !important;
-        opacity: 1 !important;
-        visibility: visible !important;
+      .bf-adserver-background,
+      #bf-adserver-background-slot,
+      ins.ins-zone[data-zone="${LEGACY_BG_ZONE}"] {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        min-height: 0 !important;
+        overflow: hidden !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
       }
 
       body.site-skin-managed > header,
@@ -131,8 +143,6 @@
         background: transparent !important;
         border: 0 !important;
         box-shadow: none !important;
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
       }
 
       body.site-skin-managed .bf-header-inner,
@@ -235,7 +245,6 @@
         body.site-skin-managed .bf-header-inner,
         body.site-skin-managed .header-inner {
           width: calc(100% - 24px) !important;
-          display: flex !important;
           flex-direction: column !important;
           align-items: center !important;
           justify-content: center !important;
@@ -253,21 +262,6 @@
       }
 
       @media (max-width: 768px) {
-        body.site-skin-managed {
-          padding-top: 100px !important;
-        }
-
-        body.site-skin-managed .bf-adserver-background,
-        body.site-skin-managed #${BG_SLOT_ID},
-        body.site-skin-managed .bf-adserver-background .ins-zone,
-        body.site-skin-managed #${BG_SLOT_ID} .ins-zone,
-        body.site-skin-managed .bf-adserver-background iframe,
-        body.site-skin-managed #${BG_SLOT_ID} iframe,
-        body.site-skin-managed .bf-adserver-background > div,
-        body.site-skin-managed #${BG_SLOT_ID} > div {
-          min-height: 100px !important;
-        }
-
         body.site-skin-managed .bf-header-inner,
         body.site-skin-managed .header-inner {
           width: calc(100% - 16px) !important;
@@ -317,40 +311,26 @@
     document.head.appendChild(style);
   }
 
-  function ensureBackgroundSlot() {
-    let slot = document.querySelector(".bf-adserver-background");
-
-    if (!slot) {
-      slot = document.createElement("div");
-      document.body.insertBefore(slot, document.body.firstChild);
+  function runCleanup() {
+    if (!isHomePage()) {
+      document.body.classList.add("site-skin-managed");
     }
 
-    slot.id = BG_SLOT_ID;
-    slot.className = "bf-adserver-background";
-    slot.innerHTML = `<ins class="ins-zone" data-zone="${BG_ZONE}"></ins>`;
-  }
-
-  function run() {
-    if (isHomePage()) {
-      document.getElementById(STYLE_ID)?.remove();
-      document.querySelectorAll(".bf-adserver-background").forEach((slot) => slot.remove());
-      ensureAdhitScript();
-      window.BF_ACTIVE_SITE_SKIN = { mode: "home-static-background", codeZone: null };
-      return;
-    }
-
-    document.body.classList.add("site-skin-managed");
     removeLegacyClickAreas();
+    removeLegacyBackgroundSlots();
     stripLegacyBackgroundCss();
-    injectInnerPageStyle();
-    ensureBackgroundSlot();
+    injectCleanupStyle();
     ensureAdhitScript();
-    window.BF_ACTIVE_SITE_SKIN = { mode: "adhit-background", codeZone: BG_ZONE };
+
+    window.BF_ACTIVE_SITE_SKIN = {
+      mode: "legacy-backgrounds-removed",
+      codeZone: null
+    };
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", run, { once: true });
+    document.addEventListener("DOMContentLoaded", runCleanup, { once: true });
   } else {
-    run();
+    runCleanup();
   }
 })();
