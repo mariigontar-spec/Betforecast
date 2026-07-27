@@ -1,23 +1,18 @@
-/* Betforecast.ai dynamic background manager v21
-   One dynamic Adhit background zone: 163743.
-   Keeps every page aligned to the index header and shell. */
+/* Betforecast.ai dynamic background manager v21 */
 (() => {
   "use strict";
 
   const BG_ZONE = "163743";
   const BG_SLOT_ID = "bf-dynamic-background-slot";
   const STYLE_ID = "bf-dynamic-background-layout-style";
-  const AD_SCRIPT_ID = "bf-adserver-script";
   const AD_SCRIPT_SRC = "https://media.getads.online/js/code.min.js";
   const LEGACY_IMAGE = "1win-wc2026-site-skin.webp";
 
-  function removeLegacyClickAreas() {
+  function removeOldLayers() {
     document
       .querySelectorAll(".skin-click, .skin-click-top, .skin-click-left, .skin-click-right")
       .forEach((element) => element.remove());
-  }
 
-  function removeDuplicateBackgroundSlots() {
     document
       .querySelectorAll(".bf-adserver-background, #bf-adserver-background-slot, #bf-dynamic-background-slot")
       .forEach((element) => element.remove());
@@ -27,40 +22,29 @@
       .forEach((ins) => {
         const parent = ins.parentElement;
         const isBgParent = parent && /background|skin|bg|dynamic/i.test(parent.className || parent.id || "");
-
-        if (isBgParent || parent === document.body) {
-          ins.remove();
-        }
+        if (isBgParent || parent === document.body) ins.remove();
       });
   }
 
-  function stripLegacyBackgroundCss() {
+  function stripOldImageCss() {
     Array.from(document.styleSheets).forEach((sheet) => {
       let rules;
-
       try {
         rules = sheet.cssRules;
       } catch (error) {
         return;
       }
 
-      if (!rules) return;
-
-      Array.from(rules).forEach((rule) => {
-        if (!rule.cssText || !rule.style) return;
-        if (!rule.cssText.includes(LEGACY_IMAGE)) return;
-
-        rule.style.removeProperty("background");
-        rule.style.removeProperty("background-image");
-        rule.style.removeProperty("background-position");
-        rule.style.removeProperty("background-size");
-        rule.style.removeProperty("background-repeat");
-        rule.style.removeProperty("background-attachment");
+      Array.from(rules || []).forEach((rule) => {
+        if (!rule.cssText || !rule.style || !rule.cssText.includes(LEGACY_IMAGE)) return;
+        ["background", "background-image", "background-position", "background-size", "background-repeat", "background-attachment"].forEach((prop) => {
+          rule.style.removeProperty(prop);
+        });
       });
     });
   }
 
-  function ensureDynamicBackgroundSlot() {
+  function createBackgroundSlot() {
     const slot = document.createElement("div");
     slot.id = BG_SLOT_ID;
     slot.className = "bf-dynamic-background bf-adserver-background";
@@ -70,7 +54,7 @@
     return slot;
   }
 
-  function injectLayoutStyle() {
+  function injectStyle() {
     document.getElementById(STYLE_ID)?.remove();
 
     const style = document.createElement("style");
@@ -83,7 +67,6 @@
         --bf-lock-mobile-top: 96px;
         --bf-lock-small-mobile-top: 88px;
         --bf-lock-page-top: 24px;
-        --bf-lock-header-height: 82px;
         --bf-lock-panel: linear-gradient(180deg, rgba(18, 38, 55, 0.965), rgba(8, 20, 32, 0.98));
         --bf-lock-border: 1px solid rgba(255, 255, 255, 0.08);
         --bf-lock-green: #6de8a9;
@@ -168,8 +151,6 @@
         background: transparent !important;
         border: 0 !important;
         box-shadow: none !important;
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
         transform: none !important;
       }
 
@@ -178,7 +159,7 @@
         width: min(var(--bf-lock-shell), calc(100vw - var(--bf-lock-gap))) !important;
         max-width: var(--bf-lock-shell) !important;
         min-width: 0 !important;
-        min-height: var(--bf-lock-header-height) !important;
+        min-height: 82px !important;
         height: auto !important;
         margin: 0 auto !important;
         padding: 14px 24px !important;
@@ -228,7 +209,6 @@
 
       html body.site-skin-managed .bf-logo img,
       html body.site-skin-managed .site-logo img {
-        flex: 0 0 auto !important;
         display: block !important;
         width: 38px !important;
         height: 38px !important;
@@ -247,7 +227,6 @@
         flex-direction: row !important;
         align-items: center !important;
         justify-content: flex-end !important;
-        justify-self: end !important;
         gap: 10px !important;
         flex-wrap: nowrap !important;
         overflow: visible !important;
@@ -280,7 +259,6 @@
         line-height: 1 !important;
         font-weight: 800 !important;
         letter-spacing: 0 !important;
-        text-align: center !important;
         white-space: nowrap !important;
         text-decoration: none !important;
         box-shadow: none !important;
@@ -429,33 +407,34 @@
   }
 
   function ensureAdhitScript(slot) {
-    const existing = document.querySelector('script[src*="media.getads.online/js/code.min.js"]');
-
-    if (!existing) {
-      const script = document.createElement("script");
-      script.id = AD_SCRIPT_ID;
-      script.dataset.cfasync = "false";
-      script.async = true;
-      script.src = AD_SCRIPT_SRC;
-      document.body.appendChild(script);
-      return;
-    }
-
-    if (!existing.id) existing.id = AD_SCRIPT_ID;
-
     window.setTimeout(() => {
-      const hasRenderedBackground = slot.querySelector("iframe, div:not(.ins-zone)");
-      const refreshExists = document.getElementById("bf-adserver-background-refresh");
+      const existing = document.querySelector('script[src*="media.getads.online/js/code.min.js"]');
 
-      if (hasRenderedBackground || refreshExists) return;
+      if (!existing) {
+        const script = document.createElement("script");
+        script.id = "bf-adserver-script";
+        script.dataset.cfasync = "false";
+        script.async = true;
+        script.src = AD_SCRIPT_SRC;
+        document.body.appendChild(script);
+        return;
+      }
 
-      const refresh = document.createElement("script");
-      refresh.id = "bf-adserver-background-refresh";
-      refresh.dataset.cfasync = "false";
-      refresh.async = true;
-      refresh.src = `${AD_SCRIPT_SRC}?bf-bg-v=21`;
-      document.body.appendChild(refresh);
-    }, 700);
+      if (!existing.id) existing.id = "bf-adserver-script";
+
+      window.setTimeout(() => {
+        const hasRenderedBackground = slot.querySelector("iframe, div:not(.ins-zone)");
+        const refreshExists = document.getElementById("bf-adserver-background-refresh");
+        if (hasRenderedBackground || refreshExists) return;
+
+        const refresh = document.createElement("script");
+        refresh.id = "bf-adserver-background-refresh";
+        refresh.dataset.cfasync = "false";
+        refresh.async = true;
+        refresh.src = `${AD_SCRIPT_SRC}?bf-bg-v=21`;
+        document.body.appendChild(refresh);
+      }, 700);
+    }, 0);
   }
 
   function run() {
@@ -464,12 +443,11 @@
     document.body.dataset.bfDynamicBackgroundReady = "true";
     document.body.classList.add("site-skin-managed");
 
-    removeLegacyClickAreas();
-    removeDuplicateBackgroundSlots();
-    stripLegacyBackgroundCss();
-    injectLayoutStyle();
+    removeOldLayers();
+    stripOldImageCss();
+    injectStyle();
 
-    const slot = ensureDynamicBackgroundSlot();
+    const slot = createBackgroundSlot();
     ensureAdhitScript(slot);
 
     window.BF_ACTIVE_SITE_SKIN = {
