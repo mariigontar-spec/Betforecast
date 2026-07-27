@@ -1,22 +1,13 @@
-/* Betforecast.ai — layout lock + legacy background cleanup
-   Purpose:
-   - Keep the homepage as the visual reference.
-   - Make every inner page use the same top offset, shell width, side spacing and menu geometry.
-   - Remove old hardcoded site-skin backgrounds and click layers.
-   - Do not inject background zone 163743 anymore. */
+/* Betforecast.ai layout lock v20
+   Keeps every inner page aligned to the homepage header and shell. */
 (() => {
   "use strict";
 
   const LEGACY_BG_ZONE = "163743";
+  const STYLE_ID = "bf-page-layout-lock-style";
   const AD_SCRIPT_ID = "bf-adserver-script";
-  const STYLE_ID = "bf-layout-lock-style";
   const AD_SCRIPT_SRC = "https://media.getads.online/js/code.min.js";
-  const LEGACY_TOKENS = [
-    "1win-wc2026-site-skin.webp",
-    "mostbet",
-    "dafabet",
-    "163743"
-  ];
+  const LEGACY_IMAGE = "1win-wc2026-site-skin.webp";
 
   function isHomePage() {
     return document.body.classList.contains("home-page");
@@ -80,13 +71,14 @@
 
       Array.from(rules).forEach((rule) => {
         if (!rule.cssText || !rule.style) return;
-
-        const css = rule.cssText.toLowerCase();
-        const hasLegacyBackground = LEGACY_TOKENS.some((token) => css.includes(token.toLowerCase()));
-        if (!hasLegacyBackground) return;
+        if (!rule.cssText.includes(LEGACY_IMAGE) && !rule.cssText.includes(LEGACY_BG_ZONE)) return;
 
         rule.style.removeProperty("background");
         rule.style.removeProperty("background-image");
+        rule.style.removeProperty("background-position");
+        rule.style.removeProperty("background-size");
+        rule.style.removeProperty("background-repeat");
+        rule.style.removeProperty("background-attachment");
       });
     });
   }
@@ -101,19 +93,33 @@
         --bf-lock-shell: 1240px;
         --bf-lock-gap: 48px;
         --bf-lock-top: 190px;
+        --bf-lock-mobile-top: 96px;
+        --bf-lock-small-mobile-top: 88px;
         --bf-lock-page-top: 24px;
+        --bf-lock-header-height: 82px;
+        --bf-lock-header-pad-y: 14px;
+        --bf-lock-header-pad-x: 24px;
+        --bf-lock-nav-gap: 10px;
         --bf-lock-panel: linear-gradient(180deg, rgba(18, 38, 55, 0.965), rgba(8, 20, 32, 0.98));
         --bf-lock-border: 1px solid rgba(255, 255, 255, 0.08);
         --bf-lock-green: #6de8a9;
       }
 
-      body.site-skin-1win,
-      body.site-skin-dafabet,
-      body.site-skin-mostbet,
-      body.site-skin-managed {
+      html,
+      body {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        overflow-x: hidden !important;
+      }
+
+      html body.site-skin-1win,
+      html body.site-skin-dafabet,
+      html body.site-skin-mostbet,
+      html body.site-skin-managed {
         padding-top: var(--bf-lock-top) !important;
         margin: 0 !important;
-        overflow-x: hidden !important;
+        color: #f5f8fb !important;
         background:
           radial-gradient(circle at 18% 0%, rgba(22, 117, 84, 0.17), transparent 31rem),
           radial-gradient(circle at 88% 22%, rgba(24, 86, 126, 0.13), transparent 28rem),
@@ -141,26 +147,26 @@
         pointer-events: none !important;
       }
 
-      body.site-skin-managed > header,
-      body.site-skin-managed > main,
-      body.site-skin-managed > footer,
-      body.site-skin-managed .bf-header,
-      body.site-skin-managed .header,
-      body.site-skin-managed .bf-page,
-      body.site-skin-managed .wc-page,
-      body.site-skin-managed .page-shell,
-      body.site-skin-managed .match-page-wrap,
-      body.site-skin-managed .standings-page-wrap,
-      body.site-skin-managed .results-page-section,
-      body.site-skin-managed .news-page-wrap,
-      body.site-skin-managed .ai-insights-page,
-      body.site-skin-managed .article-page-wrap {
+      html body.site-skin-managed.site-skin-1win > header,
+      html body.site-skin-managed.site-skin-1win > main,
+      html body.site-skin-managed.site-skin-1win > footer,
+      html body.site-skin-managed.site-skin-1win .bf-header,
+      html body.site-skin-managed.site-skin-1win .header,
+      html body.site-skin-managed.site-skin-1win .bf-page,
+      html body.site-skin-managed.site-skin-1win .wc-page,
+      html body.site-skin-managed.site-skin-1win .page-shell,
+      html body.site-skin-managed.site-skin-1win .match-page-wrap,
+      html body.site-skin-managed.site-skin-1win .standings-page-wrap,
+      html body.site-skin-managed.site-skin-1win .results-page-section,
+      html body.site-skin-managed.site-skin-1win .news-page-wrap,
+      html body.site-skin-managed.site-skin-1win .ai-insights-page,
+      html body.site-skin-managed.site-skin-1win .article-page-wrap {
         position: relative !important;
         z-index: 20 !important;
       }
 
-      body.site-skin-managed .bf-header,
-      body.site-skin-managed .header {
+      html body.site-skin-managed.site-skin-1win .bf-header,
+      html body.site-skin-managed.site-skin-1win .header {
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
@@ -170,17 +176,20 @@
         box-shadow: none !important;
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
+        transform: none !important;
       }
 
-      body.site-skin-managed .bf-header-inner,
-      body.site-skin-managed .header-inner {
+      html body.site-skin-managed.site-skin-1win .bf-header-inner,
+      html body.site-skin-managed.site-skin-1win .header-inner {
         width: min(var(--bf-lock-shell), calc(100vw - var(--bf-lock-gap))) !important;
         max-width: var(--bf-lock-shell) !important;
-        min-height: 82px !important;
+        min-width: 0 !important;
+        min-height: var(--bf-lock-header-height) !important;
         height: auto !important;
         margin: 0 auto !important;
-        padding: 14px 24px !important;
+        padding: var(--bf-lock-header-pad-y) var(--bf-lock-header-pad-x) !important;
         display: flex !important;
+        flex-direction: row !important;
         align-items: center !important;
         justify-content: space-between !important;
         gap: 22px !important;
@@ -193,22 +202,26 @@
         transform: none !important;
       }
 
-      body.site-skin-managed .bf-header-inner::after,
-      body.site-skin-managed .header-inner::after {
+      html body.site-skin-managed.site-skin-1win .bf-header-inner::before,
+      html body.site-skin-managed.site-skin-1win .bf-header-inner::after,
+      html body.site-skin-managed.site-skin-1win .header-inner::before,
+      html body.site-skin-managed.site-skin-1win .header-inner::after {
         content: none !important;
         display: none !important;
       }
 
-      body.site-skin-managed .bf-logo,
-      body.site-skin-managed .site-logo {
+      html body.site-skin-managed.site-skin-1win .bf-logo,
+      html body.site-skin-managed.site-skin-1win .site-logo {
         flex: 0 0 auto !important;
         width: auto !important;
         min-width: 0 !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
         display: inline-flex !important;
         align-items: center !important;
         justify-content: flex-start !important;
         gap: 10px !important;
-        margin: 0 !important;
         color: #ffffff !important;
         font-size: 23px !important;
         line-height: 1 !important;
@@ -219,36 +232,48 @@
         transform: none !important;
       }
 
-      body.site-skin-managed .bf-logo img,
-      body.site-skin-managed .site-logo img {
+      html body.site-skin-managed.site-skin-1win .bf-logo img,
+      html body.site-skin-managed.site-skin-1win .site-logo img {
+        flex: 0 0 auto !important;
+        display: block !important;
         width: 38px !important;
         height: 38px !important;
         object-fit: contain !important;
       }
 
-      body.site-skin-managed .bf-nav,
-      body.site-skin-managed .topbar-menu {
+      html body.site-skin-managed.site-skin-1win .bf-nav,
+      html body.site-skin-managed.site-skin-1win .topbar-menu {
         flex: 0 1 auto !important;
         width: auto !important;
+        min-width: 0 !important;
         max-width: calc(100% - 260px) !important;
         margin: 0 0 0 auto !important;
         padding: 0 !important;
         display: flex !important;
+        flex-direction: row !important;
         align-items: center !important;
         justify-content: flex-end !important;
-        gap: 10px !important;
+        justify-self: end !important;
+        gap: var(--bf-lock-nav-gap) !important;
         flex-wrap: nowrap !important;
         overflow: visible !important;
         transform: none !important;
       }
 
-      body.site-skin-managed .bf-nav a,
-      body.site-skin-managed .topbar-menu a {
+      html body.site-skin-managed.site-skin-1win .topbar-actions,
+      html body.site-skin-managed.site-skin-1win .theme-switch {
+        display: none !important;
+      }
+
+      html body.site-skin-managed.site-skin-1win .bf-nav a,
+      html body.site-skin-managed.site-skin-1win .topbar-menu a {
         flex: 0 0 auto !important;
         width: auto !important;
         min-width: 0 !important;
-        height: 42px !important;
+        max-width: none !important;
         min-height: 42px !important;
+        height: 42px !important;
+        margin: 0 !important;
         padding: 0 18px !important;
         display: inline-flex !important;
         align-items: center !important;
@@ -260,16 +285,19 @@
         font-size: 16px !important;
         line-height: 1 !important;
         font-weight: 800 !important;
+        letter-spacing: 0 !important;
+        text-align: center !important;
         white-space: nowrap !important;
         text-decoration: none !important;
         box-shadow: none !important;
         transform: none !important;
+        box-sizing: border-box !important;
       }
 
-      body.site-skin-managed .bf-nav a:hover,
-      body.site-skin-managed .topbar-menu a:hover,
-      body.site-skin-managed .bf-nav a.active,
-      body.site-skin-managed .topbar-menu a.active {
+      html body.site-skin-managed.site-skin-1win .bf-nav a:hover,
+      html body.site-skin-managed.site-skin-1win .topbar-menu a:hover,
+      html body.site-skin-managed.site-skin-1win .bf-nav a.active,
+      html body.site-skin-managed.site-skin-1win .topbar-menu a.active {
         color: var(--bf-lock-green) !important;
         background: rgba(25, 126, 84, 0.34) !important;
         border-color: rgba(73, 224, 145, 0.34) !important;
@@ -277,82 +305,113 @@
         transform: none !important;
       }
 
-      body.site-skin-managed .bf-page,
-      body.site-skin-managed .wc-page,
-      body.site-skin-managed .page-shell,
-      body.site-skin-managed .match-page-wrap,
-      body.site-skin-managed .standings-page-wrap,
-      body.site-skin-managed .news-page-wrap,
-      body.site-skin-managed .ai-insights-page,
-      body.site-skin-managed .article-page-wrap {
+      html body.site-skin-managed.site-skin-1win > main,
+      html body.site-skin-managed.site-skin-1win .bf-page,
+      html body.site-skin-managed.site-skin-1win .wc-page,
+      html body.site-skin-managed.site-skin-1win .page-shell,
+      html body.site-skin-managed.site-skin-1win .match-page-wrap,
+      html body.site-skin-managed.site-skin-1win .standings-page-wrap,
+      html body.site-skin-managed.site-skin-1win .results-page-section,
+      html body.site-skin-managed.site-skin-1win .news-page-wrap,
+      html body.site-skin-managed.site-skin-1win .ai-insights-page,
+      html body.site-skin-managed.site-skin-1win .article-page-wrap {
         width: min(var(--bf-lock-shell), calc(100vw - var(--bf-lock-gap))) !important;
         max-width: var(--bf-lock-shell) !important;
-        margin: var(--bf-lock-page-top) auto 0 !important;
+        min-width: 0 !important;
+        margin-top: var(--bf-lock-page-top) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
-        box-sizing: border-box !important;
         transform: none !important;
+        box-sizing: border-box !important;
       }
 
-      body.site-skin-managed .side-banner,
-      body.site-skin-managed .left-banner,
-      body.site-skin-managed .right-banner {
-        z-index: 30 !important;
+      html body.site-skin-managed.site-skin-1win .side-banner {
+        position: fixed !important;
+        top: 400px !important;
+      }
+
+      html body.site-skin-managed.site-skin-1win .left-banner,
+      html body.site-skin-managed.site-skin-1win .side-banner-left {
+        left: 24px !important;
+        right: auto !important;
+      }
+
+      html body.site-skin-managed.site-skin-1win .right-banner,
+      html body.site-skin-managed.site-skin-1win .side-banner-right {
+        right: 24px !important;
+        left: auto !important;
       }
 
       @media (max-width: 1100px) {
-        body.site-skin-managed .bf-header-inner,
-        body.site-skin-managed .header-inner {
-          width: calc(100% - 24px) !important;
+        html body.site-skin-managed.site-skin-1win .bf-header-inner,
+        html body.site-skin-managed.site-skin-1win .header-inner {
+          width: calc(100vw - 24px) !important;
+          max-width: calc(100vw - 24px) !important;
           flex-direction: column !important;
           align-items: center !important;
           justify-content: center !important;
           gap: 12px !important;
         }
 
-        body.site-skin-managed .bf-nav,
-        body.site-skin-managed .topbar-menu {
+        html body.site-skin-managed.site-skin-1win .bf-nav,
+        html body.site-skin-managed.site-skin-1win .topbar-menu {
           width: 100% !important;
           max-width: 100% !important;
           margin: 0 !important;
           justify-content: center !important;
           flex-wrap: wrap !important;
         }
+
+        html body.site-skin-managed.site-skin-1win > main,
+        html body.site-skin-managed.site-skin-1win .bf-page,
+        html body.site-skin-managed.site-skin-1win .wc-page,
+        html body.site-skin-managed.site-skin-1win .page-shell,
+        html body.site-skin-managed.site-skin-1win .match-page-wrap,
+        html body.site-skin-managed.site-skin-1win .standings-page-wrap,
+        html body.site-skin-managed.site-skin-1win .results-page-section,
+        html body.site-skin-managed.site-skin-1win .news-page-wrap,
+        html body.site-skin-managed.site-skin-1win .ai-insights-page,
+        html body.site-skin-managed.site-skin-1win .article-page-wrap {
+          width: calc(100vw - 24px) !important;
+          max-width: calc(100vw - 24px) !important;
+        }
       }
 
       @media (max-width: 768px) {
-        body.site-skin-1win,
-        body.site-skin-dafabet,
-        body.site-skin-mostbet,
-        body.site-skin-managed {
-          padding-top: 96px !important;
+        html body.site-skin-1win,
+        html body.site-skin-dafabet,
+        html body.site-skin-mostbet,
+        html body.site-skin-managed {
+          padding-top: var(--bf-lock-mobile-top) !important;
         }
 
-        body.site-skin-managed .bf-header-inner,
-        body.site-skin-managed .header-inner {
-          width: calc(100% - 16px) !important;
-          max-width: calc(100% - 16px) !important;
+        html body.site-skin-managed.site-skin-1win .bf-header-inner,
+        html body.site-skin-managed.site-skin-1win .header-inner {
+          width: calc(100vw - 16px) !important;
+          max-width: calc(100vw - 16px) !important;
           min-height: 0 !important;
           margin: 6px auto 0 !important;
           padding: 12px 10px !important;
           border-radius: 18px !important;
         }
 
-        body.site-skin-managed .bf-logo,
-        body.site-skin-managed .site-logo {
+        html body.site-skin-managed.site-skin-1win .bf-logo,
+        html body.site-skin-managed.site-skin-1win .site-logo {
           width: 100% !important;
           justify-content: center !important;
           font-size: 20px !important;
         }
 
-        body.site-skin-managed .bf-logo img,
-        body.site-skin-managed .site-logo img {
+        html body.site-skin-managed.site-skin-1win .bf-logo img,
+        html body.site-skin-managed.site-skin-1win .site-logo img {
           width: 30px !important;
           height: 30px !important;
         }
 
-        body.site-skin-managed .bf-nav,
-        body.site-skin-managed .topbar-menu {
+        html body.site-skin-managed.site-skin-1win .bf-nav,
+        html body.site-skin-managed.site-skin-1win .topbar-menu {
           display: grid !important;
           grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
           gap: 7px !important;
@@ -360,11 +419,11 @@
           max-width: 100% !important;
         }
 
-        body.site-skin-managed .bf-nav a,
-        body.site-skin-managed .topbar-menu a {
+        html body.site-skin-managed.site-skin-1win .bf-nav a,
+        html body.site-skin-managed.site-skin-1win .topbar-menu a {
           width: 100% !important;
-          height: 38px !important;
           min-height: 38px !important;
+          height: 38px !important;
           padding: 9px 4px !important;
           border-radius: 13px !important;
           font-size: 12px !important;
@@ -373,40 +432,28 @@
           white-space: normal !important;
         }
 
-        body.site-skin-managed .bf-page,
-        body.site-skin-managed .wc-page,
-        body.site-skin-managed .page-shell,
-        body.site-skin-managed .match-page-wrap,
-        body.site-skin-managed .standings-page-wrap,
-        body.site-skin-managed .news-page-wrap,
-        body.site-skin-managed .ai-insights-page,
-        body.site-skin-managed .article-page-wrap {
-          width: calc(100% - 16px) !important;
-          max-width: calc(100% - 16px) !important;
-          margin: 14px auto 0 !important;
+        html body.site-skin-managed.site-skin-1win > main,
+        html body.site-skin-managed.site-skin-1win .bf-page,
+        html body.site-skin-managed.site-skin-1win .wc-page,
+        html body.site-skin-managed.site-skin-1win .page-shell,
+        html body.site-skin-managed.site-skin-1win .match-page-wrap,
+        html body.site-skin-managed.site-skin-1win .standings-page-wrap,
+        html body.site-skin-managed.site-skin-1win .results-page-section,
+        html body.site-skin-managed.site-skin-1win .news-page-wrap,
+        html body.site-skin-managed.site-skin-1win .ai-insights-page,
+        html body.site-skin-managed.site-skin-1win .article-page-wrap {
+          width: calc(100vw - 16px) !important;
+          max-width: calc(100vw - 16px) !important;
+          margin-top: 14px !important;
         }
       }
 
       @media (max-width: 420px) {
-        body.site-skin-1win,
-        body.site-skin-dafabet,
-        body.site-skin-mostbet,
-        body.site-skin-managed {
-          padding-top: 88px !important;
-        }
-
-        body.site-skin-managed .bf-header-inner,
-        body.site-skin-managed .header-inner,
-        body.site-skin-managed .bf-page,
-        body.site-skin-managed .wc-page,
-        body.site-skin-managed .page-shell,
-        body.site-skin-managed .match-page-wrap,
-        body.site-skin-managed .standings-page-wrap,
-        body.site-skin-managed .news-page-wrap,
-        body.site-skin-managed .ai-insights-page,
-        body.site-skin-managed .article-page-wrap {
-          width: calc(100% - 12px) !important;
-          max-width: calc(100% - 12px) !important;
+        html body.site-skin-1win,
+        html body.site-skin-dafabet,
+        html body.site-skin-mostbet,
+        html body.site-skin-managed {
+          padding-top: var(--bf-lock-small-mobile-top) !important;
         }
       }
     `;
@@ -414,7 +461,7 @@
     document.head.appendChild(style);
   }
 
-  function runLayoutLock() {
+  function runCleanupAndLock() {
     if (!isHomePage()) {
       document.body.classList.add("site-skin-managed");
     }
@@ -427,13 +474,14 @@
 
     window.BF_ACTIVE_SITE_SKIN = {
       mode: "layout-locked-to-index",
-      codeZone: null
+      codeZone: null,
+      version: 20
     };
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", runLayoutLock, { once: true });
+    document.addEventListener("DOMContentLoaded", runCleanupAndLock, { once: true });
   } else {
-    runLayoutLock();
+    runCleanupAndLock();
   }
 })();
