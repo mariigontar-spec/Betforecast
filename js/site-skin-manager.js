@@ -1,17 +1,16 @@
-/* Betforecast.ai layout lock v20
-   Keeps every inner page aligned to the homepage header and shell. */
+/* Betforecast.ai dynamic background manager v21
+   - Restores one dynamic Adhit background zone: 163743.
+   - Keeps the same header width, side gaps, top offset and button alignment as index.
+   - Removes old hardcoded skin-click links and old static background images. */
 (() => {
   "use strict";
 
-  const LEGACY_BG_ZONE = "163743";
-  const STYLE_ID = "bf-page-layout-lock-style";
+  const BG_ZONE = "163743";
+  const BG_SLOT_ID = "bf-dynamic-background-slot";
+  const STYLE_ID = "bf-dynamic-background-layout-style";
   const AD_SCRIPT_ID = "bf-adserver-script";
   const AD_SCRIPT_SRC = "https://media.getads.online/js/code.min.js";
   const LEGACY_IMAGE = "1win-wc2026-site-skin.webp";
-
-  function isHomePage() {
-    return document.body.classList.contains("home-page");
-  }
 
   function ensureAdhitScript() {
     const existing = document.querySelector('script[src*="media.getads.online/js/code.min.js"]');
@@ -35,24 +34,19 @@
       .forEach((element) => element.remove());
   }
 
-  function removeLegacyBackgroundSlots() {
+  function removeDuplicateBackgroundSlots() {
     document
-      .querySelectorAll(".bf-adserver-background, #bf-adserver-background-slot")
+      .querySelectorAll(".bf-adserver-background, #bf-adserver-background-slot, #bf-dynamic-background-slot")
       .forEach((element) => element.remove());
 
     document
-      .querySelectorAll(`ins.ins-zone[data-zone="${LEGACY_BG_ZONE}"]`)
+      .querySelectorAll(`ins.ins-zone[data-zone="${BG_ZONE}"]`)
       .forEach((ins) => {
         const parent = ins.parentElement;
-        ins.remove();
+        const isBackgroundParent = parent && /background|skin|bg|dynamic/i.test(parent.className || parent.id || "");
 
-        if (
-          parent &&
-          parent !== document.body &&
-          parent.children.length === 0 &&
-          /background|skin|bg/i.test(parent.className || "")
-        ) {
-          parent.remove();
+        if (isBackgroundParent || parent === document.body) {
+          ins.remove();
         }
       });
   }
@@ -71,7 +65,7 @@
 
       Array.from(rules).forEach((rule) => {
         if (!rule.cssText || !rule.style) return;
-        if (!rule.cssText.includes(LEGACY_IMAGE) && !rule.cssText.includes(LEGACY_BG_ZONE)) return;
+        if (!rule.cssText.includes(LEGACY_IMAGE)) return;
 
         rule.style.removeProperty("background");
         rule.style.removeProperty("background-image");
@@ -83,7 +77,16 @@
     });
   }
 
-  function injectLayoutLockStyle() {
+  function ensureDynamicBackgroundSlot() {
+    const slot = document.createElement("div");
+    slot.id = BG_SLOT_ID;
+    slot.className = "bf-dynamic-background bf-adserver-background";
+    slot.setAttribute("aria-hidden", "true");
+    slot.innerHTML = `<ins class="ins-zone" data-zone="${BG_ZONE}"></ins>`;
+    document.body.insertBefore(slot, document.body.firstChild);
+  }
+
+  function injectLayoutStyle() {
     document.getElementById(STYLE_ID)?.remove();
 
     const style = document.createElement("style");
@@ -121,52 +124,63 @@
         margin: 0 !important;
         color: #f5f8fb !important;
         background:
-          radial-gradient(circle at 18% 0%, rgba(22, 117, 84, 0.17), transparent 31rem),
-          radial-gradient(circle at 88% 22%, rgba(24, 86, 126, 0.13), transparent 28rem),
-          linear-gradient(180deg, #07111d 0, #050b13 36rem, #02070d 100%) !important;
-        background-image:
-          radial-gradient(circle at 18% 0%, rgba(22, 117, 84, 0.17), transparent 31rem),
-          radial-gradient(circle at 88% 22%, rgba(24, 86, 126, 0.13), transparent 28rem),
+          radial-gradient(circle at 18% 0%, rgba(22, 117, 84, 0.12), transparent 31rem),
+          radial-gradient(circle at 88% 22%, rgba(24, 86, 126, 0.11), transparent 28rem),
           linear-gradient(180deg, #07111d 0, #050b13 36rem, #02070d 100%) !important;
         background-repeat: no-repeat !important;
         background-position: center top !important;
-        background-size: auto !important;
         background-attachment: scroll !important;
         background-color: #020b13 !important;
       }
 
-      .bf-adserver-background,
-      #bf-adserver-background-slot,
-      ins.ins-zone[data-zone="${LEGACY_BG_ZONE}"] {
-        display: none !important;
-        width: 0 !important;
-        height: 0 !important;
-        min-height: 0 !important;
-        overflow: hidden !important;
-        visibility: hidden !important;
-        pointer-events: none !important;
+      html body.site-skin-managed .bf-dynamic-background,
+      html body.site-skin-managed #${BG_SLOT_ID} {
+        position: fixed !important;
+        inset: 0 auto auto 0 !important;
+        width: 100% !important;
+        height: 100vh !important;
+        min-height: var(--bf-lock-top) !important;
+        overflow: visible !important;
+        z-index: 1 !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        background: transparent !important;
       }
 
-      html body.site-skin-managed.site-skin-1win > header,
-      html body.site-skin-managed.site-skin-1win > main,
-      html body.site-skin-managed.site-skin-1win > footer,
-      html body.site-skin-managed.site-skin-1win .bf-header,
-      html body.site-skin-managed.site-skin-1win .header,
-      html body.site-skin-managed.site-skin-1win .bf-page,
-      html body.site-skin-managed.site-skin-1win .wc-page,
-      html body.site-skin-managed.site-skin-1win .page-shell,
-      html body.site-skin-managed.site-skin-1win .match-page-wrap,
-      html body.site-skin-managed.site-skin-1win .standings-page-wrap,
-      html body.site-skin-managed.site-skin-1win .results-page-section,
-      html body.site-skin-managed.site-skin-1win .news-page-wrap,
-      html body.site-skin-managed.site-skin-1win .ai-insights-page,
-      html body.site-skin-managed.site-skin-1win .article-page-wrap {
+      html body.site-skin-managed #${BG_SLOT_ID} .ins-zone,
+      html body.site-skin-managed #${BG_SLOT_ID} iframe,
+      html body.site-skin-managed #${BG_SLOT_ID} > div {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        min-height: var(--bf-lock-top) !important;
+        overflow: visible !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+
+      html body.site-skin-managed > header,
+      html body.site-skin-managed > main,
+      html body.site-skin-managed > footer,
+      html body.site-skin-managed .bf-header,
+      html body.site-skin-managed .header,
+      html body.site-skin-managed .bf-page,
+      html body.site-skin-managed .wc-page,
+      html body.site-skin-managed .page-shell,
+      html body.site-skin-managed .match-page-wrap,
+      html body.site-skin-managed .standings-page-wrap,
+      html body.site-skin-managed .results-page-section,
+      html body.site-skin-managed .news-page-wrap,
+      html body.site-skin-managed .ai-insights-page,
+      html body.site-skin-managed .article-page-wrap {
         position: relative !important;
         z-index: 20 !important;
       }
 
-      html body.site-skin-managed.site-skin-1win .bf-header,
-      html body.site-skin-managed.site-skin-1win .header {
+      html body.site-skin-managed .bf-header,
+      html body.site-skin-managed .header {
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
@@ -179,8 +193,8 @@
         transform: none !important;
       }
 
-      html body.site-skin-managed.site-skin-1win .bf-header-inner,
-      html body.site-skin-managed.site-skin-1win .header-inner {
+      html body.site-skin-managed .bf-header-inner,
+      html body.site-skin-managed .header-inner {
         width: min(var(--bf-lock-shell), calc(100vw - var(--bf-lock-gap))) !important;
         max-width: var(--bf-lock-shell) !important;
         min-width: 0 !important;
@@ -202,16 +216,16 @@
         transform: none !important;
       }
 
-      html body.site-skin-managed.site-skin-1win .bf-header-inner::before,
-      html body.site-skin-managed.site-skin-1win .bf-header-inner::after,
-      html body.site-skin-managed.site-skin-1win .header-inner::before,
-      html body.site-skin-managed.site-skin-1win .header-inner::after {
+      html body.site-skin-managed .bf-header-inner::before,
+      html body.site-skin-managed .bf-header-inner::after,
+      html body.site-skin-managed .header-inner::before,
+      html body.site-skin-managed .header-inner::after {
         content: none !important;
         display: none !important;
       }
 
-      html body.site-skin-managed.site-skin-1win .bf-logo,
-      html body.site-skin-managed.site-skin-1win .site-logo {
+      html body.site-skin-managed .bf-logo,
+      html body.site-skin-managed .site-logo {
         flex: 0 0 auto !important;
         width: auto !important;
         min-width: 0 !important;
@@ -232,8 +246,8 @@
         transform: none !important;
       }
 
-      html body.site-skin-managed.site-skin-1win .bf-logo img,
-      html body.site-skin-managed.site-skin-1win .site-logo img {
+      html body.site-skin-managed .bf-logo img,
+      html body.site-skin-managed .site-logo img {
         flex: 0 0 auto !important;
         display: block !important;
         width: 38px !important;
@@ -241,8 +255,8 @@
         object-fit: contain !important;
       }
 
-      html body.site-skin-managed.site-skin-1win .bf-nav,
-      html body.site-skin-managed.site-skin-1win .topbar-menu {
+      html body.site-skin-managed .bf-nav,
+      html body.site-skin-managed .topbar-menu {
         flex: 0 1 auto !important;
         width: auto !important;
         min-width: 0 !important;
@@ -260,13 +274,13 @@
         transform: none !important;
       }
 
-      html body.site-skin-managed.site-skin-1win .topbar-actions,
-      html body.site-skin-managed.site-skin-1win .theme-switch {
+      html body.site-skin-managed .topbar-actions,
+      html body.site-skin-managed .theme-switch {
         display: none !important;
       }
 
-      html body.site-skin-managed.site-skin-1win .bf-nav a,
-      html body.site-skin-managed.site-skin-1win .topbar-menu a {
+      html body.site-skin-managed .bf-nav a,
+      html body.site-skin-managed .topbar-menu a {
         flex: 0 0 auto !important;
         width: auto !important;
         min-width: 0 !important;
@@ -294,10 +308,10 @@
         box-sizing: border-box !important;
       }
 
-      html body.site-skin-managed.site-skin-1win .bf-nav a:hover,
-      html body.site-skin-managed.site-skin-1win .topbar-menu a:hover,
-      html body.site-skin-managed.site-skin-1win .bf-nav a.active,
-      html body.site-skin-managed.site-skin-1win .topbar-menu a.active {
+      html body.site-skin-managed .bf-nav a:hover,
+      html body.site-skin-managed .topbar-menu a:hover,
+      html body.site-skin-managed .bf-nav a.active,
+      html body.site-skin-managed .topbar-menu a.active {
         color: var(--bf-lock-green) !important;
         background: rgba(25, 126, 84, 0.34) !important;
         border-color: rgba(73, 224, 145, 0.34) !important;
@@ -305,77 +319,43 @@
         transform: none !important;
       }
 
-      html body.site-skin-managed.site-skin-1win > main,
-      html body.site-skin-managed.site-skin-1win .bf-page,
-      html body.site-skin-managed.site-skin-1win .wc-page,
-      html body.site-skin-managed.site-skin-1win .page-shell,
-      html body.site-skin-managed.site-skin-1win .match-page-wrap,
-      html body.site-skin-managed.site-skin-1win .standings-page-wrap,
-      html body.site-skin-managed.site-skin-1win .results-page-section,
-      html body.site-skin-managed.site-skin-1win .news-page-wrap,
-      html body.site-skin-managed.site-skin-1win .ai-insights-page,
-      html body.site-skin-managed.site-skin-1win .article-page-wrap {
+      html body.site-skin-managed > main,
+      html body.site-skin-managed .bf-page,
+      html body.site-skin-managed .wc-page,
+      html body.site-skin-managed .page-shell,
+      html body.site-skin-managed .match-page-wrap,
+      html body.site-skin-managed .standings-page-wrap,
+      html body.site-skin-managed .results-page-section,
+      html body.site-skin-managed .news-page-wrap,
+      html body.site-skin-managed .ai-insights-page,
+      html body.site-skin-managed .article-page-wrap {
         width: min(var(--bf-lock-shell), calc(100vw - var(--bf-lock-gap))) !important;
         max-width: var(--bf-lock-shell) !important;
         min-width: 0 !important;
-        margin-top: var(--bf-lock-page-top) !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        margin-top: var(--bf-lock-page-top) !important;
         transform: none !important;
         box-sizing: border-box !important;
       }
 
-      html body.site-skin-managed.site-skin-1win .side-banner {
-        position: fixed !important;
-        top: 400px !important;
-      }
-
-      html body.site-skin-managed.site-skin-1win .left-banner,
-      html body.site-skin-managed.site-skin-1win .side-banner-left {
-        left: 24px !important;
-        right: auto !important;
-      }
-
-      html body.site-skin-managed.site-skin-1win .right-banner,
-      html body.site-skin-managed.site-skin-1win .side-banner-right {
-        right: 24px !important;
-        left: auto !important;
-      }
-
       @media (max-width: 1100px) {
-        html body.site-skin-managed.site-skin-1win .bf-header-inner,
-        html body.site-skin-managed.site-skin-1win .header-inner {
-          width: calc(100vw - 24px) !important;
-          max-width: calc(100vw - 24px) !important;
+        html body.site-skin-managed .bf-header-inner,
+        html body.site-skin-managed .header-inner {
+          width: calc(100% - 24px) !important;
           flex-direction: column !important;
           align-items: center !important;
           justify-content: center !important;
           gap: 12px !important;
         }
 
-        html body.site-skin-managed.site-skin-1win .bf-nav,
-        html body.site-skin-managed.site-skin-1win .topbar-menu {
+        html body.site-skin-managed .bf-nav,
+        html body.site-skin-managed .topbar-menu {
           width: 100% !important;
           max-width: 100% !important;
           margin: 0 !important;
           justify-content: center !important;
           flex-wrap: wrap !important;
-        }
-
-        html body.site-skin-managed.site-skin-1win > main,
-        html body.site-skin-managed.site-skin-1win .bf-page,
-        html body.site-skin-managed.site-skin-1win .wc-page,
-        html body.site-skin-managed.site-skin-1win .page-shell,
-        html body.site-skin-managed.site-skin-1win .match-page-wrap,
-        html body.site-skin-managed.site-skin-1win .standings-page-wrap,
-        html body.site-skin-managed.site-skin-1win .results-page-section,
-        html body.site-skin-managed.site-skin-1win .news-page-wrap,
-        html body.site-skin-managed.site-skin-1win .ai-insights-page,
-        html body.site-skin-managed.site-skin-1win .article-page-wrap {
-          width: calc(100vw - 24px) !important;
-          max-width: calc(100vw - 24px) !important;
         }
       }
 
@@ -387,31 +367,38 @@
           padding-top: var(--bf-lock-mobile-top) !important;
         }
 
-        html body.site-skin-managed.site-skin-1win .bf-header-inner,
-        html body.site-skin-managed.site-skin-1win .header-inner {
-          width: calc(100vw - 16px) !important;
-          max-width: calc(100vw - 16px) !important;
+        html body.site-skin-managed #${BG_SLOT_ID},
+        html body.site-skin-managed #${BG_SLOT_ID} .ins-zone,
+        html body.site-skin-managed #${BG_SLOT_ID} iframe,
+        html body.site-skin-managed #${BG_SLOT_ID} > div {
+          min-height: var(--bf-lock-mobile-top) !important;
+        }
+
+        html body.site-skin-managed .bf-header-inner,
+        html body.site-skin-managed .header-inner {
+          width: calc(100% - 16px) !important;
+          max-width: calc(100% - 16px) !important;
           min-height: 0 !important;
           margin: 6px auto 0 !important;
           padding: 12px 10px !important;
           border-radius: 18px !important;
         }
 
-        html body.site-skin-managed.site-skin-1win .bf-logo,
-        html body.site-skin-managed.site-skin-1win .site-logo {
+        html body.site-skin-managed .bf-logo,
+        html body.site-skin-managed .site-logo {
           width: 100% !important;
           justify-content: center !important;
           font-size: 20px !important;
         }
 
-        html body.site-skin-managed.site-skin-1win .bf-logo img,
-        html body.site-skin-managed.site-skin-1win .site-logo img {
+        html body.site-skin-managed .bf-logo img,
+        html body.site-skin-managed .site-logo img {
           width: 30px !important;
           height: 30px !important;
         }
 
-        html body.site-skin-managed.site-skin-1win .bf-nav,
-        html body.site-skin-managed.site-skin-1win .topbar-menu {
+        html body.site-skin-managed .bf-nav,
+        html body.site-skin-managed .topbar-menu {
           display: grid !important;
           grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
           gap: 7px !important;
@@ -419,8 +406,8 @@
           max-width: 100% !important;
         }
 
-        html body.site-skin-managed.site-skin-1win .bf-nav a,
-        html body.site-skin-managed.site-skin-1win .topbar-menu a {
+        html body.site-skin-managed .bf-nav a,
+        html body.site-skin-managed .topbar-menu a {
           width: 100% !important;
           min-height: 38px !important;
           height: 38px !important;
@@ -432,18 +419,18 @@
           white-space: normal !important;
         }
 
-        html body.site-skin-managed.site-skin-1win > main,
-        html body.site-skin-managed.site-skin-1win .bf-page,
-        html body.site-skin-managed.site-skin-1win .wc-page,
-        html body.site-skin-managed.site-skin-1win .page-shell,
-        html body.site-skin-managed.site-skin-1win .match-page-wrap,
-        html body.site-skin-managed.site-skin-1win .standings-page-wrap,
-        html body.site-skin-managed.site-skin-1win .results-page-section,
-        html body.site-skin-managed.site-skin-1win .news-page-wrap,
-        html body.site-skin-managed.site-skin-1win .ai-insights-page,
-        html body.site-skin-managed.site-skin-1win .article-page-wrap {
-          width: calc(100vw - 16px) !important;
-          max-width: calc(100vw - 16px) !important;
+        html body.site-skin-managed > main,
+        html body.site-skin-managed .bf-page,
+        html body.site-skin-managed .wc-page,
+        html body.site-skin-managed .page-shell,
+        html body.site-skin-managed .match-page-wrap,
+        html body.site-skin-managed .standings-page-wrap,
+        html body.site-skin-managed .results-page-section,
+        html body.site-skin-managed .news-page-wrap,
+        html body.site-skin-managed .ai-insights-page,
+        html body.site-skin-managed .article-page-wrap {
+          width: calc(100% - 16px) !important;
+          max-width: calc(100% - 16px) !important;
           margin-top: 14px !important;
         }
       }
@@ -461,27 +448,25 @@
     document.head.appendChild(style);
   }
 
-  function runCleanupAndLock() {
-    if (!isHomePage()) {
-      document.body.classList.add("site-skin-managed");
-    }
-
+  function run() {
+    document.body.classList.add("site-skin-managed");
     removeLegacyClickAreas();
-    removeLegacyBackgroundSlots();
+    removeDuplicateBackgroundSlots();
     stripLegacyBackgroundCss();
-    injectLayoutLockStyle();
+    injectLayoutStyle();
+    ensureDynamicBackgroundSlot();
     ensureAdhitScript();
 
     window.BF_ACTIVE_SITE_SKIN = {
-      mode: "layout-locked-to-index",
-      codeZone: null,
-      version: 20
+      mode: "dynamic-adhit-background",
+      codeZone: BG_ZONE,
+      version: 21
     };
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", runCleanupAndLock, { once: true });
+    document.addEventListener("DOMContentLoaded", run, { once: true });
   } else {
-    runCleanupAndLock();
+    run();
   }
 })();
