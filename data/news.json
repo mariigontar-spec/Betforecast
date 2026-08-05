@@ -2,16 +2,16 @@
   {
     "id": "1",
     "category": "Football",
-    "title": "Man Utd set to appoint ex-Hearts boss Olid as women's manager",
-    "excerpt": "Manchester United are set to appoint former Hearts boss Eva Olid as their women's manager to replace Marc Skinner.",
-    "time": "28 min ago",
-    "date": "2026-08-04T18:51:49.000Z",
+    "title": "Turkish club Trabzonspor begin talks to sign Salah",
+    "excerpt": "Turkish club Trabzonspor say they have begun negotiations to sign Mohamed Salah.",
+    "time": "4 hrs ago",
+    "date": "2026-08-04T21:39:08.000Z",
     "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3f66/live/3a0f8c80-9035-11f1-a691-e5bd21941ac1.jpg",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/57b6/live/c05399c0-904a-11f1-bac4-9bcd48c14c6e.jpg",
     "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c86n72316g1o?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ckgdkd5ggg7o?at_medium=RSS&at_campaign=rss",
     "content": [
-      "Manchester United are set to appoint former Hearts boss Eva Olid as their women's manager to replace Marc Skinner.",
+      "Turkish club Trabzonspor say they have begun negotiations to sign Mohamed Salah.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
@@ -20,9 +20,45 @@
   {
     "id": "2",
     "category": "Football",
-    "title": "Man Utd to name ex-Hearts boss Olid women's manager",
+    "title": "Forest target Reijnders - Wednesday's gossip",
+    "excerpt": "Nottingham Forest eye Tijjani Reijnders, Spurs want Savinho and Nicolas Jackson, Real Madrid resume Vinicius Jr contract talks, plus more.",
+    "time": "5 hrs ago",
+    "date": "2026-08-04T20:52:35.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/46b5/live/ef0d4970-9043-11f1-b8ee-9b3c26ad07bb.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cy8mvgp179po?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Nottingham Forest eye Tijjani Reijnders, Spurs want Savinho and Nicolas Jackson, Real Madrid resume Vinicius Jr contract talks, plus more.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "3",
+    "category": "Football",
+    "title": "Infantino calls executive meeting as criticism mounts",
+    "excerpt": "Gianni Infantino summons senior leaders to a meeting on Wednesday, after facing more fierce criticism of his plan to sell off Fifa's commercial and event operations.",
+    "time": "6 hrs ago",
+    "date": "2026-08-04T20:13:03.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2b37/live/7f368730-9041-11f1-a691-e5bd21941ac1.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c2k7p4nxdy4o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Gianni Infantino summons senior leaders to a meeting on Wednesday, after facing more fierce criticism of his plan to sell off Fifa's commercial and event operations.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "4",
+    "category": "Football",
+    "title": "Man Utd set to appoint ex-Hearts boss Olid as women's manager",
     "excerpt": "Manchester United are set to appoint former Hearts boss Eva Olid as their women's manager to replace Marc Skinner.",
-    "time": "28 min ago",
+    "time": "7 hrs ago",
     "date": "2026-08-04T18:51:49.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3f66/live/3a0f8c80-9035-11f1-a691-e5bd21941ac1.jpg",
@@ -36,11 +72,29 @@
     ]
   },
   {
-    "id": "3",
+    "id": "5",
+    "category": "Football",
+    "title": "Man Utd to name ex-Hearts boss Olid women's manager",
+    "excerpt": "Manchester United are set to appoint former Hearts boss Eva Olid as their women's manager to replace Marc Skinner.",
+    "time": "7 hrs ago",
+    "date": "2026-08-04T18:51:49.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3f66/live/3a0f8c80-9035-11f1-a691-e5bd21941ac1.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c86n72316g1o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Manchester United are set to appoint former Hearts boss Eva Olid as their women's manager to replace Marc Skinner.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "6",
     "category": "Football",
     "title": "Tough Champions League challenge awaits Hearts and Rangers",
     "excerpt": "Heart of Midlothan and Rangers start their new season in the Champions League qualifying group stage on Wednesday, but how are they are prepared?",
-    "time": "32 min ago",
+    "time": "7 hrs ago",
     "date": "2026-08-04T18:47:49.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d4a2/live/ee7f0670-9033-11f1-b8ee-9b3c26ad07bb.jpg",
@@ -54,11 +108,11 @@
     ]
   },
   {
-    "id": "4",
+    "id": "7",
     "category": "Football",
     "title": "Ipswich sign midfielder Florentino from Burnley",
     "excerpt": "Newly promoted Ipswich Town complete the signing of Portuguese midfielder Florentino Luis from Burnley for an undisclosed fee.",
-    "time": "1 hr ago",
+    "time": "8 hrs ago",
     "date": "2026-08-04T18:09:27.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/31e8/live/75eb9450-902c-11f1-9cf2-316ac336c337.jpg",
@@ -72,11 +126,11 @@
     ]
   },
   {
-    "id": "5",
+    "id": "8",
     "category": "Football",
     "title": "Israel fans can attend Republic of Ireland fixture",
     "excerpt": "Israel supporters will be in attendance when their side face the Republic of Ireland in the Nations League next month but no away fans will be facilitated.",
-    "time": "2 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-04T17:10:47.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7eeb/live/36d957d0-9021-11f1-b783-f784376ffc11.jpg",
@@ -90,11 +144,11 @@
     ]
   },
   {
-    "id": "6",
+    "id": "9",
     "category": "Football",
     "title": "Cape Verde coach Bubista resigns as Ivory Coast reappoint Renard",
     "excerpt": "Head coach Bubista leaves Cape Verde after reaching the last 32 at the World Cup while Ivory Coast reappoint two-time Afcon winner Herve Renard.",
-    "time": "3 hrs ago",
+    "time": "10 hrs ago",
     "date": "2026-08-04T16:05:03.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0349/live/6a2ede20-9017-11f1-b2ab-0dd01740f9f6.png",
@@ -108,11 +162,11 @@
     ]
   },
   {
-    "id": "7",
+    "id": "10",
     "category": "Football",
     "title": "'We are cool' - Szoboszlai plays down Liverpool row",
     "excerpt": "Liverpool midfielder Dominik Szoboszlai says he has \"cleared\" the situation with team-mates Curtis Jones and Kostas Tsimikas after they seemingly argued over the captain's armband.",
-    "time": "4 hrs ago",
+    "time": "10 hrs ago",
     "date": "2026-08-04T15:34:47.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c540/live/8dcbec90-9019-11f1-b783-f784376ffc11.jpg",
@@ -126,11 +180,11 @@
     ]
   },
   {
-    "id": "8",
+    "id": "11",
     "category": "Football",
     "title": "Man City lose forward Kerolin to Barcelona",
     "excerpt": "Barcelona sign Brazil forward Kerolin from Women's Super League champions Manchester City.",
-    "time": "4 hrs ago",
+    "time": "10 hrs ago",
     "date": "2026-08-04T15:27:46.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/21bd/live/3f181470-85ba-11f1-a407-4750df4c0797.jpg",
@@ -144,11 +198,11 @@
     ]
   },
   {
-    "id": "9",
+    "id": "12",
     "category": "Football",
     "title": "What did Premiership start tell us about Scottish sides' Euro hopes?",
     "excerpt": "With Rangers, Hearts, Hibernian and Motherwell in action on Thursday, BBC Scotland has been attempting to analyse the chances of the nation's European hopefuls.",
-    "time": "4 hrs ago",
+    "time": "10 hrs ago",
     "date": "2026-08-04T15:21:15.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c296/live/7cb6f720-9013-11f1-b2ab-0dd01740f9f6.png",
@@ -162,11 +216,11 @@
     ]
   },
   {
-    "id": "10",
+    "id": "13",
     "category": "Football",
     "title": "Man Utd admit ticket touting investigation error",
     "excerpt": "Manchester United admit making mistakes in the execution of their ticket touting investigation but insist the reasons for it are valid.",
-    "time": "4 hrs ago",
+    "time": "10 hrs ago",
     "date": "2026-08-04T15:18:10.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3174/live/9c8f5610-900d-11f1-a7ab-8b30adf0800a.jpg",
@@ -180,11 +234,11 @@
     ]
   },
   {
-    "id": "11",
+    "id": "14",
     "category": "Football",
     "title": "Meet the £1m-rated non-league star Abdulmalik",
     "excerpt": "Boreham Wood reject a £1m bid for one of their forwards - but who is he?",
-    "time": "4 hrs ago",
+    "time": "11 hrs ago",
     "date": "2026-08-04T15:05:02.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9680/live/ac9b54e0-8ff0-11f1-a10e-47119dd4425c.jpg",
@@ -198,11 +252,11 @@
     ]
   },
   {
-    "id": "12",
+    "id": "15",
     "category": "Football",
     "title": "Rico Lewis' sister Sacha turns pro with Man City",
     "excerpt": "Sacha Lewis, sister of England international Rico, signs her first professional contract with Women's Super League side Manchester City.",
-    "time": "4 hrs ago",
+    "time": "11 hrs ago",
     "date": "2026-08-04T15:00:35.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7c95/live/0238ae80-9018-11f1-b783-f784376ffc11.jpg",
@@ -216,11 +270,11 @@
     ]
   },
   {
-    "id": "13",
+    "id": "16",
     "category": "Football",
     "title": "What are the new financial rules Premier League clubs must stick to?",
     "excerpt": "Our Ask Me Anything Team explain SCR, PSR and adjusted revenue.",
-    "time": "5 hrs ago",
+    "time": "11 hrs ago",
     "date": "2026-08-04T14:40:50.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e9f3/live/507ccfd0-8f3d-11f1-b8ee-9b3c26ad07bb.png",
@@ -234,11 +288,11 @@
     ]
   },
   {
-    "id": "14",
+    "id": "17",
     "category": "Football",
     "title": "Toone grateful to Skinner after his Man Utd departure",
     "excerpt": "Manchester United midfielder Ella Toone says she will always be \"grateful\" to former manager Marc Skinner after he helped her through the death of her father.",
-    "time": "6 hrs ago",
+    "time": "12 hrs ago",
     "date": "2026-08-04T13:43:44.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/20e6/live/792c1920-9007-11f1-9dfb-fd4408d16f2f.jpg",
@@ -252,11 +306,11 @@
     ]
   },
   {
-    "id": "15",
+    "id": "18",
     "category": "Football",
     "title": "Retired Taylor named head of refereeing in Turkey",
     "excerpt": "Retired referee Anthony Taylor is appointed as director of elite refereeing for the Turkish Football Federation.",
-    "time": "6 hrs ago",
+    "time": "12 hrs ago",
     "date": "2026-08-04T13:40:15.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e3d8/live/a9f6d4e0-9008-11f1-9dfb-fd4408d16f2f.jpg",
@@ -270,11 +324,11 @@
     ]
   },
   {
-    "id": "16",
+    "id": "19",
     "category": "Football",
     "title": "McAllister proud of Wales' stance against Infantino",
     "excerpt": "Uefa vice-president Laura McAllister proud that Wales were the first home nation to withdraw their backing for Gianni Infantino.",
-    "time": "6 hrs ago",
+    "time": "12 hrs ago",
     "date": "2026-08-04T13:29:51.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6f58/live/9ca8d5b0-9006-11f1-9dfb-fd4408d16f2f.jpg",
@@ -288,11 +342,11 @@
     ]
   },
   {
-    "id": "17",
+    "id": "20",
     "category": "Football",
     "title": "Keeper Jorgensen set for loan move to Strasbourg",
     "excerpt": "Chelsea goalkeeper Filip Jorgensen is set to seal a season-long loan to Strasbourg, part of the same ownership group as the London club.",
-    "time": "6 hrs ago",
+    "time": "13 hrs ago",
     "date": "2026-08-04T13:12:11.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/79fd/live/595c0db0-9004-11f1-9dfb-fd4408d16f2f.jpg",
@@ -306,11 +360,11 @@
     ]
   },
   {
-    "id": "18",
+    "id": "21",
     "category": "Football",
     "title": "Kretinsky share sale hinders Staveley's West Ham bid",
     "excerpt": "West Ham co-chair Daniel Kretinsky sells a small stake in the club in a move that could end Amanda Staveley's hopes of investment.",
-    "time": "6 hrs ago",
+    "time": "13 hrs ago",
     "date": "2026-08-04T12:54:20.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c717/live/8176fff0-9002-11f1-9dfb-fd4408d16f2f.jpg",
@@ -324,11 +378,11 @@
     ]
   },
   {
-    "id": "19",
+    "id": "22",
     "category": "Football",
     "title": "Rangers agree Yokota fee and rival Celtic for Ghedjemis - gossip",
     "excerpt": "Rangers reportedly agree a deal for Hannover winger Daisuke Yokota, while they and Celtic are said to be bidding for Fares Ghedjemis.",
-    "time": "7 hrs ago",
+    "time": "13 hrs ago",
     "date": "2026-08-04T12:40:49.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/05b0/live/ad92f3c0-8fce-11f1-b8ee-9b3c26ad07bb.png",
@@ -342,11 +396,11 @@
     ]
   },
   {
-    "id": "20",
+    "id": "23",
     "category": "Football",
     "title": "Mudryk could return on Wednesday after drugs suspension",
     "excerpt": "Mykhailo Mudryk could return to action following 20 months on the sidelines on Wednesday after being named in Chelsea's squad to play Juventus in a friendly in Hong Kong.",
-    "time": "7 hrs ago",
+    "time": "13 hrs ago",
     "date": "2026-08-04T12:36:58.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c9ad/live/e1e50c40-8ff5-11f1-a10e-47119dd4425c.jpg",
@@ -360,11 +414,11 @@
     ]
   },
   {
-    "id": "21",
+    "id": "24",
     "category": "Football",
     "title": "Nygren header earns Celtic opening victory against Dundee",
     "excerpt": "Watch highlights as Celtic begin their Scottish Premiership title defence with a narrow home victory as Benjamin Nygren's header downs Dundee.",
-    "time": "7 hrs ago",
+    "time": "13 hrs ago",
     "date": "2026-08-04T12:22:30.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cb9/live/abd95c10-8ffe-11f1-b2ab-0dd01740f9f6.jpg",
@@ -378,11 +432,11 @@
     ]
   },
   {
-    "id": "22",
+    "id": "25",
     "category": "Football",
     "title": "Coventry sign Brighton goalkeeper Rushworth after loan",
     "excerpt": "Coventry City confirm the permanent signing of 25-year-old goalkeeper Carl Rushworth from Brighton and Hove Albion.",
-    "time": "8 hrs ago",
+    "time": "14 hrs ago",
     "date": "2026-08-04T11:20:37.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f1da/live/41752590-8ff2-11f1-a10e-47119dd4425c.jpg",
@@ -396,11 +450,11 @@
     ]
   },
   {
-    "id": "23",
+    "id": "26",
     "category": "Football",
     "title": "Arsenal in talks to sign Newcastle's Guimaraes",
     "excerpt": "Arsenal open direct talks with Newcastle United to sign captain Bruno Guimaraes.",
-    "time": "8 hrs ago",
+    "time": "15 hrs ago",
     "date": "2026-08-04T11:12:13.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a22/live/2aa4ded0-8f36-11f1-bd9f-4361c301d82b.jpg",
@@ -414,11 +468,11 @@
     ]
   },
   {
-    "id": "24",
+    "id": "27",
     "category": "Football",
     "title": "Mourners line streets of Milan for legend Baresi's funeral",
     "excerpt": "Thousands gather on the streets of Milan for the funeral of legendary former AC Milan and Italy defender Franco Baresi.",
-    "time": "9 hrs ago",
+    "time": "15 hrs ago",
     "date": "2026-08-04T10:45:34.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bc06/live/733a8b70-8fe7-11f1-9b57-e74b317a0f23.png",
@@ -432,47 +486,11 @@
     ]
   },
   {
-    "id": "25",
-    "category": "Football",
-    "title": "Fifa private money plan had to be scrapped - Wenger",
-    "excerpt": "Fifa's chief of global football development Arsene Wenger says the decision to scrap the plan to have private investment in Fifa competitions was \"absolutely necessary\".",
-    "time": "9 hrs ago",
-    "date": "2026-08-04T10:45:14.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1d3b/live/4db83280-8ff6-11f1-b8ee-9b3c26ad07bb.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c2k7p4nxdy4o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Fifa's chief of global football development Arsene Wenger says the decision to scrap the plan to have private investment in Fifa competitions was \"absolutely necessary\".",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "26",
-    "category": "Football",
-    "title": "Fenerbahce ready huge Rashford offer - Tuesday's gossip",
-    "excerpt": "Fenerbahce prepared to break the bank for Marcus Rashford, RB Leipzig hold out on Real Madrid over Yan Diomande deal, Arsenal open talks for Bruno Guimaraes.",
-    "time": "9 hrs ago",
-    "date": "2026-08-04T10:27:25.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9695/live/d3bbdaa0-8f77-11f1-9fa1-cde99572a500.png",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cy5dqynxdezo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Fenerbahce prepared to break the bank for Marcus Rashford, RB Leipzig hold out on Real Madrid over Yan Diomande deal, Arsenal open talks for Bruno Guimaraes.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "27",
+    "id": "28",
     "category": "Football",
     "title": "Get live score updates for your football team on your lock screen for 2026-27",
     "excerpt": "Get live score updates on your lock screen with the BBC.",
-    "time": "9 hrs ago",
+    "time": "16 hrs ago",
     "date": "2026-08-04T10:01:44.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d460/live/503aafc0-8fd7-11f1-a7ab-8b30adf0800a.jpg",
@@ -486,11 +504,11 @@
     ]
   },
   {
-    "id": "28",
+    "id": "29",
     "category": "Football",
     "title": "Man Utd's George closing in on Brighton move",
     "excerpt": "Manchester United defender Gabby George is closing in on a move to Brighton before the start of the Women's Super League season.",
-    "time": "10 hrs ago",
+    "time": "16 hrs ago",
     "date": "2026-08-04T09:17:59.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a5a5/live/ba0e8e20-8fd8-11f1-a999-eb18d79411a9.jpg",
@@ -504,11 +522,11 @@
     ]
   },
   {
-    "id": "29",
+    "id": "30",
     "category": "Football",
     "title": "Southampton are winning Championship this season - Downes",
     "excerpt": "Southampton midfielder Flynn Downes says he and his team-mates have a \"chip on their shoulder\" he believes can help them win the Championship.",
-    "time": "11 hrs ago",
+    "time": "17 hrs ago",
     "date": "2026-08-04T08:39:11.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fde6/live/8b2b0c20-8fdb-11f1-a999-eb18d79411a9.jpg",
@@ -516,24 +534,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c935x03w2d5o?at_medium=RSS&at_campaign=rss",
     "content": [
       "Southampton midfielder Flynn Downes says he and his team-mates have a \"chip on their shoulder\" he believes can help them win the Championship.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "All done deals in August 2026",
-    "excerpt": "Check out the significant signings and departures in the Premier League, Scottish Premiership, EFL and Women's Super League.",
-    "time": "12 hrs ago",
-    "date": "2026-08-04T07:36:11.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aec0/live/fd14b290-e25e-11ef-a819-277e390a7a08.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c9v4d2z2p7yo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Check out the significant signings and departures in the Premier League, Scottish Premiership, EFL and Women's Super League.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
