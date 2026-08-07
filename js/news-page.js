@@ -28,8 +28,8 @@ function updateNewsPageLabels() {
   const kicker = document.querySelector(".news-title-strip span");
   const title = document.querySelector(".news-title-strip h1");
 
-  if (kicker) kicker.textContent = "World Sports News";
-  if (title) title.textContent = "Football, F1, Tennis, Cycling & Global Results";
+  if (kicker) kicker.textContent = "World Sports News · 7 Aug 2026";
+  if (title) title.textContent = "Football, Cycling, Tennis, Golf & Global Results";
 
   const sidebarHeads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (sidebarHeads[0]) sidebarHeads[0].textContent = "Top Categories";
@@ -40,10 +40,10 @@ function updateNewsPageLabels() {
   if (categoryList) {
     categoryList.innerHTML = `
       <a class="sidebar-link-card" href="news.html#football">Football</a>
-      <a class="sidebar-link-card" href="news.html#f1">Formula 1</a>
-      <a class="sidebar-link-card" href="news.html#tennis">Tennis</a>
       <a class="sidebar-link-card" href="news.html#cycling">Cycling</a>
-      <a class="sidebar-link-card" href="news.html#multi-sport">Commonwealth Games</a>
+      <a class="sidebar-link-card" href="news.html#tennis">Tennis</a>
+      <a class="sidebar-link-card" href="news.html#golf">Golf</a>
+      <a class="sidebar-link-card" href="news.html#aquatics">Aquatics</a>
       <a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>
     `;
   }
@@ -51,10 +51,10 @@ function updateNewsPageLabels() {
   const trendingList = document.querySelector(".trending-list");
   if (trendingList) {
     trendingList.innerHTML = `
-      <a class="sidebar-link-card" href="article.html?id=1">Guimaraes transfer watch</a>
-      <a class="sidebar-link-card" href="article.html?id=3">Pogacar Tour title</a>
-      <a class="sidebar-link-card" href="article.html?id=4">Hungarian GP race day</a>
-      <a class="sidebar-link-card" href="article.html?id=6">Glasgow medal table</a>
+      <a class="sidebar-link-card" href="match.html?id=tdff-ventoux">Tour Femmes · Mont Ventoux</a>
+      <a class="sidebar-link-card" href="match.html?id=canada-tennis">ATP Montreal / WTA Toronto</a>
+      <a class="sidebar-link-card" href="match.html?id=wyndham-championship">Wyndham Championship</a>
+      <a class="sidebar-link-card" href="news.html#football">Premier League transfer watch</a>
     `;
   }
 
@@ -62,7 +62,7 @@ function updateNewsPageLabels() {
   if (focusBox) {
     focusBox.innerHTML = `
       <strong>What matters most today</strong>
-      <p>Football transfers, F1 race strategy, tennis hard-court form, cycling results and Glasgow medal events are the current traffic windows.</p>
+      <p>Mont Ventoux leads the live cycling window, Canada hosts ATP/WTA 1000 tennis, the Wyndham Championship reaches round two, and football transfer activity remains the main pre-season news driver.</p>
     `;
   }
 }
