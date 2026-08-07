@@ -8,80 +8,80 @@
 
   const GLOBAL_RESULTS = [
     {
-      round: "Cycling · Tour de France",
-      status: "FINAL",
-      homeName: "Tadej Pogacar",
-      awayName: "Tour de France 2026",
-      homeGoals: "5th",
-      awayGoals: "Title",
-      venue: "Paris final stage",
-      date: "26 Jul · GC result",
-      href: "news.html"
-    },
-    {
-      round: "Multi-sport · Glasgow 2026",
+      round: "Cycling · Tour de France Femmes",
       status: "LIVE",
-      homeName: "Commonwealth Games",
-      awayName: "Medal board",
-      homeGoals: "23 Jul",
-      awayGoals: "2 Aug",
-      venue: "Glasgow, Scotland",
-      date: "Daily results",
+      homeName: "Stage 7",
+      awayName: "Mont Ventoux",
+      homeGoals: "7 Aug",
+      awayGoals: "Queen stage",
+      venue: "La Voulte-sur-Rhône → Mont Ventoux",
+      date: "GC battle: Reusser vs Vollering",
       href: "news.html"
     },
     {
-      round: "Formula 1",
-      status: "RACE DAY",
-      homeName: "Hungarian Grand Prix",
-      awayName: "Round 11",
-      homeGoals: "F1",
-      awayGoals: "Live",
-      venue: "Hungaroring",
-      date: "26 Jul",
-      href: "match.html"
+      round: "Tennis · ATP/WTA 1000",
+      status: "LIVE",
+      homeName: "National Bank Open",
+      awayName: "Canada",
+      homeGoals: "ATP",
+      awayGoals: "WTA",
+      venue: "Montreal / Toronto",
+      date: "3–9 Aug",
+      href: "match.html?id=canada-tennis"
     },
     {
-      round: "Tennis · ATP/WTA 500",
-      status: "UPCOMING",
-      homeName: "Mubadala DC Open",
-      awayName: "Hard-court swing",
-      homeGoals: "27 Jul",
-      awayGoals: "2 Aug",
-      venue: "Washington, D.C.",
-      date: "Main draw",
-      href: "match.html"
+      round: "Golf · PGA Tour",
+      status: "ROUND 2",
+      homeName: "Wyndham Championship",
+      awayName: "Friday play",
+      homeGoals: "6 Aug",
+      awayGoals: "9 Aug",
+      venue: "Sedgefield Country Club, Greensboro",
+      date: "Cut-line watch",
+      href: "match.html?id=wyndham-championship"
     },
     {
-      round: "Football · Premier League",
-      status: "WATCH",
-      homeName: "Newcastle United",
-      awayName: "Liverpool",
-      homeGoals: "23 Aug",
-      awayGoals: "Opener",
-      venue: "Newcastle home opener",
-      date: "Transfer context",
-      href: "match.html"
+      round: "Gymnastics",
+      status: "IN PROGRESS",
+      homeName: "U.S. Championships",
+      awayName: "Championship weekend",
+      homeGoals: "6 Aug",
+      awayGoals: "9 Aug",
+      venue: "United States",
+      date: "All-around & event signals",
+      href: "news.html"
     },
     {
-      round: "Football Transfers",
+      round: "Football · Transfer Window",
       status: "DEVELOPING",
-      homeName: "Bruno Guimaraes",
-      awayName: "Arsenal interest",
-      homeGoals: "Squad",
-      awayGoals: "Signal",
-      venue: "Premier League market",
-      date: "26 Jul",
+      homeName: "Premier League",
+      awayName: "Squad moves",
+      homeGoals: "7 Aug",
+      awayGoals: "Live",
+      venue: "Summer transfer market",
+      date: "Confirmed deals & rumours",
       href: "news.html"
     },
     {
-      round: "Golf",
+      round: "Aquatics · European Championships",
+      status: "LIVE",
+      homeName: "European Aquatics",
+      awayName: "Paris 2026",
+      homeGoals: "31 Jul",
+      awayGoals: "16 Aug",
+      venue: "Paris",
+      date: "Medal programme",
+      href: "news.html"
+    },
+    {
+      round: "Snooker · China Open",
       status: "NEXT",
-      homeName: "Women's Open",
-      awayName: "Major week",
-      homeGoals: "30 Jul",
-      awayGoals: "2 Aug",
-      venue: "Lancashire",
-      date: "Late-July window",
+      homeName: "China Open",
+      awayName: "World Snooker Tour",
+      homeGoals: "8 Aug",
+      awayGoals: "16 Aug",
+      venue: "China",
+      date: "Starts Saturday",
       href: "news.html"
     },
     {
@@ -92,7 +92,7 @@
       homeGoals: "AI",
       awayGoals: "Data",
       venue: "Football video understanding",
-      date: "July update",
+      date: "Current research radar",
       href: "ai-insights.html"
     }
   ];
@@ -146,7 +146,7 @@
       </a>
     `).join("");
 
-    setStatus("World sports results & live-event radar · 26 Jul");
+    setStatus("World sports results & live-event radar · 7 Aug 2026");
   }
 
   function updateHeroCopy() {
@@ -158,8 +158,8 @@
     document.title = "World Sports Results | Betforecast.ai";
 
     if (badge) badge.textContent = "World sports results";
-    if (title) title.textContent = "Latest world sports results.";
-    if (text) text.textContent = "Follow cycling results, F1 race-day status, tennis draws, medal events, football transfer signals and upcoming global sports windows.";
+    if (title) title.textContent = "Today’s world sports radar.";
+    if (text) text.textContent = "Follow today’s cycling, tennis, golf, gymnastics, aquatics and football transfer windows, plus the next major events on the calendar.";
     if (panelTitle) panelTitle.textContent = "Global Sports Result Board";
   }
 
