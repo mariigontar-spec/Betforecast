@@ -28,6 +28,52 @@
     return words.slice(0, 2).map((word) => word.charAt(0)).join("").toUpperCase();
   }
 
+  function updateHomepageCopy() {
+    const lead = document.querySelector(".hero-lead");
+    if (lead) lead.textContent = "From Premier League opening-weekend build-up to Cincinnati tennis and Formula 1 at Zandvoort — follow the current schedule, understand the key signals and make your own informed call.";
+
+    const radar = document.querySelector(".hero-radar");
+    if (radar) {
+      radar.innerHTML = `
+        <div><strong>19 Aug</strong><span>Cincinnati R16</span></div>
+        <div><strong>21 Aug</strong><span>Arsenal vs Coventry</span></div>
+        <div><strong>21–23 Aug</strong><span>F1 Dutch GP</span></div>
+      `;
+    }
+
+    const input = document.getElementById("home-search-input");
+    if (input) input.placeholder = "Try: Cincinnati, Arsenal, Dutch GP";
+
+    const chips = document.querySelector(".search-chips");
+    if (chips) {
+      chips.innerHTML = `
+        <button type="button" data-query="Cincinnati">Cincinnati</button>
+        <button type="button" data-query="Arsenal">Arsenal</button>
+        <button type="button" data-query="Dutch Grand Prix">Dutch GP</button>
+      `;
+    }
+
+    const lines = document.querySelectorAll(".competition-line");
+    const content = [
+      { href: "match.html?id=cincinnati-r16", title: "Cincinnati Open · Round of 16", detail: "19 August · ATP/WTA 1000 hard-court action", tag: "Tennis" },
+      { href: "match.html?id=premier-league-opener", title: "Arsenal vs Coventry City", detail: "21 August · Premier League 2026/27 opener", tag: "Football" },
+      { href: "match.html?id=dutch-gp", title: "Formula 1 Dutch Grand Prix", detail: "21–23 August · Zandvoort, Round 12", tag: "F1" },
+      { href: "news.html", title: "Confirmed transfer watch", detail: "Rodri to Barcelona, Newcastle add Amar Dedic", tag: "Transfers" }
+    ];
+
+    lines.forEach((line, index) => {
+      const item = content[index];
+      if (!item) return;
+      line.href = item.href;
+      const title = line.querySelector("strong");
+      const detail = line.querySelector("small");
+      const tag = line.querySelector(".competition-tag");
+      if (title) title.textContent = item.title;
+      if (detail) detail.textContent = item.detail;
+      if (tag) tag.textContent = item.tag;
+    });
+  }
+
   function renderFeatured(event) {
     const container = document.getElementById("featured-match");
     if (!container) return;
@@ -195,7 +241,7 @@
 
   async function loadSchedule() {
     try {
-      const response = await fetch(`${scheduleUrl}?v=1`, { cache: "no-store" });
+      const response = await fetch(`${scheduleUrl}?v=2`, { cache: "no-store" });
       if (!response.ok) throw new Error(`Schedule request failed: ${response.status}`);
 
       scheduleData = await response.json();
@@ -212,6 +258,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", () => {
+    updateHomepageCopy();
     initMobileMenu();
     initSearch();
     initAdhitPopup();
