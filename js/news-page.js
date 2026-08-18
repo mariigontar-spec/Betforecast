@@ -28,8 +28,8 @@ function updateNewsPageLabels() {
   const kicker = document.querySelector(".news-title-strip span");
   const title = document.querySelector(".news-title-strip h1");
 
-  if (kicker) kicker.textContent = "World Sports News · 7 Aug 2026";
-  if (title) title.textContent = "Football, Cycling, Tennis, Golf & Global Results";
+  if (kicker) kicker.textContent = "World Sports News · 19 Aug 2026";
+  if (title) title.textContent = "Football, Tennis, Formula 1 & Global Sports Updates";
 
   const sidebarHeads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (sidebarHeads[0]) sidebarHeads[0].textContent = "Top Categories";
@@ -40,10 +40,10 @@ function updateNewsPageLabels() {
   if (categoryList) {
     categoryList.innerHTML = `
       <a class="sidebar-link-card" href="news.html#football">Football</a>
-      <a class="sidebar-link-card" href="news.html#cycling">Cycling</a>
       <a class="sidebar-link-card" href="news.html#tennis">Tennis</a>
-      <a class="sidebar-link-card" href="news.html#golf">Golf</a>
-      <a class="sidebar-link-card" href="news.html#aquatics">Aquatics</a>
+      <a class="sidebar-link-card" href="news.html#f1">Formula 1</a>
+      <a class="sidebar-link-card" href="news.html#transfers">Transfers</a>
+      <a class="sidebar-link-card" href="news.html#injuries">Injuries</a>
       <a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>
     `;
   }
@@ -51,10 +51,10 @@ function updateNewsPageLabels() {
   const trendingList = document.querySelector(".trending-list");
   if (trendingList) {
     trendingList.innerHTML = `
-      <a class="sidebar-link-card" href="match.html?id=tdff-ventoux">Tour Femmes · Mont Ventoux</a>
-      <a class="sidebar-link-card" href="match.html?id=canada-tennis">ATP Montreal / WTA Toronto</a>
-      <a class="sidebar-link-card" href="match.html?id=wyndham-championship">Wyndham Championship</a>
-      <a class="sidebar-link-card" href="news.html#football">Premier League transfer watch</a>
+      <a class="sidebar-link-card" href="match.html?id=cincinnati-r16">Cincinnati Open · Round of 16</a>
+      <a class="sidebar-link-card" href="match.html?id=premier-league-opener">Arsenal vs Coventry · 21 Aug</a>
+      <a class="sidebar-link-card" href="match.html?id=dutch-gp">Formula 1 · Dutch Grand Prix</a>
+      <a class="sidebar-link-card" href="match.html?id=rodri-barcelona">Rodri completes Barcelona move</a>
     `;
   }
 
@@ -62,7 +62,7 @@ function updateNewsPageLabels() {
   if (focusBox) {
     focusBox.innerHTML = `
       <strong>What matters most today</strong>
-      <p>Mont Ventoux leads the live cycling window, Canada hosts ATP/WTA 1000 tennis, the Wyndham Championship reaches round two, and football transfer activity remains the main pre-season news driver.</p>
+      <p>Cincinnati reaches the round of 16, the Premier League opener is two days away, Formula 1 returns at Zandvoort this weekend, and confirmed transfer moves are reshaping early-season squad projections.</p>
     `;
   }
 }
