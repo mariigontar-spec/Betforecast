@@ -8,92 +8,92 @@
 
   const GLOBAL_RESULTS = [
     {
-      round: "Cycling · Tour de France Femmes",
-      status: "LIVE",
-      homeName: "Stage 7",
-      awayName: "Mont Ventoux",
-      homeGoals: "7 Aug",
-      awayGoals: "Queen stage",
-      venue: "La Voulte-sur-Rhône → Mont Ventoux",
-      date: "GC battle: Reusser vs Vollering",
+      round: "Tennis · ATP/WTA 1000",
+      status: "TODAY",
+      homeName: "Cincinnati Open",
+      awayName: "Round of 16",
+      homeGoals: "19 Aug",
+      awayGoals: "R16",
+      venue: "Mason, Ohio",
+      date: "Day and night sessions",
+      href: "match.html?id=cincinnati-r16"
+    },
+    {
+      round: "Football · Premier League",
+      status: "NEXT",
+      homeName: "Arsenal",
+      awayName: "Coventry City",
+      homeGoals: "21 Aug",
+      awayGoals: "Opener",
+      venue: "Emirates Stadium",
+      date: "2026/27 season opener",
+      href: "match.html?id=premier-league-opener"
+    },
+    {
+      round: "Formula 1",
+      status: "UPCOMING",
+      homeName: "Dutch Grand Prix",
+      awayName: "Round 12",
+      homeGoals: "21 Aug",
+      awayGoals: "23 Aug",
+      venue: "Zandvoort",
+      date: "F1 returns after summer break",
+      href: "match.html?id=dutch-gp"
+    },
+    {
+      round: "Football · Confirmed Transfer",
+      status: "DONE",
+      homeName: "Rodri",
+      awayName: "Barcelona",
+      homeGoals: "Man City",
+      awayGoals: "Barça",
+      venue: "European transfer market",
+      date: "Confirmed 18 Aug",
       href: "news.html"
     },
     {
-      round: "Tennis · ATP/WTA 1000",
-      status: "LIVE",
-      homeName: "National Bank Open",
-      awayName: "Canada",
-      homeGoals: "ATP",
-      awayGoals: "WTA",
-      venue: "Montreal / Toronto",
-      date: "3–9 Aug",
-      href: "match.html?id=canada-tennis"
+      round: "Football · Confirmed Transfer",
+      status: "DONE",
+      homeName: "Amar Dedic",
+      awayName: "Newcastle United",
+      homeGoals: "Benfica",
+      awayGoals: "NUFC",
+      venue: "Premier League transfer market",
+      date: "Five-year deal",
+      href: "news.html"
     },
     {
-      round: "Golf · PGA Tour",
-      status: "ROUND 2",
-      homeName: "Wyndham Championship",
-      awayName: "Friday play",
-      homeGoals: "6 Aug",
-      awayGoals: "9 Aug",
-      venue: "Sedgefield Country Club, Greensboro",
-      date: "Cut-line watch",
-      href: "match.html?id=wyndham-championship"
+      round: "Tennis · Cincinnati",
+      status: "WITHDRAWN",
+      homeName: "Elina Svitolina",
+      awayName: "Ankle injury",
+      homeGoals: "18 Aug",
+      awayGoals: "OUT",
+      venue: "Cincinnati Open",
+      date: "US Open recovery focus",
+      href: "news.html"
     },
     {
-      round: "Gymnastics",
-      status: "IN PROGRESS",
-      homeName: "U.S. Championships",
-      awayName: "Championship weekend",
-      homeGoals: "6 Aug",
-      awayGoals: "9 Aug",
-      venue: "United States",
-      date: "All-around & event signals",
+      round: "Tennis · US Open",
+      status: "CONFIRMED",
+      homeName: "Venus Williams",
+      awayName: "Wildcard",
+      homeGoals: "USO",
+      awayGoals: "IN",
+      venue: "New York",
+      date: "Wildcard announced 18 Aug",
       href: "news.html"
     },
     {
       round: "Football · Transfer Window",
-      status: "DEVELOPING",
+      status: "LIVE",
       homeName: "Premier League",
       awayName: "Squad moves",
-      homeGoals: "7 Aug",
+      homeGoals: "19 Aug",
       awayGoals: "Live",
       venue: "Summer transfer market",
-      date: "Confirmed deals & rumours",
+      date: "Final pre-season adjustments",
       href: "news.html"
-    },
-    {
-      round: "Aquatics · European Championships",
-      status: "LIVE",
-      homeName: "European Aquatics",
-      awayName: "Paris 2026",
-      homeGoals: "31 Jul",
-      awayGoals: "16 Aug",
-      venue: "Paris",
-      date: "Medal programme",
-      href: "news.html"
-    },
-    {
-      round: "Snooker · China Open",
-      status: "NEXT",
-      homeName: "China Open",
-      awayName: "World Snooker Tour",
-      homeGoals: "8 Aug",
-      awayGoals: "16 Aug",
-      venue: "China",
-      date: "Starts Saturday",
-      href: "news.html"
-    },
-    {
-      round: "AI Sports",
-      status: "RESEARCH",
-      homeName: "SoccerNet 2026",
-      awayName: "Challenge results",
-      homeGoals: "AI",
-      awayGoals: "Data",
-      venue: "Football video understanding",
-      date: "Current research radar",
-      href: "ai-insights.html"
     }
   ];
 
@@ -146,7 +146,7 @@
       </a>
     `).join("");
 
-    setStatus("World sports results & live-event radar · 7 Aug 2026");
+    setStatus("World sports results & live-event radar · 19 Aug 2026");
   }
 
   function updateHeroCopy() {
@@ -159,7 +159,7 @@
 
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Today’s world sports radar.";
-    if (text) text.textContent = "Follow today’s cycling, tennis, golf, gymnastics, aquatics and football transfer windows, plus the next major events on the calendar.";
+    if (text) text.textContent = "Follow Cincinnati round-of-16 tennis, Premier League opening-weekend build-up, the Dutch Grand Prix, confirmed transfers and the latest injury news.";
     if (panelTitle) panelTitle.textContent = "Global Sports Result Board";
   }
 
