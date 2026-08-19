@@ -28,7 +28,7 @@ function updateNewsPageLabels() {
   const kicker = document.querySelector(".news-title-strip span");
   const title = document.querySelector(".news-title-strip h1");
 
-  if (kicker) kicker.textContent = "World Sports News · 19 Aug 2026";
+  if (kicker) kicker.textContent = "World Sports News · 20 Aug 2026";
   if (title) title.textContent = "Football, Tennis, Formula 1 & Global Sports Updates";
 
   const sidebarHeads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
@@ -42,7 +42,7 @@ function updateNewsPageLabels() {
       <a class="sidebar-link-card" href="news.html#football">Football</a>
       <a class="sidebar-link-card" href="news.html#tennis">Tennis</a>
       <a class="sidebar-link-card" href="news.html#f1">Formula 1</a>
-      <a class="sidebar-link-card" href="news.html#transfers">Transfers</a>
+      <a class="sidebar-link-card" href="news.html#golf">Golf</a>
       <a class="sidebar-link-card" href="news.html#injuries">Injuries</a>
       <a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>
     `;
@@ -51,10 +51,10 @@ function updateNewsPageLabels() {
   const trendingList = document.querySelector(".trending-list");
   if (trendingList) {
     trendingList.innerHTML = `
-      <a class="sidebar-link-card" href="match.html?id=cincinnati-r16">Cincinnati Open · Round of 16</a>
+      <a class="sidebar-link-card" href="match.html?id=cincinnati-qf">Cincinnati Open · Quarterfinals</a>
       <a class="sidebar-link-card" href="match.html?id=premier-league-opener">Arsenal vs Coventry · 21 Aug</a>
       <a class="sidebar-link-card" href="match.html?id=dutch-gp">Formula 1 · Dutch Grand Prix</a>
-      <a class="sidebar-link-card" href="match.html?id=rodri-barcelona">Rodri completes Barcelona move</a>
+      <a class="sidebar-link-card" href="match.html?id=hadjar-lawson">Hadjar out · Lawson to Red Bull</a>
     `;
   }
 
@@ -62,7 +62,7 @@ function updateNewsPageLabels() {
   if (focusBox) {
     focusBox.innerHTML = `
       <strong>What matters most today</strong>
-      <p>Cincinnati reaches the round of 16, the Premier League opener is two days away, Formula 1 returns at Zandvoort this weekend, and confirmed transfer moves are reshaping early-season squad projections.</p>
+      <p>Cincinnati reaches the quarterfinal stage, the Premier League starts tomorrow with Arsenal vs Coventry, and Formula 1 returns at Zandvoort with a sprint weekend complicated by Red Bull’s late driver change.</p>
     `;
   }
 }
