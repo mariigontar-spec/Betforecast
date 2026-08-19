@@ -11,88 +11,88 @@
       round: "Tennis · ATP/WTA 1000",
       status: "TODAY",
       homeName: "Cincinnati Open",
-      awayName: "Round of 16",
-      homeGoals: "19 Aug",
-      awayGoals: "R16",
+      awayName: "Quarterfinals",
+      homeGoals: "20 Aug",
+      awayGoals: "QF",
       venue: "Mason, Ohio",
       date: "Day and night sessions",
-      href: "match.html?id=cincinnati-r16"
+      href: "match.html?id=cincinnati-qf"
     },
     {
       round: "Football · Premier League",
-      status: "NEXT",
+      status: "TOMORROW",
       homeName: "Arsenal",
       awayName: "Coventry City",
       homeGoals: "21 Aug",
-      awayGoals: "Opener",
+      awayGoals: "20:00",
       venue: "Emirates Stadium",
       date: "2026/27 season opener",
       href: "match.html?id=premier-league-opener"
     },
     {
-      round: "Formula 1",
-      status: "UPCOMING",
+      round: "Formula 1 · Dutch GP",
+      status: "STARTS 21 AUG",
       homeName: "Dutch Grand Prix",
-      awayName: "Round 12",
+      awayName: "Sprint weekend",
       homeGoals: "21 Aug",
       awayGoals: "23 Aug",
       venue: "Zandvoort",
-      date: "F1 returns after summer break",
+      date: "Round 12",
       href: "match.html?id=dutch-gp"
     },
     {
-      round: "Football · Confirmed Transfer",
-      status: "DONE",
-      homeName: "Rodri",
-      awayName: "Barcelona",
-      homeGoals: "Man City",
-      awayGoals: "Barça",
-      venue: "European transfer market",
-      date: "Confirmed 18 Aug",
-      href: "news.html"
-    },
-    {
-      round: "Football · Confirmed Transfer",
-      status: "DONE",
-      homeName: "Amar Dedic",
-      awayName: "Newcastle United",
-      homeGoals: "Benfica",
-      awayGoals: "NUFC",
-      venue: "Premier League transfer market",
-      date: "Five-year deal",
-      href: "news.html"
+      round: "Formula 1 · Driver Update",
+      status: "CONFIRMED",
+      homeName: "Isack Hadjar",
+      awayName: "Liam Lawson",
+      homeGoals: "OUT",
+      awayGoals: "IN",
+      venue: "Red Bull · Dutch GP",
+      date: "Wrist injury replacement",
+      href: "match.html?id=hadjar-lawson"
     },
     {
       round: "Tennis · Cincinnati",
-      status: "WITHDRAWN",
-      homeName: "Elina Svitolina",
-      awayName: "Ankle injury",
-      homeGoals: "18 Aug",
+      status: "RESULT",
+      homeName: "Brandon Nakashima",
+      awayName: "Daniil Medvedev",
+      homeGoals: "6-7 7-6 6-1",
       awayGoals: "OUT",
       venue: "Cincinnati Open",
-      date: "US Open recovery focus",
+      date: "Nakashima saved three match points",
       href: "news.html"
     },
     {
-      round: "Tennis · US Open",
-      status: "CONFIRMED",
-      homeName: "Venus Williams",
-      awayName: "Wildcard",
-      homeGoals: "USO",
-      awayGoals: "IN",
-      venue: "New York",
-      date: "Wildcard announced 18 Aug",
+      round: "Football · Community Shield",
+      status: "FINAL",
+      homeName: "Arsenal",
+      awayName: "Manchester City",
+      homeGoals: "3",
+      awayGoals: "0",
+      venue: "Wembley",
+      date: "Arsenal enter league opener with a trophy",
       href: "news.html"
     },
     {
-      round: "Football · Transfer Window",
-      status: "LIVE",
+      round: "Golf · LIV",
+      status: "SCHEDULE CHANGE",
+      homeName: "LIV Golf",
+      awayName: "Michigan event",
+      homeGoals: "Season",
+      awayGoals: "Cancelled",
+      venue: "2026 calendar",
+      date: "Season now ends in Indianapolis",
+      href: "news.html"
+    },
+    {
+      round: "Football · Opening Weekend",
+      status: "WATCH",
       homeName: "Premier League",
-      awayName: "Squad moves",
-      homeGoals: "19 Aug",
-      awayGoals: "Live",
-      venue: "Summer transfer market",
-      date: "Final pre-season adjustments",
+      awayName: "Matchweek 1",
+      homeGoals: "21 Aug",
+      awayGoals: "24 Aug",
+      venue: "England",
+      date: "Champions, promoted clubs and new managers in focus",
       href: "news.html"
     }
   ];
@@ -146,7 +146,7 @@
       </a>
     `).join("");
 
-    setStatus("World sports results & live-event radar · 19 Aug 2026");
+    setStatus("World sports results & live-event radar · 20 Aug 2026");
   }
 
   function updateHeroCopy() {
@@ -159,7 +159,7 @@
 
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Today’s world sports radar.";
-    if (text) text.textContent = "Follow Cincinnati round-of-16 tennis, Premier League opening-weekend build-up, the Dutch Grand Prix, confirmed transfers and the latest injury news.";
+    if (text) text.textContent = "Follow Cincinnati quarterfinal tennis, Premier League opening-night build-up, the Dutch Grand Prix sprint weekend and the latest confirmed sports changes.";
     if (panelTitle) panelTitle.textContent = "Global Sports Result Board";
   }
 
