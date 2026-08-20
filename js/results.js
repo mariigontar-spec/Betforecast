@@ -8,92 +8,92 @@
 
   const GLOBAL_RESULTS = [
     {
-      round: "Tennis · ATP/WTA 1000",
-      status: "TODAY",
-      homeName: "Cincinnati Open",
-      awayName: "Quarterfinals",
-      homeGoals: "20 Aug",
-      awayGoals: "QF",
-      venue: "Mason, Ohio",
-      date: "Day and night sessions",
-      href: "match.html?id=cincinnati-qf"
-    },
-    {
       round: "Football · Premier League",
-      status: "TOMORROW",
+      status: "TODAY",
       homeName: "Arsenal",
       awayName: "Coventry City",
       homeGoals: "21 Aug",
-      awayGoals: "20:00",
+      awayGoals: "20:00 UK",
       venue: "Emirates Stadium",
       date: "2026/27 season opener",
       href: "match.html?id=premier-league-opener"
     },
     {
       round: "Formula 1 · Dutch GP",
-      status: "STARTS 21 AUG",
+      status: "TODAY",
       homeName: "Dutch Grand Prix",
-      awayName: "Sprint weekend",
-      homeGoals: "21 Aug",
-      awayGoals: "23 Aug",
-      venue: "Zandvoort",
-      date: "Round 12",
+      awayName: "Sprint qualifying",
+      homeGoals: "FP1 12:30",
+      awayGoals: "SQ 16:30",
+      venue: "Circuit Zandvoort",
+      date: "Round 12 · sprint weekend",
       href: "match.html?id=dutch-gp"
     },
     {
-      round: "Formula 1 · Driver Update",
-      status: "CONFIRMED",
-      homeName: "Isack Hadjar",
-      awayName: "Liam Lawson",
-      homeGoals: "OUT",
-      awayGoals: "IN",
-      venue: "Red Bull · Dutch GP",
-      date: "Wrist injury replacement",
-      href: "match.html?id=hadjar-lawson"
+      round: "Tennis · ATP/WTA 1000",
+      status: "TODAY",
+      homeName: "Cincinnati Open",
+      awayName: "Quarterfinals",
+      homeGoals: "21 Aug",
+      awayGoals: "QF",
+      venue: "Mason, Ohio",
+      date: "Day and night sessions",
+      href: "match.html?id=cincinnati-qf"
     },
     {
       round: "Tennis · Cincinnati",
-      status: "RESULT",
-      homeName: "Brandon Nakashima",
-      awayName: "Daniil Medvedev",
-      homeGoals: "6-7 7-6 6-1",
+      status: "FINAL",
+      homeName: "Sara Bejlek",
+      awayName: "Aryna Sabalenka",
+      homeGoals: "7-6(7) 6-4",
       awayGoals: "OUT",
       venue: "Cincinnati Open",
-      date: "Nakashima saved three match points",
+      date: "Bejlek reached her first Cincinnati quarterfinal",
       href: "news.html"
     },
     {
-      round: "Football · Community Shield",
+      round: "Tennis · Cincinnati",
       status: "FINAL",
-      homeName: "Arsenal",
-      awayName: "Manchester City",
-      homeGoals: "3",
-      awayGoals: "0",
-      venue: "Wembley",
-      date: "Arsenal enter league opener with a trophy",
-      href: "news.html"
-    },
-    {
-      round: "Golf · LIV",
-      status: "SCHEDULE CHANGE",
-      homeName: "LIV Golf",
-      awayName: "Michigan event",
-      homeGoals: "Season",
-      awayGoals: "Cancelled",
-      venue: "2026 calendar",
-      date: "Season now ends in Indianapolis",
+      homeName: "Tommy Paul",
+      awayName: "Alexander Zverev",
+      homeGoals: "4-6 7-6(6) 6-4",
+      awayGoals: "OUT",
+      venue: "Cincinnati Open",
+      date: "Paul saved a match point and advanced to the quarterfinals",
       href: "news.html"
     },
     {
       round: "Football · Opening Weekend",
-      status: "WATCH",
+      status: "NEXT",
       homeName: "Premier League",
       awayName: "Matchweek 1",
-      homeGoals: "21 Aug",
+      homeGoals: "22 Aug",
       awayGoals: "24 Aug",
       venue: "England",
-      date: "Champions, promoted clubs and new managers in focus",
-      href: "news.html"
+      date: "Hull-Man Utd, Man City-Bournemouth, Newcastle-Liverpool and more",
+      href: "match.html?id=premier-league-weekend"
+    },
+    {
+      round: "Formula 1 · Dutch GP",
+      status: "TOMORROW",
+      homeName: "Sprint",
+      awayName: "Grand Prix Qualifying",
+      homeGoals: "12:00",
+      awayGoals: "16:00",
+      venue: "Zandvoort",
+      date: "22 Aug · local time",
+      href: "match.html?id=dutch-gp"
+    },
+    {
+      round: "Tennis · Cincinnati",
+      status: "TOMORROW",
+      homeName: "Cincinnati Open",
+      awayName: "Semifinals",
+      homeGoals: "22 Aug",
+      awayGoals: "SF",
+      venue: "Mason, Ohio",
+      date: "Final-four sessions",
+      href: "match.html?id=cincinnati-qf"
     }
   ];
 
@@ -146,7 +146,7 @@
       </a>
     `).join("");
 
-    setStatus("World sports results & live-event radar · 20 Aug 2026");
+    setStatus("World sports results & live-event radar · 21 Aug 2026");
   }
 
   function updateHeroCopy() {
@@ -159,7 +159,7 @@
 
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Today’s world sports radar.";
-    if (text) text.textContent = "Follow Cincinnati quarterfinal tennis, Premier League opening-night build-up, the Dutch Grand Prix sprint weekend and the latest confirmed sports changes.";
+    if (text) text.textContent = "Follow the Premier League opener, Dutch Grand Prix sprint-weekend sessions, Cincinnati quarterfinal tennis and the latest confirmed results.";
     if (panelTitle) panelTitle.textContent = "Global Sports Result Board";
   }
 
