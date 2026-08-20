@@ -2,9 +2,81 @@
   {
     "id": "1",
     "category": "Football",
+    "title": "Five in Five: Football quiz No 4",
+    "excerpt": "Will you beat the clock by getting all five of today's answers in five minutes?",
+    "time": "10 min ago",
+    "date": "2026-08-20T06:19:41.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b0a0/live/25455e60-95ad-11f1-870d-5d08c49babb2.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c5yr3w58qnlo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Will you beat the clock by getting all five of today's answers in five minutes?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "2",
+    "category": "Football",
+    "title": "Who am I? Guess Premier League star No 31",
+    "excerpt": "Work out the identity of today's player in as few attempts as possible.",
+    "time": "32 min ago",
+    "date": "2026-08-20T05:57:38.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/572f/live/e6ff1b60-85b1-11f1-bee8-53ce494e1abc.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cj36grvmrz4o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Work out the identity of today's player in as few attempts as possible.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "3",
+    "category": "Football",
+    "title": "Premier League predictions 2026-27: BBC Sport pundits pick their top four",
+    "excerpt": "We ask 26 BBC Sport football pundits to predict who will win the 2026-27 Premier League title, and which clubs will finish in the top four.",
+    "time": "1 hr ago",
+    "date": "2026-08-20T05:24:16.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/86f1/live/4444d1b0-9bb6-11f1-b109-879e35c24276.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cp8edryd7plo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "We ask 26 BBC Sport football pundits to predict who will win the 2026-27 Premier League title, and which clubs will finish in the top four.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "4",
+    "category": "Football",
+    "title": "Aguero and Shearer star in best opening-round debuts",
+    "excerpt": "BBC Sport takes a look at some of the Premier League's greatest opening-day debuts, including Alan Shearer's Blackburn blinder and Michu's Swansea screamers.",
+    "time": "1 hr ago",
+    "date": "2026-08-20T05:22:10.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a20c/live/89ac3320-9bf6-11f1-a291-b542ee92de7c.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cwyl718g865o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "BBC Sport takes a look at some of the Premier League's greatest opening-day debuts, including Alan Shearer's Blackburn blinder and Michu's Swansea screamers.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "5",
+    "category": "Football",
     "title": "Celtic find value in 'special' Duran - but does ambition reach further still?",
     "excerpt": "Now that the Champions League money may be nigh, we will get to see the scale of Celtic's ambition, asks Tom English?",
-    "time": "1 hr ago",
+    "time": "7 hrs ago",
     "date": "2026-08-19T23:34:09.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aa5c/live/48372370-9c17-11f1-b109-879e35c24276.jpg",
@@ -18,11 +90,11 @@
     ]
   },
   {
-    "id": "2",
+    "id": "6",
     "category": "Football",
     "title": "Algorithms amplified World Cup racism, says report",
     "excerpt": "Racist abuse aimed at England footballers on social media was amplified during the World Cup by algorithms designed to maximise engagement and profit, according to new research.",
-    "time": "2 hrs ago",
+    "time": "7 hrs ago",
     "date": "2026-08-19T23:02:14.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8d5c/live/8c405a40-9bf0-11f1-8470-d18257d2d589.jpg",
@@ -36,11 +108,11 @@
     ]
   },
   {
-    "id": "3",
+    "id": "7",
     "category": "Football",
     "title": "How 'outstanding' Duran helped Celtic beat LASK",
     "excerpt": "Champions League analysts Pat Nevin and James McFadden look at the \"outstanding\" impact new signing Camilo Duran had for Celtic in their Champions League play-off first-leg win over LASK.",
-    "time": "2 hrs ago",
+    "time": "8 hrs ago",
     "date": "2026-08-19T22:27:18.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/20ee/live/c340cd10-9c1b-11f1-a291-b542ee92de7c.jpg",
@@ -54,11 +126,11 @@
     ]
   },
   {
-    "id": "4",
+    "id": "8",
     "category": "Football",
     "title": "Hapoel Be'er Sheva earn comeback win over Sabah",
     "excerpt": "Hapoel Be'er Sheva fight back from a goal down to beat Sabah in the first leg of their Champions League play-off.",
-    "time": "3 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:42:50.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a621/live/611987c0-9c17-11f1-aed2-8d6da8d75094.jpg",
@@ -72,11 +144,11 @@
     ]
   },
   {
-    "id": "5",
+    "id": "9",
     "category": "Football",
     "title": "Man City join Man Utd in Kone race - Thursday's gossip",
     "excerpt": "Manchester City look set to rival neighbours Manchester United for Manu Kone, Aston Villa interested in Tosin Adarabioyo and Tottenham in talks over Man City duo.",
-    "time": "3 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:30:46.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a92e/live/c0bac070-9c05-11f1-b109-879e35c24276.png",
@@ -90,11 +162,11 @@
     ]
   },
   {
-    "id": "6",
+    "id": "10",
     "category": "Football",
     "title": "Bodo/Glimt in strong position following first-leg win at NEC",
     "excerpt": "Last season's Champions League fairytale side Bodo/Glimt look set to qualify for this year's edition of the competition after winning 3-1 away at NEC Nijmegen of the Netherlands.",
-    "time": "3 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:29:50.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3083/live/3a26b410-9c14-11f1-b109-879e35c24276.jpg",
@@ -108,11 +180,11 @@
     ]
   },
   {
-    "id": "7",
+    "id": "11",
     "category": "Football",
     "title": "Duran stars as Celtic ease to comfortable win over LASK",
     "excerpt": "Celtic take a huge step towards the Champions League as two stunning Camilo Duran strikes help carve out a commanding first-leg play-off lead against LASK.",
-    "time": "3 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:28:08.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8fea/live/91b7b210-9c14-11f1-b109-879e35c24276.jpg",
@@ -126,11 +198,11 @@
     ]
   },
   {
-    "id": "8",
+    "id": "12",
     "category": "Football",
     "title": "Duran stars as Celtic open big lead against LASK",
     "excerpt": "Celtic take a huge step towards the Champions League as two stunning Camilo Duran strikes help carve out a commanding first-leg play-off lead against LASK.",
-    "time": "3 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:28:08.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8fea/live/91b7b210-9c14-11f1-b109-879e35c24276.jpg",
@@ -144,11 +216,11 @@
     ]
   },
   {
-    "id": "9",
+    "id": "13",
     "category": "Football",
     "title": "Celje fight back to earn draw against Slovan Bratislava",
     "excerpt": "Slovenia's Celje fight back from a goal down to earn a 1-1 draw away against Slovakian side Slovan Bratislava in the first leg of the Champions League play-offs.",
-    "time": "3 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:22:24.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e4e/live/4bb104c0-9c13-11f1-a291-b542ee92de7c.jpg",
@@ -162,11 +234,11 @@
     ]
   },
   {
-    "id": "10",
+    "id": "14",
     "category": "Football",
     "title": "Levski Sofia and AEK Athens play out goalless first leg",
     "excerpt": "Levski Sofia play out a goalless draw with AEK Athens in their Champions League play-off first leg at the Stadion Vasil Levski.",
-    "time": "4 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:07:16.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f5d8/live/8bcb1230-9b4b-11f1-aed2-8d6da8d75094.jpg",
@@ -180,11 +252,11 @@
     ]
   },
   {
-    "id": "11",
+    "id": "15",
     "category": "Football",
     "title": "Viking fight back to claim thrilling first-leg draw at Dinamo Zagreb",
     "excerpt": "Norway's Viking FK complete a comeback from two behind to hold Dinamo Zagreb of Croatia to a 2-2 draw in the first leg of their Champions League play-off.",
-    "time": "4 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:06:40.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/776b/live/b981cca0-9b4b-11f1-aed2-8d6da8d75094.jpg",
@@ -198,11 +270,11 @@
     ]
   },
   {
-    "id": "12",
+    "id": "16",
     "category": "Football",
     "title": "Fenerbahce & Lyon play out entertaining first-leg draw",
     "excerpt": "Fenerbahce and Lyon play out an entertaining 1-1 draw in their Uefa Champions League play-off first leg.",
-    "time": "4 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:05:51.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ab5f/live/5a6b10c0-9b49-11f1-a291-b542ee92de7c.jpg",
@@ -216,11 +288,11 @@
     ]
   },
   {
-    "id": "13",
+    "id": "17",
     "category": "Football",
     "title": "Celtic take the lead through Nygren's 'magnificent' strike",
     "excerpt": "Celtic take the lead in their Champions League play-off first leg against LASK, as Benjamin Nygren finds the top corner in spectacular fashion from outside of the box.",
-    "time": "4 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:00:45.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e5c/live/735a61c0-9c17-11f1-a291-b542ee92de7c.jpg",
@@ -234,11 +306,11 @@
     ]
   },
   {
-    "id": "14",
+    "id": "18",
     "category": "Football",
     "title": "Duran's incredible double edges Celtic closer to Champions League",
     "excerpt": "Camilo Duran scores two excellent goals for Celtic in the first leg of their Champions League play-off against Austria's LASK, finding the top corner with a volley and curling an effort past Lukas Jungwirth in the visitors' goal.",
-    "time": "4 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-08-19T21:00:41.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c763/live/24e31a00-9c17-11f1-a291-b542ee92de7c.jpg",
@@ -252,11 +324,11 @@
     ]
   },
   {
-    "id": "15",
+    "id": "19",
     "category": "Football",
     "title": "Rashford wants to play football 'without name mentioned every day'",
     "excerpt": "Marcus Rashford says he would like to play football without his \"name being mentioned every day\" after Gary Neville tried to start a conversation about the Manchester United forward on a podcast.",
-    "time": "4 hrs ago",
+    "time": "10 hrs ago",
     "date": "2026-08-19T20:56:50.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/025f/live/4a8ac680-9c0e-11f1-bab6-dd87b521d67e.jpg",
@@ -270,11 +342,11 @@
     ]
   },
   {
-    "id": "16",
+    "id": "20",
     "category": "Football",
     "title": "Kane plays down returning to Premier League in future",
     "excerpt": "Harry Kane says \"the itch isn't there as much anymore\" to one day return to England from Germany and try and break the all-time scoring record in the Premier League.",
-    "time": "7 hrs ago",
+    "time": "13 hrs ago",
     "date": "2026-08-19T17:14:38.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e38c/live/f5ef4850-9bed-11f1-aed9-776866bfb986.jpg",
@@ -288,11 +360,11 @@
     ]
   },
   {
-    "id": "17",
+    "id": "21",
     "category": "Football",
     "title": "Sheff Utd could face points deduction after High Court ruling",
     "excerpt": "Sheffield United could incur a 12-point deduction after the company used to buy the club was placed into liquidation.",
-    "time": "8 hrs ago",
+    "time": "13 hrs ago",
     "date": "2026-08-19T17:01:42.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1d43/live/c85e5cd0-9bd6-11f1-bd98-ed4222d45acc.jpg",
@@ -306,11 +378,11 @@
     ]
   },
   {
-    "id": "18",
+    "id": "22",
     "category": "Football",
     "title": "Questions remain over Vieira deal amid Senegal uncertainty",
     "excerpt": "Questions remain over the appointment of Patrick Vieira as Senegal's new head coach, with the country's football federation riven by off-field issues.",
-    "time": "8 hrs ago",
+    "time": "14 hrs ago",
     "date": "2026-08-19T16:26:06.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2738/live/63786550-9bd5-11f1-bb4d-1147ef2e78e5.jpg",
@@ -324,11 +396,11 @@
     ]
   },
   {
-    "id": "19",
+    "id": "23",
     "category": "Football",
     "title": "Reijnders leaves Man City for Al-Qadsiah in £52m deal",
     "excerpt": "Netherlands midfielder Tijjani Reijnders completes a £52m move to Saudi Arabian side Al-Qadsiah from Manchester City.",
-    "time": "9 hrs ago",
+    "time": "14 hrs ago",
     "date": "2026-08-19T16:01:32.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/83d9/live/7a887240-9be3-11f1-ba30-ddd78081057f.jpg",
@@ -342,11 +414,11 @@
     ]
   },
   {
-    "id": "20",
+    "id": "24",
     "category": "Football",
     "title": "Delap loses number nine shirt & trains away from first team",
     "excerpt": "Chelsea have split their players into two training groups at Cobham, involving several players who could move before the transfer window closes, including Liam Delap, Nicolas Jackson and Mykhailo Mudryk.",
-    "time": "9 hrs ago",
+    "time": "15 hrs ago",
     "date": "2026-08-19T15:58:44.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1eaa/live/250e17e0-9be6-11f1-ba30-ddd78081057f.jpg",
@@ -360,11 +432,11 @@
     ]
   },
   {
-    "id": "21",
+    "id": "25",
     "category": "Football",
     "title": "McInnes backs Shankland for 'big influence' at Rangers",
     "excerpt": "Lawrence Shankland is \"too good not to score regularly\" and is sure to have a \"big influence\" at Rangers whether or not he starts games, insists manager Derek McInnes.",
-    "time": "9 hrs ago",
+    "time": "15 hrs ago",
     "date": "2026-08-19T15:39:47.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/abe3/live/a88d50e0-9bdc-11f1-bb4d-1147ef2e78e5.jpg",
@@ -378,11 +450,11 @@
     ]
   },
   {
-    "id": "22",
+    "id": "26",
     "category": "Football",
     "title": "72+: The EFL Podcast",
     "excerpt": "Aaron and Jobi are joined by Bolton's Steven Schumacher and Luton's Jack Wilshere.",
-    "time": "9 hrs ago",
+    "time": "15 hrs ago",
     "date": "2026-08-19T15:37:00.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3n9ks.jpg",
@@ -396,11 +468,11 @@
     ]
   },
   {
-    "id": "23",
+    "id": "27",
     "category": "Football",
     "title": "Two collapses in four days - what's happening to Musiala?",
     "excerpt": "Jamal Musiala is being treated for a \"neurological dysfunction\" after collapsing twice in four days during Bayern Munich's pre-season friendlies.",
-    "time": "9 hrs ago",
+    "time": "15 hrs ago",
     "date": "2026-08-19T15:34:38.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/07ee/live/d8375700-9bb4-11f1-ae8a-8d57110c5ba6.jpg",
@@ -414,11 +486,11 @@
     ]
   },
   {
-    "id": "24",
+    "id": "28",
     "category": "Football",
     "title": "Man Utd's decision to make Baleba their 'third midfielder'",
     "excerpt": "Manchester United are in talks to make Carlos Baleba their 'third midfielder' as the club revamp Michael Carrick's squad.",
-    "time": "10 hrs ago",
+    "time": "16 hrs ago",
     "date": "2026-08-19T14:35:36.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/278b/live/236ff2e0-9bd3-11f1-bb4d-1147ef2e78e5.jpg",
@@ -432,11 +504,11 @@
     ]
   },
   {
-    "id": "25",
+    "id": "29",
     "category": "Football",
     "title": "Inter close in on £30m deal for Liverpool's Jones",
     "excerpt": "Italian champions Inter Milan are closing in on a deal worth 35m euros (£30m) for Liverpool midfielder Curtis Jones.",
-    "time": "10 hrs ago",
+    "time": "16 hrs ago",
     "date": "2026-08-19T14:23:20.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3d51/live/eeaadb30-9bd5-11f1-bd98-ed4222d45acc.jpg",
@@ -450,11 +522,11 @@
     ]
   },
   {
-    "id": "26",
+    "id": "30",
     "category": "Football",
     "title": "Arsenal agree £50m-plus deal to sign Villa's Konsa",
     "excerpt": "Arsenal agree a deal worth more than £50m to sign Aston Villa and England defender Ezri Konsa.",
-    "time": "11 hrs ago",
+    "time": "17 hrs ago",
     "date": "2026-08-19T13:55:18.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ae9d/live/ad505a30-9bbb-11f1-ae8a-8d57110c5ba6.jpg",
@@ -462,78 +534,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c98vz9jvg0vo?at_medium=RSS&at_campaign=rss",
     "content": [
       "Arsenal agree a deal worth more than £50m to sign Aston Villa and England defender Ezri Konsa.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "27",
-    "category": "Football",
-    "title": "Coventry sign teenage Fenerbahce forward Cherif",
-    "excerpt": "Nineteen-year-old Sidiki Cherif joins the Sky Blues on a long‑term deal after finishing last season with two goals in 12 games in Turkey's top flight.",
-    "time": "12 hrs ago",
-    "date": "2026-08-19T12:38:14.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e6ee/live/729d4c90-9bc5-11f1-8849-3fe19bf8df06.png",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cx2v3721ykjo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Nineteen-year-old Sidiki Cherif joins the Sky Blues on a long‑term deal after finishing last season with two goals in 12 games in Turkey's top flight.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "28",
-    "category": "Football",
-    "title": "'Everyone wants clarity' over Man City charges, says Arsenal chief",
-    "excerpt": "Arsenal's chief executive Richard Garlick speaks out on the case against Manchester City and the more than 100 alleged breaches of the Premier League's financial rules.",
-    "time": "12 hrs ago",
-    "date": "2026-08-19T12:30:11.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/be00/live/b648b050-9bbc-11f1-ae8a-8d57110c5ba6.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c1416keng1po?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Arsenal's chief executive Richard Garlick speaks out on the case against Manchester City and the more than 100 alleged breaches of the Premier League's financial rules.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "29",
-    "category": "Football",
-    "title": "Is Haaland worth the £15.5m price tag on FPL?",
-    "excerpt": "FPL expert Gianni Buttice weighs up whether Manchester City striker Erling Haaland is worth his £15.5m price tag on the game.",
-    "time": "13 hrs ago",
-    "date": "2026-08-19T11:32:34.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a64a/live/d4b4ed60-9bbc-11f1-b109-879e35c24276.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cvgx0dngdl0o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "FPL expert Gianni Buttice weighs up whether Manchester City striker Erling Haaland is worth his £15.5m price tag on the game.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Leeds sign Elvedi from Borussia Monchengladbach",
-    "excerpt": "Leeds United complete the signing of defender Nico Elvedi from Borussia Monchengladbach in an £8.5m deal.",
-    "time": "14 hrs ago",
-    "date": "2026-08-19T11:10:51.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c55e/live/7bc58d50-9bbb-11f1-ae8a-8d57110c5ba6.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ckgd5732mexo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Leeds United complete the signing of defender Nico Elvedi from Borussia Monchengladbach in an £8.5m deal.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
