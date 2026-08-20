@@ -1,130 +1,542 @@
 [
   {
-    "id": "2026-08-20-1",
-    "category": "Formula 1",
-    "title": "Hadjar ruled out of Dutch GP as Lawson steps into Red Bull",
-    "excerpt": "Isack Hadjar will miss the Dutch Grand Prix after a wrist injury in training. Liam Lawson moves into the Red Bull seat, while Yuki Tsunoda returns at Racing Bulls for the Zandvoort sprint weekend.",
-    "time": "19 Aug",
-    "date": "2026-08-19T08:49:34Z",
-    "readTime": "2 min read",
-    "image": "",
-    "source": "Reuters",
-    "sourceUrl": "https://www.reuters.com/sports/formula1/red-bulls-hadjar-set-miss-dutch-gp-with-wrist-injury-reports-say-2026-08-19/",
-    "content": [
-      "Red Bull confirmed a late driver change before Zandvoort, with Liam Lawson replacing the injured Isack Hadjar and Yuki Tsunoda filling Lawson's Racing Bulls seat.",
-      "For forecasting, the compressed sprint format increases the value of quick adaptation, setup feedback and clean qualifying execution."
-    ]
-  },
-  {
-    "id": "2026-08-20-2",
-    "category": "Formula 1",
-    "title": "Dutch Grand Prix begins Friday with Zandvoort sprint weekend",
-    "excerpt": "Formula 1 returns from the summer break on 21–23 August. Friday brings practice and sprint qualifying, Saturday the sprint and main qualifying, and Sunday the 72-lap Dutch Grand Prix.",
-    "time": "20 Aug",
-    "date": "2026-08-20T00:03:00+03:00",
-    "readTime": "2 min read",
-    "image": "",
-    "source": "Formula 1",
-    "sourceUrl": "https://www.formula1.com/en/latest/article/formula-1-heineken-dutch-grand-prix-2026.VYghWPhEDqYBlWbd1iKe6",
-    "content": [
-      "The Dutch Grand Prix runs from 21 to 23 August at Zandvoort and uses the sprint format in 2026.",
-      "The narrow circuit puts extra emphasis on qualifying position, race starts and strategy because overtaking opportunities are limited."
-    ]
-  },
-  {
-    "id": "2026-08-20-3",
-    "category": "Tennis",
-    "title": "Cincinnati Open reaches quarterfinal stage",
-    "excerpt": "The ATP and WTA 1000 event moves into quarterfinal sessions on 20 August as the hard-court swing approaches its final weekend before the US Open build-up intensifies.",
-    "time": "20 Aug",
-    "date": "2026-08-20T00:03:00+03:00",
-    "readTime": "2 min read",
-    "image": "",
-    "source": "Cincinnati Open",
-    "sourceUrl": "https://cincinnatiopen.com/tournament/tournament-schedule/",
-    "content": [
-      "Cincinnati Open quarterfinal sessions are scheduled for Thursday 20 August, with additional quarterfinal play on Friday before the weekend semifinals and finals.",
-      "Recovery time and accumulated match load become increasingly important forecasting inputs this deep into a two-week hard-court event."
-    ]
-  },
-  {
-    "id": "2026-08-20-4",
-    "category": "Tennis",
-    "title": "Nakashima saves three match points in Medvedev upset",
-    "excerpt": "Brandon Nakashima beat Daniil Medvedev 6-7(3), 7-6(4), 6-1 after saving three match points, extending a strong summer hard-court run in Cincinnati.",
-    "time": "18 Aug",
-    "date": "2026-08-18T22:59:31Z",
-    "readTime": "2 min read",
-    "image": "",
-    "source": "Reuters",
-    "sourceUrl": "https://www.reuters.com/sports/tennis/red-hot-nakashima-stuns-medvedev-reach-cincinnati-fourth-round-2026-08-18/",
-    "content": [
-      "Nakashima recovered from a set down and saved three match points before pulling away in the deciding set against Medvedev.",
-      "The result reinforces his strong North American hard-court form and raises his momentum signal ahead of the later Cincinnati rounds."
-    ]
-  },
-  {
-    "id": "2026-08-20-5",
+    "id": "1",
     "category": "Football",
-    "title": "Arsenal open Premier League title defence against Coventry on Friday",
-    "excerpt": "The 2026/27 Premier League season starts on 21 August with champions Arsenal hosting promoted Coventry City at the Emirates Stadium at 20:00 UK time.",
-    "time": "20 Aug",
-    "date": "2026-08-20T00:03:00+03:00",
+    "title": "Celtic find value in 'special' Duran - but does ambition reach further still?",
+    "excerpt": "Now that the Champions League money may be nigh, we will get to see the scale of Celtic's ambition, asks Tom English?",
+    "time": "1 hr ago",
+    "date": "2026-08-19T23:34:09.000Z",
     "readTime": "2 min read",
-    "image": "assets/news/arsenal.jpg",
-    "source": "Premier League",
-    "sourceUrl": "https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aa5c/live/48372370-9c17-11f1-b109-879e35c24276.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cn0n6k42803o?at_medium=RSS&at_campaign=rss",
     "content": [
-      "Arsenal host Coventry City in the opening match of the new Premier League season on Friday 21 August.",
-      "Coventry return to the top flight after 25 years, while Arsenal begin the defence of the title they won last season."
+      "Now that the Champions League money may be nigh, we will get to see the scale of Celtic's ambition, asks Tom English?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
     ]
   },
   {
-    "id": "2026-08-20-6",
+    "id": "2",
     "category": "Football",
-    "title": "Arsenal carry 3-0 Community Shield win into league opener",
-    "excerpt": "Arsenal beat Manchester City 3-0 in the Community Shield, giving the champions a strong competitive reference point before Friday's Premier League opener.",
-    "time": "16 Aug",
-    "date": "2026-08-16T18:00:00Z",
+    "title": "Algorithms amplified World Cup racism, says report",
+    "excerpt": "Racist abuse aimed at England footballers on social media was amplified during the World Cup by algorithms designed to maximise engagement and profit, according to new research.",
+    "time": "2 hrs ago",
+    "date": "2026-08-19T23:02:14.000Z",
     "readTime": "2 min read",
-    "image": "assets/news/arsenal.jpg",
-    "source": "Reuters",
-    "sourceUrl": "https://www.reuters.com/sports/soccer/arsenal-beat-man-city-3-0-win-community-shield-2026-08-16/",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8d5c/live/8c405a40-9bf0-11f1-8470-d18257d2d589.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c2k7en0lxkjo?at_medium=RSS&at_campaign=rss",
     "content": [
-      "Arsenal defeated Manchester City 3-0 in the Community Shield with goals from Riccardo Calafiori, Kai Havertz and Martin Odegaard.",
-      "The result provides a useful recent form signal, although opening-weekend uncertainty remains higher than later in the season."
+      "Racist abuse aimed at England footballers on social media was amplified during the World Cup by algorithms designed to maximise engagement and profit, according to new research.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
     ]
   },
   {
-    "id": "2026-08-20-7",
-    "category": "Formula 1",
-    "title": "Verstappen targets home farewell as Dutch GP leaves calendar",
-    "excerpt": "Max Verstappen heads to Zandvoort seeking a first win of the season at his home race, which is set to leave the Formula 1 calendar after 2026.",
-    "time": "19 Aug",
-    "date": "2026-08-19T17:02:11Z",
+    "id": "3",
+    "category": "Football",
+    "title": "How 'outstanding' Duran helped Celtic beat LASK",
+    "excerpt": "Champions League analysts Pat Nevin and James McFadden look at the \"outstanding\" impact new signing Camilo Duran had for Celtic in their Champions League play-off first-leg win over LASK.",
+    "time": "2 hrs ago",
+    "date": "2026-08-19T22:27:18.000Z",
     "readTime": "2 min read",
-    "image": "",
-    "source": "Reuters",
-    "sourceUrl": "https://www.reuters.com/sports/formula1/verstappen-can-give-his-home-dutch-race-sendoff-celebrate-2026-08-19/",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/20ee/live/c340cd10-9c1b-11f1-a291-b542ee92de7c.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c62qyr16k6ko?at_medium=RSS&at_campaign=rss",
     "content": [
-      "Verstappen has finished on the podium in every Dutch Grand Prix since Zandvoort returned to the championship in 2021.",
-      "The 2026 weekend adds a sprint format and late driver changes, increasing the number of variables before Sunday’s race."
+      "Champions League analysts Pat Nevin and James McFadden look at the \"outstanding\" impact new signing Camilo Duran had for Celtic in their Champions League play-off first-leg win over LASK.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
     ]
   },
   {
-    "id": "2026-08-20-8",
-    "category": "Golf",
-    "title": "LIV Golf ends 2026 season early and cancels Michigan event",
-    "excerpt": "LIV Golf cancelled its planned Michigan team championship and will conclude the season in Indianapolis while preparing for a transition involving new investors.",
-    "time": "17 Aug",
-    "date": "2026-08-17T19:52:04Z",
+    "id": "4",
+    "category": "Football",
+    "title": "Hapoel Be'er Sheva earn comeback win over Sabah",
+    "excerpt": "Hapoel Be'er Sheva fight back from a goal down to beat Sabah in the first leg of their Champions League play-off.",
+    "time": "3 hrs ago",
+    "date": "2026-08-19T21:42:50.000Z",
     "readTime": "2 min read",
-    "image": "",
-    "source": "Reuters",
-    "sourceUrl": "https://www.reuters.com/sports/golf/liv-golf-ending-season-early-cancels-michigan-event-2026-08-17/",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a621/live/611987c0-9c17-11f1-aed2-8d6da8d75094.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cy74z3zzvm1o?at_medium=RSS&at_campaign=rss",
     "content": [
-      "LIV Golf will finish its 2026 campaign earlier than planned after cancelling the Michigan team championship scheduled for 27–30 August.",
-      "The calendar change shifts the final competitive attention to the Indianapolis event and removes a late-August golf traffic window."
+      "Hapoel Be'er Sheva fight back from a goal down to beat Sabah in the first leg of their Champions League play-off.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "5",
+    "category": "Football",
+    "title": "Man City join Man Utd in Kone race - Thursday's gossip",
+    "excerpt": "Manchester City look set to rival neighbours Manchester United for Manu Kone, Aston Villa interested in Tosin Adarabioyo and Tottenham in talks over Man City duo.",
+    "time": "3 hrs ago",
+    "date": "2026-08-19T21:30:46.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a92e/live/c0bac070-9c05-11f1-b109-879e35c24276.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cn0n4qlxyq7o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Manchester City look set to rival neighbours Manchester United for Manu Kone, Aston Villa interested in Tosin Adarabioyo and Tottenham in talks over Man City duo.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "6",
+    "category": "Football",
+    "title": "Bodo/Glimt in strong position following first-leg win at NEC",
+    "excerpt": "Last season's Champions League fairytale side Bodo/Glimt look set to qualify for this year's edition of the competition after winning 3-1 away at NEC Nijmegen of the Netherlands.",
+    "time": "3 hrs ago",
+    "date": "2026-08-19T21:29:50.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3083/live/3a26b410-9c14-11f1-b109-879e35c24276.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c62v4v90yd9o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Last season's Champions League fairytale side Bodo/Glimt look set to qualify for this year's edition of the competition after winning 3-1 away at NEC Nijmegen of the Netherlands.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "7",
+    "category": "Football",
+    "title": "Duran stars as Celtic ease to comfortable win over LASK",
+    "excerpt": "Celtic take a huge step towards the Champions League as two stunning Camilo Duran strikes help carve out a commanding first-leg play-off lead against LASK.",
+    "time": "3 hrs ago",
+    "date": "2026-08-19T21:28:08.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8fea/live/91b7b210-9c14-11f1-b109-879e35c24276.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c0m73y34nglo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Celtic take a huge step towards the Champions League as two stunning Camilo Duran strikes help carve out a commanding first-leg play-off lead against LASK.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "8",
+    "category": "Football",
+    "title": "Duran stars as Celtic open big lead against LASK",
+    "excerpt": "Celtic take a huge step towards the Champions League as two stunning Camilo Duran strikes help carve out a commanding first-leg play-off lead against LASK.",
+    "time": "3 hrs ago",
+    "date": "2026-08-19T21:28:08.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8fea/live/91b7b210-9c14-11f1-b109-879e35c24276.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c0m73y34nglo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Celtic take a huge step towards the Champions League as two stunning Camilo Duran strikes help carve out a commanding first-leg play-off lead against LASK.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "9",
+    "category": "Football",
+    "title": "Celje fight back to earn draw against Slovan Bratislava",
+    "excerpt": "Slovenia's Celje fight back from a goal down to earn a 1-1 draw away against Slovakian side Slovan Bratislava in the first leg of the Champions League play-offs.",
+    "time": "3 hrs ago",
+    "date": "2026-08-19T21:22:24.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e4e/live/4bb104c0-9c13-11f1-a291-b542ee92de7c.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/crl7673348xo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Slovenia's Celje fight back from a goal down to earn a 1-1 draw away against Slovakian side Slovan Bratislava in the first leg of the Champions League play-offs.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "10",
+    "category": "Football",
+    "title": "Levski Sofia and AEK Athens play out goalless first leg",
+    "excerpt": "Levski Sofia play out a goalless draw with AEK Athens in their Champions League play-off first leg at the Stadion Vasil Levski.",
+    "time": "4 hrs ago",
+    "date": "2026-08-19T21:07:16.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f5d8/live/8bcb1230-9b4b-11f1-aed2-8d6da8d75094.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c79g0y57qnlo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Levski Sofia play out a goalless draw with AEK Athens in their Champions League play-off first leg at the Stadion Vasil Levski.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "11",
+    "category": "Football",
+    "title": "Viking fight back to claim thrilling first-leg draw at Dinamo Zagreb",
+    "excerpt": "Norway's Viking FK complete a comeback from two behind to hold Dinamo Zagreb of Croatia to a 2-2 draw in the first leg of their Champions League play-off.",
+    "time": "4 hrs ago",
+    "date": "2026-08-19T21:06:40.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/776b/live/b981cca0-9b4b-11f1-aed2-8d6da8d75094.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cwymzewv14no?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Norway's Viking FK complete a comeback from two behind to hold Dinamo Zagreb of Croatia to a 2-2 draw in the first leg of their Champions League play-off.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "12",
+    "category": "Football",
+    "title": "Fenerbahce & Lyon play out entertaining first-leg draw",
+    "excerpt": "Fenerbahce and Lyon play out an entertaining 1-1 draw in their Uefa Champions League play-off first leg.",
+    "time": "4 hrs ago",
+    "date": "2026-08-19T21:05:51.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ab5f/live/5a6b10c0-9b49-11f1-a291-b542ee92de7c.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cwyqzk5yk41o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Fenerbahce and Lyon play out an entertaining 1-1 draw in their Uefa Champions League play-off first leg.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "13",
+    "category": "Football",
+    "title": "Celtic take the lead through Nygren's 'magnificent' strike",
+    "excerpt": "Celtic take the lead in their Champions League play-off first leg against LASK, as Benjamin Nygren finds the top corner in spectacular fashion from outside of the box.",
+    "time": "4 hrs ago",
+    "date": "2026-08-19T21:00:45.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e5c/live/735a61c0-9c17-11f1-a291-b542ee92de7c.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cp8xg9j7gnko?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Celtic take the lead in their Champions League play-off first leg against LASK, as Benjamin Nygren finds the top corner in spectacular fashion from outside of the box.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "14",
+    "category": "Football",
+    "title": "Duran's incredible double edges Celtic closer to Champions League",
+    "excerpt": "Camilo Duran scores two excellent goals for Celtic in the first leg of their Champions League play-off against Austria's LASK, finding the top corner with a volley and curling an effort past Lukas Jungwirth in the visitors' goal.",
+    "time": "4 hrs ago",
+    "date": "2026-08-19T21:00:41.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c763/live/24e31a00-9c17-11f1-a291-b542ee92de7c.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/crmrydv4ww0o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Camilo Duran scores two excellent goals for Celtic in the first leg of their Champions League play-off against Austria's LASK, finding the top corner with a volley and curling an effort past Lukas Jungwirth in the visitors' goal.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "15",
+    "category": "Football",
+    "title": "Rashford wants to play football 'without name mentioned every day'",
+    "excerpt": "Marcus Rashford says he would like to play football without his \"name being mentioned every day\" after Gary Neville tried to start a conversation about the Manchester United forward on a podcast.",
+    "time": "4 hrs ago",
+    "date": "2026-08-19T20:56:50.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/025f/live/4a8ac680-9c0e-11f1-bab6-dd87b521d67e.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c1j1397zg1xo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Marcus Rashford says he would like to play football without his \"name being mentioned every day\" after Gary Neville tried to start a conversation about the Manchester United forward on a podcast.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "16",
+    "category": "Football",
+    "title": "Kane plays down returning to Premier League in future",
+    "excerpt": "Harry Kane says \"the itch isn't there as much anymore\" to one day return to England from Germany and try and break the all-time scoring record in the Premier League.",
+    "time": "7 hrs ago",
+    "date": "2026-08-19T17:14:38.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e38c/live/f5ef4850-9bed-11f1-aed9-776866bfb986.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/clylkxekeleo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Harry Kane says \"the itch isn't there as much anymore\" to one day return to England from Germany and try and break the all-time scoring record in the Premier League.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "17",
+    "category": "Football",
+    "title": "Sheff Utd could face points deduction after High Court ruling",
+    "excerpt": "Sheffield United could incur a 12-point deduction after the company used to buy the club was placed into liquidation.",
+    "time": "8 hrs ago",
+    "date": "2026-08-19T17:01:42.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1d43/live/c85e5cd0-9bd6-11f1-bd98-ed4222d45acc.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c4g618x1z80o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Sheffield United could incur a 12-point deduction after the company used to buy the club was placed into liquidation.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "18",
+    "category": "Football",
+    "title": "Questions remain over Vieira deal amid Senegal uncertainty",
+    "excerpt": "Questions remain over the appointment of Patrick Vieira as Senegal's new head coach, with the country's football federation riven by off-field issues.",
+    "time": "8 hrs ago",
+    "date": "2026-08-19T16:26:06.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2738/live/63786550-9bd5-11f1-bb4d-1147ef2e78e5.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cddjvjqd5mro?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Questions remain over the appointment of Patrick Vieira as Senegal's new head coach, with the country's football federation riven by off-field issues.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "19",
+    "category": "Football",
+    "title": "Reijnders leaves Man City for Al-Qadsiah in £52m deal",
+    "excerpt": "Netherlands midfielder Tijjani Reijnders completes a £52m move to Saudi Arabian side Al-Qadsiah from Manchester City.",
+    "time": "9 hrs ago",
+    "date": "2026-08-19T16:01:32.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/83d9/live/7a887240-9be3-11f1-ba30-ddd78081057f.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c0m7el3zr2eo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Netherlands midfielder Tijjani Reijnders completes a £52m move to Saudi Arabian side Al-Qadsiah from Manchester City.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "20",
+    "category": "Football",
+    "title": "Delap loses number nine shirt & trains away from first team",
+    "excerpt": "Chelsea have split their players into two training groups at Cobham, involving several players who could move before the transfer window closes, including Liam Delap, Nicolas Jackson and Mykhailo Mudryk.",
+    "time": "9 hrs ago",
+    "date": "2026-08-19T15:58:44.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1eaa/live/250e17e0-9be6-11f1-ba30-ddd78081057f.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c5y4nel5gddo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Chelsea have split their players into two training groups at Cobham, involving several players who could move before the transfer window closes, including Liam Delap, Nicolas Jackson and Mykhailo Mudryk.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "21",
+    "category": "Football",
+    "title": "McInnes backs Shankland for 'big influence' at Rangers",
+    "excerpt": "Lawrence Shankland is \"too good not to score regularly\" and is sure to have a \"big influence\" at Rangers whether or not he starts games, insists manager Derek McInnes.",
+    "time": "9 hrs ago",
+    "date": "2026-08-19T15:39:47.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/abe3/live/a88d50e0-9bdc-11f1-bb4d-1147ef2e78e5.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cddj835v4gno?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Lawrence Shankland is \"too good not to score regularly\" and is sure to have a \"big influence\" at Rangers whether or not he starts games, insists manager Derek McInnes.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "22",
+    "category": "Football",
+    "title": "72+: The EFL Podcast",
+    "excerpt": "Aaron and Jobi are joined by Bolton's Steven Schumacher and Luton's Jack Wilshere.",
+    "time": "9 hrs ago",
+    "date": "2026-08-19T15:37:00.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0p3n9ks.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0p5b36h?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Aaron and Jobi are joined by Bolton's Steven Schumacher and Luton's Jack Wilshere.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "23",
+    "category": "Football",
+    "title": "Two collapses in four days - what's happening to Musiala?",
+    "excerpt": "Jamal Musiala is being treated for a \"neurological dysfunction\" after collapsing twice in four days during Bayern Munich's pre-season friendlies.",
+    "time": "9 hrs ago",
+    "date": "2026-08-19T15:34:38.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/07ee/live/d8375700-9bb4-11f1-ae8a-8d57110c5ba6.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/crmry3r1ew7o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Jamal Musiala is being treated for a \"neurological dysfunction\" after collapsing twice in four days during Bayern Munich's pre-season friendlies.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "24",
+    "category": "Football",
+    "title": "Man Utd's decision to make Baleba their 'third midfielder'",
+    "excerpt": "Manchester United are in talks to make Carlos Baleba their 'third midfielder' as the club revamp Michael Carrick's squad.",
+    "time": "10 hrs ago",
+    "date": "2026-08-19T14:35:36.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/278b/live/236ff2e0-9bd3-11f1-bb4d-1147ef2e78e5.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/clylk1wexgno?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Manchester United are in talks to make Carlos Baleba their 'third midfielder' as the club revamp Michael Carrick's squad.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "25",
+    "category": "Football",
+    "title": "Inter close in on £30m deal for Liverpool's Jones",
+    "excerpt": "Italian champions Inter Milan are closing in on a deal worth 35m euros (£30m) for Liverpool midfielder Curtis Jones.",
+    "time": "10 hrs ago",
+    "date": "2026-08-19T14:23:20.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3d51/live/eeaadb30-9bd5-11f1-bd98-ed4222d45acc.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/clye43vge5jo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Italian champions Inter Milan are closing in on a deal worth 35m euros (£30m) for Liverpool midfielder Curtis Jones.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "26",
+    "category": "Football",
+    "title": "Arsenal agree £50m-plus deal to sign Villa's Konsa",
+    "excerpt": "Arsenal agree a deal worth more than £50m to sign Aston Villa and England defender Ezri Konsa.",
+    "time": "11 hrs ago",
+    "date": "2026-08-19T13:55:18.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ae9d/live/ad505a30-9bbb-11f1-ae8a-8d57110c5ba6.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c98vz9jvg0vo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Arsenal agree a deal worth more than £50m to sign Aston Villa and England defender Ezri Konsa.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "27",
+    "category": "Football",
+    "title": "Coventry sign teenage Fenerbahce forward Cherif",
+    "excerpt": "Nineteen-year-old Sidiki Cherif joins the Sky Blues on a long‑term deal after finishing last season with two goals in 12 games in Turkey's top flight.",
+    "time": "12 hrs ago",
+    "date": "2026-08-19T12:38:14.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e6ee/live/729d4c90-9bc5-11f1-8849-3fe19bf8df06.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cx2v3721ykjo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Nineteen-year-old Sidiki Cherif joins the Sky Blues on a long‑term deal after finishing last season with two goals in 12 games in Turkey's top flight.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "28",
+    "category": "Football",
+    "title": "'Everyone wants clarity' over Man City charges, says Arsenal chief",
+    "excerpt": "Arsenal's chief executive Richard Garlick speaks out on the case against Manchester City and the more than 100 alleged breaches of the Premier League's financial rules.",
+    "time": "12 hrs ago",
+    "date": "2026-08-19T12:30:11.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/be00/live/b648b050-9bbc-11f1-ae8a-8d57110c5ba6.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c1416keng1po?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Arsenal's chief executive Richard Garlick speaks out on the case against Manchester City and the more than 100 alleged breaches of the Premier League's financial rules.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "29",
+    "category": "Football",
+    "title": "Is Haaland worth the £15.5m price tag on FPL?",
+    "excerpt": "FPL expert Gianni Buttice weighs up whether Manchester City striker Erling Haaland is worth his £15.5m price tag on the game.",
+    "time": "13 hrs ago",
+    "date": "2026-08-19T11:32:34.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a64a/live/d4b4ed60-9bbc-11f1-b109-879e35c24276.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cvgx0dngdl0o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "FPL expert Gianni Buttice weighs up whether Manchester City striker Erling Haaland is worth his £15.5m price tag on the game.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "30",
+    "category": "Football",
+    "title": "Leeds sign Elvedi from Borussia Monchengladbach",
+    "excerpt": "Leeds United complete the signing of defender Nico Elvedi from Borussia Monchengladbach in an £8.5m deal.",
+    "time": "14 hrs ago",
+    "date": "2026-08-19T11:10:51.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c55e/live/7bc58d50-9bbb-11f1-ae8a-8d57110c5ba6.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ckgd5732mexo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Leeds United complete the signing of defender Nico Elvedi from Borussia Monchengladbach in an £8.5m deal.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
     ]
   }
 ]
