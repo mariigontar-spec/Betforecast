@@ -1,21 +1,7 @@
 {
-  "updatedAt": "2026-08-20T00:03:00+03:00",
-  "featuredId": "cincinnati-qf",
+  "updatedAt": "2026-08-21T00:05:00+03:00",
+  "featuredId": "premier-league-opener",
   "events": [
-    {
-      "id": "cincinnati-qf",
-      "type": "event",
-      "sport": "Tennis",
-      "date": "20 Aug",
-      "time": "11:00 / 19:00 ET",
-      "title": "Cincinnati Open · Quarterfinals",
-      "home": "ATP/WTA 1000",
-      "away": "Quarterfinals",
-      "competition": "Cincinnati Open",
-      "stage": "US Open build-up · hard court",
-      "status": "Today",
-      "signals": ["Quarterfinals", "Hard-court form", "Recovery load"]
-    },
     {
       "id": "premier-league-opener",
       "type": "match",
@@ -27,8 +13,8 @@
       "away": "Coventry City",
       "competition": "Premier League",
       "stage": "2026/27 season opener",
-      "status": "Tomorrow",
-      "signals": ["Champions begin title defence", "Promoted opponent", "Opening-night lineups"]
+      "status": "Today",
+      "signals": ["Champions begin title defence", "Coventry return after 25 years", "Opening-night lineups"]
     },
     {
       "id": "dutch-gp",
@@ -41,64 +27,64 @@
       "away": "Netherlands GP",
       "competition": "Formula 1",
       "stage": "Round 12 · sprint weekend",
-      "status": "Starts tomorrow",
-      "signals": ["Zandvoort", "Sprint format", "Qualifying track position"]
+      "status": "Starts today",
+      "signals": ["FP1 12:30 local", "Sprint qualifying 16:30", "Track position"]
     },
     {
-      "id": "hadjar-lawson",
-      "type": "story",
-      "sport": "Formula 1",
-      "date": "19 Aug",
-      "time": "Dutch GP paddock",
-      "title": "Hadjar out of Dutch GP; Lawson steps in",
-      "home": "Red Bull",
-      "away": "Liam Lawson",
-      "competition": "Formula 1",
-      "stage": "Driver replacement confirmed",
-      "status": "Confirmed",
-      "signals": ["Hadjar wrist injury", "Lawson promotion", "Tsunoda returns at Racing Bulls"]
-    },
-    {
-      "id": "arsenal-coventry-build-up",
-      "type": "story",
-      "sport": "Football",
-      "date": "20 Aug",
-      "time": "Premier League build-up",
-      "title": "Arsenal prepare to open title defence against Coventry",
-      "home": "Arsenal",
-      "away": "Coventry City",
-      "competition": "Premier League",
-      "stage": "Opening-night preview",
-      "status": "Developing",
-      "signals": ["Community Shield form", "Coventry return", "Squad availability"]
-    },
-    {
-      "id": "nakashima-cincinnati",
-      "type": "story",
+      "id": "cincinnati-qf",
+      "type": "event",
       "sport": "Tennis",
-      "date": "18 Aug",
-      "time": "Cincinnati",
-      "title": "Nakashima saves match points to upset Medvedev",
-      "home": "Brandon Nakashima",
-      "away": "Daniil Medvedev",
+      "date": "21 Aug",
+      "time": "11:00 / 19:00 ET",
+      "title": "Cincinnati Open · Quarterfinals",
+      "home": "ATP/WTA 1000",
+      "away": "Quarterfinals",
       "competition": "Cincinnati Open",
-      "stage": "Third-round upset",
-      "status": "Result",
-      "signals": ["Three match points saved", "Summer hard-court form", "Masters momentum"]
+      "stage": "US Open build-up · hard court",
+      "status": "Today",
+      "signals": ["Quarterfinals", "Hard-court form", "Recovery load"]
     },
     {
-      "id": "liv-season-change",
-      "type": "story",
-      "sport": "Golf",
-      "date": "17 Aug",
-      "time": "LIV Golf",
-      "title": "LIV Golf ends 2026 season early",
-      "home": "LIV Golf",
-      "away": "Michigan event",
-      "competition": "Golf",
-      "stage": "Schedule change",
-      "status": "Confirmed",
-      "signals": ["Michigan event cancelled", "Season ends in Indianapolis", "Investor transition"]
+      "id": "premier-league-weekend",
+      "type": "event",
+      "sport": "Football",
+      "date": "22–24 Aug",
+      "time": "England",
+      "title": "Premier League opening weekend",
+      "home": "Matchweek 1",
+      "away": "2026/27",
+      "competition": "Premier League",
+      "stage": "Hull-Man Utd, Man City-Bournemouth, Newcastle-Liverpool and more",
+      "status": "Next",
+      "signals": ["New managers", "Promoted clubs", "Opening-week volatility"]
+    },
+    {
+      "id": "cincinnati-semifinals",
+      "type": "event",
+      "sport": "Tennis",
+      "date": "22 Aug",
+      "time": "11:00 / 18:00 ET",
+      "title": "Cincinnati Open · Semifinals",
+      "home": "ATP/WTA 1000",
+      "away": "Semifinals",
+      "competition": "Cincinnati Open",
+      "stage": "Final-four weekend",
+      "status": "Tomorrow",
+      "signals": ["Recovery", "Serve efficiency", "Finals qualification"]
+    },
+    {
+      "id": "dutch-gp-sprint",
+      "type": "event",
+      "sport": "Formula 1",
+      "date": "22 Aug",
+      "time": "12:00 local",
+      "title": "Dutch Grand Prix · Sprint",
+      "home": "Formula 1",
+      "away": "Sprint",
+      "competition": "Formula 1",
+      "stage": "24-lap sprint before Grand Prix qualifying",
+      "status": "Tomorrow",
+      "signals": ["Sprint pace", "Tyre management", "Qualifying setup"]
     }
   ]
 }
