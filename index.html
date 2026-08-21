@@ -12,7 +12,7 @@
   <meta property="og:image" content="https://betforecast.ai/assets/stadium-dark.jpg">
   <title>Betforecast.ai — World Sports News, Matches & AI Signals</title>
   <link rel="icon" type="image/png" href="assets/bet-logo.png">
-  <link rel="stylesheet" href="css/home.css?v=6">
+  <link rel="stylesheet" href="css/home.css?v=7">
   <script defer src="https://cdn.counter.dev/script.js" data-id="1a42378c-7a8a-4f3e-8296-a7a9f8655098" data-utcoffset="3"></script>
 </head>
 <body class="theme-dark home-page site-skin-1win">
@@ -101,6 +101,43 @@
       </div>
     </section>
 
+    <section class="premier-league-section" aria-labelledby="premier-league-title">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">English football</span>
+          <h2 id="premier-league-title">Premier League table & latest news</h2>
+          <p>Follow the English top flight in one place: the complete league table and the latest Premier League stories.</p>
+        </div>
+        <a href="standings.html">Full standings <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="premier-league-grid">
+        <div class="league-table-card">
+          <div class="league-card-head">
+            <div><span>England</span><strong>Premier League</strong></div>
+            <span id="epl-season">2025/26 season</span>
+          </div>
+          <div class="home-table-scroll" tabindex="0" aria-label="Premier League standings. Swipe horizontally on mobile.">
+            <table class="home-league-table">
+              <thead>
+                <tr><th>Pos</th><th>Club</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr>
+              </thead>
+              <tbody id="home-epl-table"><tr><td colspan="8" class="loading-state">Loading Premier League table...</td></tr></tbody>
+            </table>
+          </div>
+          <div class="league-table-legend"><span><i class="legend-cl"></i> Champions League</span><span><i class="legend-el"></i> Europa</span><span><i class="legend-rel"></i> Relegation</span></div>
+        </div>
+
+        <div class="league-news-card">
+          <div class="league-card-head">
+            <div><span>Latest updates</span><strong>Premier League news</strong></div>
+            <a href="news.html">All news</a>
+          </div>
+          <div id="home-epl-news" class="home-epl-news"><p class="loading-state">Loading English football news...</p></div>
+        </div>
+      </div>
+    </section>
+
     <section class="competition-section" aria-labelledby="competition-title">
       <div class="section-heading"><div><span class="section-kicker">Category radar</span><h2 id="competition-title">The next big traffic windows</h2><p>Each page now has a role: news, matches, results, standings/archive and AI signal explanation.</p></div></div>
       <div class="competition-lines">
@@ -135,6 +172,6 @@
   </footer>
   <script src="/js/site-skin-manager.js?v=26"></script>
 <script data-cfasync="false" async src="https://media.getads.online/js/code.min.js"></script>
-  <script src="js/home.js?v=2" defer></script>
+  <script src="js/home.js?v=3" defer></script>
 </body>
 </html>
