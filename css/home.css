@@ -1292,3 +1292,23 @@ a {
   .home-news-item { grid-template-columns: 78px minmax(0, 1fr); gap: 11px; padding: 14px 0; }
   .home-news-item img { width: 78px; height: 64px; }
 }
+
+
+/* PREMIER LEAGUE ORDER: HERO, TABLE, NEWS */
+.premier-table-section { margin-top: 42px; }
+.premier-news-section { margin-top: 56px; }
+.premier-table-section .league-table-card,
+.premier-news-section .league-news-card { width: 100%; }
+.premier-news-section .home-epl-news { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 20px; padding: 8px 20px 14px; }
+.premier-news-section .home-news-item { display: flex; flex-direction: column; gap: 10px; }
+.premier-news-section .home-news-item img { width: 100%; height: 140px; }
+@media (max-width: 900px) {
+  .premier-news-section .home-epl-news { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .premier-table-section { margin-top: 28px; }
+  .premier-news-section { margin-top: 42px; }
+  .premier-news-section .home-epl-news { grid-template-columns: 1fr; padding: 4px 14px 8px; }
+  .premier-news-section .home-news-item { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 12px; }
+  .premier-news-section .home-news-item img { width: 92px; height: 72px; }
+}
