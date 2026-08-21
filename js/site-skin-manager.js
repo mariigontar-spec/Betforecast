@@ -1,4 +1,4 @@
-/* Betforecast.ai stable Adhit background manager v23 */
+/* Betforecast.ai stable Adhit background manager v24 */
 (() => {
   "use strict";
 
@@ -6,6 +6,11 @@
   const BG_SLOT_ID = "bf-dynamic-background-slot";
   const STYLE_ID = "bf-dynamic-background-stable-style";
   const AD_SCRIPT_SRC = "https://media.getads.online/js/code.min.js";
+  const MOBILE_QUERY = "(max-width: 760px)";
+
+  function isMobile() {
+    return window.matchMedia(MOBILE_QUERY).matches;
+  }
 
   function ensureStyle() {
     if (document.getElementById(STYLE_ID)) return;
@@ -59,8 +64,17 @@
       }
 
       @media (max-width: 760px) {
-        #${BG_SLOT_ID} {
-          min-height: 96px !important;
+        #${BG_SLOT_ID},
+        #${BG_SLOT_ID} * {
+          display: none !important;
+          width: 0 !important;
+          height: 0 !important;
+          min-width: 0 !important;
+          min-height: 0 !important;
+          overflow: hidden !important;
+          opacity: 0 !important;
+          visibility: hidden !important;
+          pointer-events: none !important;
         }
       }
     `;
@@ -81,13 +95,23 @@
     let ins = slot.querySelector(`ins.ins-zone[data-zone="${BG_ZONE}"]`);
     if (!ins) {
       slot.innerHTML = `<ins class="ins-zone" data-zone="${BG_ZONE}"></ins>`;
-      ins = slot.firstElementChild;
     }
 
     return slot;
   }
 
+  function disableMobileBackgroundSlot() {
+    const slot = document.getElementById(BG_SLOT_ID);
+    if (!slot) return;
+
+    slot.replaceChildren();
+    slot.dataset.mobileDisabled = "true";
+    slot.setAttribute("aria-hidden", "true");
+  }
+
   function ensureAdScript() {
+    if (isMobile()) return;
+
     const loadIfMissing = () => {
       const existing = document.querySelector('script[src*="media.getads.online/js/code.min.js"]');
       if (existing) return;
@@ -111,16 +135,31 @@
     if (!document.body) return;
 
     ensureStyle();
+
+    if (isMobile()) {
+      disableMobileBackgroundSlot();
+      document.body.classList.add("site-skin-managed", "site-skin-mobile-static");
+      document.body.dataset.bfDynamicBackgroundReady = "mobile-static";
+
+      window.BF_ACTIVE_SITE_SKIN = {
+        mode: "static-mobile-fallback",
+        codeZone: null,
+        version: 24
+      };
+      return;
+    }
+
     ensureSlot();
     ensureAdScript();
 
     document.body.classList.add("site-skin-managed");
+    document.body.classList.remove("site-skin-mobile-static");
     document.body.dataset.bfDynamicBackgroundReady = "true";
 
     window.BF_ACTIVE_SITE_SKIN = {
       mode: "dynamic-adhit-background",
       codeZone: BG_ZONE,
-      version: 23
+      version: 24
     };
   }
 
