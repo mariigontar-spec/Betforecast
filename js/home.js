@@ -32,35 +32,35 @@
 
   function updateHomepageCopy() {
     const lead = document.querySelector(".hero-lead");
-    if (lead) lead.textContent = "From Premier League opening-weekend build-up to Cincinnati tennis and Formula 1 at Zandvoort — follow the current schedule, understand the key signals and make your own informed call.";
+    if (lead) lead.textContent = "Premier League Matchweek 1 takes over Saturday, while Formula 1 runs its Zandvoort sprint and qualifying and Cincinnati reaches the semifinals. Follow the live schedule, results and the signals that matter now.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>19 Aug</strong><span>Cincinnati R16</span></div>
-        <div><strong>21 Aug</strong><span>Arsenal vs Coventry</span></div>
-        <div><strong>21–23 Aug</strong><span>F1 Dutch GP</span></div>
+        <div><strong>22 Aug</strong><span>Premier League · 5 matches</span></div>
+        <div><strong>22 Aug</strong><span>F1 Dutch GP · Sprint</span></div>
+        <div><strong>22 Aug</strong><span>Cincinnati · Semifinals</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
-    if (input) input.placeholder = "Try: Cincinnati, Arsenal, Dutch GP";
+    if (input) input.placeholder = "Try: Man United, Tottenham, Dutch GP";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Cincinnati">Cincinnati</button>
-        <button type="button" data-query="Arsenal">Arsenal</button>
+        <button type="button" data-query="Manchester United">Man United</button>
+        <button type="button" data-query="Tottenham">Tottenham</button>
         <button type="button" data-query="Dutch Grand Prix">Dutch GP</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=cincinnati-r16", title: "Cincinnati Open · Round of 16", detail: "19 August · ATP/WTA 1000 hard-court action", tag: "Tennis" },
-      { href: "match.html?id=premier-league-opener", title: "Arsenal vs Coventry City", detail: "21 August · Premier League 2026/27 opener", tag: "Football" },
-      { href: "match.html?id=dutch-gp", title: "Formula 1 Dutch Grand Prix", detail: "21–23 August · Zandvoort, Round 12", tag: "F1" },
-      { href: "news.html", title: "Confirmed transfer watch", detail: "Rodri to Barcelona, Newcastle add Amar Dedic", tag: "Transfers" }
+      { href: "match.html?id=hull-man-utd", title: "Hull City vs Manchester United", detail: "22 August · Premier League · 12:30 UK", tag: "Football" },
+      { href: "match.html?id=brentford-spurs", title: "Brentford vs Tottenham Hotspur", detail: "22 August · Premier League · 17:30 UK", tag: "Football" },
+      { href: "match.html?id=dutch-gp-saturday", title: "Dutch Grand Prix · Sprint & Qualifying", detail: "22 August · Russell starts sprint from pole", tag: "F1" },
+      { href: "match.html?id=cincinnati-semifinals", title: "Cincinnati Open · Semifinals", detail: "22 August · final-four sessions", tag: "Tennis" }
     ];
 
     lines.forEach((line, index) => {
@@ -174,7 +174,7 @@
 
   function isPremierLeagueNews(item) {
     const text = normalize([item.title, item.excerpt].filter(Boolean).join(" "));
-    const terms = ["premier league", "arsenal", "chelsea", "tottenham", "liverpool", "man city", "manchester city", "man united", "manchester united", "aston villa", "newcastle", "west ham", "sunderland", "everton", "brighton", "brentford", "fulham", "bournemouth", "crystal palace", "wolves", "nottingham forest", "burnley", "leeds"];
+    const terms = ["premier league", "arsenal", "chelsea", "tottenham", "liverpool", "man city", "manchester city", "man united", "manchester united", "aston villa", "newcastle", "west ham", "sunderland", "everton", "brighton", "brentford", "fulham", "bournemouth", "crystal palace", "wolves", "nottingham forest", "burnley", "leeds", "hull", "ipswich", "coventry"];
     return terms.some((term) => text.includes(normalize(term)));
   }
 
@@ -200,8 +200,8 @@
     const news = document.getElementById("home-epl-news");
     try {
       const [standingsResponse, newsResponse] = await Promise.all([
-        fetch(`${standingsUrl}?v=2`, { cache: "no-store" }),
-        fetch(`${newsUrl}?v=2`, { cache: "no-store" })
+        fetch(`${standingsUrl}?v=3`, { cache: "no-store" }),
+        fetch(`${newsUrl}?v=3`, { cache: "no-store" })
       ]);
       if (!standingsResponse.ok || !newsResponse.ok) throw new Error("Premier League data request failed");
       const standingsData = await standingsResponse.json();
@@ -308,7 +308,7 @@
 
   async function loadSchedule() {
     try {
-      const response = await fetch(`${scheduleUrl}?v=2`, { cache: "no-store" });
+      const response = await fetch(`${scheduleUrl}?v=3`, { cache: "no-store" });
       if (!response.ok) throw new Error(`Schedule request failed: ${response.status}`);
 
       scheduleData = await response.json();
