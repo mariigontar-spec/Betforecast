@@ -1,0 +1,109 @@
+name: Unify site skin and navigation
+
+on:
+  push:
+    branches:
+      - unify-site-skin-and-nav
+
+permissions:
+  contents: write
+
+jobs:
+  unify-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: unify-site-skin-and-nav
+
+      - name: Unify backgrounds and navigation
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          pages = sorted(Path('.').glob('*.html'))
+
+          canonical = [
+              ('index.html', 'Home'),
+              ('news.html', 'News'),
+              ('standings.html', 'Standings'),
+              ('match.html', 'Matches'),
+              ('results.html', 'Results'),
+              ('ai-insights.html', 'AI Insights'),
+          ]
+
+          nav_re = re.compile(
+              r'(<nav\b[^>]*(?:class="[^"]*(?:bf-nav|topbar-menu)[^"]*"|aria-label="Main navigation")[^>]*>)(.*?)(</nav>)',
+              re.I | re.S,
+          )
+
+          old_skin_link_re = re.compile(
+              r'\s*<a\b[^>]*class="[^"]*skin-click[^"]*"[^>]*>.*?</a>\s*',
+              re.I | re.S,
+          )
+
+          manager_re = re.compile(
+              r'\s*<script\s+src=["\']/js/site-skin-manager\.js(?:\?v=\d+)?["\']\s*></script>\s*',
+              re.I,
+          )
+
+          ad_script_marker = 'https://media.getads.online/js/code.min.js'
+          manager_tag = '  <script src="/js/site-skin-manager.js?v=25"></script>\n'
+
+          changed = []
+          for path in pages:
+              text = path.read_text(encoding='utf-8')
+              original = text
+
+              # Old clickable WC background layers are removed. The dynamic manager creates the current background slot.
+              text = old_skin_link_re.sub('\n', text)
+
+              # Same primary navigation on every page.
+              def patch_nav(match):
+                  opening, _, closing = match.groups()
+                  links = []
+                  for href, label in canonical:
+                      active = ''
+                      if path.name == href:
+                          active = ' class="active"'
+                      links.append(f'        <a href="{href}"{active}>{label}</a>')
+                  body = '\n' + '\n'.join(links) + '\n      '
+                  return opening + body + closing
+
+              text = nav_re.sub(patch_nav, text, count=1)
+
+              # One current background manager everywhere. Replace stale versions if present.
+              text = manager_re.sub('\n', text)
+              if ad_script_marker in text:
+                  # Insert manager immediately before the Adhit loader script block.
+                  idx = text.find('<script', max(0, text.find(ad_script_marker) - 200))
+                  if idx != -1:
+                      text = text[:idx] + manager_tag + text[idx:]
+                  else:
+                      text = text.replace('</body>', manager_tag + '</body>')
+              else:
+                  text = text.replace('</body>', manager_tag + '</body>')
+
+              if text != original:
+                  path.write_text(text, encoding='utf-8')
+                  changed.append(path.name)
+
+          print('Updated:', ', '.join(changed) if changed else 'none')
+          PY
+
+      - name: Remove one-time workflow
+        run: rm -f .github/workflows/unify-site-skin-nav.yml
+
+      - name: Commit fixes
+        run: |
+          git config user.name "Betforecast automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add -- '*.html' .github/workflows/unify-site-skin-nav.yml
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Unify backgrounds and navigation across site"
+          git push origin unify-site-skin-and-nav
