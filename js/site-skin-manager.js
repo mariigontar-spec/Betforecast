@@ -1,4 +1,4 @@
-/* Betforecast.ai stable Adhit background manager v26 */
+/* Betforecast.ai stable Adhit background manager v27 */
 (() => {
   "use strict";
 
@@ -69,13 +69,21 @@
         html body.site-skin-mostbet,
         html body.site-skin-managed,
         html body.page-news.site-skin-1win {
-          padding-top: 70px !important;
+          padding-top: 112px !important;
           background-color: #020b13 !important;
-          background-image: none !important;
-          background: linear-gradient(180deg, #07111d 0%, #020b13 100%) !important;
-          background-repeat: no-repeat !important;
-          background-position: center top !important;
-          background-size: auto !important;
+          background-image:
+            linear-gradient(
+              180deg,
+              rgba(2, 11, 19, 0.02) 0,
+              rgba(2, 11, 19, 0.16) 112px,
+              rgba(2, 11, 19, 0.88) 285px,
+              #020b13 430px
+            ),
+            url("/assets/ads/1win-wc2026-site-skin.webp") !important;
+          background-repeat: no-repeat, no-repeat !important;
+          background-position: top center, top center !important;
+          background-size: 100% 430px, auto 360px !important;
+          background-attachment: scroll, scroll !important;
         }
 
         #${BG_SLOT_ID},
@@ -171,7 +179,7 @@
       window.BF_ACTIVE_SITE_SKIN = {
         mode: "clean-mobile-background",
         codeZone: null,
-        version: 26
+        version: 27
       };
       return;
     }
@@ -186,7 +194,7 @@
     window.BF_ACTIVE_SITE_SKIN = {
       mode: "dynamic-adhit-background",
       codeZone: BG_ZONE,
-      version: 26
+      version: 27
     };
   }
 
