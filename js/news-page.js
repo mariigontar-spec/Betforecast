@@ -1,4 +1,36 @@
+applyMobileNewsBackgroundFix();
 ensureSiteSkinManager();
+
+function applyMobileNewsBackgroundFix() {
+  if (!window.matchMedia("(max-width: 760px)").matches) return;
+
+  const style = document.createElement("style");
+  style.id = "bf-news-mobile-background-fix";
+  style.textContent = `
+    @media (max-width: 760px) {
+      html body.page-news.site-skin-1win,
+      html body.page-news.site-skin-1win.site-skin-managed {
+        padding-top: 10px !important;
+        background-color: #020b13 !important;
+        background-image: none !important;
+        background: linear-gradient(180deg, #07111d 0%, #020b13 100%) !important;
+      }
+
+      body.page-news .skin-click,
+      body.page-news .skin-click-top,
+      body.page-news .skin-click-left,
+      body.page-news .skin-click-right {
+        display: none !important;
+        pointer-events: none !important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+
+  document
+    .querySelectorAll(".skin-click, .skin-click-top, .skin-click-left, .skin-click-right")
+    .forEach((element) => element.remove());
+}
 
 function ensureSiteSkinManager() {
   const adScript = document.querySelector('script[src="https://media.getads.online/js/code.min.js"]');
@@ -11,7 +43,7 @@ function ensureSiteSkinManager() {
   }
 
   const script = document.createElement("script");
-  script.src = "/js/site-skin-manager.js?v=20";
+  script.src = "/js/site-skin-manager.js?v=25";
   script.defer = true;
   document.head.appendChild(script);
 }
