@@ -2,6 +2,8 @@
   "use strict";
 
   const scheduleUrl = "data/home-schedule.json";
+  const standingsUrl = "data/standings.json";
+  const newsUrl = "data/news.json";
   let scheduleData = { events: [] };
 
   function escapeHtml(value = "") {
@@ -149,6 +151,71 @@
     `).join("");
   }
 
+  function renderPremierLeague(league) {
+    const tbody = document.getElementById("home-epl-table");
+    const season = document.getElementById("epl-season");
+    if (!tbody) return;
+    if (season && league?.season) season.textContent = league.season;
+    const rows = Array.isArray(league?.table) ? league.table : [];
+    if (!rows.length) {
+      tbody.innerHTML = '<tr><td colspan="8" class="loading-state">Premier League standings are unavailable.</td></tr>';
+      return;
+    }
+    tbody.innerHTML = rows.map((club) => {
+      const gd = Number(club.gf || 0) - Number(club.ga || 0);
+      return `<tr class="zone-${escapeHtml(club.zone || "safe")}">
+        <td>${escapeHtml(club.pos)}</td>
+        <td class="club-cell"><span class="club-mark" aria-hidden="true">${escapeHtml(initials(club.team))}</span>${escapeHtml(club.team)}</td>
+        <td>${escapeHtml(club.played)}</td><td>${escapeHtml(club.wins)}</td><td>${escapeHtml(club.draws)}</td><td>${escapeHtml(club.losses)}</td>
+        <td>${gd > 0 ? "+" : ""}${escapeHtml(gd)}</td><td class="points-cell">${escapeHtml(club.points)}</td>
+      </tr>`;
+    }).join("");
+  }
+
+  function isPremierLeagueNews(item) {
+    const text = normalize([item.title, item.excerpt].filter(Boolean).join(" "));
+    const terms = ["premier league", "arsenal", "chelsea", "tottenham", "liverpool", "man city", "manchester city", "man united", "manchester united", "aston villa", "newcastle", "west ham", "sunderland", "everton", "brighton", "brentford", "fulham", "bournemouth", "crystal palace", "wolves", "nottingham forest", "burnley", "leeds"];
+    return terms.some((term) => text.includes(normalize(term)));
+  }
+
+  function renderPremierLeagueNews(items = []) {
+    const container = document.getElementById("home-epl-news");
+    if (!container) return;
+    const selected = items.filter(isPremierLeagueNews).slice(0, 4);
+    const stories = selected.length ? selected : items.filter((item) => normalize(item.category).includes("football")).slice(0, 4);
+    if (!stories.length) {
+      container.innerHTML = '<p class="loading-state">English football news will be updated shortly.</p>';
+      return;
+    }
+    container.innerHTML = stories.map((item) => `
+      <a class="home-news-item" href="article.html?id=${encodeURIComponent(item.id)}">
+        <img src="${escapeHtml(item.image || "assets/stadium-dark.jpg")}" alt="" loading="lazy">
+        <div><span>${escapeHtml(item.time || item.source || "Latest")}</span><strong>${escapeHtml(item.title)}</strong><p>${escapeHtml(item.excerpt || "")}</p></div>
+      </a>
+    `).join("");
+  }
+
+  async function loadPremierLeague() {
+    const tbody = document.getElementById("home-epl-table");
+    const news = document.getElementById("home-epl-news");
+    try {
+      const [standingsResponse, newsResponse] = await Promise.all([
+        fetch(`${standingsUrl}?v=2`, { cache: "no-store" }),
+        fetch(`${newsUrl}?v=2`, { cache: "no-store" })
+      ]);
+      if (!standingsResponse.ok || !newsResponse.ok) throw new Error("Premier League data request failed");
+      const standingsData = await standingsResponse.json();
+      const newsData = await newsResponse.json();
+      const league = (standingsData.leagues || []).find((item) => item.id === "epl");
+      renderPremierLeague(league);
+      renderPremierLeagueNews(Array.isArray(newsData) ? newsData : newsData.articles || []);
+    } catch (error) {
+      console.error("Premier League home block failed:", error);
+      if (tbody) tbody.innerHTML = '<tr><td colspan="8" class="loading-state">Premier League standings are unavailable.</td></tr>';
+      if (news) news.innerHTML = '<p class="loading-state">English football news is unavailable.</p>';
+    }
+  }
+
   function findEvents(query) {
     const needle = normalize(query);
     if (!needle) return [];
@@ -263,5 +330,6 @@
     initSearch();
     initAdhitPopup();
     loadSchedule();
+    loadPremierLeague();
   });
 })();
