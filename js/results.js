@@ -3,97 +3,96 @@
 
   const grid = document.getElementById("results-grid");
   const statusEl = document.getElementById("results-status");
-
   if (!grid) return;
 
   const GLOBAL_RESULTS = [
     {
       round: "Football · Premier League",
-      status: "TODAY",
+      status: "FINAL",
       homeName: "Arsenal",
       awayName: "Coventry City",
-      homeGoals: "21 Aug",
-      awayGoals: "20:00 UK",
+      homeGoals: "3",
+      awayGoals: "0",
       venue: "Emirates Stadium",
-      date: "2026/27 season opener",
-      href: "match.html?id=premier-league-opener"
+      date: "21 Aug · Arsenal opened title defence with a win",
+      href: "news.html"
     },
     {
       round: "Formula 1 · Dutch GP",
-      status: "TODAY",
-      homeName: "Dutch Grand Prix",
-      awayName: "Sprint qualifying",
-      homeGoals: "FP1 12:30",
-      awayGoals: "SQ 16:30",
+      status: "SPRINT GRID",
+      homeName: "George Russell",
+      awayName: "Lando Norris",
+      homeGoals: "P1",
+      awayGoals: "P2",
       venue: "Circuit Zandvoort",
-      date: "Round 12 · sprint weekend",
-      href: "match.html?id=dutch-gp"
-    },
-    {
-      round: "Tennis · ATP/WTA 1000",
-      status: "TODAY",
-      homeName: "Cincinnati Open",
-      awayName: "Quarterfinals",
-      homeGoals: "21 Aug",
-      awayGoals: "QF",
-      venue: "Mason, Ohio",
-      date: "Day and night sessions",
-      href: "match.html?id=cincinnati-qf"
+      date: "Russell took sprint pole by 0.041s",
+      href: "match.html?id=dutch-gp-saturday"
     },
     {
       round: "Tennis · Cincinnati",
-      status: "FINAL",
-      homeName: "Sara Bejlek",
-      awayName: "Aryna Sabalenka",
-      homeGoals: "7-6(7) 6-4",
-      awayGoals: "OUT",
-      venue: "Cincinnati Open",
-      date: "Bejlek reached her first Cincinnati quarterfinal",
-      href: "news.html"
-    },
-    {
-      round: "Tennis · Cincinnati",
-      status: "FINAL",
-      homeName: "Tommy Paul",
-      awayName: "Alexander Zverev",
-      homeGoals: "4-6 7-6(6) 6-4",
-      awayGoals: "OUT",
-      venue: "Cincinnati Open",
-      date: "Paul saved a match point and advanced to the quarterfinals",
-      href: "news.html"
-    },
-    {
-      round: "Football · Opening Weekend",
-      status: "NEXT",
-      homeName: "Premier League",
-      awayName: "Matchweek 1",
-      homeGoals: "22 Aug",
-      awayGoals: "24 Aug",
-      venue: "England",
-      date: "Hull-Man Utd, Man City-Bournemouth, Newcastle-Liverpool and more",
-      href: "match.html?id=premier-league-weekend"
-    },
-    {
-      round: "Formula 1 · Dutch GP",
-      status: "TOMORROW",
-      homeName: "Sprint",
-      awayName: "Grand Prix Qualifying",
-      homeGoals: "12:00",
-      awayGoals: "16:00",
-      venue: "Zandvoort",
-      date: "22 Aug · local time",
-      href: "match.html?id=dutch-gp"
-    },
-    {
-      round: "Tennis · Cincinnati",
-      status: "TOMORROW",
-      homeName: "Cincinnati Open",
-      awayName: "Semifinals",
+      status: "SEMIFINAL",
+      homeName: "Jessica Pegula",
+      awayName: "Iga Swiatek",
       homeGoals: "22 Aug",
       awayGoals: "SF",
-      venue: "Mason, Ohio",
-      date: "Final-four sessions",
-      href: "match.html?id=cincinnati-qf"
+      venue: "Cincinnati Open",
+      date: "Women's semifinal",
+      href: "match.html?id=cincinnati-semifinals"
+    },
+    {
+      round: "Tennis · Cincinnati",
+      status: "SEMIFINAL",
+      homeName: "Flavio Cobolli",
+      awayName: "Arthur Fils",
+      homeGoals: "22 Aug",
+      awayGoals: "SF",
+      venue: "Cincinnati Open",
+      date: "Men's semifinal",
+      href: "match.html?id=cincinnati-semifinals"
+    },
+    {
+      round: "Football · Premier League",
+      status: "TODAY",
+      homeName: "Hull City",
+      awayName: "Manchester United",
+      homeGoals: "12:30",
+      awayGoals: "UK",
+      venue: "MKM Stadium",
+      date: "22 Aug · Matchweek 1",
+      href: "match.html?id=hull-man-utd"
+    },
+    {
+      round: "Football · Premier League",
+      status: "TODAY",
+      homeName: "Everton",
+      awayName: "Crystal Palace",
+      homeGoals: "15:00",
+      awayGoals: "UK",
+      venue: "Liverpool",
+      date: "22 Aug · Matchweek 1",
+      href: "match.html?id=everton-palace"
+    },
+    {
+      round: "Football · Premier League",
+      status: "TODAY",
+      homeName: "Nottingham Forest",
+      awayName: "Leeds United",
+      homeGoals: "15:00",
+      awayGoals: "UK",
+      venue: "City Ground",
+      date: "22 Aug · Matchweek 1",
+      href: "match.html?id=forest-leeds"
+    },
+    {
+      round: "Football · Premier League",
+      status: "TODAY",
+      homeName: "Brentford",
+      awayName: "Tottenham Hotspur",
+      homeGoals: "17:30",
+      awayGoals: "UK",
+      venue: "Gtech Community Stadium",
+      date: "22 Aug · Matchweek 1",
+      href: "match.html?id=brentford-spurs"
     }
   ];
 
@@ -133,20 +132,17 @@
           <span>${escapeHtml(item.round)}</span>
           <strong class="wc-status-pill">${escapeHtml(item.status)}</strong>
         </div>
-
         <div class="wc-score-stack">
           ${teamLine(item.homeName, item.homeGoals)}
           ${teamLine(item.awayName, item.awayGoals)}
         </div>
-
         <div class="wc-result-meta">
           <span>${escapeHtml(item.venue)}</span>
           <span>${escapeHtml(item.date)}</span>
         </div>
       </a>
     `).join("");
-
-    setStatus("World sports results & live-event radar · 21 Aug 2026");
+    setStatus("World sports results & live-event radar · 22 Aug 2026");
   }
 
   function updateHeroCopy() {
@@ -154,12 +150,10 @@
     const title = document.querySelector(".results-hero h1");
     const text = document.querySelector(".results-hero p");
     const panelTitle = document.querySelector(".results-panel .panel-head h2, .results-panel h2");
-
     document.title = "World Sports Results | Betforecast.ai";
-
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Today’s world sports radar.";
-    if (text) text.textContent = "Follow the Premier League opener, Dutch Grand Prix sprint-weekend sessions, Cincinnati quarterfinal tennis and the latest confirmed results.";
+    if (text) text.textContent = "Arsenal's 3-0 opener is in the books. Saturday now brings five Premier League fixtures, the Dutch GP sprint and qualifying, plus Cincinnati semifinals.";
     if (panelTitle) panelTitle.textContent = "Global Sports Result Board";
   }
 
