@@ -1,4 +1,4 @@
-/* Betforecast.ai stable Adhit background manager v24 */
+/* Betforecast.ai stable Adhit background manager v25 */
 (() => {
   "use strict";
 
@@ -64,6 +64,20 @@
       }
 
       @media (max-width: 760px) {
+        html body.site-skin-1win,
+        html body.site-skin-dafabet,
+        html body.site-skin-mostbet,
+        html body.site-skin-managed,
+        html body.page-news.site-skin-1win {
+          padding-top: 10px !important;
+          background-color: #020b13 !important;
+          background-image: none !important;
+          background: linear-gradient(180deg, #07111d 0%, #020b13 100%) !important;
+          background-repeat: no-repeat !important;
+          background-position: center top !important;
+          background-size: auto !important;
+        }
+
         #${BG_SLOT_ID},
         #${BG_SLOT_ID} * {
           display: none !important;
@@ -74,6 +88,14 @@
           overflow: hidden !important;
           opacity: 0 !important;
           visibility: hidden !important;
+          pointer-events: none !important;
+        }
+
+        .skin-click,
+        .skin-click-top,
+        .skin-click-left,
+        .skin-click-right {
+          display: none !important;
           pointer-events: none !important;
         }
       }
@@ -102,11 +124,15 @@
 
   function disableMobileBackgroundSlot() {
     const slot = document.getElementById(BG_SLOT_ID);
-    if (!slot) return;
+    if (slot) {
+      slot.replaceChildren();
+      slot.dataset.mobileDisabled = "true";
+      slot.setAttribute("aria-hidden", "true");
+    }
 
-    slot.replaceChildren();
-    slot.dataset.mobileDisabled = "true";
-    slot.setAttribute("aria-hidden", "true");
+    document
+      .querySelectorAll(".skin-click, .skin-click-top, .skin-click-left, .skin-click-right")
+      .forEach((element) => element.remove());
   }
 
   function ensureAdScript() {
@@ -138,13 +164,14 @@
 
     if (isMobile()) {
       disableMobileBackgroundSlot();
-      document.body.classList.add("site-skin-managed", "site-skin-mobile-static");
-      document.body.dataset.bfDynamicBackgroundReady = "mobile-static";
+      document.body.classList.add("site-skin-managed", "site-skin-mobile-clean");
+      document.body.classList.remove("site-skin-mobile-static");
+      document.body.dataset.bfDynamicBackgroundReady = "mobile-clean";
 
       window.BF_ACTIVE_SITE_SKIN = {
-        mode: "static-mobile-fallback",
+        mode: "clean-mobile-background",
         codeZone: null,
-        version: 24
+        version: 25
       };
       return;
     }
@@ -153,13 +180,13 @@
     ensureAdScript();
 
     document.body.classList.add("site-skin-managed");
-    document.body.classList.remove("site-skin-mobile-static");
+    document.body.classList.remove("site-skin-mobile-static", "site-skin-mobile-clean");
     document.body.dataset.bfDynamicBackgroundReady = "true";
 
     window.BF_ACTIVE_SITE_SKIN = {
       mode: "dynamic-adhit-background",
       codeZone: BG_ZONE,
-      version: 24
+      version: 25
     };
   }
 
