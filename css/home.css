@@ -1240,3 +1240,55 @@ a {
     animation-iteration-count: 1 !important;
   }
 }
+
+
+/* PREMIER LEAGUE HOME BLOCK */
+.premier-league-section { margin-top: 72px; }
+.premier-league-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(320px, .65fr); gap: 22px; align-items: start; }
+.league-table-card, .league-news-card { min-width: 0; overflow: hidden; border: 1px solid rgba(94, 224, 164, .16); border-radius: 24px; background: linear-gradient(180deg, rgba(14, 31, 45, .96), rgba(6, 17, 27, .97)); box-shadow: 0 20px 50px rgba(0,0,0,.22); }
+.league-card-head { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 20px 22px; border-bottom: 1px solid rgba(255,255,255,.07); }
+.league-card-head div { display: flex; flex-direction: column; gap: 5px; }
+.league-card-head div > span { color: #63e6ad; font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.league-card-head strong { font-size: 20px; }
+.league-card-head > span, .league-card-head > a { color: #9fb0bd; font-size: 13px; }
+.league-card-head > a:hover { color: #63e6ad; }
+.home-table-scroll { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.home-league-table { width: 100%; min-width: 650px; border-collapse: collapse; font-size: 13px; }
+.home-league-table th { padding: 11px 10px; color: #8193a1; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; background: rgba(255,255,255,.025); }
+.home-league-table td { padding: 10px; border-top: 1px solid rgba(255,255,255,.055); text-align: center; color: #c8d3dc; }
+.home-league-table th:nth-child(2), .home-league-table td:nth-child(2) { text-align: left; }
+.home-league-table tbody tr:hover { background: rgba(94,224,164,.045); }
+.home-league-table tr.zone-cl td:first-child { box-shadow: inset 3px 0 #4ea7ff; }
+.home-league-table tr.zone-el td:first-child { box-shadow: inset 3px 0 #f0b44d; }
+.home-league-table tr.zone-rel td:first-child { box-shadow: inset 3px 0 #ef5c68; }
+.home-league-table .club-cell { color: #fff; font-weight: 700; white-space: nowrap; }
+.home-league-table .club-mark { display: inline-grid; place-items: center; width: 25px; height: 25px; margin-right: 9px; border-radius: 8px; background: rgba(94,224,164,.10); color: #63e6ad; font-size: 9px; vertical-align: middle; }
+.home-league-table .points-cell { color: #fff; font-weight: 900; }
+.league-table-legend { display: flex; flex-wrap: wrap; gap: 14px; padding: 13px 20px 17px; color: #8798a6; font-size: 11px; }
+.league-table-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.league-table-legend i { width: 8px; height: 8px; border-radius: 50%; }
+.legend-cl { background: #4ea7ff; } .legend-el { background: #f0b44d; } .legend-rel { background: #ef5c68; }
+.home-epl-news { padding: 4px 20px 10px; }
+.home-news-item { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 14px; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.07); }
+.home-news-item:last-child { border-bottom: 0; }
+.home-news-item img { width: 88px; height: 68px; object-fit: cover; border-radius: 12px; background: #0b1b27; }
+.home-news-item div { min-width: 0; }
+.home-news-item span { display: block; margin-bottom: 5px; color: #63e6ad; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.home-news-item strong { display: -webkit-box; overflow: hidden; color: #f6f9fb; font-size: 14px; line-height: 1.35; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.home-news-item p { display: -webkit-box; overflow: hidden; margin: 6px 0 0; color: #91a2af; font-size: 12px; line-height: 1.4; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+
+@media (max-width: 980px) {
+  .premier-league-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .premier-league-section { margin-top: 48px; }
+  .league-table-card, .league-news-card { border-radius: 18px; }
+  .league-card-head { padding: 16px 14px; }
+  .league-card-head strong { font-size: 18px; }
+  .home-league-table { min-width: 620px; }
+  .home-league-table th, .home-league-table td { padding: 9px 7px; }
+  .league-table-legend { padding: 12px 14px 15px; }
+  .home-epl-news { padding: 2px 14px 8px; }
+  .home-news-item { grid-template-columns: 78px minmax(0, 1fr); gap: 11px; padding: 14px 0; }
+  .home-news-item img { width: 78px; height: 64px; }
+}
