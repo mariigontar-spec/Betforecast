@@ -1,15 +1,189 @@
 {
-  "updatedAt": "2026-08-24T00:05:00+03:00",
+  "updatedAt": "2026-08-24T17:55:00+03:00",
   "featuredId": "fulham-chelsea",
   "events": [
-    {"id":"fulham-chelsea","type":"match","sport":"Football","date":"24 Aug","time":"20:00 UK","title":"Fulham vs Chelsea","home":"Fulham","away":"Chelsea","competition":"Premier League","stage":"Matchweek 1 · Monday night","status":"Today","signals":["West London derby","Chelsea season opener","Confirmed lineups"]},
-    {"id":"us-open-qualifying","type":"event","sport":"Tennis","date":"24 Aug","time":"11:00 ET","title":"US Open qualifying begins","home":"US Open","away":"Qualifying","competition":"US Open","stage":"Men's & women's singles qualifying","status":"Today","signals":["Qualifying draw","Hard-court form","Mixed doubles qualifying"]},
-    {"id":"winston-salem","type":"event","sport":"Tennis","date":"24 Aug","time":"14:00 & 18:30 ET","title":"Winston-Salem Open","home":"ATP 250","away":"Main draw","competition":"Winston-Salem Open","stage":"Main draw · pre-US Open week","status":"Today","signals":["Fast turnaround","Hard-court adaptation","US Open preparation"]},
-    {"id":"vuelta-stage-3","type":"event","sport":"Cycling","date":"24 Aug","time":"Stage 3","title":"Vuelta a España · Stage 3","home":"Vuelta","away":"Stage 3","competition":"Vuelta a España","stage":"Grand Tour daily stage","status":"Today","signals":["GC positioning","Breakaway timing","Stage profile"]},
-    {"id":"dutch-gp-result","type":"result","sport":"Formula 1","date":"23 Aug","time":"Final","title":"Dutch Grand Prix result","home":"Lando Norris","away":"Kimi Antonelli","competition":"Formula 1","stage":"Norris P1 · Antonelli P2 · Russell P3","status":"Result","signals":["Norris victory","Antonelli championship lead","Final Zandvoort race"]},
-    {"id":"newcastle-liverpool-result","type":"result","sport":"Football","date":"23 Aug","time":"Final","title":"Newcastle United 2–2 Liverpool","home":"Newcastle United","away":"Liverpool","competition":"Premier League","stage":"Matchweek 1 · 2–2 draw","status":"Result","signals":["99th-minute equaliser","Opening-week volatility","Four-goal draw"]},
-    {"id":"man-city-bournemouth-result","type":"result","sport":"Football","date":"23 Aug","time":"Final","title":"Manchester City 2–1 Bournemouth","home":"Manchester City","away":"Bournemouth","competition":"Premier League","stage":"Matchweek 1 · late comeback","status":"Result","signals":["Gvardiol stoppage-time winner","Maresca winning start","Late-game swing"]},
-    {"id":"brighton-villa-result","type":"result","sport":"Football","date":"23 Aug","time":"Final","title":"Brighton 4–0 Aston Villa","home":"Brighton","away":"Aston Villa","competition":"Premier League","stage":"Matchweek 1 · Brighton win","status":"Result","signals":["Four-goal margin","Villa red card","Early table impact"]},
-    {"id":"cincinnati-finals","type":"event","sport":"Tennis","date":"23 Aug","time":"Finals window","title":"Cincinnati Open finals","home":"Arthur Fils vs Frances Tiafoe","away":"Pegula vs Gauff","competition":"Cincinnati Open","stage":"ATP/WTA 1000 finals","status":"Late Sunday","signals":["Finals completed late US time","Recovery load","Serve-return efficiency"]}
+    {
+      "id": "fulham-chelsea",
+      "type": "match",
+      "sport": "Football",
+      "date": "24 Aug",
+      "time": "20:00 UK",
+      "title": "Fulham vs Chelsea",
+      "home": "Fulham",
+      "away": "Chelsea",
+      "competition": "Premier League",
+      "stage": "Matchweek 1 · Monday night",
+      "status": "Today",
+      "signals": [
+        "West London derby",
+        "Chelsea season opener",
+        "Confirmed lineups"
+      ],
+      "homeLogo": "https://crests.football-data.org/354.png",
+      "awayLogo": "https://crests.football-data.org/61.png",
+      "homeForm": [
+        "W",
+        "D",
+        "L",
+        "W",
+        "D"
+      ],
+      "awayForm": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "L"
+      ],
+      "probabilities": {
+        "home": 24,
+        "draw": 28,
+        "away": 48
+      }
+    },
+    {
+      "id": "us-open-qualifying",
+      "type": "event",
+      "sport": "Tennis",
+      "date": "24 Aug",
+      "time": "11:00 ET",
+      "title": "US Open qualifying begins",
+      "home": "US Open",
+      "away": "Qualifying",
+      "competition": "US Open",
+      "stage": "Men's & women's singles qualifying",
+      "status": "Today",
+      "signals": [
+        "Qualifying draw",
+        "Hard-court form",
+        "Mixed doubles qualifying"
+      ]
+    },
+    {
+      "id": "winston-salem",
+      "type": "event",
+      "sport": "Tennis",
+      "date": "24 Aug",
+      "time": "14:00 & 18:30 ET",
+      "title": "Winston-Salem Open",
+      "home": "ATP 250",
+      "away": "Main draw",
+      "competition": "Winston-Salem Open",
+      "stage": "Main draw · pre-US Open week",
+      "status": "Today",
+      "signals": [
+        "Fast turnaround",
+        "Hard-court adaptation",
+        "US Open preparation"
+      ]
+    },
+    {
+      "id": "vuelta-stage-3",
+      "type": "event",
+      "sport": "Cycling",
+      "date": "24 Aug",
+      "time": "Stage 3",
+      "title": "Vuelta a España · Stage 3",
+      "home": "Vuelta",
+      "away": "Stage 3",
+      "competition": "Vuelta a España",
+      "stage": "Grand Tour daily stage",
+      "status": "Today",
+      "signals": [
+        "GC positioning",
+        "Breakaway timing",
+        "Stage profile"
+      ]
+    },
+    {
+      "id": "dutch-gp-result",
+      "type": "result",
+      "sport": "Formula 1",
+      "date": "23 Aug",
+      "time": "Final",
+      "title": "Dutch Grand Prix result",
+      "home": "Lando Norris",
+      "away": "Kimi Antonelli",
+      "competition": "Formula 1",
+      "stage": "Norris P1 · Antonelli P2 · Russell P3",
+      "status": "Result",
+      "signals": [
+        "Norris victory",
+        "Antonelli championship lead",
+        "Final Zandvoort race"
+      ]
+    },
+    {
+      "id": "newcastle-liverpool-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "23 Aug",
+      "time": "Final",
+      "title": "Newcastle United 2–2 Liverpool",
+      "home": "Newcastle United",
+      "away": "Liverpool",
+      "competition": "Premier League",
+      "stage": "Matchweek 1 · 2–2 draw",
+      "status": "Result",
+      "signals": [
+        "99th-minute equaliser",
+        "Opening-week volatility",
+        "Four-goal draw"
+      ]
+    },
+    {
+      "id": "man-city-bournemouth-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "23 Aug",
+      "time": "Final",
+      "title": "Manchester City 2–1 Bournemouth",
+      "home": "Manchester City",
+      "away": "Bournemouth",
+      "competition": "Premier League",
+      "stage": "Matchweek 1 · late comeback",
+      "status": "Result",
+      "signals": [
+        "Gvardiol stoppage-time winner",
+        "Maresca winning start",
+        "Late-game swing"
+      ]
+    },
+    {
+      "id": "brighton-villa-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "23 Aug",
+      "time": "Final",
+      "title": "Brighton 4–0 Aston Villa",
+      "home": "Brighton",
+      "away": "Aston Villa",
+      "competition": "Premier League",
+      "stage": "Matchweek 1 · Brighton win",
+      "status": "Result",
+      "signals": [
+        "Four-goal margin",
+        "Villa red card",
+        "Early table impact"
+      ]
+    },
+    {
+      "id": "cincinnati-finals",
+      "type": "event",
+      "sport": "Tennis",
+      "date": "23 Aug",
+      "time": "Finals window",
+      "title": "Cincinnati Open finals",
+      "home": "Arthur Fils vs Frances Tiafoe",
+      "away": "Pegula vs Gauff",
+      "competition": "Cincinnati Open",
+      "stage": "ATP/WTA 1000 finals",
+      "status": "Late Sunday",
+      "signals": [
+        "Finals completed late US time",
+        "Recovery load",
+        "Serve-return efficiency"
+      ]
+    }
   ]
 }
