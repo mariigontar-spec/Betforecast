@@ -1,188 +1,152 @@
 {
-  "updatedAt": "2026-08-24T17:55:00+03:00",
-  "featuredId": "fulham-chelsea",
+  "updatedAt": "2026-08-25T00:01:00+03:00",
+  "featuredId": "lask-celtic",
   "events": [
     {
-      "id": "fulham-chelsea",
+      "id": "lask-celtic",
       "type": "match",
       "sport": "Football",
-      "date": "24 Aug",
+      "date": "25 Aug",
       "time": "20:00 UK",
-      "title": "Fulham vs Chelsea",
-      "home": "Fulham",
-      "away": "Chelsea",
-      "competition": "Premier League",
-      "stage": "Matchweek 1 · Monday night",
+      "title": "LASK vs Celtic",
+      "home": "LASK",
+      "away": "Celtic",
+      "competition": "UEFA Champions League",
+      "stage": "Play-off second leg · Celtic lead 3–0 on aggregate",
       "status": "Today",
       "signals": [
-        "West London derby",
-        "Chelsea season opener",
-        "Confirmed lineups"
+        "Three-goal aggregate gap",
+        "LASK must attack at home",
+        "Celtic transition threat"
       ],
-      "homeLogo": "https://crests.football-data.org/354.png",
-      "awayLogo": "https://crests.football-data.org/61.png",
+      "homeLogo": "https://toppng.com/uploads/preview/lask-linz-vector-logo-11573917007mysrhahyba.png",
+      "awayLogo": "https://companieslogo.com/img/orig/CCP.L-19a8f8cb.png?download=true&t=1751822515",
       "homeForm": [
-        "W",
-        "D",
         "L",
         "W",
-        "D"
+        "W",
+        "W",
+        "W"
       ],
       "awayForm": [
         "W",
         "W",
-        "D",
         "W",
-        "L"
+        "D",
+        "D"
       ],
       "probabilities": {
-        "home": 24,
-        "draw": 28,
-        "away": 48
+        "home": 27,
+        "draw": 38,
+        "away": 35
       }
     },
     {
-      "id": "us-open-qualifying",
-      "type": "event",
-      "sport": "Tennis",
-      "date": "24 Aug",
-      "time": "11:00 ET",
-      "title": "US Open qualifying begins",
-      "home": "US Open",
-      "away": "Qualifying",
-      "competition": "US Open",
-      "stage": "Men's & women's singles qualifying",
+      "id": "bodo-nec",
+      "type": "match",
+      "sport": "Football",
+      "date": "25 Aug",
+      "time": "20:00 UK",
+      "title": "Bodø/Glimt vs NEC Nijmegen",
+      "home": "Bodø/Glimt",
+      "away": "NEC Nijmegen",
+      "competition": "UEFA Champions League",
+      "stage": "Play-off second leg · Bodø/Glimt lead 3–1",
       "status": "Today",
       "signals": [
-        "Qualifying draw",
-        "Hard-court form",
-        "Mixed doubles qualifying"
+        "Two-goal aggregate lead",
+        "Aspmyra home edge",
+        "NEC chasing the tie"
       ]
     },
     {
-      "id": "winston-salem",
-      "type": "event",
-      "sport": "Tennis",
-      "date": "24 Aug",
-      "time": "14:00 & 18:30 ET",
-      "title": "Winston-Salem Open",
-      "home": "ATP 250",
-      "away": "Main draw",
-      "competition": "Winston-Salem Open",
-      "stage": "Main draw · pre-US Open week",
+      "id": "sabah-hapoel",
+      "type": "match",
+      "sport": "Football",
+      "date": "25 Aug",
+      "time": "17:45 UK",
+      "title": "Sabah FK vs Hapoel Beer Sheva",
+      "home": "Sabah FK",
+      "away": "Hapoel Beer Sheva",
+      "competition": "UEFA Champions League",
+      "stage": "Play-off second leg · Hapoel lead 2–1",
       "status": "Today",
       "signals": [
-        "Fast turnaround",
-        "Hard-court adaptation",
-        "US Open preparation"
+        "One-goal aggregate margin",
+        "Early kick-off",
+        "Second-leg pressure"
       ]
     },
     {
-      "id": "vuelta-stage-3",
-      "type": "event",
-      "sport": "Cycling",
+      "id": "lyon-fenerbahce",
+      "type": "match",
+      "sport": "Football",
+      "date": "26 Aug",
+      "time": "20:00 UK",
+      "title": "Lyon vs Fenerbahçe",
+      "home": "Lyon",
+      "away": "Fenerbahçe",
+      "competition": "UEFA Champions League",
+      "stage": "Play-off second leg · tie level at 1–1",
+      "status": "Tomorrow",
+      "signals": [
+        "Aggregate score level",
+        "High-stakes home leg",
+        "Qualification decider"
+      ]
+    },
+    {
+      "id": "viking-dinamo",
+      "type": "match",
+      "sport": "Football",
+      "date": "26 Aug",
+      "time": "20:00 UK",
+      "title": "Viking vs Dinamo Zagreb",
+      "home": "Viking",
+      "away": "Dinamo Zagreb",
+      "competition": "UEFA Champions League",
+      "stage": "Play-off second leg · tie level at 2–2",
+      "status": "Tomorrow",
+      "signals": [
+        "Four-goal first leg",
+        "Aggregate score level",
+        "Open-game profile"
+      ]
+    },
+    {
+      "id": "celje-slovan",
+      "type": "match",
+      "sport": "Football",
+      "date": "26 Aug",
+      "time": "20:00 UK",
+      "title": "Celje vs Slovan Bratislava",
+      "home": "Celje",
+      "away": "Slovan Bratislava",
+      "competition": "UEFA Champions League",
+      "stage": "Play-off second leg · tie level at 1–1",
+      "status": "Tomorrow",
+      "signals": [
+        "Aggregate score level",
+        "Fine-margin tie",
+        "Qualification pressure"
+      ]
+    },
+    {
+      "id": "fulham-chelsea-result",
+      "type": "result",
+      "sport": "Football",
       "date": "24 Aug",
-      "time": "Stage 3",
-      "title": "Vuelta a España · Stage 3",
-      "home": "Vuelta",
-      "away": "Stage 3",
-      "competition": "Vuelta a España",
-      "stage": "Grand Tour daily stage",
-      "status": "Today",
-      "signals": [
-        "GC positioning",
-        "Breakaway timing",
-        "Stage profile"
-      ]
-    },
-    {
-      "id": "dutch-gp-result",
-      "type": "result",
-      "sport": "Formula 1",
-      "date": "23 Aug",
       "time": "Final",
-      "title": "Dutch Grand Prix result",
-      "home": "Lando Norris",
-      "away": "Kimi Antonelli",
-      "competition": "Formula 1",
-      "stage": "Norris P1 · Antonelli P2 · Russell P3",
-      "status": "Result",
-      "signals": [
-        "Norris victory",
-        "Antonelli championship lead",
-        "Final Zandvoort race"
-      ]
-    },
-    {
-      "id": "newcastle-liverpool-result",
-      "type": "result",
-      "sport": "Football",
-      "date": "23 Aug",
-      "time": "Final",
-      "title": "Newcastle United 2–2 Liverpool",
-      "home": "Newcastle United",
-      "away": "Liverpool",
+      "title": "Fulham 2–3 Chelsea",
+      "home": "Fulham",
+      "away": "Chelsea",
       "competition": "Premier League",
-      "stage": "Matchweek 1 · 2–2 draw",
+      "stage": "Matchweek 1 · Chelsea win West London derby",
       "status": "Result",
       "signals": [
-        "99th-minute equaliser",
-        "Opening-week volatility",
-        "Four-goal draw"
-      ]
-    },
-    {
-      "id": "man-city-bournemouth-result",
-      "type": "result",
-      "sport": "Football",
-      "date": "23 Aug",
-      "time": "Final",
-      "title": "Manchester City 2–1 Bournemouth",
-      "home": "Manchester City",
-      "away": "Bournemouth",
-      "competition": "Premier League",
-      "stage": "Matchweek 1 · late comeback",
-      "status": "Result",
-      "signals": [
-        "Gvardiol stoppage-time winner",
-        "Maresca winning start",
-        "Late-game swing"
-      ]
-    },
-    {
-      "id": "brighton-villa-result",
-      "type": "result",
-      "sport": "Football",
-      "date": "23 Aug",
-      "time": "Final",
-      "title": "Brighton 4–0 Aston Villa",
-      "home": "Brighton",
-      "away": "Aston Villa",
-      "competition": "Premier League",
-      "stage": "Matchweek 1 · Brighton win",
-      "status": "Result",
-      "signals": [
-        "Four-goal margin",
-        "Villa red card",
-        "Early table impact"
-      ]
-    },
-    {
-      "id": "cincinnati-finals",
-      "type": "event",
-      "sport": "Tennis",
-      "date": "23 Aug",
-      "time": "Finals window",
-      "title": "Cincinnati Open finals",
-      "home": "Arthur Fils vs Frances Tiafoe",
-      "away": "Pegula vs Gauff",
-      "competition": "Cincinnati Open",
-      "stage": "ATP/WTA 1000 finals",
-      "status": "Late Sunday",
-      "signals": [
-        "Finals completed late US time",
-        "Recovery load",
-        "Serve-return efficiency"
+        "Five-goal derby",
+        "Chelsea opening win",
+        "Late Fulham pressure"
       ]
     }
   ]
