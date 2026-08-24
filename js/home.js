@@ -91,6 +91,28 @@
     const home = event.home || event.title;
     const away = event.away || event.sport;
     const signals = Array.isArray(event.signals) ? event.signals : [];
+    const homeForm = Array.isArray(event.homeForm) ? event.homeForm.slice(0, 5) : [];
+    const awayForm = Array.isArray(event.awayForm) ? event.awayForm.slice(0, 5) : [];
+    const probabilities = event.probabilities || {};
+    const homeProbability = Math.max(0, Math.min(100, Number(probabilities.home) || 0));
+    const drawProbability = Math.max(0, Math.min(100, Number(probabilities.draw) || 0));
+    const awayProbability = Math.max(0, Math.min(100, Number(probabilities.away) || 0));
+    const hasModel = homeProbability + drawProbability + awayProbability > 0;
+
+    function teamMark(name, logo) {
+      const fallback = escapeHtml(initials(name));
+      if (!logo) return `<span class="featured-team-fallback">${fallback}</span>`;
+      return `<img src="${escapeHtml(logo)}" alt="" loading="eager" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="featured-team-fallback" hidden>${fallback}</span>`;
+    }
+
+    function formBadges(form) {
+      if (!form.length) return "";
+      return `<div class="featured-form" aria-label="Recent form">${form.map((result) => {
+        const value = String(result).toUpperCase().charAt(0);
+        const className = value === "W" ? "is-win" : value === "L" ? "is-loss" : "is-draw";
+        return `<span class="${className}">${escapeHtml(value)}</span>`;
+      }).join("")}</div>`;
+    }
 
     container.innerHTML = `
       <div class="featured-meta">
@@ -98,17 +120,35 @@
         <span>${escapeHtml(event.date)} · ${escapeHtml(event.time)}</span>
       </div>
 
-      <div class="featured-teams">
-        <div class="featured-team">
-          <div class="featured-team-mark" aria-hidden="true">${escapeHtml(initials(home))}</div>
-          <strong>${escapeHtml(home)}</strong>
-        </div>
-        <span class="featured-vs">vs</span>
-        <div class="featured-team">
-          <div class="featured-team-mark" aria-hidden="true">${escapeHtml(initials(away))}</div>
-          <strong>${escapeHtml(away)}</strong>
+      <div class="featured-match-visual">
+        <div class="featured-pitch" aria-hidden="true"><span></span></div>
+        <div class="featured-kickoff">${escapeHtml(event.time)}</div>
+        <div class="featured-teams">
+          <div class="featured-team">
+            <div class="featured-team-mark">${teamMark(home, event.homeLogo)}</div>
+            <strong>${escapeHtml(home)}</strong>
+            ${formBadges(homeForm)}
+          </div>
+          <span class="featured-vs">vs</span>
+          <div class="featured-team">
+            <div class="featured-team-mark">${teamMark(away, event.awayLogo)}</div>
+            <strong>${escapeHtml(away)}</strong>
+            ${formBadges(awayForm)}
+          </div>
         </div>
       </div>
+
+      ${hasModel ? `
+        <div class="featured-probability">
+          <div class="featured-probability-head"><span>Model probability</span><small>Home · Draw · Away</small></div>
+          <div class="featured-probability-values">
+            <strong>${homeProbability}%</strong><strong>${drawProbability}%</strong><strong>${awayProbability}%</strong>
+          </div>
+          <div class="featured-probability-bar" aria-label="Model probabilities: ${homeProbability}% home, ${drawProbability}% draw, ${awayProbability}% away">
+            <i style="width:${homeProbability}%"></i><i style="width:${drawProbability}%"></i><i style="width:${awayProbability}%"></i>
+          </div>
+        </div>
+      ` : ""}
 
       <div class="featured-signal">
         <span>Current model inputs</span>
