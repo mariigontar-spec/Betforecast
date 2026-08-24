@@ -519,29 +519,112 @@ a {
   font-weight: 750;
 }
 
-.featured-teams {
-  margin: auto 0;
-  padding: 38px 0 30px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+.featured-match-visual {
+  position: relative;
+  min-height: 330px;
+  margin: 24px 0 18px;
+  padding: 62px 22px 30px;
+  display: flex;
   align-items: center;
-  gap: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(109, 232, 169, 0.11);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(40, 142, 98, 0.12), transparent 50%),
+    linear-gradient(180deg, rgba(8, 27, 34, 0.58), rgba(3, 14, 23, 0.86));
+}
+
+.featured-pitch {
+  position: absolute;
+  inset: 18px;
+  opacity: 0.16;
+  border: 1px solid rgba(109, 232, 169, 0.55);
+  border-radius: 18px;
+  pointer-events: none;
+}
+
+.featured-pitch::before,
+.featured-pitch::after,
+.featured-pitch span {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.featured-pitch::before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid rgba(109, 232, 169, 0.55);
+}
+
+.featured-pitch::after {
+  width: 88px;
+  height: 88px;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(109, 232, 169, 0.55);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.featured-pitch span {
+  inset: 30% 0;
+  border-top: 1px solid rgba(109, 232, 169, 0.42);
+  border-bottom: 1px solid rgba(109, 232, 169, 0.42);
+}
+
+.featured-kickoff {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  z-index: 2;
+  padding: 7px 11px;
+  color: #d9e5ec;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 999px;
+  background: rgba(2, 13, 21, .78);
+  font-size: 12px;
+  font-weight: 850;
+  transform: translateX(-50%);
+}
+
+.featured-teams {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 52px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
   text-align: center;
 }
 
 .featured-team-mark {
-  width: 82px;
-  height: 82px;
-  margin: 0 auto 14px;
+  width: 104px;
+  height: 104px;
+  margin: 0 auto 15px;
+  padding: 14px;
   display: grid;
   place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
+  border: 1px solid rgba(109, 232, 169, 0.22);
+  border-radius: 28px;
   color: var(--green);
-  background: radial-gradient(circle, rgba(109, 232, 169, 0.12), rgba(255, 255, 255, 0.035));
+  background: radial-gradient(circle, rgba(109, 232, 169, 0.15), rgba(3, 15, 24, 0.88));
+  box-shadow: 0 18px 38px rgba(0,0,0,.26), 0 0 34px rgba(109,232,169,.06);
+}
+
+.featured-team-mark img {
+  display: block;
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 14px rgba(0,0,0,.28));
+}
+
+.featured-team-fallback {
   font-size: 22px;
   font-weight: 950;
-  letter-spacing: -0.04em;
 }
 
 .featured-team strong {
@@ -552,11 +635,85 @@ a {
 }
 
 .featured-vs {
-  color: #5b6a79;
-  font-size: 14px;
-  font-weight: 900;
+  color: #627586;
+  font-size: 13px;
+  font-weight: 950;
+  letter-spacing: .12em;
   text-transform: uppercase;
 }
+
+.featured-form {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.featured-form span {
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  color: #d7e0e6;
+  background: rgba(255,255,255,.07);
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.featured-form .is-win { color: #07140e; background: var(--green); }
+.featured-form .is-draw { color: #dce5ec; background: #536170; }
+.featured-form .is-loss { color: #fff; background: #a84853; }
+
+.featured-probability {
+  margin-bottom: 18px;
+  padding: 16px 18px;
+  border: 1px solid rgba(109,232,169,.11);
+  border-radius: 18px;
+  background: rgba(255,255,255,.025);
+}
+
+.featured-probability-head,
+.featured-probability-values {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.featured-probability-head span {
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.featured-probability-head small {
+  color: #607180;
+  font-size: 10px;
+}
+
+.featured-probability-values {
+  margin: 10px 0 7px;
+}
+
+.featured-probability-values strong {
+  color: #eaf2f7;
+  font-size: 15px;
+}
+
+.featured-probability-bar {
+  height: 8px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+}
+
+.featured-probability-bar i:nth-child(1) { background: #5ee0a4; }
+.featured-probability-bar i:nth-child(2) { background: #7a8997; }
+.featured-probability-bar i:nth-child(3) { background: #4da6ff; }
 
 .featured-signal {
   padding: 16px 0;
