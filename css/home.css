@@ -41,19 +41,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* The managed Adhit skin restores the wide top/side background used before
-   the evergreen homepage update. The image is also a no-fill fallback. */
+/* Reserve the desktop header area for the live Adhit skin only.
+   Never fall back to an expired static advertiser creative. */
 body.site-skin-1win,
 body.site-skin-dafabet,
 body.site-skin-mostbet {
-  /* Keep the page shell directly under the skin header. The ad code may
-     otherwise replace this with the full creative height. */
   padding-top: 190px !important;
-  background-color: #020b13;
-  background-image: url("../assets/ads/1win-wc2026-site-skin.webp");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 1920px auto;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(22, 117, 84, 0.17), transparent 31rem),
+    radial-gradient(circle at 88% 22%, rgba(24, 86, 126, 0.13), transparent 28rem),
+    linear-gradient(180deg, #07111d 0, var(--bg) 36rem, var(--bg-deep) 100%);
 }
 
 body::before {
@@ -1012,8 +1009,7 @@ a {
   body.site-skin-1win,
   body.site-skin-dafabet,
   body.site-skin-mostbet {
-    padding-top: 96px !important;
-    background-size: auto 290px;
+    padding-top: 0 !important;
   }
 
   .bf-header {
