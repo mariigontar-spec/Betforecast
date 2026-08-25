@@ -1,10 +1,10 @@
-/* Betforecast.ai stable Adhit background manager v33 */
+/* Betforecast.ai stable Adhit background manager v34 */
 (() => {
   "use strict";
 
   const BG_ZONE = "163743";
   const BG_SLOT_ID = "bf-dynamic-background-slot";
-  const STYLE_ID = "bf-dynamic-background-stable-style-v33";
+  const STYLE_ID = "bf-dynamic-background-stable-style-v34";
   const AD_SCRIPT_SRC = "https://media.getads.online/js/code.min.js";
   const MOBILE_QUERY = "(max-width: 760px)";
 
@@ -177,11 +177,29 @@
       });
   }
 
+  function preserveAdvertiserBackground() {
+    const image = document.body.style.getPropertyValue("background-image");
+    const priority = document.body.style.getPropertyPriority("background-image");
+
+    if (image && image !== "none" && priority !== "important") {
+      document.body.style.setProperty("background-image", image, "important");
+    }
+  }
+
   function watchBackgroundLinks() {
     protectBackgroundLinks();
+    preserveAdvertiserBackground();
 
-    const observer = new MutationObserver(() => protectBackgroundLinks());
-    observer.observe(document.body, { childList: true, subtree: true });
+    const observer = new MutationObserver(() => {
+      protectBackgroundLinks();
+      preserveAdvertiserBackground();
+    });
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ["style", "class"]
+    });
   }
 
   function ensureAdScript() {
@@ -221,7 +239,7 @@
       window.BF_ACTIVE_SITE_SKIN = {
         mode: "clean-mobile-background",
         codeZone: null,
-        version: 33
+        version: 34
       };
       return;
     }
@@ -236,7 +254,7 @@
     window.BF_ACTIVE_SITE_SKIN = {
       mode: "dynamic-adhit-background",
       codeZone: BG_ZONE,
-      version: 33
+      version: 34
     };
   }
 
