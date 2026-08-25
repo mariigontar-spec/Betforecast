@@ -1,10 +1,10 @@
-/* Betforecast.ai stable Adhit background manager v28 */
+/* Betforecast.ai stable Adhit background manager v29 */
 (() => {
   "use strict";
 
   const BG_ZONE = "163743";
   const BG_SLOT_ID = "bf-dynamic-background-slot";
-  const STYLE_ID = "bf-dynamic-background-stable-style";
+  const STYLE_ID = "bf-dynamic-background-stable-style-v29";
   const AD_SCRIPT_SRC = "https://media.getads.online/js/code.min.js";
   const MOBILE_QUERY = "(max-width: 760px)";
 
@@ -18,6 +18,23 @@
     const style = document.createElement("style");
     style.id = STYLE_ID;
     style.textContent = `
+      html {
+        width: 100% !important;
+        min-width: 100% !important;
+        background: #02070d !important;
+      }
+
+      html body.aso-background {
+        width: 100% !important;
+        max-width: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        background-size: 100% auto !important;
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+        background-color: #02070d !important;
+      }
+
       #${BG_SLOT_ID} {
         position: absolute !important;
         top: 0 !important;
@@ -170,7 +187,7 @@
       window.BF_ACTIVE_SITE_SKIN = {
         mode: "clean-mobile-background",
         codeZone: null,
-        version: 28
+        version: 29
       };
       return;
     }
@@ -185,7 +202,7 @@
     window.BF_ACTIVE_SITE_SKIN = {
       mode: "dynamic-adhit-background",
       codeZone: BG_ZONE,
-      version: 28
+      version: 29
     };
   }
 
