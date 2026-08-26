@@ -1,44 +1,44 @@
 {
-  "updatedAt": "2026-08-26T00:08:00+03:00",
-  "featuredId": "lyon-fenerbahce",
+  "updatedAt": "2026-08-27T00:01:00+03:00",
+  "featuredId": "aarhus-benfica",
   "events": [
     {
-      "id": "lyon-fenerbahce",
+      "id": "aarhus-benfica",
       "type": "match",
       "sport": "Football",
-      "date": "26 Aug",
-      "time": "20:00 UK",
-      "title": "Lyon vs Fenerbahçe",
-      "home": "Lyon",
-      "away": "Fenerbahçe",
-      "competition": "UEFA Champions League",
-      "stage": "Play-off second leg · aggregate 1–1",
+      "date": "27 Aug",
+      "time": "19:00 UK",
+      "title": "Aarhus vs Benfica",
+      "home": "Aarhus",
+      "away": "Benfica",
+      "competition": "UEFA Europa League",
+      "stage": "Play-off second leg · aggregate 1–3",
       "status": "Today",
       "signals": [
-        "Aggregate tied 1–1",
-        "Lyon three-match unbeaten run",
-        "Fenerbahçe won 4–2 at weekend"
+        "Benfica lead 3–1 from first leg",
+        "Aarhus winless in four matches",
+        "Benfica unbeaten in five matches"
       ],
-      "homeLogo": "https://iconlogovector.com/uploads/images/2024/06/lg-665f25ad4a450-Olympique-Lyonnais.webp",
-      "awayLogo": "https://image.pngaaa.com/103/7259103-middle.png",
+      "homeLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/AGF_Logo.png/250px-AGF_Logo.png",
+      "awayLogo": "https://upload.wikimedia.org/wikipedia/en/a/a2/SL_Benfica_logo.svg",
       "homeForm": [
-        "W",
         "D",
-        "W",
         "L",
-        "L"
+        "L",
+        "L",
+        "W"
       ],
       "awayForm": [
         "W",
-        "D",
-        "L",
         "W",
+        "D",
+        "D",
         "W"
       ],
       "probabilities": {
-        "home": 48,
-        "draw": 27,
-        "away": 25
+        "home": 30,
+        "draw": 25,
+        "away": 45
       }
     },
     {
