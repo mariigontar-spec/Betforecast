@@ -32,35 +32,35 @@
 
   function updateHomepageCopy() {
     const lead = document.querySelector(".hero-lead");
-    if (lead) lead.textContent = "Premier League Matchweek 1 takes over Saturday, while Formula 1 runs its Zandvoort sprint and qualifying and Cincinnati reaches the semifinals. Follow the live schedule, results and the signals that matter now.";
+    if (lead) lead.textContent = "US Open second-round results and the Vuelta sprint finish lead today's verified updates. Next up: the Calar Alto mountain stage on 3 September and Premier League Matchweek 3 from 4 September.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>22 Aug</strong><span>Premier League · 5 matches</span></div>
-        <div><strong>22 Aug</strong><span>F1 Dutch GP · Sprint</span></div>
-        <div><strong>22 Aug</strong><span>Cincinnati · Semifinals</span></div>
+        <div><strong>2 Sep</strong><span>US Open · Round 2 results</span></div>
+        <div><strong>2 Sep</strong><span>Vuelta · Brennan wins Stage 11</span></div>
+        <div><strong>3 Sep</strong><span>Vuelta · Calar Alto summit finish</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
-    if (input) input.placeholder = "Try: Man United, Tottenham, Dutch GP";
+    if (input) input.placeholder = "Try: US Open, Vuelta, Arsenal vs Chelsea";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Manchester United">Man United</button>
-        <button type="button" data-query="Tottenham">Tottenham</button>
-        <button type="button" data-query="Dutch Grand Prix">Dutch GP</button>
+        <button type="button" data-query="US Open">US Open</button>
+        <button type="button" data-query="Vuelta">Vuelta</button>
+        <button type="button" data-query="Arsenal Chelsea">Arsenal–Chelsea</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=hull-man-utd", title: "Hull City vs Manchester United", detail: "22 August · Premier League · 12:30 UK", tag: "Football" },
-      { href: "match.html?id=brentford-spurs", title: "Brentford vs Tottenham Hotspur", detail: "22 August · Premier League · 17:30 UK", tag: "Football" },
-      { href: "match.html?id=dutch-gp-saturday", title: "Dutch Grand Prix · Sprint & Qualifying", detail: "22 August · Russell starts sprint from pole", tag: "F1" },
-      { href: "match.html?id=cincinnati-semifinals", title: "Cincinnati Open · Semifinals", detail: "22 August · final-four sessions", tag: "Tennis" }
+      { href: "match.html?id=vuelta-stage-12", title: "Vuelta Stage 12 · Vera to Calar Alto", detail: "3 September · 166.6 km mountain finish", tag: "Cycling" },
+      { href: "match.html?id=ipswich-liverpool-sep4", title: "Ipswich Town vs Liverpool", detail: "4 September · Premier League · 20:00 UK", tag: "Football" },
+      { href: "standings.html", title: "Premier League · Matchweek 2 table", detail: "Positions and form updated after 20 matches", tag: "Table" },
+      { href: "results.html", title: "US Open · Day 4 verified results", detail: "Pegula, Shelton and Medvedev advance", tag: "Tennis" }
     ];
 
     lines.forEach((line, index) => {
