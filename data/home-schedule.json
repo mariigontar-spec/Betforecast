@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-31T23:58:00+03:00",
-  "featuredId": "us-open-r1-day2",
+  "updatedAt": "2026-09-02T10:45:00+03:00",
+  "featuredId": "us-open-r2-sep2",
   "events": [
-    {"id":"us-open-r1-day2","type":"event","sport":"Tennis","date":"31 Aug","time":"First round","title":"US Open first round continues","home":"US Open","away":"New York","competition":"Grand Slam tennis","stage":"Opening round Day 2","status":"Live focus","signals":["Djokovic eliminated","Anisimova advances","Sabalenka advances"]},
-    {"id":"aston-villa-arsenal-result","type":"result","sport":"Football","date":"31 Aug","time":"Final","title":"Arsenal beat Aston Villa 1-0","home":"Aston Villa","away":"Arsenal","competition":"Premier League","stage":"Matchweek 2","status":"Result","signals":["Bukayo Saka scored","Arsenal clean sheet","Final score 0-1"]},
-    {"id":"vuelta-rest-day","type":"event","sport":"Cycling","date":"31 Aug","time":"Rest day","title":"Vuelta a Espana first rest day","home":"Enric Mas","away":"GC rivals","competition":"Vuelta a Espana","stage":"Rest day before Stage 10","status":"Today","signals":["Mas leads overall","Roglic second at 1:18","Stage 10 on 1 Sep"]},
-    {"id":"chelsea-brighton-result","type":"result","sport":"Football","date":"30 Aug","time":"Final","title":"Chelsea beat Brighton 4-3","home":"Chelsea","away":"Brighton","competition":"Premier League","stage":"Matchweek 2","status":"Result","signals":["Seven goals","Chelsea win","Final score 4-3"]},
-    {"id":"man-utd-ipswich-result","type":"result","sport":"Football","date":"30 Aug","time":"Final","title":"Manchester United beat Ipswich 5-2","home":"Manchester United","away":"Ipswich Town","competition":"Premier League","stage":"Matchweek 2","status":"Result","signals":["Fernandes hat-trick","United win","Final score 5-2"]},
-    {"id":"vuelta-stage-9-result","type":"result","sport":"Cycling","date":"30 Aug","time":"Final","title":"Enric Mas wins Vuelta Stage 9","home":"Enric Mas","away":"Oscar Onley","competition":"Vuelta a Espana","stage":"Stage 9 Alto de Aitana","status":"Result","signals":["Mas stage win","Roglic +1:18 overall","Summit finish"]}
+    {"id":"us-open-r2-sep2","type":"event","sport":"Tennis","date":"2 Sep","time":"Day & night","title":"US Open second round begins","home":"Men's singles","away":"Women's singles","competition":"US Open","stage":"Round 2","status":"Today","signals":["Second-round sessions","New York hard courts","Day and night play"]},
+    {"id":"gauff-sonmez-result","type":"result","sport":"Tennis","date":"2 Sep","time":"Final","title":"Gauff opens with straight-sets win","home":"Coco Gauff","away":"Zeynep Sonmez","competition":"US Open","stage":"Round 1","status":"Result","signals":["6-3 6-4","Five aces","Saved key break points"]},
+    {"id":"zverev-sonego-result","type":"result","sport":"Tennis","date":"2 Sep","time":"Final","title":"Zverev survives five-set thriller","home":"Alexander Zverev","away":"Lorenzo Sonego","competition":"US Open","stage":"Round 1","status":"Result","signals":["Five sets","4h 52m match","Came back from 1-2"]},
+    {"id":"vuelta-stage-11","type":"event","sport":"Cycling","date":"2 Sep","time":"Stage 11","title":"Vuelta: Cartagena to Lorca","home":"Cartagena","away":"Lorca","competition":"Vuelta a España","stage":"151.3 km","status":"Today","signals":["Flatter profile","1,331 m elevation","Fast-finish opportunity"]},
+    {"id":"pl-transfer-record","type":"news","sport":"Football","date":"2 Sep","time":"Latest","title":"Premier League summer spending hits record","home":"Premier League","away":"Transfer market","competition":"English football","stage":"Summer window","status":"News","signals":["£3.198bn spending","Second straight record summer","Squad changes affect forecasts"]},
+    {"id":"palace-deadline-signings","type":"news","sport":"Football","date":"2 Sep","time":"Latest","title":"Palace add Chilwell and Timber","home":"Crystal Palace","away":"Deadline day","competition":"Premier League","stage":"Transfers","status":"News","signals":["Two permanent deals","Defensive experience","Midfield flexibility"]}
   ]
 }
