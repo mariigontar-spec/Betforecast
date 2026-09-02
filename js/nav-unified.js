@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(){
-  document.querySelectorAll(".header").forEach(function(header){
-    var inner=header.querySelector(".header-inner"),nav=header.querySelector(".topbar-menu");
+  document.querySelectorAll(".header, .bf-header").forEach(function(header){
+    var inner=header.querySelector(".header-inner, .bf-header-inner"),nav=header.querySelector(".topbar-menu, .bf-nav");
     if(!inner||!nav)return;
     var page=(location.pathname.split("/").pop()||"index.html").toLowerCase();
     nav.querySelectorAll("a").forEach(function(link){
