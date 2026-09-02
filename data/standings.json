@@ -6,38 +6,443 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Matchweek 1 · 24 Aug",
-      "insightText": "Brighton lead the early table after a 4-0 win over Aston Villa. Fulham vs Chelsea closes Matchweek 1 on Monday night.",
+      "insightTitle": "Matchweek 2 complete · updated 2 Sep",
+      "insightText": "Manchester City lead after two wins with the best goals-for total among the teams level on six points. Matchweek 3 starts with Ipswich Town vs Liverpool on 4 September.",
       "table": [
-        { "pos": 1, "team": "Brighton", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 4, "ga": 0, "points": 3, "form": ["W"], "zone": "cl" },
-        { "pos": 2, "team": "Arsenal", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 3, "ga": 0, "points": 3, "form": ["W"], "zone": "cl" },
-        { "pos": 3, "team": "Brentford", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 3, "ga": 0, "points": 3, "form": ["W"], "zone": "cl" },
-        { "pos": 4, "team": "Hull City", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 2, "ga": 0, "points": 3, "form": ["W"], "zone": "cl" },
-        { "pos": 5, "team": "Everton", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 2, "ga": 0, "points": 3, "form": ["W"], "zone": "safe" },
-        { "pos": 6, "team": "Man City", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 2, "ga": 1, "points": 3, "form": ["W"], "zone": "safe" },
-        { "pos": 7, "team": "Ipswich Town", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 2, "ga": 1, "points": 3, "form": ["W"], "zone": "safe" },
-        { "pos": 8, "team": "Leeds United", "played": 1, "wins": 1, "draws": 0, "losses": 0, "gf": 1, "ga": 0, "points": 3, "form": ["W"], "zone": "safe" },
-        { "pos": 9, "team": "Liverpool", "played": 1, "wins": 0, "draws": 1, "losses": 0, "gf": 2, "ga": 2, "points": 1, "form": ["D"], "zone": "safe" },
-        { "pos": 10, "team": "Newcastle", "played": 1, "wins": 0, "draws": 1, "losses": 0, "gf": 2, "ga": 2, "points": 1, "form": ["D"], "zone": "safe" },
-        { "pos": 11, "team": "Chelsea", "played": 0, "wins": 0, "draws": 0, "losses": 0, "gf": 0, "ga": 0, "points": 0, "form": [], "zone": "safe" },
-        { "pos": 12, "team": "Fulham", "played": 0, "wins": 0, "draws": 0, "losses": 0, "gf": 0, "ga": 0, "points": 0, "form": [], "zone": "safe" },
-        { "pos": 13, "team": "Bournemouth", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 1, "ga": 2, "points": 0, "form": ["L"], "zone": "safe" },
-        { "pos": 14, "team": "Sunderland", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 1, "ga": 2, "points": 0, "form": ["L"], "zone": "safe" },
-        { "pos": 15, "team": "Nottm Forest", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 0, "ga": 1, "points": 0, "form": ["L"], "zone": "safe" },
-        { "pos": 16, "team": "Crystal Palace", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 0, "ga": 2, "points": 0, "form": ["L"], "zone": "safe" },
-        { "pos": 17, "team": "Man United", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 0, "ga": 2, "points": 0, "form": ["L"], "zone": "safe" },
-        { "pos": 18, "team": "Coventry City", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 0, "ga": 3, "points": 0, "form": ["L"], "zone": "rel" },
-        { "pos": 19, "team": "Tottenham", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 0, "ga": 3, "points": 0, "form": ["L"], "zone": "rel" },
-        { "pos": 20, "team": "Aston Villa", "played": 1, "wins": 0, "draws": 0, "losses": 1, "gf": 0, "ga": 4, "points": 0, "form": ["L"], "zone": "rel" }
+        {
+          "pos": 1,
+          "team": "Man City",
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "gf": 6,
+          "ga": 2,
+          "points": 6,
+          "form": [
+            "W",
+            "W"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 2,
+          "team": "Arsenal",
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "gf": 4,
+          "ga": 0,
+          "points": 6,
+          "form": [
+            "W",
+            "W"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 3,
+          "team": "Hull City",
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "gf": 3,
+          "ga": 0,
+          "points": 6,
+          "form": [
+            "W",
+            "W"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 4,
+          "team": "Chelsea",
+          "played": 2,
+          "wins": 2,
+          "draws": 0,
+          "losses": 0,
+          "gf": 7,
+          "ga": 5,
+          "points": 6,
+          "form": [
+            "W",
+            "W"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 5,
+          "team": "Brentford",
+          "played": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "gf": 4,
+          "ga": 1,
+          "points": 4,
+          "form": [
+            "W",
+            "D"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 6,
+          "team": "Newcastle",
+          "played": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "gf": 4,
+          "ga": 2,
+          "points": 4,
+          "form": [
+            "D",
+            "W"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 7,
+          "team": "Everton",
+          "played": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "gf": 3,
+          "ga": 1,
+          "points": 4,
+          "form": [
+            "W",
+            "D"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 8,
+          "team": "Leeds United",
+          "played": 2,
+          "wins": 1,
+          "draws": 1,
+          "losses": 0,
+          "gf": 2,
+          "ga": 1,
+          "points": 4,
+          "form": [
+            "W",
+            "D"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 9,
+          "team": "Brighton",
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "gf": 7,
+          "ga": 4,
+          "points": 3,
+          "form": [
+            "W",
+            "L"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 10,
+          "team": "Man United",
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "gf": 5,
+          "ga": 4,
+          "points": 3,
+          "form": [
+            "L",
+            "W"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 11,
+          "team": "Sunderland",
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "gf": 2,
+          "ga": 2,
+          "points": 3,
+          "form": [
+            "L",
+            "W"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 12,
+          "team": "Ipswich Town",
+          "played": 2,
+          "wins": 1,
+          "draws": 0,
+          "losses": 1,
+          "gf": 4,
+          "ga": 6,
+          "points": 3,
+          "form": [
+            "W",
+            "L"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 13,
+          "team": "Liverpool",
+          "played": 2,
+          "wins": 0,
+          "draws": 2,
+          "losses": 0,
+          "gf": 4,
+          "ga": 4,
+          "points": 2,
+          "form": [
+            "D",
+            "D"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 14,
+          "team": "Bournemouth",
+          "played": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "gf": 2,
+          "ga": 3,
+          "points": 1,
+          "form": [
+            "L",
+            "D"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 15,
+          "team": "Nottm Forest",
+          "played": 2,
+          "wins": 0,
+          "draws": 1,
+          "losses": 1,
+          "gf": 2,
+          "ga": 3,
+          "points": 1,
+          "form": [
+            "L",
+            "D"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 16,
+          "team": "Fulham",
+          "played": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "gf": 2,
+          "ga": 4,
+          "points": 0,
+          "form": [
+            "L",
+            "L"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 17,
+          "team": "Coventry City",
+          "played": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "gf": 0,
+          "ga": 4,
+          "points": 0,
+          "form": [
+            "L",
+            "L"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 18,
+          "team": "Crystal Palace",
+          "played": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "gf": 1,
+          "ga": 6,
+          "points": 0,
+          "form": [
+            "L",
+            "L"
+          ],
+          "zone": "rel"
+        },
+        {
+          "pos": 19,
+          "team": "Tottenham",
+          "played": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "gf": 0,
+          "ga": 5,
+          "points": 0,
+          "form": [
+            "L",
+            "L"
+          ],
+          "zone": "rel"
+        },
+        {
+          "pos": 20,
+          "team": "Aston Villa",
+          "played": 2,
+          "wins": 0,
+          "draws": 0,
+          "losses": 2,
+          "gf": 0,
+          "ga": 5,
+          "points": 0,
+          "form": [
+            "L",
+            "L"
+          ],
+          "zone": "rel"
+        }
       ],
       "lastMatches": [
-        { "time": "23 Aug", "match": "Newcastle vs Liverpool", "score": "2:2", "status": "finished" },
-        { "time": "23 Aug", "match": "Man City vs Bournemouth", "score": "2:1", "status": "finished" },
-        { "time": "23 Aug", "match": "Brighton vs Aston Villa", "score": "4:0", "status": "finished" },
-        { "time": "22 Aug", "match": "Brentford vs Tottenham", "score": "3:0", "status": "finished" }
+        {
+          "time": "31 Aug",
+          "match": "Aston Villa vs Arsenal",
+          "score": "0:1",
+          "status": "finished"
+        },
+        {
+          "time": "30 Aug",
+          "match": "Chelsea vs Brighton",
+          "score": "4:3",
+          "status": "finished"
+        },
+        {
+          "time": "30 Aug",
+          "match": "Manchester United vs Ipswich Town",
+          "score": "5:2",
+          "status": "finished"
+        },
+        {
+          "time": "30 Aug",
+          "match": "Sunderland vs Fulham",
+          "score": "1:0",
+          "status": "finished"
+        },
+        {
+          "time": "30 Aug",
+          "match": "Leeds United vs Brentford",
+          "score": "1:1",
+          "status": "finished"
+        },
+        {
+          "time": "29 Aug",
+          "match": "Liverpool vs Nottm Forest",
+          "score": "2:2",
+          "status": "finished"
+        },
+        {
+          "time": "29 Aug",
+          "match": "Tottenham vs Newcastle",
+          "score": "0:2",
+          "status": "finished"
+        },
+        {
+          "time": "29 Aug",
+          "match": "Coventry City vs Hull City",
+          "score": "0:1",
+          "status": "finished"
+        },
+        {
+          "time": "29 Aug",
+          "match": "Bournemouth vs Everton",
+          "score": "1:1",
+          "status": "finished"
+        },
+        {
+          "time": "28 Aug",
+          "match": "Crystal Palace vs Man City",
+          "score": "1:4",
+          "status": "finished"
+        }
       ],
       "upcomingMatches": [
-        { "time": "20:00", "match": "Fulham vs Chelsea", "status": "upcoming" }
+        {
+          "time": "4 Sep · 20:00",
+          "match": "Ipswich Town vs Liverpool",
+          "status": "upcoming"
+        },
+        {
+          "time": "5 Sep · 12:30",
+          "match": "Newcastle vs Bournemouth",
+          "status": "upcoming"
+        },
+        {
+          "time": "5 Sep · 15:00",
+          "match": "Brentford vs Sunderland",
+          "status": "upcoming"
+        },
+        {
+          "time": "5 Sep · 15:00",
+          "match": "Brighton vs Leeds United",
+          "status": "upcoming"
+        },
+        {
+          "time": "5 Sep · 15:00",
+          "match": "Fulham vs Crystal Palace",
+          "status": "upcoming"
+        },
+        {
+          "time": "5 Sep · 15:00",
+          "match": "Man City vs Coventry City",
+          "status": "upcoming"
+        },
+        {
+          "time": "5 Sep · 15:00",
+          "match": "Nottm Forest vs Tottenham",
+          "status": "upcoming"
+        },
+        {
+          "time": "5 Sep · 17:30",
+          "match": "Hull City vs Aston Villa",
+          "status": "upcoming"
+        },
+        {
+          "time": "6 Sep · 14:00",
+          "match": "Everton vs Man United",
+          "status": "upcoming"
+        },
+        {
+          "time": "6 Sep · 16:30",
+          "match": "Arsenal vs Chelsea",
+          "status": "upcoming"
+        }
       ]
     },
     {
@@ -48,10 +453,82 @@
       "insightTitle": "Reference table",
       "insightText": "Historical reference data retained while the current-season feed is being refreshed.",
       "table": [
-        { "pos": 1, "team": "Real Madrid", "played": 29, "wins": 20, "draws": 6, "losses": 3, "gf": 58, "ga": 24, "points": 66, "form": ["W","W","D","W","L"], "zone": "cl" },
-        { "pos": 2, "team": "Barcelona", "played": 29, "wins": 19, "draws": 7, "losses": 3, "gf": 56, "ga": 25, "points": 64, "form": ["W","D","W","W","D"], "zone": "cl" },
-        { "pos": 3, "team": "Atletico Madrid", "played": 29, "wins": 17, "draws": 8, "losses": 4, "gf": 49, "ga": 26, "points": 59, "form": ["W","L","W","D","W"], "zone": "cl" },
-        { "pos": 4, "team": "Athletic Club", "played": 29, "wins": 16, "draws": 8, "losses": 5, "gf": 45, "ga": 27, "points": 56, "form": ["D","W","W","L","W"], "zone": "cl" }
+        {
+          "pos": 1,
+          "team": "Real Madrid",
+          "played": 29,
+          "wins": 20,
+          "draws": 6,
+          "losses": 3,
+          "gf": 58,
+          "ga": 24,
+          "points": 66,
+          "form": [
+            "W",
+            "W",
+            "D",
+            "W",
+            "L"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 2,
+          "team": "Barcelona",
+          "played": 29,
+          "wins": 19,
+          "draws": 7,
+          "losses": 3,
+          "gf": 56,
+          "ga": 25,
+          "points": 64,
+          "form": [
+            "W",
+            "D",
+            "W",
+            "W",
+            "D"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 3,
+          "team": "Atletico Madrid",
+          "played": 29,
+          "wins": 17,
+          "draws": 8,
+          "losses": 4,
+          "gf": 49,
+          "ga": 26,
+          "points": 59,
+          "form": [
+            "W",
+            "L",
+            "W",
+            "D",
+            "W"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 4,
+          "team": "Athletic Club",
+          "played": 29,
+          "wins": 16,
+          "draws": 8,
+          "losses": 5,
+          "gf": 45,
+          "ga": 27,
+          "points": 56,
+          "form": [
+            "D",
+            "W",
+            "W",
+            "L",
+            "W"
+          ],
+          "zone": "cl"
+        }
       ],
       "lastMatches": [],
       "upcomingMatches": []
@@ -64,10 +541,82 @@
       "insightTitle": "Reference table",
       "insightText": "Historical reference data retained while the current-season feed is being refreshed.",
       "table": [
-        { "pos": 1, "team": "Inter", "played": 30, "wins": 21, "draws": 5, "losses": 4, "gf": 60, "ga": 26, "points": 68, "form": ["W","W","W","D","L"], "zone": "cl" },
-        { "pos": 2, "team": "Juventus", "played": 30, "wins": 19, "draws": 7, "losses": 4, "gf": 52, "ga": 25, "points": 64, "form": ["W","D","W","W","D"], "zone": "cl" },
-        { "pos": 3, "team": "Milan", "played": 30, "wins": 18, "draws": 6, "losses": 6, "gf": 50, "ga": 31, "points": 60, "form": ["L","W","W","D","W"], "zone": "cl" },
-        { "pos": 4, "team": "Napoli", "played": 30, "wins": 17, "draws": 7, "losses": 6, "gf": 49, "ga": 30, "points": 58, "form": ["W","W","L","W","D"], "zone": "cl" }
+        {
+          "pos": 1,
+          "team": "Inter",
+          "played": 30,
+          "wins": 21,
+          "draws": 5,
+          "losses": 4,
+          "gf": 60,
+          "ga": 26,
+          "points": 68,
+          "form": [
+            "W",
+            "W",
+            "W",
+            "D",
+            "L"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 2,
+          "team": "Juventus",
+          "played": 30,
+          "wins": 19,
+          "draws": 7,
+          "losses": 4,
+          "gf": 52,
+          "ga": 25,
+          "points": 64,
+          "form": [
+            "W",
+            "D",
+            "W",
+            "W",
+            "D"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 3,
+          "team": "Milan",
+          "played": 30,
+          "wins": 18,
+          "draws": 6,
+          "losses": 6,
+          "gf": 50,
+          "ga": 31,
+          "points": 60,
+          "form": [
+            "L",
+            "W",
+            "W",
+            "D",
+            "W"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 4,
+          "team": "Napoli",
+          "played": 30,
+          "wins": 17,
+          "draws": 7,
+          "losses": 6,
+          "gf": 49,
+          "ga": 30,
+          "points": 58,
+          "form": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "D"
+          ],
+          "zone": "cl"
+        }
       ],
       "lastMatches": [],
       "upcomingMatches": []
