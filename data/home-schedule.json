@@ -1,12 +1,114 @@
 {
-  "updatedAt": "2026-09-02T10:45:00+03:00",
-  "featuredId": "us-open-r2-sep2",
+  "updatedAt": "2026-09-02T23:58:00+03:00",
+  "featuredId": "vuelta-stage-12",
   "events": [
-    {"id":"us-open-r2-sep2","type":"event","sport":"Tennis","date":"2 Sep","time":"Day & night","title":"US Open second round begins","home":"Men's singles","away":"Women's singles","competition":"US Open","stage":"Round 2","status":"Today","signals":["Second-round sessions","New York hard courts","Day and night play"]},
-    {"id":"gauff-sonmez-result","type":"result","sport":"Tennis","date":"2 Sep","time":"Final","title":"Gauff opens with straight-sets win","home":"Coco Gauff","away":"Zeynep Sonmez","competition":"US Open","stage":"Round 1","status":"Result","signals":["6-3 6-4","Five aces","Saved key break points"]},
-    {"id":"zverev-sonego-result","type":"result","sport":"Tennis","date":"2 Sep","time":"Final","title":"Zverev survives five-set thriller","home":"Alexander Zverev","away":"Lorenzo Sonego","competition":"US Open","stage":"Round 1","status":"Result","signals":["Five sets","4h 52m match","Came back from 1-2"]},
-    {"id":"vuelta-stage-11","type":"event","sport":"Cycling","date":"2 Sep","time":"Stage 11","title":"Vuelta: Cartagena to Lorca","home":"Cartagena","away":"Lorca","competition":"Vuelta a España","stage":"151.3 km","status":"Today","signals":["Flatter profile","1,331 m elevation","Fast-finish opportunity"]},
-    {"id":"pl-transfer-record","type":"news","sport":"Football","date":"2 Sep","time":"Latest","title":"Premier League summer spending hits record","home":"Premier League","away":"Transfer market","competition":"English football","stage":"Summer window","status":"News","signals":["£3.198bn spending","Second straight record summer","Squad changes affect forecasts"]},
-    {"id":"palace-deadline-signings","type":"news","sport":"Football","date":"2 Sep","time":"Latest","title":"Palace add Chilwell and Timber","home":"Crystal Palace","away":"Deadline day","competition":"Premier League","stage":"Transfers","status":"News","signals":["Two permanent deals","Defensive experience","Midfield flexibility"]}
+    {
+      "id": "vuelta-stage-12",
+      "type": "event",
+      "sport": "Cycling",
+      "date": "3 Sep",
+      "time": "Stage 12",
+      "title": "Vuelta mountain finish at Calar Alto",
+      "home": "Vera",
+      "away": "Calar Alto",
+      "competition": "Vuelta a España",
+      "stage": "166.6 km · 4,568 m climbing",
+      "status": "Upcoming",
+      "signals": [
+        "Alto de Velefique 13.1 km at 7.2%",
+        "Calar Alto summit finish",
+        "Enric Mas leads by 1:18"
+      ]
+    },
+    {
+      "id": "brennan-stage11-result",
+      "type": "result",
+      "sport": "Cycling",
+      "date": "2 Sep",
+      "time": "Final",
+      "title": "Brennan wins Vuelta Stage 11",
+      "home": "Matthew Brennan",
+      "away": "Bryan Coquard",
+      "competition": "Vuelta a España",
+      "stage": "Cartagena to Lorca · 153.8 km",
+      "status": "Result",
+      "signals": [
+        "Third stage win",
+        "Photo-finish sprint",
+        "Mas retains red jersey"
+      ]
+    },
+    {
+      "id": "us-open-day4",
+      "type": "result",
+      "sport": "Tennis",
+      "date": "2 Sep",
+      "time": "Day 4",
+      "title": "US Open second-round results",
+      "home": "Pegula · Shelton · Medvedev",
+      "away": "Third round",
+      "competition": "US Open",
+      "stage": "Round 2",
+      "status": "Results",
+      "signals": [
+        "Pegula beat Kenin 6-3 6-1",
+        "Shelton beat Hurkacz in four sets",
+        "Merida upset Rublev"
+      ]
+    },
+    {
+      "id": "ipswich-liverpool-sep4",
+      "type": "event",
+      "sport": "Football",
+      "date": "4 Sep",
+      "time": "20:00 UK",
+      "title": "Ipswich Town vs Liverpool",
+      "home": "Ipswich Town",
+      "away": "Liverpool",
+      "competition": "Premier League",
+      "stage": "Matchweek 3",
+      "status": "Upcoming",
+      "signals": [
+        "Liverpool drew first two matches",
+        "Ipswich have three points",
+        "Portman Road opener"
+      ]
+    },
+    {
+      "id": "epl-mw3-saturday",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Sep",
+      "time": "12:30–17:30 UK",
+      "title": "Premier League Saturday slate",
+      "home": "Seven matches",
+      "away": "Matchweek 3",
+      "competition": "Premier League",
+      "stage": "Newcastle–Bournemouth leads the card",
+      "status": "Upcoming",
+      "signals": [
+        "Man City host Coventry",
+        "Brighton host Leeds",
+        "Hull host Aston Villa"
+      ]
+    },
+    {
+      "id": "arsenal-chelsea-sep6",
+      "type": "event",
+      "sport": "Football",
+      "date": "6 Sep",
+      "time": "16:30 UK",
+      "title": "Arsenal vs Chelsea",
+      "home": "Arsenal",
+      "away": "Chelsea",
+      "competition": "Premier League",
+      "stage": "Matchweek 3",
+      "status": "Upcoming",
+      "signals": [
+        "Both teams have six points",
+        "London derby",
+        "Early top-four test"
+      ]
+    }
   ]
 }
