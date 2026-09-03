@@ -32,35 +32,35 @@
 
   function updateHomepageCopy() {
     const lead = document.querySelector(".hero-lead");
-    if (lead) lead.textContent = "US Open second-round results and the Vuelta sprint finish lead today's verified updates. Next up: the Calar Alto mountain stage on 3 September and Premier League Matchweek 3 from 4 September.";
+    if (lead) lead.textContent = "Premier League Matchweek 3 opens tonight with Ipswich Town against Liverpool. The Vuelta continues from Almuñécar to Loja, while the US Open begins third-round play in New York.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>2 Sep</strong><span>US Open · Round 2 results</span></div>
-        <div><strong>2 Sep</strong><span>Vuelta · Brennan wins Stage 11</span></div>
-        <div><strong>3 Sep</strong><span>Vuelta · Calar Alto summit finish</span></div>
+        <div><strong>4 Sep</strong><span>Ipswich vs Liverpool · 20:00 UK</span></div>
+        <div><strong>4 Sep</strong><span>Vuelta · Stage 13</span></div>
+        <div><strong>4 Sep</strong><span>US Open · Third round</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
-    if (input) input.placeholder = "Try: US Open, Vuelta, Arsenal vs Chelsea";
+    if (input) input.placeholder = "Try: Ipswich, Liverpool, US Open, Vuelta";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
+        <button type="button" data-query="Ipswich Liverpool">Ipswich–Liverpool</button>
         <button type="button" data-query="US Open">US Open</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
-        <button type="button" data-query="Arsenal Chelsea">Arsenal–Chelsea</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=vuelta-stage-12", title: "Vuelta Stage 12 · Vera to Calar Alto", detail: "3 September · 166.6 km mountain finish", tag: "Cycling" },
       { href: "match.html?id=ipswich-liverpool-sep4", title: "Ipswich Town vs Liverpool", detail: "4 September · Premier League · 20:00 UK", tag: "Football" },
-      { href: "standings.html", title: "Premier League · Matchweek 2 table", detail: "Positions and form updated after 20 matches", tag: "Table" },
-      { href: "results.html", title: "US Open · Day 4 verified results", detail: "Pegula, Shelton and Medvedev advance", tag: "Tennis" }
+      { href: "match.html?id=vuelta-stage-13", title: "Vuelta Stage 13 · Almuñécar to Loja", detail: "4 September · 192.8 km hilly stage", tag: "Cycling" },
+      { href: "match.html?id=us-open-r3-sep4", title: "US Open · Third round begins", detail: "4 September · day and night sessions", tag: "Tennis" },
+      { href: "standings.html", title: "Premier League · Matchweek 3", detail: "Table, recent results and full upcoming slate", tag: "Table" }
     ];
 
     lines.forEach((line, index) => {
