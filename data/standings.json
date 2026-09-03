@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Matchweek 2 complete · updated 2 Sep",
-      "insightText": "Manchester City lead after two wins with the best goals-for total among the teams level on six points. Matchweek 3 starts with Ipswich Town vs Liverpool on 4 September.",
+      "insightTitle": "Matchweek 3 starts today · updated 4 Sep",
+      "insightText": "Manchester City lead after two rounds. Matchweek 3 opens tonight with Ipswich Town vs Liverpool at 20:00 UK.",
       "table": [
         {
           "pos": 1,
@@ -394,7 +394,7 @@
       ],
       "upcomingMatches": [
         {
-          "time": "4 Sep · 20:00",
+          "time": "Today · 20:00",
           "match": "Ipswich Town vs Liverpool",
           "status": "upcoming"
         },
