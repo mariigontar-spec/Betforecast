@@ -1,61 +1,7 @@
 {
-  "updatedAt": "2026-09-02T23:58:00+03:00",
-  "featuredId": "vuelta-stage-12",
+  "updatedAt": "2026-09-04T00:02:00+03:00",
+  "featuredId": "ipswich-liverpool-sep4",
   "events": [
-    {
-      "id": "vuelta-stage-12",
-      "type": "event",
-      "sport": "Cycling",
-      "date": "3 Sep",
-      "time": "Stage 12",
-      "title": "Vuelta mountain finish at Calar Alto",
-      "home": "Vera",
-      "away": "Calar Alto",
-      "competition": "Vuelta a España",
-      "stage": "166.6 km · 4,568 m climbing",
-      "status": "Upcoming",
-      "signals": [
-        "Alto de Velefique 13.1 km at 7.2%",
-        "Calar Alto summit finish",
-        "Enric Mas leads by 1:18"
-      ]
-    },
-    {
-      "id": "brennan-stage11-result",
-      "type": "result",
-      "sport": "Cycling",
-      "date": "2 Sep",
-      "time": "Final",
-      "title": "Brennan wins Vuelta Stage 11",
-      "home": "Matthew Brennan",
-      "away": "Bryan Coquard",
-      "competition": "Vuelta a España",
-      "stage": "Cartagena to Lorca · 153.8 km",
-      "status": "Result",
-      "signals": [
-        "Third stage win",
-        "Photo-finish sprint",
-        "Mas retains red jersey"
-      ]
-    },
-    {
-      "id": "us-open-day4",
-      "type": "result",
-      "sport": "Tennis",
-      "date": "2 Sep",
-      "time": "Day 4",
-      "title": "US Open second-round results",
-      "home": "Pegula · Shelton · Medvedev",
-      "away": "Third round",
-      "competition": "US Open",
-      "stage": "Round 2",
-      "status": "Results",
-      "signals": [
-        "Pegula beat Kenin 6-3 6-1",
-        "Shelton beat Hurkacz in four sets",
-        "Merida upset Rublev"
-      ]
-    },
     {
       "id": "ipswich-liverpool-sep4",
       "type": "event",
@@ -66,12 +12,84 @@
       "home": "Ipswich Town",
       "away": "Liverpool",
       "competition": "Premier League",
-      "stage": "Matchweek 3",
-      "status": "Upcoming",
+      "stage": "Matchweek 3 opener",
+      "status": "Today",
       "signals": [
-        "Liverpool drew first two matches",
+        "Liverpool drew first two league matches 2-2",
         "Ipswich have three points",
-        "Portman Road opener"
+        "Portman Road · Friday night"
+      ]
+    },
+    {
+      "id": "vuelta-stage-13",
+      "type": "event",
+      "sport": "Cycling",
+      "date": "4 Sep",
+      "time": "Stage 13",
+      "title": "Vuelta: Almuñécar to Loja",
+      "home": "Almuñécar",
+      "away": "Loja",
+      "competition": "Vuelta a España",
+      "stage": "192.8 km · hilly stage",
+      "status": "Today",
+      "signals": [
+        "3,277 m elevation gain",
+        "Three categorised climbs",
+        "Mas leads Roglič by 1:45"
+      ]
+    },
+    {
+      "id": "us-open-r3-sep4",
+      "type": "event",
+      "sport": "Tennis",
+      "date": "4 Sep",
+      "time": "Day & night",
+      "title": "US Open third round begins",
+      "home": "Men's singles",
+      "away": "Women's singles",
+      "competition": "US Open",
+      "stage": "Round 3",
+      "status": "Today",
+      "signals": [
+        "Third-round sessions",
+        "New York hard courts",
+        "Day and night play"
+      ]
+    },
+    {
+      "id": "omrzel-stage12-result",
+      "type": "result",
+      "sport": "Cycling",
+      "date": "3 Sep",
+      "time": "Final",
+      "title": "Omrzel wins Vuelta Stage 12",
+      "home": "Jakob Omrzel",
+      "away": "Urko Berrade",
+      "competition": "Vuelta a España",
+      "stage": "Vera to Calar Alto · 166.6 km",
+      "status": "Result",
+      "signals": [
+        "Solo summit victory",
+        "Mas gained 27 seconds on rivals",
+        "GC lead grows to 1:45"
+      ]
+    },
+    {
+      "id": "us-open-day5-results",
+      "type": "result",
+      "sport": "Tennis",
+      "date": "3 Sep",
+      "time": "Day 5",
+      "title": "US Open second-round results",
+      "home": "Fritz · Osaka · Świątek",
+      "away": "Third round",
+      "competition": "US Open",
+      "stage": "Round 2",
+      "status": "Results",
+      "signals": [
+        "Khachanov upset Auger-Aliassime",
+        "Keys saved five match points",
+        "Tiafoe won in straight sets"
       ]
     },
     {
