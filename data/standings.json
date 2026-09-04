@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Matchweek 3 starts today · updated 4 Sep",
-      "insightText": "Manchester City lead after two rounds. Matchweek 3 opens tonight with Ipswich Town vs Liverpool at 20:00 UK.",
+      "insightTitle": "Matchweek 3 underway · updated 5 Sep",
+      "insightText": "Liverpool beat Ipswich Town 2-0 and move to five points. Manchester City remain top before Saturday's seven-match programme.",
       "table": [
         {
           "pos": 1,
@@ -75,6 +75,23 @@
         },
         {
           "pos": 5,
+          "team": "Liverpool",
+          "played": 3,
+          "wins": 1,
+          "draws": 2,
+          "losses": 0,
+          "gf": 6,
+          "ga": 4,
+          "points": 5,
+          "form": [
+            "D",
+            "D",
+            "W"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 6,
           "team": "Brentford",
           "played": 2,
           "wins": 1,
@@ -90,7 +107,7 @@
           "zone": "safe"
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Newcastle",
           "played": 2,
           "wins": 1,
@@ -106,7 +123,7 @@
           "zone": "safe"
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "Everton",
           "played": 2,
           "wins": 1,
@@ -122,7 +139,7 @@
           "zone": "safe"
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "Leeds United",
           "played": 2,
           "wins": 1,
@@ -138,7 +155,7 @@
           "zone": "safe"
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Brighton",
           "played": 2,
           "wins": 1,
@@ -154,7 +171,7 @@
           "zone": "safe"
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Man United",
           "played": 2,
           "wins": 1,
@@ -170,7 +187,7 @@
           "zone": "safe"
         },
         {
-          "pos": 11,
+          "pos": 12,
           "team": "Sunderland",
           "played": 2,
           "wins": 1,
@@ -186,34 +203,19 @@
           "zone": "safe"
         },
         {
-          "pos": 12,
+          "pos": 13,
           "team": "Ipswich Town",
-          "played": 2,
+          "played": 3,
           "wins": 1,
           "draws": 0,
-          "losses": 1,
+          "losses": 2,
           "gf": 4,
-          "ga": 6,
+          "ga": 8,
           "points": 3,
           "form": [
             "W",
+            "L",
             "L"
-          ],
-          "zone": "safe"
-        },
-        {
-          "pos": 13,
-          "team": "Liverpool",
-          "played": 2,
-          "wins": 0,
-          "draws": 2,
-          "losses": 0,
-          "gf": 4,
-          "ga": 4,
-          "points": 2,
-          "form": [
-            "D",
-            "D"
           ],
           "zone": "safe"
         },
@@ -299,7 +301,7 @@
         },
         {
           "pos": 19,
-          "team": "Tottenham",
+          "team": "Aston Villa",
           "played": 2,
           "wins": 0,
           "draws": 0,
@@ -315,7 +317,7 @@
         },
         {
           "pos": 20,
-          "team": "Aston Villa",
+          "team": "Tottenham",
           "played": 2,
           "wins": 0,
           "draws": 0,
@@ -331,6 +333,12 @@
         }
       ],
       "lastMatches": [
+        {
+          "time": "4 Sep",
+          "match": "Ipswich Town vs Liverpool",
+          "score": "0:2",
+          "status": "finished"
+        },
         {
           "time": "31 Aug",
           "match": "Aston Villa vs Arsenal",
@@ -384,52 +392,41 @@
           "match": "Bournemouth vs Everton",
           "score": "1:1",
           "status": "finished"
-        },
-        {
-          "time": "28 Aug",
-          "match": "Crystal Palace vs Man City",
-          "score": "1:4",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
         {
-          "time": "Today · 20:00",
-          "match": "Ipswich Town vs Liverpool",
-          "status": "upcoming"
-        },
-        {
-          "time": "5 Sep · 12:30",
+          "time": "Today · 12:30",
           "match": "Newcastle vs Bournemouth",
           "status": "upcoming"
         },
         {
-          "time": "5 Sep · 15:00",
+          "time": "Today · 15:00",
           "match": "Brentford vs Sunderland",
           "status": "upcoming"
         },
         {
-          "time": "5 Sep · 15:00",
+          "time": "Today · 15:00",
           "match": "Brighton vs Leeds United",
           "status": "upcoming"
         },
         {
-          "time": "5 Sep · 15:00",
+          "time": "Today · 15:00",
           "match": "Fulham vs Crystal Palace",
           "status": "upcoming"
         },
         {
-          "time": "5 Sep · 15:00",
+          "time": "Today · 15:00",
           "match": "Man City vs Coventry City",
           "status": "upcoming"
         },
         {
-          "time": "5 Sep · 15:00",
+          "time": "Today · 15:00",
           "match": "Nottm Forest vs Tottenham",
           "status": "upcoming"
         },
         {
-          "time": "5 Sep · 17:30",
+          "time": "Today · 17:30",
           "match": "Hull City vs Aston Villa",
           "status": "upcoming"
         },
