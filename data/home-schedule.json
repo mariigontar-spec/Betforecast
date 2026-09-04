@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T00:02:00+03:00",
+  "updatedAt": "2026-09-04T10:57:00+03:00",
   "featuredId": "ipswich-liverpool-sep4",
   "events": [
     {
@@ -15,10 +15,12 @@
       "stage": "Matchweek 3 opener",
       "status": "Today",
       "signals": [
-        "Liverpool drew first two league matches 2-2",
-        "Ipswich have three points",
-        "Portman Road · Friday night"
-      ]
+        "Premier League Matchweek 3 opener",
+        "Portman Road · Friday night",
+        "Kick-off 20:00 UK"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
     },
     {
       "id": "vuelta-stage-13",
