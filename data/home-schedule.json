@@ -1,52 +1,70 @@
 {
-  "updatedAt": "2026-09-04T10:57:00+03:00",
-  "featuredId": "ipswich-liverpool-sep4",
+  "updatedAt": "2026-09-05T00:05:00+03:00",
+  "featuredId": "newcastle-bournemouth-sep5",
   "events": [
     {
-      "id": "ipswich-liverpool-sep4",
+      "id": "newcastle-bournemouth-sep5",
       "type": "event",
       "sport": "Football",
-      "date": "4 Sep",
-      "time": "20:00 UK",
-      "title": "Ipswich Town vs Liverpool",
-      "home": "Ipswich Town",
-      "away": "Liverpool",
+      "date": "5 Sep",
+      "time": "12:30 UK",
+      "title": "Newcastle vs Bournemouth",
+      "home": "Newcastle",
+      "away": "Bournemouth",
       "competition": "Premier League",
-      "stage": "Matchweek 3 opener",
+      "stage": "Matchweek 3",
       "status": "Today",
       "signals": [
-        "Premier League Matchweek 3 opener",
-        "Portman Road · Friday night",
-        "Kick-off 20:00 UK"
+        "Newcastle unbeaten after two matches",
+        "Bournemouth have one point",
+        "Saturday early kickoff"
       ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
     },
     {
-      "id": "vuelta-stage-13",
+      "id": "epl-mw3-saturday",
       "type": "event",
-      "sport": "Cycling",
-      "date": "4 Sep",
-      "time": "Stage 13",
-      "title": "Vuelta: Almuñécar to Loja",
-      "home": "Almuñécar",
-      "away": "Loja",
-      "competition": "Vuelta a España",
-      "stage": "192.8 km · hilly stage",
+      "sport": "Football",
+      "date": "5 Sep",
+      "time": "15:00–17:30 UK",
+      "title": "Premier League Saturday slate",
+      "home": "Six more matches",
+      "away": "Matchweek 3",
+      "competition": "Premier League",
+      "stage": "Seven matches across the day",
       "status": "Today",
       "signals": [
-        "3,277 m elevation gain",
-        "Three categorised climbs",
-        "Mas leads Roglič by 1:45"
+        "Man City host Coventry",
+        "Brighton host Leeds",
+        "Hull host Aston Villa"
       ]
     },
     {
-      "id": "us-open-r3-sep4",
+      "id": "vuelta-stage-14",
+      "type": "event",
+      "sport": "Cycling",
+      "date": "5 Sep",
+      "time": "Stage 14",
+      "title": "Vuelta: Jaén to Sierra de la Pandera",
+      "home": "Jaén",
+      "away": "Sierra de la Pandera",
+      "competition": "Vuelta a España",
+      "stage": "152.7 km · mountain stage",
+      "status": "Today",
+      "signals": [
+        "Mountain summit test",
+        "Mas leads Roglič by 1:45",
+        "GC battle resumes"
+      ]
+    },
+    {
+      "id": "us-open-r3-sep5",
       "type": "event",
       "sport": "Tennis",
-      "date": "4 Sep",
+      "date": "5 Sep",
       "time": "Day & night",
-      "title": "US Open third round begins",
+      "title": "US Open third round continues",
       "home": "Men's singles",
       "away": "Women's singles",
       "competition": "US Open",
@@ -55,61 +73,63 @@
       "signals": [
         "Third-round sessions",
         "New York hard courts",
-        "Day and night play"
+        "Round-of-16 places at stake"
       ]
     },
     {
-      "id": "omrzel-stage12-result",
+      "id": "ipswich-liverpool-result",
       "type": "result",
-      "sport": "Cycling",
-      "date": "3 Sep",
+      "sport": "Football",
+      "date": "4 Sep",
       "time": "Final",
-      "title": "Omrzel wins Vuelta Stage 12",
-      "home": "Jakob Omrzel",
-      "away": "Urko Berrade",
-      "competition": "Vuelta a España",
-      "stage": "Vera to Calar Alto · 166.6 km",
+      "title": "Liverpool earn first league win",
+      "home": "Ipswich Town",
+      "away": "Liverpool",
+      "competition": "Premier League",
+      "stage": "Matchweek 3 · 0-2",
       "status": "Result",
       "signals": [
-        "Solo summit victory",
-        "Mas gained 27 seconds on rivals",
-        "GC lead grows to 1:45"
+        "Alexander Isak scored twice",
+        "Liverpool kept a clean sheet",
+        "First win under Andoni Iraola"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
+    },
+    {
+      "id": "van-aert-stage13-result",
+      "type": "result",
+      "sport": "Cycling",
+      "date": "4 Sep",
+      "time": "Final",
+      "title": "Van Aert wins Vuelta Stage 13",
+      "home": "Wout van Aert",
+      "away": "Valentin Paret-Peintre",
+      "competition": "Vuelta a España",
+      "stage": "Almuñécar to Loja · 192.8 km",
+      "status": "Result",
+      "signals": [
+        "Decisive attack with 4 km left",
+        "Matthew Brennan finished third",
+        "Mas retains 1:45 GC lead"
       ]
     },
     {
-      "id": "us-open-day5-results",
+      "id": "us-open-day6-results",
       "type": "result",
       "sport": "Tennis",
-      "date": "3 Sep",
-      "time": "Day 5",
-      "title": "US Open second-round results",
-      "home": "Fritz · Osaka · Świątek",
-      "away": "Third round",
+      "date": "4 Sep",
+      "time": "Day 6",
+      "title": "US Open third-round results",
+      "home": "Alcaraz · Sabalenka · Medvedev",
+      "away": "Round of 16",
       "competition": "US Open",
-      "stage": "Round 2",
+      "stage": "Round 3",
       "status": "Results",
       "signals": [
-        "Khachanov upset Auger-Aliassime",
-        "Keys saved five match points",
-        "Tiafoe won in straight sets"
-      ]
-    },
-    {
-      "id": "epl-mw3-saturday",
-      "type": "event",
-      "sport": "Football",
-      "date": "5 Sep",
-      "time": "12:30–17:30 UK",
-      "title": "Premier League Saturday slate",
-      "home": "Seven matches",
-      "away": "Matchweek 3",
-      "competition": "Premier League",
-      "stage": "Newcastle–Bournemouth leads the card",
-      "status": "Upcoming",
-      "signals": [
-        "Man City host Coventry",
-        "Brighton host Leeds",
-        "Hull host Aston Villa"
+        "Alcaraz beat Wu in straight sets",
+        "Pegula recovered to beat Fernandez",
+        "Tommy Paul won in five sets"
       ]
     },
     {
@@ -128,7 +148,9 @@
         "Both teams have six points",
         "London derby",
         "Early top-four test"
-      ]
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
     }
   ]
 }
