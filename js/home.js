@@ -32,24 +32,24 @@
 
   function updateHomepageCopy() {
     const lead = document.querySelector(".hero-lead");
-    if (lead) lead.textContent = "Premier League Matchweek 3 opens tonight with Ipswich Town against Liverpool. The Vuelta continues from Almuñécar to Loja, while the US Open begins third-round play in New York.";
+    if (lead) lead.textContent = "Seven Premier League matches lead Saturday, beginning with Newcastle against Bournemouth. The Vuelta climbs to Sierra de la Pandera, while the US Open continues its third round.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>4 Sep</strong><span>Ipswich vs Liverpool · 20:00 UK</span></div>
-        <div><strong>4 Sep</strong><span>Vuelta · Stage 13</span></div>
-        <div><strong>4 Sep</strong><span>US Open · Third round</span></div>
+        <div><strong>5 Sep</strong><span>Premier League · 7 matches</span></div>
+        <div><strong>5 Sep</strong><span>Vuelta · Stage 14</span></div>
+        <div><strong>5 Sep</strong><span>US Open · Third round</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
-    if (input) input.placeholder = "Try: Ipswich, Liverpool, US Open, Vuelta";
+    if (input) input.placeholder = "Try: Newcastle, Bournemouth, US Open, Vuelta";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Ipswich Liverpool">Ipswich–Liverpool</button>
+        <button type="button" data-query="Newcastle Bournemouth">Newcastle–Bournemouth</button>
         <button type="button" data-query="US Open">US Open</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
       `;
@@ -57,10 +57,10 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=ipswich-liverpool-sep4", title: "Ipswich Town vs Liverpool", detail: "4 September · Premier League · 20:00 UK", tag: "Football" },
-      { href: "match.html?id=vuelta-stage-13", title: "Vuelta Stage 13 · Almuñécar to Loja", detail: "4 September · 192.8 km hilly stage", tag: "Cycling" },
-      { href: "match.html?id=us-open-r3-sep4", title: "US Open · Third round begins", detail: "4 September · day and night sessions", tag: "Tennis" },
-      { href: "standings.html", title: "Premier League · Matchweek 3", detail: "Table, recent results and full upcoming slate", tag: "Table" }
+      { href: "match.html?id=newcastle-bournemouth-sep5", title: "Newcastle vs Bournemouth", detail: "5 September · Premier League · 12:30 UK", tag: "Football" },
+      { href: "match.html?id=vuelta-stage-14", title: "Vuelta Stage 14 · Sierra de la Pandera", detail: "5 September · 152.7 km mountain stage", tag: "Cycling" },
+      { href: "match.html?id=us-open-r3-sep5", title: "US Open · Third round continues", detail: "5 September · last-16 places at stake", tag: "Tennis" },
+      { href: "standings.html", title: "Premier League · Matchweek 3", detail: "Liverpool fifth after first win", tag: "Table" }
     ];
 
     lines.forEach((line, index) => {
