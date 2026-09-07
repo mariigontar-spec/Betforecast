@@ -1,156 +1,152 @@
 {
-  "updatedAt": "2026-09-05T00:05:00+03:00",
-  "featuredId": "newcastle-bournemouth-sep5",
+  "updatedAt": "2026-09-07T23:58:00+03:00",
+  "featuredId": "arsenal-chelsea-result",
   "events": [
     {
-      "id": "newcastle-bournemouth-sep5",
-      "type": "event",
-      "sport": "Football",
-      "date": "5 Sep",
-      "time": "12:30 UK",
-      "title": "Newcastle vs Bournemouth",
-      "home": "Newcastle",
-      "away": "Bournemouth",
-      "competition": "Premier League",
-      "stage": "Matchweek 3",
-      "status": "Today",
-      "signals": [
-        "Newcastle unbeaten after two matches",
-        "Bournemouth have one point",
-        "Saturday early kickoff"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
-    },
-    {
-      "id": "epl-mw3-saturday",
-      "type": "event",
-      "sport": "Football",
-      "date": "5 Sep",
-      "time": "15:00–17:30 UK",
-      "title": "Premier League Saturday slate",
-      "home": "Six more matches",
-      "away": "Matchweek 3",
-      "competition": "Premier League",
-      "stage": "Seven matches across the day",
-      "status": "Today",
-      "signals": [
-        "Man City host Coventry",
-        "Brighton host Leeds",
-        "Hull host Aston Villa"
-      ]
-    },
-    {
-      "id": "vuelta-stage-14",
-      "type": "event",
-      "sport": "Cycling",
-      "date": "5 Sep",
-      "time": "Stage 14",
-      "title": "Vuelta: Jaén to Sierra de la Pandera",
-      "home": "Jaén",
-      "away": "Sierra de la Pandera",
-      "competition": "Vuelta a España",
-      "stage": "152.7 km · mountain stage",
-      "status": "Today",
-      "signals": [
-        "Mountain summit test",
-        "Mas leads Roglič by 1:45",
-        "GC battle resumes"
-      ]
-    },
-    {
-      "id": "us-open-r3-sep5",
-      "type": "event",
-      "sport": "Tennis",
-      "date": "5 Sep",
-      "time": "Day & night",
-      "title": "US Open third round continues",
-      "home": "Men's singles",
-      "away": "Women's singles",
-      "competition": "US Open",
-      "stage": "Round 3",
-      "status": "Today",
-      "signals": [
-        "Third-round sessions",
-        "New York hard courts",
-        "Round-of-16 places at stake"
-      ]
-    },
-    {
-      "id": "ipswich-liverpool-result",
+      "id": "arsenal-chelsea-result",
       "type": "result",
-      "sport": "Football",
-      "date": "4 Sep",
-      "time": "Final",
-      "title": "Liverpool earn first league win",
-      "home": "Ipswich Town",
-      "away": "Liverpool",
-      "competition": "Premier League",
-      "stage": "Matchweek 3 · 0-2",
-      "status": "Result",
-      "signals": [
-        "Alexander Isak scored twice",
-        "Liverpool kept a clean sheet",
-        "First win under Andoni Iraola"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
-    },
-    {
-      "id": "van-aert-stage13-result",
-      "type": "result",
-      "sport": "Cycling",
-      "date": "4 Sep",
-      "time": "Final",
-      "title": "Van Aert wins Vuelta Stage 13",
-      "home": "Wout van Aert",
-      "away": "Valentin Paret-Peintre",
-      "competition": "Vuelta a España",
-      "stage": "Almuñécar to Loja · 192.8 km",
-      "status": "Result",
-      "signals": [
-        "Decisive attack with 4 km left",
-        "Matthew Brennan finished third",
-        "Mas retains 1:45 GC lead"
-      ]
-    },
-    {
-      "id": "us-open-day6-results",
-      "type": "result",
-      "sport": "Tennis",
-      "date": "4 Sep",
-      "time": "Day 6",
-      "title": "US Open third-round results",
-      "home": "Alcaraz · Sabalenka · Medvedev",
-      "away": "Round of 16",
-      "competition": "US Open",
-      "stage": "Round 3",
-      "status": "Results",
-      "signals": [
-        "Alcaraz beat Wu in straight sets",
-        "Pegula recovered to beat Fernandez",
-        "Tommy Paul won in five sets"
-      ]
-    },
-    {
-      "id": "arsenal-chelsea-sep6",
-      "type": "event",
       "sport": "Football",
       "date": "6 Sep",
-      "time": "16:30 UK",
-      "title": "Arsenal vs Chelsea",
+      "time": "Final",
+      "title": "Arsenal 2-1 Chelsea",
       "home": "Arsenal",
       "away": "Chelsea",
       "competition": "Premier League",
-      "stage": "Matchweek 3",
-      "status": "Upcoming",
+      "stage": "Matchweek 3 · Arsenal won 2-1",
+      "status": "Result",
       "signals": [
-        "Both teams have six points",
-        "London derby",
-        "Early top-four test"
+        "Arsenal: three wins from three",
+        "Chelsea's first league defeat",
+        "Ødegaard scored the winner"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
+    },
+    {
+      "id": "us-open-r16-sep7",
+      "type": "event",
+      "sport": "Tennis",
+      "date": "7 Sep",
+      "time": "Day & night",
+      "title": "US Open fourth round",
+      "home": "Men's singles",
+      "away": "Women's singles",
+      "competition": "US Open",
+      "stage": "Round of 16 · quarter-final places at stake",
+      "status": "Today",
+      "signals": [
+        "Zheng beat Świątek 7-5, 6-3",
+        "Andreeva won in three sets",
+        "Evening session still in progress"
+      ]
+    },
+    {
+      "id": "vuelta-rest-sep7",
+      "type": "event",
+      "sport": "Cycling",
+      "date": "7 Sep",
+      "time": "Rest day",
+      "title": "Vuelta second rest day",
+      "home": "Peloton",
+      "away": "Final week",
+      "competition": "Vuelta a España",
+      "stage": "Rest day before Stage 16",
+      "status": "Today",
+      "signals": [
+        "Enric Mas leads by 2:06",
+        "Felix Gall is second",
+        "Stage 16 starts Tuesday"
+      ]
+    },
+    {
+      "id": "epl-mw3-results",
+      "type": "result",
+      "sport": "Football",
+      "date": "4–6 Sep",
+      "time": "Final",
+      "title": "Premier League Matchweek 3 complete",
+      "home": "Manchester City",
+      "away": "Arsenal",
+      "competition": "Premier League",
+      "stage": "Both clubs have nine points from three matches",
+      "status": "Results",
+      "signals": [
+        "City beat Coventry 1-0",
+        "Arsenal beat Chelsea 2-1",
+        "Hull remain unbeaten in third"
+      ]
+    },
+    {
+      "id": "vuelta-stage15-result",
+      "type": "result",
+      "sport": "Cycling",
+      "date": "6 Sep",
+      "time": "Final",
+      "title": "Van Aert wins Vuelta Stage 15",
+      "home": "Wout van Aert",
+      "away": "Breakaway",
+      "competition": "Vuelta a España",
+      "stage": "Palma del Río to Córdoba · shortened to 110.2 km",
+      "status": "Result",
+      "signals": [
+        "Second stage win in three days",
+        "Five-rider sprint decided the stage",
+        "Mas retained the red jersey"
+      ]
+    },
+    {
+      "id": "us-open-sep7-results",
+      "type": "result",
+      "sport": "Tennis",
+      "date": "7 Sep",
+      "time": "Round of 16",
+      "title": "Zheng and Andreeva reach quarter-finals",
+      "home": "Zheng Qinwen",
+      "away": "Mirra Andreeva",
+      "competition": "US Open",
+      "stage": "Women's singles · confirmed results",
+      "status": "Results",
+      "signals": [
+        "Zheng beat Świątek 7-5, 6-3",
+        "Andreeva beat Potapova in three",
+        "Pegula also reached the last eight"
+      ]
+    },
+    {
+      "id": "vuelta-stage16-sep8",
+      "type": "event",
+      "sport": "Cycling",
+      "date": "8 Sep",
+      "time": "13:05 local",
+      "title": "Vuelta Stage 16",
+      "home": "Cortegana",
+      "away": "La Rábida",
+      "competition": "Vuelta a España",
+      "stage": "181.1 km · hilly",
+      "status": "Upcoming",
+      "signals": [
+        "Final week resumes",
+        "Hilly 181.1 km route",
+        "Expected finish around 17:19"
+      ]
+    },
+    {
+      "id": "epl-mw4-sep12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Sep",
+      "time": "From 15:00 UK",
+      "title": "Premier League Matchweek 4",
+      "home": "Ten fixtures",
+      "away": "12–14 September",
+      "competition": "Premier League",
+      "stage": "Next league round",
+      "status": "Upcoming",
+      "signals": [
+        "Liverpool host Fulham",
+        "Chelsea host Hull",
+        "Manchester derby on Sunday"
+      ]
     }
   ]
 }
