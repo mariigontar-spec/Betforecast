@@ -32,24 +32,24 @@
 
   function updateHomepageCopy() {
     const lead = document.querySelector(".hero-lead");
-    if (lead) lead.textContent = "Manchester City and Arsenal lead the Premier League after three rounds. The US Open fourth round continues, while the Vuelta pauses before Tuesday’s Stage 16.";
+    if (lead) lead.textContent = "Liverpool–Atlético and Napoli–Arsenal headline Wednesday’s Champions League schedule. The Vuelta races to Sevilla, while the US Open quarter-finals continue.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>7 Sep</strong><span>US Open · Fourth round</span></div>
-        <div><strong>7 Sep</strong><span>Vuelta · Rest day</span></div>
-        <div><strong>8 Sep</strong><span>Vuelta · Stage 16</span></div>
+        <div><strong>9 Sep</strong><span>Champions League · 6 fixtures</span></div>
+        <div><strong>9 Sep</strong><span>Vuelta · Stage 17</span></div>
+        <div><strong>9 Sep</strong><span>US Open · Quarter-finals</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
-    if (input) input.placeholder = "Try: Arsenal, US Open, Vuelta, Premier League";
+    if (input) input.placeholder = "Try: Liverpool, Arsenal, US Open, Vuelta";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Arsenal Chelsea">Arsenal–Chelsea</button>
+        <button type="button" data-query="Liverpool Atletico">Liverpool–Atlético</button>
         <button type="button" data-query="US Open">US Open</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
       `;
@@ -57,10 +57,10 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=us-open-r16-sep7", title: "US Open · Fourth round", detail: "7 September · quarter-final places", tag: "Tennis" },
-      { href: "match.html?id=vuelta-rest-sep7", title: "Vuelta · Second rest day", detail: "7 September · Stage 16 follows Tuesday", tag: "Cycling" },
-      { href: "results.html", title: "Arsenal 2-1 Chelsea", detail: "6 September · Premier League", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 3 complete", detail: "City and Arsenal lead with nine points", tag: "Table" }
+      { href: "match.html?id=liverpool-atletico-sep9", title: "Liverpool vs Atlético Madrid", detail: "9 September · Champions League · 20:00 UK", tag: "Football" },
+      { href: "match.html?id=vuelta-stage17-sep9", title: "Vuelta Stage 17 · Sevilla", detail: "9 September · 185 km flat stage", tag: "Cycling" },
+      { href: "match.html?id=us-open-qf-sep9", title: "US Open · Quarter-finals", detail: "9 September · semi-final places", tag: "Tennis" },
+      { href: "standings.html", title: "Premier League · Matchweek 3", detail: "Table verified; next round starts 12 September", tag: "Table" }
     ];
 
     lines.forEach((line, index) => {
