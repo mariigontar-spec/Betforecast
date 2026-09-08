@@ -1,151 +1,151 @@
 {
-  "updatedAt": "2026-09-07T23:58:00+03:00",
-  "featuredId": "arsenal-chelsea-result",
+  "updatedAt": "2026-09-09T00:03:00+03:00",
+  "featuredId": "liverpool-atletico-sep9",
   "events": [
     {
-      "id": "arsenal-chelsea-result",
-      "type": "result",
+      "id": "liverpool-atletico-sep9",
+      "type": "event",
       "sport": "Football",
-      "date": "6 Sep",
-      "time": "Final",
-      "title": "Arsenal 2-1 Chelsea",
-      "home": "Arsenal",
-      "away": "Chelsea",
-      "competition": "Premier League",
-      "stage": "Matchweek 3 · Arsenal won 2-1",
-      "status": "Result",
+      "date": "9 Sep",
+      "time": "20:00 UK",
+      "title": "Liverpool vs Atlético Madrid",
+      "home": "Liverpool",
+      "away": "Atlético Madrid",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 1",
+      "status": "Today",
       "signals": [
-        "Arsenal: three wins from three",
-        "Chelsea's first league defeat",
-        "Ødegaard scored the winner"
+        "Liverpool's European opener",
+        "At Anfield",
+        "League phase begins"
       ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://upload.wikimedia.org/wikipedia/en/f/f4/Atletico_Madrid_2017_logo.svg"
     },
     {
-      "id": "us-open-r16-sep7",
+      "id": "ucl-sep9-slate",
+      "type": "event",
+      "sport": "Football",
+      "date": "9 Sep",
+      "time": "17:45–20:00 UK",
+      "title": "Champions League Wednesday slate",
+      "home": "Six fixtures",
+      "away": "Matchday 1",
+      "competition": "UEFA Champions League",
+      "stage": "Barcelona–Feyenoord, Liverpool–Atlético, Napoli–Arsenal and more",
+      "status": "Today",
+      "signals": [
+        "Barcelona host Feyenoord",
+        "Napoli host Arsenal",
+        "PSG host Slovan Bratislava"
+      ]
+    },
+    {
+      "id": "vuelta-stage17-sep9",
+      "type": "event",
+      "sport": "Cycling",
+      "date": "9 Sep",
+      "time": "Stage 17",
+      "title": "Vuelta Stage 17",
+      "home": "Dos Hermanas",
+      "away": "Sevilla",
+      "competition": "Vuelta a España",
+      "stage": "185 km · flat",
+      "status": "Today",
+      "signals": [
+        "Expected sprint stage",
+        "Mas leads by 2:06",
+        "Final-week racing"
+      ]
+    },
+    {
+      "id": "us-open-qf-sep9",
       "type": "event",
       "sport": "Tennis",
-      "date": "7 Sep",
+      "date": "9 Sep",
       "time": "Day & night",
-      "title": "US Open fourth round",
+      "title": "US Open quarter-finals continue",
       "home": "Men's singles",
       "away": "Women's singles",
       "competition": "US Open",
-      "stage": "Round of 16 · quarter-final places at stake",
+      "stage": "Quarter-finals",
       "status": "Today",
       "signals": [
-        "Zheng beat Świątek 7-5, 6-3",
-        "Andreeva won in three sets",
-        "Evening session still in progress"
+        "Gauff faces Andreeva",
+        "Rybakina faces Zheng",
+        "Zverev targets the semi-finals"
       ]
     },
     {
-      "id": "vuelta-rest-sep7",
-      "type": "event",
-      "sport": "Cycling",
-      "date": "7 Sep",
-      "time": "Rest day",
-      "title": "Vuelta second rest day",
-      "home": "Peloton",
-      "away": "Final week",
-      "competition": "Vuelta a España",
-      "stage": "Rest day before Stage 16",
-      "status": "Today",
-      "signals": [
-        "Enric Mas leads by 2:06",
-        "Felix Gall is second",
-        "Stage 16 starts Tuesday"
-      ]
-    },
-    {
-      "id": "epl-mw3-results",
+      "id": "ucl-sep8-results",
       "type": "result",
       "sport": "Football",
-      "date": "4–6 Sep",
+      "date": "8 Sep",
       "time": "Final",
-      "title": "Premier League Matchweek 3 complete",
-      "home": "Manchester City",
-      "away": "Arsenal",
-      "competition": "Premier League",
-      "stage": "Both clubs have nine points from three matches",
+      "title": "Champions League opening results",
+      "home": "Real Madrid · Man City",
+      "away": "Wins",
+      "competition": "UEFA Champions League",
+      "stage": "Matchday 1",
       "status": "Results",
       "signals": [
-        "City beat Coventry 1-0",
-        "Arsenal beat Chelsea 2-1",
-        "Hull remain unbeaten in third"
+        "Real Madrid 2-1 Inter",
+        "Manchester City 2-0 Porto",
+        "Aston Villa 3-2 Club Brugge"
       ]
     },
     {
-      "id": "vuelta-stage15-result",
+      "id": "brennan-stage16-result",
       "type": "result",
-      "sport": "Cycling",
-      "date": "6 Sep",
-      "time": "Final",
-      "title": "Van Aert wins Vuelta Stage 15",
-      "home": "Wout van Aert",
-      "away": "Breakaway",
-      "competition": "Vuelta a España",
-      "stage": "Palma del Río to Córdoba · shortened to 110.2 km",
-      "status": "Result",
-      "signals": [
-        "Second stage win in three days",
-        "Five-rider sprint decided the stage",
-        "Mas retained the red jersey"
-      ]
-    },
-    {
-      "id": "us-open-sep7-results",
-      "type": "result",
-      "sport": "Tennis",
-      "date": "7 Sep",
-      "time": "Round of 16",
-      "title": "Zheng and Andreeva reach quarter-finals",
-      "home": "Zheng Qinwen",
-      "away": "Mirra Andreeva",
-      "competition": "US Open",
-      "stage": "Women's singles · confirmed results",
-      "status": "Results",
-      "signals": [
-        "Zheng beat Świątek 7-5, 6-3",
-        "Andreeva beat Potapova in three",
-        "Pegula also reached the last eight"
-      ]
-    },
-    {
-      "id": "vuelta-stage16-sep8",
-      "type": "event",
       "sport": "Cycling",
       "date": "8 Sep",
-      "time": "13:05 local",
-      "title": "Vuelta Stage 16",
-      "home": "Cortegana",
-      "away": "La Rábida",
+      "time": "Final",
+      "title": "Brennan wins Vuelta Stage 16",
+      "home": "Matthew Brennan",
+      "away": "Bryan Coquard",
       "competition": "Vuelta a España",
-      "stage": "181.1 km · hilly",
-      "status": "Upcoming",
+      "stage": "Cortegana to La Rábida · 181.1 km",
+      "status": "Result",
       "signals": [
-        "Final week resumes",
-        "Hilly 181.1 km route",
-        "Expected finish around 17:19"
+        "Fourth stage win of the race",
+        "Coquard finished second",
+        "Mas retained 2:06 GC lead"
       ]
     },
     {
-      "id": "epl-mw4-sep12",
+      "id": "us-open-qf-results-sep8",
+      "type": "result",
+      "sport": "Tennis",
+      "date": "8 Sep",
+      "time": "Quarter-finals",
+      "title": "Sabalenka and Michelsen reach semi-finals",
+      "home": "Aryna Sabalenka",
+      "away": "Alex Michelsen",
+      "competition": "US Open",
+      "stage": "Confirmed quarter-final results",
+      "status": "Results",
+      "signals": [
+        "Sabalenka beat Noskova in three sets",
+        "Michelsen beat Tiafoe in straight sets",
+        "Remaining matches were still in progress"
+      ]
+    },
+    {
+      "id": "ucl-sep10",
       "type": "event",
       "sport": "Football",
-      "date": "12 Sep",
-      "time": "From 15:00 UK",
-      "title": "Premier League Matchweek 4",
-      "home": "Ten fixtures",
-      "away": "12–14 September",
-      "competition": "Premier League",
-      "stage": "Next league round",
+      "date": "10 Sep",
+      "time": "17:45–20:00 UK",
+      "title": "Champions League Thursday slate",
+      "home": "Six fixtures",
+      "away": "Matchday 1",
+      "competition": "UEFA Champions League",
+      "stage": "Bayern–Bodø/Glimt, Man United–Sabah and more",
       "status": "Upcoming",
       "signals": [
-        "Liverpool host Fulham",
-        "Chelsea host Hull",
-        "Manchester derby on Sunday"
+        "Manchester United return to Europe",
+        "Bayern host Bodø/Glimt",
+        "Six final Matchday 1 fixtures"
       ]
     }
   ]
