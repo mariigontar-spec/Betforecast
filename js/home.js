@@ -32,34 +32,34 @@
 
   function updateHomepageCopy() {
     const lead = document.querySelector(".hero-lead");
-    if (lead) lead.textContent = "Liverpool–Atlético and Napoli–Arsenal headline Wednesday’s Champions League schedule. The Vuelta races to Sevilla, while the US Open quarter-finals continue.";
+    if (lead) lead.textContent = "The US Open women’s semi-finals headline Thursday, while the Champions League concludes Matchday 1 and the Vuelta holds a decisive individual time trial.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>9 Sep</strong><span>Champions League · 6 fixtures</span></div>
-        <div><strong>9 Sep</strong><span>Vuelta · Stage 17</span></div>
-        <div><strong>9 Sep</strong><span>US Open · Quarter-finals</span></div>
+        <div><strong>10 Sep</strong><span>US Open · Women's semi-finals</span></div>
+        <div><strong>10 Sep</strong><span>Champions League · 6 fixtures</span></div>
+        <div><strong>10 Sep</strong><span>Vuelta · 32.1 km time trial</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
-    if (input) input.placeholder = "Try: Liverpool, Arsenal, US Open, Vuelta";
+    if (input) input.placeholder = "Try: Gauff, Rybakina, Champions League, Vuelta";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Liverpool Atletico">Liverpool–Atlético</button>
-        <button type="button" data-query="US Open">US Open</button>
+        <button type="button" data-query="Gauff Rybakina">Gauff–Rybakina</button>
+        <button type="button" data-query="Champions League">Champions League</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=liverpool-atletico-sep9", title: "Liverpool vs Atlético Madrid", detail: "9 September · Champions League · 20:00 UK", tag: "Football" },
-      { href: "match.html?id=vuelta-stage17-sep9", title: "Vuelta Stage 17 · Sevilla", detail: "9 September · 185 km flat stage", tag: "Cycling" },
-      { href: "match.html?id=us-open-qf-sep9", title: "US Open · Quarter-finals", detail: "9 September · semi-final places", tag: "Tennis" },
+      { href: "match.html?id=gauff-rybakina-sep10", title: "Gauff vs Rybakina", detail: "10 September · US Open semi-final", tag: "Tennis" },
+      { href: "match.html?id=ucl-sep10", title: "Champions League · Thursday slate", detail: "10 September · six Matchday 1 fixtures", tag: "Football" },
+      { href: "match.html?id=vuelta-stage18-sep10", title: "Vuelta Stage 18 · Time trial", detail: "10 September · 32.1 km", tag: "Cycling" },
       { href: "standings.html", title: "Premier League · Matchweek 3", detail: "Table verified; next round starts 12 September", tag: "Table" }
     ];
 
