@@ -1,133 +1,43 @@
 {
-  "updatedAt": "2026-09-09T00:03:00+03:00",
-  "featuredId": "liverpool-atletico-sep9",
+  "updatedAt": "2026-09-10T00:01:00+03:00",
+  "featuredId": "gauff-rybakina-sep10",
   "events": [
     {
-      "id": "liverpool-atletico-sep9",
+      "id": "gauff-rybakina-sep10",
       "type": "event",
-      "sport": "Football",
-      "date": "9 Sep",
-      "time": "20:00 UK",
-      "title": "Liverpool vs Atlético Madrid",
-      "home": "Liverpool",
-      "away": "Atlético Madrid",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 1",
+      "sport": "Tennis",
+      "date": "10 Sep",
+      "time": "Evening session",
+      "title": "Coco Gauff vs Elena Rybakina",
+      "home": "Coco Gauff",
+      "away": "Elena Rybakina",
+      "competition": "US Open",
+      "stage": "Women's singles semi-final",
       "status": "Today",
       "signals": [
-        "Liverpool's European opener",
-        "At Anfield",
-        "League phase begins"
+        "Gauff saved two match points in the quarter-final",
+        "Rybakina will become world No. 1",
+        "A place in Saturday's final"
       ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://upload.wikimedia.org/wikipedia/en/f/f4/Atletico_Madrid_2017_logo.svg"
+      "homeLogo": "https://flagcdn.com/w160/us.png",
+      "awayLogo": "https://flagcdn.com/w160/kz.png"
     },
     {
-      "id": "ucl-sep9-slate",
-      "type": "event",
-      "sport": "Football",
-      "date": "9 Sep",
-      "time": "17:45–20:00 UK",
-      "title": "Champions League Wednesday slate",
-      "home": "Six fixtures",
-      "away": "Matchday 1",
-      "competition": "UEFA Champions League",
-      "stage": "Barcelona–Feyenoord, Liverpool–Atlético, Napoli–Arsenal and more",
-      "status": "Today",
-      "signals": [
-        "Barcelona host Feyenoord",
-        "Napoli host Arsenal",
-        "PSG host Slovan Bratislava"
-      ]
-    },
-    {
-      "id": "vuelta-stage17-sep9",
-      "type": "event",
-      "sport": "Cycling",
-      "date": "9 Sep",
-      "time": "Stage 17",
-      "title": "Vuelta Stage 17",
-      "home": "Dos Hermanas",
-      "away": "Sevilla",
-      "competition": "Vuelta a España",
-      "stage": "185 km · flat",
-      "status": "Today",
-      "signals": [
-        "Expected sprint stage",
-        "Mas leads by 2:06",
-        "Final-week racing"
-      ]
-    },
-    {
-      "id": "us-open-qf-sep9",
+      "id": "sabalenka-pegula-sep10",
       "type": "event",
       "sport": "Tennis",
-      "date": "9 Sep",
-      "time": "Day & night",
-      "title": "US Open quarter-finals continue",
-      "home": "Men's singles",
-      "away": "Women's singles",
-      "competition": "US Open",
-      "stage": "Quarter-finals",
-      "status": "Today",
-      "signals": [
-        "Gauff faces Andreeva",
-        "Rybakina faces Zheng",
-        "Zverev targets the semi-finals"
-      ]
-    },
-    {
-      "id": "ucl-sep8-results",
-      "type": "result",
-      "sport": "Football",
-      "date": "8 Sep",
-      "time": "Final",
-      "title": "Champions League opening results",
-      "home": "Real Madrid · Man City",
-      "away": "Wins",
-      "competition": "UEFA Champions League",
-      "stage": "Matchday 1",
-      "status": "Results",
-      "signals": [
-        "Real Madrid 2-1 Inter",
-        "Manchester City 2-0 Porto",
-        "Aston Villa 3-2 Club Brugge"
-      ]
-    },
-    {
-      "id": "brennan-stage16-result",
-      "type": "result",
-      "sport": "Cycling",
-      "date": "8 Sep",
-      "time": "Final",
-      "title": "Brennan wins Vuelta Stage 16",
-      "home": "Matthew Brennan",
-      "away": "Bryan Coquard",
-      "competition": "Vuelta a España",
-      "stage": "Cortegana to La Rábida · 181.1 km",
-      "status": "Result",
-      "signals": [
-        "Fourth stage win of the race",
-        "Coquard finished second",
-        "Mas retained 2:06 GC lead"
-      ]
-    },
-    {
-      "id": "us-open-qf-results-sep8",
-      "type": "result",
-      "sport": "Tennis",
-      "date": "8 Sep",
-      "time": "Quarter-finals",
-      "title": "Sabalenka and Michelsen reach semi-finals",
+      "date": "10 Sep",
+      "time": "Evening session",
+      "title": "Aryna Sabalenka vs Jessica Pegula",
       "home": "Aryna Sabalenka",
-      "away": "Alex Michelsen",
+      "away": "Jessica Pegula",
       "competition": "US Open",
-      "stage": "Confirmed quarter-final results",
-      "status": "Results",
+      "stage": "Women's singles semi-final",
+      "status": "Today",
       "signals": [
-        "Sabalenka beat Noskova in three sets",
-        "Michelsen beat Tiafoe in straight sets",
-        "Remaining matches were still in progress"
+        "Rematch of the 2024 final",
+        "Pegula's 50th win of 2026",
+        "Sabalenka seeks a third straight title"
       ]
     },
     {
@@ -140,12 +50,102 @@
       "home": "Six fixtures",
       "away": "Matchday 1",
       "competition": "UEFA Champions League",
-      "stage": "Bayern–Bodø/Glimt, Man United–Sabah and more",
-      "status": "Upcoming",
+      "stage": "Bayern–Bodø/Glimt, Man United–Sabah and four more",
+      "status": "Today",
       "signals": [
         "Manchester United return to Europe",
         "Bayern host Bodø/Glimt",
-        "Six final Matchday 1 fixtures"
+        "Matchday 1 concludes"
+      ]
+    },
+    {
+      "id": "vuelta-stage18-sep10",
+      "type": "event",
+      "sport": "Cycling",
+      "date": "10 Sep",
+      "time": "Stage 18",
+      "title": "Vuelta individual time trial",
+      "home": "El Puerto de Santa María",
+      "away": "Jerez de la Frontera",
+      "competition": "Vuelta a España",
+      "stage": "32.1 km · individual time trial",
+      "status": "Today",
+      "signals": [
+        "Key general-classification test",
+        "Mas leads Gall by 2:06",
+        "Roglič is third at 2:10"
+      ]
+    },
+    {
+      "id": "ucl-sep9-results",
+      "type": "result",
+      "sport": "Football",
+      "date": "9 Sep",
+      "time": "Final",
+      "title": "Champions League Wednesday results",
+      "home": "Liverpool · Arsenal · Barcelona",
+      "away": "Wins",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 1",
+      "status": "Results",
+      "signals": [
+        "Liverpool 2-1 Atlético",
+        "Napoli 0-1 Arsenal",
+        "Barcelona 5-1 Feyenoord"
+      ]
+    },
+    {
+      "id": "brennan-stage17-result",
+      "type": "result",
+      "sport": "Cycling",
+      "date": "9 Sep",
+      "time": "Final",
+      "title": "Brennan wins Vuelta Stage 17",
+      "home": "Matthew Brennan",
+      "away": "Jordi Meeus",
+      "competition": "Vuelta a España",
+      "stage": "Dos Hermanas to Sevilla · 185 km",
+      "status": "Result",
+      "signals": [
+        "Fifth stage win of the race",
+        "Meeus finished second",
+        "Mas retained the red jersey"
+      ]
+    },
+    {
+      "id": "us-open-qf-results-sep9",
+      "type": "result",
+      "sport": "Tennis",
+      "date": "9 Sep",
+      "time": "Quarter-finals",
+      "title": "Gauff and Rybakina reach semi-finals",
+      "home": "Coco Gauff",
+      "away": "Elena Rybakina",
+      "competition": "US Open",
+      "stage": "Confirmed women's quarter-final results",
+      "status": "Results",
+      "signals": [
+        "Gauff beat Andreeva in three sets",
+        "Rybakina beat Zheng in three",
+        "Pegula also reached the semi-finals"
+      ]
+    },
+    {
+      "id": "epl-mw4-sep12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Sep",
+      "time": "From 15:00 UK",
+      "title": "Premier League Matchweek 4",
+      "home": "Ten fixtures",
+      "away": "12–14 September",
+      "competition": "Premier League",
+      "stage": "Next league round",
+      "status": "Upcoming",
+      "signals": [
+        "Liverpool host Fulham",
+        "Chelsea host Hull",
+        "Manchester derby on Sunday"
       ]
     }
   ]
