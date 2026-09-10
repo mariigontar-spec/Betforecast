@@ -1,134 +1,52 @@
 {
-  "updatedAt": "2026-09-10T00:01:00+03:00",
-  "featuredId": "gauff-rybakina-sep10",
+  "updatedAt": "2026-09-11T00:01:00+03:00",
+  "featuredId": "zverev-khachanov-sep11",
   "events": [
     {
-      "id": "gauff-rybakina-sep10",
+      "id": "zverev-khachanov-sep11",
       "type": "event",
       "sport": "Tennis",
-      "date": "10 Sep",
-      "time": "Evening session",
-      "title": "Coco Gauff vs Elena Rybakina",
-      "home": "Coco Gauff",
-      "away": "Elena Rybakina",
+      "date": "11 Sep",
+      "time": "Friday session",
+      "title": "Alexander Zverev vs Karen Khachanov",
+      "home": "Alexander Zverev",
+      "away": "Karen Khachanov",
       "competition": "US Open",
-      "stage": "Women's singles semi-final",
+      "stage": "Men's singles semi-final",
       "status": "Today",
-      "signals": [
-        "Gauff saved two match points in the quarter-final",
-        "Rybakina will become world No. 1",
-        "A place in Saturday's final"
-      ],
+      "signals": ["Zverev reached all four major semi-finals in 2026", "Khachanov returns to the US Open last four", "A place in Sunday's final"],
+      "homeLogo": "https://flagcdn.com/w160/de.png",
+      "awayLogo": "https://flagcdn.com/w160/ru.png"
+    },
+    {
+      "id": "shelton-tiafoe-sep11",
+      "type": "event",
+      "sport": "Tennis",
+      "date": "11 Sep",
+      "time": "Friday session",
+      "title": "Ben Shelton vs Frances Tiafoe",
+      "home": "Ben Shelton",
+      "away": "Frances Tiafoe",
+      "competition": "US Open",
+      "stage": "Men's singles semi-final",
+      "status": "Today",
+      "signals": ["All-American semi-final", "Shelton beat defending champion Carlos Alcaraz", "Tiafoe reached his third US Open semi-final"],
       "homeLogo": "https://flagcdn.com/w160/us.png",
-      "awayLogo": "https://flagcdn.com/w160/kz.png"
+      "awayLogo": "https://flagcdn.com/w160/us.png"
     },
     {
-      "id": "sabalenka-pegula-sep10",
-      "type": "event",
-      "sport": "Tennis",
-      "date": "10 Sep",
-      "time": "Evening session",
-      "title": "Aryna Sabalenka vs Jessica Pegula",
-      "home": "Aryna Sabalenka",
-      "away": "Jessica Pegula",
-      "competition": "US Open",
-      "stage": "Women's singles semi-final",
-      "status": "Today",
-      "signals": [
-        "Rematch of the 2024 final",
-        "Pegula's 50th win of 2026",
-        "Sabalenka seeks a third straight title"
-      ]
-    },
-    {
-      "id": "ucl-sep10",
-      "type": "event",
-      "sport": "Football",
-      "date": "10 Sep",
-      "time": "17:45–20:00 UK",
-      "title": "Champions League Thursday slate",
-      "home": "Six fixtures",
-      "away": "Matchday 1",
-      "competition": "UEFA Champions League",
-      "stage": "Bayern–Bodø/Glimt, Man United–Sabah and four more",
-      "status": "Today",
-      "signals": [
-        "Manchester United return to Europe",
-        "Bayern host Bodø/Glimt",
-        "Matchday 1 concludes"
-      ]
-    },
-    {
-      "id": "vuelta-stage18-sep10",
+      "id": "vuelta-stage19-sep11",
       "type": "event",
       "sport": "Cycling",
-      "date": "10 Sep",
-      "time": "Stage 18",
-      "title": "Vuelta individual time trial",
-      "home": "El Puerto de Santa María",
-      "away": "Jerez de la Frontera",
+      "date": "11 Sep",
+      "time": "Stage 19",
+      "title": "Vuelta Stage 19",
+      "home": "Vélez-Málaga",
+      "away": "Peñas Blancas, Estepona",
       "competition": "Vuelta a España",
-      "stage": "32.1 km · individual time trial",
+      "stage": "210.8 km · hilly · uphill finish",
       "status": "Today",
-      "signals": [
-        "Key general-classification test",
-        "Mas leads Gall by 2:06",
-        "Roglič is third at 2:10"
-      ]
-    },
-    {
-      "id": "ucl-sep9-results",
-      "type": "result",
-      "sport": "Football",
-      "date": "9 Sep",
-      "time": "Final",
-      "title": "Champions League Wednesday results",
-      "home": "Liverpool · Arsenal · Barcelona",
-      "away": "Wins",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 1",
-      "status": "Results",
-      "signals": [
-        "Liverpool 2-1 Atlético",
-        "Napoli 0-1 Arsenal",
-        "Barcelona 5-1 Feyenoord"
-      ]
-    },
-    {
-      "id": "brennan-stage17-result",
-      "type": "result",
-      "sport": "Cycling",
-      "date": "9 Sep",
-      "time": "Final",
-      "title": "Brennan wins Vuelta Stage 17",
-      "home": "Matthew Brennan",
-      "away": "Jordi Meeus",
-      "competition": "Vuelta a España",
-      "stage": "Dos Hermanas to Sevilla · 185 km",
-      "status": "Result",
-      "signals": [
-        "Fifth stage win of the race",
-        "Meeus finished second",
-        "Mas retained the red jersey"
-      ]
-    },
-    {
-      "id": "us-open-qf-results-sep9",
-      "type": "result",
-      "sport": "Tennis",
-      "date": "9 Sep",
-      "time": "Quarter-finals",
-      "title": "Gauff and Rybakina reach semi-finals",
-      "home": "Coco Gauff",
-      "away": "Elena Rybakina",
-      "competition": "US Open",
-      "stage": "Confirmed women's quarter-final results",
-      "status": "Results",
-      "signals": [
-        "Gauff beat Andreeva in three sets",
-        "Rybakina beat Zheng in three",
-        "Pegula also reached the semi-finals"
-      ]
+      "signals": ["Longest remaining stage", "Summit finish at Peñas Blancas", "Enric Mas leads Primož Roglič by 1:37"]
     },
     {
       "id": "epl-mw4-sep12",
@@ -142,11 +60,63 @@
       "competition": "Premier League",
       "stage": "Next league round",
       "status": "Upcoming",
-      "signals": [
-        "Liverpool host Fulham",
-        "Chelsea host Hull",
-        "Manchester derby on Sunday"
-      ]
+      "signals": ["Liverpool host Fulham", "Chelsea host Hull", "Manchester derby on Sunday"]
+    },
+    {
+      "id": "man-utd-sabah-result-sep10",
+      "type": "result",
+      "sport": "Football",
+      "date": "10 Sep",
+      "time": "Final",
+      "title": "Manchester United 4-0 Sabah",
+      "home": "Manchester United",
+      "away": "Sabah",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 1",
+      "status": "Result",
+      "signals": ["Cunha opened the scoring", "United led 3-0 at half-time", "Martínez completed the scoring"]
+    },
+    {
+      "id": "ucl-early-results-sep10",
+      "type": "result",
+      "sport": "Football",
+      "date": "10 Sep",
+      "time": "Final",
+      "title": "Champions League early results",
+      "home": "PSV · Fenerbahçe",
+      "away": "Draws",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 1",
+      "status": "Results",
+      "signals": ["PSV 1-1 Shakhtar Donetsk", "Fenerbahçe 1-1 Roma", "Both hosts recovered a point"]
+    },
+    {
+      "id": "kung-stage18-result",
+      "type": "result",
+      "sport": "Cycling",
+      "date": "10 Sep",
+      "time": "Final",
+      "title": "Stefan Küng wins Vuelta Stage 18",
+      "home": "Stefan Küng",
+      "away": "Callum Thornley",
+      "competition": "Vuelta a España",
+      "stage": "32.1 km individual time trial",
+      "status": "Result",
+      "signals": ["Küng won by three seconds", "João Almeida finished third", "Mas retained the red jersey by 1:37"]
+    },
+    {
+      "id": "epl-table-sep11",
+      "type": "result",
+      "sport": "Football",
+      "date": "11 Sep",
+      "time": "Verified",
+      "title": "Premier League standings unchanged",
+      "home": "Manchester City",
+      "away": "Arsenal",
+      "competition": "Premier League",
+      "stage": "After Matchweek 3",
+      "status": "Table",
+      "signals": ["Both leaders have nine points", "Hull City are third on seven", "Matchweek 4 starts on Saturday"]
     }
   ]
 }
