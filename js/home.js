@@ -27,40 +27,67 @@
   function initials(name = "") {
     const words = String(name).trim().split(/\s+/).filter(Boolean);
     if (!words.length) return "BF";
-    return words.slice(0, 2).map((word) => word.charAt(0)).join("").toUpperCase();
+    return words
+      .slice(0, 2)
+      .map((word) => word.charAt(0))
+      .join("")
+      .toUpperCase();
   }
 
   function updateHomepageCopy() {
     const lead = document.querySelector(".hero-lead");
-    if (lead) lead.textContent = "The US Open women’s semi-finals headline Thursday, while the Champions League concludes Matchday 1 and the Vuelta holds a decisive individual time trial.";
+    if (lead)
+      lead.textContent =
+        "The US Open men’s semi-finals headline Friday, while the Vuelta tackles a 210.8 km uphill finish and Premier League Matchweek 4 begins tomorrow.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>10 Sep</strong><span>US Open · Women's semi-finals</span></div>
-        <div><strong>10 Sep</strong><span>Champions League · 6 fixtures</span></div>
-        <div><strong>10 Sep</strong><span>Vuelta · 32.1 km time trial</span></div>
+        <div><strong>11 Sep</strong><span>US Open · Men's semi-finals</span></div>
+        <div><strong>11 Sep</strong><span>Vuelta · Stage 19 uphill finish</span></div>
+        <div><strong>12 Sep</strong><span>Premier League · Matchweek 4</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
-    if (input) input.placeholder = "Try: Gauff, Rybakina, Champions League, Vuelta";
+    if (input)
+      input.placeholder = "Try: Zverev, Tiafoe, Premier League, Vuelta";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Gauff Rybakina">Gauff–Rybakina</button>
-        <button type="button" data-query="Champions League">Champions League</button>
+        <button type="button" data-query="Zverev Khachanov">Zverev–Khachanov</button>
+        <button type="button" data-query="Shelton Tiafoe">Shelton–Tiafoe</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=gauff-rybakina-sep10", title: "Gauff vs Rybakina", detail: "10 September · US Open semi-final", tag: "Tennis" },
-      { href: "match.html?id=ucl-sep10", title: "Champions League · Thursday slate", detail: "10 September · six Matchday 1 fixtures", tag: "Football" },
-      { href: "match.html?id=vuelta-stage18-sep10", title: "Vuelta Stage 18 · Time trial", detail: "10 September · 32.1 km", tag: "Cycling" },
-      { href: "standings.html", title: "Premier League · Matchweek 3", detail: "Table verified; next round starts 12 September", tag: "Table" }
+      {
+        href: "match.html?id=zverev-khachanov-sep11",
+        title: "Zverev vs Khachanov",
+        detail: "11 September · US Open semi-final",
+        tag: "Tennis",
+      },
+      {
+        href: "match.html?id=shelton-tiafoe-sep11",
+        title: "Shelton vs Tiafoe",
+        detail: "11 September · US Open semi-final",
+        tag: "Tennis",
+      },
+      {
+        href: "match.html?id=vuelta-stage19-sep11",
+        title: "Vuelta Stage 19 · Uphill finish",
+        detail: "11 September · 210.8 km",
+        tag: "Cycling",
+      },
+      {
+        href: "standings.html",
+        title: "Premier League · Matchweek 3",
+        detail: "Table verified; next round starts 12 September",
+        tag: "Table",
+      },
     ];
 
     lines.forEach((line, index) => {
@@ -91,27 +118,44 @@
     const home = event.home || event.title;
     const away = event.away || event.sport;
     const signals = Array.isArray(event.signals) ? event.signals : [];
-    const homeForm = Array.isArray(event.homeForm) ? event.homeForm.slice(0, 5) : [];
-    const awayForm = Array.isArray(event.awayForm) ? event.awayForm.slice(0, 5) : [];
+    const homeForm = Array.isArray(event.homeForm)
+      ? event.homeForm.slice(0, 5)
+      : [];
+    const awayForm = Array.isArray(event.awayForm)
+      ? event.awayForm.slice(0, 5)
+      : [];
     const probabilities = event.probabilities || {};
-    const homeProbability = Math.max(0, Math.min(100, Number(probabilities.home) || 0));
-    const drawProbability = Math.max(0, Math.min(100, Number(probabilities.draw) || 0));
-    const awayProbability = Math.max(0, Math.min(100, Number(probabilities.away) || 0));
+    const homeProbability = Math.max(
+      0,
+      Math.min(100, Number(probabilities.home) || 0),
+    );
+    const drawProbability = Math.max(
+      0,
+      Math.min(100, Number(probabilities.draw) || 0),
+    );
+    const awayProbability = Math.max(
+      0,
+      Math.min(100, Number(probabilities.away) || 0),
+    );
     const hasModel = homeProbability + drawProbability + awayProbability > 0;
 
     function teamMark(name, logo) {
       const fallback = escapeHtml(initials(name));
-      if (!logo) return `<span class="featured-team-fallback">${fallback}</span>`;
+      if (!logo)
+        return `<span class="featured-team-fallback">${fallback}</span>`;
       return `<img src="${escapeHtml(logo)}" alt="" loading="eager" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="featured-team-fallback" hidden>${fallback}</span>`;
     }
 
     function formBadges(form) {
       if (!form.length) return "";
-      return `<div class="featured-form" aria-label="Recent form">${form.map((result) => {
-        const value = String(result).toUpperCase().charAt(0);
-        const className = value === "W" ? "is-win" : value === "L" ? "is-loss" : "is-draw";
-        return `<span class="${className}">${escapeHtml(value)}</span>`;
-      }).join("")}</div>`;
+      return `<div class="featured-form" aria-label="Recent form">${form
+        .map((result) => {
+          const value = String(result).toUpperCase().charAt(0);
+          const className =
+            value === "W" ? "is-win" : value === "L" ? "is-loss" : "is-draw";
+          return `<span class="${className}">${escapeHtml(value)}</span>`;
+        })
+        .join("")}</div>`;
     }
 
     container.innerHTML = `
@@ -138,7 +182,9 @@
         </div>
       </div>
 
-      ${hasModel ? `
+      ${
+        hasModel
+          ? `
         <div class="featured-probability">
           <div class="featured-probability-head"><span>Model probability</span><small>Home · Draw · Away</small></div>
           <div class="featured-probability-values">
@@ -148,7 +194,9 @@
             <i style="width:${homeProbability}%"></i><i style="width:${drawProbability}%"></i><i style="width:${awayProbability}%"></i>
           </div>
         </div>
-      ` : ""}
+      `
+          : ""
+      }
 
       <div class="featured-signal">
         <span>Current model inputs</span>
@@ -175,7 +223,10 @@
       return;
     }
 
-    container.innerHTML = events.slice(0, 7).map((event) => `
+    container.innerHTML = events
+      .slice(0, 7)
+      .map(
+        (event) => `
       <div class="schedule-row" role="row" data-event-id="${escapeHtml(event.id)}">
         <span class="schedule-date" role="cell">
           <strong>${escapeHtml(event.date)}</strong>
@@ -188,7 +239,9 @@
         <span class="schedule-competition" role="cell">${escapeHtml(event.competition)}</span>
         <span class="schedule-status" role="cell">${escapeHtml(event.status)}</span>
       </div>
-    `).join("");
+    `,
+      )
+      .join("");
   }
 
   function renderPremierLeague(league) {
@@ -198,23 +251,55 @@
     if (season && league?.season) season.textContent = league.season;
     const rows = Array.isArray(league?.table) ? league.table : [];
     if (!rows.length) {
-      tbody.innerHTML = '<tr><td colspan="8" class="loading-state">Premier League standings are unavailable.</td></tr>';
+      tbody.innerHTML =
+        '<tr><td colspan="8" class="loading-state">Premier League standings are unavailable.</td></tr>';
       return;
     }
-    tbody.innerHTML = rows.map((club) => {
-      const gd = Number(club.gf || 0) - Number(club.ga || 0);
-      return `<tr class="zone-${escapeHtml(club.zone || "safe")}">
+    tbody.innerHTML = rows
+      .map((club) => {
+        const gd = Number(club.gf || 0) - Number(club.ga || 0);
+        return `<tr class="zone-${escapeHtml(club.zone || "safe")}">
         <td>${escapeHtml(club.pos)}</td>
         <td class="club-cell"><span class="club-mark" aria-hidden="true">${escapeHtml(initials(club.team))}</span>${escapeHtml(club.team)}</td>
         <td>${escapeHtml(club.played)}</td><td>${escapeHtml(club.wins)}</td><td>${escapeHtml(club.draws)}</td><td>${escapeHtml(club.losses)}</td>
         <td>${gd > 0 ? "+" : ""}${escapeHtml(gd)}</td><td class="points-cell">${escapeHtml(club.points)}</td>
       </tr>`;
-    }).join("");
+      })
+      .join("");
   }
 
   function isPremierLeagueNews(item) {
-    const text = normalize([item.title, item.excerpt].filter(Boolean).join(" "));
-    const terms = ["premier league", "arsenal", "chelsea", "tottenham", "liverpool", "man city", "manchester city", "man united", "manchester united", "aston villa", "newcastle", "west ham", "sunderland", "everton", "brighton", "brentford", "fulham", "bournemouth", "crystal palace", "wolves", "nottingham forest", "burnley", "leeds", "hull", "ipswich", "coventry"];
+    const text = normalize(
+      [item.title, item.excerpt].filter(Boolean).join(" "),
+    );
+    const terms = [
+      "premier league",
+      "arsenal",
+      "chelsea",
+      "tottenham",
+      "liverpool",
+      "man city",
+      "manchester city",
+      "man united",
+      "manchester united",
+      "aston villa",
+      "newcastle",
+      "west ham",
+      "sunderland",
+      "everton",
+      "brighton",
+      "brentford",
+      "fulham",
+      "bournemouth",
+      "crystal palace",
+      "wolves",
+      "nottingham forest",
+      "burnley",
+      "leeds",
+      "hull",
+      "ipswich",
+      "coventry",
+    ];
     return terms.some((term) => text.includes(normalize(term)));
   }
 
@@ -222,17 +307,26 @@
     const container = document.getElementById("home-epl-news");
     if (!container) return;
     const selected = items.filter(isPremierLeagueNews).slice(0, 4);
-    const stories = selected.length ? selected : items.filter((item) => normalize(item.category).includes("football")).slice(0, 4);
+    const stories = selected.length
+      ? selected
+      : items
+          .filter((item) => normalize(item.category).includes("football"))
+          .slice(0, 4);
     if (!stories.length) {
-      container.innerHTML = '<p class="loading-state">English football news will be updated shortly.</p>';
+      container.innerHTML =
+        '<p class="loading-state">English football news will be updated shortly.</p>';
       return;
     }
-    container.innerHTML = stories.map((item) => `
+    container.innerHTML = stories
+      .map(
+        (item) => `
       <a class="home-news-item" href="article.html?id=${encodeURIComponent(item.id)}">
         <img src="${escapeHtml(item.image || "assets/stadium-dark.jpg")}" alt="" loading="lazy">
         <div><span>${escapeHtml(item.time || item.source || "Latest")}</span><strong>${escapeHtml(item.title)}</strong><p>${escapeHtml(item.excerpt || "")}</p></div>
       </a>
-    `).join("");
+    `,
+      )
+      .join("");
   }
 
   async function loadPremierLeague() {
@@ -241,18 +335,27 @@
     try {
       const [standingsResponse, newsResponse] = await Promise.all([
         fetch(`${standingsUrl}?v=3`, { cache: "no-store" }),
-        fetch(`${newsUrl}?v=3`, { cache: "no-store" })
+        fetch(`${newsUrl}?v=3`, { cache: "no-store" }),
       ]);
-      if (!standingsResponse.ok || !newsResponse.ok) throw new Error("Premier League data request failed");
+      if (!standingsResponse.ok || !newsResponse.ok)
+        throw new Error("Premier League data request failed");
       const standingsData = await standingsResponse.json();
       const newsData = await newsResponse.json();
-      const league = (standingsData.leagues || []).find((item) => item.id === "epl");
+      const league = (standingsData.leagues || []).find(
+        (item) => item.id === "epl",
+      );
       renderPremierLeague(league);
-      renderPremierLeagueNews(Array.isArray(newsData) ? newsData : newsData.articles || []);
+      renderPremierLeagueNews(
+        Array.isArray(newsData) ? newsData : newsData.articles || [],
+      );
     } catch (error) {
       console.error("Premier League home block failed:", error);
-      if (tbody) tbody.innerHTML = '<tr><td colspan="8" class="loading-state">Premier League standings are unavailable.</td></tr>';
-      if (news) news.innerHTML = '<p class="loading-state">English football news is unavailable.</p>';
+      if (tbody)
+        tbody.innerHTML =
+          '<tr><td colspan="8" class="loading-state">Premier League standings are unavailable.</td></tr>';
+      if (news)
+        news.innerHTML =
+          '<p class="loading-state">English football news is unavailable.</p>';
     }
   }
 
@@ -261,16 +364,23 @@
     if (!needle) return [];
 
     return scheduleData.events.filter((event) => {
-      const haystack = normalize([
-        event.title,
-        event.home,
-        event.away,
-        event.competition,
-        event.sport,
-        event.stage
-      ].filter(Boolean).join(" "));
+      const haystack = normalize(
+        [
+          event.title,
+          event.home,
+          event.away,
+          event.competition,
+          event.sport,
+          event.stage,
+        ]
+          .filter(Boolean)
+          .join(" "),
+      );
 
-      return haystack.includes(needle) || needle.split(" ").every((word) => haystack.includes(word));
+      return (
+        haystack.includes(needle) ||
+        needle.split(" ").every((word) => haystack.includes(word))
+      );
     });
   }
 
@@ -294,7 +404,9 @@
     const extra = matches.length > 1 ? ` + ${matches.length - 1} more` : "";
     output.innerHTML = `<strong>${escapeHtml(first.title)}</strong> · ${escapeHtml(first.date)}, ${escapeHtml(first.time)} · ${escapeHtml(first.competition)}${escapeHtml(extra)}`;
 
-    const row = document.querySelector(`[data-event-id="${CSS.escape(first.id)}"]`);
+    const row = document.querySelector(
+      `[data-event-id="${CSS.escape(first.id)}"]`,
+    );
     if (row) {
       row.scrollIntoView({ behavior: "smooth", block: "center" });
     }
@@ -340,7 +452,8 @@
     window._aso = window._aso || {};
     window._aso.queue = window._aso.queue || [];
     window._aso.queue.push(() => {
-      if (!window._ASO || typeof window._ASO.loadPuHelper !== "function") return;
+      if (!window._ASO || typeof window._ASO.loadPuHelper !== "function")
+        return;
       window._ASO.PuOptions = { idzone: 161907 };
       window._ASO.loadPuHelper();
     });
@@ -349,11 +462,16 @@
   async function loadSchedule() {
     try {
       const response = await fetch(`${scheduleUrl}?v=3`, { cache: "no-store" });
-      if (!response.ok) throw new Error(`Schedule request failed: ${response.status}`);
+      if (!response.ok)
+        throw new Error(`Schedule request failed: ${response.status}`);
 
       scheduleData = await response.json();
-      const events = Array.isArray(scheduleData.events) ? scheduleData.events : [];
-      const featured = events.find((event) => event.id === scheduleData.featuredId) || events[0];
+      const events = Array.isArray(scheduleData.events)
+        ? scheduleData.events
+        : [];
+      const featured =
+        events.find((event) => event.id === scheduleData.featuredId) ||
+        events[0];
 
       renderFeatured(featured);
       renderSchedule(events);
