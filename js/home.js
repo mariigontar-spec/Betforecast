@@ -38,26 +38,26 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "The US Open men’s semi-finals headline Friday, while the Vuelta tackles a 210.8 km uphill finish and Premier League Matchweek 4 begins tomorrow.";
+        "Premier League Matchweek 4, the Sabalenka–Rybakina US Open final, Vuelta’s last mountain stage and F1 qualifying at Madring headline Saturday.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>11 Sep</strong><span>US Open · Men's semi-finals</span></div>
-        <div><strong>11 Sep</strong><span>Vuelta · Stage 19 uphill finish</span></div>
-        <div><strong>12 Sep</strong><span>Premier League · Matchweek 4</span></div>
+        <div><strong>12 Sep</strong><span>Premier League · 7 fixtures</span></div>
+        <div><strong>12 Sep</strong><span>US Open · Women's final</span></div>
+        <div><strong>12 Sep</strong><span>Vuelta Stage 20 · F1 qualifying</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Zverev, Tiafoe, Premier League, Vuelta";
+      input.placeholder = "Try: Sabalenka, Rybakina, Arsenal, Vuelta, F1";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Zverev Khachanov">Zverev–Khachanov</button>
-        <button type="button" data-query="Shelton Tiafoe">Shelton–Tiafoe</button>
+        <button type="button" data-query="Sabalenka Rybakina">Sabalenka–Rybakina</button>
+        <button type="button" data-query="Premier League">Premier League</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
       `;
     }
@@ -65,27 +65,27 @@
     const lines = document.querySelectorAll(".competition-line");
     const content = [
       {
-        href: "match.html?id=zverev-khachanov-sep11",
-        title: "Zverev vs Khachanov",
-        detail: "11 September · US Open semi-final",
+        href: "match.html?id=sabalenka-rybakina-final-sep12",
+        title: "Sabalenka vs Rybakina",
+        detail: "12 September · US Open final",
         tag: "Tennis",
       },
       {
-        href: "match.html?id=shelton-tiafoe-sep11",
-        title: "Shelton vs Tiafoe",
-        detail: "11 September · US Open semi-final",
-        tag: "Tennis",
+        href: "match.html?id=epl-sep12",
+        title: "Premier League · Saturday",
+        detail: "12 September · seven fixtures",
+        tag: "Football",
       },
       {
-        href: "match.html?id=vuelta-stage19-sep11",
-        title: "Vuelta Stage 19 · Uphill finish",
-        detail: "11 September · 210.8 km",
+        href: "match.html?id=vuelta-stage20-sep12",
+        title: "Vuelta Stage 20 · Mountain finale",
+        detail: "12 September · 186.8 km",
         tag: "Cycling",
       },
       {
         href: "standings.html",
-        title: "Premier League · Matchweek 3",
-        detail: "Table verified; next round starts 12 September",
+        title: "Premier League · Matchweek 4",
+        detail: "Table verified before today's kickoffs",
         tag: "Table",
       },
     ];
