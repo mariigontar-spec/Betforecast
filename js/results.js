@@ -4,14 +4,14 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Tennis · US Open Semi-final", status: "FINAL", homeName: "Elena Rybakina", awayName: "Coco Gauff", homeGoals: "2", awayGoals: "1", venue: "3-6, 6-4, 6-4", date: "10 Sep", href: "news.html#tennis" },
+    { round: "Tennis · US Open Semi-final", status: "FINAL", homeName: "Aryna Sabalenka", awayName: "Jessica Pegula", homeGoals: "2", awayGoals: "0", venue: "7-5, 6-2", date: "10 Sep", href: "news.html#tennis" },
+    { round: "Cycling · Vuelta Stage 19", status: "FINAL", homeName: "Eddie Dunbar", awayName: "Santiago Buitrago", homeGoals: "1st", awayGoals: "+14s", venue: "Peñas Blancas", date: "11 Sep · 210.8 km", href: "news.html#cycling" },
+    { round: "Cycling · Vuelta Stage 19", status: "PODIUM", homeName: "Thomas Gloag", awayName: "Urko Berrade", homeGoals: "3rd", awayGoals: "4th", venue: "Uphill finish", date: "11 Sep", href: "news.html#cycling" },
+    { round: "Cycling · Vuelta GC", status: "LEADER", homeName: "Enric Mas", awayName: "Primož Roglič", homeGoals: "Red", awayGoals: "+1:37", venue: "After Stage 19", date: "11 Sep", href: "news.html#cycling" },
     { round: "Football · Champions League", status: "FINAL", homeName: "Manchester United", awayName: "Sabah", homeGoals: "4", awayGoals: "0", venue: "Old Trafford", date: "10 Sep", href: "news.html#football" },
     { round: "Football · Champions League", status: "FINAL", homeName: "PSV Eindhoven", awayName: "Shakhtar Donetsk", homeGoals: "1", awayGoals: "1", venue: "Eindhoven", date: "10 Sep", href: "news.html#football" },
-    { round: "Football · Champions League", status: "FINAL", homeName: "Fenerbahçe", awayName: "Roma", homeGoals: "1", awayGoals: "1", venue: "Istanbul", date: "10 Sep", href: "news.html#football" },
-    { round: "Cycling · Vuelta Stage 18", status: "FINAL", homeName: "Stefan Küng", awayName: "Callum Thornley", homeGoals: "1st", awayGoals: "+3s", venue: "Jerez de la Frontera", date: "10 Sep · 32.1 km", href: "news.html#cycling" },
-    { round: "Cycling · Vuelta Stage 18", status: "PODIUM", homeName: "João Almeida", awayName: "Primož Roglič", homeGoals: "3rd", awayGoals: "4th", venue: "Individual time trial", date: "10 Sep", href: "news.html#cycling" },
-    { round: "Cycling · Vuelta GC", status: "LEADER", homeName: "Enric Mas", awayName: "Primož Roglič", homeGoals: "Red", awayGoals: "+1:37", venue: "After Stage 18", date: "10 Sep", href: "news.html#cycling" },
-    { round: "Tennis · US Open Quarter-final", status: "FINAL", homeName: "Alexander Zverev", awayName: "Botic van de Zandschulp", homeGoals: "6-2 7-5", awayGoals: "6-1", venue: "Flushing Meadows", date: "9 Sep", href: "news.html#tennis" },
-    { round: "Tennis · US Open Quarter-final", status: "RETIRED", homeName: "Karen Khachanov", awayName: "Alexander Blockx", homeGoals: "6-2 7-5", awayGoals: "3-2 ret.", venue: "Flushing Meadows", date: "9 Sep", href: "news.html#tennis" }
+    { round: "Football · Champions League", status: "FINAL", homeName: "Fenerbahçe", awayName: "Roma", homeGoals: "1", awayGoals: "1", venue: "Istanbul", date: "10 Sep", href: "news.html#football" }
   ];
   function setStatus(text) { if (statusEl) statusEl.textContent = text; }
   function esc(value) { return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;"); }
@@ -20,7 +20,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · updated 11 Sep 2026");
+    setStatus("World sports results · updated 12 Sep 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -30,7 +30,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Manchester United won 4-0 as PSV and Fenerbahçe drew their Champions League openers. Stefan Küng won the Vuelta time trial, while Enric Mas retained the red jersey.";
+    if (intro) intro.textContent = "Elena Rybakina and Aryna Sabalenka reached the US Open final. Eddie Dunbar won Vuelta Stage 19, while Enric Mas retained the red jersey with a 1:37 lead.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
