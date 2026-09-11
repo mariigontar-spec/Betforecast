@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 11 Sep 2026";
-  if (t) t.textContent = "US Open, Vuelta & Premier League";
+  if (k) k.textContent = "World Sports News · 12 Sep 2026";
+  if (t) t.textContent = "Premier League, US Open, Vuelta & F1";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Manchester United beat Sabah 4-0</a><a class="sidebar-link-card" href="results.html">PSV and Fenerbahçe draw in Europe</a><a class="sidebar-link-card" href="results.html">Küng wins Vuelta time trial</a><a class="sidebar-link-card" href="match.html?id=zverev-khachanov-sep11">Zverev faces Khachanov in New York</a><a class="sidebar-link-card" href="match.html?id=shelton-tiafoe-sep11">Shelton–Tiafoe all-American semi-final</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=sabalenka-rybakina-final-sep12">Sabalenka–Rybakina US Open final</a><a class="sidebar-link-card" href="match.html?id=epl-sep12">Premier League Matchweek 4 starts</a><a class="sidebar-link-card" href="results.html">Dunbar wins Vuelta Stage 19</a><a class="sidebar-link-card" href="match.html?id=vuelta-stage20-sep12">Final Vuelta mountain showdown</a><a class="sidebar-link-card" href="match.html?id=f1-spain-qualifying-sep12">Madring hosts first F1 qualifying</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Manchester United beat Sabah 4-0 while PSV–Shakhtar and Fenerbahçe–Roma finished level. Stefan Küng won the Vuelta time trial, and Friday’s US Open focus is the men’s semi-final lineup.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Elena Rybakina and Aryna Sabalenka reached Saturday’s US Open final. Premier League Matchweek 4 begins with seven fixtures, the Vuelta reaches its final mountain stage, and F1 qualifying starts at the new Madring circuit.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
