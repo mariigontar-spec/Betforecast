@@ -1,120 +1,155 @@
 {
-  "updatedAt": "2026-09-12T00:01:00+03:00",
-  "featuredId": "sabalenka-rybakina-final-sep12",
+  "updatedAt": "2026-09-13T00:03:00+03:00",
+  "featuredId": "man-utd-man-city-sep13",
   "events": [
     {
-      "id": "sabalenka-rybakina-final-sep12",
-      "type": "event",
-      "sport": "Tennis",
-      "date": "12 Sep",
-      "time": "16:00 ET",
-      "title": "Aryna Sabalenka vs Elena Rybakina",
-      "home": "Aryna Sabalenka",
-      "away": "Elena Rybakina",
-      "competition": "US Open",
-      "stage": "Women's singles final",
-      "status": "Today",
-      "signals": ["Sabalenka seeks a third straight US Open title", "Rybakina will become world No. 1", "Rematch of the 2026 Australian Open final"],
-      "homeLogo": "https://flagcdn.com/w160/by.png",
-      "awayLogo": "https://flagcdn.com/w160/kz.png"
-    },
-    {
-      "id": "epl-sep12",
+      "id": "man-utd-man-city-sep13",
       "type": "event",
       "sport": "Football",
+      "date": "13 Sep",
+      "time": "16:30 UK",
+      "title": "Manchester United vs Manchester City",
+      "home": "Manchester United",
+      "away": "Manchester City",
+      "competition": "Premier League",
+      "stage": "Matchweek 4 · Manchester derby",
+      "status": "Today",
+      "signals": [
+        "Manchester City enter with nine points",
+        "Manchester United have four points after three matches",
+        "Old Trafford hosts the 199th Manchester derby"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
+    },
+    {
+      "id": "coventry-brighton-sep13",
+      "type": "event",
+      "sport": "Football",
+      "date": "13 Sep",
+      "time": "14:00 UK",
+      "title": "Coventry City vs Brighton",
+      "home": "Coventry City",
+      "away": "Brighton",
+      "competition": "Premier League",
+      "stage": "Matchweek 4",
+      "status": "Today",
+      "signals": [
+        "Coventry seek their first points",
+        "Brighton have four points",
+        "Verified Sunday fixture"
+      ]
+    },
+    {
+      "id": "f1-spain-race-sep13",
+      "type": "event",
+      "sport": "Formula 1",
+      "date": "13 Sep",
+      "time": "15:00 Madrid",
+      "title": "Spanish Grand Prix",
+      "home": "Lando Norris",
+      "away": "Kimi Antonelli",
+      "competition": "Formula 1",
+      "stage": "Race · Madring · 57 laps",
+      "status": "Today",
+      "signals": [
+        "Norris starts from pole",
+        "Antonelli starts second",
+        "Verstappen starts third"
+      ]
+    },
+    {
+      "id": "vuelta-stage21-sep13",
+      "type": "event",
+      "sport": "Cycling",
+      "date": "13 Sep",
+      "time": "Stage 21",
+      "title": "Vuelta Stage 21",
+      "home": "Alhambra",
+      "away": "Granada",
+      "competition": "Vuelta a España",
+      "stage": "Final stage",
+      "status": "Today",
+      "signals": [
+        "Enric Mas leads Primož Roglič by 2:15",
+        "Mikel Landa won Stage 20",
+        "Final ceremonial stage in Granada"
+      ]
+    },
+    {
+      "id": "zverev-shelton-final-sep13",
+      "type": "event",
+      "sport": "Tennis",
+      "date": "13 Sep",
+      "time": "16:00 ET",
+      "title": "Alexander Zverev vs Ben Shelton",
+      "home": "Alexander Zverev",
+      "away": "Ben Shelton",
+      "competition": "US Open",
+      "stage": "Men's singles final",
+      "status": "Today",
+      "signals": [
+        "Zverev beat Karen Khachanov in straight sets",
+        "Shelton beat Frances Tiafoe in four sets",
+        "Shelton's first Grand Slam final"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/de.png",
+      "awayLogo": "https://flagcdn.com/w160/us.png"
+    },
+    {
+      "id": "epl-results-sep12",
+      "type": "result",
+      "sport": "Football",
       "date": "12 Sep",
-      "time": "15:00–20:00 UK",
-      "title": "Premier League Saturday",
+      "time": "Final",
+      "title": "Premier League Saturday results",
       "home": "Seven fixtures",
       "away": "Matchweek 4",
       "competition": "Premier League",
-      "stage": "Sunderland–Arsenal, Liverpool–Fulham and five more",
-      "status": "Today",
-      "signals": ["Five matches at 15:00 UK", "Tottenham host Everton at 17:30", "Sunderland host Arsenal at 20:00"]
+      "stage": "Arsenal won; six other results verified",
+      "status": "Result",
+      "signals": [
+        "Sunderland 0-2 Arsenal",
+        "Liverpool 0-0 Fulham",
+        "Chelsea 2-2 Hull",
+        "Forest and Ipswich won"
+      ]
     },
     {
-      "id": "vuelta-stage20-sep12",
-      "type": "event",
+      "id": "landa-stage20-result",
+      "type": "result",
       "sport": "Cycling",
       "date": "12 Sep",
-      "time": "Stage 20",
-      "title": "Vuelta Stage 20",
-      "home": "La Calahorra",
-      "away": "Collado del Alguacil",
+      "time": "Final",
+      "title": "Mikel Landa wins Vuelta Stage 20",
+      "home": "Mikel Landa",
+      "away": "Enric Mas",
       "competition": "Vuelta a España",
-      "stage": "186.8 km · mountain · HC finish",
-      "status": "Today",
-      "signals": ["Final mountain stage", "Four classified climbs", "Enric Mas leads Primož Roglič by 1:37"]
+      "stage": "La Calahorra to Collado del Alguacil",
+      "status": "Result",
+      "signals": [
+        "Landa took his first stage win since 2021",
+        "Mas extended his GC lead to 2:15",
+        "Felix Gall moved onto the podium"
+      ]
     },
     {
-      "id": "f1-spain-qualifying-sep12",
-      "type": "event",
+      "id": "f1-spain-qualifying-result",
+      "type": "result",
       "sport": "Formula 1",
       "date": "12 Sep",
-      "time": "16:00 Madrid",
-      "title": "Spanish Grand Prix qualifying",
-      "home": "Madring",
-      "away": "Madrid",
+      "time": "Final",
+      "title": "Lando Norris takes pole in Madrid",
+      "home": "Lando Norris",
+      "away": "Kimi Antonelli",
       "competition": "Formula 1",
-      "stage": "Qualifying · Round 14",
-      "status": "Today",
-      "signals": ["First Grand Prix at Madring", "Kimi Antonelli led Friday practice", "Race starts Sunday at 15:00 local"]
-    },
-    {
-      "id": "rybakina-gauff-result-sep10",
-      "type": "result",
-      "sport": "Tennis",
-      "date": "10 Sep",
-      "time": "Final",
-      "title": "Elena Rybakina beats Coco Gauff",
-      "home": "Elena Rybakina",
-      "away": "Coco Gauff",
-      "competition": "US Open",
-      "stage": "Women's singles semi-final",
+      "stage": "Spanish Grand Prix qualifying",
       "status": "Result",
-      "signals": ["Rybakina won 3-6, 6-4, 6-4", "Recovered after losing the first set", "Reached Saturday's final"]
-    },
-    {
-      "id": "sabalenka-pegula-result-sep10",
-      "type": "result",
-      "sport": "Tennis",
-      "date": "10 Sep",
-      "time": "Final",
-      "title": "Aryna Sabalenka beats Jessica Pegula",
-      "home": "Aryna Sabalenka",
-      "away": "Jessica Pegula",
-      "competition": "US Open",
-      "stage": "Women's singles semi-final",
-      "status": "Result",
-      "signals": ["Sabalenka won 7-5, 6-2", "Fourth straight US Open final", "Seeking a third consecutive title"]
-    },
-    {
-      "id": "dunbar-stage19-result",
-      "type": "result",
-      "sport": "Cycling",
-      "date": "11 Sep",
-      "time": "Final",
-      "title": "Eddie Dunbar wins Vuelta Stage 19",
-      "home": "Eddie Dunbar",
-      "away": "Santiago Buitrago",
-      "competition": "Vuelta a España",
-      "stage": "Vélez-Málaga to Peñas Blancas · 210.8 km",
-      "status": "Result",
-      "signals": ["Dunbar won by 14 seconds", "Thomas Gloag finished third", "Mas retained a 1:37 GC lead"]
-    },
-    {
-      "id": "epl-upcoming-sep13",
-      "type": "event",
-      "sport": "Football",
-      "date": "13–14 Sep",
-      "time": "Upcoming",
-      "title": "Premier League Matchweek 4 continues",
-      "home": "Three fixtures",
-      "away": "Sunday and Monday",
-      "competition": "Premier League",
-      "stage": "Manchester derby on Sunday",
-      "status": "Upcoming",
-      "signals": ["Coventry host Brighton", "Manchester United host Manchester City", "Leeds host Newcastle on Monday"]
+      "signals": [
+        "Norris 1:31.824",
+        "Antonelli second by 0.011s",
+        "Verstappen third"
+      ]
     }
   ]
 }
