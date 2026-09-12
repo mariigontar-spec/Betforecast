@@ -38,25 +38,25 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Premier League Matchweek 4, the Sabalenka–Rybakina US Open final, Vuelta’s last mountain stage and F1 qualifying at Madring headline Saturday.";
+        "The Manchester derby, Spanish Grand Prix, Vuelta finale and Zverev–Shelton US Open final headline Sunday.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>12 Sep</strong><span>Premier League · 7 fixtures</span></div>
-        <div><strong>12 Sep</strong><span>US Open · Women's final</span></div>
-        <div><strong>12 Sep</strong><span>Vuelta Stage 20 · F1 qualifying</span></div>
+        <div><strong>13 Sep</strong><span>Premier League · Manchester derby</span></div>
+        <div><strong>13 Sep</strong><span>F1 Spanish GP · Madring</span></div>
+        <div><strong>13 Sep</strong><span>Vuelta finale · US Open men's final</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Sabalenka, Rybakina, Arsenal, Vuelta, F1";
+      input.placeholder = "Try: Manchester derby, Norris, Zverev, Vuelta";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Sabalenka Rybakina">Sabalenka–Rybakina</button>
+        <button type="button" data-query="Manchester derby">Manchester derby</button>
         <button type="button" data-query="Premier League">Premier League</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
       `;
@@ -64,30 +64,10 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      {
-        href: "match.html?id=sabalenka-rybakina-final-sep12",
-        title: "Sabalenka vs Rybakina",
-        detail: "12 September · US Open final",
-        tag: "Tennis",
-      },
-      {
-        href: "match.html?id=epl-sep12",
-        title: "Premier League · Saturday",
-        detail: "12 September · seven fixtures",
-        tag: "Football",
-      },
-      {
-        href: "match.html?id=vuelta-stage20-sep12",
-        title: "Vuelta Stage 20 · Mountain finale",
-        detail: "12 September · 186.8 km",
-        tag: "Cycling",
-      },
-      {
-        href: "standings.html",
-        title: "Premier League · Matchweek 4",
-        detail: "Table verified before today's kickoffs",
-        tag: "Table",
-      },
+      { href: "match.html?id=man-utd-man-city-sep13", title: "Manchester United vs Manchester City", detail: "13 September · Premier League · 16:30 UK", tag: "Football" },
+      { href: "match.html?id=f1-spain-race-sep13", title: "Spanish Grand Prix · Madring", detail: "13 September · Norris starts from pole", tag: "Formula 1" },
+      { href: "match.html?id=vuelta-stage21-sep13", title: "Vuelta Stage 21 · Granada finale", detail: "13 September · Mas leads by 2:15", tag: "Cycling" },
+      { href: "standings.html", title: "Premier League · Matchweek 4", detail: "Table, Recent and Upcoming updated", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
