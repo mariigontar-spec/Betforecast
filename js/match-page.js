@@ -1,52 +1,65 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    id: "sabalenka-rybakina-final-sep12", league: "Tennis · US Open", date: "12 Sep 2026", time: "16:00 ET", stadium: "Arthur Ashe Stadium, New York",
-    home: "Aryna Sabalenka", away: "Elena Rybakina", homeShort: "SAB", awayShort: "RYB", homeLogo: "https://flagcdn.com/w160/by.png", awayLogo: "https://flagcdn.com/w160/kz.png",
+    id: "man-utd-man-city-sep13", league: "Football · Premier League", date: "13 Sep 2026", time: "16:30 UK", stadium: "Old Trafford, Manchester",
+    home: "Manchester United", away: "Manchester City", homeShort: "MUN", awayShort: "MCI", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t1.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+    projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "Old Trafford hosts the 199th Manchester derby as Premier League Matchweek 4 continues.",
+    bestTip: "Confirmed fixture", goalsLean: "Matchweek 4", btts: "Sunday · 16:30 UK",
+    factors: ["Manchester City: 9 points", "Manchester United: 4 points", "199th Manchester derby", "Verified Sunday fixture"],
+    formHome: ["L", "W", "D"], formAway: ["W", "W", "W"],
+    homeStats: ["Played: 3", "Wins: 1", "Draws: 1", "Points: 4"],
+    awayStats: ["Played: 3", "Wins: 3", "Goal difference: +5", "Points: 9"],
+    quickInsightTitle: "Manchester derby", quickInsight: "Fixture and table context are verified; no score prediction is presented as fact.",
+    related: [{ id: "coventry-brighton-sep13", home: "Coventry City", away: "Brighton", league: "Premier League" }, { id: "f1-spain-race-sep13", home: "Lando Norris", away: "Kimi Antonelli", league: "Formula 1" }]
+  },
+  {
+    id: "coventry-brighton-sep13", league: "Football · Premier League", date: "13 Sep 2026", time: "14:00 UK", stadium: "Coventry Building Society Arena",
+    home: "Coventry City", away: "Brighton", homeShort: "COV", awayShort: "BHA", projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "Coventry host Brighton in Sunday's opening Premier League fixture.",
+    bestTip: "Confirmed fixture", goalsLean: "Matchweek 4", btts: "Sunday · 14:00 UK",
+    factors: ["Coventry seek first points", "Brighton have four points", "Official league schedule", "Sunday opener"],
+    formHome: ["L", "L", "L"], formAway: ["W", "L", "D"],
+    homeStats: ["Played: 3", "Points: 0", "Goals for: 0", "Goals against: 5"],
+    awayStats: ["Played: 3", "Points: 4", "Goals for: 8", "Goals against: 5"],
+    quickInsightTitle: "Sunday opener", quickInsight: "Pre-match records reflect the verified table before kickoff.",
+    related: [{ id: "man-utd-man-city-sep13", home: "Manchester United", away: "Manchester City", league: "Premier League" }]
+  },
+  {
+    id: "f1-spain-race-sep13", league: "Formula 1 · Spanish Grand Prix", date: "13 Sep 2026", time: "15:00 Madrid", stadium: "Madring, Madrid",
+    home: "Lando Norris", away: "Kimi Antonelli", homeShort: "NOR", awayShort: "ANT", projectedScore: "57 LAPS", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "Lando Norris starts the first Spanish Grand Prix at Madring from pole, with Kimi Antonelli second and Max Verstappen third.",
+    bestTip: "Official grid", goalsLean: "Race day", btts: "Sunday · 15:00 local",
+    factors: ["Norris pole: 1:31.824", "Antonelli +0.011s", "Verstappen starts third", "57 race laps"],
+    formHome: ["P", "1"], formAway: ["P", "2"],
+    homeStats: ["Grid: P1", "Team: McLaren", "Qualifying: 1:31.824", "Circuit: Madring"],
+    awayStats: ["Grid: P2", "Team: Mercedes", "Gap: +0.011s", "Verstappen: P3"],
+    quickInsightTitle: "Madrid race day", quickInsight: "The starting order comes from the official Formula 1 qualifying classification.",
+    related: [{ id: "vuelta-stage21-sep13", home: "Alhambra", away: "Granada", league: "Vuelta" }]
+  },
+  {
+    id: "vuelta-stage21-sep13", league: "Cycling · Vuelta a España", date: "13 Sep 2026", time: "Stage 21", stadium: "Granada, Spain",
+    home: "Alhambra", away: "Granada", homeShort: "ALH", awayShort: "GRA", projectedScore: "FINAL", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "The Vuelta reaches its final ceremonial stage in Granada with Enric Mas holding a 2:15 lead over Primož Roglič.",
+    bestTip: "Official route", goalsLean: "Final stage", btts: "Sunday",
+    factors: ["Mas leads by 2:15", "Landa won Stage 20", "Gall sits third overall", "Final stage in Granada"],
+    formHome: ["S", "2", "1"], formAway: ["G", "C"],
+    homeStats: ["Date: 13 Sep", "Stage: 21", "Finish: Granada", "Leader: Enric Mas"],
+    awayStats: ["Roglič: +2:15", "Gall: +2:44", "Stage 20 winner: Landa", "Final day"],
+    quickInsightTitle: "Final day in Granada", quickInsight: "The general-classification gaps are verified after Stage 20.",
+    related: [{ id: "zverev-shelton-final-sep13", home: "Alexander Zverev", away: "Ben Shelton", league: "US Open" }]
+  },
+  {
+    id: "zverev-shelton-final-sep13", league: "Tennis · US Open", date: "13 Sep 2026", time: "16:00 ET", stadium: "Arthur Ashe Stadium, New York",
+    home: "Alexander Zverev", away: "Ben Shelton", homeShort: "ZVE", awayShort: "SHE", homeLogo: "https://flagcdn.com/w160/de.png", awayLogo: "https://flagcdn.com/w160/us.png",
     projectedScore: "FINAL", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Two-time defending champion Aryna Sabalenka faces incoming world No. 1 Elena Rybakina in Saturday's US Open final.",
-    bestTip: "Confirmed fixture", goalsLean: "Championship match", btts: "Saturday · 16:00 ET",
-    factors: ["Sabalenka beat Pegula", "Rybakina beat Gauff", "Australian Open final rematch", "Women's championship"],
+    summary: "Top seed Alexander Zverev faces Ben Shelton in the US Open men's singles final.",
+    bestTip: "Confirmed fixture", goalsLean: "Championship match", btts: "Sunday · 16:00 ET",
+    factors: ["Zverev beat Khachanov", "Shelton beat Tiafoe", "Shelton's first major final", "Men's championship"],
     formHome: ["W", "W", "W"], formAway: ["W", "W", "W"],
-    homeStats: ["Round: final", "Third straight title attempt", "Fourth straight US Open final", "Beat Pegula 7-5, 6-2"],
-    awayStats: ["Round: final", "Incoming world No. 1", "2026 Australian Open champion", "Beat Gauff in three sets"],
-    quickInsightTitle: "New York title at stake", quickInsight: "The final and semi-final results are verified; no unverified score prediction is presented.",
-    related: [{ id: "epl-sep12", home: "Premier League", away: "Seven fixtures", league: "Football" }, { id: "vuelta-stage20-sep12", home: "La Calahorra", away: "Collado del Alguacil", league: "Vuelta" }]
-  },
-  {
-    id: "epl-sep12", league: "Football · Premier League", date: "12 Sep 2026", time: "15:00–20:00 UK", stadium: "England",
-    home: "Seven fixtures", away: "Matchweek 4", homeShort: "EPL", awayShort: "MW4", projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Premier League Matchweek 4 opens with seven Saturday fixtures, ending with Sunderland against Arsenal.",
-    bestTip: "Official schedule", goalsLean: "Seven fixtures", btts: "Saturday programme",
-    factors: ["Five 15:00 kickoffs", "Spurs–Everton at 17:30", "Sunderland–Arsenal at 20:00", "Manchester derby on Sunday"],
-    formHome: ["M", "W", "4"], formAway: ["1", "2", "S", "E", "P"],
-    homeStats: ["Bournemouth–Brentford", "Aston Villa–Forest", "Chelsea–Hull", "Palace–Ipswich"],
-    awayStats: ["Liverpool–Fulham", "Tottenham–Everton", "Sunderland–Arsenal", "All times UK"],
-    quickInsightTitle: "League action returns", quickInsight: "The table remains unchanged before the first Matchweek 4 kickoff.",
-    related: [{ id: "sabalenka-rybakina-final-sep12", home: "Sabalenka", away: "Rybakina", league: "US Open" }]
-  },
-  {
-    id: "vuelta-stage20-sep12", league: "Cycling · Vuelta a España", date: "12 Sep 2026", time: "Stage 20", stadium: "La Calahorra to Collado del Alguacil, Spain",
-    home: "La Calahorra", away: "Collado del Alguacil", homeShort: "LCA", awayShort: "CDA", projectedScore: "186.8 km", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "The final mountain stage covers 186.8 kilometres and ends with the HC climb to Collado del Alguacil.",
-    bestTip: "Official route", goalsLean: "Mountain stage", btts: "Final GC test",
-    factors: ["186.8 km", "Four classified climbs", "HC summit finish", "Mas leads Roglič by 1:37"],
-    formHome: ["M", "T", "N"], formAway: ["G", "C"],
-    homeStats: ["Start: La Calahorra", "Date: 12 Sep", "Distance: 186.8 km", "Stage: 20"],
-    awayStats: ["Finish: Collado del Alguacil", "Leader: Enric Mas", "Roglič: +1:37", "Gall: +3:01"],
-    quickInsightTitle: "Last mountain showdown", quickInsight: "This is the final major chance to change the general classification before Granada.",
-    related: [{ id: "f1-spain-qualifying-sep12", home: "Madring", away: "Qualifying", league: "Formula 1" }]
-  },
-  {
-    id: "f1-spain-qualifying-sep12", league: "Formula 1 · Spanish Grand Prix", date: "12 Sep 2026", time: "16:00 Madrid", stadium: "Madring, Madrid",
-    home: "Spanish Grand Prix", away: "Qualifying", homeShort: "ESP", awayShort: "QUAL", projectedScore: "Q1–Q3", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "The first Formula 1 qualifying session at Madrid's new Madring circuit begins at 16:00 local time.",
-    bestTip: "Official schedule", goalsLean: "Grid positions", btts: "Saturday qualifying",
-    factors: ["New 5.414 km circuit", "22 corners", "Antonelli led FP2", "Race Sunday at 15:00"],
-    formHome: ["F", "P", "3"], formAway: ["Q", "1", "Q", "2", "Q", "3"],
-    homeStats: ["Circuit: Madring", "First Grand Prix: 2026", "Race distance: 308.524 km", "57 laps Sunday"],
-    awayStats: ["FP3: 12:30 local", "Qualifying: 16:00 local", "Race: 15:00 Sunday", "Round: 14"],
-    quickInsightTitle: "A new circuit sets the grid", quickInsight: "Official timing is confirmed; qualifying results will be added after the session.",
-    related: [{ id: "vuelta-stage20-sep12", home: "Stage 20", away: "Mountains", league: "Vuelta" }]
+    homeStats: ["Round: final", "Top seed", "Beat Khachanov in straight sets", "Seeking second major title"],
+    awayStats: ["Round: final", "Beat Tiafoe in four sets", "First Grand Slam final", "First American men's finalist since 2006"],
+    quickInsightTitle: "New York title at stake", quickInsight: "The finalists and semi-final results are verified; no unverified score prediction is presented.",
+    related: [{ id: "man-utd-man-city-sep13", home: "Manchester United", away: "Manchester City", league: "Premier League" }]
   }
 ];
 function normalizeAlias(value){return String(value||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
