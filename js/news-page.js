@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 12 Sep 2026";
-  if (t) t.textContent = "Premier League, US Open, Vuelta & F1";
+  if (k) k.textContent = "World Sports News · 13 Sep 2026";
+  if (t) t.textContent = "Manchester derby, US Open, Vuelta & F1";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=sabalenka-rybakina-final-sep12">Sabalenka–Rybakina US Open final</a><a class="sidebar-link-card" href="match.html?id=epl-sep12">Premier League Matchweek 4 starts</a><a class="sidebar-link-card" href="results.html">Dunbar wins Vuelta Stage 19</a><a class="sidebar-link-card" href="match.html?id=vuelta-stage20-sep12">Final Vuelta mountain showdown</a><a class="sidebar-link-card" href="match.html?id=f1-spain-qualifying-sep12">Madring hosts first F1 qualifying</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=man-utd-man-city-sep13">Manchester derby at Old Trafford</a><a class="sidebar-link-card" href="match.html?id=f1-spain-race-sep13">Norris starts Spanish GP from pole</a><a class="sidebar-link-card" href="match.html?id=vuelta-stage21-sep13">Vuelta finale in Granada</a><a class="sidebar-link-card" href="match.html?id=zverev-shelton-final-sep13">Zverev–Shelton US Open final</a><a class="sidebar-link-card" href="results.html">Saturday EPL results verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Elena Rybakina and Aryna Sabalenka reached Saturday’s US Open final. Premier League Matchweek 4 begins with seven fixtures, the Vuelta reaches its final mountain stage, and F1 qualifying starts at the new Madring circuit.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Sunday brings the Manchester derby, Coventry–Brighton, the Spanish Grand Prix at Madring, the Vuelta finale in Granada and the Zverev–Shelton US Open final. Saturday’s verified Premier League, cycling and F1 results are now in Results.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
