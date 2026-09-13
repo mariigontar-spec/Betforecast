@@ -38,25 +38,25 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "The Manchester derby, Spanish Grand Prix, Vuelta finale and Zverev–Shelton US Open final headline Sunday.";
+        "Leeds–Newcastle headlines Monday after Manchester City, Kimi Antonelli, Enric Mas and Elena Rybakina delivered Sunday’s major results.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>13 Sep</strong><span>Premier League · Manchester derby</span></div>
-        <div><strong>13 Sep</strong><span>F1 Spanish GP · Madring</span></div>
-        <div><strong>13 Sep</strong><span>Vuelta finale · US Open men's final</span></div>
+        <div><strong>14 Sep</strong><span>Premier League · Leeds–Newcastle</span></div>
+        <div><strong>13 Sep</strong><span>Antonelli wins · Mas champion</span></div>
+        <div><strong>12 Sep</strong><span>Rybakina · US Open champion</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Manchester derby, Norris, Zverev, Vuelta";
+      input.placeholder = "Try: Leeds, Newcastle, Antonelli, Rybakina";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Manchester derby">Manchester derby</button>
+        <button type="button" data-query="Leeds Newcastle">Leeds–Newcastle</button>
         <button type="button" data-query="Premier League">Premier League</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
       `;
@@ -64,9 +64,9 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=man-utd-man-city-sep13", title: "Manchester United vs Manchester City", detail: "13 September · Premier League · 16:30 UK", tag: "Football" },
-      { href: "match.html?id=f1-spain-race-sep13", title: "Spanish Grand Prix · Madring", detail: "13 September · Norris starts from pole", tag: "Formula 1" },
-      { href: "match.html?id=vuelta-stage21-sep13", title: "Vuelta Stage 21 · Granada finale", detail: "13 September · Mas leads by 2:15", tag: "Cycling" },
+      { href: "match.html?id=leeds-newcastle-sep14", title: "Leeds United vs Newcastle United", detail: "14 September · Premier League · 20:00 UK", tag: "Football" },
+      { href: "results.html", title: "Kimi Antonelli wins at Madring", detail: "13 September · Spanish Grand Prix", tag: "Formula 1" },
+      { href: "results.html", title: "Enric Mas wins the Vuelta", detail: "13 September · final classification", tag: "Cycling" },
       { href: "standings.html", title: "Premier League · Matchweek 4", detail: "Table, Recent and Upcoming updated", tag: "Table" },
     ];
 
