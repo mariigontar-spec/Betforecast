@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Matchweek 4 in progress · checked 13 Sep",
-      "insightText": "Seven Saturday results are verified. Arsenal lead with 12 points; Manchester City have nine points before Sunday's Manchester derby. Coventry–Brighton and Manchester United–Manchester City are scheduled for 13 September.",
+      "insightTitle": "Matchweek 4 continues · checked 14 Sep",
+      "insightText": "Arsenal and Manchester City lead on 12 points, with Arsenal ahead on goal difference. Brighton moved fourth after winning 5-0 at Coventry. Leeds United host Newcastle United on 14 September.",
       "table": [
         {
           "pos": 1,
@@ -30,14 +30,15 @@
         {
           "pos": 2,
           "team": "Man City",
-          "played": 3,
-          "wins": 3,
+          "played": 4,
+          "wins": 4,
           "draws": 0,
           "losses": 0,
-          "gf": 7,
+          "gf": 8,
           "ga": 2,
-          "points": 9,
+          "points": 12,
           "form": [
+            "W",
             "W",
             "W",
             "W"
@@ -64,6 +65,24 @@
         },
         {
           "pos": 4,
+          "team": "Brighton",
+          "played": 4,
+          "wins": 2,
+          "draws": 1,
+          "losses": 1,
+          "gf": 13,
+          "ga": 5,
+          "points": 7,
+          "form": [
+            "W",
+            "L",
+            "D",
+            "W"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 5,
           "team": "Chelsea",
           "played": 4,
           "wins": 2,
@@ -78,10 +97,10 @@
             "L",
             "D"
           ],
-          "zone": "cl"
+          "zone": "safe"
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "Brentford",
           "played": 4,
           "wins": 1,
@@ -99,7 +118,7 @@
           "zone": "safe"
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Liverpool",
           "played": 4,
           "wins": 1,
@@ -117,7 +136,7 @@
           "zone": "safe"
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "Everton",
           "played": 4,
           "wins": 1,
@@ -135,7 +154,7 @@
           "zone": "safe"
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "Ipswich Town",
           "played": 4,
           "wins": 2,
@@ -153,7 +172,7 @@
           "zone": "safe"
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Newcastle",
           "played": 3,
           "wins": 1,
@@ -170,7 +189,7 @@
           "zone": "safe"
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Leeds United",
           "played": 3,
           "wins": 1,
@@ -187,7 +206,7 @@
           "zone": "safe"
         },
         {
-          "pos": 11,
+          "pos": 12,
           "team": "Nottm Forest",
           "played": 4,
           "wins": 1,
@@ -205,36 +224,20 @@
           "zone": "safe"
         },
         {
-          "pos": 12,
-          "team": "Brighton",
-          "played": 3,
-          "wins": 1,
-          "draws": 1,
-          "losses": 1,
-          "gf": 8,
-          "ga": 5,
-          "points": 4,
-          "form": [
-            "W",
-            "L",
-            "D"
-          ],
-          "zone": "safe"
-        },
-        {
           "pos": 13,
           "team": "Man United",
-          "played": 3,
+          "played": 4,
           "wins": 1,
           "draws": 1,
-          "losses": 1,
+          "losses": 2,
           "gf": 7,
-          "ga": 6,
+          "ga": 7,
           "points": 4,
           "form": [
             "L",
             "W",
-            "D"
+            "D",
+            "L"
           ],
           "zone": "safe"
         },
@@ -349,14 +352,15 @@
         {
           "pos": 20,
           "team": "Coventry City",
-          "played": 3,
+          "played": 4,
           "wins": 0,
           "draws": 0,
-          "losses": 3,
+          "losses": 4,
           "gf": 0,
-          "ga": 5,
+          "ga": 10,
           "points": 0,
           "form": [
+            "L",
             "L",
             "L",
             "L"
@@ -365,6 +369,18 @@
         }
       ],
       "lastMatches": [
+        {
+          "time": "13 Sep",
+          "match": "Man United vs Man City",
+          "score": "0:1",
+          "status": "finished"
+        },
+        {
+          "time": "13 Sep",
+          "match": "Coventry City vs Brighton",
+          "score": "0:5",
+          "status": "finished"
+        },
         {
           "time": "12 Sep",
           "match": "Sunderland vs Arsenal",
@@ -412,31 +428,9 @@
           "match": "Arsenal vs Chelsea",
           "score": "2:1",
           "status": "finished"
-        },
-        {
-          "time": "6 Sep",
-          "match": "Everton vs Man United",
-          "score": "2:2",
-          "status": "finished"
-        },
-        {
-          "time": "5 Sep",
-          "match": "Hull City vs Aston Villa",
-          "score": "0:0",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
-        {
-          "time": "13 Sep · 14:00",
-          "match": "Coventry City vs Brighton",
-          "status": "upcoming"
-        },
-        {
-          "time": "13 Sep · 16:30",
-          "match": "Man United vs Man City",
-          "status": "upcoming"
-        },
         {
           "time": "14 Sep · 20:00",
           "match": "Leeds United vs Newcastle",
@@ -475,6 +469,21 @@
         {
           "time": "20 Sep · 14:00",
           "match": "Bournemouth vs Liverpool",
+          "status": "upcoming"
+        },
+        {
+          "time": "20 Sep · 14:00",
+          "match": "Leeds United vs Crystal Palace",
+          "status": "upcoming"
+        },
+        {
+          "time": "20 Sep · 14:00",
+          "match": "Man City vs Sunderland",
+          "status": "upcoming"
+        },
+        {
+          "time": "20 Sep · 16:30",
+          "match": "Fulham vs Man United",
           "status": "upcoming"
         }
       ]
