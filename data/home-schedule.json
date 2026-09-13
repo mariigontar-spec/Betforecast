@@ -1,155 +1,138 @@
 {
-  "updatedAt": "2026-09-13T00:03:00+03:00",
-  "featuredId": "man-utd-man-city-sep13",
+  "updatedAt": "2026-09-14T00:03:00+03:00",
+  "featuredId": "leeds-newcastle-sep14",
   "events": [
     {
-      "id": "man-utd-man-city-sep13",
+      "id": "leeds-newcastle-sep14",
       "type": "event",
       "sport": "Football",
-      "date": "13 Sep",
-      "time": "16:30 UK",
-      "title": "Manchester United vs Manchester City",
-      "home": "Manchester United",
-      "away": "Manchester City",
+      "date": "14 Sep",
+      "time": "20:00 UK",
+      "title": "Leeds United vs Newcastle United",
+      "home": "Leeds United",
+      "away": "Newcastle United",
       "competition": "Premier League",
-      "stage": "Matchweek 4 · Manchester derby",
+      "stage": "Matchweek 4 · Monday Night Football",
       "status": "Today",
       "signals": [
-        "Manchester City enter with nine points",
-        "Manchester United have four points after three matches",
-        "Old Trafford hosts the 199th Manchester derby"
+        "Both teams have five points from three matches",
+        "Leeds are unbeaten in the league",
+        "Newcastle are unbeaten in the league"
       ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
     },
     {
-      "id": "coventry-brighton-sep13",
-      "type": "event",
-      "sport": "Football",
-      "date": "13 Sep",
-      "time": "14:00 UK",
-      "title": "Coventry City vs Brighton",
-      "home": "Coventry City",
-      "away": "Brighton",
-      "competition": "Premier League",
-      "stage": "Matchweek 4",
-      "status": "Today",
-      "signals": [
-        "Coventry seek their first points",
-        "Brighton have four points",
-        "Verified Sunday fixture"
-      ]
-    },
-    {
-      "id": "f1-spain-race-sep13",
-      "type": "event",
-      "sport": "Formula 1",
-      "date": "13 Sep",
-      "time": "15:00 Madrid",
-      "title": "Spanish Grand Prix",
-      "home": "Lando Norris",
-      "away": "Kimi Antonelli",
-      "competition": "Formula 1",
-      "stage": "Race · Madring · 57 laps",
-      "status": "Today",
-      "signals": [
-        "Norris starts from pole",
-        "Antonelli starts second",
-        "Verstappen starts third"
-      ]
-    },
-    {
-      "id": "vuelta-stage21-sep13",
-      "type": "event",
-      "sport": "Cycling",
-      "date": "13 Sep",
-      "time": "Stage 21",
-      "title": "Vuelta Stage 21",
-      "home": "Alhambra",
-      "away": "Granada",
-      "competition": "Vuelta a España",
-      "stage": "Final stage",
-      "status": "Today",
-      "signals": [
-        "Enric Mas leads Primož Roglič by 2:15",
-        "Mikel Landa won Stage 20",
-        "Final ceremonial stage in Granada"
-      ]
-    },
-    {
-      "id": "zverev-shelton-final-sep13",
+      "id": "zverev-shelton-pending-sep13",
       "type": "event",
       "sport": "Tennis",
       "date": "13 Sep",
-      "time": "16:00 ET",
+      "time": "Result pending",
       "title": "Alexander Zverev vs Ben Shelton",
       "home": "Alexander Zverev",
       "away": "Ben Shelton",
       "competition": "US Open",
       "stage": "Men's singles final",
-      "status": "Today",
+      "status": "Awaiting verified result",
       "signals": [
-        "Zverev beat Karen Khachanov in straight sets",
-        "Shelton beat Frances Tiafoe in four sets",
-        "Shelton's first Grand Slam final"
+        "Final started Sunday in New York",
+        "No verified final score available at update time",
+        "Last confirmed: Shelton reached his first major final"
       ],
       "homeLogo": "https://flagcdn.com/w160/de.png",
       "awayLogo": "https://flagcdn.com/w160/us.png"
     },
     {
-      "id": "epl-results-sep12",
+      "id": "manchester-derby-result-sep13",
       "type": "result",
       "sport": "Football",
-      "date": "12 Sep",
+      "date": "13 Sep",
       "time": "Final",
-      "title": "Premier League Saturday results",
-      "home": "Seven fixtures",
-      "away": "Matchweek 4",
+      "title": "Manchester United 0-1 Manchester City",
+      "home": "Manchester United",
+      "away": "Manchester City",
       "competition": "Premier League",
-      "stage": "Arsenal won; six other results verified",
+      "stage": "Matchweek 4 · Old Trafford",
       "status": "Result",
       "signals": [
-        "Sunderland 0-2 Arsenal",
-        "Liverpool 0-0 Fulham",
-        "Chelsea 2-2 Hull",
-        "Forest and Ipswich won"
+        "Erling Haaland scored the winner",
+        "City played with 10 men after Phil Foden's red card",
+        "City moved to 12 points"
       ]
     },
     {
-      "id": "landa-stage20-result",
+      "id": "coventry-brighton-result-sep13",
       "type": "result",
-      "sport": "Cycling",
-      "date": "12 Sep",
+      "sport": "Football",
+      "date": "13 Sep",
       "time": "Final",
-      "title": "Mikel Landa wins Vuelta Stage 20",
-      "home": "Mikel Landa",
-      "away": "Enric Mas",
-      "competition": "Vuelta a España",
-      "stage": "La Calahorra to Collado del Alguacil",
+      "title": "Coventry City 0-5 Brighton",
+      "home": "Coventry City",
+      "away": "Brighton",
+      "competition": "Premier League",
+      "stage": "Matchweek 4",
       "status": "Result",
       "signals": [
-        "Landa took his first stage win since 2021",
-        "Mas extended his GC lead to 2:15",
-        "Felix Gall moved onto the podium"
+        "Brighton moved fourth",
+        "Coventry remain without a point",
+        "Verified league result"
       ]
     },
     {
-      "id": "f1-spain-qualifying-result",
+      "id": "antonelli-spain-result-sep13",
       "type": "result",
       "sport": "Formula 1",
-      "date": "12 Sep",
+      "date": "13 Sep",
       "time": "Final",
-      "title": "Lando Norris takes pole in Madrid",
-      "home": "Lando Norris",
-      "away": "Kimi Antonelli",
+      "title": "Kimi Antonelli wins Spanish Grand Prix",
+      "home": "Kimi Antonelli",
+      "away": "Max Verstappen",
       "competition": "Formula 1",
-      "stage": "Spanish Grand Prix qualifying",
+      "stage": "Madring · Madrid",
       "status": "Result",
       "signals": [
-        "Norris 1:31.824",
-        "Antonelli second by 0.011s",
-        "Verstappen third"
+        "Antonelli won the inaugural race at Madring",
+        "Verstappen finished second",
+        "Pole-sitter Lando Norris finished third"
       ]
+    },
+    {
+      "id": "mas-vuelta-winner-sep13",
+      "type": "result",
+      "sport": "Cycling",
+      "date": "13 Sep",
+      "time": "Final",
+      "title": "Enric Mas wins Vuelta a España",
+      "home": "Enric Mas",
+      "away": "Primož Roglič",
+      "competition": "Vuelta a España",
+      "stage": "Final classification",
+      "status": "Result",
+      "signals": [
+        "Mas won his first Grand Tour",
+        "First Spanish Vuelta champion since 2014",
+        "Tobias Johannessen won Stage 21"
+      ]
+    },
+    {
+      "id": "rybakina-usopen-winner-sep12",
+      "type": "result",
+      "sport": "Tennis",
+      "date": "12 Sep",
+      "time": "Final",
+      "title": "Elena Rybakina wins US Open",
+      "home": "Elena Rybakina",
+      "away": "Aryna Sabalenka",
+      "competition": "US Open",
+      "stage": "Women's singles final",
+      "status": "Result",
+      "signals": [
+        "Rybakina won 6-4, 5-7, 6-2",
+        "First US Open title",
+        "Third Grand Slam title"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/kz.png",
+      "awayLogo": "https://flagcdn.com/w160/by.png"
     }
   ]
 }
