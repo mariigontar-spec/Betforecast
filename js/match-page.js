@@ -1,65 +1,29 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    id: "man-utd-man-city-sep13", league: "Football · Premier League", date: "13 Sep 2026", time: "16:30 UK", stadium: "Old Trafford, Manchester",
-    home: "Manchester United", away: "Manchester City", homeShort: "MUN", awayShort: "MCI", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t1.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+    id: "leeds-newcastle-sep14", league: "Football · Premier League", date: "14 Sep 2026", time: "20:00 UK", stadium: "Elland Road, Leeds",
+    home: "Leeds United", away: "Newcastle United", homeShort: "LEE", awayShort: "NEW", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t2.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t4.png",
     projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Old Trafford hosts the 199th Manchester derby as Premier League Matchweek 4 continues.",
-    bestTip: "Confirmed fixture", goalsLean: "Matchweek 4", btts: "Sunday · 16:30 UK",
-    factors: ["Manchester City: 9 points", "Manchester United: 4 points", "199th Manchester derby", "Verified Sunday fixture"],
-    formHome: ["L", "W", "D"], formAway: ["W", "W", "W"],
-    homeStats: ["Played: 3", "Wins: 1", "Draws: 1", "Points: 4"],
-    awayStats: ["Played: 3", "Wins: 3", "Goal difference: +5", "Points: 9"],
-    quickInsightTitle: "Manchester derby", quickInsight: "Fixture and table context are verified; no score prediction is presented as fact.",
-    related: [{ id: "coventry-brighton-sep13", home: "Coventry City", away: "Brighton", league: "Premier League" }, { id: "f1-spain-race-sep13", home: "Lando Norris", away: "Kimi Antonelli", league: "Formula 1" }]
+    summary: "Leeds United host Newcastle United in the final fixture of Premier League Matchweek 4.",
+    bestTip: "Confirmed fixture", goalsLean: "Matchweek 4", btts: "Monday · 20:00 UK",
+    factors: ["Leeds: 5 points", "Newcastle: 5 points", "Both unbeaten in league", "Verified Monday fixture"],
+    formHome: ["W", "D", "D"], formAway: ["D", "W", "D"],
+    homeStats: ["Played: 3", "Wins: 1", "Draws: 2", "Goal difference: +1"],
+    awayStats: ["Played: 3", "Wins: 1", "Draws: 2", "Goal difference: +2"],
+    quickInsightTitle: "Monday Night Football", quickInsight: "Fixture and pre-match league records are verified; no score prediction is presented as fact.",
+    related: [{ id: "zverev-shelton-pending-sep13", home: "Alexander Zverev", away: "Ben Shelton", league: "US Open" }]
   },
   {
-    id: "coventry-brighton-sep13", league: "Football · Premier League", date: "13 Sep 2026", time: "14:00 UK", stadium: "Coventry Building Society Arena",
-    home: "Coventry City", away: "Brighton", homeShort: "COV", awayShort: "BHA", projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Coventry host Brighton in Sunday's opening Premier League fixture.",
-    bestTip: "Confirmed fixture", goalsLean: "Matchweek 4", btts: "Sunday · 14:00 UK",
-    factors: ["Coventry seek first points", "Brighton have four points", "Official league schedule", "Sunday opener"],
-    formHome: ["L", "L", "L"], formAway: ["W", "L", "D"],
-    homeStats: ["Played: 3", "Points: 0", "Goals for: 0", "Goals against: 5"],
-    awayStats: ["Played: 3", "Points: 4", "Goals for: 8", "Goals against: 5"],
-    quickInsightTitle: "Sunday opener", quickInsight: "Pre-match records reflect the verified table before kickoff.",
-    related: [{ id: "man-utd-man-city-sep13", home: "Manchester United", away: "Manchester City", league: "Premier League" }]
-  },
-  {
-    id: "f1-spain-race-sep13", league: "Formula 1 · Spanish Grand Prix", date: "13 Sep 2026", time: "15:00 Madrid", stadium: "Madring, Madrid",
-    home: "Lando Norris", away: "Kimi Antonelli", homeShort: "NOR", awayShort: "ANT", projectedScore: "57 LAPS", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Lando Norris starts the first Spanish Grand Prix at Madring from pole, with Kimi Antonelli second and Max Verstappen third.",
-    bestTip: "Official grid", goalsLean: "Race day", btts: "Sunday · 15:00 local",
-    factors: ["Norris pole: 1:31.824", "Antonelli +0.011s", "Verstappen starts third", "57 race laps"],
-    formHome: ["P", "1"], formAway: ["P", "2"],
-    homeStats: ["Grid: P1", "Team: McLaren", "Qualifying: 1:31.824", "Circuit: Madring"],
-    awayStats: ["Grid: P2", "Team: Mercedes", "Gap: +0.011s", "Verstappen: P3"],
-    quickInsightTitle: "Madrid race day", quickInsight: "The starting order comes from the official Formula 1 qualifying classification.",
-    related: [{ id: "vuelta-stage21-sep13", home: "Alhambra", away: "Granada", league: "Vuelta" }]
-  },
-  {
-    id: "vuelta-stage21-sep13", league: "Cycling · Vuelta a España", date: "13 Sep 2026", time: "Stage 21", stadium: "Granada, Spain",
-    home: "Alhambra", away: "Granada", homeShort: "ALH", awayShort: "GRA", projectedScore: "FINAL", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "The Vuelta reaches its final ceremonial stage in Granada with Enric Mas holding a 2:15 lead over Primož Roglič.",
-    bestTip: "Official route", goalsLean: "Final stage", btts: "Sunday",
-    factors: ["Mas leads by 2:15", "Landa won Stage 20", "Gall sits third overall", "Final stage in Granada"],
-    formHome: ["S", "2", "1"], formAway: ["G", "C"],
-    homeStats: ["Date: 13 Sep", "Stage: 21", "Finish: Granada", "Leader: Enric Mas"],
-    awayStats: ["Roglič: +2:15", "Gall: +2:44", "Stage 20 winner: Landa", "Final day"],
-    quickInsightTitle: "Final day in Granada", quickInsight: "The general-classification gaps are verified after Stage 20.",
-    related: [{ id: "zverev-shelton-final-sep13", home: "Alexander Zverev", away: "Ben Shelton", league: "US Open" }]
-  },
-  {
-    id: "zverev-shelton-final-sep13", league: "Tennis · US Open", date: "13 Sep 2026", time: "16:00 ET", stadium: "Arthur Ashe Stadium, New York",
+    id: "zverev-shelton-pending-sep13", league: "Tennis · US Open", date: "13 Sep 2026", time: "Result pending", stadium: "Arthur Ashe Stadium, New York",
     home: "Alexander Zverev", away: "Ben Shelton", homeShort: "ZVE", awayShort: "SHE", homeLogo: "https://flagcdn.com/w160/de.png", awayLogo: "https://flagcdn.com/w160/us.png",
-    projectedScore: "FINAL", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Top seed Alexander Zverev faces Ben Shelton in the US Open men's singles final.",
-    bestTip: "Confirmed fixture", goalsLean: "Championship match", btts: "Sunday · 16:00 ET",
-    factors: ["Zverev beat Khachanov", "Shelton beat Tiafoe", "Shelton's first major final", "Men's championship"],
+    projectedScore: "PENDING", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "The US Open men's final result was not yet available from a reliable source at update time.",
+    bestTip: "Await verified result", goalsLean: "Championship match", btts: "No unverified score",
+    factors: ["Zverev beat Khachanov", "Shelton beat Tiafoe", "Final played Sunday", "Result pending verification"],
     formHome: ["W", "W", "W"], formAway: ["W", "W", "W"],
-    homeStats: ["Round: final", "Top seed", "Beat Khachanov in straight sets", "Seeking second major title"],
-    awayStats: ["Round: final", "Beat Tiafoe in four sets", "First Grand Slam final", "First American men's finalist since 2006"],
-    quickInsightTitle: "New York title at stake", quickInsight: "The finalists and semi-final results are verified; no unverified score prediction is presented.",
-    related: [{ id: "man-utd-man-city-sep13", home: "Manchester United", away: "Manchester City", league: "Premier League" }]
+    homeStats: ["Top seed", "2026 French Open champion", "Beat Khachanov in straight sets", "Final result pending"],
+    awayStats: ["First Grand Slam final", "Beat Tiafoe in four sets", "No. 8 seed", "Final result pending"],
+    quickInsightTitle: "Verification first", quickInsight: "The last confirmed values are retained until an authoritative final score is available.",
+    related: [{ id: "leeds-newcastle-sep14", home: "Leeds United", away: "Newcastle United", league: "Premier League" }]
   }
 ];
 function normalizeAlias(value){return String(value||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
