@@ -1,29 +1,29 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    id: "leeds-newcastle-sep14", league: "Football · Premier League", date: "14 Sep 2026", time: "20:00 UK", stadium: "Elland Road, Leeds",
-    home: "Leeds United", away: "Newcastle United", homeShort: "LEE", awayShort: "NEW", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t2.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+    id: "liverpool-tottenham-sep15", league: "Football · Carabao Cup", date: "15 Sep 2026", time: "20:00 UK", stadium: "Anfield, Liverpool",
+    home: "Liverpool", away: "Tottenham Hotspur", homeShort: "LIV", awayShort: "TOT", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t14.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t6.png",
     projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Leeds United host Newcastle United in the final fixture of Premier League Matchweek 4.",
-    bestTip: "Confirmed fixture", goalsLean: "Matchweek 4", btts: "Monday · 20:00 UK",
-    factors: ["Leeds: 5 points", "Newcastle: 5 points", "Both unbeaten in league", "Verified Monday fixture"],
-    formHome: ["W", "D", "D"], formAway: ["D", "W", "D"],
-    homeStats: ["Played: 3", "Wins: 1", "Draws: 2", "Goal difference: +1"],
-    awayStats: ["Played: 3", "Wins: 1", "Draws: 2", "Goal difference: +2"],
-    quickInsightTitle: "Monday Night Football", quickInsight: "Fixture and pre-match league records are verified; no score prediction is presented as fact.",
-    related: [{ id: "zverev-shelton-pending-sep13", home: "Alexander Zverev", away: "Ben Shelton", league: "US Open" }]
+    summary: "Liverpool host Tottenham Hotspur in an all-Premier-League Carabao Cup third-round tie.",
+    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Tuesday · 20:00 UK",
+    factors: ["Anfield cup tie", "Liverpool unbeaten in league", "Tottenham yet to score in league", "Official third-round fixture"],
+    formHome: ["D", "D", "W", "D"], formAway: ["L", "L", "D", "D"],
+    homeStats: ["Competition: Carabao Cup", "Round: third", "Venue: Anfield", "Kickoff: 20:00 UK"],
+    awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 20:00 UK"],
+    quickInsightTitle: "Cup night at Anfield", quickInsight: "Fixture and recent league context are verified; no score prediction is presented as fact.",
+    related: [{ id: "ipswich-arsenal-sep15", home: "Ipswich Town", away: "Arsenal", league: "Carabao Cup" }]
   },
   {
-    id: "zverev-shelton-pending-sep13", league: "Tennis · US Open", date: "13 Sep 2026", time: "Result pending", stadium: "Arthur Ashe Stadium, New York",
-    home: "Alexander Zverev", away: "Ben Shelton", homeShort: "ZVE", awayShort: "SHE", homeLogo: "https://flagcdn.com/w160/de.png", awayLogo: "https://flagcdn.com/w160/us.png",
-    projectedScore: "PENDING", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "The US Open men's final result was not yet available from a reliable source at update time.",
-    bestTip: "Await verified result", goalsLean: "Championship match", btts: "No unverified score",
-    factors: ["Zverev beat Khachanov", "Shelton beat Tiafoe", "Final played Sunday", "Result pending verification"],
-    formHome: ["W", "W", "W"], formAway: ["W", "W", "W"],
-    homeStats: ["Top seed", "2026 French Open champion", "Beat Khachanov in straight sets", "Final result pending"],
-    awayStats: ["First Grand Slam final", "Beat Tiafoe in four sets", "No. 8 seed", "Final result pending"],
-    quickInsightTitle: "Verification first", quickInsight: "The last confirmed values are retained until an authoritative final score is available.",
-    related: [{ id: "leeds-newcastle-sep14", home: "Leeds United", away: "Newcastle United", league: "Premier League" }]
+    id: "ipswich-arsenal-sep15", league: "Football · Carabao Cup", date: "15 Sep 2026", time: "20:00 UK", stadium: "Portman Road, Ipswich",
+    home: "Ipswich Town", away: "Arsenal", homeShort: "IPS", awayShort: "ARS", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t40.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+    projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "Ipswich Town host Premier League leaders Arsenal in the Carabao Cup third round.",
+    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Tuesday · 20:00 UK",
+    factors: ["Ipswich won on Saturday", "Arsenal lead the Premier League", "Portman Road", "Official third-round fixture"],
+    formHome: ["W", "L", "L", "W"], formAway: ["W", "W", "W", "W"],
+    homeStats: ["Competition: Carabao Cup", "Round: third", "Venue: Portman Road", "Kickoff: 20:00 UK"],
+    awayStats: ["Premier League: 1st", "League points: 12", "Four league wins", "Kickoff: 20:00 UK"],
+    quickInsightTitle: "Leaders enter the cup", quickInsight: "The fixture and league records are verified before kickoff.",
+    related: [{ id: "liverpool-tottenham-sep15", home: "Liverpool", away: "Tottenham Hotspur", league: "Carabao Cup" }]
   }
 ];
 function normalizeAlias(value){return String(value||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
