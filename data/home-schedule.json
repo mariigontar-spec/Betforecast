@@ -1,82 +1,102 @@
 {
-  "updatedAt": "2026-09-14T00:03:00+03:00",
-  "featuredId": "leeds-newcastle-sep14",
+  "updatedAt": "2026-09-15T00:01:00+03:00",
+  "featuredId": "liverpool-tottenham-sep15",
   "events": [
     {
-      "id": "leeds-newcastle-sep14",
+      "id": "liverpool-tottenham-sep15",
       "type": "event",
       "sport": "Football",
-      "date": "14 Sep",
+      "date": "15 Sep",
       "time": "20:00 UK",
-      "title": "Leeds United vs Newcastle United",
+      "title": "Liverpool vs Tottenham Hotspur",
+      "home": "Liverpool",
+      "away": "Tottenham Hotspur",
+      "competition": "Carabao Cup",
+      "stage": "Third round · Anfield",
+      "status": "Today",
+      "signals": [
+        "All-Premier-League cup tie",
+        "Liverpool remain unbeaten in the league",
+        "Tottenham are still seeking their first competitive goal of the season"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
+    },
+    {
+      "id": "ipswich-arsenal-sep15",
+      "type": "event",
+      "sport": "Football",
+      "date": "15 Sep",
+      "time": "20:00 UK",
+      "title": "Ipswich Town vs Arsenal",
+      "home": "Ipswich Town",
+      "away": "Arsenal",
+      "competition": "Carabao Cup",
+      "stage": "Third round · Portman Road",
+      "status": "Today",
+      "signals": [
+        "Arsenal enter after four straight league wins",
+        "Ipswich beat Crystal Palace on Saturday",
+        "Verified third-round fixture"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+    },
+    {
+      "id": "carabao-sep15",
+      "type": "event",
+      "sport": "Football",
+      "date": "15 Sep",
+      "time": "19:30–20:00 UK",
+      "title": "Carabao Cup third round",
+      "home": "Five fixtures",
+      "away": "Tuesday programme",
+      "competition": "Carabao Cup",
+      "stage": "Peterborough–Barnsley, West Ham–Fulham, Reading–Brentford and two more",
+      "status": "Today",
+      "signals": [
+        "Five verified fixtures",
+        "Liverpool and Arsenal enter the competition",
+        "Fourth-round draw follows this week"
+      ]
+    },
+    {
+      "id": "leeds-newcastle-result-sep14",
+      "type": "result",
+      "sport": "Football",
+      "date": "14 Sep",
+      "time": "Final",
+      "title": "Leeds United 4-1 Newcastle United",
       "home": "Leeds United",
       "away": "Newcastle United",
       "competition": "Premier League",
-      "stage": "Matchweek 4 · Monday Night Football",
-      "status": "Today",
+      "stage": "Matchweek 4 · Elland Road",
+      "status": "Result",
       "signals": [
-        "Both teams have five points from three matches",
-        "Leeds are unbeaten in the league",
-        "Newcastle are unbeaten in the league"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+        "Leeds moved third",
+        "Matchweek 4 completed",
+        "Verified final score"
+      ]
     },
     {
-      "id": "zverev-shelton-pending-sep13",
-      "type": "event",
+      "id": "zverev-usopen-winner-sep13",
+      "type": "result",
       "sport": "Tennis",
       "date": "13 Sep",
-      "time": "Result pending",
-      "title": "Alexander Zverev vs Ben Shelton",
+      "time": "Final",
+      "title": "Alexander Zverev wins US Open",
       "home": "Alexander Zverev",
       "away": "Ben Shelton",
       "competition": "US Open",
       "stage": "Men's singles final",
-      "status": "Awaiting verified result",
+      "status": "Result",
       "signals": [
-        "Final started Sunday in New York",
-        "No verified final score available at update time",
-        "Last confirmed: Shelton reached his first major final"
+        "Zverev won 6-3, 7-6(2), 5-7, 6-2",
+        "Second Grand Slam title",
+        "French Open and US Open champion in 2026"
       ],
       "homeLogo": "https://flagcdn.com/w160/de.png",
       "awayLogo": "https://flagcdn.com/w160/us.png"
-    },
-    {
-      "id": "manchester-derby-result-sep13",
-      "type": "result",
-      "sport": "Football",
-      "date": "13 Sep",
-      "time": "Final",
-      "title": "Manchester United 0-1 Manchester City",
-      "home": "Manchester United",
-      "away": "Manchester City",
-      "competition": "Premier League",
-      "stage": "Matchweek 4 · Old Trafford",
-      "status": "Result",
-      "signals": [
-        "Erling Haaland scored the winner",
-        "City played with 10 men after Phil Foden's red card",
-        "City moved to 12 points"
-      ]
-    },
-    {
-      "id": "coventry-brighton-result-sep13",
-      "type": "result",
-      "sport": "Football",
-      "date": "13 Sep",
-      "time": "Final",
-      "title": "Coventry City 0-5 Brighton",
-      "home": "Coventry City",
-      "away": "Brighton",
-      "competition": "Premier League",
-      "stage": "Matchweek 4",
-      "status": "Result",
-      "signals": [
-        "Brighton moved fourth",
-        "Coventry remain without a point",
-        "Verified league result"
-      ]
     },
     {
       "id": "antonelli-spain-result-sep13",
@@ -91,9 +111,9 @@
       "stage": "Madring · Madrid",
       "status": "Result",
       "signals": [
-        "Antonelli won the inaugural race at Madring",
+        "Antonelli won the inaugural Madring race",
         "Verstappen finished second",
-        "Pole-sitter Lando Norris finished third"
+        "Lando Norris finished third"
       ]
     },
     {
@@ -110,29 +130,9 @@
       "status": "Result",
       "signals": [
         "Mas won his first Grand Tour",
-        "First Spanish Vuelta champion since 2014",
+        "First Spanish champion since 2014",
         "Tobias Johannessen won Stage 21"
       ]
-    },
-    {
-      "id": "rybakina-usopen-winner-sep12",
-      "type": "result",
-      "sport": "Tennis",
-      "date": "12 Sep",
-      "time": "Final",
-      "title": "Elena Rybakina wins US Open",
-      "home": "Elena Rybakina",
-      "away": "Aryna Sabalenka",
-      "competition": "US Open",
-      "stage": "Women's singles final",
-      "status": "Result",
-      "signals": [
-        "Rybakina won 6-4, 5-7, 6-2",
-        "First US Open title",
-        "Third Grand Slam title"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/kz.png",
-      "awayLogo": "https://flagcdn.com/w160/by.png"
     }
   ]
 }
