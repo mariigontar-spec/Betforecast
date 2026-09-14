@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Matchweek 4 continues · checked 14 Sep",
-      "insightText": "Arsenal and Manchester City lead on 12 points, with Arsenal ahead on goal difference. Brighton moved fourth after winning 5-0 at Coventry. Leeds United host Newcastle United on 14 September.",
+      "insightTitle": "Matchweek 4 complete · checked 15 Sep",
+      "insightText": "Arsenal and Manchester City lead on 12 points, with Arsenal first on goal difference. Leeds United moved third after beating Newcastle United 4-1. Matchweek 5 begins on 18 September.",
       "table": [
         {
           "pos": 1,
@@ -47,6 +47,24 @@
         },
         {
           "pos": 3,
+          "team": "Leeds United",
+          "played": 4,
+          "wins": 2,
+          "draws": 2,
+          "losses": 0,
+          "gf": 7,
+          "ga": 3,
+          "points": 8,
+          "form": [
+            "W",
+            "D",
+            "D",
+            "W"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 4,
           "team": "Hull City",
           "played": 4,
           "wins": 2,
@@ -64,7 +82,7 @@
           "zone": "cl"
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Brighton",
           "played": 4,
           "wins": 2,
@@ -79,10 +97,10 @@
             "D",
             "W"
           ],
-          "zone": "cl"
+          "zone": "safe"
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "Chelsea",
           "played": 4,
           "wins": 2,
@@ -100,7 +118,7 @@
           "zone": "safe"
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Brentford",
           "played": 4,
           "wins": 1,
@@ -118,7 +136,7 @@
           "zone": "safe"
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "Liverpool",
           "played": 4,
           "wins": 1,
@@ -136,7 +154,7 @@
           "zone": "safe"
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "Everton",
           "played": 4,
           "wins": 1,
@@ -154,7 +172,7 @@
           "zone": "safe"
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Ipswich Town",
           "played": 4,
           "wins": 2,
@@ -172,41 +190,7 @@
           "zone": "safe"
         },
         {
-          "pos": 10,
-          "team": "Newcastle",
-          "played": 3,
-          "wins": 1,
-          "draws": 2,
-          "losses": 0,
-          "gf": 6,
-          "ga": 4,
-          "points": 5,
-          "form": [
-            "D",
-            "W",
-            "D"
-          ],
-          "zone": "safe"
-        },
-        {
           "pos": 11,
-          "team": "Leeds United",
-          "played": 3,
-          "wins": 1,
-          "draws": 2,
-          "losses": 0,
-          "gf": 3,
-          "ga": 2,
-          "points": 5,
-          "form": [
-            "W",
-            "D",
-            "D"
-          ],
-          "zone": "safe"
-        },
-        {
-          "pos": 12,
           "team": "Nottm Forest",
           "played": 4,
           "wins": 1,
@@ -220,6 +204,24 @@
             "D",
             "D",
             "W"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 12,
+          "team": "Newcastle",
+          "played": 4,
+          "wins": 1,
+          "draws": 2,
+          "losses": 1,
+          "gf": 7,
+          "ga": 8,
+          "points": 5,
+          "form": [
+            "D",
+            "W",
+            "D",
+            "L"
           ],
           "zone": "safe"
         },
@@ -370,6 +372,12 @@
       ],
       "lastMatches": [
         {
+          "time": "14 Sep",
+          "match": "Leeds United vs Newcastle",
+          "score": "4:1",
+          "status": "finished"
+        },
+        {
           "time": "13 Sep",
           "match": "Man United vs Man City",
           "score": "0:1",
@@ -422,20 +430,9 @@
           "match": "Bournemouth vs Brentford",
           "score": "2:2",
           "status": "finished"
-        },
-        {
-          "time": "6 Sep",
-          "match": "Arsenal vs Chelsea",
-          "score": "2:1",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
-        {
-          "time": "14 Sep · 20:00",
-          "match": "Leeds United vs Newcastle",
-          "status": "upcoming"
-        },
         {
           "time": "18 Sep · 20:00",
           "match": "Brentford vs Chelsea",
