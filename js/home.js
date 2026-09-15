@@ -38,25 +38,25 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Liverpool–Tottenham and Ipswich–Arsenal headline Tuesday’s Carabao Cup programme after Leeds completed Premier League Matchweek 4 with a 4-1 win.";
+        "Manchester United–Brighton and Coventry–Aston Villa headline Wednesday’s Carabao Cup programme after Liverpool and Arsenal advanced.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>15 Sep</strong><span>Carabao Cup · 5 fixtures</span></div>
-        <div><strong>14 Sep</strong><span>Leeds 4–1 Newcastle</span></div>
-        <div><strong>13 Sep</strong><span>Zverev · US Open champion</span></div>
+        <div><strong>16 Sep</strong><span>Carabao Cup · 4 fixtures</span></div>
+        <div><strong>15 Sep</strong><span>Liverpool 3–1 Tottenham</span></div>
+        <div><strong>15 Sep</strong><span>Arsenal win 4–2 at Ipswich</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Liverpool, Tottenham, Arsenal, Carabao Cup";
+      input.placeholder = "Try: Manchester United, Brighton, Carabao Cup";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Liverpool Tottenham">Liverpool–Tottenham</button>
+        <button type="button" data-query="Manchester United Brighton">Man United–Brighton</button>
         <button type="button" data-query="Premier League">Premier League</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
       `;
@@ -64,9 +64,9 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=liverpool-tottenham-sep15", title: "Liverpool vs Tottenham Hotspur", detail: "15 September · Carabao Cup · 20:00 UK", tag: "Football" },
-      { href: "match.html?id=ipswich-arsenal-sep15", title: "Ipswich Town vs Arsenal", detail: "15 September · Carabao Cup · 20:00 UK", tag: "Football" },
-      { href: "results.html", title: "Alexander Zverev wins US Open", detail: "13 September · four-set final", tag: "Tennis" },
+      { href: "match.html?id=man-utd-brighton-sep16", title: "Manchester United vs Brighton", detail: "16 September · Carabao Cup · 20:00 UK", tag: "Football" },
+      { href: "match.html?id=coventry-aston-villa-sep16", title: "Coventry City vs Aston Villa", detail: "16 September · Carabao Cup · 20:00 UK", tag: "Football" },
+      { href: "results.html", title: "Liverpool beat Tottenham", detail: "15 September · Carabao Cup · 3-1", tag: "Results" },
       { href: "standings.html", title: "Premier League · Matchweek 4 complete", detail: "Table, Recent and Upcoming updated", tag: "Table" },
     ];
 
