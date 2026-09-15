@@ -1,137 +1,177 @@
 {
-  "updatedAt": "2026-09-15T00:01:00+03:00",
-  "featuredId": "liverpool-tottenham-sep15",
+  "updatedAt": "2026-09-16T00:01:00+03:00",
+  "featuredId": "man-utd-brighton-sep16",
   "events": [
     {
-      "id": "liverpool-tottenham-sep15",
+      "id": "man-utd-brighton-sep16",
       "type": "event",
       "sport": "Football",
-      "date": "15 Sep",
+      "date": "16 Sep",
       "time": "20:00 UK",
-      "title": "Liverpool vs Tottenham Hotspur",
+      "title": "Manchester United vs Brighton",
+      "home": "Manchester United",
+      "away": "Brighton",
+      "competition": "Carabao Cup",
+      "stage": "Third round · Old Trafford",
+      "status": "Today",
+      "signals": [
+        "All-Premier-League cup tie",
+        "Manchester United seek a response after the derby defeat",
+        "Brighton enter after a 5-0 league win at Coventry"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
+    },
+    {
+      "id": "coventry-aston-villa-sep16",
+      "type": "event",
+      "sport": "Football",
+      "date": "16 Sep",
+      "time": "20:00 UK",
+      "title": "Coventry City vs Aston Villa",
+      "home": "Coventry City",
+      "away": "Aston Villa",
+      "competition": "Carabao Cup",
+      "stage": "Third round · Coventry Building Society Arena",
+      "status": "Today",
+      "signals": [
+        "West Midlands cup tie",
+        "Both clubs seek early-season momentum",
+        "Verified third-round fixture"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t189.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
+    },
+    {
+      "id": "everton-wolves-sep16",
+      "type": "event",
+      "sport": "Football",
+      "date": "16 Sep",
+      "time": "19:45 UK",
+      "title": "Everton vs Wolverhampton Wanderers",
+      "home": "Everton",
+      "away": "Wolverhampton Wanderers",
+      "competition": "Carabao Cup",
+      "stage": "Third round",
+      "status": "Today",
+      "signals": [
+        "Verified third-round fixture",
+        "Wednesday programme",
+        "Knockout tie"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t39.png"
+    },
+    {
+      "id": "fleetwood-sheffield-sep16",
+      "type": "event",
+      "sport": "Football",
+      "date": "16 Sep",
+      "time": "19:45 UK",
+      "title": "Fleetwood Town vs Sheffield United",
+      "home": "Fleetwood Town",
+      "away": "Sheffield United",
+      "competition": "Carabao Cup",
+      "stage": "Third round",
+      "status": "Today",
+      "signals": [
+        "Verified third-round fixture",
+        "Wednesday programme",
+        "Knockout tie"
+      ]
+    },
+    {
+      "id": "liverpool-tottenham-result-sep15",
+      "type": "result",
+      "sport": "Football",
+      "date": "15 Sep",
+      "time": "Final",
+      "title": "Liverpool 3-1 Tottenham Hotspur",
       "home": "Liverpool",
       "away": "Tottenham Hotspur",
       "competition": "Carabao Cup",
       "stage": "Third round · Anfield",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "All-Premier-League cup tie",
-        "Liverpool remain unbeaten in the league",
-        "Tottenham are still seeking their first competitive goal of the season"
+        "Liverpool advanced to round four",
+        "Mac Allister, Gakpo and Szoboszlai scored",
+        "Verified final score"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
     },
     {
-      "id": "ipswich-arsenal-sep15",
-      "type": "event",
+      "id": "ipswich-arsenal-result-sep15",
+      "type": "result",
       "sport": "Football",
       "date": "15 Sep",
-      "time": "20:00 UK",
-      "title": "Ipswich Town vs Arsenal",
+      "time": "Final",
+      "title": "Ipswich Town 2-4 Arsenal",
       "home": "Ipswich Town",
       "away": "Arsenal",
       "competition": "Carabao Cup",
       "stage": "Third round · Portman Road",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Arsenal enter after four straight league wins",
-        "Ipswich beat Crystal Palace on Saturday",
-        "Verified third-round fixture"
+        "Arsenal advanced to round four",
+        "Max Dowman scored twice",
+        "Verified final score"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
     },
     {
-      "id": "carabao-sep15",
-      "type": "event",
-      "sport": "Football",
-      "date": "15 Sep",
-      "time": "19:30–20:00 UK",
-      "title": "Carabao Cup third round",
-      "home": "Five fixtures",
-      "away": "Tuesday programme",
-      "competition": "Carabao Cup",
-      "stage": "Peterborough–Barnsley, West Ham–Fulham, Reading–Brentford and two more",
-      "status": "Today",
-      "signals": [
-        "Five verified fixtures",
-        "Liverpool and Arsenal enter the competition",
-        "Fourth-round draw follows this week"
-      ]
-    },
-    {
-      "id": "leeds-newcastle-result-sep14",
+      "id": "west-ham-fulham-result-sep15",
       "type": "result",
       "sport": "Football",
-      "date": "14 Sep",
+      "date": "15 Sep",
       "time": "Final",
-      "title": "Leeds United 4-1 Newcastle United",
-      "home": "Leeds United",
-      "away": "Newcastle United",
-      "competition": "Premier League",
-      "stage": "Matchweek 4 · Elland Road",
+      "title": "West Ham United 2-3 Fulham",
+      "home": "West Ham United",
+      "away": "Fulham",
+      "competition": "Carabao Cup",
+      "stage": "Third round · London Stadium",
       "status": "Result",
       "signals": [
-        "Leeds moved third",
-        "Matchweek 4 completed",
+        "Fulham advanced to round four",
+        "Oscar Bobb scored the late winner",
         "Verified final score"
       ]
     },
     {
-      "id": "zverev-usopen-winner-sep13",
+      "id": "reading-brentford-result-sep15",
       "type": "result",
-      "sport": "Tennis",
-      "date": "13 Sep",
+      "sport": "Football",
+      "date": "15 Sep",
       "time": "Final",
-      "title": "Alexander Zverev wins US Open",
-      "home": "Alexander Zverev",
-      "away": "Ben Shelton",
-      "competition": "US Open",
-      "stage": "Men's singles final",
+      "title": "Reading 1-2 Brentford",
+      "home": "Reading",
+      "away": "Brentford",
+      "competition": "Carabao Cup",
+      "stage": "Third round",
       "status": "Result",
       "signals": [
-        "Zverev won 6-3, 7-6(2), 5-7, 6-2",
-        "Second Grand Slam title",
-        "French Open and US Open champion in 2026"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/de.png",
-      "awayLogo": "https://flagcdn.com/w160/us.png"
-    },
-    {
-      "id": "antonelli-spain-result-sep13",
-      "type": "result",
-      "sport": "Formula 1",
-      "date": "13 Sep",
-      "time": "Final",
-      "title": "Kimi Antonelli wins Spanish Grand Prix",
-      "home": "Kimi Antonelli",
-      "away": "Max Verstappen",
-      "competition": "Formula 1",
-      "stage": "Madring · Madrid",
-      "status": "Result",
-      "signals": [
-        "Antonelli won the inaugural Madring race",
-        "Verstappen finished second",
-        "Lando Norris finished third"
+        "Brentford advanced to round four",
+        "Verified final score",
+        "Tuesday cup programme"
       ]
     },
     {
-      "id": "mas-vuelta-winner-sep13",
+      "id": "peterborough-barnsley-result-sep15",
       "type": "result",
-      "sport": "Cycling",
-      "date": "13 Sep",
-      "time": "Final",
-      "title": "Enric Mas wins Vuelta a España",
-      "home": "Enric Mas",
-      "away": "Primož Roglič",
-      "competition": "Vuelta a España",
-      "stage": "Final classification",
+      "sport": "Football",
+      "date": "15 Sep",
+      "time": "Final · pens",
+      "title": "Peterborough United 3-3 Barnsley",
+      "home": "Peterborough United",
+      "away": "Barnsley",
+      "competition": "Carabao Cup",
+      "stage": "Peterborough won 7-6 on penalties",
       "status": "Result",
       "signals": [
-        "Mas won his first Grand Tour",
-        "First Spanish champion since 2014",
-        "Tobias Johannessen won Stage 21"
+        "Six goals before penalties",
+        "Peterborough advanced to round four",
+        "Verified penalty shootout"
       ]
     }
   ]
