@@ -1,29 +1,55 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    id: "liverpool-tottenham-sep15", league: "Football · Carabao Cup", date: "15 Sep 2026", time: "20:00 UK", stadium: "Anfield, Liverpool",
-    home: "Liverpool", away: "Tottenham Hotspur", homeShort: "LIV", awayShort: "TOT", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t14.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+    id: "man-utd-brighton-sep16", league: "Football · Carabao Cup", date: "16 Sep 2026", time: "20:00 UK", stadium: "Old Trafford, Manchester",
+    home: "Manchester United", away: "Brighton", homeShort: "MUN", awayShort: "BHA", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t1.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t36.png",
     projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Liverpool host Tottenham Hotspur in an all-Premier-League Carabao Cup third-round tie.",
-    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Tuesday · 20:00 UK",
-    factors: ["Anfield cup tie", "Liverpool unbeaten in league", "Tottenham yet to score in league", "Official third-round fixture"],
-    formHome: ["D", "D", "W", "D"], formAway: ["L", "L", "D", "D"],
-    homeStats: ["Competition: Carabao Cup", "Round: third", "Venue: Anfield", "Kickoff: 20:00 UK"],
+    summary: "Manchester United host Brighton in an all-Premier-League Carabao Cup third-round tie.",
+    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Wednesday · 20:00 UK",
+    factors: ["Old Trafford cup tie", "Manchester United lost Sunday's derby", "Brighton won 5-0 at Coventry", "Official third-round fixture"],
+    formHome: ["L", "W", "D", "L"], formAway: ["W", "L", "D", "W"],
+    homeStats: ["Competition: Carabao Cup", "Round: third", "Venue: Old Trafford", "Kickoff: 20:00 UK"],
     awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 20:00 UK"],
-    quickInsightTitle: "Cup night at Anfield", quickInsight: "Fixture and recent league context are verified; no score prediction is presented as fact.",
-    related: [{ id: "ipswich-arsenal-sep15", home: "Ipswich Town", away: "Arsenal", league: "Carabao Cup" }]
+    quickInsightTitle: "Cup night at Old Trafford", quickInsight: "Fixture and recent league context are verified; no score prediction is presented as fact.",
+    related: [{ id: "coventry-aston-villa-sep16", home: "Coventry City", away: "Aston Villa", league: "Carabao Cup" }]
   },
   {
-    id: "ipswich-arsenal-sep15", league: "Football · Carabao Cup", date: "15 Sep 2026", time: "20:00 UK", stadium: "Portman Road, Ipswich",
-    home: "Ipswich Town", away: "Arsenal", homeShort: "IPS", awayShort: "ARS", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t40.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+    id: "coventry-aston-villa-sep16", league: "Football · Carabao Cup", date: "16 Sep 2026", time: "20:00 UK", stadium: "Coventry Building Society Arena",
+    home: "Coventry City", away: "Aston Villa", homeShort: "COV", awayShort: "AVL", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t189.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t7.png",
     projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Ipswich Town host Premier League leaders Arsenal in the Carabao Cup third round.",
-    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Tuesday · 20:00 UK",
-    factors: ["Ipswich won on Saturday", "Arsenal lead the Premier League", "Portman Road", "Official third-round fixture"],
-    formHome: ["W", "L", "L", "W"], formAway: ["W", "W", "W", "W"],
-    homeStats: ["Competition: Carabao Cup", "Round: third", "Venue: Portman Road", "Kickoff: 20:00 UK"],
-    awayStats: ["Premier League: 1st", "League points: 12", "Four league wins", "Kickoff: 20:00 UK"],
-    quickInsightTitle: "Leaders enter the cup", quickInsight: "The fixture and league records are verified before kickoff.",
-    related: [{ id: "liverpool-tottenham-sep15", home: "Liverpool", away: "Tottenham Hotspur", league: "Carabao Cup" }]
+    summary: "Coventry City host Aston Villa in a West Midlands Carabao Cup third-round tie.",
+    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Wednesday · 20:00 UK",
+    factors: ["West Midlands tie", "Coventry at home", "Both clubs seek momentum", "Official third-round fixture"],
+    formHome: ["L", "L", "L", "L"], formAway: ["L", "L", "D", "L"],
+    homeStats: ["Competition: Carabao Cup", "Round: third", "Venue: Coventry", "Kickoff: 20:00 UK"],
+    awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 20:00 UK"],
+    quickInsightTitle: "Local cup contest", quickInsight: "The fixture and current league records are verified before kickoff.",
+    related: [{ id: "man-utd-brighton-sep16", home: "Manchester United", away: "Brighton", league: "Carabao Cup" }]
+  },
+  {
+    id: "everton-wolves-sep16", league: "Football · Carabao Cup", date: "16 Sep 2026", time: "19:45 UK", stadium: "Everton",
+    home: "Everton", away: "Wolverhampton Wanderers", homeShort: "EVE", awayShort: "WOL", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t11.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t39.png",
+    projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "Everton face Wolverhampton Wanderers in Wednesday's Carabao Cup third-round programme.",
+    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Wednesday · 19:45 UK",
+    factors: ["Knockout tie", "Everton at home", "Official fixture", "No score prediction"],
+    formHome: ["W", "D", "D", "D"], formAway: [],
+    homeStats: ["Competition: Carabao Cup", "Round: third", "Home fixture", "Kickoff: 19:45 UK"],
+    awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 19:45 UK"],
+    quickInsightTitle: "Wednesday knockout football", quickInsight: "Kickoff and competition details are verified from the official schedule.",
+    related: [{ id: "fleetwood-sheffield-sep16", home: "Fleetwood Town", away: "Sheffield United", league: "Carabao Cup" }]
+  },
+  {
+    id: "fleetwood-sheffield-sep16", league: "Football · Carabao Cup", date: "16 Sep 2026", time: "19:45 UK", stadium: "Fleetwood",
+    home: "Fleetwood Town", away: "Sheffield United", homeShort: "FLT", awayShort: "SHU",
+    projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "Fleetwood Town host Sheffield United in the Carabao Cup third round.",
+    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Wednesday · 19:45 UK",
+    factors: ["Knockout tie", "Fleetwood at home", "Official fixture", "No score prediction"],
+    formHome: [], formAway: [],
+    homeStats: ["Competition: Carabao Cup", "Round: third", "Home fixture", "Kickoff: 19:45 UK"],
+    awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 19:45 UK"],
+    quickInsightTitle: "Third-round place at stake", quickInsight: "Only confirmed fixture information is displayed.",
+    related: [{ id: "everton-wolves-sep16", home: "Everton", away: "Wolverhampton Wanderers", league: "Carabao Cup" }]
   }
 ];
 function normalizeAlias(value){return String(value||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
