@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 15 Sep 2026";
-  if (t) t.textContent = "Carabao Cup, Premier League & US Open";
+  if (k) k.textContent = "World Sports News · 16 Sep 2026";
+  if (t) t.textContent = "Carabao Cup results & Wednesday fixtures";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=liverpool-tottenham-sep15">Liverpool–Tottenham cup tie</a><a class="sidebar-link-card" href="match.html?id=ipswich-arsenal-sep15">Ipswich host Arsenal</a><a class="sidebar-link-card" href="results.html">Leeds beat Newcastle 4-1</a><a class="sidebar-link-card" href="results.html">Zverev wins US Open</a><a class="sidebar-link-card" href="standings.html">Premier League table updated</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=man-utd-brighton-sep16">Man United–Brighton cup tie</a><a class="sidebar-link-card" href="match.html?id=coventry-aston-villa-sep16">Coventry host Aston Villa</a><a class="sidebar-link-card" href="results.html">Liverpool beat Tottenham 3-1</a><a class="sidebar-link-card" href="results.html">Arsenal win 4-2 at Ipswich</a><a class="sidebar-link-card" href="standings.html">Premier League table checked</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Five Carabao Cup third-round ties headline Tuesday, including Liverpool–Tottenham and Ipswich–Arsenal. Leeds completed Premier League Matchweek 4 with a 4-1 win, while Alexander Zverev’s US Open title is now verified.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Manchester United–Brighton and Coventry–Aston Villa headline Wednesday’s four Carabao Cup ties. Liverpool, Arsenal, Fulham, Brentford and Peterborough advanced on Tuesday.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
