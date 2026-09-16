@@ -1,83 +1,139 @@
 {
-  "updatedAt": "2026-09-16T00:01:00+03:00",
-  "featuredId": "man-utd-brighton-sep16",
+  "updatedAt": "2026-09-17T00:02:00+03:00",
+  "featuredId": "man-city-norwich-sep17",
   "events": [
     {
-      "id": "man-utd-brighton-sep16",
+      "id": "man-city-norwich-sep17",
       "type": "event",
       "sport": "Football",
+      "date": "17 Sep",
+      "time": "19:30 UK",
+      "title": "Manchester City vs Norwich City",
+      "home": "Manchester City",
+      "away": "Norwich City",
+      "competition": "Carabao Cup",
+      "stage": "Third round · Manchester City home fixture",
+      "status": "Today",
+      "signals": [
+        "Final third-round tie of the week",
+        "Manchester City are unbeaten in the league after four games",
+        "Winner advances to round four"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t45.png"
+    },
+    {
+      "id": "juventus-nec-sep17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Sep",
+      "time": "21:00 CEST",
+      "title": "Juventus vs N.E.C. Nijmegen",
+      "home": "Juventus",
+      "away": "N.E.C. Nijmegen",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Juventus Stadium",
+      "status": "Today",
+      "signals": [
+        "Opening league-phase match",
+        "Juventus official fixture",
+        "Kickoff 21:00 local time"
+      ]
+    },
+    {
+      "id": "real-sociedad-bournemouth-sep17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Sep",
+      "time": "21:00 CEST",
+      "title": "Real Sociedad vs Bournemouth",
+      "home": "Real Sociedad",
+      "away": "Bournemouth",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · San Sebastián",
+      "status": "Today",
+      "signals": [
+        "Europa League opening round",
+        "Verified UEFA fixture",
+        "Bournemouth play away in Spain"
+      ]
+    },
+    {
+      "id": "man-utd-brighton-result-sep16",
+      "type": "result",
+      "sport": "Football",
       "date": "16 Sep",
-      "time": "20:00 UK",
-      "title": "Manchester United vs Brighton",
+      "time": "Final",
+      "title": "Manchester United 2-3 Brighton",
       "home": "Manchester United",
       "away": "Brighton",
       "competition": "Carabao Cup",
       "stage": "Third round · Old Trafford",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "All-Premier-League cup tie",
-        "Manchester United seek a response after the derby defeat",
-        "Brighton enter after a 5-0 league win at Coventry"
+        "Brighton recovered from 0-2",
+        "Brighton advanced to round four",
+        "De Cuyper scored the winner"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
     },
     {
-      "id": "coventry-aston-villa-sep16",
-      "type": "event",
+      "id": "coventry-villa-result-sep16",
+      "type": "result",
       "sport": "Football",
       "date": "16 Sep",
-      "time": "20:00 UK",
-      "title": "Coventry City vs Aston Villa",
+      "time": "Final",
+      "title": "Coventry City 1-3 Aston Villa",
       "home": "Coventry City",
       "away": "Aston Villa",
       "competition": "Carabao Cup",
-      "stage": "Third round · Coventry Building Society Arena",
-      "status": "Today",
+      "stage": "Third round",
+      "status": "Result",
       "signals": [
-        "West Midlands cup tie",
-        "Both clubs seek early-season momentum",
-        "Verified third-round fixture"
+        "Aston Villa advanced to round four",
+        "Tammy Abraham scored twice",
+        "Verified final score"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t189.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
     },
     {
-      "id": "everton-wolves-sep16",
-      "type": "event",
+      "id": "everton-wolves-result-sep16",
+      "type": "result",
       "sport": "Football",
       "date": "16 Sep",
-      "time": "19:45 UK",
-      "title": "Everton vs Wolverhampton Wanderers",
+      "time": "Final",
+      "title": "Everton 1-0 Wolverhampton Wanderers",
       "home": "Everton",
       "away": "Wolverhampton Wanderers",
       "competition": "Carabao Cup",
       "stage": "Third round",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Verified third-round fixture",
-        "Wednesday programme",
-        "Knockout tie"
+        "Everton advanced to round four",
+        "Charly Alcaraz scored",
+        "Verified final score"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t39.png"
     },
     {
-      "id": "fleetwood-sheffield-sep16",
-      "type": "event",
+      "id": "fleetwood-sheffield-result-sep16",
+      "type": "result",
       "sport": "Football",
       "date": "16 Sep",
-      "time": "19:45 UK",
-      "title": "Fleetwood Town vs Sheffield United",
+      "time": "Final",
+      "title": "Fleetwood Town 1-0 Sheffield United",
       "home": "Fleetwood Town",
       "away": "Sheffield United",
       "competition": "Carabao Cup",
       "stage": "Third round",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Verified third-round fixture",
-        "Wednesday programme",
-        "Knockout tie"
+        "Fleetwood advanced to round four",
+        "Deciding own goal",
+        "Verified final score"
       ]
     },
     {
@@ -119,60 +175,6 @@
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
-    },
-    {
-      "id": "west-ham-fulham-result-sep15",
-      "type": "result",
-      "sport": "Football",
-      "date": "15 Sep",
-      "time": "Final",
-      "title": "West Ham United 2-3 Fulham",
-      "home": "West Ham United",
-      "away": "Fulham",
-      "competition": "Carabao Cup",
-      "stage": "Third round · London Stadium",
-      "status": "Result",
-      "signals": [
-        "Fulham advanced to round four",
-        "Oscar Bobb scored the late winner",
-        "Verified final score"
-      ]
-    },
-    {
-      "id": "reading-brentford-result-sep15",
-      "type": "result",
-      "sport": "Football",
-      "date": "15 Sep",
-      "time": "Final",
-      "title": "Reading 1-2 Brentford",
-      "home": "Reading",
-      "away": "Brentford",
-      "competition": "Carabao Cup",
-      "stage": "Third round",
-      "status": "Result",
-      "signals": [
-        "Brentford advanced to round four",
-        "Verified final score",
-        "Tuesday cup programme"
-      ]
-    },
-    {
-      "id": "peterborough-barnsley-result-sep15",
-      "type": "result",
-      "sport": "Football",
-      "date": "15 Sep",
-      "time": "Final · pens",
-      "title": "Peterborough United 3-3 Barnsley",
-      "home": "Peterborough United",
-      "away": "Barnsley",
-      "competition": "Carabao Cup",
-      "stage": "Peterborough won 7-6 on penalties",
-      "status": "Result",
-      "signals": [
-        "Six goals before penalties",
-        "Peterborough advanced to round four",
-        "Verified penalty shootout"
-      ]
     }
   ]
 }
