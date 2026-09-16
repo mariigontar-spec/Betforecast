@@ -1,55 +1,42 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    id: "man-utd-brighton-sep16", league: "Football · Carabao Cup", date: "16 Sep 2026", time: "20:00 UK", stadium: "Old Trafford, Manchester",
-    home: "Manchester United", away: "Brighton", homeShort: "MUN", awayShort: "BHA", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t1.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+    id: "man-city-norwich-sep17", league: "Football · Carabao Cup", date: "17 Sep 2026", time: "19:30 UK", stadium: "Manchester",
+    home: "Manchester City", away: "Norwich City", homeShort: "MCI", awayShort: "NOR", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t43.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t45.png",
     projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Manchester United host Brighton in an all-Premier-League Carabao Cup third-round tie.",
-    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Wednesday · 20:00 UK",
-    factors: ["Old Trafford cup tie", "Manchester United lost Sunday's derby", "Brighton won 5-0 at Coventry", "Official third-round fixture"],
-    formHome: ["L", "W", "D", "L"], formAway: ["W", "L", "D", "W"],
-    homeStats: ["Competition: Carabao Cup", "Round: third", "Venue: Old Trafford", "Kickoff: 20:00 UK"],
-    awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 20:00 UK"],
-    quickInsightTitle: "Cup night at Old Trafford", quickInsight: "Fixture and recent league context are verified; no score prediction is presented as fact.",
-    related: [{ id: "coventry-aston-villa-sep16", home: "Coventry City", away: "Aston Villa", league: "Carabao Cup" }]
+    summary: "Manchester City host Norwich City in the final Carabao Cup third-round tie of the week.",
+    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Thursday · 19:30 UK",
+    factors: ["EFL confirmed kickoff", "Manchester City at home", "Winner advances to round four", "No unverified score prediction"],
+    formHome: ["W", "W", "W", "W"], formAway: [],
+    homeStats: ["Competition: Carabao Cup", "Round: third", "Home fixture", "Kickoff: 19:30 UK"],
+    awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 19:30 UK"],
+    quickInsightTitle: "Final third-round tie", quickInsight: "Kickoff and competition are confirmed by EFL; no score is asserted before the match.",
+    related: [{ id: "juventus-nec-sep17", home: "Juventus", away: "N.E.C. Nijmegen", league: "Europa League" }]
   },
   {
-    id: "coventry-aston-villa-sep16", league: "Football · Carabao Cup", date: "16 Sep 2026", time: "20:00 UK", stadium: "Coventry Building Society Arena",
-    home: "Coventry City", away: "Aston Villa", homeShort: "COV", awayShort: "AVL", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t189.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+    id: "juventus-nec-sep17", league: "Football · UEFA Europa League", date: "17 Sep 2026", time: "21:00 CEST", stadium: "Juventus Stadium, Turin",
+    home: "Juventus", away: "N.E.C. Nijmegen", homeShort: "JUV", awayShort: "NEC",
     projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Coventry City host Aston Villa in a West Midlands Carabao Cup third-round tie.",
-    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Wednesday · 20:00 UK",
-    factors: ["West Midlands tie", "Coventry at home", "Both clubs seek momentum", "Official third-round fixture"],
-    formHome: ["L", "L", "L", "L"], formAway: ["L", "L", "D", "L"],
-    homeStats: ["Competition: Carabao Cup", "Round: third", "Venue: Coventry", "Kickoff: 20:00 UK"],
-    awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 20:00 UK"],
-    quickInsightTitle: "Local cup contest", quickInsight: "The fixture and current league records are verified before kickoff.",
-    related: [{ id: "man-utd-brighton-sep16", home: "Manchester United", away: "Brighton", league: "Carabao Cup" }]
-  },
-  {
-    id: "everton-wolves-sep16", league: "Football · Carabao Cup", date: "16 Sep 2026", time: "19:45 UK", stadium: "Everton",
-    home: "Everton", away: "Wolverhampton Wanderers", homeShort: "EVE", awayShort: "WOL", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t11.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t39.png",
-    projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Everton face Wolverhampton Wanderers in Wednesday's Carabao Cup third-round programme.",
-    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Wednesday · 19:45 UK",
-    factors: ["Knockout tie", "Everton at home", "Official fixture", "No score prediction"],
-    formHome: ["W", "D", "D", "D"], formAway: [],
-    homeStats: ["Competition: Carabao Cup", "Round: third", "Home fixture", "Kickoff: 19:45 UK"],
-    awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 19:45 UK"],
-    quickInsightTitle: "Wednesday knockout football", quickInsight: "Kickoff and competition details are verified from the official schedule.",
-    related: [{ id: "fleetwood-sheffield-sep16", home: "Fleetwood Town", away: "Sheffield United", league: "Carabao Cup" }]
-  },
-  {
-    id: "fleetwood-sheffield-sep16", league: "Football · Carabao Cup", date: "16 Sep 2026", time: "19:45 UK", stadium: "Fleetwood",
-    home: "Fleetwood Town", away: "Sheffield United", homeShort: "FLT", awayShort: "SHU",
-    projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Fleetwood Town host Sheffield United in the Carabao Cup third round.",
-    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Wednesday · 19:45 UK",
-    factors: ["Knockout tie", "Fleetwood at home", "Official fixture", "No score prediction"],
+    summary: "Juventus begin their Europa League league-phase campaign at home to N.E.C. Nijmegen.",
+    bestTip: "Club-confirmed fixture", goalsLean: "League phase", btts: "Thursday · 21:00 CEST",
+    factors: ["Juventus club schedule", "League-phase opener", "Turin home fixture", "No unverified score prediction"],
     formHome: [], formAway: [],
-    homeStats: ["Competition: Carabao Cup", "Round: third", "Home fixture", "Kickoff: 19:45 UK"],
-    awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 19:45 UK"],
-    quickInsightTitle: "Third-round place at stake", quickInsight: "Only confirmed fixture information is displayed.",
-    related: [{ id: "everton-wolves-sep16", home: "Everton", away: "Wolverhampton Wanderers", league: "Carabao Cup" }]
+    homeStats: ["Competition: Europa League", "Phase: league", "Venue: Turin", "Kickoff: 21:00 CEST"],
+    awayStats: ["Competition: Europa League", "Phase: league", "Away fixture", "Kickoff: 21:00 CEST"],
+    quickInsightTitle: "Europe returns to Turin", quickInsight: "The kickoff and opponents are confirmed on Juventus' official calendar.",
+    related: [{ id: "man-city-norwich-sep17", home: "Manchester City", away: "Norwich City", league: "Carabao Cup" }]
+  },
+  {
+    id: "real-sociedad-bournemouth-sep17", league: "Football · UEFA Europa League", date: "17 Sep 2026", time: "21:00 CEST", stadium: "San Sebastián, Spain",
+    home: "Real Sociedad", away: "Bournemouth", homeShort: "RSO", awayShort: "BOU", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t91.png",
+    projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "Real Sociedad welcome Bournemouth in the opening Europa League league-phase round.",
+    bestTip: "UEFA-confirmed fixture", goalsLean: "League phase", btts: "Thursday · 21:00 CEST",
+    factors: ["UEFA fixture", "Bournemouth away in Spain", "Opening round", "No unverified score prediction"],
+    formHome: [], formAway: [],
+    homeStats: ["Competition: Europa League", "Phase: league", "Home fixture", "Date: 17 Sep"],
+    awayStats: ["Competition: Europa League", "Phase: league", "Away fixture", "Date: 17 Sep"],
+    quickInsightTitle: "Opening European night", quickInsight: "The tie is listed on UEFA's official match page.",
+    related: [{ id: "juventus-nec-sep17", home: "Juventus", away: "N.E.C. Nijmegen", league: "Europa League" }]
   }
 ];
 function normalizeAlias(value){return String(value||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
