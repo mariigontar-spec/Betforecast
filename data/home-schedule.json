@@ -1,62 +1,84 @@
 {
-  "updatedAt": "2026-09-17T00:02:00+03:00",
-  "featuredId": "man-city-norwich-sep17",
+  "updatedAt": "2026-09-18T00:01:00+03:00",
+  "featuredId": "brentford-chelsea-sep18",
   "events": [
     {
-      "id": "man-city-norwich-sep17",
+      "id": "brentford-chelsea-sep18",
       "type": "event",
       "sport": "Football",
+      "date": "18 Sep",
+      "time": "20:00 UK",
+      "title": "Brentford vs Chelsea",
+      "home": "Brentford",
+      "away": "Chelsea",
+      "competition": "Premier League",
+      "stage": "Matchweek 5 · Gtech Community Stadium",
+      "status": "Today",
+      "signals": [
+        "Confirmed Friday fixture",
+        "Brentford unbeaten in first four league matches",
+        "Chelsea have seven points from four"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
+    },
+    {
+      "id": "tottenham-villa-sep19",
+      "type": "event",
+      "sport": "Football",
+      "date": "19 Sep",
+      "time": "12:30 UK",
+      "title": "Tottenham Hotspur vs Aston Villa",
+      "home": "Tottenham Hotspur",
+      "away": "Aston Villa",
+      "competition": "Premier League",
+      "stage": "Matchweek 5",
+      "status": "Upcoming",
+      "signals": [
+        "Saturday Premier League fixture",
+        "Kickoff 12:30 UK"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
+    },
+    {
+      "id": "brighton-arsenal-sep19",
+      "type": "event",
+      "sport": "Football",
+      "date": "19 Sep",
+      "time": "15:00 UK",
+      "title": "Brighton vs Arsenal",
+      "home": "Brighton",
+      "away": "Arsenal",
+      "competition": "Premier League",
+      "stage": "Matchweek 5",
+      "status": "Upcoming",
+      "signals": [
+        "Saturday Premier League fixture",
+        "Arsenal lead after four league matches"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+    },
+    {
+      "id": "man-city-norwich-result-sep17",
+      "type": "result",
+      "sport": "Football",
       "date": "17 Sep",
-      "time": "19:30 UK",
-      "title": "Manchester City vs Norwich City",
+      "time": "Final",
+      "title": "Manchester City 5-0 Norwich City",
       "home": "Manchester City",
       "away": "Norwich City",
       "competition": "Carabao Cup",
-      "stage": "Third round · Manchester City home fixture",
-      "status": "Today",
+      "stage": "Third round · Etihad Stadium",
+      "status": "Result",
       "signals": [
-        "Final third-round tie of the week",
-        "Manchester City are unbeaten in the league after four games",
-        "Winner advances to round four"
+        "Manchester City advanced to round four",
+        "Floyd Samba scored twice",
+        "Official club result"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t45.png"
-    },
-    {
-      "id": "juventus-nec-sep17",
-      "type": "event",
-      "sport": "Football",
-      "date": "17 Sep",
-      "time": "21:00 CEST",
-      "title": "Juventus vs N.E.C. Nijmegen",
-      "home": "Juventus",
-      "away": "N.E.C. Nijmegen",
-      "competition": "UEFA Europa League",
-      "stage": "League phase · Juventus Stadium",
-      "status": "Today",
-      "signals": [
-        "Opening league-phase match",
-        "Juventus official fixture",
-        "Kickoff 21:00 local time"
-      ]
-    },
-    {
-      "id": "real-sociedad-bournemouth-sep17",
-      "type": "event",
-      "sport": "Football",
-      "date": "17 Sep",
-      "time": "21:00 CEST",
-      "title": "Real Sociedad vs Bournemouth",
-      "home": "Real Sociedad",
-      "away": "Bournemouth",
-      "competition": "UEFA Europa League",
-      "stage": "League phase · San Sebastián",
-      "status": "Today",
-      "signals": [
-        "Europa League opening round",
-        "Verified UEFA fixture",
-        "Bournemouth play away in Spain"
-      ]
     },
     {
       "id": "man-utd-brighton-result-sep16",
@@ -117,64 +139,6 @@
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t39.png"
-    },
-    {
-      "id": "fleetwood-sheffield-result-sep16",
-      "type": "result",
-      "sport": "Football",
-      "date": "16 Sep",
-      "time": "Final",
-      "title": "Fleetwood Town 1-0 Sheffield United",
-      "home": "Fleetwood Town",
-      "away": "Sheffield United",
-      "competition": "Carabao Cup",
-      "stage": "Third round",
-      "status": "Result",
-      "signals": [
-        "Fleetwood advanced to round four",
-        "Deciding own goal",
-        "Verified final score"
-      ]
-    },
-    {
-      "id": "liverpool-tottenham-result-sep15",
-      "type": "result",
-      "sport": "Football",
-      "date": "15 Sep",
-      "time": "Final",
-      "title": "Liverpool 3-1 Tottenham Hotspur",
-      "home": "Liverpool",
-      "away": "Tottenham Hotspur",
-      "competition": "Carabao Cup",
-      "stage": "Third round · Anfield",
-      "status": "Result",
-      "signals": [
-        "Liverpool advanced to round four",
-        "Mac Allister, Gakpo and Szoboszlai scored",
-        "Verified final score"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
-    },
-    {
-      "id": "ipswich-arsenal-result-sep15",
-      "type": "result",
-      "sport": "Football",
-      "date": "15 Sep",
-      "time": "Final",
-      "title": "Ipswich Town 2-4 Arsenal",
-      "home": "Ipswich Town",
-      "away": "Arsenal",
-      "competition": "Carabao Cup",
-      "stage": "Third round · Portman Road",
-      "status": "Result",
-      "signals": [
-        "Arsenal advanced to round four",
-        "Max Dowman scored twice",
-        "Verified final score"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
     }
   ]
 }
