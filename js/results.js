@@ -4,6 +4,7 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Carabao Cup", status: "FINAL", homeName: "Manchester City", awayName: "Norwich City", homeGoals: "5", awayGoals: "0", venue: "Etihad Stadium", date: "17 Sep", href: "results.html" },
     { round: "Football · Carabao Cup", status: "FINAL", homeName: "Manchester United", awayName: "Brighton", homeGoals: "2", awayGoals: "3", venue: "Old Trafford", date: "16 Sep", href: "results.html" },
     { round: "Football · Carabao Cup", status: "FINAL", homeName: "Coventry City", awayName: "Aston Villa", homeGoals: "1", awayGoals: "3", venue: "Coventry", date: "16 Sep", href: "results.html" },
     { round: "Football · Carabao Cup", status: "FINAL", homeName: "Everton", awayName: "Wolverhampton Wanderers", homeGoals: "1", awayGoals: "0", venue: "Everton", date: "16 Sep", href: "results.html" },
@@ -22,7 +23,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · updated 17 Sep 2026");
+    setStatus("World sports results · updated 18 Sep 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -32,7 +33,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Brighton recovered from two goals down to beat Manchester United 3-2. Aston Villa, Everton and Fleetwood also advanced in the Carabao Cup on 16 September.";
+    if (intro) intro.textContent = "Manchester City beat Norwich 5-0 on 17 September to reach the Carabao Cup fourth round. Results from 16 September remain below.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
