@@ -38,25 +38,25 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Manchester City–Norwich leads Thursday’s Carabao Cup slate, with Juventus–N.E.C. and Real Sociedad–Bournemouth in the Europa League.";
+        "Brentford–Chelsea opens Premier League Matchweek 5 on Friday at 20:00 UK; Manchester City advanced in the Carabao Cup on Thursday.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>17 Sep</strong><span>Man City–Norwich · Carabao Cup</span></div>
-        <div><strong>17 Sep</strong><span>Europa League · league phase</span></div>
-        <div><strong>16 Sep</strong><span>Brighton 3–2 Man United</span></div>
+        <div><strong>18 Sep</strong><span>Brentford–Chelsea · Premier League</span></div>
+        <div><strong>19 Sep</strong><span>Brighton–Arsenal · Premier League</span></div>
+        <div><strong>17 Sep</strong><span>Man City 5–0 Norwich · cup result</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Manchester City, Norwich, Juventus, Europa League";
+      input.placeholder = "Try: Brentford, Chelsea, Arsenal, Premier League";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Manchester City Norwich">Man City–Norwich</button>
+        <button type="button" data-query="Brentford Chelsea">Brentford–Chelsea</button>
         <button type="button" data-query="Premier League">Premier League</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
       `;
@@ -64,9 +64,9 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=man-city-norwich-sep17", title: "Manchester City vs Norwich City", detail: "17 September · Carabao Cup · 19:30 UK", tag: "Football" },
-      { href: "match.html?id=juventus-nec-sep17", title: "Juventus vs N.E.C. Nijmegen", detail: "17 September · Europa League · 21:00 CEST", tag: "Football" },
-      { href: "results.html", title: "Brighton beat Manchester United", detail: "16 September · Carabao Cup · 3-2", tag: "Results" },
+      { href: "match.html?id=brentford-chelsea-sep18", title: "Brentford vs Chelsea", detail: "18 September · Premier League · 20:00 UK", tag: "Football" },
+      { href: "match.html?id=brighton-arsenal-sep19", title: "Brighton vs Arsenal", detail: "19 September · Premier League · 15:00 UK", tag: "Football" },
+      { href: "results.html", title: "Man City beat Norwich", detail: "17 September · Carabao Cup · 5-0", tag: "Results" },
       { href: "standings.html", title: "Premier League · Matchweek 4 complete", detail: "Table, Recent and Upcoming updated", tag: "Table" },
     ];
 
