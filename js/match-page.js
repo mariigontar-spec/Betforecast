@@ -1,42 +1,41 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    id: "man-city-norwich-sep17", league: "Football · Carabao Cup", date: "17 Sep 2026", time: "19:30 UK", stadium: "Manchester",
-    home: "Manchester City", away: "Norwich City", homeShort: "MCI", awayShort: "NOR", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t43.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t45.png",
+    id: "brentford-chelsea-sep18", league: "Football · Premier League", date: "18 Sep 2026", time: "20:00 UK", stadium: "Gtech Community Stadium, London",
+    home: "Brentford", away: "Chelsea", homeShort: "BRE", awayShort: "CHE", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t94.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t8.png",
     projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Manchester City host Norwich City in the final Carabao Cup third-round tie of the week.",
-    bestTip: "Confirmed fixture", goalsLean: "Third round", btts: "Thursday · 19:30 UK",
-    factors: ["EFL confirmed kickoff", "Manchester City at home", "Winner advances to round four", "No unverified score prediction"],
-    formHome: ["W", "W", "W", "W"], formAway: [],
-    homeStats: ["Competition: Carabao Cup", "Round: third", "Home fixture", "Kickoff: 19:30 UK"],
-    awayStats: ["Competition: Carabao Cup", "Round: third", "Away fixture", "Kickoff: 19:30 UK"],
-    quickInsightTitle: "Final third-round tie", quickInsight: "Kickoff and competition are confirmed by EFL; no score is asserted before the match.",
-    related: [{ id: "juventus-nec-sep17", home: "Juventus", away: "N.E.C. Nijmegen", league: "Europa League" }]
+    summary: "Brentford host Chelsea to open Premier League Matchweek 5 on Friday evening.",
+    bestTip: "Club-confirmed fixture", goalsLean: "Matchweek 5", btts: "Friday · 20:00 UK",
+    factors: ["Official Brentford and Chelsea fixture", "Brentford are unbeaten in four league games", "Chelsea have seven points from four", "No unverified score prediction"],
+    formHome: ["W", "D", "D", "D"], formAway: ["W", "W", "L", "D"],
+    homeStats: ["Played: 4", "W-D-L: 1-3-0", "Goals: 7-4", "Points: 6"],
+    awayStats: ["Played: 4", "W-D-L: 2-1-1", "Goals: 10-9", "Points: 7"],
+    quickInsightTitle: "West London derby", quickInsight: "The Friday kickoff is confirmed by both clubs; probabilities are withheld without a verified model.",
+    related: [{ id: "brighton-arsenal-sep19", home: "Brighton", away: "Arsenal", league: "Premier League" }]
   },
   {
-    id: "juventus-nec-sep17", league: "Football · UEFA Europa League", date: "17 Sep 2026", time: "21:00 CEST", stadium: "Juventus Stadium, Turin",
-    home: "Juventus", away: "N.E.C. Nijmegen", homeShort: "JUV", awayShort: "NEC",
-    projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Juventus begin their Europa League league-phase campaign at home to N.E.C. Nijmegen.",
-    bestTip: "Club-confirmed fixture", goalsLean: "League phase", btts: "Thursday · 21:00 CEST",
-    factors: ["Juventus club schedule", "League-phase opener", "Turin home fixture", "No unverified score prediction"],
-    formHome: [], formAway: [],
-    homeStats: ["Competition: Europa League", "Phase: league", "Venue: Turin", "Kickoff: 21:00 CEST"],
-    awayStats: ["Competition: Europa League", "Phase: league", "Away fixture", "Kickoff: 21:00 CEST"],
-    quickInsightTitle: "Europe returns to Turin", quickInsight: "The kickoff and opponents are confirmed on Juventus' official calendar.",
-    related: [{ id: "man-city-norwich-sep17", home: "Manchester City", away: "Norwich City", league: "Carabao Cup" }]
+    id: "brighton-arsenal-sep19", league: "Football · Premier League", date: "19 Sep 2026", time: "15:00 UK", stadium: "Amex Stadium, Brighton",
+    home: "Brighton", away: "Arsenal", homeShort: "BHA", awayShort: "ARS", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t36.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+    projectedScore: "NEXT", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "Brighton welcome league leaders Arsenal on Saturday in Matchweek 5.",
+    bestTip: "Confirmed fixture", goalsLean: "Matchweek 5", btts: "Saturday · 15:00 UK",
+    factors: ["Premier League schedule", "Arsenal top after four matches", "Brighton have seven points", "No unverified score prediction"],
+    formHome: ["W", "L", "D", "W"], formAway: ["W", "W", "W", "W"],
+    homeStats: ["Played: 4", "W-D-L: 2-1-1", "Goals: 13-5", "Points: 7"],
+    awayStats: ["Played: 4", "W-D-L: 4-0-0", "Goals: 8-1", "Points: 12"],
+    quickInsightTitle: "Saturday's table test", quickInsight: "League table values are the latest verified after Matchweek 4.",
+    related: [{ id: "brentford-chelsea-sep18", home: "Brentford", away: "Chelsea", league: "Premier League" }]
   },
   {
-    id: "real-sociedad-bournemouth-sep17", league: "Football · UEFA Europa League", date: "17 Sep 2026", time: "21:00 CEST", stadium: "San Sebastián, Spain",
-    home: "Real Sociedad", away: "Bournemouth", homeShort: "RSO", awayShort: "BOU", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t91.png",
-    projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Real Sociedad welcome Bournemouth in the opening Europa League league-phase round.",
-    bestTip: "UEFA-confirmed fixture", goalsLean: "League phase", btts: "Thursday · 21:00 CEST",
-    factors: ["UEFA fixture", "Bournemouth away in Spain", "Opening round", "No unverified score prediction"],
+    id: "tottenham-villa-sep19", league: "Football · Premier League", date: "19 Sep 2026", time: "12:30 UK", stadium: "Tottenham Hotspur Stadium, London",
+    home: "Tottenham Hotspur", away: "Aston Villa", homeShort: "TOT", awayShort: "AVL", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t6.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+    projectedScore: "NEXT", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
+    summary: "Tottenham host Aston Villa in Saturday's early Premier League match.",
+    bestTip: "League-confirmed fixture", goalsLean: "Matchweek 5", btts: "Saturday · 12:30 UK",
+    factors: ["Premier League fixture amendments", "Saturday early kickoff", "League match", "No unverified score prediction"],
     formHome: [], formAway: [],
-    homeStats: ["Competition: Europa League", "Phase: league", "Home fixture", "Date: 17 Sep"],
-    awayStats: ["Competition: Europa League", "Phase: league", "Away fixture", "Date: 17 Sep"],
-    quickInsightTitle: "Opening European night", quickInsight: "The tie is listed on UEFA's official match page.",
-    related: [{ id: "juventus-nec-sep17", home: "Juventus", away: "N.E.C. Nijmegen", league: "Europa League" }]
+    homeStats: ["Played: 4", "Points: 2"], awayStats: ["Played: 4", "Points: 1"],
+    quickInsightTitle: "Saturday early kickoff", quickInsight: "Official schedule lists the fixture at 12:30 UK.",
+    related: [{ id: "brentford-chelsea-sep18", home: "Brentford", away: "Chelsea", league: "Premier League" }]
   }
 ];
 function normalizeAlias(value){return String(value||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
