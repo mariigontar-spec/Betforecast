@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 17 Sep 2026";
-  if (t) t.textContent = "Carabao Cup & Europa League fixtures";
+  if (k) k.textContent = "World Sports News · 18 Sep 2026";
+  if (t) t.textContent = "Premier League returns · Brentford vs Chelsea";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=man-city-norwich-sep17">Man City–Norwich cup tie</a><a class="sidebar-link-card" href="match.html?id=juventus-nec-sep17">Juventus face N.E.C.</a><a class="sidebar-link-card" href="results.html">Brighton beat Man United 3-2</a><a class="sidebar-link-card" href="results.html">Fleetwood's cup upset</a><a class="sidebar-link-card" href="standings.html">Premier League table checked</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=brentford-chelsea-sep18">Brentford–Chelsea on Friday</a><a class="sidebar-link-card" href="results.html">Man City beat Norwich 5-0</a><a class="sidebar-link-card" href="match.html?id=brighton-arsenal-sep19">Brighton–Arsenal next</a><a class="sidebar-link-card" href="results.html">Carabao Cup results</a><a class="sidebar-link-card" href="standings.html">Premier League table checked</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Manchester City–Norwich closes this Carabao Cup third-round week on Thursday. Juventus–N.E.C. and Real Sociedad–Bournemouth open Europa League campaigns; Brighton, Aston Villa, Everton and Fleetwood advanced on Wednesday.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Brentford host Chelsea at 20:00 UK to open Premier League Matchweek 5 on Friday. Manchester City beat Norwich 5-0 in Thursday's Carabao Cup tie; the league table remains unchanged.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
