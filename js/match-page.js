@@ -1,41 +1,160 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    id: "brentford-chelsea-sep18", league: "Football · Premier League", date: "18 Sep 2026", time: "20:00 UK", stadium: "Gtech Community Stadium, London",
-    home: "Brentford", away: "Chelsea", homeShort: "BRE", awayShort: "CHE", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t94.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t8.png",
-    projectedScore: "TODAY", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Brentford host Chelsea to open Premier League Matchweek 5 on Friday evening.",
-    bestTip: "Club-confirmed fixture", goalsLean: "Matchweek 5", btts: "Friday · 20:00 UK",
-    factors: ["Official Brentford and Chelsea fixture", "Brentford are unbeaten in four league games", "Chelsea have seven points from four", "No unverified score prediction"],
-    formHome: ["W", "D", "D", "D"], formAway: ["W", "W", "L", "D"],
-    homeStats: ["Played: 4", "W-D-L: 1-3-0", "Goals: 7-4", "Points: 6"],
-    awayStats: ["Played: 4", "W-D-L: 2-1-1", "Goals: 10-9", "Points: 7"],
-    quickInsightTitle: "West London derby", quickInsight: "The Friday kickoff is confirmed by both clubs; probabilities are withheld without a verified model.",
-    related: [{ id: "brighton-arsenal-sep19", home: "Brighton", away: "Arsenal", league: "Premier League" }]
+    "id": "brighton-arsenal-sep19",
+    "league": "Football · Premier League",
+    "date": "19 Sep 2026",
+    "time": "15:00 UK",
+    "stadium": "Amex Stadium, Brighton",
+    "home": "Brighton",
+    "away": "Arsenal",
+    "homeShort": "BHA",
+    "awayShort": "ARS",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+    "projectedScore": "TODAY",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Brighton welcome league leaders Arsenal on Saturday in Matchweek 5.",
+    "bestTip": "Confirmed Saturday fixture",
+    "goalsLean": "Matchweek 5",
+    "btts": "Saturday · 15:00 UK",
+    "factors": [
+      "Premier League schedule",
+      "Arsenal top after four matches",
+      "Brighton have seven points",
+      "No unverified score prediction"
+    ],
+    "formHome": [
+      "W",
+      "L",
+      "D",
+      "W"
+    ],
+    "formAway": [
+      "W",
+      "W",
+      "W",
+      "W"
+    ],
+    "homeStats": [
+      "Played: 4",
+      "W-D-L: 2-1-1",
+      "Goals: 13-5",
+      "Points: 7"
+    ],
+    "awayStats": [
+      "Played: 4",
+      "W-D-L: 4-0-0",
+      "Goals: 8-1",
+      "Points: 12"
+    ],
+    "quickInsightTitle": "Saturday's table test",
+    "quickInsight": "Arsenal lead after four league wins; Brighton have seven points. No score or betting probabilities asserted.",
+    "related": [
+      {
+        "id": "tottenham-villa-sep19",
+        "home": "Tottenham Hotspur",
+        "away": "Aston Villa",
+        "league": "Premier League"
+      }
+    ]
   },
   {
-    id: "brighton-arsenal-sep19", league: "Football · Premier League", date: "19 Sep 2026", time: "15:00 UK", stadium: "Amex Stadium, Brighton",
-    home: "Brighton", away: "Arsenal", homeShort: "BHA", awayShort: "ARS", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t36.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t3.png",
-    projectedScore: "NEXT", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Brighton welcome league leaders Arsenal on Saturday in Matchweek 5.",
-    bestTip: "Confirmed fixture", goalsLean: "Matchweek 5", btts: "Saturday · 15:00 UK",
-    factors: ["Premier League schedule", "Arsenal top after four matches", "Brighton have seven points", "No unverified score prediction"],
-    formHome: ["W", "L", "D", "W"], formAway: ["W", "W", "W", "W"],
-    homeStats: ["Played: 4", "W-D-L: 2-1-1", "Goals: 13-5", "Points: 7"],
-    awayStats: ["Played: 4", "W-D-L: 4-0-0", "Goals: 8-1", "Points: 12"],
-    quickInsightTitle: "Saturday's table test", quickInsight: "League table values are the latest verified after Matchweek 4.",
-    related: [{ id: "brentford-chelsea-sep18", home: "Brentford", away: "Chelsea", league: "Premier League" }]
+    "id": "tottenham-villa-sep19",
+    "league": "Football · Premier League",
+    "date": "19 Sep 2026",
+    "time": "12:30 UK",
+    "stadium": "Tottenham Hotspur Stadium, London",
+    "home": "Tottenham Hotspur",
+    "away": "Aston Villa",
+    "homeShort": "TOT",
+    "awayShort": "AVL",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+    "projectedScore": "TODAY",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Tottenham host Aston Villa in Saturday's early Premier League match.",
+    "bestTip": "League-confirmed fixture",
+    "goalsLean": "Matchweek 5",
+    "btts": "Saturday · 12:30 UK",
+    "factors": [
+      "Premier League fixture amendments",
+      "Saturday early kickoff",
+      "League match",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Played: 4",
+      "Points: 2"
+    ],
+    "awayStats": [
+      "Played: 4",
+      "Points: 1"
+    ],
+    "quickInsightTitle": "Saturday early kickoff",
+    "quickInsight": "Official schedule lists the fixture at 12:30 UK.",
+    "related": [
+      {
+        "id": "brighton-arsenal-sep19",
+        "home": "Brighton",
+        "away": "Arsenal",
+        "league": "Premier League"
+      }
+    ]
   },
   {
-    id: "tottenham-villa-sep19", league: "Football · Premier League", date: "19 Sep 2026", time: "12:30 UK", stadium: "Tottenham Hotspur Stadium, London",
-    home: "Tottenham Hotspur", away: "Aston Villa", homeShort: "TOT", awayShort: "AVL", homeLogo: "https://resources.premierleague.com/premierleague/badges/50/t6.png", awayLogo: "https://resources.premierleague.com/premierleague/badges/50/t7.png",
-    projectedScore: "NEXT", homePct: 0, drawPct: 0, awayPct: 0, confidence: 100,
-    summary: "Tottenham host Aston Villa in Saturday's early Premier League match.",
-    bestTip: "League-confirmed fixture", goalsLean: "Matchweek 5", btts: "Saturday · 12:30 UK",
-    factors: ["Premier League fixture amendments", "Saturday early kickoff", "League match", "No unverified score prediction"],
-    formHome: [], formAway: [],
-    homeStats: ["Played: 4", "Points: 2"], awayStats: ["Played: 4", "Points: 1"],
-    quickInsightTitle: "Saturday early kickoff", quickInsight: "Official schedule lists the fixture at 12:30 UK.",
-    related: [{ id: "brentford-chelsea-sep18", home: "Brentford", away: "Chelsea", league: "Premier League" }]
+    "id": "everton-ipswich-sep19",
+    "league": "Football · Premier League",
+    "date": "19 Sep 2026",
+    "time": "15:00 UK",
+    "stadium": "Hill Dickinson Stadium, Liverpool",
+    "home": "Everton",
+    "away": "Ipswich Town",
+    "homeShort": "EVE",
+    "awayShort": "IPS",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+    "projectedScore": "TODAY",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Everton host Ipswich Town in Saturday's Premier League programme.",
+    "bestTip": "League fixture",
+    "goalsLean": "Matchweek 5",
+    "btts": "Saturday · 15:00 UK",
+    "factors": [
+      "Premier League schedule",
+      "Both clubs have six points from four games",
+      "No unverified prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Played: 4",
+      "Points: 6"
+    ],
+    "awayStats": [
+      "Played: 4",
+      "Points: 6"
+    ],
+    "quickInsightTitle": "Saturday fixture",
+    "quickInsight": "Kickoff is listed in the Premier League schedule.",
+    "related": [
+      {
+        "id": "brighton-arsenal-sep19",
+        "home": "Brighton",
+        "away": "Arsenal",
+        "league": "Premier League"
+      }
+    ]
   }
 ];
 function normalizeAlias(value){return String(value||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
