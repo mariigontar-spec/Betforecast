@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-09-18T00:01:00+03:00",
-  "featuredId": "brentford-chelsea-sep18",
+  "updatedAt": "2026-09-19T00:04:00+03:00",
+  "featuredId": "brighton-arsenal-sep19",
   "events": [
     {
-      "id": "brentford-chelsea-sep18",
+      "id": "brighton-arsenal-sep19",
       "type": "event",
       "sport": "Football",
-      "date": "18 Sep",
-      "time": "20:00 UK",
-      "title": "Brentford vs Chelsea",
-      "home": "Brentford",
-      "away": "Chelsea",
+      "date": "19 Sep",
+      "time": "15:00 UK",
+      "title": "Brighton vs Arsenal",
+      "home": "Brighton",
+      "away": "Arsenal",
       "competition": "Premier League",
-      "stage": "Matchweek 5 · Gtech Community Stadium",
+      "stage": "Matchweek 5",
       "status": "Today",
       "signals": [
-        "Confirmed Friday fixture",
-        "Brentford unbeaten in first four league matches",
-        "Chelsea have seven points from four"
+        "Arsenal lead the league after four wins",
+        "Brighton have seven points from four",
+        "Kickoff 15:00 UK"
       ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
     },
     {
       "id": "tottenham-villa-sep19",
@@ -33,7 +33,7 @@
       "away": "Aston Villa",
       "competition": "Premier League",
       "stage": "Matchweek 5",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Saturday Premier League fixture",
         "Kickoff 12:30 UK"
@@ -42,23 +42,95 @@
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
     },
     {
-      "id": "brighton-arsenal-sep19",
+      "id": "everton-ipswich-sep19",
       "type": "event",
       "sport": "Football",
       "date": "19 Sep",
       "time": "15:00 UK",
-      "title": "Brighton vs Arsenal",
-      "home": "Brighton",
-      "away": "Arsenal",
+      "title": "Everton vs Ipswich Town",
+      "home": "Everton",
+      "away": "Ipswich Town",
       "competition": "Premier League",
       "stage": "Matchweek 5",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Saturday Premier League fixture",
-        "Arsenal lead after four league matches"
+        "Kickoff 15:00 UK"
       ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png"
+    },
+    {
+      "id": "newcastle-hull-sep19",
+      "type": "event",
+      "sport": "Football",
+      "date": "19 Sep",
+      "time": "15:00 UK",
+      "title": "Newcastle vs Hull City",
+      "home": "Newcastle",
+      "away": "Hull City",
+      "competition": "Premier League",
+      "stage": "Matchweek 5",
+      "status": "Today",
+      "signals": [
+        "Saturday Premier League fixture",
+        "Kickoff 15:00 UK"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+    },
+    {
+      "id": "brentford-chelsea-result-sep18",
+      "type": "result",
+      "sport": "Football",
+      "date": "18 Sep",
+      "time": "Final",
+      "title": "Brentford 3-0 Chelsea",
+      "home": "Brentford",
+      "away": "Chelsea",
+      "competition": "Premier League",
+      "stage": "Matchweek 5 · Gtech Community Stadium",
+      "status": "Result",
+      "signals": [
+        "Anthony, Thiago and Carvalho scored",
+        "Brentford rise to third on nine points",
+        "Final score confirmed by Premier League match page"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
+    },
+    {
+      "id": "juventus-nec-result-sep17",
+      "type": "result",
+      "sport": "Football",
+      "date": "17 Sep",
+      "time": "Final",
+      "title": "Juventus 5-0 N.E.C. Nijmegen",
+      "home": "Juventus",
+      "away": "N.E.C. Nijmegen",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 1",
+      "status": "Result",
+      "signals": [
+        "Juventus club post-match statistics",
+        "Five-goal opening win"
+      ]
+    },
+    {
+      "id": "real-sociedad-bournemouth-result-sep17",
+      "type": "result",
+      "sport": "Football",
+      "date": "17 Sep",
+      "time": "Final",
+      "title": "Real Sociedad 1-2 Bournemouth",
+      "home": "Real Sociedad",
+      "away": "Bournemouth",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 1",
+      "status": "Result",
+      "signals": [
+        "UEFA highlights confirm final score",
+        "Bournemouth opened with an away win"
+      ]
     },
     {
       "id": "man-city-norwich-result-sep17",
@@ -79,66 +151,6 @@
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t45.png"
-    },
-    {
-      "id": "man-utd-brighton-result-sep16",
-      "type": "result",
-      "sport": "Football",
-      "date": "16 Sep",
-      "time": "Final",
-      "title": "Manchester United 2-3 Brighton",
-      "home": "Manchester United",
-      "away": "Brighton",
-      "competition": "Carabao Cup",
-      "stage": "Third round · Old Trafford",
-      "status": "Result",
-      "signals": [
-        "Brighton recovered from 0-2",
-        "Brighton advanced to round four",
-        "De Cuyper scored the winner"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
-    },
-    {
-      "id": "coventry-villa-result-sep16",
-      "type": "result",
-      "sport": "Football",
-      "date": "16 Sep",
-      "time": "Final",
-      "title": "Coventry City 1-3 Aston Villa",
-      "home": "Coventry City",
-      "away": "Aston Villa",
-      "competition": "Carabao Cup",
-      "stage": "Third round",
-      "status": "Result",
-      "signals": [
-        "Aston Villa advanced to round four",
-        "Tammy Abraham scored twice",
-        "Verified final score"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t189.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
-    },
-    {
-      "id": "everton-wolves-result-sep16",
-      "type": "result",
-      "sport": "Football",
-      "date": "16 Sep",
-      "time": "Final",
-      "title": "Everton 1-0 Wolverhampton Wanderers",
-      "home": "Everton",
-      "away": "Wolverhampton Wanderers",
-      "competition": "Carabao Cup",
-      "stage": "Third round",
-      "status": "Result",
-      "signals": [
-        "Everton advanced to round four",
-        "Charly Alcaraz scored",
-        "Verified final score"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t39.png"
     }
   ]
 }
