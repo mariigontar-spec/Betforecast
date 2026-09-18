@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Matchweek 4 complete · checked 18 Sep",
-      "insightText": "Arsenal and Manchester City lead on 12 points, with Arsenal first on goal difference. Thursday's cup and European fixtures did not affect the Premier League table; Brentford host Chelsea on 18 September at 20:00 UK.",
+      "insightTitle": "Matchweek 5 underway · checked 19 Sep",
+      "insightText": "Brentford beat Chelsea 3-0 on 18 September and moved third with nine points. Arsenal and Man City lead on 12; nine remaining Matchweek 5 fixtures are scheduled for 19–20 September.",
       "table": [
         {
           "pos": 1,
@@ -47,6 +47,25 @@
         },
         {
           "pos": 3,
+          "team": "Brentford",
+          "played": 5,
+          "wins": 2,
+          "draws": 3,
+          "losses": 0,
+          "gf": 10,
+          "ga": 4,
+          "points": 9,
+          "form": [
+            "W",
+            "D",
+            "D",
+            "D",
+            "W"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 4,
           "team": "Leeds United",
           "played": 4,
           "wins": 2,
@@ -64,7 +83,7 @@
           "zone": "cl"
         },
         {
-          "pos": 4,
+          "pos": 5,
           "team": "Hull City",
           "played": 4,
           "wins": 2,
@@ -79,10 +98,10 @@
             "D",
             "D"
           ],
-          "zone": "cl"
+          "zone": "safe"
         },
         {
-          "pos": 5,
+          "pos": 6,
           "team": "Brighton",
           "played": 4,
           "wins": 2,
@@ -100,38 +119,21 @@
           "zone": "safe"
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Chelsea",
-          "played": 4,
+          "played": 5,
           "wins": 2,
           "draws": 1,
-          "losses": 1,
+          "losses": 2,
           "gf": 10,
-          "ga": 9,
+          "ga": 12,
           "points": 7,
           "form": [
             "W",
             "W",
             "L",
-            "D"
-          ],
-          "zone": "safe"
-        },
-        {
-          "pos": 7,
-          "team": "Brentford",
-          "played": 4,
-          "wins": 1,
-          "draws": 3,
-          "losses": 0,
-          "gf": 7,
-          "ga": 4,
-          "points": 6,
-          "form": [
-            "W",
             "D",
-            "D",
-            "D"
+            "L"
           ],
           "zone": "safe"
         },
@@ -372,6 +374,12 @@
       ],
       "lastMatches": [
         {
+          "time": "18 Sep",
+          "match": "Brentford vs Chelsea",
+          "score": "3:0",
+          "status": "finished"
+        },
+        {
           "time": "14 Sep",
           "match": "Leeds United vs Newcastle",
           "score": "4:1",
@@ -424,20 +432,9 @@
           "match": "Aston Villa vs Nottm Forest",
           "score": "1:2",
           "status": "finished"
-        },
-        {
-          "time": "12 Sep",
-          "match": "Bournemouth vs Brentford",
-          "score": "2:2",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
-        {
-          "time": "18 Sep · 20:00",
-          "match": "Brentford vs Chelsea",
-          "status": "upcoming"
-        },
         {
           "time": "19 Sep · 12:30",
           "match": "Tottenham vs Aston Villa",
