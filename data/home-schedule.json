@@ -1,82 +1,177 @@
 {
-  "updatedAt": "2026-09-19T00:04:00+03:00",
-  "featuredId": "brighton-arsenal-sep19",
+  "updatedAt": "2026-09-20T00:04:00+03:00",
+  "featuredId": "man-city-sunderland-sep20",
   "events": [
     {
-      "id": "brighton-arsenal-sep19",
+      "id": "man-city-sunderland-sep20",
       "type": "event",
       "sport": "Football",
-      "date": "19 Sep",
-      "time": "15:00 UK",
-      "title": "Brighton vs Arsenal",
-      "home": "Brighton",
-      "away": "Arsenal",
+      "date": "20 Sep",
+      "time": "14:00 UK",
+      "title": "Manchester City vs Sunderland",
+      "home": "Manchester City",
+      "away": "Sunderland",
       "competition": "Premier League",
       "stage": "Matchweek 5",
       "status": "Today",
       "signals": [
-        "Arsenal lead the league after four wins",
-        "Brighton have seven points from four",
-        "Kickoff 15:00 UK"
+        "Manchester City lead on goal difference with 12 points",
+        "Sunderland have four points from four matches",
+        "Kickoff 14:00 UK"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png"
+    },
+    {
+      "id": "bournemouth-liverpool-sep20",
+      "type": "event",
+      "sport": "Football",
+      "date": "20 Sep",
+      "time": "14:00 UK",
+      "title": "Bournemouth vs Liverpool",
+      "home": "Bournemouth",
+      "away": "Liverpool",
+      "competition": "Premier League",
+      "stage": "Matchweek 5",
+      "status": "Today",
+      "signals": [
+        "Sunday Premier League fixture",
+        "Kickoff 14:00 UK"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
+    },
+    {
+      "id": "leeds-palace-sep20",
+      "type": "event",
+      "sport": "Football",
+      "date": "20 Sep",
+      "time": "14:00 UK",
+      "title": "Leeds United vs Crystal Palace",
+      "home": "Leeds United",
+      "away": "Crystal Palace",
+      "competition": "Premier League",
+      "stage": "Matchweek 5",
+      "status": "Today",
+      "signals": [
+        "Sunday Premier League fixture",
+        "Kickoff 14:00 UK"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png"
+    },
+    {
+      "id": "fulham-man-united-sep20",
+      "type": "event",
+      "sport": "Football",
+      "date": "20 Sep",
+      "time": "16:30 UK",
+      "title": "Fulham vs Manchester United",
+      "home": "Fulham",
+      "away": "Manchester United",
+      "competition": "Premier League",
+      "stage": "Matchweek 5",
+      "status": "Today",
+      "signals": [
+        "Sunday late kickoff",
+        "Kickoff 16:30 UK"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
+    },
+    {
+      "id": "brighton-arsenal-result-sep19",
+      "type": "result",
+      "sport": "Football",
+      "date": "19 Sep",
+      "time": "Final",
+      "title": "Brighton 3-0 Arsenal",
+      "home": "Brighton",
+      "away": "Arsenal",
+      "competition": "Premier League",
+      "stage": "Matchweek 5",
+      "status": "Result",
+      "signals": [
+        "Gross, Kostoulas and Chema Andrés scored",
+        "Brighton moved third on 10 points",
+        "Final score confirmed by match reports"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
     },
     {
-      "id": "tottenham-villa-sep19",
-      "type": "event",
+      "id": "tottenham-villa-result-sep19",
+      "type": "result",
       "sport": "Football",
       "date": "19 Sep",
-      "time": "12:30 UK",
-      "title": "Tottenham Hotspur vs Aston Villa",
+      "time": "Final",
+      "title": "Tottenham Hotspur 2-3 Aston Villa",
       "home": "Tottenham Hotspur",
       "away": "Aston Villa",
       "competition": "Premier League",
       "stage": "Matchweek 5",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Saturday Premier League fixture",
-        "Kickoff 12:30 UK"
+        "Aston Villa earned their first league win",
+        "Tottenham scored twice late"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
     },
     {
-      "id": "everton-ipswich-sep19",
-      "type": "event",
+      "id": "everton-ipswich-result-sep19",
+      "type": "result",
       "sport": "Football",
       "date": "19 Sep",
-      "time": "15:00 UK",
-      "title": "Everton vs Ipswich Town",
+      "time": "Final",
+      "title": "Everton 1-0 Ipswich Town",
       "home": "Everton",
       "away": "Ipswich Town",
       "competition": "Premier League",
       "stage": "Matchweek 5",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Saturday Premier League fixture",
-        "Kickoff 15:00 UK"
+        "Barry scored the winner",
+        "Everton moved to nine points"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png"
     },
     {
-      "id": "newcastle-hull-sep19",
-      "type": "event",
+      "id": "newcastle-hull-result-sep19",
+      "type": "result",
       "sport": "Football",
       "date": "19 Sep",
-      "time": "15:00 UK",
-      "title": "Newcastle vs Hull City",
+      "time": "Final",
+      "title": "Newcastle 2-1 Hull City",
       "home": "Newcastle",
       "away": "Hull City",
       "competition": "Premier League",
       "stage": "Matchweek 5",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Saturday Premier League fixture",
-        "Kickoff 15:00 UK"
+        "Newcastle moved to eight points",
+        "Final score confirmed by match reports"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+    },
+    {
+      "id": "forest-coventry-result-sep19",
+      "type": "result",
+      "sport": "Football",
+      "date": "19 Sep",
+      "time": "Final",
+      "title": "Nottingham Forest 0-1 Coventry City",
+      "home": "Nottingham Forest",
+      "away": "Coventry City",
+      "competition": "Premier League",
+      "stage": "Matchweek 5",
+      "status": "Result",
+      "signals": [
+        "Jay Dasilva scored the winner",
+        "Coventry earned their first league win"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png"
     },
     {
       "id": "brentford-chelsea-result-sep18",
@@ -88,69 +183,14 @@
       "home": "Brentford",
       "away": "Chelsea",
       "competition": "Premier League",
-      "stage": "Matchweek 5 · Gtech Community Stadium",
+      "stage": "Matchweek 5",
       "status": "Result",
       "signals": [
         "Anthony, Thiago and Carvalho scored",
-        "Brentford rise to third on nine points",
-        "Final score confirmed by Premier League match page"
+        "Brentford are fourth on nine points"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
-    },
-    {
-      "id": "juventus-nec-result-sep17",
-      "type": "result",
-      "sport": "Football",
-      "date": "17 Sep",
-      "time": "Final",
-      "title": "Juventus 5-0 N.E.C. Nijmegen",
-      "home": "Juventus",
-      "away": "N.E.C. Nijmegen",
-      "competition": "UEFA Europa League",
-      "stage": "League phase · Matchday 1",
-      "status": "Result",
-      "signals": [
-        "Juventus club post-match statistics",
-        "Five-goal opening win"
-      ]
-    },
-    {
-      "id": "real-sociedad-bournemouth-result-sep17",
-      "type": "result",
-      "sport": "Football",
-      "date": "17 Sep",
-      "time": "Final",
-      "title": "Real Sociedad 1-2 Bournemouth",
-      "home": "Real Sociedad",
-      "away": "Bournemouth",
-      "competition": "UEFA Europa League",
-      "stage": "League phase · Matchday 1",
-      "status": "Result",
-      "signals": [
-        "UEFA highlights confirm final score",
-        "Bournemouth opened with an away win"
-      ]
-    },
-    {
-      "id": "man-city-norwich-result-sep17",
-      "type": "result",
-      "sport": "Football",
-      "date": "17 Sep",
-      "time": "Final",
-      "title": "Manchester City 5-0 Norwich City",
-      "home": "Manchester City",
-      "away": "Norwich City",
-      "competition": "Carabao Cup",
-      "stage": "Third round · Etihad Stadium",
-      "status": "Result",
-      "signals": [
-        "Manchester City advanced to round four",
-        "Floyd Samba scored twice",
-        "Official club result"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t45.png"
     }
   ]
 }
