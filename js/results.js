@@ -4,6 +4,11 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League", status: "FINAL", homeName: "Tottenham Hotspur", awayName: "Aston Villa", homeGoals: "2", awayGoals: "3", venue: "Tottenham Hotspur Stadium", date: "19 Sep", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Brighton", awayName: "Arsenal", homeGoals: "3", awayGoals: "0", venue: "Amex Stadium", date: "19 Sep", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Everton", awayName: "Ipswich Town", homeGoals: "1", awayGoals: "0", venue: "Hill Dickinson Stadium", date: "19 Sep", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Newcastle", awayName: "Hull City", homeGoals: "2", awayGoals: "1", venue: "St James’ Park", date: "19 Sep", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Nottingham Forest", awayName: "Coventry City", homeGoals: "0", awayGoals: "1", venue: "City Ground", date: "19 Sep", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Brentford", awayName: "Chelsea", homeGoals: "3", awayGoals: "0", venue: "Gtech Community Stadium", date: "18 Sep", href: "standings.html" },
     { round: "Football · UEFA Europa League", status: "FINAL", homeName: "Juventus", awayName: "N.E.C. Nijmegen", homeGoals: "5", awayGoals: "0", venue: "Turin", date: "17 Sep", href: "results.html" },
     { round: "Football · UEFA Europa League", status: "FINAL", homeName: "Real Sociedad", awayName: "Bournemouth", homeGoals: "1", awayGoals: "2", venue: "San Sebastián", date: "17 Sep", href: "results.html" },
@@ -26,7 +31,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · updated 19 Sep 2026");
+    setStatus("World sports results · updated 20 Sep 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -36,7 +41,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Brentford beat Chelsea 3-0 in Friday's Premier League match. Juventus and Bournemouth opened their Europa League campaigns with wins.";
+    if (intro) intro.textContent = "Brighton beat Arsenal 3-0, Aston Villa won 3-2 at Tottenham, Everton and Coventry earned 1-0 wins, and Newcastle beat Hull 2-1 in Saturday's Premier League matches.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
