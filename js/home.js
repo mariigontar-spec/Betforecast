@@ -38,25 +38,25 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Brighton–Arsenal leads Saturday's Premier League schedule; Brentford moved third after Friday's 3-0 win over Chelsea.";
+        "Manchester City–Sunderland leads Sunday's Premier League schedule; Brighton moved third after beating Arsenal 3-0.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>19 Sep</strong><span>Spurs–Aston Villa · Premier League</span></div>
-        <div><strong>19 Sep</strong><span>Brighton–Arsenal · Premier League</span></div>
-        <div><strong>18 Sep</strong><span>Brentford 3–0 Chelsea · league result</span></div>
+        <div><strong>20 Sep</strong><span>Man City–Sunderland · Premier League</span></div>
+        <div><strong>20 Sep</strong><span>Fulham–Man United · Premier League</span></div>
+        <div><strong>19 Sep</strong><span>Brighton 3–0 Arsenal · league result</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Brighton, Arsenal, Tottenham, Premier League";
+      input.placeholder = "Try: Man City, Sunderland, Liverpool, Premier League";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Brighton Arsenal">Brighton–Arsenal</button>
+        <button type="button" data-query="Man City Sunderland">Man City–Sunderland</button>
         <button type="button" data-query="Premier League">Premier League</button>
         <button type="button" data-query="Vuelta">Vuelta</button>
       `;
@@ -64,10 +64,10 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=brighton-arsenal-sep19", title: "Brighton vs Arsenal", detail: "19 September · Premier League · 15:00 UK", tag: "Football" },
-      { href: "match.html?id=tottenham-villa-sep19", title: "Tottenham vs Aston Villa", detail: "19 September · Premier League · 12:30 UK", tag: "Football" },
-      { href: "results.html", title: "Brentford beat Chelsea", detail: "18 September · Premier League · 3-0", tag: "Results" },
-      { href: "standings.html", title: "Premier League · Matchweek 5 underway", detail: "Table, Recent and Upcoming updated", tag: "Table" },
+      { href: "match.html?id=man-city-sunderland-sep20", title: "Manchester City vs Sunderland", detail: "20 September · Premier League · 14:00 UK", tag: "Football" },
+      { href: "match.html?id=fulham-man-united-sep20", title: "Fulham vs Manchester United", detail: "20 September · Premier League · 16:30 UK", tag: "Football" },
+      { href: "results.html", title: "Brighton beat Arsenal", detail: "19 September · Premier League · 3-0", tag: "Results" },
+      { href: "standings.html", title: "Premier League · Matchweek 5 continues", detail: "Table, Recent and Upcoming updated", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
