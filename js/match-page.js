@@ -1,157 +1,244 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    "id": "brighton-arsenal-sep19",
+    "id": "man-city-sunderland-sep20",
     "league": "Football · Premier League",
-    "date": "19 Sep 2026",
-    "time": "15:00 UK",
-    "stadium": "Amex Stadium, Brighton",
-    "home": "Brighton",
-    "away": "Arsenal",
-    "homeShort": "BHA",
-    "awayShort": "ARS",
-    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+    "date": "20 Sep 2026",
+    "time": "14:00 UK",
+    "stadium": "Etihad Stadium, Manchester",
+    "home": "Manchester City",
+    "away": "Sunderland",
+    "homeShort": "MCI",
+    "awayShort": "SUN",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
     "projectedScore": "TODAY",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Brighton welcome league leaders Arsenal on Saturday in Matchweek 5.",
-    "bestTip": "Confirmed Saturday fixture",
+    "summary": "Manchester City host Sunderland in Sunday's Premier League programme.",
+    "bestTip": "Confirmed Sunday fixture",
     "goalsLean": "Matchweek 5",
-    "btts": "Saturday · 15:00 UK",
+    "btts": "Sunday · 14:00 UK",
     "factors": [
       "Premier League schedule",
-      "Arsenal top after four matches",
-      "Brighton have seven points",
+      "Current table data checked 20 Sep",
       "No unverified score prediction"
     ],
     "formHome": [
       "W",
+      "W",
+      "W",
+      "W"
+    ],
+    "formAway": [
       "L",
+      "W",
+      "D",
+      "L"
+    ],
+    "homeStats": [
+      "Played: 4",
+      "W-D-L: 4-0-0",
+      "Goals: 8-2",
+      "Points: 12"
+    ],
+    "awayStats": [
+      "Played: 4",
+      "W-D-L: 1-1-2",
+      "Goals: 3-5",
+      "Points: 4"
+    ],
+    "quickInsightTitle": "Sunday league fixture",
+    "quickInsight": "Manchester City have 12 points; Sunderland have 4. No score or betting probabilities asserted.",
+    "related": [
+      {
+        "id": "bournemouth-liverpool-sep20",
+        "home": "Bournemouth",
+        "away": "Liverpool",
+        "league": "Premier League"
+      }
+    ]
+  },
+  {
+    "id": "bournemouth-liverpool-sep20",
+    "league": "Football · Premier League",
+    "date": "20 Sep 2026",
+    "time": "14:00 UK",
+    "stadium": "Vitality Stadium, Bournemouth",
+    "home": "Bournemouth",
+    "away": "Liverpool",
+    "homeShort": "BOU",
+    "awayShort": "LIV",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+    "projectedScore": "TODAY",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Bournemouth host Liverpool in Sunday's Premier League programme.",
+    "bestTip": "Confirmed Sunday fixture",
+    "goalsLean": "Matchweek 5",
+    "btts": "Sunday · 14:00 UK",
+    "factors": [
+      "Premier League schedule",
+      "Current table data checked 20 Sep",
+      "No unverified score prediction"
+    ],
+    "formHome": [
+      "L",
+      "D",
+      "D",
+      "D"
+    ],
+    "formAway": [
+      "D",
+      "D",
+      "W",
+      "D"
+    ],
+    "homeStats": [
+      "Played: 4",
+      "W-D-L: 0-3-1",
+      "Goals: 6-7",
+      "Points: 3"
+    ],
+    "awayStats": [
+      "Played: 4",
+      "W-D-L: 1-3-0",
+      "Goals: 6-4",
+      "Points: 6"
+    ],
+    "quickInsightTitle": "Sunday league fixture",
+    "quickInsight": "Bournemouth have 3 points; Liverpool have 6. No score or betting probabilities asserted.",
+    "related": [
+      {
+        "id": "man-city-sunderland-sep20",
+        "home": "Manchester City",
+        "away": "Sunderland",
+        "league": "Premier League"
+      }
+    ]
+  },
+  {
+    "id": "leeds-palace-sep20",
+    "league": "Football · Premier League",
+    "date": "20 Sep 2026",
+    "time": "14:00 UK",
+    "stadium": "Elland Road, Leeds",
+    "home": "Leeds United",
+    "away": "Crystal Palace",
+    "homeShort": "LEE",
+    "awayShort": "CRY",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+    "projectedScore": "TODAY",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Leeds United host Crystal Palace in Sunday's Premier League programme.",
+    "bestTip": "Confirmed Sunday fixture",
+    "goalsLean": "Matchweek 5",
+    "btts": "Sunday · 14:00 UK",
+    "factors": [
+      "Premier League schedule",
+      "Current table data checked 20 Sep",
+      "No unverified score prediction"
+    ],
+    "formHome": [
+      "W",
+      "D",
       "D",
       "W"
     ],
     "formAway": [
+      "L",
+      "L",
       "W",
-      "W",
-      "W",
-      "W"
+      "L"
     ],
     "homeStats": [
       "Played: 4",
-      "W-D-L: 2-1-1",
-      "Goals: 13-5",
-      "Points: 7"
+      "W-D-L: 2-2-0",
+      "Goals: 7-3",
+      "Points: 8"
     ],
     "awayStats": [
       "Played: 4",
-      "W-D-L: 4-0-0",
-      "Goals: 8-1",
-      "Points: 12"
+      "W-D-L: 1-0-3",
+      "Goals: 6-11",
+      "Points: 3"
     ],
-    "quickInsightTitle": "Saturday's table test",
-    "quickInsight": "Arsenal lead after four league wins; Brighton have seven points. No score or betting probabilities asserted.",
+    "quickInsightTitle": "Sunday league fixture",
+    "quickInsight": "Leeds United have 8 points; Crystal Palace have 3. No score or betting probabilities asserted.",
     "related": [
       {
-        "id": "tottenham-villa-sep19",
-        "home": "Tottenham Hotspur",
-        "away": "Aston Villa",
+        "id": "fulham-man-united-sep20",
+        "home": "Fulham",
+        "away": "Manchester United",
         "league": "Premier League"
       }
     ]
   },
   {
-    "id": "tottenham-villa-sep19",
+    "id": "fulham-man-united-sep20",
     "league": "Football · Premier League",
-    "date": "19 Sep 2026",
-    "time": "12:30 UK",
-    "stadium": "Tottenham Hotspur Stadium, London",
-    "home": "Tottenham Hotspur",
-    "away": "Aston Villa",
-    "homeShort": "TOT",
-    "awayShort": "AVL",
-    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+    "date": "20 Sep 2026",
+    "time": "16:30 UK",
+    "stadium": "Craven Cottage, London",
+    "home": "Fulham",
+    "away": "Manchester United",
+    "homeShort": "FUL",
+    "awayShort": "MUN",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
     "projectedScore": "TODAY",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Tottenham host Aston Villa in Saturday's early Premier League match.",
-    "bestTip": "League-confirmed fixture",
+    "summary": "Fulham host Manchester United in Sunday's late Premier League match.",
+    "bestTip": "Confirmed Sunday fixture",
     "goalsLean": "Matchweek 5",
-    "btts": "Saturday · 12:30 UK",
-    "factors": [
-      "Premier League fixture amendments",
-      "Saturday early kickoff",
-      "League match",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Played: 4",
-      "Points: 2"
-    ],
-    "awayStats": [
-      "Played: 4",
-      "Points: 1"
-    ],
-    "quickInsightTitle": "Saturday early kickoff",
-    "quickInsight": "Official schedule lists the fixture at 12:30 UK.",
-    "related": [
-      {
-        "id": "brighton-arsenal-sep19",
-        "home": "Brighton",
-        "away": "Arsenal",
-        "league": "Premier League"
-      }
-    ]
-  },
-  {
-    "id": "everton-ipswich-sep19",
-    "league": "Football · Premier League",
-    "date": "19 Sep 2026",
-    "time": "15:00 UK",
-    "stadium": "Hill Dickinson Stadium, Liverpool",
-    "home": "Everton",
-    "away": "Ipswich Town",
-    "homeShort": "EVE",
-    "awayShort": "IPS",
-    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
-    "projectedScore": "TODAY",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Everton host Ipswich Town in Saturday's Premier League programme.",
-    "bestTip": "League fixture",
-    "goalsLean": "Matchweek 5",
-    "btts": "Saturday · 15:00 UK",
+    "btts": "Sunday · 16:30 UK",
     "factors": [
       "Premier League schedule",
-      "Both clubs have six points from four games",
-      "No unverified prediction"
+      "Current table data checked 20 Sep",
+      "No unverified score prediction"
     ],
-    "formHome": [],
-    "formAway": [],
+    "formHome": [
+      "L",
+      "L",
+      "L",
+      "D"
+    ],
+    "formAway": [
+      "L",
+      "W",
+      "D",
+      "L"
+    ],
     "homeStats": [
       "Played: 4",
-      "Points: 6"
+      "W-D-L: 0-1-3",
+      "Goals: 4-7",
+      "Points: 1"
     ],
     "awayStats": [
       "Played: 4",
-      "Points: 6"
+      "W-D-L: 1-1-2",
+      "Goals: 7-7",
+      "Points: 4"
     ],
-    "quickInsightTitle": "Saturday fixture",
-    "quickInsight": "Kickoff is listed in the Premier League schedule.",
+    "quickInsightTitle": "Sunday league fixture",
+    "quickInsight": "Fulham have 1 points; Manchester United have 4. No score or betting probabilities asserted.",
     "related": [
       {
-        "id": "brighton-arsenal-sep19",
-        "home": "Brighton",
-        "away": "Arsenal",
+        "id": "leeds-palace-sep20",
+        "home": "Leeds United",
+        "away": "Crystal Palace",
         "league": "Premier League"
       }
     ]
