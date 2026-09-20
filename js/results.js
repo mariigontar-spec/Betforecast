@@ -4,6 +4,10 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League", status: "FINAL", homeName: "Manchester City", awayName: "Sunderland", homeGoals: "5", awayGoals: "3", venue: "Etihad Stadium", date: "20 Sep", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Bournemouth", awayName: "Liverpool", homeGoals: "0", awayGoals: "1", venue: "Vitality Stadium", date: "20 Sep", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Leeds United", awayName: "Crystal Palace", homeGoals: "0", awayGoals: "0", venue: "Elland Road", date: "20 Sep", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Fulham", awayName: "Manchester United", homeGoals: "1", awayGoals: "1", venue: "Craven Cottage", date: "20 Sep", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Tottenham Hotspur", awayName: "Aston Villa", homeGoals: "2", awayGoals: "3", venue: "Tottenham Hotspur Stadium", date: "19 Sep", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Brighton", awayName: "Arsenal", homeGoals: "3", awayGoals: "0", venue: "Amex Stadium", date: "19 Sep", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Everton", awayName: "Ipswich Town", homeGoals: "1", awayGoals: "0", venue: "Hill Dickinson Stadium", date: "19 Sep", href: "standings.html" },
@@ -31,7 +35,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · updated 20 Sep 2026");
+    setStatus("World sports results · updated 21 Sep 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -41,7 +45,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Brighton beat Arsenal 3-0, Aston Villa won 3-2 at Tottenham, Everton and Coventry earned 1-0 wins, and Newcastle beat Hull 2-1 in Saturday's Premier League matches.";
+    if (intro) intro.textContent = "Manchester City beat Sunderland 5-3, Liverpool won 1-0 at Bournemouth, while Leeds–Crystal Palace and Fulham–Manchester United finished level.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
