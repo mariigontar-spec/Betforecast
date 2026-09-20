@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 20 Sep 2026";
-  if (t) t.textContent = "Premier League Sunday · Man City vs Sunderland";
+  if (k) k.textContent = "World Sports News · 21 Sep 2026";
+  if (t) t.textContent = "Premier League Matchweek 5 · complete";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=man-city-sunderland-sep20">Man City–Sunderland today</a><a class="sidebar-link-card" href="results.html">Brighton beat Arsenal 3-0</a><a class="sidebar-link-card" href="match.html?id=fulham-man-united-sep20">Fulham–Man United today</a><a class="sidebar-link-card" href="results.html">Coventry earn landmark win</a><a class="sidebar-link-card" href="standings.html">Premier League table checked</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Man City beat Sunderland 5-3</a><a class="sidebar-link-card" href="results.html">Liverpool win at Bournemouth</a><a class="sidebar-link-card" href="results.html">Cunha rescues Man United</a><a class="sidebar-link-card" href="match.html?id=arsenal-leeds-oct10">Next: Arsenal–Leeds</a><a class="sidebar-link-card" href="standings.html">Matchweek 5 table complete</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Manchester City host Sunderland on Sunday while Bournemouth face Liverpool and Fulham meet Manchester United. Brighton beat Arsenal 3-0 on Saturday and moved third; Coventry earned their first Premier League win in 25 years.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Manchester City completed a perfect five-match league start with a 5-3 win over Sunderland. Liverpool won 1-0 at Bournemouth, Leeds drew 0-0 with Crystal Palace and Fulham held Manchester United 1-1. The Premier League now pauses for the international break.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
