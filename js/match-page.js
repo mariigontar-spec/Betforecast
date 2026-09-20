@@ -1,244 +1,251 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    "id": "man-city-sunderland-sep20",
+    "id": "arsenal-leeds-oct10",
     "league": "Football · Premier League",
-    "date": "20 Sep 2026",
-    "time": "14:00 UK",
-    "stadium": "Etihad Stadium, Manchester",
-    "home": "Manchester City",
-    "away": "Sunderland",
-    "homeShort": "MCI",
-    "awayShort": "SUN",
-    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
-    "projectedScore": "TODAY",
+    "date": "10 Oct 2026",
+    "time": "12:30 UK",
+    "stadium": "Emirates Stadium, London",
+    "home": "Arsenal",
+    "away": "Leeds United",
+    "homeShort": "ARS",
+    "awayShort": "LEE",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+    "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Manchester City host Sunderland in Sunday's Premier League programme.",
-    "bestTip": "Confirmed Sunday fixture",
-    "goalsLean": "Matchweek 5",
-    "btts": "Sunday · 14:00 UK",
+    "summary": "Arsenal face Leeds United in the next confirmed Premier League round.",
+    "bestTip": "Confirmed Matchweek 6 fixture",
+    "goalsLean": "International-break calendar",
+    "btts": "Kickoff · 12:30 UK",
     "factors": [
-      "Premier League schedule",
-      "Current table data checked 20 Sep",
+      "Premier League fixture amendments",
+      "Current table data checked 21 Sep",
       "No unverified score prediction"
     ],
     "formHome": [
       "W",
       "W",
       "W",
-      "W"
-    ],
-    "formAway": [
-      "L",
       "W",
-      "D",
       "L"
     ],
+    "formAway": [
+      "W",
+      "D",
+      "D",
+      "W",
+      "D"
+    ],
     "homeStats": [
-      "Played: 4",
-      "W-D-L: 4-0-0",
-      "Goals: 8-2",
+      "Played: 5",
+      "W-D-L: 4-0-1",
+      "Goals: 8-4",
       "Points: 12"
     ],
     "awayStats": [
-      "Played: 4",
-      "W-D-L: 1-1-2",
-      "Goals: 3-5",
-      "Points: 4"
+      "Played: 5",
+      "W-D-L: 2-3-0",
+      "Goals: 7-3",
+      "Points: 9"
     ],
-    "quickInsightTitle": "Sunday league fixture",
-    "quickInsight": "Manchester City have 12 points; Sunderland have 4. No score or betting probabilities asserted.",
+    "quickInsightTitle": "Next league fixture",
+    "quickInsight": "Arsenal have 12 points; Leeds United have 9. The league resumes after the international break.",
     "related": [
       {
-        "id": "bournemouth-liverpool-sep20",
-        "home": "Bournemouth",
-        "away": "Liverpool",
+        "id": "man-united-spurs-oct10",
+        "home": "Manchester United",
+        "away": "Tottenham Hotspur",
         "league": "Premier League"
       }
     ]
   },
   {
-    "id": "bournemouth-liverpool-sep20",
+    "id": "man-united-spurs-oct10",
     "league": "Football · Premier League",
-    "date": "20 Sep 2026",
-    "time": "14:00 UK",
-    "stadium": "Vitality Stadium, Bournemouth",
-    "home": "Bournemouth",
-    "away": "Liverpool",
-    "homeShort": "BOU",
-    "awayShort": "LIV",
-    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-    "projectedScore": "TODAY",
+    "date": "10 Oct 2026",
+    "time": "17:30 UK",
+    "stadium": "Old Trafford, Manchester",
+    "home": "Manchester United",
+    "away": "Tottenham Hotspur",
+    "homeShort": "MUN",
+    "awayShort": "TOT",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+    "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Bournemouth host Liverpool in Sunday's Premier League programme.",
-    "bestTip": "Confirmed Sunday fixture",
-    "goalsLean": "Matchweek 5",
-    "btts": "Sunday · 14:00 UK",
+    "summary": "Manchester United face Tottenham Hotspur in the next confirmed Premier League round.",
+    "bestTip": "Confirmed Matchweek 6 fixture",
+    "goalsLean": "International-break calendar",
+    "btts": "Kickoff · 17:30 UK",
     "factors": [
-      "Premier League schedule",
-      "Current table data checked 20 Sep",
+      "Premier League fixture amendments",
+      "Current table data checked 21 Sep",
       "No unverified score prediction"
     ],
     "formHome": [
       "L",
+      "W",
       "D",
-      "D",
+      "L",
       "D"
     ],
     "formAway": [
+      "L",
+      "L",
       "D",
       "D",
-      "W",
-      "D"
+      "L"
     ],
     "homeStats": [
-      "Played: 4",
-      "W-D-L: 0-3-1",
-      "Goals: 6-7",
-      "Points: 3"
+      "Played: 5",
+      "W-D-L: 1-2-2",
+      "Goals: 8-8",
+      "Points: 5"
     ],
     "awayStats": [
-      "Played: 4",
-      "W-D-L: 1-3-0",
-      "Goals: 6-4",
-      "Points: 6"
+      "Played: 5",
+      "W-D-L: 0-2-3",
+      "Goals: 2-8",
+      "Points: 2"
     ],
-    "quickInsightTitle": "Sunday league fixture",
-    "quickInsight": "Bournemouth have 3 points; Liverpool have 6. No score or betting probabilities asserted.",
+    "quickInsightTitle": "Next league fixture",
+    "quickInsight": "Manchester United have 5 points; Tottenham Hotspur have 2. The league resumes after the international break.",
     "related": [
       {
-        "id": "man-city-sunderland-sep20",
-        "home": "Manchester City",
-        "away": "Sunderland",
+        "id": "arsenal-leeds-oct10",
+        "home": "Arsenal",
+        "away": "Leeds United",
         "league": "Premier League"
       }
     ]
   },
   {
-    "id": "leeds-palace-sep20",
+    "id": "liverpool-man-city-oct11",
     "league": "Football · Premier League",
-    "date": "20 Sep 2026",
-    "time": "14:00 UK",
-    "stadium": "Elland Road, Leeds",
-    "home": "Leeds United",
-    "away": "Crystal Palace",
-    "homeShort": "LEE",
-    "awayShort": "CRY",
-    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
-    "projectedScore": "TODAY",
+    "date": "11 Oct 2026",
+    "time": "16:30 UK",
+    "stadium": "Anfield, Liverpool",
+    "home": "Liverpool",
+    "away": "Manchester City",
+    "homeShort": "LIV",
+    "awayShort": "MCI",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+    "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Leeds United host Crystal Palace in Sunday's Premier League programme.",
-    "bestTip": "Confirmed Sunday fixture",
-    "goalsLean": "Matchweek 5",
-    "btts": "Sunday · 14:00 UK",
+    "summary": "Liverpool face Manchester City in the next confirmed Premier League round.",
+    "bestTip": "Confirmed Matchweek 6 fixture",
+    "goalsLean": "International-break calendar",
+    "btts": "Kickoff · 16:30 UK",
     "factors": [
-      "Premier League schedule",
-      "Current table data checked 20 Sep",
+      "Premier League fixture amendments",
+      "Current table data checked 21 Sep",
       "No unverified score prediction"
     ],
     "formHome": [
-      "W",
       "D",
+      "D",
+      "W",
       "D",
       "W"
     ],
     "formAway": [
-      "L",
-      "L",
       "W",
-      "L"
+      "W",
+      "W",
+      "W",
+      "W"
     ],
     "homeStats": [
-      "Played: 4",
-      "W-D-L: 2-2-0",
-      "Goals: 7-3",
-      "Points: 8"
+      "Played: 5",
+      "W-D-L: 2-3-0",
+      "Goals: 7-4",
+      "Points: 9"
     ],
     "awayStats": [
-      "Played: 4",
-      "W-D-L: 1-0-3",
-      "Goals: 6-11",
-      "Points: 3"
+      "Played: 5",
+      "W-D-L: 5-0-0",
+      "Goals: 13-5",
+      "Points: 15"
     ],
-    "quickInsightTitle": "Sunday league fixture",
-    "quickInsight": "Leeds United have 8 points; Crystal Palace have 3. No score or betting probabilities asserted.",
+    "quickInsightTitle": "Next league fixture",
+    "quickInsight": "Liverpool have 9 points; Manchester City have 15. The league resumes after the international break.",
     "related": [
       {
-        "id": "fulham-man-united-sep20",
-        "home": "Fulham",
-        "away": "Manchester United",
+        "id": "coventry-newcastle-oct12",
+        "home": "Coventry City",
+        "away": "Newcastle",
         "league": "Premier League"
       }
     ]
   },
   {
-    "id": "fulham-man-united-sep20",
+    "id": "coventry-newcastle-oct12",
     "league": "Football · Premier League",
-    "date": "20 Sep 2026",
-    "time": "16:30 UK",
-    "stadium": "Craven Cottage, London",
-    "home": "Fulham",
-    "away": "Manchester United",
-    "homeShort": "FUL",
-    "awayShort": "MUN",
-    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
-    "projectedScore": "TODAY",
+    "date": "12 Oct 2026",
+    "time": "20:00 UK",
+    "stadium": "Coventry Building Society Arena",
+    "home": "Coventry City",
+    "away": "Newcastle",
+    "homeShort": "COV",
+    "awayShort": "NEW",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+    "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Fulham host Manchester United in Sunday's late Premier League match.",
-    "bestTip": "Confirmed Sunday fixture",
-    "goalsLean": "Matchweek 5",
-    "btts": "Sunday · 16:30 UK",
+    "summary": "Coventry City face Newcastle in the next confirmed Premier League round.",
+    "bestTip": "Confirmed Matchweek 6 fixture",
+    "goalsLean": "International-break calendar",
+    "btts": "Kickoff · 20:00 UK",
     "factors": [
-      "Premier League schedule",
-      "Current table data checked 20 Sep",
+      "Premier League fixture amendments",
+      "Current table data checked 21 Sep",
       "No unverified score prediction"
     ],
     "formHome": [
       "L",
       "L",
       "L",
-      "D"
+      "L",
+      "W"
     ],
     "formAway": [
-      "L",
+      "D",
       "W",
       "D",
-      "L"
+      "L",
+      "W"
     ],
     "homeStats": [
-      "Played: 4",
-      "W-D-L: 0-1-3",
-      "Goals: 4-7",
-      "Points: 1"
+      "Played: 5",
+      "W-D-L: 1-0-4",
+      "Goals: 1-10",
+      "Points: 3"
     ],
     "awayStats": [
-      "Played: 4",
-      "W-D-L: 1-1-2",
-      "Goals: 7-7",
-      "Points: 4"
+      "Played: 5",
+      "W-D-L: 2-2-1",
+      "Goals: 9-9",
+      "Points: 8"
     ],
-    "quickInsightTitle": "Sunday league fixture",
-    "quickInsight": "Fulham have 1 points; Manchester United have 4. No score or betting probabilities asserted.",
+    "quickInsightTitle": "Next league fixture",
+    "quickInsight": "Coventry City have 3 points; Newcastle have 8. The league resumes after the international break.",
     "related": [
       {
-        "id": "leeds-palace-sep20",
-        "home": "Leeds United",
-        "away": "Crystal Palace",
+        "id": "liverpool-man-city-oct11",
+        "home": "Liverpool",
+        "away": "Manchester City",
         "league": "Premier League"
       }
     ]
