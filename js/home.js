@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Manchester City–Sunderland leads Sunday's Premier League schedule; Brighton moved third after beating Arsenal 3-0.";
+        "Manchester City lead the completed Matchweek 5 table with 15 points; the Premier League now pauses for the international break.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>20 Sep</strong><span>Man City–Sunderland · Premier League</span></div>
-        <div><strong>20 Sep</strong><span>Fulham–Man United · Premier League</span></div>
-        <div><strong>19 Sep</strong><span>Brighton 3–0 Arsenal · league result</span></div>
+        <div><strong>20 Sep</strong><span>Man City 5–3 Sunderland · league result</span></div>
+        <div><strong>20 Sep</strong><span>Bournemouth 0–1 Liverpool · league result</span></div>
+        <div><strong>10 Oct</strong><span>Arsenal–Leeds · next Premier League fixture</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Man City, Sunderland, Liverpool, Premier League";
+      input.placeholder = "Try: Man City, Liverpool, Arsenal, Premier League";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Man City Sunderland">Man City–Sunderland</button>
+        <button type="button" data-query="Man City Sunderland">Man City 5–3 Sunderland</button>
         <button type="button" data-query="Premier League">Premier League</button>
-        <button type="button" data-query="Vuelta">Vuelta</button>
+        <button type="button" data-query="International break">International break</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=man-city-sunderland-sep20", title: "Manchester City vs Sunderland", detail: "20 September · Premier League · 14:00 UK", tag: "Football" },
-      { href: "match.html?id=fulham-man-united-sep20", title: "Fulham vs Manchester United", detail: "20 September · Premier League · 16:30 UK", tag: "Football" },
-      { href: "results.html", title: "Brighton beat Arsenal", detail: "19 September · Premier League · 3-0", tag: "Results" },
-      { href: "standings.html", title: "Premier League · Matchweek 5 continues", detail: "Table, Recent and Upcoming updated", tag: "Table" },
+      { href: "results.html", title: "Manchester City beat Sunderland", detail: "20 September · Premier League · 5-3", tag: "Results" },
+      { href: "results.html", title: "Liverpool win at Bournemouth", detail: "20 September · Premier League · 1-0", tag: "Results" },
+      { href: "match.html?id=arsenal-leeds-oct10", title: "Arsenal vs Leeds United", detail: "10 October · Premier League · 12:30 UK", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table, Recent and Upcoming updated", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
