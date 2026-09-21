@@ -1,252 +1,189 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    "id": "arsenal-leeds-oct10",
-    "league": "Football · Premier League",
-    "date": "10 Oct 2026",
-    "time": "12:30 UK",
-    "stadium": "Emirates Stadium, London",
-    "home": "Arsenal",
-    "away": "Leeds United",
-    "homeShort": "ARS",
-    "awayShort": "LEE",
-    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+    "id": "netherlands-germany-sep24",
+    "league": "Football · UEFA Nations League",
+    "date": "24 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Netherlands",
+    "home": "Netherlands",
+    "away": "Germany",
+    "homeShort": "NED",
+    "awayShort": "GER",
+    "homeLogo": "https://flagcdn.com/w160/nl.png",
+    "awayLogo": "https://flagcdn.com/w160/de.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Arsenal face Leeds United in the next confirmed Premier League round.",
-    "bestTip": "Confirmed Matchweek 6 fixture",
-    "goalsLean": "International-break calendar",
-    "btts": "Kickoff · 12:30 UK",
+    "summary": "The Netherlands host Germany on the opening night of the 2026/27 UEFA Nations League.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League A · Group A2",
+    "btts": "Kickoff · 20:45 CET",
     "factors": [
-      "Premier League fixture amendments",
-      "Current table data checked 21 Sep",
+      "Official UEFA fixture",
+      "Managerial debuts for Xavi Hernández and Jürgen Klopp",
       "No unverified score prediction"
     ],
-    "formHome": [
-      "W",
-      "W",
-      "W",
-      "W",
-      "L"
-    ],
-    "formAway": [
-      "W",
-      "D",
-      "D",
-      "W",
-      "D"
-    ],
+    "formHome": [],
+    "formAway": [],
     "homeStats": [
-      "Played: 5",
-      "W-D-L: 4-0-1",
-      "Goals: 8-4",
-      "Points: 12"
+      "Nations League opener",
+      "Group A2"
     ],
     "awayStats": [
-      "Played: 5",
-      "W-D-L: 2-3-0",
-      "Goals: 7-3",
-      "Points: 9"
+      "Nations League opener",
+      "Group A2"
     ],
-    "quickInsightTitle": "Next league fixture",
-    "quickInsight": "Arsenal have 12 points; Leeds United have 9. The league resumes after the international break.",
+    "quickInsightTitle": "Featured international fixture",
+    "quickInsight": "A classic European rivalry opens the new Nations League campaign on 24 September.",
     "related": [
       {
-        "id": "man-united-spurs-oct10",
-        "home": "Manchester United",
-        "away": "Tottenham Hotspur",
-        "league": "Premier League"
+        "id": "portugal-wales-sep24",
+        "home": "Portugal",
+        "away": "Wales",
+        "league": "UEFA Nations League"
       }
     ]
   },
   {
-    "id": "man-united-spurs-oct10",
-    "league": "Football · Premier League",
-    "date": "10 Oct 2026",
-    "time": "17:30 UK",
-    "stadium": "Old Trafford, Manchester",
-    "home": "Manchester United",
-    "away": "Tottenham Hotspur",
-    "homeShort": "MUN",
-    "awayShort": "TOT",
-    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+    "id": "portugal-wales-sep24",
+    "league": "Football · UEFA Nations League",
+    "date": "24 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Portugal",
+    "home": "Portugal",
+    "away": "Wales",
+    "homeShort": "POR",
+    "awayShort": "WAL",
+    "homeLogo": "https://flagcdn.com/w160/pt.png",
+    "awayLogo": "https://flagcdn.com/w160/gb-wls.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Manchester United face Tottenham Hotspur in the next confirmed Premier League round.",
-    "bestTip": "Confirmed Matchweek 6 fixture",
-    "goalsLean": "International-break calendar",
-    "btts": "Kickoff · 17:30 UK",
+    "summary": "Portugal host Wales in the opening round of Nations League Group A4.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League A · Group A4",
+    "btts": "Kickoff · 20:45 CET",
     "factors": [
-      "Premier League fixture amendments",
-      "Current table data checked 21 Sep",
+      "Official UEFA fixture",
+      "Wales begin their League A campaign",
       "No unverified score prediction"
     ],
-    "formHome": [
-      "L",
-      "W",
-      "D",
-      "L",
-      "D"
-    ],
-    "formAway": [
-      "L",
-      "L",
-      "D",
-      "D",
-      "L"
-    ],
+    "formHome": [],
+    "formAway": [],
     "homeStats": [
-      "Played: 5",
-      "W-D-L: 1-2-2",
-      "Goals: 8-8",
-      "Points: 5"
+      "Nations League opener",
+      "Group A4"
     ],
     "awayStats": [
-      "Played: 5",
-      "W-D-L: 0-2-3",
-      "Goals: 2-8",
-      "Points: 2"
+      "Nations League opener",
+      "Group A4"
     ],
-    "quickInsightTitle": "Next league fixture",
-    "quickInsight": "Manchester United have 5 points; Tottenham Hotspur have 2. The league resumes after the international break.",
+    "quickInsightTitle": "Opening-night fixture",
+    "quickInsight": "Portugal and Wales begin their 2026/27 Nations League campaigns on 24 September.",
     "related": [
       {
-        "id": "arsenal-leeds-oct10",
-        "home": "Arsenal",
-        "away": "Leeds United",
-        "league": "Premier League"
+        "id": "netherlands-germany-sep24",
+        "home": "Netherlands",
+        "away": "Germany",
+        "league": "UEFA Nations League"
       }
     ]
   },
   {
-    "id": "liverpool-man-city-oct11",
-    "league": "Football · Premier League",
-    "date": "11 Oct 2026",
-    "time": "16:30 UK",
-    "stadium": "Anfield, Liverpool",
-    "home": "Liverpool",
-    "away": "Manchester City",
-    "homeShort": "LIV",
-    "awayShort": "MCI",
-    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+    "id": "england-spain-sep26",
+    "league": "Football · UEFA Nations League",
+    "date": "26 Sep 2026",
+    "time": "19:45 UK",
+    "stadium": "Wembley Stadium, London",
+    "home": "England",
+    "away": "Spain",
+    "homeShort": "ENG",
+    "awayShort": "ESP",
+    "homeLogo": "https://flagcdn.com/w160/gb-eng.png",
+    "awayLogo": "https://flagcdn.com/w160/es.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Liverpool face Manchester City in the next confirmed Premier League round.",
-    "bestTip": "Confirmed Matchweek 6 fixture",
-    "goalsLean": "International-break calendar",
-    "btts": "Kickoff · 16:30 UK",
+    "summary": "England host Spain at Wembley in Nations League Group A3.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League A · Group A3",
+    "btts": "Kickoff · 19:45 UK",
     "factors": [
-      "Premier League fixture amendments",
-      "Current table data checked 21 Sep",
+      "Official UEFA fixture",
+      "England confirmed five injury withdrawals",
       "No unverified score prediction"
     ],
-    "formHome": [
-      "D",
-      "D",
-      "W",
-      "D",
-      "W"
-    ],
-    "formAway": [
-      "W",
-      "W",
-      "W",
-      "W",
-      "W"
-    ],
+    "formHome": [],
+    "formAway": [],
     "homeStats": [
-      "Played: 5",
-      "W-D-L: 2-3-0",
-      "Goals: 7-4",
-      "Points: 9"
+      "Nations League opener",
+      "Five confirmed withdrawals"
     ],
     "awayStats": [
-      "Played: 5",
-      "W-D-L: 5-0-0",
-      "Goals: 13-5",
-      "Points: 15"
+      "Nations League opener",
+      "World champions"
     ],
-    "quickInsightTitle": "Next league fixture",
-    "quickInsight": "Liverpool have 9 points; Manchester City have 15. The league resumes after the international break.",
+    "quickInsightTitle": "Squad availability watch",
+    "quickInsight": "England confirmed that Palmer, Rice, Rashford, Mainoo and Livramento withdrew through injury.",
     "related": [
       {
-        "id": "coventry-newcastle-oct12",
-        "home": "Coventry City",
-        "away": "Newcastle",
-        "league": "Premier League"
+        "id": "iceland-estonia-sep26",
+        "home": "Iceland",
+        "away": "Estonia",
+        "league": "UEFA Nations League"
       }
     ]
   },
   {
-    "id": "coventry-newcastle-oct12",
-    "league": "Football · Premier League",
-    "date": "12 Oct 2026",
-    "time": "20:00 UK",
-    "stadium": "Coventry Building Society Arena",
-    "home": "Coventry City",
-    "away": "Newcastle",
-    "homeShort": "COV",
-    "awayShort": "NEW",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+    "id": "iceland-estonia-sep26",
+    "league": "Football · UEFA Nations League",
+    "date": "26 Sep 2026",
+    "time": "18:00 CET",
+    "stadium": "Iceland",
+    "home": "Iceland",
+    "away": "Estonia",
+    "homeShort": "ISL",
+    "awayShort": "EST",
+    "homeLogo": "https://flagcdn.com/w160/is.png",
+    "awayLogo": "https://flagcdn.com/w160/ee.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Coventry City face Newcastle in the next confirmed Premier League round.",
-    "bestTip": "Confirmed Matchweek 6 fixture",
-    "goalsLean": "International-break calendar",
-    "btts": "Kickoff · 20:00 UK",
+    "summary": "Estonia begin their Nations League campaign away to Iceland.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League C · Group C4",
+    "btts": "Kickoff · 18:00 CET",
     "factors": [
-      "Premier League fixture amendments",
-      "Current table data checked 21 Sep",
+      "Official UEFA fixture",
+      "Estonia open away from home",
       "No unverified score prediction"
     ],
-    "formHome": [
-      "L",
-      "L",
-      "L",
-      "L",
-      "W"
-    ],
-    "formAway": [
-      "D",
-      "W",
-      "D",
-      "L",
-      "W"
-    ],
+    "formHome": [],
+    "formAway": [],
     "homeStats": [
-      "Played: 5",
-      "W-D-L: 1-0-4",
-      "Goals: 1-10",
-      "Points: 3"
+      "Nations League opener",
+      "Group C4"
     ],
     "awayStats": [
-      "Played: 5",
-      "W-D-L: 2-2-1",
-      "Goals: 9-9",
-      "Points: 8"
+      "Nations League opener",
+      "Group C4"
     ],
-    "quickInsightTitle": "Next league fixture",
-    "quickInsight": "Coventry City have 3 points; Newcastle have 8. The league resumes after the international break.",
+    "quickInsightTitle": "Baltic focus",
+    "quickInsight": "Estonia's opening League C fixture is confirmed for 26 September.",
     "related": [
       {
-        "id": "liverpool-man-city-oct11",
-        "home": "Liverpool",
-        "away": "Manchester City",
-        "league": "Premier League"
+        "id": "england-spain-sep26",
+        "home": "England",
+        "away": "Spain",
+        "league": "UEFA Nations League"
       }
     ]
   }
