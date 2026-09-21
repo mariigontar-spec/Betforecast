@@ -1,82 +1,76 @@
 {
-  "updatedAt": "2026-09-21T00:06:00+03:00",
-  "featuredId": "arsenal-leeds-oct10",
+  "updatedAt": "2026-09-22T00:02:00+03:00",
+  "featuredId": "netherlands-germany-sep24",
   "events": [
     {
-      "id": "arsenal-leeds-oct10",
+      "id": "netherlands-germany-sep24",
       "type": "event",
       "sport": "Football",
-      "date": "10 Oct",
-      "time": "12:30 UK",
-      "title": "Arsenal vs Leeds United",
-      "home": "Arsenal",
-      "away": "Leeds United",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
+      "date": "24 Sep",
+      "time": "20:45 CET",
+      "title": "Netherlands vs Germany",
+      "home": "Netherlands",
+      "away": "Germany",
+      "competition": "UEFA Nations League",
+      "stage": "League A · Group A2 · Matchday 1",
       "status": "Upcoming",
       "signals": [
-        "Next confirmed Premier League fixture",
-        "Arsenal are second on 12 points",
-        "Leeds are unbeaten on nine points"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
+        "Nations League opener",
+        "Managerial debuts for Xavi Hernández and Jürgen Klopp",
+        "Official UEFA fixture"
+      ]
     },
     {
-      "id": "man-united-spurs-oct10",
+      "id": "portugal-wales-sep24",
       "type": "event",
       "sport": "Football",
-      "date": "10 Oct",
-      "time": "17:30 UK",
-      "title": "Manchester United vs Tottenham Hotspur",
-      "home": "Manchester United",
-      "away": "Tottenham Hotspur",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
+      "date": "24 Sep",
+      "time": "20:45 CET",
+      "title": "Portugal vs Wales",
+      "home": "Portugal",
+      "away": "Wales",
+      "competition": "UEFA Nations League",
+      "stage": "League A · Group A4 · Matchday 1",
       "status": "Upcoming",
       "signals": [
-        "Confirmed Premier League fixture",
-        "Kickoff 17:30 UK"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
+        "Confirmed UEFA fixture",
+        "Wales begin their League A campaign"
+      ]
     },
     {
-      "id": "liverpool-man-city-oct11",
+      "id": "england-spain-sep26",
       "type": "event",
       "sport": "Football",
-      "date": "11 Oct",
-      "time": "16:30 UK",
-      "title": "Liverpool vs Manchester City",
-      "home": "Liverpool",
-      "away": "Manchester City",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
+      "date": "26 Sep",
+      "time": "19:45 UK",
+      "title": "England vs Spain",
+      "home": "England",
+      "away": "Spain",
+      "competition": "UEFA Nations League",
+      "stage": "League A · Group A3 · Matchday 1",
       "status": "Upcoming",
       "signals": [
-        "Confirmed Sunday fixture",
-        "Manchester City lead with 15 points"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
+        "Wembley Stadium",
+        "England confirmed five injury withdrawals",
+        "Official fixture and squad update"
+      ]
     },
     {
-      "id": "coventry-newcastle-oct12",
+      "id": "iceland-estonia-sep26",
       "type": "event",
       "sport": "Football",
-      "date": "12 Oct",
-      "time": "20:00 UK",
-      "title": "Coventry City vs Newcastle",
-      "home": "Coventry City",
-      "away": "Newcastle",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
+      "date": "26 Sep",
+      "time": "18:00 CET",
+      "title": "Iceland vs Estonia",
+      "home": "Iceland",
+      "away": "Estonia",
+      "competition": "UEFA Nations League",
+      "stage": "League C · Group C4 · Matchday 1",
       "status": "Upcoming",
       "signals": [
-        "Confirmed Monday fixture",
-        "Kickoff 20:00 UK"
-      ],
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+        "Confirmed UEFA fixture",
+        "Estonia open their Nations League campaign"
+      ]
     },
     {
       "id": "man-city-sunderland-result-sep20",
@@ -154,24 +148,6 @@
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
-    },
-    {
-      "id": "brighton-arsenal-result-sep19",
-      "type": "result",
-      "sport": "Football",
-      "date": "19 Sep",
-      "time": "Final",
-      "title": "Brighton 3-0 Arsenal",
-      "home": "Brighton",
-      "away": "Arsenal",
-      "competition": "Premier League",
-      "stage": "Matchweek 5",
-      "status": "Result",
-      "signals": [
-        "Brighton moved third on 10 points"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
     }
   ]
 }
