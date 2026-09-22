@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 21 Sep 2026";
-  if (t) t.textContent = "Premier League Matchweek 5 · complete";
+  if (k) k.textContent = "World Sports News · 23 Sep 2026";
+  if (t) t.textContent = "UEFA Nations League · opening week";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Man City beat Sunderland 5-3</a><a class="sidebar-link-card" href="results.html">Liverpool win at Bournemouth</a><a class="sidebar-link-card" href="results.html">Cunha rescues Man United</a><a class="sidebar-link-card" href="match.html?id=arsenal-leeds-oct10">Next: Arsenal–Leeds</a><a class="sidebar-link-card" href="standings.html">Matchweek 5 table complete</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=netherlands-germany-sep24">Netherlands–Germany opener</a><a class="sidebar-link-card" href="match.html?id=portugal-wales-sep24">Portugal host Wales</a><a class="sidebar-link-card" href="match.html?id=england-spain-sep26">England–Spain at Wembley</a><a class="sidebar-link-card" href="news.html">Mbappé misses France training</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Manchester City completed a perfect five-match league start with a 5-3 win over Sunderland. Liverpool won 1-0 at Bournemouth, Leeds drew 0-0 with Crystal Palace and Fulham held Manchester United 1-1. The Premier League now pauses for the international break.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The UEFA Nations League begins on 24 September with Netherlands–Germany and Portugal–Wales among the opening fixtures. England host Spain on 26 September after five confirmed injury withdrawals. Mbappé missed France training with flu-like symptoms; his status remains under observation.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
