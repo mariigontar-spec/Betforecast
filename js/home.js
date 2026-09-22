@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Manchester City lead the completed Matchweek 5 table with 15 points; the Premier League now pauses for the international break.";
+        "UEFA Nations League Matchday 1 starts on 24 September, led by Netherlands–Germany and Portugal–Wales.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>20 Sep</strong><span>Man City 5–3 Sunderland · league result</span></div>
-        <div><strong>20 Sep</strong><span>Bournemouth 0–1 Liverpool · league result</span></div>
-        <div><strong>10 Oct</strong><span>Arsenal–Leeds · next Premier League fixture</span></div>
+        <div><strong>24 Sep</strong><span>Netherlands–Germany · Nations League opener</span></div>
+        <div><strong>24 Sep</strong><span>Portugal–Wales · League A Group A4</span></div>
+        <div><strong>26 Sep</strong><span>England–Spain · Wembley</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Man City, Liverpool, Arsenal, Premier League";
+      input.placeholder = "Try: Nations League, Netherlands, Germany, England";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Man City Sunderland">Man City 5–3 Sunderland</button>
-        <button type="button" data-query="Premier League">Premier League</button>
-        <button type="button" data-query="International break">International break</button>
+        <button type="button" data-query="Netherlands Germany">Netherlands–Germany</button>
+        <button type="button" data-query="UEFA Nations League">Nations League</button>
+        <button type="button" data-query="England Spain">England–Spain</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "results.html", title: "Manchester City beat Sunderland", detail: "20 September · Premier League · 5-3", tag: "Results" },
-      { href: "results.html", title: "Liverpool win at Bournemouth", detail: "20 September · Premier League · 1-0", tag: "Results" },
-      { href: "match.html?id=arsenal-leeds-oct10", title: "Arsenal vs Leeds United", detail: "10 October · Premier League · 12:30 UK", tag: "Upcoming" },
-      { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table, Recent and Upcoming updated", tag: "Table" },
+      { href: "match.html?id=netherlands-germany-sep24", title: "Netherlands vs Germany", detail: "24 September · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=portugal-wales-sep24", title: "Portugal vs Wales", detail: "24 September · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=england-spain-sep26", title: "England vs Spain", detail: "26 September · Wembley · 19:45 UK", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
