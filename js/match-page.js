@@ -4,7 +4,7 @@ const GLOBAL_MATCH_RADAR = [
     "league": "Football · UEFA Nations League",
     "date": "24 Sep 2026",
     "time": "20:45 CET",
-    "stadium": "Netherlands",
+    "stadium": "Johan Cruyff ArenA, Amsterdam",
     "home": "Netherlands",
     "away": "Germany",
     "homeShort": "NED",
@@ -16,7 +16,7 @@ const GLOBAL_MATCH_RADAR = [
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "The Netherlands host Germany on the opening night of the 2026/27 UEFA Nations League.",
+    "summary": "A classic European rivalry opens the Nations League campaign.",
     "bestTip": "Official Matchday 1 fixture",
     "goalsLean": "League A · Group A2",
     "btts": "Kickoff · 20:45 CET",
@@ -29,14 +29,14 @@ const GLOBAL_MATCH_RADAR = [
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "Group A2"
+      "League A · Group A2"
     ],
     "awayStats": [
       "Nations League opener",
-      "Group A2"
+      "League A · Group A2"
     ],
     "quickInsightTitle": "Featured international fixture",
-    "quickInsight": "A classic European rivalry opens the new Nations League campaign on 24 September.",
+    "quickInsight": "A classic European rivalry opens the Nations League campaign.",
     "related": [
       {
         "id": "portugal-wales-sep24",
@@ -63,32 +63,267 @@ const GLOBAL_MATCH_RADAR = [
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Portugal host Wales in the opening round of Nations League Group A4.",
+    "summary": "The defending champions begin at home against Wales.",
     "bestTip": "Official Matchday 1 fixture",
     "goalsLean": "League A · Group A4",
     "btts": "Kickoff · 20:45 CET",
     "factors": [
       "Official UEFA fixture",
-      "Wales begin their League A campaign",
+      "Portugal are the holders",
       "No unverified score prediction"
     ],
     "formHome": [],
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "Group A4"
+      "League A · Group A4"
     ],
     "awayStats": [
       "Nations League opener",
-      "Group A4"
+      "League A · Group A4"
     ],
-    "quickInsightTitle": "Opening-night fixture",
-    "quickInsight": "Portugal and Wales begin their 2026/27 Nations League campaigns on 24 September.",
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "The defending champions begin at home against Wales.",
     "related": [
       {
-        "id": "netherlands-germany-sep24",
-        "home": "Netherlands",
-        "away": "Germany",
+        "id": "serbia-greece-sep24",
+        "home": "Serbia",
+        "away": "Greece",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "serbia-greece-sep24",
+    "league": "Football · UEFA Nations League",
+    "date": "24 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Serbia",
+    "home": "Serbia",
+    "away": "Greece",
+    "homeShort": "SRB",
+    "awayShort": "GRE",
+    "homeLogo": "https://flagcdn.com/w160/rs.png",
+    "awayLogo": "https://flagcdn.com/w160/gr.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Serbia and Greece open their Group A2 campaigns.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League A · Group A2",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League A · Group A2"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League A · Group A2"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Serbia and Greece open their Group A2 campaigns.",
+    "related": [
+      {
+        "id": "norway-denmark-sep24",
+        "home": "Norway",
+        "away": "Denmark",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "norway-denmark-sep24",
+    "league": "Football · UEFA Nations League",
+    "date": "24 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Norway",
+    "home": "Norway",
+    "away": "Denmark",
+    "homeShort": "NOR",
+    "awayShort": "DEN",
+    "homeLogo": "https://flagcdn.com/w160/no.png",
+    "awayLogo": "https://flagcdn.com/w160/dk.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Norway host Denmark in a Nordic Matchday 1 fixture.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League A · Group A4",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Nordic rivalry",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League A · Group A4"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League A · Group A4"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Norway host Denmark in a Nordic Matchday 1 fixture.",
+    "related": [
+      {
+        "id": "austria-israel-sep24",
+        "home": "Austria",
+        "away": "Israel",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "austria-israel-sep24",
+    "league": "Football · UEFA Nations League",
+    "date": "24 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Austria",
+    "home": "Austria",
+    "away": "Israel",
+    "homeShort": "AUT",
+    "awayShort": "ISR",
+    "homeLogo": "https://flagcdn.com/w160/at.png",
+    "awayLogo": "https://flagcdn.com/w160/il.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Austria host Israel in the opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League B · Group B3",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League B · Group B3"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League B · Group B3"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Austria host Israel in the opening round.",
+    "related": [
+      {
+        "id": "kosovo-ireland-sep24",
+        "home": "Kosovo",
+        "away": "Republic of Ireland",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "kosovo-ireland-sep24",
+    "league": "Football · UEFA Nations League",
+    "date": "24 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Kosovo",
+    "home": "Kosovo",
+    "away": "Republic of Ireland",
+    "homeShort": "KOS",
+    "awayShort": "IRL",
+    "homeLogo": "https://flagcdn.com/w160/xk.png",
+    "awayLogo": "https://flagcdn.com/w160/ie.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Kosovo host the Republic of Ireland in Group B3.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League B · Group B3",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League B · Group B3"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League B · Group B3"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Kosovo host the Republic of Ireland in Group B3.",
+    "related": [
+      {
+        "id": "liechtenstein-lithuania-sep24",
+        "home": "Liechtenstein",
+        "away": "Lithuania",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "liechtenstein-lithuania-sep24",
+    "league": "Football · UEFA Nations League",
+    "date": "24 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Liechtenstein",
+    "home": "Liechtenstein",
+    "away": "Lithuania",
+    "homeShort": "LIE",
+    "awayShort": "LTU",
+    "homeLogo": "https://flagcdn.com/w160/li.png",
+    "awayLogo": "https://flagcdn.com/w160/lt.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Liechtenstein and Lithuania begin their League D campaigns.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League D · Group D2",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League D · Group D2"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League D · Group D2"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Liechtenstein and Lithuania begin their League D campaigns.",
+    "related": [
+      {
+        "id": "england-spain-sep26",
+        "home": "England",
+        "away": "Spain",
         "league": "UEFA Nations League"
       }
     ]
@@ -110,7 +345,7 @@ const GLOBAL_MATCH_RADAR = [
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "England host Spain at Wembley in Nations League Group A3.",
+    "summary": "England host the world champions at Wembley.",
     "bestTip": "Official Matchday 1 fixture",
     "goalsLean": "League A · Group A3",
     "btts": "Kickoff · 19:45 UK",
@@ -123,14 +358,14 @@ const GLOBAL_MATCH_RADAR = [
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "Five confirmed withdrawals"
+      "League A · Group A3"
     ],
     "awayStats": [
       "Nations League opener",
-      "World champions"
+      "League A · Group A3"
     ],
-    "quickInsightTitle": "Squad availability watch",
-    "quickInsight": "England confirmed that Palmer, Rice, Rashford, Mainoo and Livramento withdrew through injury.",
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "England host the world champions at Wembley.",
     "related": [
       {
         "id": "iceland-estonia-sep26",
@@ -163,26 +398,26 @@ const GLOBAL_MATCH_RADAR = [
     "btts": "Kickoff · 18:00 CET",
     "factors": [
       "Official UEFA fixture",
-      "Estonia open away from home",
+      "Baltic focus",
       "No unverified score prediction"
     ],
     "formHome": [],
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "Group C4"
+      "League C · Group C4"
     ],
     "awayStats": [
       "Nations League opener",
-      "Group C4"
+      "League C · Group C4"
     ],
-    "quickInsightTitle": "Baltic focus",
-    "quickInsight": "Estonia's opening League C fixture is confirmed for 26 September.",
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Estonia begin their Nations League campaign away to Iceland.",
     "related": [
       {
-        "id": "england-spain-sep26",
-        "home": "England",
-        "away": "Spain",
+        "id": "netherlands-germany-sep24",
+        "home": "Netherlands",
+        "away": "Germany",
         "league": "UEFA Nations League"
       }
     ]
