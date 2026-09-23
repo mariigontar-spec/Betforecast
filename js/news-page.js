@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 23 Sep 2026";
+  if (k) k.textContent = "World Sports News · 24 Sep 2026";
   if (t) t.textContent = "UEFA Nations League · opening week";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -51,7 +51,7 @@ function updateNewsPageLabels() {
     tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=netherlands-germany-sep24">Netherlands–Germany opener</a><a class="sidebar-link-card" href="match.html?id=portugal-wales-sep24">Portugal host Wales</a><a class="sidebar-link-card" href="match.html?id=england-spain-sep26">England–Spain at Wembley</a><a class="sidebar-link-card" href="news.html">Mbappé misses France training</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The UEFA Nations League begins on 24 September with Netherlands–Germany and Portugal–Wales among the opening fixtures. England host Spain on 26 September after five confirmed injury withdrawals. Mbappé missed France training with flu-like symptoms; his status remains under observation.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The UEFA Nations League begins today with Netherlands–Germany and Portugal–Wales among the opening fixtures. England host Spain on 26 September after five confirmed injury withdrawals. Mbappé missed France training with flu-like symptoms; his status remains under observation.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
