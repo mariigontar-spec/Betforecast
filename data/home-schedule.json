@@ -3,6 +3,25 @@
   "featuredId": "netherlands-germany-sep24",
   "events": [
     {
+      "id": "andorra-malta-sep24",
+      "type": "event",
+      "sport": "Football",
+      "date": "24 Sep",
+      "time": "18:00 CET",
+      "title": "Andorra vs Malta",
+      "home": "Andorra",
+      "away": "Malta",
+      "competition": "UEFA Nations League",
+      "stage": "League D · Group D1 · Matchday 1",
+      "status": "Upcoming",
+      "signals": [
+        "First kickoff of the 2026/27 Nations League",
+        "Confirmed UEFA schedule"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/ad.png",
+      "awayLogo": "https://flagcdn.com/w160/mt.png"
+    },
+    {
       "id": "netherlands-germany-sep24",
       "type": "event",
       "sport": "Football",
