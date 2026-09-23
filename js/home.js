@@ -38,7 +38,7 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "UEFA Nations League Matchday 1 starts on 24 September, led by Netherlands–Germany and Portugal–Wales.";
+        "UEFA Nations League Matchday 1 starts today, led by Netherlands–Germany and Portugal–Wales.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
