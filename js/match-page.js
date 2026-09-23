@@ -1,5 +1,52 @@
 const GLOBAL_MATCH_RADAR = [
   {
+    "id": "andorra-malta-sep24",
+    "league": "Football · UEFA Nations League",
+    "date": "24 Sep 2026",
+    "time": "18:00 CET",
+    "stadium": "Andorra",
+    "home": "Andorra",
+    "away": "Malta",
+    "homeShort": "AND",
+    "awayShort": "MLT",
+    "homeLogo": "https://flagcdn.com/w160/ad.png",
+    "awayLogo": "https://flagcdn.com/w160/mt.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Andorra host Malta in the first kickoff of the 2026/27 Nations League.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League D · Group D1",
+    "btts": "Kickoff · 18:00 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "First kickoff of the new campaign",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League D · Group D1"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League D · Group D1"
+    ],
+    "quickInsightTitle": "Opening fixture",
+    "quickInsight": "The 2026/27 Nations League begins with Andorra against Malta at 18:00 CET.",
+    "related": [
+      {
+        "id": "netherlands-germany-sep24",
+        "home": "Netherlands",
+        "away": "Germany",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
     "id": "netherlands-germany-sep24",
     "league": "Football · UEFA Nations League",
     "date": "24 Sep 2026",
