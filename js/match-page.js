@@ -1,165 +1,212 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    "id": "netherlands-germany-sep24",
+    "id": "italy-belgium-sep25",
     "league": "Football · UEFA Nations League",
-    "date": "24 Sep 2026",
+    "date": "25 Sep 2026",
     "time": "20:45 CET",
-    "stadium": "Johan Cruyff ArenA, Amsterdam",
-    "home": "Netherlands",
-    "away": "Germany",
-    "homeShort": "NED",
-    "awayShort": "GER",
-    "homeLogo": "https://flagcdn.com/w160/nl.png",
-    "awayLogo": "https://flagcdn.com/w160/de.png",
+    "stadium": "Official UEFA fixture",
+    "home": "Italy",
+    "away": "Belgium",
+    "homeShort": "ITA",
+    "awayShort": "BEL",
+    "homeLogo": "https://flagcdn.com/w160/it.png",
+    "awayLogo": "https://flagcdn.com/w160/be.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "A classic European rivalry opens the Nations League campaign.",
+    "summary": "Italy begin a new cycle at home to Belgium in League A Group A1.",
     "bestTip": "Official Matchday 1 fixture",
-    "goalsLean": "League A · Group A2",
+    "goalsLean": "League A · Group A1",
     "btts": "Kickoff · 20:45 CET",
     "factors": [
       "Official UEFA fixture",
-      "Managerial debuts for Xavi Hernández and Jürgen Klopp",
+      "Matchday 1",
       "No unverified score prediction"
     ],
     "formHome": [],
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "League A · Group A2"
+      "League A · Group A1"
     ],
     "awayStats": [
       "Nations League opener",
-      "League A · Group A2"
+      "League A · Group A1"
     ],
     "quickInsightTitle": "Featured international fixture",
-    "quickInsight": "A classic European rivalry opens the Nations League campaign.",
+    "quickInsight": "Italy host Belgium in the headline fixture on 25 September.",
     "related": [
       {
-        "id": "portugal-wales-sep24",
-        "home": "Portugal",
-        "away": "Wales",
+        "id": "turkiye-france-sep25",
+        "home": "Türkiye",
+        "away": "France",
         "league": "UEFA Nations League"
       }
     ]
   },
   {
-    "id": "andorra-malta-sep24",
+    "id": "turkiye-france-sep25",
     "league": "Football · UEFA Nations League",
-    "date": "24 Sep 2026",
-    "time": "18:00 CET",
-    "stadium": "Andorra",
-    "home": "Andorra",
-    "away": "Malta",
-    "homeShort": "AND",
-    "awayShort": "MLT",
-    "homeLogo": "https://flagcdn.com/w160/ad.png",
-    "awayLogo": "https://flagcdn.com/w160/mt.png",
+    "date": "25 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Türkiye",
+    "away": "France",
+    "homeShort": "TUR",
+    "awayShort": "FRA",
+    "homeLogo": "https://flagcdn.com/w160/tr.png",
+    "awayLogo": "https://flagcdn.com/w160/fr.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Andorra host Malta in the first kickoff of the 2026/27 Nations League.",
+    "summary": "Türkiye face France in the Nations League opening round.",
     "bestTip": "Official Matchday 1 fixture",
-    "goalsLean": "League D · Group D1",
+    "goalsLean": "League A · Group A1",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League A · Group A1"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League A · Group A1"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Türkiye face France in the Nations League opening round.",
+    "related": [
+      {
+        "id": "georgia-northern-ireland-sep25",
+        "home": "Georgia",
+        "away": "Northern Ireland",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "georgia-northern-ireland-sep25",
+    "league": "Football · UEFA Nations League",
+    "date": "25 Sep 2026",
+    "time": "18:00 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Georgia",
+    "away": "Northern Ireland",
+    "homeShort": "GEO",
+    "awayShort": "NIR",
+    "homeLogo": "https://flagcdn.com/w160/ge.png",
+    "awayLogo": "https://flagcdn.com/w160/gb-nir.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Georgia face Northern Ireland in the Nations League opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League B · Group B2",
     "btts": "Kickoff · 18:00 CET",
     "factors": [
       "Official UEFA fixture",
-      "First kickoff of the new campaign",
+      "Matchday 1",
       "No unverified score prediction"
     ],
     "formHome": [],
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "League D · Group D1"
+      "League B · Group B2"
     ],
     "awayStats": [
       "Nations League opener",
-      "League D · Group D1"
-    ],
-    "quickInsightTitle": "Opening fixture",
-    "quickInsight": "The 2026/27 Nations League begins with Andorra against Malta at 18:00 CET.",
-    "related": [
-      {
-        "id": "netherlands-germany-sep24",
-        "home": "Netherlands",
-        "away": "Germany",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "portugal-wales-sep24",
-    "league": "Football · UEFA Nations League",
-    "date": "24 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Portugal",
-    "home": "Portugal",
-    "away": "Wales",
-    "homeShort": "POR",
-    "awayShort": "WAL",
-    "homeLogo": "https://flagcdn.com/w160/pt.png",
-    "awayLogo": "https://flagcdn.com/w160/gb-wls.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "The defending champions begin at home against Wales.",
-    "bestTip": "Official Matchday 1 fixture",
-    "goalsLean": "League A · Group A4",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Portugal are the holders",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Nations League opener",
-      "League A · Group A4"
-    ],
-    "awayStats": [
-      "Nations League opener",
-      "League A · Group A4"
+      "League B · Group B2"
     ],
     "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "The defending champions begin at home against Wales.",
+    "quickInsight": "Georgia face Northern Ireland in the Nations League opening round.",
     "related": [
       {
-        "id": "serbia-greece-sep24",
-        "home": "Serbia",
-        "away": "Greece",
+        "id": "armenia-latvia-sep25",
+        "home": "Armenia",
+        "away": "Latvia",
         "league": "UEFA Nations League"
       }
     ]
   },
   {
-    "id": "serbia-greece-sep24",
+    "id": "armenia-latvia-sep25",
     "league": "Football · UEFA Nations League",
-    "date": "24 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Serbia",
-    "home": "Serbia",
-    "away": "Greece",
-    "homeShort": "SRB",
-    "awayShort": "GRE",
-    "homeLogo": "https://flagcdn.com/w160/rs.png",
-    "awayLogo": "https://flagcdn.com/w160/gr.png",
+    "date": "25 Sep 2026",
+    "time": "18:00 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Armenia",
+    "away": "Latvia",
+    "homeShort": "ARM",
+    "awayShort": "LVA",
+    "homeLogo": "https://flagcdn.com/w160/am.png",
+    "awayLogo": "https://flagcdn.com/w160/lv.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Serbia and Greece open their Group A2 campaigns.",
+    "summary": "Armenia face Latvia in the Nations League opening round.",
     "bestTip": "Official Matchday 1 fixture",
-    "goalsLean": "League A · Group A2",
+    "goalsLean": "League C · Group C2",
+    "btts": "Kickoff · 18:00 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League C · Group C2"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League C · Group C2"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Armenia face Latvia in the Nations League opening round.",
+    "related": [
+      {
+        "id": "hungary-ukraine-sep25",
+        "home": "Hungary",
+        "away": "Ukraine",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "hungary-ukraine-sep25",
+    "league": "Football · UEFA Nations League",
+    "date": "25 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Hungary",
+    "away": "Ukraine",
+    "homeShort": "HUN",
+    "awayShort": "UKR",
+    "homeLogo": "https://flagcdn.com/w160/hu.png",
+    "awayLogo": "https://flagcdn.com/w160/ua.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Hungary face Ukraine in the Nations League opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League B · Group B2",
     "btts": "Kickoff · 20:45 CET",
     "factors": [
       "Official UEFA fixture",
@@ -170,90 +217,43 @@ const GLOBAL_MATCH_RADAR = [
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "League A · Group A2"
+      "League B · Group B2"
     ],
     "awayStats": [
       "Nations League opener",
-      "League A · Group A2"
+      "League B · Group B2"
     ],
     "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Serbia and Greece open their Group A2 campaigns.",
+    "quickInsight": "Hungary face Ukraine in the Nations League opening round.",
     "related": [
       {
-        "id": "norway-denmark-sep24",
-        "home": "Norway",
-        "away": "Denmark",
+        "id": "poland-bosnia-sep25",
+        "home": "Poland",
+        "away": "Bosnia and Herzegovina",
         "league": "UEFA Nations League"
       }
     ]
   },
   {
-    "id": "norway-denmark-sep24",
+    "id": "poland-bosnia-sep25",
     "league": "Football · UEFA Nations League",
-    "date": "24 Sep 2026",
+    "date": "25 Sep 2026",
     "time": "20:45 CET",
-    "stadium": "Norway",
-    "home": "Norway",
-    "away": "Denmark",
-    "homeShort": "NOR",
-    "awayShort": "DEN",
-    "homeLogo": "https://flagcdn.com/w160/no.png",
-    "awayLogo": "https://flagcdn.com/w160/dk.png",
+    "stadium": "Official UEFA fixture",
+    "home": "Poland",
+    "away": "Bosnia and Herzegovina",
+    "homeShort": "POL",
+    "awayShort": "BIH",
+    "homeLogo": "https://flagcdn.com/w160/pl.png",
+    "awayLogo": "https://flagcdn.com/w160/ba.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Norway host Denmark in a Nordic Matchday 1 fixture.",
+    "summary": "Poland face Bosnia and Herzegovina in the Nations League opening round.",
     "bestTip": "Official Matchday 1 fixture",
-    "goalsLean": "League A · Group A4",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Nordic rivalry",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Nations League opener",
-      "League A · Group A4"
-    ],
-    "awayStats": [
-      "Nations League opener",
-      "League A · Group A4"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Norway host Denmark in a Nordic Matchday 1 fixture.",
-    "related": [
-      {
-        "id": "austria-israel-sep24",
-        "home": "Austria",
-        "away": "Israel",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "austria-israel-sep24",
-    "league": "Football · UEFA Nations League",
-    "date": "24 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Austria",
-    "home": "Austria",
-    "away": "Israel",
-    "homeShort": "AUT",
-    "awayShort": "ISR",
-    "homeLogo": "https://flagcdn.com/w160/at.png",
-    "awayLogo": "https://flagcdn.com/w160/il.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Austria host Israel in the opening round.",
-    "bestTip": "Official Matchday 1 fixture",
-    "goalsLean": "League B · Group B3",
+    "goalsLean": "League B · Group B4",
     "btts": "Kickoff · 20:45 CET",
     "factors": [
       "Official UEFA fixture",
@@ -264,43 +264,43 @@ const GLOBAL_MATCH_RADAR = [
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "League B · Group B3"
+      "League B · Group B4"
     ],
     "awayStats": [
       "Nations League opener",
-      "League B · Group B3"
+      "League B · Group B4"
     ],
     "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Austria host Israel in the opening round.",
+    "quickInsight": "Poland face Bosnia and Herzegovina in the Nations League opening round.",
     "related": [
       {
-        "id": "kosovo-ireland-sep24",
-        "home": "Kosovo",
-        "away": "Republic of Ireland",
+        "id": "sweden-romania-sep25",
+        "home": "Sweden",
+        "away": "Romania",
         "league": "UEFA Nations League"
       }
     ]
   },
   {
-    "id": "kosovo-ireland-sep24",
+    "id": "sweden-romania-sep25",
     "league": "Football · UEFA Nations League",
-    "date": "24 Sep 2026",
+    "date": "25 Sep 2026",
     "time": "20:45 CET",
-    "stadium": "Kosovo",
-    "home": "Kosovo",
-    "away": "Republic of Ireland",
-    "homeShort": "KOS",
-    "awayShort": "IRL",
-    "homeLogo": "https://flagcdn.com/w160/xk.png",
-    "awayLogo": "https://flagcdn.com/w160/ie.png",
+    "stadium": "Official UEFA fixture",
+    "home": "Sweden",
+    "away": "Romania",
+    "homeShort": "SWE",
+    "awayShort": "ROU",
+    "homeLogo": "https://flagcdn.com/w160/se.png",
+    "awayLogo": "https://flagcdn.com/w160/ro.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Kosovo host the Republic of Ireland in Group B3.",
+    "summary": "Sweden face Romania in the Nations League opening round.",
     "bestTip": "Official Matchday 1 fixture",
-    "goalsLean": "League B · Group B3",
+    "goalsLean": "League B · Group B4",
     "btts": "Kickoff · 20:45 CET",
     "factors": [
       "Official UEFA fixture",
@@ -311,43 +311,43 @@ const GLOBAL_MATCH_RADAR = [
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "League B · Group B3"
+      "League B · Group B4"
     ],
     "awayStats": [
       "Nations League opener",
-      "League B · Group B3"
+      "League B · Group B4"
     ],
     "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Kosovo host the Republic of Ireland in Group B3.",
+    "quickInsight": "Sweden face Romania in the Nations League opening round.",
     "related": [
       {
-        "id": "liechtenstein-lithuania-sep24",
-        "home": "Liechtenstein",
-        "away": "Lithuania",
+        "id": "montenegro-cyprus-sep25",
+        "home": "Montenegro",
+        "away": "Cyprus",
         "league": "UEFA Nations League"
       }
     ]
   },
   {
-    "id": "liechtenstein-lithuania-sep24",
+    "id": "montenegro-cyprus-sep25",
     "league": "Football · UEFA Nations League",
-    "date": "24 Sep 2026",
+    "date": "25 Sep 2026",
     "time": "20:45 CET",
-    "stadium": "Liechtenstein",
-    "home": "Liechtenstein",
-    "away": "Lithuania",
-    "homeShort": "LIE",
-    "awayShort": "LTU",
-    "homeLogo": "https://flagcdn.com/w160/li.png",
-    "awayLogo": "https://flagcdn.com/w160/lt.png",
+    "stadium": "Official UEFA fixture",
+    "home": "Montenegro",
+    "away": "Cyprus",
+    "homeShort": "MNE",
+    "awayShort": "CYP",
+    "homeLogo": "https://flagcdn.com/w160/me.png",
+    "awayLogo": "https://flagcdn.com/w160/cy.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Liechtenstein and Lithuania begin their League D campaigns.",
+    "summary": "Montenegro face Cyprus in the Nations League opening round.",
     "bestTip": "Official Matchday 1 fixture",
-    "goalsLean": "League D · Group D2",
+    "goalsLean": "League C · Group C2",
     "btts": "Kickoff · 20:45 CET",
     "factors": [
       "Official UEFA fixture",
@@ -358,61 +358,202 @@ const GLOBAL_MATCH_RADAR = [
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "League D · Group D2"
+      "League C · Group C2"
     ],
     "awayStats": [
       "Nations League opener",
-      "League D · Group D2"
+      "League C · Group C2"
     ],
     "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Liechtenstein and Lithuania begin their League D campaigns.",
+    "quickInsight": "Montenegro face Cyprus in the Nations League opening round.",
     "related": [
       {
-        "id": "england-spain-sep26",
-        "home": "England",
-        "away": "Spain",
+        "id": "slovenia-scotland-sep26",
+        "home": "Slovenia",
+        "away": "Scotland",
         "league": "UEFA Nations League"
       }
     ]
   },
   {
-    "id": "england-spain-sep26",
+    "id": "slovenia-scotland-sep26",
     "league": "Football · UEFA Nations League",
     "date": "26 Sep 2026",
-    "time": "19:45 UK",
-    "stadium": "Wembley Stadium, London",
-    "home": "England",
-    "away": "Spain",
-    "homeShort": "ENG",
-    "awayShort": "ESP",
-    "homeLogo": "https://flagcdn.com/w160/gb-eng.png",
-    "awayLogo": "https://flagcdn.com/w160/es.png",
+    "time": "15:00 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Slovenia",
+    "away": "Scotland",
+    "homeShort": "SVN",
+    "awayShort": "SCO",
+    "homeLogo": "https://flagcdn.com/w160/si.png",
+    "awayLogo": "https://flagcdn.com/w160/gb-sct.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "England host the world champions at Wembley.",
+    "summary": "Slovenia face Scotland in the Nations League opening round.",
     "bestTip": "Official Matchday 1 fixture",
-    "goalsLean": "League A · Group A3",
-    "btts": "Kickoff · 19:45 UK",
+    "goalsLean": "League B · Group B1",
+    "btts": "Kickoff · 15:00 CET",
     "factors": [
       "Official UEFA fixture",
-      "England confirmed five injury withdrawals",
+      "Matchday 1",
       "No unverified score prediction"
     ],
     "formHome": [],
     "formAway": [],
     "homeStats": [
       "Nations League opener",
-      "League A · Group A3"
+      "League B · Group B1"
     ],
     "awayStats": [
       "Nations League opener",
-      "League A · Group A3"
+      "League B · Group B1"
     ],
     "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "England host the world champions at Wembley.",
+    "quickInsight": "Slovenia face Scotland in the Nations League opening round.",
+    "related": [
+      {
+        "id": "san-marino-finland-sep26",
+        "home": "San Marino",
+        "away": "Finland",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "san-marino-finland-sep26",
+    "league": "Football · UEFA Nations League",
+    "date": "26 Sep 2026",
+    "time": "18:00 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "San Marino",
+    "away": "Finland",
+    "homeShort": "SMR",
+    "awayShort": "FIN",
+    "homeLogo": "https://flagcdn.com/w160/sm.png",
+    "awayLogo": "https://flagcdn.com/w160/fi.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "San Marino face Finland in the Nations League opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League C · Group C1",
+    "btts": "Kickoff · 18:00 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League C · Group C1"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League C · Group C1"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "San Marino face Finland in the Nations League opening round.",
+    "related": [
+      {
+        "id": "faroe-kazakhstan-sep26",
+        "home": "Faroe Islands",
+        "away": "Kazakhstan",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "faroe-kazakhstan-sep26",
+    "league": "Football · UEFA Nations League",
+    "date": "26 Sep 2026",
+    "time": "18:00 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Faroe Islands",
+    "away": "Kazakhstan",
+    "homeShort": "FRO",
+    "awayShort": "KAZ",
+    "homeLogo": "https://flagcdn.com/w160/fo.png",
+    "awayLogo": "https://flagcdn.com/w160/kz.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Faroe Islands face Kazakhstan in the Nations League opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League C · Group C3",
+    "btts": "Kickoff · 18:00 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League C · Group C3"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League C · Group C3"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Faroe Islands face Kazakhstan in the Nations League opening round.",
+    "related": [
+      {
+        "id": "bulgaria-luxembourg-sep26",
+        "home": "Bulgaria",
+        "away": "Luxembourg",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "bulgaria-luxembourg-sep26",
+    "league": "Football · UEFA Nations League",
+    "date": "26 Sep 2026",
+    "time": "18:00 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Bulgaria",
+    "away": "Luxembourg",
+    "homeShort": "BUL",
+    "awayShort": "LUX",
+    "homeLogo": "https://flagcdn.com/w160/bg.png",
+    "awayLogo": "https://flagcdn.com/w160/lu.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Bulgaria face Luxembourg in the Nations League opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League C · Group C4",
+    "btts": "Kickoff · 18:00 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League C · Group C4"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League C · Group C4"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Bulgaria face Luxembourg in the Nations League opening round.",
     "related": [
       {
         "id": "iceland-estonia-sep26",
@@ -427,7 +568,7 @@ const GLOBAL_MATCH_RADAR = [
     "league": "Football · UEFA Nations League",
     "date": "26 Sep 2026",
     "time": "18:00 CET",
-    "stadium": "Iceland",
+    "stadium": "Official UEFA fixture",
     "home": "Iceland",
     "away": "Estonia",
     "homeShort": "ISL",
@@ -439,13 +580,13 @@ const GLOBAL_MATCH_RADAR = [
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Estonia begin their Nations League campaign away to Iceland.",
+    "summary": "Iceland face Estonia in the Nations League opening round.",
     "bestTip": "Official Matchday 1 fixture",
     "goalsLean": "League C · Group C4",
     "btts": "Kickoff · 18:00 CET",
     "factors": [
       "Official UEFA fixture",
-      "Baltic focus",
+      "Matchday 1",
       "No unverified score prediction"
     ],
     "formHome": [],
@@ -459,12 +600,247 @@ const GLOBAL_MATCH_RADAR = [
       "League C · Group C4"
     ],
     "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Estonia begin their Nations League campaign away to Iceland.",
+    "quickInsight": "Iceland face Estonia in the Nations League opening round.",
     "related": [
       {
-        "id": "netherlands-germany-sep24",
-        "home": "Netherlands",
-        "away": "Germany",
+        "id": "czechia-croatia-sep26",
+        "home": "Czechia",
+        "away": "Croatia",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "czechia-croatia-sep26",
+    "league": "Football · UEFA Nations League",
+    "date": "26 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Czechia",
+    "away": "Croatia",
+    "homeShort": "CZE",
+    "awayShort": "CRO",
+    "homeLogo": "https://flagcdn.com/w160/cz.png",
+    "awayLogo": "https://flagcdn.com/w160/hr.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Czechia face Croatia in the Nations League opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League A · Group A3",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League A · Group A3"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League A · Group A3"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Czechia face Croatia in the Nations League opening round.",
+    "related": [
+      {
+        "id": "england-spain-sep26",
+        "home": "England",
+        "away": "Spain",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "england-spain-sep26",
+    "league": "Football · UEFA Nations League",
+    "date": "26 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "England",
+    "away": "Spain",
+    "homeShort": "ENG",
+    "awayShort": "ESP",
+    "homeLogo": "https://flagcdn.com/w160/gb-eng.png",
+    "awayLogo": "https://flagcdn.com/w160/es.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "England face Spain in the Nations League opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League A · Group A3",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League A · Group A3"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League A · Group A3"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "England face Spain in the Nations League opening round.",
+    "related": [
+      {
+        "id": "north-macedonia-switzerland-sep26",
+        "home": "North Macedonia",
+        "away": "Switzerland",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "north-macedonia-switzerland-sep26",
+    "league": "Football · UEFA Nations League",
+    "date": "26 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "North Macedonia",
+    "away": "Switzerland",
+    "homeShort": "MKD",
+    "awayShort": "SUI",
+    "homeLogo": "https://flagcdn.com/w160/mk.png",
+    "awayLogo": "https://flagcdn.com/w160/ch.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "North Macedonia face Switzerland in the Nations League opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League B · Group B1",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League B · Group B1"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League B · Group B1"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "North Macedonia face Switzerland in the Nations League opening round.",
+    "related": [
+      {
+        "id": "albania-belarus-sep26",
+        "home": "Albania",
+        "away": "Belarus",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "albania-belarus-sep26",
+    "league": "Football · UEFA Nations League",
+    "date": "26 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Albania",
+    "away": "Belarus",
+    "homeShort": "ALB",
+    "awayShort": "BLR",
+    "homeLogo": "https://flagcdn.com/w160/al.png",
+    "awayLogo": "https://flagcdn.com/w160/by.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Albania face Belarus in the Nations League opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League C · Group C1",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League C · Group C1"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League C · Group C1"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Albania face Belarus in the Nations League opening round.",
+    "related": [
+      {
+        "id": "slovakia-moldova-sep26",
+        "home": "Slovakia",
+        "away": "Moldova",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "slovakia-moldova-sep26",
+    "league": "Football · UEFA Nations League",
+    "date": "26 Sep 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Slovakia",
+    "away": "Moldova",
+    "homeShort": "SVK",
+    "awayShort": "MDA",
+    "homeLogo": "https://flagcdn.com/w160/sk.png",
+    "awayLogo": "https://flagcdn.com/w160/md.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Slovakia face Moldova in the Nations League opening round.",
+    "bestTip": "Official Matchday 1 fixture",
+    "goalsLean": "League C · Group C3",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 1",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Nations League opener",
+      "League C · Group C3"
+    ],
+    "awayStats": [
+      "Nations League opener",
+      "League C · Group C3"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Slovakia face Moldova in the Nations League opening round.",
+    "related": [
+      {
+        "id": "italy-belgium-sep25",
+        "home": "Italy",
+        "away": "Belgium",
         "league": "UEFA Nations League"
       }
     ]
