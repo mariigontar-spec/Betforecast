@@ -4,6 +4,7 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Norway", awayName: "Denmark", homeGoals: "0", awayGoals: "0", venue: "Ullevaal Stadion", date: "24 Sep", href: "results.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Manchester City", awayName: "Sunderland", homeGoals: "5", awayGoals: "3", venue: "Etihad Stadium", date: "20 Sep", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Bournemouth", awayName: "Liverpool", homeGoals: "0", awayGoals: "1", venue: "Vitality Stadium", date: "20 Sep", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Leeds United", awayName: "Crystal Palace", homeGoals: "0", awayGoals: "0", venue: "Elland Road", date: "20 Sep", href: "standings.html" },
@@ -35,7 +36,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 24 Sep 2026");
+    setStatus("World sports results · checked 25 Sep 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -45,7 +46,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Manchester City beat Sunderland 5-3, Liverpool won 1-0 at Bournemouth, while Leeds–Crystal Palace and Fulham–Manchester United finished level.";
+    if (intro) intro.textContent = "Norway and Denmark opened their Nations League campaigns with a verified 0-0 draw; the latest confirmed Premier League and cup results remain available below.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
