@@ -38,25 +38,25 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "UEFA Nations League Matchday 1 starts today, led by Netherlands–Germany and Portugal–Wales.";
+        "UEFA Nations League Matchday 1 continues today, led by Italy–Belgium and Türkiye–France.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>24 Sep</strong><span>Netherlands–Germany · Nations League opener</span></div>
-        <div><strong>24 Sep</strong><span>Portugal–Wales · League A Group A4</span></div>
+        <div><strong>25 Sep</strong><span>Italy–Belgium · League A Group A1</span></div>
+        <div><strong>25 Sep</strong><span>Türkiye–France · League A Group A1</span></div>
         <div><strong>26 Sep</strong><span>England–Spain · Wembley</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Nations League, Netherlands, Germany, England";
+      input.placeholder = "Try: Nations League, Italy, Belgium, France";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Netherlands Germany">Netherlands–Germany</button>
+        <button type="button" data-query="Italy Belgium">Italy–Belgium</button>
         <button type="button" data-query="UEFA Nations League">Nations League</button>
         <button type="button" data-query="England Spain">England–Spain</button>
       `;
@@ -64,8 +64,8 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=netherlands-germany-sep24", title: "Netherlands vs Germany", detail: "24 September · Nations League · 20:45 CET", tag: "Upcoming" },
-      { href: "match.html?id=portugal-wales-sep24", title: "Portugal vs Wales", detail: "24 September · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=italy-belgium-sep25", title: "Italy vs Belgium", detail: "25 September · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=turkiye-france-sep25", title: "Türkiye vs France", detail: "25 September · Nations League · 20:45 CET", tag: "Upcoming" },
       { href: "match.html?id=england-spain-sep26", title: "England vs Spain", detail: "26 September · Wembley · 19:45 UK", tag: "Upcoming" },
       { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
     ];
