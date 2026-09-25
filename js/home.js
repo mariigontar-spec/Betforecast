@@ -38,25 +38,25 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "UEFA Nations League Matchday 1 continues today, led by Italy–Belgium and Türkiye–France.";
+        "UEFA Nations League Matchday 1 continues today, led by England–Spain and Czechia–Croatia.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>25 Sep</strong><span>Italy–Belgium · League A Group A1</span></div>
-        <div><strong>25 Sep</strong><span>Türkiye–France · League A Group A1</span></div>
+        <div><strong>26 Sep</strong><span>England–Spain · Wembley · Group A3</span></div>
+        <div><strong>26 Sep</strong><span>Czechia–Croatia · League A Group A3</span></div>
         <div><strong>26 Sep</strong><span>England–Spain · Wembley</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Nations League, Italy, Belgium, France";
+      input.placeholder = "Try: Nations League, England, Spain, Estonia";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Italy Belgium">Italy–Belgium</button>
+        <button type="button" data-query="England Spain">England–Spain</button>
         <button type="button" data-query="UEFA Nations League">Nations League</button>
         <button type="button" data-query="England Spain">England–Spain</button>
       `;
@@ -64,8 +64,8 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=italy-belgium-sep25", title: "Italy vs Belgium", detail: "25 September · Nations League · 20:45 CET", tag: "Upcoming" },
-      { href: "match.html?id=turkiye-france-sep25", title: "Türkiye vs France", detail: "25 September · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=england-spain-sep26", title: "England vs Spain", detail: "26 September · Wembley · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=czechia-croatia-sep26", title: "Czechia vs Croatia", detail: "26 September · Nations League · 20:45 CET", tag: "Upcoming" },
       { href: "match.html?id=england-spain-sep26", title: "England vs Spain", detail: "26 September · Wembley · 19:45 UK", tag: "Upcoming" },
       { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
     ];
