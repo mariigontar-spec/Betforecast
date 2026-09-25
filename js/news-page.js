@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 25 Sep 2026";
+  if (k) k.textContent = "World Sports News · 26 Sep 2026";
   if (t) t.textContent = "UEFA Nations League · Matchday 1";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=italy-belgium-sep25">Italy–Belgium headline</a><a class="sidebar-link-card" href="match.html?id=turkiye-france-sep25">Türkiye host France</a><a class="sidebar-link-card" href="match.html?id=england-spain-sep26">England–Spain at Wembley</a><a class="sidebar-link-card" href="news.html">Italy start Mancini rebuild</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=england-spain-sep26">England–Spain at Wembley</a><a class="sidebar-link-card" href="match.html?id=czechia-croatia-sep26">Czechia host Croatia</a><a class="sidebar-link-card" href="match.html?id=iceland-estonia-sep26">Iceland–Estonia</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The UEFA Nations League opening round continues with Italy–Belgium and Türkiye–France on 25 September. Georgia–Northern Ireland and Armenia–Latvia kick off at 18:00 CET; four more fixtures follow at 20:45 CET. Premier League standings remain unchanged during the international break.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The UEFA Nations League opening round continues with ten confirmed fixtures on 26 September. England–Spain and Czechia–Croatia headline League A, while Estonia begin away to Iceland at 18:00 CET. Unconfirmed final scores from 25 September remain excluded.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
