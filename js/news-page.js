@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 26 Sep 2026";
-  if (t) t.textContent = "UEFA Nations League · Matchday 1";
+  if (k) k.textContent = "World Sports News · 27 Sep 2026";
+  if (t) t.textContent = "UEFA Nations League · Matchday 2";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=england-spain-sep26">England–Spain at Wembley</a><a class="sidebar-link-card" href="match.html?id=czechia-croatia-sep26">Czechia host Croatia</a><a class="sidebar-link-card" href="match.html?id=iceland-estonia-sep26">Iceland–Estonia</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=norway-portugal-sep27">Norway–Portugal</a><a class="sidebar-link-card" href="match.html?id=germany-greece-sep27">Germany–Greece</a><a class="sidebar-link-card" href="match.html?id=denmark-wales-sep27">Denmark–Wales</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The UEFA Nations League opening round continues with ten confirmed fixtures on 26 September. England–Spain and Czechia–Croatia headline League A, while Estonia begin away to Iceland at 18:00 CET. Unconfirmed final scores from 25 September remain excluded.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>UEFA Nations League Matchday 2 begins with eight confirmed fixtures on 27 September. Norway–Portugal and Germany–Greece headline League A, with Denmark–Wales starting at 18:00 CET. Unconfirmed final scores from 26 September remain excluded.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
