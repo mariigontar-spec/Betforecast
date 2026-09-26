@@ -1,197 +1,7 @@
 {
-  "updatedAt": "2026-09-26T00:05:00+03:00",
-  "featuredId": "england-spain-sep26",
+  "updatedAt": "2026-09-27T00:05:00+03:00",
+  "featuredId": "norway-portugal-sep27",
   "events": [
-    {
-      "id": "england-spain-sep26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Sep",
-      "time": "20:45 CET",
-      "title": "England vs Spain",
-      "home": "England",
-      "away": "Spain",
-      "competition": "UEFA Nations League",
-      "stage": "League A · Group A3 · Matchday 1",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Group A3"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/gb-eng.png",
-      "awayLogo": "https://flagcdn.com/w160/es.png"
-    },
-    {
-      "id": "czechia-croatia-sep26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Sep",
-      "time": "20:45 CET",
-      "title": "Czechia vs Croatia",
-      "home": "Czechia",
-      "away": "Croatia",
-      "competition": "UEFA Nations League",
-      "stage": "League A · Group A3 · Matchday 1",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Group A3"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/cz.png",
-      "awayLogo": "https://flagcdn.com/w160/hr.png"
-    },
-    {
-      "id": "slovenia-scotland-sep26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Sep",
-      "time": "15:00 CET",
-      "title": "Slovenia vs Scotland",
-      "home": "Slovenia",
-      "away": "Scotland",
-      "competition": "UEFA Nations League",
-      "stage": "League B · Group B1 · Matchday 1",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Group B1"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/si.png",
-      "awayLogo": "https://flagcdn.com/w160/gb-sct.png"
-    },
-    {
-      "id": "san-marino-finland-sep26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Sep",
-      "time": "18:00 CET",
-      "title": "San Marino vs Finland",
-      "home": "San Marino",
-      "away": "Finland",
-      "competition": "UEFA Nations League",
-      "stage": "League C · Group C1 · Matchday 1",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Group C1"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/sm.png",
-      "awayLogo": "https://flagcdn.com/w160/fi.png"
-    },
-    {
-      "id": "faroe-kazakhstan-sep26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Sep",
-      "time": "18:00 CET",
-      "title": "Faroe Islands vs Kazakhstan",
-      "home": "Faroe Islands",
-      "away": "Kazakhstan",
-      "competition": "UEFA Nations League",
-      "stage": "League C · Group C3 · Matchday 1",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Group C3"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/fo.png",
-      "awayLogo": "https://flagcdn.com/w160/kz.png"
-    },
-    {
-      "id": "bulgaria-luxembourg-sep26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Sep",
-      "time": "18:00 CET",
-      "title": "Bulgaria vs Luxembourg",
-      "home": "Bulgaria",
-      "away": "Luxembourg",
-      "competition": "UEFA Nations League",
-      "stage": "League C · Group C4 · Matchday 1",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Group C4"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/bg.png",
-      "awayLogo": "https://flagcdn.com/w160/lu.png"
-    },
-    {
-      "id": "iceland-estonia-sep26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Sep",
-      "time": "18:00 CET",
-      "title": "Iceland vs Estonia",
-      "home": "Iceland",
-      "away": "Estonia",
-      "competition": "UEFA Nations League",
-      "stage": "League C · Group C4 · Matchday 1",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Group C4"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/is.png",
-      "awayLogo": "https://flagcdn.com/w160/ee.png"
-    },
-    {
-      "id": "north-macedonia-switzerland-sep26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Sep",
-      "time": "20:45 CET",
-      "title": "North Macedonia vs Switzerland",
-      "home": "North Macedonia",
-      "away": "Switzerland",
-      "competition": "UEFA Nations League",
-      "stage": "League B · Group B1 · Matchday 1",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Group B1"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/mk.png",
-      "awayLogo": "https://flagcdn.com/w160/ch.png"
-    },
-    {
-      "id": "albania-belarus-sep26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Sep",
-      "time": "20:45 CET",
-      "title": "Albania vs Belarus",
-      "home": "Albania",
-      "away": "Belarus",
-      "competition": "UEFA Nations League",
-      "stage": "League C · Group C1 · Matchday 1",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Group C1"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/al.png",
-      "awayLogo": "https://flagcdn.com/w160/by.png"
-    },
-    {
-      "id": "slovakia-moldova-sep26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Sep",
-      "time": "20:45 CET",
-      "title": "Slovakia vs Moldova",
-      "home": "Slovakia",
-      "away": "Moldova",
-      "competition": "UEFA Nations League",
-      "stage": "League C · Group C3 · Matchday 1",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Group C3"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/sk.png",
-      "awayLogo": "https://flagcdn.com/w160/md.png"
-    },
     {
       "id": "lithuania-azerbaijan-sep27",
       "type": "event",
@@ -343,6 +153,158 @@
       ],
       "homeLogo": "https://flagcdn.com/w160/il.png",
       "awayLogo": "https://flagcdn.com/w160/ie.png"
+    },
+    {
+      "id": "georgia-ukraine-sep28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Sep",
+      "time": "18:00 CET",
+      "title": "Georgia vs Ukraine",
+      "home": "Georgia",
+      "away": "Ukraine",
+      "competition": "UEFA Nations League",
+      "stage": "League B · Group B2 · Matchday 2",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Group B2"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/ge.png",
+      "awayLogo": "https://flagcdn.com/w160/ua.png"
+    },
+    {
+      "id": "armenia-montenegro-sep28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Sep",
+      "time": "18:00 CET",
+      "title": "Armenia vs Montenegro",
+      "home": "Armenia",
+      "away": "Montenegro",
+      "competition": "UEFA Nations League",
+      "stage": "League C · Group C2 · Matchday 2",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Group C2"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/am.png",
+      "awayLogo": "https://flagcdn.com/w160/me.png"
+    },
+    {
+      "id": "latvia-cyprus-sep28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Sep",
+      "time": "18:00 CET",
+      "title": "Latvia vs Cyprus",
+      "home": "Latvia",
+      "away": "Cyprus",
+      "competition": "UEFA Nations League",
+      "stage": "League C · Group C2 · Matchday 2",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Group C2"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/lv.png",
+      "awayLogo": "https://flagcdn.com/w160/cy.png"
+    },
+    {
+      "id": "belgium-france-sep28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Sep",
+      "time": "20:45 CET",
+      "title": "Belgium vs France",
+      "home": "Belgium",
+      "away": "France",
+      "competition": "UEFA Nations League",
+      "stage": "League A · Group A1 · Matchday 2",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Group A1"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/be.png",
+      "awayLogo": "https://flagcdn.com/w160/fr.png"
+    },
+    {
+      "id": "turkiye-italy-sep28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Sep",
+      "time": "20:45 CET",
+      "title": "Türkiye vs Italy",
+      "home": "Türkiye",
+      "away": "Italy",
+      "competition": "UEFA Nations League",
+      "stage": "League A · Group A1 · Matchday 2",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Group A1"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/tr.png",
+      "awayLogo": "https://flagcdn.com/w160/it.png"
+    },
+    {
+      "id": "northern-ireland-hungary-sep28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Sep",
+      "time": "20:45 CET",
+      "title": "Northern Ireland vs Hungary",
+      "home": "Northern Ireland",
+      "away": "Hungary",
+      "competition": "UEFA Nations League",
+      "stage": "League B · Group B2 · Matchday 2",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Group B2"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/gb-nir.png",
+      "awayLogo": "https://flagcdn.com/w160/hu.png"
+    },
+    {
+      "id": "romania-bosnia-sep28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Sep",
+      "time": "20:45 CET",
+      "title": "Romania vs Bosnia and Herzegovina",
+      "home": "Romania",
+      "away": "Bosnia and Herzegovina",
+      "competition": "UEFA Nations League",
+      "stage": "League B · Group B4 · Matchday 2",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Group B4"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/ro.png",
+      "awayLogo": "https://flagcdn.com/w160/ba.png"
+    },
+    {
+      "id": "sweden-poland-sep28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Sep",
+      "time": "20:45 CET",
+      "title": "Sweden vs Poland",
+      "home": "Sweden",
+      "away": "Poland",
+      "competition": "UEFA Nations League",
+      "stage": "League B · Group B4 · Matchday 2",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Group B4"
+      ],
+      "homeLogo": "https://flagcdn.com/w160/se.png",
+      "awayLogo": "https://flagcdn.com/w160/pl.png"
     },
     {
       "id": "norway-denmark-result-sep24",
