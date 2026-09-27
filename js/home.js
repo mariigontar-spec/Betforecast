@@ -38,35 +38,35 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "UEFA Nations League Matchday 2 begins today, led by Norway–Portugal and Germany–Greece.";
+        "UEFA Nations League Matchday 2 continues today, led by Belgium–France and Türkiye–Italy.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>27 Sep</strong><span>Norway–Portugal · League A Group A4</span></div>
-        <div><strong>27 Sep</strong><span>Germany–Greece · League A Group A2</span></div>
-        <div><strong>27 Sep</strong><span>Norway–Portugal · 20:45 CET</span></div>
+        <div><strong>28 Sep</strong><span>Belgium–France · League A Group A1</span></div>
+        <div><strong>28 Sep</strong><span>Türkiye–Italy · League A Group A1</span></div>
+        <div><strong>28 Sep</strong><span>Belgium–France · 20:45 CET</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Nations League, Norway, Portugal, Germany";
+      input.placeholder = "Try: Nations League, Belgium, France, Italy";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Norway Portugal">Norway–Portugal</button>
+        <button type="button" data-query="Belgium France">Belgium–France</button>
         <button type="button" data-query="UEFA Nations League">Nations League</button>
-        <button type="button" data-query="Norway Portugal">Norway–Portugal</button>
+        <button type="button" data-query="Belgium France">Belgium–France</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=norway-portugal-sep27", title: "Norway vs Portugal", detail: "27 September · Nations League · 20:45 CET", tag: "Upcoming" },
-      { href: "match.html?id=germany-greece-sep27", title: "Germany vs Greece", detail: "27 September · Nations League · 20:45 CET", tag: "Upcoming" },
-      { href: "match.html?id=denmark-wales-sep27", title: "Denmark vs Wales", detail: "27 September · Nations League · 18:00 CET", tag: "Upcoming" },
+      { href: "match.html?id=belgium-france-sep28", title: "Belgium vs France", detail: "28 September · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=turkiye-italy-sep28", title: "Türkiye vs Italy", detail: "28 September · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=georgia-ukraine-sep28", title: "Georgia vs Ukraine", detail: "28 September · Nations League · 18:00 CET", tag: "Upcoming" },
       { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
     ];
 
