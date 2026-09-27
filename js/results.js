@@ -4,7 +4,18 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
-    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Norway", awayName: "Denmark", homeGoals: "0", awayGoals: "0", venue: "Ullevaal Stadion", date: "24 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Denmark", awayName: "Wales", homeGoals: "2", awayGoals: "0", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Norway", awayName: "Denmark", homeGoals: "3", awayGoals: "2", venue: "UEFA Nations League", date: "24 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "England", awayName: "Spain", homeGoals: "2", awayGoals: "3", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Czechia", awayName: "Croatia", homeGoals: "1", awayGoals: "2", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Slovenia", awayName: "Scotland", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "North Macedonia", awayName: "Switzerland", homeGoals: "0", awayGoals: "3", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "San Marino", awayName: "Finland", homeGoals: "0", awayGoals: "7", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Albania", awayName: "Belarus", homeGoals: "2", awayGoals: "0", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Faroe Islands", awayName: "Kazakhstan", homeGoals: "1", awayGoals: "1", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Slovakia", awayName: "Moldova", homeGoals: "2", awayGoals: "0", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Bulgaria", awayName: "Luxembourg", homeGoals: "1", awayGoals: "2", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Iceland", awayName: "Estonia", homeGoals: "1", awayGoals: "1", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Manchester City", awayName: "Sunderland", homeGoals: "5", awayGoals: "3", venue: "Etihad Stadium", date: "20 Sep", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Bournemouth", awayName: "Liverpool", homeGoals: "0", awayGoals: "1", venue: "Vitality Stadium", date: "20 Sep", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Leeds United", awayName: "Crystal Palace", homeGoals: "0", awayGoals: "0", venue: "Elland Road", date: "20 Sep", href: "standings.html" },
@@ -36,7 +47,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 27 Sep 2026");
+    setStatus("World sports results · checked 28 Sep 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -46,7 +57,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Norway and Denmark opened their Nations League campaigns with a verified 0-0 draw; the latest confirmed Premier League and cup results remain available below.";
+    if (intro) intro.textContent = "Denmark beat Wales 2-0 on 27 September; all ten Nations League results from 26 September are now verified, and Norway’s 3-2 win over Denmark has been corrected from the official UEFA record.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
