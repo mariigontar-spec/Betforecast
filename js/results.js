@@ -4,7 +4,14 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Lithuania", awayName: "Azerbaijan", homeGoals: "1", awayGoals: "1", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Serbia", awayName: "Netherlands", homeGoals: "1", awayGoals: "2", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Denmark", awayName: "Wales", homeGoals: "2", awayGoals: "0", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Austria", awayName: "Kosovo", homeGoals: "3", awayGoals: "1", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Gibraltar", awayName: "Andorra", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Germany", awayName: "Greece", homeGoals: "0", awayGoals: "1", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Norway", awayName: "Portugal", homeGoals: "1", awayGoals: "2", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Israel", awayName: "Republic of Ireland", homeGoals: "0", awayGoals: "3", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Norway", awayName: "Denmark", homeGoals: "3", awayGoals: "2", venue: "UEFA Nations League", date: "24 Sep", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "England", awayName: "Spain", homeGoals: "2", awayGoals: "3", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Czechia", awayName: "Croatia", homeGoals: "1", awayGoals: "2", venue: "UEFA Nations League", date: "26 Sep", href: "results.html" },
@@ -47,7 +54,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 28 Sep 2026");
+    setStatus("World sports results · checked 29 Sep 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -57,7 +64,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Denmark beat Wales 2-0 on 27 September; all ten Nations League results from 26 September are now verified, and Norway’s 3-2 win over Denmark has been corrected from the official UEFA record.";
+    if (intro) intro.textContent = "All eight Nations League results from 27 September are now verified, including Portugal’s 2-1 win in Norway, Greece’s 1-0 win in Germany and the Republic of Ireland’s 3-0 victory over Israel.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
