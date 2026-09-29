@@ -38,35 +38,35 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "UEFA Nations League Matchday 2 concludes today, led by Spain–Croatia and Czechia–England.";
+        "No Nations League fixtures are scheduled today; Matchday 3 begins on 1 October with Denmark–Portugal and Germany–Serbia.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>29 Sep</strong><span>Spain–Croatia · League A Group A3</span></div>
-        <div><strong>29 Sep</strong><span>Czechia–England · League A Group A3</span></div>
-        <div><strong>29 Sep</strong><span>Spain–Croatia · 20:45 CET</span></div>
+        <div><strong>1 Oct</strong><span>Denmark–Portugal · League A Group A4</span></div>
+        <div><strong>1 Oct</strong><span>Germany–Serbia · League A Group A2</span></div>
+        <div><strong>1 Oct</strong><span>Denmark–Portugal · 20:45 CET</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Nations League, Spain, Croatia, England";
+      input.placeholder = "Try: Nations League, Denmark, Portugal, Germany";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Spain Croatia">Spain–Croatia</button>
+        <button type="button" data-query="Denmark Portugal">Denmark–Portugal</button>
         <button type="button" data-query="UEFA Nations League">Nations League</button>
-        <button type="button" data-query="Spain Croatia">Spain–Croatia</button>
+        <button type="button" data-query="Denmark Portugal">Denmark–Portugal</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=spain-croatia-sep29", title: "Spain vs Croatia", detail: "29 September · Nations League · 20:45 CET", tag: "Upcoming" },
-      { href: "match.html?id=czechia-england-sep29", title: "Czechia vs England", detail: "29 September · Nations League · 20:45 CET", tag: "Upcoming" },
-      { href: "match.html?id=bulgaria-estonia-sep29", title: "Bulgaria vs Estonia", detail: "29 September · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=denmark-portugal-oct1", title: "Denmark vs Portugal", detail: "1 October · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=germany-serbia-oct1", title: "Germany vs Serbia", detail: "1 October · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=wales-norway-oct1", title: "Wales vs Norway", detail: "1 October · Nations League · 20:45 CET", tag: "Upcoming" },
       { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
     ];
 
