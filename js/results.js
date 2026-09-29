@@ -4,6 +4,24 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Georgia", awayName: "Ukraine", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Armenia", awayName: "Montenegro", homeGoals: "2", awayGoals: "3", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Latvia", awayName: "Cyprus", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Belgium", awayName: "France", homeGoals: "0", awayGoals: "1", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Türkiye", awayName: "Italy", homeGoals: "1", awayGoals: "4", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Northern Ireland", awayName: "Hungary", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Romania", awayName: "Bosnia and Herzegovina", homeGoals: "2", awayGoals: "4", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Sweden", awayName: "Poland", homeGoals: "3", awayGoals: "1", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Finland", awayName: "Belarus", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "29 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Moldova", awayName: "Faroe Islands", homeGoals: "1", awayGoals: "1", venue: "UEFA Nations League", date: "29 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Czechia", awayName: "England", homeGoals: "0", awayGoals: "2", venue: "UEFA Nations League", date: "29 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Spain", awayName: "Croatia", homeGoals: "4", awayGoals: "1", venue: "UEFA Nations League", date: "29 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Scotland", awayName: "Switzerland", homeGoals: "0", awayGoals: "3", venue: "UEFA Nations League", date: "29 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Slovenia", awayName: "North Macedonia", homeGoals: "2", awayGoals: "0", venue: "UEFA Nations League", date: "29 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "San Marino", awayName: "Albania", homeGoals: "0", awayGoals: "3", venue: "UEFA Nations League", date: "29 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Slovakia", awayName: "Kazakhstan", homeGoals: "2", awayGoals: "1", venue: "UEFA Nations League", date: "29 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Bulgaria", awayName: "Estonia", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "29 Sep", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Luxembourg", awayName: "Iceland", homeGoals: "0", awayGoals: "3", venue: "UEFA Nations League", date: "29 Sep", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Lithuania", awayName: "Azerbaijan", homeGoals: "1", awayGoals: "1", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Serbia", awayName: "Netherlands", homeGoals: "1", awayGoals: "2", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Denmark", awayName: "Wales", homeGoals: "2", awayGoals: "0", venue: "UEFA Nations League", date: "27 Sep", href: "results.html" },
@@ -54,7 +72,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 29 Sep 2026");
+    setStatus("World sports results · checked 30 Sep 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -64,7 +82,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "All eight Nations League results from 27 September are now verified, including Portugal’s 2-1 win in Norway, Greece’s 1-0 win in Germany and the Republic of Ireland’s 3-0 victory over Israel.";
+    if (intro) intro.textContent = "All 18 Nations League results from 28–29 September are now verified, including Spain’s 4-1 win over Croatia, England’s 2-0 win in Czechia, France’s 1-0 win in Belgium and Italy’s 4-1 win in Türkiye.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
