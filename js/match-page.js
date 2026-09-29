@@ -1,455 +1,5 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    "id": "finland-belarus-sep29",
-    "league": "Football · UEFA Nations League",
-    "date": "29 Sep 2026",
-    "time": "18:00 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Finland",
-    "away": "Belarus",
-    "homeShort": "FIN",
-    "awayShort": "BLR",
-    "homeLogo": "https://flagcdn.com/w160/fi.png",
-    "awayLogo": "https://flagcdn.com/w160/by.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Finland face Belarus in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C1",
-    "btts": "Kickoff · 18:00 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 2",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League C · Group C1"
-    ],
-    "awayStats": [
-      "League C · Group C1"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Finland face Belarus in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "moldova-faroe-sep29",
-        "home": "Moldova",
-        "away": "Faroe Islands",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "moldova-faroe-sep29",
-    "league": "Football · UEFA Nations League",
-    "date": "29 Sep 2026",
-    "time": "18:00 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Moldova",
-    "away": "Faroe Islands",
-    "homeShort": "MDA",
-    "awayShort": "FRO",
-    "homeLogo": "https://flagcdn.com/w160/md.png",
-    "awayLogo": "https://flagcdn.com/w160/fo.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Moldova face Faroe Islands in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C3",
-    "btts": "Kickoff · 18:00 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 2",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League C · Group C3"
-    ],
-    "awayStats": [
-      "League C · Group C3"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Moldova face Faroe Islands in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "czechia-england-sep29",
-        "home": "Czechia",
-        "away": "England",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "czechia-england-sep29",
-    "league": "Football · UEFA Nations League",
-    "date": "29 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Czechia",
-    "away": "England",
-    "homeShort": "CZE",
-    "awayShort": "ENG",
-    "homeLogo": "https://flagcdn.com/w160/cz.png",
-    "awayLogo": "https://flagcdn.com/w160/gb-eng.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Czechia face England in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League A · Group A3",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 2",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League A · Group A3"
-    ],
-    "awayStats": [
-      "League A · Group A3"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Czechia face England in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "spain-croatia-sep29",
-        "home": "Spain",
-        "away": "Croatia",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "spain-croatia-sep29",
-    "league": "Football · UEFA Nations League",
-    "date": "29 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Spain",
-    "away": "Croatia",
-    "homeShort": "ESP",
-    "awayShort": "CRO",
-    "homeLogo": "https://flagcdn.com/w160/es.png",
-    "awayLogo": "https://flagcdn.com/w160/hr.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Spain face Croatia in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League A · Group A3",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 2",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League A · Group A3"
-    ],
-    "awayStats": [
-      "League A · Group A3"
-    ],
-    "quickInsightTitle": "Featured international fixture",
-    "quickInsight": "Spain host Croatia in a headline League A Group A3 fixture on 29 September.",
-    "related": [
-      {
-        "id": "scotland-switzerland-sep29",
-        "home": "Scotland",
-        "away": "Switzerland",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "scotland-switzerland-sep29",
-    "league": "Football · UEFA Nations League",
-    "date": "29 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Scotland",
-    "away": "Switzerland",
-    "homeShort": "SCO",
-    "awayShort": "SUI",
-    "homeLogo": "https://flagcdn.com/w160/gb-sct.png",
-    "awayLogo": "https://flagcdn.com/w160/ch.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Scotland face Switzerland in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League B · Group B1",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 2",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League B · Group B1"
-    ],
-    "awayStats": [
-      "League B · Group B1"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Scotland face Switzerland in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "slovenia-north-macedonia-sep29",
-        "home": "Slovenia",
-        "away": "North Macedonia",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "slovenia-north-macedonia-sep29",
-    "league": "Football · UEFA Nations League",
-    "date": "29 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Slovenia",
-    "away": "North Macedonia",
-    "homeShort": "SVN",
-    "awayShort": "MKD",
-    "homeLogo": "https://flagcdn.com/w160/si.png",
-    "awayLogo": "https://flagcdn.com/w160/mk.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Slovenia face North Macedonia in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League B · Group B1",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 2",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League B · Group B1"
-    ],
-    "awayStats": [
-      "League B · Group B1"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Slovenia face North Macedonia in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "san-marino-albania-sep29",
-        "home": "San Marino",
-        "away": "Albania",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "san-marino-albania-sep29",
-    "league": "Football · UEFA Nations League",
-    "date": "29 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "San Marino",
-    "away": "Albania",
-    "homeShort": "SMR",
-    "awayShort": "ALB",
-    "homeLogo": "https://flagcdn.com/w160/sm.png",
-    "awayLogo": "https://flagcdn.com/w160/al.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "San Marino face Albania in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C1",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 2",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League C · Group C1"
-    ],
-    "awayStats": [
-      "League C · Group C1"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "San Marino face Albania in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "slovakia-kazakhstan-sep29",
-        "home": "Slovakia",
-        "away": "Kazakhstan",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "slovakia-kazakhstan-sep29",
-    "league": "Football · UEFA Nations League",
-    "date": "29 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Slovakia",
-    "away": "Kazakhstan",
-    "homeShort": "SVK",
-    "awayShort": "KAZ",
-    "homeLogo": "https://flagcdn.com/w160/sk.png",
-    "awayLogo": "https://flagcdn.com/w160/kz.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Slovakia face Kazakhstan in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C3",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 2",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League C · Group C3"
-    ],
-    "awayStats": [
-      "League C · Group C3"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Slovakia face Kazakhstan in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "bulgaria-estonia-sep29",
-        "home": "Bulgaria",
-        "away": "Estonia",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "bulgaria-estonia-sep29",
-    "league": "Football · UEFA Nations League",
-    "date": "29 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Bulgaria",
-    "away": "Estonia",
-    "homeShort": "BUL",
-    "awayShort": "EST",
-    "homeLogo": "https://flagcdn.com/w160/bg.png",
-    "awayLogo": "https://flagcdn.com/w160/ee.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Bulgaria face Estonia in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C4",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 2",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League C · Group C4"
-    ],
-    "awayStats": [
-      "League C · Group C4"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Bulgaria face Estonia in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "luxembourg-iceland-sep29",
-        "home": "Luxembourg",
-        "away": "Iceland",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "luxembourg-iceland-sep29",
-    "league": "Football · UEFA Nations League",
-    "date": "29 Sep 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Luxembourg",
-    "away": "Iceland",
-    "homeShort": "LUX",
-    "awayShort": "ISL",
-    "homeLogo": "https://flagcdn.com/w160/lu.png",
-    "awayLogo": "https://flagcdn.com/w160/is.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Luxembourg face Iceland in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C4",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 2",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League C · Group C4"
-    ],
-    "awayStats": [
-      "League C · Group C4"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Luxembourg face Iceland in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "azerbaijan-liechtenstein-oct1",
-        "home": "Azerbaijan",
-        "away": "Liechtenstein",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
     "id": "azerbaijan-liechtenstein-oct1",
     "league": "Football · UEFA Nations League",
     "date": "1 Oct 2026",
@@ -618,8 +168,8 @@ const GLOBAL_MATCH_RADAR = [
     "awayStats": [
       "League A · Group A4"
     ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Denmark face Portugal in a confirmed Nations League fixture.",
+    "quickInsightTitle": "Featured next fixture",
+    "quickInsight": "Denmark host Portugal in the headline League A Group A4 fixture on 1 October.",
     "related": [
       {
         "id": "wales-norway-oct1",
@@ -802,9 +352,459 @@ const GLOBAL_MATCH_RADAR = [
     "quickInsight": "Malta face Gibraltar in a confirmed Nations League fixture.",
     "related": [
       {
-        "id": "finland-belarus-sep29",
-        "home": "Finland",
-        "away": "Belarus",
+        "id": "kazakhstan-moldova-oct2",
+        "home": "Kazakhstan",
+        "away": "Moldova",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "kazakhstan-moldova-oct2",
+    "league": "Football · UEFA Nations League",
+    "date": "2 Oct 2026",
+    "time": "16:00 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Kazakhstan",
+    "away": "Moldova",
+    "homeShort": "KAZ",
+    "awayShort": "MDA",
+    "homeLogo": "https://flagcdn.com/w160/kz.png",
+    "awayLogo": "https://flagcdn.com/w160/md.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Kazakhstan face Moldova in the UEFA Nations League.",
+    "bestTip": "Official UEFA fixture",
+    "goalsLean": "League C · Group C3",
+    "btts": "Kickoff · 16:00 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 3",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "League C · Group C3"
+    ],
+    "awayStats": [
+      "League C · Group C3"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Kazakhstan face Moldova in a confirmed Nations League fixture.",
+    "related": [
+      {
+        "id": "cyprus-armenia-oct2",
+        "home": "Cyprus",
+        "away": "Armenia",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "cyprus-armenia-oct2",
+    "league": "Football · UEFA Nations League",
+    "date": "2 Oct 2026",
+    "time": "18:00 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Cyprus",
+    "away": "Armenia",
+    "homeShort": "CYP",
+    "awayShort": "ARM",
+    "homeLogo": "https://flagcdn.com/w160/cy.png",
+    "awayLogo": "https://flagcdn.com/w160/am.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Cyprus face Armenia in the UEFA Nations League.",
+    "bestTip": "Official UEFA fixture",
+    "goalsLean": "League C · Group C2",
+    "btts": "Kickoff · 18:00 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 3",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "League C · Group C2"
+    ],
+    "awayStats": [
+      "League C · Group C2"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Cyprus face Armenia in a confirmed Nations League fixture.",
+    "related": [
+      {
+        "id": "belgium-turkiye-oct2",
+        "home": "Belgium",
+        "away": "Türkiye",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "belgium-turkiye-oct2",
+    "league": "Football · UEFA Nations League",
+    "date": "2 Oct 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Belgium",
+    "away": "Türkiye",
+    "homeShort": "BEL",
+    "awayShort": "TUR",
+    "homeLogo": "https://flagcdn.com/w160/be.png",
+    "awayLogo": "https://flagcdn.com/w160/tr.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Belgium face Türkiye in the UEFA Nations League.",
+    "bestTip": "Official UEFA fixture",
+    "goalsLean": "League A · Group A1",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 3",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "League A · Group A1"
+    ],
+    "awayStats": [
+      "League A · Group A1"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Belgium face Türkiye in a confirmed Nations League fixture.",
+    "related": [
+      {
+        "id": "france-italy-oct2",
+        "home": "France",
+        "away": "Italy",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "france-italy-oct2",
+    "league": "Football · UEFA Nations League",
+    "date": "2 Oct 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "France",
+    "away": "Italy",
+    "homeShort": "FRA",
+    "awayShort": "ITA",
+    "homeLogo": "https://flagcdn.com/w160/fr.png",
+    "awayLogo": "https://flagcdn.com/w160/it.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "France face Italy in the UEFA Nations League.",
+    "bestTip": "Official UEFA fixture",
+    "goalsLean": "League A · Group A1",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 3",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "League A · Group A1"
+    ],
+    "awayStats": [
+      "League A · Group A1"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "France face Italy in a confirmed Nations League fixture.",
+    "related": [
+      {
+        "id": "hungary-georgia-oct2",
+        "home": "Hungary",
+        "away": "Georgia",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "hungary-georgia-oct2",
+    "league": "Football · UEFA Nations League",
+    "date": "2 Oct 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Hungary",
+    "away": "Georgia",
+    "homeShort": "HUN",
+    "awayShort": "GEO",
+    "homeLogo": "https://flagcdn.com/w160/hu.png",
+    "awayLogo": "https://flagcdn.com/w160/ge.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Hungary face Georgia in the UEFA Nations League.",
+    "bestTip": "Official UEFA fixture",
+    "goalsLean": "League B · Group B2",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 3",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "League B · Group B2"
+    ],
+    "awayStats": [
+      "League B · Group B2"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Hungary face Georgia in a confirmed Nations League fixture.",
+    "related": [
+      {
+        "id": "ukraine-northern-ireland-oct2",
+        "home": "Ukraine",
+        "away": "Northern Ireland",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "ukraine-northern-ireland-oct2",
+    "league": "Football · UEFA Nations League",
+    "date": "2 Oct 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Ukraine",
+    "away": "Northern Ireland",
+    "homeShort": "UKR",
+    "awayShort": "NIR",
+    "homeLogo": "https://flagcdn.com/w160/ua.png",
+    "awayLogo": "https://flagcdn.com/w160/gb-nir.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Ukraine face Northern Ireland in the UEFA Nations League.",
+    "bestTip": "Official UEFA fixture",
+    "goalsLean": "League B · Group B2",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 3",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "League B · Group B2"
+    ],
+    "awayStats": [
+      "League B · Group B2"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Ukraine face Northern Ireland in a confirmed Nations League fixture.",
+    "related": [
+      {
+        "id": "bosnia-sweden-oct2",
+        "home": "Bosnia and Herzegovina",
+        "away": "Sweden",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "bosnia-sweden-oct2",
+    "league": "Football · UEFA Nations League",
+    "date": "2 Oct 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Bosnia and Herzegovina",
+    "away": "Sweden",
+    "homeShort": "BIH",
+    "awayShort": "SWE",
+    "homeLogo": "https://flagcdn.com/w160/ba.png",
+    "awayLogo": "https://flagcdn.com/w160/se.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Bosnia and Herzegovina face Sweden in the UEFA Nations League.",
+    "bestTip": "Official UEFA fixture",
+    "goalsLean": "League B · Group B4",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 3",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "League B · Group B4"
+    ],
+    "awayStats": [
+      "League B · Group B4"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Bosnia and Herzegovina face Sweden in a confirmed Nations League fixture.",
+    "related": [
+      {
+        "id": "poland-romania-oct2",
+        "home": "Poland",
+        "away": "Romania",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "poland-romania-oct2",
+    "league": "Football · UEFA Nations League",
+    "date": "2 Oct 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Poland",
+    "away": "Romania",
+    "homeShort": "POL",
+    "awayShort": "ROU",
+    "homeLogo": "https://flagcdn.com/w160/pl.png",
+    "awayLogo": "https://flagcdn.com/w160/ro.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Poland face Romania in the UEFA Nations League.",
+    "bestTip": "Official UEFA fixture",
+    "goalsLean": "League B · Group B4",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 3",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "League B · Group B4"
+    ],
+    "awayStats": [
+      "League B · Group B4"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Poland face Romania in a confirmed Nations League fixture.",
+    "related": [
+      {
+        "id": "latvia-montenegro-oct2",
+        "home": "Latvia",
+        "away": "Montenegro",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "latvia-montenegro-oct2",
+    "league": "Football · UEFA Nations League",
+    "date": "2 Oct 2026",
+    "time": "18:00 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Latvia",
+    "away": "Montenegro",
+    "homeShort": "LVA",
+    "awayShort": "MNE",
+    "homeLogo": "https://flagcdn.com/w160/lv.png",
+    "awayLogo": "https://flagcdn.com/w160/me.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Latvia face Montenegro in the UEFA Nations League.",
+    "bestTip": "Official UEFA fixture",
+    "goalsLean": "League C · Group C2",
+    "btts": "Kickoff · 18:00 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 3",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "League C · Group C2"
+    ],
+    "awayStats": [
+      "League C · Group C2"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Latvia face Montenegro in a confirmed Nations League fixture.",
+    "related": [
+      {
+        "id": "faroe-slovakia-oct2",
+        "home": "Faroe Islands",
+        "away": "Slovakia",
+        "league": "UEFA Nations League"
+      }
+    ]
+  },
+  {
+    "id": "faroe-slovakia-oct2",
+    "league": "Football · UEFA Nations League",
+    "date": "2 Oct 2026",
+    "time": "20:45 CET",
+    "stadium": "Official UEFA fixture",
+    "home": "Faroe Islands",
+    "away": "Slovakia",
+    "homeShort": "FRO",
+    "awayShort": "SVK",
+    "homeLogo": "https://flagcdn.com/w160/fo.png",
+    "awayLogo": "https://flagcdn.com/w160/sk.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Faroe Islands face Slovakia in the UEFA Nations League.",
+    "bestTip": "Official UEFA fixture",
+    "goalsLean": "League C · Group C3",
+    "btts": "Kickoff · 20:45 CET",
+    "factors": [
+      "Official UEFA fixture",
+      "Matchday 3",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "League C · Group C3"
+    ],
+    "awayStats": [
+      "League C · Group C3"
+    ],
+    "quickInsightTitle": "Confirmed international fixture",
+    "quickInsight": "Faroe Islands face Slovakia in a confirmed Nations League fixture.",
+    "related": [
+      {
+        "id": "azerbaijan-liechtenstein-oct1",
+        "home": "Azerbaijan",
+        "away": "Liechtenstein",
         "league": "UEFA Nations League"
       }
     ]
