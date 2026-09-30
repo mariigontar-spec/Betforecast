@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 30 Sep 2026";
+  if (k) k.textContent = "World Sports News · 1 Oct 2026";
   if (t) t.textContent = "UEFA Nations League · Matchday 2";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -51,7 +51,7 @@ function updateNewsPageLabels() {
     tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=denmark-portugal-oct1">Denmark–Portugal</a><a class="sidebar-link-card" href="match.html?id=germany-serbia-oct1">Germany–Serbia</a><a class="sidebar-link-card" href="match.html?id=france-italy-oct2">France–Italy</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>No Nations League fixtures are scheduled on 30 September. All 18 results from 28–29 September are now verified, led by Spain’s 4-1 win over Croatia. Matchday 3 starts on 1 October with eight confirmed fixtures.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Eight Nations League fixtures are scheduled today. Denmark–Portugal is the headline match after Cristiano Ronaldo left the Portugal camp, while Germany–Serbia and Wales–Norway are also in focus. All 18 results from 28–29 September remain verified.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
