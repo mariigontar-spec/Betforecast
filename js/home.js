@@ -38,12 +38,12 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "No Nations League fixtures are scheduled today; Matchday 3 begins on 1 October with Denmark–Portugal and Germany–Serbia.";
+        "Eight Nations League fixtures are scheduled today, led by Denmark–Portugal, Germany–Serbia and Wales–Norway.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>1 Oct</strong><span>Denmark–Portugal · League A Group A4</span></div>
+        <div><strong>Today</strong><span>Denmark–Portugal · League A Group A4</span></div>
         <div><strong>1 Oct</strong><span>Germany–Serbia · League A Group A2</span></div>
         <div><strong>1 Oct</strong><span>Denmark–Portugal · 20:45 CET</span></div>
       `;
@@ -64,9 +64,9 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=denmark-portugal-oct1", title: "Denmark vs Portugal", detail: "1 October · Nations League · 20:45 CET", tag: "Upcoming" },
-      { href: "match.html?id=germany-serbia-oct1", title: "Germany vs Serbia", detail: "1 October · Nations League · 20:45 CET", tag: "Upcoming" },
-      { href: "match.html?id=wales-norway-oct1", title: "Wales vs Norway", detail: "1 October · Nations League · 20:45 CET", tag: "Upcoming" },
+      { href: "match.html?id=denmark-portugal-oct1", title: "Denmark vs Portugal", detail: "Today · Nations League · 20:45 CET", tag: "Today" },
+      { href: "match.html?id=germany-serbia-oct1", title: "Germany vs Serbia", detail: "Today · Nations League · 20:45 CET", tag: "Today" },
+      { href: "match.html?id=wales-norway-oct1", title: "Wales vs Norway", detail: "Today · Nations League · 20:45 CET", tag: "Today" },
       { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
     ];
 
