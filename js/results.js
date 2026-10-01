@@ -4,6 +4,14 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Azerbaijan", awayName: "Liechtenstein", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "1 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Germany", awayName: "Serbia", homeGoals: "2", awayGoals: "0", venue: "UEFA Nations League", date: "1 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Greece", awayName: "Netherlands", homeGoals: "2", awayGoals: "2", venue: "UEFA Nations League", date: "1 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Denmark", awayName: "Portugal", homeGoals: "2", awayGoals: "4", venue: "UEFA Nations League", date: "1 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Wales", awayName: "Norway", homeGoals: "2", awayGoals: "1", venue: "UEFA Nations League", date: "1 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Israel", awayName: "Kosovo", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "1 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Republic of Ireland", awayName: "Austria", homeGoals: "2", awayGoals: "2", venue: "UEFA Nations League", date: "1 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Malta", awayName: "Gibraltar", homeGoals: "1", awayGoals: "1", venue: "UEFA Nations League", date: "1 Oct", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Georgia", awayName: "Ukraine", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Armenia", awayName: "Montenegro", homeGoals: "2", awayGoals: "3", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Latvia", awayName: "Cyprus", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "28 Sep", href: "results.html" },
@@ -72,7 +80,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 1 Oct 2026");
+    setStatus("World sports results · checked 2 Oct 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
