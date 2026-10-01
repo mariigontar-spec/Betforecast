@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 1 Oct 2026";
+  if (k) k.textContent = "World Sports News · 2 Oct 2026";
   if (t) t.textContent = "UEFA Nations League · Matchday 2";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=denmark-portugal-oct1">Denmark–Portugal</a><a class="sidebar-link-card" href="match.html?id=germany-serbia-oct1">Germany–Serbia</a><a class="sidebar-link-card" href="match.html?id=france-italy-oct2">France–Italy</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=france-italy-oct2">France–Italy</a><a class="sidebar-link-card" href="match.html?id=belgium-turkiye-oct2">Belgium–Türkiye</a><a class="sidebar-link-card" href="match.html?id=croatia-england-oct3">Croatia–England</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Eight Nations League fixtures are scheduled today. Denmark–Portugal is the headline match after Cristiano Ronaldo left the Portugal camp, while Germany–Serbia and Wales–Norway are also in focus. All 18 results from 28–29 September remain verified.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>France–Italy leads ten Nations League fixtures on 2 October, with Belgium–Türkiye and Bosnia–Sweden also in focus. Portugal beat Denmark 4-2, Germany defeated Serbia 2-0 and all eight results from 1 October are now recorded.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
