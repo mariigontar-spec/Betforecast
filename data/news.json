@@ -1,5 +1,39 @@
 [
   {
+    "id": "reuters-england-croatia-20261003",
+    "category": "Football",
+    "title": "England rout Croatia 7-0 in Nations League",
+    "excerpt": "Harry Kane and Bukayo Saka scored twice apiece as England won 7-0 in Rijeka, with Jude Bellingham adding a goal and three assists.",
+    "time": "3 Oct",
+    "date": "2026-10-03T18:06:54.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/doubles-kane-saka-power-england-7-0-rout-croatia-2026-10-03/",
+    "content": [
+      "England defeated Croatia 7-0 in the UEFA Nations League on 3 October 2026.",
+      "Harry Kane and Bukayo Saka scored twice each; Jude Bellingham scored once and made three assists.",
+      "Source: Reuters."
+    ]
+  },
+  {
+    "id": "reuters-belgium-suspensions-20261003",
+    "category": "Football",
+    "title": "Belgium lose De Bruyne and Tielemans for France match",
+    "excerpt": "Kevin De Bruyne and Youri Tielemans will miss Belgium’s 5 October Nations League match in France through suspension.",
+    "time": "3 Oct",
+    "date": "2026-10-03T20:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-2.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/belgiums-de-bruyne-tielemans-miss-france-match-due-suspension-2026-10-03/",
+    "content": [
+      "Kevin De Bruyne and Youri Tielemans are suspended for Belgium’s match away to France on 5 October 2026.",
+      "The absences follow yellow cards during the current international window.",
+      "Source: Reuters."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "Robertson hits 100 Scotland caps - but who else makes top 10?",
@@ -48,24 +82,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ckq5nd1g14v4o?at_medium=RSS&at_campaign=rss",
     "content": [
       "Portugal midfielder Bruno Fernandes says Cristiano Ronaldo remains the country's greatest footballing figure despite leaving the squad this week after finding out he would not start a match.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "4",
-    "category": "Football",
-    "title": "Who was the best player on the pitch? - England player ratings",
-    "excerpt": "England produce one of their best performances in recent times as they thump Croatia 6-0 in Rijeka. How did our report rate the players' performances?",
-    "time": "2 hrs ago",
-    "date": "2026-10-03T17:58:13.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/70d1/live/36cf3a10-bf52-11f1-a84d-81c67bc2828e.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cq4g1x8znyd0o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "England produce one of their best performances in recent times as they thump Croatia 6-0 in Rijeka. How did our report rate the players' performances?",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
@@ -516,24 +532,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqd095z49gjvo?at_medium=RSS&at_campaign=rss",
     "content": [
       "England boss Thomas Tuchel says he would \"never rule out\" selecting someone who is not playing in the top flight, should Manchester City be relegated.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Tankards, Clough & 'creaky joints' - Tennent's Sixes returns",
-    "excerpt": "More than three decades since its last staging, Scottish football's cult indoor event makes a comeback with the \"creaky joints\" of former players taking to an ice rink.",
-    "time": "1 day ago",
-    "date": "2026-10-02T14:07:42.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5796/live/068e91a0-bdab-11f1-bc2e-018d645d8d21.png",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cv8e3eyx5y8eo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "More than three decades since its last staging, Scottish football's cult indoor event makes a comeback with the \"creaky joints\" of former players taking to an ice rink.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
