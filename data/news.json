@@ -1,5 +1,38 @@
 [
   {
+    "id": "guardian-nations-league-oct4",
+    "category": "Football",
+    "title": "Portugal beat Norway as Denmark win in Wales",
+    "excerpt": "Portugal defeated Norway 2-1, Denmark won 1-0 in Wales, the Netherlands beat Serbia 2-1 and Greece drew 0-0 with Germany in Nations League action.",
+    "time": "4 Oct",
+    "date": "2026-10-04T20:52:21.000Z",
+    "readTime": "3 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/football/live/2026/oct/04/wales-v-denmark-republic-of-ireland-v-israel-and-more-nations-league-live",
+    "content": [
+      "Portugal defeated Norway 2-1 in the UEFA Nations League on 4 October 2026.",
+      "Denmark won 1-0 in Wales, the Netherlands beat Serbia 2-1 and Greece drew 0-0 with Germany.",
+      "Source: The Guardian."
+    ]
+  },
+  {
+    "id": "reuters-belgium-france-oct5",
+    "category": "Football",
+    "title": "Belgium without De Bruyne and Tielemans in France",
+    "excerpt": "Kevin De Bruyne and Youri Tielemans are suspended for Belgium’s Nations League match away to France on 5 October.",
+    "time": "4 Oct",
+    "date": "2026-10-04T18:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-2.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/belgiums-de-bruyne-tielemans-miss-france-match-due-suspension-2026-10-03/",
+    "content": [
+      "Kevin De Bruyne and Youri Tielemans will miss Belgium’s 5 October Nations League match in France through suspension.",
+      "Source: Reuters."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "Arsenal 10 points off WSL leaders - is Slegers' job at risk?",
@@ -498,42 +531,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cxyvrp78ddvqo?at_medium=RSS&at_campaign=rss",
     "content": [
       "Portuguese computer hacker who released documents which helped trigger the Premier League investigation into Manchester City set to lose his witness protection despite fears for his life.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "29",
-    "category": "Football",
-    "title": "Giant Dzeko shirt unveiled in Sarajevo to mark retirement",
-    "excerpt": "A giant Edin Dzeko shirt is unveiled in Sarajevo to mark the Bosnia striker's retirement from international football.",
-    "time": "2 days ago",
-    "date": "2026-10-02T14:00:18.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1afb/live/6d75a9e0-be68-11f1-babe-4199b0e7ccea.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cx8dzpj896edo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "A giant Edin Dzeko shirt is unveiled in Sarajevo to mark the Bosnia striker's retirement from international football.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Manager ins and outs - 2026-27",
-    "excerpt": "BBC Sport tracks all the manager ins and outs in the Premier League, Scottish Premiership, Women's Super League, English Football League and National League.",
-    "time": "2 days ago",
-    "date": "2026-10-02T10:42:37.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2a13/live/14109140-ab66-11f1-9647-01c7ddc5a2b1.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cd94713djgyo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "BBC Sport tracks all the manager ins and outs in the Premier League, Scottish Premiership, Women's Super League, English Football League and National League.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
