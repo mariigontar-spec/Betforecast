@@ -38,25 +38,25 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Eight Nations League fixtures are scheduled today, led by France–Belgium and Italy–Türkiye.";
+        "Ten Nations League fixtures are scheduled today, led by Croatia–Spain and England–Czechia.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Today</strong><span>France–Belgium · League A Group A1</span></div>
-        <div><strong>Today</strong><span>Italy–Türkiye · League A Group A1</span></div>
+        <div><strong>Today</strong><span>Croatia–Spain · League A Group A3</span></div>
+        <div><strong>Today</strong><span>England–Czechia · League A Group A3</span></div>
         <div><strong>6 Oct</strong><span>England–Czechia · 20:45 CET</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Nations League, France, Belgium, Italy";
+      input.placeholder = "Try: Nations League, Croatia, Spain, England";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="France Belgium">France–Belgium</button>
+        <button type="button" data-query="Croatia Spain">Croatia–Spain</button>
         <button type="button" data-query="UEFA Nations League">Nations League</button>
         <button type="button" data-query="Italy Türkiye">Italy–Türkiye</button>
       `;
@@ -64,8 +64,8 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=france-belgium-oct5", title: "France vs Belgium", detail: "Today · Nations League · 20:45 CET", tag: "Today" },
-      { href: "match.html?id=italy-turkiye-oct5", title: "Italy vs Türkiye", detail: "Today · Nations League · 20:45 CET", tag: "Today" },
+      { href: "match.html?id=croatia-spain-oct6", title: "Croatia vs Spain", detail: "Today · Nations League · 20:45 CET", tag: "Today" },
+      { href: "match.html?id=england-czechia-oct6", title: "England vs Czechia", detail: "Today · Nations League · 20:45 CET", tag: "Today" },
       { href: "match.html?id=england-czechia-oct6", title: "England vs Czechia", detail: "6 October · Nations League · 20:45 CET", tag: "Next" },
       { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
     ];
