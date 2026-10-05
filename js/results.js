@@ -4,6 +4,11 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "France", awayName: "Belgium", homeGoals: "4", awayGoals: "1", venue: "UEFA Nations League", date: "5 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Italy", awayName: "Türkiye", homeGoals: "3", awayGoals: "1", venue: "UEFA Nations League", date: "5 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Northern Ireland", awayName: "Georgia", homeGoals: "0", awayGoals: "0", venue: "UEFA Nations League", date: "5 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Ukraine", awayName: "Hungary", homeGoals: "0", awayGoals: "1", venue: "UEFA Nations League", date: "5 Oct", href: "results.html" },
+    { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Cyprus", awayName: "Latvia", homeGoals: "2", awayGoals: "1", venue: "UEFA Nations League", date: "5 Oct", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Azerbaijan", awayName: "Lithuania", homeGoals: "1", awayGoals: "0", venue: "UEFA Nations League", date: "4 Oct", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Kosovo", awayName: "Austria", homeGoals: "1", awayGoals: "1", venue: "UEFA Nations League", date: "4 Oct", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Malta", awayName: "Andorra", homeGoals: "1", awayGoals: "0", venue: "UEFA Nations League", date: "4 Oct", href: "results.html" },
@@ -106,7 +111,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 5 Oct 2026");
+    setStatus("World sports results · checked 6 Oct 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
