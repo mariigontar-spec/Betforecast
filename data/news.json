@@ -1,5 +1,39 @@
 [
   {
+    "id": "nations-league-oct5-roundup",
+    "category": "Football",
+    "title": "France surge past Belgium as Italy beat Türkiye",
+    "excerpt": "France scored four times in the final 13 minutes to beat Belgium 4-1, while Italy defeated Türkiye 3-1 and Northern Ireland drew 0-0 with Georgia.",
+    "time": "Latest",
+    "date": "2026-10-05T21:57:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/football/live/2026/oct/05/france-v-belgium-italy-v-turkey-northern-ireland-v-georgia-nations-league-live",
+    "content": [
+      "France recovered from a first-half deficit and scored four late goals to defeat Belgium 4-1 in Paris.",
+      "Italy beat Türkiye 3-1, Northern Ireland drew 0-0 with Georgia and Hungary won 1-0 away to Ukraine.",
+      "Source: The Guardian."
+    ]
+  },
+  {
+    "id": "haaland-workload-oct5",
+    "category": "Football",
+    "title": "Norway coach raises concern over Haaland workload",
+    "excerpt": "Ståle Solbakken said Erling Haaland looked exhausted after Norway’s 2-1 Nations League defeat by Portugal.",
+    "time": "5 Oct",
+    "date": "2026-10-05T12:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-2.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/norway-boss-solbakken-warns-heavy-toll-thoroughly-spent-haaland-2026-10-05/",
+    "content": [
+      "Norway coach Ståle Solbakken warned about the physical toll of Erling Haaland’s demanding club and international schedule.",
+      "Haaland was substituted during Norway’s 2-1 defeat by Portugal and now has a short recovery window before returning to club action.",
+      "Source: Reuters."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "Bournemouth unhappy after Scott injured with England",
@@ -498,42 +532,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cr93zpl4zjpwo?at_medium=RSS&at_campaign=rss",
     "content": [
       "The Tartan Army have given a mixed reaction to Scotland's 2-0 win away to North Macedonia in the Nations League.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "29",
-    "category": "Football",
-    "title": "Modric 'ashamed' of Croatia's 'catastrophic night'",
-    "excerpt": "Croatia captain Luka Modric says he was \"ashamed\" of his side's performance on a \"catastrophic night\" against England.",
-    "time": "1 day ago",
-    "date": "2026-10-04T10:35:47.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/04d7/live/e638a110-bfdb-11f1-b4e6-d96c2bf27b65.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cwzrdm3lyk21o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Croatia captain Luka Modric says he was \"ashamed\" of his side's performance on a \"catastrophic night\" against England.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Bowie seizing Scotland shot after World Cup disappointment",
-    "excerpt": "BBC Scotland speaks to Kieron Bowie after he scores his first goal for his country against North Macedonia.",
-    "time": "1 day ago",
-    "date": "2026-10-04T07:59:10.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e53/live/7ab140f0-bfc7-11f1-ae6d-41d695ddb617.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c5djvw4n8vp8o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "BBC Scotland speaks to Kieron Bowie after he scores his first goal for his country against North Macedonia.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
