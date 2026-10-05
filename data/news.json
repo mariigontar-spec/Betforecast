@@ -1,43 +1,136 @@
 [
   {
-    "id": "guardian-nations-league-oct4",
-    "category": "Football",
-    "title": "Portugal beat Norway as Denmark win in Wales",
-    "excerpt": "Portugal defeated Norway 2-1, Denmark won 1-0 in Wales, the Netherlands beat Serbia 2-1 and Greece drew 0-0 with Germany in Nations League action.",
-    "time": "4 Oct",
-    "date": "2026-10-04T20:52:21.000Z",
-    "readTime": "3 min read",
-    "image": "assets/news/default-1.jpg",
-    "source": "The Guardian",
-    "sourceUrl": "https://www.theguardian.com/football/live/2026/oct/04/wales-v-denmark-republic-of-ireland-v-israel-and-more-nations-league-live",
-    "content": [
-      "Portugal defeated Norway 2-1 in the UEFA Nations League on 4 October 2026.",
-      "Denmark won 1-0 in Wales, the Netherlands beat Serbia 2-1 and Greece drew 0-0 with Germany.",
-      "Source: The Guardian."
-    ]
-  },
-  {
-    "id": "reuters-belgium-france-oct5",
-    "category": "Football",
-    "title": "Belgium without De Bruyne and Tielemans in France",
-    "excerpt": "Kevin De Bruyne and Youri Tielemans are suspended for Belgium’s Nations League match away to France on 5 October.",
-    "time": "4 Oct",
-    "date": "2026-10-04T18:00:00.000Z",
-    "readTime": "2 min read",
-    "image": "assets/news/default-2.jpg",
-    "source": "Reuters",
-    "sourceUrl": "https://www.reuters.com/sports/soccer/belgiums-de-bruyne-tielemans-miss-france-match-due-suspension-2026-10-03/",
-    "content": [
-      "Kevin De Bruyne and Youri Tielemans will miss Belgium’s 5 October Nations League match in France through suspension.",
-      "Source: Reuters."
-    ]
-  },
-  {
     "id": "1",
+    "category": "Football",
+    "title": "Israel 'tried to intimidate' Irish amid spitting row - Hallgrimsson",
+    "excerpt": "Republic of Ireland head coach Heimir Hallgrimsson says he felt Israel were \"trying to intimidate\" his team amid allegations of spitting during Sunday's Nations League draw.",
+    "time": "4 hrs ago",
+    "date": "2026-10-04T22:51:49.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/95e2/live/2ac00d80-c042-11f1-b3e5-8557f7e62bde.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cw4g14eg5p22o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Republic of Ireland head coach Heimir Hallgrimsson says he felt Israel were \"trying to intimidate\" his team amid allegations of spitting during Sunday's Nations League draw.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "2",
+    "category": "Football",
+    "title": "No other team should go through this - Hallgrimsson",
+    "excerpt": "Republic of Ireland manager Heimir Hallgrimsson says he is \"delighted\" this most trying of international windows is over and hopes \"no national team to go through what we have gone through over the last two weeks\".",
+    "time": "4 hrs ago",
+    "date": "2026-10-04T22:43:10.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d038/live/2587d730-c042-11f1-b3e5-8557f7e62bde.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqe8lv6m1nn3o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Republic of Ireland manager Heimir Hallgrimsson says he is \"delighted\" this most trying of international windows is over and hopes \"no national team to go through what we have gone through over the last two weeks\".",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "3",
+    "category": "Football",
+    "title": "Bellamy bemoans new schedule after Denmark loss",
+    "excerpt": "Craig Bellamy suggests the new four-match international window has counted against Wales after Sunday's Nations League defeat against Denmark.",
+    "time": "5 hrs ago",
+    "date": "2026-10-04T22:36:20.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a124/live/22651ef0-c038-11f1-86a1-ad5985eac783.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cm93zyld4513o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Craig Bellamy suggests the new four-match international window has counted against Wales after Sunday's Nations League defeat against Denmark.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "4",
+    "category": "Football",
+    "title": "Portugal boss says door open for Ronaldo return",
+    "excerpt": "Cristiano Ronaldo could still return for Portugal, according to boss Jorge Jesus.",
+    "time": "5 hrs ago",
+    "date": "2026-10-04T22:10:59.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/43de/live/68de2c00-c00b-11f1-b8fc-7927883c19e9.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c3dxwry8vydvo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Cristiano Ronaldo could still return for Portugal, according to boss Jorge Jesus.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "5",
+    "category": "Football",
+    "title": "Fans group questions Desmond's priorities amid Celtic protest row",
+    "excerpt": "The Celtic Fans Collective has criticised Dermot Desmond's \"priorities\" after the Scottish champions withdrew recognition of the group following a protest against the major shareholder at the Alfred Dunhill Links golf tournament in St Andre...",
+    "time": "6 hrs ago",
+    "date": "2026-10-04T21:28:34.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/94e2/live/cf56a740-bf44-11f1-8acc-0bb5649ca116.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c60qke217knjo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "The Celtic Fans Collective has criticised Dermot Desmond's \"priorities\" after the Scottish champions withdrew recognition of the group following a protest against the major shareholder at the Alfred Dunhill Links golf tournament in St Andre...",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "6",
+    "category": "Football",
+    "title": "Man City fight back to beat struggling Arsenal",
+    "excerpt": "Manchester City twice came from behind to beat Arsenal 4-2 at the Etihad Stadium and increase the pressure on Gunners manager Renee Slegers.",
+    "time": "6 hrs ago",
+    "date": "2026-10-04T21:20:21.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e308/live/d9095200-c01c-11f1-babe-4199b0e7ccea.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c64g71j3dkw7o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Manchester City twice came from behind to beat Arsenal 4-2 at the Etihad Stadium and increase the pressure on Gunners manager Renee Slegers.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "7",
+    "category": "Football",
+    "title": "You are the Scotland boss - what would you do?",
+    "excerpt": "Put yourself in the shoes of the new Scotland head coach Sebastien Pocognoli as he picks his XI to face Slovenia on Tuesday.",
+    "time": "6 hrs ago",
+    "date": "2026-10-04T21:06:47.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/78b7/live/86435770-b746-11f1-8846-e70401199dae.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cr4g1q2w1g6zo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Put yourself in the shoes of the new Scotland head coach Sebastien Pocognoli as he picks his XI to face Slovenia on Tuesday.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "8",
     "category": "Football",
     "title": "Arsenal 10 points off WSL leaders - is Slegers' job at risk?",
     "excerpt": "It is only five matches into the WSL season but Arsenal are already 10 points behind leaders Manchester City and manager Renee Slegers is coming under increasing scrutiny.",
-    "time": "6 min ago",
+    "time": "7 hrs ago",
     "date": "2026-10-04T20:34:17.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d6ec/live/77998e20-c01e-11f1-bfc0-dbc6925567bb.jpg",
@@ -51,11 +144,11 @@
     ]
   },
   {
-    "id": "2",
+    "id": "9",
     "category": "Football",
     "title": "Real Madrid join race for Scott - Monday's gossip",
     "excerpt": "Bournemouth's Alex Scott at the centre of a transfer tussle, Arsenal show interest in Juventus winger Kenan Yildiz, Real Betis rebuff speculation linking Troy Parrott with a move away, plus more.",
-    "time": "16 min ago",
+    "time": "7 hrs ago",
     "date": "2026-10-04T20:24:19.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3536/live/68d05a40-c014-11f1-b8fc-7927883c19e9.png",
@@ -69,11 +162,11 @@
     ]
   },
   {
-    "id": "3",
+    "id": "10",
     "category": "Football",
     "title": "How did legends cope with Tennent's Sixes revival?",
     "excerpt": "Celtic beat Rangers in the final of the revived Tennent's Sixes, but how did the weekend go at Braehead Arena?",
-    "time": "58 min ago",
+    "time": "7 hrs ago",
     "date": "2026-10-04T19:42:19.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/92d2/live/92919590-c02a-11f1-bef3-2128f412928e.jpg",
@@ -87,11 +180,11 @@
     ]
   },
   {
-    "id": "4",
+    "id": "11",
     "category": "Football",
     "title": "'We fought for every ball' - Hemp on Man City's thrilling win",
     "excerpt": "Two-goal Lauren Hemp says Manchester City showed passion and character in their 4-2 win over Arsenal in the WSL.",
-    "time": "2 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-10-04T18:20:05.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/28f2/live/9b50ed40-c01e-11f1-babe-4199b0e7ccea.jpg",
@@ -105,11 +198,11 @@
     ]
   },
   {
-    "id": "5",
+    "id": "12",
     "category": "Football",
     "title": "'It all clicked today' - Van de Donk and Putellas thrilled with 6-1 win against Spurs",
     "excerpt": "London City Lionesses' Danielle van de Donk and Alexia Putellas react to their team's 6-1 win against Tottenham Hotspur in the Women's Super League.",
-    "time": "3 hrs ago",
+    "time": "10 hrs ago",
     "date": "2026-10-04T17:18:22.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9417/live/01ac7620-c012-11f1-babe-4199b0e7ccea.jpg",
@@ -123,11 +216,11 @@
     ]
   },
   {
-    "id": "6",
+    "id": "13",
     "category": "Football",
     "title": "Gateshead sack Cattermole after poor start",
     "excerpt": "Gateshead sack manager Lee Cattermole following a poor run of results in the National League.",
-    "time": "4 hrs ago",
+    "time": "11 hrs ago",
     "date": "2026-10-04T16:36:00.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d969/live/01da5960-c011-11f1-b8fc-7927883c19e9.jpg",
@@ -141,11 +234,11 @@
     ]
   },
   {
-    "id": "7",
+    "id": "14",
     "category": "Football",
     "title": "Listen: Who caught the eye in Pocognoli's first win?",
     "excerpt": "Richard Gordon, Willie Miller, Callum Davidson and Rory Loy talk Scotland",
-    "time": "4 hrs ago",
+    "time": "11 hrs ago",
     "date": "2026-10-04T16:29:00.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0gf9mfx.jpg",
@@ -159,11 +252,11 @@
     ]
   },
   {
-    "id": "8",
+    "id": "15",
     "category": "Football",
     "title": "'Promising start' or 'shocking' display? Tartan Army on Skopje win",
     "excerpt": "The Tartan Army have given a mixed reaction to Scotland's 2-0 win away to North Macedonia in the Nations League.",
-    "time": "6 hrs ago",
+    "time": "12 hrs ago",
     "date": "2026-10-04T14:45:11.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fa81/live/3097a1a0-c001-11f1-a6d2-b3be352f49ed.jpg",
@@ -177,11 +270,11 @@
     ]
   },
   {
-    "id": "9",
+    "id": "16",
     "category": "Football",
     "title": "Modric 'ashamed' of Croatia's 'catastrophic night'",
     "excerpt": "Croatia captain Luka Modric says he was \"ashamed\" of his side's performance on a \"catastrophic night\" against England.",
-    "time": "10 hrs ago",
+    "time": "17 hrs ago",
     "date": "2026-10-04T10:35:47.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/04d7/live/e638a110-bfdb-11f1-b4e6-d96c2bf27b65.jpg",
@@ -195,11 +288,11 @@
     ]
   },
   {
-    "id": "10",
+    "id": "17",
     "category": "Football",
     "title": "Bowie seizing Scotland shot after World Cup disappointment",
     "excerpt": "BBC Scotland speaks to Kieron Bowie after he scores his first goal for his country against North Macedonia.",
-    "time": "13 hrs ago",
+    "time": "19 hrs ago",
     "date": "2026-10-04T07:59:10.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3e53/live/7ab140f0-bfc7-11f1-ae6d-41d695ddb617.jpg",
@@ -213,11 +306,11 @@
     ]
   },
   {
-    "id": "11",
+    "id": "18",
     "category": "Football",
     "title": "I clawed my way to the top but need a break - Azpilicueta",
     "excerpt": "Cesar Azpilicueta says it is time to move to \"a different stage of life\" following a glorious 20-year playing career, notably captaining Chelsea to several titles.",
-    "time": "14 hrs ago",
+    "time": "21 hrs ago",
     "date": "2026-10-04T06:15:35.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/14a6/live/d4fed630-bb4e-11f1-bd21-bdf910f2cec6.jpg",
@@ -231,11 +324,11 @@
     ]
   },
   {
-    "id": "12",
+    "id": "19",
     "category": "Football",
     "title": "Flex your football brain with our daily quizzes",
     "excerpt": "Test your football knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-    "time": "15 hrs ago",
+    "time": "22 hrs ago",
     "date": "2026-10-04T05:40:25.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ada7/live/27df4c70-9658-11f1-b2ab-0dd01740f9f6.jpg",
@@ -249,11 +342,11 @@
     ]
   },
   {
-    "id": "13",
+    "id": "20",
     "category": "Football",
     "title": "Two going on four, five or six on good night for new Scotland era",
     "excerpt": "Scotland scored twice in North Macedonia but the scoreline does not reflect their dominance in Skopje, writes Tom English.",
-    "time": "22 hrs ago",
+    "time": "1 day ago",
     "date": "2026-10-03T22:22:18.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8291/live/df976de0-bf78-11f1-940c-1914ec9d5f66.jpg",
@@ -267,29 +360,11 @@
     ]
   },
   {
-    "id": "14",
-    "category": "Football",
-    "title": "Celtic condemn fan protest as Desmond targeted at Alfred Dunhill",
-    "excerpt": "Celtic's largest shareholder Dermot Desmond is targeted in a protest at the Alfred Dunhill Links golf tournament in St Andrews as tennis balls were thrown towards him.",
-    "time": "23 hrs ago",
-    "date": "2026-10-03T21:46:04.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/94e2/live/cf56a740-bf44-11f1-8acc-0bb5649ca116.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c60qke217knjo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Celtic's largest shareholder Dermot Desmond is targeted in a protest at the Alfred Dunhill Links golf tournament in St Andrews as tennis balls were thrown towards him.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "15",
+    "id": "21",
     "category": "Football",
     "title": "'It means everything' - numbers behind Robertson's 100-cap Scotland career",
     "excerpt": "Andy Robertson has become only the second man ever to play 100 times for Scotland. BBC Sport Scotland charts his international career in numbers.",
-    "time": "23 hrs ago",
+    "time": "1 day ago",
     "date": "2026-10-03T21:27:29.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/01ec/live/9fd85a20-bf6e-11f1-8353-af47de35c0c8.jpg",
@@ -303,7 +378,7 @@
     ]
   },
   {
-    "id": "16",
+    "id": "22",
     "category": "Football",
     "title": "Bellingham unlocks new level and potential to be 'one of the greatest'",
     "excerpt": "Jude Bellingham's international future was being called into question a year ago, but now he is regarded as potentially one of England's \"greatest of all time\".",
@@ -321,7 +396,7 @@
     ]
   },
   {
-    "id": "17",
+    "id": "23",
     "category": "Football",
     "title": "Seventh heaven for England in Croatia",
     "excerpt": "John Murray presents reaction in Croatia to England's 7-0 Nations League win.",
@@ -339,25 +414,7 @@
     ]
   },
   {
-    "id": "18",
-    "category": "Football",
-    "title": "Ronaldo still 'greatest symbol' of Portugal - Fernandes",
-    "excerpt": "Portugal midfielder Bruno Fernandes says Cristiano Ronaldo remains the country's greatest footballing figure despite leaving the squad this week after finding out he would not start a match.",
-    "time": "1 day ago",
-    "date": "2026-10-03T18:57:50.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8140/live/6ff772e0-bf51-11f1-a84d-81c67bc2828e.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ckq5nd1g14v4o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Portugal midfielder Bruno Fernandes says Cristiano Ronaldo remains the country's greatest footballing figure despite leaving the squad this week after finding out he would not start a match.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "19",
+    "id": "24",
     "category": "Football",
     "title": "Who was best player on the pitch? Who looks a great addition? England ratings",
     "excerpt": "England produce one of their best performances in recent times as they thump Croatia 6-0 in Rijeka. How did our report rate the players' performances?",
@@ -375,11 +432,11 @@
     ]
   },
   {
-    "id": "20",
+    "id": "25",
     "category": "Football",
     "title": "Toone determined to come back better after 'difficult week'",
     "excerpt": "Ella Toone reflects on a \"difficult week\" and looks back on a narrow win against Liverpool in the Women's Super League.",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "date": "2026-10-03T15:33:16.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/362e/live/1d2b8af0-bf39-11f1-babe-4199b0e7ccea.jpg",
@@ -393,11 +450,11 @@
     ]
   },
   {
-    "id": "21",
+    "id": "26",
     "category": "Football",
     "title": "Back-to-back wins for Man Utd as they see off Liverpool",
     "excerpt": "Manchester United celebrate their 250th game in the club's history with a narrow victory over Liverpool in the Women's Super League.",
-    "time": "1 day ago",
+    "time": "2 days ago",
     "date": "2026-10-03T15:04:54.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4ac8/live/5d39bc00-bf36-11f1-bc2e-018d645d8d21.jpg",
@@ -411,43 +468,7 @@
     ]
   },
   {
-    "id": "22",
-    "category": "Football",
-    "title": "Republic of Ireland news conference ends abruptly amid accusations",
-    "excerpt": "Republic of Ireland manager Heimir Hallgrimsson's pre-match news conference ends abruptly as accusations are levelled at his players.",
-    "time": "1 day ago",
-    "date": "2026-10-03T13:02:11.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3eee/live/4c3aab70-bf23-11f1-bacc-0989b00347ed.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cm78p5x6xqq7o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Republic of Ireland manager Heimir Hallgrimsson's pre-match news conference ends abruptly as accusations are levelled at his players.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "23",
-    "category": "Football",
-    "title": "Why beating Denmark matters to Wales' Euro 2028 hopes",
-    "excerpt": "Avoiding finishing bottom of their Nations League group is a major aim for Wales following a win over Erling Haaland's Norway.",
-    "time": "2 days ago",
-    "date": "2026-10-03T09:09:04.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b19c/live/8c0378e0-be8d-11f1-888b-4d28ea12c7e2.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ck1wv77v9y3wo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Avoiding finishing bottom of their Nations League group is a major aim for Wales following a win over Erling Haaland's Norway.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "24",
+    "id": "27",
     "category": "Football",
     "title": "The student playing in La Liga: Introvert Rodri's unique rise to top",
     "excerpt": "Rodri is already playing a key role at Barcelona after turning down Real Madrid this summer. Guillem Balague looks at his journey so far.",
@@ -465,7 +486,7 @@
     ]
   },
   {
-    "id": "25",
+    "id": "28",
     "category": "Football",
     "title": "Arteta helped me understand the game - Wilshere",
     "excerpt": "Luton Town manager Jack Wilshere shares his love for coaching and explains how Arsenal boss Mikel Arteta influnced his style.",
@@ -483,7 +504,7 @@
     ]
   },
   {
-    "id": "26",
+    "id": "29",
     "category": "Football",
     "title": "Learning from Arteta and inspiring youngsters - Wilshere on management",
     "excerpt": "Luton Town manager Jack Wilshere speaks about being back where he started as an eight-year-old and the lessons he learned from his time at Arsenal.",
@@ -501,7 +522,7 @@
     ]
   },
   {
-    "id": "27",
+    "id": "30",
     "category": "Football",
     "title": "Which clubs did Man City's 'inflated' money flow to in transfer market?",
     "excerpt": "BBC Sport follows the trail of transfer money flowing to other clubs during Manchester City's period of financial rule-breaking.",
@@ -513,24 +534,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmew9w451vx8o?at_medium=RSS&at_campaign=rss",
     "content": [
       "BBC Sport follows the trail of transfer money flowing to other clubs during Manchester City's period of financial rule-breaking.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "28",
-    "category": "Football",
-    "title": "Man City whistleblower set to lose protection amid fears for life",
-    "excerpt": "Portuguese computer hacker who released documents which helped trigger the Premier League investigation into Manchester City set to lose his witness protection despite fears for his life.",
-    "time": "2 days ago",
-    "date": "2026-10-02T19:26:13.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c09c/live/ec8c2630-be8d-11f1-888b-4d28ea12c7e2.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cxyvrp78ddvqo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Portuguese computer hacker who released documents which helped trigger the Premier League investigation into Manchester City set to lose his witness protection despite fears for his life.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
