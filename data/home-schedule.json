@@ -1,193 +1,364 @@
 {
-  "updatedAt": "2026-10-06T00:00:00+03:00",
-  "featuredId": "croatia-spain-oct6",
+  "updatedAt": "2026-10-07T00:00:00+03:00",
+  "featuredId": "arsenal-leeds-oct10",
   "events": [
     {
-      "id": "kazakhstan-faroe-islands-oct6",
+      "id": "arsenal-leeds-oct10",
       "type": "event",
       "sport": "Football",
+      "date": "10 Oct",
+      "time": "12:30 BST",
+      "title": "Arsenal vs Leeds United",
+      "home": "Arsenal",
+      "away": "Leeds United",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Upcoming",
+      "signals": [
+        "Confirmed league fixture",
+        "Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
+    },
+    {
+      "id": "aston-villa-brentford-oct10",
+      "type": "event",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "15:00 BST",
+      "title": "Aston Villa vs Brentford",
+      "home": "Aston Villa",
+      "away": "Brentford",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Upcoming",
+      "signals": [
+        "Confirmed league fixture",
+        "Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
+    },
+    {
+      "id": "chelsea-bournemouth-oct10",
+      "type": "event",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "15:00 BST",
+      "title": "Chelsea vs Bournemouth",
+      "home": "Chelsea",
+      "away": "Bournemouth",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Upcoming",
+      "signals": [
+        "Confirmed league fixture",
+        "Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
+    },
+    {
+      "id": "ipswich-fulham-oct10",
+      "type": "event",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "15:00 BST",
+      "title": "Ipswich Town vs Fulham",
+      "home": "Ipswich Town",
+      "away": "Fulham",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Upcoming",
+      "signals": [
+        "Confirmed league fixture",
+        "Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png"
+    },
+    {
+      "id": "sunderland-brighton-oct10",
+      "type": "event",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "15:00 BST",
+      "title": "Sunderland vs Brighton",
+      "home": "Sunderland",
+      "away": "Brighton",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Upcoming",
+      "signals": [
+        "Confirmed league fixture",
+        "Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
+    },
+    {
+      "id": "man-utd-tottenham-oct10",
+      "type": "event",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "17:30 BST",
+      "title": "Man United vs Tottenham",
+      "home": "Man United",
+      "away": "Tottenham",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Upcoming",
+      "signals": [
+        "Confirmed league fixture",
+        "Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
+    },
+    {
+      "id": "crystal-palace-nottingham-forest-oct11",
+      "type": "event",
+      "sport": "Football",
+      "date": "11 Oct",
+      "time": "14:00 BST",
+      "title": "Crystal Palace vs Nottm Forest",
+      "home": "Crystal Palace",
+      "away": "Nottm Forest",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Upcoming",
+      "signals": [
+        "Confirmed league fixture",
+        "Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png"
+    },
+    {
+      "id": "hull-everton-oct11",
+      "type": "event",
+      "sport": "Football",
+      "date": "11 Oct",
+      "time": "14:00 BST",
+      "title": "Hull City vs Everton",
+      "home": "Hull City",
+      "away": "Everton",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Upcoming",
+      "signals": [
+        "Confirmed league fixture",
+        "Matchweek 6"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
+    },
+    {
+      "id": "liverpool-man-city-oct11",
+      "type": "event",
+      "sport": "Football",
+      "date": "11 Oct",
+      "time": "16:30 BST",
+      "title": "Liverpool vs Man City",
+      "home": "Liverpool",
+      "away": "Man City",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Upcoming",
+      "signals": [
+        "Confirmed league fixture",
+        "Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
+    },
+    {
+      "id": "coventry-newcastle-oct12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Oct",
+      "time": "20:00 BST",
+      "title": "Coventry City vs Newcastle",
+      "home": "Coventry City",
+      "away": "Newcastle",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Upcoming",
+      "signals": [
+        "Confirmed league fixture",
+        "Matchweek 6"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+    },
+    {
+      "id": "kazakhstan-faroe-islands-result-oct6",
+      "type": "result",
+      "sport": "Football",
       "date": "6 Oct",
-      "time": "16:00 CET",
-      "title": "Kazakhstan vs Faroe Islands",
+      "time": "Final",
+      "title": "Kazakhstan 2-2 Faroe Islands",
       "home": "Kazakhstan",
       "away": "Faroe Islands",
       "competition": "UEFA Nations League",
       "stage": "League C · Group C3 · Matchday 4",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "League C · Group C3"
+        "Final score verified",
+        "Matchday 4"
       ],
       "homeLogo": "https://flagcdn.com/w160/kz.png",
       "awayLogo": "https://flagcdn.com/w160/fo.png"
     },
     {
-      "id": "croatia-spain-oct6",
-      "type": "event",
+      "id": "croatia-spain-result-oct6",
+      "type": "result",
       "sport": "Football",
       "date": "6 Oct",
-      "time": "20:45 CET",
-      "title": "Croatia vs Spain",
+      "time": "Final",
+      "title": "Croatia 1-2 Spain",
       "home": "Croatia",
       "away": "Spain",
       "competition": "UEFA Nations League",
       "stage": "League A · Group A3 · Matchday 4",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "League A · Group A3"
+        "Final score verified",
+        "Matchday 4"
       ],
       "homeLogo": "https://flagcdn.com/w160/hr.png",
       "awayLogo": "https://flagcdn.com/w160/es.png"
     },
     {
-      "id": "england-czechia-oct6",
-      "type": "event",
+      "id": "england-czechia-result-oct6",
+      "type": "result",
       "sport": "Football",
       "date": "6 Oct",
-      "time": "20:45 CET",
-      "title": "England vs Czechia",
+      "time": "Final",
+      "title": "England 3-0 Czechia",
       "home": "England",
       "away": "Czechia",
       "competition": "UEFA Nations League",
       "stage": "League A · Group A3 · Matchday 4",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "League A · Group A3"
+        "Final score verified",
+        "Matchday 4"
       ],
       "homeLogo": "https://flagcdn.com/w160/gb-eng.png",
       "awayLogo": "https://flagcdn.com/w160/cz.png"
     },
     {
-      "id": "scotland-slovenia-oct6",
-      "type": "event",
+      "id": "scotland-slovenia-result-oct6",
+      "type": "result",
       "sport": "Football",
       "date": "6 Oct",
-      "time": "20:45 CET",
-      "title": "Scotland vs Slovenia",
+      "time": "Final",
+      "title": "Scotland 1-2 Slovenia",
       "home": "Scotland",
       "away": "Slovenia",
       "competition": "UEFA Nations League",
       "stage": "League B · Group B1 · Matchday 4",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "League B · Group B1"
+        "Final score verified",
+        "Matchday 4"
       ],
       "homeLogo": "https://flagcdn.com/w160/gb-sct.png",
       "awayLogo": "https://flagcdn.com/w160/si.png"
     },
     {
-      "id": "switzerland-north-macedonia-oct6",
-      "type": "event",
+      "id": "switzerland-north-macedonia-result-oct6",
+      "type": "result",
       "sport": "Football",
       "date": "6 Oct",
-      "time": "20:45 CET",
-      "title": "Switzerland vs North Macedonia",
+      "time": "Final",
+      "title": "Switzerland 3-0 North Macedonia",
       "home": "Switzerland",
       "away": "North Macedonia",
       "competition": "UEFA Nations League",
       "stage": "League B · Group B1 · Matchday 4",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "League B · Group B1"
+        "Final score verified",
+        "Matchday 4"
       ],
       "homeLogo": "https://flagcdn.com/w160/ch.png",
       "awayLogo": "https://flagcdn.com/w160/mk.png"
     },
     {
-      "id": "albania-san-marino-oct6",
-      "type": "event",
+      "id": "albania-san-marino-result-oct6",
+      "type": "result",
       "sport": "Football",
       "date": "6 Oct",
-      "time": "20:45 CET",
-      "title": "Albania vs San Marino",
+      "time": "Final",
+      "title": "Albania 2-1 San Marino",
       "home": "Albania",
       "away": "San Marino",
       "competition": "UEFA Nations League",
       "stage": "League C · Group C1 · Matchday 4",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "League C · Group C1"
+        "Final score verified",
+        "Matchday 4"
       ],
       "homeLogo": "https://flagcdn.com/w160/al.png",
       "awayLogo": "https://flagcdn.com/w160/sm.png"
     },
     {
-      "id": "belarus-finland-oct6",
-      "type": "event",
+      "id": "belarus-finland-result-oct6",
+      "type": "result",
       "sport": "Football",
       "date": "6 Oct",
-      "time": "20:45 CET",
-      "title": "Belarus vs Finland",
+      "time": "Final",
+      "title": "Belarus 1-0 Finland",
       "home": "Belarus",
       "away": "Finland",
       "competition": "UEFA Nations League",
       "stage": "League C · Group C1 · Matchday 4",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "League C · Group C1"
+        "Final score verified",
+        "Matchday 4"
       ],
       "homeLogo": "https://flagcdn.com/w160/by.png",
       "awayLogo": "https://flagcdn.com/w160/fi.png"
     },
     {
-      "id": "moldova-slovakia-oct6",
-      "type": "event",
+      "id": "moldova-slovakia-result-oct6",
+      "type": "result",
       "sport": "Football",
       "date": "6 Oct",
-      "time": "20:45 CET",
-      "title": "Moldova vs Slovakia",
+      "time": "Final",
+      "title": "Moldova 0-4 Slovakia",
       "home": "Moldova",
       "away": "Slovakia",
       "competition": "UEFA Nations League",
       "stage": "League C · Group C3 · Matchday 4",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "League C · Group C3"
+        "Final score verified",
+        "Matchday 4"
       ],
       "homeLogo": "https://flagcdn.com/w160/md.png",
       "awayLogo": "https://flagcdn.com/w160/sk.png"
     },
     {
-      "id": "estonia-iceland-oct6",
-      "type": "event",
+      "id": "luxembourg-bulgaria-result-oct6",
+      "type": "result",
       "sport": "Football",
       "date": "6 Oct",
-      "time": "20:45 CET",
-      "title": "Estonia vs Iceland",
-      "home": "Estonia",
-      "away": "Iceland",
-      "competition": "UEFA Nations League",
-      "stage": "League C · Group C4 · Matchday 4",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "League C · Group C4"
-      ],
-      "homeLogo": "https://flagcdn.com/w160/ee.png",
-      "awayLogo": "https://flagcdn.com/w160/is.png"
-    },
-    {
-      "id": "luxembourg-bulgaria-oct6",
-      "type": "event",
-      "sport": "Football",
-      "date": "6 Oct",
-      "time": "20:45 CET",
-      "title": "Luxembourg vs Bulgaria",
+      "time": "Final",
+      "title": "Luxembourg 0-2 Bulgaria",
       "home": "Luxembourg",
       "away": "Bulgaria",
       "competition": "UEFA Nations League",
       "stage": "League C · Group C4 · Matchday 4",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "League C · Group C4"
+        "Final score verified",
+        "Matchday 4"
       ],
       "homeLogo": "https://flagcdn.com/w160/lu.png",
       "awayLogo": "https://flagcdn.com/w160/bg.png"
