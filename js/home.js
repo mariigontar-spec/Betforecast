@@ -38,25 +38,25 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Ten Nations League fixtures are scheduled today, led by Croatia–Spain and England–Czechia.";
+        "The Nations League round is complete; the next Premier League matchweek begins with Arsenal–Leeds on 10 October.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Today</strong><span>Croatia–Spain · League A Group A3</span></div>
-        <div><strong>Today</strong><span>England–Czechia · League A Group A3</span></div>
-        <div><strong>6 Oct</strong><span>England–Czechia · 20:45 CET</span></div>
+        <div><strong>6 Oct</strong><span>Spain beat Croatia 2-1 · verified result</span></div>
+        <div><strong>6 Oct</strong><span>England beat Czechia 3-0 · verified result</span></div>
+        <div><strong>10 Oct</strong><span>Arsenal–Leeds · 12:30 BST</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Nations League, Croatia, Spain, England";
+      input.placeholder = "Try: Premier League, Arsenal, Leeds, Liverpool";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Croatia Spain">Croatia–Spain</button>
+        <button type="button" data-query="Arsenal Leeds">Arsenal–Leeds</button>
         <button type="button" data-query="UEFA Nations League">Nations League</button>
         <button type="button" data-query="Italy Türkiye">Italy–Türkiye</button>
       `;
@@ -64,9 +64,9 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=croatia-spain-oct6", title: "Croatia vs Spain", detail: "Today · Nations League · 20:45 CET", tag: "Today" },
-      { href: "match.html?id=england-czechia-oct6", title: "England vs Czechia", detail: "Today · Nations League · 20:45 CET", tag: "Today" },
-      { href: "match.html?id=england-czechia-oct6", title: "England vs Czechia", detail: "6 October · Nations League · 20:45 CET", tag: "Next" },
+      { href: "match.html?id=arsenal-leeds-oct10", title: "Arsenal vs Leeds United", detail: "10 October · Premier League · 12:30 BST", tag: "Next" },
+      { href: "match.html?id=man-utd-tottenham-oct10", title: "Man United vs Tottenham", detail: "10 October · Premier League · 17:30 BST", tag: "Next" },
+      { href: "match.html?id=liverpool-man-city-oct11", title: "Liverpool vs Man City", detail: "11 October · Premier League · 16:30 BST", tag: "Spotlight" },
       { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
     ];
 
