@@ -1,451 +1,451 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    "id": "kazakhstan-faroe-islands-oct6",
-    "league": "Football · UEFA Nations League",
-    "date": "6 Oct 2026",
-    "time": "16:00 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Kazakhstan",
-    "away": "Faroe Islands",
-    "homeShort": "K",
-    "awayShort": "FI",
-    "homeLogo": "https://flagcdn.com/w160/kz.png",
-    "awayLogo": "https://flagcdn.com/w160/fo.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Kazakhstan face Faroe Islands in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C3",
-    "btts": "Kickoff · 16:00 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 4",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League C · Group C3"
-    ],
-    "awayStats": [
-      "League C · Group C3"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Kazakhstan face Faroe Islands in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "croatia-spain-oct6",
-        "home": "Croatia",
-        "away": "Spain",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "croatia-spain-oct6",
-    "league": "Football · UEFA Nations League",
-    "date": "6 Oct 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Croatia",
-    "away": "Spain",
-    "homeShort": "C",
-    "awayShort": "S",
-    "homeLogo": "https://flagcdn.com/w160/hr.png",
-    "awayLogo": "https://flagcdn.com/w160/es.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Croatia face Spain in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League A · Group A3",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 4",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League A · Group A3"
-    ],
-    "awayStats": [
-      "League A · Group A3"
-    ],
-    "quickInsightTitle": "Featured fixture",
-    "quickInsight": "Croatia host Spain in the headline League A Group A3 fixture on 6 October.",
-    "related": [
-      {
-        "id": "england-czechia-oct6",
-        "home": "England",
-        "away": "Czechia",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "england-czechia-oct6",
-    "league": "Football · UEFA Nations League",
-    "date": "6 Oct 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "England",
-    "away": "Czechia",
-    "homeShort": "E",
-    "awayShort": "C",
-    "homeLogo": "https://flagcdn.com/w160/gb-eng.png",
-    "awayLogo": "https://flagcdn.com/w160/cz.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "England face Czechia in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League A · Group A3",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 4",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League A · Group A3"
-    ],
-    "awayStats": [
-      "League A · Group A3"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "England face Czechia in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "scotland-slovenia-oct6",
-        "home": "Scotland",
-        "away": "Slovenia",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "scotland-slovenia-oct6",
-    "league": "Football · UEFA Nations League",
-    "date": "6 Oct 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Scotland",
-    "away": "Slovenia",
-    "homeShort": "S",
-    "awayShort": "S",
-    "homeLogo": "https://flagcdn.com/w160/gb-sct.png",
-    "awayLogo": "https://flagcdn.com/w160/si.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Scotland face Slovenia in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League B · Group B1",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 4",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League B · Group B1"
-    ],
-    "awayStats": [
-      "League B · Group B1"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Scotland face Slovenia in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "switzerland-north-macedonia-oct6",
-        "home": "Switzerland",
-        "away": "North Macedonia",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "switzerland-north-macedonia-oct6",
-    "league": "Football · UEFA Nations League",
-    "date": "6 Oct 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Switzerland",
-    "away": "North Macedonia",
-    "homeShort": "S",
-    "awayShort": "NM",
-    "homeLogo": "https://flagcdn.com/w160/ch.png",
-    "awayLogo": "https://flagcdn.com/w160/mk.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Switzerland face North Macedonia in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League B · Group B1",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 4",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League B · Group B1"
-    ],
-    "awayStats": [
-      "League B · Group B1"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Switzerland face North Macedonia in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "albania-san-marino-oct6",
-        "home": "Albania",
-        "away": "San Marino",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "albania-san-marino-oct6",
-    "league": "Football · UEFA Nations League",
-    "date": "6 Oct 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Albania",
-    "away": "San Marino",
+    "id": "arsenal-leeds-oct10",
+    "league": "Football · Premier League",
+    "date": "10 Oct 2026",
+    "time": "12:30 BST",
+    "stadium": "Confirmed Premier League fixture",
+    "home": "Arsenal",
+    "away": "Leeds United",
     "homeShort": "A",
-    "awayShort": "SM",
-    "homeLogo": "https://flagcdn.com/w160/al.png",
-    "awayLogo": "https://flagcdn.com/w160/sm.png",
+    "awayShort": "LU",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Albania face San Marino in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C1",
-    "btts": "Kickoff · 20:45 CET",
+    "summary": "Arsenal face Leeds United in Premier League Matchweek 6.",
+    "bestTip": "Confirmed league fixture",
+    "goalsLean": "Matchweek 6",
+    "btts": "Kickoff · 12:30 BST",
     "factors": [
-      "Official UEFA fixture",
-      "Matchday 4",
+      "Confirmed Premier League fixture",
+      "Matchweek 6",
       "No unverified score prediction"
     ],
     "formHome": [],
     "formAway": [],
     "homeStats": [
-      "League C · Group C1"
+      "Matchweek 6"
     ],
     "awayStats": [
-      "League C · Group C1"
+      "Matchweek 6"
     ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Albania face San Marino in a confirmed Nations League fixture.",
+    "quickInsightTitle": "Next Premier League fixture",
+    "quickInsight": "Arsenal face Leeds United in a confirmed Premier League fixture.",
     "related": [
       {
-        "id": "belarus-finland-oct6",
-        "home": "Belarus",
-        "away": "Finland",
-        "league": "UEFA Nations League"
+        "id": "aston-villa-brentford-oct10",
+        "home": "Aston Villa",
+        "away": "Brentford",
+        "league": "Premier League"
       }
     ]
   },
   {
-    "id": "belarus-finland-oct6",
-    "league": "Football · UEFA Nations League",
-    "date": "6 Oct 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Belarus",
-    "away": "Finland",
-    "homeShort": "B",
-    "awayShort": "F",
-    "homeLogo": "https://flagcdn.com/w160/by.png",
-    "awayLogo": "https://flagcdn.com/w160/fi.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Belarus face Finland in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C1",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 4",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League C · Group C1"
-    ],
-    "awayStats": [
-      "League C · Group C1"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Belarus face Finland in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "moldova-slovakia-oct6",
-        "home": "Moldova",
-        "away": "Slovakia",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "moldova-slovakia-oct6",
-    "league": "Football · UEFA Nations League",
-    "date": "6 Oct 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Moldova",
-    "away": "Slovakia",
-    "homeShort": "M",
-    "awayShort": "S",
-    "homeLogo": "https://flagcdn.com/w160/md.png",
-    "awayLogo": "https://flagcdn.com/w160/sk.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Moldova face Slovakia in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C3",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 4",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League C · Group C3"
-    ],
-    "awayStats": [
-      "League C · Group C3"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Moldova face Slovakia in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "estonia-iceland-oct6",
-        "home": "Estonia",
-        "away": "Iceland",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "estonia-iceland-oct6",
-    "league": "Football · UEFA Nations League",
-    "date": "6 Oct 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Estonia",
-    "away": "Iceland",
-    "homeShort": "E",
-    "awayShort": "I",
-    "homeLogo": "https://flagcdn.com/w160/ee.png",
-    "awayLogo": "https://flagcdn.com/w160/is.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Estonia face Iceland in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C4",
-    "btts": "Kickoff · 20:45 CET",
-    "factors": [
-      "Official UEFA fixture",
-      "Matchday 4",
-      "No unverified score prediction"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "League C · Group C4"
-    ],
-    "awayStats": [
-      "League C · Group C4"
-    ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Estonia face Iceland in a confirmed Nations League fixture.",
-    "related": [
-      {
-        "id": "luxembourg-bulgaria-oct6",
-        "home": "Luxembourg",
-        "away": "Bulgaria",
-        "league": "UEFA Nations League"
-      }
-    ]
-  },
-  {
-    "id": "luxembourg-bulgaria-oct6",
-    "league": "Football · UEFA Nations League",
-    "date": "6 Oct 2026",
-    "time": "20:45 CET",
-    "stadium": "Official UEFA fixture",
-    "home": "Luxembourg",
-    "away": "Bulgaria",
-    "homeShort": "L",
+    "id": "aston-villa-brentford-oct10",
+    "league": "Football · Premier League",
+    "date": "10 Oct 2026",
+    "time": "15:00 BST",
+    "stadium": "Confirmed Premier League fixture",
+    "home": "Aston Villa",
+    "away": "Brentford",
+    "homeShort": "AV",
     "awayShort": "B",
-    "homeLogo": "https://flagcdn.com/w160/lu.png",
-    "awayLogo": "https://flagcdn.com/w160/bg.png",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
     "projectedScore": "UPCOMING",
     "homePct": 0,
     "drawPct": 0,
     "awayPct": 0,
     "confidence": 100,
-    "summary": "Luxembourg face Bulgaria in the UEFA Nations League.",
-    "bestTip": "Official UEFA fixture",
-    "goalsLean": "League C · Group C4",
-    "btts": "Kickoff · 20:45 CET",
+    "summary": "Aston Villa face Brentford in Premier League Matchweek 6.",
+    "bestTip": "Confirmed league fixture",
+    "goalsLean": "Matchweek 6",
+    "btts": "Kickoff · 15:00 BST",
     "factors": [
-      "Official UEFA fixture",
-      "Matchday 4",
+      "Confirmed Premier League fixture",
+      "Matchweek 6",
       "No unverified score prediction"
     ],
     "formHome": [],
     "formAway": [],
     "homeStats": [
-      "League C · Group C4"
+      "Matchweek 6"
     ],
     "awayStats": [
-      "League C · Group C4"
+      "Matchweek 6"
     ],
-    "quickInsightTitle": "Confirmed international fixture",
-    "quickInsight": "Luxembourg face Bulgaria in a confirmed Nations League fixture.",
+    "quickInsightTitle": "Confirmed league fixture",
+    "quickInsight": "Aston Villa face Brentford in a confirmed Premier League fixture.",
     "related": [
       {
-        "id": "kazakhstan-faroe-islands-oct6",
-        "home": "Kazakhstan",
-        "away": "Faroe Islands",
-        "league": "UEFA Nations League"
+        "id": "chelsea-bournemouth-oct10",
+        "home": "Chelsea",
+        "away": "Bournemouth",
+        "league": "Premier League"
+      }
+    ]
+  },
+  {
+    "id": "chelsea-bournemouth-oct10",
+    "league": "Football · Premier League",
+    "date": "10 Oct 2026",
+    "time": "15:00 BST",
+    "stadium": "Confirmed Premier League fixture",
+    "home": "Chelsea",
+    "away": "Bournemouth",
+    "homeShort": "C",
+    "awayShort": "B",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Chelsea face Bournemouth in Premier League Matchweek 6.",
+    "bestTip": "Confirmed league fixture",
+    "goalsLean": "Matchweek 6",
+    "btts": "Kickoff · 15:00 BST",
+    "factors": [
+      "Confirmed Premier League fixture",
+      "Matchweek 6",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchweek 6"
+    ],
+    "awayStats": [
+      "Matchweek 6"
+    ],
+    "quickInsightTitle": "Confirmed league fixture",
+    "quickInsight": "Chelsea face Bournemouth in a confirmed Premier League fixture.",
+    "related": [
+      {
+        "id": "ipswich-fulham-oct10",
+        "home": "Ipswich Town",
+        "away": "Fulham",
+        "league": "Premier League"
+      }
+    ]
+  },
+  {
+    "id": "ipswich-fulham-oct10",
+    "league": "Football · Premier League",
+    "date": "10 Oct 2026",
+    "time": "15:00 BST",
+    "stadium": "Confirmed Premier League fixture",
+    "home": "Ipswich Town",
+    "away": "Fulham",
+    "homeShort": "IT",
+    "awayShort": "F",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Ipswich Town face Fulham in Premier League Matchweek 6.",
+    "bestTip": "Confirmed league fixture",
+    "goalsLean": "Matchweek 6",
+    "btts": "Kickoff · 15:00 BST",
+    "factors": [
+      "Confirmed Premier League fixture",
+      "Matchweek 6",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchweek 6"
+    ],
+    "awayStats": [
+      "Matchweek 6"
+    ],
+    "quickInsightTitle": "Confirmed league fixture",
+    "quickInsight": "Ipswich Town face Fulham in a confirmed Premier League fixture.",
+    "related": [
+      {
+        "id": "sunderland-brighton-oct10",
+        "home": "Sunderland",
+        "away": "Brighton",
+        "league": "Premier League"
+      }
+    ]
+  },
+  {
+    "id": "sunderland-brighton-oct10",
+    "league": "Football · Premier League",
+    "date": "10 Oct 2026",
+    "time": "15:00 BST",
+    "stadium": "Confirmed Premier League fixture",
+    "home": "Sunderland",
+    "away": "Brighton",
+    "homeShort": "S",
+    "awayShort": "B",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Sunderland face Brighton in Premier League Matchweek 6.",
+    "bestTip": "Confirmed league fixture",
+    "goalsLean": "Matchweek 6",
+    "btts": "Kickoff · 15:00 BST",
+    "factors": [
+      "Confirmed Premier League fixture",
+      "Matchweek 6",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchweek 6"
+    ],
+    "awayStats": [
+      "Matchweek 6"
+    ],
+    "quickInsightTitle": "Confirmed league fixture",
+    "quickInsight": "Sunderland face Brighton in a confirmed Premier League fixture.",
+    "related": [
+      {
+        "id": "man-utd-tottenham-oct10",
+        "home": "Man United",
+        "away": "Tottenham",
+        "league": "Premier League"
+      }
+    ]
+  },
+  {
+    "id": "man-utd-tottenham-oct10",
+    "league": "Football · Premier League",
+    "date": "10 Oct 2026",
+    "time": "17:30 BST",
+    "stadium": "Confirmed Premier League fixture",
+    "home": "Man United",
+    "away": "Tottenham",
+    "homeShort": "MU",
+    "awayShort": "T",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Man United face Tottenham in Premier League Matchweek 6.",
+    "bestTip": "Confirmed league fixture",
+    "goalsLean": "Matchweek 6",
+    "btts": "Kickoff · 17:30 BST",
+    "factors": [
+      "Confirmed Premier League fixture",
+      "Matchweek 6",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchweek 6"
+    ],
+    "awayStats": [
+      "Matchweek 6"
+    ],
+    "quickInsightTitle": "Confirmed league fixture",
+    "quickInsight": "Man United face Tottenham in a confirmed Premier League fixture.",
+    "related": [
+      {
+        "id": "crystal-palace-nottingham-forest-oct11",
+        "home": "Crystal Palace",
+        "away": "Nottm Forest",
+        "league": "Premier League"
+      }
+    ]
+  },
+  {
+    "id": "crystal-palace-nottingham-forest-oct11",
+    "league": "Football · Premier League",
+    "date": "11 Oct 2026",
+    "time": "14:00 BST",
+    "stadium": "Confirmed Premier League fixture",
+    "home": "Crystal Palace",
+    "away": "Nottm Forest",
+    "homeShort": "CP",
+    "awayShort": "NF",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Crystal Palace face Nottm Forest in Premier League Matchweek 6.",
+    "bestTip": "Confirmed league fixture",
+    "goalsLean": "Matchweek 6",
+    "btts": "Kickoff · 14:00 BST",
+    "factors": [
+      "Confirmed Premier League fixture",
+      "Matchweek 6",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchweek 6"
+    ],
+    "awayStats": [
+      "Matchweek 6"
+    ],
+    "quickInsightTitle": "Confirmed league fixture",
+    "quickInsight": "Crystal Palace face Nottm Forest in a confirmed Premier League fixture.",
+    "related": [
+      {
+        "id": "hull-everton-oct11",
+        "home": "Hull City",
+        "away": "Everton",
+        "league": "Premier League"
+      }
+    ]
+  },
+  {
+    "id": "hull-everton-oct11",
+    "league": "Football · Premier League",
+    "date": "11 Oct 2026",
+    "time": "14:00 BST",
+    "stadium": "Confirmed Premier League fixture",
+    "home": "Hull City",
+    "away": "Everton",
+    "homeShort": "HC",
+    "awayShort": "E",
+    "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Hull City face Everton in Premier League Matchweek 6.",
+    "bestTip": "Confirmed league fixture",
+    "goalsLean": "Matchweek 6",
+    "btts": "Kickoff · 14:00 BST",
+    "factors": [
+      "Confirmed Premier League fixture",
+      "Matchweek 6",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchweek 6"
+    ],
+    "awayStats": [
+      "Matchweek 6"
+    ],
+    "quickInsightTitle": "Confirmed league fixture",
+    "quickInsight": "Hull City face Everton in a confirmed Premier League fixture.",
+    "related": [
+      {
+        "id": "liverpool-man-city-oct11",
+        "home": "Liverpool",
+        "away": "Man City",
+        "league": "Premier League"
+      }
+    ]
+  },
+  {
+    "id": "liverpool-man-city-oct11",
+    "league": "Football · Premier League",
+    "date": "11 Oct 2026",
+    "time": "16:30 BST",
+    "stadium": "Confirmed Premier League fixture",
+    "home": "Liverpool",
+    "away": "Man City",
+    "homeShort": "L",
+    "awayShort": "MC",
+    "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Liverpool face Man City in Premier League Matchweek 6.",
+    "bestTip": "Confirmed league fixture",
+    "goalsLean": "Matchweek 6",
+    "btts": "Kickoff · 16:30 BST",
+    "factors": [
+      "Confirmed Premier League fixture",
+      "Matchweek 6",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchweek 6"
+    ],
+    "awayStats": [
+      "Matchweek 6"
+    ],
+    "quickInsightTitle": "Confirmed league fixture",
+    "quickInsight": "Liverpool face Man City in a confirmed Premier League fixture.",
+    "related": [
+      {
+        "id": "coventry-newcastle-oct12",
+        "home": "Coventry City",
+        "away": "Newcastle",
+        "league": "Premier League"
+      }
+    ]
+  },
+  {
+    "id": "coventry-newcastle-oct12",
+    "league": "Football · Premier League",
+    "date": "12 Oct 2026",
+    "time": "20:00 BST",
+    "stadium": "Confirmed Premier League fixture",
+    "home": "Coventry City",
+    "away": "Newcastle",
+    "homeShort": "CC",
+    "awayShort": "N",
+    "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
+    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "summary": "Coventry City face Newcastle in Premier League Matchweek 6.",
+    "bestTip": "Confirmed league fixture",
+    "goalsLean": "Matchweek 6",
+    "btts": "Kickoff · 20:00 BST",
+    "factors": [
+      "Confirmed Premier League fixture",
+      "Matchweek 6",
+      "No unverified score prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchweek 6"
+    ],
+    "awayStats": [
+      "Matchweek 6"
+    ],
+    "quickInsightTitle": "Confirmed league fixture",
+    "quickInsight": "Coventry City face Newcastle in a confirmed Premier League fixture.",
+    "related": [
+      {
+        "id": "arsenal-leeds-oct10",
+        "home": "Arsenal",
+        "away": "Leeds United",
+        "league": "Premier League"
       }
     ]
   }
