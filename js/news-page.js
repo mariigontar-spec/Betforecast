@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 6 Oct 2026";
+  if (k) k.textContent = "World Sports News · 7 Oct 2026";
   if (t) t.textContent = "UEFA Nations League · Matchday 2";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=croatia-spain-oct6">Croatia–Spain</a><a class="sidebar-link-card" href="match.html?id=england-czechia-oct6">England–Czechia</a><a class="sidebar-link-card" href="match.html?id=estonia-iceland-oct6">Estonia–Iceland</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Nations League results</a><a class="sidebar-link-card" href="match.html?id=arsenal-leeds-oct10">Arsenal–Leeds</a><a class="sidebar-link-card" href="match.html?id=liverpool-man-city-oct11">Liverpool–Man City</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Croatia–Spain leads ten Nations League fixtures on 6 October, with England–Czechia and Estonia–Iceland also in focus. Verified results from 5 October include France 4-1 Belgium, Italy 3-1 Türkiye and Ukraine 0-1 Hungary.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Spain beat Croatia 2-1 and England beat Czechia 3-0 as the 6 October Nations League round concluded. Nine final scores were independently confirmed; Premier League Matchweek 6 begins on 10 October.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
