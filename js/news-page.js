@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 7 Oct 2026";
+  if (k) k.textContent = "World Sports News · 8 Oct 2026";
   if (t) t.textContent = "UEFA Nations League · Matchday 2";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -51,7 +51,7 @@ function updateNewsPageLabels() {
     tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Nations League results</a><a class="sidebar-link-card" href="match.html?id=arsenal-leeds-oct10">Arsenal–Leeds</a><a class="sidebar-link-card" href="match.html?id=liverpool-man-city-oct11">Liverpool–Man City</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Spain beat Croatia 2-1 and England beat Czechia 3-0 as the 6 October Nations League round concluded. Nine final scores were independently confirmed; Premier League Matchweek 6 begins on 10 October.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Arsenal confirmed a new long-term contract for Mikel Arteta as the champions prepare to host Leeds on 10 October. The Singapore Grand Prix weekend opens on 9 October, while Manchester City remain top of the Premier League after five matches.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
