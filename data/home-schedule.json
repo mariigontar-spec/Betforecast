@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-08T00:02:00+03:00",
+  "updatedAt": "2026-10-09T00:05:00+03:00",
   "featuredId": "arsenal-leeds-oct10",
   "events": [
+    {
+      "id": "singapore-gp-oct9",
+      "type": "event",
+      "sport": "Formula 1",
+      "date": "9 Oct",
+      "time": "16:30 local",
+      "title": "Singapore Grand Prix — Practice & Sprint Qualifying",
+      "competition": "Formula 1",
+      "stage": "Marina Bay · Round 17",
+      "status": "Today",
+      "signals": [
+        "Official Formula 1 schedule",
+        "Sprint weekend"
+      ]
+    },
     {
       "id": "arsenal-leeds-oct10",
       "type": "event",
