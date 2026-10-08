@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 8 Oct 2026";
+  if (k) k.textContent = "World Sports News · 9 Oct 2026";
   if (t) t.textContent = "UEFA Nations League · Matchday 2";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -51,7 +51,7 @@ function updateNewsPageLabels() {
     tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Nations League results</a><a class="sidebar-link-card" href="match.html?id=arsenal-leeds-oct10">Arsenal–Leeds</a><a class="sidebar-link-card" href="match.html?id=liverpool-man-city-oct11">Liverpool–Man City</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Arsenal confirmed a new long-term contract for Mikel Arteta as the champions prepare to host Leeds on 10 October. The Singapore Grand Prix weekend opens on 9 October, while Manchester City remain top of the Premier League after five matches.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The Singapore Grand Prix begins today with practice at 16:30 and sprint qualifying at 20:30 local time. Arsenal host unbeaten Leeds on 10 October, while Liverpool meet league leaders Manchester City on Sunday.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
