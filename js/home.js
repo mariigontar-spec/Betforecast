@@ -38,14 +38,14 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "The Singapore Grand Prix weekend starts on 9 October, followed by the Premier League return with Arsenal–Leeds on 10 October.";
+        "The Singapore Grand Prix begins today with practice and sprint qualifying; the Premier League returns tomorrow with Arsenal–Leeds.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>9 Oct</strong><span>Singapore GP · practice and sprint qualifying</span></div>
+        <div><strong>Today</strong><span>Singapore GP · practice 16:30 local</span></div>
+        <div><strong>Today</strong><span>Sprint qualifying · 20:30 local</span></div>
         <div><strong>10 Oct</strong><span>Arsenal–Leeds · 12:30 BST</span></div>
-        <div><strong>11 Oct</strong><span>Liverpool–Man City · 16:30 BST</span></div>
       `;
     }
 
@@ -65,7 +65,7 @@
     const lines = document.querySelectorAll(".competition-line");
     const content = [
       { href: "match.html?id=arsenal-leeds-oct10", title: "Arsenal vs Leeds United", detail: "10 October · Premier League · 12:30 BST", tag: "Next" },
-      { href: "sports.html", title: "Singapore Grand Prix weekend", detail: "9–11 October · Formula 1 · Marina Bay", tag: "F1" },
+      { href: "sports.html", title: "Singapore Grand Prix", detail: "Today · Practice 16:30 · Sprint qualifying 20:30 local", tag: "Today" },
       { href: "match.html?id=liverpool-man-city-oct11", title: "Liverpool vs Man City", detail: "11 October · Premier League · 16:30 BST", tag: "Spotlight" },
       { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
     ];
