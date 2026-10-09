@@ -38,14 +38,14 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "The Singapore Grand Prix begins today with practice and sprint qualifying; the Premier League returns tomorrow with Arsenal–Leeds.";
+        "Premier League Matchweek 6 begins today with Arsenal–Leeds, while Singapore hosts the Formula 1 Sprint and Grand Prix qualifying.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Today</strong><span>Singapore GP · practice 16:30 local</span></div>
-        <div><strong>Today</strong><span>Sprint qualifying · 20:30 local</span></div>
-        <div><strong>10 Oct</strong><span>Arsenal–Leeds · 12:30 BST</span></div>
+        <div><strong>Today</strong><span>Arsenal–Leeds · 12:30 BST</span></div>
+        <div><strong>Today</strong><span>Man United–Tottenham · 17:30 BST</span></div>
+        <div><strong>Today</strong><span>Singapore GP · Sprint 17:00 · Qualifying 21:00 local</span></div>
       `;
     }
 
@@ -64,8 +64,8 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=arsenal-leeds-oct10", title: "Arsenal vs Leeds United", detail: "10 October · Premier League · 12:30 BST", tag: "Next" },
-      { href: "sports.html", title: "Singapore Grand Prix", detail: "Today · Practice 16:30 · Sprint qualifying 20:30 local", tag: "Today" },
+      { href: "match.html?id=arsenal-leeds-oct10", title: "Arsenal vs Leeds United", detail: "Today · Premier League · 12:30 BST", tag: "Today" },
+      { href: "sports.html", title: "Singapore Grand Prix", detail: "Today · Sprint 17:00 · Qualifying 21:00 local", tag: "Today" },
       { href: "match.html?id=liverpool-man-city-oct11", title: "Liverpool vs Man City", detail: "11 October · Premier League · 16:30 BST", tag: "Spotlight" },
       { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
     ];
