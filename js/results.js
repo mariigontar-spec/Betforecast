@@ -4,6 +4,8 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Formula 1 · Singapore GP Practice", status: "FINAL", homeName: "George Russell", awayName: "Fastest lap", homeGoals: "P1", awayGoals: "1:32.274", venue: "Marina Bay", date: "9 Oct", href: "sports.html" },
+    { round: "Formula 1 · Singapore Sprint Qualifying", status: "FINAL", homeName: "Max Verstappen", awayName: "Pole time", homeGoals: "P1", awayGoals: "1:31.156", venue: "Marina Bay", date: "9 Oct", href: "sports.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Kazakhstan", awayName: "Faroe Islands", homeGoals: "2", awayGoals: "2", venue: "UEFA Nations League", date: "6 Oct", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "Croatia", awayName: "Spain", homeGoals: "1", awayGoals: "2", venue: "UEFA Nations League", date: "6 Oct", href: "results.html" },
     { round: "Football · UEFA Nations League", status: "FINAL", homeName: "England", awayName: "Czechia", homeGoals: "3", awayGoals: "0", venue: "UEFA Nations League", date: "6 Oct", href: "results.html" },
@@ -120,7 +122,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 9 Oct 2026");
+    setStatus("World sports results · checked 10 Oct 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -130,7 +132,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "All eight Nations League results from 4 October are verified, including Portugal’s 2-1 win over Norway, the Netherlands’ 2-1 win over Serbia, Denmark’s 1-0 win in Wales and Greece’s 0-0 draw with Germany.";
+    if (intro) intro.textContent = "Friday’s Singapore Grand Prix sessions are verified: George Russell led practice in 1:32.274 and Max Verstappen took sprint pole in 1:31.156. The latest football results remain the confirmed Nations League finals from 6 October.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
