@@ -1,31 +1,16 @@
 {
-  "updatedAt": "2026-10-10T00:02:00+03:00",
-  "featuredId": "arsenal-leeds-oct10",
+  "updatedAt": "2026-10-11T00:06:00+03:00",
+  "featuredId": "liverpool-man-city-oct11",
   "events": [
     {
-      "id": "singapore-gp-oct10",
-      "type": "event",
-      "sport": "Formula 1",
-      "date": "10 Oct",
-      "time": "17:00 / 21:00 local",
-      "title": "Singapore Grand Prix — Sprint & Qualifying",
-      "competition": "Formula 1",
-      "stage": "Marina Bay · Round 17",
-      "status": "Today",
-      "signals": [
-        "Official Formula 1 schedule",
-        "Verstappen starts Sprint from pole"
-      ]
-    },
-    {
-      "id": "arsenal-leeds-oct10",
+      "id": "liverpool-man-city-oct11",
       "type": "event",
       "sport": "Football",
-      "date": "10 Oct",
-      "time": "12:30 BST",
-      "title": "Arsenal vs Leeds United",
-      "home": "Arsenal",
-      "away": "Leeds United",
+      "date": "11 Oct",
+      "time": "16:30 BST",
+      "title": "Liverpool vs Man City",
+      "home": "Liverpool",
+      "away": "Man City",
       "competition": "Premier League",
       "stage": "Matchweek 6",
       "status": "Today",
@@ -33,103 +18,8 @@
         "Confirmed league fixture",
         "Matchweek 6"
       ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
-    },
-    {
-      "id": "aston-villa-brentford-oct10",
-      "type": "event",
-      "sport": "Football",
-      "date": "10 Oct",
-      "time": "15:00 BST",
-      "title": "Aston Villa vs Brentford",
-      "home": "Aston Villa",
-      "away": "Brentford",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
-      "status": "Today",
-      "signals": [
-        "Confirmed league fixture",
-        "Matchweek 6"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
-    },
-    {
-      "id": "chelsea-bournemouth-oct10",
-      "type": "event",
-      "sport": "Football",
-      "date": "10 Oct",
-      "time": "15:00 BST",
-      "title": "Chelsea vs Bournemouth",
-      "home": "Chelsea",
-      "away": "Bournemouth",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
-      "status": "Today",
-      "signals": [
-        "Confirmed league fixture",
-        "Matchweek 6"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
-    },
-    {
-      "id": "ipswich-fulham-oct10",
-      "type": "event",
-      "sport": "Football",
-      "date": "10 Oct",
-      "time": "15:00 BST",
-      "title": "Ipswich Town vs Fulham",
-      "home": "Ipswich Town",
-      "away": "Fulham",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
-      "status": "Today",
-      "signals": [
-        "Confirmed league fixture",
-        "Matchweek 6"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png"
-    },
-    {
-      "id": "sunderland-brighton-oct10",
-      "type": "event",
-      "sport": "Football",
-      "date": "10 Oct",
-      "time": "15:00 BST",
-      "title": "Sunderland vs Brighton",
-      "home": "Sunderland",
-      "away": "Brighton",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
-      "status": "Today",
-      "signals": [
-        "Confirmed league fixture",
-        "Matchweek 6"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
-    },
-    {
-      "id": "man-utd-tottenham-oct10",
-      "type": "event",
-      "sport": "Football",
-      "date": "10 Oct",
-      "time": "17:30 BST",
-      "title": "Man United vs Tottenham",
-      "home": "Man United",
-      "away": "Tottenham",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
-      "status": "Today",
-      "signals": [
-        "Confirmed league fixture",
-        "Matchweek 6"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
     },
     {
       "id": "crystal-palace-nottingham-forest-oct11",
@@ -142,7 +32,7 @@
       "away": "Nottm Forest",
       "competition": "Premier League",
       "stage": "Matchweek 6",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Confirmed league fixture",
         "Matchweek 6"
@@ -161,7 +51,7 @@
       "away": "Everton",
       "competition": "Premier League",
       "stage": "Matchweek 6",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Confirmed league fixture",
         "Matchweek 6"
@@ -170,23 +60,19 @@
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
     },
     {
-      "id": "liverpool-man-city-oct11",
+      "id": "singapore-gp-oct11",
       "type": "event",
-      "sport": "Football",
+      "sport": "Formula 1",
       "date": "11 Oct",
-      "time": "16:30 BST",
-      "title": "Liverpool vs Man City",
-      "home": "Liverpool",
-      "away": "Man City",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
-      "status": "Upcoming",
+      "time": "20:00 local",
+      "title": "Singapore Grand Prix",
+      "competition": "Formula 1",
+      "stage": "Marina Bay · Round 17",
+      "status": "Today",
       "signals": [
-        "Confirmed league fixture",
-        "Matchweek 6"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
+        "Official Formula 1 schedule",
+        "Verstappen starts from pole"
+      ]
     },
     {
       "id": "coventry-newcastle-oct12",
@@ -206,6 +92,154 @@
       ],
       "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+    },
+    {
+      "id": "man-utd-tottenham-oct10",
+      "type": "result",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "Final",
+      "title": "Man United 1-1 Tottenham",
+      "home": "Man United",
+      "away": "Tottenham",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Result",
+      "signals": [
+        "Final score verified",
+        "Premier League · Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
+    },
+    {
+      "id": "sunderland-brighton-oct10",
+      "type": "result",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "Final",
+      "title": "Sunderland 0-2 Brighton",
+      "home": "Sunderland",
+      "away": "Brighton",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Result",
+      "signals": [
+        "Final score verified",
+        "Premier League · Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
+    },
+    {
+      "id": "ipswich-fulham-oct10",
+      "type": "result",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "Final",
+      "title": "Ipswich Town 2-1 Fulham",
+      "home": "Ipswich Town",
+      "away": "Fulham",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Result",
+      "signals": [
+        "Final score verified",
+        "Premier League · Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png"
+    },
+    {
+      "id": "chelsea-bournemouth-oct10",
+      "type": "result",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "Final",
+      "title": "Chelsea 5-1 Bournemouth",
+      "home": "Chelsea",
+      "away": "Bournemouth",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Result",
+      "signals": [
+        "Final score verified",
+        "Premier League · Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
+    },
+    {
+      "id": "aston-villa-brentford-oct10",
+      "type": "result",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "Final",
+      "title": "Aston Villa 2-2 Brentford",
+      "home": "Aston Villa",
+      "away": "Brentford",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Result",
+      "signals": [
+        "Final score verified",
+        "Premier League · Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
+    },
+    {
+      "id": "arsenal-leeds-oct10",
+      "type": "result",
+      "sport": "Football",
+      "date": "10 Oct",
+      "time": "Final",
+      "title": "Arsenal 2-1 Leeds United",
+      "home": "Arsenal",
+      "away": "Leeds United",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Result",
+      "signals": [
+        "Final score verified",
+        "Premier League · Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
+    },
+    {
+      "id": "singapore-sprint-result-oct10",
+      "type": "result",
+      "sport": "Formula 1",
+      "date": "10 Oct",
+      "time": "Final",
+      "title": "Max Verstappen wins Singapore Sprint",
+      "home": "Max Verstappen",
+      "away": "Lewis Hamilton",
+      "competition": "Formula 1",
+      "stage": "Singapore Grand Prix · Sprint",
+      "status": "Result",
+      "signals": [
+        "Official result",
+        "Verstappen P1 · Hamilton P2"
+      ]
+    },
+    {
+      "id": "singapore-qualifying-result-oct10",
+      "type": "result",
+      "sport": "Formula 1",
+      "date": "10 Oct",
+      "time": "Final",
+      "title": "Max Verstappen takes Singapore Grand Prix pole",
+      "home": "Max Verstappen",
+      "away": "Charles Leclerc",
+      "competition": "Formula 1",
+      "stage": "Singapore Grand Prix · Qualifying",
+      "status": "Result",
+      "signals": [
+        "Official result",
+        "Pole 1:31.373 · Leclerc P2"
+      ]
     },
     {
       "id": "singapore-practice-result-oct9",
