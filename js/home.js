@@ -38,14 +38,14 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Premier League Matchweek 6 begins today with Arsenal–Leeds, while Singapore hosts the Formula 1 Sprint and Grand Prix qualifying.";
+        "Sunday’s headline is Liverpool–Manchester City, with two more Premier League fixtures and the Singapore Grand Prix also live today.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Today</strong><span>Arsenal–Leeds · 12:30 BST</span></div>
-        <div><strong>Today</strong><span>Man United–Tottenham · 17:30 BST</span></div>
-        <div><strong>Today</strong><span>Singapore GP · Sprint 17:00 · Qualifying 21:00 local</span></div>
+        <div><strong>Today</strong><span>Liverpool–Man City · 16:30 BST</span></div>
+        <div><strong>Today</strong><span>Palace–Nottm Forest · 14:00 BST</span></div>
+        <div><strong>Today</strong><span>Singapore Grand Prix · 20:00 local</span></div>
       `;
     }
 
@@ -64,10 +64,10 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=arsenal-leeds-oct10", title: "Arsenal vs Leeds United", detail: "Today · Premier League · 12:30 BST", tag: "Today" },
-      { href: "sports.html", title: "Singapore Grand Prix", detail: "Today · Sprint 17:00 · Qualifying 21:00 local", tag: "Today" },
-      { href: "match.html?id=liverpool-man-city-oct11", title: "Liverpool vs Man City", detail: "11 October · Premier League · 16:30 BST", tag: "Spotlight" },
-      { href: "standings.html", title: "Premier League · Matchweek 5 complete", detail: "Table and Recent verified · next round 10 October", tag: "Table" },
+      { href: "match.html?id=liverpool-man-city-oct11", title: "Liverpool vs Man City", detail: "Today · Premier League · 16:30 BST", tag: "Featured" },
+      { href: "sports.html", title: "Singapore Grand Prix", detail: "Today · Race · 20:00 local", tag: "Today" },
+      { href: "match.html?id=crystal-palace-nottingham-forest-oct11", title: "Crystal Palace vs Nottm Forest", detail: "Today · Premier League · 14:00 BST", tag: "Today" },
+      { href: "standings.html", title: "Premier League · Matchweek 6 in progress", detail: "Six results added · four fixtures remain", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
