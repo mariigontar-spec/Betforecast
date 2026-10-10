@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 10 Oct 2026";
+  if (k) k.textContent = "World Sports News · 11 Oct 2026";
   if (t) t.textContent = "UEFA Nations League · Matchday 2";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Nations League results</a><a class="sidebar-link-card" href="match.html?id=arsenal-leeds-oct10">Arsenal–Leeds</a><a class="sidebar-link-card" href="match.html?id=liverpool-man-city-oct11">Liverpool–Man City</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Saturday’s verified results</a><a class="sidebar-link-card" href="match.html?id=liverpool-man-city-oct11">Liverpool–Man City</a><a class="sidebar-link-card" href="sports.html">Singapore Grand Prix</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table updated</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Premier League Matchweek 6 starts today with Arsenal–Leeds and closes with Man United–Tottenham. Singapore hosts the Formula 1 Sprint at 17:00 and qualifying at 21:00 local time; Max Verstappen starts the Sprint from pole.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Saturday’s six Premier League results are verified. Liverpool host leaders Manchester City today, while Max Verstappen starts the Singapore Grand Prix from pole after winning the Sprint.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
