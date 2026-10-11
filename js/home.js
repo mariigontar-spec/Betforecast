@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Sunday’s headline is Liverpool–Manchester City, with two more Premier League fixtures and the Singapore Grand Prix also live today.";
+        "Monday’s featured match is Coventry City–Newcastle. Sunday’s Premier League and Singapore Grand Prix results are now verified.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Today</strong><span>Liverpool–Man City · 16:30 BST</span></div>
-        <div><strong>Today</strong><span>Palace–Nottm Forest · 14:00 BST</span></div>
-        <div><strong>Today</strong><span>Singapore Grand Prix · 20:00 local</span></div>
+        <div><strong>Today</strong><span>Coventry–Newcastle · 20:00 BST</span></div>
+        <div><strong>Result</strong><span>Liverpool 0–3 Man City</span></div>
+        <div><strong>Result</strong><span>Verstappen wins in Singapore</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Singapore GP, Arsenal, Leeds, Liverpool";
+      input.placeholder = "Try: Coventry, Newcastle, Man City, Verstappen";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Arsenal Leeds">Arsenal–Leeds</button>
-        <button type="button" data-query="Formula 1 Singapore">Singapore GP</button>
-        <button type="button" data-query="Liverpool Man City">Liverpool–Man City</button>
+        <button type="button" data-query="Coventry Newcastle">Coventry–Newcastle</button>
+        <button type="button" data-query="Formula 1 Singapore">Singapore GP result</button>
+        <button type="button" data-query="Manchester City">Man City</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=liverpool-man-city-oct11", title: "Liverpool vs Man City", detail: "Today · Premier League · 16:30 BST", tag: "Featured" },
-      { href: "sports.html", title: "Singapore Grand Prix", detail: "Today · Race · 20:00 local", tag: "Today" },
-      { href: "match.html?id=crystal-palace-nottingham-forest-oct11", title: "Crystal Palace vs Nottm Forest", detail: "Today · Premier League · 14:00 BST", tag: "Today" },
-      { href: "standings.html", title: "Premier League · Matchweek 6 in progress", detail: "Six results added · four fixtures remain", tag: "Table" },
+      { href: "match.html?id=coventry-newcastle-oct12", title: "Coventry City vs Newcastle", detail: "Today · Premier League · 20:00 BST", tag: "Featured" },
+      { href: "results.html", title: "Liverpool 0-3 Man City", detail: "Final · Premier League · 11 Oct", tag: "Result" },
+      { href: "sports.html", title: "Verstappen wins Singapore GP", detail: "Final · Leclerc P2 · Antonelli P3", tag: "F1" },
+      { href: "standings.html", title: "Premier League · Matchweek 6 finale", detail: "Nine results added · one fixture remains", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
