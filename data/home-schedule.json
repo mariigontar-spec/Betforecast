@@ -1,79 +1,7 @@
 {
-  "updatedAt": "2026-10-11T00:06:00+03:00",
-  "featuredId": "liverpool-man-city-oct11",
+  "updatedAt": "2026-10-12T00:03:00+03:00",
+  "featuredId": "coventry-newcastle-oct12",
   "events": [
-    {
-      "id": "liverpool-man-city-oct11",
-      "type": "event",
-      "sport": "Football",
-      "date": "11 Oct",
-      "time": "16:30 BST",
-      "title": "Liverpool vs Man City",
-      "home": "Liverpool",
-      "away": "Man City",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
-      "status": "Today",
-      "signals": [
-        "Confirmed league fixture",
-        "Matchweek 6"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
-    },
-    {
-      "id": "crystal-palace-nottingham-forest-oct11",
-      "type": "event",
-      "sport": "Football",
-      "date": "11 Oct",
-      "time": "14:00 BST",
-      "title": "Crystal Palace vs Nottm Forest",
-      "home": "Crystal Palace",
-      "away": "Nottm Forest",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
-      "status": "Today",
-      "signals": [
-        "Confirmed league fixture",
-        "Matchweek 6"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png"
-    },
-    {
-      "id": "hull-everton-oct11",
-      "type": "event",
-      "sport": "Football",
-      "date": "11 Oct",
-      "time": "14:00 BST",
-      "title": "Hull City vs Everton",
-      "home": "Hull City",
-      "away": "Everton",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
-      "status": "Today",
-      "signals": [
-        "Confirmed league fixture",
-        "Matchweek 6"
-      ],
-      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
-    },
-    {
-      "id": "singapore-gp-oct11",
-      "type": "event",
-      "sport": "Formula 1",
-      "date": "11 Oct",
-      "time": "20:00 local",
-      "title": "Singapore Grand Prix",
-      "competition": "Formula 1",
-      "stage": "Marina Bay · Round 17",
-      "status": "Today",
-      "signals": [
-        "Official Formula 1 schedule",
-        "Verstappen starts from pole"
-      ]
-    },
     {
       "id": "coventry-newcastle-oct12",
       "type": "event",
@@ -85,13 +13,277 @@
       "away": "Newcastle",
       "competition": "Premier League",
       "stage": "Matchweek 6",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Confirmed league fixture",
-        "Matchweek 6"
+        "Today · Matchweek 6"
       ],
       "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+    },
+    {
+      "id": "everton-chelsea-oct17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Oct",
+      "time": "12:30 BST",
+      "title": "Everton vs Chelsea",
+      "home": "Everton",
+      "away": "Chelsea",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 7"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
+    },
+    {
+      "id": "brentford-liverpool-oct17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Oct",
+      "time": "15:00 BST",
+      "title": "Brentford vs Liverpool",
+      "home": "Brentford",
+      "away": "Liverpool",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 7"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
+    },
+    {
+      "id": "fulham-hull-oct17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Oct",
+      "time": "15:00 BST",
+      "title": "Fulham vs Hull City",
+      "home": "Fulham",
+      "away": "Hull City",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 7"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
+      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png"
+    },
+    {
+      "id": "man-city-ipswich-oct17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Oct",
+      "time": "15:00 BST",
+      "title": "Man City vs Ipswich Town",
+      "home": "Man City",
+      "away": "Ipswich Town",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 7"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png"
+    },
+    {
+      "id": "newcastle-aston-villa-oct17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Oct",
+      "time": "17:30 BST",
+      "title": "Newcastle vs Aston Villa",
+      "home": "Newcastle",
+      "away": "Aston Villa",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 7"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
+    },
+    {
+      "id": "bournemouth-sunderland-oct18",
+      "type": "event",
+      "sport": "Football",
+      "date": "18 Oct",
+      "time": "14:00 BST",
+      "title": "Bournemouth vs Sunderland",
+      "home": "Bournemouth",
+      "away": "Sunderland",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 7"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png"
+    },
+    {
+      "id": "brighton-crystal-palace-oct18",
+      "type": "event",
+      "sport": "Football",
+      "date": "18 Oct",
+      "time": "14:00 BST",
+      "title": "Brighton vs Crystal Palace",
+      "home": "Brighton",
+      "away": "Crystal Palace",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 7"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png"
+    },
+    {
+      "id": "leeds-man-united-oct18",
+      "type": "event",
+      "sport": "Football",
+      "date": "18 Oct",
+      "time": "14:00 BST",
+      "title": "Leeds United vs Man United",
+      "home": "Leeds United",
+      "away": "Man United",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 7"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
+    },
+    {
+      "id": "nottingham-forest-arsenal-oct18",
+      "type": "event",
+      "sport": "Football",
+      "date": "18 Oct",
+      "time": "16:30 BST",
+      "title": "Nottm Forest vs Arsenal",
+      "home": "Nottm Forest",
+      "away": "Arsenal",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 7"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+    },
+    {
+      "id": "tottenham-coventry-oct19",
+      "type": "event",
+      "sport": "Football",
+      "date": "19 Oct",
+      "time": "20:00 BST",
+      "title": "Tottenham vs Coventry City",
+      "home": "Tottenham",
+      "away": "Coventry City",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 7"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png"
+    },
+    {
+      "id": "liverpool-man-city-oct11",
+      "type": "result",
+      "sport": "Football",
+      "date": "11 Oct",
+      "time": "Final",
+      "title": "Liverpool 0-3 Man City",
+      "home": "Liverpool",
+      "away": "Man City",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Result",
+      "signals": [
+        "Final score verified",
+        "Haaland · Doku · Cherki"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
+    },
+    {
+      "id": "crystal-palace-nottingham-forest-oct11",
+      "type": "result",
+      "sport": "Football",
+      "date": "11 Oct",
+      "time": "Final",
+      "title": "Crystal Palace 3-1 Nottm Forest",
+      "home": "Crystal Palace",
+      "away": "Nottm Forest",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Result",
+      "signals": [
+        "Final score verified",
+        "Premier League · Matchweek 6"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png"
+    },
+    {
+      "id": "hull-everton-oct11",
+      "type": "result",
+      "sport": "Football",
+      "date": "11 Oct",
+      "time": "Final",
+      "title": "Hull City 2-2 Everton",
+      "home": "Hull City",
+      "away": "Everton",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Result",
+      "signals": [
+        "Final score verified",
+        "Premier League · Matchweek 6"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
+    },
+    {
+      "id": "singapore-gp-oct11",
+      "type": "result",
+      "sport": "Formula 1",
+      "date": "11 Oct",
+      "time": "Final",
+      "title": "Max Verstappen wins Singapore Grand Prix",
+      "competition": "Formula 1",
+      "stage": "Marina Bay · Round 17",
+      "status": "Result",
+      "signals": [
+        "Official race result",
+        "Verstappen P1 · Leclerc P2 · Antonelli P3"
+      ],
+      "home": "Max Verstappen",
+      "away": "Charles Leclerc"
     },
     {
       "id": "man-utd-tottenham-oct10",
