@@ -4,6 +4,10 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League", status: "FINAL", homeName: "Liverpool", awayName: "Manchester City", homeGoals: "0", awayGoals: "3", venue: "Anfield", date: "11 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Crystal Palace", awayName: "Nottingham Forest", homeGoals: "3", awayGoals: "1", venue: "Selhurst Park", date: "11 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Hull City", awayName: "Everton", homeGoals: "2", awayGoals: "2", venue: "MKM Stadium", date: "11 Oct", href: "standings.html" },
+    { round: "Formula 1 · Singapore Grand Prix", status: "FINAL", homeName: "Max Verstappen", awayName: "Charles Leclerc", homeGoals: "P1", awayGoals: "P2", venue: "Marina Bay", date: "11 Oct", href: "sports.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Manchester United", awayName: "Tottenham Hotspur", homeGoals: "1", awayGoals: "1", venue: "Old Trafford", date: "10 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Sunderland", awayName: "Brighton", homeGoals: "0", awayGoals: "2", venue: "Stadium of Light", date: "10 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Ipswich Town", awayName: "Fulham", homeGoals: "2", awayGoals: "1", venue: "Portman Road", date: "10 Oct", href: "standings.html" },
@@ -130,7 +134,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 11 Oct 2026");
+    setStatus("World sports results · checked 12 Oct 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -140,7 +144,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Six Premier League results from 10 October are verified, including Arsenal’s 2-1 win over Leeds and Chelsea’s 5-1 win over Bournemouth. Max Verstappen won the Singapore Sprint and took pole for Sunday’s Grand Prix.";
+    if (intro) intro.textContent = "Sunday’s Premier League results are verified: Man City won 3-0 at Liverpool, Crystal Palace beat Nottm Forest 3-1 and Hull drew 2-2 with Everton. Max Verstappen won the Singapore Grand Prix from pole.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
