@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 11 Oct 2026";
-  if (t) t.textContent = "UEFA Nations League · Matchday 2";
+  if (k) k.textContent = "World Sports News · 12 Oct 2026";
+  if (t) t.textContent = "Premier League · Matchweek 6 finale";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Saturday’s verified results</a><a class="sidebar-link-card" href="match.html?id=liverpool-man-city-oct11">Liverpool–Man City</a><a class="sidebar-link-card" href="sports.html">Singapore Grand Prix</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table updated</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Man City win at Anfield</a><a class="sidebar-link-card" href="match.html?id=coventry-newcastle-oct12">Coventry–Newcastle</a><a class="sidebar-link-card" href="sports.html">Verstappen wins Singapore GP</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table updated</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Saturday’s six Premier League results are verified. Liverpool host leaders Manchester City today, while Max Verstappen starts the Singapore Grand Prix from pole after winning the Sprint.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Manchester City won 3-0 at Liverpool and now lead the Premier League with 18 points. Max Verstappen won the Singapore Grand Prix; Coventry City host Newcastle today.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
