@@ -1,5 +1,56 @@
 [
   {
+    "id": "bf-20261012-city-liverpool",
+    "category": "Football",
+    "title": "Manchester City win 3-0 at Liverpool and stay perfect",
+    "excerpt": "Second-half goals from Erling Haaland, Jeremy Doku and Rayan Cherki gave City a sixth league win from six.",
+    "time": "Latest",
+    "date": "2026-10-11T17:34:04.000Z",
+    "readTime": "2 min read",
+    "image": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/man-city-silence-hostile-anfield-with-3-0-win-over-liverpool-2026-10-11/",
+    "content": [
+      "Manchester City beat Liverpool 3-0 at Anfield after Ryan Gravenberch was sent off in the second half.",
+      "Erling Haaland, Jeremy Doku and Rayan Cherki scored as City extended their perfect Premier League start.",
+      "Source: Reuters, 11 October 2026."
+    ]
+  },
+  {
+    "id": "bf-20261012-singapore-gp",
+    "category": "Formula 1",
+    "title": "Verstappen wins Singapore Grand Prix from pole",
+    "excerpt": "Max Verstappen led Charles Leclerc and Kimi Antonelli home for his first Singapore Grand Prix victory.",
+    "time": "Latest",
+    "date": "2026-10-11T13:54:56.000Z",
+    "readTime": "2 min read",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/formula1/red-bulls-verstappen-wins-singapore-grand-prix-2026-10-11/",
+    "content": [
+      "Max Verstappen won the 2026 Singapore Grand Prix from pole position.",
+      "Charles Leclerc finished second and Kimi Antonelli completed the podium.",
+      "Source: Reuters, 11 October 2026."
+    ]
+  },
+  {
+    "id": "bf-20261012-palace-hull",
+    "category": "Football",
+    "title": "Palace beat Forest as Hull and Everton draw",
+    "excerpt": "Crystal Palace won 3-1 against Nottingham Forest, while Hull City and Everton finished 2-2.",
+    "time": "Latest",
+    "date": "2026-10-11T16:30:00.000Z",
+    "readTime": "2 min read",
+    "image": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/football/live/2026/oct/11/crystal-palace-v-nottingham-forest-hull-v-everton-and-more-football-live",
+    "content": [
+      "Crystal Palace came from behind to beat Nottingham Forest 3-1.",
+      "Hull City and Everton shared a 2-2 draw in the other Sunday Premier League fixture.",
+      "Source: The Guardian, 11 October 2026."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "Jota comeback helps Celtic lift gloom in strong response",
@@ -480,60 +531,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c674peklk5kno?at_medium=RSS&at_campaign=rss",
     "content": [
       "Harry Kane provides two assists to help Bayern Munich salvage a late draw at Augsburg but the draw means the German champions miss the chance to move top of the Bundesliga.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "28",
-    "category": "Football",
-    "title": "The rock behind Chelsea's entertainers: Midfield duo key for Blues",
-    "excerpt": "The performances of Jordan Henderson and Moises Caicedo underpinned Chelsea's 5-1 victory at home to Bournemouth on Saturday afternoon.",
-    "time": "23 hrs ago",
-    "date": "2026-10-10T18:09:37.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8061/live/50e16a90-c4de-11f1-a64c-550be9e3c66b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/articles/cw3dj5yx4ej2o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "The performances of Jordan Henderson and Moises Caicedo underpinned Chelsea's 5-1 victory at home to Bournemouth on Saturday afternoon.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "29",
-    "category": "Football",
-    "title": "Ronaldo provisionally suspended by Portuguese FA",
-    "excerpt": "Cristiano Ronaldo has been provisionally suspended by the Portuguese Football Federation (FPF) after leaving his country's international camp last month.",
-    "time": "23 hrs ago",
-    "date": "2026-10-10T17:37:24.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3919/live/a747b3c0-c4a8-11f1-ac13-6da90f5ff039.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cm4g13909lp7o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Cristiano Ronaldo has been provisionally suspended by the Portuguese Football Federation (FPF) after leaving his country's international camp last month.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Timely recognition or long overdue? How Gross is proving all-time bargain",
-    "excerpt": "Named the Premier League's player of the month for September, BBC Sport looks at Brighton star Pascal Gross' impact both this season and over the past nine years during his two spells at the club.",
-    "time": "1 day ago",
-    "date": "2026-10-10T17:07:02.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/97e7/live/897a3830-bb67-11f1-9ecf-8dd029790cef.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cq1j427zze5xo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Named the Premier League's player of the month for September, BBC Sport looks at Brighton star Pascal Gross' impact both this season and over the past nine years during his two spells at the club.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
