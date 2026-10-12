@@ -1,26 +1,7 @@
 {
-  "updatedAt": "2026-10-12T00:03:00+03:00",
-  "featuredId": "coventry-newcastle-oct12",
+  "updatedAt": "2026-10-13T00:05:00+03:00",
+  "featuredId": "everton-chelsea-oct17",
   "events": [
-    {
-      "id": "coventry-newcastle-oct12",
-      "type": "event",
-      "sport": "Football",
-      "date": "12 Oct",
-      "time": "20:00 BST",
-      "title": "Coventry City vs Newcastle",
-      "home": "Coventry City",
-      "away": "Newcastle",
-      "competition": "Premier League",
-      "stage": "Matchweek 6",
-      "status": "Today",
-      "signals": [
-        "Confirmed league fixture",
-        "Today · Matchweek 6"
-      ],
-      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
-    },
     {
       "id": "everton-chelsea-oct17",
       "type": "event",
@@ -210,6 +191,27 @@
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
       "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png"
+    },
+    {
+      "id": "coventry-newcastle-oct12-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "12 Oct",
+      "time": "Final",
+      "title": "Coventry City 4-1 Newcastle",
+      "home": "Coventry City",
+      "away": "Newcastle",
+      "homeScore": "4",
+      "awayScore": "1",
+      "competition": "Premier League",
+      "stage": "Matchweek 6",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Coventry complete back-to-back league wins"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
     },
     {
       "id": "liverpool-man-city-oct11",
