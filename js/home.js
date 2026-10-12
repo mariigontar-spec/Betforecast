@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Monday’s featured match is Coventry City–Newcastle. Sunday’s Premier League and Singapore Grand Prix results are now verified.";
+        "Coventry City’s 4-1 win over Newcastle completes Matchweek 6. Everton–Chelsea on 17 October is the next featured Premier League fixture.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Today</strong><span>Coventry–Newcastle · 20:00 BST</span></div>
-        <div><strong>Result</strong><span>Liverpool 0–3 Man City</span></div>
-        <div><strong>Result</strong><span>Verstappen wins in Singapore</span></div>
+        <div><strong>Next</strong><span>Everton–Chelsea · 17 Oct · 12:30 BST</span></div>
+        <div><strong>Result</strong><span>Coventry City 4–1 Newcastle</span></div>
+        <div><strong>F1</strong><span>Next race · United States GP</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Coventry, Newcastle, Man City, Verstappen";
+      input.placeholder = "Try: Everton, Chelsea, Coventry, Russell";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Coventry Newcastle">Coventry–Newcastle</button>
-        <button type="button" data-query="Formula 1 Singapore">Singapore GP result</button>
-        <button type="button" data-query="Manchester City">Man City</button>
+        <button type="button" data-query="Everton Chelsea">Everton–Chelsea</button>
+        <button type="button" data-query="Coventry Newcastle">Coventry result</button>
+        <button type="button" data-query="Formula 1 Austin">United States GP</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=coventry-newcastle-oct12", title: "Coventry City vs Newcastle", detail: "Today · Premier League · 20:00 BST", tag: "Featured" },
-      { href: "results.html", title: "Liverpool 0-3 Man City", detail: "Final · Premier League · 11 Oct", tag: "Result" },
-      { href: "sports.html", title: "Verstappen wins Singapore GP", detail: "Final · Leclerc P2 · Antonelli P3", tag: "F1" },
-      { href: "standings.html", title: "Premier League · Matchweek 6 finale", detail: "Nine results added · one fixture remains", tag: "Table" },
+      { href: "match.html?id=everton-chelsea-oct17", title: "Everton vs Chelsea", detail: "17 Oct · Premier League · 12:30 BST", tag: "Featured" },
+      { href: "results.html", title: "Coventry City 4-1 Newcastle", detail: "Final · Premier League · 12 Oct", tag: "Result" },
+      { href: "sports.html", title: "Russell weighs Las Vegas penalty", detail: "Formula 1 · Reuters · 12 Oct", tag: "F1" },
+      { href: "standings.html", title: "Premier League · Matchweek 6 complete", detail: "All ten results verified", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
