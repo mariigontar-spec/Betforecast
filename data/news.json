@@ -1,46 +1,334 @@
 [
   {
-    "id": "verified-coventry-newcastle-oct12",
-    "category": "Football",
-    "title": "Coventry City beat Newcastle 4-1",
-    "excerpt": "Coventry completed Matchweek 6 with a 4-1 home win over Newcastle, scoring through Jack Rudoni, Sidiki Cherif, Ellis Simms and Stephen Mfuni.",
-    "time": "Verified 12 Oct",
-    "date": "2026-10-12T22:15:00.000Z",
-    "readTime": "2 min read",
-    "image": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
-    "source": "The Guardian",
-    "sourceUrl": "https://www.theguardian.com/football/live/2026/oct/12/coventry-city-newcastle-united-premier-league-live-score-updates",
-    "content": [
-      "Coventry City defeated Newcastle United 4-1 in the Premier League on 12 October 2026.",
-      "Jack Rudoni, Sidiki Cherif, Ellis Simms and Stephen Mfuni scored for Coventry; Sven Botman scored for Newcastle.",
-      "The verified result has been reflected in Betforecast Results, Recent and the Premier League table.",
-      "Source: The Guardian match report."
-    ]
-  },
-  {
-    "id": "verified-russell-engine-oct12",
-    "category": "Formula 1",
-    "title": "Russell considers Las Vegas engine penalty",
-    "excerpt": "George Russell said Las Vegas is a possible venue for another power-unit penalty, while Kimi Antonelli can clinch the title as early as Austin.",
-    "time": "12 Oct",
-    "date": "2026-10-12T11:58:53.000Z",
-    "readTime": "2 min read",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg",
-    "source": "Reuters",
-    "sourceUrl": "https://www.reuters.com/sports/formula1/russell-could-take-next-engine-penalty-las-vegas-2026-10-12/",
-    "content": [
-      "George Russell may take another engine penalty at the Las Vegas Grand Prix.",
-      "Kimi Antonelli leads Russell by 102 points and has his first chance to clinch the championship in Austin.",
-      "Verstappen will target a third consecutive victory at the next race.",
-      "Source: Reuters, 12 October 2026."
-    ]
-  },
-  {
     "id": "1",
+    "category": "Football",
+    "title": "Coventry announce themselves back in the big time",
+    "excerpt": "Coventry climb out of the relegation zone after ending their 25-year wait for a top-flight goal and victory in front of their own fans.",
+    "time": "1 hr ago",
+    "date": "2026-10-12T22:34:32.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d3bb/live/75fce310-c68a-11f1-a387-7d6d38bf2d79.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cw78p7l7rp30o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Coventry climb out of the relegation zone after ending their 25-year wait for a top-flight goal and victory in front of their own fans.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "2",
+    "category": "Football",
+    "title": "Who has made Troy's Premier League team of the week?",
+    "excerpt": "After every round of Premier League matches this season, Troy Deeney gives us his team of the week. Do you agree with his choices?",
+    "time": "2 hrs ago",
+    "date": "2026-10-12T22:25:57.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/83ad/live/75a67e50-c68d-11f1-b789-b92a80d9185b.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cme36q1gnpnlo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "After every round of Premier League matches this season, Troy Deeney gives us his team of the week. Do you agree with his choices?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "3",
+    "category": "Football",
+    "title": "Lampard keeping 'feet on ground' following big win over Newcastle",
+    "excerpt": "Coventry City head coach Frank Lampard gives his thoughts after his side pick up their first home win of the season beating Newcastle 4-1.",
+    "time": "2 hrs ago",
+    "date": "2026-10-12T21:43:20.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/59aa/live/d8bec640-c684-11f1-bc2e-018d645d8d21.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cqvgrp5225z7o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Coventry City head coach Frank Lampard gives his thoughts after his side pick up their first home win of the season beating Newcastle 4-1.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "4",
+    "category": "Football",
+    "title": "Coventry thrash Newcastle to claim first home win of season",
+    "excerpt": "Coventry City stun Newcastle United with an emphatic 4-1 victory as they win their first Premier League game at home in 25 years.",
+    "time": "2 hrs ago",
+    "date": "2026-10-12T21:35:07.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/615d/live/7ef559e0-c683-11f1-a64c-550be9e3c66b.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c65y71z4rjj2o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Coventry City stun Newcastle United with an emphatic 4-1 victory as they win their first Premier League game at home in 25 years.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "5",
+    "category": "Football",
+    "title": "Man Utd eye Simeone - Tuesday's gossip",
+    "excerpt": "Manchester United interested in Atletico Madrid's Giuliano Simeone, Chelsea willing to meet Bournemouth's asking price for Alex Scott, Premier League clubs want Inter's Aleksandar Stankovic.",
+    "time": "3 hrs ago",
+    "date": "2026-10-12T20:49:48.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/164b/live/997c5530-c67d-11f1-841c-2105a54cdb08.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmy8376gz5nvo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Manchester United interested in Atletico Madrid's Giuliano Simeone, Chelsea willing to meet Bournemouth's asking price for Alex Scott, Premier League clubs want Inter's Aleksandar Stankovic.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "6",
+    "category": "Football",
+    "title": "Football Daily",
+    "excerpt": "Mark Chapman is joined by Andros Townsend, Chris Sutton and Rory Smith.",
+    "time": "3 hrs ago",
+    "date": "2026-10-12T20:45:00.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0pbt6l2.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0pgc622?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Mark Chapman is joined by Andros Townsend, Chris Sutton and Rory Smith.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "7",
+    "category": "Football",
+    "title": "Carroll thanks public for support over sexual assault",
+    "excerpt": "Former England striker Andy Carroll thanks the public for their support after speaking publicly about being sexually assaulted by a man.",
+    "time": "4 hrs ago",
+    "date": "2026-10-12T20:24:15.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5eb1/live/b6acecb0-c677-11f1-8165-49c09cbfa390.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqy8le93zg7jo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Former England striker Andy Carroll thanks the public for their support after speaking publicly about being sexually assaulted by a man.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "8",
+    "category": "Football",
+    "title": "BBC Women's Football Weekly",
+    "excerpt": "How can Sarina Wiegman’s side become more ruthless in the final third?",
+    "time": "6 hrs ago",
+    "date": "2026-10-12T18:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0lz125l.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0pgbr8n?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "How can Sarina Wiegman’s side become more ruthless in the final third?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "9",
+    "category": "Football",
+    "title": "Man City bananas 'brought fun back', says Varadi",
+    "excerpt": "Former Manchester City striker Imre Varadi says it was \"brilliant to see\" the club's fans waving inflatable bananas at Anfield and feels it \"brought a lot of fun back\".",
+    "time": "6 hrs ago",
+    "date": "2026-10-12T17:57:10.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9804/live/c86e0e30-c65d-11f1-8600-efb62b613ab5.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmvgx7e5y5gxo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Former Manchester City striker Imre Varadi says it was \"brilliant to see\" the club's fans waving inflatable bananas at Anfield and feels it \"brought a lot of fun back\".",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "10",
+    "category": "Football",
+    "title": "Burnham had formal meeting with Man City chair while mayor",
+    "excerpt": "Prime Minister Andy Burnham had a formal meeting with Manchester City chairman Khaldoon Al Mubarak while mayor of Greater Manchester, according to the Greater Manchester Combined Authority.",
+    "time": "7 hrs ago",
+    "date": "2026-10-12T17:09:30.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7513/live/9668f200-c57d-11f1-80f2-5bd1e5df7ada.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c962y5nd273no?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Prime Minister Andy Burnham had a formal meeting with Manchester City chairman Khaldoon Al Mubarak while mayor of Greater Manchester, according to the Greater Manchester Combined Authority.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "11",
+    "category": "Football",
+    "title": "Do Lionesses lack ruthlessness in front of goal?",
+    "excerpt": "England take a two-goal lead into the second leg of their Women's World Cup qualifying play-off against Greece - but should it be more?",
+    "time": "7 hrs ago",
+    "date": "2026-10-12T16:54:32.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bf7f/live/a5c37940-c65f-11f1-8600-efb62b613ab5.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cwe8rvm8yl93o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "England take a two-goal lead into the second leg of their Women's World Cup qualifying play-off against Greece - but should it be more?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "12",
+    "category": "Football",
+    "title": "McCabe and O'Sullivan to feature in Cork - Ward",
+    "excerpt": "Republic of Ireland manager Carla Ward confirms that Katie McCabe and Denise O'Sullivan will feature in the second leg of their Women's World Cup play-off against Kazakhstan, despite the Irish holding an 8-0 advantage from the first leg.",
+    "time": "8 hrs ago",
+    "date": "2026-10-12T16:01:17.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5304/live/4ab36670-c63a-11f1-b99d-0127a94fa1d0.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cx1l3p3ve8g9o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Republic of Ireland manager Carla Ward confirms that Katie McCabe and Denise O'Sullivan will feature in the second leg of their Women's World Cup play-off against Kazakhstan, despite the Irish holding an 8-0 advantage from the first leg.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "13",
+    "category": "Football",
+    "title": "Northern Ireland will have 'one last swing' at World Cup place",
+    "excerpt": "Boss Michael McArdle says Northern Ireland will have \"one last swing\" at trying to reach a first Women's World Cup as they look to overcome a four-goal play-off deficit in Portugal.",
+    "time": "8 hrs ago",
+    "date": "2026-10-12T15:46:33.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4410/live/734c6e10-c653-11f1-8600-efb62b613ab5.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ckpqg2r4ewgqo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Boss Michael McArdle says Northern Ireland will have \"one last swing\" at trying to reach a first Women's World Cup as they look to overcome a four-goal play-off deficit in Portugal.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "14",
+    "category": "Football",
+    "title": "Wales wary but eye record run in World Cup bid",
+    "excerpt": "Rhian Wilkinson warns favourites Wales not to underestimate Albania in the second leg of their World Cup play-off semi-final.",
+    "time": "8 hrs ago",
+    "date": "2026-10-12T15:31:33.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/dbc0/live/f6654e80-c625-11f1-b048-6946f232cb95.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmd6d5980jz3o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Rhian Wilkinson warns favourites Wales not to underestimate Albania in the second leg of their World Cup play-off semi-final.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "15",
+    "category": "Football",
+    "title": "Ex-Port Vale & Gillingham captain Loft dies at 39",
+    "excerpt": "Former Port Vale and Gillingham captain Doug Loft dies at the age of 39, following a medical emergency.",
+    "time": "9 hrs ago",
+    "date": "2026-10-12T15:12:32.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/17fc/live/1ebca980-c650-11f1-b47f-e3f9cf703bc3.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmkgq1dz5keko?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Former Port Vale and Gillingham captain Doug Loft dies at the age of 39, following a medical emergency.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "16",
+    "category": "Football",
+    "title": "Alcohol allowed at seats for Scotland's World Cup play-off",
+    "excerpt": "Spectators will be able to consume alcohol at their seats when Scotland host the Czech Republic in the second leg of their Women's World Cup play-off in Paisley on Tuesday.",
+    "time": "9 hrs ago",
+    "date": "2026-10-12T15:01:24.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bc1d/live/05f01c50-c63e-11f1-abff-0d918239b2e3.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c50mew3yw79no?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Spectators will be able to consume alcohol at their seats when Scotland host the Czech Republic in the second leg of their Women's World Cup play-off in Paisley on Tuesday.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "17",
+    "category": "Football",
+    "title": "Police officer hurt after Liverpool-Man City game",
+    "excerpt": "Ten people were arrested amid a heightened atmosphere when the rival teams met at Anfield on Sunday.",
+    "time": "9 hrs ago",
+    "date": "2026-10-12T14:53:50.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1b0b/live/e7951c20-c623-11f1-b048-6946f232cb95.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/news/articles/c8x23ekvp3ywo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Ten people were arrested amid a heightened atmosphere when the rival teams met at Anfield on Sunday.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "18",
+    "category": "Football",
+    "title": "Hincapie and Zubimendi injured in post-match training session",
+    "excerpt": "Arsenal manager Mikel Arteta says it is \"far from ideal\" that Piero Hincapie and Martin Zubimendi were injured in a post-match training session.",
+    "time": "10 hrs ago",
+    "date": "2026-10-12T14:22:24.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7a42/live/d8cea790-c63e-11f1-abff-0d918239b2e3.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmq5nzn8ww98o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Arsenal manager Mikel Arteta says it is \"far from ideal\" that Piero Hincapie and Martin Zubimendi were injured in a post-match training session.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "19",
     "category": "Football",
     "title": "Silences end and boos ring out - Leicester and Martin's Savage day",
     "excerpt": "Silences were ended and boos were heard on another tough day for Leicester City as they were beaten by Robbie Savage's Peterborough United.",
-    "time": "1 hr ago",
+    "time": "11 hrs ago",
     "date": "2026-10-12T12:41:52.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/69f5/live/d9b650d0-c630-11f1-b99d-0127a94fa1d0.jpg",
@@ -54,29 +342,11 @@
     ]
   },
   {
-    "id": "2",
-    "category": "Football",
-    "title": "Police officer hurt after Liverpool-Man City game",
-    "excerpt": "Ten people were arrested amid a heightened atmosphere when the rival teams met at Anfield on Sunday.",
-    "time": "3 hrs ago",
-    "date": "2026-10-12T11:05:29.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1b0b/live/e7951c20-c623-11f1-b048-6946f232cb95.png",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/news/articles/c8x23ekvp3ywo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Ten people were arrested amid a heightened atmosphere when the rival teams met at Anfield on Sunday.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "3",
+    "id": "20",
     "category": "Football",
     "title": "Gateshead expect players to be paid on Tuesday",
     "excerpt": "With the club on the verge of a takeover, Gateshead expect overdue wages for players and staff from September to finally be paid by Tuesday.",
-    "time": "3 hrs ago",
+    "time": "13 hrs ago",
     "date": "2026-10-12T10:51:14.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f87f/live/ccd34e20-bd8b-11f1-b442-f3f672c979ff.jpg",
@@ -90,11 +360,11 @@
     ]
   },
   {
-    "id": "4",
+    "id": "21",
     "category": "Football",
     "title": "Elite schedule 'not sustainable' amid 55-game seasons",
     "excerpt": "The Premier League may have just returned from a three-week break, but for many of its stars there was no rest at all.",
-    "time": "4 hrs ago",
+    "time": "14 hrs ago",
     "date": "2026-10-12T10:26:18.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/82df/live/43389720-c60e-11f1-aae8-850c1751d51d.jpg",
@@ -108,11 +378,11 @@
     ]
   },
   {
-    "id": "5",
+    "id": "22",
     "category": "Football",
     "title": "Peterborough deny making illegal approach for Savage",
     "excerpt": "Darragh MacAnthony denies claims by Forest Green owner Dale Vince that Peterborough made an illegal approach for manager Robbie Savage.",
-    "time": "4 hrs ago",
+    "time": "14 hrs ago",
     "date": "2026-10-12T10:20:21.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7f32/live/479dcb60-c621-11f1-b048-6946f232cb95.jpg",
@@ -126,11 +396,11 @@
     ]
   },
   {
-    "id": "6",
+    "id": "23",
     "category": "Football",
     "title": "Women's billion-dollar boom leaves players behind, says Fifpro",
     "excerpt": "Women's football is on course to become a billion-dollar industry, but many professional players are still earning low wages, working on insecure contracts and experiencing rising psychological stress, a Fifpro survey indicates.",
-    "time": "4 hrs ago",
+    "time": "14 hrs ago",
     "date": "2026-10-12T10:04:50.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/779a/live/b7058b10-c616-11f1-bc2e-018d645d8d21.jpg",
@@ -144,11 +414,11 @@
     ]
   },
   {
-    "id": "7",
+    "id": "24",
     "category": "Football",
     "title": "How do Women's World Cup hopes look for home nations?",
     "excerpt": "England, Wales, Northern Ireland, Scotland and the Republic of Ireland are under way in their Women's World Cup play-offs. How are their prospects looking?",
-    "time": "5 hrs ago",
+    "time": "15 hrs ago",
     "date": "2026-10-12T09:27:17.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0909/live/5c1b6eb0-c2ef-11f1-babe-4199b0e7ccea.png",
@@ -162,11 +432,11 @@
     ]
   },
   {
-    "id": "8",
+    "id": "25",
     "category": "Football",
     "title": "Seedorf back in football as Corinthians head coach",
     "excerpt": "Brazilian club Corinthians appoint Clarence Seedorf as their head coach, with the former Netherlands midfielder taking on his first coaching role since 2019.",
-    "time": "6 hrs ago",
+    "time": "16 hrs ago",
     "date": "2026-10-12T07:42:53.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bfd0/live/09459dd0-c61b-11f1-8c89-b96b8469b965.jpg",
@@ -180,11 +450,29 @@
     ]
   },
   {
-    "id": "9",
+    "id": "26",
+    "category": "Football",
+    "title": "Moyes may offer Celtic solution next summer - gossip",
+    "excerpt": "Could experienced Premier League manager end up at Celtic, where his professional career started?",
+    "time": "16 hrs ago",
+    "date": "2026-10-12T07:33:17.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f557/live/c0c14750-c60e-11f1-bc2e-018d645d8d21.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqde8lpp3dx0o?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Could experienced Premier League manager end up at Celtic, where his professional career started?",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "27",
     "category": "Football",
     "title": "Can Robinson solve Aberdeen's lack of goals?",
     "excerpt": "Aberdeen draw a blank again in Sunday's home loss to St Johnstone, but manager Stephen Robinson is sure his team can find a solution.",
-    "time": "7 hrs ago",
+    "time": "17 hrs ago",
     "date": "2026-10-12T07:14:01.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6f5a/live/5836b140-c59e-11f1-8caf-cb711a6adf3a.jpg",
@@ -198,11 +486,11 @@
     ]
   },
   {
-    "id": "10",
+    "id": "28",
     "category": "Football",
     "title": "SPFL round-up: Big wins for Ross County & Stranraer",
     "excerpt": "All the weekend goals from the Scottish Championship, League One and League Two.",
-    "time": "7 hrs ago",
+    "time": "17 hrs ago",
     "date": "2026-10-12T07:02:42.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3ee0/live/2c974600-c60a-11f1-bc2e-018d645d8d21.jpg",
@@ -216,29 +504,11 @@
     ]
   },
   {
-    "id": "11",
-    "category": "Football",
-    "title": "Podcast: Naderi's hot streak & Celtic bounce back",
-    "excerpt": "Rangers and Celtic win while Hearts continue to impress.",
-    "time": "7 hrs ago",
-    "date": "2026-10-12T07:00:00.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0pg61vq.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0pg61t7?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Rangers and Celtic win while Hearts continue to impress.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "12",
+    "id": "29",
     "category": "Football",
     "title": "The 'Kane-esque' striker Spurs may regret letting go",
     "excerpt": "Will Lankshear's positioning, finishing and poacher's instinct have made him an instant hit at Riverside Stadium – and a cause of lament at Tottenham Hotspur Stadium.",
-    "time": "8 hrs ago",
+    "time": "18 hrs ago",
     "date": "2026-10-12T05:40:07.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a725/live/34b5c0f0-c4d9-11f1-9a39-31b474234113.jpg",
@@ -252,11 +522,11 @@
     ]
   },
   {
-    "id": "13",
+    "id": "30",
     "category": "Football",
     "title": "Who am I? Plus today's other quizzes",
     "excerpt": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-    "time": "8 hrs ago",
+    "time": "18 hrs ago",
     "date": "2026-10-12T05:38:24.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1fbf/live/38bd3c70-bda7-11f1-bc2e-018d645d8d21.png",
@@ -264,312 +534,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c98rzjv13gdlo?at_medium=RSS&at_campaign=rss",
     "content": [
       "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "14",
-    "category": "Football",
-    "title": "'Call it a day with VAR' - Rooney on Palace's controversial goal",
-    "excerpt": "Speaking on Match of the Day, Wayne Rooney says VAR made the wrong decision in awarding Crystal Palace their second goal, which saw the home side take the lead as they went on to beat Nottingham Forest 3-1 in the Premier League.",
-    "time": "14 hrs ago",
-    "date": "2026-10-11T23:31:42.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9c7a/live/c72ae9a0-c5ca-11f1-a64c-550be9e3c66b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cqlyendmk7wyo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Speaking on Match of the Day, Wayne Rooney says VAR made the wrong decision in awarding Crystal Palace their second goal, which saw the home side take the lead as they went on to beat Nottingham Forest 3-1 in the Premier League.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "15",
-    "category": "Football",
-    "title": "'It's a bad situation' - Why Man City win creates uncertainty",
-    "excerpt": "Speaking on Match of the Day, Toby Alderweireld and Wayne Rooney discuss why Manchester City's 3-0 victory against Liverpool leaves the Premier League in limbo as the club awaits a potential punishment, which could include a points deductio...",
-    "time": "15 hrs ago",
-    "date": "2026-10-11T23:23:03.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/aa47/live/76170560-c5c7-11f1-bc2e-018d645d8d21.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cw073z5j55y9o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Speaking on Match of the Day, Toby Alderweireld and Wayne Rooney discuss why Manchester City's 3-0 victory against Liverpool leaves the Premier League in limbo as the club awaits a potential punishment, which could include a points deductio...",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "16",
-    "category": "Football",
-    "title": "'Big star' - How Doku delivered for Man City in win against Liverpool",
-    "excerpt": "Speaking on Match of the Day, Wayne Rooney and Toby Alderweireld analyse how Jeremy Doku changed the game in Manchester City's favour, after coming on as a substitute in his side's 3-0 win against Liverpool at Anfield.",
-    "time": "15 hrs ago",
-    "date": "2026-10-11T23:00:57.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/af25/live/b56c8a40-c5c3-11f1-a64c-550be9e3c66b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c8g47knxqvgdo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Speaking on Match of the Day, Wayne Rooney and Toby Alderweireld analyse how Jeremy Doku changed the game in Manchester City's favour, after coming on as a substitute in his side's 3-0 win against Liverpool at Anfield.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "17",
-    "category": "Football",
-    "title": "Rooney gives verdict on Gravenberch red card",
-    "excerpt": "Speaking on Match of the Day, Wayne Rooney and Toby Alderweireld discuss whether Ryan Gravenberch should have been sent off, after he received two yellow cards in Liverpool 3-0 defeat to Manchester City in the Premier League.",
-    "time": "15 hrs ago",
-    "date": "2026-10-11T23:00:33.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f760/live/ef7f3830-c5c4-11f1-bc2e-018d645d8d21.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c6ly0jdndez9o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Speaking on Match of the Day, Wayne Rooney and Toby Alderweireld discuss whether Ryan Gravenberch should have been sent off, after he received two yellow cards in Liverpool 3-0 defeat to Manchester City in the Premier League.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "18",
-    "category": "Football",
-    "title": "Aston Villa planning Endrick move - Monday's gossip",
-    "excerpt": "Aston Villa are looking at signing Real Madrid striker Endrick, Liverpool are weighing up a move for Barcelona's Marc Bernal, Everton are leading the chase for Rennes striker Esteban Lepaul, plus more.",
-    "time": "16 hrs ago",
-    "date": "2026-10-11T21:32:39.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1a52/live/35619e00-c5ad-11f1-9a39-31b474234113.png",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c5gm01j87jl7o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Aston Villa are looking at signing Real Madrid striker Endrick, Liverpool are weighing up a move for Barcelona's Marc Bernal, Everton are leading the chase for Rennes striker Esteban Lepaul, plus more.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "19",
-    "category": "Football",
-    "title": "Man City's statement win has feeling of irrelevance with season in limbo",
-    "excerpt": "Manchester City record what they will view as a statement win at Liverpool - but is it a statement that carries any weight during a Premier League season in limbo, asks Phil McNulty?",
-    "time": "18 hrs ago",
-    "date": "2026-10-11T20:02:27.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8204/live/a6de9a60-c5a8-11f1-9f28-03371a5c8220.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmy0rd4pex7no?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Manchester City record what they will view as a statement win at Liverpool - but is it a statement that carries any weight during a Premier League season in limbo, asks Phil McNulty?",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "20",
-    "category": "Football",
-    "title": "Winless and an 'easy touch' - what's happened to the Anfield fear factor?",
-    "excerpt": "Liverpool's struggles at Anfield continue as Iraola still awaits his first Premier League win at Anfield.",
-    "time": "18 hrs ago",
-    "date": "2026-10-11T19:41:17.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8da7/live/b0352800-c5a7-11f1-9f28-03371a5c8220.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ck5yn20wej62o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Liverpool's struggles at Anfield continue as Iraola still awaits his first Premier League win at Anfield.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "21",
-    "category": "Football",
-    "title": "Football Daily",
-    "excerpt": "Rick Edwards, Luke Edwards and Clinton Morrison discuss the latest Premier League action.",
-    "time": "18 hrs ago",
-    "date": "2026-10-11T19:39:00.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0pb3f0t.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0pg61sx?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Rick Edwards, Luke Edwards and Clinton Morrison discuss the latest Premier League action.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "22",
-    "category": "Football",
-    "title": "Doku delights as Manchester City cruise past 10-man Liverpool",
-    "excerpt": "In their first match since being found guilty of breaching Premier League financial rules, Manchester City enjoyed a comfortable 3-0 win against Liverpool at Anfield to extend their perfect start to six matches, as they moved three points c...",
-    "time": "19 hrs ago",
-    "date": "2026-10-11T18:59:19.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e1f6/live/040fab80-c599-11f1-a64c-550be9e3c66b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c6vgy2ll1zypo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "In their first match since being found guilty of breaching Premier League financial rules, Manchester City enjoyed a comfortable 3-0 win against Liverpool at Anfield to extend their perfect start to six matches, as they moved three points c...",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "23",
-    "category": "Football",
-    "title": "Hull continue good start with entertaining Everton draw",
-    "excerpt": "Mohamed Belloumi scores a second-half leveller as Hull City and Everton continue their good starts to the season with an entertaining draw at MKM Stadium.",
-    "time": "19 hrs ago",
-    "date": "2026-10-11T18:59:04.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b46a/live/e253b1c0-c599-11f1-a64c-550be9e3c66b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c61mvdy2mdx9o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Mohamed Belloumi scores a second-half leveller as Hull City and Everton continue their good starts to the season with an entertaining draw at MKM Stadium.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "24",
-    "category": "Football",
-    "title": "Glasner suffers loss on Selhurst return as Palace beat Forest",
-    "excerpt": "Oliver Glasner endures a frustrating return to Crystal Palace with his Nottingham Forest side lets slip an early lead to lose to the Eagles.",
-    "time": "19 hrs ago",
-    "date": "2026-10-11T18:59:02.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/acfa/live/f4d5deb0-c592-11f1-bc2e-018d645d8d21.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cwz0zkj27greo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Oliver Glasner endures a frustrating return to Crystal Palace with his Nottingham Forest side lets slip an early lead to lose to the Eagles.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "25",
-    "category": "Football",
-    "title": "'I didn't like the refereeing' - Iraola unhappy with Gravenberch red",
-    "excerpt": "Andoni Iraola says he didn't agree with midfielder Ryan Gravenberch's red card in Liverpool's defeat to Manchester City at Anfield.",
-    "time": "19 hrs ago",
-    "date": "2026-10-11T18:46:34.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0740/live/6d878a60-c59e-11f1-bc2e-018d645d8d21.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cj20v49vd4zro?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Andoni Iraola says he didn't agree with midfielder Ryan Gravenberch's red card in Liverpool's defeat to Manchester City at Anfield.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "26",
-    "category": "Football",
-    "title": "'We deal with the noise' - Maresca 'proud' after Man City win",
-    "excerpt": "Manchester City manager Enzo Maresca says his squad 'dealt with the noise' after they beat Liverpool 3-0 at Anfield in their first match since being found guilty of breaching Premier League financial rules.",
-    "time": "19 hrs ago",
-    "date": "2026-10-11T18:38:31.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0997/live/c94a55c0-c59f-11f1-9a39-31b474234113.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cm62yzw2175yo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Manchester City manager Enzo Maresca says his squad 'dealt with the noise' after they beat Liverpool 3-0 at Anfield in their first match since being found guilty of breaching Premier League financial rules.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "27",
-    "category": "Football",
-    "title": "Burnham to release details of Man City meetings",
-    "excerpt": "Andy Burnham has faced criticism for comments he made in the wake of Manchester City being found guilty of all charges related to breaches of the Premier League's financial rules.",
-    "time": "20 hrs ago",
-    "date": "2026-10-11T18:01:13.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7513/live/9668f200-c57d-11f1-80f2-5bd1e5df7ada.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c962y5nd273no?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Andy Burnham has faced criticism for comments he made in the wake of Manchester City being found guilty of all charges related to breaches of the Premier League's financial rules.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "28",
-    "category": "Football",
-    "title": "Who 'simply has to do better'? Liverpool v Man City player ratings",
-    "excerpt": "How Liverpool and Man City's players rated following their Premier League match.",
-    "time": "20 hrs ago",
-    "date": "2026-10-11T17:30:19.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c7a7/live/38b24d70-c59e-11f1-8caf-cb711a6adf3a.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ck87z1jjynyqo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "How Liverpool and Man City's players rated following their Premier League match.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "29",
-    "category": "Football",
-    "title": "Jota comeback helps Celtic lift gloom in strong response",
-    "excerpt": "Jota's comeback from long-term injury and Celtic's convincing victory over Motherwell provide positivity following the club's recent acrimony.",
-    "time": "21 hrs ago",
-    "date": "2026-10-11T16:55:21.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/75d7/live/c1c36af0-c593-11f1-9a39-31b474234113.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqwy7nr5lry0o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Jota's comeback from long-term injury and Celtic's convincing victory over Motherwell provide positivity following the club's recent acrimony.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Hughes focused on Albania before World Cup dream",
-    "excerpt": "Wales forward Elise Hughes admits reaching the World Cup would fulfil a lifelong ambition.",
-    "time": "22 hrs ago",
-    "date": "2026-10-11T16:08:42.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7242/live/b771a480-c580-11f1-80f2-5bd1e5df7ada.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cq1m4ngv99mvo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Wales forward Elise Hughes admits reaching the World Cup would fulfil a lifelong ambition.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
