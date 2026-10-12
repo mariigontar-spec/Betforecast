@@ -1,50 +1,5 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    "id": "coventry-newcastle-oct12",
-    "league": "Football · Premier League",
-    "date": "12 Oct 2026",
-    "time": "20:00 BST",
-    "stadium": "Confirmed Premier League fixture",
-    "home": "Coventry City",
-    "away": "Newcastle",
-    "homeShort": "CC",
-    "awayShort": "N",
-    "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
-    "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
-    "projectedScore": "UPCOMING",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 100,
-    "summary": "Coventry City face Newcastle in Premier League Matchweek 6.",
-    "bestTip": "Today · confirmed fixture",
-    "goalsLean": "Matchweek 6",
-    "btts": "Kickoff · 20:00 BST",
-    "factors": [
-      "Confirmed Premier League fixture",
-      "Matchweek 6",
-      "Today · 12 October"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Matchweek 6"
-    ],
-    "awayStats": [
-      "Matchweek 6"
-    ],
-    "quickInsightTitle": "Today’s Premier League fixture",
-    "quickInsight": "Coventry City face Newcastle in a confirmed Premier League fixture.",
-    "related": [
-      {
-        "id": "arsenal-leeds-oct10",
-        "home": "Arsenal",
-        "away": "Leeds United",
-        "league": "Premier League"
-      }
-    ]
-  },
-  {
     "id": "everton-chelsea-oct17",
     "league": "Football · Premier League",
     "date": "17 Oct 2026",
