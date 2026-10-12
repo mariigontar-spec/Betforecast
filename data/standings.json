@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Matchweek 6 finale · checked 12 Oct",
-      "insightText": "Manchester City lead with 18 points after a 3-0 win at Liverpool. Arsenal are second on 15, Brighton third on 13. Nine Matchweek 6 results are included; Coventry City vs Newcastle remains on 12 October.",
+      "insightTitle": "Matchweek 6 complete · checked 13 Oct",
+      "insightText": "Manchester City lead with 18 points, Arsenal are second on 15 and Brighton third on 13. Coventry City's 4-1 win over Newcastle completes Matchweek 6.",
       "table": [
         {
           "pos": 1,
@@ -202,19 +202,19 @@
         {
           "pos": 11,
           "team": "Newcastle",
-          "played": 5,
+          "played": 6,
           "wins": 2,
           "draws": 2,
-          "losses": 1,
-          "gf": 9,
-          "ga": 9,
+          "losses": 2,
+          "gf": 10,
+          "ga": 13,
           "points": 8,
           "form": [
-            "D",
             "W",
             "D",
             "L",
-            "W"
+            "W",
+            "L"
           ],
           "zone": "safe"
         },
@@ -258,6 +258,25 @@
         },
         {
           "pos": 14,
+          "team": "Coventry City",
+          "played": 6,
+          "wins": 2,
+          "draws": 0,
+          "losses": 4,
+          "gf": 5,
+          "ga": 11,
+          "points": 6,
+          "form": [
+            "L",
+            "L",
+            "L",
+            "W",
+            "W"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 15,
           "team": "Nottm Forest",
           "played": 6,
           "wins": 1,
@@ -276,7 +295,7 @@
           "zone": "safe"
         },
         {
-          "pos": 15,
+          "pos": 16,
           "team": "Aston Villa",
           "played": 6,
           "wins": 1,
@@ -295,7 +314,7 @@
           "zone": "safe"
         },
         {
-          "pos": 16,
+          "pos": 17,
           "team": "Sunderland",
           "played": 6,
           "wins": 1,
@@ -314,7 +333,7 @@
           "zone": "safe"
         },
         {
-          "pos": 17,
+          "pos": 18,
           "team": "Bournemouth",
           "played": 6,
           "wins": 0,
@@ -330,10 +349,10 @@
             "L",
             "L"
           ],
-          "zone": "safe"
+          "zone": "rel"
         },
         {
-          "pos": 18,
+          "pos": 19,
           "team": "Tottenham",
           "played": 6,
           "wins": 0,
@@ -348,25 +367,6 @@
             "D",
             "L",
             "D"
-          ],
-          "zone": "rel"
-        },
-        {
-          "pos": 19,
-          "team": "Coventry City",
-          "played": 5,
-          "wins": 1,
-          "draws": 0,
-          "losses": 4,
-          "gf": 1,
-          "ga": 10,
-          "points": 3,
-          "form": [
-            "L",
-            "L",
-            "L",
-            "L",
-            "W"
           ],
           "zone": "rel"
         },
@@ -391,6 +391,12 @@
         }
       ],
       "lastMatches": [
+        {
+          "time": "12 Oct",
+          "match": "Coventry City vs Newcastle",
+          "score": "4:1",
+          "status": "finished"
+        },
         {
           "time": "11 Oct",
           "match": "Liverpool vs Man City",
@@ -444,20 +450,9 @@
           "match": "Arsenal vs Leeds United",
           "score": "2:1",
           "status": "finished"
-        },
-        {
-          "time": "20 Sep",
-          "match": "Bournemouth vs Liverpool",
-          "score": "0:1",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
-        {
-          "time": "12 Oct · 20:00",
-          "match": "Coventry City vs Newcastle",
-          "status": "upcoming"
-        },
         {
           "time": "17 Oct · 12:30",
           "match": "Everton vs Chelsea",
