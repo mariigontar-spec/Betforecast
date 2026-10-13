@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 13 Oct 2026";
-  if (t) t.textContent = "Premier League · Matchweek 6 complete";
+  if (k) k.textContent = "World Sports News · 14 Oct 2026";
+  if (t) t.textContent = "World sports · Premier League next on 17 Oct";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Coventry 4-1 Newcastle</a><a class="sidebar-link-card" href="match.html?id=everton-chelsea-oct17">Everton–Chelsea next</a><a class="sidebar-link-card" href="sports.html">Russell weighs engine penalty</a><a class="sidebar-link-card" href="news.html">Latest world sports headlines</a><a class="sidebar-link-card" href="standings.html">EPL table updated</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="news.html">F1 returns to Africa</a><a class="sidebar-link-card" href="news.html">English club finance warning</a><a class="sidebar-link-card" href="results.html">Australia win first Test</a><a class="sidebar-link-card" href="match.html?id=everton-chelsea-oct17">Everton–Chelsea next</a><a class="sidebar-link-card" href="standings.html">EPL table checked</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Coventry City beat Newcastle 4-1 to complete Matchweek 6. Manchester City lead with 18 points; Everton–Chelsea on 17 October is the next league fixture.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Formula 1 will return to Africa with a Rwandan Grand Prix planned from the early 2030s. The Premier League table is unchanged; Matchweek 7 starts on 17 October.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
