@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Coventry City’s 4-1 win over Newcastle completes Matchweek 6. Everton–Chelsea on 17 October is the next featured Premier League fixture.";
+        "No Premier League matches were played on 13 October. Everton–Chelsea on 17 October remains the next featured fixture; Formula 1 has announced its return to Africa.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
         <div><strong>Next</strong><span>Everton–Chelsea · 17 Oct · 12:30 BST</span></div>
-        <div><strong>Result</strong><span>Coventry City 4–1 Newcastle</span></div>
-        <div><strong>F1</strong><span>Next race · United States GP</span></div>
+        <div><strong>Result</strong><span>Australia win first Test by 214 runs</span></div>
+        <div><strong>F1</strong><span>African Grand Prix announced</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Everton, Chelsea, Coventry, Russell";
+      input.placeholder = "Try: Everton, Chelsea, Rwanda, Australia";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
         <button type="button" data-query="Everton Chelsea">Everton–Chelsea</button>
-        <button type="button" data-query="Coventry Newcastle">Coventry result</button>
-        <button type="button" data-query="Formula 1 Austin">United States GP</button>
+        <button type="button" data-query="Formula 1 Rwanda">African Grand Prix</button>
+        <button type="button" data-query="Australia South Africa cricket">Australia Test win</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
       { href: "match.html?id=everton-chelsea-oct17", title: "Everton vs Chelsea", detail: "17 Oct · Premier League · 12:30 BST", tag: "Featured" },
-      { href: "results.html", title: "Coventry City 4-1 Newcastle", detail: "Final · Premier League · 12 Oct", tag: "Result" },
-      { href: "sports.html", title: "Russell weighs Las Vegas penalty", detail: "Formula 1 · Reuters · 12 Oct", tag: "F1" },
-      { href: "standings.html", title: "Premier League · Matchweek 6 complete", detail: "All ten results verified", tag: "Table" },
+      { href: "results.html", title: "Australia beat South Africa", detail: "First Test · won by 214 runs · 13 Oct", tag: "Cricket" },
+      { href: "news.html", title: "Formula 1 returns to Africa", detail: "Rwanda · 10-year deal · Reuters", tag: "F1" },
+      { href: "standings.html", title: "Premier League · Matchweek 6 complete", detail: "Table checked · 14 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
