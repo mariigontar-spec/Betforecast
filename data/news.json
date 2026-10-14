@@ -1,5 +1,56 @@
 [
   {
+    "id": "verified-six-kings-oct14",
+    "category": "Tennis",
+    "title": "Six Kings Slam postponed to 27–30 December",
+    "excerpt": "The Saudi exhibition tournament scheduled for 21–24 October has been moved to 27–30 December after organisers reviewed logistical and security challenges.",
+    "time": "Verified 14 Oct",
+    "date": "2026-10-14T20:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/tennis/six-kings-slam-tournament-saudi-arabia-postponed-december-2026-10-14/",
+    "content": [
+      "Organisers moved the Six Kings Slam from 21–24 October to 27–30 December 2026.",
+      "Carlos Alcaraz, Novak Djokovic, Alexander Zverev and Taylor Fritz had been listed for the exhibition event; Jannik Sinner had withdrawn through injury.",
+      "The change follows an assessment of organisational and logistical challenges. Source: Reuters, 14 October 2026."
+    ]
+  },
+  {
+    "id": "verified-fifa-governance-oct14",
+    "category": "Football",
+    "title": "FIFA Council meets amid governance pressure",
+    "excerpt": "FIFA’s 37-member council is set to discuss the abandoned FIFA Forward Enterprise plan and the governing body’s wider governance framework in Zurich.",
+    "time": "Verified 14 Oct",
+    "date": "2026-10-14T18:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-2.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/infantino-faces-fifa-rebels-zurich-after-failed-world-cup-stake-sale-2026-10-14/",
+    "content": [
+      "FIFA’s council is due to review the abandoned FIFA Forward Enterprise proposal and broader governance issues.",
+      "Leaders of UEFA, AFC and CONCACAF have called for change at the top of FIFA ahead of the 2027 presidential election.",
+      "The nomination deadline for potential candidates is 18 November 2026. Source: Reuters, 14 October 2026."
+    ]
+  },
+  {
+    "id": "verified-media-rights-oct14",
+    "category": "Business",
+    "title": "Global sports media rights reach record $65.82bn",
+    "excerpt": "The value of global sports media rights rose 15% year on year to a record $65.82 billion in 2026, according to SportBusiness.",
+    "time": "Verified 14 Oct",
+    "date": "2026-10-14T15:32:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-3.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/global-sports-media-rights-value-reaches-record-658-billion-2026-2026-10-14/",
+    "content": [
+      "Global sports media rights reached $65.82 billion in 2026, up 15% from 2025.",
+      "The year included the men’s football World Cup in North America and the Winter Olympics.",
+      "The figure comes from the SportBusiness Global Media Report 2026. Source: Reuters, 14 October 2026."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "72+: The EFL Podcast",
@@ -480,60 +531,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0pgjk3h?at_medium=RSS&at_campaign=rss",
     "content": [
       "After two standout displays, has Le Tissier made a case to start alongside Bronze?",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "28",
-    "category": "Football",
-    "title": "McArdle 'really encouraged' despite NI's Portugal loss",
-    "excerpt": "Northern Ireland manager Michael McArdle says their play-off defeat by Portugal is \"the start of a new identity\" despite their heavy 7-1 aggregate loss.",
-    "time": "18 hrs ago",
-    "date": "2026-10-13T22:20:39.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0501/live/80b5add0-c74f-11f1-b4d5-87f9c6c95a29.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmglwxd0d25xo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Northern Ireland manager Michael McArdle says their play-off defeat by Portugal is \"the start of a new identity\" despite their heavy 7-1 aggregate loss.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "29",
-    "category": "Football",
-    "title": "'Unplayable' Stanway a free-scoring warrior for Lionesses",
-    "excerpt": "Whatever the game, whatever the result, Georgia Stanway always seems to score for England.",
-    "time": "18 hrs ago",
-    "date": "2026-10-13T22:15:44.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1738/live/1033d250-c7ac-11f1-86ef-693282d0a891.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cm2kev8w934do?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Whatever the game, whatever the result, Georgia Stanway always seems to score for England.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Man Utd defender Martinez issues scathing attack on board",
-    "excerpt": "Lisandro Martinez launches a blistering attack on Manchester United's hierarchy for not strengthening the squad following qualification for the Champions League.",
-    "time": "19 hrs ago",
-    "date": "2026-10-13T21:43:09.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f810/live/6b054b60-c756-11f1-8157-e5961116a2ed.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/crlykw9eevx3o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Lisandro Martinez launches a blistering attack on Manchester United's hierarchy for not strengthening the squad following qualification for the Champions League.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
