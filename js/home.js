@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "No Premier League matches were played on 13 October. Everton–Chelsea on 17 October remains the next featured fixture; Formula 1 has announced its return to Africa.";
+        "No Premier League matches were played on 14 October. Everton–Chelsea on 17 October remains the next featured fixture; the Six Kings Slam has moved to 27–30 December.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
         <div><strong>Next</strong><span>Everton–Chelsea · 17 Oct · 12:30 BST</span></div>
-        <div><strong>Result</strong><span>Australia win first Test by 214 runs</span></div>
-        <div><strong>F1</strong><span>African Grand Prix announced</span></div>
+        <div><strong>Tennis</strong><span>Six Kings Slam moved to 27–30 Dec</span></div>
+        <div><strong>Media</strong><span>Sports rights reach record $65.82bn</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Everton, Chelsea, Rwanda, Australia";
+      input.placeholder = "Try: Everton, Chelsea, tennis, FIFA";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
         <button type="button" data-query="Everton Chelsea">Everton–Chelsea</button>
-        <button type="button" data-query="Formula 1 Rwanda">African Grand Prix</button>
-        <button type="button" data-query="Australia South Africa cricket">Australia Test win</button>
+        <button type="button" data-query="Six Kings Slam">Six Kings Slam</button>
+        <button type="button" data-query="FIFA governance">FIFA governance</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
       { href: "match.html?id=everton-chelsea-oct17", title: "Everton vs Chelsea", detail: "17 Oct · Premier League · 12:30 BST", tag: "Featured" },
-      { href: "results.html", title: "Australia beat South Africa", detail: "First Test · won by 214 runs · 13 Oct", tag: "Cricket" },
-      { href: "news.html", title: "Formula 1 returns to Africa", detail: "Rwanda · 10-year deal · Reuters", tag: "F1" },
-      { href: "standings.html", title: "Premier League · Matchweek 6 complete", detail: "Table checked · 14 Oct", tag: "Table" },
+      { href: "news.html", title: "Six Kings Slam postponed", detail: "New dates · 27–30 Dec · Reuters", tag: "Tennis" },
+      { href: "news.html", title: "Sports media rights hit record", detail: "$65.82bn · up 15% · Reuters", tag: "Business" },
+      { href: "standings.html", title: "Premier League · Matchweek 6 complete", detail: "Table checked · 15 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
