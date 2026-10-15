@@ -1,5 +1,56 @@
 [
   {
+    "id": "verified-atp-plan-oct15",
+    "category": "Tennis",
+    "title": "ATP targets $350m player compensation package by 2028",
+    "excerpt": "The ATP outlined plans to expand player compensation and welfare support as part of a broader reform package planned for 2028.",
+    "time": "Verified 15 Oct",
+    "date": "2026-10-15T18:03:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/tennis/atp-eyes-350-million-player-compensation-welfare-boost-by-2028-2026-10-15/",
+    "content": [
+      "The ATP outlined plans to substantially increase player compensation and strengthen welfare support by 2028.",
+      "The package is part of proposed changes to the men’s tour’s commercial and sporting structure.",
+      "Source: Reuters, 15 October 2026."
+    ]
+  },
+  {
+    "id": "verified-fifae-postponed-oct15",
+    "category": "Esports",
+    "title": "FIFAe Finals in Jeddah postponed",
+    "excerpt": "FIFA and the Saudi Esports Federation postponed the FIFAe Finals scheduled for 16–25 October; new dates have not yet been announced.",
+    "time": "Verified 15 Oct",
+    "date": "2026-10-15T15:30:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-2.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/tennis/sports-fifa-postpones-fifae-finals-saudi-arabia-following-attacks-2026-10-15/",
+    "content": [
+      "The FIFAe Finals planned for 16–25 October in Jeddah have been postponed.",
+      "Organisers cited the effect of recent regional developments on logistical arrangements.",
+      "Further scheduling information will be announced later. Source: Reuters, 15 October 2026."
+    ]
+  },
+  {
+    "id": "verified-camara-haas-oct15",
+    "category": "Formula 1",
+    "title": "Haas signs Rafael Camara for 2027",
+    "excerpt": "The 21-year-old Brazilian and current Formula Two leader will replace Esteban Ocon at Haas on a multi-year deal from 2027.",
+    "time": "Verified 15 Oct",
+    "date": "2026-10-15T14:02:00.000Z",
+    "readTime": "2 min read",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/formula1/brazilian-camara-replace-ocon-haas-f1-team-next-season-2026-10-15/",
+    "content": [
+      "Rafael Camara will join Haas for the 2027 Formula One season on a multi-year contract.",
+      "The Ferrari Academy driver leads the Formula Two standings with two rounds remaining.",
+      "Camara will replace Esteban Ocon. Source: Reuters, 15 October 2026."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "Kane poised to extend Bayern stay - Friday's gossip",
@@ -480,60 +531,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmx2wegg2pw5o?at_medium=RSS&at_campaign=rss",
     "content": [
       "Paris St-Germain are eyeing a third successive Champions League crown after dismantling Manchester City, but where do they rank against Europe's most dominant clubs?",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "28",
-    "category": "Football",
-    "title": "Isco snatches late Betis win as they edge past Porto",
-    "excerpt": "Isco scores an 84th minute penalty to help Real Betis snatch a late 3-2 win against Porto, giving them back to back wins at the start of this season's Champions League.",
-    "time": "23 hrs ago",
-    "date": "2026-10-14T21:51:42.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/13f1/live/b04016c0-c813-11f1-a64c-550be9e3c66b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cmn4e91e4dk7o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Isco scores an 84th minute penalty to help Real Betis snatch a late 3-2 win against Porto, giving them back to back wins at the start of this season's Champions League.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "29",
-    "category": "Football",
-    "title": "Real Madrid stun Roma after dramatic late comeback",
-    "excerpt": "Real Madrid complete their latest dramatic Champions League comeback by scoring three goals in the final seven minutes to earn manager Jose Mourinho a win on his return to Roma.",
-    "time": "23 hrs ago",
-    "date": "2026-10-14T21:31:34.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/eb61/live/24fee8f0-c815-11f1-9a39-31b474234113.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cmx239x97ddvo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Real Madrid complete their latest dramatic Champions League comeback by scoring three goals in the final seven minutes to earn manager Jose Mourinho a win on his return to Roma.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Bodo/Glimt impress in win over Dortmund",
-    "excerpt": "Bodo/Glimt bounce back from their thrashing at Bayern with a fine 1-0 win in the Champions League over Borussia Dortmund.",
-    "time": "23 hrs ago",
-    "date": "2026-10-14T21:28:39.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/28ce/live/d12a4c20-c813-11f1-bc2e-018d645d8d21.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cqly0nd6xnp1o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Bodo/Glimt bounce back from their thrashing at Bayern with a fine 1-0 win in the Champions League over Borussia Dortmund.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
