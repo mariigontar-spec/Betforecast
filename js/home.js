@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "No Premier League matches were played on 14 October. Everton–Chelsea on 17 October remains the next featured fixture; the Six Kings Slam has moved to 27–30 December.";
+        "No Premier League matches were played on 15 October. Everton–Chelsea opens Matchweek 7 on 17 October; the FIFAe Finals due to start today have been postponed.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
         <div><strong>Next</strong><span>Everton–Chelsea · 17 Oct · 12:30 BST</span></div>
-        <div><strong>Tennis</strong><span>Six Kings Slam moved to 27–30 Dec</span></div>
-        <div><strong>Media</strong><span>Sports rights reach record $65.82bn</span></div>
+        <div><strong>Esports</strong><span>FIFAe Finals postponed</span></div>
+        <div><strong>F1</strong><span>Haas signs Rafael Camara for 2027</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Everton, Chelsea, tennis, FIFA";
+      input.placeholder = "Try: Everton, Chelsea, ATP, Haas";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
         <button type="button" data-query="Everton Chelsea">Everton–Chelsea</button>
-        <button type="button" data-query="Six Kings Slam">Six Kings Slam</button>
-        <button type="button" data-query="FIFA governance">FIFA governance</button>
+        <button type="button" data-query="ATP player compensation">ATP reform</button>
+        <button type="button" data-query="Rafael Camara Haas">Haas 2027</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
       { href: "match.html?id=everton-chelsea-oct17", title: "Everton vs Chelsea", detail: "17 Oct · Premier League · 12:30 BST", tag: "Featured" },
-      { href: "news.html", title: "Six Kings Slam postponed", detail: "New dates · 27–30 Dec · Reuters", tag: "Tennis" },
-      { href: "news.html", title: "Sports media rights hit record", detail: "$65.82bn · up 15% · Reuters", tag: "Business" },
-      { href: "standings.html", title: "Premier League · Matchweek 6 complete", detail: "Table checked · 15 Oct", tag: "Table" },
+      { href: "news.html", title: "FIFAe Finals postponed", detail: "Jeddah event · new dates pending · Reuters", tag: "Esports" },
+      { href: "news.html", title: "Haas signs Rafael Camara", detail: "Formula 1 seat · 2027 · Reuters", tag: "F1" },
+      { href: "standings.html", title: "Premier League · Matchweek 6 complete", detail: "Table checked · 16 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
