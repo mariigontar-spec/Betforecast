@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 15 Oct 2026";
-  if (t) t.textContent = "World sports · Tennis schedule shifts";
+  if (k) k.textContent = "World Sports News · 16 Oct 2026";
+  if (t) t.textContent = "World sports · Matchweek 7 countdown";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="news.html">Six Kings Slam postponed</a><a class="sidebar-link-card" href="news.html">FIFA governance pressure</a><a class="sidebar-link-card" href="news.html">Media rights reach $65.82bn</a><a class="sidebar-link-card" href="match.html?id=everton-chelsea-oct17">Everton–Chelsea next</a><a class="sidebar-link-card" href="standings.html">EPL table checked</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="news.html">ATP targets $350m package</a><a class="sidebar-link-card" href="news.html">FIFAe Finals postponed</a><a class="sidebar-link-card" href="news.html">Haas signs Rafael Camara</a><a class="sidebar-link-card" href="match.html?id=everton-chelsea-oct17">Everton–Chelsea next</a><a class="sidebar-link-card" href="standings.html">EPL table checked</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The Six Kings Slam has been postponed to 27–30 December, while global sports media rights reached a record $65.82bn. The EPL table is unchanged; Matchweek 7 starts on 17 October.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The FIFAe Finals scheduled for 16–25 October have been postponed, while Haas has signed Rafael Camara for 2027. The EPL table is unchanged; Matchweek 7 starts on 17 October.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
