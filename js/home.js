@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "No Premier League matches were played on 15 October. Everton–Chelsea opens Matchweek 7 on 17 October; the FIFAe Finals due to start today have been postponed.";
+        "Matchweek 7 starts today with Everton–Chelsea at 12:30 BST, followed by four more Premier League fixtures. Medvedev and Jodar are through to the Shanghai semi-finals.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
         <div><strong>Next</strong><span>Everton–Chelsea · 17 Oct · 12:30 BST</span></div>
-        <div><strong>Esports</strong><span>FIFAe Finals postponed</span></div>
-        <div><strong>F1</strong><span>Haas signs Rafael Camara for 2027</span></div>
+        <div><strong>Today</strong><span>Five Premier League fixtures</span></div>
+        <div><strong>Tennis</strong><span>Medvedev and Jodar reach Shanghai semis</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Everton, Chelsea, ATP, Haas";
+      input.placeholder = "Try: Everton, Chelsea, Liverpool, Man City";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
         <button type="button" data-query="Everton Chelsea">Everton–Chelsea</button>
-        <button type="button" data-query="ATP player compensation">ATP reform</button>
-        <button type="button" data-query="Rafael Camara Haas">Haas 2027</button>
+        <button type="button" data-query="Brentford Liverpool">Brentford–Liverpool</button>
+        <button type="button" data-query="Man City Ipswich">Man City–Ipswich</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
       { href: "match.html?id=everton-chelsea-oct17", title: "Everton vs Chelsea", detail: "17 Oct · Premier League · 12:30 BST", tag: "Featured" },
-      { href: "news.html", title: "FIFAe Finals postponed", detail: "Jeddah event · new dates pending · Reuters", tag: "Esports" },
-      { href: "news.html", title: "Haas signs Rafael Camara", detail: "Formula 1 seat · 2027 · Reuters", tag: "F1" },
-      { href: "standings.html", title: "Premier League · Matchweek 6 complete", detail: "Table checked · 16 Oct", tag: "Table" },
+      { href: "match.html?id=brentford-liverpool-oct17", title: "Brentford vs Liverpool", detail: "17 Oct · Premier League · 15:00 BST", tag: "Today" },
+      { href: "match.html?id=newcastle-aston-villa-oct17", title: "Newcastle vs Aston Villa", detail: "17 Oct · Premier League · 17:30 BST", tag: "Today" },
+      { href: "standings.html", title: "Premier League · Matchweek 7", detail: "Five fixtures today · checked 17 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
