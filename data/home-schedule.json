@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T00:00:00+03:00",
+  "updatedAt": "2026-10-17T00:00:00+03:00",
   "featuredId": "everton-chelsea-oct17",
   "events": [
     {
@@ -13,7 +13,7 @@
       "away": "Chelsea",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 7"
@@ -32,7 +32,7 @@
       "away": "Liverpool",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 7"
@@ -51,7 +51,7 @@
       "away": "Hull City",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 7"
@@ -70,7 +70,7 @@
       "away": "Ipswich Town",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 7"
@@ -89,7 +89,7 @@
       "away": "Aston Villa",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 7"
