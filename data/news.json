@@ -1,5 +1,56 @@
 [
   {
+    "id": "verified-shanghai-qf-oct16",
+    "category": "Tennis",
+    "title": "Medvedev and Jodar reach Shanghai semi-finals",
+    "excerpt": "Daniil Medvedev beat Tommy Paul 6-3, 1-6, 6-3, while Rafael Jodar came from behind to defeat Casper Ruud 4-6, 6-4, 6-3.",
+    "time": "Verified 16 Oct",
+    "date": "2026-10-16T18:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/tennis/medvedev-sees-off-paul-set-up-shanghai-semi-with-comeback-king-jodar-2026-10-16/",
+    "content": [
+      "Daniil Medvedev defeated Tommy Paul 6-3, 1-6, 6-3 in the Shanghai Masters quarter-finals.",
+      "Rafael Jodar beat Casper Ruud 4-6, 6-4, 6-3 to become the youngest semi-finalist in tournament history.",
+      "Source: Reuters, 16 October 2026."
+    ]
+  },
+  {
+    "id": "verified-city-charges-oct16",
+    "category": "Football",
+    "title": "Maresca says Man City united after charges verdict",
+    "excerpt": "Manchester City coach Enzo Maresca said scrutiny following the Premier League financial-rules verdict had brought players and supporters closer.",
+    "time": "Verified 16 Oct",
+    "date": "2026-10-16T16:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/man-city-more-united-after-premier-league-charges-verdict-says-boss-maresca-2026-10-16/",
+    "content": [
+      "Manchester City were found guilty of 114 of 115 Premier League financial-rule charges.",
+      "The club has denied wrongdoing and lodged an appeal.",
+      "Coach Enzo Maresca said the scrutiny had brought players and supporters closer. Source: Reuters, 16 October 2026."
+    ]
+  },
+  {
+    "id": "verified-laliga-feud-oct16",
+    "category": "Football",
+    "title": "Real Madrid calls for LaLiga president to resign",
+    "excerpt": "Real Madrid demanded Javier Tebas’s resignation after the LaLiga president compared the club management’s rhetoric with Nazi propaganda methods.",
+    "time": "Verified 16 Oct",
+    "date": "2026-10-16T14:06:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-3.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/real-madrid-demand-resignation-laliga-chief-after-nazi-propaganda-comparison-2026-10-16/",
+    "content": [
+      "Real Madrid called for LaLiga president Javier Tebas to resign following comments posted on social media.",
+      "The club objected to Tebas comparing its management’s rhetoric with Nazi propaganda methods.",
+      "Source: Reuters, 16 October 2026."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "Do Manchester City have any grounds to win their appeal?",
@@ -480,60 +531,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqp8gymplmvdo?at_medium=RSS&at_campaign=rss",
     "content": [
       "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "28",
-    "category": "Football",
-    "title": "Balikwisha blames Celtic for World Cup axe - gossip",
-    "excerpt": "Michel-Ange Balikwisha blames Celtic for his failure to make DR Congo's World Cup squad, while Thelo Aasgaard reveals his delight at leaving Rangers for Anderlecht.",
-    "time": "14 hrs ago",
-    "date": "2026-10-16T06:07:34.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d090/live/3bf8baa0-c927-11f1-bc2e-018d645d8d21.png",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cm62y9yl2v66o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Michel-Ange Balikwisha blames Celtic for his failure to make DR Congo's World Cup squad, while Thelo Aasgaard reveals his delight at leaving Rangers for Anderlecht.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "29",
-    "category": "Football",
-    "title": "Does the Premier League 'Big Six' still exist?",
-    "excerpt": "For years the Premier League has had a defined 'Big Six', comprised of Arsenal, Chelsea, Liverpool, Manchester City, Manchester United and Tottenham Hotspur, but could this era be coming to an end?",
-    "time": "14 hrs ago",
-    "date": "2026-10-16T05:53:57.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0fa7/live/42928a00-c317-11f1-8f04-85217d686658.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/ckj0lrjzjgqno?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "For years the Premier League has had a defined 'Big Six', comprised of Arsenal, Chelsea, Liverpool, Manchester City, Manchester United and Tottenham Hotspur, but could this era be coming to an end?",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "O'Neill defiant in defeat, but Celtic's 'flat-track bullies' fail another big test",
-    "excerpt": "Celtic have now lost two Europa League group games, as well as two derbies - but Martin O'Neill is adamant he can see positive signs.",
-    "time": "21 hrs ago",
-    "date": "2026-10-15T23:04:37.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4ebf/live/9cc98cc0-c8e0-11f1-aed7-153a8dff3c2e.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cwm243rxn1pxo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Celtic have now lost two Europa League group games, as well as two derbies - but Martin O'Neill is adamant he can see positive signs.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
