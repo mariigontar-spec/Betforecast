@@ -4,6 +4,8 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Tennis · Shanghai Masters QF", status: "FINAL", homeName: "Daniil Medvedev", awayName: "Tommy Paul", homeGoals: "6-3 1-6 6-3", awayGoals: "", venue: "Shanghai", date: "16 Oct", href: "news.html" },
+    { round: "Tennis · Shanghai Masters QF", status: "FINAL", homeName: "Rafael Jodar", awayName: "Casper Ruud", homeGoals: "4-6 6-4 6-3", awayGoals: "", venue: "Shanghai", date: "16 Oct", href: "news.html" },
     { round: "Cricket · First Test", status: "FINAL", homeName: "Australia", awayName: "South Africa", homeGoals: "WIN", awayGoals: "206", venue: "Kingsmead · won by 214 runs", date: "13 Oct", href: "news.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Coventry City", awayName: "Newcastle United", homeGoals: "4", awayGoals: "1", venue: "Coventry Building Society Arena", date: "12 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Liverpool", awayName: "Manchester City", homeGoals: "0", awayGoals: "3", venue: "Anfield", date: "11 Oct", href: "standings.html" },
@@ -136,7 +138,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 16 Oct 2026");
+    setStatus("World sports results · checked 17 Oct 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -146,7 +148,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "No new Premier League results were recorded on 15 October. The latest verified league and international results are retained; Manchester City lead the EPL with 18 points ahead of Matchweek 7.";
+    if (intro) intro.textContent = "Shanghai quarter-final wins for Daniil Medvedev and Rafael Jodar are the latest verified results. No Premier League matches were played on 16 October; Matchweek 7 starts today.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
