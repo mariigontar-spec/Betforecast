@@ -1,98 +1,108 @@
 {
-  "updatedAt": "2026-10-17T00:00:00+03:00",
-  "featuredId": "everton-chelsea-oct17",
+  "updatedAt": "2026-10-18T00:00:00+03:00",
+  "featuredId": "bournemouth-sunderland-oct18",
   "events": [
     {
-      "id": "everton-chelsea-oct17",
-      "type": "event",
+      "id": "everton-chelsea-oct17-result",
+      "type": "result",
       "sport": "Football",
       "date": "17 Oct",
-      "time": "12:30 BST",
-      "title": "Everton vs Chelsea",
+      "time": "Final",
+      "title": "Everton 0-2 Chelsea",
       "home": "Everton",
       "away": "Chelsea",
+      "homeScore": "0",
+      "awayScore": "2",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 7"
+        "Verified final score",
+        "Pedro Neto scored twice for Chelsea"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
     },
     {
-      "id": "brentford-liverpool-oct17",
-      "type": "event",
+      "id": "brentford-liverpool-oct17-result",
+      "type": "result",
       "sport": "Football",
       "date": "17 Oct",
-      "time": "15:00 BST",
-      "title": "Brentford vs Liverpool",
+      "time": "Final",
+      "title": "Brentford 1-2 Liverpool",
       "home": "Brentford",
       "away": "Liverpool",
+      "homeScore": "1",
+      "awayScore": "2",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 7"
+        "Verified final score",
+        "Liverpool completed a comeback victory"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
     },
     {
-      "id": "fulham-hull-oct17",
-      "type": "event",
+      "id": "fulham-hull-oct17-result",
+      "type": "result",
       "sport": "Football",
       "date": "17 Oct",
-      "time": "15:00 BST",
-      "title": "Fulham vs Hull City",
+      "time": "Final",
+      "title": "Fulham 1-0 Hull City",
       "home": "Fulham",
       "away": "Hull City",
+      "homeScore": "1",
+      "awayScore": "0",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 7"
+        "Verified final score",
+        "Fulham recorded their first league win"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
       "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png"
     },
     {
-      "id": "man-city-ipswich-oct17",
-      "type": "event",
+      "id": "man-city-ipswich-oct17-result",
+      "type": "result",
       "sport": "Football",
       "date": "17 Oct",
-      "time": "15:00 BST",
-      "title": "Man City vs Ipswich Town",
+      "time": "Final",
+      "title": "Man City 3-2 Ipswich Town",
       "home": "Man City",
       "away": "Ipswich Town",
+      "homeScore": "3",
+      "awayScore": "2",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 7"
+        "Verified final score",
+        "Erling Haaland scored twice"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png"
     },
     {
-      "id": "newcastle-aston-villa-oct17",
-      "type": "event",
+      "id": "newcastle-aston-villa-oct17-result",
+      "type": "result",
       "sport": "Football",
       "date": "17 Oct",
-      "time": "17:30 BST",
-      "title": "Newcastle vs Aston Villa",
+      "time": "Final",
+      "title": "Newcastle 0-1 Aston Villa",
       "home": "Newcastle",
       "away": "Aston Villa",
+      "homeScore": "0",
+      "awayScore": "1",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 7"
+        "Verified final score",
+        "Johan Manzambi scored the winner"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
@@ -108,7 +118,7 @@
       "away": "Sunderland",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 7"
@@ -127,7 +137,7 @@
       "away": "Crystal Palace",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 7"
@@ -146,7 +156,7 @@
       "away": "Man United",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 7"
@@ -165,7 +175,7 @@
       "away": "Arsenal",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 7"
