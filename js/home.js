@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Matchweek 7 starts today with Everton–Chelsea at 12:30 BST, followed by four more Premier League fixtures. Medvedev and Jodar are through to the Shanghai semi-finals.";
+        "Manchester City lead on 21 points after five Saturday results. Four Premier League matches are scheduled today, led by Bournemouth–Sunderland and Nottingham Forest–Arsenal.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Next</strong><span>Everton–Chelsea · 17 Oct · 12:30 BST</span></div>
-        <div><strong>Today</strong><span>Five Premier League fixtures</span></div>
-        <div><strong>Tennis</strong><span>Medvedev and Jodar reach Shanghai semis</span></div>
+        <div><strong>Featured</strong><span>Bournemouth–Sunderland · 14:00 BST</span></div>
+        <div><strong>Today</strong><span>Four Premier League fixtures</span></div>
+        <div><strong>Table</strong><span>Manchester City lead on 21 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Everton, Chelsea, Liverpool, Man City";
+      input.placeholder = "Try: Bournemouth, Arsenal, Man United, Brighton";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Everton Chelsea">Everton–Chelsea</button>
-        <button type="button" data-query="Brentford Liverpool">Brentford–Liverpool</button>
-        <button type="button" data-query="Man City Ipswich">Man City–Ipswich</button>
+        <button type="button" data-query="Bournemouth Sunderland">Bournemouth–Sunderland</button>
+        <button type="button" data-query="Brighton Crystal Palace">Brighton–Palace</button>
+        <button type="button" data-query="Leeds Man United">Leeds–Man United</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=everton-chelsea-oct17", title: "Everton vs Chelsea", detail: "17 Oct · Premier League · 12:30 BST", tag: "Featured" },
-      { href: "match.html?id=brentford-liverpool-oct17", title: "Brentford vs Liverpool", detail: "17 Oct · Premier League · 15:00 BST", tag: "Today" },
-      { href: "match.html?id=newcastle-aston-villa-oct17", title: "Newcastle vs Aston Villa", detail: "17 Oct · Premier League · 17:30 BST", tag: "Today" },
-      { href: "standings.html", title: "Premier League · Matchweek 7", detail: "Five fixtures today · checked 17 Oct", tag: "Table" },
+      { href: "match.html?id=bournemouth-sunderland-oct18", title: "Bournemouth vs Sunderland", detail: "18 Oct · Premier League · 14:00 BST", tag: "Featured" },
+      { href: "match.html?id=brighton-crystal-palace-oct18", title: "Brighton vs Crystal Palace", detail: "18 Oct · Premier League · 14:00 BST", tag: "Today" },
+      { href: "match.html?id=leeds-man-united-oct18", title: "Leeds vs Man United", detail: "18 Oct · Premier League · 14:00 BST", tag: "Today" },
+      { href: "standings.html", title: "Premier League · Matchweek 7", detail: "Five results added · checked 18 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
