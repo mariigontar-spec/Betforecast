@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 17 Oct 2026";
-  if (t) t.textContent = "World sports · Matchweek 7 starts today";
+  if (k) k.textContent = "World Sports News · 18 Oct 2026";
+  if (t) t.textContent = "World sports · Sunday Matchweek 7";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="news.html">Medvedev reaches Shanghai semi</a><a class="sidebar-link-card" href="news.html">Jodar makes tournament history</a><a class="sidebar-link-card" href="news.html">Man City appeal continues</a><a class="sidebar-link-card" href="match.html?id=everton-chelsea-oct17">Everton–Chelsea today</a><a class="sidebar-link-card" href="standings.html">Matchweek 7 starts</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="news.html">Man City stay perfect</a><a class="sidebar-link-card" href="news.html">Chelsea and Liverpool win</a><a class="sidebar-link-card" href="news.html">All-Spanish Shanghai final</a><a class="sidebar-link-card" href="match.html?id=bournemouth-sunderland-oct18">Bournemouth–Sunderland today</a><a class="sidebar-link-card" href="standings.html">EPL table updated</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Five Premier League matches are scheduled today, led by Everton–Chelsea. Medvedev and Jodar reached the Shanghai semi-finals, while Manchester City begin the round top of the table.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Manchester City made it seven wins from seven, while Chelsea and Liverpool climbed after away victories. Four Premier League matches are scheduled today.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
