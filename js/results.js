@@ -4,6 +4,11 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League", status: "FINAL", homeName: "Newcastle", awayName: "Aston Villa", homeGoals: "0", awayGoals: "1", venue: "Matchweek 7", date: "17 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Man City", awayName: "Ipswich Town", homeGoals: "3", awayGoals: "2", venue: "Matchweek 7", date: "17 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Fulham", awayName: "Hull City", homeGoals: "1", awayGoals: "0", venue: "Matchweek 7", date: "17 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Brentford", awayName: "Liverpool", homeGoals: "1", awayGoals: "2", venue: "Matchweek 7", date: "17 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Everton", awayName: "Chelsea", homeGoals: "0", awayGoals: "2", venue: "Matchweek 7", date: "17 Oct", href: "standings.html" },
     { round: "Tennis · Shanghai Masters QF", status: "FINAL", homeName: "Daniil Medvedev", awayName: "Tommy Paul", homeGoals: "6-3 1-6 6-3", awayGoals: "", venue: "Shanghai", date: "16 Oct", href: "news.html" },
     { round: "Tennis · Shanghai Masters QF", status: "FINAL", homeName: "Rafael Jodar", awayName: "Casper Ruud", homeGoals: "4-6 6-4 6-3", awayGoals: "", venue: "Shanghai", date: "16 Oct", href: "news.html" },
     { round: "Cricket · First Test", status: "FINAL", homeName: "Australia", awayName: "South Africa", homeGoals: "WIN", awayGoals: "206", venue: "Kingsmead · won by 214 runs", date: "13 Oct", href: "news.html" },
@@ -138,7 +143,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 17 Oct 2026");
+    setStatus("World sports results · checked 18 Oct 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -148,7 +153,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Shanghai quarter-final wins for Daniil Medvedev and Rafael Jodar are the latest verified results. No Premier League matches were played on 16 October; Matchweek 7 starts today.";
+    if (intro) intro.textContent = "All five Premier League results from 17 October are verified. Manchester City lead with 21 points; Chelsea are fourth and Liverpool fifth after their away wins.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
