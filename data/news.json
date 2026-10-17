@@ -1,5 +1,56 @@
 [
   {
+    "id": "verified-epl-wrap-oct17",
+    "category": "Football",
+    "title": "City stay perfect as Chelsea and Liverpool win",
+    "excerpt": "Manchester City beat Ipswich 3-2 to reach 21 points; Chelsea won 2-0 at Everton, Liverpool edged Brentford 2-1, Fulham beat Hull 1-0 and Aston Villa won 1-0 at Newcastle.",
+    "time": "Verified 17 Oct",
+    "date": "2026-10-17T20:30:00.000Z",
+    "readTime": "3 min read",
+    "image": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/neto-double-fires-chelsea-past-everton-martinez-injury-mars-win-2026-10-17/",
+    "content": [
+      "Manchester City defeated Ipswich Town 3-2, with Erling Haaland scoring twice.",
+      "Chelsea beat Everton 2-0, Liverpool won 2-1 at Brentford, Fulham defeated Hull City 1-0 and Aston Villa won 1-0 at Newcastle.",
+      "Manchester City lead the Premier League with 21 points. Source: Reuters, 17 October 2026."
+    ]
+  },
+  {
+    "id": "verified-shanghai-semis-oct17",
+    "category": "Tennis",
+    "title": "Davidovich Fokina and Jodar reach Shanghai final",
+    "excerpt": "Alejandro Davidovich Fokina upset Alexander Zverev 5-7, 6-4, 6-3, while Rafael Jodar beat Daniil Medvedev 6-3, 6-4.",
+    "time": "Verified 17 Oct",
+    "date": "2026-10-17T16:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/tennis/davidovich-fokina-ousts-top-seed-zverev-reach-shanghai-masters-final-2026-10-17/",
+    "content": [
+      "Alejandro Davidovich Fokina defeated top seed Alexander Zverev in three sets.",
+      "Rafael Jodar beat Daniil Medvedev in straight sets to become the youngest Shanghai Masters finalist.",
+      "The final will be the pair’s first ATP meeting. Source: Reuters, 17 October 2026."
+    ]
+  },
+  {
+    "id": "verified-brewers-world-series-oct17",
+    "category": "Baseball",
+    "title": "Brewers reach first World Series since 1982",
+    "excerpt": "Milwaukee completed a four-game NLCS sweep of the Los Angeles Dodgers to reach the World Series for the first time in 44 years.",
+    "time": "Verified 17 Oct",
+    "date": "2026-10-17T12:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-3.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/power-bullpen-steer-brewers-nlcs-sweep-first-series-bid-since-82--fldm-2026-10-16/",
+    "content": [
+      "The Milwaukee Brewers swept the Los Angeles Dodgers in four games in the National League Championship Series.",
+      "Milwaukee advanced to the World Series for the first time since 1982.",
+      "Source: Reuters / Field Level Media, 16 October 2026."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "Emery praises Manzambi's 'skills and intelligence'",
@@ -480,60 +531,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cqn73xe5eelgo?at_medium=RSS&at_campaign=rss",
     "content": [
       "Some players are destined to make their biggest impact off the bench, but who are the top 10 Premier League super subs of all time?",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "28",
-    "category": "Football",
-    "title": "Do Manchester City have any grounds to win their appeal?",
-    "excerpt": "Manchester City face \"substantial hurdles\" to overcome if they are to have any chance of winning their appeal after being found guilty of breaking the Premier League's financial rules, a leading lawyer has told BBC Sport.",
-    "time": "1 day ago",
-    "date": "2026-10-16T16:17:01.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ee2f/live/cb7000d0-b9aa-11f1-8a1a-0176f978c211.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c6je5lwxk5l0o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Manchester City face \"substantial hurdles\" to overcome if they are to have any chance of winning their appeal after being found guilty of breaking the Premier League's financial rules, a leading lawyer has told BBC Sport.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "29",
-    "category": "Football",
-    "title": "Feel-good Koumas story something for Liverpool to smile about",
-    "excerpt": "Lewis Koumas on breaking Steven Gerrard's record, seizing his opportunity under Andoni Iraola, and why he couldn't sleep after playing Manchester City.",
-    "time": "1 day ago",
-    "date": "2026-10-16T16:06:37.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/816c/live/a60cdcc0-c86c-11f1-971b-634f423608e9.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cwy7l5e4376no?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Lewis Koumas on breaking Steven Gerrard's record, seizing his opportunity under Andoni Iraola, and why he couldn't sleep after playing Manchester City.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Does Scott's Disney+ exit unmask wider issue in coverage of women's game?",
-    "excerpt": "Alex Scott's sudden departure from her Disney+ presenter role reveals a pressing challenge for broadcasters of women's football.",
-    "time": "1 day ago",
-    "date": "2026-10-16T15:49:55.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/198d/live/498a8450-c94f-11f1-9a39-31b474234113.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cm3wv4ej7lv2o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Alex Scott's sudden departure from her Disney+ presenter role reveals a pressing challenge for broadcasters of women's football.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
