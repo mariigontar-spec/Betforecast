@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 18 Oct 2026";
-  if (t) t.textContent = "World sports · Sunday Matchweek 7";
+  if (k) k.textContent = "World Sports News · 19 Oct 2026";
+  if (t) t.textContent = "World sports · Monday Matchweek 7";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="news.html">Man City stay perfect</a><a class="sidebar-link-card" href="news.html">Chelsea and Liverpool win</a><a class="sidebar-link-card" href="news.html">All-Spanish Shanghai final</a><a class="sidebar-link-card" href="match.html?id=bournemouth-sunderland-oct18">Bournemouth–Sunderland today</a><a class="sidebar-link-card" href="standings.html">EPL table updated</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="news.html">Brighton score five in derby</a><a class="sidebar-link-card" href="news.html">Arsenal close gap to City</a><a class="sidebar-link-card" href="news.html">Man United held at Leeds</a><a class="sidebar-link-card" href="match.html?id=tottenham-coventry-oct19">Tottenham–Coventry today</a><a class="sidebar-link-card" href="standings.html">EPL table updated</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Manchester City made it seven wins from seven, while Chelsea and Liverpool climbed after away victories. Four Premier League matches are scheduled today.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Arsenal closed to within three points of Manchester City, Brighton thrashed Crystal Palace 5-0 and Tottenham host Coventry in the final match of the round today.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
