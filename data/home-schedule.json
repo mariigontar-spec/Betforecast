@@ -1,7 +1,91 @@
 {
-  "updatedAt": "2026-10-18T00:00:00+03:00",
-  "featuredId": "bournemouth-sunderland-oct18",
+  "updatedAt": "2026-10-19T00:00:00+03:00",
+  "featuredId": "tottenham-coventry-oct19",
   "events": [
+    {
+      "id": "bournemouth-sunderland-oct18-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "18 Oct",
+      "time": "Final",
+      "title": "Bournemouth 2-0 Sunderland",
+      "home": "Bournemouth",
+      "away": "Sunderland",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Bournemouth recorded their first league win"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+      "homeScore": "2",
+      "awayScore": "0"
+    },
+    {
+      "id": "brighton-crystal-palace-oct18-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "18 Oct",
+      "time": "Final",
+      "title": "Brighton 5-0 Crystal Palace",
+      "home": "Brighton",
+      "away": "Crystal Palace",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Diego Gomez scored from the halfway line"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+      "homeScore": "5",
+      "awayScore": "0"
+    },
+    {
+      "id": "leeds-man-united-oct18-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "18 Oct",
+      "time": "Final",
+      "title": "Leeds United 1-1 Man United",
+      "home": "Leeds United",
+      "away": "Man United",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Dominic Calvert-Lewin cancelled out Bryan Mbeumo's opener"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+      "homeScore": "1",
+      "awayScore": "1"
+    },
+    {
+      "id": "nottingham-forest-arsenal-oct18-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "18 Oct",
+      "time": "Final",
+      "title": "Nottm Forest 0-1 Arsenal",
+      "home": "Nottm Forest",
+      "away": "Arsenal",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Noni Madueke scored the late winner"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "homeScore": "0",
+      "awayScore": "1"
+    },
     {
       "id": "everton-chelsea-oct17-result",
       "type": "result",
@@ -108,82 +192,6 @@
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
     },
     {
-      "id": "bournemouth-sunderland-oct18",
-      "type": "event",
-      "sport": "Football",
-      "date": "18 Oct",
-      "time": "14:00 BST",
-      "title": "Bournemouth vs Sunderland",
-      "home": "Bournemouth",
-      "away": "Sunderland",
-      "competition": "Premier League",
-      "stage": "Matchweek 7",
-      "status": "Today",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 7"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png"
-    },
-    {
-      "id": "brighton-crystal-palace-oct18",
-      "type": "event",
-      "sport": "Football",
-      "date": "18 Oct",
-      "time": "14:00 BST",
-      "title": "Brighton vs Crystal Palace",
-      "home": "Brighton",
-      "away": "Crystal Palace",
-      "competition": "Premier League",
-      "stage": "Matchweek 7",
-      "status": "Today",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 7"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png"
-    },
-    {
-      "id": "leeds-man-united-oct18",
-      "type": "event",
-      "sport": "Football",
-      "date": "18 Oct",
-      "time": "14:00 BST",
-      "title": "Leeds United vs Man United",
-      "home": "Leeds United",
-      "away": "Man United",
-      "competition": "Premier League",
-      "stage": "Matchweek 7",
-      "status": "Today",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 7"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
-    },
-    {
-      "id": "nottingham-forest-arsenal-oct18",
-      "type": "event",
-      "sport": "Football",
-      "date": "18 Oct",
-      "time": "16:30 BST",
-      "title": "Nottm Forest vs Arsenal",
-      "home": "Nottm Forest",
-      "away": "Arsenal",
-      "competition": "Premier League",
-      "stage": "Matchweek 7",
-      "status": "Today",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 7"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
-    },
-    {
       "id": "tottenham-coventry-oct19",
       "type": "event",
       "sport": "Football",
@@ -194,10 +202,10 @@
       "away": "Coventry City",
       "competition": "Premier League",
       "stage": "Matchweek 7",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
-        "Matchweek 7"
+        "Matchweek 7 closes on Monday"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
       "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png"
