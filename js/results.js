@@ -4,6 +4,10 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League", status: "FINAL", homeName: "Nottm Forest", awayName: "Arsenal", homeGoals: "0", awayGoals: "1", venue: "Matchweek 7", date: "18 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Leeds United", awayName: "Man United", homeGoals: "1", awayGoals: "1", venue: "Matchweek 7", date: "18 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Brighton", awayName: "Crystal Palace", homeGoals: "5", awayGoals: "0", venue: "Matchweek 7", date: "18 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Bournemouth", awayName: "Sunderland", homeGoals: "2", awayGoals: "0", venue: "Matchweek 7", date: "18 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Newcastle", awayName: "Aston Villa", homeGoals: "0", awayGoals: "1", venue: "Matchweek 7", date: "17 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Man City", awayName: "Ipswich Town", homeGoals: "3", awayGoals: "2", venue: "Matchweek 7", date: "17 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Fulham", awayName: "Hull City", homeGoals: "1", awayGoals: "0", venue: "Matchweek 7", date: "17 Oct", href: "standings.html" },
@@ -143,7 +147,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 18 Oct 2026");
+    setStatus("World sports results · checked 19 Oct 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -153,7 +157,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "All five Premier League results from 17 October are verified. Manchester City lead with 21 points; Chelsea are fourth and Liverpool fifth after their away wins.";
+    if (intro) intro.textContent = "All four Premier League results from 18 October are verified. Arsenal moved within three points of Manchester City, Brighton stayed third and Bournemouth climbed out of the relegation zone.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
