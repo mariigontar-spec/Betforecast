@@ -1,7 +1,332 @@
 {
-  "updatedAt": "2026-10-19T00:00:00+03:00",
-  "featuredId": "tottenham-coventry-oct19",
+  "updatedAt": "2026-10-20T00:00:00+03:00",
+  "featuredId": "liverpool-villarreal-oct20",
   "events": [
+    {
+      "id": "tottenham-coventry-oct19-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "19 Oct",
+      "time": "Final",
+      "title": "Tottenham 2-1 Coventry City",
+      "home": "Tottenham",
+      "away": "Coventry City",
+      "homeScore": "2",
+      "awayScore": "1",
+      "competition": "Premier League",
+      "stage": "Matchweek 7",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "James Maddison and Omar Marmoush scored for Tottenham"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png"
+    },
+    {
+      "id": "liverpool-villarreal-oct20",
+      "type": "event",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "20:00 BST",
+      "title": "Liverpool vs Villarreal",
+      "home": "Liverpool",
+      "away": "Villarreal",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Champions League league phase",
+        "Matchday 3"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://flagcdn.com/w320/gb.png"
+    },
+    {
+      "id": "man-city-aek-oct20",
+      "type": "event",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "20:00 BST",
+      "title": "Man City vs AEK Athens",
+      "home": "Man City",
+      "away": "AEK Athens",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Champions League league phase",
+        "Matchday 3"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "awayLogo": "https://flagcdn.com/w320/gb.png"
+    },
+    {
+      "id": "porto-psv-oct20",
+      "type": "event",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "20:00 BST",
+      "title": "Porto vs PSV Eindhoven",
+      "home": "Porto",
+      "away": "PSV Eindhoven",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Champions League league phase",
+        "Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/gb.png",
+      "awayLogo": "https://flagcdn.com/w320/gb.png"
+    },
+    {
+      "id": "napoli-bodo-glimt-oct20",
+      "type": "event",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "20:00 BST",
+      "title": "Napoli vs Bodo/Glimt",
+      "home": "Napoli",
+      "away": "Bodo/Glimt",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Champions League league phase",
+        "Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/gb.png",
+      "awayLogo": "https://flagcdn.com/w320/gb.png"
+    },
+    {
+      "id": "roma-slovan-oct20",
+      "type": "event",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "20:00 BST",
+      "title": "Roma vs Slovan Bratislava",
+      "home": "Roma",
+      "away": "Slovan Bratislava",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Champions League league phase",
+        "Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/gb.png",
+      "awayLogo": "https://flagcdn.com/w320/gb.png"
+    },
+    {
+      "id": "stuttgart-atletico-oct20",
+      "type": "event",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "20:00 BST",
+      "title": "Stuttgart vs Atletico Madrid",
+      "home": "Stuttgart",
+      "away": "Atletico Madrid",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Champions League league phase",
+        "Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/gb.png",
+      "awayLogo": "https://flagcdn.com/w320/gb.png"
+    },
+    {
+      "id": "ipswich-nottingham-forest-oct23",
+      "type": "event",
+      "sport": "Football",
+      "date": "23 Oct",
+      "time": "20:00 BST",
+      "title": "Ipswich Town vs Nottm Forest",
+      "home": "Ipswich Town",
+      "away": "Nottm Forest",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png"
+    },
+    {
+      "id": "aston-villa-man-city-oct24",
+      "type": "event",
+      "sport": "Football",
+      "date": "24 Oct",
+      "time": "12:30 BST",
+      "title": "Aston Villa vs Man City",
+      "home": "Aston Villa",
+      "away": "Man City",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
+    },
+    {
+      "id": "arsenal-everton-oct24",
+      "type": "event",
+      "sport": "Football",
+      "date": "24 Oct",
+      "time": "15:00 BST",
+      "title": "Arsenal vs Everton",
+      "home": "Arsenal",
+      "away": "Everton",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
+    },
+    {
+      "id": "coventry-fulham-oct24",
+      "type": "event",
+      "sport": "Football",
+      "date": "24 Oct",
+      "time": "15:00 BST",
+      "title": "Coventry City vs Fulham",
+      "home": "Coventry City",
+      "away": "Fulham",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 8"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png"
+    },
+    {
+      "id": "chelsea-tottenham-oct24",
+      "type": "event",
+      "sport": "Football",
+      "date": "24 Oct",
+      "time": "17:30 BST",
+      "title": "Chelsea vs Tottenham",
+      "home": "Chelsea",
+      "away": "Tottenham",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
+    },
+    {
+      "id": "crystal-palace-newcastle-oct25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Oct",
+      "time": "14:00 GMT",
+      "title": "Crystal Palace vs Newcastle",
+      "home": "Crystal Palace",
+      "away": "Newcastle",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+    },
+    {
+      "id": "liverpool-brighton-oct25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Oct",
+      "time": "14:00 GMT",
+      "title": "Liverpool vs Brighton",
+      "home": "Liverpool",
+      "away": "Brighton",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
+    },
+    {
+      "id": "hull-brentford-oct25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Oct",
+      "time": "14:00 GMT",
+      "title": "Hull City vs Brentford",
+      "home": "Hull City",
+      "away": "Brentford",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 8"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
+    },
+    {
+      "id": "man-united-bournemouth-oct25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Oct",
+      "time": "14:00 GMT",
+      "title": "Man United vs Bournemouth",
+      "home": "Man United",
+      "away": "Bournemouth",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
+    },
+    {
+      "id": "sunderland-leeds-oct25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Oct",
+      "time": "16:30 GMT",
+      "title": "Sunderland vs Leeds United",
+      "home": "Sunderland",
+      "away": "Leeds United",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
+    },
     {
       "id": "bournemouth-sunderland-oct18-result",
       "type": "result",
@@ -190,25 +515,6 @@
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
-    },
-    {
-      "id": "tottenham-coventry-oct19",
-      "type": "event",
-      "sport": "Football",
-      "date": "19 Oct",
-      "time": "20:00 BST",
-      "title": "Tottenham vs Coventry City",
-      "home": "Tottenham",
-      "away": "Coventry City",
-      "competition": "Premier League",
-      "stage": "Matchweek 7",
-      "status": "Today",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 7 closes on Monday"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
-      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png"
     },
     {
       "id": "coventry-newcastle-oct12-result",
