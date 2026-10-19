@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 19 Oct 2026";
-  if (t) t.textContent = "World sports · Monday Matchweek 7";
+  if (k) k.textContent = "World Sports News · 20 Oct 2026";
+  if (t) t.textContent = "World sports · Champions League Tuesday";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="news.html">Brighton score five in derby</a><a class="sidebar-link-card" href="news.html">Arsenal close gap to City</a><a class="sidebar-link-card" href="news.html">Man United held at Leeds</a><a class="sidebar-link-card" href="match.html?id=tottenham-coventry-oct19">Tottenham–Coventry today</a><a class="sidebar-link-card" href="standings.html">EPL table updated</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Tottenham earn first win</a><a class="sidebar-link-card" href="match.html?id=liverpool-villarreal-oct20">Liverpool–Villarreal</a><a class="sidebar-link-card" href="match.html?id=man-city-aek-oct20">Man City–AEK</a><a class="sidebar-link-card" href="news.html">UEFA asks FIFA for answers</a><a class="sidebar-link-card" href="standings.html">EPL table updated</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Arsenal closed to within three points of Manchester City, Brighton thrashed Crystal Palace 5-0 and Tottenham host Coventry in the final match of the round today.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Tottenham beat Coventry 2-1 to complete Matchweek 7. Champions League Matchday 3 begins today with Liverpool–Villarreal and Manchester City–AEK among the headline fixtures.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
