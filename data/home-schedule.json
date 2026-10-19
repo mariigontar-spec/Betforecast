@@ -40,7 +40,7 @@
         "Matchday 3"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://flagcdn.com/w320/gb.png"
+      "awayLogo": "https://flagcdn.com/w320/es.png"
     },
     {
       "id": "man-city-aek-oct20",
@@ -59,7 +59,7 @@
         "Matchday 3"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
-      "awayLogo": "https://flagcdn.com/w320/gb.png"
+      "awayLogo": "https://flagcdn.com/w320/gr.png"
     },
     {
       "id": "porto-psv-oct20",
@@ -77,8 +77,8 @@
         "Champions League league phase",
         "Matchday 3"
       ],
-      "homeLogo": "https://flagcdn.com/w320/gb.png",
-      "awayLogo": "https://flagcdn.com/w320/gb.png"
+      "homeLogo": "https://flagcdn.com/w320/pt.png",
+      "awayLogo": "https://flagcdn.com/w320/nl.png"
     },
     {
       "id": "napoli-bodo-glimt-oct20",
@@ -96,8 +96,8 @@
         "Champions League league phase",
         "Matchday 3"
       ],
-      "homeLogo": "https://flagcdn.com/w320/gb.png",
-      "awayLogo": "https://flagcdn.com/w320/gb.png"
+      "homeLogo": "https://flagcdn.com/w320/it.png",
+      "awayLogo": "https://flagcdn.com/w320/no.png"
     },
     {
       "id": "roma-slovan-oct20",
@@ -115,8 +115,8 @@
         "Champions League league phase",
         "Matchday 3"
       ],
-      "homeLogo": "https://flagcdn.com/w320/gb.png",
-      "awayLogo": "https://flagcdn.com/w320/gb.png"
+      "homeLogo": "https://flagcdn.com/w320/it.png",
+      "awayLogo": "https://flagcdn.com/w320/sk.png"
     },
     {
       "id": "stuttgart-atletico-oct20",
@@ -134,8 +134,8 @@
         "Champions League league phase",
         "Matchday 3"
       ],
-      "homeLogo": "https://flagcdn.com/w320/gb.png",
-      "awayLogo": "https://flagcdn.com/w320/gb.png"
+      "homeLogo": "https://flagcdn.com/w320/de.png",
+      "awayLogo": "https://flagcdn.com/w320/es.png"
     },
     {
       "id": "ipswich-nottingham-forest-oct23",
