@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Manchester City lead on 21 points · checked 19 Oct",
-      "insightText": "Arsenal closed to three points behind City, Brighton strengthened third place, and Bournemouth climbed out of the relegation zone after the four completed matches on 18 October.",
+      "insightTitle": "Manchester City lead on 21 points · checked 20 Oct",
+      "insightText": "Matchweek 7 is complete. Tottenham earned their first league win and moved out of the relegation zone after beating Coventry 2-1.",
       "table": [
         {
           "pos": 1,
@@ -296,25 +296,44 @@
         },
         {
           "pos": 16,
-          "team": "Coventry City",
-          "played": 6,
-          "wins": 2,
-          "draws": 0,
-          "losses": 4,
+          "team": "Tottenham",
+          "played": 7,
+          "wins": 1,
+          "draws": 3,
+          "losses": 3,
           "gf": 5,
-          "ga": 11,
+          "ga": 10,
           "points": 6,
           "form": [
+            "D",
+            "D",
             "L",
-            "L",
-            "L",
-            "W",
+            "D",
             "W"
           ],
           "zone": "safe"
         },
         {
           "pos": 17,
+          "team": "Coventry City",
+          "played": 7,
+          "wins": 2,
+          "draws": 0,
+          "losses": 5,
+          "gf": 6,
+          "ga": 13,
+          "points": 6,
+          "form": [
+            "L",
+            "L",
+            "W",
+            "W",
+            "L"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 18,
           "team": "Fulham",
           "played": 7,
           "wins": 1,
@@ -330,10 +349,10 @@
             "D",
             "D"
           ],
-          "zone": "safe"
+          "zone": "relegation"
         },
         {
-          "pos": 18,
+          "pos": 19,
           "team": "Nottm Forest",
           "played": 7,
           "wins": 1,
@@ -352,7 +371,7 @@
           "zone": "relegation"
         },
         {
-          "pos": 19,
+          "pos": 20,
           "team": "Sunderland",
           "played": 7,
           "wins": 1,
@@ -369,28 +388,15 @@
             "L"
           ],
           "zone": "relegation"
-        },
-        {
-          "pos": 20,
-          "team": "Tottenham",
-          "played": 6,
-          "wins": 0,
-          "draws": 3,
-          "losses": 3,
-          "gf": 3,
-          "ga": 9,
-          "points": 3,
-          "form": [
-            "L",
-            "D",
-            "D",
-            "L",
-            "D"
-          ],
-          "zone": "relegation"
         }
       ],
       "lastMatches": [
+        {
+          "time": "19 Oct",
+          "match": "Tottenham vs Coventry City",
+          "score": "2:1",
+          "status": "finished"
+        },
         {
           "time": "18 Oct",
           "match": "Nottm Forest vs Arsenal",
@@ -444,18 +450,57 @@
           "match": "Everton vs Chelsea",
           "score": "0:2",
           "status": "finished"
-        },
-        {
-          "time": "12 Oct",
-          "match": "Coventry City vs Newcastle",
-          "score": "4:1",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
         {
-          "time": "19 Oct · 20:00",
-          "match": "Tottenham vs Coventry City",
+          "time": "23 Oct · 20:00",
+          "match": "Ipswich Town vs Nottm Forest",
+          "status": "upcoming"
+        },
+        {
+          "time": "24 Oct · 12:30",
+          "match": "Aston Villa vs Man City",
+          "status": "upcoming"
+        },
+        {
+          "time": "24 Oct · 15:00",
+          "match": "Arsenal vs Everton",
+          "status": "upcoming"
+        },
+        {
+          "time": "24 Oct · 15:00",
+          "match": "Coventry City vs Fulham",
+          "status": "upcoming"
+        },
+        {
+          "time": "24 Oct · 17:30",
+          "match": "Chelsea vs Tottenham",
+          "status": "upcoming"
+        },
+        {
+          "time": "25 Oct · 14:00",
+          "match": "Crystal Palace vs Newcastle",
+          "status": "upcoming"
+        },
+        {
+          "time": "25 Oct · 14:00",
+          "match": "Liverpool vs Brighton",
+          "status": "upcoming"
+        },
+        {
+          "time": "25 Oct · 14:00",
+          "match": "Hull City vs Brentford",
+          "status": "upcoming"
+        },
+        {
+          "time": "25 Oct · 14:00",
+          "match": "Man United vs Bournemouth",
+          "status": "upcoming"
+        },
+        {
+          "time": "25 Oct · 16:30",
+          "match": "Sunderland vs Leeds United",
           "status": "upcoming"
         }
       ]
