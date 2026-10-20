@@ -38,12 +38,12 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Matchweek 7 is complete: Manchester City lead on 21 points, Arsenal have 18 and Brighton 16. Champions League Matchday 3 begins today, led by Liverpool–Villarreal.";
+        "Champions League Matchday 3 continues today, led by Bayern–Arsenal and Real Madrid–Leipzig. Liverpool won 4–3 and Manchester City 5–1 on Tuesday.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Liverpool–Villarreal · 20:00 BST</span></div>
+        <div><strong>Featured</strong><span>Bayern–Arsenal · 20:00 BST</span></div>
         <div><strong>Today</strong><span>Champions League Matchday 3</span></div>
         <div><strong>Table</strong><span>Manchester City lead on 21 points</span></div>
       `;
@@ -51,23 +51,23 @@
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Liverpool, Villarreal, Man City, Champions League";
+      input.placeholder = "Try: Bayern, Arsenal, Real Madrid, Champions League";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Liverpool Villarreal">Liverpool–Villarreal</button>
-        <button type="button" data-query="Manchester City AEK">Man City–AEK</button>
-        <button type="button" data-query="Tottenham Coventry">Tottenham 2–1 Coventry</button>
+        <button type="button" data-query="Bayern Arsenal">Bayern–Arsenal</button>
+        <button type="button" data-query="Real Madrid Leipzig">Real Madrid–Leipzig</button>
+        <button type="button" data-query="Liverpool Villarreal">Liverpool 4–3 Villarreal</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=liverpool-villarreal-oct20", title: "Liverpool vs Villarreal", detail: "20 Oct · Champions League · 20:00 BST", tag: "Featured" },
-      { href: "match.html?id=man-city-aek-oct20", title: "Man City vs AEK Athens", detail: "20 Oct · Champions League · 20:00 BST", tag: "Today" },
-      { href: "results.html", title: "Tottenham 2-1 Coventry City", detail: "19 Oct · Premier League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 7", detail: "Round complete · checked 20 Oct", tag: "Table" },
+      { href: "match.html?id=bayern-arsenal-oct21", title: "Bayern Munich vs Arsenal", detail: "21 Oct · Champions League · 20:00 BST", tag: "Featured" },
+      { href: "match.html?id=real-madrid-leipzig-oct21", title: "Real Madrid vs RB Leipzig", detail: "21 Oct · Champions League · 20:00 BST", tag: "Today" },
+      { href: "results.html", title: "Liverpool 4-3 Villarreal", detail: "20 Oct · Champions League · Final", tag: "Result" },
+      { href: "standings.html", title: "Premier League · Matchweek 7", detail: "Round complete · checked 21 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
