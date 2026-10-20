@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Manchester City lead on 21 points · checked 20 Oct",
-      "insightText": "Matchweek 7 is complete. Tottenham earned their first league win and moved out of the relegation zone after beating Coventry 2-1.",
+      "insightTitle": "Manchester City lead on 21 points · checked 21 Oct",
+      "insightText": "Matchweek 7 is complete. Tottenham earned their first league win and moved out of the relegation zone after beating Coventry 3-1.",
       "table": [
         {
           "pos": 1,
@@ -301,7 +301,7 @@
           "wins": 1,
           "draws": 3,
           "losses": 3,
-          "gf": 5,
+          "gf": 6,
           "ga": 10,
           "points": 6,
           "form": [
@@ -394,7 +394,7 @@
         {
           "time": "19 Oct",
           "match": "Tottenham vs Coventry City",
-          "score": "2:1",
+          "score": "3:1",
           "status": "finished"
         },
         {
