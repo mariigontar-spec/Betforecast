@@ -1,141 +1,387 @@
 {
-  "updatedAt": "2026-10-20T00:00:00+03:00",
-  "featuredId": "liverpool-villarreal-oct20",
+  "updatedAt": "2026-10-21T00:00:00+03:00",
+  "featuredId": "bayern-arsenal-oct21",
   "events": [
+    {
+      "id": "bayern-arsenal-oct21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Oct",
+      "time": "20:00 BST",
+      "title": "Bayern Munich vs Arsenal",
+      "home": "Bayern Munich",
+      "away": "Arsenal",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/de.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+    },
+    {
+      "id": "real-madrid-leipzig-oct21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Oct",
+      "time": "20:00 BST",
+      "title": "Real Madrid vs RB Leipzig",
+      "home": "Real Madrid",
+      "away": "RB Leipzig",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/es.png",
+      "awayLogo": "https://flagcdn.com/w320/de.png"
+    },
+    {
+      "id": "como-man-united-oct21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Oct",
+      "time": "17:45 BST",
+      "title": "Como vs Man United",
+      "home": "Como",
+      "away": "Man United",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/it.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
+    },
+    {
+      "id": "lille-galatasaray-oct21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Oct",
+      "time": "17:45 BST",
+      "title": "Lille vs Galatasaray",
+      "home": "Lille",
+      "away": "Galatasaray",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/fr.png",
+      "awayLogo": "https://flagcdn.com/w320/tr.png"
+    },
+    {
+      "id": "aston-villa-viking-oct21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Oct",
+      "time": "20:00 BST",
+      "title": "Aston Villa vs Viking FK",
+      "home": "Aston Villa",
+      "away": "Viking FK",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+      "awayLogo": "https://flagcdn.com/w320/no.png"
+    },
+    {
+      "id": "club-brugge-lens-oct21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Oct",
+      "time": "20:00 BST",
+      "title": "Club Brugge vs Lens",
+      "home": "Club Brugge",
+      "away": "Lens",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/be.png",
+      "awayLogo": "https://flagcdn.com/w320/fr.png"
+    },
+    {
+      "id": "inter-shakhtar-oct21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Oct",
+      "time": "20:00 BST",
+      "title": "Inter vs Shakhtar Donetsk",
+      "home": "Inter",
+      "away": "Shakhtar Donetsk",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/it.png",
+      "awayLogo": "https://flagcdn.com/w320/ua.png"
+    },
+    {
+      "id": "real-betis-feyenoord-oct21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Oct",
+      "time": "20:00 BST",
+      "title": "Real Betis vs Feyenoord",
+      "home": "Real Betis",
+      "away": "Feyenoord",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/es.png",
+      "awayLogo": "https://flagcdn.com/w320/nl.png"
+    },
+    {
+      "id": "sporting-lask-oct21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Oct",
+      "time": "20:00 BST",
+      "title": "Sporting CP vs LASK",
+      "home": "Sporting CP",
+      "away": "LASK",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/pt.png",
+      "awayLogo": "https://flagcdn.com/w320/at.png"
+    },
+    {
+      "id": "liverpool-villarreal-oct20-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "Final",
+      "title": "Liverpool 4-3 Villarreal",
+      "home": "Liverpool",
+      "away": "Villarreal",
+      "homeScore": "4",
+      "awayScore": "3",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://flagcdn.com/w320/es.png"
+    },
+    {
+      "id": "man-city-aek-oct20-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "Final",
+      "title": "Man City 5-1 AEK Athens",
+      "home": "Man City",
+      "away": "AEK Athens",
+      "homeScore": "5",
+      "awayScore": "1",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "awayLogo": "https://flagcdn.com/w320/gr.png"
+    },
+    {
+      "id": "psg-barcelona-oct20-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "Final",
+      "title": "Paris Saint-Germain 4-2 Barcelona",
+      "home": "Paris Saint-Germain",
+      "away": "Barcelona",
+      "homeScore": "4",
+      "awayScore": "2",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/fr.png",
+      "awayLogo": "https://flagcdn.com/w320/es.png"
+    },
+    {
+      "id": "napoli-bodo-oct20-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "Final",
+      "title": "Napoli 4-2 Bodo/Glimt",
+      "home": "Napoli",
+      "away": "Bodo/Glimt",
+      "homeScore": "4",
+      "awayScore": "2",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/it.png",
+      "awayLogo": "https://flagcdn.com/w320/no.png"
+    },
+    {
+      "id": "roma-slovan-oct20-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "Final",
+      "title": "Roma 3-0 Slovan Bratislava",
+      "home": "Roma",
+      "away": "Slovan Bratislava",
+      "homeScore": "3",
+      "awayScore": "0",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/it.png",
+      "awayLogo": "https://flagcdn.com/w320/sk.png"
+    },
+    {
+      "id": "porto-psv-oct20-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "Final",
+      "title": "Porto 0-1 PSV Eindhoven",
+      "home": "Porto",
+      "away": "PSV Eindhoven",
+      "homeScore": "0",
+      "awayScore": "1",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/pt.png",
+      "awayLogo": "https://flagcdn.com/w320/nl.png"
+    },
+    {
+      "id": "stuttgart-atletico-oct20-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "Final",
+      "title": "Stuttgart 1-0 Atletico Madrid",
+      "home": "Stuttgart",
+      "away": "Atletico Madrid",
+      "homeScore": "1",
+      "awayScore": "0",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/de.png",
+      "awayLogo": "https://flagcdn.com/w320/es.png"
+    },
+    {
+      "id": "fenerbahce-slavia-oct20-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "Final",
+      "title": "Fenerbahce 2-2 Slavia Prague",
+      "home": "Fenerbahce",
+      "away": "Slavia Prague",
+      "homeScore": "2",
+      "awayScore": "2",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/tr.png",
+      "awayLogo": "https://flagcdn.com/w320/cz.png"
+    },
+    {
+      "id": "sabah-dortmund-oct20-result",
+      "type": "result",
+      "sport": "Football",
+      "date": "20 Oct",
+      "time": "Final",
+      "title": "Sabah 1-2 Borussia Dortmund",
+      "home": "Sabah",
+      "away": "Borussia Dortmund",
+      "homeScore": "1",
+      "awayScore": "2",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 3",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Champions League Matchday 3"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/az.png",
+      "awayLogo": "https://flagcdn.com/w320/de.png"
+    },
     {
       "id": "tottenham-coventry-oct19-result",
       "type": "result",
       "sport": "Football",
       "date": "19 Oct",
       "time": "Final",
-      "title": "Tottenham 2-1 Coventry City",
+      "title": "Tottenham 3-1 Coventry City",
       "home": "Tottenham",
       "away": "Coventry City",
-      "homeScore": "2",
+      "homeScore": "3",
       "awayScore": "1",
       "competition": "Premier League",
       "stage": "Matchweek 7",
       "status": "Result",
       "signals": [
         "Verified final score",
-        "James Maddison and Omar Marmoush scored for Tottenham"
+        "Maddison, Marmoush and Davies scored for Tottenham"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
       "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png"
-    },
-    {
-      "id": "liverpool-villarreal-oct20",
-      "type": "event",
-      "sport": "Football",
-      "date": "20 Oct",
-      "time": "20:00 BST",
-      "title": "Liverpool vs Villarreal",
-      "home": "Liverpool",
-      "away": "Villarreal",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 3",
-      "status": "Today",
-      "signals": [
-        "Champions League league phase",
-        "Matchday 3"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://flagcdn.com/w320/es.png"
-    },
-    {
-      "id": "man-city-aek-oct20",
-      "type": "event",
-      "sport": "Football",
-      "date": "20 Oct",
-      "time": "20:00 BST",
-      "title": "Man City vs AEK Athens",
-      "home": "Man City",
-      "away": "AEK Athens",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 3",
-      "status": "Today",
-      "signals": [
-        "Champions League league phase",
-        "Matchday 3"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
-      "awayLogo": "https://flagcdn.com/w320/gr.png"
-    },
-    {
-      "id": "porto-psv-oct20",
-      "type": "event",
-      "sport": "Football",
-      "date": "20 Oct",
-      "time": "20:00 BST",
-      "title": "Porto vs PSV Eindhoven",
-      "home": "Porto",
-      "away": "PSV Eindhoven",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 3",
-      "status": "Today",
-      "signals": [
-        "Champions League league phase",
-        "Matchday 3"
-      ],
-      "homeLogo": "https://flagcdn.com/w320/pt.png",
-      "awayLogo": "https://flagcdn.com/w320/nl.png"
-    },
-    {
-      "id": "napoli-bodo-glimt-oct20",
-      "type": "event",
-      "sport": "Football",
-      "date": "20 Oct",
-      "time": "20:00 BST",
-      "title": "Napoli vs Bodo/Glimt",
-      "home": "Napoli",
-      "away": "Bodo/Glimt",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 3",
-      "status": "Today",
-      "signals": [
-        "Champions League league phase",
-        "Matchday 3"
-      ],
-      "homeLogo": "https://flagcdn.com/w320/it.png",
-      "awayLogo": "https://flagcdn.com/w320/no.png"
-    },
-    {
-      "id": "roma-slovan-oct20",
-      "type": "event",
-      "sport": "Football",
-      "date": "20 Oct",
-      "time": "20:00 BST",
-      "title": "Roma vs Slovan Bratislava",
-      "home": "Roma",
-      "away": "Slovan Bratislava",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 3",
-      "status": "Today",
-      "signals": [
-        "Champions League league phase",
-        "Matchday 3"
-      ],
-      "homeLogo": "https://flagcdn.com/w320/it.png",
-      "awayLogo": "https://flagcdn.com/w320/sk.png"
-    },
-    {
-      "id": "stuttgart-atletico-oct20",
-      "type": "event",
-      "sport": "Football",
-      "date": "20 Oct",
-      "time": "20:00 BST",
-      "title": "Stuttgart vs Atletico Madrid",
-      "home": "Stuttgart",
-      "away": "Atletico Madrid",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 3",
-      "status": "Today",
-      "signals": [
-        "Champions League league phase",
-        "Matchday 3"
-      ],
-      "homeLogo": "https://flagcdn.com/w320/de.png",
-      "awayLogo": "https://flagcdn.com/w320/es.png"
     },
     {
       "id": "ipswich-nottingham-forest-oct23",
