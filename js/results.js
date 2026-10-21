@@ -4,13 +4,22 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Como", awayName: "Man United", homeGoals: "4", awayGoals: "1", venue: "League phase · Matchday 3", date: "21 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Lille", awayName: "Galatasaray", homeGoals: "2", awayGoals: "4", venue: "League phase · Matchday 3", date: "21 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Aston Villa", awayName: "Viking FK", homeGoals: "3", awayGoals: "1", venue: "League phase · Matchday 3", date: "21 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Club Brugge", awayName: "Lens", homeGoals: "3", awayGoals: "0", venue: "League phase · Matchday 3", date: "21 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Bayern Munich", awayName: "Arsenal", homeGoals: "2", awayGoals: "2", venue: "League phase · Matchday 3", date: "21 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Inter", awayName: "Shakhtar Donetsk", homeGoals: "1", awayGoals: "0", venue: "League phase · Matchday 3", date: "21 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Real Madrid", awayName: "RB Leipzig", homeGoals: "4", awayGoals: "1", venue: "League phase · Matchday 3", date: "21 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Real Betis", awayName: "Feyenoord", homeGoals: "1", awayGoals: "0", venue: "League phase · Matchday 3", date: "21 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Sporting CP", awayName: "LASK", homeGoals: "2", awayGoals: "3", venue: "League phase · Matchday 3", date: "21 Oct", href: "results.html" },
     { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Liverpool", awayName: "Villarreal", homeGoals: "4", awayGoals: "3", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
     { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Man City", awayName: "AEK Athens", homeGoals: "5", awayGoals: "1", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
     { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Paris Saint-Germain", awayName: "Barcelona", homeGoals: "4", awayGoals: "2", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
-    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Napoli", awayName: "Bodo/Glimt", homeGoals: "4", awayGoals: "2", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
-    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Roma", awayName: "Slovan Bratislava", homeGoals: "3", awayGoals: "0", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Napoli", awayName: "Bodo/Glimt", homeGoals: "4", awayGoals: "3", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Roma", awayName: "Slovan Bratislava", homeGoals: "4", awayGoals: "0", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
     { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Porto", awayName: "PSV Eindhoven", homeGoals: "0", awayGoals: "1", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
-    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Stuttgart", awayName: "Atletico Madrid", homeGoals: "1", awayGoals: "0", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
+    { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Stuttgart", awayName: "Atletico Madrid", homeGoals: "1", awayGoals: "1", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
     { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Fenerbahce", awayName: "Slavia Prague", homeGoals: "2", awayGoals: "2", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
     { round: "Football · UEFA Champions League", status: "FINAL", homeName: "Sabah", awayName: "Borussia Dortmund", homeGoals: "1", awayGoals: "2", venue: "League phase · Matchday 3", date: "20 Oct", href: "results.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Tottenham", awayName: "Coventry City", homeGoals: "3", awayGoals: "1", venue: "Matchweek 7", date: "19 Oct", href: "standings.html" },
@@ -157,7 +166,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 21 Oct 2026");
+    setStatus("World sports results · checked 22 Oct 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -167,7 +176,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Champions League Matchday 3 produced wins for Liverpool, Manchester City, Paris Saint-Germain, Napoli, Roma, PSV, Stuttgart and Dortmund. Tottenham’s corrected 3-1 win over Coventry completed Premier League Matchweek 7.";
+    if (intro) intro.textContent = "Champions League Matchday 3 is complete. Real Madrid won 4-1, Aston Villa 3-1 and Como beat Manchester United 4-1, while Bayern and Arsenal drew 2-2.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
