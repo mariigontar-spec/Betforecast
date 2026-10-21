@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Champions League Matchday 3 continues today, led by Bayern–Arsenal and Real Madrid–Leipzig. Liverpool won 4–3 and Manchester City 5–1 on Tuesday.";
+        "Champions League Matchday 3 is complete. Europa League action takes over today, led by Bournemouth–Milan and Besiktas–Crystal Palace.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Bayern–Arsenal · 20:00 BST</span></div>
-        <div><strong>Today</strong><span>Champions League Matchday 3</span></div>
+        <div><strong>Featured</strong><span>Bournemouth–Milan · 20:00 BST</span></div>
+        <div><strong>Today</strong><span>Europa League Matchday 3</span></div>
         <div><strong>Table</strong><span>Manchester City lead on 21 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Bayern, Arsenal, Real Madrid, Champions League";
+      input.placeholder = "Try: Bournemouth, Milan, Juventus, Europa League";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Bayern Arsenal">Bayern–Arsenal</button>
-        <button type="button" data-query="Real Madrid Leipzig">Real Madrid–Leipzig</button>
-        <button type="button" data-query="Liverpool Villarreal">Liverpool 4–3 Villarreal</button>
+        <button type="button" data-query="Bournemouth Milan">Bournemouth–Milan</button>
+        <button type="button" data-query="Besiktas Crystal Palace">Besiktas–Crystal Palace</button>
+        <button type="button" data-query="Como Manchester United">Como 4–1 Man United</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=bayern-arsenal-oct21", title: "Bayern Munich vs Arsenal", detail: "21 Oct · Champions League · 20:00 BST", tag: "Featured" },
-      { href: "match.html?id=real-madrid-leipzig-oct21", title: "Real Madrid vs RB Leipzig", detail: "21 Oct · Champions League · 20:00 BST", tag: "Today" },
-      { href: "results.html", title: "Liverpool 4-3 Villarreal", detail: "20 Oct · Champions League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 7", detail: "Round complete · checked 21 Oct", tag: "Table" },
+      { href: "match.html?id=bournemouth-milan-oct22", title: "Bournemouth vs AC Milan", detail: "22 Oct · Europa League · 20:00 BST", tag: "Featured" },
+      { href: "match.html?id=besiktas-crystal-palace-oct22", title: "Besiktas vs Crystal Palace", detail: "22 Oct · Europa League · 20:00 BST", tag: "Today" },
+      { href: "results.html", title: "Real Madrid 4-1 RB Leipzig", detail: "21 Oct · Champions League · Final", tag: "Result" },
+      { href: "standings.html", title: "Premier League · Matchweek 7", detail: "Round complete · checked 22 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
