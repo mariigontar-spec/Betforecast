@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 22 Oct 2026";
-  if (t) t.textContent = "World sports · Europa League Thursday";
+  if (k) k.textContent = "World Sports News · 23 Oct 2026";
+  if (t) t.textContent = "World sports · Premier League Friday";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Real Madrid win 4–1</a><a class="sidebar-link-card" href="match.html?id=bournemouth-milan-oct22">Bournemouth–Milan</a><a class="sidebar-link-card" href="match.html?id=besiktas-crystal-palace-oct22">Besiktas–Crystal Palace</a><a class="sidebar-link-card" href="news.html">Antonelli nears F1 title</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=ipswich-nottingham-forest-oct23">Ipswich–Nottm Forest</a><a class="sidebar-link-card" href="results.html">Bournemouth beat Milan 3–0</a><a class="sidebar-link-card" href="results.html">Real Sociedad win 6–0</a><a class="sidebar-link-card" href="results.html">Juventus draw Rennes 2–2</a><a class="sidebar-link-card" href="standings.html">EPL table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Champions League Matchday 3 is complete: Real Madrid won 4-1, Como beat Manchester United 4-1 and Bayern drew 2-2 with Arsenal. Europa League Matchday 3 begins today.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Europa League Matchday 3 is complete: Bournemouth beat Milan 3-0, Real Sociedad won 6-0 and Juventus drew 2-2 with Rennes. Premier League Matchweek 8 starts today.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
