@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Champions League Matchday 3 is complete. Europa League action takes over today, led by Bournemouth–Milan and Besiktas–Crystal Palace.";
+        "Europa League Matchday 3 is complete. Premier League Matchweek 8 starts tonight with Ipswich Town–Nottm Forest.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Bournemouth–Milan · 20:00 BST</span></div>
-        <div><strong>Today</strong><span>Europa League Matchday 3</span></div>
+        <div><strong>Featured</strong><span>Ipswich–Nottm Forest · 20:00 BST</span></div>
+        <div><strong>Today</strong><span>Premier League Matchweek 8</span></div>
         <div><strong>Table</strong><span>Manchester City lead on 21 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Bournemouth, Milan, Juventus, Europa League";
+      input.placeholder = "Try: Ipswich, Nottm Forest, Premier League";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Bournemouth Milan">Bournemouth–Milan</button>
-        <button type="button" data-query="Besiktas Crystal Palace">Besiktas–Crystal Palace</button>
-        <button type="button" data-query="Como Manchester United">Como 4–1 Man United</button>
+        <button type="button" data-query="Ipswich Nottm Forest">Ipswich–Nottm Forest</button>
+        <button type="button" data-query="Aston Villa Man City">Aston Villa–Man City</button>
+        <button type="button" data-query="Bournemouth Milan">Bournemouth 3–0 Milan</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=bournemouth-milan-oct22", title: "Bournemouth vs AC Milan", detail: "22 Oct · Europa League · 20:00 BST", tag: "Featured" },
-      { href: "match.html?id=besiktas-crystal-palace-oct22", title: "Besiktas vs Crystal Palace", detail: "22 Oct · Europa League · 20:00 BST", tag: "Today" },
-      { href: "results.html", title: "Real Madrid 4-1 RB Leipzig", detail: "21 Oct · Champions League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 7", detail: "Round complete · checked 22 Oct", tag: "Table" },
+      { href: "match.html?id=ipswich-nottingham-forest-oct23", title: "Ipswich Town vs Nottm Forest", detail: "23 Oct · Premier League · 20:00 BST", tag: "Featured" },
+      { href: "results.html", title: "Bournemouth 3-0 AC Milan", detail: "22 Oct · Europa League · Final", tag: "Result" },
+      { href: "results.html", title: "Lillestrom 0-6 Real Sociedad", detail: "22 Oct · Europa League · Final", tag: "Result" },
+      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Starts today · checked 23 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
