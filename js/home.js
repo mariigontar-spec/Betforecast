@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Europa League Matchday 3 is complete. Premier League Matchweek 8 starts tonight with Ipswich Town–Nottm Forest.";
+        "Premier League Matchweek 8 is under way. Five Saturday fixtures are next, led by Aston Villa–Manchester City.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Ipswich–Nottm Forest · 20:00 BST</span></div>
-        <div><strong>Today</strong><span>Premier League Matchweek 8</span></div>
+        <div><strong>Featured</strong><span>Aston Villa–Man City · 12:30 BST</span></div>
+        <div><strong>Today</strong><span>Five Premier League fixtures</span></div>
         <div><strong>Table</strong><span>Manchester City lead on 21 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Ipswich, Nottm Forest, Premier League";
+      input.placeholder = "Try: Aston Villa, Man City, Premier League";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Ipswich Nottm Forest">Ipswich–Nottm Forest</button>
         <button type="button" data-query="Aston Villa Man City">Aston Villa–Man City</button>
-        <button type="button" data-query="Bournemouth Milan">Bournemouth 3–0 Milan</button>
+        <button type="button" data-query="Chelsea Tottenham">Chelsea–Tottenham</button>
+        <button type="button" data-query="Liverpool Brighton">Liverpool–Brighton</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=ipswich-nottingham-forest-oct23", title: "Ipswich Town vs Nottm Forest", detail: "23 Oct · Premier League · 20:00 BST", tag: "Featured" },
-      { href: "results.html", title: "Bournemouth 3-0 AC Milan", detail: "22 Oct · Europa League · Final", tag: "Result" },
-      { href: "results.html", title: "Lillestrom 0-6 Real Sociedad", detail: "22 Oct · Europa League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Starts today · checked 23 Oct", tag: "Table" },
+      { href: "match.html?id=aston-villa-man-city-oct24", title: "Aston Villa vs Man City", detail: "24 Oct · Premier League · 12:30 BST", tag: "Featured" },
+      { href: "match.html?id=chelsea-tottenham-oct24", title: "Chelsea vs Tottenham", detail: "24 Oct · Premier League · 17:30 BST", tag: "Today" },
+      { href: "results.html", title: "Ipswich Town 1-1 Nottm Forest", detail: "23 Oct · Premier League · Final", tag: "Result" },
+      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "In progress · checked 24 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
