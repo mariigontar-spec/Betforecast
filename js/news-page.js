@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 24 Oct 2026";
-  if (t) t.textContent = "World sports · Premier League Saturday";
+  if (k) k.textContent = "World Sports News · 25 Oct 2026";
+  if (t) t.textContent = "World sports · Premier League Sunday";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=aston-villa-man-city-oct24">Aston Villa–Man City</a><a class="sidebar-link-card" href="match.html?id=chelsea-tottenham-oct24">Chelsea–Tottenham</a><a class="sidebar-link-card" href="match.html?id=liverpool-brighton-oct24">Liverpool–Brighton</a><a class="sidebar-link-card" href="results.html">Ipswich draw Forest 1–1</a><a class="sidebar-link-card" href="standings.html">EPL table updated</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=liverpool-brighton-oct25">Liverpool–Brighton</a><a class="sidebar-link-card" href="match.html?id=man-united-bournemouth-oct25">Man United–Bournemouth</a><a class="sidebar-link-card" href="results.html">Villa end City winning run</a><a class="sidebar-link-card" href="results.html">Tottenham win at Chelsea</a><a class="sidebar-link-card" href="standings.html">City lead on goal difference</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Premier League Matchweek 8 opened with Ipswich Town 1-1 Nottm Forest. Five Saturday fixtures follow, led by Aston Villa-Man City and Chelsea-Tottenham.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Manchester City's perfect league start ended with a 2-1 loss at Aston Villa, while Arsenal joined City on 21 points. Five Sunday fixtures complete Matchweek 8.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
