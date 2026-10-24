@@ -1,70 +1,13 @@
 {
-  "updatedAt": "2026-10-24T00:00:00+03:00",
-  "featuredId": "aston-villa-man-city-oct24",
+  "updatedAt": "2026-10-25T00:00:00+03:00",
+  "featuredId": "liverpool-brighton-oct25",
   "events": [
     {
-      "id": "aston-villa-man-city-oct24",
+      "id": "liverpool-brighton-oct25",
       "type": "event",
       "sport": "Football",
-      "date": "24 Oct",
-      "time": "12:30 BST",
-      "title": "Aston Villa vs Man City",
-      "home": "Aston Villa",
-      "away": "Man City",
-      "competition": "Premier League",
-      "stage": "Matchweek 8",
-      "status": "Today",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 8"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
-    },
-    {
-      "id": "arsenal-everton-oct24",
-      "type": "event",
-      "sport": "Football",
-      "date": "24 Oct",
-      "time": "15:00 BST",
-      "title": "Arsenal vs Everton",
-      "home": "Arsenal",
-      "away": "Everton",
-      "competition": "Premier League",
-      "stage": "Matchweek 8",
-      "status": "Today",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 8"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
-    },
-    {
-      "id": "coventry-fulham-oct24",
-      "type": "event",
-      "sport": "Football",
-      "date": "24 Oct",
-      "time": "15:00 BST",
-      "title": "Coventry City vs Fulham",
-      "home": "Coventry City",
-      "away": "Fulham",
-      "competition": "Premier League",
-      "stage": "Matchweek 8",
-      "status": "Today",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 8"
-      ],
-      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png"
-    },
-    {
-      "id": "liverpool-brighton-oct24",
-      "type": "event",
-      "sport": "Football",
-      "date": "24 Oct",
-      "time": "15:00 BST",
+      "date": "25 Oct",
+      "time": "14:00 GMT",
       "title": "Liverpool vs Brighton",
       "home": "Liverpool",
       "away": "Brighton",
@@ -79,25 +22,6 @@
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
     },
     {
-      "id": "chelsea-tottenham-oct24",
-      "type": "event",
-      "sport": "Football",
-      "date": "24 Oct",
-      "time": "17:30 BST",
-      "title": "Chelsea vs Tottenham",
-      "home": "Chelsea",
-      "away": "Tottenham",
-      "competition": "Premier League",
-      "stage": "Matchweek 8",
-      "status": "Today",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 8"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
-    },
-    {
       "id": "crystal-palace-newcastle-oct25",
       "type": "event",
       "sport": "Football",
@@ -108,7 +32,7 @@
       "away": "Newcastle",
       "competition": "Premier League",
       "stage": "Matchweek 8",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 8"
@@ -127,7 +51,7 @@
       "away": "Brentford",
       "competition": "Premier League",
       "stage": "Matchweek 8",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 8"
@@ -146,7 +70,7 @@
       "away": "Bournemouth",
       "competition": "Premier League",
       "stage": "Matchweek 8",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 8"
@@ -165,13 +89,97 @@
       "away": "Leeds United",
       "competition": "Premier League",
       "stage": "Matchweek 8",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 8"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
+    },
+    {
+      "id": "aston-villa-man-city-oct24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Oct",
+      "time": "Final",
+      "title": "Aston Villa 2-1 Man City",
+      "home": "Aston Villa",
+      "away": "Man City",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Premier League Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "homeScore": "2",
+      "awayScore": "1"
+    },
+    {
+      "id": "arsenal-everton-oct24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Oct",
+      "time": "Final",
+      "title": "Arsenal 2-0 Everton",
+      "home": "Arsenal",
+      "away": "Everton",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Premier League Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+      "homeScore": "2",
+      "awayScore": "0"
+    },
+    {
+      "id": "coventry-fulham-oct24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Oct",
+      "time": "Final",
+      "title": "Coventry City 0-1 Fulham",
+      "home": "Coventry City",
+      "away": "Fulham",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Premier League Matchweek 8"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
+      "homeScore": "0",
+      "awayScore": "1"
+    },
+    {
+      "id": "chelsea-tottenham-oct24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Oct",
+      "time": "Final",
+      "title": "Chelsea 0-2 Tottenham",
+      "home": "Chelsea",
+      "away": "Tottenham",
+      "competition": "Premier League",
+      "stage": "Matchweek 8",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Premier League Matchweek 8"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+      "homeScore": "0",
+      "awayScore": "2"
     },
     {
       "id": "ipswich-nottingham-forest-oct23",
