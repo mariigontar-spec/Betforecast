@@ -6,42 +6,42 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Manchester City lead on 21 points · checked 24 Oct",
-      "insightText": "Matchweek 8 opened with Ipswich Town 1-1 Nottm Forest. Five Saturday fixtures are next, led by Aston Villa vs Man City.",
+      "insightTitle": "Manchester City lead Arsenal on goal difference · checked 25 Oct",
+      "insightText": "City and Arsenal have 21 points after Saturday's results. Five Sunday fixtures complete Matchweek 8.",
       "table": [
         {
           "pos": 1,
           "team": "Man City",
-          "played": 7,
+          "played": 8,
           "wins": 7,
           "draws": 0,
-          "losses": 0,
-          "gf": 19,
-          "ga": 7,
+          "losses": 1,
+          "gf": 20,
+          "ga": 9,
           "points": 21,
           "form": [
             "W",
             "W",
             "W",
             "W",
-            "W"
+            "L"
           ],
           "zone": "cl"
         },
         {
           "pos": 2,
           "team": "Arsenal",
-          "played": 7,
-          "wins": 6,
+          "played": 8,
+          "wins": 7,
           "draws": 0,
           "losses": 1,
-          "gf": 11,
+          "gf": 13,
           "ga": 5,
-          "points": 18,
+          "points": 21,
           "form": [
             "W",
-            "W",
             "L",
+            "W",
             "W",
             "W"
           ],
@@ -69,18 +69,18 @@
         {
           "pos": 4,
           "team": "Chelsea",
-          "played": 7,
+          "played": 8,
           "wins": 4,
           "draws": 1,
-          "losses": 2,
+          "losses": 3,
           "gf": 17,
-          "ga": 13,
+          "ga": 15,
           "points": 13,
           "form": [
             "W",
-            "W",
             "L",
             "D",
+            "L",
             "L"
           ],
           "zone": "cl"
@@ -106,6 +106,25 @@
         },
         {
           "pos": 6,
+          "team": "Aston Villa",
+          "played": 8,
+          "wins": 3,
+          "draws": 2,
+          "losses": 3,
+          "gf": 9,
+          "ga": 12,
+          "points": 11,
+          "form": [
+            "L",
+            "D",
+            "L",
+            "W",
+            "W"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 7,
           "team": "Brentford",
           "played": 7,
           "wins": 2,
@@ -124,7 +143,7 @@
           "zone": "safe"
         },
         {
-          "pos": 7,
+          "pos": 8,
           "team": "Leeds United",
           "played": 7,
           "wins": 2,
@@ -143,26 +162,26 @@
           "zone": "safe"
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "Everton",
-          "played": 7,
+          "played": 8,
           "wins": 2,
           "draws": 4,
-          "losses": 1,
+          "losses": 2,
           "gf": 8,
-          "ga": 7,
+          "ga": 9,
           "points": 10,
           "form": [
-            "L",
             "D",
             "D",
             "D",
-            "W"
+            "W",
+            "L"
           ],
           "zone": "safe"
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Ipswich Town",
           "played": 8,
           "wins": 3,
@@ -181,7 +200,7 @@
           "zone": "safe"
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Hull City",
           "played": 7,
           "wins": 2,
@@ -200,7 +219,45 @@
           "zone": "safe"
         },
         {
-          "pos": 11,
+          "pos": 12,
+          "team": "Tottenham",
+          "played": 8,
+          "wins": 2,
+          "draws": 3,
+          "losses": 3,
+          "gf": 8,
+          "ga": 10,
+          "points": 9,
+          "form": [
+            "D",
+            "L",
+            "D",
+            "W",
+            "W"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 13,
+          "team": "Fulham",
+          "played": 8,
+          "wins": 2,
+          "draws": 2,
+          "losses": 4,
+          "gf": 8,
+          "ga": 10,
+          "points": 8,
+          "form": [
+            "L",
+            "L",
+            "D",
+            "D",
+            "W"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 14,
           "team": "Newcastle",
           "played": 7,
           "wins": 2,
@@ -219,26 +276,7 @@
           "zone": "safe"
         },
         {
-          "pos": 12,
-          "team": "Aston Villa",
-          "played": 7,
-          "wins": 2,
-          "draws": 2,
-          "losses": 3,
-          "gf": 7,
-          "ga": 11,
-          "points": 8,
-          "form": [
-            "W",
-            "L",
-            "D",
-            "L",
-            "W"
-          ],
-          "zone": "safe"
-        },
-        {
-          "pos": 13,
+          "pos": 15,
           "team": "Man United",
           "played": 7,
           "wins": 1,
@@ -257,7 +295,7 @@
           "zone": "safe"
         },
         {
-          "pos": 14,
+          "pos": 16,
           "team": "Crystal Palace",
           "played": 7,
           "wins": 2,
@@ -276,7 +314,7 @@
           "zone": "safe"
         },
         {
-          "pos": 15,
+          "pos": 17,
           "team": "Bournemouth",
           "played": 7,
           "wins": 1,
@@ -295,26 +333,7 @@
           "zone": "safe"
         },
         {
-          "pos": 16,
-          "team": "Tottenham",
-          "played": 7,
-          "wins": 1,
-          "draws": 3,
-          "losses": 3,
-          "gf": 6,
-          "ga": 10,
-          "points": 6,
-          "form": [
-            "D",
-            "D",
-            "L",
-            "D",
-            "W"
-          ],
-          "zone": "safe"
-        },
-        {
-          "pos": 17,
+          "pos": 18,
           "team": "Nottm Forest",
           "played": 8,
           "wins": 1,
@@ -330,43 +349,24 @@
             "L",
             "D"
           ],
-          "zone": "safe"
-        },
-        {
-          "pos": 18,
-          "team": "Coventry City",
-          "played": 7,
-          "wins": 2,
-          "draws": 0,
-          "losses": 5,
-          "gf": 6,
-          "ga": 13,
-          "points": 6,
-          "form": [
-            "L",
-            "L",
-            "W",
-            "W",
-            "L"
-          ],
           "zone": "relegation"
         },
         {
           "pos": 19,
-          "team": "Fulham",
-          "played": 7,
-          "wins": 1,
-          "draws": 2,
-          "losses": 4,
-          "gf": 7,
-          "ga": 10,
-          "points": 5,
+          "team": "Coventry City",
+          "played": 8,
+          "wins": 2,
+          "draws": 0,
+          "losses": 6,
+          "gf": 6,
+          "ga": 14,
+          "points": 6,
           "form": [
+            "L",
+            "W",
             "W",
             "L",
-            "L",
-            "D",
-            "D"
+            "L"
           ],
           "zone": "relegation"
         },
@@ -391,6 +391,30 @@
         }
       ],
       "lastMatches": [
+        {
+          "time": "24 Oct",
+          "match": "Chelsea vs Tottenham",
+          "score": "0:2",
+          "status": "finished"
+        },
+        {
+          "time": "24 Oct",
+          "match": "Coventry City vs Fulham",
+          "score": "0:1",
+          "status": "finished"
+        },
+        {
+          "time": "24 Oct",
+          "match": "Arsenal vs Everton",
+          "score": "2:0",
+          "status": "finished"
+        },
+        {
+          "time": "24 Oct",
+          "match": "Aston Villa vs Man City",
+          "score": "2:1",
+          "status": "finished"
+        },
         {
           "time": "23 Oct",
           "match": "Ipswich Town vs Nottm Forest",
@@ -426,56 +450,12 @@
           "match": "Bournemouth vs Sunderland",
           "score": "2:0",
           "status": "finished"
-        },
-        {
-          "time": "17 Oct",
-          "match": "Newcastle vs Aston Villa",
-          "score": "0:1",
-          "status": "finished"
-        },
-        {
-          "time": "17 Oct",
-          "match": "Man City vs Ipswich Town",
-          "score": "3:2",
-          "status": "finished"
-        },
-        {
-          "time": "17 Oct",
-          "match": "Fulham vs Hull City",
-          "score": "1:0",
-          "status": "finished"
-        },
-        {
-          "time": "17 Oct",
-          "match": "Brentford vs Liverpool",
-          "score": "1:2",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
         {
-          "time": "24 Oct · 12:30",
-          "match": "Aston Villa vs Man City",
-          "status": "upcoming"
-        },
-        {
-          "time": "24 Oct · 15:00",
-          "match": "Arsenal vs Everton",
-          "status": "upcoming"
-        },
-        {
-          "time": "24 Oct · 15:00",
-          "match": "Coventry City vs Fulham",
-          "status": "upcoming"
-        },
-        {
-          "time": "24 Oct · 15:00",
+          "time": "25 Oct · 14:00",
           "match": "Liverpool vs Brighton",
-          "status": "upcoming"
-        },
-        {
-          "time": "24 Oct · 17:30",
-          "match": "Chelsea vs Tottenham",
           "status": "upcoming"
         },
         {
