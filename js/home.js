@@ -38,12 +38,12 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Manchester City's perfect start is over. Five Sunday fixtures complete Matchweek 8, led by Liverpool–Brighton.";
+        "Matchweek 8 is complete. Manchester City lead Arsenal on goal difference, with Brighton third and Liverpool fourth.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Liverpool–Brighton · 14:00 GMT</span></div>
+        <div><strong>Featured</strong><span>Chelsea–Man United · 31 Oct · 12:30 GMT</span></div>
         <div><strong>Today</strong><span>Five Premier League fixtures</span></div>
         <div><strong>Table</strong><span>Manchester City lead on 21 points</span></div>
       `;
@@ -51,12 +51,12 @@
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Liverpool, Brighton, Premier League";
+      input.placeholder = "Try: Chelsea, Man United, Premier League";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Liverpool Brighton">Liverpool–Brighton</button>
+        <button type="button" data-query="Chelsea Man United">Chelsea–Man United</button>
         <button type="button" data-query="Man United Bournemouth">Man United–Bournemouth</button>
         <button type="button" data-query="Sunderland Leeds">Sunderland–Leeds</button>
       `;
@@ -64,10 +64,10 @@
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=liverpool-brighton-oct25", title: "Liverpool vs Brighton", detail: "25 Oct · Premier League · 14:00 GMT", tag: "Featured" },
-      { href: "match.html?id=man-united-bournemouth-oct25", title: "Man United vs Bournemouth", detail: "25 Oct · Premier League · 14:00 GMT", tag: "Today" },
+      { href: "match.html?id=chelsea-man-united-oct31", title: "Chelsea vs Man United", detail: "31 Oct · Premier League · 12:30 GMT", tag: "Featured" },
+      { href: "match.html?id=liverpool-arsenal-nov1", title: "Liverpool vs Arsenal", detail: "1 Nov · Premier League · 16:30 GMT", tag: "Next" },
       { href: "results.html", title: "Aston Villa 2-1 Man City", detail: "24 Oct · Premier League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Five games left · checked 25 Oct", tag: "Table" },
+      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Complete · checked 26 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
