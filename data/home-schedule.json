@@ -1,101 +1,301 @@
 {
-  "updatedAt": "2026-10-25T00:00:00+03:00",
-  "featuredId": "liverpool-brighton-oct25",
+  "updatedAt": "2026-10-26T00:00:00+02:00",
+  "featuredId": "chelsea-man-united-oct31",
   "events": [
     {
-      "id": "liverpool-brighton-oct25",
+      "id": "chelsea-man-united-oct31",
       "type": "event",
       "sport": "Football",
+      "date": "31 Oct",
+      "time": "12:30 GMT",
+      "title": "Chelsea vs Man United",
+      "home": "Chelsea",
+      "away": "Man United",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
+    },
+    {
+      "id": "bournemouth-leeds-oct31",
+      "type": "event",
+      "sport": "Football",
+      "date": "31 Oct",
+      "time": "15:00 GMT",
+      "title": "Bournemouth vs Leeds United",
+      "home": "Bournemouth",
+      "away": "Leeds United",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
+    },
+    {
+      "id": "brentford-nottingham-forest-oct31",
+      "type": "event",
+      "sport": "Football",
+      "date": "31 Oct",
+      "time": "15:00 GMT",
+      "title": "Brentford vs Nottm Forest",
+      "home": "Brentford",
+      "away": "Nottm Forest",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png"
+    },
+    {
+      "id": "coventry-sunderland-oct31",
+      "type": "event",
+      "sport": "Football",
+      "date": "31 Oct",
+      "time": "15:00 GMT",
+      "title": "Coventry City vs Sunderland",
+      "home": "Coventry City",
+      "away": "Sunderland",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png"
+    },
+    {
+      "id": "hull-ipswich-oct31",
+      "type": "event",
+      "sport": "Football",
+      "date": "31 Oct",
+      "time": "15:00 GMT",
+      "title": "Hull City vs Ipswich Town",
+      "home": "Hull City",
+      "away": "Ipswich Town",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png"
+    },
+    {
+      "id": "man-city-brighton-oct31",
+      "type": "event",
+      "sport": "Football",
+      "date": "31 Oct",
+      "time": "15:00 GMT",
+      "title": "Man City vs Brighton",
+      "home": "Man City",
+      "away": "Brighton",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
+    },
+    {
+      "id": "tottenham-crystal-palace-oct31",
+      "type": "event",
+      "sport": "Football",
+      "date": "31 Oct",
+      "time": "17:30 GMT",
+      "title": "Tottenham vs Crystal Palace",
+      "home": "Tottenham",
+      "away": "Crystal Palace",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png"
+    },
+    {
+      "id": "aston-villa-fulham-oct31",
+      "type": "event",
+      "sport": "Football",
+      "date": "31 Oct",
+      "time": "20:00 GMT",
+      "title": "Aston Villa vs Fulham",
+      "home": "Aston Villa",
+      "away": "Fulham",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png"
+    },
+    {
+      "id": "liverpool-arsenal-nov1",
+      "type": "event",
+      "sport": "Football",
+      "date": "1 Nov",
+      "time": "16:30 GMT",
+      "title": "Liverpool vs Arsenal",
+      "home": "Liverpool",
+      "away": "Arsenal",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+    },
+    {
+      "id": "newcastle-everton-nov2",
+      "type": "event",
+      "sport": "Football",
+      "date": "2 Nov",
+      "time": "20:00 GMT",
+      "title": "Newcastle vs Everton",
+      "home": "Newcastle",
+      "away": "Everton",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
+    },
+    {
+      "id": "liverpool-brighton-oct25",
+      "type": "result",
+      "sport": "Football",
       "date": "25 Oct",
-      "time": "14:00 GMT",
-      "title": "Liverpool vs Brighton",
+      "time": "Final",
+      "title": "Liverpool 2-0 Brighton",
       "home": "Liverpool",
       "away": "Brighton",
       "competition": "Premier League",
       "stage": "Matchweek 8",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 8"
+        "Verified final score",
+        "Premier League Matchweek 8"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+      "homeScore": "2",
+      "awayScore": "0"
     },
     {
       "id": "crystal-palace-newcastle-oct25",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "25 Oct",
-      "time": "14:00 GMT",
-      "title": "Crystal Palace vs Newcastle",
+      "time": "Final",
+      "title": "Crystal Palace 0-2 Newcastle",
       "home": "Crystal Palace",
       "away": "Newcastle",
       "competition": "Premier League",
       "stage": "Matchweek 8",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 8"
+        "Verified final score",
+        "Premier League Matchweek 8"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+      "homeScore": "0",
+      "awayScore": "2"
     },
     {
       "id": "hull-brentford-oct25",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "25 Oct",
-      "time": "14:00 GMT",
-      "title": "Hull City vs Brentford",
+      "time": "Final",
+      "title": "Hull City 1-1 Brentford",
       "home": "Hull City",
       "away": "Brentford",
       "competition": "Premier League",
       "stage": "Matchweek 8",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 8"
+        "Verified final score",
+        "Premier League Matchweek 8"
       ],
       "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
+      "homeScore": "1",
+      "awayScore": "1"
     },
     {
       "id": "man-united-bournemouth-oct25",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "25 Oct",
-      "time": "14:00 GMT",
-      "title": "Man United vs Bournemouth",
+      "time": "Final",
+      "title": "Man United 0-3 Bournemouth",
       "home": "Man United",
       "away": "Bournemouth",
       "competition": "Premier League",
       "stage": "Matchweek 8",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 8"
+        "Verified final score",
+        "Premier League Matchweek 8"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
+      "homeScore": "0",
+      "awayScore": "3"
     },
     {
       "id": "sunderland-leeds-oct25",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "25 Oct",
-      "time": "16:30 GMT",
-      "title": "Sunderland vs Leeds United",
+      "time": "Final",
+      "title": "Sunderland 0-0 Leeds United",
       "home": "Sunderland",
       "away": "Leeds United",
       "competition": "Premier League",
       "stage": "Matchweek 8",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 8"
+        "Verified final score",
+        "Premier League Matchweek 8"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+      "homeScore": "0",
+      "awayScore": "0"
     },
     {
       "id": "aston-villa-man-city-oct24",
