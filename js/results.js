@@ -4,6 +4,11 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League", status: "FINAL", homeName: "Liverpool", awayName: "Brighton", homeGoals: "2", awayGoals: "0", venue: "Matchweek 8 · Anfield", date: "25 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Crystal Palace", awayName: "Newcastle", homeGoals: "0", awayGoals: "2", venue: "Matchweek 8 · Selhurst Park", date: "25 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Hull City", awayName: "Brentford", homeGoals: "1", awayGoals: "1", venue: "Matchweek 8 · MKM Stadium", date: "25 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Man United", awayName: "Bournemouth", homeGoals: "0", awayGoals: "3", venue: "Matchweek 8 · Old Trafford", date: "25 Oct", href: "standings.html" },
+    { round: "Football · Premier League", status: "FINAL", homeName: "Sunderland", awayName: "Leeds United", homeGoals: "0", awayGoals: "0", venue: "Matchweek 8 · Stadium of Light", date: "25 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Aston Villa", awayName: "Man City", homeGoals: "2", awayGoals: "1", venue: "Matchweek 8 · Villa Park", date: "24 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Arsenal", awayName: "Everton", homeGoals: "2", awayGoals: "0", venue: "Matchweek 8 · Emirates Stadium", date: "24 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Coventry City", awayName: "Fulham", homeGoals: "0", awayGoals: "1", venue: "Matchweek 8", date: "24 Oct", href: "standings.html" },
@@ -178,7 +183,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 25 Oct 2026");
+    setStatus("World sports results · checked 26 Oct 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
