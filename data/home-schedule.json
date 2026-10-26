@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T00:00:00+02:00",
+  "updatedAt": "2026-10-27T00:00:00+02:00",
   "featuredId": "chelsea-man-united-oct31",
   "events": [
     {
@@ -296,6 +296,27 @@
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
       "homeScore": "0",
       "awayScore": "0"
+    },
+    {
+      "id": "us-gp-antonelli-oct25",
+      "type": "result",
+      "sport": "Formula 1",
+      "date": "25 Oct",
+      "time": "Final",
+      "title": "Kimi Antonelli wins United States Grand Prix",
+      "home": "Kimi Antonelli",
+      "away": "Mercedes",
+      "competition": "Formula 1",
+      "stage": "United States Grand Prix",
+      "status": "Result",
+      "signals": [
+        "Verified race winner",
+        "Ninth victory of the season"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/it.png",
+      "awayLogo": "https://upload.wikimedia.org/wikipedia/commons/2/21/Mercedes-Benz_in_Formula_One_logo.svg",
+      "homeScore": "P1",
+      "awayScore": "+13s"
     },
     {
       "id": "aston-villa-man-city-oct24",
