@@ -37,8 +37,8 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 26 Oct 2026";
-  if (t) t.textContent = "World sports · Matchweek 8 complete";
+  if (k) k.textContent = "World Sports News · 27 Oct 2026";
+  if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
   if (heads[1]) heads[1].textContent = "Trending Now";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Bournemouth win 3-0 at Man United</a><a class="sidebar-link-card" href="results.html">Liverpool beat Brighton 2-0</a><a class="sidebar-link-card" href="results.html">Newcastle win at Palace</a><a class="sidebar-link-card" href="standings.html">City lead after Matchweek 8</a><a class="sidebar-link-card" href="match.html?id=liverpool-arsenal-nov1">Liverpool–Arsenal next</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="sports.html">Antonelli wins United States GP</a><a class="sidebar-link-card" href="results.html">Bournemouth win 3-0 at Man United</a><a class="sidebar-link-card" href="standings.html">City and Arsenal level on 21</a><a class="sidebar-link-card" href="match.html?id=chelsea-man-united-oct31">Chelsea–Man United next</a><a class="sidebar-link-card" href="match.html?id=liverpool-arsenal-nov1">Liverpool–Arsenal next</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Matchweek 8 is complete: Manchester City and Arsenal lead on 21 points, Brighton are third, and Liverpool moved fourth after beating Brighton.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Kimi Antonelli won the United States Grand Prix from pole, while the completed Premier League table remains unchanged ahead of Matchweek 9.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
