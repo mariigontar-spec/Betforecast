@@ -4,6 +4,7 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Formula 1 · United States Grand Prix", status: "FINAL", homeName: "Kimi Antonelli", awayName: "Winning margin", homeGoals: "P1", awayGoals: "+13s", venue: "Circuit of the Americas · ninth win of 2026", date: "25 Oct", href: "sports.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Liverpool", awayName: "Brighton", homeGoals: "2", awayGoals: "0", venue: "Matchweek 8 · Anfield", date: "25 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Crystal Palace", awayName: "Newcastle", homeGoals: "0", awayGoals: "2", venue: "Matchweek 8 · Selhurst Park", date: "25 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Hull City", awayName: "Brentford", homeGoals: "1", awayGoals: "1", venue: "Matchweek 8 · MKM Stadium", date: "25 Oct", href: "standings.html" },
