@@ -4,6 +4,8 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Ballon d’Or 2026", status: "AWARDED", homeName: "Harry Kane", awayName: "Kylian Mbappe", homeGoals: "1st", awayGoals: "2nd", venue: "London · men’s award", date: "26 Oct", href: "news.html" },
+    { round: "Football · Ballon d’Or Feminin 2026", status: "AWARDED", homeName: "Alexia Putellas", awayName: "Women’s award", homeGoals: "1st", awayGoals: "Winner", venue: "London · third Ballon d’Or Feminin", date: "26 Oct", href: "news.html" },
     { round: "Formula 1 · United States Grand Prix", status: "FINAL", homeName: "Kimi Antonelli", awayName: "Winning margin", homeGoals: "P1", awayGoals: "+13s", venue: "Circuit of the Americas · ninth win of 2026", date: "25 Oct", href: "sports.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Liverpool", awayName: "Brighton", homeGoals: "2", awayGoals: "0", venue: "Matchweek 8 · Anfield", date: "25 Oct", href: "standings.html" },
     { round: "Football · Premier League", status: "FINAL", homeName: "Crystal Palace", awayName: "Newcastle", homeGoals: "0", awayGoals: "2", venue: "Matchweek 8 · Selhurst Park", date: "25 Oct", href: "standings.html" },
