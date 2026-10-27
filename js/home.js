@@ -38,7 +38,7 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Matchweek 8 remains complete. Manchester City lead Arsenal on goal difference; Kimi Antonelli won the United States Grand Prix.";
+        "Harry Kane won the 2026 Ballon d’Or and Alexia Putellas claimed the women’s award. Matchweek 8 remains complete.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
@@ -67,7 +67,7 @@
       { href: "match.html?id=chelsea-man-united-oct31", title: "Chelsea vs Man United", detail: "31 Oct · Premier League · 12:30 GMT", tag: "Featured" },
       { href: "match.html?id=liverpool-arsenal-nov1", title: "Liverpool vs Arsenal", detail: "1 Nov · Premier League · 16:30 GMT", tag: "Next" },
       { href: "results.html", title: "Aston Villa 2-1 Man City", detail: "24 Oct · Premier League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Complete · checked 27 Oct", tag: "Table" },
+      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Complete · checked 28 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
