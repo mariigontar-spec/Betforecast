@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T00:00:00+02:00",
+  "updatedAt": "2026-10-28T00:00:00+02:00",
   "featuredId": "chelsea-man-united-oct31",
   "events": [
     {
@@ -317,6 +317,48 @@
       "awayLogo": "https://upload.wikimedia.org/wikipedia/commons/2/21/Mercedes-Benz_in_Formula_One_logo.svg",
       "homeScore": "P1",
       "awayScore": "+13s"
+    },
+    {
+      "id": "kane-ballon-dor-2026",
+      "type": "result",
+      "sport": "Football",
+      "date": "26 Oct",
+      "time": "Awarded",
+      "title": "Harry Kane wins 2026 Ballon d'Or",
+      "home": "Harry Kane",
+      "away": "Kylian Mbappe",
+      "competition": "Ballon d'Or",
+      "stage": "Men's award",
+      "status": "Result",
+      "signals": [
+        "Verified winner",
+        "First English men's winner since 2001"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/gb-eng.png",
+      "awayLogo": "https://flagcdn.com/w320/fr.png",
+      "homeScore": "1st",
+      "awayScore": "2nd"
+    },
+    {
+      "id": "putellas-ballon-dor-2026",
+      "type": "result",
+      "sport": "Football",
+      "date": "26 Oct",
+      "time": "Awarded",
+      "title": "Alexia Putellas wins 2026 Ballon d'Or Feminin",
+      "home": "Alexia Putellas",
+      "away": "Women's award",
+      "competition": "Ballon d'Or",
+      "stage": "Women's award",
+      "status": "Result",
+      "signals": [
+        "Verified winner",
+        "Third Ballon d'Or Feminin"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/es.png",
+      "awayLogo": "https://flagcdn.com/w320/es.png",
+      "homeScore": "1st",
+      "awayScore": "Winner"
     },
     {
       "id": "aston-villa-man-city-oct24",
