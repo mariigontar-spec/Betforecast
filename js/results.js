@@ -4,6 +4,8 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Carabao Cup Fourth Round", status: "PENS 5-3", homeName: "Fleetwood Town", awayName: "Arsenal", homeGoals: "1", awayGoals: "1", venue: "Highbury Stadium", date: "27 Oct", href: "news.html" },
+    { round: "Football · Carabao Cup Fourth Round", status: "FINAL", homeName: "Bradford City", awayName: "Peterborough", homeGoals: "2", awayGoals: "0", venue: "University of Bradford Stadium", date: "27 Oct", href: "news.html" },
     { round: "Football · Ballon d’Or 2026", status: "AWARDED", homeName: "Harry Kane", awayName: "Kylian Mbappe", homeGoals: "1st", awayGoals: "2nd", venue: "London · men’s award", date: "26 Oct", href: "news.html" },
     { round: "Football · Ballon d’Or Feminin 2026", status: "AWARDED", homeName: "Alexia Putellas", awayName: "Women’s award", homeGoals: "1st", awayGoals: "Winner", venue: "London · third Ballon d’Or Feminin", date: "26 Oct", href: "news.html" },
     { round: "Formula 1 · United States Grand Prix", status: "FINAL", homeName: "Kimi Antonelli", awayName: "Winning margin", homeGoals: "P1", awayGoals: "+13s", venue: "Circuit of the Americas · ninth win of 2026", date: "25 Oct", href: "sports.html" },
