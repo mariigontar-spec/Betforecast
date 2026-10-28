@@ -1,7 +1,68 @@
 {
-  "updatedAt": "2026-10-28T00:00:00+02:00",
-  "featuredId": "chelsea-man-united-oct31",
+  "updatedAt": "2026-10-29T00:00:00+02:00",
+  "featuredId": "everton-newcastle-oct29",
   "events": [
+    {
+      "id": "everton-newcastle-oct29",
+      "type": "event",
+      "sport": "Football",
+      "date": "29 Oct",
+      "time": "19:45 GMT",
+      "title": "Everton vs Newcastle",
+      "home": "Everton",
+      "away": "Newcastle",
+      "competition": "Carabao Cup",
+      "stage": "Fourth Round",
+      "status": "Today",
+      "signals": [
+        "Official EFL fixture",
+        "Round Four concludes at Goodison Park"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+    },
+    {
+      "id": "fleetwood-arsenal-oct27",
+      "type": "result",
+      "sport": "Football",
+      "date": "27 Oct",
+      "time": "Final · 5-3 pens",
+      "title": "Fleetwood Town 1-1 Arsenal",
+      "home": "Fleetwood Town",
+      "away": "Arsenal",
+      "competition": "Carabao Cup",
+      "stage": "Fourth Round",
+      "status": "Result",
+      "signals": [
+        "Fleetwood won 5-3 on penalties",
+        "Verified by EFL and Reuters"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/gb-eng.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "homeScore": "1",
+      "awayScore": "1"
+    },
+    {
+      "id": "bradford-peterborough-oct27",
+      "type": "result",
+      "sport": "Football",
+      "date": "27 Oct",
+      "time": "Final",
+      "title": "Bradford City 2-0 Peterborough",
+      "home": "Bradford City",
+      "away": "Peterborough",
+      "competition": "Carabao Cup",
+      "stage": "Fourth Round",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Carabao Cup Fourth Round"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/gb-eng.png",
+      "awayLogo": "https://flagcdn.com/w320/gb-eng.png",
+      "homeScore": "2",
+      "awayScore": "0"
+    },
     {
       "id": "chelsea-man-united-oct31",
       "type": "event",
