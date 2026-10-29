@@ -1,25 +1,132 @@
 {
-  "updatedAt": "2026-10-29T00:00:00+02:00",
-  "featuredId": "everton-newcastle-oct29",
+  "updatedAt": "2026-10-30T00:00:00+02:00",
+  "featuredId": "chelsea-man-united-oct31",
   "events": [
     {
       "id": "everton-newcastle-oct29",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "29 Oct",
-      "time": "19:45 GMT",
-      "title": "Everton vs Newcastle",
+      "time": "Final",
+      "title": "Everton 3-1 Newcastle",
       "home": "Everton",
       "away": "Newcastle",
       "competition": "Carabao Cup",
       "stage": "Fourth Round",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official EFL fixture",
-        "Round Four concludes at Goodison Park"
+        "Verified final score",
+        "Everton reached the Carabao Cup quarter-finals"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+      "homeScore": "3",
+      "awayScore": "1"
+    },
+    {
+      "id": "liverpool-chelsea-oct28",
+      "type": "result",
+      "sport": "Football",
+      "date": "28 Oct",
+      "time": "Final · 6-5 pens",
+      "title": "Liverpool 1-1 Chelsea",
+      "home": "Liverpool",
+      "away": "Chelsea",
+      "competition": "Carabao Cup",
+      "stage": "Fourth Round",
+      "status": "Result",
+      "signals": [
+        "Liverpool won 6-5 on penalties",
+        "Verified by EFL"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
+      "homeScore": "1",
+      "awayScore": "1"
+    },
+    {
+      "id": "man-city-brighton-oct28",
+      "type": "result",
+      "sport": "Football",
+      "date": "28 Oct",
+      "time": "Final · 4-3 pens",
+      "title": "Man City 2-2 Brighton",
+      "home": "Man City",
+      "away": "Brighton",
+      "competition": "Carabao Cup",
+      "stage": "Fourth Round",
+      "status": "Result",
+      "signals": [
+        "Man City won 4-3 on penalties",
+        "Verified by EFL"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+      "homeScore": "2",
+      "awayScore": "2"
+    },
+    {
+      "id": "bournemouth-aston-villa-oct28",
+      "type": "result",
+      "sport": "Football",
+      "date": "28 Oct",
+      "time": "Final",
+      "title": "Bournemouth 3-0 Aston Villa",
+      "home": "Bournemouth",
+      "away": "Aston Villa",
+      "competition": "Carabao Cup",
+      "stage": "Fourth Round",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Carabao Cup Fourth Round"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+      "homeScore": "3",
+      "awayScore": "0"
+    },
+    {
+      "id": "sunderland-brentford-oct28",
+      "type": "result",
+      "sport": "Football",
+      "date": "28 Oct",
+      "time": "Final",
+      "title": "Sunderland 3-2 Brentford",
+      "home": "Sunderland",
+      "away": "Brentford",
+      "competition": "Carabao Cup",
+      "stage": "Fourth Round",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Carabao Cup Fourth Round"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
+      "homeScore": "3",
+      "awayScore": "2"
+    },
+    {
+      "id": "fulham-crystal-palace-oct28",
+      "type": "result",
+      "sport": "Football",
+      "date": "28 Oct",
+      "time": "Final",
+      "title": "Fulham 0-1 Crystal Palace",
+      "home": "Fulham",
+      "away": "Crystal Palace",
+      "competition": "Carabao Cup",
+      "stage": "Fourth Round",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Carabao Cup Fourth Round"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+      "homeScore": "0",
+      "awayScore": "1"
     },
     {
       "id": "fleetwood-arsenal-oct27",
