@@ -38,20 +38,20 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Fleetwood Town knocked Arsenal out of the Carabao Cup on penalties. Everton host Newcastle in the final Round Four tie tonight.";
+        "Everton completed the Carabao Cup quarter-final lineup with a 3-1 win over Newcastle. Premier League Matchweek 9 starts on Saturday.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Everton–Newcastle · 29 Oct · 19:45 GMT</span></div>
-        <div><strong>Latest</strong><span>Fleetwood beat Arsenal 5-3 on penalties</span></div>
+        <div><strong>Featured</strong><span>Chelsea–Man United · 31 Oct · 12:30 GMT</span></div>
+        <div><strong>Latest</strong><span>Everton beat Newcastle 3-1</span></div>
         <div><strong>Table</strong><span>Manchester City lead on 21 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Everton, Newcastle, Carabao Cup";
+      input.placeholder = "Try: Chelsea, Man United, Premier League";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
@@ -67,7 +67,7 @@
       { href: "match.html?id=chelsea-man-united-oct31", title: "Chelsea vs Man United", detail: "31 Oct · Premier League · 12:30 GMT", tag: "Featured" },
       { href: "match.html?id=liverpool-arsenal-nov1", title: "Liverpool vs Arsenal", detail: "1 Nov · Premier League · 16:30 GMT", tag: "Next" },
       { href: "results.html", title: "Aston Villa 2-1 Man City", detail: "24 Oct · Premier League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Complete · checked 29 Oct", tag: "Table" },
+      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Complete · checked 30 Oct", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
