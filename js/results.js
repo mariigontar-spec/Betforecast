@@ -4,6 +4,12 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Carabao Cup Fourth Round", status: "FINAL", homeName: "Everton", awayName: "Newcastle", homeGoals: "3", awayGoals: "1", venue: "Hill Dickinson Stadium", date: "29 Oct", href: "news.html" },
+    { round: "Football · Carabao Cup Fourth Round", status: "PENS 6-5", homeName: "Liverpool", awayName: "Chelsea", homeGoals: "1", awayGoals: "1", venue: "Anfield", date: "28 Oct", href: "news.html" },
+    { round: "Football · Carabao Cup Fourth Round", status: "PENS 4-3", homeName: "Man City", awayName: "Brighton", homeGoals: "2", awayGoals: "2", venue: "Etihad Stadium", date: "28 Oct", href: "news.html" },
+    { round: "Football · Carabao Cup Fourth Round", status: "FINAL", homeName: "Bournemouth", awayName: "Aston Villa", homeGoals: "3", awayGoals: "0", venue: "Vitality Stadium", date: "28 Oct", href: "news.html" },
+    { round: "Football · Carabao Cup Fourth Round", status: "FINAL", homeName: "Sunderland", awayName: "Brentford", homeGoals: "3", awayGoals: "2", venue: "Stadium of Light", date: "28 Oct", href: "news.html" },
+    { round: "Football · Carabao Cup Fourth Round", status: "FINAL", homeName: "Fulham", awayName: "Crystal Palace", homeGoals: "0", awayGoals: "1", venue: "Craven Cottage", date: "28 Oct", href: "news.html" },
     { round: "Football · Carabao Cup Fourth Round", status: "PENS 5-3", homeName: "Fleetwood Town", awayName: "Arsenal", homeGoals: "1", awayGoals: "1", venue: "Highbury Stadium", date: "27 Oct", href: "news.html" },
     { round: "Football · Carabao Cup Fourth Round", status: "FINAL", homeName: "Bradford City", awayName: "Peterborough", homeGoals: "2", awayGoals: "0", venue: "University of Bradford Stadium", date: "27 Oct", href: "news.html" },
     { round: "Football · Ballon d’Or 2026", status: "AWARDED", homeName: "Harry Kane", awayName: "Kylian Mbappe", homeGoals: "1st", awayGoals: "2nd", venue: "London · men’s award", date: "26 Oct", href: "news.html" },
