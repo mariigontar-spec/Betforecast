@@ -1,7 +1,64 @@
 {
-  "updatedAt": "2026-10-30T00:00:00+02:00",
+  "updatedAt": "2026-10-31T00:00:00+02:00",
   "featuredId": "chelsea-man-united-oct31",
   "events": [
+    {
+      "id": "chelsea-man-united-oct31",
+      "type": "event",
+      "sport": "Football",
+      "date": "31 Oct",
+      "time": "12:30 GMT",
+      "title": "Chelsea vs Man United",
+      "home": "Chelsea",
+      "away": "Man United",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Today",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 9"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
+    },
+    {
+      "id": "mexico-gp-qualifying-oct31",
+      "type": "event",
+      "sport": "Formula 1",
+      "date": "31 Oct",
+      "time": "21:00 GMT",
+      "title": "Mexico City Grand Prix qualifying",
+      "home": "Formula 1",
+      "away": "Qualifying",
+      "competition": "Formula 1",
+      "stage": "Mexico City Grand Prix",
+      "status": "Today",
+      "signals": [
+        "Official Formula 1 schedule",
+        "Qualifying at Autodromo Hermanos Rodriguez"
+      ],
+      "homeLogo": "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg",
+      "awayLogo": "https://flagcdn.com/w320/mx.png"
+    },
+    {
+      "id": "malaysia-motogp-sprint-oct31",
+      "type": "event",
+      "sport": "MotoGP",
+      "date": "31 Oct",
+      "time": "07:00 GMT",
+      "title": "Malaysian MotoGP Sprint",
+      "home": "MotoGP",
+      "away": "Malaysia",
+      "competition": "MotoGP",
+      "stage": "Malaysian Grand Prix",
+      "status": "Today",
+      "signals": [
+        "Official MotoGP schedule",
+        "Tissot Sprint at Sepang"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/my.png",
+      "awayLogo": "https://flagcdn.com/w320/my.png"
+    },
     {
       "id": "everton-newcastle-oct29",
       "type": "result",
@@ -171,25 +228,6 @@
       "awayScore": "0"
     },
     {
-      "id": "chelsea-man-united-oct31",
-      "type": "event",
-      "sport": "Football",
-      "date": "31 Oct",
-      "time": "12:30 GMT",
-      "title": "Chelsea vs Man United",
-      "home": "Chelsea",
-      "away": "Man United",
-      "competition": "Premier League",
-      "stage": "Matchweek 9",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 9"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
-    },
-    {
       "id": "bournemouth-leeds-oct31",
       "type": "event",
       "sport": "Football",
@@ -200,7 +238,7 @@
       "away": "Leeds United",
       "competition": "Premier League",
       "stage": "Matchweek 9",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 9"
@@ -219,7 +257,7 @@
       "away": "Nottm Forest",
       "competition": "Premier League",
       "stage": "Matchweek 9",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 9"
@@ -238,7 +276,7 @@
       "away": "Sunderland",
       "competition": "Premier League",
       "stage": "Matchweek 9",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 9"
@@ -257,7 +295,7 @@
       "away": "Ipswich Town",
       "competition": "Premier League",
       "stage": "Matchweek 9",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 9"
@@ -276,7 +314,7 @@
       "away": "Brighton",
       "competition": "Premier League",
       "stage": "Matchweek 9",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 9"
@@ -295,7 +333,7 @@
       "away": "Crystal Palace",
       "competition": "Premier League",
       "stage": "Matchweek 9",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 9"
@@ -314,7 +352,7 @@
       "away": "Fulham",
       "competition": "Premier League",
       "stage": "Matchweek 9",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 9"
