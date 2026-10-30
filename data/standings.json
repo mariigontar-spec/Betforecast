@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Manchester City lead Arsenal on goal difference · checked 30 Oct",
-      "insightText": "Matchweek 8 remains complete with no Premier League fixtures on 28 or 29 October. City and Arsenal have 21 points; Brighton are third on 16 and Liverpool fourth on 15. Carabao Cup results do not affect the league table.",
+      "insightTitle": "Manchester City lead Arsenal on goal difference · checked 31 Oct",
+      "insightText": "Matchweek 9 begins today with eight Premier League fixtures. City and Arsenal start the round level on 21 points; Brighton are third on 16 and Liverpool fourth on 15.",
       "table": [
         {
           "pos": 1,
@@ -456,42 +456,42 @@
         {
           "time": "31 Oct · 12:30",
           "match": "Chelsea vs Man United",
-          "status": "upcoming"
+          "status": "today"
         },
         {
           "time": "31 Oct · 15:00",
           "match": "Bournemouth vs Leeds United",
-          "status": "upcoming"
+          "status": "today"
         },
         {
           "time": "31 Oct · 15:00",
           "match": "Brentford vs Nottm Forest",
-          "status": "upcoming"
+          "status": "today"
         },
         {
           "time": "31 Oct · 15:00",
           "match": "Coventry City vs Sunderland",
-          "status": "upcoming"
+          "status": "today"
         },
         {
           "time": "31 Oct · 15:00",
           "match": "Hull City vs Ipswich Town",
-          "status": "upcoming"
+          "status": "today"
         },
         {
           "time": "31 Oct · 15:00",
           "match": "Man City vs Brighton",
-          "status": "upcoming"
+          "status": "today"
         },
         {
           "time": "31 Oct · 17:30",
           "match": "Tottenham vs Crystal Palace",
-          "status": "upcoming"
+          "status": "today"
         },
         {
           "time": "31 Oct · 20:00",
           "match": "Aston Villa vs Fulham",
-          "status": "upcoming"
+          "status": "today"
         },
         {
           "time": "1 Nov · 16:30",
