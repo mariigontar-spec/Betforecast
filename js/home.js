@@ -38,20 +38,20 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Eight Premier League matches are on today, led by Chelsea–Manchester United. Formula 1 qualifying in Mexico and the Malaysian MotoGP Sprint complete the global programme.";
+        "Brighton beat Manchester City and Chelsea defeated Manchester United as eight Matchweek 9 games concluded. Liverpool host Arsenal today alongside the Mexico City and Malaysian Grands Prix.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Chelsea–Man United · today · 12:30 GMT</span></div>
-        <div><strong>Motorsport</strong><span>MotoGP Sprint · F1 Mexico qualifying</span></div>
+        <div><strong>Featured</strong><span>Liverpool–Arsenal · today · 16:30 GMT</span></div>
+        <div><strong>Motorsport</strong><span>Malaysia MotoGP · Mexico City F1</span></div>
         <div><strong>Table</strong><span>Manchester City lead on 21 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Chelsea, Man United, Premier League";
+      input.placeholder = "Try: Liverpool, Arsenal, Mexico Grand Prix";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
@@ -67,7 +67,7 @@
       { href: "match.html?id=chelsea-man-united-oct31", title: "Chelsea vs Man United", detail: "31 Oct · Premier League · 12:30 GMT", tag: "Featured" },
       { href: "match.html?id=liverpool-arsenal-nov1", title: "Liverpool vs Arsenal", detail: "1 Nov · Premier League · 16:30 GMT", tag: "Next" },
       { href: "results.html", title: "Aston Villa 2-1 Man City", detail: "24 Oct · Premier League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Matchweek 9 · checked 31 Oct", tag: "Table" },
+      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Eight matches complete · checked 1 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
