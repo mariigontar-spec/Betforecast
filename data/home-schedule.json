@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-01T00:00:00+02:00",
-  "featuredId": "liverpool-arsenal-nov1",
+  "updatedAt": "2026-11-02T00:00:00+02:00",
+  "featuredId": "newcastle-everton-nov2",
   "events": [
     {
-      "id": "liverpool-arsenal-nov1",
+      "id": "newcastle-everton-nov2",
       "type": "event",
       "sport": "Football",
-      "date": "1 Nov",
-      "time": "16:30 GMT",
-      "title": "Liverpool vs Arsenal",
-      "home": "Liverpool",
-      "away": "Arsenal",
+      "date": "2 Nov",
+      "time": "20:00 GMT",
+      "title": "Newcastle vs Everton",
+      "home": "Newcastle",
+      "away": "Everton",
       "competition": "Premier League",
       "stage": "Matchweek 9",
       "status": "Today",
@@ -18,46 +18,280 @@
         "Official Premier League fixture",
         "Matchweek 9"
       ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
+    },
+    {
+      "id": "everton-coventry-nov6",
+      "type": "event",
+      "sport": "Football",
+      "date": "6 Nov",
+      "time": "20:00 GMT",
+      "title": "Everton vs Coventry City",
+      "home": "Everton",
+      "away": "Coventry City",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png"
+    },
+    {
+      "id": "leeds-tottenham-nov7",
+      "type": "event",
+      "sport": "Football",
+      "date": "7 Nov",
+      "time": "12:30 GMT",
+      "title": "Leeds United vs Tottenham",
+      "home": "Leeds United",
+      "away": "Tottenham",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
+    },
+    {
+      "id": "arsenal-hull-nov7",
+      "type": "event",
+      "sport": "Football",
+      "date": "7 Nov",
+      "time": "15:00 GMT",
+      "title": "Arsenal vs Hull City",
+      "home": "Arsenal",
+      "away": "Hull City",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png"
+    },
+    {
+      "id": "fulham-newcastle-nov7",
+      "type": "event",
+      "sport": "Football",
+      "date": "7 Nov",
+      "time": "15:00 GMT",
+      "title": "Fulham vs Newcastle",
+      "home": "Fulham",
+      "away": "Newcastle",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+    },
+    {
+      "id": "forest-man-city-nov7",
+      "type": "event",
+      "sport": "Football",
+      "date": "7 Nov",
+      "time": "17:30 GMT",
+      "title": "Nottm Forest vs Man City",
+      "home": "Nottm Forest",
+      "away": "Man City",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
+    },
+    {
+      "id": "brighton-brentford-nov8",
+      "type": "event",
+      "sport": "Football",
+      "date": "8 Nov",
+      "time": "14:00 GMT",
+      "title": "Brighton vs Brentford",
+      "home": "Brighton",
+      "away": "Brentford",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
+    },
+    {
+      "id": "palace-liverpool-nov8",
+      "type": "event",
+      "sport": "Football",
+      "date": "8 Nov",
+      "time": "14:00 GMT",
+      "title": "Crystal Palace vs Liverpool",
+      "home": "Crystal Palace",
+      "away": "Liverpool",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
+    },
+    {
+      "id": "ipswich-bournemouth-nov8",
+      "type": "event",
+      "sport": "Football",
+      "date": "8 Nov",
+      "time": "14:00 GMT",
+      "title": "Ipswich Town vs Bournemouth",
+      "home": "Ipswich Town",
+      "away": "Bournemouth",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
+    },
+    {
+      "id": "sunderland-chelsea-nov8",
+      "type": "event",
+      "sport": "Football",
+      "date": "8 Nov",
+      "time": "14:00 GMT",
+      "title": "Sunderland vs Chelsea",
+      "home": "Sunderland",
+      "away": "Chelsea",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
+    },
+    {
+      "id": "man-united-aston-villa-nov8",
+      "type": "event",
+      "sport": "Football",
+      "date": "8 Nov",
+      "time": "16:30 GMT",
+      "title": "Man United vs Aston Villa",
+      "home": "Man United",
+      "away": "Aston Villa",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
+    },
+    {
+      "id": "liverpool-arsenal-nov1",
+      "type": "result",
+      "sport": "Football",
+      "date": "1 Nov",
+      "time": "Final",
+      "title": "Liverpool 0-1 Arsenal",
+      "home": "Liverpool",
+      "away": "Arsenal",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Kai Havertz scored the winner; Arsenal moved top"
+      ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "homeScore": "0",
+      "awayScore": "1"
+    },
+    {
+      "id": "malaysia-motogp-race-nov1",
+      "type": "result",
+      "sport": "MotoGP",
+      "date": "1 Nov",
+      "time": "Final",
+      "title": "Marc Marquez wins Malaysian MotoGP Grand Prix",
+      "home": "Marc Marquez",
+      "away": "Pedro Acosta",
+      "competition": "MotoGP",
+      "stage": "Malaysian Grand Prix",
+      "status": "Result",
+      "signals": [
+        "Official MotoGP race classification",
+        "Marc Marquez won by 4.172 seconds"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/my.png",
+      "awayLogo": "https://flagcdn.com/w320/my.png",
+      "homeScore": "P1",
+      "awayScore": "P2"
     },
     {
       "id": "mexico-gp-race-nov1",
       "type": "event",
       "sport": "Formula 1",
       "date": "1 Nov",
-      "time": "20:00 GMT",
+      "time": "Result pending",
       "title": "Mexico City Grand Prix",
       "home": "Formula 1",
       "away": "Mexico",
       "competition": "Formula 1",
       "stage": "Round 19",
-      "status": "Today",
+      "status": "Awaiting confirmed result",
       "signals": [
-        "Official Formula 1 schedule",
-        "71 laps at Autodromo Hermanos Rodriguez"
+        "Official race classification not published at latest check",
+        "Race scheduled for 1 Nov at 20:00 GMT"
       ],
       "homeLogo": "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg",
       "awayLogo": "https://flagcdn.com/w320/mx.png"
     },
     {
-      "id": "malaysia-motogp-race-nov1",
-      "type": "event",
-      "sport": "MotoGP",
-      "date": "1 Nov",
-      "time": "07:00 GMT",
-      "title": "Malaysian MotoGP Grand Prix",
-      "home": "MotoGP",
-      "away": "Malaysia",
-      "competition": "MotoGP",
-      "stage": "Malaysian Grand Prix",
-      "status": "Today",
+      "id": "mexico-gp-qualifying-oct31",
+      "type": "result",
+      "sport": "Formula 1",
+      "date": "31 Oct",
+      "time": "Final",
+      "title": "Lewis Hamilton takes Mexico City Grand Prix pole",
+      "home": "Lewis Hamilton",
+      "away": "Ferrari",
+      "competition": "Formula 1",
+      "stage": "Mexico City Grand Prix",
+      "status": "Result",
       "signals": [
-        "Official MotoGP schedule",
-        "20-lap race at Sepang"
+        "Official qualifying result",
+        "Hamilton's first Grand Prix pole since 2023"
       ],
-      "homeLogo": "https://flagcdn.com/w320/my.png",
-      "awayLogo": "https://flagcdn.com/w320/my.png"
+      "homeLogo": "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg",
+      "awayLogo": "https://flagcdn.com/w320/mx.png",
+      "homeScore": "P1",
+      "awayScore": "Pole"
     },
     {
       "id": "chelsea-man-united-oct31",
@@ -79,27 +313,6 @@
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
       "homeScore": "2",
       "awayScore": "0"
-    },
-    {
-      "id": "mexico-gp-qualifying-oct31",
-      "type": "result",
-      "sport": "Formula 1",
-      "date": "31 Oct",
-      "time": "Final",
-      "title": "Lando Norris takes Mexico City Grand Prix pole",
-      "home": "Lando Norris",
-      "away": "McLaren",
-      "competition": "Formula 1",
-      "stage": "Mexico City Grand Prix",
-      "status": "Result",
-      "signals": [
-        "Verified qualifying result",
-        "Mexico City Grand Prix"
-      ],
-      "homeLogo": "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg",
-      "awayLogo": "https://flagcdn.com/w320/mx.png",
-      "homeScore": "P1",
-      "awayScore": "Pole"
     },
     {
       "id": "malaysia-motogp-sprint-oct31",
@@ -436,25 +649,6 @@
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
       "homeScore": "1",
       "awayScore": "1"
-    },
-    {
-      "id": "newcastle-everton-nov2",
-      "type": "event",
-      "sport": "Football",
-      "date": "2 Nov",
-      "time": "20:00 GMT",
-      "title": "Newcastle vs Everton",
-      "home": "Newcastle",
-      "away": "Everton",
-      "competition": "Premier League",
-      "stage": "Matchweek 9",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 9"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
     },
     {
       "id": "liverpool-brighton-oct25",

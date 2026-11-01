@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Brighton beat Manchester City and Chelsea defeated Manchester United as eight Matchweek 9 games concluded. Liverpool host Arsenal today alongside the Mexico City and Malaysian Grands Prix.";
+        "Arsenal won 1-0 at Liverpool to move three points clear at the top. Newcastle host Everton today, while the official Mexico City Grand Prix race classification remains pending.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Liverpool–Arsenal · today · 16:30 GMT</span></div>
+        <div><strong>Featured</strong><span>Newcastle–Everton · today · 20:00 GMT</span></div>
         <div><strong>Motorsport</strong><span>Malaysia MotoGP · Mexico City F1</span></div>
-        <div><strong>Table</strong><span>Manchester City lead on 21 points</span></div>
+        <div><strong>Table</strong><span>Arsenal lead on 24 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Liverpool, Arsenal, Mexico Grand Prix";
+      input.placeholder = "Try: Newcastle, Arsenal, Mexico Grand Prix";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Chelsea Man United">Chelsea–Man United</button>
-        <button type="button" data-query="Man United Bournemouth">Man United–Bournemouth</button>
-        <button type="button" data-query="Sunderland Leeds">Sunderland–Leeds</button>
+        <button type="button" data-query="Newcastle Everton">Newcastle–Everton</button>
+        <button type="button" data-query="Liverpool Arsenal">Liverpool–Arsenal</button>
+        <button type="button" data-query="Marc Marquez Malaysia">Malaysia MotoGP</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=chelsea-man-united-oct31", title: "Chelsea vs Man United", detail: "31 Oct · Premier League · 12:30 GMT", tag: "Featured" },
-      { href: "match.html?id=liverpool-arsenal-nov1", title: "Liverpool vs Arsenal", detail: "1 Nov · Premier League · 16:30 GMT", tag: "Next" },
-      { href: "results.html", title: "Aston Villa 2-1 Man City", detail: "24 Oct · Premier League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 8", detail: "Eight matches complete · checked 1 Nov", tag: "Table" },
+      { href: "match.html?id=newcastle-everton-nov2", title: "Newcastle vs Everton", detail: "2 Nov · Premier League · 20:00 GMT", tag: "Featured" },
+      { href: "match.html?id=everton-coventry-nov6", title: "Everton vs Coventry City", detail: "6 Nov · Premier League · 20:00 GMT", tag: "Next" },
+      { href: "results.html", title: "Liverpool 0-1 Arsenal", detail: "1 Nov · Premier League · Final", tag: "Result" },
+      { href: "standings.html", title: "Premier League · Matchweek 9", detail: "Nine matches complete · checked 2 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {

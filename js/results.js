@@ -4,6 +4,8 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League Matchweek 9", status: "FINAL", homeName: "Liverpool", awayName: "Arsenal", homeGoals: "0", awayGoals: "1", venue: "Anfield", date: "1 Nov", href: "standings.html" },
+    { round: "MotoGP · Malaysian Grand Prix", status: "FINAL", homeName: "Marc Marquez", awayName: "Pedro Acosta", homeGoals: "P1", awayGoals: "P2", venue: "Sepang", date: "1 Nov", href: "sports.html" },
     { round: "Football · Premier League Matchweek 9", status: "FINAL", homeName: "Aston Villa", awayName: "Fulham", homeGoals: "1", awayGoals: "1", venue: "Villa Park", date: "31 Oct", href: "standings.html" },
     { round: "Football · Premier League Matchweek 9", status: "FINAL", homeName: "Tottenham", awayName: "Crystal Palace", homeGoals: "2", awayGoals: "0", venue: "Tottenham Hotspur Stadium", date: "31 Oct", href: "standings.html" },
     { round: "Football · Premier League Matchweek 9", status: "FINAL", homeName: "Man City", awayName: "Brighton", homeGoals: "0", awayGoals: "1", venue: "Etihad Stadium", date: "31 Oct", href: "standings.html" },
@@ -13,7 +15,7 @@
     { round: "Football · Premier League Matchweek 9", status: "FINAL", homeName: "Bournemouth", awayName: "Leeds United", homeGoals: "2", awayGoals: "0", venue: "Vitality Stadium", date: "31 Oct", href: "standings.html" },
     { round: "Football · Premier League Matchweek 9", status: "FINAL", homeName: "Chelsea", awayName: "Man United", homeGoals: "2", awayGoals: "0", venue: "Stamford Bridge", date: "31 Oct", href: "standings.html" },
     { round: "MotoGP · Malaysian GP Sprint", status: "FINAL", homeName: "Pedro Acosta", awayName: "Marc Marquez", homeGoals: "P1", awayGoals: "P2", venue: "Sepang", date: "31 Oct", href: "sports.html" },
-    { round: "Formula 1 · Mexico City GP Qualifying", status: "FINAL", homeName: "Lando Norris", awayName: "McLaren", homeGoals: "P1", awayGoals: "Pole", venue: "Mexico City", date: "31 Oct", href: "sports.html" },
+    { round: "Formula 1 · Mexico City GP Qualifying", status: "FINAL", homeName: "Lewis Hamilton", awayName: "Ferrari", homeGoals: "P1", awayGoals: "Pole", venue: "Mexico City", date: "31 Oct", href: "sports.html" },
     { round: "Football · Carabao Cup Fourth Round", status: "FINAL", homeName: "Everton", awayName: "Newcastle", homeGoals: "3", awayGoals: "1", venue: "Hill Dickinson Stadium", date: "29 Oct", href: "news.html" },
     { round: "Football · Carabao Cup Fourth Round", status: "PENS 6-5", homeName: "Liverpool", awayName: "Chelsea", homeGoals: "1", awayGoals: "1", venue: "Anfield", date: "28 Oct", href: "news.html" },
     { round: "Football · Carabao Cup Fourth Round", status: "PENS 4-3", homeName: "Man City", awayName: "Brighton", homeGoals: "2", awayGoals: "2", venue: "Etihad Stadium", date: "28 Oct", href: "news.html" },
@@ -204,7 +206,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 26 Oct 2026");
+    setStatus("World sports results · checked 2 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -214,7 +216,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Champions League Matchday 3 is complete. Real Madrid won 4-1, Aston Villa 3-1 and Como beat Manchester United 4-1, while Bayern and Arsenal drew 2-2.";
+    if (intro) intro.textContent = "Arsenal won 1-0 at Liverpool to move top of the Premier League, while Marc Marquez won the Malaysian MotoGP Grand Prix. The Mexico City Formula 1 race result remains pending official confirmation.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }

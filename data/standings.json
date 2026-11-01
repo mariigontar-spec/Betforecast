@@ -6,11 +6,30 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Manchester City lead Arsenal on goal difference · checked 1 Nov",
-      "insightText": "Eight Matchweek 9 fixtures are complete. City remain first on 21 points but have played once more than Arsenal; Brighton are third on 19. Liverpool host Arsenal today.",
+      "insightTitle": "Arsenal lead by three points · checked 2 Nov",
+      "insightText": "Arsenal won 1-0 at Liverpool to reach 24 points and move three clear of Manchester City. Newcastle host Everton in the final Matchweek 9 fixture today.",
       "table": [
         {
           "pos": 1,
+          "team": "Arsenal",
+          "played": 9,
+          "wins": 8,
+          "draws": 0,
+          "losses": 1,
+          "gf": 14,
+          "ga": 5,
+          "points": 24,
+          "form": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "W"
+          ],
+          "zone": "cl"
+        },
+        {
+          "pos": 2,
           "team": "Man City",
           "played": 9,
           "wins": 7,
@@ -25,25 +44,6 @@
             "W",
             "L",
             "L"
-          ],
-          "zone": "cl"
-        },
-        {
-          "pos": 2,
-          "team": "Arsenal",
-          "played": 8,
-          "wins": 7,
-          "draws": 0,
-          "losses": 1,
-          "gf": 13,
-          "ga": 5,
-          "points": 21,
-          "form": [
-            "W",
-            "L",
-            "W",
-            "W",
-            "W"
           ],
           "zone": "cl"
         },
@@ -88,19 +88,19 @@
         {
           "pos": 5,
           "team": "Liverpool",
-          "played": 8,
+          "played": 9,
           "wins": 4,
           "draws": 3,
-          "losses": 1,
+          "losses": 2,
           "gf": 11,
-          "ga": 8,
+          "ga": 9,
           "points": 15,
           "form": [
-            "D",
             "W",
             "D",
             "W",
-            "W"
+            "W",
+            "L"
           ],
           "zone": "safe"
         },
@@ -392,6 +392,12 @@
       ],
       "lastMatches": [
         {
+          "time": "1 Nov",
+          "match": "Liverpool vs Arsenal",
+          "score": "0:1",
+          "status": "finished"
+        },
+        {
           "time": "31 Oct",
           "match": "Aston Villa vs Fulham",
           "score": "1:1",
@@ -444,23 +450,62 @@
           "match": "Sunderland vs Leeds United",
           "score": "0:0",
           "status": "finished"
-        },
-        {
-          "time": "25 Oct",
-          "match": "Man United vs Bournemouth",
-          "score": "0:3",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
         {
-          "time": "1 Nov · 16:30",
-          "match": "Liverpool vs Arsenal",
+          "time": "2 Nov · 20:00",
+          "match": "Newcastle vs Everton",
           "status": "today"
         },
         {
-          "time": "2 Nov · 20:00",
-          "match": "Newcastle vs Everton",
+          "time": "6 Nov · 20:00",
+          "match": "Everton vs Coventry City",
+          "status": "upcoming"
+        },
+        {
+          "time": "7 Nov · 12:30",
+          "match": "Leeds United vs Tottenham",
+          "status": "upcoming"
+        },
+        {
+          "time": "7 Nov · 15:00",
+          "match": "Arsenal vs Hull City",
+          "status": "upcoming"
+        },
+        {
+          "time": "7 Nov · 15:00",
+          "match": "Fulham vs Newcastle",
+          "status": "upcoming"
+        },
+        {
+          "time": "7 Nov · 17:30",
+          "match": "Nottm Forest vs Man City",
+          "status": "upcoming"
+        },
+        {
+          "time": "8 Nov · 14:00",
+          "match": "Brighton vs Brentford",
+          "status": "upcoming"
+        },
+        {
+          "time": "8 Nov · 14:00",
+          "match": "Crystal Palace vs Liverpool",
+          "status": "upcoming"
+        },
+        {
+          "time": "8 Nov · 14:00",
+          "match": "Ipswich Town vs Bournemouth",
+          "status": "upcoming"
+        },
+        {
+          "time": "8 Nov · 14:00",
+          "match": "Sunderland vs Chelsea",
+          "status": "upcoming"
+        },
+        {
+          "time": "8 Nov · 16:30",
+          "match": "Man United vs Aston Villa",
           "status": "upcoming"
         }
       ]
