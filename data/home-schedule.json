@@ -1,26 +1,7 @@
 {
-  "updatedAt": "2026-11-02T00:00:00+02:00",
-  "featuredId": "newcastle-everton-nov2",
+  "updatedAt": "2026-11-03T00:00:00+02:00",
+  "featuredId": "everton-coventry-nov6",
   "events": [
-    {
-      "id": "newcastle-everton-nov2",
-      "type": "event",
-      "sport": "Football",
-      "date": "2 Nov",
-      "time": "20:00 GMT",
-      "title": "Newcastle vs Everton",
-      "home": "Newcastle",
-      "away": "Everton",
-      "competition": "Premier League",
-      "stage": "Matchweek 9",
-      "status": "Today",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 9"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
-    },
     {
       "id": "everton-coventry-nov6",
       "type": "event",
@@ -212,6 +193,48 @@
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
     },
     {
+      "id": "newcastle-everton-nov2",
+      "type": "result",
+      "sport": "Football",
+      "date": "2 Nov",
+      "time": "Final",
+      "title": "Newcastle 0-1 Everton",
+      "home": "Newcastle",
+      "away": "Everton",
+      "competition": "Premier League",
+      "stage": "Matchweek 9",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Thierno Barry scored the winner"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+      "homeScore": "0",
+      "awayScore": "1"
+    },
+    {
+      "id": "mexico-gp-race-nov1",
+      "type": "result",
+      "sport": "Formula 1",
+      "date": "1 Nov",
+      "time": "Final",
+      "title": "Max Verstappen wins Mexico City Grand Prix",
+      "home": "Max Verstappen",
+      "away": "Lewis Hamilton",
+      "competition": "Formula 1",
+      "stage": "Round 19",
+      "status": "Result",
+      "signals": [
+        "Official Formula 1 race classification",
+        "Kimi Antonelli finished third and became 2026 World Champion"
+      ],
+      "homeLogo": "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg",
+      "awayLogo": "https://flagcdn.com/w320/mx.png",
+      "homeScore": "P1",
+      "awayScore": "P2"
+    },
+    {
       "id": "liverpool-arsenal-nov1",
       "type": "result",
       "sport": "Football",
@@ -252,25 +275,6 @@
       "awayLogo": "https://flagcdn.com/w320/my.png",
       "homeScore": "P1",
       "awayScore": "P2"
-    },
-    {
-      "id": "mexico-gp-race-nov1",
-      "type": "event",
-      "sport": "Formula 1",
-      "date": "1 Nov",
-      "time": "Result pending",
-      "title": "Mexico City Grand Prix",
-      "home": "Formula 1",
-      "away": "Mexico",
-      "competition": "Formula 1",
-      "stage": "Round 19",
-      "status": "Awaiting confirmed result",
-      "signals": [
-        "Official race classification not published at latest check",
-        "Race scheduled for 1 Nov at 20:00 GMT"
-      ],
-      "homeLogo": "https://upload.wikimedia.org/wikipedia/commons/3/33/F1.svg",
-      "awayLogo": "https://flagcdn.com/w320/mx.png"
     },
     {
       "id": "mexico-gp-qualifying-oct31",

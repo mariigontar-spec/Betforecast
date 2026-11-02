@@ -4,6 +4,9 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League Matchweek 9", status: "FINAL", homeName: "Newcastle", awayName: "Everton", homeGoals: "0", awayGoals: "1", venue: "St James’ Park", date: "2 Nov", href: "standings.html" },
+    { round: "Formula 1 · Mexico City Grand Prix", status: "FINAL", homeName: "Max Verstappen", awayName: "Lewis Hamilton", homeGoals: "P1", awayGoals: "P2", venue: "Mexico City", date: "1 Nov", href: "sports.html" },
+    { round: "Formula 1 · 2026 Drivers’ Championship", status: "CHAMPION", homeName: "Kimi Antonelli", awayName: "Mercedes", homeGoals: "P1", awayGoals: "2026", venue: "Mexico City", date: "1 Nov", href: "sports.html" },
     { round: "Football · Premier League Matchweek 9", status: "FINAL", homeName: "Liverpool", awayName: "Arsenal", homeGoals: "0", awayGoals: "1", venue: "Anfield", date: "1 Nov", href: "standings.html" },
     { round: "MotoGP · Malaysian Grand Prix", status: "FINAL", homeName: "Marc Marquez", awayName: "Pedro Acosta", homeGoals: "P1", awayGoals: "P2", venue: "Sepang", date: "1 Nov", href: "sports.html" },
     { round: "Football · Premier League Matchweek 9", status: "FINAL", homeName: "Aston Villa", awayName: "Fulham", homeGoals: "1", awayGoals: "1", venue: "Villa Park", date: "31 Oct", href: "standings.html" },
@@ -206,7 +209,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 2 Nov 2026");
+    setStatus("World sports results · checked 3 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -216,7 +219,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Arsenal won 1-0 at Liverpool to move top of the Premier League, while Marc Marquez won the Malaysian MotoGP Grand Prix. The Mexico City Formula 1 race result remains pending official confirmation.";
+    if (intro) intro.textContent = "Everton won 1-0 at Newcastle to complete Premier League Matchweek 9. Max Verstappen won in Mexico City, where Kimi Antonelli secured the 2026 Formula 1 title.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }

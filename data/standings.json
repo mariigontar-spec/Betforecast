@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Arsenal lead by three points · checked 2 Nov",
-      "insightText": "Arsenal won 1-0 at Liverpool to reach 24 points and move three clear of Manchester City. Newcastle host Everton in the final Matchweek 9 fixture today.",
+      "insightTitle": "Arsenal lead after Matchweek 9 · checked 3 Nov",
+      "insightText": "Everton won 1-0 at Newcastle to complete Matchweek 9 and moved to seventh on 13 points. Arsenal lead Manchester City by three points.",
       "table": [
         {
           "pos": 1,
@@ -125,6 +125,25 @@
         },
         {
           "pos": 7,
+          "team": "Everton",
+          "played": 9,
+          "wins": 3,
+          "draws": 4,
+          "losses": 2,
+          "gf": 9,
+          "ga": 9,
+          "points": 13,
+          "form": [
+            "D",
+            "D",
+            "W",
+            "L",
+            "W"
+          ],
+          "zone": "safe"
+        },
+        {
+          "pos": 8,
           "team": "Bournemouth",
           "played": 9,
           "wins": 3,
@@ -143,7 +162,7 @@
           "zone": "safe"
         },
         {
-          "pos": 8,
+          "pos": 9,
           "team": "Tottenham",
           "played": 9,
           "wins": 3,
@@ -162,7 +181,7 @@
           "zone": "safe"
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Aston Villa",
           "played": 9,
           "wins": 3,
@@ -181,7 +200,7 @@
           "zone": "safe"
         },
         {
-          "pos": 10,
+          "pos": 11,
           "team": "Hull City",
           "played": 9,
           "wins": 2,
@@ -200,7 +219,7 @@
           "zone": "safe"
         },
         {
-          "pos": 11,
+          "pos": 12,
           "team": "Leeds United",
           "played": 9,
           "wins": 2,
@@ -219,26 +238,26 @@
           "zone": "safe"
         },
         {
-          "pos": 12,
+          "pos": 13,
           "team": "Newcastle",
-          "played": 8,
+          "played": 9,
           "wins": 3,
           "draws": 2,
-          "losses": 3,
+          "losses": 4,
           "gf": 12,
-          "ga": 14,
+          "ga": 15,
           "points": 11,
           "form": [
-            "W",
             "D",
             "L",
             "W",
-            "W"
+            "W",
+            "L"
           ],
           "zone": "safe"
         },
         {
-          "pos": 13,
+          "pos": 14,
           "team": "Ipswich Town",
           "played": 9,
           "wins": 3,
@@ -253,25 +272,6 @@
             "L",
             "D",
             "D"
-          ],
-          "zone": "safe"
-        },
-        {
-          "pos": 14,
-          "team": "Everton",
-          "played": 8,
-          "wins": 2,
-          "draws": 4,
-          "losses": 2,
-          "gf": 8,
-          "ga": 9,
-          "points": 10,
-          "form": [
-            "D",
-            "D",
-            "D",
-            "W",
-            "L"
           ],
           "zone": "safe"
         },
@@ -392,6 +392,12 @@
       ],
       "lastMatches": [
         {
+          "time": "2 Nov",
+          "match": "Newcastle vs Everton",
+          "score": "0:1",
+          "status": "finished"
+        },
+        {
           "time": "1 Nov",
           "match": "Liverpool vs Arsenal",
           "score": "0:1",
@@ -444,20 +450,9 @@
           "match": "Chelsea vs Man United",
           "score": "2:0",
           "status": "finished"
-        },
-        {
-          "time": "25 Oct",
-          "match": "Sunderland vs Leeds United",
-          "score": "0:0",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
-        {
-          "time": "2 Nov · 20:00",
-          "match": "Newcastle vs Everton",
-          "status": "today"
-        },
         {
           "time": "6 Nov · 20:00",
           "match": "Everton vs Coventry City",
