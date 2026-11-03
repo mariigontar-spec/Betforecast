@@ -1,7 +1,178 @@
 {
-  "updatedAt": "2026-11-03T00:00:00+02:00",
-  "featuredId": "everton-coventry-nov6",
+  "updatedAt": "2026-11-04T00:00:00+02:00",
+  "featuredId": "fenerbahce-liverpool-nov4",
   "events": [
+    {
+      "id": "fenerbahce-liverpool-nov4",
+      "home": "Fenerbahce",
+      "away": "Liverpool",
+      "date": "4 Nov",
+      "time": "17:45 GMT",
+      "homeLogo": "https://flagcdn.com/w320/tr.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "type": "event",
+      "sport": "Football",
+      "title": "Fenerbahce vs Liverpool",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 4"
+      ]
+    },
+    {
+      "id": "aek-real-madrid-nov4",
+      "home": "AEK Athens",
+      "away": "Real Madrid",
+      "date": "4 Nov",
+      "time": "17:45 GMT",
+      "homeLogo": "https://flagcdn.com/w320/gr.png",
+      "awayLogo": "https://flagcdn.com/w320/es.png",
+      "type": "event",
+      "sport": "Football",
+      "title": "AEK Athens vs Real Madrid",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 4"
+      ]
+    },
+    {
+      "id": "dortmund-real-betis-nov4",
+      "home": "Borussia Dortmund",
+      "away": "Real Betis",
+      "date": "4 Nov",
+      "time": "20:00 GMT",
+      "homeLogo": "https://flagcdn.com/w320/de.png",
+      "awayLogo": "https://flagcdn.com/w320/es.png",
+      "type": "event",
+      "sport": "Football",
+      "title": "Borussia Dortmund vs Real Betis",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 4"
+      ]
+    },
+    {
+      "id": "porto-napoli-nov4",
+      "home": "Porto",
+      "away": "Napoli",
+      "date": "4 Nov",
+      "time": "20:00 GMT",
+      "homeLogo": "https://flagcdn.com/w320/pt.png",
+      "awayLogo": "https://flagcdn.com/w320/it.png",
+      "type": "event",
+      "sport": "Football",
+      "title": "Porto vs Napoli",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 4"
+      ]
+    },
+    {
+      "id": "psv-club-brugge-nov4",
+      "home": "PSV Eindhoven",
+      "away": "Club Brugge",
+      "date": "4 Nov",
+      "time": "20:00 GMT",
+      "homeLogo": "https://flagcdn.com/w320/nl.png",
+      "awayLogo": "https://flagcdn.com/w320/be.png",
+      "type": "event",
+      "sport": "Football",
+      "title": "PSV Eindhoven vs Club Brugge",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 4"
+      ]
+    },
+    {
+      "id": "leipzig-man-city-nov4",
+      "home": "Leipzig",
+      "away": "Man City",
+      "date": "4 Nov",
+      "time": "20:00 GMT",
+      "homeLogo": "https://flagcdn.com/w320/de.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "type": "event",
+      "sport": "Football",
+      "title": "Leipzig vs Man City",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 4"
+      ]
+    },
+    {
+      "id": "lens-como-nov4",
+      "home": "Lens",
+      "away": "Como",
+      "date": "4 Nov",
+      "time": "20:00 GMT",
+      "homeLogo": "https://flagcdn.com/w320/fr.png",
+      "awayLogo": "https://flagcdn.com/w320/it.png",
+      "type": "event",
+      "sport": "Football",
+      "title": "Lens vs Como",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 4"
+      ]
+    },
+    {
+      "id": "slavia-arsenal-nov4",
+      "home": "Slavia Praha",
+      "away": "Arsenal",
+      "date": "4 Nov",
+      "time": "20:00 GMT",
+      "homeLogo": "https://flagcdn.com/w320/cz.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "type": "event",
+      "sport": "Football",
+      "title": "Slavia Praha vs Arsenal",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 4"
+      ]
+    },
+    {
+      "id": "viking-sabah-nov4",
+      "home": "Viking",
+      "away": "Sabah",
+      "date": "4 Nov",
+      "time": "20:00 GMT",
+      "homeLogo": "https://flagcdn.com/w320/no.png",
+      "awayLogo": "https://flagcdn.com/w320/az.png",
+      "type": "event",
+      "sport": "Football",
+      "title": "Viking vs Sabah",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Champions League Matchday 4"
+      ]
+    },
     {
       "id": "everton-coventry-nov6",
       "type": "event",

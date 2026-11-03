@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Everton won 1-0 at Newcastle to complete Matchweek 9. Arsenal lead by three points, while Max Verstappen won in Mexico City and Kimi Antonelli secured the Formula 1 title.";
+        "Champions League Matchday 4 continues today with Fenerbahce–Liverpool, Leipzig–Manchester City and Slavia Praha–Arsenal. The verified Premier League table remains unchanged.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Everton–Coventry · 6 Nov · 20:00 GMT</span></div>
-        <div><strong>Motorsport</strong><span>Verstappen wins · Antonelli champion</span></div>
+        <div><strong>Featured</strong><span>Fenerbahce–Liverpool · today · 17:45 GMT</span></div>
+        <div><strong>Champions League</strong><span>Nine Matchday 4 fixtures today</span></div>
         <div><strong>Table</strong><span>Arsenal lead on 24 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Everton, Arsenal, Mexico Grand Prix";
+      input.placeholder = "Try: Liverpool, Arsenal, Champions League";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Everton Coventry">Everton–Coventry</button>
-        <button type="button" data-query="Newcastle Everton">Newcastle–Everton</button>
-        <button type="button" data-query="Kimi Antonelli">Antonelli champion</button>
+        <button type="button" data-query="Fenerbahce Liverpool">Fenerbahce–Liverpool</button>
+        <button type="button" data-query="Leipzig Manchester City">Leipzig–Man City</button>
+        <button type="button" data-query="Slavia Arsenal">Slavia–Arsenal</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=everton-coventry-nov6", title: "Everton vs Coventry City", detail: "6 Nov · Premier League · 20:00 GMT", tag: "Featured" },
-      { href: "match.html?id=leeds-tottenham-nov7", title: "Leeds United vs Tottenham", detail: "7 Nov · Premier League · 12:30 GMT", tag: "Next" },
-      { href: "results.html", title: "Newcastle 0-1 Everton", detail: "2 Nov · Premier League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 9", detail: "Complete · checked 3 Nov", tag: "Table" },
+      { href: "match.html?id=fenerbahce-liverpool-nov4", title: "Fenerbahce vs Liverpool", detail: "4 Nov · Champions League · 17:45 GMT", tag: "Featured" },
+      { href: "match.html?id=leipzig-man-city-nov4", title: "Leipzig vs Man City", detail: "4 Nov · Champions League · 20:00 GMT", tag: "Today" },
+      { href: "match.html?id=slavia-arsenal-nov4", title: "Slavia Praha vs Arsenal", detail: "4 Nov · Champions League · 20:00 GMT", tag: "Today" },
+      { href: "standings.html", title: "Premier League · Matchweek 9", detail: "Complete · checked 4 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
