@@ -6,7 +6,7 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Arsenal lead after Matchweek 9 · checked 4 Nov",
+      "insightTitle": "Arsenal lead after Matchweek 9 · checked 5 Nov",
       "insightText": "All 20 teams have played nine matches. Arsenal lead Manchester City by three points; Matchweek 10 begins with Everton vs Coventry City on 6 November.",
       "table": [
         {
@@ -26,7 +26,8 @@
             "W",
             "W"
           ],
-          "zone": "cl"
+          "zone": "cl",
+          "gd": 9
         },
         {
           "pos": 2,
@@ -45,7 +46,8 @@
             "L",
             "L"
           ],
-          "zone": "cl"
+          "zone": "cl",
+          "gd": 10
         },
         {
           "pos": 3,
@@ -64,7 +66,8 @@
             "L",
             "W"
           ],
-          "zone": "cl"
+          "zone": "cl",
+          "gd": 17
         },
         {
           "pos": 4,
@@ -83,7 +86,8 @@
             "L",
             "W"
           ],
-          "zone": "cl"
+          "zone": "cl",
+          "gd": 4
         },
         {
           "pos": 5,
@@ -102,7 +106,8 @@
             "W",
             "L"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": 2
         },
         {
           "pos": 6,
@@ -121,7 +126,8 @@
             "D",
             "W"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": 7
         },
         {
           "pos": 7,
@@ -140,7 +146,8 @@
             "L",
             "W"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": 0
         },
         {
           "pos": 8,
@@ -159,7 +166,8 @@
             "W",
             "W"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": 1
         },
         {
           "pos": 9,
@@ -178,7 +186,8 @@
             "W",
             "W"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": 0
         },
         {
           "pos": 10,
@@ -197,7 +206,8 @@
             "W",
             "D"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": -3
         },
         {
           "pos": 11,
@@ -216,7 +226,8 @@
             "D",
             "D"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": 1
         },
         {
           "pos": 12,
@@ -235,7 +246,8 @@
             "D",
             "L"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": 1
         },
         {
           "pos": 13,
@@ -254,7 +266,8 @@
             "W",
             "L"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": -3
         },
         {
           "pos": 14,
@@ -273,7 +286,8 @@
             "D",
             "D"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": -4
         },
         {
           "pos": 15,
@@ -292,7 +306,8 @@
             "W",
             "D"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": -2
         },
         {
           "pos": 16,
@@ -302,7 +317,7 @@
           "draws": 0,
           "losses": 6,
           "gf": 9,
-          "ga": 15,
+          "ga": 16,
           "points": 9,
           "form": [
             "W",
@@ -311,7 +326,8 @@
             "L",
             "W"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": -7
         },
         {
           "pos": 17,
@@ -330,7 +346,8 @@
             "L",
             "L"
           ],
-          "zone": "safe"
+          "zone": "safe",
+          "gd": -5
         },
         {
           "pos": 18,
@@ -349,7 +366,8 @@
             "L",
             "L"
           ],
-          "zone": "relegation"
+          "zone": "relegation",
+          "gd": -12
         },
         {
           "pos": 19,
@@ -368,7 +386,8 @@
             "D",
             "L"
           ],
-          "zone": "relegation"
+          "zone": "relegation",
+          "gd": -6
         },
         {
           "pos": 20,
@@ -387,7 +406,8 @@
             "D",
             "L"
           ],
-          "zone": "relegation"
+          "zone": "relegation",
+          "gd": -10
         }
       ],
       "lastMatches": [

@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 4 Nov 2026";
+  if (k) k.textContent = "World Sports News · 5 Nov 2026";
   if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=fenerbahce-liverpool-nov4">Fenerbahce–Liverpool today</a><a class="sidebar-link-card" href="match.html?id=leipzig-man-city-nov4">Leipzig–Man City today</a><a class="sidebar-link-card" href="match.html?id=slavia-arsenal-nov4">Slavia–Arsenal today</a><a class="sidebar-link-card" href="sports.html">Champions League Matchday 4</a><a class="sidebar-link-card" href="standings.html">Premier League table verified</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=crystal-palace-hoffenheim-nov5">Palace–Hoffenheim today</a><a class="sidebar-link-card" href="match.html?id=sparta-bournemouth-nov5">Sparta–Bournemouth today</a><a class="sidebar-link-card" href="results.html">Fenerbahce beat Liverpool 3-2</a><a class="sidebar-link-card" href="sports.html">Europa League Matchday 4</a><a class="sidebar-link-card" href="standings.html">Premier League table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Champions League Matchday 4 continues with nine matches on 4 November, including Fenerbahce–Liverpool, Leipzig–Manchester City and Slavia Praha–Arsenal. The Premier League table remains unchanged.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Fenerbahce beat Liverpool 3-2, Real Madrid won 3-2 at AEK Athens, and Arsenal and Manchester City also won on 4 November. Europa League Matchday 4 has 17 fixtures on 5 November; the Premier League table remains unchanged.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),

@@ -38,13 +38,13 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Champions League Matchday 4 continues today with Fenerbahce–Liverpool, Leipzig–Manchester City and Slavia Praha–Arsenal. The verified Premier League table remains unchanged.";
+        "Europa League Matchday 4 brings 17 fixtures today, including Crystal Palace–Hoffenheim, Sparta Praha–Bournemouth and Sunderland–GNK Dinamo. All nine Champions League results from 4 November are now verified.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Fenerbahce–Liverpool · today · 17:45 GMT</span></div>
-        <div><strong>Champions League</strong><span>Nine Matchday 4 fixtures today</span></div>
+        <div><strong>Featured</strong><span>Crystal Palace–Hoffenheim · today · 17:45 GMT</span></div>
+        <div><strong>Champions League</strong><span>Seventeen Matchday 4 fixtures today</span></div>
         <div><strong>Table</strong><span>Arsenal lead on 24 points</span></div>
       `;
     }
@@ -56,18 +56,18 @@
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Fenerbahce Liverpool">Fenerbahce–Liverpool</button>
-        <button type="button" data-query="Leipzig Manchester City">Leipzig–Man City</button>
-        <button type="button" data-query="Slavia Arsenal">Slavia–Arsenal</button>
+        <button type="button" data-query="Crystal Palace Hoffenheim">Crystal Palace–Hoffenheim</button>
+        <button type="button" data-query="Sparta Praha Bournemouth">Sparta Praha–Bournemouth</button>
+        <button type="button" data-query="Sunderland GNK Dinamo">Sunderland–GNK Dinamo</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=fenerbahce-liverpool-nov4", title: "Fenerbahce vs Liverpool", detail: "4 Nov · Champions League · 17:45 GMT", tag: "Featured" },
-      { href: "match.html?id=leipzig-man-city-nov4", title: "Leipzig vs Man City", detail: "4 Nov · Champions League · 20:00 GMT", tag: "Today" },
-      { href: "match.html?id=slavia-arsenal-nov4", title: "Slavia Praha vs Arsenal", detail: "4 Nov · Champions League · 20:00 GMT", tag: "Today" },
-      { href: "standings.html", title: "Premier League · Matchweek 9", detail: "Complete · checked 4 Nov", tag: "Table" },
+      { href: "match.html?id=crystal-palace-hoffenheim-nov5", title: "Crystal Palace vs Hoffenheim", detail: "5 Nov · Europa League · 17:45 GMT", tag: "Featured" },
+      { href: "match.html?id=sparta-bournemouth-nov5", title: "Sparta Praha vs Bournemouth", detail: "5 Nov · Europa League · 17:45 GMT", tag: "Today" },
+      { href: "match.html?id=sunderland-dinamo-nov5", title: "Sunderland vs GNK Dinamo", detail: "5 Nov · Europa League · 20:00 GMT", tag: "Today" },
+      { href: "standings.html", title: "Premier League · Matchweek 9", detail: "Complete · checked 5 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {

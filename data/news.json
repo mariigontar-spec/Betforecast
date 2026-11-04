@@ -1,5 +1,39 @@
 [
   {
+    "id": "ucl-2026-11-04-wrap",
+    "category": "Football",
+    "title": "Fenerbahce edge Liverpool as Real Madrid win in Athens",
+    "excerpt": "Fenerbahce beat Liverpool 3-2 and Real Madrid won 3-2 away to AEK Athens in the early Champions League Matchday 4 fixtures.",
+    "time": "Latest",
+    "date": "2026-11-04T23:30:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/liverpool.jpg",
+    "source": "Reuters",
+    "sourceUrl": "https://www.reuters.com/sports/soccer/real-madrid-beat-aek-athens-fenerbahce-edge-liverpool-champions-league-2026-11-04/",
+    "content": [
+      "Fenerbahce beat Liverpool 3-2 in Istanbul, while Real Madrid won 3-2 at AEK Athens.",
+      "The results are recorded in Betforecast’s verified results board.",
+      "Source: Reuters."
+    ]
+  },
+  {
+    "id": "ucl-2026-11-04-late",
+    "category": "Football",
+    "title": "Arsenal and Manchester City win on Champions League Matchday 4",
+    "excerpt": "Arsenal beat Slavia Praha 2-1 and Manchester City won 3-2 at Leipzig; Como recorded an 8-1 win at Lens.",
+    "time": "Latest",
+    "date": "2026-11-04T23:20:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/arsenal.jpg",
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/football/live/2026/nov/04/champions-league-clockwatch-live",
+    "content": [
+      "Arsenal won 2-1 at Slavia Praha and Manchester City beat Leipzig 3-2.",
+      "Como’s 8-1 victory at Lens was the largest scoreline of the night.",
+      "Source: The Guardian."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "Nadal set to join Real Madrid board of directors",

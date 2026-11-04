@@ -4,6 +4,16 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "Fenerbahce", awayName: "Liverpool", homeGoals: "3", awayGoals: "2", venue: "Istanbul", date: "4 Nov", href: "sports.html" },
+    { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "AEK Athens", awayName: "Real Madrid", homeGoals: "2", awayGoals: "3", venue: "Athens", date: "4 Nov", href: "sports.html" },
+    { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "Borussia Dortmund", awayName: "Real Betis", homeGoals: "2", awayGoals: "1", venue: "Dortmund", date: "4 Nov", href: "sports.html" },
+    { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "Porto", awayName: "Napoli", homeGoals: "4", awayGoals: "1", venue: "Porto", date: "4 Nov", href: "sports.html" },
+    { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "PSV Eindhoven", awayName: "Club Brugge", homeGoals: "1", awayGoals: "2", venue: "Eindhoven", date: "4 Nov", href: "sports.html" },
+    { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "Leipzig", awayName: "Man City", homeGoals: "2", awayGoals: "3", venue: "Leipzig", date: "4 Nov", href: "sports.html" },
+    { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "Lens", awayName: "Como", homeGoals: "1", awayGoals: "8", venue: "Lens", date: "4 Nov", href: "sports.html" },
+    { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "Slavia Praha", awayName: "Arsenal", homeGoals: "1", awayGoals: "2", venue: "Prague", date: "4 Nov", href: "sports.html" },
+    { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "Viking", awayName: "Sabah", homeGoals: "3", awayGoals: "1", venue: "Stavanger", date: "4 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Rennes", awayName: "Olympiacos", homeGoals: "0", awayGoals: "0", venue: "Rennes", date: "4 Nov", href: "sports.html" },
     { round: "Football · Premier League Matchweek 9", status: "FINAL", homeName: "Newcastle", awayName: "Everton", homeGoals: "0", awayGoals: "1", venue: "St James’ Park", date: "2 Nov", href: "standings.html" },
     { round: "Formula 1 · Mexico City Grand Prix", status: "FINAL", homeName: "Max Verstappen", awayName: "Lewis Hamilton", homeGoals: "P1", awayGoals: "P2", venue: "Mexico City", date: "1 Nov", href: "sports.html" },
     { round: "Formula 1 · 2026 Drivers’ Championship", status: "CHAMPION", homeName: "Kimi Antonelli", awayName: "Mercedes", homeGoals: "P1", awayGoals: "2026", venue: "Mexico City", date: "1 Nov", href: "sports.html" },
@@ -209,7 +219,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 4 Nov 2026");
+    setStatus("World sports results · checked 5 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -219,7 +229,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Everton won 1-0 at Newcastle to complete Premier League Matchweek 9. Max Verstappen won in Mexico City, where Kimi Antonelli secured the 2026 Formula 1 title.";
+    if (intro) intro.textContent = "Fenerbahce beat Liverpool 3-2, Real Madrid won 3-2 at AEK Athens, while Arsenal and Manchester City also won on Champions League Matchday 4.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }

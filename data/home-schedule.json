@@ -1,177 +1,539 @@
 {
-  "updatedAt": "2026-11-04T00:00:00+02:00",
-  "featuredId": "fenerbahce-liverpool-nov4",
+  "updatedAt": "2026-11-05T00:00:00+02:00",
+  "featuredId": "crystal-palace-hoffenheim-nov5",
   "events": [
+    {
+      "id": "milan-ferencvaros-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "17:45 GMT",
+      "title": "Milan vs Ferencvaros",
+      "home": "Milan",
+      "away": "Ferencvaros",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/it.png",
+      "awayLogo": "https://flagcdn.com/w320/hu.png"
+    },
+    {
+      "id": "sparta-bournemouth-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "17:45 GMT",
+      "title": "Sparta Praha vs Bournemouth",
+      "home": "Sparta Praha",
+      "away": "Bournemouth",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/cz.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
+    },
+    {
+      "id": "crystal-palace-hoffenheim-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "17:45 GMT",
+      "title": "Crystal Palace vs Hoffenheim",
+      "home": "Crystal Palace",
+      "away": "Hoffenheim",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+      "awayLogo": "https://flagcdn.com/w320/de.png"
+    },
+    {
+      "id": "lillestrom-viktoria-plzen-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "17:45 GMT",
+      "title": "Lillestrom vs Viktoria Plzen",
+      "home": "Lillestrom",
+      "away": "Viktoria Plzen",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/no.png",
+      "awayLogo": "https://flagcdn.com/w320/cz.png"
+    },
+    {
+      "id": "nec-omonia-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "17:45 GMT",
+      "title": "NEC Nijmegen vs Omonia",
+      "home": "NEC Nijmegen",
+      "away": "Omonia",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/nl.png",
+      "awayLogo": "https://flagcdn.com/w320/cy.png"
+    },
+    {
+      "id": "levski-jagiellonia-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "17:45 GMT",
+      "title": "Levski Sofia vs Jagiellonia",
+      "home": "Levski Sofia",
+      "away": "Jagiellonia",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/bg.png",
+      "awayLogo": "https://flagcdn.com/w320/pl.png"
+    },
+    {
+      "id": "real-sociedad-lyon-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "17:45 GMT",
+      "title": "Real Sociedad vs Lyon",
+      "home": "Real Sociedad",
+      "away": "Lyon",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/es.png",
+      "awayLogo": "https://flagcdn.com/w320/fr.png"
+    },
+    {
+      "id": "anderlecht-salzburg-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "17:45 GMT",
+      "title": "Anderlecht vs Salzburg",
+      "home": "Anderlecht",
+      "away": "Salzburg",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/be.png",
+      "awayLogo": "https://flagcdn.com/w320/at.png"
+    },
+    {
+      "id": "az-juventus-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "20:00 GMT",
+      "title": "AZ Alkmaar vs Juventus",
+      "home": "AZ Alkmaar",
+      "away": "Juventus",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/nl.png",
+      "awayLogo": "https://flagcdn.com/w320/it.png"
+    },
+    {
+      "id": "leverkusen-marseille-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "20:00 GMT",
+      "title": "Bayer Leverkusen vs Marseille",
+      "home": "Bayer Leverkusen",
+      "away": "Marseille",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/de.png",
+      "awayLogo": "https://flagcdn.com/w320/fr.png"
+    },
+    {
+      "id": "celtic-besiktas-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "20:00 GMT",
+      "title": "Celtic vs Besiktas",
+      "home": "Celtic",
+      "away": "Besiktas",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/gb-sct.png",
+      "awayLogo": "https://flagcdn.com/w320/tr.png"
+    },
+    {
+      "id": "hapoel-ofi-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "20:00 GMT",
+      "title": "Hapoel Beer-Sheva vs OFI Crete",
+      "home": "Hapoel Beer-Sheva",
+      "away": "OFI Crete",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/il.png",
+      "awayLogo": "https://flagcdn.com/w320/gr.png"
+    },
+    {
+      "id": "celta-union-sg-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "20:00 GMT",
+      "title": "Celta Vigo vs Union SG",
+      "home": "Celta Vigo",
+      "away": "Union SG",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/es.png",
+      "awayLogo": "https://flagcdn.com/w320/be.png"
+    },
+    {
+      "id": "torreense-ararat-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "20:00 GMT",
+      "title": "Torreense vs Ararat-Armenia",
+      "home": "Torreense",
+      "away": "Ararat-Armenia",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/pt.png",
+      "awayLogo": "https://flagcdn.com/w320/am.png"
+    },
+    {
+      "id": "sturm-celje-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "20:00 GMT",
+      "title": "Sturm Graz vs Celje",
+      "home": "Sturm Graz",
+      "away": "Celje",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/at.png",
+      "awayLogo": "https://flagcdn.com/w320/si.png"
+    },
+    {
+      "id": "benfica-lech-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "20:00 GMT",
+      "title": "Benfica vs Lech Poznan",
+      "home": "Benfica",
+      "away": "Lech Poznan",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/pt.png",
+      "awayLogo": "https://flagcdn.com/w320/pl.png"
+    },
+    {
+      "id": "sunderland-dinamo-nov5",
+      "type": "event",
+      "sport": "Football",
+      "date": "5 Nov",
+      "time": "20:00 GMT",
+      "title": "Sunderland vs GNK Dinamo",
+      "home": "Sunderland",
+      "away": "GNK Dinamo",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Today",
+      "signals": [
+        "Official UEFA fixture",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+      "awayLogo": "https://flagcdn.com/w320/hr.png"
+    },
+    {
+      "id": "rennes-olympiacos-nov4",
+      "type": "result",
+      "sport": "Football",
+      "date": "4 Nov",
+      "time": "Final",
+      "title": "Rennes 0-0 Olympiacos",
+      "home": "Rennes",
+      "away": "Olympiacos",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 4",
+      "status": "Result",
+      "signals": [
+        "Official UEFA result",
+        "Europa League Matchday 4"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/fr.png",
+      "awayLogo": "https://flagcdn.com/w320/gr.png",
+      "homeScore": "0",
+      "awayScore": "0"
+    },
     {
       "id": "fenerbahce-liverpool-nov4",
       "home": "Fenerbahce",
       "away": "Liverpool",
       "date": "4 Nov",
-      "time": "17:45 GMT",
+      "time": "Final",
       "homeLogo": "https://flagcdn.com/w320/tr.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
-      "title": "Fenerbahce vs Liverpool",
+      "title": "Fenerbahce 3-2 Liverpool",
       "competition": "UEFA Champions League",
       "stage": "League phase · Matchday 4",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "Champions League Matchday 4"
-      ]
+        "Verified final score",
+        "UEFA Champions League Matchday 4"
+      ],
+      "homeScore": "3",
+      "awayScore": "2"
     },
     {
       "id": "aek-real-madrid-nov4",
       "home": "AEK Athens",
       "away": "Real Madrid",
       "date": "4 Nov",
-      "time": "17:45 GMT",
+      "time": "Final",
       "homeLogo": "https://flagcdn.com/w320/gr.png",
       "awayLogo": "https://flagcdn.com/w320/es.png",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
-      "title": "AEK Athens vs Real Madrid",
+      "title": "AEK Athens 2-3 Real Madrid",
       "competition": "UEFA Champions League",
       "stage": "League phase · Matchday 4",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "Champions League Matchday 4"
-      ]
+        "Verified final score",
+        "UEFA Champions League Matchday 4"
+      ],
+      "homeScore": "2",
+      "awayScore": "3"
     },
     {
       "id": "dortmund-real-betis-nov4",
       "home": "Borussia Dortmund",
       "away": "Real Betis",
       "date": "4 Nov",
-      "time": "20:00 GMT",
+      "time": "Final",
       "homeLogo": "https://flagcdn.com/w320/de.png",
       "awayLogo": "https://flagcdn.com/w320/es.png",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
-      "title": "Borussia Dortmund vs Real Betis",
+      "title": "Borussia Dortmund 2-1 Real Betis",
       "competition": "UEFA Champions League",
       "stage": "League phase · Matchday 4",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "Champions League Matchday 4"
-      ]
+        "Verified final score",
+        "UEFA Champions League Matchday 4"
+      ],
+      "homeScore": "2",
+      "awayScore": "1"
     },
     {
       "id": "porto-napoli-nov4",
       "home": "Porto",
       "away": "Napoli",
       "date": "4 Nov",
-      "time": "20:00 GMT",
+      "time": "Final",
       "homeLogo": "https://flagcdn.com/w320/pt.png",
       "awayLogo": "https://flagcdn.com/w320/it.png",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
-      "title": "Porto vs Napoli",
+      "title": "Porto 4-1 Napoli",
       "competition": "UEFA Champions League",
       "stage": "League phase · Matchday 4",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "Champions League Matchday 4"
-      ]
+        "Verified final score",
+        "UEFA Champions League Matchday 4"
+      ],
+      "homeScore": "4",
+      "awayScore": "1"
     },
     {
       "id": "psv-club-brugge-nov4",
       "home": "PSV Eindhoven",
       "away": "Club Brugge",
       "date": "4 Nov",
-      "time": "20:00 GMT",
+      "time": "Final",
       "homeLogo": "https://flagcdn.com/w320/nl.png",
       "awayLogo": "https://flagcdn.com/w320/be.png",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
-      "title": "PSV Eindhoven vs Club Brugge",
+      "title": "PSV Eindhoven 1-2 Club Brugge",
       "competition": "UEFA Champions League",
       "stage": "League phase · Matchday 4",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "Champions League Matchday 4"
-      ]
+        "Verified final score",
+        "UEFA Champions League Matchday 4"
+      ],
+      "homeScore": "1",
+      "awayScore": "2"
     },
     {
       "id": "leipzig-man-city-nov4",
       "home": "Leipzig",
       "away": "Man City",
       "date": "4 Nov",
-      "time": "20:00 GMT",
+      "time": "Final",
       "homeLogo": "https://flagcdn.com/w320/de.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
-      "title": "Leipzig vs Man City",
+      "title": "Leipzig 2-3 Man City",
       "competition": "UEFA Champions League",
       "stage": "League phase · Matchday 4",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "Champions League Matchday 4"
-      ]
+        "Verified final score",
+        "UEFA Champions League Matchday 4"
+      ],
+      "homeScore": "2",
+      "awayScore": "3"
     },
     {
       "id": "lens-como-nov4",
       "home": "Lens",
       "away": "Como",
       "date": "4 Nov",
-      "time": "20:00 GMT",
+      "time": "Final",
       "homeLogo": "https://flagcdn.com/w320/fr.png",
       "awayLogo": "https://flagcdn.com/w320/it.png",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
-      "title": "Lens vs Como",
+      "title": "Lens 1-8 Como",
       "competition": "UEFA Champions League",
       "stage": "League phase · Matchday 4",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "Champions League Matchday 4"
-      ]
+        "Verified final score",
+        "UEFA Champions League Matchday 4"
+      ],
+      "homeScore": "1",
+      "awayScore": "8"
     },
     {
       "id": "slavia-arsenal-nov4",
       "home": "Slavia Praha",
       "away": "Arsenal",
       "date": "4 Nov",
-      "time": "20:00 GMT",
+      "time": "Final",
       "homeLogo": "https://flagcdn.com/w320/cz.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
-      "title": "Slavia Praha vs Arsenal",
+      "title": "Slavia Praha 1-2 Arsenal",
       "competition": "UEFA Champions League",
       "stage": "League phase · Matchday 4",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "Champions League Matchday 4"
-      ]
+        "Verified final score",
+        "UEFA Champions League Matchday 4"
+      ],
+      "homeScore": "1",
+      "awayScore": "2"
     },
     {
       "id": "viking-sabah-nov4",
       "home": "Viking",
       "away": "Sabah",
       "date": "4 Nov",
-      "time": "20:00 GMT",
+      "time": "Final",
       "homeLogo": "https://flagcdn.com/w320/no.png",
       "awayLogo": "https://flagcdn.com/w320/az.png",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
-      "title": "Viking vs Sabah",
+      "title": "Viking 3-1 Sabah",
       "competition": "UEFA Champions League",
       "stage": "League phase · Matchday 4",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
-        "Champions League Matchday 4"
-      ]
+        "Verified final score",
+        "UEFA Champions League Matchday 4"
+      ],
+      "homeScore": "3",
+      "awayScore": "1"
     },
     {
       "id": "everton-coventry-nov6",
