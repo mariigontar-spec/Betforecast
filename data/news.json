@@ -1,5 +1,39 @@
 [
   {
+    "id": "uel-2026-11-05-wrap",
+    "category": "Football",
+    "title": "Bournemouth win in Prague as Palace rescue late draw",
+    "excerpt": "Bournemouth beat Sparta Praha 3-1, while Crystal Palace drew 1-1 with Hoffenheim after a stoppage-time equaliser.",
+    "time": "Latest",
+    "date": "2026-11-05T22:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/football/live/2026/nov/05/crystal-palace-hoffenheim-sparta-prague-bournemouth-sunderland-celtic-europa-league-live",
+    "content": [
+      "Bournemouth won 3-1 at Sparta Praha and Crystal Palace drew 1-1 with Hoffenheim.",
+      "The verified scores are now listed in Betforecast Results.",
+      "Source: The Guardian."
+    ]
+  },
+  {
+    "id": "uel-2026-11-05-late",
+    "category": "Football",
+    "title": "Celtic edge Besiktas as Dinamo defeat Sunderland",
+    "excerpt": "Celtic won 3-2 against Besiktas and GNK Dinamo beat Sunderland 2-0 in the late Europa League window.",
+    "time": "Latest",
+    "date": "2026-11-05T21:58:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-2.jpg",
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/football/live/2026/nov/05/crystal-palace-hoffenheim-sparta-prague-bournemouth-sunderland-celtic-europa-league-live",
+    "content": [
+      "Celtic beat Besiktas 3-2 and Dinamo Zagreb won 2-0 at Sunderland.",
+      "Only reliably confirmed final scores were added.",
+      "Source: The Guardian."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "Who could be the next England debutant and who are the potential recalls?",

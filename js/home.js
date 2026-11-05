@@ -38,13 +38,13 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Europa League Matchday 4 brings 17 fixtures today, including Crystal Palace–Hoffenheim, Sparta Praha–Bournemouth and Sunderland–GNK Dinamo. All nine Champions League results from 4 November are now verified.";
+        "Premier League Matchweek 10 starts today with Everton–Coventry City at 20:00 GMT. Fourteen verified Europa League results from 5 November are now recorded.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Crystal Palace–Hoffenheim · today · 17:45 GMT</span></div>
-        <div><strong>Champions League</strong><span>Seventeen Matchday 4 fixtures today</span></div>
+        <div><strong>Featured</strong><span>Everton–Coventry City · today · 20:00 GMT</span></div>
+        <div><strong>Premier League</strong><span>Matchweek 10 starts tonight</span></div>
         <div><strong>Table</strong><span>Arsenal lead on 24 points</span></div>
       `;
     }
@@ -56,18 +56,18 @@
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Crystal Palace Hoffenheim">Crystal Palace–Hoffenheim</button>
-        <button type="button" data-query="Sparta Praha Bournemouth">Sparta Praha–Bournemouth</button>
-        <button type="button" data-query="Sunderland GNK Dinamo">Sunderland–GNK Dinamo</button>
+        <button type="button" data-query="Everton Coventry">Everton–Coventry</button>
+        <button type="button" data-query="Leeds Tottenham">Leeds–Tottenham</button>
+        <button type="button" data-query="Arsenal Hull">Arsenal–Hull</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=crystal-palace-hoffenheim-nov5", title: "Crystal Palace vs Hoffenheim", detail: "5 Nov · Europa League · 17:45 GMT", tag: "Featured" },
-      { href: "match.html?id=sparta-bournemouth-nov5", title: "Sparta Praha vs Bournemouth", detail: "5 Nov · Europa League · 17:45 GMT", tag: "Today" },
-      { href: "match.html?id=sunderland-dinamo-nov5", title: "Sunderland vs GNK Dinamo", detail: "5 Nov · Europa League · 20:00 GMT", tag: "Today" },
-      { href: "standings.html", title: "Premier League · Matchweek 9", detail: "Complete · checked 5 Nov", tag: "Table" },
+      { href: "match.html?id=everton-coventry-nov6", title: "Everton vs Coventry City", detail: "6 Nov · Premier League · 20:00 GMT", tag: "Featured" },
+      { href: "match.html?id=leeds-tottenham-nov7", title: "Leeds United vs Tottenham", detail: "7 Nov · Premier League · 12:30 GMT", tag: "Next" },
+      { href: "match.html?id=arsenal-hull-nov7", title: "Arsenal vs Hull City", detail: "7 Nov · Premier League · 15:00 GMT", tag: "Next" },
+      { href: "standings.html", title: "Premier League · Matchweek 9", detail: "Complete · checked 6 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {

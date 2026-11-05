@@ -4,6 +4,20 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Milan", awayName: "Ferencvaros", homeGoals: "0", awayGoals: "2", venue: "Milan", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Sparta Praha", awayName: "Bournemouth", homeGoals: "1", awayGoals: "3", venue: "Prague", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Crystal Palace", awayName: "Hoffenheim", homeGoals: "1", awayGoals: "1", venue: "London", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Lillestrom", awayName: "Viktoria Plzen", homeGoals: "0", awayGoals: "1", venue: "Lillestrom", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "NEC Nijmegen", awayName: "Omonia", homeGoals: "3", awayGoals: "1", venue: "Nijmegen", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Levski Sofia", awayName: "Jagiellonia", homeGoals: "1", awayGoals: "0", venue: "Sofia", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Real Sociedad", awayName: "Lyon", homeGoals: "1", awayGoals: "1", venue: "San Sebastian", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Anderlecht", awayName: "Salzburg", homeGoals: "2", awayGoals: "0", venue: "Brussels", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "AZ Alkmaar", awayName: "Juventus", homeGoals: "1", awayGoals: "2", venue: "Alkmaar", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Bayer Leverkusen", awayName: "Marseille", homeGoals: "0", awayGoals: "1", venue: "Leverkusen", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Celtic", awayName: "Besiktas", homeGoals: "3", awayGoals: "2", venue: "Glasgow", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Hapoel Beer-Sheva", awayName: "OFI Crete", homeGoals: "0", awayGoals: "0", venue: "Bucharest", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Benfica", awayName: "Lech Poznan", homeGoals: "3", awayGoals: "1", venue: "Lisbon", date: "5 Nov", href: "sports.html" },
+    { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Sunderland", awayName: "GNK Dinamo", homeGoals: "0", awayGoals: "2", venue: "Sunderland", date: "5 Nov", href: "sports.html" },
     { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "Fenerbahce", awayName: "Liverpool", homeGoals: "3", awayGoals: "2", venue: "Istanbul", date: "4 Nov", href: "sports.html" },
     { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "AEK Athens", awayName: "Real Madrid", homeGoals: "2", awayGoals: "3", venue: "Athens", date: "4 Nov", href: "sports.html" },
     { round: "Football · UEFA Champions League Matchday 4", status: "FINAL", homeName: "Borussia Dortmund", awayName: "Real Betis", homeGoals: "2", awayGoals: "1", venue: "Dortmund", date: "4 Nov", href: "sports.html" },
@@ -219,7 +233,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 5 Nov 2026");
+    setStatus("World sports results · checked 6 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -229,7 +243,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Fenerbahce beat Liverpool 3-2, Real Madrid won 3-2 at AEK Athens, while Arsenal and Manchester City also won on Champions League Matchday 4.";
+    if (intro) intro.textContent = "Bournemouth won 3-1 at Sparta Praha, Celtic beat Besiktas 3-2 and GNK Dinamo defeated Sunderland 2-0 on Europa League Matchday 4.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
