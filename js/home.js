@@ -38,14 +38,14 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Premier League Matchweek 10 starts today with Everton–Coventry City at 20:00 GMT. Fourteen verified Europa League results from 5 November are now recorded.";
+        "Everton beat Coventry City 3-1 to open Matchweek 10. Today’s Premier League programme features Leeds–Tottenham, Arsenal–Hull, Fulham–Newcastle and Forest–Manchester City.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Everton–Coventry City · today · 20:00 GMT</span></div>
-        <div><strong>Premier League</strong><span>Matchweek 10 starts tonight</span></div>
-        <div><strong>Table</strong><span>Arsenal lead on 24 points</span></div>
+        <div><strong>Featured</strong><span>Leeds–Tottenham · today · 12:30 GMT</span></div>
+        <div><strong>Premier League</strong><span>Four fixtures today</span></div>
+        <div><strong>Table</strong><span>Everton climb to fifth · Arsenal lead</span></div>
       `;
     }
 
@@ -56,18 +56,18 @@
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Everton Coventry">Everton–Coventry</button>
         <button type="button" data-query="Leeds Tottenham">Leeds–Tottenham</button>
         <button type="button" data-query="Arsenal Hull">Arsenal–Hull</button>
+        <button type="button" data-query="Fulham Newcastle">Fulham–Newcastle</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=everton-coventry-nov6", title: "Everton vs Coventry City", detail: "6 Nov · Premier League · 20:00 GMT", tag: "Featured" },
-      { href: "match.html?id=leeds-tottenham-nov7", title: "Leeds United vs Tottenham", detail: "7 Nov · Premier League · 12:30 GMT", tag: "Next" },
-      { href: "match.html?id=arsenal-hull-nov7", title: "Arsenal vs Hull City", detail: "7 Nov · Premier League · 15:00 GMT", tag: "Next" },
-      { href: "standings.html", title: "Premier League · Matchweek 9", detail: "Complete · checked 6 Nov", tag: "Table" },
+      { href: "match.html?id=leeds-tottenham-nov7", title: "Leeds United vs Tottenham", detail: "7 Nov · Premier League · 12:30 GMT", tag: "Featured" },
+      { href: "match.html?id=arsenal-hull-nov7", title: "Arsenal vs Hull City", detail: "7 Nov · Premier League · 15:00 GMT", tag: "Today" },
+      { href: "match.html?id=fulham-newcastle-nov7", title: "Fulham vs Newcastle", detail: "7 Nov · Premier League · 15:00 GMT", tag: "Today" },
+      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "In progress · checked 7 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {

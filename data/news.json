@@ -1,5 +1,22 @@
 [
   {
+    "id": "epl-2026-11-06-everton-coventry",
+    "category": "Football",
+    "title": "Barry double sends Everton fifth after Coventry comeback",
+    "excerpt": "Everton came from behind to beat Coventry City 3-1, with Thierno Barry scoring twice before setting up Kiernan Dewsbury-Hall.",
+    "time": "Latest",
+    "date": "2026-11-06T22:00:00.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "The Guardian",
+    "sourceUrl": "https://www.theguardian.com/football/live/2026/nov/06/everton-v-coventry-city-premier-league-live-updates",
+    "content": [
+      "Everton beat Coventry City 3-1 at Hill Dickinson Stadium.",
+      "Thierno Barry scored twice and assisted the third goal.",
+      "Source: The Guardian."
+    ]
+  },
+  {
     "id": "1",
     "category": "Football",
     "title": "Has Anderson lived up to the hype after Man City move?",

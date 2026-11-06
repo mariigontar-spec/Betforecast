@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Arsenal lead after Matchweek 9 · checked 6 Nov",
-      "insightText": "All 20 teams have played nine matches. Arsenal lead Manchester City by three points; Matchweek 10 begins with Everton vs Coventry City at 20:00 GMT on 6 November.",
+      "insightTitle": "Arsenal lead as Matchweek 10 continues · checked 7 Nov",
+      "insightText": "Everton beat Coventry City 3-1 and moved to fifth on 16 points. Arsenal lead on 24 points; four Matchweek 10 fixtures are scheduled for 7 November.",
       "table": [
         {
           "pos": 1,
@@ -91,6 +91,26 @@
         },
         {
           "pos": 5,
+          "team": "Everton",
+          "played": 10,
+          "wins": 4,
+          "draws": 4,
+          "losses": 2,
+          "gf": 12,
+          "ga": 10,
+          "points": 16,
+          "form": [
+            "D",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "zone": "safe",
+          "gd": 2
+        },
+        {
+          "pos": 6,
           "team": "Liverpool",
           "played": 9,
           "wins": 4,
@@ -110,7 +130,7 @@
           "gd": 2
         },
         {
-          "pos": 6,
+          "pos": 7,
           "team": "Brentford",
           "played": 9,
           "wins": 3,
@@ -128,26 +148,6 @@
           ],
           "zone": "safe",
           "gd": 7
-        },
-        {
-          "pos": 7,
-          "team": "Everton",
-          "played": 9,
-          "wins": 3,
-          "draws": 4,
-          "losses": 2,
-          "gf": 9,
-          "ga": 9,
-          "points": 13,
-          "form": [
-            "D",
-            "D",
-            "W",
-            "L",
-            "W"
-          ],
-          "zone": "safe",
-          "gd": 0
         },
         {
           "pos": 8,
@@ -312,22 +312,22 @@
         {
           "pos": 16,
           "team": "Coventry City",
-          "played": 9,
+          "played": 10,
           "wins": 3,
           "draws": 0,
-          "losses": 6,
-          "gf": 9,
-          "ga": 16,
+          "losses": 7,
+          "gf": 10,
+          "ga": 19,
           "points": 9,
           "form": [
             "W",
+            "L",
+            "L",
             "W",
-            "L",
-            "L",
-            "W"
+            "L"
           ],
           "zone": "safe",
-          "gd": -7
+          "gd": -9
         },
         {
           "pos": 17,
@@ -412,6 +412,12 @@
       ],
       "lastMatches": [
         {
+          "time": "6 Nov",
+          "match": "Everton vs Coventry City",
+          "score": "3:1",
+          "status": "finished"
+        },
+        {
           "time": "2 Nov",
           "match": "Newcastle vs Everton",
           "score": "0:1",
@@ -464,20 +470,9 @@
           "match": "Bournemouth vs Leeds United",
           "score": "2:0",
           "status": "finished"
-        },
-        {
-          "time": "31 Oct",
-          "match": "Chelsea vs Man United",
-          "score": "2:0",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
-        {
-          "time": "6 Nov · 20:00",
-          "match": "Everton vs Coventry City",
-          "status": "upcoming"
-        },
         {
           "time": "7 Nov · 12:30",
           "match": "Leeds United vs Tottenham",

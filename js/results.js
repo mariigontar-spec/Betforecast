@@ -4,6 +4,7 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Everton", awayName: "Coventry City", homeGoals: "3", awayGoals: "1", venue: "Hill Dickinson Stadium", date: "6 Nov", href: "standings.html" },
     { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Milan", awayName: "Ferencvaros", homeGoals: "0", awayGoals: "2", venue: "Milan", date: "5 Nov", href: "sports.html" },
     { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Sparta Praha", awayName: "Bournemouth", homeGoals: "1", awayGoals: "3", venue: "Prague", date: "5 Nov", href: "sports.html" },
     { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Crystal Palace", awayName: "Hoffenheim", homeGoals: "1", awayGoals: "1", venue: "London", date: "5 Nov", href: "sports.html" },
@@ -233,7 +234,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 6 Nov 2026");
+    setStatus("World sports results · checked 7 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -243,7 +244,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Bournemouth won 3-1 at Sparta Praha, Celtic beat Besiktas 3-2 and GNK Dinamo defeated Sunderland 2-0 on Europa League Matchday 4.";
+    if (intro) intro.textContent = "Everton came from behind to beat Coventry City 3-1 as Thierno Barry scored twice. Four Premier League matches follow on 7 November.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
