@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 7 Nov 2026";
+  if (k) k.textContent = "World Sports News · 8 Nov 2026";
   if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=leeds-tottenham-nov7">Leeds–Tottenham today</a><a class="sidebar-link-card" href="results.html">Everton beat Coventry 3-1</a><a class="sidebar-link-card" href="match.html?id=arsenal-hull-nov7">Arsenal–Hull today</a><a class="sidebar-link-card" href="match.html?id=forest-man-city-nov7">Forest–Man City today</a><a class="sidebar-link-card" href="standings.html">Premier League table updated</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=palace-liverpool-nov8">Palace–Liverpool today</a><a class="sidebar-link-card" href="results.html">Forest beat Man City 3-1</a><a class="sidebar-link-card" href="match.html?id=brighton-brentford-nov8">Brighton–Brentford today</a><a class="sidebar-link-card" href="match.html?id=man-united-aston-villa-nov8">Man United–Aston Villa today</a><a class="sidebar-link-card" href="standings.html">Premier League table updated</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Everton came from behind to beat Coventry City 3-1 on 6 November and moved to fifth. Four Premier League fixtures follow on 7 November, led by Leeds–Tottenham and Forest–Manchester City.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Nottingham Forest beat Manchester City 3-1 on 7 November, while Arsenal extended their lead with a 1-0 win over Hull. Five Premier League fixtures follow on 8 November, led by Palace–Liverpool and Man United–Aston Villa.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),

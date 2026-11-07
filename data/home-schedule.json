@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-07T00:00:00+02:00",
-  "featuredId": "leeds-tottenham-nov7",
+  "updatedAt": "2026-11-08T00:00:00+02:00",
+  "featuredId": "palace-liverpool-nov8",
   "events": [
     {
-      "id": "leeds-tottenham-nov7",
+      "id": "palace-liverpool-nov8",
       "type": "event",
       "sport": "Football",
-      "date": "7 Nov",
-      "time": "12:30 GMT",
-      "title": "Leeds United vs Tottenham",
-      "home": "Leeds United",
-      "away": "Tottenham",
+      "date": "8 Nov",
+      "time": "14:00 GMT",
+      "title": "Crystal Palace vs Liverpool",
+      "home": "Crystal Palace",
+      "away": "Liverpool",
       "competition": "Premier League",
       "stage": "Matchweek 10",
       "status": "Today",
@@ -18,18 +18,18 @@
         "Official Premier League fixture",
         "Matchweek 10"
       ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
     },
     {
-      "id": "arsenal-hull-nov7",
+      "id": "brighton-brentford-nov8",
       "type": "event",
       "sport": "Football",
-      "date": "7 Nov",
-      "time": "15:00 GMT",
-      "title": "Arsenal vs Hull City",
-      "home": "Arsenal",
-      "away": "Hull City",
+      "date": "8 Nov",
+      "time": "14:00 GMT",
+      "title": "Brighton vs Brentford",
+      "home": "Brighton",
+      "away": "Brentford",
       "competition": "Premier League",
       "stage": "Matchweek 10",
       "status": "Today",
@@ -37,18 +37,18 @@
         "Official Premier League fixture",
         "Matchweek 10"
       ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
-      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png"
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
     },
     {
-      "id": "fulham-newcastle-nov7",
+      "id": "ipswich-bournemouth-nov8",
       "type": "event",
       "sport": "Football",
-      "date": "7 Nov",
-      "time": "15:00 GMT",
-      "title": "Fulham vs Newcastle",
-      "home": "Fulham",
-      "away": "Newcastle",
+      "date": "8 Nov",
+      "time": "14:00 GMT",
+      "title": "Ipswich Town vs Bournemouth",
+      "home": "Ipswich Town",
+      "away": "Bournemouth",
       "competition": "Premier League",
       "stage": "Matchweek 10",
       "status": "Today",
@@ -56,27 +56,130 @@
         "Official Premier League fixture",
         "Matchweek 10"
       ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
+    },
+    {
+      "id": "sunderland-chelsea-nov8",
+      "type": "event",
+      "sport": "Football",
+      "date": "8 Nov",
+      "time": "14:00 GMT",
+      "title": "Sunderland vs Chelsea",
+      "home": "Sunderland",
+      "away": "Chelsea",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Today",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
+    },
+    {
+      "id": "man-united-aston-villa-nov8",
+      "type": "event",
+      "sport": "Football",
+      "date": "8 Nov",
+      "time": "16:30 GMT",
+      "title": "Man United vs Aston Villa",
+      "home": "Man United",
+      "away": "Aston Villa",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Today",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
     },
     {
       "id": "forest-man-city-nov7",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "7 Nov",
-      "time": "17:30 GMT",
-      "title": "Nottm Forest vs Man City",
+      "time": "Final",
+      "title": "Nottm Forest 3-1 Man City",
       "home": "Nottm Forest",
       "away": "Man City",
       "competition": "Premier League",
       "stage": "Matchweek 10",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 10"
+        "Verified final score",
+        "Premier League Matchweek 10"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "homeScore": "3",
+      "awayScore": "1"
+    },
+    {
+      "id": "arsenal-hull-nov7",
+      "type": "result",
+      "sport": "Football",
+      "date": "7 Nov",
+      "time": "Final",
+      "title": "Arsenal 1-0 Hull City",
+      "home": "Arsenal",
+      "away": "Hull City",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Premier League Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
+      "homeScore": "1",
+      "awayScore": "0"
+    },
+    {
+      "id": "fulham-newcastle-nov7",
+      "type": "result",
+      "sport": "Football",
+      "date": "7 Nov",
+      "time": "Final",
+      "title": "Fulham 1-1 Newcastle",
+      "home": "Fulham",
+      "away": "Newcastle",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Premier League Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+      "homeScore": "1",
+      "awayScore": "1"
+    },
+    {
+      "id": "leeds-tottenham-nov7",
+      "type": "result",
+      "sport": "Football",
+      "date": "7 Nov",
+      "time": "Final",
+      "title": "Leeds United 1-0 Tottenham",
+      "home": "Leeds United",
+      "away": "Tottenham",
+      "competition": "Premier League",
+      "stage": "Matchweek 10",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Premier League Matchweek 10"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+      "homeScore": "1",
+      "awayScore": "0"
     },
     {
       "id": "everton-coventry-nov6",
@@ -602,101 +705,6 @@
       ],
       "homeScore": "3",
       "awayScore": "1"
-    },
-    {
-      "id": "brighton-brentford-nov8",
-      "type": "event",
-      "sport": "Football",
-      "date": "8 Nov",
-      "time": "14:00 GMT",
-      "title": "Brighton vs Brentford",
-      "home": "Brighton",
-      "away": "Brentford",
-      "competition": "Premier League",
-      "stage": "Matchweek 10",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 10"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
-    },
-    {
-      "id": "palace-liverpool-nov8",
-      "type": "event",
-      "sport": "Football",
-      "date": "8 Nov",
-      "time": "14:00 GMT",
-      "title": "Crystal Palace vs Liverpool",
-      "home": "Crystal Palace",
-      "away": "Liverpool",
-      "competition": "Premier League",
-      "stage": "Matchweek 10",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 10"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
-    },
-    {
-      "id": "ipswich-bournemouth-nov8",
-      "type": "event",
-      "sport": "Football",
-      "date": "8 Nov",
-      "time": "14:00 GMT",
-      "title": "Ipswich Town vs Bournemouth",
-      "home": "Ipswich Town",
-      "away": "Bournemouth",
-      "competition": "Premier League",
-      "stage": "Matchweek 10",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 10"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
-    },
-    {
-      "id": "sunderland-chelsea-nov8",
-      "type": "event",
-      "sport": "Football",
-      "date": "8 Nov",
-      "time": "14:00 GMT",
-      "title": "Sunderland vs Chelsea",
-      "home": "Sunderland",
-      "away": "Chelsea",
-      "competition": "Premier League",
-      "stage": "Matchweek 10",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 10"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
-    },
-    {
-      "id": "man-united-aston-villa-nov8",
-      "type": "event",
-      "sport": "Football",
-      "date": "8 Nov",
-      "time": "16:30 GMT",
-      "title": "Man United vs Aston Villa",
-      "home": "Man United",
-      "away": "Aston Villa",
-      "competition": "Premier League",
-      "stage": "Matchweek 10",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 10"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
     },
     {
       "id": "newcastle-everton-nov2",

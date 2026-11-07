@@ -4,6 +4,10 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Nottm Forest", awayName: "Man City", homeGoals: "3", awayGoals: "1", venue: "City Ground", date: "7 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Arsenal", awayName: "Hull City", homeGoals: "1", awayGoals: "0", venue: "Emirates Stadium", date: "7 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Fulham", awayName: "Newcastle", homeGoals: "1", awayGoals: "1", venue: "Craven Cottage", date: "7 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Leeds United", awayName: "Tottenham", homeGoals: "1", awayGoals: "0", venue: "Elland Road", date: "7 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Everton", awayName: "Coventry City", homeGoals: "3", awayGoals: "1", venue: "Hill Dickinson Stadium", date: "6 Nov", href: "standings.html" },
     { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Milan", awayName: "Ferencvaros", homeGoals: "0", awayGoals: "2", venue: "Milan", date: "5 Nov", href: "sports.html" },
     { round: "Football · UEFA Europa League Matchday 4", status: "FINAL", homeName: "Sparta Praha", awayName: "Bournemouth", homeGoals: "1", awayGoals: "3", venue: "Prague", date: "5 Nov", href: "sports.html" },
@@ -234,7 +238,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 7 Nov 2026");
+    setStatus("World sports results · checked 8 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");

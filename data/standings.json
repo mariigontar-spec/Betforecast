@@ -6,48 +6,48 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Arsenal lead as Matchweek 10 continues · checked 7 Nov",
-      "insightText": "Everton beat Coventry City 3-1 and moved to fifth on 16 points. Arsenal lead on 24 points; four Matchweek 10 fixtures are scheduled for 7 November.",
+      "insightTitle": "Arsenal extend lead as Matchweek 10 continues · checked 8 Nov",
+      "insightText": "Arsenal lead on 27 points after beating Hull City 1-0. Nottingham Forest defeated Manchester City 3-1, Leeds beat Tottenham 1-0 and Fulham drew 1-1 with Newcastle; five fixtures remain on 8 November.",
       "table": [
         {
           "pos": 1,
           "team": "Arsenal",
-          "played": 9,
-          "wins": 8,
+          "played": 10,
+          "wins": 9,
           "draws": 0,
           "losses": 1,
-          "gf": 14,
+          "gf": 15,
           "ga": 5,
-          "points": 24,
+          "points": 27,
           "form": [
-            "L",
+            "W",
             "W",
             "W",
             "W",
             "W"
           ],
           "zone": "cl",
-          "gd": 9
+          "gd": 10
         },
         {
           "pos": 2,
           "team": "Man City",
-          "played": 9,
+          "played": 10,
           "wins": 7,
           "draws": 0,
-          "losses": 2,
-          "gf": 20,
-          "ga": 10,
+          "losses": 3,
+          "gf": 21,
+          "ga": 13,
           "points": 21,
           "form": [
             "W",
             "W",
-            "W",
+            "L",
             "L",
             "L"
           ],
           "zone": "cl",
-          "gd": 10
+          "gd": 8
         },
         {
           "pos": 3,
@@ -151,6 +151,26 @@
         },
         {
           "pos": 8,
+          "team": "Leeds United",
+          "played": 10,
+          "wins": 3,
+          "draws": 5,
+          "losses": 2,
+          "gf": 10,
+          "ga": 8,
+          "points": 14,
+          "form": [
+            "L",
+            "D",
+            "D",
+            "L",
+            "W"
+          ],
+          "zone": "safe",
+          "gd": 2
+        },
+        {
+          "pos": 9,
           "team": "Bournemouth",
           "played": 9,
           "wins": 3,
@@ -170,27 +190,47 @@
           "gd": 1
         },
         {
-          "pos": 9,
+          "pos": 10,
           "team": "Tottenham",
-          "played": 9,
+          "played": 10,
           "wins": 3,
           "draws": 3,
-          "losses": 3,
+          "losses": 4,
           "gf": 10,
-          "ga": 10,
+          "ga": 11,
           "points": 12,
           "form": [
-            "L",
             "D",
             "W",
             "W",
-            "W"
+            "W",
+            "L"
           ],
           "zone": "safe",
-          "gd": 0
+          "gd": -1
         },
         {
-          "pos": 10,
+          "pos": 11,
+          "team": "Newcastle",
+          "played": 10,
+          "wins": 3,
+          "draws": 3,
+          "losses": 4,
+          "gf": 13,
+          "ga": 16,
+          "points": 12,
+          "form": [
+            "L",
+            "W",
+            "W",
+            "L",
+            "D"
+          ],
+          "zone": "safe",
+          "gd": -3
+        },
+        {
+          "pos": 12,
           "team": "Aston Villa",
           "played": 9,
           "wins": 3,
@@ -210,64 +250,24 @@
           "gd": -3
         },
         {
-          "pos": 11,
-          "team": "Hull City",
-          "played": 9,
-          "wins": 2,
-          "draws": 5,
-          "losses": 2,
-          "gf": 11,
-          "ga": 10,
-          "points": 11,
-          "form": [
-            "D",
-            "D",
-            "L",
-            "D",
-            "D"
-          ],
-          "zone": "safe",
-          "gd": 1
-        },
-        {
-          "pos": 12,
-          "team": "Leeds United",
-          "played": 9,
-          "wins": 2,
-          "draws": 5,
-          "losses": 2,
-          "gf": 9,
-          "ga": 8,
-          "points": 11,
-          "form": [
-            "D",
-            "L",
-            "D",
-            "D",
-            "L"
-          ],
-          "zone": "safe",
-          "gd": 1
-        },
-        {
           "pos": 13,
-          "team": "Newcastle",
-          "played": 9,
-          "wins": 3,
-          "draws": 2,
-          "losses": 4,
-          "gf": 12,
-          "ga": 15,
+          "team": "Hull City",
+          "played": 10,
+          "wins": 2,
+          "draws": 5,
+          "losses": 3,
+          "gf": 11,
+          "ga": 11,
           "points": 11,
           "form": [
             "D",
             "L",
-            "W",
-            "W",
+            "D",
+            "D",
             "L"
           ],
           "zone": "safe",
-          "gd": -3
+          "gd": 0
         },
         {
           "pos": 14,
@@ -292,18 +292,18 @@
         {
           "pos": 15,
           "team": "Fulham",
-          "played": 9,
+          "played": 10,
           "wins": 2,
-          "draws": 3,
+          "draws": 4,
           "losses": 4,
-          "gf": 9,
-          "ga": 11,
-          "points": 9,
+          "gf": 10,
+          "ga": 12,
+          "points": 10,
           "form": [
-            "L",
             "D",
             "D",
             "W",
+            "D",
             "D"
           ],
           "zone": "safe",
@@ -311,6 +311,26 @@
         },
         {
           "pos": 16,
+          "team": "Nottm Forest",
+          "played": 10,
+          "wins": 2,
+          "draws": 3,
+          "losses": 5,
+          "gf": 9,
+          "ga": 13,
+          "points": 9,
+          "form": [
+            "L",
+            "L",
+            "D",
+            "L",
+            "W"
+          ],
+          "zone": "safe",
+          "gd": -4
+        },
+        {
+          "pos": 17,
           "team": "Coventry City",
           "played": 10,
           "wins": 3,
@@ -330,7 +350,7 @@
           "gd": -9
         },
         {
-          "pos": 17,
+          "pos": 18,
           "team": "Man United",
           "played": 9,
           "wins": 1,
@@ -346,11 +366,11 @@
             "L",
             "L"
           ],
-          "zone": "safe",
+          "zone": "relegation",
           "gd": -5
         },
         {
-          "pos": 18,
+          "pos": 19,
           "team": "Crystal Palace",
           "played": 9,
           "wins": 2,
@@ -368,26 +388,6 @@
           ],
           "zone": "relegation",
           "gd": -12
-        },
-        {
-          "pos": 19,
-          "team": "Nottm Forest",
-          "played": 9,
-          "wins": 1,
-          "draws": 3,
-          "losses": 5,
-          "gf": 6,
-          "ga": 12,
-          "points": 6,
-          "form": [
-            "L",
-            "L",
-            "L",
-            "D",
-            "L"
-          ],
-          "zone": "relegation",
-          "gd": -6
         },
         {
           "pos": 20,
@@ -411,6 +411,30 @@
         }
       ],
       "lastMatches": [
+        {
+          "time": "7 Nov",
+          "match": "Nottm Forest vs Man City",
+          "score": "3:1",
+          "status": "finished"
+        },
+        {
+          "time": "7 Nov",
+          "match": "Arsenal vs Hull City",
+          "score": "1:0",
+          "status": "finished"
+        },
+        {
+          "time": "7 Nov",
+          "match": "Fulham vs Newcastle",
+          "score": "1:1",
+          "status": "finished"
+        },
+        {
+          "time": "7 Nov",
+          "match": "Leeds United vs Tottenham",
+          "score": "1:0",
+          "status": "finished"
+        },
         {
           "time": "6 Nov",
           "match": "Everton vs Coventry City",
@@ -446,53 +470,9 @@
           "match": "Man City vs Brighton",
           "score": "0:1",
           "status": "finished"
-        },
-        {
-          "time": "31 Oct",
-          "match": "Hull City vs Ipswich Town",
-          "score": "2:2",
-          "status": "finished"
-        },
-        {
-          "time": "31 Oct",
-          "match": "Coventry City vs Sunderland",
-          "score": "3:1",
-          "status": "finished"
-        },
-        {
-          "time": "31 Oct",
-          "match": "Brentford vs Nottm Forest",
-          "score": "2:0",
-          "status": "finished"
-        },
-        {
-          "time": "31 Oct",
-          "match": "Bournemouth vs Leeds United",
-          "score": "2:0",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
-        {
-          "time": "7 Nov · 12:30",
-          "match": "Leeds United vs Tottenham",
-          "status": "upcoming"
-        },
-        {
-          "time": "7 Nov · 15:00",
-          "match": "Arsenal vs Hull City",
-          "status": "upcoming"
-        },
-        {
-          "time": "7 Nov · 15:00",
-          "match": "Fulham vs Newcastle",
-          "status": "upcoming"
-        },
-        {
-          "time": "7 Nov · 17:30",
-          "match": "Nottm Forest vs Man City",
-          "status": "upcoming"
-        },
         {
           "time": "8 Nov · 14:00",
           "match": "Brighton vs Brentford",
