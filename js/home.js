@@ -38,14 +38,14 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Four Saturday results reshaped Matchweek 10: Arsenal beat Hull 1-0, Forest stunned Manchester City 3-1, Leeds beat Tottenham 1-0 and Fulham drew 1-1 with Newcastle. Five Premier League fixtures follow today.";
+        "Matchweek 10 is complete: Brighton moved second, Liverpool climbed to fourth, Sunderland beat Chelsea and Man United drew 4-4 with Aston Villa. The next Premier League round begins on 21 November.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Crystal Palace–Liverpool · today · 14:00 GMT</span></div>
-        <div><strong>Premier League</strong><span>Five fixtures today</span></div>
-        <div><strong>Table</strong><span>Arsenal lead on 27 · Forest beat City</span></div>
+        <div><strong>Featured</strong><span>Newcastle–Arsenal · 21 Nov · 17:30 GMT</span></div>
+        <div><strong>Premier League</strong><span>Matchweek 11 · 21–23 Nov</span></div>
+        <div><strong>Table</strong><span>Arsenal lead · Brighton second</span></div>
       `;
     }
 
@@ -56,18 +56,18 @@
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Crystal Palace Liverpool">Palace–Liverpool</button>
-        <button type="button" data-query="Brighton Brentford">Brighton–Brentford</button>
-        <button type="button" data-query="Man United Aston Villa">Man United–Aston Villa</button>
+        <button type="button" data-query="Newcastle Arsenal">Newcastle–Arsenal</button>
+        <button type="button" data-query="Liverpool Man United">Liverpool–Man United</button>
+        <button type="button" data-query="Man City Fulham">Man City–Fulham</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=palace-liverpool-nov8", title: "Crystal Palace vs Liverpool", detail: "8 Nov · Premier League · 14:00 GMT", tag: "Featured" },
-      { href: "match.html?id=sunderland-chelsea-nov8", title: "Sunderland vs Chelsea", detail: "8 Nov · Premier League · 14:00 GMT", tag: "Today" },
-      { href: "match.html?id=man-united-aston-villa-nov8", title: "Man United vs Aston Villa", detail: "8 Nov · Premier League · 16:30 GMT", tag: "Today" },
-      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "In progress · checked 8 Nov", tag: "Table" },
+      { href: "match.html?id=newcastle-arsenal-nov21", title: "Newcastle vs Arsenal", detail: "21 Nov · Premier League · 17:30 GMT", tag: "Featured" },
+      { href: "match.html?id=man-city-fulham-nov21", title: "Man City vs Fulham", detail: "21 Nov · Premier League · 12:30 GMT", tag: "Upcoming" },
+      { href: "match.html?id=liverpool-man-united-nov22", title: "Liverpool vs Man United", detail: "22 Nov · Premier League · 16:30 GMT", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 8 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {

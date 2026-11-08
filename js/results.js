@@ -4,6 +4,11 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Man United", awayName: "Aston Villa", homeGoals: "4", awayGoals: "4", venue: "Old Trafford", date: "8 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Sunderland", awayName: "Chelsea", homeGoals: "1", awayGoals: "0", venue: "Stadium of Light", date: "8 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Ipswich Town", awayName: "Bournemouth", homeGoals: "1", awayGoals: "2", venue: "Portman Road", date: "8 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Crystal Palace", awayName: "Liverpool", homeGoals: "1", awayGoals: "3", venue: "Selhurst Park", date: "8 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Brighton", awayName: "Brentford", homeGoals: "2", awayGoals: "0", venue: "Amex Stadium", date: "8 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Nottm Forest", awayName: "Man City", homeGoals: "3", awayGoals: "1", venue: "City Ground", date: "7 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Arsenal", awayName: "Hull City", homeGoals: "1", awayGoals: "0", venue: "Emirates Stadium", date: "7 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 10", status: "FINAL", homeName: "Fulham", awayName: "Newcastle", homeGoals: "1", awayGoals: "1", venue: "Craven Cottage", date: "7 Nov", href: "standings.html" },
