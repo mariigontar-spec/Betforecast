@@ -38,7 +38,7 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Matchweek 10 is complete: Brighton moved second, Liverpool climbed to fourth, Sunderland beat Chelsea and Man United drew 4-4 with Aston Villa. The next Premier League round begins on 21 November.";
+        "The Premier League pauses after Matchweek 10. Arsenal lead Brighton by six points, while Liverpool are fourth. The next confirmed round begins on 21 November with Man City–Fulham and Newcastle–Arsenal among the headline fixtures.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
@@ -67,7 +67,7 @@
       { href: "match.html?id=newcastle-arsenal-nov21", title: "Newcastle vs Arsenal", detail: "21 Nov · Premier League · 17:30 GMT", tag: "Featured" },
       { href: "match.html?id=man-city-fulham-nov21", title: "Man City vs Fulham", detail: "21 Nov · Premier League · 12:30 GMT", tag: "Upcoming" },
       { href: "match.html?id=liverpool-man-united-nov22", title: "Liverpool vs Man United", detail: "22 Nov · Premier League · 16:30 GMT", tag: "Upcoming" },
-      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 8 Nov", tag: "Table" },
+      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 9 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
