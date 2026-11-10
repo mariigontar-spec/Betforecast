@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 9 Nov 2026";
+  if (k) k.textContent = "World Sports News · 10 Nov 2026";
   if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Man United–Villa ends 4-4</a><a class="sidebar-link-card" href="results.html">Brighton move second</a><a class="sidebar-link-card" href="results.html">Liverpool win 3-1 at Palace</a><a class="sidebar-link-card" href="match.html?id=newcastle-arsenal-nov21">Newcastle–Arsenal next</a><a class="sidebar-link-card" href="standings.html">Premier League table updated</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="news.html">Szoboszlai fitness decision pending</a><a class="sidebar-link-card" href="news.html">England squad changes</a><a class="sidebar-link-card" href="news.html">Man United pressure continues</a><a class="sidebar-link-card" href="match.html?id=newcastle-arsenal-nov21">Newcastle–Arsenal next</a><a class="sidebar-link-card" href="standings.html">Premier League table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The Premier League enters the international break with Arsenal six points clear. Manchester United remain in the relegation zone after the 4-4 draw with Aston Villa, while Brighton are second and Liverpool fourth.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The Premier League is on international break. Liverpool are monitoring Dominik Szoboszlai’s fitness, England have made squad changes, and Manchester United remain under pressure in 18th place.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
