@@ -1,7 +1,159 @@
 {
-  "updatedAt": "2026-11-10T23:59:00+02:00",
-  "featuredId": "newcastle-arsenal-nov21",
+  "updatedAt": "2026-11-11T23:57:00+02:00",
+  "featuredId": "england-croatia-nov12",
   "events": [
+    {
+      "id": "england-croatia-nov12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Nov",
+      "time": "19:45 GMT",
+      "title": "England vs Croatia",
+      "home": "England",
+      "away": "Croatia",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/gb-eng.png",
+      "awayLogo": "https://flagcdn.com/w320/hr.png"
+    },
+    {
+      "id": "italy-france-nov12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Nov",
+      "time": "19:45 GMT",
+      "title": "Italy vs France",
+      "home": "Italy",
+      "away": "France",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/it.png",
+      "awayLogo": "https://flagcdn.com/w320/fr.png"
+    },
+    {
+      "id": "czechia-spain-nov12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Nov",
+      "time": "19:45 GMT",
+      "title": "Czechia vs Spain",
+      "home": "Czechia",
+      "away": "Spain",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/cz.png",
+      "awayLogo": "https://flagcdn.com/w320/es.png"
+    },
+    {
+      "id": "turkiye-belgium-nov12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Nov",
+      "time": "17:00 GMT",
+      "title": "Türkiye vs Belgium",
+      "home": "Türkiye",
+      "away": "Belgium",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/tr.png",
+      "awayLogo": "https://flagcdn.com/w320/be.png"
+    },
+    {
+      "id": "armenia-cyprus-nov12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Nov",
+      "time": "17:00 GMT",
+      "title": "Armenia vs Cyprus",
+      "home": "Armenia",
+      "away": "Cyprus",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/am.png",
+      "awayLogo": "https://flagcdn.com/w320/cy.png"
+    },
+    {
+      "id": "albania-finland-nov12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Nov",
+      "time": "19:45 GMT",
+      "title": "Albania vs Finland",
+      "home": "Albania",
+      "away": "Finland",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/al.png",
+      "awayLogo": "https://flagcdn.com/w320/fi.png"
+    },
+    {
+      "id": "san-marino-belarus-nov12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Nov",
+      "time": "19:45 GMT",
+      "title": "San Marino vs Belarus",
+      "home": "San Marino",
+      "away": "Belarus",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/sm.png",
+      "awayLogo": "https://flagcdn.com/w320/by.png"
+    },
+    {
+      "id": "montenegro-latvia-nov12",
+      "type": "event",
+      "sport": "Football",
+      "date": "12 Nov",
+      "time": "19:45 GMT",
+      "title": "Montenegro vs Latvia",
+      "home": "Montenegro",
+      "away": "Latvia",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/me.png",
+      "awayLogo": "https://flagcdn.com/w320/lv.png"
+    },
     {
       "id": "newcastle-arsenal-nov21",
       "type": "event",

@@ -38,14 +38,14 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "The Premier League is on its 9–17 November international break. Arsenal lead Brighton by six points after Matchweek 10; the next confirmed round begins on 21 November, headlined by Newcastle–Arsenal.";
+        "UEFA Nations League Matchday 5 begins on 12 November, led by England–Croatia, Italy–France and Czechia–Spain. The Premier League table remains unchanged during the international break.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Newcastle–Arsenal · 21 Nov · 17:30 GMT</span></div>
-        <div><strong>Premier League</strong><span>Matchweek 11 · 21–23 Nov</span></div>
-        <div><strong>Table</strong><span>Arsenal lead · Brighton second</span></div>
+        <div><strong>Featured</strong><span>England–Croatia · 12 Nov · 19:45 GMT</span></div>
+        <div><strong>Nations League</strong><span>Matchday 5 · eight fixtures</span></div>
+        <div><strong>EPL table</strong><span>Unchanged · Arsenal lead</span></div>
       `;
     }
 
@@ -56,18 +56,18 @@
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Newcastle Arsenal">Newcastle–Arsenal</button>
-        <button type="button" data-query="Liverpool Man United">Liverpool–Man United</button>
-        <button type="button" data-query="Man City Fulham">Man City–Fulham</button>
+        <button type="button" data-query="England Croatia">England–Croatia</button>
+        <button type="button" data-query="Italy France">Italy–France</button>
+        <button type="button" data-query="Czechia Spain">Czechia–Spain</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=newcastle-arsenal-nov21", title: "Newcastle vs Arsenal", detail: "21 Nov · Premier League · 17:30 GMT", tag: "Featured" },
-      { href: "match.html?id=man-city-fulham-nov21", title: "Man City vs Fulham", detail: "21 Nov · Premier League · 12:30 GMT", tag: "Upcoming" },
-      { href: "match.html?id=liverpool-man-united-nov22", title: "Liverpool vs Man United", detail: "22 Nov · Premier League · 16:30 GMT", tag: "Upcoming" },
-      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 10 Nov", tag: "Table" },
+      { href: "match.html?id=england-croatia-nov12", title: "England vs Croatia", detail: "12 Nov · Nations League · 19:45 GMT", tag: "Featured" },
+      { href: "match.html?id=italy-france-nov12", title: "Italy vs France", detail: "12 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
+      { href: "match.html?id=czechia-spain-nov12", title: "Czechia vs Spain", detail: "12 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 11 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
