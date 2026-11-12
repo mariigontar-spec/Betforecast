@@ -38,13 +38,13 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "UEFA Nations League Matchday 5 begins on 12 November, led by England–Croatia, Italy–France and Czechia–Spain. The Premier League table remains unchanged during the international break.";
+        "Nations League Matchday 5 continues on 13 November with Netherlands–Greece, Serbia–Germany and Luxembourg–Estonia. England, Italy, Spain and Belgium all won on Thursday.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>England–Croatia · 12 Nov · 19:45 GMT</span></div>
-        <div><strong>Nations League</strong><span>Matchday 5 · eight fixtures</span></div>
+        <div><strong>Featured</strong><span>Netherlands–Greece · 13 Nov · 19:45 GMT</span></div>
+        <div><strong>Nations League</strong><span>Matchday 5 · ten fixtures</span></div>
         <div><strong>EPL table</strong><span>Unchanged · Arsenal lead</span></div>
       `;
     }
@@ -56,18 +56,18 @@
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="England Croatia">England–Croatia</button>
-        <button type="button" data-query="Italy France">Italy–France</button>
-        <button type="button" data-query="Czechia Spain">Czechia–Spain</button>
+        <button type="button" data-query="Netherlands Greece">Netherlands–Greece</button>
+        <button type="button" data-query="Serbia Germany">Serbia–Germany</button>
+        <button type="button" data-query="Luxembourg Estonia">Luxembourg–Estonia</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=england-croatia-nov12", title: "England vs Croatia", detail: "12 Nov · Nations League · 19:45 GMT", tag: "Featured" },
-      { href: "match.html?id=italy-france-nov12", title: "Italy vs France", detail: "12 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
-      { href: "match.html?id=czechia-spain-nov12", title: "Czechia vs Spain", detail: "12 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
-      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 11 Nov", tag: "Table" },
+      { href: "match.html?id=netherlands-greece-nov13", title: "Netherlands vs Greece", detail: "13 Nov · Nations League · 19:45 GMT", tag: "Featured" },
+      { href: "match.html?id=serbia-germany-nov13", title: "Serbia vs Germany", detail: "13 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
+      { href: "match.html?id=luxembourg-estonia-nov13", title: "Luxembourg vs Estonia", detail: "13 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 12 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {

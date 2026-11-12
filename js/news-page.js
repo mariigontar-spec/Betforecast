@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 11 Nov 2026";
+  if (k) k.textContent = "World Sports News · 12 Nov 2026";
   if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=england-croatia-nov12">England–Croatia tomorrow</a><a class="sidebar-link-card" href="match.html?id=italy-france-nov12">Italy–France tomorrow</a><a class="sidebar-link-card" href="news.html">Liverpool penalty review</a><a class="sidebar-link-card" href="matches.html">Nations League Matchday 5</a><a class="sidebar-link-card" href="standings.html">Premier League table verified</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="news.html">Kane's record England cap</a><a class="sidebar-link-card" href="match.html?id=netherlands-greece-nov13">Netherlands–Greece next</a><a class="sidebar-link-card" href="match.html?id=serbia-germany-nov13">Serbia–Germany next</a><a class="sidebar-link-card" href="match.html?id=luxembourg-estonia-nov13">Luxembourg–Estonia next</a><a class="sidebar-link-card" href="standings.html">Premier League table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>UEFA Nations League Matchday 5 starts on 12 November with eight confirmed fixtures. A Premier League review panel also ruled Liverpool should have been awarded a penalty against Arsenal.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>England beat Croatia 2-1 as Harry Kane scored on his record 126th cap. Italy, Spain and Belgium also won, while Matchday 5 continues with ten fixtures on 13 November.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
