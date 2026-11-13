@@ -2,9 +2,45 @@
   {
     "id": "1",
     "category": "Football",
+    "title": "Football Daily",
+    "excerpt": "Harry Kane becomes the most-capped England men's player in history.",
+    "time": "5 hrs ago",
+    "date": "2026-11-12T23:37:00.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0m6ztjd.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0pmqwrn?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Harry Kane becomes the most-capped England men's player in history.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "2",
+    "category": "Football",
+    "title": "'A lie' & 'nonsense' - Palmer committed to England, says Rogers",
+    "excerpt": "Morgan Rogers says any suggestion Cole Palmer is not committed to England \"is a lie\" and \"nonsense\".",
+    "time": "5 hrs ago",
+    "date": "2026-11-12T23:09:07.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8b18/live/725b0530-dee9-11f1-8111-290450ddba8c.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c6e9kjne5y8vo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Morgan Rogers says any suggestion Cole Palmer is not committed to England \"is a lie\" and \"nonsense\".",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "3",
+    "category": "Football",
     "title": "Grealish apologises for absence after breach of discipline",
     "excerpt": "Jack Grealish issues an apology to Everton fans for his recent absence due to a disciplinary issue.",
-    "time": "49 min ago",
+    "time": "6 hrs ago",
     "date": "2026-11-12T22:10:13.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6ba4/live/6d670f60-dedf-11f1-a75a-dbf83836672c.jpg",
@@ -18,11 +54,11 @@
     ]
   },
   {
-    "id": "2",
+    "id": "4",
     "category": "Football",
     "title": "Where does Kane rank among all-time England greats?",
     "excerpt": "Harry Kane is England's all-time top scorer and record appearance maker, but where does he rank among the Three Lions' greatest players?",
-    "time": "50 min ago",
+    "time": "6 hrs ago",
     "date": "2026-11-12T22:09:59.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5525/live/60ecddc0-de97-11f1-a701-fddedf244c16.png",
@@ -36,11 +72,11 @@
     ]
   },
   {
-    "id": "3",
+    "id": "5",
     "category": "Football",
     "title": "Gritty Arsenal show different side in Barcelona draw",
     "excerpt": "Could a resilient draw against European champions Barcelona be a turning point in Arsenal's season?",
-    "time": "1 hr ago",
+    "time": "6 hrs ago",
     "date": "2026-11-12T21:50:59.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6057/live/b497a8a0-dede-11f1-a75a-dbf83836672c.jpg",
@@ -54,11 +90,11 @@
     ]
   },
   {
-    "id": "4",
+    "id": "6",
     "category": "Football",
     "title": "Kane scores winner but who else made an impression? England player ratings",
     "excerpt": "How did England's players fare in the Nations League match against Croatia? Senior football correspondent Sami Mokbel gives his verdict.",
-    "time": "1 hr ago",
+    "time": "6 hrs ago",
     "date": "2026-11-12T21:47:36.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5fbd/live/589bbd20-dee3-11f1-93e1-3b657b665bcf.jpg",
@@ -72,11 +108,11 @@
     ]
   },
   {
-    "id": "5",
+    "id": "7",
     "category": "Football",
     "title": "Ghana kick-start Afcon 2027 bid despite Ayew penalty miss",
     "excerpt": "Ghana kick-start their Afcon 2027 qualifying campaign despite Jordan Ayew having a penalty saved, while Cameroon, Ivory Coast and Senegal register wins.",
-    "time": "2 hrs ago",
+    "time": "7 hrs ago",
     "date": "2026-11-12T21:28:06.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4161/live/c73c90e0-deb8-11f1-8fb5-a771a656a227.jpg",
@@ -90,11 +126,11 @@
     ]
   },
   {
-    "id": "6",
+    "id": "8",
     "category": "Football",
     "title": "SFA in talks with Boston officials over biennial friendly match",
     "excerpt": "Discussions take place between Scottish football governing's body and a delegation of state senators to build on bonds forged during the World Cup.",
-    "time": "2 hrs ago",
+    "time": "7 hrs ago",
     "date": "2026-11-12T21:16:56.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/51fa/live/0eea4910-687a-11f1-be92-f5f7087bcfc7.jpg",
@@ -108,11 +144,11 @@
     ]
   },
   {
-    "id": "7",
+    "id": "9",
     "category": "Football",
     "title": "Man Utd & Man City in Gusto battle - Friday's gossip",
     "excerpt": "Manchester United and Manchester City are going head-to-head for Chelsea defender Malo Gusto and Leeds United pursue Will Lankshear, plus more.",
-    "time": "2 hrs ago",
+    "time": "7 hrs ago",
     "date": "2026-11-12T21:13:59.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f120/live/31d11dd0-ded3-11f1-b441-2b33b063138f.png",
@@ -126,11 +162,11 @@
     ]
   },
   {
-    "id": "8",
+    "id": "10",
     "category": "Football",
     "title": "Arsenal dig in for draw at Barcelona to extend unbeaten start",
     "excerpt": "Arsenal extend their unbeaten start to four matches in the Uefa Women's Champions League, as they produce a dogged display to hold Barcelona to a 1-1 draw at the Camp Nou. The point moves Renee Slegers' side into the top four, putting them...",
-    "time": "3 hrs ago",
+    "time": "8 hrs ago",
     "date": "2026-11-12T20:09:07.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/17d7/live/103dfe40-ded3-11f1-b441-2b33b063138f.jpg",
@@ -144,11 +180,11 @@
     ]
   },
   {
-    "id": "9",
+    "id": "11",
     "category": "Football",
     "title": "Leader, role model, extraordinary - how Kane's 'fairytale' came true",
     "excerpt": "From the 21-year-old who scored 79 seconds into his debut to breaking his nation's appearance record, BBC Sport looks at Harry Kane's England career.",
-    "time": "3 hrs ago",
+    "time": "8 hrs ago",
     "date": "2026-11-12T19:53:40.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f61b/live/a5f54890-ded2-11f1-86d5-71a9f29d1c99.jpg",
@@ -162,11 +198,11 @@
     ]
   },
   {
-    "id": "10",
+    "id": "12",
     "category": "Football",
     "title": "Quiz: Name England men's all-time leading appearance makers",
     "excerpt": "Can you name every England men's player who has at least 60 caps?",
-    "time": "3 hrs ago",
+    "time": "8 hrs ago",
     "date": "2026-11-12T19:47:16.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/14be/live/7ef6b840-ded3-11f1-8afb-c1f8fc064db2.jpg",
@@ -180,11 +216,11 @@
     ]
   },
   {
-    "id": "11",
+    "id": "13",
     "category": "Football",
     "title": "Goodwillie prosecutors 'wrong' not to put footballer on trial for rape, court hears",
     "excerpt": "Denise Clair has brought a case for a private criminal prosecution against the footballer, who was ruled to have raped her by a civil court.",
-    "time": "5 hrs ago",
+    "time": "11 hrs ago",
     "date": "2026-11-12T17:31:02.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/624c/live/20082b60-deb1-11f1-8fb5-a771a656a227.jpg",
@@ -198,11 +234,11 @@
     ]
   },
   {
-    "id": "12",
+    "id": "14",
     "category": "Football",
     "title": "Crystal Palace sack boss Sage after 16 games",
     "excerpt": "Crystal Palace have sacked manager Pierre Sage after 16 games in charge and the club bottom of the table.",
-    "time": "6 hrs ago",
+    "time": "11 hrs ago",
     "date": "2026-11-12T17:15:20.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/73af/live/be720480-de96-11f1-9afe-1f03bfe02283.jpg",
@@ -216,11 +252,11 @@
     ]
   },
   {
-    "id": "13",
+    "id": "15",
     "category": "Football",
     "title": "Owono undecided over future following De Miguel death",
     "excerpt": "FC Andorra manager Carles Manso says goalkeeper Jesus Owono is yet to decide whether he will return to playing action following the death of Tenerife forward Jesus de Miguel.",
-    "time": "6 hrs ago",
+    "time": "12 hrs ago",
     "date": "2026-11-12T16:41:49.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3166/live/efcf2c80-dea8-11f1-98eb-79ee6ea9ba56.jpg",
@@ -234,29 +270,11 @@
     ]
   },
   {
-    "id": "14",
-    "category": "Football",
-    "title": "Football Daily",
-    "excerpt": "Simon Stone, Jay Motty & Tom Allnutt join Rick & Lloyd for reaction to Carrick’s sacking.",
-    "time": "6 hrs ago",
-    "date": "2026-11-12T16:31:00.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0pldj09.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sounds/play/m0034dz1?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Simon Stone, Jay Motty & Tom Allnutt join Rick & Lloyd for reaction to Carrick’s sacking.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "15",
+    "id": "16",
     "category": "Football",
     "title": "Wilson and Miller score as Scotland U21s thump Ukraine",
     "excerpt": "James Wilson scores a double and Lennon Miller also finds the net as Scotland Under-21s ease to a 4-0 win in the first of two friendlies against Ukraine in Spain.",
-    "time": "7 hrs ago",
+    "time": "12 hrs ago",
     "date": "2026-11-12T16:29:16.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/43c4/live/a33cf770-deb3-11f1-8fb5-a771a656a227.jpg",
@@ -270,11 +288,11 @@
     ]
   },
   {
-    "id": "16",
+    "id": "17",
     "category": "Football",
     "title": "How Pochettino came on Man Utd's radar - and what Carrick was told when",
     "excerpt": "How Man Utd identified Mauricio Pochettino as their new head coach - and what happened in the week Michael Carrick was left waiting.",
-    "time": "7 hrs ago",
+    "time": "12 hrs ago",
     "date": "2026-11-12T16:12:39.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/b6bd/live/ff1daf40-dead-11f1-8253-3f203a001288.jpg",
@@ -288,11 +306,11 @@
     ]
   },
   {
-    "id": "17",
+    "id": "18",
     "category": "Football",
     "title": "Largs get floodlights consent in time for cup tie with Ayr – watch on BBC",
     "excerpt": "The Scottish Cup third-round tie between Largs Thistle and Ayr United will be shown live on the BBC Scotland channel, website and iPlayer on Friday, 27 November.",
-    "time": "8 hrs ago",
+    "time": "13 hrs ago",
     "date": "2026-11-12T15:00:57.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5250/live/03144960-dea4-11f1-82bd-ab0398e9e082.jpg",
@@ -306,11 +324,11 @@
     ]
   },
   {
-    "id": "18",
+    "id": "19",
     "category": "Football",
     "title": "Police investigation into Vigar's death ongoing",
     "excerpt": "The police investigation into Billy Vigar's death from a \"significant brain injury\" is unlikely to conclude for at least another two months.",
-    "time": "10 hrs ago",
+    "time": "15 hrs ago",
     "date": "2026-11-12T13:11:49.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4800/live/690b1270-de96-11f1-9afe-1f03bfe02283.jpg",
@@ -324,11 +342,11 @@
     ]
   },
   {
-    "id": "19",
+    "id": "20",
     "category": "Football",
     "title": "Spain boss denies Lamine Yamal gets 'special privileges'",
     "excerpt": "Spain head coach Luis de la Fuente denies claims Lamine Yamal received \"special privileges\" after being allowed to join the national team later than the rest of the squad.",
-    "time": "11 hrs ago",
+    "time": "17 hrs ago",
     "date": "2026-11-12T11:31:54.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7137/live/e8eba510-de85-11f1-b88b-3f1671ea859d.jpg",
@@ -342,11 +360,11 @@
     ]
   },
   {
-    "id": "20",
+    "id": "21",
     "category": "Football",
     "title": "Six matches that defined Carrick's Man Utd tenure",
     "excerpt": "BBC Sport looks back at the six Premier League matches that defined the highs and lows of Michael Carrick's 10-month spell in charge of Manchester United.",
-    "time": "12 hrs ago",
+    "time": "17 hrs ago",
     "date": "2026-11-12T11:25:46.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f60a/live/0222d570-d167-11f1-b441-2b33b063138f.jpg",
@@ -360,11 +378,11 @@
     ]
   },
   {
-    "id": "21",
+    "id": "22",
     "category": "Football",
     "title": "The chaos that took Carrick from two-year deal to sacked within 15 games",
     "excerpt": "Michael Carrick becomes the third Manchester United manager to be sacked in three seasons - where did it go wrong?",
-    "time": "13 hrs ago",
+    "time": "18 hrs ago",
     "date": "2026-11-12T10:21:29.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e373/live/dbd80f70-de86-11f1-b88b-3f1671ea859d.jpg",
@@ -378,11 +396,11 @@
     ]
   },
   {
-    "id": "22",
+    "id": "23",
     "category": "Football",
     "title": "Young duo at heart of Nations League's meanest defence",
     "excerpt": "With Northern Ireland yet to concede a goal in the 2026-27 Nations League, young defenders Ruairi McConville and Tom Atcheson have been impressing for Michael O'Neill's side.",
-    "time": "15 hrs ago",
+    "time": "20 hrs ago",
     "date": "2026-11-12T08:17:52.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e1cf/live/ea41ecb0-ddc9-11f1-93e1-3b657b665bcf.png",
@@ -396,11 +414,11 @@
     ]
   },
   {
-    "id": "23",
+    "id": "24",
     "category": "Football",
     "title": "Podcast: What kind of boss do Aberdeen need & have Hibs turned a corner?",
     "excerpt": "Scotland face North Macedonia, Aberdeen seek a manager and Hibs find form.",
-    "time": "15 hrs ago",
+    "time": "20 hrs ago",
     "date": "2026-11-12T08:00:00.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0pmk9d2.jpg",
@@ -414,11 +432,11 @@
     ]
   },
   {
-    "id": "24",
+    "id": "25",
     "category": "Football",
     "title": "USA withdraw from U17 World Cup",
     "excerpt": "The USA pull out of the Under-17 World Cup, which starts in Qatar next week, because of the risk of armed conflict.",
-    "time": "15 hrs ago",
+    "time": "21 hrs ago",
     "date": "2026-11-12T07:44:21.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/79aa/live/f81c7430-de6a-11f1-9115-cfe6d179af3a.jpg",
@@ -432,11 +450,11 @@
     ]
   },
   {
-    "id": "25",
+    "id": "26",
     "category": "Football",
     "title": "Robertson set to make history, but hero Dalglish will always be King",
     "excerpt": "Ties bind Scotland captain Andy Robertson and the man whose caps record he's about to equal, Kenny Dalglish, in more ways than one, writes Tom English.",
-    "time": "16 hrs ago",
+    "time": "21 hrs ago",
     "date": "2026-11-12T07:19:57.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e440/live/1b368480-de00-11f1-93e1-3b657b665bcf.jpg",
@@ -450,11 +468,11 @@
     ]
   },
   {
-    "id": "26",
+    "id": "27",
     "category": "Football",
     "title": "England's Blues brothers - how the Bellinghams helped save Birmingham",
     "excerpt": "Boyhood Birmingham City fans Jude and Jobe Bellingham could become the first brothers to play for England for 19 years.",
-    "time": "16 hrs ago",
+    "time": "21 hrs ago",
     "date": "2026-11-12T07:12:41.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c945/live/c3116c40-dce0-11f1-a8e1-e3454837ffc6.png",
@@ -468,11 +486,11 @@
     ]
   },
   {
-    "id": "27",
+    "id": "28",
     "category": "Football",
     "title": "How 'Barca way' continues despite big-name exits",
     "excerpt": "Arsenal face a much-changed Barcelona in the Women's Champions League on Thursday - but how have the Spanish giants coped so well with losing key players?",
-    "time": "16 hrs ago",
+    "time": "22 hrs ago",
     "date": "2026-11-12T06:41:09.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/64ad/live/0b486200-dddd-11f1-b465-b9821c2582d4.jpg",
@@ -486,11 +504,11 @@
     ]
   },
   {
-    "id": "28",
+    "id": "29",
     "category": "Football",
     "title": "Who am I? Plus today's other quizzes",
     "excerpt": "Test your ball knowledge against today's Who Am I?, Five in Five and Brainteaser.",
-    "time": "17 hrs ago",
+    "time": "22 hrs ago",
     "date": "2026-11-12T06:29:12.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1fbf/live/38bd3c70-bda7-11f1-bc2e-018d645d8d21.png",
@@ -504,11 +522,11 @@
     ]
   },
   {
-    "id": "29",
+    "id": "30",
     "category": "Football",
     "title": "Kane's top 10 England moments - which was your favourite?",
     "excerpt": "BBC Sport looks at 10 of Harry Kane's most iconic England moments as he prepares to break his country's caps record.",
-    "time": "17 hrs ago",
+    "time": "22 hrs ago",
     "date": "2026-11-12T06:25:26.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/134b/live/944d3be0-c3e6-11f1-badc-154546719036.jpg",
@@ -516,24 +534,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c64g12w5zpjpo?at_medium=RSS&at_campaign=rss",
     "content": [
       "BBC Sport looks at 10 of Harry Kane's most iconic England moments as he prepares to break his country's caps record.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Wales' James warns of Norwegian revenge in Oslo",
-    "excerpt": "Winger Dan James says Wales proved a point when they beat Norway – but is wary Erling Haaland's team will now want to do the same to them.",
-    "time": "18 hrs ago",
-    "date": "2026-11-12T04:32:42.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cc28/live/64a5da40-ddeb-11f1-9204-cdcddf7d901c.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c623jl1kenvyo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Winger Dan James says Wales proved a point when they beat Norway – but is wary Erling Haaland's team will now want to do the same to them.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
