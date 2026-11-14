@@ -1,158 +1,410 @@
 {
-  "updatedAt": "2026-11-13T23:59:00+02:00",
-  "featuredId": "portugal-denmark-nov14",
+  "updatedAt": "2026-11-15T00:03:00+02:00",
+  "featuredId": "spain-england-nov15",
   "events": [
     {
-      "id": "portugal-denmark-nov14",
+      "id": "spain-england-nov15",
       "type": "event",
       "sport": "Football",
-      "date": "14 Nov",
+      "date": "15 Nov",
       "time": "19:45 GMT",
-      "title": "Portugal vs Denmark",
-      "home": "Portugal",
-      "away": "Denmark",
+      "title": "Spain vs England",
+      "home": "Spain",
+      "away": "England",
       "competition": "UEFA Nations League",
-      "stage": "League phase · Matchday 5",
+      "stage": "League phase · Matchday 6",
       "status": "Upcoming",
       "signals": [
         "Official UEFA fixture",
-        "Nations League Matchday 5"
+        "Nations League Matchday 6"
       ],
-      "homeLogo": "https://flagcdn.com/w320/pt.png",
-      "awayLogo": "https://flagcdn.com/w320/dk.png"
+      "homeLogo": "https://flagcdn.com/w320/es.png",
+      "awayLogo": "https://flagcdn.com/w320/gb-eng.png"
+    },
+    {
+      "id": "belgium-italy-nov15",
+      "type": "event",
+      "sport": "Football",
+      "date": "15 Nov",
+      "time": "19:45 GMT",
+      "title": "Belgium vs Italy",
+      "home": "Belgium",
+      "away": "Italy",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/be.png",
+      "awayLogo": "https://flagcdn.com/w320/it.png"
+    },
+    {
+      "id": "france-turkiye-nov15",
+      "type": "event",
+      "sport": "Football",
+      "date": "15 Nov",
+      "time": "19:45 GMT",
+      "title": "France vs Türkiye",
+      "home": "France",
+      "away": "Türkiye",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/fr.png",
+      "awayLogo": "https://flagcdn.com/w320/tr.png"
+    },
+    {
+      "id": "croatia-czechia-nov15",
+      "type": "event",
+      "sport": "Football",
+      "date": "15 Nov",
+      "time": "19:45 GMT",
+      "title": "Croatia vs Czechia",
+      "home": "Croatia",
+      "away": "Czechia",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/hr.png",
+      "awayLogo": "https://flagcdn.com/w320/cz.png"
+    },
+    {
+      "id": "belarus-albania-nov15",
+      "type": "event",
+      "sport": "Football",
+      "date": "15 Nov",
+      "time": "17:00 GMT",
+      "title": "Belarus vs Albania",
+      "home": "Belarus",
+      "away": "Albania",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/by.png",
+      "awayLogo": "https://flagcdn.com/w320/al.png"
+    },
+    {
+      "id": "finland-san-marino-nov15",
+      "type": "event",
+      "sport": "Football",
+      "date": "15 Nov",
+      "time": "17:00 GMT",
+      "title": "Finland vs San Marino",
+      "home": "Finland",
+      "away": "San Marino",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/fi.png",
+      "awayLogo": "https://flagcdn.com/w320/sm.png"
+    },
+    {
+      "id": "cyprus-montenegro-nov15",
+      "type": "event",
+      "sport": "Football",
+      "date": "15 Nov",
+      "time": "14:00 GMT",
+      "title": "Cyprus vs Montenegro",
+      "home": "Cyprus",
+      "away": "Montenegro",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/cy.png",
+      "awayLogo": "https://flagcdn.com/w320/me.png"
+    },
+    {
+      "id": "latvia-armenia-nov15",
+      "type": "event",
+      "sport": "Football",
+      "date": "15 Nov",
+      "time": "14:00 GMT",
+      "title": "Latvia vs Armenia",
+      "home": "Latvia",
+      "away": "Armenia",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/lv.png",
+      "awayLogo": "https://flagcdn.com/w320/am.png"
     },
     {
       "id": "norway-wales-nov14",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "14 Nov",
-      "time": "17:00 GMT",
-      "title": "Norway vs Wales",
+      "time": "Final",
+      "title": "Norway 3-1 Wales",
       "home": "Norway",
       "away": "Wales",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 5"
       ],
       "homeLogo": "https://flagcdn.com/w320/no.png",
-      "awayLogo": "https://flagcdn.com/w320/gb-wls.png"
+      "awayLogo": "https://flagcdn.com/w320/gb-wls.png",
+      "homeScore": "3",
+      "awayScore": "1"
+    },
+    {
+      "id": "portugal-denmark-nov14",
+      "type": "result",
+      "sport": "Football",
+      "date": "14 Nov",
+      "time": "Final",
+      "title": "Portugal 1-4 Denmark",
+      "home": "Portugal",
+      "away": "Denmark",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/pt.png",
+      "awayLogo": "https://flagcdn.com/w320/dk.png",
+      "homeScore": "1",
+      "awayScore": "4"
     },
     {
       "id": "northern-ireland-ukraine-nov14",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "14 Nov",
-      "time": "19:45 GMT",
-      "title": "Northern Ireland vs Ukraine",
+      "time": "Final",
+      "title": "Northern Ireland 1-0 Ukraine",
       "home": "Northern Ireland",
       "away": "Ukraine",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 5"
       ],
       "homeLogo": "https://flagcdn.com/w320/gb-nir.png",
-      "awayLogo": "https://flagcdn.com/w320/ua.png"
+      "awayLogo": "https://flagcdn.com/w320/ua.png",
+      "homeScore": "1",
+      "awayScore": "0"
     },
     {
       "id": "austria-ireland-nov14",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "14 Nov",
-      "time": "19:45 GMT",
-      "title": "Austria vs Republic of Ireland",
+      "time": "Final",
+      "title": "Austria 1-0 Republic of Ireland",
       "home": "Austria",
       "away": "Republic of Ireland",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 5"
       ],
       "homeLogo": "https://flagcdn.com/w320/at.png",
-      "awayLogo": "https://flagcdn.com/w320/ie.png"
-    },
-    {
-      "id": "romania-poland-nov14",
-      "type": "event",
-      "sport": "Football",
-      "date": "14 Nov",
-      "time": "19:45 GMT",
-      "title": "Romania vs Poland",
-      "home": "Romania",
-      "away": "Poland",
-      "competition": "UEFA Nations League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Nations League Matchday 5"
-      ],
-      "homeLogo": "https://flagcdn.com/w320/ro.png",
-      "awayLogo": "https://flagcdn.com/w320/pl.png"
-    },
-    {
-      "id": "sweden-bosnia-nov14",
-      "type": "event",
-      "sport": "Football",
-      "date": "14 Nov",
-      "time": "19:45 GMT",
-      "title": "Sweden vs Bosnia and Herzegovina",
-      "home": "Sweden",
-      "away": "Bosnia and Herzegovina",
-      "competition": "UEFA Nations League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Nations League Matchday 5"
-      ],
-      "homeLogo": "https://flagcdn.com/w320/se.png",
-      "awayLogo": "https://flagcdn.com/w320/ba.png"
-    },
-    {
-      "id": "georgia-hungary-nov14",
-      "type": "event",
-      "sport": "Football",
-      "date": "14 Nov",
-      "time": "17:00 GMT",
-      "title": "Georgia vs Hungary",
-      "home": "Georgia",
-      "away": "Hungary",
-      "competition": "UEFA Nations League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Nations League Matchday 5"
-      ],
-      "homeLogo": "https://flagcdn.com/w320/ge.png",
-      "awayLogo": "https://flagcdn.com/w320/hu.png"
+      "awayLogo": "https://flagcdn.com/w320/ie.png",
+      "homeScore": "1",
+      "awayScore": "0"
     },
     {
       "id": "kosovo-israel-nov14",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "14 Nov",
-      "time": "14:00 GMT",
-      "title": "Kosovo vs Israel",
+      "time": "Final",
+      "title": "Kosovo 0-0 Israel",
       "home": "Kosovo",
       "away": "Israel",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 5"
       ],
       "homeLogo": "https://flagcdn.com/w320/xk.png",
-      "awayLogo": "https://flagcdn.com/w320/il.png"
+      "awayLogo": "https://flagcdn.com/w320/il.png",
+      "homeScore": "0",
+      "awayScore": "0"
+    },
+    {
+      "id": "georgia-hungary-nov14",
+      "type": "result",
+      "sport": "Football",
+      "date": "14 Nov",
+      "time": "Final",
+      "title": "Georgia 0-2 Hungary",
+      "home": "Georgia",
+      "away": "Hungary",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/ge.png",
+      "awayLogo": "https://flagcdn.com/w320/hu.png",
+      "homeScore": "0",
+      "awayScore": "2"
+    },
+    {
+      "id": "moldova-kazakhstan-nov13",
+      "type": "result",
+      "sport": "Football",
+      "date": "13 Nov",
+      "time": "Final",
+      "title": "Moldova 2-1 Kazakhstan",
+      "home": "Moldova",
+      "away": "Kazakhstan",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/md.png",
+      "awayLogo": "https://flagcdn.com/w320/kz.png",
+      "homeScore": "2",
+      "awayScore": "1"
+    },
+    {
+      "id": "slovakia-faroe-islands-nov13",
+      "type": "result",
+      "sport": "Football",
+      "date": "13 Nov",
+      "time": "Final",
+      "title": "Slovakia 2-2 Faroe Islands",
+      "home": "Slovakia",
+      "away": "Faroe Islands",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/sk.png",
+      "awayLogo": "https://flagcdn.com/w320/fo.png",
+      "homeScore": "2",
+      "awayScore": "2"
+    },
+    {
+      "id": "bulgaria-iceland-nov13",
+      "type": "result",
+      "sport": "Football",
+      "date": "13 Nov",
+      "time": "Final",
+      "title": "Bulgaria 0-5 Iceland",
+      "home": "Bulgaria",
+      "away": "Iceland",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/bg.png",
+      "awayLogo": "https://flagcdn.com/w320/is.png",
+      "homeScore": "0",
+      "awayScore": "5"
+    },
+    {
+      "id": "luxembourg-estonia-nov13",
+      "type": "result",
+      "sport": "Football",
+      "date": "13 Nov",
+      "time": "Final",
+      "title": "Luxembourg 0-1 Estonia",
+      "home": "Luxembourg",
+      "away": "Estonia",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/lu.png",
+      "awayLogo": "https://flagcdn.com/w320/ee.png",
+      "homeScore": "0",
+      "awayScore": "1"
+    },
+    {
+      "id": "andorra-gibraltar-nov13",
+      "type": "result",
+      "sport": "Football",
+      "date": "13 Nov",
+      "time": "Final",
+      "title": "Andorra 2-0 Gibraltar",
+      "home": "Andorra",
+      "away": "Gibraltar",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/ad.png",
+      "awayLogo": "https://flagcdn.com/w320/gi.png",
+      "homeScore": "2",
+      "awayScore": "0"
+    },
+    {
+      "id": "liechtenstein-azerbaijan-nov13",
+      "type": "result",
+      "sport": "Football",
+      "date": "13 Nov",
+      "time": "Final",
+      "title": "Liechtenstein 0-1 Azerbaijan",
+      "home": "Liechtenstein",
+      "away": "Azerbaijan",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Nations League Matchday 5"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/li.png",
+      "awayLogo": "https://flagcdn.com/w320/az.png",
+      "homeScore": "0",
+      "awayScore": "1"
     },
     {
       "id": "netherlands-greece-nov13",

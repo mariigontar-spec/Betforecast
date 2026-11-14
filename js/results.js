@@ -4,6 +4,18 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Norway", awayName: "Wales", homeGoals: "3", awayGoals: "1", venue: "International", date: "14 Nov", href: "match.html?id=norway-wales-nov14" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Portugal", awayName: "Denmark", homeGoals: "1", awayGoals: "4", venue: "International", date: "14 Nov", href: "match.html?id=portugal-denmark-nov14" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Northern Ireland", awayName: "Ukraine", homeGoals: "1", awayGoals: "0", venue: "International", date: "14 Nov", href: "match.html?id=northern-ireland-ukraine-nov14" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Austria", awayName: "Republic of Ireland", homeGoals: "1", awayGoals: "0", venue: "International", date: "14 Nov", href: "match.html?id=austria-ireland-nov14" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Kosovo", awayName: "Israel", homeGoals: "0", awayGoals: "0", venue: "International", date: "14 Nov", href: "match.html?id=kosovo-israel-nov14" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Georgia", awayName: "Hungary", homeGoals: "0", awayGoals: "2", venue: "International", date: "14 Nov", href: "match.html?id=georgia-hungary-nov14" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Moldova", awayName: "Kazakhstan", homeGoals: "2", awayGoals: "1", venue: "International", date: "13 Nov", href: "match.html?id=moldova-kazakhstan-nov13" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Slovakia", awayName: "Faroe Islands", homeGoals: "2", awayGoals: "2", venue: "International", date: "13 Nov", href: "match.html?id=slovakia-faroe-islands-nov13" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Bulgaria", awayName: "Iceland", homeGoals: "0", awayGoals: "5", venue: "International", date: "13 Nov", href: "match.html?id=bulgaria-iceland-nov13" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Luxembourg", awayName: "Estonia", homeGoals: "0", awayGoals: "1", venue: "International", date: "13 Nov", href: "match.html?id=luxembourg-estonia-nov13" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Andorra", awayName: "Gibraltar", homeGoals: "2", awayGoals: "0", venue: "International", date: "13 Nov", href: "match.html?id=andorra-gibraltar-nov13" },
+    { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Liechtenstein", awayName: "Azerbaijan", homeGoals: "0", awayGoals: "1", venue: "International", date: "13 Nov", href: "match.html?id=liechtenstein-azerbaijan-nov13" },
     { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "England", awayName: "Croatia", homeGoals: "2", awayGoals: "1", venue: "Wembley", date: "12 Nov", href: "match.html?id=england-croatia-nov12" },
     { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Italy", awayName: "France", homeGoals: "3", awayGoals: "1", venue: "San Siro", date: "12 Nov", href: "match.html?id=italy-france-nov12" },
     { round: "Football · UEFA Nations League Matchday 5", status: "FINAL", homeName: "Czechia", awayName: "Spain", homeGoals: "0", awayGoals: "2", venue: "epet ARENA", date: "12 Nov", href: "match.html?id=czechia-spain-nov12" },
@@ -247,7 +259,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 13 Nov 2026");
+    setStatus("World sports results · checked 15 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");

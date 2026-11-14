@@ -38,13 +38,13 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Nations League Matchday 5 continues on 14 November, led by Portugal–Denmark and Norway–Wales. The Netherlands scored seven against Greece, while Germany and Scotland also won on Friday.";
+        "Nations League Matchday 6 begins on 15 November, headlined by Spain–England, Belgium–Italy and France–Türkiye. Denmark won 4-1 in Portugal, while Norway beat Wales 3-1.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Portugal–Denmark · 14 Nov · 19:45 GMT</span></div>
-        <div><strong>Nations League</strong><span>Matchday 5 · eight fixtures</span></div>
+        <div><strong>Featured</strong><span>Spain–England · 15 Nov · 19:45 GMT</span></div>
+        <div><strong>Nations League</strong><span>Matchday 6 · eight fixtures</span></div>
         <div><strong>EPL table</strong><span>Unchanged · Arsenal lead</span></div>
       `;
     }
@@ -56,18 +56,18 @@
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Portugal Denmark">Portugal–Denmark</button>
-        <button type="button" data-query="Norway Wales">Norway–Wales</button>
-        <button type="button" data-query="Northern Ireland Ukraine">Northern Ireland–Ukraine</button>
+        <button type="button" data-query="Spain England">Spain–England</button>
+        <button type="button" data-query="Belgium Italy">Belgium–Italy</button>
+        <button type="button" data-query="France Türkiye">France–Türkiye</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=portugal-denmark-nov14", title: "Portugal vs Denmark", detail: "14 Nov · Nations League · 19:45 GMT", tag: "Featured" },
-      { href: "match.html?id=norway-wales-nov14", title: "Norway vs Wales", detail: "14 Nov · Nations League · 17:00 GMT", tag: "Upcoming" },
-      { href: "match.html?id=northern-ireland-ukraine-nov14", title: "Northern Ireland vs Ukraine", detail: "14 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
-      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 13 Nov", tag: "Table" },
+      { href: "match.html?id=spain-england-nov15", title: "Spain vs England", detail: "15 Nov · Nations League · 19:45 GMT", tag: "Featured" },
+      { href: "match.html?id=belgium-italy-nov15", title: "Belgium vs Italy", detail: "15 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
+      { href: "match.html?id=france-turkiye-nov15", title: "France vs Türkiye", detail: "15 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 15 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
