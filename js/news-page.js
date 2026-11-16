@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 16 Nov 2026";
+  if (k) k.textContent = "World Sports News · 17 Nov 2026";
   if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">England win 3-2 in Spain</a><a class="sidebar-link-card" href="match.html?id=germany-netherlands-nov16">Germany–Netherlands today</a><a class="sidebar-link-card" href="match.html?id=estonia-bulgaria-nov16">Estonia–Bulgaria today</a><a class="sidebar-link-card" href="match.html?id=switzerland-scotland-nov16">Switzerland–Scotland today</a><a class="sidebar-link-card" href="standings.html">Premier League table verified</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Germany beat Netherlands 5-0</a><a class="sidebar-link-card" href="match.html?id=denmark-norway-nov17">Denmark–Norway today</a><a class="sidebar-link-card" href="match.html?id=wales-portugal-nov17">Wales–Portugal today</a><a class="sidebar-link-card" href="match.html?id=hungary-northern-ireland-nov17">Hungary–Northern Ireland today</a><a class="sidebar-link-card" href="standings.html">Premier League table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>England beat Spain 3-2, Belgium beat Italy 4-1 and France defeated Türkiye 2-1. Nations League Matchday 6 continues with ten fixtures on 16 November.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Germany beat the Netherlands 5-0, Switzerland beat Scotland 4-0 and Estonia defeated Bulgaria 2-1. The Nations League league phase concludes with eight fixtures on 17 November.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),

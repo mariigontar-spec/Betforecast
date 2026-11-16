@@ -4,6 +4,16 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Germany", awayName: "Netherlands", homeGoals: "5", awayGoals: "0", venue: "Berlin", date: "16 Nov", href: "match.html?id=germany-netherlands-nov16" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Estonia", awayName: "Bulgaria", homeGoals: "2", awayGoals: "1", venue: "Tallinn", date: "16 Nov", href: "match.html?id=estonia-bulgaria-nov16" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Switzerland", awayName: "Scotland", homeGoals: "4", awayGoals: "0", venue: "St Gallen", date: "16 Nov", href: "match.html?id=switzerland-scotland-nov16" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Greece", awayName: "Serbia", homeGoals: "1", awayGoals: "0", venue: "International", date: "16 Nov", href: "match.html?id=greece-serbia-nov16" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "North Macedonia", awayName: "Slovenia", homeGoals: "0", awayGoals: "3", venue: "International", date: "16 Nov", href: "match.html?id=north-macedonia-slovenia-nov16" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Iceland", awayName: "Luxembourg", homeGoals: "3", awayGoals: "0", venue: "International", date: "16 Nov", href: "match.html?id=iceland-luxembourg-nov16" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Lithuania", awayName: "Liechtenstein", homeGoals: "2", awayGoals: "1", venue: "International", date: "16 Nov", href: "match.html?id=lithuania-liechtenstein-nov16" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Gibraltar", awayName: "Malta", homeGoals: "1", awayGoals: "1", venue: "International", date: "16 Nov", href: "match.html?id=gibraltar-malta-nov16" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Faroe Islands", awayName: "Moldova", homeGoals: "1", awayGoals: "0", venue: "International", date: "16 Nov", href: "match.html?id=faroe-islands-moldova-nov16" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Kazakhstan", awayName: "Slovakia", homeGoals: "2", awayGoals: "2", venue: "International", date: "16 Nov", href: "match.html?id=kazakhstan-slovakia-nov16" },
     { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Spain", awayName: "England", homeGoals: "2", awayGoals: "3", venue: "Madrid", date: "15 Nov", href: "match.html?id=spain-england-nov15" },
     { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Belgium", awayName: "Italy", homeGoals: "4", awayGoals: "1", venue: "Brussels", date: "15 Nov", href: "match.html?id=belgium-italy-nov15" },
     { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "France", awayName: "Türkiye", homeGoals: "2", awayGoals: "1", venue: "Bordeaux", date: "15 Nov", href: "match.html?id=france-turkiye-nov15" },
@@ -269,7 +279,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 16 Nov 2026");
+    setStatus("World sports results · checked 17 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -279,7 +289,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "England beat Spain 3-2, Belgium defeated Italy 4-1 and France edged Türkiye 2-1 on Nations League Matchday 6. Ten verified fixtures follow on 16 November.";
+    if (intro) intro.textContent = "Germany beat the Netherlands 5-0, Switzerland defeated Scotland 4-0 and Estonia beat Bulgaria 2-1 on Nations League Matchday 6. Eight final league-phase fixtures follow on 17 November.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }

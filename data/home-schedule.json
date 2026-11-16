@@ -1,196 +1,368 @@
 {
-  "updatedAt": "2026-11-16T00:02:00+02:00",
-  "featuredId": "germany-netherlands-nov16",
+  "updatedAt": "2026-11-17T00:02:00+02:00",
+  "featuredId": "denmark-norway-nov17",
   "events": [
     {
-      "id": "germany-netherlands-nov16",
+      "id": "denmark-norway-nov17",
       "type": "event",
       "sport": "Football",
-      "date": "16 Nov",
+      "date": "17 Nov",
       "time": "19:45 GMT",
-      "title": "Germany vs Netherlands",
+      "title": "Denmark vs Norway",
+      "home": "Denmark",
+      "away": "Norway",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/dk.png",
+      "awayLogo": "https://flagcdn.com/w320/no.png"
+    },
+    {
+      "id": "wales-portugal-nov17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Nov",
+      "time": "19:45 GMT",
+      "title": "Wales vs Portugal",
+      "home": "Wales",
+      "away": "Portugal",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/gb-wls.png",
+      "awayLogo": "https://flagcdn.com/w320/pt.png"
+    },
+    {
+      "id": "hungary-northern-ireland-nov17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Nov",
+      "time": "19:45 GMT",
+      "title": "Hungary vs Northern Ireland",
+      "home": "Hungary",
+      "away": "Northern Ireland",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/hu.png",
+      "awayLogo": "https://flagcdn.com/w320/gb-nir.png"
+    },
+    {
+      "id": "ukraine-georgia-nov17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Nov",
+      "time": "19:45 GMT",
+      "title": "Ukraine vs Georgia",
+      "home": "Ukraine",
+      "away": "Georgia",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/ua.png",
+      "awayLogo": "https://flagcdn.com/w320/ge.png"
+    },
+    {
+      "id": "israel-austria-nov17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Nov",
+      "time": "19:45 GMT",
+      "title": "Israel vs Austria",
+      "home": "Israel",
+      "away": "Austria",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/il.png",
+      "awayLogo": "https://flagcdn.com/w320/at.png"
+    },
+    {
+      "id": "ireland-kosovo-nov17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Nov",
+      "time": "19:45 GMT",
+      "title": "Republic of Ireland vs Kosovo",
+      "home": "Republic of Ireland",
+      "away": "Kosovo",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/ie.png",
+      "awayLogo": "https://flagcdn.com/w320/xk.png"
+    },
+    {
+      "id": "bosnia-romania-nov17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Nov",
+      "time": "19:45 GMT",
+      "title": "Bosnia and Herzegovina vs Romania",
+      "home": "Bosnia and Herzegovina",
+      "away": "Romania",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/ba.png",
+      "awayLogo": "https://flagcdn.com/w320/ro.png"
+    },
+    {
+      "id": "poland-sweden-nov17",
+      "type": "event",
+      "sport": "Football",
+      "date": "17 Nov",
+      "time": "19:45 GMT",
+      "title": "Poland vs Sweden",
+      "home": "Poland",
+      "away": "Sweden",
+      "competition": "UEFA Nations League",
+      "stage": "League phase · Matchday 6",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Nations League Matchday 6"
+      ],
+      "homeLogo": "https://flagcdn.com/w320/pl.png",
+      "awayLogo": "https://flagcdn.com/w320/se.png"
+    },
+    {
+      "id": "germany-netherlands-nov16",
+      "type": "result",
+      "sport": "Football",
+      "date": "16 Nov",
+      "time": "Final",
+      "title": "Germany 5-0 Netherlands",
       "home": "Germany",
       "away": "Netherlands",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/de.png",
-      "awayLogo": "https://flagcdn.com/w320/nl.png"
+      "awayLogo": "https://flagcdn.com/w320/nl.png",
+      "homeScore": "5",
+      "awayScore": "0"
     },
     {
       "id": "estonia-bulgaria-nov16",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "16 Nov",
-      "time": "17:00 GMT",
-      "title": "Estonia vs Bulgaria",
+      "time": "Final",
+      "title": "Estonia 2-1 Bulgaria",
       "home": "Estonia",
       "away": "Bulgaria",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/ee.png",
-      "awayLogo": "https://flagcdn.com/w320/bg.png"
+      "awayLogo": "https://flagcdn.com/w320/bg.png",
+      "homeScore": "2",
+      "awayScore": "1"
     },
     {
       "id": "switzerland-scotland-nov16",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "16 Nov",
-      "time": "19:45 GMT",
-      "title": "Switzerland vs Scotland",
+      "time": "Final",
+      "title": "Switzerland 4-0 Scotland",
       "home": "Switzerland",
       "away": "Scotland",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/ch.png",
-      "awayLogo": "https://flagcdn.com/w320/gb-sct.png"
+      "awayLogo": "https://flagcdn.com/w320/gb-sct.png",
+      "homeScore": "4",
+      "awayScore": "0"
     },
     {
       "id": "greece-serbia-nov16",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "16 Nov",
-      "time": "19:45 GMT",
-      "title": "Greece vs Serbia",
+      "time": "Final",
+      "title": "Greece 1-0 Serbia",
       "home": "Greece",
       "away": "Serbia",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/gr.png",
-      "awayLogo": "https://flagcdn.com/w320/rs.png"
+      "awayLogo": "https://flagcdn.com/w320/rs.png",
+      "homeScore": "1",
+      "awayScore": "0"
     },
     {
       "id": "north-macedonia-slovenia-nov16",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "16 Nov",
-      "time": "19:45 GMT",
-      "title": "North Macedonia vs Slovenia",
+      "time": "Final",
+      "title": "North Macedonia 0-3 Slovenia",
       "home": "North Macedonia",
       "away": "Slovenia",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/mk.png",
-      "awayLogo": "https://flagcdn.com/w320/si.png"
+      "awayLogo": "https://flagcdn.com/w320/si.png",
+      "homeScore": "0",
+      "awayScore": "3"
     },
     {
       "id": "iceland-luxembourg-nov16",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "16 Nov",
-      "time": "17:00 GMT",
-      "title": "Iceland vs Luxembourg",
+      "time": "Final",
+      "title": "Iceland 3-0 Luxembourg",
       "home": "Iceland",
       "away": "Luxembourg",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/is.png",
-      "awayLogo": "https://flagcdn.com/w320/lu.png"
+      "awayLogo": "https://flagcdn.com/w320/lu.png",
+      "homeScore": "3",
+      "awayScore": "0"
     },
     {
       "id": "lithuania-liechtenstein-nov16",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "16 Nov",
-      "time": "17:00 GMT",
-      "title": "Lithuania vs Liechtenstein",
+      "time": "Final",
+      "title": "Lithuania 2-1 Liechtenstein",
       "home": "Lithuania",
       "away": "Liechtenstein",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/lt.png",
-      "awayLogo": "https://flagcdn.com/w320/li.png"
+      "awayLogo": "https://flagcdn.com/w320/li.png",
+      "homeScore": "2",
+      "awayScore": "1"
     },
     {
       "id": "gibraltar-malta-nov16",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "16 Nov",
-      "time": "19:45 GMT",
-      "title": "Gibraltar vs Malta",
+      "time": "Final",
+      "title": "Gibraltar 1-1 Malta",
       "home": "Gibraltar",
       "away": "Malta",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/gi.png",
-      "awayLogo": "https://flagcdn.com/w320/mt.png"
+      "awayLogo": "https://flagcdn.com/w320/mt.png",
+      "homeScore": "1",
+      "awayScore": "1"
     },
     {
       "id": "faroe-islands-moldova-nov16",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "16 Nov",
-      "time": "15:00 GMT",
-      "title": "Faroe Islands vs Moldova",
+      "time": "Final",
+      "title": "Faroe Islands 1-0 Moldova",
       "home": "Faroe Islands",
       "away": "Moldova",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/fo.png",
-      "awayLogo": "https://flagcdn.com/w320/md.png"
+      "awayLogo": "https://flagcdn.com/w320/md.png",
+      "homeScore": "1",
+      "awayScore": "0"
     },
     {
       "id": "kazakhstan-slovakia-nov16",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "16 Nov",
-      "time": "15:00 GMT",
-      "title": "Kazakhstan vs Slovakia",
+      "time": "Final",
+      "title": "Kazakhstan 2-2 Slovakia",
       "home": "Kazakhstan",
       "away": "Slovakia",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/kz.png",
-      "awayLogo": "https://flagcdn.com/w320/sk.png"
+      "awayLogo": "https://flagcdn.com/w320/sk.png",
+      "homeScore": "2",
+      "awayScore": "2"
     },
     {
       "id": "spain-england-nov15",
