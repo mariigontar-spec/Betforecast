@@ -4,6 +4,14 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Denmark", awayName: "Norway", homeGoals: "2", awayGoals: "3", venue: "Copenhagen", date: "17 Nov", href: "match.html?id=denmark-norway-nov17" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Wales", awayName: "Portugal", homeGoals: "2", awayGoals: "3", venue: "Cardiff", date: "17 Nov", href: "match.html?id=wales-portugal-nov17" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Hungary", awayName: "Northern Ireland", homeGoals: "1", awayGoals: "1", venue: "International", date: "17 Nov", href: "match.html?id=hungary-northern-ireland-nov17" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Ukraine", awayName: "Georgia", homeGoals: "1", awayGoals: "0", venue: "International", date: "17 Nov", href: "match.html?id=ukraine-georgia-nov17" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Israel", awayName: "Austria", homeGoals: "1", awayGoals: "1", venue: "Debrecen", date: "17 Nov", href: "match.html?id=israel-austria-nov17" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Republic of Ireland", awayName: "Kosovo", homeGoals: "3", awayGoals: "0", venue: "Dublin", date: "17 Nov", href: "match.html?id=ireland-kosovo-nov17" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Bosnia and Herzegovina", awayName: "Romania", homeGoals: "2", awayGoals: "1", venue: "Zenica", date: "17 Nov", href: "match.html?id=bosnia-romania-nov17" },
+    { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Poland", awayName: "Sweden", homeGoals: "1", awayGoals: "1", venue: "Wroclaw", date: "17 Nov", href: "match.html?id=poland-sweden-nov17" },
     { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Germany", awayName: "Netherlands", homeGoals: "5", awayGoals: "0", venue: "Berlin", date: "16 Nov", href: "match.html?id=germany-netherlands-nov16" },
     { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Estonia", awayName: "Bulgaria", homeGoals: "2", awayGoals: "1", venue: "Tallinn", date: "16 Nov", href: "match.html?id=estonia-bulgaria-nov16" },
     { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Switzerland", awayName: "Scotland", homeGoals: "4", awayGoals: "0", venue: "St Gallen", date: "16 Nov", href: "match.html?id=switzerland-scotland-nov16" },
@@ -279,7 +287,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 17 Nov 2026");
+    setStatus("World sports results · checked 18 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -289,7 +297,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Germany beat the Netherlands 5-0, Switzerland defeated Scotland 4-0 and Estonia beat Bulgaria 2-1 on Nations League Matchday 6. Eight final league-phase fixtures follow on 17 November.";
+    if (intro) intro.textContent = "Norway beat Denmark 3-2, Portugal won 3-2 in Wales and the Republic of Ireland defeated Kosovo 3-0 as the Nations League league phase concluded. Premier League Matchweek 11 begins on 21 November.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }

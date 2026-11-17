@@ -38,14 +38,14 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "The Nations League league phase concludes on 17 November with Denmark–Norway, Wales–Portugal and Hungary–Northern Ireland. Germany beat the Netherlands 5-0 and Switzerland defeated Scotland 4-0.";
+        "The Nations League league phase is complete. Premier League Matchweek 11 begins on 21 November, headlined by Newcastle–Arsenal, Manchester City–Fulham and Liverpool–Manchester United.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Denmark–Norway · 17 Nov · 19:45 GMT</span></div>
-        <div><strong>Nations League</strong><span>Matchday 6 · eight fixtures</span></div>
-        <div><strong>EPL table</strong><span>Unchanged · Arsenal lead</span></div>
+        <div><strong>Featured</strong><span>Newcastle–Arsenal · 21 Nov · 17:30 GMT</span></div>
+        <div><strong>Premier League</strong><span>Matchweek 11 · ten fixtures</span></div>
+        <div><strong>EPL table</strong><span>Arsenal lead · 27 points</span></div>
       `;
     }
 
@@ -56,18 +56,18 @@
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Denmark Norway">Denmark–Norway</button>
-        <button type="button" data-query="Wales Portugal">Wales–Portugal</button>
-        <button type="button" data-query="Hungary Northern Ireland">Hungary–Northern Ireland</button>
+        <button type="button" data-query="Newcastle Arsenal">Newcastle–Arsenal</button>
+        <button type="button" data-query="Man City Fulham">Man City–Fulham</button>
+        <button type="button" data-query="Liverpool Man United">Liverpool–Man United</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=denmark-norway-nov17", title: "Denmark vs Norway", detail: "17 Nov · Nations League · 19:45 GMT", tag: "Featured" },
-      { href: "match.html?id=wales-portugal-nov17", title: "Wales vs Portugal", detail: "17 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
-      { href: "match.html?id=hungary-northern-ireland-nov17", title: "Hungary vs Northern Ireland", detail: "17 Nov · Nations League · 19:45 GMT", tag: "Upcoming" },
-      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 17 Nov", tag: "Table" },
+      { href: "match.html?id=newcastle-arsenal-nov21", title: "Newcastle vs Arsenal", detail: "21 Nov · Premier League · 17:30 GMT", tag: "Featured" },
+      { href: "match.html?id=man-city-fulham-nov21", title: "Man City vs Fulham", detail: "21 Nov · Premier League · 12:30 GMT", tag: "Upcoming" },
+      { href: "match.html?id=liverpool-man-united-nov22", title: "Liverpool vs Man United", detail: "22 Nov · Premier League · 16:30 GMT", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 18 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {

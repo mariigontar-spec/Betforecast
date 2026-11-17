@@ -1,158 +1,364 @@
 {
-  "updatedAt": "2026-11-17T00:02:00+02:00",
-  "featuredId": "denmark-norway-nov17",
+  "updatedAt": "2026-11-18T00:02:00+02:00",
+  "featuredId": "newcastle-arsenal-nov21",
   "events": [
     {
-      "id": "denmark-norway-nov17",
+      "id": "newcastle-arsenal-nov21",
       "type": "event",
       "sport": "Football",
+      "date": "21 Nov",
+      "time": "17:30 GMT",
+      "title": "Newcastle vs Arsenal",
+      "home": "Newcastle",
+      "away": "Arsenal",
+      "competition": "Premier League",
+      "stage": "Matchweek 11",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 11"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+    },
+    {
+      "id": "man-city-fulham-nov21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Nov",
+      "time": "12:30 GMT",
+      "title": "Man City vs Fulham",
+      "home": "Man City",
+      "away": "Fulham",
+      "competition": "Premier League",
+      "stage": "Matchweek 11",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 11"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png"
+    },
+    {
+      "id": "bournemouth-forest-nov21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Nov",
+      "time": "15:00 GMT",
+      "title": "Bournemouth vs Nottm Forest",
+      "home": "Bournemouth",
+      "away": "Nottm Forest",
+      "competition": "Premier League",
+      "stage": "Matchweek 11",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 11"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png"
+    },
+    {
+      "id": "aston-villa-sunderland-nov21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Nov",
+      "time": "15:00 GMT",
+      "title": "Aston Villa vs Sunderland",
+      "home": "Aston Villa",
+      "away": "Sunderland",
+      "competition": "Premier League",
+      "stage": "Matchweek 11",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 11"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png"
+    },
+    {
+      "id": "chelsea-leeds-nov21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Nov",
+      "time": "15:00 GMT",
+      "title": "Chelsea vs Leeds United",
+      "home": "Chelsea",
+      "away": "Leeds United",
+      "competition": "Premier League",
+      "stage": "Matchweek 11",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 11"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
+    },
+    {
+      "id": "coventry-palace-nov21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Nov",
+      "time": "15:00 GMT",
+      "title": "Coventry City vs Crystal Palace",
+      "home": "Coventry City",
+      "away": "Crystal Palace",
+      "competition": "Premier League",
+      "stage": "Matchweek 11",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 11"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png"
+    },
+    {
+      "id": "tottenham-ipswich-nov21",
+      "type": "event",
+      "sport": "Football",
+      "date": "21 Nov",
+      "time": "15:00 GMT",
+      "title": "Tottenham vs Ipswich Town",
+      "home": "Tottenham",
+      "away": "Ipswich Town",
+      "competition": "Premier League",
+      "stage": "Matchweek 11",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 11"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png"
+    },
+    {
+      "id": "hull-brighton-nov22",
+      "type": "event",
+      "sport": "Football",
+      "date": "22 Nov",
+      "time": "14:00 GMT",
+      "title": "Hull City vs Brighton",
+      "home": "Hull City",
+      "away": "Brighton",
+      "competition": "Premier League",
+      "stage": "Matchweek 11",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 11"
+      ],
+      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
+    },
+    {
+      "id": "liverpool-man-united-nov22",
+      "type": "event",
+      "sport": "Football",
+      "date": "22 Nov",
+      "time": "16:30 GMT",
+      "title": "Liverpool vs Man United",
+      "home": "Liverpool",
+      "away": "Man United",
+      "competition": "Premier League",
+      "stage": "Matchweek 11",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 11"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
+    },
+    {
+      "id": "brentford-everton-nov23",
+      "type": "event",
+      "sport": "Football",
+      "date": "23 Nov",
+      "time": "20:00 GMT",
+      "title": "Brentford vs Everton",
+      "home": "Brentford",
+      "away": "Everton",
+      "competition": "Premier League",
+      "stage": "Matchweek 11",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Matchweek 11"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
+    },
+    {
+      "id": "denmark-norway-nov17",
+      "type": "result",
+      "sport": "Football",
       "date": "17 Nov",
-      "time": "19:45 GMT",
-      "title": "Denmark vs Norway",
+      "time": "Final",
+      "title": "Denmark 2-3 Norway",
       "home": "Denmark",
       "away": "Norway",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/dk.png",
-      "awayLogo": "https://flagcdn.com/w320/no.png"
+      "awayLogo": "https://flagcdn.com/w320/no.png",
+      "homeScore": "2",
+      "awayScore": "3"
     },
     {
       "id": "wales-portugal-nov17",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "17 Nov",
-      "time": "19:45 GMT",
-      "title": "Wales vs Portugal",
+      "time": "Final",
+      "title": "Wales 2-3 Portugal",
       "home": "Wales",
       "away": "Portugal",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/gb-wls.png",
-      "awayLogo": "https://flagcdn.com/w320/pt.png"
+      "awayLogo": "https://flagcdn.com/w320/pt.png",
+      "homeScore": "2",
+      "awayScore": "3"
     },
     {
       "id": "hungary-northern-ireland-nov17",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "17 Nov",
-      "time": "19:45 GMT",
-      "title": "Hungary vs Northern Ireland",
+      "time": "Final",
+      "title": "Hungary 1-1 Northern Ireland",
       "home": "Hungary",
       "away": "Northern Ireland",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/hu.png",
-      "awayLogo": "https://flagcdn.com/w320/gb-nir.png"
+      "awayLogo": "https://flagcdn.com/w320/gb-nir.png",
+      "homeScore": "1",
+      "awayScore": "1"
     },
     {
       "id": "ukraine-georgia-nov17",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "17 Nov",
-      "time": "19:45 GMT",
-      "title": "Ukraine vs Georgia",
+      "time": "Final",
+      "title": "Ukraine 1-0 Georgia",
       "home": "Ukraine",
       "away": "Georgia",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/ua.png",
-      "awayLogo": "https://flagcdn.com/w320/ge.png"
+      "awayLogo": "https://flagcdn.com/w320/ge.png",
+      "homeScore": "1",
+      "awayScore": "0"
     },
     {
       "id": "israel-austria-nov17",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "17 Nov",
-      "time": "19:45 GMT",
-      "title": "Israel vs Austria",
+      "time": "Final",
+      "title": "Israel 1-1 Austria",
       "home": "Israel",
       "away": "Austria",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/il.png",
-      "awayLogo": "https://flagcdn.com/w320/at.png"
+      "awayLogo": "https://flagcdn.com/w320/at.png",
+      "homeScore": "1",
+      "awayScore": "1"
     },
     {
       "id": "ireland-kosovo-nov17",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "17 Nov",
-      "time": "19:45 GMT",
-      "title": "Republic of Ireland vs Kosovo",
+      "time": "Final",
+      "title": "Republic of Ireland 3-0 Kosovo",
       "home": "Republic of Ireland",
       "away": "Kosovo",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/ie.png",
-      "awayLogo": "https://flagcdn.com/w320/xk.png"
+      "awayLogo": "https://flagcdn.com/w320/xk.png",
+      "homeScore": "3",
+      "awayScore": "0"
     },
     {
       "id": "bosnia-romania-nov17",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "17 Nov",
-      "time": "19:45 GMT",
-      "title": "Bosnia and Herzegovina vs Romania",
+      "time": "Final",
+      "title": "Bosnia and Herzegovina 2-1 Romania",
       "home": "Bosnia and Herzegovina",
       "away": "Romania",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/ba.png",
-      "awayLogo": "https://flagcdn.com/w320/ro.png"
+      "awayLogo": "https://flagcdn.com/w320/ro.png",
+      "homeScore": "2",
+      "awayScore": "1"
     },
     {
       "id": "poland-sweden-nov17",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "17 Nov",
-      "time": "19:45 GMT",
-      "title": "Poland vs Sweden",
+      "time": "Final",
+      "title": "Poland 1-1 Sweden",
       "home": "Poland",
       "away": "Sweden",
       "competition": "UEFA Nations League",
       "stage": "League phase · Matchday 6",
-      "status": "Upcoming",
+      "status": "Result",
       "signals": [
-        "Official UEFA fixture",
+        "Verified final score",
         "Nations League Matchday 6"
       ],
       "homeLogo": "https://flagcdn.com/w320/pl.png",
-      "awayLogo": "https://flagcdn.com/w320/se.png"
+      "awayLogo": "https://flagcdn.com/w320/se.png",
+      "homeScore": "1",
+      "awayScore": "1"
     },
     {
       "id": "germany-netherlands-nov16",
@@ -1077,196 +1283,6 @@
       "awayLogo": "https://flagcdn.com/w320/be.png",
       "homeScore": "1",
       "awayScore": "2"
-    },
-    {
-      "id": "newcastle-arsenal-nov21",
-      "type": "event",
-      "sport": "Football",
-      "date": "21 Nov",
-      "time": "17:30 GMT",
-      "title": "Newcastle vs Arsenal",
-      "home": "Newcastle",
-      "away": "Arsenal",
-      "competition": "Premier League",
-      "stage": "Matchweek 11",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
-    },
-    {
-      "id": "man-city-fulham-nov21",
-      "type": "event",
-      "sport": "Football",
-      "date": "21 Nov",
-      "time": "12:30 GMT",
-      "title": "Man City vs Fulham",
-      "home": "Man City",
-      "away": "Fulham",
-      "competition": "Premier League",
-      "stage": "Matchweek 11",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png"
-    },
-    {
-      "id": "bournemouth-forest-nov21",
-      "type": "event",
-      "sport": "Football",
-      "date": "21 Nov",
-      "time": "15:00 GMT",
-      "title": "Bournemouth vs Nottm Forest",
-      "home": "Bournemouth",
-      "away": "Nottm Forest",
-      "competition": "Premier League",
-      "stage": "Matchweek 11",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png"
-    },
-    {
-      "id": "aston-villa-sunderland-nov21",
-      "type": "event",
-      "sport": "Football",
-      "date": "21 Nov",
-      "time": "15:00 GMT",
-      "title": "Aston Villa vs Sunderland",
-      "home": "Aston Villa",
-      "away": "Sunderland",
-      "competition": "Premier League",
-      "stage": "Matchweek 11",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png"
-    },
-    {
-      "id": "chelsea-leeds-nov21",
-      "type": "event",
-      "sport": "Football",
-      "date": "21 Nov",
-      "time": "15:00 GMT",
-      "title": "Chelsea vs Leeds United",
-      "home": "Chelsea",
-      "away": "Leeds United",
-      "competition": "Premier League",
-      "stage": "Matchweek 11",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
-    },
-    {
-      "id": "coventry-palace-nov21",
-      "type": "event",
-      "sport": "Football",
-      "date": "21 Nov",
-      "time": "15:00 GMT",
-      "title": "Coventry City vs Crystal Palace",
-      "home": "Coventry City",
-      "away": "Crystal Palace",
-      "competition": "Premier League",
-      "stage": "Matchweek 11",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
-      ],
-      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png"
-    },
-    {
-      "id": "tottenham-ipswich-nov21",
-      "type": "event",
-      "sport": "Football",
-      "date": "21 Nov",
-      "time": "15:00 GMT",
-      "title": "Tottenham vs Ipswich Town",
-      "home": "Tottenham",
-      "away": "Ipswich Town",
-      "competition": "Premier League",
-      "stage": "Matchweek 11",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png"
-    },
-    {
-      "id": "hull-brighton-nov22",
-      "type": "event",
-      "sport": "Football",
-      "date": "22 Nov",
-      "time": "14:00 GMT",
-      "title": "Hull City vs Brighton",
-      "home": "Hull City",
-      "away": "Brighton",
-      "competition": "Premier League",
-      "stage": "Matchweek 11",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
-      ],
-      "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
-    },
-    {
-      "id": "liverpool-man-united-nov22",
-      "type": "event",
-      "sport": "Football",
-      "date": "22 Nov",
-      "time": "16:30 GMT",
-      "title": "Liverpool vs Man United",
-      "home": "Liverpool",
-      "away": "Man United",
-      "competition": "Premier League",
-      "stage": "Matchweek 11",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
-    },
-    {
-      "id": "brentford-everton-nov23",
-      "type": "event",
-      "sport": "Football",
-      "date": "23 Nov",
-      "time": "20:00 GMT",
-      "title": "Brentford vs Everton",
-      "home": "Brentford",
-      "away": "Everton",
-      "competition": "Premier League",
-      "stage": "Matchweek 11",
-      "status": "Upcoming",
-      "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
     },
     {
       "id": "palace-liverpool-nov8",
