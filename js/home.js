@@ -38,13 +38,13 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "The Nations League league phase is complete. Premier League Matchweek 11 begins on 21 November, headlined by Newcastle–Arsenal, Manchester City–Fulham and Liverpool–Manchester United.";
+        "The Nations League knockout-stage draw takes place on 20 November. Premier League Matchweek 11 begins on 21 November, with Newcastle–Arsenal and Mauricio Pochettino’s first Manchester United match at Liverpool among the headline fixtures.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
         <div><strong>Featured</strong><span>Newcastle–Arsenal · 21 Nov · 17:30 GMT</span></div>
-        <div><strong>Premier League</strong><span>Matchweek 11 · ten fixtures</span></div>
+        <div><strong>Nations League</strong><span>Knockout draw · 20 Nov</span></div>
         <div><strong>EPL table</strong><span>Arsenal lead · 27 points</span></div>
       `;
     }

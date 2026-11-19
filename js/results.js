@@ -287,7 +287,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 18 Nov 2026");
+    setStatus("World sports results · checked 20 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -297,7 +297,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Norway beat Denmark 3-2, Portugal won 3-2 in Wales and the Republic of Ireland defeated Kosovo 3-0 as the Nations League league phase concluded. Premier League Matchweek 11 begins on 21 November.";
+    if (intro) intro.textContent = "Norway beat Denmark 3-2, Portugal won 3-2 in Wales and the Republic of Ireland defeated Kosovo 3-0 in the latest verified finals. No newer completed fixtures were confirmed before the Premier League returns on 21 November.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
