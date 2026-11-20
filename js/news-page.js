@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 20 Nov 2026";
+  if (k) k.textContent = "World Sports News · 21 Nov 2026";
   if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="https://www.uefa.com/uefanationsleague/news/02ab-220bd5e4fa4b-2e01193538ad-1000--2026-27-uefa-nations-league-knockout-stage-and-play-off-draw/">Nations League draw · 20 Nov</a><a class="sidebar-link-card" href="match.html?id=liverpool-man-united-nov22">Pochettino starts at Anfield</a><a class="sidebar-link-card" href="match.html?id=newcastle-arsenal-nov21">Newcastle–Arsenal next</a><a class="sidebar-link-card" href="match.html?id=man-city-fulham-nov21">Man City–Fulham next</a><a class="sidebar-link-card" href="standings.html">Premier League table verified</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="match.html?id=man-city-fulham-nov21">Man City–Fulham · today</a><a class="sidebar-link-card" href="match.html?id=newcastle-arsenal-nov21">Newcastle–Arsenal · today</a><a class="sidebar-link-card" href="match.html?id=liverpool-man-united-nov22">Pochettino starts at Anfield</a><a class="sidebar-link-card" href="https://www.uefa.com/uefanationsleague/news/02ab-221d9e23448d-d862e943f6f2-1000--uefa-nations-league-quarter-final-and-play-off-ties-spain-vs/">Nations League quarter-finals set</a><a class="sidebar-link-card" href="standings.html">Premier League table verified</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>The Nations League quarter-final and promotion/relegation play-off draw takes place on 20 November. Premier League Matchweek 11 begins on 21 November; Mauricio Pochettino starts his Manchester United reign at Liverpool on Sunday.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Premier League Matchweek 11 starts today with seven fixtures, led by Man City–Fulham and Newcastle–Arsenal. The Nations League draw produced Spain–France, Norway–England, Netherlands–Portugal and Belgium–Germany.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
