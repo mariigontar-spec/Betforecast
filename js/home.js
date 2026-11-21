@@ -38,14 +38,14 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Premier League Matchweek 11 starts today with seven fixtures, including Manchester City–Fulham and Newcastle–Arsenal. Liverpool–Manchester United follows on Sunday as Mauricio Pochettino begins his United reign.";
+        "Seven Saturday fixtures are complete: Arsenal drew 2-2 at Newcastle and Leeds won 4-1 at Chelsea. Hull–Brighton and Liverpool–Manchester United take centre stage today.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Newcastle–Arsenal · 21 Nov · 17:30 GMT</span></div>
-        <div><strong>Matchday</strong><span>Seven Premier League fixtures today</span></div>
-        <div><strong>EPL table</strong><span>Arsenal lead · 27 points</span></div>
+        <div><strong>Featured</strong><span>Liverpool–Man United · 22 Nov · 16:30 GMT</span></div>
+        <div><strong>Results</strong><span>Seven Saturday fixtures complete</span></div>
+        <div><strong>EPL table</strong><span>Arsenal lead · 28 points</span></div>
       `;
     }
 
@@ -56,18 +56,18 @@
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Newcastle Arsenal">Newcastle–Arsenal</button>
-        <button type="button" data-query="Man City Fulham">Man City–Fulham</button>
         <button type="button" data-query="Liverpool Man United">Liverpool–Man United</button>
+        <button type="button" data-query="Hull Brighton">Hull–Brighton</button>
+        <button type="button" data-query="Chelsea Leeds">Chelsea–Leeds</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=newcastle-arsenal-nov21", title: "Newcastle vs Arsenal", detail: "21 Nov · Premier League · 17:30 GMT", tag: "Featured" },
-      { href: "match.html?id=man-city-fulham-nov21", title: "Man City vs Fulham", detail: "21 Nov · Premier League · 12:30 GMT", tag: "Upcoming" },
-      { href: "match.html?id=liverpool-man-united-nov22", title: "Liverpool vs Man United", detail: "22 Nov · Premier League · 16:30 GMT", tag: "Upcoming" },
-      { href: "standings.html", title: "Premier League · Matchweek 10", detail: "Complete · checked 21 Nov", tag: "Table" },
+      { href: "match.html?id=liverpool-man-united-nov22", title: "Liverpool vs Man United", detail: "22 Nov · Premier League · 16:30 GMT", tag: "Featured" },
+      { href: "match.html?id=hull-brighton-nov22", title: "Hull City vs Brighton", detail: "22 Nov · Premier League · 14:00 GMT", tag: "Today" },
+      { href: "match.html?id=brentford-everton-nov23", title: "Brentford vs Everton", detail: "23 Nov · Premier League · 20:00 GMT", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 11", detail: "Seven results · checked 22 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {

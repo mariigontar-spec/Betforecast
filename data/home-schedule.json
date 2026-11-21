@@ -1,139 +1,153 @@
 {
-  "updatedAt": "2026-11-21T00:01:00+02:00",
-  "featuredId": "newcastle-arsenal-nov21",
+  "updatedAt": "2026-11-22T00:01:00+02:00",
+  "featuredId": "liverpool-man-united-nov22",
   "events": [
     {
       "id": "newcastle-arsenal-nov21",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "21 Nov",
-      "time": "17:30 GMT",
-      "title": "Newcastle vs Arsenal",
+      "time": "Final",
+      "title": "Newcastle 2-2 Arsenal",
       "home": "Newcastle",
       "away": "Arsenal",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
+        "Verified final score",
+        "Premier League Matchweek 11"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "homeScore": "2",
+      "awayScore": "2"
     },
     {
       "id": "man-city-fulham-nov21",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "21 Nov",
-      "time": "12:30 GMT",
-      "title": "Man City vs Fulham",
+      "time": "Final",
+      "title": "Man City 1-1 Fulham",
       "home": "Man City",
       "away": "Fulham",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
+        "Verified final score",
+        "Premier League Matchweek 11"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
+      "homeScore": "1",
+      "awayScore": "1"
     },
     {
       "id": "bournemouth-forest-nov21",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "21 Nov",
-      "time": "15:00 GMT",
-      "title": "Bournemouth vs Nottm Forest",
+      "time": "Final",
+      "title": "Bournemouth 2-0 Nottm Forest",
       "home": "Bournemouth",
       "away": "Nottm Forest",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
+        "Verified final score",
+        "Premier League Matchweek 11"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png",
+      "homeScore": "2",
+      "awayScore": "0"
     },
     {
       "id": "aston-villa-sunderland-nov21",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "21 Nov",
-      "time": "15:00 GMT",
-      "title": "Aston Villa vs Sunderland",
+      "time": "Final",
+      "title": "Aston Villa 0-0 Sunderland",
       "home": "Aston Villa",
       "away": "Sunderland",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
+        "Verified final score",
+        "Premier League Matchweek 11"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+      "homeScore": "0",
+      "awayScore": "0"
     },
     {
       "id": "chelsea-leeds-nov21",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "21 Nov",
-      "time": "15:00 GMT",
-      "title": "Chelsea vs Leeds United",
+      "time": "Final",
+      "title": "Chelsea 1-4 Leeds United",
       "home": "Chelsea",
       "away": "Leeds United",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
+        "Verified final score",
+        "Premier League Matchweek 11"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+      "homeScore": "1",
+      "awayScore": "4"
     },
     {
       "id": "coventry-palace-nov21",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "21 Nov",
-      "time": "15:00 GMT",
-      "title": "Coventry City vs Crystal Palace",
+      "time": "Final",
+      "title": "Coventry City 3-2 Crystal Palace",
       "home": "Coventry City",
       "away": "Crystal Palace",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
+        "Verified final score",
+        "Premier League Matchweek 11"
       ],
       "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+      "homeScore": "3",
+      "awayScore": "2"
     },
     {
       "id": "tottenham-ipswich-nov21",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "21 Nov",
-      "time": "15:00 GMT",
-      "title": "Tottenham vs Ipswich Town",
+      "time": "Final",
+      "title": "Tottenham 2-0 Ipswich Town",
       "home": "Tottenham",
       "away": "Ipswich Town",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
+        "Verified final score",
+        "Premier League Matchweek 11"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+      "homeScore": "2",
+      "awayScore": "0"
     },
     {
       "id": "hull-brighton-nov22",
@@ -146,7 +160,7 @@
       "away": "Brighton",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 11"
@@ -165,7 +179,7 @@
       "away": "Man United",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Upcoming",
+      "status": "Today",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 11"

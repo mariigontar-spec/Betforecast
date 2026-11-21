@@ -4,6 +4,13 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Newcastle", awayName: "Arsenal", homeGoals: "2", awayGoals: "2", venue: "St James’ Park", date: "21 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Man City", awayName: "Fulham", homeGoals: "1", awayGoals: "1", venue: "Etihad Stadium", date: "21 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Bournemouth", awayName: "Nottm Forest", homeGoals: "2", awayGoals: "0", venue: "Vitality Stadium", date: "21 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Aston Villa", awayName: "Sunderland", homeGoals: "0", awayGoals: "0", venue: "Villa Park", date: "21 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Chelsea", awayName: "Leeds United", homeGoals: "1", awayGoals: "4", venue: "Stamford Bridge", date: "21 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Coventry City", awayName: "Crystal Palace", homeGoals: "3", awayGoals: "2", venue: "Coventry Building Society Arena", date: "21 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Tottenham", awayName: "Ipswich Town", homeGoals: "2", awayGoals: "0", venue: "Tottenham Hotspur Stadium", date: "21 Nov", href: "standings.html" },
     { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Denmark", awayName: "Norway", homeGoals: "2", awayGoals: "3", venue: "Copenhagen", date: "17 Nov", href: "match.html?id=denmark-norway-nov17" },
     { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Wales", awayName: "Portugal", homeGoals: "2", awayGoals: "3", venue: "Cardiff", date: "17 Nov", href: "match.html?id=wales-portugal-nov17" },
     { round: "Football · UEFA Nations League Matchday 6", status: "FINAL", homeName: "Hungary", awayName: "Northern Ireland", homeGoals: "1", awayGoals: "1", venue: "International", date: "17 Nov", href: "match.html?id=hungary-northern-ireland-nov17" },
@@ -287,7 +294,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 21 Nov 2026");
+    setStatus("World sports results · checked 22 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -297,7 +304,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Norway beat Denmark 3-2, Portugal won 3-2 in Wales and the Republic of Ireland defeated Kosovo 3-0 in the latest verified finals. No newer completed result was confirmed before Premier League Matchweek 11 starts on 21 November.";
+    if (intro) intro.textContent = "Arsenal drew 2-2 at Newcastle, Leeds won 4-1 at Chelsea and Manchester City were held 1-1 by Fulham among seven verified Premier League results from 21 November.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
