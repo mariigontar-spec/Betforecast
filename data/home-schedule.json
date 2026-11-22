@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-22T00:01:00+02:00",
-  "featuredId": "liverpool-man-united-nov22",
+  "updatedAt": "2026-11-22T23:58:00+02:00",
+  "featuredId": "brentford-everton-nov23",
   "events": [
     {
       "id": "newcastle-arsenal-nov21",
@@ -151,41 +151,47 @@
     },
     {
       "id": "hull-brighton-nov22",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "22 Nov",
-      "time": "14:00 GMT",
-      "title": "Hull City vs Brighton",
+      "time": "Final",
+      "title": "Hull City 2-0 Brighton",
       "home": "Hull City",
       "away": "Brighton",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
+        "Verified final score",
+        "McBurnie scored twice in stoppage time",
+        "Premier League Matchweek 11"
       ],
       "homeLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+      "homeScore": "2",
+      "awayScore": "0"
     },
     {
       "id": "liverpool-man-united-nov22",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "22 Nov",
-      "time": "16:30 GMT",
-      "title": "Liverpool vs Man United",
+      "time": "Final",
+      "title": "Liverpool 4-0 Man United",
       "home": "Liverpool",
       "away": "Man United",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Today",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
+        "Verified final score",
+        "Liverpool scored four after an early red card",
+        "Premier League Matchweek 11"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+      "homeScore": "4",
+      "awayScore": "0"
     },
     {
       "id": "brentford-everton-nov23",
@@ -198,7 +204,7 @@
       "away": "Everton",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Upcoming",
+      "status": "Featured",
       "signals": [
         "Official Premier League fixture",
         "Matchweek 11"

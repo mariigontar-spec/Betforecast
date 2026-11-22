@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Newcastle 2-2 Arsenal</a><a class="sidebar-link-card" href="results.html">Chelsea 1-4 Leeds</a><a class="sidebar-link-card" href="match.html?id=liverpool-man-united-nov22">Liverpool–Man United · today</a><a class="sidebar-link-card" href="match.html?id=hull-brighton-nov22">Hull–Brighton · today</a><a class="sidebar-link-card" href="standings.html">Updated Premier League table</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Liverpool 4-0 Man United</a><a class="sidebar-link-card" href="results.html">Hull City 2-0 Brighton</a><a class="sidebar-link-card" href="results.html">Chelsea 1-4 Leeds</a><a class="sidebar-link-card" href="match.html?id=brentford-everton-nov23">Brentford–Everton · next</a><a class="sidebar-link-card" href="standings.html">Updated Premier League table</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Arsenal drew 2-2 at Newcastle but remain top on 28 points, while Leeds won 4-1 at Chelsea. Hull–Brighton and Mauricio Pochettino’s first Manchester United match at Liverpool are today’s remaining Premier League fixtures.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Liverpool beat ten-man Manchester United 4-0, while Hull scored twice in stoppage time to defeat Brighton 2-0. Arsenal remain top on 28 points; Brentford–Everton closes Matchweek 11 on Monday.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),

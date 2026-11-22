@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Seven Saturday fixtures are complete: Arsenal drew 2-2 at Newcastle and Leeds won 4-1 at Chelsea. Hull–Brighton and Liverpool–Manchester United take centre stage today.";
+        "Nine Matchweek 11 fixtures are complete: Liverpool beat Manchester United 4-0 and Hull stunned Brighton 2-0. Brentford–Everton closes the round on Monday.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Liverpool–Man United · 22 Nov · 16:30 GMT</span></div>
-        <div><strong>Results</strong><span>Seven Saturday fixtures complete</span></div>
+        <div><strong>Featured</strong><span>Brentford–Everton · 23 Nov · 20:00 GMT</span></div>
+        <div><strong>Results</strong><span>Liverpool 4-0 Man United · Hull 2-0 Brighton</span></div>
         <div><strong>EPL table</strong><span>Arsenal lead · 28 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Liverpool, Arsenal, Champions League";
+      input.placeholder = "Try: Brentford, Liverpool, Arsenal";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
+        <button type="button" data-query="Brentford Everton">Brentford–Everton</button>
         <button type="button" data-query="Liverpool Man United">Liverpool–Man United</button>
         <button type="button" data-query="Hull Brighton">Hull–Brighton</button>
-        <button type="button" data-query="Chelsea Leeds">Chelsea–Leeds</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=liverpool-man-united-nov22", title: "Liverpool vs Man United", detail: "22 Nov · Premier League · 16:30 GMT", tag: "Featured" },
-      { href: "match.html?id=hull-brighton-nov22", title: "Hull City vs Brighton", detail: "22 Nov · Premier League · 14:00 GMT", tag: "Today" },
-      { href: "match.html?id=brentford-everton-nov23", title: "Brentford vs Everton", detail: "23 Nov · Premier League · 20:00 GMT", tag: "Upcoming" },
-      { href: "standings.html", title: "Premier League · Matchweek 11", detail: "Seven results · checked 22 Nov", tag: "Table" },
+      { href: "match.html?id=brentford-everton-nov23", title: "Brentford vs Everton", detail: "23 Nov · Premier League · 20:00 GMT", tag: "Featured" },
+      { href: "results.html", title: "Liverpool 4-0 Man United", detail: "22 Nov · Premier League · Final", tag: "Result" },
+      { href: "results.html", title: "Hull City 2-0 Brighton", detail: "22 Nov · Premier League · Final", tag: "Result" },
+      { href: "standings.html", title: "Premier League · Matchweek 11", detail: "Nine results · checked 22 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {

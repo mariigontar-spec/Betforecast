@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Seven Matchweek 11 results in · Arsenal lead on 28 points · checked 22 Nov",
-      "insightText": "Saturday's seven Premier League results are reflected in every position, match, win, draw, loss, goal, goal-difference and points total. Recent contains all seven completed Matchweek 11 games. Upcoming contains Hull City–Brighton and Liverpool–Man United on 22 November, plus Brentford–Everton on 23 November.",
+      "insightTitle": "Nine Matchweek 11 results in · Arsenal lead on 28 points · checked 22 Nov",
+      "insightText": "Nine of ten Matchweek 11 fixtures are complete. Every position, match, win, draw, loss, goal, goal-difference and points total reflects results through 22 November. Recent contains all nine completed games; Upcoming begins with Brentford–Everton on 23 November and continues with Matchweek 12.",
       "table": [
         {
           "pos": 1,
@@ -32,22 +32,22 @@
         {
           "pos": 2,
           "team": "Brighton",
-          "played": 10,
+          "played": 11,
           "wins": 7,
           "draws": 1,
-          "losses": 2,
+          "losses": 3,
           "gf": 26,
-          "ga": 7,
+          "ga": 9,
           "points": 22,
           "form": [
             "W",
-            "W",
             "L",
             "W",
-            "W"
+            "W",
+            "L"
           ],
           "zone": "cl",
-          "gd": 19
+          "gd": 17
         },
         {
           "pos": 3,
@@ -71,6 +71,26 @@
         },
         {
           "pos": 4,
+          "team": "Liverpool",
+          "played": 11,
+          "wins": 6,
+          "draws": 3,
+          "losses": 2,
+          "gf": 18,
+          "ga": 10,
+          "points": 21,
+          "form": [
+            "W",
+            "W",
+            "L",
+            "W",
+            "W"
+          ],
+          "zone": "cl",
+          "gd": 8
+        },
+        {
+          "pos": 5,
           "team": "Bournemouth",
           "played": 11,
           "wins": 5,
@@ -84,26 +104,6 @@
             "W",
             "W",
             "W",
-            "W"
-          ],
-          "zone": "cl",
-          "gd": 4
-        },
-        {
-          "pos": 5,
-          "team": "Liverpool",
-          "played": 10,
-          "wins": 5,
-          "draws": 3,
-          "losses": 2,
-          "gf": 14,
-          "ga": 10,
-          "points": 18,
-          "form": [
-            "D",
-            "W",
-            "W",
-            "L",
             "W"
           ],
           "zone": "safe",
@@ -211,6 +211,26 @@
         },
         {
           "pos": 11,
+          "team": "Hull City",
+          "played": 11,
+          "wins": 3,
+          "draws": 5,
+          "losses": 3,
+          "gf": 13,
+          "ga": 11,
+          "points": 14,
+          "form": [
+            "L",
+            "D",
+            "D",
+            "L",
+            "W"
+          ],
+          "zone": "safe",
+          "gd": 2
+        },
+        {
+          "pos": 12,
           "team": "Aston Villa",
           "played": 11,
           "wins": 3,
@@ -230,7 +250,7 @@
           "gd": -3
         },
         {
-          "pos": 12,
+          "pos": 13,
           "team": "Newcastle",
           "played": 11,
           "wins": 3,
@@ -250,7 +270,7 @@
           "gd": -3
         },
         {
-          "pos": 13,
+          "pos": 14,
           "team": "Coventry City",
           "played": 11,
           "wins": 4,
@@ -268,26 +288,6 @@
           ],
           "zone": "safe",
           "gd": -8
-        },
-        {
-          "pos": 14,
-          "team": "Hull City",
-          "played": 10,
-          "wins": 2,
-          "draws": 5,
-          "losses": 3,
-          "gf": 11,
-          "ga": 11,
-          "points": 11,
-          "form": [
-            "D",
-            "L",
-            "D",
-            "D",
-            "L"
-          ],
-          "zone": "safe",
-          "gd": 0
         },
         {
           "pos": 15,
@@ -372,22 +372,22 @@
         {
           "pos": 19,
           "team": "Man United",
-          "played": 10,
+          "played": 11,
           "wins": 1,
           "draws": 5,
-          "losses": 4,
+          "losses": 5,
           "gf": 14,
-          "ga": 19,
+          "ga": 23,
           "points": 8,
           "form": [
             "D",
+            "L",
+            "L",
             "D",
-            "L",
-            "L",
-            "D"
+            "L"
           ],
           "zone": "relegation",
-          "gd": -5
+          "gd": -9
         },
         {
           "pos": 20,
@@ -411,6 +411,18 @@
         }
       ],
       "lastMatches": [
+        {
+          "time": "22 Nov",
+          "match": "Liverpool vs Man United",
+          "score": "4:0",
+          "status": "finished"
+        },
+        {
+          "time": "22 Nov",
+          "match": "Hull City vs Brighton",
+          "score": "2:0",
+          "status": "finished"
+        },
         {
           "time": "21 Nov",
           "match": "Newcastle vs Arsenal",
@@ -456,18 +468,58 @@
       ],
       "upcomingMatches": [
         {
-          "time": "22 Nov · 14:00",
-          "match": "Hull City vs Brighton",
-          "status": "upcoming"
-        },
-        {
-          "time": "22 Nov · 16:30",
-          "match": "Liverpool vs Man United",
-          "status": "upcoming"
-        },
-        {
           "time": "23 Nov · 20:00",
           "match": "Brentford vs Everton",
+          "status": "upcoming"
+        },
+        {
+          "time": "27 Nov · 20:00",
+          "match": "Nottm Forest vs Chelsea",
+          "status": "upcoming"
+        },
+        {
+          "time": "28 Nov · 15:00",
+          "match": "Leeds United vs Coventry City",
+          "status": "upcoming"
+        },
+        {
+          "time": "28 Nov · 15:00",
+          "match": "Man United vs Brentford",
+          "status": "upcoming"
+        },
+        {
+          "time": "28 Nov · 17:30",
+          "match": "Ipswich Town vs Aston Villa",
+          "status": "upcoming"
+        },
+        {
+          "time": "29 Nov · 12:00",
+          "match": "Everton vs Liverpool",
+          "status": "upcoming"
+        },
+        {
+          "time": "29 Nov · 14:05",
+          "match": "Brighton vs Newcastle",
+          "status": "upcoming"
+        },
+        {
+          "time": "29 Nov · 14:05",
+          "match": "Crystal Palace vs Hull City",
+          "status": "upcoming"
+        },
+        {
+          "time": "29 Nov · 14:05",
+          "match": "Fulham vs Bournemouth",
+          "status": "upcoming"
+        },
+        {
+          "time": "29 Nov · 14:05",
+          "match": "Sunderland vs Tottenham",
+          "status": "upcoming"
+        },
+        {
+          "time": "29 Nov · 16:30",
+          "match": "Arsenal vs Man City",
           "status": "upcoming"
         }
       ]
