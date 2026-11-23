@@ -48,7 +48,7 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Brentford 3-0 Everton</a><a class="sidebar-link-card" href="results.html">Liverpool 4-0 Man United</a><a class="sidebar-link-card" href="match.html?id=forest-chelsea-nov27">Forest–Chelsea · 27 Nov</a><a class="sidebar-link-card" href="match.html?id=arsenal-man-city-nov29">Arsenal–Man City · 29 Nov</a><a class="sidebar-link-card" href="standings.html">Matchweek 11 final table</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Brentford 4-0 Everton</a><a class="sidebar-link-card" href="results.html">Liverpool 4-0 Man United</a><a class="sidebar-link-card" href="match.html?id=forest-chelsea-nov27">Forest–Chelsea · 27 Nov</a><a class="sidebar-link-card" href="match.html?id=arsenal-man-city-nov29">Arsenal–Man City · 29 Nov</a><a class="sidebar-link-card" href="standings.html">Matchweek 11 final table</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
     f.innerHTML = `<strong>Latest verified sports focus</strong><p>Brentford beat ten-man Everton 3-0 and climbed to sixth, completing Matchweek 11. Arsenal lead on 28 points; the next round opens with Nottingham Forest–Chelsea on 27 November.</p>`;

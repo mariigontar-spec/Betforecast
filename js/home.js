@@ -38,13 +38,13 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Matchweek 11 is complete: Brentford beat Everton 3-0 to climb to sixth. The Premier League returns with Nottingham Forest–Chelsea on Friday.";
+        "Matchweek 11 is complete: Brentford beat Everton 4-0 to climb to sixth. The Premier League returns with Nottingham Forest–Chelsea on Friday.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
         <div><strong>Featured</strong><span>Nottm Forest–Chelsea · 27 Nov · 20:00 GMT</span></div>
-        <div><strong>Latest result</strong><span>Brentford 3-0 Everton</span></div>
+        <div><strong>Latest result</strong><span>Brentford 4-0 Everton</span></div>
         <div><strong>EPL table</strong><span>Arsenal lead · 28 points</span></div>
       `;
     }

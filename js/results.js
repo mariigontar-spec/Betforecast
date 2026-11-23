@@ -4,7 +4,7 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
-    { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Brentford", awayName: "Everton", homeGoals: "3", awayGoals: "0", venue: "Gtech Community Stadium", date: "23 Nov", href: "standings.html" },
+    { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Brentford", awayName: "Everton", homeGoals: "4", awayGoals: "0", venue: "Gtech Community Stadium", date: "23 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Liverpool", awayName: "Man United", homeGoals: "4", awayGoals: "0", venue: "Anfield", date: "22 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Hull City", awayName: "Brighton", homeGoals: "2", awayGoals: "0", venue: "MKM Stadium", date: "22 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Newcastle", awayName: "Arsenal", homeGoals: "2", awayGoals: "2", venue: "St James’ Park", date: "21 Nov", href: "standings.html" },

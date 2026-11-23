@@ -199,7 +199,7 @@
       "sport": "Football",
       "date": "23 Nov",
       "time": "Final",
-      "title": "Brentford 3-0 Everton",
+      "title": "Brentford 4-0 Everton",
       "home": "Brentford",
       "away": "Everton",
       "competition": "Premier League",
@@ -209,11 +209,12 @@
         "Verified final score",
         "Lewis-Potter scored twice",
         "Janelt added the third",
+        "Carvalho scored in stoppage time",
         "Premier League Matchweek 11"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
-      "homeScore": "3",
+      "homeScore": "4",
       "awayScore": "0"
     },
     {

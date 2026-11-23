@@ -7,7 +7,7 @@
       "name": "Premier League",
       "season": "2026/27 season",
       "insightTitle": "Matchweek 11 complete · Arsenal lead on 28 points · checked 23 Nov",
-      "insightText": "All ten Matchweek 11 fixtures are complete. Brentford's 3-0 win over Everton is reflected in every position, match, win, draw, loss, goal, goal-difference and points total. Recent contains the completed round; Upcoming contains all ten Matchweek 12 fixtures from 27 to 29 November.",
+      "insightText": "All ten Matchweek 11 fixtures are complete. Brentford's 4-0 win over Everton is reflected in every position, match, win, draw, loss, goal, goal-difference and points total. Recent contains the completed round; Upcoming contains all ten Matchweek 12 fixtures from 27 to 29 November.",
       "table": [
         {
           "pos": 1,
@@ -116,7 +116,7 @@
           "wins": 4,
           "draws": 5,
           "losses": 2,
-          "gf": 19,
+          "gf": 20,
           "ga": 11,
           "points": 17,
           "form": [
@@ -127,7 +127,7 @@
             "W"
           ],
           "zone": "safe",
-          "gd": 8
+          "gd": 9
         },
         {
           "pos": 7,
@@ -177,7 +177,7 @@
           "draws": 4,
           "losses": 3,
           "gf": 12,
-          "ga": 13,
+          "ga": 14,
           "points": 16,
           "form": [
             "W",
@@ -187,7 +187,7 @@
             "L"
           ],
           "zone": "safe",
-          "gd": -1
+          "gd": -2
         },
         {
           "pos": 10,
@@ -414,7 +414,7 @@
         {
           "time": "23 Nov",
           "match": "Brentford vs Everton",
-          "score": "3:0",
+          "score": "4:0",
           "status": "finished"
         },
         {
