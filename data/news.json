@@ -2,16 +2,16 @@
   {
     "id": "1",
     "category": "Football",
-    "title": "Match of the Day",
-    "excerpt": "Highlights of Liverpool v Manchester United and Hull City v Brighton.",
-    "time": "1 min ago",
-    "date": "2026-11-22T23:22:56.000Z",
+    "title": "Did Liverpool 'get lucky' with red card decision?",
+    "excerpt": "Match of the Day pundits Danny Murphy and Ashley Young believe that Liverpool were perhaps \"lucky\" when Manchester United's Leny Yoro was sent off in the 8th-minute at Anfield.",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:59:59.000Z",
     "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0pp3162.jpg",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/97fd/live/e0c07400-e6c9-11f1-99b6-a35a62fa4264.jpg",
     "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/iplayer/live/bbcone?at_medium=RSS&at_campaign=rss",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cq23jmklrj33o?at_medium=RSS&at_campaign=rss",
     "content": [
-      "Highlights of Liverpool v Manchester United and Hull City v Brighton.",
+      "Match of the Day pundits Danny Murphy and Ashley Young believe that Liverpool were perhaps \"lucky\" when Manchester United's Leny Yoro was sent off in the 8th-minute at Anfield.",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
@@ -20,9 +20,333 @@
   {
     "id": "2",
     "category": "Football",
+    "title": "How 'outstanding' Tzolakis kept Brighton at bay",
+    "excerpt": "Match of the Day pundit Danny Murphy looks at how Hull goalkeeper Konstantinos Tzolakis was able to thwart high-flying Brighton in their 2-0 win over the Seagulls at the MKM Stadium.",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:59:57.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ee71/live/9b96d180-e6ce-11f1-99a1-253766e7ad8b.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cm702nzyl8pzo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Match of the Day pundit Danny Murphy looks at how Hull goalkeeper Konstantinos Tzolakis was able to thwart high-flying Brighton in their 2-0 win over the Seagulls at the MKM Stadium.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "3",
+    "category": "Football",
+    "title": "Poch blames 'circumstances' in painful Man United loss to Liverpool",
+    "excerpt": "Mauricio Pochettino called for understanding of the \"circumstances\" that led to Manchester United suffering a 4-0 defeat Sunday against Liverpool in his first game as head coach.",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:57:59.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/liverpool.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50563730/pochettino-painful-man-united-loss-liverpool",
+    "content": [
+      "Mauricio Pochettino called for understanding of the \"circumstances\" that led to Manchester United suffering a 4-0 defeat Sunday against Liverpool in his first game as head coach.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "4",
+    "category": "Football",
+    "title": "Cincinnati stuns Shield-winners Nashville to start best-of-3 series",
+    "excerpt": "Roman Celentano made six saves for his fourth clean sheet of the season as FC Cincinnati took advantage of an early own goal to earn a 1-0 victory over Nashville SC on Sunday.",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:57:59.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/report/_/gameId/401933731",
+    "content": [
+      "Roman Celentano made six saves for his fourth clean sheet of the season as FC Cincinnati took advantage of an early own goal to earn a 1-0 victory over Nashville SC on Sunday.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "5",
+    "category": "Football",
+    "title": "Milan into top four as classy Pulisic solo goal caps Serie A rout",
+    "excerpt": "AC Milan racked up their biggest win of the season under Ruben Amorim as Frosinone were beaten 5-1 at San Siro on Sunday.",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:57:59.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/report/_/gameId/401874989",
+    "content": [
+      "AC Milan racked up their biggest win of the season under Ruben Amorim as Frosinone were beaten 5-1 at San Siro on Sunday.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "6",
+    "category": "Football",
+    "title": "Reports: Dynamo's Herrera charged with DWI, club aware of 'incident'",
+    "excerpt": "Houston Dynamo FC midfielder Héctor Herrera was charged with driving while intoxicated on Saturday in Montgomery County, Texas, according to multiple reports.",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:57:59.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50566274/dynamo-herrera-charged-dwi-club-aware",
+    "content": [
+      "Houston Dynamo FC midfielder Héctor Herrera was charged with driving while intoxicated on Saturday in Montgomery County, Texas, according to multiple reports.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "7",
+    "category": "Football",
+    "title": "Liverpool trounce 10-man United in Pochettino's first game in charge",
+    "excerpt": "Mauricio Pochettino's Manchester United reign got off to a miserable start as Liverpool punished Leny Yoro's red card with a pair of early goals on their way to a comprehensive 4-0 win against their relegation-threatened rivals.",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:57:59.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/liverpool.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/report/_/gameId/401878755",
+    "content": [
+      "Mauricio Pochettino's Manchester United reign got off to a miserable start as Liverpool punished Leny Yoro's red card with a pair of early goals on their way to a comprehensive 4-0 win against their relegation-threatened rivals.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "8",
+    "category": "Football",
+    "title": "Villarreal refute claims Pépé's eye surgery result of viewing solar eclipse",
+    "excerpt": "Villarreal have denied that Nicolas Pépé underwent eye surgery as a result of viewing the solar eclipse.",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:57:59.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50564664/nicolas-pepe-eclipse-villarreal",
+    "content": [
+      "Villarreal have denied that Nicolas Pépé underwent eye surgery as a result of viewing the solar eclipse.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "9",
+    "category": "Football",
+    "title": "Columbus coach says Messi should've got red card: 'Everyone knows'",
+    "excerpt": "Columbus Crew head coach Laurent Courtois said Lionel Messi should have received a red card for taking a throw-in straight into the face of Gonzalo Tapia.",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:57:59.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50558763/lionel-messi-throw-red-card-inter-miami-columbus-crew",
+    "content": [
+      "Columbus Crew head coach Laurent Courtois said Lionel Messi should have received a red card for taking a throw-in straight into the face of Gonzalo Tapia.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "10",
+    "category": "Football",
+    "title": "Rodman on 3rd straight NWSL Championship loss: 'This one hurts way worse'",
+    "excerpt": "Trinity Rodman said she was proud of the Washington Spirit's season after a third straight NWSL Championship loss but acknowledged that this one hurt the most.",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:57:59.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50559416/trinity-rodman-nwsl-championship-washington-spirit",
+    "content": [
+      "Trinity Rodman said she was proud of the Washington Spirit's season after a third straight NWSL Championship loss but acknowledged that this one hurt the most.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "11",
+    "category": "Football",
+    "title": "⚽ Last time GTA was released: Peak Messi vs. Ronaldo, Moyes at Man Utd",
+    "excerpt": "As Grand Theft Auto VI is finally unleashed, here is what was happening in the world of soccer when the previous game was released 13 years ago",
+    "time": "5 hrs ago",
+    "date": "2026-11-22T23:57:59.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50530231/gta-vi-messi-ronaldo-manchester-united",
+    "content": [
+      "As Grand Theft Auto VI is finally unleashed, here is what was happening in the world of soccer when the previous game was released 13 years ago",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "12",
+    "category": "Football",
+    "title": "A 'wow' player - why Ngumoha is already a Liverpool game-changer",
+    "excerpt": "Match of the Day pundit Danny Murphy explains how Rio Ngumoha showed everyone what he is capable of in Liverpool's 4-0 win over Manchester United.",
+    "time": "6 hrs ago",
+    "date": "2026-11-22T23:20:16.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/81a2/live/669edd40-e6c1-11f1-99a1-253766e7ad8b.png",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmn80y5w84qqo?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Match of the Day pundit Danny Murphy explains how Rio Ngumoha showed everyone what he is capable of in Liverpool's 4-0 win over Manchester United.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "13",
+    "category": "Football",
+    "title": "Football Daily",
+    "excerpt": "Dale Johnson & Umir Irfan join Rick & Lloyd after Man Utd’s 4-0 defeat at Liverpool.",
+    "time": "6 hrs ago",
+    "date": "2026-11-22T23:14:00.000Z",
+    "readTime": "2 min read",
+    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0pntn4g.jpg",
+    "source": "BBC Football",
+    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0ppcw2v?at_medium=RSS&at_campaign=rss",
+    "content": [
+      "Dale Johnson & Umir Irfan join Rick & Lloyd after Man Utd’s 4-0 defeat at Liverpool.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: BBC Football."
+    ]
+  },
+  {
+    "id": "14",
+    "category": "Football",
+    "title": "Kansas City's NWSL title shows investing in women's soccer pays off",
+    "excerpt": "Only a small group of clubs now truly compete for the NWSL Championship. Kansas City Current is one of them, and now it's a champion for the first time.",
+    "time": "7 hrs ago",
+    "date": "2026-11-22T22:21:24.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/title-race.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50561566/kansas-city-nwsl-championship-final-washington-spirit",
+    "content": [
+      "Only a small group of clubs now truly compete for the NWSL Championship. Kansas City Current is one of them, and now it's a champion for the first time.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "15",
+    "category": "Football",
+    "title": "KC finally, and deservedly, breaks NWSL title drought",
+    "excerpt": "Kansas City Current's first title was a story of conviction and resilience.",
+    "time": "7 hrs ago",
+    "date": "2026-11-22T22:21:24.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/title-race.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50558351/kansas-city-current-breaks-nwsl-championship-drought",
+    "content": [
+      "Kansas City Current's first title was a story of conviction and resilience.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "16",
+    "category": "Football",
+    "title": "Arsenal's near-collapse at Newcastle a wake-up call -- and a missed opportunity",
+    "excerpt": "Arsenal could have moved eight points clear at the top of the Premier League. Instead, they completely lost their way in the second half vs. Newcastle.",
+    "time": "7 hrs ago",
+    "date": "2026-11-22T22:20:11.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/arsenal.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50553100/arsenal-collapse-newcastle-premier-league",
+    "content": [
+      "Arsenal could have moved eight points clear at the top of the Premier League. Instead, they completely lost their way in the second half vs. Newcastle.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "17",
+    "category": "Football",
+    "title": "Man City at a crossroads as a shell of themselves",
+    "excerpt": "When Man City can't beat Fulham -- a team they had beaten 20 times in a row entering Saturday -- you know they're struggling.",
+    "time": "7 hrs ago",
+    "date": "2026-11-22T22:20:11.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/default-1.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50550244/man-city-fulham-premier-league-erling-haaland-maresca",
+    "content": [
+      "When Man City can't beat Fulham -- a team they had beaten 20 times in a row entering Saturday -- you know they're struggling.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "18",
+    "category": "Football",
+    "title": "Under pressure: Is time running out for Arsenal boss Renee Slegers?",
+    "excerpt": "After Arsenal again failed to win at home, pressure is building on manager Renee Slegers.",
+    "time": "7 hrs ago",
+    "date": "2026-11-22T22:18:53.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/arsenal.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50563366/arsenal-renee-slegers-west-ham-women-super-league",
+    "content": [
+      "After Arsenal again failed to win at home, pressure is building on manager Renee Slegers.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "19",
+    "category": "Football",
+    "title": "Mauricio Pochettino gets reality check as Liverpool ruin his Man United debut",
+    "excerpt": "Mauricio Pochettino began his Manchester United career with a nightmare as his Red Devils went to Anfield and were routed 4-0 by Liverpool on Sunday.",
+    "time": "7 hrs ago",
+    "date": "2026-11-22T21:58:50.000Z",
+    "readTime": "2 min read",
+    "image": "assets/news/liverpool.jpg",
+    "source": "ESPN Soccer",
+    "sourceUrl": "https://www.espn.com/soccer/story/_/id/50563684/liverpool-ruin-pochettino-manchester-united-debut",
+    "content": [
+      "Mauricio Pochettino began his Manchester United career with a nightmare as his Red Devils went to Anfield and were routed 4-0 by Liverpool on Sunday.",
+      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
+      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
+      "Source feed: ESPN Soccer."
+    ]
+  },
+  {
+    "id": "20",
+    "category": "Football",
     "title": "Fifa to confirm UK as host for 2035 Women's World Cup",
     "excerpt": "Fifa is set to confirm on Monday that a first football World Cup will be hosted in the United Kingdom since 1966.",
-    "time": "1 hr ago",
+    "time": "7 hrs ago",
     "date": "2026-11-22T21:44:37.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/557b/live/9cccbb70-e6b8-11f1-bb92-6d8a0512bfb0.jpg",
@@ -36,11 +360,11 @@
     ]
   },
   {
-    "id": "3",
+    "id": "21",
     "category": "Football",
     "title": "'World's best could've lost 4-0' - but should Man Utd have done more at Anfield?",
     "excerpt": "Mauricio Pochettino believes even the best team in the world could have conceded four goals at Liverpool in Manchester United's circumstances - but should the Red Devils have done more in defeat?",
-    "time": "1 hr ago",
+    "time": "7 hrs ago",
     "date": "2026-11-22T21:36:00.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e813/live/77008940-e6bc-11f1-a094-5fdc692f3e33.jpg",
@@ -54,11 +378,11 @@
     ]
   },
   {
-    "id": "4",
+    "id": "22",
     "category": "Football",
     "title": "Chaotic week, nightmare start and huge reality check for Pochettino",
     "excerpt": "Mauricio Pochettino's reign as Manchester United boss could barely have got off to a more chastening start, writes Simon Stone.",
-    "time": "2 hrs ago",
+    "time": "8 hrs ago",
     "date": "2026-11-22T21:22:10.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/de6c/live/aa7667d0-e6bd-11f1-a094-5fdc692f3e33.jpg",
@@ -72,11 +396,11 @@
     ]
   },
   {
-    "id": "5",
+    "id": "23",
     "category": "Football",
     "title": "Pepe did not injure eyes staring at sun, say Villarreal",
     "excerpt": "Villarreal say reports striker Nicolas Pepe needed eye surgery because he stared directly at the solar eclipse are \"completely false\".",
-    "time": "2 hrs ago",
+    "time": "8 hrs ago",
     "date": "2026-11-22T21:04:55.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fac4/live/e82d54b0-e6b5-11f1-a367-d7fb45f4e865.jpg",
@@ -90,11 +414,11 @@
     ]
   },
   {
-    "id": "6",
+    "id": "24",
     "category": "Football",
     "title": "Man Utd plotting Toney move - Monday's gossip",
     "excerpt": "Manchester United eye move for Al-Ahli striker Ivan Toney, Fulham hold contract talks with Calvin Bassey and PSG could step up pursuit of Eli Junior Kroupi.",
-    "time": "2 hrs ago",
+    "time": "8 hrs ago",
     "date": "2026-11-22T21:04:15.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/174b/live/54b51b60-e6aa-11f1-99b6-a35a62fa4264.png",
@@ -108,11 +432,11 @@
     ]
   },
   {
-    "id": "7",
+    "id": "25",
     "category": "Football",
     "title": "McBurnie stoppage-time double earns Hull win over 10-man Brighton",
     "excerpt": "Oli McBurnie's stoppage-time double earns victory for Hull City against second-placed Brighton in the Premier League.",
-    "time": "3 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-11-22T19:59:38.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/29c3/live/e536fa10-e69f-11f1-a094-5fdc692f3e33.jpg",
@@ -126,11 +450,11 @@
     ]
   },
   {
-    "id": "8",
+    "id": "26",
     "category": "Football",
     "title": "Ngumoha stars as Liverpool thrash 10-man Man Utd",
     "excerpt": "Mauricio Pochettino's reign as Manchester United head coach begins in desperate fashion as his team are thrashed by rivals Liverpool to remain in the Premier League relegation zone.",
-    "time": "3 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-11-22T19:59:35.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a55a/live/4cb54b80-e6a8-11f1-99a1-253766e7ad8b.jpg",
@@ -144,11 +468,11 @@
     ]
   },
   {
-    "id": "9",
+    "id": "27",
     "category": "Football",
     "title": "Charlton earn maiden WSL point against Villa",
     "excerpt": "Charlton earn their first WSL point after 11 matches with a hard-fought draw against Aston Villa, who withstand late pressure from the hosts to avoid defeat.",
-    "time": "3 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-11-22T19:50:45.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5929/live/d677bad0-e6a1-11f1-99b6-a35a62fa4264.jpg",
@@ -162,11 +486,11 @@
     ]
   },
   {
-    "id": "10",
+    "id": "28",
     "category": "Football",
     "title": "Own-goal mishap gifts Brighton first away victory",
     "excerpt": "Brighton secured their first Women's Super League away win of the season thanks to a bizarre own goal from Everton's Maz Pacheco.",
-    "time": "3 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-11-22T19:50:33.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/389a/live/5ab0e970-e6a2-11f1-99b6-a35a62fa4264.jpg",
@@ -180,11 +504,11 @@
     ]
   },
   {
-    "id": "11",
+    "id": "29",
     "category": "Football",
     "title": "Iraola 'enjoyed' big win over Man Utd",
     "excerpt": "Liverpool head coach Andoni Iraola is pleased with his side's performance in their dominant win over Manchester United although he says that his side can still play better.",
-    "time": "4 hrs ago",
+    "time": "9 hrs ago",
     "date": "2026-11-22T19:25:21.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fe75/live/c00715a0-e6a8-11f1-99a1-253766e7ad8b.jpg",
@@ -198,11 +522,11 @@
     ]
   },
   {
-    "id": "12",
+    "id": "30",
     "category": "Football",
     "title": "From conceding seven to Hull heroics - how Tzolakis recovered to defy Brighton",
     "excerpt": "Nine days after playing for Greece in a nightmare 7-0 loss, keeper Konstantinos Tzolakis plays a pivotal role in Hull's Premier League win against Brighton.",
-    "time": "4 hrs ago",
+    "time": "10 hrs ago",
     "date": "2026-11-22T19:03:32.000Z",
     "readTime": "2 min read",
     "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d1b0/live/8817d730-e697-11f1-99b6-a35a62fa4264.jpg",
@@ -210,330 +534,6 @@
     "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cm4gn7npqe8yo?at_medium=RSS&at_campaign=rss",
     "content": [
       "Nine days after playing for Greece in a nightmare 7-0 loss, keeper Konstantinos Tzolakis plays a pivotal role in Hull's Premier League win against Brighton.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "13",
-    "category": "Football",
-    "title": "Pochettino on 'painful' defeat in first game as Man Utd boss",
-    "excerpt": "Manchester United's new head coach Mauricio Pochettino says his side must transform \"anger\" from their thumping at the hands of Liverpool into \"energy\" to improve under his reign.",
-    "time": "4 hrs ago",
-    "date": "2026-11-22T19:03:24.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7609/live/a91923c0-e6a7-11f1-a094-5fdc692f3e33.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c8p3vyyg4d6vo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Manchester United's new head coach Mauricio Pochettino says his side must transform \"anger\" from their thumping at the hands of Liverpool into \"energy\" to improve under his reign.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "14",
-    "category": "Football",
-    "title": "Yoro sees red as Ngumoha shines - Liverpool v Man Utd player ratings",
-    "excerpt": "How Liverpool and Manchester United's players rated following their Premier League match.",
-    "time": "5 hrs ago",
-    "date": "2026-11-22T18:28:51.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6d14/live/a0909ae0-e6b0-11f1-99a1-253766e7ad8b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c933gzxk66yyo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "How Liverpool and Manchester United's players rated following their Premier League match.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "15",
-    "category": "Football",
-    "title": "The red card that changed Liverpool-Man Utd: correct call?",
-    "excerpt": "Leny Yoro's red card after eight minutes changed Liverpool v Manchester United - did officials make the correct call?",
-    "time": "5 hrs ago",
-    "date": "2026-11-22T17:55:54.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9413/live/785f7370-e6b0-11f1-99b6-a35a62fa4264.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cq7827p8emmxo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Leny Yoro's red card after eight minutes changed Liverpool v Manchester United - did officials make the correct call?",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "16",
-    "category": "Football",
-    "title": "Spurs deny Man City top spot with statement win",
-    "excerpt": "Despite taking an early lead through Khadija Shaw, Manchester City suffer a second consecutive defeat as Spurs earn an impressive victory and deny them the chance to return to the top of the table.",
-    "time": "5 hrs ago",
-    "date": "2026-11-22T17:54:36.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1e34/live/d35df9b0-e68b-11f1-99b6-a35a62fa4264.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/c9vg2112evvdo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Despite taking an early lead through Khadija Shaw, Manchester City suffer a second consecutive defeat as Spurs earn an impressive victory and deny them the chance to return to the top of the table.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "17",
-    "category": "Football",
-    "title": "Man Utd score dramatic late winner to extend record run",
-    "excerpt": "Simi Awujo's last-gasp winner caps a remarkable Manchester United comeback at Birmingham, securing a dramatic victory and stretching the club's record unbeaten run to 14 matches.",
-    "time": "5 hrs ago",
-    "date": "2026-11-22T17:54:32.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fe89/live/ca5f8910-e68a-11f1-99a1-253766e7ad8b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cm0rkzzyl2ego?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Simi Awujo's last-gasp winner caps a remarkable Manchester United comeback at Birmingham, securing a dramatic victory and stretching the club's record unbeaten run to 14 matches.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "18",
-    "category": "Football",
-    "title": "Holders Celtic win 17-0 in Women's Scottish Cup",
-    "excerpt": "Holders Celtic as well as Rangers, Glasgow City, Hearts, Montrose, Aberdeen and Falkirk progress with big wins in the Women's Scottish Cup.",
-    "time": "5 hrs ago",
-    "date": "2026-11-22T17:53:41.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2a64/live/b7373ba0-e692-11f1-936e-1fd1d31671db.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c8zx91z9xe9yo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Holders Celtic as well as Rangers, Glasgow City, Hearts, Montrose, Aberdeen and Falkirk progress with big wins in the Women's Scottish Cup.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "19",
-    "category": "Football",
-    "title": "Big wins as Celtic, Rangers, City & Hearts progress",
-    "excerpt": "Holders Celtic as well as Rangers, Glasgow City, Hearts, Montrose, Aberdeen and Falkirk progress with big wins in the Women's Scottish Cup.",
-    "time": "5 hrs ago",
-    "date": "2026-11-22T17:53:41.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2a64/live/b7373ba0-e692-11f1-936e-1fd1d31671db.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c8zx91z9xe9yo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Holders Celtic as well as Rangers, Glasgow City, Hearts, Montrose, Aberdeen and Falkirk progress with big wins in the Women's Scottish Cup.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "20",
-    "category": "Football",
-    "title": "Holders Celtic win 17-0 in Scottish Cup - Rangers, Hearts, City also through",
-    "excerpt": "Holders Celtic as well as Rangers, Glasgow City, Hearts, Montrose, Aberdeen and Falkirk progress with big wins in the Women's Scottish Cup.",
-    "time": "5 hrs ago",
-    "date": "2026-11-22T17:53:41.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2a64/live/b7373ba0-e692-11f1-936e-1fd1d31671db.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c8zx91z9xe9yo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Holders Celtic as well as Rangers, Glasgow City, Hearts, Montrose, Aberdeen and Falkirk progress with big wins in the Women's Scottish Cup.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "21",
-    "category": "Football",
-    "title": "Podcast: Premiership review, Ross County, Dumbarton & Largs Thistle",
-    "excerpt": "SPFL review plus Ross County's Stuart Kettlewell, Dumbarton's new manager & Largs Thistle",
-    "time": "5 hrs ago",
-    "date": "2026-11-22T17:40:00.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0gf9mfx.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sounds/play/p0ppch4v?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "SPFL review plus Ross County's Stuart Kettlewell, Dumbarton's new manager & Largs Thistle",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "22",
-    "category": "Football",
-    "title": "Arsenal frustrations grow as winless home run continues",
-    "excerpt": "Arsenal remain without a home win in the WSL as they play out a goalless draw with West Ham, increasing the pressure on Renee Slegers.",
-    "time": "5 hrs ago",
-    "date": "2026-11-22T17:30:45.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/eba6/live/e2a8c430-e696-11f1-a094-5fdc692f3e33.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cm8e0pdw70d8o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Arsenal remain without a home win in the WSL as they play out a goalless draw with West Ham, increasing the pressure on Renee Slegers.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "23",
-    "category": "Football",
-    "title": "Jakirovic full of praise for Tzolakis performance",
-    "excerpt": "Hull head coach Sergej Jakirovic is pleased with his side's \"precise\" counter-attacking to earn a victory over Brighton, and describes goalkeeper Konstantinos Tzolakis' performance as \"unbelievable.\"",
-    "time": "6 hrs ago",
-    "date": "2026-11-22T17:18:07.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bb36/live/8e08d630-e697-11f1-a094-5fdc692f3e33.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/videos/cqz0k335d0njo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Hull head coach Sergej Jakirovic is pleased with his side's \"precise\" counter-attacking to earn a victory over Brighton, and describes goalkeeper Konstantinos Tzolakis' performance as \"unbelievable.\"",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "24",
-    "category": "Football",
-    "title": "'Rolls-Royce' Iqbal's 'dream' journey from Old Trafford to Tannadice",
-    "excerpt": "Zidane Iqbal is starting to live up to his famous name and wowing Scottish Premiership fans after his move to Dundee United.",
-    "time": "6 hrs ago",
-    "date": "2026-11-22T17:00:01.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cbe7/live/00b578f0-e693-11f1-99b6-a35a62fa4264.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cwj05z6npze4o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Zidane Iqbal is starting to live up to his famous name and wowing Scottish Premiership fans after his move to Dundee United.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "25",
-    "category": "Football",
-    "title": "Spurs 'a match for anyone' as win at Man City boosts European hopes",
-    "excerpt": "Women's Champions League qualification may have seemed fanciful for Tottenham at the start of the season - but they are firmly in the mix after winning at Manchester City.",
-    "time": "7 hrs ago",
-    "date": "2026-11-22T16:25:35.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4747/live/e517d950-e69f-11f1-99a1-253766e7ad8b.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/c6n901w453nlo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Women's Champions League qualification may have seemed fanciful for Tottenham at the start of the season - but they are firmly in the mix after winning at Manchester City.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "26",
-    "category": "Football",
-    "title": "PSG's Doue to have surgery on ruptured ACL",
-    "excerpt": "Paris St-Germain forward Desire Doue will have surgery later this month after rupturing the anterior cruciate ligament in his right knee.",
-    "time": "7 hrs ago",
-    "date": "2026-11-22T15:50:05.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fb0e/live/e990a750-e68b-11f1-936e-1fd1d31671db.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cw0k6x0764ero?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Paris St-Germain forward Desire Doue will have surgery later this month after rupturing the anterior cruciate ligament in his right knee.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "27",
-    "category": "Football",
-    "title": "Frick delivers on 'heavy metal football' promise",
-    "excerpt": "Mario Frick aimed for \"heavy metal football\" after taking over from Aberdeen and travelling fans were served up quite the concert at Rugby Park.",
-    "time": "10 hrs ago",
-    "date": "2026-11-22T13:12:42.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f987/live/a16bfad0-e670-11f1-a5bc-ddaec99ca2c4.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cmn50x95vv73o?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Mario Frick aimed for \"heavy metal football\" after taking over from Aberdeen and travelling fans were served up quite the concert at Rugby Park.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "28",
-    "category": "Football",
-    "title": "Manager ins and outs - 2026-27",
-    "excerpt": "BBC Sport tracks all the manager ins and outs in the Premier League, Scottish Premiership, Women's Super League, English Football League and National League.",
-    "time": "11 hrs ago",
-    "date": "2026-11-22T12:02:00.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/379d/live/d9deae90-d832-11f1-87c3-29e1cdce63c6.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cd94713djgyo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "BBC Sport tracks all the manager ins and outs in the Premier League, Scottish Premiership, Women's Super League, English Football League and National League.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "29",
-    "category": "Football",
-    "title": "Watford seek sixth manager in 18 months after sacking Dionisi",
-    "excerpt": "Watford sack head coach Alessio Dionisi after 18 games in charge.",
-    "time": "11 hrs ago",
-    "date": "2026-11-22T12:00:45.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e672/live/da29eaa0-adfc-11f1-8169-6fdea7f79791.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cyvz6r4g1jqo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Watford sack head coach Alessio Dionisi after 18 games in charge.",
-      "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
-      "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
-      "Source feed: BBC Football."
-    ]
-  },
-  {
-    "id": "30",
-    "category": "Football",
-    "title": "Rochdale sack boss Watson after Northampton defeat",
-    "excerpt": "Rochdale sack head coach Ian Watson after only five months at the League Two club",
-    "time": "12 hrs ago",
-    "date": "2026-11-22T10:55:05.000Z",
-    "readTime": "2 min read",
-    "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9f89/live/28d78d60-e660-11f1-8ebd-1d2173202734.jpg",
-    "source": "BBC Football",
-    "sourceUrl": "https://www.bbc.co.uk/sport/football/articles/cj62pz1v7zdwo?at_medium=RSS&at_campaign=rss",
-    "content": [
-      "Rochdale sack head coach Ian Watson after only five months at the League Two club",
       "This cached summary is stored locally so the website can load news quickly without asking every visitor to call an external API.",
       "For forecasting context, stories like this may affect squad availability, team momentum, tactical expectations, and market volatility.",
       "Source feed: BBC Football."
