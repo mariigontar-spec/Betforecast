@@ -4,6 +4,7 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Brentford", awayName: "Everton", homeGoals: "3", awayGoals: "0", venue: "Gtech Community Stadium", date: "23 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Liverpool", awayName: "Man United", homeGoals: "4", awayGoals: "0", venue: "Anfield", date: "22 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Hull City", awayName: "Brighton", homeGoals: "2", awayGoals: "0", venue: "MKM Stadium", date: "22 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Newcastle", awayName: "Arsenal", homeGoals: "2", awayGoals: "2", venue: "St James’ Park", date: "21 Nov", href: "standings.html" },
@@ -296,7 +297,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 22 Nov 2026");
+    setStatus("World sports results · checked 23 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");

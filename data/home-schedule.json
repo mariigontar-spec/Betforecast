@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-22T23:58:00+02:00",
-  "featuredId": "brentford-everton-nov23",
+  "updatedAt": "2026-11-23T23:59:00+02:00",
+  "featuredId": "forest-chelsea-nov27",
   "events": [
     {
       "id": "newcastle-arsenal-nov21",
@@ -195,22 +195,207 @@
     },
     {
       "id": "brentford-everton-nov23",
-      "type": "event",
+      "type": "result",
       "sport": "Football",
       "date": "23 Nov",
-      "time": "20:00 GMT",
-      "title": "Brentford vs Everton",
+      "time": "Final",
+      "title": "Brentford 3-0 Everton",
       "home": "Brentford",
       "away": "Everton",
       "competition": "Premier League",
       "stage": "Matchweek 11",
-      "status": "Featured",
+      "status": "Result",
       "signals": [
-        "Official Premier League fixture",
-        "Matchweek 11"
+        "Verified final score",
+        "Lewis-Potter scored twice",
+        "Janelt added the third",
+        "Premier League Matchweek 11"
       ],
       "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png"
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+      "homeScore": "3",
+      "awayScore": "0"
+    },
+    {
+      "id": "forest-chelsea-nov27",
+      "type": "event",
+      "sport": "Football",
+      "date": "27 Nov",
+      "time": "20:00 GMT",
+      "title": "Nottm Forest vs Chelsea",
+      "home": "Nottm Forest",
+      "away": "Chelsea",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Featured",
+      "signals": [
+        "Next Premier League fixture",
+        "Matchweek 12 opener"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t17.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t8.png"
+    },
+    {
+      "id": "leeds-coventry-nov28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Nov",
+      "time": "15:00 GMT",
+      "title": "Leeds United vs Coventry City",
+      "home": "Leeds United",
+      "away": "Coventry City",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Premier League Matchweek 12"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
+      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png"
+    },
+    {
+      "id": "man-united-brentford-nov28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Nov",
+      "time": "15:00 GMT",
+      "title": "Man United vs Brentford",
+      "home": "Man United",
+      "away": "Brentford",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Premier League Matchweek 12"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
+    },
+    {
+      "id": "ipswich-aston-villa-nov28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Nov",
+      "time": "17:30 GMT",
+      "title": "Ipswich Town vs Aston Villa",
+      "home": "Ipswich Town",
+      "away": "Aston Villa",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Premier League Matchweek 12"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t40.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t7.png"
+    },
+    {
+      "id": "everton-liverpool-nov29",
+      "type": "event",
+      "sport": "Football",
+      "date": "29 Nov",
+      "time": "12:00 GMT",
+      "title": "Everton vs Liverpool",
+      "home": "Everton",
+      "away": "Liverpool",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Premier League Matchweek 12"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t14.png"
+    },
+    {
+      "id": "brighton-newcastle-nov29",
+      "type": "event",
+      "sport": "Football",
+      "date": "29 Nov",
+      "time": "14:05 GMT",
+      "title": "Brighton vs Newcastle",
+      "home": "Brighton",
+      "away": "Newcastle",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Premier League Matchweek 12"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t36.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t4.png"
+    },
+    {
+      "id": "palace-hull-nov29",
+      "type": "event",
+      "sport": "Football",
+      "date": "29 Nov",
+      "time": "14:05 GMT",
+      "title": "Crystal Palace vs Hull City",
+      "home": "Crystal Palace",
+      "away": "Hull City",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Premier League Matchweek 12"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t31.png",
+      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png"
+    },
+    {
+      "id": "fulham-bournemouth-nov29",
+      "type": "event",
+      "sport": "Football",
+      "date": "29 Nov",
+      "time": "14:05 GMT",
+      "title": "Fulham vs Bournemouth",
+      "home": "Fulham",
+      "away": "Bournemouth",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Premier League Matchweek 12"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t54.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t91.png"
+    },
+    {
+      "id": "sunderland-tottenham-nov29",
+      "type": "event",
+      "sport": "Football",
+      "date": "29 Nov",
+      "time": "14:05 GMT",
+      "title": "Sunderland vs Tottenham",
+      "home": "Sunderland",
+      "away": "Tottenham",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Premier League Matchweek 12"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t56.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t6.png"
+    },
+    {
+      "id": "arsenal-man-city-nov29",
+      "type": "event",
+      "sport": "Football",
+      "date": "29 Nov",
+      "time": "16:30 GMT",
+      "title": "Arsenal vs Man City",
+      "home": "Arsenal",
+      "away": "Man City",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Premier League Matchweek 12"
+      ],
+      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t3.png",
+      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t43.png"
     },
     {
       "id": "denmark-norway-nov17",

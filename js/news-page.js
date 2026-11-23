@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 22 Nov 2026";
+  if (k) k.textContent = "World Sports News · 23 Nov 2026";
   if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Liverpool 4-0 Man United</a><a class="sidebar-link-card" href="results.html">Hull City 2-0 Brighton</a><a class="sidebar-link-card" href="results.html">Chelsea 1-4 Leeds</a><a class="sidebar-link-card" href="match.html?id=brentford-everton-nov23">Brentford–Everton · next</a><a class="sidebar-link-card" href="standings.html">Updated Premier League table</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Brentford 3-0 Everton</a><a class="sidebar-link-card" href="results.html">Liverpool 4-0 Man United</a><a class="sidebar-link-card" href="match.html?id=forest-chelsea-nov27">Forest–Chelsea · 27 Nov</a><a class="sidebar-link-card" href="match.html?id=arsenal-man-city-nov29">Arsenal–Man City · 29 Nov</a><a class="sidebar-link-card" href="standings.html">Matchweek 11 final table</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Liverpool beat ten-man Manchester United 4-0, while Hull scored twice in stoppage time to defeat Brighton 2-0. Arsenal remain top on 28 points; Brentford–Everton closes Matchweek 11 on Monday.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Brentford beat ten-man Everton 3-0 and climbed to sixth, completing Matchweek 11. Arsenal lead on 28 points; the next round opens with Nottingham Forest–Chelsea on 27 November.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
