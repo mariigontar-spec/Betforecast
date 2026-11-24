@@ -1,11 +1,11 @@
 {
   "edition": "22 November 2026 · Bundesliga Matchday 10",
   "clips": [
-    {"title": "Bayern Munich vs Köln", "videoId": "mWFkG18O6qM", "startSeconds": 0, "endSeconds": 5},
-    {"title": "Leverkusen vs Paderborn", "videoId": "mWFkG18O6qM", "startSeconds": 246, "endSeconds": 251},
-    {"title": "Frankfurt vs Hoffenheim", "videoId": "mWFkG18O6qM", "startSeconds": 441, "endSeconds": 446},
-    {"title": "Union Berlin vs Leipzig", "videoId": "mWFkG18O6qM", "startSeconds": 635, "endSeconds": 640},
-    {"title": "Mönchengladbach vs Dortmund", "videoId": "mWFkG18O6qM", "startSeconds": 831, "endSeconds": 836},
-    {"title": "Werder Bremen vs Hamburg", "videoId": "mWFkG18O6qM", "startSeconds": 1743, "endSeconds": 1748}
+    {"title": "Bayern Munich vs Köln", "videoId": "mWFkG18O6qM", "startSeconds": 0, "endSeconds": 4},
+    {"title": "Leverkusen vs Paderborn", "videoId": "mWFkG18O6qM", "startSeconds": 246, "endSeconds": 250},
+    {"title": "Frankfurt vs Hoffenheim", "videoId": "mWFkG18O6qM", "startSeconds": 441, "endSeconds": 445},
+    {"title": "Union Berlin vs Leipzig", "videoId": "mWFkG18O6qM", "startSeconds": 635, "endSeconds": 639},
+    {"title": "Mönchengladbach vs Dortmund", "videoId": "mWFkG18O6qM", "startSeconds": 831, "endSeconds": 835},
+    {"title": "Werder Bremen vs Hamburg", "videoId": "mWFkG18O6qM", "startSeconds": 1743, "endSeconds": 1747}
   ]
 }

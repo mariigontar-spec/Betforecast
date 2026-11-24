@@ -4,13 +4,17 @@
   const status = document.getElementById("highlights-status");
   const source = document.getElementById("highlights-source");
   const list = document.getElementById("highlights-clips");
+  const CLIP_SECONDS = 4;
   let clips = [];
   let current = 0;
   let player;
   let apiReady = false;
   let failures = 0;
+  let timer;
+  let observer;
 
   function select(index) {
+    clearInterval(timer);
     current = index;
     const clip = clips[current];
     status.textContent = clip.title;
@@ -26,6 +30,7 @@
   }
 
   function start(index) {
+    observer?.disconnect();
     failures = 0;
     select(index);
     if (player || play.disabled) return;
@@ -37,6 +42,7 @@
     screen.append(host);
 
     function showError() {
+      clearInterval(timer);
       apiReady = false;
       player?.destroy();
       player = undefined;
@@ -50,7 +56,7 @@
     window.onYouTubeIframeAPIReady = () => {
       play.hidden = true;
       player = new window.YT.Player(host, {
-        host: "https://www.youtube-nocookie.com",
+        videoId: clips[current].videoId,
         playerVars: { playsinline: 1, origin: location.origin },
         events: {
           onReady() {
@@ -59,8 +65,23 @@
             select(current);
           },
           onStateChange(event) {
-            if (event.data === window.YT.PlayerState.PLAYING) failures = 0;
-            if (event.data === window.YT.PlayerState.ENDED) select((current + 1) % clips.length);
+            clearInterval(timer);
+            if (event.data === window.YT.PlayerState.PLAYING) {
+              failures = 0;
+              status.textContent = clips[current].title;
+              timer = setInterval(() => {
+                if (player.getCurrentTime() >= clips[current].endSeconds) {
+                  select((current + 1) % clips.length);
+                }
+              }, 100);
+            }
+            if (event.data === window.YT.PlayerState.ENDED &&
+                player.getCurrentTime() >= clips[current].endSeconds - 0.25) {
+              select((current + 1) % clips.length);
+            }
+          },
+          onAutoplayBlocked() {
+            status.textContent = "Press Play in the video player to start.";
           },
           onError() {
             if (++failures < clips.length) select((current + 1) % clips.length);
@@ -97,7 +118,7 @@
         Number.isInteger(startSeconds) && startSeconds >= 0 &&
         Number.isInteger(endSeconds) && endSeconds - startSeconds >= 3 &&
         endSeconds - startSeconds <= 5
-      ).slice(0, 7);
+      ).slice(0, 7).map(clip => ({ ...clip, endSeconds: clip.startSeconds + CLIP_SECONDS }));
       if (!clips.length) throw new Error("No valid highlights");
       document.getElementById("highlights-edition").textContent = data.edition;
       clips.forEach(({ title }, index) => {
@@ -109,6 +130,12 @@
       });
       play.disabled = false;
       select(0);
+      if ("IntersectionObserver" in window) {
+        observer = new IntersectionObserver(([entry]) => {
+          if (entry.intersectionRatio >= 0.55) start(current);
+        }, { threshold: 0.55 });
+        observer.observe(screen);
+      }
     })
     .catch(() => {
       status.textContent = "This week’s highlights are currently unavailable.";
