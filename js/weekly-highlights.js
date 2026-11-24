@@ -57,7 +57,14 @@
       play.hidden = true;
       player = new window.YT.Player(host, {
         videoId: clips[current].videoId,
-        playerVars: { playsinline: 1, origin: location.origin },
+        playerVars: {
+          autoplay: 1,
+          mute: 1,
+          playsinline: 1,
+          start: clips[current].startSeconds,
+          end: clips[current].endSeconds,
+          origin: location.origin
+        },
         events: {
           onReady() {
             apiReady = true;
