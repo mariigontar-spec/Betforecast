@@ -8,6 +8,8 @@
 }
 
 html body.site-skin-1win.bf-layout {
+  width: 100% !important;
+  max-width: none !important;
   margin: 0 !important;
   padding: var(--site-header-offset) 0 0 !important;
   min-height: 100svh;
@@ -18,14 +20,14 @@ html body.site-skin-1win.bf-layout:not([style*="background"]) {
 }
 
 html body.bf-layout > .site-header,
-html body.site-skin-1win.bf-layout > main {
+html body.site-skin-1win.bf-layout > main[class] {
   box-sizing: border-box;
   width: min(var(--site-width), calc(100% - 2 * var(--site-gutter))) !important;
   max-width: none !important;
   margin-inline: auto !important;
 }
 
-html body.site-skin-1win.bf-layout > main {
+html body.site-skin-1win.bf-layout > main[class] {
   margin-top: var(--site-content-gap) !important;
   padding-inline: 0 !important;
   padding-top: 0 !important;
@@ -46,6 +48,13 @@ html body.site-skin-1win.bf-layout > main {
   background: linear-gradient(180deg, #122637, #081420);
   box-shadow: 0 18px 48px rgba(0, 0, 0, .28);
   font: 800 16px/1.1 Inter, system-ui, sans-serif;
+}
+
+.site-header .site-brand,
+.site-header .site-brand span,
+.site-header .site-navigation a,
+.site-header .site-menu-toggle {
+  font-family: Inter, system-ui, sans-serif !important;
 }
 
 .site-header .site-brand {
@@ -103,7 +112,12 @@ html body.site-skin-1win.bf-layout > main {
   cursor: pointer;
 }
 
-.bf-layout .match-pro-hero {
+html body.site-skin-1win.bf-layout > main > .news-title-strip:first-child {
+  margin-top: 0 !important;
+}
+
+html body.site-skin-1win.bf-layout > main > :is(.match-pro-hero, .match-pro-layout, .news-layout-v2,
+    .standings-layout, .standings-league-bar, .insights-cards-grid, .article-layout) {
   box-sizing: border-box;
   width: 100% !important;
   max-width: none !important;
