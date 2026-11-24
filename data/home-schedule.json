@@ -1,7 +1,331 @@
 {
-  "updatedAt": "2026-11-23T23:59:00+02:00",
-  "featuredId": "forest-chelsea-nov27",
+  "updatedAt": "2026-11-25T00:01:00+02:00",
+  "featuredId": "sporting-man-united-nov25",
   "events": [
+    {
+      "id": "bodo-lask-nov24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Nov",
+      "time": "Final",
+      "title": "Bodø/Glimt 1-0 LASK",
+      "home": "Bodø/Glimt",
+      "away": "LASK",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "1",
+      "awayScore": "0"
+    },
+    {
+      "id": "galatasaray-villa-nov24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Nov",
+      "time": "Final",
+      "title": "Galatasaray 1-0 Aston Villa",
+      "home": "Galatasaray",
+      "away": "Aston Villa",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "1",
+      "awayScore": "0"
+    },
+    {
+      "id": "arsenal-dortmund-nov24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Nov",
+      "time": "Final",
+      "title": "Arsenal 1-1 Borussia Dortmund",
+      "home": "Arsenal",
+      "away": "Borussia Dortmund",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "1",
+      "awayScore": "1"
+    },
+    {
+      "id": "como-aek-nov24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Nov",
+      "time": "Final",
+      "title": "Como 1-0 AEK Athens",
+      "home": "Como",
+      "away": "AEK Athens",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "1",
+      "awayScore": "0"
+    },
+    {
+      "id": "feyenoord-porto-nov24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Nov",
+      "time": "Final",
+      "title": "Feyenoord 0-1 Porto",
+      "home": "Feyenoord",
+      "away": "Porto",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "0",
+      "awayScore": "1"
+    },
+    {
+      "id": "man-city-napoli-nov24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Nov",
+      "time": "Final",
+      "title": "Man City 2-2 Napoli",
+      "home": "Man City",
+      "away": "Napoli",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "2",
+      "awayScore": "2"
+    },
+    {
+      "id": "leipzig-lens-nov24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Nov",
+      "time": "Final",
+      "title": "Leipzig 3-1 Lens",
+      "home": "Leipzig",
+      "away": "Lens",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "3",
+      "awayScore": "1"
+    },
+    {
+      "id": "real-madrid-psv-nov24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Nov",
+      "time": "Final",
+      "title": "Real Madrid 5-1 PSV Eindhoven",
+      "home": "Real Madrid",
+      "away": "PSV Eindhoven",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "5",
+      "awayScore": "1"
+    },
+    {
+      "id": "slovan-betis-nov24",
+      "type": "result",
+      "sport": "Football",
+      "date": "24 Nov",
+      "time": "Final",
+      "title": "Slovan Bratislava 0-2 Real Betis",
+      "home": "Slovan Bratislava",
+      "away": "Real Betis",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "0",
+      "awayScore": "2"
+    },
+    {
+      "id": "sabah-barcelona-nov25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "19:45 EET",
+      "title": "Sabah vs Barcelona",
+      "home": "Sabah",
+      "away": "Barcelona",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "slavia-villarreal-nov25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "19:45 EET",
+      "title": "Slavia Praha vs Villarreal",
+      "home": "Slavia Praha",
+      "away": "Villarreal",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "atletico-viking-nov25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "22:00 EET",
+      "title": "Atlético de Madrid vs Viking",
+      "home": "Atlético de Madrid",
+      "away": "Viking",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "brugge-liverpool-nov25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "22:00 EET",
+      "title": "Club Brugge vs Liverpool",
+      "home": "Club Brugge",
+      "away": "Liverpool",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "inter-stuttgart-nov25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "22:00 EET",
+      "title": "Inter vs Stuttgart",
+      "home": "Inter",
+      "away": "Stuttgart",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "shakhtar-fenerbahce-nov25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "22:00 EET",
+      "title": "Shakhtar Donetsk vs Fenerbahçe",
+      "home": "Shakhtar Donetsk",
+      "away": "Fenerbahçe",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "lille-bayern-nov25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "22:00 EET",
+      "title": "Lille vs Bayern München",
+      "home": "Lille",
+      "away": "Bayern München",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "psg-roma-nov25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "22:00 EET",
+      "title": "Paris Saint-Germain vs Roma",
+      "home": "Paris Saint-Germain",
+      "away": "Roma",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "sporting-man-united-nov25",
+      "type": "event",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "22:00 EET",
+      "title": "Sporting CP vs Man United",
+      "home": "Sporting CP",
+      "away": "Man United",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Featured",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
     {
       "id": "newcastle-arsenal-nov21",
       "type": "result",

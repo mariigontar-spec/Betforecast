@@ -4,6 +4,15 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Bodø/Glimt", awayName: "LASK", homeGoals: "1", awayGoals: "0", venue: "UEFA Champions League", date: "24 Nov", href: "match.html?id=bodo-lask-nov24" },
+    { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Galatasaray", awayName: "Aston Villa", homeGoals: "1", awayGoals: "0", venue: "UEFA Champions League", date: "24 Nov", href: "match.html?id=galatasaray-villa-nov24" },
+    { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Arsenal", awayName: "Borussia Dortmund", homeGoals: "1", awayGoals: "1", venue: "UEFA Champions League", date: "24 Nov", href: "match.html?id=arsenal-dortmund-nov24" },
+    { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Como", awayName: "AEK Athens", homeGoals: "1", awayGoals: "0", venue: "UEFA Champions League", date: "24 Nov", href: "match.html?id=como-aek-nov24" },
+    { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Feyenoord", awayName: "Porto", homeGoals: "0", awayGoals: "1", venue: "UEFA Champions League", date: "24 Nov", href: "match.html?id=feyenoord-porto-nov24" },
+    { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Man City", awayName: "Napoli", homeGoals: "2", awayGoals: "2", venue: "UEFA Champions League", date: "24 Nov", href: "match.html?id=man-city-napoli-nov24" },
+    { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Leipzig", awayName: "Lens", homeGoals: "3", awayGoals: "1", venue: "UEFA Champions League", date: "24 Nov", href: "match.html?id=leipzig-lens-nov24" },
+    { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Real Madrid", awayName: "PSV Eindhoven", homeGoals: "5", awayGoals: "1", venue: "UEFA Champions League", date: "24 Nov", href: "match.html?id=real-madrid-psv-nov24" },
+    { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Slovan Bratislava", awayName: "Real Betis", homeGoals: "0", awayGoals: "2", venue: "UEFA Champions League", date: "24 Nov", href: "match.html?id=slovan-betis-nov24" },
     { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Brentford", awayName: "Everton", homeGoals: "4", awayGoals: "0", venue: "Gtech Community Stadium", date: "23 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Liverpool", awayName: "Man United", homeGoals: "4", awayGoals: "0", venue: "Anfield", date: "22 Nov", href: "standings.html" },
     { round: "Football · Premier League Matchweek 11", status: "FINAL", homeName: "Hull City", awayName: "Brighton", homeGoals: "2", awayGoals: "0", venue: "MKM Stadium", date: "22 Nov", href: "standings.html" },

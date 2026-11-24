@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 23 Nov 2026";
+  if (k) k.textContent = "World Sports News · 25 Nov 2026";
   if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Brentford 4-0 Everton</a><a class="sidebar-link-card" href="results.html">Liverpool 4-0 Man United</a><a class="sidebar-link-card" href="match.html?id=forest-chelsea-nov27">Forest–Chelsea · 27 Nov</a><a class="sidebar-link-card" href="match.html?id=arsenal-man-city-nov29">Arsenal–Man City · 29 Nov</a><a class="sidebar-link-card" href="standings.html">Matchweek 11 final table</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Real Madrid 5-1 PSV</a><a class="sidebar-link-card" href="results.html">Man City 2-2 Napoli</a><a class="sidebar-link-card" href="match.html?id=sporting-man-united-nov25">Sporting–Man United · 25 Nov</a><a class="sidebar-link-card" href="match.html?id=brugge-liverpool-nov25">Club Brugge–Liverpool · 25 Nov</a><a class="sidebar-link-card" href="standings.html">EPL Matchweek 11 table</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Brentford beat ten-man Everton 3-0 and climbed to sixth, completing Matchweek 11. Arsenal lead on 28 points; the next round opens with Nottingham Forest–Chelsea on 27 November.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Champions League Matchday 5 continues on 25 November with nine confirmed fixtures. Early kick-offs are at 19:45 EET; the other seven start at 22:00 EET. Tuesday’s verified results are now archived.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
@@ -84,7 +84,7 @@ async function loadCachedNews() {
 function renderFeaturedStory(a) {
   const t = a.title || "Untitled story",
     i = a.image || getKeywordFallbackImage(t, 0),
-    d = a.time || a.date || "Latest update",
+    d = formatArticleAge(a.date),
     x = truncateText(a.excerpt || firstContentParagraph(a), 220),
     h = getArticleHref(a);
   return `<a class="featured-story-card" href="${escapeHtml(h)}"${getLinkAttrs(h)}><div class="featured-story-card__image"><img src="${escapeHtml(i)}" alt="${escapeHtml(t)}" loading="lazy" onerror="this.onerror=null;this.src='assets/news/default-1.jpg';"></div><div class="featured-story-card__content"><div class="featured-story-card__meta">${escapeHtml(a.category || "World Sport")} • ${escapeHtml(d)}</div><h3 class="featured-story-card__title">${escapeHtml(t)}</h3><p class="featured-story-card__excerpt">${escapeHtml(x)}</p></div></a>`;
@@ -92,10 +92,23 @@ function renderFeaturedStory(a) {
 function renderNewsCard(a, j = 0) {
   const t = a.title || "Untitled story",
     i = a.image || getKeywordFallbackImage(t, j),
-    d = a.time || a.date || "Latest update",
+    d = formatArticleAge(a.date),
     x = truncateText(a.excerpt || firstContentParagraph(a), 140),
     h = getArticleHref(a);
   return `<a class="news-card-v2" href="${escapeHtml(h)}"${getLinkAttrs(h)}><div class="news-card-v2__image"><img src="${escapeHtml(i)}" alt="${escapeHtml(t)}" loading="lazy" onerror="this.onerror=null;this.src='assets/news/default-1.jpg';"></div><div class="news-card-v2__content"><div class="news-card-v2__meta">${escapeHtml(a.category || "World Sport")} • ${escapeHtml(d)}</div><h3 class="news-card-v2__title">${escapeHtml(t)}</h3><p class="news-card-v2__excerpt">${escapeHtml(x)}</p></div></a>`;
+}
+function formatArticleAge(value) {
+  const published = new Date(value);
+  if (!value || Number.isNaN(published.getTime())) return "Latest update";
+  const diff = Math.max(0, Date.now() - published.getTime());
+  const minutes = Math.floor(diff / 60000);
+  if (minutes < 1) return "just now";
+  if (minutes < 60) return `${minutes} min ago`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours} hr${hours === 1 ? "" : "s"} ago`;
+  const days = Math.floor(hours / 24);
+  if (days < 7) return `${days} day${days === 1 ? "" : "s"} ago`;
+  return new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "Europe/Tallinn" }).format(published);
 }
 function dedupeNews(items = []) {
   const s = new Set();
