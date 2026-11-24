@@ -14,16 +14,3 @@ window.BF_TIMEZONE = {
   shortLabel: "ARG"
 };
 
-(function loadSiteSkinManager() {
-  const scriptId = "bf-site-skin-manager-loader";
-
-  if (document.getElementById(scriptId)) {
-    return;
-  }
-
-  const script = document.createElement("script");
-  script.id = scriptId;
-  script.src = "/js/site-skin-manager.js?v=21";
-  script.defer = true;
-  document.head.appendChild(script);
-})();
