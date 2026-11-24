@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Matchweek 11 is complete: Brentford beat Everton 4-0 to climb to sixth. The Premier League returns with Nottingham Forest–Chelsea on Friday.";
+        "Champions League Matchday 5 continues today with nine verified fixtures. Sporting CP–Manchester United is the default match at 22:00 EET.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Nottm Forest–Chelsea · 27 Nov · 20:00 GMT</span></div>
-        <div><strong>Latest result</strong><span>Brentford 4-0 Everton</span></div>
+        <div><strong>Featured</strong><span>Sporting–Man United · 25 Nov · 22:00 EET</span></div>
+        <div><strong>Latest result</strong><span>Real Madrid 5-1 PSV</span></div>
         <div><strong>EPL table</strong><span>Arsenal lead · 28 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Chelsea, Arsenal, Liverpool";
+      input.placeholder = "Try: Barcelona, Liverpool, Man United";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Nottm Forest Chelsea">Forest–Chelsea</button>
-        <button type="button" data-query="Arsenal Man City">Arsenal–Man City</button>
-        <button type="button" data-query="Everton Liverpool">Everton–Liverpool</button>
+        <button type="button" data-query="Sporting Man United">Sporting–Man United</button>
+        <button type="button" data-query="Club Brugge Liverpool">Club Brugge–Liverpool</button>
+        <button type="button" data-query="Sabah Barcelona">Sabah–Barcelona</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=forest-chelsea-nov27", title: "Nottm Forest vs Chelsea", detail: "27 Nov · Premier League · 20:00 GMT", tag: "Featured" },
-      { href: "match.html?id=arsenal-man-city-nov29", title: "Arsenal vs Man City", detail: "29 Nov · Premier League · 16:30 GMT", tag: "Next" },
-      { href: "match.html?id=everton-liverpool-nov29", title: "Everton vs Liverpool", detail: "29 Nov · Premier League · 12:00 GMT", tag: "Next" },
-      { href: "standings.html", title: "Premier League · Matchweek 11", detail: "Complete · checked 23 Nov", tag: "Table" },
+      { href: "match.html?id=sporting-man-united-nov25", title: "Sporting CP vs Man United", detail: "25 Nov · Champions League · 22:00 EET", tag: "Featured" },
+      { href: "match.html?id=sabah-barcelona-nov25", title: "Sabah vs Barcelona", detail: "25 Nov · Champions League · 19:45 EET", tag: "Upcoming" },
+      { href: "match.html?id=brugge-liverpool-nov25", title: "Club Brugge vs Liverpool", detail: "25 Nov · Champions League · 22:00 EET", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 11", detail: "Complete · checked 25 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
