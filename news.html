@@ -778,6 +778,44 @@
   <link rel="stylesheet" href="css/nav-unified.css?v=1">
   <link rel="icon" type="image/png" href="assets/bet-logo.png?v=2">
   <link rel="stylesheet" href="css/site-layout.css?v=2">
+  <style>
+    body.bf-layout.page-news .news-layout-v2 {
+      margin-top: clamp(16px, 2vw, 24px) !important;
+    }
+
+    body.bf-layout.page-news .news-layout-v2 *,
+    body.bf-layout.page-news .news-layout-v2 {
+      box-sizing: border-box;
+    }
+
+    body.bf-layout.page-news .news-main-column,
+    body.bf-layout.page-news .news-sidebar-v2 {
+      min-width: 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-inline: 0 !important;
+    }
+
+    body.bf-layout.page-news main :is(h1, h2, h3, p, a, span) {
+      font-family: Inter, system-ui, sans-serif !important;
+    }
+
+    @media (min-width: 1025px) {
+      body.bf-layout.page-news.site-skin-1win .news-layout-v2 {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) minmax(270px, 28%) !important;
+        gap: 24px !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      body.bf-layout.page-news.site-skin-1win .news-layout-v2 {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 16px !important;
+      }
+    }
+  </style>
 </head>
 
 <body class="theme-dark site-skin-1win page-news bf-layout">
@@ -888,7 +926,7 @@
     </section>
   </main>
 
-    <script src="/js/site-skin-manager.js?v=37"></script>
+    <script src="/js/site-skin-manager.js?v=38"></script>
 <script src="js/news-page.js?v=3"></script>
 
   <script src="js/nav-unified.js?v=1"></script>

@@ -37,6 +37,28 @@
     document.head.appendChild(style);
   }
 
+  function preserveBackgroundCreative() {
+    if (isMobile()) return;
+
+    const bodyStyle = document.body.style;
+    const properties = ["background-image", "background-size", "background-position",
+      "background-repeat", "background-attachment", "background-color"];
+
+    function prioritizeCreative() {
+      if (!bodyStyle.backgroundImage.includes("media.getads.online/")) return;
+      for (const name of properties) {
+        const value = bodyStyle.getPropertyValue(name);
+        if (value && bodyStyle.getPropertyPriority(name) !== "important") {
+          bodyStyle.setProperty(name, value, "important");
+        }
+      }
+    }
+
+    new MutationObserver(prioritizeCreative)
+      .observe(document.body, { attributes: true, attributeFilter: ["style"] });
+    prioritizeCreative();
+  }
+
   function removeSideAds() {
     document.querySelectorAll(".side-banner,.side-banner-left,.side-banner-right,.left-banner,.right-banner").forEach(el => el.remove());
   }
@@ -89,7 +111,10 @@
     window._aso.queue.push(() => {
       const adServer = window._ASO;
       if (typeof adServer?.loadPuHelper !== "function") return;
-      adServer.PuOptions = { idzone: POPUP_ZONE };
+      const onNews = document.body.classList.contains("page-news");
+      adServer.PuOptions = onNews
+        ? { idzone: POPUP_ZONE, cappingLimit: 1, cappingInterval: 86400, cappingStrategy: 2 }
+        : { idzone: POPUP_ZONE };
       adServer.loadPuHelper();
     });
   }
@@ -121,6 +146,7 @@
     ensureStyle();
     removeSideAds();
     ensureBackground();
+    preserveBackgroundCreative();
     ensureContentAd();
     queuePopup();
     ensureAdScript();
