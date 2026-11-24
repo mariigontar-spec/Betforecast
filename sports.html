@@ -10,27 +10,26 @@
   </style>
   <link rel="stylesheet" href="css/nav-unified.css?v=4">
   <link rel="icon" type="image/png" href="assets/bet-logo.png?v=2">
+  <link rel="stylesheet" href="css/site-layout.css">
 </head>
-<body class="theme-dark site-skin-1win sports-page">
-  <header class="bf-header">
-    <div class="bf-header-inner">
-      <a class="bf-logo" href="index.html" aria-label="Betforecast.ai home">
-        <img src="assets/bet-logo.png?v=2" alt="" width="38" height="38">
-        <span>Betforecast<span>.ai</span></span>
-      </a>
-      <button class="bf-menu-button" type="button" aria-expanded="false" aria-controls="main-navigation">
-        <span></span><span></span><span></span><span class="sr-only">Open menu</span>
-      </button>
-      <nav class="bf-nav" id="main-navigation" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="news.html">News</a>
-        <a href="standings.html">Standings</a>
-        <a href="match.html">Matches</a>
-        <a href="results.html">Results</a>
-        <a href="sports.html" class="active">Sports</a>
-        <a href="ai-insights.html">AI Insights</a>
-      </nav>
-    </div>
+<body class="theme-dark site-skin-1win sports-page bf-layout">
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="Betforecast.ai home">
+      <img src="assets/bet-logo.png?v=2" alt="" width="38" height="38">
+      <span>Betforecast<span class="site-brand-accent">.ai</span></span>
+    </a>
+    <button class="site-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation">
+      <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+      <a href="standings.html">Standings</a>
+      <a href="match.html">Matches</a>
+      <a href="results.html">Results</a>
+      <a href="sports.html" aria-current="page">Sports</a>
+      <a href="ai-insights.html">AI Insights</a>
+    </nav>
   </header>
   <main class="sports-shell">
     <section class="sports-hero"><span class="eyebrow">Updated 23 November 2026</span><h1>Sports Hub</h1><p>The latest verified results and the next major fixtures, form signals and market-moving stories in one quick view.</p></section>
@@ -61,7 +60,7 @@
     </section>
   </main>
   <script>document.querySelectorAll('.sports-tab').forEach(function(button){button.addEventListener('click',function(){document.querySelectorAll('.sports-tab').forEach(function(item){item.classList.remove('active')});document.querySelectorAll('.tab-view').forEach(function(view){view.classList.remove('active')});button.classList.add('active');document.getElementById(button.dataset.tab).classList.add('active')})});</script>
-  <script src="/js/site-skin-manager.js?v=36"></script>
+  <script src="/js/site-skin-manager.js?v=37"></script>
   <script src="js/nav-unified.js?v=2"></script>
 </body>
 </html>

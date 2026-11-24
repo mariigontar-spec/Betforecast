@@ -794,9 +794,10 @@
   </style>
   <link rel="stylesheet" href="css/nav-unified.css?v=1">
   <link rel="icon" type="image/png" href="assets/bet-logo.png?v=2">
+  <link rel="stylesheet" href="css/site-layout.css">
 </head>
 
-<body class="theme-dark site-skin-1win">
+<body class="theme-dark site-skin-1win bf-layout">
 
   <!-- Кликабельный фон 1win -->
 
@@ -817,36 +818,23 @@
   </div>
 
   <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-
-      <a
-        class="bf-logo"
-        href="/"
-        aria-label="Betforecast.ai home">
-
-        <img
-          src="assets/bet-logo.png?v=2"
-          alt="Betforecast.ai logo">
-
-        <span>
-          Betforecast<span>.ai</span>
-        </span>
-      </a>
-
-      <nav
-        class="topbar-menu"
-        aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="news.html">News</a>
-        <a href="standings.html" class="active">Standings</a>
-        <a href="match.html">Matches</a>
-        <a href="results.html">Results</a>
-        <a href="sports.html">Sports</a>
-        <a href="ai-insights.html">AI Insights</a>
-      </nav>
-
-    </div>
+  <header class="site-header">
+    <a class="site-brand" href="index.html" aria-label="Betforecast.ai home">
+      <img src="assets/bet-logo.png?v=2" alt="" width="38" height="38">
+      <span>Betforecast<span class="site-brand-accent">.ai</span></span>
+    </a>
+    <button class="site-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-navigation">
+      <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="site-navigation" id="site-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+      <a href="standings.html" aria-current="page">Standings</a>
+      <a href="match.html">Matches</a>
+      <a href="results.html">Results</a>
+      <a href="sports.html">Sports</a>
+      <a href="ai-insights.html">AI Insights</a>
+    </nav>
   </header>
 
   <!-- Main -->
@@ -1069,7 +1057,7 @@
 
   </main>
 
-    <script src="/js/site-skin-manager.js?v=36"></script>
+    <script src="/js/site-skin-manager.js?v=37"></script>
 <script src="api-config.js"></script>
 
   <script src="js/standings-live.js?v=20260902"></script>

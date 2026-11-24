@@ -1,7 +1,7 @@
 applyMobileNewsBackgroundFix();
 ensureSiteSkinManager();
 function applyMobileNewsBackgroundFix() {
-  if (!window.matchMedia("(max-width: 760px)").matches) return;
+  if (document.body.classList.contains("bf-layout") || !window.matchMedia("(max-width: 760px)").matches) return;
   const s = document.createElement("style");
   s.id = "bf-news-mobile-background-fix";
   s.textContent = `@media (max-width:760px){html body.page-news.site-skin-1win,html body.page-news.site-skin-1win.site-skin-managed{padding-top:10px!important;background:linear-gradient(180deg,#07111d 0%,#020b13 100%)!important}.page-news .skin-click{display:none!important;pointer-events:none!important}}`;

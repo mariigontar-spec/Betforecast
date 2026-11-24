@@ -26,7 +26,7 @@
       #${BG_SLOT_ID}>.ins-zone,#${BG_SLOT_ID}>iframe,#${BG_SLOT_ID}>div{display:block!important;width:100%!important;max-width:100%!important;min-width:100%!important;opacity:1!important;visibility:visible!important}
       body>header,body>main,body>footer,.bf-header,.header,.bf-page,.wc-page,.page-shell,.match-page-wrap,.standings-page-wrap,.results-page-section,.news-page-wrap,.ai-insights-page,.article-page-wrap,.sports-shell{position:relative!important;z-index:20!important}
       @media(max-width:760px){
-        html body.site-skin-1win,html body.site-skin-dafabet,html body.site-skin-mostbet,html body.site-skin-managed,html body.page-news.site-skin-1win{padding-top:0!important;background:radial-gradient(circle at 18% 0%,rgba(22,117,84,.17),transparent 31rem),radial-gradient(circle at 88% 22%,rgba(24,86,126,.13),transparent 28rem),linear-gradient(180deg,#07111d 0,#050b13 36rem,#02070d 100%)!important;background-attachment:scroll!important}
+        html body.site-skin-1win:not(.bf-layout),html body.site-skin-dafabet:not(.bf-layout),html body.site-skin-mostbet:not(.bf-layout),html body.site-skin-managed:not(.bf-layout),html body.page-news.site-skin-1win:not(.bf-layout){padding-top:0!important;background:radial-gradient(circle at 18% 0%,rgba(22,117,84,.17),transparent 31rem),radial-gradient(circle at 88% 22%,rgba(24,86,126,.13),transparent 28rem),linear-gradient(180deg,#07111d 0,#050b13 36rem,#02070d 100%)!important;background-attachment:scroll!important}
         #${BG_SLOT_ID},#${BG_SLOT_ID} *{display:none!important;width:0!important;height:0!important;min-width:0!important;min-height:0!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important}
         .skin-click,.skin-click-top,.skin-click-left,.skin-click-right{display:none!important;pointer-events:none!important}
         .bf-content-ad{min-height:250px;margin:18px auto!important}
@@ -103,8 +103,21 @@
     document.body.appendChild(script);
   }
 
+  function bindSiteMenu() {
+    const menu = document.getElementById("site-navigation");
+    const button = document.querySelector(".site-menu-toggle");
+    if (!menu || !button) return;
+
+    button.addEventListener("click", () => {
+      const open = menu.classList.toggle("is-open");
+      button.setAttribute("aria-expanded", String(open));
+      button.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    });
+  }
+
   function run() {
     if (!document.body) return;
+    bindSiteMenu();
     ensureStyle();
     removeSideAds();
     ensureBackground();
