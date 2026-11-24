@@ -1,0 +1,74 @@
+.weekly-highlights {
+  margin: 48px 0;
+}
+
+.highlights-card {
+  max-width: 940px;
+  margin-inline: auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.highlights-screen {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  min-height: 200px;
+  background: radial-gradient(ellipse at center, #13394c, #050e18 75%);
+}
+
+.highlights-screen iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  border: 0;
+}
+
+.highlights-details,
+.highlights-clips {
+  display: flex;
+  gap: 12px;
+  padding: 12px 18px;
+}
+
+.highlights-details {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.highlights-details p {
+  margin: 0;
+}
+
+.highlights-details a {
+  color: var(--green);
+}
+
+.highlights-clips {
+  overflow-x: auto;
+  border-top: 1px solid var(--line);
+}
+
+.highlights-clips button {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #102638;
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.highlights-clips button[aria-pressed="true"] {
+  border-color: var(--green);
+  color: var(--green-soft);
+}
+
+.highlights-screen [hidden],
+.highlights-details [hidden] {
+  display: none;
+}
