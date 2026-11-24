@@ -38,12 +38,12 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Champions League Matchday 5 continues today with nine verified fixtures. Sporting CP–Manchester United is the default match at 22:00 EET.";
+        "Champions League Matchday 5 continues today with nine verified fixtures. Sabah–Barcelona is the next confirmed kick-off at 19:45 EET.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Sporting–Man United · 25 Nov · 22:00 EET</span></div>
+        <div><strong>Featured</strong><span>Sabah–Barcelona · 25 Nov · 19:45 EET</span></div>
         <div><strong>Latest result</strong><span>Real Madrid 5-1 PSV</span></div>
         <div><strong>EPL table</strong><span>Arsenal lead · 28 points</span></div>
       `;
