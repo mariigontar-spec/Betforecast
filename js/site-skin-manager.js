@@ -2,6 +2,7 @@
 (() => {
   "use strict";
 
+  const POPUP_ZONE = 161907;
   const BG_ZONE = "163743";
   const DESKTOP_ZONE = "163631";
   const MOBILE_ZONE = "163623";
@@ -82,6 +83,17 @@
     if (anchor) anchor.insertAdjacentElement("afterend", ad); else main.appendChild(ad);
   }
 
+  function queuePopup() {
+    window._aso = window._aso || {};
+    window._aso.queue = window._aso.queue || [];
+    window._aso.queue.push(() => {
+      const adServer = window._ASO;
+      if (typeof adServer?.loadPuHelper !== "function") return;
+      adServer.PuOptions = { idzone: POPUP_ZONE };
+      adServer.loadPuHelper();
+    });
+  }
+
   function ensureAdScript() {
     if (document.querySelector('script[src*="media.getads.online/js/code.min.js"]')) return;
     const script = document.createElement("script");
@@ -97,6 +109,7 @@
     removeSideAds();
     ensureBackground();
     ensureContentAd();
+    queuePopup();
     ensureAdScript();
     document.body.classList.add("site-skin-managed");
     document.body.dataset.bfDynamicBackgroundReady = isMobile() ? "mobile-clean" : "true";

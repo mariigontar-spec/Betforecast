@@ -428,17 +428,6 @@
     });
   }
 
-  function initAdhitPopup() {
-    window._aso = window._aso || {};
-    window._aso.queue = window._aso.queue || [];
-    window._aso.queue.push(() => {
-      if (!window._ASO || typeof window._ASO.loadPuHelper !== "function")
-        return;
-      window._ASO.PuOptions = { idzone: 161907 };
-      window._ASO.loadPuHelper();
-    });
-  }
-
   async function loadSchedule() {
     try {
       const response = await fetch(`${scheduleUrl}?v=3`, { cache: "no-store" });
@@ -466,7 +455,6 @@
     updateHomepageCopy();
     initMobileMenu();
     initSearch();
-    initAdhitPopup();
     loadSchedule();
     loadPremierLeague();
   });
