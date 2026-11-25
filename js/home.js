@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Champions League Matchday 5 continues today with nine verified fixtures. Sabah–Barcelona is the next confirmed kick-off at 19:45 EET.";
+        "Europa League and Conference League action takes over today. Celta–Bournemouth is the featured verified fixture at 19:45 EET.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Sabah–Barcelona · 25 Nov · 19:45 EET</span></div>
-        <div><strong>Latest result</strong><span>Real Madrid 5-1 PSV</span></div>
+        <div><strong>Featured</strong><span>Celta–Bournemouth · 26 Nov · 19:45 EET</span></div>
+        <div><strong>Latest result</strong><span>Club Brugge 0-3 Liverpool</span></div>
         <div><strong>EPL table</strong><span>Arsenal lead · 28 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Barcelona, Liverpool, Man United";
+      input.placeholder = "Try: Bournemouth, Palace, Juventus";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Sporting Man United">Sporting–Man United</button>
-        <button type="button" data-query="Club Brugge Liverpool">Club Brugge–Liverpool</button>
-        <button type="button" data-query="Sabah Barcelona">Sabah–Barcelona</button>
+        <button type="button" data-query="Celta Bournemouth">Celta–Bournemouth</button>
+        <button type="button" data-query="Crystal Palace Real Sociedad">Palace–Real Sociedad</button>
+        <button type="button" data-query="Juventus Omonia">Juventus–Omonia</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=sporting-man-united-nov25", title: "Sporting CP vs Man United", detail: "25 Nov · Champions League · 22:00 EET", tag: "Featured" },
-      { href: "match.html?id=sabah-barcelona-nov25", title: "Sabah vs Barcelona", detail: "25 Nov · Champions League · 19:45 EET", tag: "Upcoming" },
-      { href: "match.html?id=brugge-liverpool-nov25", title: "Club Brugge vs Liverpool", detail: "25 Nov · Champions League · 22:00 EET", tag: "Upcoming" },
-      { href: "standings.html", title: "Premier League · Matchweek 11", detail: "Complete · checked 25 Nov", tag: "Table" },
+      { href: "match.html?id=celta-bournemouth-nov26", title: "Celta vs Bournemouth", detail: "26 Nov · Europa League · 19:45 EET", tag: "Featured" },
+      { href: "match.html?id=palace-sociedad-nov26", title: "Crystal Palace vs Real Sociedad", detail: "26 Nov · Europa League · 22:00 EET", tag: "Upcoming" },
+      { href: "match.html?id=brighton-craiova-nov26", title: "Brighton vs Universitatea Craiova", detail: "26 Nov · Conference League · 19:45 EET", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 11", detail: "Complete · checked 26 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {

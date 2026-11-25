@@ -1,56 +1,11 @@
 ensureSiteSkinManager();
-
-function ensureSiteSkinManager() {
-  if (document.querySelector('script[src^="/js/site-skin-manager.js"], script[src^="js/site-skin-manager.js"]')) return;
-  const script = document.createElement("script");
-  script.src = "/js/site-skin-manager.js?v=38";
-  script.defer = true;
-  document.head.appendChild(script);
-}
-
-const insightsMatches = [
-  { league: "Champions League", match: "Sabah vs Barcelona", summary: "Official UEFA schedule: 19:45 EET on 25 November; no score or probability is inferred.", tip: "Current default", score: "19:45 EET" },
-  { league: "Champions League", match: "Slavia Praha vs Villarreal", summary: "The second confirmed early kick-off starts at 19:45 EET on 25 November.", tip: "Early kick-off", score: "19:45 EET" },
-  { league: "Champions League", match: "Sporting CP vs Man United", summary: "Official Matchday 5 fixture at 22:00 EET on 25 November.", tip: "Verified fixture", score: "22:00 EET" },
-  { league: "Champions League", match: "Club Brugge vs Liverpool", summary: "Official Matchday 5 fixture at 22:00 EET on 25 November.", tip: "Verified fixture", score: "22:00 EET" },
-  { league: "Champions League", match: "Real Madrid 5-1 PSV", summary: "Verified final score from 24 November, kept as a result rather than a live prediction.", tip: "Final", score: "5-1" },
-  { league: "Premier League", match: "Matchweek 11 table", summary: "No league match was played on 24 November, so the last verified table is retained unchanged.", tip: "Checked", score: "25 Nov" }
-];
-
-function updateStaticInsightBlocks() {
-  document.title = "AI Sports Insights | Betforecast.ai";
-  const set = (selector, value) => { const el = document.querySelector(selector); if (el) el.textContent = value; };
-  set(".insights-hero-left .hero-badge", "AI Sports Insights · 25 Nov 2026");
-  set(".insights-hero-left h1", "Verified schedule context, without invented probabilities");
-  set(".insights-hero-left p", "Today’s insight layer separates confirmed fixtures and final scores from forecasts. Missing metrics stay unavailable rather than being guessed.");
-  set(".insights-hero-card h3", "Sabah vs Barcelona");
-  set(".insights-hero-card .ai-text", "Official UEFA fixture · 25 November · 19:45 EET.");
-  set(".insights-hero-card .mini-label", "Current default match");
-  set(".insights-hero-card .mini-tag", "Verified");
-  set("#featured-insight .panel-head h2", "Featured verified match context");
-  set(".featured-main-card .insight-kicker", "UEFA Champions League · Matchday 5");
-  set(".featured-main-card h3", "Sabah vs Barcelona");
-  set(".featured-main-card .featured-meta", "25 November 2026 · 19:45 EET");
-  set(".confidence-pill", "Verified");
-  set(".insight-summary h4", "What is confirmed");
-  set(".insight-summary p", "The date, competition and kick-off are confirmed by UEFA. No unverified probability, score forecast, odds or performance metric is shown.");
-  [".insights-hero-card .probabilities", ".insights-hero-card .probability-bar", ".featured-prob-grid", ".featured-long-bar"].forEach(selector => { const el = document.querySelector(selector); if (el) el.style.display = "none"; });
-  const tags = document.querySelector(".factor-tags");
-  if (tags) tags.innerHTML = "<span>Official fixture</span><span>19:45 EET</span><span>No invented odds</span><span>No guessed metrics</span>";
-  const stats = document.querySelectorAll(".mini-stat-card");
-  const values = [["Status", "Upcoming"], ["Kick-off", "19:45 EET"], ["Source", "UEFA"]];
-  stats.forEach((card, i) => { if (!values[i]) return; const a=card.querySelector("span"), b=card.querySelector("strong"); if(a)a.textContent=values[i][0]; if(b)b.textContent=values[i][1]; });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  updateStaticInsightBlocks();
-  const container = document.getElementById("insights-cards");
-  if (!container) return;
-  container.innerHTML = "";
-  insightsMatches.forEach(item => {
-    const card = document.createElement("article");
-    card.className = "insight-card";
-    card.innerHTML = `<div class="insight-card-cover"></div><div class="insight-card-body"><div class="league">${item.league}</div><h3>${item.match}</h3><p>${item.summary}</p><div class="insight-card-bottom"><span class="insight-small-pill">${item.tip}</span><span class="insight-small-score">${item.score}</span></div></div>`;
-    container.appendChild(card);
-  });
-});
+function ensureSiteSkinManager(){if(document.querySelector('script[src^="/js/site-skin-manager.js"], script[src^="js/site-skin-manager.js"]'))return;const s=document.createElement("script");s.src="/js/site-skin-manager.js?v=38";s.defer=true;document.head.appendChild(s)}
+const insightsMatches=[
+{league:"Europa League",match:"Celta vs Bournemouth",summary:"Official Matchday 5 fixture at 19:45 EET on 26 November. No score or probability is inferred.",tip:"Featured",score:"19:45 EET"},
+{league:"Europa League",match:"Crystal Palace vs Real Sociedad",summary:"Official UEFA fixture at 22:00 EET on 26 November.",tip:"Verified fixture",score:"22:00 EET"},
+{league:"Conference League",match:"Brighton vs Universitatea Craiova",summary:"Official Matchday 4 fixture at 19:45 EET on 26 November.",tip:"Verified fixture",score:"19:45 EET"},
+{league:"Champions League",match:"Club Brugge 0-3 Liverpool",summary:"Verified final score from 25 November, stored as a result rather than a prediction.",tip:"Final",score:"0-3"},
+{league:"Champions League",match:"Sporting CP 2-2 Man United",summary:"Verified final score from 25 November.",tip:"Final",score:"2-2"},
+{league:"Premier League",match:"Matchweek 11 table",summary:"No league match was played on 25 November, so the last verified table remains unchanged.",tip:"Checked",score:"26 Nov"}];
+function updateStaticInsightBlocks(){document.title="AI Sports Insights | Betforecast.ai";const set=(q,v)=>{const e=document.querySelector(q);if(e)e.textContent=v};set(".insights-hero-left .hero-badge","AI Sports Insights · 26 Nov 2026");set(".insights-hero-left h1","Verified schedule context, without invented probabilities");set(".insights-hero-left p","Today’s insight layer separates confirmed fixtures and final scores from forecasts. Missing metrics stay unavailable rather than being guessed.");set(".insights-hero-card h3","Celta vs Bournemouth");set(".insights-hero-card .ai-text","Official UEFA fixture · 26 November · 19:45 EET.");set(".insights-hero-card .mini-label","Current featured match");set(".insights-hero-card .mini-tag","Verified");set("#featured-insight .panel-head h2","Featured verified match context");set(".featured-main-card .insight-kicker","UEFA Europa League · Matchday 5");set(".featured-main-card h3","Celta vs Bournemouth");set(".featured-main-card .featured-meta","26 November 2026 · 19:45 EET");set(".confidence-pill","Verified");set(".insight-summary h4","What is confirmed");set(".insight-summary p","The date, competition and kick-off are confirmed by UEFA. No unverified probability, score forecast, odds or performance metric is shown.");[".insights-hero-card .probabilities",".insights-hero-card .probability-bar",".featured-prob-grid",".featured-long-bar"].forEach(q=>{const e=document.querySelector(q);if(e)e.style.display="none"});const tags=document.querySelector(".factor-tags");if(tags)tags.innerHTML="<span>Official fixture</span><span>19:45 EET</span><span>No invented odds</span><span>No guessed metrics</span>";const stats=document.querySelectorAll(".mini-stat-card"),vals=[["Status","Upcoming"],["Kick-off","19:45 EET"],["Source","UEFA"]];stats.forEach((card,i)=>{if(!vals[i])return;const a=card.querySelector("span"),b=card.querySelector("strong");if(a)a.textContent=vals[i][0];if(b)b.textContent=vals[i][1]})}
+document.addEventListener("DOMContentLoaded",()=>{updateStaticInsightBlocks();const c=document.getElementById("insights-cards");if(!c)return;c.innerHTML="";insightsMatches.forEach(item=>{const card=document.createElement("article");card.className="insight-card";card.innerHTML=`<div class="insight-card-cover"></div><div class="insight-card-body"><div class="league">${item.league}</div><h3>${item.match}</h3><p>${item.summary}</p><div class="insight-card-bottom"><span class="insight-small-pill">${item.tip}</span><span class="insight-small-score">${item.score}</span></div></div>`;c.appendChild(card)})});

@@ -1,7 +1,790 @@
 {
-  "updatedAt": "2026-11-25T00:01:00+02:00",
-  "featuredId": "sabah-barcelona-nov25",
+  "updatedAt": "2026-11-26T00:01:00+02:00",
+  "featuredId": "celta-bournemouth-nov26",
   "events": [
+    {
+      "id": "sabah-barcelona-nov25",
+      "type": "result",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "Final",
+      "title": "Sabah 1-4 Barcelona",
+      "home": "Sabah",
+      "away": "Barcelona",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "1",
+      "awayScore": "4"
+    },
+    {
+      "id": "slavia-villarreal-nov25",
+      "type": "result",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "Final",
+      "title": "Slavia Praha 0-1 Villarreal",
+      "home": "Slavia Praha",
+      "away": "Villarreal",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "0",
+      "awayScore": "1"
+    },
+    {
+      "id": "atletico-viking-nov25",
+      "type": "result",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "Final",
+      "title": "Atlético de Madrid 2-0 Viking",
+      "home": "Atlético de Madrid",
+      "away": "Viking",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "2",
+      "awayScore": "0"
+    },
+    {
+      "id": "brugge-liverpool-nov25",
+      "type": "result",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "Final",
+      "title": "Club Brugge 0-3 Liverpool",
+      "home": "Club Brugge",
+      "away": "Liverpool",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "0",
+      "awayScore": "3"
+    },
+    {
+      "id": "inter-stuttgart-nov25",
+      "type": "result",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "Final",
+      "title": "Inter 2-0 Stuttgart",
+      "home": "Inter",
+      "away": "Stuttgart",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "2",
+      "awayScore": "0"
+    },
+    {
+      "id": "shakhtar-fenerbahce-nov25",
+      "type": "result",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "Final",
+      "title": "Shakhtar Donetsk 0-1 Fenerbahçe",
+      "home": "Shakhtar Donetsk",
+      "away": "Fenerbahçe",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "0",
+      "awayScore": "1"
+    },
+    {
+      "id": "lille-bayern-nov25",
+      "type": "result",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "Final",
+      "title": "Lille 2-1 Bayern München",
+      "home": "Lille",
+      "away": "Bayern München",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "2",
+      "awayScore": "1"
+    },
+    {
+      "id": "psg-roma-nov25",
+      "type": "result",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "Final",
+      "title": "Paris Saint-Germain 2-2 Roma",
+      "home": "Paris Saint-Germain",
+      "away": "Roma",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "2",
+      "awayScore": "2"
+    },
+    {
+      "id": "sporting-man-united-nov25",
+      "type": "result",
+      "sport": "Football",
+      "date": "25 Nov",
+      "time": "Final",
+      "title": "Sporting CP 2-2 Man United",
+      "home": "Sporting CP",
+      "away": "Man United",
+      "competition": "UEFA Champions League",
+      "stage": "League phase · Matchday 5",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "UEFA Champions League Matchday 5"
+      ],
+      "homeScore": "2",
+      "awayScore": "2"
+    },
+    {
+      "id": "besiktas-hapoel-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Beşiktaş vs Hapoel Beer-Sheva",
+      "home": "Beşiktaş",
+      "away": "Hapoel Beer-Sheva",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "salzburg-ararat-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Salzburg vs Ararat-Armenia",
+      "home": "Salzburg",
+      "away": "Ararat-Armenia",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "plzen-benfica-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Viktoria Plzeň vs Benfica",
+      "home": "Viktoria Plzeň",
+      "away": "Benfica",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "dinamo-leverkusen-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "GNK Dinamo vs Leverkusen",
+      "home": "GNK Dinamo",
+      "away": "Leverkusen",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "olympiacos-milan-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Olympiacos vs Milan",
+      "home": "Olympiacos",
+      "away": "Milan",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "marseille-levski-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Marseille vs Levski Sofia",
+      "home": "Marseille",
+      "away": "Levski Sofia",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "union-lech-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Union SG vs Lech Poznań",
+      "home": "Union SG",
+      "away": "Lech Poznań",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "celta-bournemouth-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Celta vs Bournemouth",
+      "home": "Celta",
+      "away": "Bournemouth",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Featured",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "sparta-az-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Sparta Praha vs AZ Alkmaar",
+      "home": "Sparta Praha",
+      "away": "AZ Alkmaar",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "palace-sociedad-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Crystal Palace vs Real Sociedad",
+      "home": "Crystal Palace",
+      "away": "Real Sociedad",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "ferencvaros-celje-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Ferencváros vs Celje",
+      "home": "Ferencváros",
+      "away": "Celje",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "juventus-omonia-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Juventus vs Omonia",
+      "home": "Juventus",
+      "away": "Omonia",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "nec-rennes-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "N.E.C. Nijmegen vs Rennes",
+      "home": "N.E.C. Nijmegen",
+      "away": "Rennes",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "ofi-anderlecht-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "OFI Crete vs Anderlecht",
+      "home": "OFI Crete",
+      "away": "Anderlecht",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "lyon-lillestrom-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Lyon vs Lillestrøm",
+      "home": "Lyon",
+      "away": "Lillestrøm",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "torreense-celtic-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Torreense vs Celtic",
+      "home": "Torreense",
+      "away": "Celtic",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "sunderland-jagiellonia-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Sunderland vs Jagiellonia",
+      "home": "Sunderland",
+      "away": "Jagiellonia",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "hoffenheim-sturm-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Hoffenheim vs Sturm Graz",
+      "home": "Hoffenheim",
+      "away": "Sturm Graz",
+      "competition": "UEFA Europa League",
+      "stage": "League phase · Matchday 5",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "kairat-mjallby-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "17:30 EET",
+      "title": "Kairat Almaty vs Mjällby",
+      "home": "Kairat Almaty",
+      "away": "Mjällby",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 17:30 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "ajax-thun-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Ajax vs Thun",
+      "home": "Ajax",
+      "away": "Thun",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "brighton-craiova-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Brighton vs Universitatea Craiova",
+      "home": "Brighton",
+      "away": "Universitatea Craiova",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "iberia-getafe-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Iberia Tbilisi vs Getafe",
+      "home": "Iberia Tbilisi",
+      "away": "Getafe",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "jablonec-lugano-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Jablonec vs Lugano",
+      "home": "Jablonec",
+      "away": "Lugano",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "kauno-riga-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Kauno Žalgiris vs Riga",
+      "home": "Kauno Žalgiris",
+      "away": "Riga",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "hearts-monaco-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Hearts vs Monaco",
+      "home": "Hearts",
+      "away": "Monaco",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "egnatia-lincoln-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Egnatia vs Lincoln Red Imps",
+      "home": "Egnatia",
+      "away": "Lincoln Red Imps",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "pafos-midtjylland-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Pafos vs Midtjylland",
+      "home": "Pafos",
+      "away": "Midtjylland",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "brann-aarhus-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "19:45 EET",
+      "title": "Brann vs Aarhus",
+      "home": "Brann",
+      "away": "Aarhus",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 19:45 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "nordsjaelland-panathinaikos-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Nordsjælland vs Panathinaikos",
+      "home": "Nordsjælland",
+      "away": "Panathinaikos",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "borac-atalanta-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Borac vs Atalanta",
+      "home": "Borac",
+      "away": "Atalanta",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "hajduk-sint-truiden-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Hajduk Split vs Sint-Truidense",
+      "home": "Hajduk Split",
+      "away": "Sint-Truidense",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "inter-escaldes-copenhagen-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Inter Escaldes vs Copenhagen",
+      "home": "Inter Escaldes",
+      "away": "Copenhagen",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "gent-zvezda-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Gent vs Crvena Zvezda",
+      "home": "Gent",
+      "away": "Crvena Zvezda",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "cska-trabzonspor-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "CSKA Sofia vs Trabzonspor",
+      "home": "CSKA Sofia",
+      "away": "Trabzonspor",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "braga-kups-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Braga vs KuPS Kuopio",
+      "home": "Braga",
+      "away": "KuPS Kuopio",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "freiburg-twente-nov26",
+      "type": "event",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "22:00 EET",
+      "title": "Freiburg vs Twente",
+      "home": "Freiburg",
+      "away": "Twente",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Upcoming",
+      "signals": [
+        "Official UEFA fixture",
+        "Kick-off 22:00 EET (Europe/Tallinn)"
+      ]
+    },
     {
       "id": "bodo-lask-nov24",
       "type": "result",
@@ -172,159 +955,6 @@
       ],
       "homeScore": "0",
       "awayScore": "2"
-    },
-    {
-      "id": "sabah-barcelona-nov25",
-      "type": "event",
-      "sport": "Football",
-      "date": "25 Nov",
-      "time": "19:45 EET",
-      "title": "Sabah vs Barcelona",
-      "home": "Sabah",
-      "away": "Barcelona",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Kick-off 19:45 EET (Europe/Tallinn)"
-      ]
-    },
-    {
-      "id": "slavia-villarreal-nov25",
-      "type": "event",
-      "sport": "Football",
-      "date": "25 Nov",
-      "time": "19:45 EET",
-      "title": "Slavia Praha vs Villarreal",
-      "home": "Slavia Praha",
-      "away": "Villarreal",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Kick-off 19:45 EET (Europe/Tallinn)"
-      ]
-    },
-    {
-      "id": "atletico-viking-nov25",
-      "type": "event",
-      "sport": "Football",
-      "date": "25 Nov",
-      "time": "22:00 EET",
-      "title": "Atlético de Madrid vs Viking",
-      "home": "Atlético de Madrid",
-      "away": "Viking",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Kick-off 22:00 EET (Europe/Tallinn)"
-      ]
-    },
-    {
-      "id": "brugge-liverpool-nov25",
-      "type": "event",
-      "sport": "Football",
-      "date": "25 Nov",
-      "time": "22:00 EET",
-      "title": "Club Brugge vs Liverpool",
-      "home": "Club Brugge",
-      "away": "Liverpool",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Kick-off 22:00 EET (Europe/Tallinn)"
-      ]
-    },
-    {
-      "id": "inter-stuttgart-nov25",
-      "type": "event",
-      "sport": "Football",
-      "date": "25 Nov",
-      "time": "22:00 EET",
-      "title": "Inter vs Stuttgart",
-      "home": "Inter",
-      "away": "Stuttgart",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Kick-off 22:00 EET (Europe/Tallinn)"
-      ]
-    },
-    {
-      "id": "shakhtar-fenerbahce-nov25",
-      "type": "event",
-      "sport": "Football",
-      "date": "25 Nov",
-      "time": "22:00 EET",
-      "title": "Shakhtar Donetsk vs Fenerbahçe",
-      "home": "Shakhtar Donetsk",
-      "away": "Fenerbahçe",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Kick-off 22:00 EET (Europe/Tallinn)"
-      ]
-    },
-    {
-      "id": "lille-bayern-nov25",
-      "type": "event",
-      "sport": "Football",
-      "date": "25 Nov",
-      "time": "22:00 EET",
-      "title": "Lille vs Bayern München",
-      "home": "Lille",
-      "away": "Bayern München",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Kick-off 22:00 EET (Europe/Tallinn)"
-      ]
-    },
-    {
-      "id": "psg-roma-nov25",
-      "type": "event",
-      "sport": "Football",
-      "date": "25 Nov",
-      "time": "22:00 EET",
-      "title": "Paris Saint-Germain vs Roma",
-      "home": "Paris Saint-Germain",
-      "away": "Roma",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 5",
-      "status": "Upcoming",
-      "signals": [
-        "Official UEFA fixture",
-        "Kick-off 22:00 EET (Europe/Tallinn)"
-      ]
-    },
-    {
-      "id": "sporting-man-united-nov25",
-      "type": "event",
-      "sport": "Football",
-      "date": "25 Nov",
-      "time": "22:00 EET",
-      "title": "Sporting CP vs Man United",
-      "home": "Sporting CP",
-      "away": "Man United",
-      "competition": "UEFA Champions League",
-      "stage": "League phase · Matchday 5",
-      "status": "Featured",
-      "signals": [
-        "Official UEFA fixture",
-        "Kick-off 22:00 EET (Europe/Tallinn)"
-      ]
     },
     {
       "id": "newcastle-arsenal-nov21",

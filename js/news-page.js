@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 25 Nov 2026";
+  if (k) k.textContent = "World Sports News · 26 Nov 2026";
   if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Real Madrid 5-1 PSV</a><a class="sidebar-link-card" href="results.html">Man City 2-2 Napoli</a><a class="sidebar-link-card" href="match.html?id=sporting-man-united-nov25">Sporting–Man United · 25 Nov</a><a class="sidebar-link-card" href="match.html?id=brugge-liverpool-nov25">Club Brugge–Liverpool · 25 Nov</a><a class="sidebar-link-card" href="standings.html">EPL Matchweek 11 table</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Sabah 1-4 Barcelona</a><a class="sidebar-link-card" href="results.html">Club Brugge 0-3 Liverpool</a><a class="sidebar-link-card" href="match.html?id=celta-bournemouth-nov26">Celta–Bournemouth · 26 Nov</a><a class="sidebar-link-card" href="match.html?id=palace-sociedad-nov26">Palace–Real Sociedad · 26 Nov</a><a class="sidebar-link-card" href="standings.html">EPL Matchweek 11 table</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Champions League Matchday 5 continues on 25 November with nine confirmed fixtures. Early kick-offs are at 19:45 EET; the other seven start at 22:00 EET. Tuesday’s verified results are now archived.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Champions League Matchday 5 is complete and all nine Wednesday results are archived. Europa League Matchday 5 and Conference League Matchday 4 take over on 26 November, with kick-offs shown in EET.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
