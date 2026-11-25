@@ -315,7 +315,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 23 Nov 2026");
+    setStatus("World sports results · checked 26 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -325,7 +325,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Arsenal drew 2-2 at Newcastle, Leeds won 4-1 at Chelsea and Manchester City were held 1-1 by Fulham among seven verified Premier League results from 21 November.";
+    if (intro) intro.textContent = "Nine Champions League results from 25 November are verified and archived, including Club Brugge 0-3 Liverpool, Lille 2-1 Bayern München and Paris Saint-Germain 2-2 Roma.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
