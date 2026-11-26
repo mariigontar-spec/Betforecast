@@ -4,6 +4,34 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Beşiktaş", awayName: "Hapoel Beer-Sheva", homeGoals: "2", awayGoals: "1", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=besiktas-hapoel-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Salzburg", awayName: "Ararat-Armenia", homeGoals: "2", awayGoals: "0", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=salzburg-ararat-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Viktoria Plzeň", awayName: "Benfica", homeGoals: "4", awayGoals: "0", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=plzen-benfica-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "GNK Dinamo", awayName: "Leverkusen", homeGoals: "0", awayGoals: "2", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=dinamo-leverkusen-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Olympiacos", awayName: "Milan", homeGoals: "2", awayGoals: "4", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=olympiacos-milan-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Marseille", awayName: "Levski Sofia", homeGoals: "1", awayGoals: "0", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=marseille-levski-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Union SG", awayName: "Lech Poznań", homeGoals: "2", awayGoals: "2", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=union-lech-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Celta", awayName: "Bournemouth", homeGoals: "1", awayGoals: "2", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=celta-bournemouth-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Sparta Praha", awayName: "AZ Alkmaar", homeGoals: "2", awayGoals: "4", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=sparta-az-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Crystal Palace", awayName: "Real Sociedad", homeGoals: "2", awayGoals: "1", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=palace-sociedad-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Ferencváros", awayName: "Celje", homeGoals: "0", awayGoals: "0", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=ferencvaros-celje-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Juventus", awayName: "Omonia", homeGoals: "4", awayGoals: "1", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=juventus-omonia-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "N.E.C. Nijmegen", awayName: "Rennes", homeGoals: "3", awayGoals: "1", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=nec-rennes-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "OFI Crete", awayName: "Anderlecht", homeGoals: "1", awayGoals: "3", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=ofi-anderlecht-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Lyon", awayName: "Lillestrøm", homeGoals: "0", awayGoals: "0", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=lyon-lillestrom-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Torreense", awayName: "Celtic", homeGoals: "1", awayGoals: "2", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=torreense-celtic-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Sunderland", awayName: "Jagiellonia", homeGoals: "1", awayGoals: "1", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=sunderland-jagiellonia-nov26" },
+    { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Hoffenheim", awayName: "Sturm Graz", homeGoals: "3", awayGoals: "1", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=hoffenheim-sturm-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Kairat Almaty", awayName: "Mjällby", homeGoals: "1", awayGoals: "0", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=kairat-mjallby-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Ajax", awayName: "Thun", homeGoals: "4", awayGoals: "0", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=ajax-thun-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Brighton", awayName: "Universitatea Craiova", homeGoals: "4", awayGoals: "0", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=brighton-craiova-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Iberia Tbilisi", awayName: "Getafe", homeGoals: "1", awayGoals: "0", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=iberia-getafe-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Jablonec", awayName: "Lugano", homeGoals: "2", awayGoals: "0", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=jablonec-lugano-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Kauno Žalgiris", awayName: "Riga", homeGoals: "2", awayGoals: "0", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=kauno-riga-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Hearts", awayName: "Monaco", homeGoals: "2", awayGoals: "3", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=hearts-monaco-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Egnatia", awayName: "Lincoln Red Imps", homeGoals: "2", awayGoals: "1", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=egnatia-lincoln-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Pafos", awayName: "Midtjylland", homeGoals: "0", awayGoals: "2", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=pafos-midtjylland-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Brann", awayName: "Aarhus", homeGoals: "1", awayGoals: "4", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=brann-aarhus-nov26" },
     { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Sabah", awayName: "Barcelona", homeGoals: "1", awayGoals: "4", venue: "UEFA Champions League", date: "25 Nov", href: "match.html?id=sabah-barcelona-nov25" },
     { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Slavia Praha", awayName: "Villarreal", homeGoals: "0", awayGoals: "1", venue: "UEFA Champions League", date: "25 Nov", href: "match.html?id=slavia-villarreal-nov25" },
     { round: "Football · UEFA Champions League Matchday 5", status: "FINAL", homeName: "Atlético de Madrid", awayName: "Viking", homeGoals: "2", awayGoals: "0", venue: "UEFA Champions League", date: "25 Nov", href: "match.html?id=atletico-viking-nov25" },
@@ -315,7 +343,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 26 Nov 2026");
+    setStatus("World sports results · checked 27 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -325,7 +353,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Nine Champions League results from 25 November are verified and archived, including Club Brugge 0-3 Liverpool, Lille 2-1 Bayern München and Paris Saint-Germain 2-2 Roma.";
+    if (intro) intro.textContent = "Twenty-eight verified UEFA results from 26 November are archived. Nottingham Forest vs Chelsea is the next confirmed Premier League fixture at 22:00 EET on 27 November.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
