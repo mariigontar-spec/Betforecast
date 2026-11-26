@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Matchweek 11 complete · Arsenal lead on 28 points · checked 26 Nov",
-      "insightText": "No Premier League matches were played on 25 November, so the last verified positions, played, wins, draws, losses, goals, goal difference and points are retained. Recent contains Matchweek 11; Upcoming contains all ten Matchweek 12 fixtures from 27 to 29 November.",
+      "insightTitle": "Matchweek 11 complete · Arsenal lead on 28 points · checked 27 Nov",
+      "insightText": "No Premier League matches were played on 26 November, so the last verified positions, played, wins, draws, losses, goals, goal difference and points are retained. Recent contains Matchweek 11; Upcoming contains all ten Matchweek 12 fixtures from 27 to 29 November, shown in EET.",
       "table": [
         {
           "pos": 1,
@@ -474,52 +474,52 @@
       ],
       "upcomingMatches": [
         {
-          "time": "27 Nov · 20:00",
+          "time": "27 Nov · 22:00 EET",
           "match": "Nottm Forest vs Chelsea",
           "status": "upcoming"
         },
         {
-          "time": "28 Nov · 15:00",
+          "time": "28 Nov · 17:00 EET",
           "match": "Leeds United vs Coventry City",
           "status": "upcoming"
         },
         {
-          "time": "28 Nov · 15:00",
+          "time": "28 Nov · 17:00 EET",
           "match": "Man United vs Brentford",
           "status": "upcoming"
         },
         {
-          "time": "28 Nov · 17:30",
+          "time": "28 Nov · 19:30 EET",
           "match": "Ipswich Town vs Aston Villa",
           "status": "upcoming"
         },
         {
-          "time": "29 Nov · 12:00",
+          "time": "29 Nov · 14:00 EET",
           "match": "Everton vs Liverpool",
           "status": "upcoming"
         },
         {
-          "time": "29 Nov · 14:05",
+          "time": "29 Nov · 16:05 EET",
           "match": "Brighton vs Newcastle",
           "status": "upcoming"
         },
         {
-          "time": "29 Nov · 14:05",
+          "time": "29 Nov · 16:05 EET",
           "match": "Crystal Palace vs Hull City",
           "status": "upcoming"
         },
         {
-          "time": "29 Nov · 14:05",
+          "time": "29 Nov · 16:05 EET",
           "match": "Fulham vs Bournemouth",
           "status": "upcoming"
         },
         {
-          "time": "29 Nov · 14:05",
+          "time": "29 Nov · 16:05 EET",
           "match": "Sunderland vs Tottenham",
           "status": "upcoming"
         },
         {
-          "time": "29 Nov · 16:30",
+          "time": "29 Nov · 18:30 EET",
           "match": "Arsenal vs Man City",
           "status": "upcoming"
         }
