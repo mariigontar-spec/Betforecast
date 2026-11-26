@@ -1,49 +1,1798 @@
 const GLOBAL_MATCH_RADAR = [
-  {"id":"celta-bournemouth-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Celta","away":"Bournemouth","homeShort":"C","awayShort":"B","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Celta face Bournemouth in UEFA Europa League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"besiktas-hapoel-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Beşiktaş","away":"Hapoel Beer-Sheva","homeShort":"B","awayShort":"HB","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Beşiktaş face Hapoel Beer-Sheva in UEFA Europa League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"salzburg-ararat-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Salzburg","away":"Ararat-Armenia","homeShort":"S","awayShort":"A","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Salzburg face Ararat-Armenia in UEFA Europa League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"plzen-benfica-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Viktoria Plzeň","away":"Benfica","homeShort":"VP","awayShort":"B","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Viktoria Plzeň face Benfica in UEFA Europa League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"dinamo-leverkusen-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 5","home":"GNK Dinamo","away":"Leverkusen","homeShort":"GD","awayShort":"L","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"GNK Dinamo face Leverkusen in UEFA Europa League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"olympiacos-milan-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Olympiacos","away":"Milan","homeShort":"O","awayShort":"M","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Olympiacos face Milan in UEFA Europa League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"marseille-levski-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Marseille","away":"Levski Sofia","homeShort":"M","awayShort":"LS","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Marseille face Levski Sofia in UEFA Europa League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"union-lech-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Union SG","away":"Lech Poznań","homeShort":"US","awayShort":"LP","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Union SG face Lech Poznań in UEFA Europa League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"sparta-az-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Sparta Praha","away":"AZ Alkmaar","homeShort":"SP","awayShort":"AA","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Sparta Praha face AZ Alkmaar in UEFA Europa League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"palace-sociedad-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Crystal Palace","away":"Real Sociedad","homeShort":"CP","awayShort":"RS","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Crystal Palace face Real Sociedad in UEFA Europa League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"ferencvaros-celje-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Ferencváros","away":"Celje","homeShort":"F","awayShort":"C","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Ferencváros face Celje in UEFA Europa League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"juventus-omonia-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Juventus","away":"Omonia","homeShort":"J","awayShort":"O","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Juventus face Omonia in UEFA Europa League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"nec-rennes-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 5","home":"N.E.C. Nijmegen","away":"Rennes","homeShort":"NN","awayShort":"R","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"N.E.C. Nijmegen face Rennes in UEFA Europa League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"ofi-anderlecht-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 5","home":"OFI Crete","away":"Anderlecht","homeShort":"OC","awayShort":"A","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"OFI Crete face Anderlecht in UEFA Europa League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"lyon-lillestrom-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Lyon","away":"Lillestrøm","homeShort":"L","awayShort":"L","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Lyon face Lillestrøm in UEFA Europa League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"torreense-celtic-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Torreense","away":"Celtic","homeShort":"T","awayShort":"C","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Torreense face Celtic in UEFA Europa League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"sunderland-jagiellonia-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Sunderland","away":"Jagiellonia","homeShort":"S","awayShort":"J","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Sunderland face Jagiellonia in UEFA Europa League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"hoffenheim-sturm-nov26","league":"Football · UEFA Europa League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 5","home":"Hoffenheim","away":"Sturm Graz","homeShort":"H","awayShort":"SG","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Hoffenheim face Sturm Graz in UEFA Europa League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 5","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"kairat-mjallby-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"17:30 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Kairat Almaty","away":"Mjällby","homeShort":"KA","awayShort":"M","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Kairat Almaty face Mjällby in UEFA Conference League. Kick-off is 17:30 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 17:30 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 17:30 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"ajax-thun-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Ajax","away":"Thun","homeShort":"A","awayShort":"T","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Ajax face Thun in UEFA Conference League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"brighton-craiova-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Brighton","away":"Universitatea Craiova","homeShort":"B","awayShort":"UC","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Brighton face Universitatea Craiova in UEFA Conference League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"iberia-getafe-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Iberia Tbilisi","away":"Getafe","homeShort":"IT","awayShort":"G","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Iberia Tbilisi face Getafe in UEFA Conference League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"jablonec-lugano-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Jablonec","away":"Lugano","homeShort":"J","awayShort":"L","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Jablonec face Lugano in UEFA Conference League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"kauno-riga-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Kauno Žalgiris","away":"Riga","homeShort":"KŽ","awayShort":"R","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Kauno Žalgiris face Riga in UEFA Conference League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"hearts-monaco-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Hearts","away":"Monaco","homeShort":"H","awayShort":"M","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Hearts face Monaco in UEFA Conference League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"egnatia-lincoln-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Egnatia","away":"Lincoln Red Imps","homeShort":"E","awayShort":"LRI","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Egnatia face Lincoln Red Imps in UEFA Conference League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"pafos-midtjylland-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Pafos","away":"Midtjylland","homeShort":"P","awayShort":"M","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Pafos face Midtjylland in UEFA Conference League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"brann-aarhus-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"19:45 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Brann","away":"Aarhus","homeShort":"B","awayShort":"A","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Brann face Aarhus in UEFA Conference League. Kick-off is 19:45 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 19:45 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 19:45 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"nordsjaelland-panathinaikos-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Nordsjælland","away":"Panathinaikos","homeShort":"N","awayShort":"P","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Nordsjælland face Panathinaikos in UEFA Conference League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"borac-atalanta-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Borac","away":"Atalanta","homeShort":"B","awayShort":"A","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Borac face Atalanta in UEFA Conference League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"hajduk-sint-truiden-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Hajduk Split","away":"Sint-Truidense","homeShort":"HS","awayShort":"S","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Hajduk Split face Sint-Truidense in UEFA Conference League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"inter-escaldes-copenhagen-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Inter Escaldes","away":"Copenhagen","homeShort":"IE","awayShort":"C","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Inter Escaldes face Copenhagen in UEFA Conference League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"gent-zvezda-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Gent","away":"Crvena Zvezda","homeShort":"G","awayShort":"CZ","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Gent face Crvena Zvezda in UEFA Conference League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"cska-trabzonspor-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 4","home":"CSKA Sofia","away":"Trabzonspor","homeShort":"CS","awayShort":"T","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"CSKA Sofia face Trabzonspor in UEFA Conference League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"braga-kups-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Braga","away":"KuPS Kuopio","homeShort":"B","awayShort":"KK","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Braga face KuPS Kuopio in UEFA Conference League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"freiburg-twente-nov26","league":"Football · UEFA Conference League","date":"26 Nov 2026","time":"22:00 EET","stadium":"Official UEFA fixture · Matchday 4","home":"Freiburg","away":"Twente","homeShort":"F","awayShort":"T","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"UPCOMING","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Verified schedule","summary":"Freiburg face Twente in UEFA Conference League. Kick-off is 22:00 EET in Europe/Tallinn.","bestTip":"Official fixture","goalsLean":"No score forecast","btts":"Kick-off · 22:00 EET","factors":["Official UEFA fixture","Matchday 4","No unverified prediction"],"formHome":[],"formAway":[],"homeStats":["Schedule verified 26 Nov"],"awayStats":["Schedule verified 26 Nov"],"quickInsightTitle":"Verified match information","quickInsight":"The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.","related":[]},
-  {"id":"sabah-barcelona-nov25","league":"Football · UEFA Champions League","date":"25 Nov 2026","time":"Final","stadium":"Final · UEFA Champions League Matchday 5","home":"Sabah","away":"Barcelona","homeShort":"S","awayShort":"B","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"1 - 4","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Final score verified","summary":"Sabah 1-4 Barcelona. Final score verified.","bestTip":"Final score verified","goalsLean":"Matchday 5 result","btts":"Final · 25 November","factors":["Final score verified","UEFA Champions League","No forecast"],"formHome":[],"formAway":[],"homeStats":["Matchday 5"],"awayStats":["Matchday 5"],"quickInsightTitle":"Verified final result","quickInsight":"Sabah 1-4 Barcelona.","related":[]},
-  {"id":"slavia-villarreal-nov25","league":"Football · UEFA Champions League","date":"25 Nov 2026","time":"Final","stadium":"Final · UEFA Champions League Matchday 5","home":"Slavia Praha","away":"Villarreal","homeShort":"SP","awayShort":"V","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"0 - 1","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Final score verified","summary":"Slavia Praha 0-1 Villarreal. Final score verified.","bestTip":"Final score verified","goalsLean":"Matchday 5 result","btts":"Final · 25 November","factors":["Final score verified","UEFA Champions League","No forecast"],"formHome":[],"formAway":[],"homeStats":["Matchday 5"],"awayStats":["Matchday 5"],"quickInsightTitle":"Verified final result","quickInsight":"Slavia Praha 0-1 Villarreal.","related":[]},
-  {"id":"atletico-viking-nov25","league":"Football · UEFA Champions League","date":"25 Nov 2026","time":"Final","stadium":"Final · UEFA Champions League Matchday 5","home":"Atlético de Madrid","away":"Viking","homeShort":"ADM","awayShort":"V","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"2 - 0","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Final score verified","summary":"Atlético de Madrid 2-0 Viking. Final score verified.","bestTip":"Final score verified","goalsLean":"Matchday 5 result","btts":"Final · 25 November","factors":["Final score verified","UEFA Champions League","No forecast"],"formHome":[],"formAway":[],"homeStats":["Matchday 5"],"awayStats":["Matchday 5"],"quickInsightTitle":"Verified final result","quickInsight":"Atlético de Madrid 2-0 Viking.","related":[]},
-  {"id":"brugge-liverpool-nov25","league":"Football · UEFA Champions League","date":"25 Nov 2026","time":"Final","stadium":"Final · UEFA Champions League Matchday 5","home":"Club Brugge","away":"Liverpool","homeShort":"CB","awayShort":"L","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"0 - 3","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Final score verified","summary":"Club Brugge 0-3 Liverpool. Final score verified.","bestTip":"Final score verified","goalsLean":"Matchday 5 result","btts":"Final · 25 November","factors":["Final score verified","UEFA Champions League","No forecast"],"formHome":[],"formAway":[],"homeStats":["Matchday 5"],"awayStats":["Matchday 5"],"quickInsightTitle":"Verified final result","quickInsight":"Club Brugge 0-3 Liverpool.","related":[]},
-  {"id":"inter-stuttgart-nov25","league":"Football · UEFA Champions League","date":"25 Nov 2026","time":"Final","stadium":"Final · UEFA Champions League Matchday 5","home":"Inter","away":"Stuttgart","homeShort":"I","awayShort":"S","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"2 - 0","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Final score verified","summary":"Inter 2-0 Stuttgart. Final score verified.","bestTip":"Final score verified","goalsLean":"Matchday 5 result","btts":"Final · 25 November","factors":["Final score verified","UEFA Champions League","No forecast"],"formHome":[],"formAway":[],"homeStats":["Matchday 5"],"awayStats":["Matchday 5"],"quickInsightTitle":"Verified final result","quickInsight":"Inter 2-0 Stuttgart.","related":[]},
-  {"id":"shakhtar-fenerbahce-nov25","league":"Football · UEFA Champions League","date":"25 Nov 2026","time":"Final","stadium":"Final · UEFA Champions League Matchday 5","home":"Shakhtar Donetsk","away":"Fenerbahçe","homeShort":"SD","awayShort":"F","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"0 - 1","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Final score verified","summary":"Shakhtar Donetsk 0-1 Fenerbahçe. Final score verified.","bestTip":"Final score verified","goalsLean":"Matchday 5 result","btts":"Final · 25 November","factors":["Final score verified","UEFA Champions League","No forecast"],"formHome":[],"formAway":[],"homeStats":["Matchday 5"],"awayStats":["Matchday 5"],"quickInsightTitle":"Verified final result","quickInsight":"Shakhtar Donetsk 0-1 Fenerbahçe.","related":[]},
-  {"id":"lille-bayern-nov25","league":"Football · UEFA Champions League","date":"25 Nov 2026","time":"Final","stadium":"Final · UEFA Champions League Matchday 5","home":"Lille","away":"Bayern München","homeShort":"L","awayShort":"BM","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"2 - 1","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Final score verified","summary":"Lille 2-1 Bayern München. Final score verified.","bestTip":"Final score verified","goalsLean":"Matchday 5 result","btts":"Final · 25 November","factors":["Final score verified","UEFA Champions League","No forecast"],"formHome":[],"formAway":[],"homeStats":["Matchday 5"],"awayStats":["Matchday 5"],"quickInsightTitle":"Verified final result","quickInsight":"Lille 2-1 Bayern München.","related":[]},
-  {"id":"psg-roma-nov25","league":"Football · UEFA Champions League","date":"25 Nov 2026","time":"Final","stadium":"Final · UEFA Champions League Matchday 5","home":"Paris Saint-Germain","away":"Roma","homeShort":"PS","awayShort":"R","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"2 - 2","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Final score verified","summary":"Paris Saint-Germain 2-2 Roma. Final score verified.","bestTip":"Final score verified","goalsLean":"Matchday 5 result","btts":"Final · 25 November","factors":["Final score verified","UEFA Champions League","No forecast"],"formHome":[],"formAway":[],"homeStats":["Matchday 5"],"awayStats":["Matchday 5"],"quickInsightTitle":"Verified final result","quickInsight":"Paris Saint-Germain 2-2 Roma.","related":[]},
-  {"id":"sporting-man-united-nov25","league":"Football · UEFA Champions League","date":"25 Nov 2026","time":"Final","stadium":"Final · UEFA Champions League Matchday 5","home":"Sporting CP","away":"Man United","homeShort":"SC","awayShort":"MU","homeLogo":"assets/bet-logo.png?v=2","awayLogo":"assets/bet-logo.png?v=2","projectedScore":"2 - 2","homePct":0,"drawPct":0,"awayPct":0,"confidence":100,"confidenceLabel":"Final score verified","summary":"Sporting CP 2-2 Man United. Final score verified.","bestTip":"Final score verified","goalsLean":"Matchday 5 result","btts":"Final · 25 November","factors":["Final score verified","UEFA Champions League","No forecast"],"formHome":[],"formAway":[],"homeStats":["Matchday 5"],"awayStats":["Matchday 5"],"quickInsightTitle":"Verified final result","quickInsight":"Sporting CP 2-2 Man United.","related":[]},
+  {
+    "id": "forest-chelsea-nov27",
+    "league": "Football · Premier League",
+    "date": "27 Nov 2026",
+    "time": "22:00 EET",
+    "stadium": "Official Premier League fixture · Matchweek 12",
+    "home": "Nottm Forest",
+    "away": "Chelsea",
+    "homeShort": "NF",
+    "awayShort": "C",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Verified schedule",
+    "summary": "Nottingham Forest face Chelsea in Premier League Matchweek 12. Kick-off is 22:00 EET in Europe/Tallinn.",
+    "bestTip": "Official fixture",
+    "goalsLean": "No score forecast",
+    "btts": "Kick-off · 22:00 EET",
+    "factors": [
+      "Official Premier League fixture",
+      "Matchweek 12",
+      "No unverified prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Schedule verified 27 Nov"
+    ],
+    "awayStats": [
+      "Schedule verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified match information",
+    "quickInsight": "The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.",
+    "related": []
+  },
+  {
+    "id": "celta-bournemouth-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Celta",
+    "away": "Bournemouth",
+    "homeShort": "C",
+    "awayShort": "B",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Celta 1-2 Bournemouth. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Celta 1-2 Bournemouth.",
+    "related": []
+  },
+  {
+    "id": "besiktas-hapoel-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Beşiktaş",
+    "away": "Hapoel Beer-Sheva",
+    "homeShort": "B",
+    "awayShort": "HB",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Beşiktaş 2-1 Hapoel Beer-Sheva. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Beşiktaş 2-1 Hapoel Beer-Sheva.",
+    "related": []
+  },
+  {
+    "id": "salzburg-ararat-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Salzburg",
+    "away": "Ararat-Armenia",
+    "homeShort": "S",
+    "awayShort": "A",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Salzburg 2-0 Ararat-Armenia. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Salzburg 2-0 Ararat-Armenia.",
+    "related": []
+  },
+  {
+    "id": "plzen-benfica-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Viktoria Plzeň",
+    "away": "Benfica",
+    "homeShort": "VP",
+    "awayShort": "B",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "4 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Viktoria Plzeň 4-0 Benfica. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Viktoria Plzeň 4-0 Benfica.",
+    "related": []
+  },
+  {
+    "id": "dinamo-leverkusen-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "GNK Dinamo",
+    "away": "Leverkusen",
+    "homeShort": "GD",
+    "awayShort": "L",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "0 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "GNK Dinamo 0-2 Leverkusen. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "GNK Dinamo 0-2 Leverkusen.",
+    "related": []
+  },
+  {
+    "id": "olympiacos-milan-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Olympiacos",
+    "away": "Milan",
+    "homeShort": "O",
+    "awayShort": "M",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 4",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Olympiacos 2-4 Milan. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Olympiacos 2-4 Milan.",
+    "related": []
+  },
+  {
+    "id": "marseille-levski-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Marseille",
+    "away": "Levski Sofia",
+    "homeShort": "M",
+    "awayShort": "LS",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Marseille 1-0 Levski Sofia. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Marseille 1-0 Levski Sofia.",
+    "related": []
+  },
+  {
+    "id": "union-lech-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Union SG",
+    "away": "Lech Poznań",
+    "homeShort": "US",
+    "awayShort": "LP",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Union SG 2-2 Lech Poznań. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Union SG 2-2 Lech Poznań.",
+    "related": []
+  },
+  {
+    "id": "sparta-az-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Sparta Praha",
+    "away": "AZ Alkmaar",
+    "homeShort": "SP",
+    "awayShort": "AA",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 4",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Sparta Praha 2-4 AZ Alkmaar. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Sparta Praha 2-4 AZ Alkmaar.",
+    "related": []
+  },
+  {
+    "id": "palace-sociedad-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Crystal Palace",
+    "away": "Real Sociedad",
+    "homeShort": "CP",
+    "awayShort": "RS",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Crystal Palace 2-1 Real Sociedad. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Crystal Palace 2-1 Real Sociedad.",
+    "related": []
+  },
+  {
+    "id": "ferencvaros-celje-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Ferencváros",
+    "away": "Celje",
+    "homeShort": "F",
+    "awayShort": "C",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "0 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Ferencváros 0-0 Celje. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Ferencváros 0-0 Celje.",
+    "related": []
+  },
+  {
+    "id": "juventus-omonia-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Juventus",
+    "away": "Omonia",
+    "homeShort": "J",
+    "awayShort": "O",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "4 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Juventus 4-1 Omonia. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Juventus 4-1 Omonia.",
+    "related": []
+  },
+  {
+    "id": "nec-rennes-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "N.E.C. Nijmegen",
+    "away": "Rennes",
+    "homeShort": "NN",
+    "awayShort": "R",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "3 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "N.E.C. Nijmegen 3-1 Rennes. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "N.E.C. Nijmegen 3-1 Rennes.",
+    "related": []
+  },
+  {
+    "id": "ofi-anderlecht-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "OFI Crete",
+    "away": "Anderlecht",
+    "homeShort": "OC",
+    "awayShort": "A",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 3",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "OFI Crete 1-3 Anderlecht. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "OFI Crete 1-3 Anderlecht.",
+    "related": []
+  },
+  {
+    "id": "lyon-lillestrom-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Lyon",
+    "away": "Lillestrøm",
+    "homeShort": "L",
+    "awayShort": "L",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "0 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Lyon 0-0 Lillestrøm. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Lyon 0-0 Lillestrøm.",
+    "related": []
+  },
+  {
+    "id": "torreense-celtic-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Torreense",
+    "away": "Celtic",
+    "homeShort": "T",
+    "awayShort": "C",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Torreense 1-2 Celtic. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Torreense 1-2 Celtic.",
+    "related": []
+  },
+  {
+    "id": "sunderland-jagiellonia-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Sunderland",
+    "away": "Jagiellonia",
+    "homeShort": "S",
+    "awayShort": "J",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Sunderland 1-1 Jagiellonia. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Sunderland 1-1 Jagiellonia.",
+    "related": []
+  },
+  {
+    "id": "hoffenheim-sturm-nov26",
+    "league": "Football · UEFA Europa League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Europa League",
+    "home": "Hoffenheim",
+    "away": "Sturm Graz",
+    "homeShort": "H",
+    "awayShort": "SG",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "3 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Hoffenheim 3-1 Sturm Graz. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Europa League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Hoffenheim 3-1 Sturm Graz.",
+    "related": []
+  },
+  {
+    "id": "kairat-mjallby-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Kairat Almaty",
+    "away": "Mjällby",
+    "homeShort": "KA",
+    "awayShort": "M",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Kairat Almaty 1-0 Mjällby. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Kairat Almaty 1-0 Mjällby.",
+    "related": []
+  },
+  {
+    "id": "ajax-thun-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Ajax",
+    "away": "Thun",
+    "homeShort": "A",
+    "awayShort": "T",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "4 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Ajax 4-0 Thun. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Ajax 4-0 Thun.",
+    "related": []
+  },
+  {
+    "id": "brighton-craiova-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Brighton",
+    "away": "Universitatea Craiova",
+    "homeShort": "B",
+    "awayShort": "UC",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "4 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Brighton 4-0 Universitatea Craiova. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Brighton 4-0 Universitatea Craiova.",
+    "related": []
+  },
+  {
+    "id": "iberia-getafe-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Iberia Tbilisi",
+    "away": "Getafe",
+    "homeShort": "IT",
+    "awayShort": "G",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Iberia Tbilisi 1-0 Getafe. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Iberia Tbilisi 1-0 Getafe.",
+    "related": []
+  },
+  {
+    "id": "jablonec-lugano-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Jablonec",
+    "away": "Lugano",
+    "homeShort": "J",
+    "awayShort": "L",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Jablonec 2-0 Lugano. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Jablonec 2-0 Lugano.",
+    "related": []
+  },
+  {
+    "id": "kauno-riga-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Kauno Žalgiris",
+    "away": "Riga",
+    "homeShort": "KŽ",
+    "awayShort": "R",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Kauno Žalgiris 2-0 Riga. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Kauno Žalgiris 2-0 Riga.",
+    "related": []
+  },
+  {
+    "id": "hearts-monaco-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Hearts",
+    "away": "Monaco",
+    "homeShort": "H",
+    "awayShort": "M",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 3",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Hearts 2-3 Monaco. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Hearts 2-3 Monaco.",
+    "related": []
+  },
+  {
+    "id": "egnatia-lincoln-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Egnatia",
+    "away": "Lincoln Red Imps",
+    "homeShort": "E",
+    "awayShort": "LRI",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Egnatia 2-1 Lincoln Red Imps. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Egnatia 2-1 Lincoln Red Imps.",
+    "related": []
+  },
+  {
+    "id": "pafos-midtjylland-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Pafos",
+    "away": "Midtjylland",
+    "homeShort": "P",
+    "awayShort": "M",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "0 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Pafos 0-2 Midtjylland. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Pafos 0-2 Midtjylland.",
+    "related": []
+  },
+  {
+    "id": "brann-aarhus-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Brann",
+    "away": "Aarhus",
+    "homeShort": "B",
+    "awayShort": "A",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 4",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Brann 1-4 Aarhus. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 27 Nov"
+    ],
+    "awayStats": [
+      "Result verified 27 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Brann 1-4 Aarhus.",
+    "related": []
+  },
+  {
+    "id": "nordsjaelland-panathinaikos-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Result pending",
+    "stadium": "Official UEFA fixture · Matchday 4",
+    "home": "Nordsjælland",
+    "away": "Panathinaikos",
+    "homeShort": "N",
+    "awayShort": "P",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "AWAITING VERIFICATION",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 0,
+    "confidenceLabel": "Score pending",
+    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
+    "bestTip": "Awaiting verified result",
+    "goalsLean": "No score published",
+    "btts": "Verification pending",
+    "factors": [
+      "No verified final score",
+      "No forecast",
+      "Archive retained"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Awaiting reliable source"
+    ],
+    "awayStats": [
+      "Awaiting reliable source"
+    ],
+    "quickInsightTitle": "Result verification pending",
+    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
+    "related": []
+  },
+  {
+    "id": "borac-atalanta-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Result pending",
+    "stadium": "Official UEFA fixture · Matchday 4",
+    "home": "Borac",
+    "away": "Atalanta",
+    "homeShort": "B",
+    "awayShort": "A",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "AWAITING VERIFICATION",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 0,
+    "confidenceLabel": "Score pending",
+    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
+    "bestTip": "Awaiting verified result",
+    "goalsLean": "No score published",
+    "btts": "Verification pending",
+    "factors": [
+      "No verified final score",
+      "No forecast",
+      "Archive retained"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Awaiting reliable source"
+    ],
+    "awayStats": [
+      "Awaiting reliable source"
+    ],
+    "quickInsightTitle": "Result verification pending",
+    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
+    "related": []
+  },
+  {
+    "id": "hajduk-sint-truiden-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Result pending",
+    "stadium": "Official UEFA fixture · Matchday 4",
+    "home": "Hajduk Split",
+    "away": "Sint-Truidense",
+    "homeShort": "HS",
+    "awayShort": "S",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "AWAITING VERIFICATION",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 0,
+    "confidenceLabel": "Score pending",
+    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
+    "bestTip": "Awaiting verified result",
+    "goalsLean": "No score published",
+    "btts": "Verification pending",
+    "factors": [
+      "No verified final score",
+      "No forecast",
+      "Archive retained"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Awaiting reliable source"
+    ],
+    "awayStats": [
+      "Awaiting reliable source"
+    ],
+    "quickInsightTitle": "Result verification pending",
+    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
+    "related": []
+  },
+  {
+    "id": "inter-escaldes-copenhagen-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Result pending",
+    "stadium": "Official UEFA fixture · Matchday 4",
+    "home": "Inter Escaldes",
+    "away": "Copenhagen",
+    "homeShort": "IE",
+    "awayShort": "C",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "AWAITING VERIFICATION",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 0,
+    "confidenceLabel": "Score pending",
+    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
+    "bestTip": "Awaiting verified result",
+    "goalsLean": "No score published",
+    "btts": "Verification pending",
+    "factors": [
+      "No verified final score",
+      "No forecast",
+      "Archive retained"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Awaiting reliable source"
+    ],
+    "awayStats": [
+      "Awaiting reliable source"
+    ],
+    "quickInsightTitle": "Result verification pending",
+    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
+    "related": []
+  },
+  {
+    "id": "gent-zvezda-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Result pending",
+    "stadium": "Official UEFA fixture · Matchday 4",
+    "home": "Gent",
+    "away": "Crvena Zvezda",
+    "homeShort": "G",
+    "awayShort": "CZ",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "AWAITING VERIFICATION",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 0,
+    "confidenceLabel": "Score pending",
+    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
+    "bestTip": "Awaiting verified result",
+    "goalsLean": "No score published",
+    "btts": "Verification pending",
+    "factors": [
+      "No verified final score",
+      "No forecast",
+      "Archive retained"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Awaiting reliable source"
+    ],
+    "awayStats": [
+      "Awaiting reliable source"
+    ],
+    "quickInsightTitle": "Result verification pending",
+    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
+    "related": []
+  },
+  {
+    "id": "cska-trabzonspor-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Result pending",
+    "stadium": "Official UEFA fixture · Matchday 4",
+    "home": "CSKA Sofia",
+    "away": "Trabzonspor",
+    "homeShort": "CS",
+    "awayShort": "T",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "AWAITING VERIFICATION",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 0,
+    "confidenceLabel": "Score pending",
+    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
+    "bestTip": "Awaiting verified result",
+    "goalsLean": "No score published",
+    "btts": "Verification pending",
+    "factors": [
+      "No verified final score",
+      "No forecast",
+      "Archive retained"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Awaiting reliable source"
+    ],
+    "awayStats": [
+      "Awaiting reliable source"
+    ],
+    "quickInsightTitle": "Result verification pending",
+    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
+    "related": []
+  },
+  {
+    "id": "braga-kups-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Result pending",
+    "stadium": "Official UEFA fixture · Matchday 4",
+    "home": "Braga",
+    "away": "KuPS Kuopio",
+    "homeShort": "B",
+    "awayShort": "KK",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "AWAITING VERIFICATION",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 0,
+    "confidenceLabel": "Score pending",
+    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
+    "bestTip": "Awaiting verified result",
+    "goalsLean": "No score published",
+    "btts": "Verification pending",
+    "factors": [
+      "No verified final score",
+      "No forecast",
+      "Archive retained"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Awaiting reliable source"
+    ],
+    "awayStats": [
+      "Awaiting reliable source"
+    ],
+    "quickInsightTitle": "Result verification pending",
+    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
+    "related": []
+  },
+  {
+    "id": "freiburg-twente-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Result pending",
+    "stadium": "Official UEFA fixture · Matchday 4",
+    "home": "Freiburg",
+    "away": "Twente",
+    "homeShort": "F",
+    "awayShort": "T",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "AWAITING VERIFICATION",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 0,
+    "confidenceLabel": "Score pending",
+    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
+    "bestTip": "Awaiting verified result",
+    "goalsLean": "No score published",
+    "btts": "Verification pending",
+    "factors": [
+      "No verified final score",
+      "No forecast",
+      "Archive retained"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Awaiting reliable source"
+    ],
+    "awayStats": [
+      "Awaiting reliable source"
+    ],
+    "quickInsightTitle": "Result verification pending",
+    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
+    "related": []
+  },
+  {
+    "id": "sabah-barcelona-nov25",
+    "league": "Football · UEFA Champions League",
+    "date": "25 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Champions League Matchday 5",
+    "home": "Sabah",
+    "away": "Barcelona",
+    "homeShort": "S",
+    "awayShort": "B",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 4",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Sabah 1-4 Barcelona. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Matchday 5 result",
+    "btts": "Final · 25 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Champions League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchday 5"
+    ],
+    "awayStats": [
+      "Matchday 5"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Sabah 1-4 Barcelona.",
+    "related": []
+  },
+  {
+    "id": "slavia-villarreal-nov25",
+    "league": "Football · UEFA Champions League",
+    "date": "25 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Champions League Matchday 5",
+    "home": "Slavia Praha",
+    "away": "Villarreal",
+    "homeShort": "SP",
+    "awayShort": "V",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "0 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Slavia Praha 0-1 Villarreal. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Matchday 5 result",
+    "btts": "Final · 25 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Champions League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchday 5"
+    ],
+    "awayStats": [
+      "Matchday 5"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Slavia Praha 0-1 Villarreal.",
+    "related": []
+  },
+  {
+    "id": "atletico-viking-nov25",
+    "league": "Football · UEFA Champions League",
+    "date": "25 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Champions League Matchday 5",
+    "home": "Atlético de Madrid",
+    "away": "Viking",
+    "homeShort": "ADM",
+    "awayShort": "V",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Atlético de Madrid 2-0 Viking. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Matchday 5 result",
+    "btts": "Final · 25 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Champions League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchday 5"
+    ],
+    "awayStats": [
+      "Matchday 5"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Atlético de Madrid 2-0 Viking.",
+    "related": []
+  },
+  {
+    "id": "brugge-liverpool-nov25",
+    "league": "Football · UEFA Champions League",
+    "date": "25 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Champions League Matchday 5",
+    "home": "Club Brugge",
+    "away": "Liverpool",
+    "homeShort": "CB",
+    "awayShort": "L",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "0 - 3",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Club Brugge 0-3 Liverpool. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Matchday 5 result",
+    "btts": "Final · 25 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Champions League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchday 5"
+    ],
+    "awayStats": [
+      "Matchday 5"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Club Brugge 0-3 Liverpool.",
+    "related": []
+  },
+  {
+    "id": "inter-stuttgart-nov25",
+    "league": "Football · UEFA Champions League",
+    "date": "25 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Champions League Matchday 5",
+    "home": "Inter",
+    "away": "Stuttgart",
+    "homeShort": "I",
+    "awayShort": "S",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Inter 2-0 Stuttgart. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Matchday 5 result",
+    "btts": "Final · 25 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Champions League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchday 5"
+    ],
+    "awayStats": [
+      "Matchday 5"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Inter 2-0 Stuttgart.",
+    "related": []
+  },
+  {
+    "id": "shakhtar-fenerbahce-nov25",
+    "league": "Football · UEFA Champions League",
+    "date": "25 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Champions League Matchday 5",
+    "home": "Shakhtar Donetsk",
+    "away": "Fenerbahçe",
+    "homeShort": "SD",
+    "awayShort": "F",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "0 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Shakhtar Donetsk 0-1 Fenerbahçe. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Matchday 5 result",
+    "btts": "Final · 25 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Champions League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchday 5"
+    ],
+    "awayStats": [
+      "Matchday 5"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Shakhtar Donetsk 0-1 Fenerbahçe.",
+    "related": []
+  },
+  {
+    "id": "lille-bayern-nov25",
+    "league": "Football · UEFA Champions League",
+    "date": "25 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Champions League Matchday 5",
+    "home": "Lille",
+    "away": "Bayern München",
+    "homeShort": "L",
+    "awayShort": "BM",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Lille 2-1 Bayern München. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Matchday 5 result",
+    "btts": "Final · 25 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Champions League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchday 5"
+    ],
+    "awayStats": [
+      "Matchday 5"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Lille 2-1 Bayern München.",
+    "related": []
+  },
+  {
+    "id": "psg-roma-nov25",
+    "league": "Football · UEFA Champions League",
+    "date": "25 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Champions League Matchday 5",
+    "home": "Paris Saint-Germain",
+    "away": "Roma",
+    "homeShort": "PS",
+    "awayShort": "R",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Paris Saint-Germain 2-2 Roma. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Matchday 5 result",
+    "btts": "Final · 25 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Champions League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchday 5"
+    ],
+    "awayStats": [
+      "Matchday 5"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Paris Saint-Germain 2-2 Roma.",
+    "related": []
+  },
+  {
+    "id": "sporting-man-united-nov25",
+    "league": "Football · UEFA Champions League",
+    "date": "25 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Champions League Matchday 5",
+    "home": "Sporting CP",
+    "away": "Man United",
+    "homeShort": "SC",
+    "awayShort": "MU",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Sporting CP 2-2 Man United. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Matchday 5 result",
+    "btts": "Final · 25 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Champions League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Matchday 5"
+    ],
+    "awayStats": [
+      "Matchday 5"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Sporting CP 2-2 Man United.",
+    "related": []
+  },
   {
     "id": "everton-chelsea-oct17",
     "league": "Football · Premier League",
@@ -829,7 +2578,7 @@ const GLOBAL_MATCH_RADAR = [
       }
     ]
   }
-];
+]
 function normalizeAlias(value){return String(value||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
 function getSelectedEvent(){const params=new URLSearchParams(window.location.search);const requested=normalizeAlias(params.get("id")||params.get("match")||params.get("fixture"));return GLOBAL_MATCH_RADAR.find(item=>normalizeAlias(item.id)===requested)||GLOBAL_MATCH_RADAR[0]}
 function setText(id,value){const element=document.getElementById(id);if(element)element.textContent=value}
