@@ -37,7 +37,7 @@ function updateNewsPageLabels() {
   document.title = "World Sports News | Betforecast.ai";
   const k = document.querySelector(".news-title-strip span"),
     t = document.querySelector(".news-title-strip h1");
-  if (k) k.textContent = "World Sports News · 26 Nov 2026";
+  if (k) k.textContent = "World Sports News · 27 Nov 2026";
   if (t) t.textContent = "World sports · latest verified updates";
   const heads = document.querySelectorAll(".news-sidebar-v2 .panel-head h2");
   if (heads[0]) heads[0].textContent = "Top Categories";
@@ -48,10 +48,10 @@ function updateNewsPageLabels() {
     c.innerHTML = `<a class="sidebar-link-card" href="news.html#football">Football</a><a class="sidebar-link-card" href="news.html#tennis">Tennis</a><a class="sidebar-link-card" href="news.html#cycling">Cycling</a><a class="sidebar-link-card" href="news.html#f1">Formula 1</a><a class="sidebar-link-card" href="news.html#transfers">Transfers</a><a class="sidebar-link-card" href="news.html#ai-sports">AI Sports</a>`;
   const tr = document.querySelector(".trending-list");
   if (tr)
-    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Sabah 1-4 Barcelona</a><a class="sidebar-link-card" href="results.html">Club Brugge 0-3 Liverpool</a><a class="sidebar-link-card" href="match.html?id=celta-bournemouth-nov26">Celta–Bournemouth · 26 Nov</a><a class="sidebar-link-card" href="match.html?id=palace-sociedad-nov26">Palace–Real Sociedad · 26 Nov</a><a class="sidebar-link-card" href="standings.html">EPL Matchweek 11 table</a>`;
+    tr.innerHTML = `<a class="sidebar-link-card" href="results.html">Celta 1-2 Bournemouth</a><a class="sidebar-link-card" href="results.html">Brighton 4-0 Universitatea Craiova</a><a class="sidebar-link-card" href="results.html">Crystal Palace 2-1 Real Sociedad</a><a class="sidebar-link-card" href="match.html?id=forest-chelsea-nov27">Nottm Forest–Chelsea · 27 Nov · 22:00 EET</a><a class="sidebar-link-card" href="standings.html">EPL Matchweek 12 schedule</a>`;
   const f = document.querySelector(".news-focus-box");
   if (f)
-    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Champions League Matchday 5 is complete and all nine Wednesday results are archived. Europa League Matchday 5 and Conference League Matchday 4 take over on 26 November, with kick-offs shown in EET.</p>`;
+    f.innerHTML = `<strong>Latest verified sports focus</strong><p>Europa League Matchday 5 is complete with all 18 scores verified. Ten early Conference League results are archived; late scores remain pending until a reliable source confirms them. Premier League Matchweek 12 opens on 27 November with Nottingham Forest–Chelsea at 22:00 EET.</p>`;
 }
 async function loadCachedNews() {
   const f = document.getElementById("featured-story"),
