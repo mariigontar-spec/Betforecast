@@ -1,14 +1,14 @@
 const GLOBAL_MATCH_RADAR = [
   {
-    "id": "forest-chelsea-nov27",
+    "id": "man-united-brentford-nov28",
     "league": "Football · Premier League",
-    "date": "27 Nov 2026",
-    "time": "22:00 EET",
+    "date": "28 Nov 2026",
+    "time": "17:00 EET",
     "stadium": "Official Premier League fixture · Matchweek 12",
-    "home": "Nottm Forest",
-    "away": "Chelsea",
-    "homeShort": "NF",
-    "awayShort": "C",
+    "home": "Man United",
+    "away": "Brentford",
+    "homeShort": "MU",
+    "awayShort": "B",
     "homeLogo": "assets/bet-logo.png?v=2",
     "awayLogo": "assets/bet-logo.png?v=2",
     "projectedScore": "UPCOMING",
@@ -17,10 +17,10 @@ const GLOBAL_MATCH_RADAR = [
     "awayPct": 0,
     "confidence": 100,
     "confidenceLabel": "Verified schedule",
-    "summary": "Nottingham Forest face Chelsea in Premier League Matchweek 12. Kick-off is 22:00 EET in Europe/Tallinn.",
+    "summary": "Man United face Brentford in Premier League Matchweek 12. Kick-off is 17:00 EET in Europe/Tallinn.",
     "bestTip": "Official fixture",
     "goalsLean": "No score forecast",
-    "btts": "Kick-off · 22:00 EET",
+    "btts": "Kick-off · 17:00 EET",
     "factors": [
       "Official Premier League fixture",
       "Matchweek 12",
@@ -29,13 +29,442 @@ const GLOBAL_MATCH_RADAR = [
     "formHome": [],
     "formAway": [],
     "homeStats": [
-      "Schedule verified 27 Nov"
+      "Schedule verified 28 Nov"
     ],
     "awayStats": [
-      "Schedule verified 27 Nov"
+      "Schedule verified 28 Nov"
     ],
     "quickInsightTitle": "Verified match information",
-    "quickInsight": "The competition, date and 22:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.",
+    "quickInsight": "The competition, date and 17:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.",
+    "related": []
+  },
+  {
+    "id": "leeds-coventry-nov28",
+    "league": "Football · Premier League",
+    "date": "28 Nov 2026",
+    "time": "17:00 EET",
+    "stadium": "Official Premier League fixture · Matchweek 12",
+    "home": "Leeds United",
+    "away": "Coventry City",
+    "homeShort": "LU",
+    "awayShort": "CC",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Verified schedule",
+    "summary": "Leeds United face Coventry City in Premier League Matchweek 12. Kick-off is 17:00 EET in Europe/Tallinn.",
+    "bestTip": "Official fixture",
+    "goalsLean": "No score forecast",
+    "btts": "Kick-off · 17:00 EET",
+    "factors": [
+      "Official Premier League fixture",
+      "Matchweek 12",
+      "No unverified prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Schedule verified 28 Nov"
+    ],
+    "awayStats": [
+      "Schedule verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified match information",
+    "quickInsight": "The competition, date and 17:00 EET kick-off are confirmed. No odds, probabilities or predicted score are published.",
+    "related": []
+  },
+  {
+    "id": "ipswich-villa-nov28",
+    "league": "Football · Premier League",
+    "date": "28 Nov 2026",
+    "time": "19:30 EET",
+    "stadium": "Official Premier League fixture · Matchweek 12",
+    "home": "Ipswich Town",
+    "away": "Aston Villa",
+    "homeShort": "IT",
+    "awayShort": "AV",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "UPCOMING",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Verified schedule",
+    "summary": "Ipswich Town face Aston Villa in Premier League Matchweek 12. Kick-off is 19:30 EET in Europe/Tallinn.",
+    "bestTip": "Official fixture",
+    "goalsLean": "No score forecast",
+    "btts": "Kick-off · 19:30 EET",
+    "factors": [
+      "Official Premier League fixture",
+      "Matchweek 12",
+      "No unverified prediction"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Schedule verified 28 Nov"
+    ],
+    "awayStats": [
+      "Schedule verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified match information",
+    "quickInsight": "The competition, date and 19:30 EET kick-off are confirmed. No odds, probabilities or predicted score are published.",
+    "related": []
+  },
+  {
+    "id": "forest-chelsea-nov27",
+    "league": "Football · Premier League",
+    "date": "27 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · Premier League",
+    "home": "Nottm Forest",
+    "away": "Chelsea",
+    "homeShort": "NF",
+    "awayShort": "C",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "3 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Nottm Forest 3-2 Chelsea. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 27 November",
+    "factors": [
+      "Final score verified",
+      "Premier League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 28 Nov"
+    ],
+    "awayStats": [
+      "Result verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Nottm Forest 3-2 Chelsea.",
+    "related": []
+  },
+  {
+    "id": "nordsjaelland-panathinaikos-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Nordsjælland",
+    "away": "Panathinaikos",
+    "homeShort": "N",
+    "awayShort": "P",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "3 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Nordsjælland 3-2 Panathinaikos. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 28 Nov"
+    ],
+    "awayStats": [
+      "Result verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Nordsjælland 3-2 Panathinaikos.",
+    "related": []
+  },
+  {
+    "id": "borac-atalanta-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Borac",
+    "away": "Atalanta",
+    "homeShort": "B",
+    "awayShort": "A",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 3",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Borac 2-3 Atalanta. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 28 Nov"
+    ],
+    "awayStats": [
+      "Result verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Borac 2-3 Atalanta.",
+    "related": []
+  },
+  {
+    "id": "hajduk-sint-truiden-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Hajduk Split",
+    "away": "Sint-Truidense",
+    "homeShort": "HS",
+    "awayShort": "S",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "0 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Hajduk Split 0-2 Sint-Truidense. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 28 Nov"
+    ],
+    "awayStats": [
+      "Result verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Hajduk Split 0-2 Sint-Truidense.",
+    "related": []
+  },
+  {
+    "id": "inter-escaldes-copenhagen-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Inter Escaldes",
+    "away": "Copenhagen",
+    "homeShort": "IE",
+    "awayShort": "C",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Inter Escaldes 2-0 Copenhagen. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 28 Nov"
+    ],
+    "awayStats": [
+      "Result verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Inter Escaldes 2-0 Copenhagen.",
+    "related": []
+  },
+  {
+    "id": "gent-zvezda-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Gent",
+    "away": "Crvena Zvezda",
+    "homeShort": "G",
+    "awayShort": "CZ",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Gent 1-1 Crvena Zvezda. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 28 Nov"
+    ],
+    "awayStats": [
+      "Result verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Gent 1-1 Crvena Zvezda.",
+    "related": []
+  },
+  {
+    "id": "cska-trabzonspor-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "CSKA Sofia",
+    "away": "Trabzonspor",
+    "homeShort": "CS",
+    "awayShort": "T",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "1 - 2",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "CSKA Sofia 1-2 Trabzonspor. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 28 Nov"
+    ],
+    "awayStats": [
+      "Result verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "CSKA Sofia 1-2 Trabzonspor.",
+    "related": []
+  },
+  {
+    "id": "braga-kups-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Braga",
+    "away": "KuPS Kuopio",
+    "homeShort": "B",
+    "awayShort": "KK",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "4 - 0",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Braga 4-0 KuPS Kuopio. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 28 Nov"
+    ],
+    "awayStats": [
+      "Result verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Braga 4-0 KuPS Kuopio.",
+    "related": []
+  },
+  {
+    "id": "freiburg-twente-nov26",
+    "league": "Football · UEFA Conference League",
+    "date": "26 Nov 2026",
+    "time": "Final",
+    "stadium": "Final · UEFA Conference League",
+    "home": "Freiburg",
+    "away": "Twente",
+    "homeShort": "F",
+    "awayShort": "T",
+    "homeLogo": "assets/bet-logo.png?v=2",
+    "awayLogo": "assets/bet-logo.png?v=2",
+    "projectedScore": "2 - 1",
+    "homePct": 0,
+    "drawPct": 0,
+    "awayPct": 0,
+    "confidence": 100,
+    "confidenceLabel": "Final score verified",
+    "summary": "Freiburg 2-1 Twente. Final score verified.",
+    "bestTip": "Final score verified",
+    "goalsLean": "Verified result",
+    "btts": "Final · 26 November",
+    "factors": [
+      "Final score verified",
+      "UEFA Conference League",
+      "No forecast"
+    ],
+    "formHome": [],
+    "formAway": [],
+    "homeStats": [
+      "Result verified 28 Nov"
+    ],
+    "awayStats": [
+      "Result verified 28 Nov"
+    ],
+    "quickInsightTitle": "Verified final result",
+    "quickInsight": "Freiburg 2-1 Twente.",
     "related": []
   },
   {
@@ -1128,318 +1557,6 @@ const GLOBAL_MATCH_RADAR = [
     ],
     "quickInsightTitle": "Verified final result",
     "quickInsight": "Brann 1-4 Aarhus.",
-    "related": []
-  },
-  {
-    "id": "nordsjaelland-panathinaikos-nov26",
-    "league": "Football · UEFA Conference League",
-    "date": "26 Nov 2026",
-    "time": "Result pending",
-    "stadium": "Official UEFA fixture · Matchday 4",
-    "home": "Nordsjælland",
-    "away": "Panathinaikos",
-    "homeShort": "N",
-    "awayShort": "P",
-    "homeLogo": "assets/bet-logo.png?v=2",
-    "awayLogo": "assets/bet-logo.png?v=2",
-    "projectedScore": "AWAITING VERIFICATION",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 0,
-    "confidenceLabel": "Score pending",
-    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
-    "bestTip": "Awaiting verified result",
-    "goalsLean": "No score published",
-    "btts": "Verification pending",
-    "factors": [
-      "No verified final score",
-      "No forecast",
-      "Archive retained"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Awaiting reliable source"
-    ],
-    "awayStats": [
-      "Awaiting reliable source"
-    ],
-    "quickInsightTitle": "Result verification pending",
-    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
-    "related": []
-  },
-  {
-    "id": "borac-atalanta-nov26",
-    "league": "Football · UEFA Conference League",
-    "date": "26 Nov 2026",
-    "time": "Result pending",
-    "stadium": "Official UEFA fixture · Matchday 4",
-    "home": "Borac",
-    "away": "Atalanta",
-    "homeShort": "B",
-    "awayShort": "A",
-    "homeLogo": "assets/bet-logo.png?v=2",
-    "awayLogo": "assets/bet-logo.png?v=2",
-    "projectedScore": "AWAITING VERIFICATION",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 0,
-    "confidenceLabel": "Score pending",
-    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
-    "bestTip": "Awaiting verified result",
-    "goalsLean": "No score published",
-    "btts": "Verification pending",
-    "factors": [
-      "No verified final score",
-      "No forecast",
-      "Archive retained"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Awaiting reliable source"
-    ],
-    "awayStats": [
-      "Awaiting reliable source"
-    ],
-    "quickInsightTitle": "Result verification pending",
-    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
-    "related": []
-  },
-  {
-    "id": "hajduk-sint-truiden-nov26",
-    "league": "Football · UEFA Conference League",
-    "date": "26 Nov 2026",
-    "time": "Result pending",
-    "stadium": "Official UEFA fixture · Matchday 4",
-    "home": "Hajduk Split",
-    "away": "Sint-Truidense",
-    "homeShort": "HS",
-    "awayShort": "S",
-    "homeLogo": "assets/bet-logo.png?v=2",
-    "awayLogo": "assets/bet-logo.png?v=2",
-    "projectedScore": "AWAITING VERIFICATION",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 0,
-    "confidenceLabel": "Score pending",
-    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
-    "bestTip": "Awaiting verified result",
-    "goalsLean": "No score published",
-    "btts": "Verification pending",
-    "factors": [
-      "No verified final score",
-      "No forecast",
-      "Archive retained"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Awaiting reliable source"
-    ],
-    "awayStats": [
-      "Awaiting reliable source"
-    ],
-    "quickInsightTitle": "Result verification pending",
-    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
-    "related": []
-  },
-  {
-    "id": "inter-escaldes-copenhagen-nov26",
-    "league": "Football · UEFA Conference League",
-    "date": "26 Nov 2026",
-    "time": "Result pending",
-    "stadium": "Official UEFA fixture · Matchday 4",
-    "home": "Inter Escaldes",
-    "away": "Copenhagen",
-    "homeShort": "IE",
-    "awayShort": "C",
-    "homeLogo": "assets/bet-logo.png?v=2",
-    "awayLogo": "assets/bet-logo.png?v=2",
-    "projectedScore": "AWAITING VERIFICATION",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 0,
-    "confidenceLabel": "Score pending",
-    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
-    "bestTip": "Awaiting verified result",
-    "goalsLean": "No score published",
-    "btts": "Verification pending",
-    "factors": [
-      "No verified final score",
-      "No forecast",
-      "Archive retained"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Awaiting reliable source"
-    ],
-    "awayStats": [
-      "Awaiting reliable source"
-    ],
-    "quickInsightTitle": "Result verification pending",
-    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
-    "related": []
-  },
-  {
-    "id": "gent-zvezda-nov26",
-    "league": "Football · UEFA Conference League",
-    "date": "26 Nov 2026",
-    "time": "Result pending",
-    "stadium": "Official UEFA fixture · Matchday 4",
-    "home": "Gent",
-    "away": "Crvena Zvezda",
-    "homeShort": "G",
-    "awayShort": "CZ",
-    "homeLogo": "assets/bet-logo.png?v=2",
-    "awayLogo": "assets/bet-logo.png?v=2",
-    "projectedScore": "AWAITING VERIFICATION",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 0,
-    "confidenceLabel": "Score pending",
-    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
-    "bestTip": "Awaiting verified result",
-    "goalsLean": "No score published",
-    "btts": "Verification pending",
-    "factors": [
-      "No verified final score",
-      "No forecast",
-      "Archive retained"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Awaiting reliable source"
-    ],
-    "awayStats": [
-      "Awaiting reliable source"
-    ],
-    "quickInsightTitle": "Result verification pending",
-    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
-    "related": []
-  },
-  {
-    "id": "cska-trabzonspor-nov26",
-    "league": "Football · UEFA Conference League",
-    "date": "26 Nov 2026",
-    "time": "Result pending",
-    "stadium": "Official UEFA fixture · Matchday 4",
-    "home": "CSKA Sofia",
-    "away": "Trabzonspor",
-    "homeShort": "CS",
-    "awayShort": "T",
-    "homeLogo": "assets/bet-logo.png?v=2",
-    "awayLogo": "assets/bet-logo.png?v=2",
-    "projectedScore": "AWAITING VERIFICATION",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 0,
-    "confidenceLabel": "Score pending",
-    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
-    "bestTip": "Awaiting verified result",
-    "goalsLean": "No score published",
-    "btts": "Verification pending",
-    "factors": [
-      "No verified final score",
-      "No forecast",
-      "Archive retained"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Awaiting reliable source"
-    ],
-    "awayStats": [
-      "Awaiting reliable source"
-    ],
-    "quickInsightTitle": "Result verification pending",
-    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
-    "related": []
-  },
-  {
-    "id": "braga-kups-nov26",
-    "league": "Football · UEFA Conference League",
-    "date": "26 Nov 2026",
-    "time": "Result pending",
-    "stadium": "Official UEFA fixture · Matchday 4",
-    "home": "Braga",
-    "away": "KuPS Kuopio",
-    "homeShort": "B",
-    "awayShort": "KK",
-    "homeLogo": "assets/bet-logo.png?v=2",
-    "awayLogo": "assets/bet-logo.png?v=2",
-    "projectedScore": "AWAITING VERIFICATION",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 0,
-    "confidenceLabel": "Score pending",
-    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
-    "bestTip": "Awaiting verified result",
-    "goalsLean": "No score published",
-    "btts": "Verification pending",
-    "factors": [
-      "No verified final score",
-      "No forecast",
-      "Archive retained"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Awaiting reliable source"
-    ],
-    "awayStats": [
-      "Awaiting reliable source"
-    ],
-    "quickInsightTitle": "Result verification pending",
-    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
-    "related": []
-  },
-  {
-    "id": "freiburg-twente-nov26",
-    "league": "Football · UEFA Conference League",
-    "date": "26 Nov 2026",
-    "time": "Result pending",
-    "stadium": "Official UEFA fixture · Matchday 4",
-    "home": "Freiburg",
-    "away": "Twente",
-    "homeShort": "F",
-    "awayShort": "T",
-    "homeLogo": "assets/bet-logo.png?v=2",
-    "awayLogo": "assets/bet-logo.png?v=2",
-    "projectedScore": "AWAITING VERIFICATION",
-    "homePct": 0,
-    "drawPct": 0,
-    "awayPct": 0,
-    "confidence": 0,
-    "confidenceLabel": "Score pending",
-    "summary": "The match has ended, but the final score is not yet confirmed by a reliable source.",
-    "bestTip": "Awaiting verified result",
-    "goalsLean": "No score published",
-    "btts": "Verification pending",
-    "factors": [
-      "No verified final score",
-      "No forecast",
-      "Archive retained"
-    ],
-    "formHome": [],
-    "formAway": [],
-    "homeStats": [
-      "Awaiting reliable source"
-    ],
-    "awayStats": [
-      "Awaiting reliable source"
-    ],
-    "quickInsightTitle": "Result verification pending",
-    "quickInsight": "The fixture remains archived without a score until a reliable source confirms the final result.",
     "related": []
   },
   {
