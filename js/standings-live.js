@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  fetch("/data/standings.json?v=20260902", { cache: "no-store" })
+  fetch("/data/standings.json?v=20261128", { cache: "no-store" })
     .then(function (response) { if (!response.ok) throw new Error("Standings unavailable"); return response.json(); })
     .then(function (payload) {
       leagues = Array.isArray(payload) ? payload : (payload.leagues || []);
