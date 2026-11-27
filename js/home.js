@@ -38,36 +38,36 @@
     const lead = document.querySelector(".hero-lead");
     if (lead)
       lead.textContent =
-        "Premier League Matchweek 12 opens today. Nottingham Forest–Chelsea is the featured verified fixture at 22:00 EET.";
+        "Premier League Matchweek 12 continues today with three verified fixtures. Manchester United–Brentford is the featured match at 17:00 EET.";
 
     const radar = document.querySelector(".hero-radar");
     if (radar) {
       radar.innerHTML = `
-        <div><strong>Featured</strong><span>Nottingham Forest–Chelsea · 27 Nov · 22:00 EET</span></div>
-        <div><strong>Latest result</strong><span>Celta 1-2 Bournemouth</span></div>
+        <div><strong>Featured</strong><span>Manchester United–Brentford · 28 Nov · 17:00 EET</span></div>
+        <div><strong>Latest result</strong><span>Nottm Forest 3-2 Chelsea</span></div>
         <div><strong>EPL table</strong><span>Arsenal lead · 28 points</span></div>
       `;
     }
 
     const input = document.getElementById("home-search-input");
     if (input)
-      input.placeholder = "Try: Forest, Chelsea, Bournemouth";
+      input.placeholder = "Try: Man United, Brentford, Ipswich";
 
     const chips = document.querySelector(".search-chips");
     if (chips) {
       chips.innerHTML = `
-        <button type="button" data-query="Nottingham Forest Chelsea">Forest–Chelsea</button>
-        <button type="button" data-query="Crystal Palace Real Sociedad">Palace–Real Sociedad</button>
-        <button type="button" data-query="Brighton Craiova">Brighton–Craiova</button>
+        <button type="button" data-query="Manchester United Brentford">Man United–Brentford</button>
+        <button type="button" data-query="Leeds Coventry">Leeds–Coventry</button>
+        <button type="button" data-query="Ipswich Aston Villa">Ipswich–Aston Villa</button>
       `;
     }
 
     const lines = document.querySelectorAll(".competition-line");
     const content = [
-      { href: "match.html?id=forest-chelsea-nov27", title: "Nottingham Forest vs Chelsea", detail: "27 Nov · Premier League · 22:00 EET", tag: "Featured" },
-      { href: "results.html", title: "Celta 1-2 Bournemouth", detail: "26 Nov · Europa League · Final", tag: "Result" },
-      { href: "results.html", title: "Brighton 4-0 Universitatea Craiova", detail: "26 Nov · Conference League · Final", tag: "Result" },
-      { href: "standings.html", title: "Premier League · Matchweek 11", detail: "Complete · checked 27 Nov", tag: "Table" },
+      { href: "match.html?id=man-united-brentford-nov28", title: "Manchester United vs Brentford", detail: "28 Nov · Premier League · 17:00 EET", tag: "Featured" },
+      { href: "match.html?id=leeds-coventry-nov28", title: "Leeds United vs Coventry City", detail: "28 Nov · Premier League · 17:00 EET", tag: "Upcoming" },
+      { href: "match.html?id=ipswich-villa-nov28", title: "Ipswich Town vs Aston Villa", detail: "28 Nov · Premier League · 19:30 EET", tag: "Upcoming" },
+      { href: "standings.html", title: "Premier League · Matchweek 12", detail: "Underway · checked 28 Nov", tag: "Table" },
     ];
 
     lines.forEach((line, index) => {
