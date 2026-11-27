@@ -248,6 +248,20 @@
       .join("");
   }
 
+  function formatArticleAge(value) {
+    const published = new Date(value);
+    if (!value || Number.isNaN(published.getTime())) return "Latest update";
+    const diff = Math.max(0, Date.now() - published.getTime());
+    const minutes = Math.floor(diff / 60000);
+    if (minutes < 1) return "just now";
+    if (minutes < 60) return `${minutes} min ago`;
+    const hours = Math.floor(minutes / 60);
+    if (hours < 24) return `${hours} hr${hours === 1 ? "" : "s"} ago`;
+    const days = Math.floor(hours / 24);
+    if (days < 7) return `${days} day${days === 1 ? "" : "s"} ago`;
+    return new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "Europe/Tallinn" }).format(published);
+  }
+
   function isPremierLeagueNews(item) {
     const text = normalize(
       [item.title, item.excerpt].filter(Boolean).join(" "),
@@ -300,9 +314,9 @@
     container.innerHTML = stories
       .map(
         (item) => `
-      <a class="home-news-item" href="article.html?id=${encodeURIComponent(item.id)}">
+      <a class="home-news-item" href="${escapeHtml(item.sourceUrl || item.url || `article.html?id=${encodeURIComponent(item.id)}`)}"${item.sourceUrl || item.url ? ' target="_blank" rel="noopener noreferrer"' : ""}>
         <img src="${escapeHtml(item.image || "assets/stadium-dark.jpg")}" alt="" loading="lazy">
-        <div><span>${escapeHtml(item.time || item.source || "Latest")}</span><strong>${escapeHtml(item.title)}</strong><p>${escapeHtml(item.excerpt || "")}</p></div>
+        <div><span>${escapeHtml(item.source || "Sports news")} · ${escapeHtml(formatArticleAge(item.date))}</span><strong>${escapeHtml(item.title)}</strong><p>${escapeHtml(item.excerpt || "")}</p></div>
       </a>
     `,
       )
