@@ -4,6 +4,15 @@
   const statusEl = document.getElementById("results-status");
   if (!grid) return;
   const GLOBAL_RESULTS = [
+    { round: "Football · Premier League Matchweek 12", status: "FINAL", homeName: "Nottm Forest", awayName: "Chelsea", homeGoals: "3", awayGoals: "2", venue: "City Ground", date: "27 Nov", href: "match.html?id=forest-chelsea-nov27" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Nordsjælland", awayName: "Panathinaikos", homeGoals: "3", awayGoals: "2", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=nordsjaelland-panathinaikos-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Borac", awayName: "Atalanta", homeGoals: "2", awayGoals: "3", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=borac-atalanta-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Hajduk Split", awayName: "Sint-Truidense", homeGoals: "0", awayGoals: "2", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=hajduk-sint-truiden-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Inter Escaldes", awayName: "Copenhagen", homeGoals: "2", awayGoals: "0", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=inter-escaldes-copenhagen-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Gent", awayName: "Crvena Zvezda", homeGoals: "1", awayGoals: "1", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=gent-zvezda-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "CSKA Sofia", awayName: "Trabzonspor", homeGoals: "1", awayGoals: "2", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=cska-trabzonspor-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Braga", awayName: "KuPS Kuopio", homeGoals: "4", awayGoals: "0", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=braga-kups-nov26" },
+    { round: "Football · UEFA Conference League League phase · Matchday 4", status: "FINAL", homeName: "Freiburg", awayName: "Twente", homeGoals: "2", awayGoals: "1", venue: "UEFA Conference League", date: "26 Nov", href: "match.html?id=freiburg-twente-nov26" },
     { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Beşiktaş", awayName: "Hapoel Beer-Sheva", homeGoals: "2", awayGoals: "1", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=besiktas-hapoel-nov26" },
     { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Salzburg", awayName: "Ararat-Armenia", homeGoals: "2", awayGoals: "0", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=salzburg-ararat-nov26" },
     { round: "Football · UEFA Europa League League phase · Matchday 5", status: "FINAL", homeName: "Viktoria Plzeň", awayName: "Benfica", homeGoals: "4", awayGoals: "0", venue: "UEFA Europa League", date: "26 Nov", href: "match.html?id=plzen-benfica-nov26" },
@@ -343,7 +352,7 @@
   function render(items) {
     grid.className = "wc-results-grid";
     grid.innerHTML = items.map((item) => `<a class="wc-result-card" href="${esc(item.href || "news.html")}"><div class="wc-result-round"><span>${esc(item.round)}</span><strong class="wc-status-pill">${esc(item.status)}</strong></div><div class="wc-score-stack">${team(item.homeName, item.homeGoals)}${team(item.awayName, item.awayGoals)}</div><div class="wc-result-meta"><span>${esc(item.venue)}</span><span>${esc(item.date)}</span></div></a>`).join("");
-    setStatus("World sports results · checked 27 Nov 2026");
+    setStatus("World sports results · checked 28 Nov 2026");
   }
   function copy() {
     const badge = document.querySelector(".results-hero .hero-ai-badge");
@@ -353,7 +362,7 @@
     document.title = "World Sports Results | Betforecast.ai";
     if (badge) badge.textContent = "World sports results";
     if (title) title.textContent = "Latest verified results.";
-    if (intro) intro.textContent = "Twenty-eight verified UEFA results from 26 November are archived. Nottingham Forest vs Chelsea is the next confirmed Premier League fixture at 22:00 EET on 27 November.";
+    if (intro) intro.textContent = "All 36 UEFA results from 26 November and Nottingham Forest 3-2 Chelsea from 27 November are verified and archived. Three confirmed Premier League fixtures are scheduled for 28 November.";
     if (heading) heading.textContent = "Global Sports Result Board";
   }
   function run() { copy(); render(GLOBAL_RESULTS); }
