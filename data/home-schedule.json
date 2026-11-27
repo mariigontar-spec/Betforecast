@@ -1,23 +1,228 @@
 {
-  "updatedAt": "2026-11-27T00:01:00+02:00",
-  "featuredId": "forest-chelsea-nov27",
+  "updatedAt": "2026-11-28T00:01:00+02:00",
+  "featuredId": "man-united-brentford-nov28",
   "events": [
     {
-      "id": "forest-chelsea-nov27",
+      "id": "man-united-brentford-nov28",
       "type": "event",
       "sport": "Football",
-      "date": "27 Nov",
-      "time": "22:00 EET",
-      "title": "Nottingham Forest vs Chelsea",
-      "home": "Nottm Forest",
-      "away": "Chelsea",
+      "date": "28 Nov",
+      "time": "17:00 EET",
+      "title": "Manchester United vs Brentford",
+      "home": "Man United",
+      "away": "Brentford",
       "competition": "Premier League",
       "stage": "Matchweek 12",
       "status": "Featured",
       "signals": [
         "Official Premier League fixture",
-        "Kick-off 22:00 EET (Europe/Tallinn)"
+        "Kick-off 17:00 EET (Europe/Tallinn)"
       ]
+    },
+    {
+      "id": "leeds-coventry-nov28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Nov",
+      "time": "17:00 EET",
+      "title": "Leeds United vs Coventry City",
+      "home": "Leeds United",
+      "away": "Coventry City",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Kick-off 17:00 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "ipswich-villa-nov28",
+      "type": "event",
+      "sport": "Football",
+      "date": "28 Nov",
+      "time": "19:30 EET",
+      "title": "Ipswich Town vs Aston Villa",
+      "home": "Ipswich Town",
+      "away": "Aston Villa",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Upcoming",
+      "signals": [
+        "Official Premier League fixture",
+        "Kick-off 19:30 EET (Europe/Tallinn)"
+      ]
+    },
+    {
+      "id": "forest-chelsea-nov27",
+      "type": "result",
+      "sport": "Football",
+      "date": "27 Nov",
+      "time": "Final",
+      "title": "Nottingham Forest 3-2 Chelsea",
+      "home": "Nottm Forest",
+      "away": "Chelsea",
+      "competition": "Premier League",
+      "stage": "Matchweek 12",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Premier League Matchweek 12"
+      ],
+      "homeScore": "3",
+      "awayScore": "2"
+    },
+    {
+      "id": "nordsjaelland-panathinaikos-nov26",
+      "type": "result",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "Final",
+      "title": "Nordsjælland 3-2 Panathinaikos",
+      "home": "Nordsjælland",
+      "away": "Panathinaikos",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Official UEFA Conference League result"
+      ],
+      "homeScore": "3",
+      "awayScore": "2"
+    },
+    {
+      "id": "borac-atalanta-nov26",
+      "type": "result",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "Final",
+      "title": "Borac 2-3 Atalanta",
+      "home": "Borac",
+      "away": "Atalanta",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Official UEFA Conference League result"
+      ],
+      "homeScore": "2",
+      "awayScore": "3"
+    },
+    {
+      "id": "hajduk-sint-truiden-nov26",
+      "type": "result",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "Final",
+      "title": "Hajduk Split 0-2 Sint-Truidense",
+      "home": "Hajduk Split",
+      "away": "Sint-Truidense",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Official UEFA Conference League result"
+      ],
+      "homeScore": "0",
+      "awayScore": "2"
+    },
+    {
+      "id": "inter-escaldes-copenhagen-nov26",
+      "type": "result",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "Final",
+      "title": "Inter Escaldes 2-0 Copenhagen",
+      "home": "Inter Escaldes",
+      "away": "Copenhagen",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Official UEFA Conference League result"
+      ],
+      "homeScore": "2",
+      "awayScore": "0"
+    },
+    {
+      "id": "gent-zvezda-nov26",
+      "type": "result",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "Final",
+      "title": "Gent 1-1 Crvena Zvezda",
+      "home": "Gent",
+      "away": "Crvena Zvezda",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Official UEFA Conference League result"
+      ],
+      "homeScore": "1",
+      "awayScore": "1"
+    },
+    {
+      "id": "cska-trabzonspor-nov26",
+      "type": "result",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "Final",
+      "title": "CSKA Sofia 1-2 Trabzonspor",
+      "home": "CSKA Sofia",
+      "away": "Trabzonspor",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Official UEFA Conference League result"
+      ],
+      "homeScore": "1",
+      "awayScore": "2"
+    },
+    {
+      "id": "braga-kups-nov26",
+      "type": "result",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "Final",
+      "title": "Braga 4-0 KuPS Kuopio",
+      "home": "Braga",
+      "away": "KuPS Kuopio",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Official UEFA Conference League result"
+      ],
+      "homeScore": "4",
+      "awayScore": "0"
+    },
+    {
+      "id": "freiburg-twente-nov26",
+      "type": "result",
+      "sport": "Football",
+      "date": "26 Nov",
+      "time": "Final",
+      "title": "Freiburg 2-1 Twente",
+      "home": "Freiburg",
+      "away": "Twente",
+      "competition": "UEFA Conference League",
+      "stage": "League phase · Matchday 4",
+      "status": "Result",
+      "signals": [
+        "Verified final score",
+        "Official UEFA Conference League result"
+      ],
+      "homeScore": "2",
+      "awayScore": "1"
     },
     {
       "id": "sabah-barcelona-nov25",
@@ -723,142 +928,6 @@
       "awayScore": "4"
     },
     {
-      "id": "nordsjaelland-panathinaikos-nov26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Nov",
-      "time": "Result pending",
-      "title": "Nordsjælland vs Panathinaikos",
-      "home": "Nordsjælland",
-      "away": "Panathinaikos",
-      "competition": "UEFA Conference League",
-      "stage": "League phase · Matchday 4",
-      "status": "Awaiting verification",
-      "signals": [
-        "Final score not yet confirmed by a reliable source",
-        "Archived pending verification"
-      ]
-    },
-    {
-      "id": "borac-atalanta-nov26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Nov",
-      "time": "Result pending",
-      "title": "Borac vs Atalanta",
-      "home": "Borac",
-      "away": "Atalanta",
-      "competition": "UEFA Conference League",
-      "stage": "League phase · Matchday 4",
-      "status": "Awaiting verification",
-      "signals": [
-        "Final score not yet confirmed by a reliable source",
-        "Archived pending verification"
-      ]
-    },
-    {
-      "id": "hajduk-sint-truiden-nov26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Nov",
-      "time": "Result pending",
-      "title": "Hajduk Split vs Sint-Truidense",
-      "home": "Hajduk Split",
-      "away": "Sint-Truidense",
-      "competition": "UEFA Conference League",
-      "stage": "League phase · Matchday 4",
-      "status": "Awaiting verification",
-      "signals": [
-        "Final score not yet confirmed by a reliable source",
-        "Archived pending verification"
-      ]
-    },
-    {
-      "id": "inter-escaldes-copenhagen-nov26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Nov",
-      "time": "Result pending",
-      "title": "Inter Escaldes vs Copenhagen",
-      "home": "Inter Escaldes",
-      "away": "Copenhagen",
-      "competition": "UEFA Conference League",
-      "stage": "League phase · Matchday 4",
-      "status": "Awaiting verification",
-      "signals": [
-        "Final score not yet confirmed by a reliable source",
-        "Archived pending verification"
-      ]
-    },
-    {
-      "id": "gent-zvezda-nov26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Nov",
-      "time": "Result pending",
-      "title": "Gent vs Crvena Zvezda",
-      "home": "Gent",
-      "away": "Crvena Zvezda",
-      "competition": "UEFA Conference League",
-      "stage": "League phase · Matchday 4",
-      "status": "Awaiting verification",
-      "signals": [
-        "Final score not yet confirmed by a reliable source",
-        "Archived pending verification"
-      ]
-    },
-    {
-      "id": "cska-trabzonspor-nov26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Nov",
-      "time": "Result pending",
-      "title": "CSKA Sofia vs Trabzonspor",
-      "home": "CSKA Sofia",
-      "away": "Trabzonspor",
-      "competition": "UEFA Conference League",
-      "stage": "League phase · Matchday 4",
-      "status": "Awaiting verification",
-      "signals": [
-        "Final score not yet confirmed by a reliable source",
-        "Archived pending verification"
-      ]
-    },
-    {
-      "id": "braga-kups-nov26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Nov",
-      "time": "Result pending",
-      "title": "Braga vs KuPS Kuopio",
-      "home": "Braga",
-      "away": "KuPS Kuopio",
-      "competition": "UEFA Conference League",
-      "stage": "League phase · Matchday 4",
-      "status": "Awaiting verification",
-      "signals": [
-        "Final score not yet confirmed by a reliable source",
-        "Archived pending verification"
-      ]
-    },
-    {
-      "id": "freiburg-twente-nov26",
-      "type": "event",
-      "sport": "Football",
-      "date": "26 Nov",
-      "time": "Result pending",
-      "title": "Freiburg vs Twente",
-      "home": "Freiburg",
-      "away": "Twente",
-      "competition": "UEFA Conference League",
-      "stage": "League phase · Matchday 4",
-      "status": "Awaiting verification",
-      "signals": [
-        "Final score not yet confirmed by a reliable source",
-        "Archived pending verification"
-      ]
-    },
-    {
       "id": "bodo-lask-nov24",
       "type": "result",
       "sport": "Football",
@@ -1243,42 +1312,6 @@
       "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t11.png",
       "homeScore": "4",
       "awayScore": "0"
-    },
-    {
-      "id": "leeds-coventry-nov28",
-      "type": "event",
-      "sport": "Football",
-      "date": "28 Nov",
-      "time": "15:00 GMT",
-      "title": "Leeds United vs Coventry City",
-      "home": "Leeds United",
-      "away": "Coventry City",
-      "competition": "Premier League",
-      "stage": "Matchweek 12",
-      "status": "Upcoming",
-      "signals": [
-        "Premier League Matchweek 12"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t2.png",
-      "awayLogo": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png"
-    },
-    {
-      "id": "man-united-brentford-nov28",
-      "type": "event",
-      "sport": "Football",
-      "date": "28 Nov",
-      "time": "15:00 GMT",
-      "title": "Man United vs Brentford",
-      "home": "Man United",
-      "away": "Brentford",
-      "competition": "Premier League",
-      "stage": "Matchweek 12",
-      "status": "Upcoming",
-      "signals": [
-        "Premier League Matchweek 12"
-      ],
-      "homeLogo": "https://resources.premierleague.com/premierleague/badges/50/t1.png",
-      "awayLogo": "https://resources.premierleague.com/premierleague/badges/50/t94.png"
     },
     {
       "id": "ipswich-aston-villa-nov28",
