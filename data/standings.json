@@ -6,8 +6,8 @@
       "country": "England",
       "name": "Premier League",
       "season": "2026/27 season",
-      "insightTitle": "Matchweek 11 complete · Arsenal lead on 28 points · checked 27 Nov",
-      "insightText": "No Premier League matches were played on 26 November, so the last verified positions, played, wins, draws, losses, goals, goal difference and points are retained. Recent contains Matchweek 11; Upcoming contains all ten Matchweek 12 fixtures from 27 to 29 November, shown in EET.",
+      "insightTitle": "Matchweek 12 underway · Arsenal lead on 28 points · checked 28 Nov",
+      "insightText": "Nottingham Forest 3-2 Chelsea is included in the verified table. Positions, played, wins, draws, losses, goals, goal difference and points have been recalculated; Recent and Upcoming now agree with the published Matchweek 12 schedule in EET.",
       "table": [
         {
           "pos": 1,
@@ -152,22 +152,22 @@
         {
           "pos": 8,
           "team": "Chelsea",
-          "played": 11,
+          "played": 12,
           "wins": 5,
           "draws": 1,
-          "losses": 5,
-          "gf": 20,
-          "ga": 20,
+          "losses": 6,
+          "gf": 22,
+          "ga": 23,
           "points": 16,
           "form": [
             "L",
-            "L",
             "W",
+            "L",
             "L",
             "L"
           ],
           "zone": "safe",
-          "gd": 0
+          "gd": -1
         },
         {
           "pos": 9,
@@ -271,6 +271,26 @@
         },
         {
           "pos": 14,
+          "team": "Nottm Forest",
+          "played": 12,
+          "wins": 3,
+          "draws": 3,
+          "losses": 6,
+          "gf": 12,
+          "ga": 17,
+          "points": 12,
+          "form": [
+            "D",
+            "L",
+            "W",
+            "L",
+            "W"
+          ],
+          "zone": "safe",
+          "gd": -5
+        },
+        {
+          "pos": 15,
           "team": "Coventry City",
           "played": 11,
           "wins": 4,
@@ -290,7 +310,7 @@
           "gd": -8
         },
         {
-          "pos": 15,
+          "pos": 16,
           "team": "Fulham",
           "played": 11,
           "wins": 2,
@@ -310,7 +330,7 @@
           "gd": -2
         },
         {
-          "pos": 16,
+          "pos": 17,
           "team": "Ipswich Town",
           "played": 11,
           "wins": 3,
@@ -328,26 +348,6 @@
           ],
           "zone": "safe",
           "gd": -7
-        },
-        {
-          "pos": 17,
-          "team": "Nottm Forest",
-          "played": 11,
-          "wins": 2,
-          "draws": 3,
-          "losses": 6,
-          "gf": 9,
-          "ga": 15,
-          "points": 9,
-          "form": [
-            "L",
-            "D",
-            "L",
-            "W",
-            "L"
-          ],
-          "zone": "safe",
-          "gd": -6
         },
         {
           "pos": 18,
@@ -412,6 +412,12 @@
       ],
       "lastMatches": [
         {
+          "time": "27 Nov",
+          "match": "Nottm Forest vs Chelsea",
+          "score": "3:2",
+          "status": "finished"
+        },
+        {
           "time": "23 Nov",
           "match": "Brentford vs Everton",
           "score": "4:0",
@@ -464,20 +470,9 @@
           "match": "Coventry City vs Crystal Palace",
           "score": "3:2",
           "status": "finished"
-        },
-        {
-          "time": "21 Nov",
-          "match": "Tottenham vs Ipswich Town",
-          "score": "2:0",
-          "status": "finished"
         }
       ],
       "upcomingMatches": [
-        {
-          "time": "27 Nov · 22:00 EET",
-          "match": "Nottm Forest vs Chelsea",
-          "status": "upcoming"
-        },
         {
           "time": "28 Nov · 17:00 EET",
           "match": "Leeds United vs Coventry City",
